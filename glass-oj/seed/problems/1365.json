@@ -1,0 +1,56 @@
+{
+  "id": "1365",
+  "title": "位数问题",
+  "tags": [
+    "递推"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1365",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在所有的 <span class=\"katex math inline\">N</span> 位数中，有多少个数中有偶数个数字 <span class=\"katex math inline\">3</span> ？由于结果可能很大，你只需要输出这个答案对 <span class=\"katex math inline\">12345</span> 取余的值。</p>\n<p>比如：在所有的 <span class=\"katex math inline\">2</span> 位数字，包含 <span class=\"katex math inline\">0</span> 个 <span class=\"katex math inline\">3</span> 的数有 <span class=\"katex math inline\">72</span> 个，包含 <span class=\"katex math inline\">2</span> 个 <span class=\"katex math inline\">3</span> 的数有 <span class=\"katex math inline\">1</span>个，共 <span class=\"katex math inline\">73</span> 个。（请注意：<span class=\"katex math inline\">1</span> 位数指 <span class=\"katex math inline\">1 \\sim 9</span> 这 <span class=\"katex math inline\">9</span> 个数，不包含数字 <span class=\"katex math inline\">0</span> ）</p>\n</div>            </div>",
+      "text": "在所有的 N 位数中，有多少个数中有偶数个数字 3 ？由于结果可能很大，你只需要输出这个答案对 12345 取余的值。\n比如：在所有的 2 位数字，包含 0 个 3 的数有 72 个，包含 2 个 3 的数有 1个，共 73 个。（请注意：1 位数指 1 \\sim 9 这 9 个数，不包含数字 0 ）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">N</span>（<span class=\"katex math inline\">1 \\le N \\le 1000</span>）。</p>\n</div>            </div>",
+      "text": "一个整数 N（1 \\le N \\le 1000）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">N</span> 位数中含有偶数个数组 <span class=\"katex math inline\">3</span> 的个数。</p>\n</div>            </div>",
+      "text": "N 位数中含有偶数个数组 3 的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>73</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\n                        \n                        \n                            输出\n                            73"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递推</p>\n</div>                </div>",
+      "text": "递推"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递推</span></span></p>\n</div>                </div>",
+      "text": "递推"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2",
+      "output": "73"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "1617",
+    "通过人数": "571",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:18:25"
+}

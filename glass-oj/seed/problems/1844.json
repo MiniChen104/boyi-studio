@@ -1,0 +1,62 @@
+{
+  "id": "1844",
+  "title": "判定字符位置",
+  "tags": [
+    "蓝桥杯",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1844",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>返回给定字符串 <span class=\"katex math inline\">s</span> 中元音字母的首次出现位置。英语元音字母只有 <code>a</code>、<code>e</code>、<code>i</code>、<code>o</code>、<code>u</code> 五个。</p>\n<p>若字符串中没有元音字母，则输出 <span class=\"katex math inline\">0</span> 。</p>\n<p>只考虑小写的情况。</p>\n</div>            </div>",
+      "text": "返回给定字符串 s 中元音字母的首次出现位置。英语元音字母只有 a、e、i、o、u 五个。\n若字符串中没有元音字母，则输出 0 。\n只考虑小写的情况。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个仅含小写字母的字符串，长度不超过 <span class=\"katex math inline\">20</span> 位。</p>\n</div>            </div>",
+      "text": "输入一个仅含小写字母的字符串，长度不超过 20 位。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按题意输出位置或输出 <span class=\"katex math inline\">0</span> 。</p>\n</div>            </div>",
+      "text": "按题意输出位置或输出 0 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>and</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            and\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】</p>\n<p>蓝桥杯算法训练</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】\n蓝桥杯算法训练"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 字符串</p>\n</div>                </div>",
+      "text": "蓝桥杯 字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "and",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "3064",
+    "通过人数": "1619",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:24:57"
+}

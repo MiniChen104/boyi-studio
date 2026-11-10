@@ -1,0 +1,61 @@
+{
+  "id": "3068",
+  "title": "切蛋糕",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3068",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明今天生日，邀请了一些朋友过来开生日会。</p>\n<p>妈妈专门去买了一个大蛋糕，蛋糕为一个 <span class=\"katex math inline\">n \\times m</span>的矩形，现在想把这个蛋糕分成 <span class=\"katex math inline\">1 \\times 2</span> 的小块，并且要求必须是完整的小块，不能拼接。问一共能分多少块？</p>\n<p><img src=\"https://assets.boyi.local/db9d618dce200cb3dfebef8a.jpg\"></p>\n</div>            </div>",
+      "text": "小明今天生日，邀请了一些朋友过来开生日会。\n妈妈专门去买了一个大蛋糕，蛋糕为一个 n \\times m的矩形，现在想把这个蛋糕分成 1 \\times 2 的小块，并且要求必须是完整的小块，不能拼接。问一共能分多少块？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，两个正整数 <span class=\"katex math inline\">n,m</span>。</p>\n</div>            </div>",
+      "text": "一行，两个正整数 n,m。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数 <span class=\"katex math inline\">x</span> ，表示最多能分多少块。</p>\n</div>            </div>",
+      "text": "一行，一个整数 x ，表示最多能分多少块。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7 8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>28</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7 8\n                        \n                        \n                            输出\n                            28"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">50\\%</span> 数据 <span class=\"katex math inline\">0 &lt; n,m &lt; 10000</span>。</p>\n<p><span class=\"katex math inline\">100\\%</span> 数据 <span class=\"katex math inline\">0 &lt; n,m &lt; 10^9</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n50\\% 数据 0 < n,m < 10000。\n100\\% 数据 0 < n,m < 10^9。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2016中山市第八届小学生信息学竞赛试题 T1</p>\n</div>                </div>",
+      "text": "2016中山市第八届小学生信息学竞赛试题 T1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7 8",
+      "output": "28"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "6340",
+    "通过人数": "1730",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:58"
+}

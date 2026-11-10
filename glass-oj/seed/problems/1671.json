@@ -1,0 +1,56 @@
+{
+  "id": "1671",
+  "title": "判断一个数是否是水仙花数",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1671",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个三位数 <span class=\"katex math inline\">n</span>，判断是否为水仙花数，如果是则输出<code>YES</code> ，不是则输出 <code>NO</code> 。</p>\n<p>水仙花数：是指一个 <span class=\"katex math inline\">3</span> 位数，它的每个位上的数字的 <span class=\"katex math inline\">3</span> 次幂之和等于它本身。（例如：<span class=\"katex math inline\">1  \\times  1  \\times  1 + 5  \\times  5  \\times  5 + 3  \\times  3  \\times  3 = 153</span> ）。</p>\n</div>            </div>",
+      "text": "输入一个三位数 n，判断是否为水仙花数，如果是则输出YES ，不是则输出 NO 。\n水仙花数：是指一个 3 位数，它的每个位上的数字的 3 次幂之和等于它本身。（例如：1  \\times  1  \\times  1 + 5  \\times  5  \\times  5 + 3  \\times  3  \\times  3 = 153 ）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>读入一个三位整数。</p>\n</div>            </div>",
+      "text": "读入一个三位整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <code>YES</code> 或者 <code>NO</code> 。</p>\n</div>            </div>",
+      "text": "输出 YES 或者 NO 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>153</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>YES</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            153\n                        \n                        \n                            输出\n                            YES"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "153",
+      "output": "YES"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "5596",
+    "通过人数": "3546",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:41"
+}

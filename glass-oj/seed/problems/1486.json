@@ -1,0 +1,65 @@
+{
+  "id": "1486",
+  "title": "括号匹配",
+  "tags": [
+    "容器",
+    "stack"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1486",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个由 <code>()[]</code> 四种符号构成的字符串。判断其中的括号是否匹配，是，就输出 <code>yes</code>，否则输出 <code>no</code>。</p>\n<p>比如：输入 <code>([])</code>、<code>([()])</code>、<code>[((()))]</code>、<code>()[][][]()[]</code> 这几个字符串（双引号内部的内容），我们都算是匹配的。</p>\n<p>再比如：输入 <code>([)</code>、<code>([)]</code>、<code>([(]))</code> 这几个字符串，我们都认为是不匹配的。</p>\n</div>            </div>",
+      "text": "输入一个由 ()[] 四种符号构成的字符串。判断其中的括号是否匹配，是，就输出 yes，否则输出 no。\n比如：输入 ([])、([()])、[((()))]、()[][][]()[] 这几个字符串（双引号内部的内容），我们都算是匹配的。\n再比如：输入 ([)、([)]、([(])) 这几个字符串，我们都认为是不匹配的。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个由 <code>()[]</code> 四种符号构成的字符串，字符串长度不超过 <span class=\"katex math inline\">100</span> 。</p>\n</div>            </div>",
+      "text": "一个由 ()[] 四种符号构成的字符串，字符串长度不超过 100 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果匹配，请输出 <code>yes</code>，如果不匹配，请输出 <code>no</code>。</p>\n</div>            </div>",
+      "text": "如果匹配，请输出 yes，如果不匹配，请输出 no。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>([])</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>yes</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>([)]</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>no</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>([()])[(())][()][()(())]()[]</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>yes</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            ([])\n                        \n                        \n                            输出\n                            yes\n                        \n\n                                                    \n                                输入\n                                ([)]\n                            \n                            \n                                输出\n                                no\n                            \n                        \n                                                    \n                                输入\n                                ([()])[(())][()][()(())]()[]\n                            \n                            \n                                输出\n                                yes"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>容器 stack</p>\n</div>                </div>",
+      "text": "容器 stack"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">容器</span><span class=\"label label-warning\">stack</span></span></p>\n</div>                </div>",
+      "text": "容器stack"
+    }
+  ],
+  "samples": [
+    {
+      "input": "([])",
+      "output": "yes"
+    },
+    {
+      "input": "([)]",
+      "output": "no"
+    },
+    {
+      "input": "([()])[(())][()][()(())]()[]",
+      "output": "yes"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5207",
+    "通过人数": "3291",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:20:08"
+}

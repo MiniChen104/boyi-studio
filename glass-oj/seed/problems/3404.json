@@ -1,0 +1,62 @@
+{
+  "id": "3404",
+  "title": "进制判断",
+  "tags": [
+    "进制转换",
+    "GESP三级",
+    "23年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3404",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">N</span> 进制数指的是逢 <span class=\"katex math inline\">N</span> 进一的计数制。例如，人们日常生活中大多使用十进制计数，而计算机底层则一般使用二进制。除此之外，八进制和十六进制在一些场合也是常用的计数制（十六进制中，一般使用字母 <code>A</code> 至 <code>F</code> 表示十至十\n五）。</p>\n<p>现在有 <span class=\"katex math inline\">N</span> 个数，请你分别判断他们是否可能是二进制、八进制、十进制、十六进制。例如，<code>15A6F</code> 就只可能是十六进制，而 <code>1011</code> 则是四种进制皆有可能。</p>\n</div>            </div>",
+      "text": "N 进制数指的是逢 N 进一的计数制。例如，人们日常生活中大多使用十进制计数，而计算机底层则一般使用二进制。除此之外，八进制和十六进制在一些场合也是常用的计数制（十六进制中，一般使用字母 A 至 F 表示十至十\n五）。\n现在有 N 个数，请你分别判断他们是否可能是二进制、八进制、十进制、十六进制。例如，15A6F 就只可能是十六进制，而 1011 则是四种进制皆有可能。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行为一个十进制表示的整数。</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行一个字符串，表示需要判断的数。保证所有字符串均由数字和大写字母组成，且不以 <span class=\"katex math inline\">0</span> 开头。保证不会出现空行。</p>\n<p>保证 <span class=\"katex math inline\">1 \\leq N \\leq 1000</span>，保证所有字符串长度不超过 <span class=\"katex math inline\">10</span> 。</p>\n</div>            </div>",
+      "text": "输入的第一行为一个十进制表示的整数。\n接下来 N 行，每行一个字符串，表示需要判断的数。保证所有字符串均由数字和大写字母组成，且不以 0 开头。保证不会出现空行。\n保证 1 \\leq N \\leq 1000，保证所有字符串长度不超过 10 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">N</span> 行，每行 <span class=\"katex math inline\">4</span> 个数，用空格隔开，分别表示给定的字符串是否可能表示一个二进制数、八进制数、十进制数、十六进制数。使用 <code>1</code> 表示可能，使用 <code>0</code> 表示不可能。</p>\n<p>例如，对于只可能是十六进制数的 <code>15A6F</code> ，就需要输出 <code>0 0 0 1</code> ；而对于四者皆有可能的 <code>1011</code> ，则需要输出 <code>1 1 1 1</code> 。</p>\n</div>            </div>",
+      "text": "输出 N 行，每行 4 个数，用空格隔开，分别表示给定的字符串是否可能表示一个二进制数、八进制数、十进制数、十六进制数。使用 1 表示可能，使用 0 表示不可能。\n例如，对于只可能是十六进制数的 15A6F ，就需要输出 0 0 0 1 ；而对于四者皆有可能的 1011 ，则需要输出 1 1 1 1 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n15A6F\r\n1011</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0 0 0 1\r\n1 1 1 1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4\r\n1234567\r\n12345678\r\nFF\r\nGG</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0 1 1 1\r\n0 0 1 1\r\n0 0 0 1\r\n0 0 0 0</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n15A6F\r\n1011\n                        \n                        \n                            输出\n                            0 0 0 1\r\n1 1 1 1\n                        \n\n                                                    \n                                输入\n                                4\r\n1234567\r\n12345678\r\nFF\r\nGG\n                            \n                            \n                                输出\n                                0 1 1 1\r\n0 0 1 1\r\n0 0 0 1\r\n0 0 0 0"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年9月三级</p>\n</div>                </div>",
+      "text": "GESP23年9月三级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">进制转换</span><span class=\"label label-warning\">GESP三级</span><span class=\"label label-info\">23年9月</span></span></p>\n</div>                </div>",
+      "text": "进制转换GESP三级23年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n15A6F\r\n1011",
+      "output": "0 0 0 1\r\n1 1 1 1"
+    },
+    {
+      "input": "4\r\n1234567\r\n12345678\r\nFF\r\nGG",
+      "output": "0 1 1 1\r\n0 0 1 1\r\n0 0 0 1\r\n0 0 0 0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2525",
+    "通过人数": "1363",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:03"
+}

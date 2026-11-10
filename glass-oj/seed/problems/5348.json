@@ -1,0 +1,65 @@
+{
+  "id": "5348",
+  "title": "理想队伍",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5348",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>老师想同学们排好队伍，于是老师写好 <code>0</code> 或者 <code>1</code> 两种字符，分给这排成一行的 <span class=\"katex math inline\">N</span> 个人，这 <span class=\"katex math inline\">N</span> 个人的编号是 <span class=\"katex math inline\">1 \\dots N</span>。</p>\n<p>老师心中理想的队伍是这样的，所有人中有且只有一个同学的字符与后一位同学的字符是相同的，即第 <span class=\"katex math inline\">i(1 \\le i \\le N-1</span>)个人与第 <span class=\"katex math inline\">i+1</span> 个人的字符相同。</p>\n<p>理想是丰满的，但现实很骨感，往往这种队形在最初始是不容易出现的。不过 z 老师曾修炼过魔法，可以修改同学们的字符，即可以将 <code>0</code> 变成 <code>1</code>，或者将 <code>1</code> 变成 <code>0</code>。</p>\n<p>但是修改字符会消耗元气值，z 老师不想消耗过多的元气，因为他还得上自习。聪明的你帮 z 老师算一下，达成理想队形，需要消耗多少元气。</p>\n</div>            </div>",
+      "text": "老师想同学们排好队伍，于是老师写好 0 或者 1 两种字符，分给这排成一行的 N 个人，这 N 个人的编号是 1 \\dots N。\n老师心中理想的队伍是这样的，所有人中有且只有一个同学的字符与后一位同学的字符是相同的，即第 i(1 \\le i \\le N-1)个人与第 i+1 个人的字符相同。\n理想是丰满的，但现实很骨感，往往这种队形在最初始是不容易出现的。不过 z 老师曾修炼过魔法，可以修改同学们的字符，即可以将 0 变成 1，或者将 1 变成 0。\n但是修改字符会消耗元气值，z 老师不想消耗过多的元气，因为他还得上自习。聪明的你帮 z 老师算一下，达成理想队形，需要消耗多少元气。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">N</span>，表示有 <span class=\"katex math inline\">N</span> 个同学。</p>\n<p>第二行，用一个字符串 <span class=\"katex math inline\">S</span> 表示这 <span class=\"katex math inline\">N</span> 个同学手上字符，每个字符是 <code>0</code> 或者 <code>1</code>。</p>\n<p>第三行，共 <span class=\"katex math inline\">N</span> 个数，第 <span class=\"katex math inline\">i</span> 个数表示修改第 <span class=\"katex math inline\">i</span> 个同学需要消耗的元气值 <span class=\"katex math inline\">C_i</span>。</p>\n</div>            </div>",
+      "text": "第一行一个整数 N，表示有 N 个同学。\n第二行，用一个字符串 S 表示这 N 个同学手上字符，每个字符是 0 或者 1。\n第三行，共 N 个数，第 i 个数表示修改第 i 个同学需要消耗的元气值 C_i。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出达到理想队形需要消耗的最少元气。</p>\n</div>            </div>",
+      "text": "输出达到理想队形需要消耗的最少元气。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n00011\r\n3 9 2 6 4\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4\r\n1001\r\n4 2 3 1\r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n00011\r\n3 9 2 6 4\r\n\n                        \n                        \n                            输出\n                            7\n                        \n\n                                                    \n                                输入\n                                4\r\n1001\r\n4 2 3 1\r\n\n                            \n                            \n                                输出\n                                0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例1解释】</h4>\n<p>修改第一个和第五个位置的字符后变成 <code>10010</code>，消耗为 <span class=\"katex math inline\">7</span> 点元气值，可以证明这是消耗最小。</p>\n<h4>【样例2解释】</h4>\n<p>无需修改已经满足理想队形。</p>\n<h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的数据：<span class=\"katex math inline\">2 \\le N \\le 1000</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">2 \\le N \\le 2 \\times 10^5</span>，<span class=\"katex math inline\">1 \\le C_i \\le 10^9</span>。</p>\n<p><span class=\"katex math inline\">S</span> 是一个由 <code>0</code> 或者 <code>1</code> 构成的字符串。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1解释】\n修改第一个和第五个位置的字符后变成 10010，消耗为 7 点元气值，可以证明这是消耗最小。\n【样例2解释】\n无需修改已经满足理想队形。\n【数据范围】\n对于 40\\% 的数据：2 \\le N \\le 1000。\n对于 100\\% 的数据，2 \\le N \\le 2 \\times 10^5，1 \\le C_i \\le 10^9。\nS 是一个由 0 或者 1 构成的字符串。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>婺城区第二届青少年信息素养大赛小学组试题</p>\n</div>                </div>",
+      "text": "婺城区第二届青少年信息素养大赛小学组试题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n00011\r\n3 9 2 6 4\r\n",
+      "output": "7"
+    },
+    {
+      "input": "4\r\n1001\r\n4 2 3 1\r\n",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "44",
+    "通过人数": "18",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:16"
+}

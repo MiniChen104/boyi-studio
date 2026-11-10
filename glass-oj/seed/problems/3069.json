@@ -1,0 +1,61 @@
+{
+  "id": "3069",
+  "title": "谁会赢",
+  "tags": [
+    "数学"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3069",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>kqp 发明了一个好玩的游戏，叫 czy 一起玩。但 czy 玩了十几盘，总是输，他想知道是不是从一开始他就注定要输。</p>\n<p>这个游戏是这样的，kqp 先写下一排数（既然是一排，当然有首尾咯)。</p>\n<p>kqp 和 czy 每次只能从这排数的头或尾取一个数。最后谁取的数的和多，谁就赢了。如果两人的数的总和一样多，先取者胜。</p>\n<p>有天 FW 看到他们俩在玩这个游戏，很好奇。他想知道，在两人总是做出最优决策的情况下（两个人的智商都是很高的……），谁能取得最终的胜利呢？</p>\n</div>            </div>",
+      "text": "kqp 发明了一个好玩的游戏，叫 czy 一起玩。但 czy 玩了十几盘，总是输，他想知道是不是从一开始他就注定要输。\n这个游戏是这样的，kqp 先写下一排数（既然是一排，当然有首尾咯)。\nkqp 和 czy 每次只能从这排数的头或尾取一个数。最后谁取的数的和多，谁就赢了。如果两人的数的总和一样多，先取者胜。\n有天 FW 看到他们俩在玩这个游戏，很好奇。他想知道，在两人总是做出最优决策的情况下（两个人的智商都是很高的……），谁能取得最终的胜利呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为一个数 <span class=\"katex math inline\">k</span> (<span class=\"katex math inline\">k \\le 10</span>)，表示有 <span class=\"katex math inline\">k</span> 组测试数据。</p>\n<p>以下 <span class=\"katex math inline\">k</span> 组测试数据：</p>\n<p>每组测试数据中，第一行仅有一个偶数 <span class=\"katex math inline\">n</span> (<span class=\"katex math inline\">0 &lt; n ≤ 100000</span>)。</p>\n<p>第二行也仅有一个数，<span class=\"katex math inline\">0</span> 表示 kqp 先取数，<span class=\"katex math inline\">1</span> 表示 czy 先取数。</p>\n<p>第三行有 <span class=\"katex math inline\">n</span> 个数，是 kqp 给出的一排数。这 <span class=\"katex math inline\">n</span> 个数的绝对值均不超过 <span class=\"katex math inline\">10^6</span> 。</p>\n</div>            </div>",
+      "text": "第一行为一个数 k (k \\le 10)，表示有 k 组测试数据。\n以下 k 组测试数据：\n每组测试数据中，第一行仅有一个偶数 n (0 < n ≤ 100000)。\n第二行也仅有一个数，0 表示 kqp 先取数，1 表示 czy 先取数。\n第三行有 n 个数，是 kqp 给出的一排数。这 n 个数的绝对值均不超过 10^6 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对每组测试数据输出一行，表示在两人总是做出最优决策的情况下，最终的胜利者的名字，即 &quot;kqp&quot; 或 &quot;czy&quot;（引号不输出）。</p>\n</div>            </div>",
+      "text": "对每组测试数据输出一行，表示在两人总是做出最优决策的情况下，最终的胜利者的名字，即 \"kqp\" 或 \"czy\"（引号不输出）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n2\r\n1\r\n1 3\r\n2\r\n0\r\n1 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>czy\r\nkqp</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n2\r\n1\r\n1 3\r\n2\r\n0\r\n1 3\n                        \n                        \n                            输出\n                            czy\r\nkqp"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">k=1,n \\le 10</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span>，如题所述。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 30\\% 的数据，k=1,n \\le 10。\n对于 100\\%，如题所述。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2016中山市第八届小学生信息学竞赛试题 T2</p>\n</div>                </div>",
+      "text": "2016中山市第八届小学生信息学竞赛试题 T2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数学</span></span></p>\n</div>                </div>",
+      "text": "数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n2\r\n1\r\n1 3\r\n2\r\n0\r\n1 3",
+      "output": "czy\r\nkqp"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "171",
+    "通过人数": "60",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:58"
+}

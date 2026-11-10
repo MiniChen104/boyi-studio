@@ -1,0 +1,56 @@
+{
+  "id": "1615",
+  "title": "小华的零花钱（2）",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1615",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明和小华去购买课外书，小明带了 <span class=\"katex math inline\">x</span> 元（<span class=\"katex math inline\">x</span> 是一个三位整数），小明问小华带了多少钱，小华说自己带的钱只有小明带的金额去掉十位那么多，请你编程帮助小华计算一下，他带了多少零花钱？</p>\n<p>比如，假设小明带了 <span class=\"katex math inline\">689</span> 元，那么小华带的金额就是 <span class=\"katex math inline\">69</span> 元。</p>\n</div>            </div>",
+      "text": "小明和小华去购买课外书，小明带了 x 元（x 是一个三位整数），小明问小华带了多少钱，小华说自己带的钱只有小明带的金额去掉十位那么多，请你编程帮助小华计算一下，他带了多少零花钱？\n比如，假设小明带了 689 元，那么小华带的金额就是 69 元。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">x</span> 代表小明的零花钱的金额， <span class=\"katex math inline\">x</span> 是一个三位的整数。</p>\n</div>            </div>",
+      "text": "一个整数 x 代表小明的零花钱的金额， x 是一个三位的整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小华的零花钱的金额。</p>\n</div>            </div>",
+      "text": "小华的零花钱的金额。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>689</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>69</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            689\n                        \n                        \n                            输出\n                            69"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "689",
+      "output": "69"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "5430",
+    "通过人数": "4663",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:52"
+}

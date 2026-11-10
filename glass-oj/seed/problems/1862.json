@@ -1,0 +1,56 @@
+{
+  "id": "1862",
+  "title": "友好数",
+  "tags": [
+    "循环的应用"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1862",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有两个整数，如果每个整数的约数和（除了它本身以外）等于对方，我们就称这对数是友好的。例如：</p>\n<p><span class=\"katex math inline\">9</span> 的约数和有：<span class=\"katex math inline\">1+3=4</span></p>\n<p><span class=\"katex math inline\">4</span> 的约数和有：<span class=\"katex math inline\">1+2=3</span></p>\n<p>所以 <span class=\"katex math inline\">9</span> 和 <span class=\"katex math inline\">4</span> 不是友好的。</p>\n<p><span class=\"katex math inline\">220</span>的约数和有：<span class=\"katex math inline\">1 、2、 4、 5 、10 、11、 20、 22、 44 、55、 110=284</span></p>\n<p><span class=\"katex math inline\">284</span> 的约数和有：<span class=\"katex math inline\">1、 2 、4 、71、 142=220</span>\n所以 <span class=\"katex math inline\">220</span> 和 <span class=\"katex math inline\">284</span> 是友好的。\n编写程序，判断两个数是否是友好数。</p>\n</div>            </div>",
+      "text": "有两个整数，如果每个整数的约数和（除了它本身以外）等于对方，我们就称这对数是友好的。例如：\n9 的约数和有：1+3=4\n4 的约数和有：1+2=3\n所以 9 和 4 不是友好的。\n220的约数和有：1 、2、 4、 5 、10 、11、 20、 22、 44 、55、 110=284\n284 的约数和有：1、 2 、4 、71、 142=220\n所以 220 和 284 是友好的。\n编写程序，判断两个数是否是友好数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，两个整数，由空格分隔（两个整数都小于 <span class=\"katex math inline\">10000</span> ）</p>\n</div>            </div>",
+      "text": "一行，两个整数，由空格分隔（两个整数都小于 10000 ）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p> 如果是友好数，输出&quot;<code>yes</code>&quot;，否则输出&quot;<code>no</code>&quot;，注意不包含引号。</p>\n</div>            </div>",
+      "text": "如果是友好数，输出\"yes\"，否则输出\"no\"，注意不包含引号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>220 284</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>yes</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            220 284\n                        \n                        \n                            输出\n                            yes"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>循环的应用</p>\n</div>                </div>",
+      "text": "循环的应用"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">循环的应用</span></span></p>\n</div>                </div>",
+      "text": "循环的应用"
+    }
+  ],
+  "samples": [
+    {
+      "input": "220 284",
+      "output": "yes"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "6652",
+    "通过人数": "4978",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:25:11"
+}

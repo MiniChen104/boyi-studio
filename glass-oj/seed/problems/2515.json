@@ -1,0 +1,57 @@
+{
+  "id": "2515",
+  "title": "计算路费",
+  "tags": [
+    "图论",
+    "树论"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2515",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">A</span> 国国王是一个非常精明的人，聪明的他发现，他的国家有 <span class=\"katex math inline\">n</span> 个城市（城市编号为 <span class=\"katex math inline\">1 \\sim n</span>），如果要使得城市之间互相可达，只要修 <span class=\"katex math inline\">n-1</span> 条道路，虽然某些城市不能直接可达，但经过一些其他的城市，也是能到的，于是他真的给自己的国家修建了 <span class=\"katex math inline\">n-1</span> 条高速公路，且使得高速公路能连接到所有的城市。  </p>\n<p>比如：城市 <span class=\"katex math inline\">1</span> 和城市 <span class=\"katex math inline\">2</span> 之间修建了双向高速公路，城市 <span class=\"katex math inline\">2</span> 和城市 <span class=\"katex math inline\">3</span> 之间修建了双向高速公路，那么虽然城市 <span class=\"katex math inline\">1</span> 和城市 <span class=\"katex math inline\">3</span> 之间并没有修建公路，但经过城市 <span class=\"katex math inline\">2</span> 也能实现城市 <span class=\"katex math inline\">1</span> 的人能够到达城市 <span class=\"katex math inline\">3</span> 。  </p>\n<p>他制定了高速公路的收费方法：从第 <span class=\"katex math inline\">L-1</span> 公里到第 <span class=\"katex math inline\">L</span> 公里的这部分路程，收费金额为 <span class=\"katex math inline\">L+10</span> 元。  </p>\n<p>也就是说，第 <span class=\"katex math inline\">0</span> 公里到 <span class=\"katex math inline\">1</span> 公里收费金额 <span class=\"katex math inline\">= 1+10=11</span> 元，第 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">2</span> 公里收费金额 <span class=\"katex math inline\">= 2+10=12</span> 元，那么如果走过 <span class=\"katex math inline\">2</span> 公里的高速公路，总收费 <span class=\"katex math inline\">= 11+12=23</span> 元。  </p>\n<p>请问：如果在该王国的<strong>任意</strong>城市出发，到<strong>另一个任意城市结束</strong>，中途不下高速公路，且走过的高速公路或者城市不会重复的走；请问，最多要支付多少元的路费？</p>\n</div>            </div>",
+      "text": "A 国国王是一个非常精明的人，聪明的他发现，他的国家有 n 个城市（城市编号为 1 \\sim n），如果要使得城市之间互相可达，只要修 n-1 条道路，虽然某些城市不能直接可达，但经过一些其他的城市，也是能到的，于是他真的给自己的国家修建了 n-1 条高速公路，且使得高速公路能连接到所有的城市。  \n比如：城市 1 和城市 2 之间修建了双向高速公路，城市 2 和城市 3 之间修建了双向高速公路，那么虽然城市 1 和城市 3 之间并没有修建公路，但经过城市 2 也能实现城市 1 的人能够到达城市 3 。  \n他制定了高速公路的收费方法：从第 L-1 公里到第 L 公里的这部分路程，收费金额为 L+10 元。  \n也就是说，第 0 公里到 1 公里收费金额 = 1+10=11 元，第 1 到 2 公里收费金额 = 2+10=12 元，那么如果走过 2 公里的高速公路，总收费 = 11+12=23 元。  \n请问：如果在该王国的任意城市出发，到另一个任意城市结束，中途不下高速公路，且走过的高速公路或者城市不会重复的走；请问，最多要支付多少元的路费？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行有一个整数 <span class=\"katex math inline\">n</span> ，代表城市数量；  </p>\n<p>接下来 <span class=\"katex math inline\">n-1</span> 行，每行有 <span class=\"katex math inline\">3</span> 个整数，<span class=\"katex math inline\">x</span> <span class=\"katex math inline\">y</span> <span class=\"katex math inline\">len</span>，代表了从 <span class=\"katex math inline\">x</span> 号城市到 <span class=\"katex math inline\">y</span> 号城市之间存在一条双向的高速公路，公路的长度为 <span class=\"katex math inline\">len</span> 公里。</p>\n</div>            </div>",
+      "text": "第 1 行有一个整数 n ，代表城市数量；  \n接下来 n-1 行，每行有 3 个整数，x y len，代表了从 x 号城市到 y 号城市之间存在一条双向的高速公路，公路的长度为 len 公里。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表了最多可能支付的高速公路的费用。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表了最多可能支付的高速公路的费用。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n1 2 2\r\n1 3 1\r\n2 4 5\r\n2 5 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>135</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n1 2 2\r\n1 3 1\r\n2 4 5\r\n2 5 4\n                        \n                        \n                            输出\n                            135"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据规模】  </p>\n<p><span class=\"katex math inline\">1≤n≤10000</span>，<span class=\"katex math inline\">1≤len≤100</span>。  </p>\n<p>【样例说明】  </p>\n<p>在该图中，从 <span class=\"katex math inline\">4</span> 号城市到 <span class=\"katex math inline\">5</span> 号城市，总路长为 <span class=\"katex math inline\">9</span> 公里，需要支付的费用 <span class=\"katex math inline\">= 11+12+13+14+15+16+17+18+19 = 135</span> 元，这是本样例中可能产生的最高的路费。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据规模】  \n1≤n≤10000，1≤len≤100。  \n【样例说明】  \n在该图中，从 4 号城市到 5 号城市，总路长为 9 公里，需要支付的费用 = 11+12+13+14+15+16+17+18+19 = 135 元，这是本样例中可能产生的最高的路费。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span><span class=\"label label-warning\">树论</span></span></p>\n</div>                </div>",
+      "text": "图论树论"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n1 2 2\r\n1 3 1\r\n2 4 5\r\n2 5 4",
+      "output": "135"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "215",
+    "通过人数": "129",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:02"
+}

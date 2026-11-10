@@ -1,0 +1,56 @@
+{
+  "id": "2436",
+  "title": "能量水晶简化版",
+  "tags": [
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2436",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>现在有一个 <span class=\"katex math inline\">N \\times N</span> 的矩阵，在这个矩阵的每个格子都有若干能量水晶。</p>\n<p>现在，小明从这个矩阵的左边出发，目的地是这个矩阵的右边。</p>\n<p>当他走到一个格子时，他就能获得这个格子的能量水晶；\n小明最开始会从左边的路边走到这个矩阵的第一列的任意一个格子里。当他处于这个矩阵的最后一列的时候，他必须往右走一步离开这个矩阵。</p>\n<p>当他处于这个矩阵里时，每次只能从一个格子往右上方走一步或者往右下方走一步；但是当他处于第一行时，就只能往右下方走；同理，当他处于第 <span class=\"katex math inline\">N</span> 行时，就只能往右上方走。</p>\n<p>现在要知道当他离开矩阵时获得的能量水晶最多能有多少。</p>\n<p><img src=\"https://assets.boyi.local/05986f135ac6a85316af0bf8.png\"></p>\n</div>            </div>",
+      "text": "现在有一个 N \\times N 的矩阵，在这个矩阵的每个格子都有若干能量水晶。\n现在，小明从这个矩阵的左边出发，目的地是这个矩阵的右边。\n当他走到一个格子时，他就能获得这个格子的能量水晶；\n小明最开始会从左边的路边走到这个矩阵的第一列的任意一个格子里。当他处于这个矩阵的最后一列的时候，他必须往右走一步离开这个矩阵。\n当他处于这个矩阵里时，每次只能从一个格子往右上方走一步或者往右下方走一步；但是当他处于第一行时，就只能往右下方走；同理，当他处于第 N 行时，就只能往右上方走。\n现在要知道当他离开矩阵时获得的能量水晶最多能有多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为一个正整数 <span class=\"katex math inline\">N</span> ；</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行 <span class=\"katex math inline\">N</span> 个数，空格隔开，描述这个 <span class=\"katex math inline\">N \\times N</span> 的矩阵，每一个数代表该格里面水晶的数目。</p>\n</div>            </div>",
+      "text": "第一行为一个正整数 N ；\n接下来 N 行，每行 N 个数，空格隔开，描述这个 N \\times N 的矩阵，每一个数代表该格里面水晶的数目。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数，表示小明离开矩阵时获得的能量水晶最多能有多少。</p>\n</div>            </div>",
+      "text": "一个数，表示小明离开矩阵时获得的能量水晶最多能有多少。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1 2 3\r\n3 2 1\r\n2 3 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1 2 3\r\n3 2 1\r\n2 3 1\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】<br><img src=\"https://assets.boyi.local/a777be7f598d1ce99e9215e8.png\"></p>\n<p>【数据范围】</p>\n<p><span class=\"katex math inline\">20\\%</span> 的数据满足：每个格子里的能量水晶相等；</p>\n<p><span class=\"katex math inline\">50\\%</span> 的数据满足：<span class=\"katex math inline\">1 ≤ N ≤ 10</span>；</p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据满足：<span class=\"katex math inline\">1 ≤ N ≤ 1000</span>，每个格子里的能量水晶均不超过 <span class=\"katex math inline\">10</span> 个。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n【数据范围】\n20\\% 的数据满足：每个格子里的能量水晶相等；\n50\\% 的数据满足：1 ≤ N ≤ 10；\n100\\% 的数据满足：1 ≤ N ≤ 1000，每个格子里的能量水晶均不超过 10 个。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1 2 3\r\n3 2 1\r\n2 3 1",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "441",
+    "通过人数": "281",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:18"
+}

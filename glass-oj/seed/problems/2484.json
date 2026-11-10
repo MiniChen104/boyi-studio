@@ -1,0 +1,51 @@
+{
+  "id": "2484",
+  "title": "连接岛屿",
+  "tags": [
+    "深搜"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2484",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>海面上有 <span class=\"katex math inline\">2</span> 个岛屿，通过卫星图像能显示出两个岛屿的形状，比如，下图中的&#x27;.&#x27;代表该位置是海水，&#x27;X&#x27;代表该位置是陆地，也就是岛屿的一部分。  </p>\n<pre><code>................\n..XXXX....XXX...\n...XXXX....XX...\n.XXXX......XXX..\n........XXXXX...\n.........XXX....\n</code></pre>\n<p>上下左右相邻的&#x27;X&#x27;形成一整座岛屿，请问，如果需要使得两座岛屿连接在一起，至少要将几个海水的位置填成陆地。  </p>\n<p>比如，上述的图中，只需要将如下三个位置（用&#x27;*&#x27;表示）填为陆地，就可以使得两座岛屿连接。  </p>\n<pre><code>................\n..XXXX....XXX...\n...XXXX*...XX...\n.XXXX..**..XXX..\n........XXXXX...\n.........XXX....\n</code></pre>\n</div>            </div>",
+      "text": "海面上有 2 个岛屿，通过卫星图像能显示出两个岛屿的形状，比如，下图中的'.'代表该位置是海水，'X'代表该位置是陆地，也就是岛屿的一部分。  \n................\n..XXXX....XXX...\n...XXXX....XX...\n.XXXX......XXX..\n........XXXXX...\n.........XXX....\n\n上下左右相邻的'X'形成一整座岛屿，请问，如果需要使得两座岛屿连接在一起，至少要将几个海水的位置填成陆地。  \n比如，上述的图中，只需要将如下三个位置（用'*'表示）填为陆地，就可以使得两座岛屿连接。  \n................\n..XXXX....XXX...\n...XXXX*...XX...\n.XXXX..**..XXX..\n........XXXXX...\n.........XXX...."
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个整数 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">M</span>。（<span class=\"katex math inline\">1≤N,M≤50</span>）  </p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行有 <span class=\"katex math inline\">M</span> 个字符。</p>\n</div>            </div>",
+      "text": "第一行包含两个整数 N 和 M。（1≤N,M≤50）  \n接下来 N 行，每行有 M 个字符。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表至少要填的海水位置的数量。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表至少要填的海水位置的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 16\r\n................\r\n..XXXX....XXX...\r\n...XXXX....XX...\r\n.XXXX......XXX..\r\n........XXXXX...\r\n.........XXX....</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 16\r\n................\r\n..XXXX....XXX...\r\n...XXXX....XX...\r\n.XXXX......XXX..\r\n........XXXXX...\r\n.........XXX....\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">深搜</span></span></p>\n</div>                </div>",
+      "text": "深搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 16\r\n................\r\n..XXXX....XXX...\r\n...XXXX....XX...\r\n.XXXX......XXX..\r\n........XXXXX...\r\n.........XXX....",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "430",
+    "通过人数": "218",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:54"
+}

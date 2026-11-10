@@ -1,0 +1,52 @@
+{
+  "id": "4842",
+  "title": "四大洋",
+  "tags": [
+    "蓝桥等考",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4842",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>四大洋，是地球上太平洋、大西洋、印度洋、北冰洋的总称。\n根据大洋面积从大到小依次为：</p>\n<ul><li><span class=\"katex math inline\">1</span>. 太平洋（<code>Pacific Ocean</code>）</li>\n<li><span class=\"katex math inline\">2</span>. 大西洋（<code>Atlantic Ocean</code>）</li>\n<li><span class=\"katex math inline\">3</span>. 印度洋（<code>Indian Ocean</code>）</li>\n<li><span class=\"katex math inline\">4</span>. 北冰洋（<code>Arctic Ocean</code>）</li>\n</ul><p>给定大洋面积的排列序号，输出对应大洋的英文名称。</p>\n</div>            </div>",
+      "text": "四大洋，是地球上太平洋、大西洋、印度洋、北冰洋的总称。\n根据大洋面积从大到小依次为：\n1. 太平洋（Pacific Ocean）\n2. 大西洋（Atlantic Ocean）\n3. 印度洋（Indian Ocean）\n4. 北冰洋（Arctic Ocean）\n给定大洋面积的排列序号，输出对应大洋的英文名称。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 <span class=\"katex math inline\">n</span>，表示大洋面积的排列序号。</p>\n<p>题目数据保证 <span class=\"katex math inline\">n</span> 的范围是 <span class=\"katex math inline\">1 \\sim 10</span>。</p>\n</div>            </div>",
+      "text": "输入一个正整数 n，表示大洋面积的排列序号。\n题目数据保证 n 的范围是 1 \\sim 10。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个字符串，表示对应大洋的英文名称(两个单词首字母都大写，其余字母全部小写，两个单词中间有一个空格)如果输入其它值，输出“<code>Error</code>”。</p>\n</div>            </div>",
+      "text": "一个字符串，表示对应大洋的英文名称(两个单词首字母都大写，其余字母全部小写，两个单词中间有一个空格)如果输入其它值，输出“Error”。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Atlantic Ocean</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\n                        \n                        \n                            输出\n                            Atlantic Ocean"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">分支</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2",
+      "output": "Atlantic Ocean"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "389",
+    "通过人数": "225",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:10"
+}

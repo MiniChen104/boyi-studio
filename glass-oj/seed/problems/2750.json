@@ -1,0 +1,63 @@
+{
+  "id": "2750",
+  "title": "游船上的乘客",
+  "tags": [
+    "动态规划",
+    "背包",
+    "搜索"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2750",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>秋高气爽，信奥班的同学们来到美丽的市区公园游玩。</p>\n<p>公园的小湖中飘荡着造型各异的各种游船，同学们都想乘船一览湖光山色的美景。</p>\n<p>信奥班一共来了 <span class=\"katex math inline\">n</span> 名同学，可惜的是一艘船乘坐不了这么多人。经过工作人员确认，需要有 <span class=\"katex math inline\">m</span> 名同学搭乘另一艘船。</p>\n<p>作为一个资深的 <span class=\"katex math inline\">OIer</span>，小 <span class=\"katex math inline\">A</span> 每时每刻都在思考各类编程模型；此情此景，小 <span class=\"katex math inline\">A</span> 想到了一个问题：如果已知每位同学的体重为 <span class=\"katex math inline\">a_i</span>，从 <span class=\"katex math inline\">n</span> 个同学中，先移除 <span class=\"katex math inline\">m</span> 名同学；<strong>剩余的同学中任意选择 <span class=\"katex math inline\">1</span> 人或 多人</strong>，这些同学最多能组合出多少种不同的<strong>体重和</strong>？</p>\n</div>            </div>",
+      "text": "秋高气爽，信奥班的同学们来到美丽的市区公园游玩。\n公园的小湖中飘荡着造型各异的各种游船，同学们都想乘船一览湖光山色的美景。\n信奥班一共来了 n 名同学，可惜的是一艘船乘坐不了这么多人。经过工作人员确认，需要有 m 名同学搭乘另一艘船。\n作为一个资深的 OIer，小 A 每时每刻都在思考各类编程模型；此情此景，小 A 想到了一个问题：如果已知每位同学的体重为 a_i，从 n 个同学中，先移除 m 名同学；剩余的同学中任意选择 1 人或 多人，这些同学最多能组合出多少种不同的体重和？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行为有两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>，<span class=\"katex math inline\">n</span> 表示同学总人数，<span class=\"katex math inline\">m</span>表示要移除的同学人数，用空格分隔。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行有 <span class=\"katex math inline\">n</span> 个正整数 <span class=\"katex math inline\">a_1, a_2, a_3,\\ldots , a_n</span>，表示每个同学的体重。</p>\n</div>            </div>",
+      "text": "第 1 行为有两个整数 n 和 m，n 表示同学总人数，m表示要移除的同学人数，用空格分隔。\n第 2 行有 n 个正整数 a_1, a_2, a_3,\\ldots , a_n，表示每个同学的体重。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>仅包括 <span class=\"katex math inline\">1</span> 个整数，表示移除 <span class=\"katex math inline\">m</span> 人后，剩余的同学任意组合，最多能组合出的不同体重和的数量。</p>\n</div>            </div>",
+      "text": "仅包括 1 个整数，表示移除 m 人后，剩余的同学任意组合，最多能组合出的不同体重和的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 1\r\n1 2 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 1\r\n1 2 2\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例说明】</p>\n<p><span class=\"katex math inline\">3</span> 位同学，移除一位体重为 <span class=\"katex math inline\">2</span> 的同学，剩余的两名同学体重分别为 <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">2</span>，可以组合出的体重和有 <span class=\"katex math inline\">1,2,3</span> 共 <span class=\"katex math inline\">3</span> 种不同的答案。</p>\n<p>【数据规模】</p>\n<p>对于 <span class=\"katex math inline\">20\\%</span> 的数据，<span class=\"katex math inline\">m=0</span>。</p>\n<p>对于 <span class=\"katex math inline\">50\\%</span> 的数据，<span class=\"katex math inline\">m\\leq 1</span>，<span class=\"katex math inline\">n\\leq 10</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">n\\leq 20</span>， <span class=\"katex math inline\">m\\leq 4</span>，<span class=\"katex math inline\">m &lt; n</span>，<span class=\"katex math inline\">a_i\\leq 100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例说明】\n3 位同学，移除一位体重为 2 的同学，剩余的两名同学体重分别为 1 和 2，可以组合出的体重和有 1,2,3 共 3 种不同的答案。\n【数据规模】\n对于 20\\% 的数据，m=0。\n对于 50\\% 的数据，m\\leq 1，n\\leq 10。\n对于 100\\% 的数据，n\\leq 20， m\\leq 4，m < n，a_i\\leq 100。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>东方博宜OJ</p>\n</div>                </div>",
+      "text": "东方博宜OJ"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span><span class=\"label label-warning\">背包</span><span class=\"label label-info\">搜索</span></span></p>\n</div>                </div>",
+      "text": "动态规划背包搜索"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 1\r\n1 2 2",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "290",
+    "通过人数": "114",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:29"
+}

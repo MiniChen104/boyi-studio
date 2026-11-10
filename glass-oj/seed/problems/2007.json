@@ -1,0 +1,63 @@
+{
+  "id": "2007",
+  "title": "半质数",
+  "tags": [
+    "市赛",
+    "筛素数",
+    "构造法"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2007",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>上完体育课，小 T 同学去校园超市买了瓶水，喝完后就直接去机房上编程课了，给创 新实验班上编程课的 Q 教练曾经培养出过世界冠军金斌大神，这可是小 T 和他的小伙伴们 的偶象啊！小 T 同学从小学起就一直在金斌学长亲手开发的在线评测系统上提交程序，一 想起小学编程课眼前立刻浮现出 Q 教练的亲切笑容，想起自己初学编程时有些单词如 continue 等总是记不住，每当遇到这种情况 Q 教练总会不厌其烦地拼给自己听。</p>\n<p>自从进入 初三后小 T 已经有很久没写程序了，也很久没见到和蔼可亲的 Q 教练了，今天这节课来得 太及时了，想到这里小 T 不由加快了脚步，走进机房，只见一阵凉风拍面而来，瞬间让人 神清气爽，原来 Q 教练知道我们上一节是体育课，早开好了空调在等我们了。</p>\n<p>今天的编程 课 Q 教练一上来就抛给了大家一个高端大气的问题：编程寻找给定范围内的半质数。半质数小 T 还是第一次听说，这个问题明显比找质数档次高多了！ 质数的定义小 T 早在小学 就知道了，质数又称素数，指在大于 <span class=\"katex math inline\">1</span> 的自然数中，只能被 <span class=\"katex math inline\">1</span> 和本身整除的数， 也可定义为只有 <span class=\"katex math inline\">1</span> 和本身两个因数的数。</p>\n<p>而半质数的定义是这样的：若对于一个正整数 <span class=\"katex math inline\">N</span>，恰好能够分解成两个质数的乘积，它就被称为半质数。比如，<span class=\"katex math inline\">4=2 \\times 2</span>，<span class=\"katex math inline\">15=3 \\times 5</span> 都是半质数，<span class=\"katex math inline\">12</span> 不是半质数，它的质因子分解式为 <span class=\"katex math inline\">12=2 \\times 2 \\times 3</span>，分解出的质数共有 <span class=\"katex math inline\">3</span> 个，其中有 <span class=\"katex math inline\">2</span> 个质数 <span class=\"katex math inline\">2</span>， <span class=\"katex math inline\">1</span> 个质数 <span class=\"katex math inline\">3</span>。</p>\n</div>            </div>",
+      "text": "上完体育课，小 T 同学去校园超市买了瓶水，喝完后就直接去机房上编程课了，给创 新实验班上编程课的 Q 教练曾经培养出过世界冠军金斌大神，这可是小 T 和他的小伙伴们 的偶象啊！小 T 同学从小学起就一直在金斌学长亲手开发的在线评测系统上提交程序，一 想起小学编程课眼前立刻浮现出 Q 教练的亲切笑容，想起自己初学编程时有些单词如 continue 等总是记不住，每当遇到这种情况 Q 教练总会不厌其烦地拼给自己听。\n自从进入 初三后小 T 已经有很久没写程序了，也很久没见到和蔼可亲的 Q 教练了，今天这节课来得 太及时了，想到这里小 T 不由加快了脚步，走进机房，只见一阵凉风拍面而来，瞬间让人 神清气爽，原来 Q 教练知道我们上一节是体育课，早开好了空调在等我们了。\n今天的编程 课 Q 教练一上来就抛给了大家一个高端大气的问题：编程寻找给定范围内的半质数。半质数小 T 还是第一次听说，这个问题明显比找质数档次高多了！ 质数的定义小 T 早在小学 就知道了，质数又称素数，指在大于 1 的自然数中，只能被 1 和本身整除的数， 也可定义为只有 1 和本身两个因数的数。\n而半质数的定义是这样的：若对于一个正整数 N，恰好能够分解成两个质数的乘积，它就被称为半质数。比如，4=2 \\times 2，15=3 \\times 5 都是半质数，12 不是半质数，它的质因子分解式为 12=2 \\times 2 \\times 3，分解出的质数共有 3 个，其中有 2 个质数 2， 1 个质数 3。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据仅有一行包含两个用空格隔开的正整数 <span class=\"katex math inline\">S</span> 和 <span class=\"katex math inline\">E</span>，其中 <span class=\"katex math inline\">2≤S≤E &lt; 5000000</span> 。</p>\n</div>            </div>",
+      "text": "输入数据仅有一行包含两个用空格隔开的正整数 S 和 E，其中 2≤S≤E < 5000000 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出数据仅有一行包含一个整数表示在 <span class=\"katex math inline\">S</span> 到 <span class=\"katex math inline\">E</span> 之间共有多少个半质数。</p>\n</div>            </div>",
+      "text": "输出数据仅有一行包含一个整数表示在 S 到 E 之间共有多少个半质数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 26</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 26\n                        \n                        \n                            输出\n                            10"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<p>在 <span class=\"katex math inline\">4</span> 到 <span class=\"katex math inline\">26</span> 之间共有 <span class=\"katex math inline\">10</span> 个半质数，分别是 <span class=\"katex math inline\">4</span>, <span class=\"katex math inline\">6</span>, <span class=\"katex math inline\">9</span>, <span class=\"katex math inline\">10</span>, <span class=\"katex math inline\">14</span>, <span class=\"katex math inline\">15</span>, <span class=\"katex math inline\">21</span>, <span class=\"katex math inline\">22</span>, <span class=\"katex math inline\">25</span>, <span class=\"katex math inline\">26</span> 。</p>\n<h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">30\\%</span> 的数据满足：<span class=\"katex math inline\">2≤S≤E &lt; 500</span>；</p>\n<p><span class=\"katex math inline\">60\\%</span> 的数据满足：<span class=\"katex math inline\">2≤S≤E &lt; 50000</span>；</p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据满足：<span class=\"katex math inline\">2≤S≤E &lt; 5000000</span>。</p>\n<h4>【来源】</h4>\n<p>2014年常州市赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n在 4 到 26 之间共有 10 个半质数，分别是 4, 6, 9, 10, 14, 15, 21, 22, 25, 26 。\n【数据范围】\n30\\% 的数据满足：2≤S≤E < 500；\n60\\% 的数据满足：2≤S≤E < 50000；\n100\\% 的数据满足：2≤S≤E < 5000000。\n【来源】\n2014年常州市赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2014年常州市赛</p>\n</div>                </div>",
+      "text": "2014年常州市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">筛素数</span><span class=\"label label-info\">构造法</span></span></p>\n</div>                </div>",
+      "text": "市赛筛素数构造法"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 26",
+      "output": "10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "4577",
+    "通过人数": "1762",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:14"
+}

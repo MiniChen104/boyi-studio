@@ -1,0 +1,66 @@
+{
+  "id": "1853",
+  "title": "黑色星期五",
+  "tags": [
+    "蓝桥杯",
+    "模拟"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1853",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有些西方人比较迷信，如果某个月的 <span class=\"katex math inline\">13</span> 号正好是星期五，他们就会觉得不太吉利，用古人的说法，就是“诸事不宜”。请你编写一个程序，统计出在某个特定的年份中，出现了多少次既是 <span class=\"katex math inline\">13</span> 号又是星期五的情形，以帮助你的迷信朋友解决难题。</p>\n<p>说明：</p>\n<ol><li><p>一年有 <span class=\"katex math inline\">365</span> 天，闰年有 <span class=\"katex math inline\">366</span> 天，所谓闰年，即能被 <span class=\"katex math inline\">4</span> 整除且不能被 <span class=\"katex math inline\">100</span> 整除的年份，或是既能被 <span class=\"katex math inline\">100</span> 整除也能被 <span class=\"katex math inline\">400</span> 整除的年份；</p>\n</li>\n<li><p>已知 <span class=\"katex math inline\">1998</span> 年 <span class=\"katex math inline\">1</span> 月 <span class=\"katex math inline\">1</span> 日是星期四，用户输入的年份肯定大于或等于 <span class=\"katex math inline\">1998</span> 年。</p>\n</li>\n</ol></div>            </div>",
+      "text": "有些西方人比较迷信，如果某个月的 13 号正好是星期五，他们就会觉得不太吉利，用古人的说法，就是“诸事不宜”。请你编写一个程序，统计出在某个特定的年份中，出现了多少次既是 13 号又是星期五的情形，以帮助你的迷信朋友解决难题。\n说明：\n一年有 365 天，闰年有 366 天，所谓闰年，即能被 4 整除且不能被 100 整除的年份，或是既能被 100 整除也能被 400 整除的年份；\n\n已知 1998 年 1 月 1 日是星期四，用户输入的年份肯定大于或等于 1998 年。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一行，即某个特定的四位数的年份（大于或等于 <span class=\"katex math inline\">1998</span> 年）。</p>\n</div>            </div>",
+      "text": "输入只有一行，即某个特定的四位数的年份（大于或等于 1998 年）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，即在这一年中，出现了多少次既是 <span class=\"katex math inline\">13</span> 号又是星期五的情形。</p>\n</div>            </div>",
+      "text": "输出只有一行，即在这一年中，出现了多少次既是 13 号又是星期五的情形。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1998</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4096</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1998\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                4096\n                            \n                            \n                                输出\n                                3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】</p>\n<p>蓝桥杯算法训练</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】\n蓝桥杯算法训练"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 模拟</p>\n</div>                </div>",
+      "text": "蓝桥杯 模拟"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">模拟</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1998",
+      "output": "3"
+    },
+    {
+      "input": "4096",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1581",
+    "通过人数": "750",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:04"
+}

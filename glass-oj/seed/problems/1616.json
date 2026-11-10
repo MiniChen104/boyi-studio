@@ -1,0 +1,60 @@
+{
+  "id": "1616",
+  "title": "小明购书",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1616",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明和小华去帮班上的同学购买课外书，小明带了 <span class=\"katex math inline\">x</span> 元（ <span class=\"katex math inline\">x</span> 是一个四位整数），小明问小华带了多少钱，小华说自己带的钱正好是小明带的前把前两位和后两位直接换位置那么多，请你编程帮助小华计算一下，他带了多少钱？</p>\n<p>比如，假设小明带了 <span class=\"katex math inline\">1298</span> 元，那么小华带的金额就是 <span class=\"katex math inline\">9812</span> 元。</p>\n<p>再比如，假设小明带了 <span class=\"katex math inline\">1208</span> 元，那么小华带的金额就是<span class=\"katex math inline\">812</span> 元。</p>\n</div>            </div>",
+      "text": "小明和小华去帮班上的同学购买课外书，小明带了 x 元（ x 是一个四位整数），小明问小华带了多少钱，小华说自己带的钱正好是小明带的前把前两位和后两位直接换位置那么多，请你编程帮助小华计算一下，他带了多少钱？\n比如，假设小明带了 1298 元，那么小华带的金额就是 9812 元。\n再比如，假设小明带了 1208 元，那么小华带的金额就是812 元。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">x</span> 代表小明的带的金额，<span class=\"katex math inline\">x</span> 是一个四位的整数。</p>\n</div>            </div>",
+      "text": "一个整数 x 代表小明的带的金额，x 是一个四位的整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小华带的金额。</p>\n</div>            </div>",
+      "text": "小华带的金额。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1298</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9812</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1208</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>812</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1298\n                        \n                        \n                            输出\n                            9812\n                        \n\n                                                    \n                                输入\n                                1208\n                            \n                            \n                                输出\n                                812"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1298",
+      "output": "9812"
+    },
+    {
+      "input": "1208",
+      "output": "812"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "5574",
+    "通过人数": "3826",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:53"
+}

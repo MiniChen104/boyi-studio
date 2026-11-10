@@ -1,0 +1,69 @@
+{
+  "id": "1336",
+  "title": "分数计算",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1336",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入一个分数算式，为 <span class=\"katex math inline\">2</span> 个分数做加法或者减法，请输出分数算式的结果，结果也用分数表达，且约分到最简形式。（请注意：做减法可能得到负的分数，如果是负数要输出负号 <code>-</code> ，如 <code>1/15-4/15</code> 结果为 <code>-1/5</code> ）（5.1.76）</p>\n</div>            </div>",
+      "text": "从键盘读入一个分数算式，为 2 个分数做加法或者减法，请输出分数算式的结果，结果也用分数表达，且约分到最简形式。（请注意：做减法可能得到负的分数，如果是负数要输出负号 - ，如 1/15-4/15 结果为 -1/5 ）（5.1.76）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>分数表达式；分数表达式中，每个分数的分子和分母都是正整数（不超过 <span class=\"katex math inline\">1000</span> ），两个分数中的运算符，可能是加号，也可能是减号，且分数表达式不含空格。</p>\n</div>            </div>",
+      "text": "分数表达式；分数表达式中，每个分数的分子和分母都是正整数（不超过 1000 ），两个分数中的运算符，可能是加号，也可能是减号，且分数表达式不含空格。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>分数表达式计算的结果。</p>\n</div>            </div>",
+      "text": "分数表达式计算的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1/12+5/12</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1/2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1/2+1/2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1/2-1/2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            1/12+5/12\n                        \n                        \n                            输出\n                            1/2\n                        \n\n                                                    \n                                输入\n                                1/2+1/2\n                            \n                            \n                                输出\n                                1\n                            \n                        \n                                                    \n                                输入\n                                1/2-1/2\n                            \n                            \n                                输出\n                                0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>注意考虑特殊情况，如：<code>1/2+1/2=1</code>，<code>1/2-1/2=0</code>，这些情况下结果不需要表现为分数形式。</p>\n</div>\n\n                    \n                </div>",
+      "text": "注意考虑特殊情况，如：1/2+1/2=1，1/2-1/2=0，这些情况下结果不需要表现为分数形式。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1/12+5/12",
+      "output": "1/2"
+    },
+    {
+      "input": "1/2+1/2",
+      "output": "1"
+    },
+    {
+      "input": "1/2-1/2",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "5577",
+    "通过人数": "2313",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:18:02"
+}

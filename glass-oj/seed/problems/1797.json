@@ -1,0 +1,62 @@
+{
+  "id": "1797",
+  "title": "排座椅",
+  "tags": [
+    "noip复赛",
+    "贪心"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1797",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>上课的时候总会有一些同学和前后左右的人交头接耳，这是令小学班主任十分头疼的一件事情。不过，班主任小雪发现了一些有趣的现象，当同学们的座次确定下来之后，只有有限的 <span class=\"katex math inline\">D</span> 对同学上课时会交头接耳。</p>\n<p>同学们在教室中坐成了 <span class=\"katex math inline\">M</span> 行 <span class=\"katex math inline\">N</span> 列，坐在第 <span class=\"katex math inline\">i</span> 行第 <span class=\"katex math inline\">j</span> 列的同学的位置是 <span class=\"katex math inline\">(i,j)</span>，为了方便同学们进出，在教室中设置了 <span class=\"katex math inline\">K</span> 条横向的通道，<span class=\"katex math inline\">L</span> 条纵向的通道。</p>\n<p>于是，聪明的小雪想到了一个办法，或许可以减少上课时学生交头接耳的问题：她打算重新摆放桌椅，改变同学们桌椅间通道的位置，因为如果一条通道隔开了 <span class=\"katex math inline\">2</span> 个会交头接耳的同学，那么他们就不会交头接耳了。</p>\n<p>请你帮忙给小雪编写一个程序，给出最好的通道划分方案。在该方案下，上课时交头接耳的学生的对数最少。</p>\n</div>            </div>",
+      "text": "上课的时候总会有一些同学和前后左右的人交头接耳，这是令小学班主任十分头疼的一件事情。不过，班主任小雪发现了一些有趣的现象，当同学们的座次确定下来之后，只有有限的 D 对同学上课时会交头接耳。\n同学们在教室中坐成了 M 行 N 列，坐在第 i 行第 j 列的同学的位置是 (i,j)，为了方便同学们进出，在教室中设置了 K 条横向的通道，L 条纵向的通道。\n于是，聪明的小雪想到了一个办法，或许可以减少上课时学生交头接耳的问题：她打算重新摆放桌椅，改变同学们桌椅间通道的位置，因为如果一条通道隔开了 2 个会交头接耳的同学，那么他们就不会交头接耳了。\n请你帮忙给小雪编写一个程序，给出最好的通道划分方案。在该方案下，上课时交头接耳的学生的对数最少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，有 <span class=\"katex math inline\">5</span> 个用空格隔开的整数，分别是 <span class=\"katex math inline\">M,N,K,L,D(2 \\le N,M \\le 1000,0 \\le K &lt; M,0 \\le L &lt; N,D \\le 2000)</span>。</p>\n<p>接下来的 <span class=\"katex math inline\">D</span> 行，每行有 <span class=\"katex math inline\">4</span> 个用空格隔开的整数。第 <span class=\"katex math inline\">i</span> 行的 <span class=\"katex math inline\">4</span> 个整数 <span class=\"katex math inline\">X_i,Y_i,P_i,Q_i</span>，表示坐在位置 <span class=\"katex math inline\">(X_i,Y_i)</span> 与 <span class=\"katex math inline\">(P_i,Q_i)</span> 的两个同学会交头接耳（输入保证他们前后相邻或者左右相邻）。</p>\n<p>输入数据保证最优方案的唯一性。</p>\n</div>            </div>",
+      "text": "第一行，有 5 个用空格隔开的整数，分别是 M,N,K,L,D(2 \\le N,M \\le 1000,0 \\le K < M,0 \\le L < N,D \\le 2000)。\n接下来的 D 行，每行有 4 个用空格隔开的整数。第 i 行的 4 个整数 X_i,Y_i,P_i,Q_i，表示坐在位置 (X_i,Y_i) 与 (P_i,Q_i) 的两个同学会交头接耳（输入保证他们前后相邻或者左右相邻）。\n输入数据保证最优方案的唯一性。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共两行。<br>\n第一行包含 <span class=\"katex math inline\">K</span> 个整数 <span class=\"katex math inline\">a_1,a_2,\\ldots,a_K</span>，表示第 <span class=\"katex math inline\">a_1</span> 行和 <span class=\"katex math inline\">a_1+1</span> 行之间、第 <span class=\"katex math inline\">a_2</span> 行和 <span class=\"katex math inline\">a_2+1</span> 行之间、…、第 <span class=\"katex math inline\">a_K</span> 行和第 <span class=\"katex math inline\">a_K+1</span> 行之间要开辟通道，其中 <span class=\"katex math inline\">a_i</span> &lt; <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">i+1</span></sub>，每两个整数之间用空格隔开（行尾没有空格）。</p>\n<p>第二行包含 <span class=\"katex math inline\">L</span> 个整数 <span class=\"katex math inline\">b_1,b_2,\\ldots,b_L</span>，表示第 <span class=\"katex math inline\">b_1</span> 列和 <span class=\"katex math inline\">b_1+1</span> 列之间、第 <span class=\"katex math inline\">b_2</span> 列和 <span class=\"katex math inline\">b_2+1</span> 列之间、…、第 <span class=\"katex math inline\">b_L</span> 列和第 <span class=\"katex math inline\">b_L+1</span> 列之间要开辟通道，其中<span class=\"katex math inline\">b_i</span> &lt; <span class=\"katex math inline\">b</span><sub><span class=\"katex math inline\">i+1</span></sub>，每两个整数之间用空格隔开（列尾没有空格）。</p>\n</div>            </div>",
+      "text": "共两行。\n第一行包含 K 个整数 a_1,a_2,\\ldots,a_K，表示第 a_1 行和 a_1+1 行之间、第 a_2 行和 a_2+1 行之间、…、第 a_K 行和第 a_K+1 行之间要开辟通道，其中 a_i < ai+1，每两个整数之间用空格隔开（行尾没有空格）。\n第二行包含 L 个整数 b_1,b_2,\\ldots,b_L，表示第 b_1 列和 b_1+1 列之间、第 b_2 列和 b_2+1 列之间、…、第 b_L 列和第 b_L+1 列之间要开辟通道，其中b_i < bi+1，每两个整数之间用空格隔开（列尾没有空格）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 5 1 2 3\r\n4 2 4 3\r\n2 3 3 3\r\n2 5 2 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2\r\n2 4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 5 1 2 3\r\n4 2 4 3\r\n2 3 3 3\r\n2 5 2 4\n                        \n                        \n                            输出\n                            2\r\n2 4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><img src=\"https://assets.boyi.local/2bf8610f1c956dc0330f93c7.png\"></p>\n<p>上图中用符号*、※、+标出了 <span class=\"katex math inline\">3</span> 对会交头接耳的学生的位置，图中 <span class=\"katex math inline\">3</span> 条粗线的位置表示通道，图示的通道划分方案是唯一的最佳方案。</p>\n<p>【来源】</p>\n<p>2008 年普及组第二题</p>\n</div>\n\n                    \n                </div>",
+      "text": "上图中用符号*、※、+标出了 3 对会交头接耳的学生的位置，图中 3 条粗线的位置表示通道，图示的通道划分方案是唯一的最佳方案。\n【来源】\n2008 年普及组第二题"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2008 年普及组第二题</p>\n</div>                </div>",
+      "text": "2008 年普及组第二题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span><span class=\"label label-warning\">贪心</span></span></p>\n</div>                </div>",
+      "text": "noip复赛贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 5 1 2 3\r\n4 2 4 3\r\n2 3 3 3\r\n2 5 2 4",
+      "output": "2\r\n2 4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "693",
+    "通过人数": "411",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:24:19"
+}

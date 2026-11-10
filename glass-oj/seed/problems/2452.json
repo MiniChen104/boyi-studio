@@ -1,0 +1,57 @@
+{
+  "id": "2452",
+  "title": "最长子区间",
+  "tags": [
+    "前缀和",
+    "数学"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2452",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定 <span class=\"katex math inline\">n</span> 个整数，在这 <span class=\"katex math inline\">n</span> 个整数中任意的取连续区间中的数字求和，请问：满足区间和是 <span class=\"katex math inline\">7</span> 的倍数的最长的区间长度是多少？</p>\n</div>            </div>",
+      "text": "给定 n 个整数，在这 n 个整数中任意的取连续区间中的数字求和，请问：满足区间和是 7 的倍数的最长的区间长度是多少？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第<span class=\"katex math inline\">1</span>行输入一个整数 <span class=\"katex math inline\">N</span>（<span class=\"katex math inline\">1≤N≤50,000</span>）</p>\n<p>第<span class=\"katex math inline\">2</span>行输入<span class=\"katex math inline\">n</span>个整数（整数范围在 <span class=\"katex math inline\">0…1,000,000</span> 之间）</p>\n</div>            </div>",
+      "text": "第1行输入一个整数 N（1≤N≤50,000）\n第2行输入n个整数（整数范围在 0…1,000,000 之间）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出满足题意的最长子区间的长度，如果找不到符合题意的子区间，请输出 <code>0</code>。</p>\n</div>            </div>",
+      "text": "输出满足题意的最长子区间的长度，如果找不到符合题意的子区间，请输出 0。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7\r\n3\r\n5\r\n1\r\n6\r\n2\r\n14\r\n10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\r\n3\r\n5\r\n1\r\n6\r\n2\r\n14\r\n10\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>样例解释：</strong>  </p>\n<p>5+1+6+2+14 = 28。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释：  \n5+1+6+2+14 = 28。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">前缀和</span><span class=\"label label-warning\">数学</span></span></p>\n</div>                </div>",
+      "text": "前缀和数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7\r\n3\r\n5\r\n1\r\n6\r\n2\r\n14\r\n10",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1886",
+    "通过人数": "638",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:30"
+}

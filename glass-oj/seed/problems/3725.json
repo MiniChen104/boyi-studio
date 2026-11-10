@@ -1,0 +1,65 @@
+{
+  "id": "3725",
+  "title": "积木(block)",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3725",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 X 在地上玩积木，每块积木都是一个 <span class=\"katex math inline\">1 \\times 1 \\times 1</span> 的正方体。地面可以看成一个 <span class=\"katex math inline\">n \\times m</span> 的网格，其中每一小格内都整齐地从下到上堆着若干块积木。其中第 <span class=\"katex math inline\">i</span> 行第 <span class=\"katex math inline\">j</span> 列中有 <span class=\"katex math inline\">h[i][j]</span>块积木。 </p>\n<p>现在小 X 想要拿走一些积木，使得剩下来的积木组成一个正方体，正方体指的是长宽高都相同的长方体。 </p>\n<p>小 X 想问你他最少拿掉多少块积木才能使得最后剩下来的积木组成一个正方体。</p>\n</div>            </div>",
+      "text": "小 X 在地上玩积木，每块积木都是一个 1 \\times 1 \\times 1 的正方体。地面可以看成一个 n \\times m 的网格，其中每一小格内都整齐地从下到上堆着若干块积木。其中第 i 行第 j 列中有 h[i][j]块积木。 \n现在小 X 想要拿走一些积木，使得剩下来的积木组成一个正方体，正方体指的是长宽高都相同的长方体。 \n小 X 想问你他最少拿掉多少块积木才能使得最后剩下来的积木组成一个正方体。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，<span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> 表示地面的大小。 </p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">m</span> 个非负整数。第 <span class=\"katex math inline\">i</span> 行第 <span class=\"katex math inline\">j</span> 个数表示 <span class=\"katex math inline\">h[i][j]</span>。</p>\n</div>            </div>",
+      "text": "第一行，2 个整数 n 和 m 表示地面的大小。 \n接下来 n 行，每行 m 个非负整数。第 i 行第 j 个数表示 h[i][j]。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数表示答案。</p>\n</div>            </div>",
+      "text": "一行一个整数表示答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3 \r\n2 2 1 \r\n3 2 2 \r\n3 1 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 5 \r\n4 4 3 4 3 \r\n3 4 3 3 3 \r\n3 3 1 4 4 \r\n3 4 4 3 3 \r\n4 3 4 4 4</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>77</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3 \r\n2 2 1 \r\n3 2 2 \r\n3 1 2\n                        \n                        \n                            输出\n                            10\n                        \n\n                                                    \n                                输入\n                                5 5 \r\n4 4 3 4 3 \r\n3 4 3 3 3 \r\n3 3 1 4 4 \r\n3 4 4 3 3 \r\n4 3 4 4 4\n                            \n                            \n                                输出\n                                77"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例1解释】</p>\n<p>拿完之后每个位置的积木数为： </p>\n<p>2 2 0 \n2 2 0 \n0 0 0 </p>\n<p>一共拿掉<span class=\"katex math inline\">(2-2)+(2-2)+(1-0)+(3-2)+(2-2)+(2-0)+(3-0)+(1-0)+(2-0)=1+1+2+3+1+2=10 </span>块积木。</p>\n<p>【数据范围与解释】</p>\n<p>对于所有测试点 <span class=\"katex math inline\"> 1 \\leq n,m \\leq 1000 ,0 \\leq h[i][j] \\leq 1000 </span></p>\n<p>对于测试点 <span class=\"katex math inline\">1-3</span> ：<span class=\"katex math inline\"> 1 \\leq n,m \\leq 50 </span></p>\n<p>对于测试点 <span class=\"katex math inline\">4-6</span> ：<span class=\"katex math inline\"> 1 \\leq n,m \\leq 200 </span></p>\n<p>对于测试点 <span class=\"katex math inline\">7-9</span> ：<span class=\"katex math inline\"> 1 \\leq n,m \\leq 1000,0 \\leq h[i][j] \\leq 20 </span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1解释】\n拿完之后每个位置的积木数为： \n2 2 0 \n2 2 0 \n0 0 0 \n一共拿掉(2-2)+(2-2)+(1-0)+(3-2)+(2-2)+(2-0)+(3-0)+(1-0)+(2-0)=1+1+2+3+1+2=10 块积木。\n【数据范围与解释】\n对于所有测试点  1 \\leq n,m \\leq 1000 ,0 \\leq h[i][j] \\leq 1000 \n对于测试点 1-3 ： 1 \\leq n,m \\leq 50 \n对于测试点 4-6 ： 1 \\leq n,m \\leq 200 \n对于测试点 7-9 ： 1 \\leq n,m \\leq 1000,0 \\leq h[i][j] \\leq 20"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>23年常州市赛T7</p>\n</div>                </div>",
+      "text": "23年常州市赛T7"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3 \r\n2 2 1 \r\n3 2 2 \r\n3 1 2",
+      "output": "10"
+    },
+    {
+      "input": "5 5 \r\n4 4 3 4 3 \r\n3 4 3 3 3 \r\n3 3 1 4 4 \r\n3 4 4 3 3 \r\n4 3 4 4 4",
+      "output": "77"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "18",
+    "通过人数": "12",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:35:56"
+}

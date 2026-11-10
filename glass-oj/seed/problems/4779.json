@@ -1,0 +1,54 @@
+{
+  "id": "4779",
+  "title": "区间里的哈沙德数",
+  "tags": [
+    "蓝桥等考",
+    "循环",
+    "自定义函数",
+    "短除法"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4779",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>哈沙德数（<code>Harshad Number</code>），是指能够被其各个数位上的数字之和整除的自然数。</p>\n<p>例如：<span class=\"katex math inline\">12</span> 是哈沙德数，因为其各个数位上的数字之和为<span class=\"katex math inline\">1+2=3</span>，<span class=\"katex math inline\">12</span> 能被 <span class=\"katex math inline\">3</span> 整除。</p>\n<p>现在给定两个正整数 <span class=\"katex math inline\">m</span>，<span class=\"katex math inline\">n</span>，输出 <span class=\"katex math inline\">m</span> 到 <span class=\"katex math inline\">n</span> 之间（包含 <span class=\"katex math inline\">m</span>、<span class=\"katex math inline\">n</span>）所有的哈沙德数。</p>\n</div>            </div>",
+      "text": "哈沙德数（Harshad Number），是指能够被其各个数位上的数字之和整除的自然数。\n例如：12 是哈沙德数，因为其各个数位上的数字之和为1+2=3，12 能被 3 整除。\n现在给定两个正整数 m，n，输出 m 到 n 之间（包含 m、n）所有的哈沙德数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含两个正整数 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span>，分别表示范围的起始值和结束值。</p>\n</div>            </div>",
+      "text": "输入包含两个正整数 m 和 n，分别表示范围的起始值和结束值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含 <span class=\"katex math inline\">m</span> 到 <span class=\"katex math inline\">n</span> 之间（包含 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span>）所有的哈沙德数，每个数之间用一个空格分隔。如果没有满足条件的哈沙德数，则输出 <code>-1</code>。</p>\n</div>            </div>",
+      "text": "输出一行，包含 m 到 n 之间（包含 m 和 n）所有的哈沙德数，每个数之间用一个空格分隔。如果没有满足条件的哈沙德数，则输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>9 20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9 10 12 18 20</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            9 20\n                        \n                        \n                            输出\n                            9 10 12 18 20"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">循环</span><span class=\"label label-info\">自定义函数</span><span class=\"label label-danger\">短除法</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考循环自定义函数短除法"
+    }
+  ],
+  "samples": [
+    {
+      "input": "9 20",
+      "output": "9 10 12 18 20"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "254",
+    "通过人数": "149",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:06"
+}

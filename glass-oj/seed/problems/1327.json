@@ -1,0 +1,56 @@
+{
+  "id": "1327",
+  "title": "鲜花方阵",
+  "tags": [
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1327",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>光明小学艺术节快要来了，老师要求同学们布置一个 <span class=\"katex math inline\">n \\times n</span> 的花盆方阵（ <span class=\"katex math inline\">n</span> 是奇数， <span class=\"katex math inline\">n \\le 9</span> ）；<br>\n如果 <span class=\"katex math inline\">n=5</span> ，那么方阵的形状如下图所示：  </p>\n<p><img src=\"https://assets.boyi.local/48ed4b3008ba1ce5d1f55fd1.jpg\"></p>\n<p>如果 <span class=\"katex math inline\">n=7</span> ，那么方阵的形状如下图所示：<br><img src=\"https://assets.boyi.local/e97391bb25ef45ac1f61e13f.jpg\"><br>\n请读入一个整数 <span class=\"katex math inline\">n</span> （奇数），输出如图所示的方阵，为了方便输出，用 <span class=\"katex math inline\">1</span> 表示黄色的花盆，<span class=\"katex math inline\">0</span> 表示红色花盆，输出时数字场宽设置为<span class=\"katex math inline\">3</span> 。<br>\n例如： <span class=\"katex math inline\">n=5</span> ，那么实际要输出的方阵的结果如下：<br><img src=\"https://assets.boyi.local/a988f54b72711a2037fe8052.jpg\"><br>\n<span class=\"katex math inline\">n=7</span> ，那么实际要输出的方阵的结果如下：<br><img src=\"https://assets.boyi.local/0795123c2cc882158a548903.jpg\"><br>\n（ <span class=\"katex math inline\">4.2.1</span> ）</p>\n</div>            </div>",
+      "text": "光明小学艺术节快要来了，老师要求同学们布置一个 n \\times n 的花盆方阵（ n 是奇数， n \\le 9 ）；\n如果 n=5 ，那么方阵的形状如下图所示：  \n\n如果 n=7 ，那么方阵的形状如下图所示：\n请读入一个整数 n （奇数），输出如图所示的方阵，为了方便输出，用 1 表示黄色的花盆，0 表示红色花盆，输出时数字场宽设置为3 。\n例如： n=5 ，那么实际要输出的方阵的结果如下：\nn=7 ，那么实际要输出的方阵的结果如下：\n（ 4.2.1 ）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> </p>\n</div>            </div>",
+      "text": "一个整数 n"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如图所示的图形</p>\n</div>            </div>",
+      "text": "如图所示的图形"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>  1  1  0  1  1\r\n  1  0  1  0  1\r\n  0  1  0  1  0\r\n  1  0  1  0  1\r\n  1  1  0  1  1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                              1  1  0  1  1\r\n  1  0  1  0  1\r\n  0  1  0  1  0\r\n  1  0  1  0  1\r\n  1  1  0  1  1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二维数组</p>\n</div>                </div>",
+      "text": "二维数组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "  1  1  0  1  1\r\n  1  0  1  0  1\r\n  0  1  0  1  0\r\n  1  0  1  0  1\r\n  1  1  0  1  1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "4621",
+    "通过人数": "2459",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:55"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "1444",
+  "title": "最小拐弯路径",
+  "tags": [
+    "广搜"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1444",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>农夫约翰在农场工作了一天，感觉比较累，准备开车回家。约翰在比较累的时候，喜欢走直路，不喜欢拐弯，哪怕走少拐弯的路回家更远，约翰也想走直路（好任性的约翰!）。请你从约翰的出发地到目的地找一条路，使得约翰回家拐弯数量最少。</p>\n</div>            </div>",
+      "text": "农夫约翰在农场工作了一天，感觉比较累，准备开车回家。约翰在比较累的时候，喜欢走直路，不喜欢拐弯，哪怕走少拐弯的路回家更远，约翰也想走直路（好任性的约翰!）。请你从约翰的出发地到目的地找一条路，使得约翰回家拐弯数量最少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>（<span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> 都是 <span class=\"katex math inline\">1000</span> 以内的整数），代表地图的大小。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行，每行有 <span class=\"katex math inline\">m</span> 个数，其中能够通行的点用 <span class=\"katex math inline\">0</span> 表示，不能通行的点用 <span class=\"katex math inline\">1</span> 表示。</p>\n<p>再接下来 <span class=\"katex math inline\">1</span> 行，有 <span class=\"katex math inline\">4</span> 个整数，<span class=\"katex math inline\">s_1</span>、<span class=\"katex math inline\">s_2</span>、<span class=\"katex math inline\">e_1</span>、<span class=\"katex math inline\">e_2</span>，<span class=\"katex math inline\">s_1</span> 和 <span class=\"katex math inline\">s_2</span> 表示出发点的坐标，<span class=\"katex math inline\">e_1</span> 和 <span class=\"katex math inline\">e_2</span> 表示目的地的坐标。（本题测试数据保证起点和终点不是同一个点，且起点和终点一定可以走）</p>\n</div>            </div>",
+      "text": "第一行两个整数 n 和 m（n 和 m 都是 1000 以内的整数），代表地图的大小。\n接下来的 n 行，每行有 m 个数，其中能够通行的点用 0 表示，不能通行的点用 1 表示。\n再接下来 1 行，有 4 个整数，s_1、s_2、e_1、e_2，s_1 和 s_2 表示出发点的坐标，e_1 和 e_2 表示目的地的坐标。（本题测试数据保证起点和终点不是同一个点，且起点和终点一定可以走）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>约翰从出发点到目的地最少要拐弯的数量，本题所有数据都确认从出发点到目的地是有路径可达的。</p>\n</div>            </div>",
+      "text": "约翰从出发点到目的地最少要拐弯的数量，本题所有数据都确认从出发点到目的地是有路径可达的。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 7\r\n1 0 0 0 0 1 0\r\n0 0 1 0 1 0 0\r\n0 0 0 0 1 0 1\r\n0 1 1 0 0 0 0\r\n0 0 0 0 1 1 0\r\n1 3 1 7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2 3\r\n0 0 1\r\n0 0 0\r\n1 1 2 3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 7\r\n1 0 0 0 0 1 0\r\n0 0 1 0 1 0 0\r\n0 0 0 0 1 0 1\r\n0 1 1 0 0 0 0\r\n0 0 0 0 1 1 0\r\n1 3 1 7\n                        \n                        \n                            输出\n                            5\n                        \n\n                                                    \n                                输入\n                                2 3\r\n0 0 1\r\n0 0 0\r\n1 1 2 3\n                            \n                            \n                                输出\n                                1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>广搜</p>\n</div>                </div>",
+      "text": "广搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">广搜</span></span></p>\n</div>                </div>",
+      "text": "广搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 7\r\n1 0 0 0 0 1 0\r\n0 0 1 0 1 0 0\r\n0 0 0 0 1 0 1\r\n0 1 1 0 0 0 0\r\n0 0 0 0 1 1 0\r\n1 3 1 7",
+      "output": "5"
+    },
+    {
+      "input": "2 3\r\n0 0 1\r\n0 0 0\r\n1 1 2 3",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "3761",
+    "通过人数": "1192",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:19:33"
+}

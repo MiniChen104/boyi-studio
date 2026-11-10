@@ -1,0 +1,58 @@
+{
+  "id": "6215",
+  "title": "身高体重指数",
+  "tags": [
+    "GESP四级",
+    "26年6月",
+    "结构体"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6215",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个人的身体体重指数（BMI）等于其体重（千克为单位）除以其身高（米为单位）的平方。</p>\n<p>例如，一个体重为 <code>50 kg</code>，身高为 <code>1.6 m</code> 的人的身体体重指数为 <code>50 kg / 1.6 m / 1.6 m = 19.53125 kg/m^2</code>。</p>\n<p>现在有 <span class=\"katex math inline\">n</span> 个小朋友，第 <span class=\"katex math inline\">i</span> 个小朋友的编号为 <span class=\"katex math inline\">i</span>，体重为 <span class=\"katex math inline\">w_i</span>，身高为 <span class=\"katex math inline\">h_i</span>。</p>\n<p>请按照身体体重指数从高到低为小朋友们排序，数据保证不存在两个小朋友的身体体重指数完全相同。输出排序后小朋友的编号。</p>\n</div>            </div>",
+      "text": "一个人的身体体重指数（BMI）等于其体重（千克为单位）除以其身高（米为单位）的平方。\n例如，一个体重为 50 kg，身高为 1.6 m 的人的身体体重指数为 50 kg / 1.6 m / 1.6 m = 19.53125 kg/m^2。\n现在有 n 个小朋友，第 i 个小朋友的编号为 i，体重为 w_i，身高为 h_i。\n请按照身体体重指数从高到低为小朋友们排序，数据保证不存在两个小朋友的身体体重指数完全相同。输出排序后小朋友的编号。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入 <span class=\"katex math inline\">3</span> 行。</p>\n<p>第一行为一个正整数 <span class=\"katex math inline\">n</span>，表示小朋友的个数；</p>\n<p>第二行有 <span class=\"katex math inline\">n</span> 个整数 <span class=\"katex math inline\">w_1,w_2,\\cdots,w_n</span> 表示小朋友们的体重，单位为 kg；</p>\n<p>第三行有 <span class=\"katex math inline\">n</span> 个浮点数 <span class=\"katex math inline\">h_1,h_2,\\cdots,h_n</span> 表示小朋友们的身高，单位为 m。</p>\n</div>            </div>",
+      "text": "输入 3 行。\n第一行为一个正整数 n，表示小朋友的个数；\n第二行有 n 个整数 w_1,w_2,\\cdots,w_n 表示小朋友们的体重，单位为 kg；\n第三行有 n 个浮点数 h_1,h_2,\\cdots,h_n 表示小朋友们的身高，单位为 m。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行 <span class=\"katex math inline\">n</span> 个数，表示按照身体体重指数从高到低排序后的编号。</p>\n</div>            </div>",
+      "text": "输出一行 n 个数，表示按照身体体重指数从高到低排序后的编号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n45 33 39\r\n1.55 1.33 1.44</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3 1 2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n45 33 39\r\n1.55 1.33 1.44\n                        \n                        \n                            输出\n                            3 1 2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\">样例解释\n<p>三个小朋友（编号依次为 <code>1, 2, 3</code>）的身体体重指数分别为（保留两位小数的结果）：<code>18.73</code>、<code>18.66</code>、<code>18.81</code>，故排序后输出编号为 <code>3 1 2</code>。</p>\n数据范围\n<p><span class=\"katex math inline\">1 \\le n \\le 1000</span>，<span class=\"katex math inline\">10 \\le w_i \\le 100</span>，<span class=\"katex math inline\">0.8 \\le h_i \\le 1.9</span>，<span class=\"katex math inline\">h_i</span> 均恰有两位小数。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n三个小朋友（编号依次为 1, 2, 3）的身体体重指数分别为（保留两位小数的结果）：18.73、18.66、18.81，故排序后输出编号为 3 1 2。\n数据范围\n1 \\le n \\le 1000，10 \\le w_i \\le 100，0.8 \\le h_i \\le 1.9，h_i 均恰有两位小数。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">26年6月</span><span class=\"label label-info\">结构体</span></span></p>\n</div>                </div>",
+      "text": "GESP四级26年6月结构体"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n45 33 39\r\n1.55 1.33 1.44",
+      "output": "3 1 2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "318",
+    "通过人数": "233",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:13"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "2354",
+  "title": "注册账号",
+  "tags": [
+    "蓝桥杯等级考试"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2354",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>【具体要求】  </p>\n<p>我们在注册网站时需要自己输入一个账号，某网站的注册要求比较严格，注册账号有如下要求：   </p>\n<p>要求一：注册账号只能由大小写字母，数字和下划线组成；  </p>\n<p>要求二：注册账号区分大小写，其中必须要包含大写字母，小写字母可有可无；   </p>\n<p>要求三：注册账号必须包含数字和下划线二者其一，但二者不能同时出现；  </p>\n<p>要求四：如果包含数字，数字不能放开头。  </p>\n<p>现在需要你编写一个程序判断一个输入的注册账号是否符合要求。  </p>\n<p>例如：  </p>\n<p>输入一个账号 Jack44324_  </p>\n<p>其符合要求 1，不包含字母，数字和下划线以外的字符；  </p>\n<p>其含大写字母，符合要求 2；  </p>\n<p>包含数字和下划线，但是二者同时出现，不符合要求 3；  </p>\n<p>包含数字且数字不在开头，符合要求 4；  </p>\n<p>所以这个账号因不符合要求 3 为不合法。 </p>\n</div>            </div>",
+      "text": "【具体要求】  \n我们在注册网站时需要自己输入一个账号，某网站的注册要求比较严格，注册账号有如下要求：   \n要求一：注册账号只能由大小写字母，数字和下划线组成；  \n要求二：注册账号区分大小写，其中必须要包含大写字母，小写字母可有可无；   \n要求三：注册账号必须包含数字和下划线二者其一，但二者不能同时出现；  \n要求四：如果包含数字，数字不能放开头。  \n现在需要你编写一个程序判断一个输入的注册账号是否符合要求。  \n例如：  \n输入一个账号 Jack44324_  \n其符合要求 1，不包含字母，数字和下划线以外的字符；  \n其含大写字母，符合要求 2；  \n包含数字和下划线，但是二者同时出现，不符合要求 3；  \n包含数字且数字不在开头，符合要求 4；  \n所以这个账号因不符合要求 3 为不合法。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个字符串，长度不超过 20，输入数据只能包含数字、大小写字母和下划线。</p>\n</div>            </div>",
+      "text": "输入一个字符串，长度不超过 20，输入数据只能包含数字、大小写字母和下划线。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果注册账号符合要求则输出“Pass!”，不符合要求则输出“Illegal!”。</p>\n</div>            </div>",
+      "text": "如果注册账号符合要求则输出“Pass!”，不符合要求则输出“Illegal!”。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>Jack44324_</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Illegal！</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            Jack44324_\n                        \n                        \n                            输出\n                            Illegal！"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。 </p>\n<pre><code>蓝桥等考 C++组单选题样题（十四级） \n现定义如下一维字符数组：char s[10] = {&#x27;A&#x27;, &#x27;B&#x27;, &#x27;C&#x27;, &#x27;D&#x27;, &#x27;E&#x27;, &#x27;F&#x27;, &#x27;G&#x27;, &#x27;H&#x27;, &#x27;I&#x27;, &#x27;J&#x27;};若 i = 2,则输出 s[i + 2] 的值等于（ ）。\nA C \nB D \nC E \nD F \n【答案】C \n【解析】一维数组索引 i 从 0 开始，s[4] 对应的值应该是‘E’。\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。 \n蓝桥等考 C++组单选题样题（十四级） \n现定义如下一维字符数组：char s[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};若 i = 2,则输出 s[i + 2] 的值等于（ ）。\nA C \nB D \nC E \nD F \n【答案】C \n【解析】一维数组索引 i 从 0 开始，s[4] 对应的值应该是‘E’。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥等考 C++组编程题样题（十四级）</p>\n</div>                </div>",
+      "text": "蓝桥等考 C++组编程题样题（十四级）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯等级考试</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "Jack44324_",
+      "output": "Illegal！"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "729",
+    "通过人数": "218",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:23"
+}

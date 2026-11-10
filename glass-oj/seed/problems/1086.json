@@ -1,0 +1,56 @@
+{
+  "id": "1086",
+  "title": "姐妹数对",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1086",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定两个不同的正整数 <span class=\"katex math inline\">x,y</span>，若 <span class=\"katex math inline\">x+y</span> 能被 <span class=\"katex math inline\">3</span> 除尽或能被 <span class=\"katex math inline\">7</span> 除尽，则称 <span class=\"katex math inline\">x,y</span> 为姐妹数对。</p>\n<p>例如：</p>\n<p> <span class=\"katex math inline\">2,4</span>、<span class=\"katex math inline\">2,5</span>，为姐妹数对。</p>\n<p> <span class=\"katex math inline\">3,14</span>，不是姐妹数对。</p>\n<p>那么，对给出的一个整数 <span class=\"katex math inline\">n(1 \\le n \\le 100)</span> ，<span class=\"katex math inline\"> 1,2,\\dots,n</span> 之间有多少个姐妹数。</p>\n</div>            </div>",
+      "text": "给定两个不同的正整数 x,y，若 x+y 能被 3 除尽或能被 7 除尽，则称 x,y 为姐妹数对。\n例如：\n 2,4、2,5，为姐妹数对。\n 3,14，不是姐妹数对。\n那么，对给出的一个整数 n(1 \\le n \\le 100) ， 1,2,\\dots,n 之间有多少个姐妹数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> 。</p>\n</div>            </div>",
+      "text": "一个整数 n 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，即 <span class=\"katex math inline\">1 \\sim n</span> 之间姐妹数对的个数。</p>\n</div>            </div>",
+      "text": "一个整数，即 1 \\sim n 之间姐妹数对的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\n                        \n                        \n                            输出\n                            8"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6",
+      "output": "8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "16917",
+    "通过人数": "11684",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:14:31"
+}

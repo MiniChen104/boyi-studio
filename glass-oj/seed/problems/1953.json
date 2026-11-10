@@ -1,0 +1,62 @@
+{
+  "id": "1953",
+  "title": "新生舞会",
+  "tags": [
+    "蓝桥杯",
+    "结构体"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1953",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>新生舞会开始了。</p>\n<p><span class=\"katex math inline\">n</span> 名新生每人有三个属性：姓名、学号、性别。其中，姓名用长度不超过 <span class=\"katex math inline\">20</span> 的仅由大小写字母构成的字符串表示，学号用长度不超过 <span class=\"katex math inline\">10</span> 的仅由数字构成的字符串表示，性别用一个大写字符 <code>F</code> 或 <code>M</code> 表示。任意两人的姓名、学号均互不相同。换言之，每个人可被其姓名或学号唯一确定。</p>\n<p>给出 <span class=\"katex math inline\">m</span> 对两人的信息（姓名或学号），判断他们是否能共舞。两人能共舞的充要条件为两人性别相异。</p>\n</div>            </div>",
+      "text": "新生舞会开始了。\nn 名新生每人有三个属性：姓名、学号、性别。其中，姓名用长度不超过 20 的仅由大小写字母构成的字符串表示，学号用长度不超过 10 的仅由数字构成的字符串表示，性别用一个大写字符 F 或 M 表示。任意两人的姓名、学号均互不相同。换言之，每个人可被其姓名或学号唯一确定。\n给出 m 对两人的信息（姓名或学号），判断他们是否能共舞。两人能共舞的充要条件为两人性别相异。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">2 \\le n \\le 1000</span>），表示学生人数。接下来的 <span class=\"katex math inline\">n</span> 行每行依次包含一名新生的姓名、学号、性别，分别用一个空格隔开。</p>\n<p>之后的一行是一个整数 <span class=\"katex math inline\">m</span> (<span class=\"katex math inline\">1 \\le m \\le 1000</span>)，表示询问的数目。</p>\n<p>接着的 <span class=\"katex math inline\">m</span> 行每行包含两个信息（姓名或学号），保证两个信息不属于同一人，中间用一个空格隔开。</p>\n</div>            </div>",
+      "text": "第一行一个整数 n（2 \\le n \\le 1000），表示学生人数。接下来的 n 行每行依次包含一名新生的姓名、学号、性别，分别用一个空格隔开。\n之后的一行是一个整数 m (1 \\le m \\le 1000)，表示询问的数目。\n接着的 m 行每行包含两个信息（姓名或学号），保证两个信息不属于同一人，中间用一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每个询问输出一行，如果两人可以共舞，输出一个大写字母 <code>Y</code>，否则输出一个大写字母 <code>N</code>。</p>\n</div>            </div>",
+      "text": "对于每个询问输出一行，如果两人可以共舞，输出一个大写字母 Y，否则输出一个大写字母 N。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\nJohn 10 M\r\nJack 11 M\r\nKate 20 F\r\nJim 21 M\r\n3\r\nJohn 11\r\n20 Jack\r\nJim Jack</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>N\r\nY\r\nN</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\nJohn 10 M\r\nJack 11 M\r\nKate 20 F\r\nJim 21 M\r\n3\r\nJohn 11\r\n20 Jack\r\nJim Jack\n                        \n                        \n                            输出\n                            N\r\nY\r\nN"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】</p>\n<p>蓝桥杯算法训练。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】\n蓝桥杯算法训练。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 结构体</p>\n</div>                </div>",
+      "text": "蓝桥杯 结构体"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">结构体</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯结构体"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\nJohn 10 M\r\nJack 11 M\r\nKate 20 F\r\nJim 21 M\r\n3\r\nJohn 11\r\n20 Jack\r\nJim Jack",
+      "output": "N\r\nY\r\nN"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5490",
+    "通过人数": "3531",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:28"
+}

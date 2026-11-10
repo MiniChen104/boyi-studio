@@ -1,0 +1,52 @@
+{
+  "id": "4840",
+  "title": "截取数列片段",
+  "tags": [
+    "蓝桥等考",
+    "数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4840",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个长度为 <span class=\"katex math inline\">n</span> 的数列，要求截取其中从第 <span class=\"katex math inline\">x</span> 个元素到第 <span class=\"katex math inline\">y</span> 个元素的片段并输出。</p>\n<p>例如，当 <span class=\"katex math inline\">n = 8</span>，<span class=\"katex math inline\">x = 3</span>，<span class=\"katex math inline\">y = 6</span>：</p>\n<p>数列为：<span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">4</span> <span class=\"katex math inline\">5</span> <span class=\"katex math inline\">6</span> <span class=\"katex math inline\">7</span> <span class=\"katex math inline\">8</span></p>\n<p>输出数列的第 <span class=\"katex math inline\">3</span> 个到第 <span class=\"katex math inline\">6</span> 个元素为 <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">4</span> <span class=\"katex math inline\">5</span> <span class=\"katex math inline\">6</span></p>\n</div>            </div>",
+      "text": "给定一个长度为 n 的数列，要求截取其中从第 x 个元素到第 y 个元素的片段并输出。\n例如，当 n = 8，x = 3，y = 6：\n数列为：1 2 3 4 5 6 7 8\n输出数列的第 3 个到第 6 个元素为 3 4 5 6"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含三个正整数 <span class=\"katex math inline\">n</span>，<span class=\"katex math inline\">x</span>，<span class=\"katex math inline\">y</span>，<span class=\"katex math inline\">n</span> 表示数列的长度 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span> 分别表示要截取的起始位置和结束位置<span class=\"katex math inline\">（1 \\le x \\le y \\le n \\le 1000）</span>。</p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个整数 ，表示数列中的元素。</p>\n</div>            </div>",
+      "text": "第一行包含三个正整数 n，x，y，n 表示数列的长度 x 和 y 分别表示要截取的起始位置和结束位置（1 \\le x \\le y \\le n \\le 1000）。\n第二行包含 n 个整数 ，表示数列中的元素。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含从第 <span class=\"katex math inline\">x</span> 个元素到第 <span class=\"katex math inline\">y</span> 个元素的所有数，每个数之间用空格分隔。</p>\n</div>            </div>",
+      "text": "输出一行，包含从第 x 个元素到第 y 个元素的所有数，每个数之间用空格分隔。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8 3 6\r\n1 2 3 4 5 6 7 8\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3 4 5 6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8 3 6\r\n1 2 3 4 5 6 7 8\r\n\n                        \n                        \n                            输出\n                            3 4 5 6"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8 3 6\r\n1 2 3 4 5 6 7 8\r\n",
+      "output": "3 4 5 6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "102",
+    "通过人数": "71",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:11"
+}

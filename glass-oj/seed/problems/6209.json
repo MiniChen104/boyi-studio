@@ -1,0 +1,58 @@
+{
+  "id": "6209",
+  "title": "交税",
+  "tags": [
+    "GESP一级",
+    "26年6月",
+    "循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6209",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>根据国家税收相关规定，劳务报酬需要按月预交个税，预交税率如下：</p>\n<ol><li>劳务报酬不超过 <code>800</code> 的，不需要预交个税；</li>\n<li>劳务报酬超过 <code>800</code> 的，仅超过 <code>800</code> 的部分按照 <code>20%</code>（即 <code>0.2</code>）税率预交个税（不超过 <code>800</code> 的部分不需要预交个税）；</li>\n</ol><p>例如，月劳务报酬为 <code>1000.0</code>，则按照规则 2 需要预交个税 <code>(1000.0 - 800.0) × 20% = 40.00</code>。</p>\n<p>现在给定小杨同学 12 个月的月度劳务报酬，请帮小杨同学计算他这 12 个月应预交个税的总和。</p>\n</div>            </div>",
+      "text": "根据国家税收相关规定，劳务报酬需要按月预交个税，预交税率如下：\n劳务报酬不超过 800 的，不需要预交个税；\n劳务报酬超过 800 的，仅超过 800 的部分按照 20%（即 0.2）税率预交个税（不超过 800 的部分不需要预交个税）；\n例如，月劳务报酬为 1000.0，则按照规则 2 需要预交个税 (1000.0 - 800.0) × 20% = 40.00。\n现在给定小杨同学 12 个月的月度劳务报酬，请帮小杨同学计算他这 12 个月应预交个税的总和。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入 <span class=\"katex math inline\">12</span> 行，每行一个浮点数，表示小杨同学 <span class=\"katex math inline\">12</span> 个月中每个月的劳务报酬。</p>\n<p>每个浮点数恰好有一位小数。</p>\n</div>            </div>",
+      "text": "输入 12 行，每行一个浮点数，表示小杨同学 12 个月中每个月的劳务报酬。\n每个浮点数恰好有一位小数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">1</span> 行，一个浮点数，保留两位小数，表示小杨同学 <span class=\"katex math inline\">12</span> 个月应预交个税的总和。</p>\n</div>            </div>",
+      "text": "输出 1 行，一个浮点数，保留两位小数，表示小杨同学 12 个月应预交个税的总和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>932.0\r\n1634.3\r\n1790.4\r\n2172.9\r\n378.1\r\n283.4\r\n2761.9\r\n3583.5\r\n10.1\r\n2324.9\r\n1111.6\r\n3812.3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2584.76</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            932.0\r\n1634.3\r\n1790.4\r\n2172.9\r\n378.1\r\n283.4\r\n2761.9\r\n3583.5\r\n10.1\r\n2324.9\r\n1111.6\r\n3812.3\n                        \n                        \n                            输出\n                            2584.76"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\">样例解释 1\n<ol><li><code>932.0</code> 符合规则 2，超过 <code>800</code> 的部分为 <code>132.0</code>，按照 <code>20%</code> 预交为 <code>132.0 × 20% = 26.40</code>；</li>\n<li><code>1634.3</code> 符合规则 2，超过 <code>800</code> 的部分为 <code>834.3</code>，按照 <code>20%</code> 预交为 <code>834.3 × 20% = 166.86</code>；</li>\n<li><code>1790.4</code> 符合规则 2，超过 <code>800</code> 的部分为 <code>990.4</code>，按照 <code>20%</code> 预交为 <code>990.4 × 20% = 198.08</code>；</li>\n<li><code>2172.9</code> 符合规则 2，超过 <code>800</code> 的部分为 <code>1372.9</code>，按照 <code>20%</code> 预交为 <code>1372.9 × 20% = 274.58</code>；</li>\n<li><code>378.1</code> 符合规则 1，不需要预交个税；</li>\n<li><code>283.4</code> 符合规则 1，不需要预交个税；</li>\n<li><code>2761.9</code> 符合规则 2，超过 <code>800</code> 的部分为 <code>1961.9</code>，按照 <code>20%</code> 预交为 <code>1961.9 × 20% = 392.38</code>；</li>\n<li><code>3583.5</code> 符合规则 2，超过 <code>800</code> 的部分为 <code>2783.5</code>，按照 <code>20%</code> 预交为 <code>2783.5 × 20% = 556.70</code>；</li>\n<li><code>10.1</code> 符合规则 1，不需要预交个税；</li>\n<li><code>2324.9</code> 符合规则 2，超过 <code>800</code> 的部分为 <code>1524.9</code>，按照 <code>20%</code> 预交为 <code>1524.9 × 20% = 304.98</code>；</li>\n<li><code>1111.6</code> 符合规则 2，超过 <code>800</code> 的部分为 <code>311.6</code>，按照 <code>20%</code> 预交为 <code>311.6 × 20% = 62.32</code>；</li>\n<li><code>3812.3</code> 符合规则 2，超过 <code>800</code> 的部分为 <code>3012.3</code>，按照 <code>20%</code> 预交为 <code>3012.3 × 20% = 602.46</code>；</li>\n</ol><p>总和为 <code>2584.76</code>。</p>\n数据范围\n<p>小杨同学每月劳务报酬收入均为正，且恰好有一位小数，且不超过 <code>4000.0</code>。</p>\n<p>本题共 <code>10</code> 个测试点，每个测试点 <code>10</code> 分。具体数据范围如下：</p>\n<table><thead><tr><th>测试点编号</th><th>收入范围</th><th>设计重点</th></tr></thead><tbody><tr><td><code>1</code></td><td><code>0.1</code> 到 <code>4000.0</code></td><td>所有月份收入均低于 <code>800.0</code></td></tr><tr><td><code>2</code></td><td><code>800.0</code></td><td>所有月份收入恰好等于 <code>800.0</code></td></tr><tr><td><code>3</code></td><td><code>801.0</code></td><td>所有月份收入刚超过 <code>800.0</code></td></tr><tr><td><code>4</code></td><td><code>4000.0</code></td><td>所有月份收入均为最大值</td></tr><tr><td><code>5</code></td><td><code>0.1</code> 到 <code>4000.0</code></td><td>混合收入，部分月份交税</td></tr><tr><td><code>6</code></td><td><code>0.1</code> 到 <code>4000.0</code></td><td>围绕 <code>800.0</code> 上下波动</td></tr><tr><td><code>7</code></td><td><code>800.1</code> 到 <code>801.2</code></td><td>连续小额税额累计</td></tr><tr><td><code>8</code></td><td><code>0.1</code> 到 <code>4000.0</code></td><td>最小正收入与接近最大收入交替</td></tr><tr><td><code>9</code></td><td><code>1000.5</code></td><td>12 个月收入完全相同且都需交税</td></tr><tr><td><code>10</code></td><td><code>0.1</code> 到 <code>4000.0</code></td><td>综合边界与大数</td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "样例解释 1\n932.0 符合规则 2，超过 800 的部分为 132.0，按照 20% 预交为 132.0 × 20% = 26.40；\n1634.3 符合规则 2，超过 800 的部分为 834.3，按照 20% 预交为 834.3 × 20% = 166.86；\n1790.4 符合规则 2，超过 800 的部分为 990.4，按照 20% 预交为 990.4 × 20% = 198.08；\n2172.9 符合规则 2，超过 800 的部分为 1372.9，按照 20% 预交为 1372.9 × 20% = 274.58；\n378.1 符合规则 1，不需要预交个税；\n283.4 符合规则 1，不需要预交个税；\n2761.9 符合规则 2，超过 800 的部分为 1961.9，按照 20% 预交为 1961.9 × 20% = 392.38；\n3583.5 符合规则 2，超过 800 的部分为 2783.5，按照 20% 预交为 2783.5 × 20% = 556.70；\n10.1 符合规则 1，不需要预交个税；\n2324.9 符合规则 2，超过 800 的部分为 1524.9，按照 20% 预交为 1524.9 × 20% = 304.98；\n1111.6 符合规则 2，超过 800 的部分为 311.6，按照 20% 预交为 311.6 × 20% = 62.32；\n3812.3 符合规则 2，超过 800 的部分为 3012.3，按照 20% 预交为 3012.3 × 20% = 602.46；\n总和为 2584.76。\n数据范围\n小杨同学每月劳务报酬收入均为正，且恰好有一位小数，且不超过 4000.0。\n本题共 10 个测试点，每个测试点 10 分。具体数据范围如下：\n测试点编号收入范围设计重点10.1 到 4000.0所有月份收入均低于 800.02800.0所有月份收入恰好等于 800.03801.0所有月份收入刚超过 800.044000.0所有月份收入均为最大值50.1 到 4000.0混合收入，部分月份交税60.1 到 4000.0围绕 800.0 上下波动7800.1 到 801.2连续小额税额累计80.1 到 4000.0最小正收入与接近最大收入交替91000.512 个月收入完全相同且都需交税100.1 到 4000.0综合边界与大数"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP一级</span><span class=\"label label-warning\">26年6月</span><span class=\"label label-info\">循环</span></span></p>\n</div>                </div>",
+      "text": "GESP一级26年6月循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "932.0\r\n1634.3\r\n1790.4\r\n2172.9\r\n378.1\r\n283.4\r\n2761.9\r\n3583.5\r\n10.1\r\n2324.9\r\n1111.6\r\n3812.3",
+      "output": "2584.76"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1574",
+    "通过人数": "868",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:19"
+}

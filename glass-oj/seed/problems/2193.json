@@ -1,0 +1,56 @@
+{
+  "id": "2193",
+  "title": "哈夫曼树",
+  "tags": [
+    "二叉树"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2193",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>哈夫曼树的定义是：一棵具有 <span class=\"katex math inline\">n</span> 个带权叶结点的二叉树，使得所有叶结点的带权路径长度（叶结点 <span class=\"katex math inline\">×</span> 叶结点到根结点的路径长度）之和最小，这样的二叉树被称为最优二叉树，也称哈夫曼树。</p>\n<p>比如：有 <span class=\"katex math inline\">4</span> 个结点的权值是 <span class=\"katex math inline\">5</span> <span class=\"katex math inline\">4</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">9</span>，可以构建出如下三颗不同的二叉树，第 <span class=\"katex math inline\">2</span> 棵二叉树的带权路径长度是最小的。</p>\n<p><img src=\"https://assets.boyi.local/58db45dbe8b699f6c6ef8658.jpg\"></p>\n<p>请读入一个整数 <span class=\"katex math inline\">n</span> ，代表叶结点的数量，再读入 <span class=\"katex math inline\">n</span> 个整数，代表叶结点的权值，请求出对应哈夫曼树的带权路径长度。</p>\n</div>            </div>",
+      "text": "哈夫曼树的定义是：一棵具有 n 个带权叶结点的二叉树，使得所有叶结点的带权路径长度（叶结点 × 叶结点到根结点的路径长度）之和最小，这样的二叉树被称为最优二叉树，也称哈夫曼树。\n比如：有 4 个结点的权值是 5 4 2 9，可以构建出如下三颗不同的二叉树，第 2 棵二叉树的带权路径长度是最小的。\n\n请读入一个整数 n ，代表叶结点的数量，再读入 n 个整数，代表叶结点的权值，请求出对应哈夫曼树的带权路径长度。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含一个正整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">2≤n≤100</span>）。</p>\n<p>接下来是 <span class=\"katex math inline\">n</span> 个正整数，表示 <span class=\"katex math inline\">n</span> 个叶结点的权值，每个数不超过 <span class=\"katex math inline\">1000</span> 。</p>\n</div>            </div>",
+      "text": "输入的第一行包含一个正整数 n（2≤n≤100）。\n接下来是 n 个正整数，表示 n 个叶结点的权值，每个数不超过 1000 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出构造出的哈夫曼树的带权路径长度。</p>\n</div>            </div>",
+      "text": "输出构造出的哈夫曼树的带权路径长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n5 3 8 2 9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>59</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n5 3 8 2 9\n                        \n                        \n                            输出\n                            59"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二叉树</p>\n</div>                </div>",
+      "text": "二叉树"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二叉树</span></span></p>\n</div>                </div>",
+      "text": "二叉树"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n5 3 8 2 9",
+      "output": "59"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "981",
+    "通过人数": "825",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:36"
+}

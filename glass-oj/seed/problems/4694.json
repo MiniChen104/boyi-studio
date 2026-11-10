@@ -1,0 +1,51 @@
+{
+  "id": "4694",
+  "title": "截取用户名",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4694",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个网站的用户注册系统需要从用户的邮箱地址中提取用户名。邮箱格式为 <code>username@domain.com</code>，其中 <code>username</code> 由英文字母和数字组成，<code>@domain.com</code> 表示邮箱的域名，具体可以参考下面的样例。</p>\n<p>你的任务是从给定的邮箱地址中提取 <code>username</code> 并输出，即：提取出 <code>@</code> 前面的内容。</p>\n</div>            </div>",
+      "text": "一个网站的用户注册系统需要从用户的邮箱地址中提取用户名。邮箱格式为 username@domain.com，其中 username 由英文字母和数字组成，@domain.com 表示邮箱的域名，具体可以参考下面的样例。\n你的任务是从给定的邮箱地址中提取 username 并输出，即：提取出 @ 前面的内容。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个字符串 <span class=\"katex math inline\">S</span>，表示一个邮箱地址 （字符串 <span class=\"katex math inline\">S</span> 的长度在 <span class=\"katex math inline\">[5, 100]</span> 的范围内，邮箱地址不含空格，且 <code>@</code> 在邮箱中仅出现一次）。</p>\n</div>            </div>",
+      "text": "一个字符串 S，表示一个邮箱地址 （字符串 S 的长度在 [5, 100] 的范围内，邮箱地址不含空格，且 @ 在邮箱中仅出现一次）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出邮箱地址中的 <code>username</code>。</p>\n</div>            </div>",
+      "text": "输出邮箱地址中的 username。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>john_doe123@example.com</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>john_doe123</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            john_doe123@example.com\n                        \n                        \n                            输出\n                            john_doe123"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "john_doe123@example.com",
+      "output": "john_doe123"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "191",
+    "通过人数": "175",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:51"
+}

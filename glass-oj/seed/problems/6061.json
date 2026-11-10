@@ -1,0 +1,52 @@
+{
+  "id": "6061",
+  "title": "星际通信系统",
+  "tags": [
+    "信息素养大赛",
+    "25年小学组复赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6061",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在星际通信系统中，传输的数字会因宇宙射线干扰而倒序，请编写程序对接收到的 <span class=\"katex math inline\">n</span> 个干扰数字进行修复，输出每个数字原始的正确值。</p>\n<p>修复规则：将每个数字的各位数完全逆转（例如：<span class=\"katex math inline\">123</span> 修复为 <span class=\"katex math inline\">321</span> ， <span class=\"katex math inline\">120</span> 修复为 <span class=\"katex math inline\">21</span>）</p>\n</div>            </div>",
+      "text": "在星际通信系统中，传输的数字会因宇宙射线干扰而倒序，请编写程序对接收到的 n 个干扰数字进行修复，输出每个数字原始的正确值。\n修复规则：将每个数字的各位数完全逆转（例如：123 修复为 321 ， 120 修复为 21）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个整数 <span class=\"katex math inline\">n</span>。</p>\n<p>第二行 <span class=\"katex math inline\">n</span>个正整数 <span class=\"katex math inline\">a_i</span>，表示接收到的干扰数字。</p>\n</div>            </div>",
+      "text": "第一行，一个整数 n。\n第二行 n个正整数 a_i，表示接收到的干扰数字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行 <span class=\"katex math inline\">n</span> 个整数，表示修复后的正确数字，用空格分隔。</p>\n</div>            </div>",
+      "text": "一行 n 个整数，表示修复后的正确数字，用空格分隔。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n123 320 78\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>321 23 87</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n123 320 78\r\n\n                        \n                        \n                            输出\n                            321 23 87"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">信息素养大赛</span><span class=\"label label-warning\">25年小学组复赛</span></span></p>\n</div>                </div>",
+      "text": "信息素养大赛25年小学组复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n123 320 78\r\n",
+      "output": "321 23 87"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "409",
+    "通过人数": "220",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:11"
+}

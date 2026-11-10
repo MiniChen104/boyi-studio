@@ -1,0 +1,52 @@
+{
+  "id": "4843",
+  "title": "小蓝的目标",
+  "tags": [
+    "蓝桥等考",
+    "数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4843",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小蓝的期中考试成绩出来了，他这次考试的目标是能考进全校前<span class=\"katex math inline\">3</span> 名，请根据全体学生的成绩来判断，小蓝是否达到了这个目标。</p>\n<p>提示：把全部成绩从高到低排序，如果小蓝的成绩大于等于第 <span class=\"katex math inline\">3</span> 名成绩，就算达到了目标。</p>\n</div>            </div>",
+      "text": "小蓝的期中考试成绩出来了，他这次考试的目标是能考进全校前3 名，请根据全体学生的成绩来判断，小蓝是否达到了这个目标。\n提示：把全部成绩从高到低排序，如果小蓝的成绩大于等于第 3 名成绩，就算达到了目标。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含一个正整数 <span class=\"katex math inline\">n (1 \\le n \\le 1000)</span>，表示全体学生的数量。</p>\n<p>第二行 <span class=\"katex math inline\">n</span> 个数代表学生的成绩。</p>\n<p>第三行行输入一个整数 <span class=\"katex math inline\">x</span> ，代表小蓝的成绩。</p>\n</div>            </div>",
+      "text": "输入的第一行包含一个正整数 n (1 \\le n \\le 1000)，表示全体学生的数量。\n第二行 n 个数代表学生的成绩。\n第三行行输入一个整数 x ，代表小蓝的成绩。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果小蓝的成绩能够排进全校前 <span class=\"katex math inline\">3</span> 名，则输出 &quot;<code>Y</code>&quot;；否则，输出 &quot;<code>N</code>&quot;。</p>\n</div>            </div>",
+      "text": "如果小蓝的成绩能够排进全校前 3 名，则输出 \"Y\"；否则，输出 \"N\"。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10\r\n10 3 8 6 7 4 9 5 2 1\r\n7\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>N</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\r\n10 3 8 6 7 4 9 5 2 1\r\n7\r\n\n                        \n                        \n                            输出\n                            N"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10\r\n10 3 8 6 7 4 9 5 2 1\r\n7\r\n",
+      "output": "N"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "173",
+    "通过人数": "84",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:09"
+}

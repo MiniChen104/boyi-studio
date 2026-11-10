@@ -1,0 +1,56 @@
+{
+  "id": "2834",
+  "title": "开会",
+  "tags": [
+    "图论"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2834",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">N</span> 个村庄，编号为 <span class=\"katex math inline\">1 \\sim N</span>，其中有 <span class=\"katex math inline\">K</span> 个村庄驻扎着我军部队，村庄之间通过 <span class=\"katex math inline\">M</span> 条有向路连接。</p>\n<p>现这 <span class=\"katex math inline\">K</span> 个部队的队长需要选择一个村庄一起开军事会议，安排接下来的作战计划。作为开会地点的村庄需满足，所有的队长可以从自己所驻扎的村庄沿着有向路，都可以汇集到该村庄。</p>\n<p>请编程计算出，有多少个村庄满足条件？（注意，只需要考虑所有队长可以汇集到该村庄，不需要考虑队长返程的问题）</p>\n</div>            </div>",
+      "text": "有 N 个村庄，编号为 1 \\sim N，其中有 K 个村庄驻扎着我军部队，村庄之间通过 M 条有向路连接。\n现这 K 个部队的队长需要选择一个村庄一起开军事会议，安排接下来的作战计划。作为开会地点的村庄需满足，所有的队长可以从自己所驻扎的村庄沿着有向路，都可以汇集到该村庄。\n请编程计算出，有多少个村庄满足条件？（注意，只需要考虑所有队长可以汇集到该村庄，不需要考虑队长返程的问题）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行，有 <span class=\"katex math inline\">3</span> 个整数 <span class=\"katex math inline\">K,N,M</span>，含义如题所述；</p>\n<p>接下来 <span class=\"katex math inline\">K</span> 行，每行包含一个整数，分别代表每个部队所驻扎的村庄编号；</p>\n<p>接下来 <span class=\"katex math inline\">M</span> 行，每行包含 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">X,Y</span>，用空格隔开，表示编号为 <span class=\"katex math inline\">X</span> 的村庄到编号为 <span class=\"katex math inline\">Y</span> 的村庄之间，存在一条有向路。</p>\n</div>            </div>",
+      "text": "第 1 行，有 3 个整数 K,N,M，含义如题所述；\n接下来 K 行，每行包含一个整数，分别代表每个部队所驻扎的村庄编号；\n接下来 M 行，每行包含 2 个整数 X,Y，用空格隔开，表示编号为 X 的村庄到编号为 Y 的村庄之间，存在一条有向路。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表可以作为开会点的村庄数量。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表可以作为开会点的村庄数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 4 4\r\n2\r\n3\r\n1 2\r\n1 4\r\n2 3\r\n3 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 4 4\r\n2\r\n3\r\n1 2\r\n1 4\r\n2 3\r\n3 4\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 <span class=\"katex math inline\">1</span> 说明</h4>\n<p>编号为 <span class=\"katex math inline\">3</span> 和 <span class=\"katex math inline\">4</span> 的村庄，可以作为开会的地点。</p>\n<h4>数据范围</h4>\n<p><span class=\"katex math inline\">1 \\le K \\le 100</span>，<span class=\"katex math inline\">1 \\le N \\le 1000</span>，<span class=\"katex math inline\">1 \\le M \\le 10000</span>，<span class=\"katex math inline\">1 \\le X,Y \\le N</span> 且 <span class=\"katex math inline\">X \\neq Y</span>，<span class=\"katex math inline\">X</span> 和 <span class=\"katex math inline\">Y</span> 之间不存在相同的有向路；</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 说明\n编号为 3 和 4 的村庄，可以作为开会的地点。\n数据范围\n1 \\le K \\le 100，1 \\le N \\le 1000，1 \\le M \\le 10000，1 \\le X,Y \\le N 且 X \\neq Y，X 和 Y 之间不存在相同的有向路；"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span></span></p>\n</div>                </div>",
+      "text": "图论"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 4 4\r\n2\r\n3\r\n1 2\r\n1 4\r\n2 3\r\n3 4",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "526",
+    "通过人数": "282",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:31"
+}

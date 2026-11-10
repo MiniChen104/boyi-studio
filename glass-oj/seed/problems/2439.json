@@ -1,0 +1,57 @@
+{
+  "id": "2439",
+  "title": "奶牛的游戏",
+  "tags": [
+    "usaco",
+    "模拟"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2439",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>农民 John的 <span class=\"katex math inline\">N</span> (<span class=\"katex math inline\">1 \\le N \\le 1000</span>) 头奶牛 (从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">N</span> 依次编号 )打算玩游戏 Serious Cow Tag。在 Serious Cow Tag这个游戏里，每头牛在牧场网格中取 一个点 (<span class=\"katex math inline\">-7500 \\le X \\le 7500,-7500 \\le Y \\le 7500</span>) 使得每一对牛的距离都是与众不同的。  </p>\n<p>奶牛们轮流玩这个游戏，从 #1 号牛开始，然后是 #2, #3, 等等 (只要这头牛仍然参与这个游戏)。每次轮到的玩的牛，会选择一个目前离它最近的牛，走过去拍它一下，然后回到原来的位置，这样那头被拍的牛就被游戏排除在外了。  </p>\n<p>当只有一头牛留下来了以后，游戏即告结束，那头牛就是赢家。  </p>\n<p>农民 John 正和邻居们打赌那头牛会赢，所以他想事先知道谁是赢家。写一个 程序，读入每头牛的位置，求那头牛获胜。</p>\n</div>            </div>",
+      "text": "农民 John的 N (1 \\le N \\le 1000) 头奶牛 (从 1 到 N 依次编号 )打算玩游戏 Serious Cow Tag。在 Serious Cow Tag这个游戏里，每头牛在牧场网格中取 一个点 (-7500 \\le X \\le 7500,-7500 \\le Y \\le 7500) 使得每一对牛的距离都是与众不同的。  \n奶牛们轮流玩这个游戏，从 #1 号牛开始，然后是 #2, #3, 等等 (只要这头牛仍然参与这个游戏)。每次轮到的玩的牛，会选择一个目前离它最近的牛，走过去拍它一下，然后回到原来的位置，这样那头被拍的牛就被游戏排除在外了。  \n当只有一头牛留下来了以后，游戏即告结束，那头牛就是赢家。  \n农民 John 正和邻居们打赌那头牛会赢，所以他想事先知道谁是赢家。写一个 程序，读入每头牛的位置，求那头牛获胜。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">Line 1</span>: 一个整数 <span class=\"katex math inline\">N</span> ， 奶牛的数量。  </p>\n<p><span class=\"katex math inline\">Lines 2 \\dots N+1</span>: 第 <span class=\"katex math inline\">i+1</span> 有两个用空格分开的整数，描述第 <span class=\"katex math inline\">i</span> 头牛的坐标位置。</p>\n</div>            </div>",
+      "text": "Line 1: 一个整数 N ， 奶牛的数量。  \nLines 2 \\dots N+1: 第 i+1 有两个用空格分开的整数，描述第 i 头牛的坐标位置。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">Line 1</span>: 获胜的牛的编号。</p>\n</div>            </div>",
+      "text": "Line 1: 获胜的牛的编号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n0 0\r\n0 3\r\n4 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n0 0\r\n0 3\r\n4 3\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>牛 <span class=\"katex math inline\">1</span> 先走，去拍了离它最近的牛 <span class=\"katex math inline\">2</span> 。<span class=\"katex math inline\">2</span> 号牛就被删除了，接下去就直接轮到 Cow <span class=\"katex math inline\">3</span> 走。她去拍了 <span class=\"katex math inline\">1</span> 号， <span class=\"katex math inline\">1</span> 号被排除，最终 <span class=\"katex math inline\">3</span> 号获胜。</p>\n</div>\n\n                    \n                </div>",
+      "text": "牛 1 先走，去拍了离它最近的牛 2 。2 号牛就被删除了，接下去就直接轮到 Cow 3 走。她去拍了 1 号， 1 号被排除，最终 3 号获胜。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">usaco</span><span class=\"label label-warning\">模拟</span></span></p>\n</div>                </div>",
+      "text": "usaco模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n0 0\r\n0 3\r\n4 3",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "370",
+    "通过人数": "127",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:21"
+}

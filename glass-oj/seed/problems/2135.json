@@ -1,0 +1,57 @@
+{
+  "id": "2135",
+  "title": "数字整除",
+  "tags": [
+    "模拟",
+    "数学"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2135",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>定理：把一个至少两位的正整数的个位数字去掉，再从余下的数中减去个位数的 <span class=\"katex math inline\">5</span> 倍。当且仅当差是 <span class=\"katex math inline\">17</span> 的倍数时，原数也是 <span class=\"katex math inline\">17</span> 的倍数 。</p>\n<p>例如，<span class=\"katex math inline\">34</span> 是 <span class=\"katex math inline\">17</span> 的倍数，因为 <span class=\"katex math inline\">3-20=-17</span> 是 <span class=\"katex math inline\">17</span> 的倍数；<span class=\"katex math inline\">201</span> 不是 <span class=\"katex math inline\">17</span> 的倍数，因为 <span class=\"katex math inline\">20-5=15</span> 不是 <span class=\"katex math inline\">17</span> 的倍数。</p>\n<p>输入一个正整数 <span class=\"katex math inline\">n</span>，你的任务是判断它是否是 <span class=\"katex math inline\">17</span> 的倍数。</p>\n</div>            </div>",
+      "text": "定理：把一个至少两位的正整数的个位数字去掉，再从余下的数中减去个位数的 5 倍。当且仅当差是 17 的倍数时，原数也是 17 的倍数 。\n例如，34 是 17 的倍数，因为 3-20=-17 是 17 的倍数；201 不是 17 的倍数，因为 20-5=15 不是 17 的倍数。\n输入一个正整数 n，你的任务是判断它是否是 17 的倍数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入文件最多包含 <span class=\"katex math inline\">10</span> 组测试数据，每个数据占一行，仅包含一个正整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">1 \\le n \\le 10^100</span>），表示待判断的正整数。</p>\n<p><span class=\"katex math inline\">n=0</span> 表示输入结束，你的程序不应当处理这一行。</p>\n</div>            </div>",
+      "text": "输入文件最多包含 10 组测试数据，每个数据占一行，仅包含一个正整数 n（1 \\le n \\le 10^100），表示待判断的正整数。\nn=0 表示输入结束，你的程序不应当处理这一行。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组测试数据，输出一行，表示相应的 <span class=\"katex math inline\">n</span> 是否是 <span class=\"katex math inline\">17</span> 的倍数。<span class=\"katex math inline\">1</span> 表示是，<span class=\"katex math inline\">0</span> 表示否。</p>\n</div>            </div>",
+      "text": "对于每组测试数据，输出一行，表示相应的 n 是否是 17 的倍数。1 表示是，0 表示否。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>34\r\n201\r\n2098765413\r\n1717171717171717171717171717171717171717171717171718\r\n0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n0\r\n1\r\n0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            34\r\n201\r\n2098765413\r\n1717171717171717171717171717171717171717171717171718\r\n0\n                        \n                        \n                            输出\n                            1\r\n0\r\n1\r\n0"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>模拟</p>\n</div>                </div>",
+      "text": "模拟"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">模拟</span><span class=\"label label-warning\">数学</span></span></p>\n</div>                </div>",
+      "text": "模拟数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "34\r\n201\r\n2098765413\r\n1717171717171717171717171717171717171717171717171718\r\n0",
+      "output": "1\r\n0\r\n1\r\n0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "486",
+    "通过人数": "239",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:53"
+}

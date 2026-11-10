@@ -1,0 +1,56 @@
+{
+  "id": "1309",
+  "title": "最多能倒多少杯水",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1309",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>花花所在的学校引入了电水箱为同学们烧开水。</p>\n<p>已知电水箱的容量为 <span class=\"katex math inline\">n</span> 升（ <span class=\"katex math inline\">n \\le 10 L</span> ），同学们带的杯子平均容量为 <span class=\"katex math inline\">x</span> 毫升（ <span class=\"katex math inline\">x</span> 在 <span class=\"katex math inline\">100 \\sim 300</span> 之间），请问烧一箱开水，最多能倒多少杯（不足 <span class=\"katex math inline\">1</span> 杯算 <span class=\"katex math inline\">1</span> 杯）。（4.1.2）</p>\n</div>            </div>",
+      "text": "花花所在的学校引入了电水箱为同学们烧开水。\n已知电水箱的容量为 n 升（ n \\le 10 L ），同学们带的杯子平均容量为 x 毫升（ x 在 100 \\sim 300 之间），请问烧一箱开水，最多能倒多少杯（不足 1 杯算 1 杯）。（4.1.2）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">x</span> 。</p>\n<p><span class=\"katex math inline\">n</span> 代表电水箱的总容量（单位为升 <span class=\"katex math inline\">L</span>）， <span class=\"katex math inline\">x</span> 代表平均 <span class=\"katex math inline\">1</span> 个杯子的容量（单位为毫升<span class=\"katex math inline\">ml</span> ）。</p>\n</div>            </div>",
+      "text": "2 个整数 n 和 x 。\nn 代表电水箱的总容量（单位为升 L）， x 代表平均 1 个杯子的容量（单位为毫升ml ）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，代表最多能够倒多少杯水（不足 <span class=\"katex math inline\">1</span> 杯算 <span class=\"katex math inline\">1</span> 杯）。</p>\n</div>            </div>",
+      "text": "一个整数，代表最多能够倒多少杯水（不足 1 杯算 1 杯）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 120</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 120\n                        \n                        \n                            输出\n                            9"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 120",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "33884",
+    "通过人数": "21718",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:41"
+}

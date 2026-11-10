@@ -1,0 +1,61 @@
+{
+  "id": "2093",
+  "title": "统计组合方式",
+  "tags": [
+    "需要找规律的循环",
+    "数组"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2093",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明有一堆 <span class=\"katex math inline\">1</span> 分、<span class=\"katex math inline\">2</span> 分、<span class=\"katex math inline\">5</span> 分的硬币。小明想由 <span class=\"katex math inline\">n</span> 个硬币组成总面值为 <span class=\"katex math inline\">m</span> 分，求一共有多少种可能的组合方式（某种面值的硬币可以数量可以为 <span class=\"katex math inline\">0</span>）。</p>\n</div>            </div>",
+      "text": "小明有一堆 1 分、2 分、5 分的硬币。小明想由 n 个硬币组成总面值为 m 分，求一共有多少种可能的组合方式（某种面值的硬币可以数量可以为 0）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据第一行有一个正整数 <span class=\"katex math inline\">T</span>（ <span class=\"katex math inline\">1 \\le T \\le 50</span>），表示有 <span class=\"katex math inline\">T</span>组测试数据。</p>\n<p>接下来的 <span class=\"katex math inline\">T</span>行，每行有两个数 <span class=\"katex math inline\">n</span>，<span class=\"katex math inline\">m</span>，<span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> 的含义同上( <span class=\"katex math inline\">1 \\le n,m \\le 5000</span>)。</p>\n</div>            </div>",
+      "text": "输入数据第一行有一个正整数 T（ 1 \\le T \\le 50），表示有 T组测试数据。\n接下来的 T行，每行有两个数 n，m，n 和 m 的含义同上( 1 \\le n,m \\le 5000)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组测试数据，请输出可能的组合方式数，每组输出占一行。</p>\n</div>            </div>",
+      "text": "对于每组测试数据，请输出可能的组合方式数，每组输出占一行。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n3 5\r\n4 8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n5 10\r\n8 20\r\n3 6\r\n2 4\r\n10 26\r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2\r\n2\r\n1\r\n1\r\n3</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n3 5\r\n4 8\n                        \n                        \n                            输出\n                            1\r\n2\n                        \n\n                                                    \n                                输入\n                                5\r\n5 10\r\n8 20\r\n3 6\r\n2 4\r\n10 26\r\n\n                            \n                            \n                                输出\n                                2\r\n2\r\n1\r\n1\r\n3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环 数组</p>\n</div>                </div>",
+      "text": "需要找规律的循环 数组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span><span class=\"label label-warning\">数组</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n3 5\r\n4 8",
+      "output": "1\r\n2"
+    },
+    {
+      "input": "5\r\n5 10\r\n8 20\r\n3 6\r\n2 4\r\n10 26\r\n",
+      "output": "2\r\n2\r\n1\r\n1\r\n3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "1000",
+    "通过人数": "451",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:28:20"
+}

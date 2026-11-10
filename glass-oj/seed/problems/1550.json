@@ -1,0 +1,62 @@
+{
+  "id": "1550",
+  "title": "房屋积水",
+  "tags": [
+    "省赛",
+    "动态规划"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1550",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>乌龟家的屋顶是凹凸不平的，所以每次雨后都会积水。为了知道屋顶是否会在暴雨后塌掉，他把屋顶的形 状给了你，希望你帮他计算暴雨后屋顶的积水总量。</p>\n<p>乌龟的屋顶由顺次排在同一水平线上的 <span class=\"katex math inline\">n</span> 个宽度为 <span class=\"katex math inline\">1</span>、高度为整数 (分别给出) 的瓦片组成。例如给定 <span class=\"katex math inline\">n = 5</span> ，瓦片的高度分别为 <span class=\"katex math inline\">4, 2, 3, 5, 1</span> ，屋顶可以画在下图所示的网格中，灰色格子为瓦片。</p>\n<p>暴雨过后，如果一个方格向左右两侧延伸都能到达瓦片占据的方格，它就会积水。所以图中波浪线格子在暴雨后会积水，屋顶的积水方格总数为 <span class=\"katex math inline\">3</span> 。</p>\n<p><img src=\"https://assets.boyi.local/e83647439389c8aed879c685.png\"></p>\n</div>            </div>",
+      "text": "乌龟家的屋顶是凹凸不平的，所以每次雨后都会积水。为了知道屋顶是否会在暴雨后塌掉，他把屋顶的形 状给了你，希望你帮他计算暴雨后屋顶的积水总量。\n乌龟的屋顶由顺次排在同一水平线上的 n 个宽度为 1、高度为整数 (分别给出) 的瓦片组成。例如给定 n = 5 ，瓦片的高度分别为 4, 2, 3, 5, 1 ，屋顶可以画在下图所示的网格中，灰色格子为瓦片。\n暴雨过后，如果一个方格向左右两侧延伸都能到达瓦片占据的方格，它就会积水。所以图中波浪线格子在暴雨后会积水，屋顶的积水方格总数为 3 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个整数 <span class=\"katex math inline\">n</span>, <span class=\"katex math inline\">R_1</span>，表示屋顶的宽度和生成数列的首项。从左向右数第 <span class=\"katex math inline\">i</span> ( <span class=\"katex math inline\">1 \\le i \\le n</span> )个瓦片的高度 <span class=\"katex math inline\">a_i = R_i \\mod 10</span> 。</p>\n<p>试题中使用的生成数列 <span class=\"katex math inline\">R</span> 定义如下：整数 <span class=\"katex math inline\">0 \\le R_1 \\lt 201701</span> 在输入中给出。对于 <span class=\"katex math inline\">i \\gt 1</span>，<span class=\"katex math inline\">R_i = (R</span><sub><span class=\"katex math inline\">i−1</span></sub><span class=\"katex math inline\"> \\times 6807 + 2831) \\mod 201701</span>。</p>\n</div>            </div>",
+      "text": "两个整数 n, R_1，表示屋顶的宽度和生成数列的首项。从左向右数第 i ( 1 \\le i \\le n )个瓦片的高度 a_i = R_i \\mod 10 。\n试题中使用的生成数列 R 定义如下：整数 0 \\le R_1 \\lt 201701 在输入中给出。对于 i \\gt 1，R_i = (Ri−1 \\times 6807 + 2831) \\mod 201701。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示暴雨后屋顶积水方格的总数。</p>\n</div>            </div>",
+      "text": "一个整数，表示暴雨后屋顶积水方格的总数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>23</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 1\n                        \n                        \n                            输出\n                            23"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\">数据规模\n<p><span class=\"katex math inline\"> 1 \\le n \\le 100 </span></p>\n</div>\n\n                    \n                </div>",
+      "text": "数据规模\n 1 \\le n \\le 100"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>省赛 动态规划</p>\n</div>                </div>",
+      "text": "省赛 动态规划"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">省赛</span><span class=\"label label-warning\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "省赛动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 1",
+      "output": "23"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2122",
+    "通过人数": "1344",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:20:58"
+}

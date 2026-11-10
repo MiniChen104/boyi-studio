@@ -1,0 +1,63 @@
+{
+  "id": "1380",
+  "title": "小X学游泳",
+  "tags": [
+    "市赛",
+    "深搜",
+    "广搜"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1380",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 X 想要学游泳。</p>\n<p>这天，小 X 来到了游泳池，发现游泳池可以用 <span class=\"katex math inline\">N</span> 行 <span class=\"katex math inline\">M</span> 列的格子来表示，每个格子的面积都是 <span class=\"katex math inline\">1</span> ，且格子内水深相同。</p>\n<p>由于小 X 刚刚入门，他只能在水深相同的地方游泳。为此，他把整个游泳池看成若干片区域，如果两个格子相邻（上下左右四个方向）且水深相同，他就认为它们属于同一片区域。</p>\n<p>小X想知道最大的一片区域面积是多少，希望你帮帮他。</p>\n</div>            </div>",
+      "text": "小 X 想要学游泳。\n这天，小 X 来到了游泳池，发现游泳池可以用 N 行 M 列的格子来表示，每个格子的面积都是 1 ，且格子内水深相同。\n由于小 X 刚刚入门，他只能在水深相同的地方游泳。为此，他把整个游泳池看成若干片区域，如果两个格子相邻（上下左右四个方向）且水深相同，他就认为它们属于同一片区域。\n小X想知道最大的一片区域面积是多少，希望你帮帮他。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含用一个空格隔开的两个整数 <span class=\"katex math inline\">N,M</span>。（<span class=\"katex math inline\">1≤N,M≤100</span>）。</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行包含 <span class=\"katex math inline\">M</span> 个 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">9</span> 的数字，表示每个格子的水深。</p>\n</div>            </div>",
+      "text": "第一行包含用一个空格隔开的两个整数 N,M。（1≤N,M≤100）。\n接下来 N 行，每行包含 M 个 1 到 9 的数字，表示每个格子的水深。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个整数，表示最大的一片区域面积。</p>\n</div>            </div>",
+      "text": "第一行包含一个整数，表示最大的一片区域面积。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3\r\n124\r\n224\r\n152</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\r\n124\r\n224\r\n152\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>数据范围</strong></p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">1≤N,M≤3</span> 。</p>\n<p>对于 <span class=\"katex math inline\">60\\%</span> 的数据，<span class=\"katex math inline\">1≤N,M≤10</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1≤N,M≤100</span>。</p>\n<p><strong>来源</strong></p>\n<p>常州市2015“信息与未来”夏令营选拔赛。</p>\n<p><strong>建议</strong></p>\n<p>请使用深搜和广搜分别实现。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 30\\% 的数据，1≤N,M≤3 。\n对于 60\\% 的数据，1≤N,M≤10。\n对于 100\\% 的数据，1≤N,M≤100。\n来源\n常州市2015“信息与未来”夏令营选拔赛。\n建议\n请使用深搜和广搜分别实现。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛 深搜 广搜</p>\n</div>                </div>",
+      "text": "市赛 深搜 广搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">深搜</span><span class=\"label label-info\">广搜</span></span></p>\n</div>                </div>",
+      "text": "市赛深搜广搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3\r\n124\r\n224\r\n152",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "7161",
+    "通过人数": "3642",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:18:39"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "2194",
+  "title": "丑数",
+  "tags": [
+    "数学"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2194",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n把只包含质因子2、3和5的数称作丑数（Ugly Number）。\n</p>\n<p>\n例如6、8都是丑数，但14不是，因为它包含质因子7。习惯上我们把1当做是第一个丑数。\n</p>\n<p>\n请你编程寻找这个序列中的第n个元素。\n</p>\n<p>\n(已知 n 不超过10000)\n</p>\n</div>            </div>",
+      "text": "把只包含质因子2、3和5的数称作丑数（Ugly Number）。\n\n\n例如6、8都是丑数，但14不是，因为它包含质因子7。习惯上我们把1当做是第一个丑数。\n\n\n请你编程寻找这个序列中的第n个元素。\n\n\n(已知 n 不超过10000)"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数n</p>\n</div>            </div>",
+      "text": "一行一个整数n"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数，表示第n个丑数</p>\n</div>            </div>",
+      "text": "一行一个整数，表示第n个丑数"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>36</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            20\n                        \n                        \n                            输出\n                            36"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数学</p>\n</div>                </div>",
+      "text": "数学"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数学</span></span></p>\n</div>                </div>",
+      "text": "数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "20",
+      "output": "36"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "606",
+    "通过人数": "120",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:37"
+}

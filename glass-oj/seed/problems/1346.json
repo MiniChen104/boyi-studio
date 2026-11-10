@@ -1,0 +1,57 @@
+{
+  "id": "1346",
+  "title": "等比例缩放照片",
+  "tags": [
+    "二维数组",
+    "结构体"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1346",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如图所示的一张照片（图①），可以把它的宽度或者高度减小从而减少照片的尺寸（如图②、③、④）。但只有等比例缩放的情况下照片才是最好看的，如图④；图②照片被压扁，图③照片被拉长。<br>\n给定图片的原始尺寸以及n组要压缩的尺寸，请问哪组压缩后的数据的宽高比最接近原始数据？如果有多组压缩尺寸的宽高比都是一样的且都是最接近原始数据的，那么输出压缩后面积最小的那组数据。<br><img src=\"https://assets.boyi.local/52db6fa696d5bac8e8944536.jpg\"></p>\n</div>            </div>",
+      "text": "如图所示的一张照片（图①），可以把它的宽度或者高度减小从而减少照片的尺寸（如图②、③、④）。但只有等比例缩放的情况下照片才是最好看的，如图④；图②照片被压扁，图③照片被拉长。\n给定图片的原始尺寸以及n组要压缩的尺寸，请问哪组压缩后的数据的宽高比最接近原始数据？如果有多组压缩尺寸的宽高比都是一样的且都是最接近原始数据的，那么输出压缩后面积最小的那组数据。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行， <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span> ，代表图片的原始尺寸的宽和高</p>\n<p>第 <span class=\"katex math inline\">2</span> 行，一个整数 <span class=\"katex math inline\">n</span> ，代表接下来有 <span class=\"katex math inline\">n</span> 组压缩后的尺寸（ <span class=\"katex math inline\">n \\le 100</span> ）</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">2</span> 个数，代表 <span class=\"katex math inline\">n</span> 组压缩后的宽和高（确保输入的宽 <span class=\"katex math inline\">\\ge</span> 高）（本题所有照片的宽高均在 <span class=\"katex math inline\">1 \\sim 10000</span> 之间）</p>\n</div>            </div>",
+      "text": "第 1 行， 2 个整数 x 和 y ，代表图片的原始尺寸的宽和高\n第 2 行，一个整数 n ，代表接下来有 n 组压缩后的尺寸（ n \\le 100 ）\n接下来 n 行，每行 2 个数，代表 n 组压缩后的宽和高（确保输入的宽 \\ge 高）（本题所有照片的宽高均在 1 \\sim 10000 之间）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>宽高比和原始图片最接近的宽高数据，如果有多组这样的数，输出面积最小的那组（不存在多组宽高比和原始数据一样接近且面积又一样的数据）</p>\n</div>            </div>",
+      "text": "宽高比和原始图片最接近的宽高数据，如果有多组这样的数，输出面积最小的那组（不存在多组宽高比和原始数据一样接近且面积又一样的数据）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 4\r\n4\r\n20 4\r\n60 10\r\n15 9\r\n10 6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10 6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 4\r\n4\r\n20 4\r\n60 10\r\n15 9\r\n10 6\n                        \n                        \n                            输出\n                            10 6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二维数组 结构体</p>\n</div>                </div>",
+      "text": "二维数组 结构体"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二维数组</span><span class=\"label label-warning\">结构体</span></span></p>\n</div>                </div>",
+      "text": "二维数组结构体"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 4\r\n4\r\n20 4\r\n60 10\r\n15 9\r\n10 6",
+      "output": "10 6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "4953",
+    "通过人数": "2378",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:09"
+}

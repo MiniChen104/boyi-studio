@@ -1,0 +1,67 @@
+{
+  "id": "4147",
+  "title": "Recamán",
+  "tags": [
+    "GESP四级",
+    "数组",
+    "24年12月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4147",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨最近发现了有趣的 Recamán 数列，这个数列是这样生成的：</p>\n<ul><li>数列的第一项  <span class=\"katex math inline\">a_1 </span>是 <span class=\"katex math inline\">1</span>；</li>\n<li>如果 <span class=\"katex math inline\">a_{k-1}-k</span> 是正整数并且没有在数列中出现过，那么数列的第 <span class=\"katex math inline\">k</span> 项 <span class=\"katex math inline\">a_k</span> 为  <span class=\"katex math inline\">a_{k-1}-k</span>，否则为  <span class=\"katex math inline\">a_{k-1}+k</span>。</li>\n</ul><p>小杨想知道 Recamán 数列的前 <span class=\"katex math inline\">n</span> 项从小到大排序后的结果。手动计算非常困难，小杨希望你能帮他解决这个问题。</p>\n</div>            </div>",
+      "text": "小杨最近发现了有趣的 Recamán 数列，这个数列是这样生成的：\n数列的第一项  a_1 是 1；\n如果 a_{k-1}-k 是正整数并且没有在数列中出现过，那么数列的第 k 项 a_k 为  a_{k-1}-k，否则为  a_{k-1}+k。\n小杨想知道 Recamán 数列的前 n 项从小到大排序后的结果。手动计算非常困难，小杨希望你能帮他解决这个问题。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个正整数 <span class=\"katex math inline\">n</span>。</p>\n</div>            </div>",
+      "text": "第一行，一个正整数 n。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行， <span class=\"katex math inline\">n</span> 个空格分隔的整数，表示 Recamán 数列的前 <span class=\"katex math inline\">n</span> 项从小到大排序后的结果。</p>\n</div>            </div>",
+      "text": "一行， n 个空格分隔的整数，表示 Recamán 数列的前 n 项从小到大排序后的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 2 3 6 7</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>8</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1 2 3 6 7 12 13 20</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            1 2 3 6 7\n                        \n\n                                                    \n                                输入\n                                8\n                            \n                            \n                                输出\n                                1 2 3 6 7 12 13 20"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例1解释】</strong></p>\n<p>对于样例 1，<span class=\"katex math inline\">n=5</span>：</p>\n<ul><li><span class=\"katex math inline\">a_1=1</span>；</li>\n<li><span class=\"katex math inline\">a_1-2=-1</span>，不是正整数，因此 <span class=\"katex math inline\">a_2=a_1+2=3</span>；</li>\n<li><span class=\"katex math inline\">a_2-3=0</span>，不是正整数，因此 <span class=\"katex math inline\">a_3=a_2+3=6</span>；</li>\n<li><span class=\"katex math inline\">a_3-4=2</span>，是正整数，且没有在数列中出现过，因此 <span class=\"katex math inline\">a_4=2</span>；</li>\n<li><span class=\"katex math inline\">a_4-5=-3</span>，不是正整数，因此 <span class=\"katex math inline\">a_5=a_4+5=7</span>；</li>\n</ul><p><span class=\"katex math inline\">a_1,a_2,a_3,a_4,a_5</span> 从小到大排序后的结果为 <span class=\"katex math inline\">1 \\quad 2  \\quad 3  \\quad 6  \\quad 7</span>。</p>\n<h4>数据范围</h4>\n<p>对于所有数据点，保证 <span class=\"katex math inline\">1 \\le n \\le 3000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1解释】\n对于样例 1，n=5：\na_1=1；\na_1-2=-1，不是正整数，因此 a_2=a_1+2=3；\na_2-3=0，不是正整数，因此 a_3=a_2+3=6；\na_3-4=2，是正整数，且没有在数列中出现过，因此 a_4=2；\na_4-5=-3，不是正整数，因此 a_5=a_4+5=7；\na_1,a_2,a_3,a_4,a_5 从小到大排序后的结果为 1 \\quad 2  \\quad 3  \\quad 6  \\quad 7。\n数据范围\n对于所有数据点，保证 1 \\le n \\le 3000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 24年12月认证 C++ 四级真题</p>\n</div>                </div>",
+      "text": "GESP 24年12月认证 C++ 四级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">数组</span><span class=\"label label-info\">24年12月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级数组24年12月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "1 2 3 6 7"
+    },
+    {
+      "input": "8",
+      "output": "1 2 3 6 7 12 13 20"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "814",
+    "通过人数": "504",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:43"
+}

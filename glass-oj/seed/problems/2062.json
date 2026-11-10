@@ -1,0 +1,56 @@
+{
+  "id": "2062",
+  "title": "倒水",
+  "tags": [
+    "前缀和差分"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2062",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一个桌子上摆放了 <span class=\"katex math inline\">n</span> 个杯子，每个杯子中有一定量的水。小 <span class=\"katex math inline\">A</span> 同学负责向杯子中倒水，他总共倒了 <span class=\"katex math inline\">k</span> 次，每次会向从第 <span class=\"katex math inline\">L</span> 个杯子到第 <span class=\"katex math inline\">R</span> 个杯子中添加 <span class=\"katex math inline\">P</span> 毫升的水（注意：水只可能增加，不可能减少）。</p>\n<p>请问小 <span class=\"katex math inline\">A</span> 同学倒了 <span class=\"katex math inline\">k</span> 次水之后， <span class=\"katex math inline\">n</span> 个杯子每个杯子有多少毫升的水。</p>\n</div>            </div>",
+      "text": "在一个桌子上摆放了 n 个杯子，每个杯子中有一定量的水。小 A 同学负责向杯子中倒水，他总共倒了 k 次，每次会向从第 L 个杯子到第 R 个杯子中添加 P 毫升的水（注意：水只可能增加，不可能减少）。\n请问小 A 同学倒了 k 次水之后， n 个杯子每个杯子有多少毫升的水。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">k</span>。</p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个整数，表示一开始每个杯子中水的毫升数。</p>\n<p>接下来 <span class=\"katex math inline\">k</span> 行，每行包含三个整数 <span class=\"katex math inline\">L,R,P</span>，表示一次操作。</p>\n<p><strong>数据范围</strong></p>\n<p><span class=\"katex math inline\">1≤n,k≤100000</span>。</p>\n<p><span class=\"katex math inline\">1≤L≤R≤n</span>，<span class=\"katex math inline\">0≤P≤1000</span>。</p>\n<p>杯子中水的初始量在 <span class=\"katex math inline\">[0,1000]</span> 的范围内。</p>\n<p>本题数据上保证所有的杯子在加水之后，水量值仍然<strong>在 int 范围内</strong>。</p>\n</div>            </div>",
+      "text": "第一行包含两个整数 n 和 k。\n第二行包含 n 个整数，表示一开始每个杯子中水的毫升数。\n接下来 k 行，每行包含三个整数 L,R,P，表示一次操作。\n数据范围\n1≤n,k≤100000。\n1≤L≤R≤n，0≤P≤1000。\n杯子中水的初始量在 [0,1000] 的范围内。\n本题数据上保证所有的杯子在加水之后，水量值仍然在 int 范围内。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共一行，包含 <span class=\"katex math inline\">n</span> 个整数，表示最终 <span class=\"katex math inline\">n</span> 个杯子每个杯子有多少毫升的水。</p>\n</div>            </div>",
+      "text": "共一行，包含 n 个整数，表示最终 n 个杯子每个杯子有多少毫升的水。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8 3\r\n1 2 10 8 1 5 1 1\r\n7 8 12\r\n1 8 4\r\n2 3 12</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5 18 26 12 5 9 17 17</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8 3\r\n1 2 10 8 1 5 1 1\r\n7 8 12\r\n1 8 4\r\n2 3 12\n                        \n                        \n                            输出\n                            5 18 26 12 5 9 17 17"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>前缀和差分</p>\n</div>                </div>",
+      "text": "前缀和差分"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">前缀和差分</span></span></p>\n</div>                </div>",
+      "text": "前缀和差分"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8 3\r\n1 2 10 8 1 5 1 1\r\n7 8 12\r\n1 8 4\r\n2 3 12",
+      "output": "5 18 26 12 5 9 17 17"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5393",
+    "通过人数": "3685",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:55"
+}

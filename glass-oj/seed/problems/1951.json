@@ -1,0 +1,66 @@
+{
+  "id": "1951",
+  "title": "子串统计",
+  "tags": [
+    "蓝桥杯",
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1951",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个长度为 <span class=\"katex math inline\">n</span> 的字符串 <span class=\"katex math inline\">S</span>，还有一个数字 <span class=\"katex math inline\">L</span>，统计长度大于等于 <span class=\"katex math inline\">L</span> 的出现次数最多的子串（不同的出现可以相交），如果有多个，输出最长的，如果仍然有多个，输出第一次出现最早的。</p>\n</div>            </div>",
+      "text": "给定一个长度为 n 的字符串 S，还有一个数字 L，统计长度大于等于 L 的出现次数最多的子串（不同的出现可以相交），如果有多个，输出最长的，如果仍然有多个，输出第一次出现最早的。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个数字 <span class=\"katex math inline\">L</span>。</p>\n<p>第二行是字符串 <span class=\"katex math inline\">S</span>。</p>\n<p><span class=\"katex math inline\">L</span> 大于 <span class=\"katex math inline\">0</span> ，且不超过 <span class=\"katex math inline\">S</span> 的长度。</p>\n</div>            </div>",
+      "text": "第一行一个数字 L。\n第二行是字符串 S。\nL 大于 0 ，且不超过 S 的长度。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，题目要求的字符串。</p>\n</div>            </div>",
+      "text": "一行，题目要求的字符串。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\nbbaabbaaaaa</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>bbaa</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2\r\nbbaabbaaaaa</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>aa</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\nbbaabbaaaaa\n                        \n                        \n                            输出\n                            bbaa\n                        \n\n                                                    \n                                输入\n                                2\r\nbbaabbaaaaa\n                            \n                            \n                                输出\n                                aa"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】蓝桥杯算法训练</p>\n<p>【数据规模和约定】</p>\n<p><span class=\"katex math inline\">L \\le 60</span>，字符串 <span class=\"katex math inline\">S</span> 的长度 <span class=\"katex math inline\"> \\le 60</span></p>\n<p><span class=\"katex math inline\">S</span> 中所有字符都是小写英文字母。</p>\n<p>提示：枚举所有可能的子串，统计出现次数，找出符合条件的那个</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】蓝桥杯算法训练\n【数据规模和约定】\nL \\le 60，字符串 S 的长度  \\le 60\nS 中所有字符都是小写英文字母。\n提示：枚举所有可能的子串，统计出现次数，找出符合条件的那个"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 字符串</p>\n</div>                </div>",
+      "text": "蓝桥杯 字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\nbbaabbaaaaa",
+      "output": "bbaa"
+    },
+    {
+      "input": "2\r\nbbaabbaaaaa",
+      "output": "aa"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "829",
+    "通过人数": "377",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:26"
+}

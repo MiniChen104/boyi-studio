@@ -1,0 +1,64 @@
+{
+  "id": "3859",
+  "title": "平方之和",
+  "tags": [
+    "GESP二级",
+    "循环",
+    "24年6月",
+    "枚举"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3859",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有 <span class=\"katex math inline\">n</span> 个正整数 <span class=\"katex math inline\">a_1,a_2,...a_n</span> ，他想知道对于所有的 <span class=\"katex math inline\">i (1 \\le i \\le n )</span>，是否存在两个正整数 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span> 满足 <span class=\"katex math inline\"> x \\times x + y \\times y=a_i </span>。</p>\n</div>            </div>",
+      "text": "小杨有 n 个正整数 a_1,a_2,...a_n ，他想知道对于所有的 i (1 \\le i \\le n )，是否存在两个正整数 x 和 y 满足  x \\times x + y \\times y=a_i 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">n</span> ，代表正整数数量。</p>\n<p>之后 <span class=\"katex math inline\">n</span> 行，每行包含一个正整数，代表 <span class=\"katex math inline\">a_i</span>   。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 n ，代表正整数数量。\n之后 n 行，每行包含一个正整数，代表 a_i   。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每个正整数 <span class=\"katex math inline\">a_i</span>，如果存在两个正整数 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span> 满足 <span class=\"katex math inline\"> x \\times x + y \\times y=a_i </span>，输出 <code>Yes</code>，否则输出 <code>No</code>。</p>\n</div>            </div>",
+      "text": "对于每个正整数 a_i，如果存在两个正整数 x 和 y 满足  x \\times x + y \\times y=a_i ，输出 Yes，否则输出 No。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n5\r\n4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Yes\r\nNo</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n5\r\n4\n                        \n                        \n                            输出\n                            Yes\r\nNo"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p>对于第一个正整数，存在 <span class=\"katex math inline\">1 \\times 1 + 2 \\times 2=5</span> ，因此答案为 <code>Yes</code>。</p>\n<p>【数据范围】 </p>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n \\le 10,1 \\le a_i \\le 10^6</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n对于第一个正整数，存在 1 \\times 1 + 2 \\times 2=5 ，因此答案为 Yes。\n【数据范围】 \n对于全部数据，保证有 1 \\le n \\le 10,1 \\le a_i \\le 10^6 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 6月认证C++二级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 6月认证C++二级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP二级</span><span class=\"label label-warning\">循环</span><span class=\"label label-info\">24年6月</span><span class=\"label label-danger\">枚举</span></span></p>\n</div>                </div>",
+      "text": "GESP二级循环24年6月枚举"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n5\r\n4",
+      "output": "Yes\r\nNo"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "5054",
+    "通过人数": "2275",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:07"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "3409",
+  "title": "小杨买饮料",
+  "tags": [
+    "GESP六级",
+    "动态规划",
+    "01背包",
+    "23年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3409",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨来到了一家商店，打算购买一些饮料。这家商店总共出售 <span class=\"katex math inline\">N</span> 种饮料，编号从 <span class=\"katex math inline\">0</span> 至 <span class=\"katex math inline\">N-1</span>，其中编号为 <span class=\"katex math inline\">i</span> 的饮料售价 <span class=\"katex math inline\">c_i</span> 元，容量 <span class=\"katex math inline\">l_i</span> 毫升。</p>\n<p>小杨的需求有如下几点：</p>\n<ol><li><p>小杨想要尽可能尝试不同种类的饮料，因此他希望每种饮料至多购买 <span class=\"katex math inline\">1</span> 瓶；</p>\n</li>\n<li><p>小杨很渴，所以他想要购买总容量不低于 <span class=\"katex math inline\">L</span> 的饮料；</p>\n</li>\n<li><p>小杨勤俭节约，所以在 <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">2</span> 的前提下，他希望使用尽可能少的费用。</p>\n</li>\n</ol><p>方便起见，你只需要输出最少花费的费用即可。特别地，如果不能满足小杨的要求，则输出 <code>no solution</code> 。</p>\n</div>            </div>",
+      "text": "小杨来到了一家商店，打算购买一些饮料。这家商店总共出售 N 种饮料，编号从 0 至 N-1，其中编号为 i 的饮料售价 c_i 元，容量 l_i 毫升。\n小杨的需求有如下几点：\n小杨想要尽可能尝试不同种类的饮料，因此他希望每种饮料至多购买 1 瓶；\n\n小杨很渴，所以他想要购买总容量不低于 L 的饮料；\n\n小杨勤俭节约，所以在 1 和 2 的前提下，他希望使用尽可能少的费用。\n\n方便起见，你只需要输出最少花费的费用即可。特别地，如果不能满足小杨的要求，则输出 no solution 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个整数 <span class=\"katex math inline\">N,L</span>。</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，依次描述第 <span class=\"katex math inline\"> i=0,1,...,N-1 </span> 种饮料：每行两个整数 <span class=\"katex math inline\">c_i,l_i</span> 。</p>\n</div>            </div>",
+      "text": "第一行两个整数 N,L。\n接下来 N 行，依次描述第  i=0,1,...,N-1  种饮料：每行两个整数 c_i,l_i 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数，表示最少需要花费多少钱，才能满足小杨的要求。特别地，如果不能满足要求，则输出 <code>no solution</code> 。</p>\n</div>            </div>",
+      "text": "输出一行一个整数，表示最少需要花费多少钱，才能满足小杨的要求。特别地，如果不能满足要求，则输出 no solution 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 100\r\n100 2000\r\n2 50\r\n4 40\r\n5 30\r\n3 20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 141\r\n100 2000\r\n2 50\r\n4 40\r\n5 30\r\n3 20</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>100</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4 141\r\n2 50\r\n4 40\r\n5 30\r\n3 20</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>no solution</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            5 100\r\n100 2000\r\n2 50\r\n4 40\r\n5 30\r\n3 20\n                        \n                        \n                            输出\n                            9\n                        \n\n                                                    \n                                输入\n                                5 141\r\n100 2000\r\n2 50\r\n4 40\r\n5 30\r\n3 20\n                            \n                            \n                                输出\n                                100\n                            \n                        \n                                                    \n                                输入\n                                4 141\r\n2 50\r\n4 40\r\n5 30\r\n3 20\n                            \n                            \n                                输出\n                                no solution"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释 1】</p>\n<p>小杨可以购买 <span class=\"katex math inline\">1,2,4</span> 号饮料，总计获得 <span class=\"katex math inline\"> 50 + 40 +20 = 110 </span> 毫升饮料，花费 <span class=\"katex math inline\">2 + 4 + 3 = 9 </span> 元。</p>\n<p>如果只考虑前两项需求，小杨也可以购买 <span class=\"katex math inline\"> 1,3,4 </span> 号饮料，它们的容量总和为 <span class=\"katex math inline\">50 + 30 + 20 = 100 </span> 毫升，恰好可以满\n足需求。但遗憾的是，这个方案需要花费 <span class=\"katex math inline\"> 2 + 5 + 3 = 10 </span> 元。</p>\n<p>【样例解释 2】</p>\n<p><span class=\"katex math inline\"> 1,2,3,4 </span> 号饮料总计 <span class=\"katex math inline\">140</span> 毫升，如每种饮料至多购买 <span class=\"katex math inline\">1</span> 瓶，则恰好无法满足需求，因此只能花费 <span class=\"katex math inline\">100</span> 元购买 <span class=\"katex math inline\">0</span> 号饮料。</p>\n<p>【数据规模】</p>\n<p>对于 <span class=\"katex math inline\">40</span> % 的测试点，保证 <span class=\"katex math inline\">N \\leq 20</span>；<span class=\"katex math inline\"> 1 \\leq L \\leq 100 </span> ；<span class=\"katex math inline\">l_i \\leq 100</span> 。</p>\n<p>对于 <span class=\"katex math inline\">70</span>% 的测试点，保证 <span class=\"katex math inline\">l_i \\leq 100</span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\leq N \\leq 500</span>；<span class=\"katex math inline\">1 \\leq L \\leq 2000</span> ；<span class=\"katex math inline\"> 1 \\leq c_i,l_i \\leq 10^6 </span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释 1】\n小杨可以购买 1,2,4 号饮料，总计获得  50 + 40 +20 = 110  毫升饮料，花费 2 + 4 + 3 = 9  元。\n如果只考虑前两项需求，小杨也可以购买  1,3,4  号饮料，它们的容量总和为 50 + 30 + 20 = 100  毫升，恰好可以满\n足需求。但遗憾的是，这个方案需要花费  2 + 5 + 3 = 10  元。\n【样例解释 2】\n 1,2,3,4  号饮料总计 140 毫升，如每种饮料至多购买 1 瓶，则恰好无法满足需求，因此只能花费 100 元购买 0 号饮料。\n【数据规模】\n对于 40 % 的测试点，保证 N \\leq 20； 1 \\leq L \\leq 100  ；l_i \\leq 100 。\n对于 70% 的测试点，保证 l_i \\leq 100。\n对于所有测试点，保证 1 \\leq N \\leq 500；1 \\leq L \\leq 2000 ； 1 \\leq c_i,l_i \\leq 10^6  。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年9月六级</p>\n</div>                </div>",
+      "text": "GESP23年9月六级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP六级</span><span class=\"label label-warning\">动态规划</span><span class=\"label label-info\">01背包</span><span class=\"label label-danger\">23年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP六级动态规划01背包23年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 100\r\n100 2000\r\n2 50\r\n4 40\r\n5 30\r\n3 20",
+      "output": "9"
+    },
+    {
+      "input": "5 141\r\n100 2000\r\n2 50\r\n4 40\r\n5 30\r\n3 20",
+      "output": "100"
+    },
+    {
+      "input": "4 141\r\n2 50\r\n4 40\r\n5 30\r\n3 20",
+      "output": "no solution"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "598",
+    "通过人数": "337",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:07"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "1839",
+  "title": "龟兔赛跑预测",
+  "tags": [
+    "蓝桥杯",
+    "循环的应用"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1839",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>话说这个世界上有各种各样的兔子和乌龟，但是 研究发现，所有的兔子和乌龟都有一个共同的特点——喜欢赛跑。于是世界上各个角落都不断在发生着乌龟和兔子的比赛，小华对此很感兴趣，于是决定研究不同兔 子和乌龟的赛跑。他发现，兔子虽然跑比乌龟快，但它们有众所周知的毛病——骄傲且懒惰，于是在与乌龟的比赛中，一旦任一秒结束后兔子发现自己领先 <span class=\"katex math inline\">t</span> 米或以上，它们就会停下来休息 <span class=\"katex math inline\">s</span> 秒。对于不同的兔子，<span class=\"katex math inline\">t</span>，<span class=\"katex math inline\">s</span> 的数值是不同的，但是所有的乌龟却是一致——它们不到终点决不停止。</p>\n<p>然而有些比赛相当漫长，全程观看会耗费大量时间，而小华发现只要在每场比赛开始后记录下兔子和乌龟的数据——兔子的速度 <span class=\"katex math inline\">v_1</span>（表示每秒兔子能跑 <span class=\"katex math inline\">v_1</span> 米），乌龟的速度 <span class=\"katex math inline\">v_2</span>，以及兔子对应的 <span class=\"katex math inline\">t</span>，<span class=\"katex math inline\">s</span>值，以及赛道的长度 <span class=\"katex math inline\">l</span> ——就能预测出比赛的结果。但是小华很懒，不想通过手工计算推测出比赛的结果，于是他找 到了你——清华大学计算机系的高才生——请求帮助，请你写一个程序，对于输入的一场比赛的数据 <span class=\"katex math inline\">v_1</span>，<span class=\"katex math inline\">v_2</span>，<span class=\"katex math inline\">t</span>，<span class=\"katex math inline\">s</span>，<span class=\"katex math inline\">l</span>，预测该场比赛的结果。</p>\n</div>            </div>",
+      "text": "话说这个世界上有各种各样的兔子和乌龟，但是 研究发现，所有的兔子和乌龟都有一个共同的特点——喜欢赛跑。于是世界上各个角落都不断在发生着乌龟和兔子的比赛，小华对此很感兴趣，于是决定研究不同兔 子和乌龟的赛跑。他发现，兔子虽然跑比乌龟快，但它们有众所周知的毛病——骄傲且懒惰，于是在与乌龟的比赛中，一旦任一秒结束后兔子发现自己领先 t 米或以上，它们就会停下来休息 s 秒。对于不同的兔子，t，s 的数值是不同的，但是所有的乌龟却是一致——它们不到终点决不停止。\n然而有些比赛相当漫长，全程观看会耗费大量时间，而小华发现只要在每场比赛开始后记录下兔子和乌龟的数据——兔子的速度 v_1（表示每秒兔子能跑 v_1 米），乌龟的速度 v_2，以及兔子对应的 t，s值，以及赛道的长度 l ——就能预测出比赛的结果。但是小华很懒，不想通过手工计算推测出比赛的结果，于是他找 到了你——清华大学计算机系的高才生——请求帮助，请你写一个程序，对于输入的一场比赛的数据 v_1，v_2，t，s，l，预测该场比赛的结果。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一行，包含用空格隔开的五个正整数 <span class=\"katex math inline\">v_1</span>，<span class=\"katex math inline\">v_2</span>，<span class=\"katex math inline\">t</span>，<span class=\"katex math inline\">s</span>，<span class=\"katex math inline\">l</span>，其中(<span class=\"katex math inline\">v_1,v_2 \\le 100;t \\le 300;s \\le 10;l \\le 10000</span> 且为 <span class=\"katex math inline\">v_1,v_2</span> 的公倍数)</p>\n</div>            </div>",
+      "text": "输入只有一行，包含用空格隔开的五个正整数 v_1，v_2，t，s，l，其中(v_1,v_2 \\le 100;t \\le 300;s \\le 10;l \\le 10000 且为 v_1,v_2 的公倍数)"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出包含两行，第一行输出比赛结果——一个大写字母 <code>T</code> 或 <code>R</code> 或 <code>D</code>，分别表示乌龟获胜，兔子获胜，或者两者同时到达终点。</p>\n<p>第二行输出一个正整数，表示获胜者（或者双方同时）到达终点所耗费的时间（秒数）。</p>\n</div>            </div>",
+      "text": "输出包含两行，第一行输出比赛结果——一个大写字母 T 或 R 或 D，分别表示乌龟获胜，兔子获胜，或者两者同时到达终点。\n第二行输出一个正整数，表示获胜者（或者双方同时）到达终点所耗费的时间（秒数）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 5 5 2 20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>D\r\n4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10 5 5 1 20</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>R\r\n3</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10 5 5 3 20</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>T\r\n4</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            10 5 5 2 20\n                        \n                        \n                            输出\n                            D\r\n4\n                        \n\n                                                    \n                                输入\n                                10 5 5 1 20\n                            \n                            \n                                输出\n                                R\r\n3\n                            \n                        \n                                                    \n                                输入\n                                10 5 5 3 20\n                            \n                            \n                                输出\n                                T\r\n4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 循环的应用</p>\n</div>                </div>",
+      "text": "蓝桥杯 循环的应用"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">循环的应用</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯循环的应用"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 5 5 2 20",
+      "output": "D\r\n4"
+    },
+    {
+      "input": "10 5 5 1 20",
+      "output": "R\r\n3"
+    },
+    {
+      "input": "10 5 5 3 20",
+      "output": "T\r\n4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "723",
+    "通过人数": "317",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:24:53"
+}

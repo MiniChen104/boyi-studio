@@ -1,0 +1,56 @@
+{
+  "id": "1316",
+  "title": "橘子称重",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1316",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学校买回来一大箱橘子，有 <span class=\"katex math inline\">m</span> 个（ <span class=\"katex math inline\">100 \\le  m \\le  1000</span> ），橘子大小比较均匀，学校想称一下总共有多重，发现大称坏掉了还没有修好，只有一个小的弹簧秤。学校又不想分开称，那样太慢了。</p>\n<p>小明想了一个办法，由于橘子大小比较均匀，可以从中拿 <span class=\"katex math inline\">n</span> 个出来（<span class=\"katex math inline\">  5 \\le  n \\le 20</span>），这 <span class=\"katex math inline\">n</span> 个橘子的重量弹簧秤是可以称出来的，有了这 <span class=\"katex math inline\">n</span> 个橘子的重量，就可以计算出平均一个橘子有多重，这样就能知道整箱大约有多重了。</p>\n<p>请编写程序，从键盘读入橘子总数 <span class=\"katex math inline\">m</span> ，小明称的橘子的个数 <span class=\"katex math inline\">n</span>  以及这 <span class=\"katex math inline\">n</span>  个橘子的重量，计算出这箱橘子总共约有多重（结果保留1位小数）。（4.1.52）</p>\n</div>            </div>",
+      "text": "学校买回来一大箱橘子，有 m 个（ 100 \\le  m \\le  1000 ），橘子大小比较均匀，学校想称一下总共有多重，发现大称坏掉了还没有修好，只有一个小的弹簧秤。学校又不想分开称，那样太慢了。\n小明想了一个办法，由于橘子大小比较均匀，可以从中拿 n 个出来（  5 \\le  n \\le 20），这 n 个橘子的重量弹簧秤是可以称出来的，有了这 n 个橘子的重量，就可以计算出平均一个橘子有多重，这样就能知道整箱大约有多重了。\n请编写程序，从键盘读入橘子总数 m ，小明称的橘子的个数 n  以及这 n  个橘子的重量，计算出这箱橘子总共约有多重（结果保留1位小数）。（4.1.52）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span> ，分别代表一箱橘子的总个数以及小明称的橘子的个数；</p>\n<p>第二行为 <span class=\"katex math inline\">n</span> 个橘子的重量（整数）。</p>\n</div>            </div>",
+      "text": "第一行 2 个整数 m 和 n ，分别代表一箱橘子的总个数以及小明称的橘子的个数；\n第二行为 n 个橘子的重量（整数）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一箱橘子的重量（保留1位小数）。</p>\n</div>            </div>",
+      "text": "一箱橘子的重量（保留1位小数）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100 7\r\n84 83 82 81 80 79 79</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8114.3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100 7\r\n84 83 82 81 80 79 79\n                        \n                        \n                            输出\n                            8114.3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100 7\r\n84 83 82 81 80 79 79",
+      "output": "8114.3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "16427",
+    "通过人数": "12603",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:46"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "3362",
+  "title": "填幻方",
+  "tags": [
+    "二维数组",
+    "GESP四级",
+    "GESP样题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3362",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一个 <span class=\"katex math inline\">N×N</span> 的正方形网格中，每个格子分别填上从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">N×N</span> 的正整数，使\n得正方形中任一行、任一列及对角线的几个数之和都相等，则这种正方形图案就\n称为“幻方”（输出样例中展示了一个 <span class=\"katex math inline\">3×3</span> 的幻方）。我国古代称为“河图”、“洛书”，又叫“纵横图”。</p>\n<p>幻方看似神奇，但当 <span class=\"katex math inline\">N</span> 为奇数时有很方便的填法：</p>\n<p>1）一开始正方形中没有填任何数字。首先，在第一行的正中央填上 <span class=\"katex math inline\">1</span>。</p>\n<p>2）从上次填数字的位置向上移动一格，如果已经在第一行，则移到同一列的最后一行；再向右移动一格，如果已经在最右一列，则移动至同一行的第一列。如果移动后的位置没有填数字，则把上次填写的数字的下一个数字填到这个位置。</p>\n<p>3）如果第 <span class=\"katex math inline\">2</span> 步填写失败，则从上次填数字的位置向下移动一格，如果已经在最下一行，则移到同一列的第一行。这个位置一定是空的（这可太神奇了！），把上次填写的数字的下一个数字填到这个位置。</p>\n<p>4）重复 <span class=\"katex math inline\">2、3</span> 步骤，直到所有格子都被填满，幻方就完成了！</p>\n<p>快来编写一个程序，按上述规则，制作一个 <span class=\"katex math inline\">N×N</span> 的幻方吧。</p>\n</div>            </div>",
+      "text": "在一个 N×N 的正方形网格中，每个格子分别填上从 1 到 N×N 的正整数，使\n得正方形中任一行、任一列及对角线的几个数之和都相等，则这种正方形图案就\n称为“幻方”（输出样例中展示了一个 3×3 的幻方）。我国古代称为“河图”、“洛书”，又叫“纵横图”。\n幻方看似神奇，但当 N 为奇数时有很方便的填法：\n1）一开始正方形中没有填任何数字。首先，在第一行的正中央填上 1。\n2）从上次填数字的位置向上移动一格，如果已经在第一行，则移到同一列的最后一行；再向右移动一格，如果已经在最右一列，则移动至同一行的第一列。如果移动后的位置没有填数字，则把上次填写的数字的下一个数字填到这个位置。\n3）如果第 2 步填写失败，则从上次填数字的位置向下移动一格，如果已经在最下一行，则移到同一列的第一行。这个位置一定是空的（这可太神奇了！），把上次填写的数字的下一个数字填到这个位置。\n4）重复 2、3 步骤，直到所有格子都被填满，幻方就完成了！\n快来编写一个程序，按上述规则，制作一个 N×N 的幻方吧。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入为一个正奇数 <span class=\"katex math inline\">N</span>，保证 <span class=\"katex math inline\">3 ≤ N ≤ 21 </span>。</p>\n</div>            </div>",
+      "text": "输入为一个正奇数 N，保证 3 ≤ N ≤ 21 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">N</span> 行，每行 <span class=\"katex math inline\">N</span> 个空格分隔的正整数，内容为 <span class=\"katex math inline\">N \\times N</span> 的幻方。</p>\n</div>            </div>",
+      "text": "输出 N 行，每行 N 个空格分隔的正整数，内容为 N \\times N 的幻方。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8 1 6\r\n3 5 7\r\n4 9 2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            8 1 6\r\n3 5 7\r\n4 9 2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP样题四级</p>\n</div>                </div>",
+      "text": "GESP样题四级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二维数组</span><span class=\"label label-warning\">GESP四级</span><span class=\"label label-info\">GESP样题</span></span></p>\n</div>                </div>",
+      "text": "二维数组GESP四级GESP样题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "8 1 6\r\n3 5 7\r\n4 9 2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "767",
+    "通过人数": "570",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:54"
+}

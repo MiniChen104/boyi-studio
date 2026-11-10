@@ -1,0 +1,62 @@
+{
+  "id": "5888",
+  "title": "小Z的学习2",
+  "tags": [
+    "市赛",
+    "进制转换"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5888",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小Z热衷学习，当他在生活或者书本中遇到问题时，总会问个不停。这像不像小时候的你？ </p>\n<p>一天，小Z看到爸爸在工作，他指着电脑说，为什么有这么多的 <span class=\"katex math inline\">0</span> 和 <span class=\"katex math inline\">1</span>。 他爸爸解释说，这是 <code>IP</code> 地址，一个正确的 <code>IP</code> 地址长度固定为 <span class=\"katex math inline\">32</span> 个 <span class=\"katex math inline\">0</span> 或者 <span class=\"katex math inline\">1</span> 的序列构成。</p>\n<p>但是日常情况下，这种 <span class=\"katex math inline\">01</span> 序列并不好记忆，所以通常，我们会将这个 <span class=\"katex math inline\">32</span> 位的序列，切割成四个长度为 <span class=\"katex math inline\">8</span> 的二进制数字，然后每一段都会转成十进制数。</p>\n<p>比如有一个 <code>IP</code> 地址：</p>\n<p><span class=\"katex math inline\">01100100000001000000010100000110</span></p>\n<p>先分隔成四个：\n<span class=\"katex math inline\">01100100.00000100.00000101.00000110</span></p>\n<ul><li>第一段： <span class=\"katex math inline\">01100100</span> 转为十进制为： <span class=\"katex math inline\">100</span></li>\n<li>第二段： <span class=\"katex math inline\">00000100</span> 转为十进制为： <span class=\"katex math inline\">4</span></li>\n<li>第三段： <span class=\"katex math inline\">00000101</span> 转为十进制为：<span class=\"katex math inline\">5</span></li>\n<li>第四段： <span class=\"katex math inline\">00000110</span> 转为十进制为：<span class=\"katex math inline\">6</span></li>\n</ul><p>这个 <code>IP</code> 地址在十进制下即为：<span class=\"katex math inline\">100.4.5.6</span></p>\n</div>            </div>",
+      "text": "小Z热衷学习，当他在生活或者书本中遇到问题时，总会问个不停。这像不像小时候的你？ \n一天，小Z看到爸爸在工作，他指着电脑说，为什么有这么多的 0 和 1。 他爸爸解释说，这是 IP 地址，一个正确的 IP 地址长度固定为 32 个 0 或者 1 的序列构成。\n但是日常情况下，这种 01 序列并不好记忆，所以通常，我们会将这个 32 位的序列，切割成四个长度为 8 的二进制数字，然后每一段都会转成十进制数。\n比如有一个 IP 地址：\n01100100000001000000010100000110\n先分隔成四个：\n01100100.00000100.00000101.00000110\n第一段： 01100100 转为十进制为： 100\n第二段： 00000100 转为十进制为： 4\n第三段： 00000101 转为十进制为：5\n第四段： 00000110 转为十进制为：6\n这个 IP 地址在十进制下即为：100.4.5.6"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共有 <span class=\"katex math inline\">n</span> 个 <span class=\"katex math inline\">32</span> 位的 <span class=\"katex math inline\">01</span> 序列需要转换。</p>\n<p>第一行输入整数 <span class=\"katex math inline\">n</span>， 第 <span class=\"katex math inline\">2</span> 行到第 <span class=\"katex math inline\">n+1</span> 行，每行一个给定长度为 <span class=\"katex math inline\">32</span> 的 <span class=\"katex math inline\">01</span> 序列。</p>\n</div>            </div>",
+      "text": "共有 n 个 32 位的 01 序列需要转换。\n第一行输入整数 n， 第 2 行到第 n+1 行，每行一个给定长度为 32 的 01 序列。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">n</span> 行，转成十进制下的 <code>IP</code> 地址。四个数字用 <code>.</code> 连接。</p>\n</div>            </div>",
+      "text": "输出 n 行，转成十进制下的 IP 地址。四个数字用 . 连接。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1\r\n01100100000001000000010100000110</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>100.4.5.6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\r\n01100100000001000000010100000110\n                        \n                        \n                            输出\n                            100.4.5.6"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<p>如题目描述中所示。</p>\n<h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">n \\le 1000</span></p>\n<p>长度为 <span class=\"katex math inline\">32</span> 的 <span class=\"katex math inline\">01</span> 序列。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n如题目描述中所示。\n【数据范围】\nn \\le 1000\n长度为 32 的 01 序列。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年11月婺城区第三届青少年信息素养大赛小学组试题</p>\n</div>                </div>",
+      "text": "2025年11月婺城区第三届青少年信息素养大赛小学组试题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">进制转换</span></span></p>\n</div>                </div>",
+      "text": "市赛进制转换"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1\r\n01100100000001000000010100000110",
+      "output": "100.4.5.6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "206",
+    "通过人数": "118",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:46"
+}

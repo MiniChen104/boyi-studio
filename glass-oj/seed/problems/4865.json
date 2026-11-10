@@ -1,0 +1,52 @@
+{
+  "id": "4865",
+  "title": "更正名单",
+  "tags": [
+    "蓝桥等考",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4865",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>本学期的校级三好学生的名单公布出来了，小蓝发现名单上某个学生名字拼错了，就把名单上错误的名字更正，把正确的名单提交给老师了。\n请你设计一个程序来实现小蓝更正名单的过程。</p>\n</div>            </div>",
+      "text": "本学期的校级三好学生的名单公布出来了，小蓝发现名单上某个学生名字拼错了，就把名单上错误的名字更正，把正确的名单提交给老师了。\n请你设计一个程序来实现小蓝更正名单的过程。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含一个数字 <span class=\"katex math inline\">x</span> ,表示入选三好学生的人数。</p>\n<p>输入的第二行包含一个字符串 <span class=\"katex math inline\">s1</span>，表示名单上的名字。</p>\n<p>输入的第三行包含一个字符串 <span class=\"katex math inline\">s2</span>，表示要修改的和正确的名字。</p>\n</div>            </div>",
+      "text": "输入的第一行包含一个数字 x ,表示入选三好学生的人数。\n输入的第二行包含一个字符串 s1，表示名单上的名字。\n输入的第三行包含一个字符串 s2，表示要修改的和正确的名字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>修改后正确的名单。</p>\n</div>            </div>",
+      "text": "修改后正确的名单。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\nXiaolan Peter Zhangsan Tommy\r\nTommy Tom</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Xiaolan Peter Zhangsan Tom</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\nXiaolan Peter Zhangsan Tommy\r\nTommy Tom\n                        \n                        \n                            输出\n                            Xiaolan Peter Zhangsan Tom"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\nXiaolan Peter Zhangsan Tommy\r\nTommy Tom",
+      "output": "Xiaolan Peter Zhangsan Tom"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "201",
+    "通过人数": "127",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:49"
+}

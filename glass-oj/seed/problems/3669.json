@@ -1,0 +1,64 @@
+{
+  "id": "3669",
+  "title": "字母求和",
+  "tags": [
+    "GESP三级",
+    "字符",
+    "字符串",
+    "24年3月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3669",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨同学发明了一种新型密码，对于每一个小写英文字母，该小写字母代表了一个正整数，即该字母在字母顺序中的位置，例如字母 <span class=\"katex math inline\">a</span> 代表了正整数 <span class=\"katex math inline\">1</span>，字母 <span class=\"katex math inline\">b</span> 代表了正整数 <span class=\"katex math inline\">2</span>；对于每一个大写英文字母，该大写字母代表了一个负整数，即该字母的 ASCII 码的相反数，例如字母 <span class=\"katex math inline\">A</span> 代表了正整数 <span class=\"katex math inline\">-65</span>。</p>\n<p>小杨同学利用这种方式对一个整数进行了加密并得到了一个由大写字母和小写字母组成的字符串，该字符串中每个字母所代表数字的总和即为加密前的整数，例如 <span class=\"katex math inline\">aAc</span> 对应的加密前的整数为 <span class=\"katex math inline\">1+(-65)+3=-61</span>。</p>\n<p>对于给定的字符串，请你计算出它对应的加密前的整数是多少。</p>\n</div>            </div>",
+      "text": "小杨同学发明了一种新型密码，对于每一个小写英文字母，该小写字母代表了一个正整数，即该字母在字母顺序中的位置，例如字母 a 代表了正整数 1，字母 b 代表了正整数 2；对于每一个大写英文字母，该大写字母代表了一个负整数，即该字母的 ASCII 码的相反数，例如字母 A 代表了正整数 -65。\n小杨同学利用这种方式对一个整数进行了加密并得到了一个由大写字母和小写字母组成的字符串，该字符串中每个字母所代表数字的总和即为加密前的整数，例如 aAc 对应的加密前的整数为 1+(-65)+3=-61。\n对于给定的字符串，请你计算出它对应的加密前的整数是多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个正整数 <span class=\"katex math inline\">n</span> ，表示字符串中字母的个数。</p>\n<p>第二行一个由大写字母和小写字母的字符串 <span class=\"katex math inline\">T</span>，代表加密后得到的字符串。</p>\n</div>            </div>",
+      "text": "第一行一个正整数 n ，表示字符串中字母的个数。\n第二行一个由大写字母和小写字母的字符串 T，代表加密后得到的字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数，代表加密前的整数。</p>\n</div>            </div>",
+      "text": "输出一行一个整数，代表加密前的整数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\naAc</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>-61</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\naAc\n                        \n                        \n                            输出\n                            -61"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n\\le 10^{5}</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "对于全部数据，保证有 1 \\le n\\le 10^{5}。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 3月认证C++三级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 3月认证C++三级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP三级</span><span class=\"label label-warning\">字符</span><span class=\"label label-info\">字符串</span><span class=\"label label-danger\">24年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP三级字符字符串24年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\naAc",
+      "output": "-61"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "2101",
+    "通过人数": "1502",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:41"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1227",
+  "title": "阿凡提的难题",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1227",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>阿凡提去集市上买餐具，财主正好在卖餐具，所以准备为难一下阿凡提。</p>\n<p>财主的餐具有 <span class=\"katex math inline\">2</span> 种：大碗和小碗，财主和阿凡提说，你买我的碗，要花光你带的钱，而且，两种碗都要买，买的两种碗的数量都得是偶数。</p>\n<p>请你编程帮助阿凡提计算，可以有哪些购买的方案呢？</p>\n</div>            </div>",
+      "text": "阿凡提去集市上买餐具，财主正好在卖餐具，所以准备为难一下阿凡提。\n财主的餐具有 2 种：大碗和小碗，财主和阿凡提说，你买我的碗，要花光你带的钱，而且，两种碗都要买，买的两种碗的数量都得是偶数。\n请你编程帮助阿凡提计算，可以有哪些购买的方案呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个整数，分别代表了阿凡提带的钱的数量，大碗的价格，小碗的价格！</p>\n</div>            </div>",
+      "text": "三个整数，分别代表了阿凡提带的钱的数量，大碗的价格，小碗的价格！"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>所有的购买方案，一行一个方案，先输出大碗的采购只数，再输出小碗的采购只数！</p>\n</div>            </div>",
+      "text": "所有的购买方案，一行一个方案，先输出大碗的采购只数，再输出小碗的采购只数！"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100 20 10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 6\r\n4 2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100 20 10\n                        \n                        \n                            输出\n                            2 6\r\n4 2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100 20 10",
+      "output": "2 6\r\n4 2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "25712",
+    "通过人数": "16007",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:16:33"
+}

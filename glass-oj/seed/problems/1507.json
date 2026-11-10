@@ -1,0 +1,56 @@
+{
+  "id": "1507",
+  "title": "重复的学号",
+  "tags": [
+    "容器"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1507",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>SW是课代表，老师判好卷子之后让他录成绩，他念了 <span class=\"katex math inline\">n</span> 个人的学号(学号是一个绝对值 <span class=\"katex math inline\">10^9</span> 以内的整数包括 <span class=\"katex math inline\">0</span> ，没有负数)，但是老师总觉得他念重复了。</p>\n<p>还好老师用声控软件记录下了他念的每一个学号，现在请你写程序来判断SW有没有念过某个或者某些学号 <span class=\"katex math inline\">2</span> 次及以上。</p>\n<p>如果有请你输出 <span class=\"katex math inline\">1</span>，否则输出 <span class=\"katex math inline\">0</span>。</p>\n</div>            </div>",
+      "text": "SW是课代表，老师判好卷子之后让他录成绩，他念了 n 个人的学号(学号是一个绝对值 10^9 以内的整数包括 0 ，没有负数)，但是老师总觉得他念重复了。\n还好老师用声控软件记录下了他念的每一个学号，现在请你写程序来判断SW有没有念过某个或者某些学号 2 次及以上。\n如果有请你输出 1，否则输出 0。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数 <span class=\"katex math inline\">n</span>( <span class=\"katex math inline\">1 \\le n \\le 100000</span> )代表SW念了学号的个数；</p>\n<p>之后第 <span class=\"katex math inline\">2</span> 行到第 <span class=\"katex math inline\">n+1</span> 行，每行一个 <span class=\"katex math inline\">10^9</span> 以内的整数(包括 <span class=\"katex math inline\">0</span> 没有负数)，代表某个同学的学号。</p>\n</div>            </div>",
+      "text": "一个正整数 n( 1 \\le n \\le 100000 )代表SW念了学号的个数；\n之后第 2 行到第 n+1 行，每行一个 10^9 以内的整数(包括 0 没有负数)，代表某个同学的学号。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，如果有重复的学号输出 <span class=\"katex math inline\">1</span> ，否则输出 <span class=\"katex math inline\">0</span> 。</p>\n</div>            </div>",
+      "text": "输出一个整数，如果有重复的学号输出 1 ，否则输出 0 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n11222222\r\n0\r\n1\r\n11222222</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n11222222\r\n0\r\n1\r\n11222222\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>容器</p>\n</div>                </div>",
+      "text": "容器"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">容器</span></span></p>\n</div>                </div>",
+      "text": "容器"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n11222222\r\n0\r\n1\r\n11222222",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1768",
+    "通过人数": "1182",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:20:24"
+}

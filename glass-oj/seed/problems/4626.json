@@ -1,0 +1,58 @@
+{
+  "id": "4626",
+  "title": "跳水比赛",
+  "tags": [
+    "蓝桥杯STEMA",
+    "嵌套循环",
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4626",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某校有 <span class=\"katex math inline\">N</span> 名选手参加跳水比赛。每名选手比赛后，由 <span class=\"katex math inline\">6</span> 名裁判评分，选手的最终得分为 <span class=\"katex math inline\">6</span> 名裁判评分的总和。</p>\n<p>比赛结束之后，请计算出最高分与最低分相差多少。</p>\n<p>例如：<span class=\"katex math inline\">N = 4</span>，表示有 <span class=\"katex math inline\">4</span> 名选手；裁判对于这 <span class=\"katex math inline\">4</span> 名选手的打分是：</p>\n<pre><code>5 9 6 8 7 6\n7 7 7 8 6 7\n5 7 6 7 5 7\n7 7 7 5 9 8\n</code></pre>\n<p><span class=\"katex math inline\">4</span> 名选手的最终分数分别为：<span class=\"katex math inline\">41</span>，<span class=\"katex math inline\">42</span>，<span class=\"katex math inline\">37</span>，<span class=\"katex math inline\">43</span>，其中最高分是 <span class=\"katex math inline\">43</span> 分，最低分是<span class=\"katex math inline\">37</span> 分，那么最高分和最低分相差了 <span class=\"katex math inline\">6</span> 分，故输出 <span class=\"katex math inline\">6</span>。</p>\n</div>            </div>",
+      "text": "某校有 N 名选手参加跳水比赛。每名选手比赛后，由 6 名裁判评分，选手的最终得分为 6 名裁判评分的总和。\n比赛结束之后，请计算出最高分与最低分相差多少。\n例如：N = 4，表示有 4 名选手；裁判对于这 4 名选手的打分是：\n5 9 6 8 7 6\n7 7 7 8 6 7\n5 7 6 7 5 7\n7 7 7 5 9 8\n\n4 名选手的最终分数分别为：41，42，37，43，其中最高分是 43 分，最低分是37 分，那么最高分和最低分相差了 6 分，故输出 6。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入一个正整数 <span class=\"katex math inline\">N</span>（<span class=\"katex math inline\">2 \\le N \\le 100</span>），表示参赛选手的人数。</p>\n<p>接下来输入 <span class=\"katex math inline\">N</span> 行，每行 <span class=\"katex math inline\">6</span> 个整数（ <span class=\"katex math inline\">0 \\le </span> 整数 <span class=\"katex math inline\">\\le 10</span>），表示每个裁判的评分，整数之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "第一行输入一个正整数 N（2 \\le N \\le 100），表示参赛选手的人数。\n接下来输入 N 行，每行 6 个整数（ 0 \\le  整数 \\le 10），表示每个裁判的评分，整数之间以一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示最高分与最低分的差值。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示最高分与最低分的差值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n5 9 6 8 7 6\r\n7 7 7 8 6 7\r\n5 7 6 7 5 7\r\n7 7 7 5 9 8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n5 9 6 8 7 6\r\n7 7 7 8 6 7\r\n5 7 6 7 5 7\r\n7 7 7 5 9 8\n                        \n                        \n                            输出\n                            6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（23年10月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（23年10月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">嵌套循环</span><span class=\"label label-info\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA嵌套循环二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n5 9 6 8 7 6\r\n7 7 7 8 6 7\r\n5 7 6 7 5 7\r\n7 7 7 5 9 8",
+      "output": "6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "555",
+    "通过人数": "351",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:22"
+}

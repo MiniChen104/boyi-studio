@@ -1,0 +1,52 @@
+{
+  "id": "3474",
+  "title": "最小的进制",
+  "tags": [
+    "进制转换",
+    "蓝桥等考15级"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3474",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>我们知道十进制数由数码 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">9</span> 组成，八进制数由数码 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">7</span> 组成，二进制数由数码 <span class=\"katex math inline\">0</span> 和 <span class=\"katex math inline\">1</span> 组成。</p>\n<p>同一个整数，它可能属于不同进制的数。比如整数 <span class=\"katex math inline\">123</span> 可能是一个十进制数，也可能是一个四进制数，但它不可能是一个三进制数，也不可能是一个二进制数，因为三进制数只由 <span class=\"katex math inline\">0</span>,<span class=\"katex math inline\">1</span>,<span class=\"katex math inline\">2</span> 组成，二进制数只由 <span class=\"katex math inline\">0</span> 和 <span class=\"katex math inline\">1</span> 组成。所以，四进制是整数 <span class=\"katex math inline\">123</span> 可以属于的最小的进制。</p>\n<p>现在给你一个正整数，正整数中只可能出现 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">9</span> 这 <span class=\"katex math inline\">10</span> 个数码，请你输出它可能属于的最小的进制。</p>\n</div>            </div>",
+      "text": "我们知道十进制数由数码 0 到 9 组成，八进制数由数码 0 到 7 组成，二进制数由数码 0 和 1 组成。\n同一个整数，它可能属于不同进制的数。比如整数 123 可能是一个十进制数，也可能是一个四进制数，但它不可能是一个三进制数，也不可能是一个二进制数，因为三进制数只由 0,1,2 组成，二进制数只由 0 和 1 组成。所以，四进制是整数 123 可以属于的最小的进制。\n现在给你一个正整数，正整数中只可能出现 0 到 9 这 10 个数码，请你输出它可能属于的最小的进制。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数，正整数中只可能出现 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">9</span> 这 <span class=\"katex math inline\">10</span> 个数码，正整数的位数在 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">8</span> 之间。</p>\n</div>            </div>",
+      "text": "输入一个正整数，正整数中只可能出现 0 到 9 这 10 个数码，正整数的位数在 1 到 8 之间。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个正整数，表示最小的进制。<span class=\"katex math inline\">2</span> 代表二进制，<span class=\"katex math inline\">3</span> 代表三进制，依次类推。</p>\n</div>            </div>",
+      "text": "输出一个正整数，表示最小的进制。2 代表二进制，3 代表三进制，依次类推。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>123</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            123\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">进制转换</span><span class=\"label label-warning\">蓝桥等考15级</span></span></p>\n</div>                </div>",
+      "text": "进制转换蓝桥等考15级"
+    }
+  ],
+  "samples": [
+    {
+      "input": "123",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "200",
+    "通过人数": "147",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:14"
+}

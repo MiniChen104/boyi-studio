@@ -1,0 +1,52 @@
+{
+  "id": "2120",
+  "title": "连续自然数和",
+  "tags": [
+    "前缀和差分",
+    "双指针"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2120",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对一个给定的自然数 <span class=\"katex math inline\">M</span> ，求出所有的连续的自然数段，这些连续的自然数段中的全部数之和为 <span class=\"katex math inline\">M</span> 。 </p>\n<p>例子：<span class=\"katex math inline\">1998+1999+2000+2001+2002 = 10000</span>，所以从 <span class=\"katex math inline\">1998</span> 到 <span class=\"katex math inline\">2002</span> 的一个自然数段为 <span class=\"katex math inline\">M=10000</span> 的一个解。</p>\n</div>            </div>",
+      "text": "对一个给定的自然数 M ，求出所有的连续的自然数段，这些连续的自然数段中的全部数之和为 M 。 \n例子：1998+1999+2000+2001+2002 = 10000，所以从 1998 到 2002 的一个自然数段为 M=10000 的一个解。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>包含一个整数的单独一行给出 <span class=\"katex math inline\">M</span> 的值（<span class=\"katex math inline\">10 \\le M \\le 2,000,000</span> ）。</p>\n</div>            </div>",
+      "text": "包含一个整数的单独一行给出 M 的值（10 \\le M \\le 2,000,000 ）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>每行两个自然数，给出一个满足条件的连续自然数段中的第一个数和最后一个数，两数之间用一个空格隔开；</p>\n<p>所有输出行的第一个按从小到大的升序排列，对于给定的输入数据，保证至少有一个解。</p>\n</div>            </div>",
+      "text": "每行两个自然数，给出一个满足条件的连续自然数段中的第一个数和最后一个数，两数之间用一个空格隔开；\n所有输出行的第一个按从小到大的升序排列，对于给定的输入数据，保证至少有一个解。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10000</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>18 142\r\n297 328\r\n388 412\r\n1998 2002</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10000\n                        \n                        \n                            输出\n                            18 142\r\n297 328\r\n388 412\r\n1998 2002"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">前缀和差分</span><span class=\"label label-warning\">双指针</span></span></p>\n</div>                </div>",
+      "text": "前缀和差分双指针"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10000",
+      "output": "18 142\r\n297 328\r\n388 412\r\n1998 2002"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3508",
+    "通过人数": "1986",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:28:42"
+}

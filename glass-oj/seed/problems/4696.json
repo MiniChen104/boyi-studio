@@ -1,0 +1,55 @@
+{
+  "id": "4696",
+  "title": "截取文件名",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4696",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个文件管理系统需要从完整的文件路径中提取文件名。</p>\n<p>文件路径的格式类似 <code>C:/cppcode/sub.cpp</code>，其中最后一个 <code>/</code> 向后的内容为要提取的文件名。</p>\n</div>            </div>",
+      "text": "一个文件管理系统需要从完整的文件路径中提取文件名。\n文件路径的格式类似 C:/cppcode/sub.cpp，其中最后一个 / 向后的内容为要提取的文件名。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个不含空格的完整的文件路径。（文件路径的长度在 <span class=\"katex math inline\">[1, 200]</span> 的范围内）</p>\n</div>            </div>",
+      "text": "输入一个不含空格的完整的文件路径。（文件路径的长度在 [1, 200] 的范围内）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出提取出的文件名。</p>\n</div>            </div>",
+      "text": "输出提取出的文件名。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>C:/cppcode/sub.cpp</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>sub.cpp</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>E:/mycode/lesson1/myfirstlesson.txt</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>myfirstlesson.txt</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            C:/cppcode/sub.cpp\n                        \n                        \n                            输出\n                            sub.cpp\n                        \n\n                                                    \n                                输入\n                                E:/mycode/lesson1/myfirstlesson.txt\n                            \n                            \n                                输出\n                                myfirstlesson.txt"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "C:/cppcode/sub.cpp",
+      "output": "sub.cpp"
+    },
+    {
+      "input": "E:/mycode/lesson1/myfirstlesson.txt",
+      "output": "myfirstlesson.txt"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "162",
+    "通过人数": "128",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:49"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "4695",
+  "title": "敏感词替换",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4695",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在某个论坛上，管理员希望将所有出现的敏感词 <code>bad</code> 替换为 <code>***</code>，以保证内容的健康。</p>\n<p>你的任务是编写一个程序，将输入字符串中的所有 <code>bad</code> 替换为 <code>***</code>。</p>\n<p><strong>请注意：</strong>替换 <code>bad</code> 过程<strong>不区分大小写</strong>，也就是说，发言中的 <code>Bad</code>、<code>BAD</code>、<code>baD</code> <span class=\"katex math inline\">\\dots</span> 均会被替换。</p>\n<p>但含有 <code>bad</code> 的单词不会被替换，比如 <code>badge</code>、<code>badminton</code>。</p>\n</div>            </div>",
+      "text": "在某个论坛上，管理员希望将所有出现的敏感词 bad 替换为 ***，以保证内容的健康。\n你的任务是编写一个程序，将输入字符串中的所有 bad 替换为 ***。\n请注意：替换 bad 过程不区分大小写，也就是说，发言中的 Bad、BAD、baD \\dots 均会被替换。\n但含有 bad 的单词不会被替换，比如 badge、badminton。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个以 <code>.</code> 结尾的字符串 <span class=\"katex math inline\">S</span>，表示论坛上的发言（字符串 <span class=\"katex math inline\">S</span> 的长度在 <span class=\"katex math inline\">[1, 1000]</span> 的范围内，字符串由英文的大小写字母、空格和英文的句号组成）。</p>\n</div>            </div>",
+      "text": "一个以 . 结尾的字符串 S，表示论坛上的发言（字符串 S 的长度在 [1, 1000] 的范围内，字符串由英文的大小写字母、空格和英文的句号组成）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出替换后的结果。</p>\n</div>            </div>",
+      "text": "输出替换后的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>This is a bad example of a bad word.</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>This is a *** example of a *** word.</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>Despite feeling bad after the long day, she decided to play badminton to clear her mind.</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>Despite feeling *** after the long day, she decided to play badminton to clear her mind.</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>Excuse me where is the Bad desk the BAD desk may not exist.</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>Excuse me where is the *** desk the *** desk may not exist.</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            This is a bad example of a bad word.\n                        \n                        \n                            输出\n                            This is a *** example of a *** word.\n                        \n\n                                                    \n                                输入\n                                Despite feeling bad after the long day, she decided to play badminton to clear her mind.\n                            \n                            \n                                输出\n                                Despite feeling *** after the long day, she decided to play badminton to clear her mind.\n                            \n                        \n                                                    \n                                输入\n                                Excuse me where is the Bad desk the BAD desk may not exist.\n                            \n                            \n                                输出\n                                Excuse me where is the *** desk the *** desk may not exist."
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "This is a bad example of a bad word.",
+      "output": "This is a *** example of a *** word."
+    },
+    {
+      "input": "Despite feeling bad after the long day, she decided to play badminton to clear her mind.",
+      "output": "Despite feeling *** after the long day, she decided to play badminton to clear her mind."
+    },
+    {
+      "input": "Excuse me where is the Bad desk the BAD desk may not exist.",
+      "output": "Excuse me where is the *** desk the *** desk may not exist."
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "365",
+    "通过人数": "105",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:50"
+}

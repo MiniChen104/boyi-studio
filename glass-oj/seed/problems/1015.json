@@ -1,0 +1,46 @@
+{
+  "id": "1015",
+  "title": "鸡兔同笼问题",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1015",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>鸡兔同笼问题：一个笼子里面有鸡若干只，兔若干只。共有头 <span class=\"katex math inline\">50</span> 个，共有腿 <span class=\"katex math inline\">160</span> 条。求鸡兔各多少只？</p>\n<p>（ <span class=\"katex math inline\">6.2.32</span> ）</p>\n</div>            </div>",
+      "text": "鸡兔同笼问题：一个笼子里面有鸡若干只，兔若干只。共有头 50 个，共有腿 160 条。求鸡兔各多少只？\n（ 6.2.32 ）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无</p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个整数，在一行。 </p>\n<p>鸡的只数 兔的只数。 </p>\n<p>中间空格隔开！</p>\n</div>            </div>",
+      "text": "两个整数，在一行。 \n鸡的只数 兔的只数。 \n中间空格隔开！"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "48458",
+    "通过人数": "32913",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:13:29"
+}

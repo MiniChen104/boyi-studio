@@ -1,0 +1,59 @@
+{
+  "id": "4699",
+  "title": "格式化标题",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4699",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某新闻编辑系统需要将文章标题进行格式调整，要求将标题的首字母用大写表示，其余字母均用小写表示。</p>\n<p>请编程帮助编辑系统，将文章标题按照规定的格式输出。</p>\n</div>            </div>",
+      "text": "某新闻编辑系统需要将文章标题进行格式调整，要求将标题的首字母用大写表示，其余字母均用小写表示。\n请编程帮助编辑系统，将文章标题按照规定的格式输出。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个仅由英文的大小写字母组成的字符串，表示文章的标题。（字符串长度在 <span class=\"katex math inline\">[1, 30]</span> 的范围）</p>\n</div>            </div>",
+      "text": "输入一个仅由英文的大小写字母组成的字符串，表示文章的标题。（字符串长度在 [1, 30] 的范围）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出文章标题按照规定的格式转换后的结果。</p>\n</div>            </div>",
+      "text": "输出文章标题按照规定的格式转换后的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>HappyNewYear</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Happynewyear</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>happynewyear</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>Happynewyear</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>HELLOWORLD</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>Helloworld</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            HappyNewYear\n                        \n                        \n                            输出\n                            Happynewyear\n                        \n\n                                                    \n                                输入\n                                happynewyear\n                            \n                            \n                                输出\n                                Happynewyear\n                            \n                        \n                                                    \n                                输入\n                                HELLOWORLD\n                            \n                            \n                                输出\n                                Helloworld"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "HappyNewYear",
+      "output": "Happynewyear"
+    },
+    {
+      "input": "happynewyear",
+      "output": "Happynewyear"
+    },
+    {
+      "input": "HELLOWORLD",
+      "output": "Helloworld"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "202",
+    "通过人数": "156",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:46"
+}

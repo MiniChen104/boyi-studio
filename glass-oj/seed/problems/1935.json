@@ -1,0 +1,65 @@
+{
+  "id": "1935",
+  "title": "公交换乘（transfer）",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1935",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>著名旅游城市 B 市为了鼓励大家采用公共交通方式出行，推出了一种地铁换乘公交车的优惠方案：</p>\n<ol><li>在搭乘一次地铁后可以获得一张优惠票，有效期为 45 分钟，在有效期内可以消耗这张优惠票，免费搭乘一次票价不超过地铁票价的公交车。在有效期内指开始乘公交车的时间与开始乘地铁的时间之差小于等于 45 分钟，即：\n<span class=\"katex math inline\">t</span><sub><span class=\"katex math inline\">bus</span></sub> <span class=\"katex math inline\">-</span> <span class=\"katex math inline\">t</span><sub><span class=\"katex math inline\">subway</span></sub> <span class=\"katex math inline\">\\leq 45</span></li>\n<li>搭乘地铁获得的优惠票可以累积，即可以连续搭乘若干次地铁后再连续使用优惠票搭乘公交车。</li>\n<li>搭乘公交车时，如果可以使用优惠票一定会使用优惠票；如果有多张优惠票满足条件，则优先消耗获得最早的优惠票。</li>\n</ol><p>现在你得到了小轩最近的公共交通出行记录，你能帮他算算他的花费吗?</p>\n</div>            </div>",
+      "text": "著名旅游城市 B 市为了鼓励大家采用公共交通方式出行，推出了一种地铁换乘公交车的优惠方案：\n在搭乘一次地铁后可以获得一张优惠票，有效期为 45 分钟，在有效期内可以消耗这张优惠票，免费搭乘一次票价不超过地铁票价的公交车。在有效期内指开始乘公交车的时间与开始乘地铁的时间之差小于等于 45 分钟，即：\ntbus - tsubway \\leq 45\n搭乘地铁获得的优惠票可以累积，即可以连续搭乘若干次地铁后再连续使用优惠票搭乘公交车。\n搭乘公交车时，如果可以使用优惠票一定会使用优惠票；如果有多张优惠票满足条件，则优先消耗获得最早的优惠票。\n现在你得到了小轩最近的公共交通出行记录，你能帮他算算他的花费吗?"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入文件的第一行包含一个正整数 <span class=\"katex math inline\">n</span>，代表乘车记录的数量。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行，每行包含 3 个整数，相邻两数之间以一个空格分隔。第 <span class=\"katex math inline\">i</span> 行的第 1 个整数代表第 <span class=\"katex math inline\">i</span> 条记录乘坐的交通工具，0 代表地铁，1 代表公交车；第 2 个整数代表第 <span class=\"katex math inline\">i</span> 条记录乘车的票价 <span class=\"katex math inline\">price_i</span> ；第三个整数代表第 <span class=\"katex math inline\">i</span> 条记录开始乘车的时间 <span class=\"katex math inline\">t_i</span>（距 0 时刻的分钟数）。</p>\n<p>我们保证出行记录是按照开始乘车的时间顺序给出的，且不会有两次乘车记录出现在同一分钟。</p>\n</div>            </div>",
+      "text": "输入文件的第一行包含一个正整数 n，代表乘车记录的数量。\n接下来的 n 行，每行包含 3 个整数，相邻两数之间以一个空格分隔。第 i 行的第 1 个整数代表第 i 条记录乘坐的交通工具，0 代表地铁，1 代表公交车；第 2 个整数代表第 i 条记录乘车的票价 price_i ；第三个整数代表第 i 条记录开始乘车的时间 t_i（距 0 时刻的分钟数）。\n我们保证出行记录是按照开始乘车的时间顺序给出的，且不会有两次乘车记录出现在同一分钟。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出文件有一行，包含一个正整数，代表小轩出行的总花费。</p>\n</div>            </div>",
+      "text": "输出文件有一行，包含一个正整数，代表小轩出行的总花费。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n0 10 3\r\n1 5 46\r\n0 12 50\r\n1 3 96\r\n0 5 110\r\n1 6 135</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>36\r\n</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>6\r\n0 5 1\r\n0 20 16\r\n0 7 23\r\n1 18 31\r\n1 4 38\r\n1 7 68 </pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>32</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n0 10 3\r\n1 5 46\r\n0 12 50\r\n1 3 96\r\n0 5 110\r\n1 6 135\n                        \n                        \n                            输出\n                            36\r\n\n                        \n\n                                                    \n                                输入\n                                6\r\n0 5 1\r\n0 20 16\r\n0 7 23\r\n1 18 31\r\n1 4 38\r\n1 7 68 \n                            \n                            \n                                输出\n                                32"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【输入输出样例 1 说明】</p>\n<p>第一条记录，在第 3 分钟花费 10 元乘坐地铁。</p>\n<p>第二条记录，在第 46 分钟乘坐公交车，可以使用第一条记录中乘坐地铁获得的优惠票，因此没有花费。</p>\n<p>第三条记录，在第 50 分种花费 12 元乘坐地铁。</p>\n<p>第四条记录，在第 96 分钟乘坐公交车，由于距离第三条记录中乘坐地铁已超过 45 分钟，所以优惠票已失效，花费 3 元乘坐公交车。</p>\n<p>第五条记录，在第 110 分钟花费 5 元乘坐地铁。</p>\n<p>第六条记录，在第 135 分钟乘坐公交车，由于此时手中只有第五条记录中乘坐地铁获得的优惠票有效，而本次公交车的票价为 6 元，高于第五条记录中地铁的票价 5 元，所以不能使用优惠票，花费 6 元乘坐公交车。</p>\n<p>总共花费 36 元。 </p>\n<p>【输入输出样例 2 说明】</p>\n<p>第一条记录，在第 1 分钟花费 5 元乘坐地铁。</p>\n<p>第二条记录，在第 16 分钟花费 20 元乘坐地铁。</p>\n<p>第三条记录，在第 23 分钟花费 7 元乘坐地铁。</p>\n<p>第四条记录，在第 31 分钟乘坐公交车，此时只有第二条记录中乘坐的地铁票价高于本次公交车票价，所以使用第二条记录中乘坐地铁获得的优惠票。</p>\n<p>第五条记录，在第 38 分钟乘坐公交车，此时第一条和第三条记录中乘坐地铁获得的优惠票都可以使用，使用获得最早的优惠票，即第一条记录中乘坐地铁获得的优惠票。</p>\n<p>第六条记录，在第 68 分钟乘坐公交车，使用第三条记录中乘坐地铁获得的优惠票。</p>\n<p>总共花费 32 元。 </p>\n<p>【数据规模与约定】</p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">n \\leq 1000</span>，<span class=\"katex math inline\">t_i \\leq 10^6</span>。</p>\n<p>另有 <span class=\"katex math inline\">15\\%</span> 的数据，<span class=\"katex math inline\">t_i \\leq 10^7</span>，<span class=\"katex math inline\">price_i</span> 都相等。</p>\n<p>另有 <span class=\"katex math inline\">15\\%</span> 的数据，<span class=\"katex math inline\">t_i \\leq 10^9</span>，<span class=\"katex math inline\">price_i</span> 都相等。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">n \\leq 10^5</span>，<span class=\"katex math inline\">t_i \\leq 10^9</span>，<span class=\"katex math inline\">1 \\leq price_i \\leq 1000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【输入输出样例 1 说明】\n第一条记录，在第 3 分钟花费 10 元乘坐地铁。\n第二条记录，在第 46 分钟乘坐公交车，可以使用第一条记录中乘坐地铁获得的优惠票，因此没有花费。\n第三条记录，在第 50 分种花费 12 元乘坐地铁。\n第四条记录，在第 96 分钟乘坐公交车，由于距离第三条记录中乘坐地铁已超过 45 分钟，所以优惠票已失效，花费 3 元乘坐公交车。\n第五条记录，在第 110 分钟花费 5 元乘坐地铁。\n第六条记录，在第 135 分钟乘坐公交车，由于此时手中只有第五条记录中乘坐地铁获得的优惠票有效，而本次公交车的票价为 6 元，高于第五条记录中地铁的票价 5 元，所以不能使用优惠票，花费 6 元乘坐公交车。\n总共花费 36 元。 \n【输入输出样例 2 说明】\n第一条记录，在第 1 分钟花费 5 元乘坐地铁。\n第二条记录，在第 16 分钟花费 20 元乘坐地铁。\n第三条记录，在第 23 分钟花费 7 元乘坐地铁。\n第四条记录，在第 31 分钟乘坐公交车，此时只有第二条记录中乘坐的地铁票价高于本次公交车票价，所以使用第二条记录中乘坐地铁获得的优惠票。\n第五条记录，在第 38 分钟乘坐公交车，此时第一条和第三条记录中乘坐地铁获得的优惠票都可以使用，使用获得最早的优惠票，即第一条记录中乘坐地铁获得的优惠票。\n第六条记录，在第 68 分钟乘坐公交车，使用第三条记录中乘坐地铁获得的优惠票。\n总共花费 32 元。 \n【数据规模与约定】\n对于 30\\% 的数据，n \\leq 1000，t_i \\leq 10^6。\n另有 15\\% 的数据，t_i \\leq 10^7，price_i 都相等。\n另有 15\\% 的数据，t_i \\leq 10^9，price_i 都相等。\n对于 100\\% 的数据，n \\leq 10^5，t_i \\leq 10^9，1 \\leq price_i \\leq 1000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛</p>\n</div>                </div>",
+      "text": "noip复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n0 10 3\r\n1 5 46\r\n0 12 50\r\n1 3 96\r\n0 5 110\r\n1 6 135",
+      "output": "36\r\n"
+    },
+    {
+      "input": "6\r\n0 5 1\r\n0 20 16\r\n0 7 23\r\n1 18 31\r\n1 4 38\r\n1 7 68 ",
+      "output": "32"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "2885",
+    "通过人数": "1308",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:12"
+}

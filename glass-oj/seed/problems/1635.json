@@ -1,0 +1,56 @@
+{
+  "id": "1635",
+  "title": "预算够吗",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1635",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个工厂的总支出预算是 <span class=\"katex math inline\">n</span> 万元，实际原材料需要用 <span class=\"katex math inline\">a</span> 万元，发工资和福利需要用 <span class=\"katex math inline\">b</span> 万元，其他情况需要用 <span class=\"katex math inline\">c</span> 万元。</p>\n<p>编程求这个工厂的预算够用吗？如果预算够，请输出还能剩余多少万元，以及输出 <span class=\"katex math inline\">YES</span> 。</p>\n<p>比如：输入 <span class=\"katex math inline\">100</span> <span class=\"katex math inline\">23</span> <span class=\"katex math inline\">53</span> <span class=\"katex math inline\">21</span> ，表示总支出预算有 <span class=\"katex math inline\">100</span> 万元，实际需要支出的各项总和 <span class=\"katex math inline\"> = a + b + c = 23 + 53 + 21 = 97</span> （万元），由于 <span class=\"katex math inline\">100  \\ge  97</span> ，因此预算是够的，还能剩余 <span class=\"katex math inline\">3</span>万元，因此输出为： <span class=\"katex math inline\">3</span> <code>YES</code>。 </p>\n<p>如果预算不够，请输出还需要多少万元才够，再输出 <span class=\"katex math inline\">NO</span> 。</p>\n<p>再比如：输入 <span class=\"katex math inline\">10</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">8</span> <span class=\"katex math inline\">5</span>，表示总支出预算有 <span class=\"katex math inline\">10</span> 万元，实际需要支出的各项总和 <span class=\"katex math inline\"> = 2 + 8 + 5 = 15</span> （万元），由于 <span class=\"katex math inline\">10  \\lt  15</span> ，显然预算不够，还需要 <span class=\"katex math inline\">5</span>万元，因此输出为： <span class=\"katex math inline\">5</span> <code>NO</code> 。</p>\n</div>            </div>",
+      "text": "一个工厂的总支出预算是 n 万元，实际原材料需要用 a 万元，发工资和福利需要用 b 万元，其他情况需要用 c 万元。\n编程求这个工厂的预算够用吗？如果预算够，请输出还能剩余多少万元，以及输出 YES 。\n比如：输入 100 23 53 21 ，表示总支出预算有 100 万元，实际需要支出的各项总和  = a + b + c = 23 + 53 + 21 = 97 （万元），由于 100  \\ge  97 ，因此预算是够的，还能剩余 3万元，因此输出为： 3 YES。 \n如果预算不够，请输出还需要多少万元才够，再输出 NO 。\n再比如：输入 10 2 8 5，表示总支出预算有 10 万元，实际需要支出的各项总和  = 2 + 8 + 5 = 15 （万元），由于 10  \\lt  15 ，显然预算不够，还需要 5万元，因此输出为： 5 NO 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，输入 <span class=\"katex math inline\">4</span> 个整数 <span class=\"katex math inline\">n,a,b,c</span> 。</p>\n</div>            </div>",
+      "text": "一行，输入 4 个整数 n,a,b,c 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，先输出预算差额 <span class=\"katex math inline\">s</span> ，如果够再输出 <code>YES</code> ，不够输出 <code>NO</code> ，中间用空格隔开。</p>\n</div>            </div>",
+      "text": "一行，先输出预算差额 s ，如果够再输出 YES ，不够输出 NO ，中间用空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100 23 53 21</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3 YES</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100 23 53 21\n                        \n                        \n                            输出\n                            3 YES"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100 23 53 21",
+      "output": "3 YES"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "25126",
+    "通过人数": "13261",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:09"
+}

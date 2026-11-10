@@ -1,0 +1,56 @@
+{
+  "id": "2064",
+  "title": "二进制折半交换",
+  "tags": [
+    "进制转换"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2064",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出一个小于 <span class=\"katex math inline\">2^{32}</span> 的正整数。这个数可以用一个 <span class=\"katex math inline\">32</span> 位的二进制数表示（不足 <span class=\"katex math inline\">32</span> 位用 <span class=\"katex math inline\">0</span> 补足）。我们称这个二进制数的前 <span class=\"katex math inline\">16</span> 位为“高位”，后 <span class=\"katex math inline\">16</span> 位为“低位”。将它的高低位交换，我们可以得到一个新的数。</p>\n<p>试问这个新的数是多少（用十进制表示）。</p>\n<p>例如，数 <span class=\"katex math inline\">1314520</span> 用二进制表示为 <span class=\"katex math inline\">0000</span> <span class=\"katex math inline\">0000</span> <span class=\"katex math inline\">0001</span> <span class=\"katex math inline\">0100</span> <span class=\"katex math inline\">0000</span> <span class=\"katex math inline\">1110</span> <span class=\"katex math inline\">1101</span> <span class=\"katex math inline\">1000</span>（添加了 <span class=\"katex math inline\">11</span> 个前导 <span class=\"katex math inline\">0</span> 补足为 <span class=\"katex math inline\">32</span> 位），其中前 <span class=\"katex math inline\">16</span> 位为高位，即<span class=\"katex math inline\">0000</span> <span class=\"katex math inline\">0000</span> <span class=\"katex math inline\">0001</span> <span class=\"katex math inline\">0100</span>；后 <span class=\"katex math inline\">16</span> 位为低位，即 <span class=\"katex math inline\">0000</span>  <span class=\"katex math inline\">1110</span>  <span class=\"katex math inline\">1101</span>  <span class=\"katex math inline\">1000</span> 。将它的高低位进行交换，我们得到了一个新的二进制数 <span class=\"katex math inline\">0000</span> <span class=\"katex math inline\">1110</span> <span class=\"katex math inline\">1101</span> <span class=\"katex math inline\">1000</span> <span class=\"katex math inline\">0000</span> <span class=\"katex math inline\">0000</span> <span class=\"katex math inline\">0001</span> <span class=\"katex math inline\">0100</span>。它即是十进制的 <span class=\"katex math inline\">249036820</span> 。</p>\n</div>            </div>",
+      "text": "给出一个小于 2^{32} 的正整数。这个数可以用一个 32 位的二进制数表示（不足 32 位用 0 补足）。我们称这个二进制数的前 16 位为“高位”，后 16 位为“低位”。将它的高低位交换，我们可以得到一个新的数。\n试问这个新的数是多少（用十进制表示）。\n例如，数 1314520 用二进制表示为 0000 0000 0001 0100 0000 1110 1101 1000（添加了 11 个前导 0 补足为 32 位），其中前 16 位为高位，即0000 0000 0001 0100；后 16 位为低位，即 0000  1110  1101  1000 。将它的高低位进行交换，我们得到了一个新的二进制数 0000 1110 1101 1000 0000 0000 0001 0100。它即是十进制的 249036820 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个小于 <span class=\"katex math inline\">2^{32}</span>的正整数。</p>\n</div>            </div>",
+      "text": "一个小于 2^{32}的正整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出按题意计算后的新数。</p>\n</div>            </div>",
+      "text": "输出按题意计算后的新数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1314520</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>249036820</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1314520\n                        \n                        \n                            输出\n                            249036820"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>进制转换</p>\n</div>                </div>",
+      "text": "进制转换"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">进制转换</span></span></p>\n</div>                </div>",
+      "text": "进制转换"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1314520",
+      "output": "249036820"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "786",
+    "通过人数": "450",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:57"
+}

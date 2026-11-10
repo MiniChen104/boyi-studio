@@ -1,0 +1,64 @@
+{
+  "id": "6093",
+  "title": "数数",
+  "tags": [
+    "GESP二级",
+    "26年3月",
+    "循环",
+    "短除法"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6093",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于正整数 <span class=\"katex math inline\">n</span>，如果 <span class=\"katex math inline\">n</span> 的所有数位中包含恰好 <span class=\"katex math inline\">3</span> 个 <span class=\"katex math inline\">2</span>，Alice 会认为这个正整数是美丽的。例如，正整数 <span class=\"katex math inline\">24122</span> 中包含 <span class=\"katex math inline\">3</span> 个 <span class=\"katex math inline\">2</span>，所以 <span class=\"katex math inline\">24122</span> 是美丽的；正整数 <span class=\"katex math inline\">132</span> 中包含 <span class=\"katex math inline\">1</span> 个 <span class=\"katex math inline\">2</span>，所以 <span class=\"katex math inline\">132</span> 不是美丽的；正整数 <span class=\"katex math inline\">212322</span> 中包含 <span class=\"katex math inline\">4</span> 个 <span class=\"katex math inline\">2</span>，所以 <span class=\"katex math inline\">212322</span> 不是美丽的。</p>\n<p>Alice 想知道正整数 <span class=\"katex math inline\">L</span> 到正整数 <span class=\"katex math inline\">R</span>（包括 <span class=\"katex math inline\">L</span> 和 <span class=\"katex math inline\">R</span>）中有多少美丽的正整数，你能帮她数一数吗？</p>\n</div>            </div>",
+      "text": "对于正整数 n，如果 n 的所有数位中包含恰好 3 个 2，Alice 会认为这个正整数是美丽的。例如，正整数 24122 中包含 3 个 2，所以 24122 是美丽的；正整数 132 中包含 1 个 2，所以 132 不是美丽的；正整数 212322 中包含 4 个 2，所以 212322 不是美丽的。\nAlice 想知道正整数 L 到正整数 R（包括 L 和 R）中有多少美丽的正整数，你能帮她数一数吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入共 <span class=\"katex math inline\">2</span> 行，第一行为正整数 <span class=\"katex math inline\">L</span>，第二行为正整数 <span class=\"katex math inline\">R</span>。</p>\n</div>            </div>",
+      "text": "输入共 2 行，第一行为正整数 L，第二行为正整数 R。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含一个整数 <span class=\"katex math inline\">C</span>，表示 <span class=\"katex math inline\">L</span> 到 <span class=\"katex math inline\">R</span> 中 <span class=\"katex math inline\">C</span> 美丽数的数量。</p>\n</div>            </div>",
+      "text": "输出一行，包含一个整数 C，表示 L 到 R 中 C 美丽数的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2221\r\n2223</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2221\r\n2223\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p><span class=\"katex math inline\">2221</span> 到 <span class=\"katex math inline\">2223</span> 中，<span class=\"katex math inline\">2221</span> 与 <span class=\"katex math inline\">2223</span> 是美丽的，<span class=\"katex math inline\">2222</span> 不是美丽的。</p>\n<h4>数据范围</h4>\n<p>保证 <span class=\"katex math inline\">1 \\leq L \\leq R \\leq 10^6</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n2221 到 2223 中，2221 与 2223 是美丽的，2222 不是美丽的。\n数据范围\n保证 1 \\leq L \\leq R \\leq 10^6。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP ，2026年3月认证 ，C++2级真题</p>\n</div>                </div>",
+      "text": "GESP ，2026年3月认证 ，C++2级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP二级</span><span class=\"label label-warning\">26年3月</span><span class=\"label label-info\">循环</span><span class=\"label label-danger\">短除法</span></span></p>\n</div>                </div>",
+      "text": "GESP二级26年3月循环短除法"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2221\r\n2223",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1239",
+    "通过人数": "875",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:55"
+}

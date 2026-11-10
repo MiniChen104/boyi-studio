@@ -1,0 +1,64 @@
+{
+  "id": "2373",
+  "title": "三个火枪手",
+  "tags": [
+    "哈希"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2373",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个火枪手阿多斯、波尔多斯、阿拉密斯要给好朋友达达尼昂留下一份加密的信息。</p>\n<p>阿多斯写出他们要留下的仅包含大写字母的字符串 <span class=\"katex math inline\">A</span> ，波尔多斯将这个字符串复制了一遍，得到字符串 <span class=\"katex math inline\">B</span>，阿拉密斯在字符串 <span class=\"katex math inline\">B</span> 的任意一个位置（也可以在首尾的位置）插入一个大写字母得到最终的字符串 <span class=\"katex math inline\">C</span>。</p>\n<p>现给定字符串 <span class=\"katex math inline\">C</span>，请编程计算出最初的字符串 <span class=\"katex math inline\">A</span>。</p>\n</div>            </div>",
+      "text": "三个火枪手阿多斯、波尔多斯、阿拉密斯要给好朋友达达尼昂留下一份加密的信息。\n阿多斯写出他们要留下的仅包含大写字母的字符串 A ，波尔多斯将这个字符串复制了一遍，得到字符串 B，阿拉密斯在字符串 B 的任意一个位置（也可以在首尾的位置）插入一个大写字母得到最终的字符串 C。\n现给定字符串 C，请编程计算出最初的字符串 A。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行输入一个整数 <span class=\"katex math inline\">N</span>，代表字符串 <span class=\"katex math inline\">C</span> 的长度。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行读入一个长度为 <span class=\"katex math inline\">N</span> 的字符串 <span class=\"katex math inline\">C</span>。</p>\n</div>            </div>",
+      "text": "第 1 行输入一个整数 N，代表字符串 C 的长度。\n第 2 行读入一个长度为 N 的字符串 C。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出计算出的字符串 <span class=\"katex math inline\">A</span>。</p>\n<p>请注意，可能由于波尔多斯、阿拉密斯的失误，得到最终得到的字符串 <span class=\"katex math inline\">C</span> 有误，导致无法还原出字符串 <span class=\"katex math inline\">A</span>，这种情况下，请输出<code>NOT POSSIBLE</code>。</p>\n<p>也有可能计算发现无法唯一的还原出字符串 <span class=\"katex math inline\">A</span>，这种情况下，请输出 <code>NOT UNIQUE</code>。</p>\n</div>            </div>",
+      "text": "输出计算出的字符串 A。\n请注意，可能由于波尔多斯、阿拉密斯的失误，得到最终得到的字符串 C 有误，导致无法还原出字符串 A，这种情况下，请输出NOT POSSIBLE。\n也有可能计算发现无法唯一的还原出字符串 A，这种情况下，请输出 NOT UNIQUE。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7\r\nXYAZXYZ</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>XYZ</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>7\r\nABCDEFG</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>NOT POSSIBLE</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>9\r\nABABABABA</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>NOT UNIQUE</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            7\r\nXYAZXYZ\n                        \n                        \n                            输出\n                            XYZ\n                        \n\n                                                    \n                                输入\n                                7\r\nABCDEFG\n                            \n                            \n                                输出\n                                NOT POSSIBLE\n                            \n                        \n                                                    \n                                输入\n                                9\r\nABABABABA\n                            \n                            \n                                输出\n                                NOT UNIQUE"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">2 \\le N \\le 2 \\times 10^6 + 1</span>，且 <span class=\"katex math inline\">N</span> 是奇数。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 100\\% 的数据，2 \\le N \\le 2 \\times 10^6 + 1，且 N 是奇数。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">哈希</span></span></p>\n</div>                </div>",
+      "text": "哈希"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7\r\nXYAZXYZ",
+      "output": "XYZ"
+    },
+    {
+      "input": "7\r\nABCDEFG",
+      "output": "NOT POSSIBLE"
+    },
+    {
+      "input": "9\r\nABABABABA",
+      "output": "NOT UNIQUE"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "501",
+    "通过人数": "195",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:34"
+}

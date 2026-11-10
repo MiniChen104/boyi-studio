@@ -1,0 +1,63 @@
+{
+  "id": "4678",
+  "title": "时间跨越",
+  "tags": [
+    "GESP二级",
+    "分支",
+    "25年3月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4678",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>假设现在是 <span class=\"katex math inline\">y</span> 年 <span class=\"katex math inline\">m</span> 月 <span class=\"katex math inline\">d</span> 日 <span class=\"katex math inline\">h</span> 时而 <span class=\"katex math inline\">k</span> 小时后是 <span class=\"katex math inline\">y&#x27;</span> 年 <span class=\"katex math inline\">m&#x27;</span> 月 <span class=\"katex math inline\">d&#x27;</span> 日 <span class=\"katex math inline\">h&#x27;</span> 时，对于给定的 <span class=\"katex math inline\">y</span>，<span class=\"katex math inline\">m</span>，<span class=\"katex math inline\">d</span>，<span class=\"katex math inline\">h</span>，<span class=\"katex math inline\">k</span>，小杨想请你帮他计算出对应的 <span class=\"katex math inline\">y&#x27;</span>，<span class=\"katex math inline\">m&#x27;</span>，<span class=\"katex math inline\">d&#x27;</span>，<span class=\"katex math inline\">h&#x27;</span> 是多少。</p>\n</div>            </div>",
+      "text": "假设现在是 y 年 m 月 d 日 h 时而 k 小时后是 y' 年 m' 月 d' 日 h' 时，对于给定的 y，m，d，h，k，小杨想请你帮他计算出对应的 y'，m'，d'，h' 是多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含五行，每行一个正整数，分别代表  <span class=\"katex math inline\">y</span>，<span class=\"katex math inline\">m</span>，<span class=\"katex math inline\">d</span>，<span class=\"katex math inline\">h</span>，<span class=\"katex math inline\">k</span>。</p>\n</div>            </div>",
+      "text": "输入包含五行，每行一个正整数，分别代表  y，m，d，h，k。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出四个正整数，代表 <span class=\"katex math inline\">y&#x27;</span>，<span class=\"katex math inline\">m&#x27;</span>，<span class=\"katex math inline\">d&#x27;</span>，<span class=\"katex math inline\">h&#x27;</span> 。</p>\n</div>            </div>",
+      "text": "输出四个正整数，代表 y'，m'，d'，h' 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2008\r\n2\r\n28\r\n23\r\n1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2008 2 29 0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2008\r\n2\r\n28\r\n23\r\n1\n                        \n                        \n                            输出\n                            2008 2 29 0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">2000 \\le y \\le 3000，1 \\le m \\le 12，1 \\le d \\le 31，0 \\le h \\le 23，1 \\le k \\le 24</span> 。数据保证为合法时间。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于全部数据，保证有 2000 \\le y \\le 3000，1 \\le m \\le 12，1 \\le d \\le 31，0 \\le h \\le 23，1 \\le k \\le 24 。数据保证为合法时间。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年GESP3月认证C++二级真题</p>\n</div>                </div>",
+      "text": "2025年GESP3月认证C++二级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP二级</span><span class=\"label label-warning\">分支</span><span class=\"label label-info\">25年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP二级分支25年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2008\r\n2\r\n28\r\n23\r\n1",
+      "output": "2008 2 29 0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "2435",
+    "通过人数": "1046",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:04"
+}

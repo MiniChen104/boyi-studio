@@ -1,0 +1,66 @@
+{
+  "id": "4250",
+  "title": "交换游戏",
+  "tags": [
+    "市赛",
+    "数学"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4250",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>了新班级的凝聚力，让每个同学尽快熟悉彼此。班主任老师决定组织 <span class=\"katex math inline\">N</span> 个同学在操场上进行游戏活动。老师要求这 <span class=\"katex math inline\">N</span> 个同学站成一排，编号为 <span class=\"katex math inline\">1..N</span>。然后给每个同学发了一张白纸，纸上每个同学自己都写下了一个小写英文字母（可能会有同学的字母重复）。</p>\n<p>但是同学们开始排队的时候，都喜欢跟自己熟悉的同学排在一起。老师觉得这样不利于大家熟悉彼此。所以他决定，选出一对同学，让他们俩交换位置。</p>\n<p>老师想知道，交换后，从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">N</span> 个人手上的字母序列排成的字符串有多少种。聪明的你来帮助老师完成这个任务！</p>\n</div>            </div>",
+      "text": "了新班级的凝聚力，让每个同学尽快熟悉彼此。班主任老师决定组织 N 个同学在操场上进行游戏活动。老师要求这 N 个同学站成一排，编号为 1..N。然后给每个同学发了一张白纸，纸上每个同学自己都写下了一个小写英文字母（可能会有同学的字母重复）。\n但是同学们开始排队的时候，都喜欢跟自己熟悉的同学排在一起。老师觉得这样不利于大家熟悉彼此。所以他决定，选出一对同学，让他们俩交换位置。\n老师想知道，交换后，从 1 到 N 个人手上的字母序列排成的字符串有多少种。聪明的你来帮助老师完成这个任务！"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个字符串 <span class=\"katex math inline\">S</span>，表示初始 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">N</span> 个同学手上的字母的序列。</p>\n</div>            </div>",
+      "text": "一行，一个字符串 S，表示初始 1 到 N 个同学手上的字母的序列。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从最初的 <span class=\"katex math inline\">N</span> 个人序列，交换两个人后会有多少种不同的字符串。</p>\n</div>            </div>",
+      "text": "从最初的 N 个人序列，交换两个人后会有多少种不同的字符串。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>abc</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>bbbbb</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            abc\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                bbbbb\n                            \n                            \n                                输出\n                                1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 <span class=\"katex math inline\">1</span> 解释】</h4>\n<p>交换 <span class=\"katex math inline\">(1,2)</span> 构成 <span class=\"katex math inline\">bac</span></p>\n<p>交换 <span class=\"katex math inline\">(1,3)</span> 构成 <span class=\"katex math inline\">cba</span></p>\n<p>交换 <span class=\"katex math inline\">(2,3)</span> 构成 <span class=\"katex math inline\">acb</span></p>\n<p>所以，答案是 <span class=\"katex math inline\">3</span>。</p>\n<h4>【样例 <span class=\"katex math inline\">2</span> 解释】</h4>\n<p>交换任意的两个人得到的字符串都是一样的，因此只有以一种答案。</p>\n<h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">10\\%</span> 的数据，所有字母都相同。</p>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的数据，<span class=\"katex math inline\">( 2 \\leq n \\leq 1000 )</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">( 2 \\leq n \\leq 1000000)</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 1 解释】\n交换 (1,2) 构成 bac\n交换 (1,3) 构成 cba\n交换 (2,3) 构成 acb\n所以，答案是 3。\n【样例 2 解释】\n交换任意的两个人得到的字符串都是一样的，因此只有以一种答案。\n【数据范围】\n对于 10\\% 的数据，所有字母都相同。\n对于 40\\% 的数据，( 2 \\leq n \\leq 1000 )。\n对于 100\\% 的数据，( 2 \\leq n \\leq 1000000)。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>婺城区第二届青少年信息素养大赛初中组试题</p>\n</div>                </div>",
+      "text": "婺城区第二届青少年信息素养大赛初中组试题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">数学</span></span></p>\n</div>                </div>",
+      "text": "市赛数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "abc",
+      "output": "3"
+    },
+    {
+      "input": "bbbbb",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "150",
+    "通过人数": "49",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:48"
+}

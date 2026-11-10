@@ -1,0 +1,64 @@
+{
+  "id": "3453",
+  "title": "Frog II",
+  "tags": [
+    "动态规划"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3453",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>还是刚刚那只小青蛙，他目前在第 <span class=\"katex math inline\">1</span> 块石头上，还是需要跳到第 <span class=\"katex math inline\">N</span> 块石头上，才能躲开琪露诺的攻击!</p>\n<p>不同的是，这只小青蛙接受了祝福，现在可以从第 <span class=\"katex math inline\">i</span> 块石头上跳到第 <span class=\"katex math inline\">i + 1</span> 到 <span class=\"katex math inline\">i + k</span> 块石头上了，每次消耗的体力为两块石头的高度差（取正数）。不过冰之妖精可不管这些，她只想把小青蛙给冻住。</p>\n<p>所以小青蛙又来向你询问该怎么用最少的体力跳到第 <span class=\"katex math inline\">N</span> 块石头上了。</p>\n</div>            </div>",
+      "text": "还是刚刚那只小青蛙，他目前在第 1 块石头上，还是需要跳到第 N 块石头上，才能躲开琪露诺的攻击!\n不同的是，这只小青蛙接受了祝福，现在可以从第 i 块石头上跳到第 i + 1 到 i + k 块石头上了，每次消耗的体力为两块石头的高度差（取正数）。不过冰之妖精可不管这些，她只想把小青蛙给冻住。\n所以小青蛙又来向你询问该怎么用最少的体力跳到第 N 块石头上了。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行石头总数 <span class=\"katex math inline\">N</span>，以及题中所给的 <span class=\"katex math inline\">k</span>。</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 个数，分别表示第 <span class=\"katex math inline\">i</span> 块石头的高度。</p>\n</div>            </div>",
+      "text": "第一行石头总数 N，以及题中所给的 k。\n接下来 N 个数，分别表示第 i 块石头的高度。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数，代表小青蛙消耗的体力。</p>\n</div>            </div>",
+      "text": "一个数，代表小青蛙消耗的体力。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 3\r\n10 30 40 50 20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>30</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 1\r\n10 20 10</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>20</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2 100\r\n10 10</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            5 3\r\n10 30 40 50 20\n                        \n                        \n                            输出\n                            30\n                        \n\n                                                    \n                                输入\n                                3 1\r\n10 20 10\n                            \n                            \n                                输出\n                                20\n                            \n                        \n                                                    \n                                输入\n                                2 100\r\n10 10\n                            \n                            \n                                输出\n                                0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>所有测试数据满足 <span class=\"katex math inline\">2 ≤ N ≤ 10^5</span>，<span class=\"katex math inline\">1 ≤ K ≤ 100</span>，<span class=\"katex math inline\">1 ≤ h_i ≤ 10^4</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n所有测试数据满足 2 ≤ N ≤ 10^5，1 ≤ K ≤ 100，1 ≤ h_i ≤ 10^4。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 3\r\n10 30 40 50 20",
+      "output": "30"
+    },
+    {
+      "input": "3 1\r\n10 20 10",
+      "output": "20"
+    },
+    {
+      "input": "2 100\r\n10 10",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "385",
+    "通过人数": "200",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:12"
+}

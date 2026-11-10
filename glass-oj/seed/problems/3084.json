@@ -1,0 +1,62 @@
+{
+  "id": "3084",
+  "title": "神秘的石头",
+  "tags": [
+    "动态规划",
+    "背包"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3084",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>今年的上海世博会上，神秘的中山馆门口有一个史前游戏，一块巨石上有一堆神秘的小石头和一个史前的天平，中山的小工作人员正在组织观众们玩一个小游戏——用一个天平和一些石头称出一个物体的重量，当然，每个小石头都是标示出了它的重量的。</p>\n<p>这个小游戏不仅挑战了小朋友们的智慧，还提供了很多小奖品，因此小朋友们玩得非常开心。</p>\n<p>小博也玩了两次，一次他用 <span class=\"katex math inline\">1</span> 个 <span class=\"katex math inline\">1</span> 克的石头和 <span class=\"katex math inline\">2</span> 个 <span class=\"katex math inline\">5</span> 克的石头，称出了一个重量为 <span class=\"katex math inline\">11</span> 克的物品。第二次他用 <span class=\"katex math inline\">2</span> 个 <span class=\"katex math inline\">10</span> 克的石头和 <span class=\"katex math inline\">3</span> 个 <span class=\"katex math inline\">1</span> 克的石头，称出了一个重量为 <span class=\"katex math inline\">17</span> 克的物品。</p>\n<p>你能想明白他是怎么称的吗？</p>\n<p>聪明的小博继续想，如果给我一定数量的各种石头，我能够称出多少种物品的重量呢？于是他回家后，自己编写了一个程序解决，请你也编写一个程序解决这个问题。</p>\n</div>            </div>",
+      "text": "今年的上海世博会上，神秘的中山馆门口有一个史前游戏，一块巨石上有一堆神秘的小石头和一个史前的天平，中山的小工作人员正在组织观众们玩一个小游戏——用一个天平和一些石头称出一个物体的重量，当然，每个小石头都是标示出了它的重量的。\n这个小游戏不仅挑战了小朋友们的智慧，还提供了很多小奖品，因此小朋友们玩得非常开心。\n小博也玩了两次，一次他用 1 个 1 克的石头和 2 个 5 克的石头，称出了一个重量为 11 克的物品。第二次他用 2 个 10 克的石头和 3 个 1 克的石头，称出了一个重量为 17 克的物品。\n你能想明白他是怎么称的吗？\n聪明的小博继续想，如果给我一定数量的各种石头，我能够称出多少种物品的重量呢？于是他回家后，自己编写了一个程序解决，请你也编写一个程序解决这个问题。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一行，共 <span class=\"katex math inline\">4</span> 个数字 <span class=\"katex math inline\">n1、n2、n3、n4</span>，分别表示 <span class=\"katex math inline\">1</span> 克、<span class=\"katex math inline\">2</span> 克、<span class=\"katex math inline\">5</span> 克、<span class=\"katex math inline\">10</span> 克的石头的数量。取值范围：( <span class=\"katex math inline\"> 0 \\le n1 , n2,n3, n4 \\le 500</span> )。</p>\n</div>            </div>",
+      "text": "只有一行，共 4 个数字 n1、n2、n3、n4，分别表示 1 克、2 克、5 克、10 克的石头的数量。取值范围：(  0 \\le n1 , n2,n3, n4 \\le 500 )。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一个数据，由 <span class=\"katex math inline\">n1</span> 个 <span class=\"katex math inline\">1</span> 克的石头，<span class=\"katex math inline\">n2</span> 个 <span class=\"katex math inline\">2</span> 克的石头，<span class=\"katex math inline\">n3</span> 个 <span class=\"katex math inline\">5</span> 克的石头，<span class=\"katex math inline\">n4</span> 个 <span class=\"katex math inline\">10</span> 克的石头，一共可以称出多少种重的物品的数量。</p>\n</div>            </div>",
+      "text": "只有一个数据，由 n1 个 1 克的石头，n2 个 2 克的石头，n3 个 5 克的石头，n4 个 10 克的石头，一共可以称出多少种重的物品的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 0 0 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 0 0 1\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>样例解释:</strong></p>\n<p>用 <span class=\"katex math inline\">1</span> 个 <span class=\"katex math inline\">1</span> 克的石头，<span class=\"katex math inline\">1</span> 个 <span class=\"katex math inline\">10</span> 克的石头，一共可以称出 <span class=\"katex math inline\">4</span> 种不同的重，分别是：<span class=\"katex math inline\">1、9、10、11</span> 。</p>\n<p><strong>数据说明：</strong></p>\n<p>如果不满足输出格式得 <span class=\"katex math inline\">0</span> 分。</p>\n<p>对于 <span class=\"katex math inline\">50\\%</span> 的数据：<span class=\"katex math inline\"> 0 \\le n1</span>, <span class=\"katex math inline\">n2</span> , <span class=\"katex math inline\">n3</span>, <span class=\"katex math inline\">n4 \\le 100</span>。</p>\n<p>另外 <span class=\"katex math inline\">50\\%</span> 的数据：<span class=\"katex math inline\">0 \\le n1</span>, <span class=\"katex math inline\">n2</span> ,<span class=\"katex math inline\">n3</span> , <span class=\"katex math inline\">n4 \\le 500</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释:\n用 1 个 1 克的石头，1 个 10 克的石头，一共可以称出 4 种不同的重，分别是：1、9、10、11 。\n数据说明：\n如果不满足输出格式得 0 分。\n对于 50\\% 的数据： 0 \\le n1, n2 , n3, n4 \\le 100。\n另外 50\\% 的数据：0 \\le n1, n2 ,n3 , n4 \\le 500 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>中山市第二届小学生信息学邀请赛试题T1</p>\n</div>                </div>",
+      "text": "中山市第二届小学生信息学邀请赛试题T1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span><span class=\"label label-warning\">背包</span></span></p>\n</div>                </div>",
+      "text": "动态规划背包"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 0 0 1",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "145",
+    "通过人数": "77",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:34:02"
+}

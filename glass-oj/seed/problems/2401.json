@@ -1,0 +1,60 @@
+{
+  "id": "2401",
+  "title": "奖金计算",
+  "tags": [
+    "模拟"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2401",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>彩票中有一种大乐透的玩法。超级大乐透的玩法如下：</p>\n<ol><li><p>购买人从 <span class=\"katex math inline\">01-35</span> 共 <span class=\"katex math inline\">35</span> 个号码中，选取 <span class=\"katex math inline\">5</span> 个号码作为前区号码；</p>\n</li>\n<li><p>从 <span class=\"katex math inline\">01-12</span> 共 <span class=\"katex math inline\">12</span> 个号码中选取 <span class=\"katex math inline\">2</span> 个号码作为后区号码；</p>\n</li>\n</ol><p>一注彩票由上述前区号码 + 后区号码组合得来，每注彩票 <span class=\"katex math inline\">2</span> 元钱。</p>\n<p>小明花了 <span class=\"katex math inline\">2</span> 元钱，购买了一注彩票，如下左图所示：</p>\n<p><img src=\"https://assets.boyi.local/d4941a5f4721dc9a435fff06.png\"></p>\n<p>两天后，中奖号码公布，小明开始研究到底中了多少奖金。获奖方式如上右图：例如，中 <span class=\"katex math inline\">4+2</span> 就表示前区有 <span class=\"katex math inline\">4</span> 个数字相同，后区 <span class=\"katex math inline\">2</span> 个数字相同，获得三等奖，奖金 <span class=\"katex math inline\">3000</span> 元。</p>\n<p>对照中奖号码对小明来说是一个头疼的问题，他找到你，希望你帮忙写一个程序，只要输入彩票号码和开奖号码，就可以知道奖金值。</p>\n</div>            </div>",
+      "text": "彩票中有一种大乐透的玩法。超级大乐透的玩法如下：\n购买人从 01-35 共 35 个号码中，选取 5 个号码作为前区号码；\n\n从 01-12 共 12 个号码中选取 2 个号码作为后区号码；\n\n一注彩票由上述前区号码 + 后区号码组合得来，每注彩票 2 元钱。\n小明花了 2 元钱，购买了一注彩票，如下左图所示：\n\n两天后，中奖号码公布，小明开始研究到底中了多少奖金。获奖方式如上右图：例如，中 4+2 就表示前区有 4 个数字相同，后区 2 个数字相同，获得三等奖，奖金 3000 元。\n对照中奖号码对小明来说是一个头疼的问题，他找到你，希望你帮忙写一个程序，只要输入彩票号码和开奖号码，就可以知道奖金值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行 <span class=\"katex math inline\">7</span> 个整数，表示小明购买的彩票号码。前 <span class=\"katex math inline\">5</span> 个为前区号码，范围在 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">35</span>，<strong>保证不会重复</strong>；后 <span class=\"katex math inline\">2</span> 个为后区号码，范围在 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">12</span> ，<strong>保证不重复</strong>。</p>\n<p>第二行 <span class=\"katex math inline\">7</span> 个整数，表示开奖号码，前 <span class=\"katex math inline\">5</span> 个为前区中奖号码，范围在 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">35</span> ，<strong>保证不重复且保证有序</strong>；后 <span class=\"katex math inline\">2</span> 个为后区号码，范围在 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">12</span> ，<strong>保证不重复且有序</strong>。</p>\n<p>注意，前区和后区是分开选数的，前区的数字可以和后区的数字相同。</p>\n</div>            </div>",
+      "text": "第一行 7 个整数，表示小明购买的彩票号码。前 5 个为前区号码，范围在 1 到 35，保证不会重复；后 2 个为后区号码，范围在 1 到 12 ，保证不重复。\n第二行 7 个整数，表示开奖号码，前 5 个为前区中奖号码，范围在 1 到 35 ，保证不重复且保证有序；后 2 个为后区号码，范围在 1 到 12 ，保证不重复且有序。\n注意，前区和后区是分开选数的，前区的数字可以和后区的数字相同。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出小明的中奖金额，未中奖输出 <span class=\"katex math inline\">0</span>。</p>\n</div>            </div>",
+      "text": "输出小明的中奖金额，未中奖输出 0。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 7 8 14 18 6 11\r\n2 7 8 14 18 6 11\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5000000</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2 7 8 14 18 6 11\r\n1 11 14 18 25 6 11\r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>10</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 7 8 14 18 6 11\r\n2 7 8 14 18 6 11\r\n\n                        \n                        \n                            输出\n                            5000000\n                        \n\n                                                    \n                                输入\n                                2 7 8 14 18 6 11\r\n1 11 14 18 25 6 11\r\n\n                            \n                            \n                                输出\n                                10"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 <span class=\"katex math inline\">1</span> 解释】</h4>\n<p>前 <span class=\"katex math inline\">5</span> 加后 <span class=\"katex math inline\">2</span> 都相同，中一等奖，奖金为 <span class=\"katex math inline\">500</span> 万。</p>\n<h4>【样例 <span class=\"katex math inline\">2</span> 解释】</h4>\n<p>前区有 <span class=\"katex math inline\">14</span> 和 <span class=\"katex math inline\">18</span> 两个数字相同，后区 <span class=\"katex math inline\">6</span> 和 <span class=\"katex math inline\">11</span> 都相同，对照表格，中奖 <span class=\"katex math inline\">2+2</span> 为五等奖，奖金 <span class=\"katex math inline\">10</span> 元。</p>\n<h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的数据，若小明的号码与中奖号码相同，那么其位置也是相同的。例如中奖号码 <span class=\"katex math inline\">10</span> 位于第三个数，那么小明的彩票中如果出现 <span class=\"katex math inline\">10</span> ，也肯定在第三个数。</p>\n<p>对于前 <span class=\"katex math inline\">70\\%</span> 的数据，小明的号码是系统产生的，前区和后区都是从小到大给出的。</p>\n<p>对于最后 <span class=\"katex math inline\">30\\%</span> 的数据，小明的号码可能是手写的，前区或后区的数字不一定有序。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 1 解释】\n前 5 加后 2 都相同，中一等奖，奖金为 500 万。\n【样例 2 解释】\n前区有 14 和 18 两个数字相同，后区 6 和 11 都相同，对照表格，中奖 2+2 为五等奖，奖金 10 元。\n【数据范围】\n对于 40\\% 的数据，若小明的号码与中奖号码相同，那么其位置也是相同的。例如中奖号码 10 位于第三个数，那么小明的彩票中如果出现 10 ，也肯定在第三个数。\n对于前 70\\% 的数据，小明的号码是系统产生的，前区和后区都是从小到大给出的。\n对于最后 30\\% 的数据，小明的号码可能是手写的，前区或后区的数字不一定有序。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">模拟</span></span></p>\n</div>                </div>",
+      "text": "模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 7 8 14 18 6 11\r\n2 7 8 14 18 6 11\r\n",
+      "output": "5000000"
+    },
+    {
+      "input": "2 7 8 14 18 6 11\r\n1 11 14 18 25 6 11\r\n",
+      "output": "10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1012",
+    "通过人数": "387",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:55"
+}

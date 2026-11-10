@@ -1,0 +1,61 @@
+{
+  "id": "5895",
+  "title": "选秀得分",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5895",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小Z最近参加一个选秀比赛，有 <span class=\"katex math inline\"> N </span> 个评委参加了这次评分，<span class=\"katex math inline\"> N </span> <strong>是奇数</strong>。评委编号为 <span class=\"katex math inline\"> 1 </span> 到 <span class=\"katex math inline\"> N </span>。每位评委给小Z打的分数是一个整数，评委 <span class=\"katex math inline\"> i </span> (<span class=\"katex math inline\"> 1 \\leq i \\leq N </span>) 的打分为 <span class=\"katex math inline\"> D_i </span>。</p>\n<p>这次采用了一种创新的方法计算最后得分，计算规则是：</p>\n<ul><li>最初 <span class=\"katex math inline\"> N </span> 位评委排成一排，检查队伍排头的3位评委的评分，去掉一个最高分和一个最低分，剩下的一个评委移动到队伍最后；</li>\n<li>反复执行以上操作，直到队伍中的评委只剩一位。</li>\n</ul><p>那么这个评委的打分就是小Z的最后得分。</p>\n<p>由于有的评委年纪比较大了，不记得自己的位置了，现在有 <span class=\"katex math inline\"> M </span> (<span class=\"katex math inline\"> 1 \\leq M \\leq N - 2 </span>) 个评委很快找到了自己的位置，剩下的 <span class=\"katex math inline\"> N - M </span> 人找不到位置了，需要给他们重新安排位置。</p>\n<p>由于小Z希望自己的得分尽可能高，请你帮忙计算出小Z最后得分可能的最大值。</p>\n</div>            </div>",
+      "text": "小Z最近参加一个选秀比赛，有  N  个评委参加了这次评分， N  是奇数。评委编号为  1  到  N 。每位评委给小Z打的分数是一个整数，评委  i  ( 1 \\leq i \\leq N ) 的打分为  D_i 。\n这次采用了一种创新的方法计算最后得分，计算规则是：\n最初  N  位评委排成一排，检查队伍排头的3位评委的评分，去掉一个最高分和一个最低分，剩下的一个评委移动到队伍最后；\n反复执行以上操作，直到队伍中的评委只剩一位。\n那么这个评委的打分就是小Z的最后得分。\n由于有的评委年纪比较大了，不记得自己的位置了，现在有  M  ( 1 \\leq M \\leq N - 2 ) 个评委很快找到了自己的位置，剩下的  N - M  人找不到位置了，需要给他们重新安排位置。\n由于小Z希望自己的得分尽可能高，请你帮忙计算出小Z最后得分可能的最大值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为整数 <span class=\"katex math inline\"> N </span> 和 <span class=\"katex math inline\"> M </span>，用空格分隔。表示有 <span class=\"katex math inline\"> N </span> 位评委，其中 <span class=\"katex math inline\"> M </span> 人的初始排列位置已经确定。</p>\n<p>接下来 <span class=\"katex math inline\"> M </span> 行中第 <span class=\"katex math inline\"> i </span> (<span class=\"katex math inline\"> 1 \\leq i \\leq M </span>) 行为两个整数 <span class=\"katex math inline\"> D_i </span> 和 <span class=\"katex math inline\"> P_i </span>，用空格分隔。表示第 <span class=\"katex math inline\"> i </span> 位评委的评分为 <span class=\"katex math inline\"> D_i </span>，初始排列位置为队伍排头开始的第 <span class=\"katex math inline\"> P_i </span> 位。</p>\n<p>接下来 <span class=\"katex math inline\"> N - M </span> 行整数，表示 <span class=\"katex math inline\"> N - M </span> 个不清楚位置的评委的评分。</p>\n</div>            </div>",
+      "text": "第一行为整数  N  和  M ，用空格分隔。表示有  N  位评委，其中  M  人的初始排列位置已经确定。\n接下来  M  行中第  i  ( 1 \\leq i \\leq M ) 行为两个整数  D_i  和  P_i ，用空格分隔。表示第  i  位评委的评分为  D_i ，初始排列位置为队伍排头开始的第  P_i  位。\n接下来  N - M  行整数，表示  N - M  个不清楚位置的评委的评分。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，为一个整数，表示小Z得分的最大值。</p>\n</div>            </div>",
+      "text": "输出一行，为一个整数，表示小Z得分的最大值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7 3\r\n5 2\r\n5 5\r\n8 6\r\n6\r\n2\r\n8\r\n9\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7 3\r\n5 2\r\n5 5\r\n8 6\r\n6\r\n2\r\n8\r\n9\r\n\n                        \n                        \n                            输出\n                            8"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例说明】</h4>\n<p>最高得分的评分排列：<span class=\"katex math inline\"> 2, 5, 6, 8, 5, 8, 9 </span></p>\n<h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">10\\%</span> 的数据：所有 <span class=\"katex math inline\"> D_i </span> 都相等。</p>\n<p><span class=\"katex math inline\">40\\%</span> 的数据：<span class=\"katex math inline\"> 3 \\leq N \\leq 5000 </span>, <span class=\"katex math inline\"> D_i \\leq 5000 </span>。</p>\n<p><span class=\"katex math inline\"> 100\\%</span> 的数据：</p>\n<p><span class=\"katex math inline\">3 \\leq N \\leq 99999</span>, </p>\n<p><span class=\"katex math inline\">1 \\leq M \\leq N - 2</span>, </p>\n<p><span class=\"katex math inline\">1 \\leq D_i \\leq 10^9 \\quad (1 \\leq i \\leq N)</span>,</p>\n<p><span class=\"katex math inline\">1 \\leq P_i \\leq N \\quad (1 \\leq i \\leq M)</span>,</p>\n<p><span class=\"katex math inline\">P_i \\neq P_j \\quad (1 \\leq i &lt; j \\leq M)</span>.</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例说明】\n最高得分的评分排列： 2, 5, 6, 8, 5, 8, 9 \n【数据范围】\n10\\% 的数据：所有  D_i  都相等。\n40\\% 的数据： 3 \\leq N \\leq 5000 ,  D_i \\leq 5000 。\n 100\\% 的数据：\n3 \\leq N \\leq 99999, \n1 \\leq M \\leq N - 2, \n1 \\leq D_i \\leq 10^9 \\quad (1 \\leq i \\leq N),\n1 \\leq P_i \\leq N \\quad (1 \\leq i \\leq M),\nP_i \\neq P_j \\quad (1 \\leq i < j \\leq M)."
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年11月婺城区第三届青少年信息素养大赛初中组试题</p>\n</div>                </div>",
+      "text": "2025年11月婺城区第三届青少年信息素养大赛初中组试题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7 3\r\n5 2\r\n5 5\r\n8 6\r\n6\r\n2\r\n8\r\n9\r\n",
+      "output": "8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "122",
+    "通过人数": "9",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:40"
+}

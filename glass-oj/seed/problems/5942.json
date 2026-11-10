@@ -1,0 +1,64 @@
+{
+  "id": "5942",
+  "title": "手机电量显示",
+  "tags": [
+    "GESP一级",
+    "25年12月",
+    "循环",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5942",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨的手机就像一个聪明的小助手，当电量变化时，它会用不同的方式来提醒我们，假设当前的电量百分比为 <span class=\"katex math inline\">P</span>：</p>\n<p>当电量非常低（不超过 <span class=\"katex math inline\">10</span>，即 <span class=\"katex math inline\">P \\le 10</span> ），它会显示一个大写字母 <code>R</code> ，就像在说：“快给我充电吧！（<span class=\"katex math inline\">Red</span> 警告色）”</p>\n<p>当电量有点低（超过 <span class=\"katex math inline\">10</span> 但不超过 <span class=\"katex math inline\">20</span>，即 <span class=\"katex math inline\">10 \\lt P \\le 20</span> ），它会显示一个大写字母 <code>L</code> ，意思是“电量有点<span class=\"katex math inline\">Low</span> 啦！”</p>\n<p>当电量比较充足（超过 <span class=\"katex math inline\">20</span>，即 <span class=\"katex math inline\">P \\gt 20</span> ），它就会直接显示具体的数字，比如直接显示 <span class=\"katex math inline\">50</span>，表示还有 <span class=\"katex math inline\">50</span> 的电量。</p>\n</div>            </div>",
+      "text": "小杨的手机就像一个聪明的小助手，当电量变化时，它会用不同的方式来提醒我们，假设当前的电量百分比为 P：\n当电量非常低（不超过 10，即 P \\le 10 ），它会显示一个大写字母 R ，就像在说：“快给我充电吧！（Red 警告色）”\n当电量有点低（超过 10 但不超过 20，即 10 \\lt P \\le 20 ），它会显示一个大写字母 L ，意思是“电量有点Low 啦！”\n当电量比较充足（超过 20，即 P \\gt 20 ），它就会直接显示具体的数字，比如直接显示 50，表示还有 50 的电量。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个正整数 <span class=\"katex math inline\">T</span>，代表数据组数。</p>\n<p>对于每组数据，一行包含一个正整数 <span class=\"katex math inline\">P</span>，代表手机电量百分比。</p>\n</div>            </div>",
+      "text": "第一行一个正整数 T，代表数据组数。\n对于每组数据，一行包含一个正整数 P，代表手机电量百分比。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组数据，输出一行，代表当前手机显示的电量信息。</p>\n</div>            </div>",
+      "text": "对于每组数据，输出一行，代表当前手机显示的电量信息。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n10\r\n1\r\n20\r\n99\r\n19</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>R\r\nR\r\nL\r\n99\r\nL\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n10\r\n1\r\n20\r\n99\r\n19\n                        \n                        \n                            输出\n                            R\r\nR\r\nL\r\n99\r\nL"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p>输入样例 <span class=\"katex math inline\">1</span> 共有五组数据：</p>\n<ul><li>第一组数据手机电量 <span class=\"katex math inline\">P = 10</span>，满足 <span class=\"katex math inline\">P \\leq 10</span>，电量非常低，显示 <code>R</code>。</li>\n<li>第二组数据手机电量 <span class=\"katex math inline\">P = 1</span>，满足 <span class=\"katex math inline\">P \\leq 10</span>，电量非常低，显示 <code>R</code>。</li>\n<li>第三组数据手机电量 <span class=\"katex math inline\">P = 20</span>，满足 <span class=\"katex math inline\">10 &lt; P \\leq 20</span>，电量有点低，显示 <code>L</code>。</li>\n<li>第四组数据手机电量 <span class=\"katex math inline\">P = 99</span>，满足 <span class=\"katex math inline\">P &gt; 20</span>，电量比较充足，直接显示具体的数字 <span class=\"katex math inline\">99</span>。</li>\n<li>第五组数据手机电量 <span class=\"katex math inline\">P = 19</span>，满足 <span class=\"katex math inline\">10 &lt; P \\leq 20</span>，电量有点低，显示 <code>L</code>。</li>\n</ul><h4>数据范围</h4>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\leq T \\leq 20</span>，<span class=\"katex math inline\">1 \\leq P \\leq 100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n输入样例 1 共有五组数据：\n第一组数据手机电量 P = 10，满足 P \\leq 10，电量非常低，显示 R。\n第二组数据手机电量 P = 1，满足 P \\leq 10，电量非常低，显示 R。\n第三组数据手机电量 P = 20，满足 10 < P \\leq 20，电量有点低，显示 L。\n第四组数据手机电量 P = 99，满足 P > 20，电量比较充足，直接显示具体的数字 99。\n第五组数据手机电量 P = 19，满足 10 < P \\leq 20，电量有点低，显示 L。\n数据范围\n对于所有测试点，保证 1 \\leq T \\leq 20，1 \\leq P \\leq 100。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 2025年12月认证 C++1级真题</p>\n</div>                </div>",
+      "text": "GESP 2025年12月认证 C++1级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP一级</span><span class=\"label label-warning\">25年12月</span><span class=\"label label-info\">循环</span><span class=\"label label-danger\">分支</span></span></p>\n</div>                </div>",
+      "text": "GESP一级25年12月循环分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n10\r\n1\r\n20\r\n99\r\n19",
+      "output": "R\r\nR\r\nL\r\n99\r\nL\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "2705",
+    "通过人数": "1554",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:29"
+}

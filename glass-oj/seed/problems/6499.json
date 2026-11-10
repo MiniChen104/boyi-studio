@@ -1,0 +1,53 @@
+{
+  "id": "6499",
+  "title": "字符串减法",
+  "tags": [
+    "詹天佑杯高年级组",
+    "字符串",
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6499",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小英雄最近在学习字符串操作，他发现了字符串的&quot;<code>+</code>&quot;运算符可以用来拼接字符串，但是不能使用&quot;<code>-</code>&quot;运算符。</p>\n<p>小英雄心血来潮就定义了字符串的减法规则:从字符串 <span class=\"katex math inline\">a</span> 中减去字符串 <span class=\"katex math inline\">b</span>，意味着从 <span class=\"katex math inline\">a</span>中删除一个特定的子串，具体规则如下:</p>\n<ul><li><p>规则1:如果字符串 <span class=\"katex math inline\">a</span> 中包含字符串 <span class=\"katex math inline\">b</span>，那么删除最左边出现的那个子串 <span class=\"katex math inline\">b</span></p>\n</li>\n<li><p>规则2:如果字符串 <span class=\"katex math inline\">a</span> 中不包含字符串 <span class=\"katex math inline\">b</span>，那么字符串 <span class=\"katex math inline\">a</span> 保持不变</p>\n</li>\n</ul><p>示例:</p>\n<p>字符串 <code>a=&quot;abcdbc&quot;</code>，字符串 <code>b=&quot;bc&quot;</code>\n执行 <code>a-b</code>后，就会删除最左边的 <code>“bc”</code>，得到 <code>&quot;adbc&quot;</code></p>\n<p>现在，小英雄给你一个原字符串 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">m</span> 个字符串 <span class=\"katex math inline\">b_1,b_2,\\dots,b_m</span>，询问你依次执行 <span class=\"katex math inline\">m</span> 次减法操作后原字符串 <span class=\"katex math inline\">a</span>最终的样子。</p>\n<p>注意:子串是指字符串中一段连续的字符序列，比如字符串 <code>&quot;ac&quot;</code>、<code>&quot;ba&quot;</code>、<code>&quot;de&quot;</code>均不是 <code>&quot;abc&quot;</code>的子串，而 <code>&quot;a&quot;</code>、<code>&quot;abc&quot;</code>均是 <code>&quot;abc&quot;</code> 的子串。</p>\n</div>            </div>",
+      "text": "小英雄最近在学习字符串操作，他发现了字符串的\"+\"运算符可以用来拼接字符串，但是不能使用\"-\"运算符。\n小英雄心血来潮就定义了字符串的减法规则:从字符串 a 中减去字符串 b，意味着从 a中删除一个特定的子串，具体规则如下:\n规则1:如果字符串 a 中包含字符串 b，那么删除最左边出现的那个子串 b\n\n规则2:如果字符串 a 中不包含字符串 b，那么字符串 a 保持不变\n\n示例:\n字符串 a=\"abcdbc\"，字符串 b=\"bc\"\n执行 a-b后，就会删除最左边的 “bc”，得到 \"adbc\"\n现在，小英雄给你一个原字符串 a 和 m 个字符串 b_1,b_2,\\dots,b_m，询问你依次执行 m 次减法操作后原字符串 a最终的样子。\n注意:子串是指字符串中一段连续的字符序列，比如字符串 \"ac\"、\"ba\"、\"de\"均不是 \"abc\"的子串，而 \"a\"、\"abc\"均是 \"abc\" 的子串。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个字符串 <span class=\"katex math inline\">a(1 \\le </span> 字符串<span class=\"katex math inline\">a</span> 的长度 <span class=\"katex math inline\">\\le 1000</span>)和一个整数<span class=\"katex math inline\">m(1 \\le m \\le 100)</span>，用空格隔开。</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行包含一个字符串 <span class=\"katex math inline\">b_i(1 \\le i \\le m,1 \\le </span>字符串 <span class=\"katex math inline\">b_i</span> 的长度 <span class=\"katex math inline\"> \\le 100</span>)。</p>\n</div>            </div>",
+      "text": "第一行包含一个字符串 a(1 \\le  字符串a 的长度 \\le 1000)和一个整数m(1 \\le m \\le 100)，用空格隔开。\n接下来 m 行，每行包含一个字符串 b_i(1 \\le i \\le m,1 \\le 字符串 b_i 的长度  \\le 100)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，表示经过 <span class=\"katex math inline\">m</span> 次 <code>a-b</code> 操作后的字符串 <span class=\"katex math inline\">a</span>。</p>\n</div>            </div>",
+      "text": "输出一行，表示经过 m 次 a-b 操作后的字符串 a。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>codehero 5\r\nde \r\ncd\r\nde\r\nc\r\nero</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>oh</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            codehero 5\r\nde \r\ncd\r\nde\r\nc\r\nero\n                        \n                        \n                            输出\n                            oh"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">詹天佑杯高年级组</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">模拟</span></span></p>\n</div>                </div>",
+      "text": "詹天佑杯高年级组字符串模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "codehero 5\r\nde \r\ncd\r\nde\r\nc\r\nero",
+      "output": "oh"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "3",
+    "通过人数": "2",
+    "金币数量": "2 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:32"
+}

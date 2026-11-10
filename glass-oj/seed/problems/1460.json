@@ -1,0 +1,56 @@
+{
+  "id": "1460",
+  "title": "小明学游泳",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1460",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明开心的在游泳，可是他很快难过的发现，自己的力气不够，游泳好累哦。</p>\n<p>已知小明每换一次气能游 <span class=\"katex math inline\">2</span> 米，可是随着越来越累，力气越来越小，他接下来的每换一次气都只能游出上一步距离的 <span class=\"katex math inline\">98 \\%</span>。</p>\n<p>现在小明想知道，如果要游到距离 <span class=\"katex math inline\">x</span>米的地方，他需要总共换多少次气呢。</p>\n<p>请你编程解决这个问题。</p>\n</div>            </div>",
+      "text": "小明开心的在游泳，可是他很快难过的发现，自己的力气不够，游泳好累哦。\n已知小明每换一次气能游 2 米，可是随着越来越累，力气越来越小，他接下来的每换一次气都只能游出上一步距离的 98 \\%。\n现在小明想知道，如果要游到距离 x米的地方，他需要总共换多少次气呢。\n请你编程解决这个问题。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个数字（不一定是整数，小于 <span class=\"katex math inline\">100m</span>），表示要游的目标距离。</p>\n</div>            </div>",
+      "text": "输入一个数字（不一定是整数，小于 100m），表示要游的目标距离。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示小明一共需要换多少次气。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示小明一共需要换多少次气。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4.3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4.3\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4.3",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "19716",
+    "通过人数": "10389",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:19:46"
+}

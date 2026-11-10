@@ -1,0 +1,56 @@
+{
+  "id": "2010",
+  "title": "密码锁的密码",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2010",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n有一个电子门，门上有很多字符，经研究发现，门上的字符中包含了打开电子门的密码。\n</p>\n<p>\n已知门上有两行字符串，其中第一行字符串长度一定是偶数，如果把第2个字符串插入到第1个子串的正中间，就是这个电子门的密码。\n</p>\n<p>\n请你编程计算出电子门的正确密码。\n</p>\n<p>\n<br></p><p></p>\n</div>            </div>",
+      "text": "有一个电子门，门上有很多字符，经研究发现，门上的字符中包含了打开电子门的密码。\n\n\n已知门上有两行字符串，其中第一行字符串长度一定是偶数，如果把第2个字符串插入到第1个子串的正中间，就是这个电子门的密码。\n\n\n请你编程计算出电子门的正确密码。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n输入数据首先给出一个整数n，表示测试数据的组数。\n</p>\n<p>\n然后是<strong>n组数据</strong>，每组数据2行，每行一个字符串（字符串不含空格），长度大于0，小于50，并且第一个串的长度一定是偶数。\n</p>\n</div>            </div>",
+      "text": "输入数据首先给出一个整数n，表示测试数据的组数。\n\n\n然后是n组数据，每组数据2行，每行一个字符串（字符串不含空格），长度大于0，小于50，并且第一个串的长度一定是偶数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请为每组数据输出一个能够开启电子门的字符串，每组输出占一行。</p>\n</div>            </div>",
+      "text": "请为每组数据输出一个能够开启电子门的字符串，每组输出占一行。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\nCSJI\r\nBI\r\nAB\r\nCMCLU</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>CSBIJI\r\nACMCLUB</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\nCSJI\r\nBI\r\nAB\r\nCMCLU\n                        \n                        \n                            输出\n                            CSBIJI\r\nACMCLUB"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\nCSJI\r\nBI\r\nAB\r\nCMCLU",
+      "output": "CSBIJI\r\nACMCLUB"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "588",
+    "通过人数": "427",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:27:16"
+}

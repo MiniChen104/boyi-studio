@@ -1,0 +1,61 @@
+{
+  "id": "1413",
+  "title": "切割绳子",
+  "tags": [
+    "noip"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1413",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">n</span> 条绳子，每条绳子的长度已知且均为正整数。绳子可以以任意正整数长度切割，但不可以连接。现在要从这些绳子中切割出 <span class=\"katex math inline\">m</span> 条长度相同的绳段，求绳段的最大长度是多少。</p>\n</div>            </div>",
+      "text": "有 n 条绳子，每条绳子的长度已知且均为正整数。绳子可以以任意正整数长度切割，但不可以连接。现在要从这些绳子中切割出 m 条长度相同的绳段，求绳段的最大长度是多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行是一个不超过 <span class=\"katex math inline\">100</span> 的正整数 <span class=\"katex math inline\">n</span> 。</p>\n<p>第二行是 <span class=\"katex math inline\">n</span> 个不超过 <span class=\"katex math inline\">10^6</span> 的正整数，表示每条绳子的长度。</p>\n<p>第三行是一个不超过 <span class=\"katex math inline\">10^8</span> 的正整数 <span class=\"katex math inline\">m</span> 。</p>\n</div>            </div>",
+      "text": "第一行是一个不超过 100 的正整数 n 。\n第二行是 n 个不超过 10^6 的正整数，表示每条绳子的长度。\n第三行是一个不超过 10^8 的正整数 m 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>绳段的最大长度，若无法切割，输出 <code>Failed</code>。</p>\n</div>            </div>",
+      "text": "绳段的最大长度，若无法切割，输出 Failed。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n5 10 8\r\n2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n5 10 8\r\n2\n                        \n                        \n                            输出\n                            8"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip2017普及组初赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "noip2017普及组初赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip</p>\n</div>                </div>",
+      "text": "noip"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip</span></span></p>\n</div>                </div>",
+      "text": "noip"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n5 10 8\r\n2",
+      "output": "8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5716",
+    "通过人数": "2665",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:19:08"
+}

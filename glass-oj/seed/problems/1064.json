@@ -1,0 +1,56 @@
+{
+  "id": "1064",
+  "title": "求出N以内的全部素数，并按每行五个数显示",
+  "tags": [
+    "嵌套循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1064",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>求出 <span class=\"katex math inline\">N</span> 以内的全部素数，并按每行五个数显示。</p>\n</div>            </div>",
+      "text": "求出 N 以内的全部素数，并按每行五个数显示。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数 <span class=\"katex math inline\">N</span>。（ <span class=\"katex math inline\">N \\le 1000</span> ）</p>\n</div>            </div>",
+      "text": "输入一个整数 N。（ N \\le 1000 ）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n依题意，输出满足条件的数！<span class=\"katex math inline\">2</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">5</span> <span class=\"katex math inline\">7</span> <span class=\"katex math inline\">11</span>\n<span class=\"katex math inline\"> \\dots  \\dots </span>\n</p>\n</div>            </div>",
+      "text": "依题意，输出满足条件的数！2 3 5 7 11\n \\dots  \\dots"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>30</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 3 5 7 11\r\n13 17 19 23 29 </pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            30\n                        \n                        \n                            输出\n                            2 3 5 7 11\r\n13 17 19 23 29"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>嵌套循环</p>\n</div>                </div>",
+      "text": "嵌套循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">嵌套循环</span></span></p>\n</div>                </div>",
+      "text": "嵌套循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "30",
+      "output": "2 3 5 7 11\r\n13 17 19 23 29 "
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "12017",
+    "通过人数": "8071",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:14:12"
+}

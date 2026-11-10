@@ -1,0 +1,56 @@
+{
+  "id": "1655",
+  "title": "是不是正方形",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1655",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个整数，判断如果和两个整数是一个矩形的相邻两条的边的话，这个矩形是不是正方形？如果是正方形输出 <code>Y</code> ，如果不是输出 <code>N</code> ；不论是否是正方形，都请输出它的面积。</p>\n<p>比如，输入 <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">3</span>，那么就不是正方形，输出应当如下：</p>\n<pre><code>N\n6\n</code></pre>\n<p>再比如，输入 <span class=\"katex math inline\">6</span> <span class=\"katex math inline\">6</span>，那么就是正方形，输出应当如下：</p>\n<pre><code>Y\n36\n</code></pre>\n</div>            </div>",
+      "text": "输入两个整数，判断如果和两个整数是一个矩形的相邻两条的边的话，这个矩形是不是正方形？如果是正方形输出 Y ，如果不是输出 N ；不论是否是正方形，都请输出它的面积。\n比如，输入 2 3，那么就不是正方形，输出应当如下：\nN\n6\n\n再比如，输入 6 6，那么就是正方形，输出应当如下：\nY\n36"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个整数。</p>\n</div>            </div>",
+      "text": "两个整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出有两行；</p>\n<p>第 <span class=\"katex math inline\">1</span> 行输出是否是正方形，如果是输出 <code>Y</code> ，不是输出 <code>N</code>。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行输出该矩形的面积。</p>\n</div>            </div>",
+      "text": "输出有两行；\n第 1 行输出是否是正方形，如果是输出 Y ，不是输出 N。\n第 2 行输出该矩形的面积。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>N\r\n6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 3\n                        \n                        \n                            输出\n                            N\r\n6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 3",
+      "output": "N\r\n6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "20775",
+    "通过人数": "14755",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:26"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1634",
+  "title": "游戏任务",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1634",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明接受了一个游戏任务，在 <span class=\"katex math inline\">20</span> 分钟内从 <span class=\"katex math inline\">A</span> 地到 <span class=\"katex math inline\">B</span> 地！途中会出现 <span class=\"katex math inline\">3</span> 个难题，要求小明用最快的时间解答出来？</p>\n<p>请编程求小明能不能完成任务，能的输出 “ <code>YES</code> ” 不能的输出 “ <code>NO</code> ” 。</p>\n</div>            </div>",
+      "text": "小明接受了一个游戏任务，在 20 分钟内从 A 地到 B 地！途中会出现 3 个难题，要求小明用最快的时间解答出来？\n请编程求小明能不能完成任务，能的输出 “ YES ” 不能的输出 “ NO ” 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>同一行输入 <span class=\"katex math inline\">c,s,a1,a2,a3</span> 五个数。  </p>\n<p>（ <span class=\"katex math inline\">c</span> 代表 <span class=\"katex math inline\">A</span> 、<span class=\"katex math inline\">B</span> 两地的距离， <span class=\"katex math inline\">s</span> 代表小明的速度， <span class=\"katex math inline\">a1,a2,a3</span> 代表解答问题的时间！）  </p>\n</div>            </div>",
+      "text": "同一行输入 c,s,a1,a2,a3 五个数。  \n（ c 代表 A 、B 两地的距离， s 代表小明的速度， a1,a2,a3 代表解答问题的时间！）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，能的输出 能的输出 “ <code>YES</code> ” 不能的输出 “ <code>NO</code> ” 。</p>\n</div>            </div>",
+      "text": "一行，能的输出 能的输出 “ YES ” 不能的输出 “ NO ” 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 2 3 4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>YES</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 2 3 4 5\n                        \n                        \n                            输出\n                            YES"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 2 3 4 5",
+      "output": "YES"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "3829",
+    "通过人数": "2075",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:08"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "2290",
+  "title": "满足条件的数的累加",
+  "tags": [
+    "电子学会等级考试",
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2290",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>现有 <span class=\"katex math inline\">n</span> 个整数，将其中个位数为 <span class=\"katex math inline\">k</span> 的数进行累加求和。</p>\n</div>            </div>",
+      "text": "现有 n 个整数，将其中个位数为 k 的数进行累加求和。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个整数 <span class=\"katex math inline\">n、k</span> ，以空格分隔。（ <span class=\"katex math inline\">0 \\lt n \\lt 1000，0 \\le k \\le 9</span> ）。</p>\n<p>第二行 <span class=\"katex math inline\">n</span> 个非负整数，以空格分隔，每个数不大于 <span class=\"katex math inline\">100000</span> 。</p>\n</div>            </div>",
+      "text": "第一行两个整数 n、k ，以空格分隔。（ 0 \\lt n \\lt 1000，0 \\le k \\le 9 ）。\n第二行 n 个非负整数，以空格分隔，每个数不大于 100000 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出满足题目要求的累加和。</p>\n</div>            </div>",
+      "text": "输出满足题目要求的累加和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 7\r\n2 5 7 17 11 18 4 27 1 7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>58</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 7\r\n2 5 7 17 11 18 4 27 1 7\n                        \n                        \n                            输出\n                            58"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会一级 202109真题</p>\n</div>                </div>",
+      "text": "电子学会一级 202109真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span><span class=\"label label-warning\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 7\r\n2 5 7 17 11 18 4 27 1 7",
+      "output": "58"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4333",
+    "通过人数": "2844",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:48"
+}

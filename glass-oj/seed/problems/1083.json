@@ -1,0 +1,56 @@
+{
+  "id": "1083",
+  "title": "回文数",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1083",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>回文数的定义为：如果把一个数的各个数位上的数字颠倒过来得到的新数与原数相等，则此数是回文数。</p>\n<p>例： <span class=\"katex math inline\">7,22,131,2112,31013,\\dots</span> 都是回文数。 </p>\n<p>对任意给出的一个整数 <span class=\"katex math inline\">n</span> ,经过一系列的处理，最后都能成为回文数。</p>\n<p>处理的方法是，该数加上它的颠倒数，</p>\n<p>例如：<span class=\"katex math inline\">n=176</span> ;</p>\n<p>第一次处理后　　　　<span class=\"katex math inline\">176+671＝847</span> ;</p>\n<p>第二次处理后　　　　<span class=\"katex math inline\">847+748＝1595</span> ;</p>\n<p>第三次处理后　　　　<span class=\"katex math inline\">1595+5951＝7546</span> ;</p>\n<p>第四次处理后　　　　<span class=\"katex math inline\">7546+6457＝14003</span> ;</p>\n<p>第五次处理后　　　　<span class=\"katex math inline\">14003+30041＝44044</span> ;</p>\n<p>此时成为回文数，共进行 <span class=\"katex math inline\">5</span> 次处理。</p>\n<p>问题：给出 <span class=\"katex math inline\">n</span> 后，求出使该数按照以上规则进行一系列处理后成为回文数的最少操作次数。</p>\n</div>            </div>",
+      "text": "回文数的定义为：如果把一个数的各个数位上的数字颠倒过来得到的新数与原数相等，则此数是回文数。\n例： 7,22,131,2112,31013,\\dots 都是回文数。 \n对任意给出的一个整数 n ,经过一系列的处理，最后都能成为回文数。\n处理的方法是，该数加上它的颠倒数，\n例如：n=176 ;\n第一次处理后　　　　176+671＝847 ;\n第二次处理后　　　　847+748＝1595 ;\n第三次处理后　　　　1595+5951＝7546 ;\n第四次处理后　　　　7546+6457＝14003 ;\n第五次处理后　　　　14003+30041＝44044 ;\n此时成为回文数，共进行 5 次处理。\n问题：给出 n 后，求出使该数按照以上规则进行一系列处理后成为回文数的最少操作次数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 一个整数（<span class=\"katex math inline\">1 \\le n \\le 1000000 </span> ）。</p>\n</div>            </div>",
+      "text": "n 一个整数（1 \\le n \\le 1000000  ）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>使 <span class=\"katex math inline\">n</span> 成为回文数的最少处理次数。 </p>\n<p>若开始给出的 <span class=\"katex math inline\">n</span> 是回文数，则输出 <span class=\"katex math inline\">０</span> （即不需任何处理）。</p>\n</div>            </div>",
+      "text": "使 n 成为回文数的最少处理次数。 \n若开始给出的 n 是回文数，则输出 ０ （即不需任何处理）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>67</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            67\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "67",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "12790",
+    "通过人数": "8738",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:14:28"
+}

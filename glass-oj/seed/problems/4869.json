@@ -1,0 +1,53 @@
+{
+  "id": "4869",
+  "title": "模仿秀",
+  "tags": [
+    "蓝桥等考",
+    "数组",
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4869",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>电视台举办一场模仿秀节目，评委根据选手的体态、语言和形体动作的相似程度进行打分，现给出 <span class=\"katex math inline\">n</span> 位选手的各项得分情况，要求统计出每位选手的总分。</p>\n</div>            </div>",
+      "text": "电视台举办一场模仿秀节目，评委根据选手的体态、语言和形体动作的相似程度进行打分，现给出 n 位选手的各项得分情况，要求统计出每位选手的总分。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含多行：</p>\n<p>第一行是一个整数 <span class=\"katex math inline\">n</span>，表示选手的数量(<span class=\"katex math inline\">1 \\le n\\le 100</span>)。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行，每行包含三数，分别表示每位选手的体态得分、语言得分和形体动作得分。每两个数之间用空格分隔。</p>\n</div>            </div>",
+      "text": "输入包含多行：\n第一行是一个整数 n，表示选手的数量(1 \\le n\\le 100)。\n接下来的 n 行，每行包含三数，分别表示每位选手的体态得分、语言得分和形体动作得分。每两个数之间用空格分隔。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出包含 <span class=\"katex math inline\">n</span> 行，每行输出一个选手的总分，即该选手的体态得分、语言得分与形体动作得分之和。</p>\n</div>            </div>",
+      "text": "输出包含 n 行，每行输出一个选手的总分，即该选手的体态得分、语言得分与形体动作得分之和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n90 80 100\r\n93 99 70\r\n89 91 80\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>270\r\n262\r\n260\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n90 80 100\r\n93 99 70\r\n89 91 80\r\n\n                        \n                        \n                            输出\n                            270\r\n262\r\n260"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">数组</span><span class=\"label label-info\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考数组二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n90 80 100\r\n93 99 70\r\n89 91 80\r\n",
+      "output": "270\r\n262\r\n260\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "217",
+    "通过人数": "162",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:46"
+}

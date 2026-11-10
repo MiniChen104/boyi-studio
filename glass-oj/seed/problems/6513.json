@@ -1,0 +1,60 @@
+{
+  "id": "6513",
+  "title": "按位与（and）[CSP-J 2026]",
+  "tags": [
+    "CSP-J 2026"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/6513",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 R 有 <span class=\"katex math inline\">n</span> 个非负整数 <span class=\"katex math inline\">a_1,a_2,\\ldots,a_n</span>。</p>\n<p>小 X 给了小 R 一个正整数 <span class=\"katex math inline\">m</span>，并要求小 R 从这 <span class=\"katex math inline\">n</span> 个非负整数中选出<strong>恰好</strong> <span class=\"katex math inline\">m</span> 个，使得选出的 <span class=\"katex math inline\">m</span> 个数的<strong>二进制按位与</strong>的值最大。</p>\n<p>你需要帮助小 R 求出，他能选出的 <span class=\"katex math inline\">m</span> 个数的按位与的最大值。</p>\n</div>            </div>",
+      "text": "小 R 有 n 个非负整数 a_1,a_2,\\ldots,a_n。\n小 X 给了小 R 一个正整数 m，并要求小 R 从这 n 个非负整数中选出恰好 m 个，使得选出的 m 个数的二进制按位与的值最大。\n你需要帮助小 R 求出，他能选出的 m 个数的按位与的最大值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从文件 <code>and.in</code> 中读入数据。</p>\n<p>输入的第一行包含两个正整数 <span class=\"katex math inline\">n,m</span>。</p>\n<p>输入的第二行包含 <span class=\"katex math inline\">n</span> 个非负整数 <span class=\"katex math inline\">a_1,a_2,\\ldots,a_n</span>，依次表示小 R 的 <span class=\"katex math inline\">n</span> 个非负整数。</p>\n</div>            </div>",
+      "text": "从文件 and.in 中读入数据。\n输入的第一行包含两个正整数 n,m。\n输入的第二行包含 n 个非负整数 a_1,a_2,\\ldots,a_n，依次表示小 R 的 n 个非负整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出到文件 <code>and.out</code> 中。</p>\n<p>输出一行一个非负整数，表示小 R 能选出的 <span class=\"katex math inline\">m</span> 个数的按位与的最大值。</p>\n</div>            </div>",
+      "text": "输出到文件 and.out 中。\n输出一行一个非负整数，表示小 R 能选出的 m 个数的按位与的最大值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 2\r\n3 15 12 12</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>12</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 3\r\n31 3 1 15 7</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>7</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 2\r\n3 15 12 12\n                        \n                        \n                            输出\n                            12\n                        \n\n                                                    \n                                输入\n                                5 3\r\n31 3 1 15 7\n                            \n                            \n                                输出\n                                7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 1 解释</h4>\n<p>小 R 有 <span class=\"katex math inline\">4</span> 个非负整数：<span class=\"katex math inline\">3,15,12,12</span>。</p>\n<ul><li>若小 R 选择 <span class=\"katex math inline\">3,15</span>，则按位与的值为 <span class=\"katex math inline\">3\\mathbin{\\mathrm{and}}15=3</span>；</li>\n<li>若小 R 选择 <span class=\"katex math inline\">3,12</span>，则按位与的值为 <span class=\"katex math inline\">3\\mathbin{\\mathrm{and}}12=0</span>；</li>\n<li>若小 R 选择 <span class=\"katex math inline\">15,12</span>，则按位与的值为 <span class=\"katex math inline\">15\\mathbin{\\mathrm{and}}12=12</span>；</li>\n<li>若小 R 选择 <span class=\"katex math inline\">12,12</span>，则按位与的值为 <span class=\"katex math inline\">12\\mathbin{\\mathrm{and}}12=12</span>。</li>\n</ul><p>因此，小 R 能选出的 <span class=\"katex math inline\">m</span> 个数的按位与的最大值为 <span class=\"katex math inline\">12</span>。</p>\n<h4>样例 2 解释</h4>\n<p>若小 R 选择 <span class=\"katex math inline\">31,15,7</span>，则按位与的值为 <span class=\"katex math inline\">31\\mathbin{\\mathrm{and}}15\\mathbin{\\mathrm{and}}7=7</span>。可以证明，小 R 能选出的 <span class=\"katex math inline\">m</span> 个数的按位与的最大值为 <span class=\"katex math inline\">7</span>。</p>\n<h4>样例 3</h4>\n<p>见题目目录下的 <code>and/3.in</code> 与 <code>and/3.ans</code>。</p>\n<p>该样例满足测试点 <span class=\"katex math inline\">8\\sim 10</span> 的约束条件。</p>\n<h4>样例 4</h4>\n<p>见题目目录下的 <code>and/4.in</code> 与 <code>and/4.ans</code>。</p>\n<p>该样例满足测试点 <span class=\"katex math inline\">14,15</span> 的约束条件。</p>\n<h4>样例 5</h4>\n<p>见题目目录下的 <code>and/5.in</code> 与 <code>and/5.ans</code>。</p>\n<p>该样例满足测试点 <span class=\"katex math inline\">18,19</span> 的约束条件。</p>\n<h4>数据范围</h4>\n<p>对于所有测试数据，均有：</p>\n<ul><li><span class=\"katex math inline\">1\\le m\\le n\\le 2\\times 10^5</span>；</li>\n<li>对于所有 <span class=\"katex math inline\">i</span>（<span class=\"katex math inline\">1\\le i\\le n</span>），均有 <span class=\"katex math inline\">0\\le a_i&lt;2^{30}</span>。</li>\n</ul><table><thead><tr><th>测试点编号</th><th><span class=\"katex math inline\">n\\le</span></th><th><span class=\"katex math inline\">m</span></th><th><span class=\"katex math inline\">\\max_{i=1}^{n}a_i&lt;</span></th><th>特殊性质</th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1\\sim 5</span></td><td><span class=\"katex math inline\">20</span></td><td><span class=\"katex math inline\">\\le n</span></td><td><span class=\"katex math inline\">2^{20}</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">6</span></td><td><span class=\"katex math inline\">2000</span></td><td><span class=\"katex math inline\">=1</span></td><td><span class=\"katex math inline\">2^{20}</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">7</span></td><td><span class=\"katex math inline\">2000</span></td><td><span class=\"katex math inline\">=n</span></td><td><span class=\"katex math inline\">2^{20}</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">8\\sim 10</span></td><td><span class=\"katex math inline\">2000</span></td><td><span class=\"katex math inline\">=2</span></td><td><span class=\"katex math inline\">2^{20}</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">11,12</span></td><td><span class=\"katex math inline\">2\\times 10^5</span></td><td><span class=\"katex math inline\">=n-1</span></td><td><span class=\"katex math inline\">2^{20}</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">13</span></td><td><span class=\"katex math inline\">2\\times 10^5</span></td><td><span class=\"katex math inline\">\\le n</span></td><td><span class=\"katex math inline\">2^{20}</span></td><td>A</td></tr><tr><td><span class=\"katex math inline\">14,15</span></td><td><span class=\"katex math inline\">2\\times 10^5</span></td><td><span class=\"katex math inline\">\\le n</span></td><td><span class=\"katex math inline\">2^{20}</span></td><td>B</td></tr><tr><td><span class=\"katex math inline\">16,17</span></td><td><span class=\"katex math inline\">2\\times 10^5</span></td><td><span class=\"katex math inline\">\\le n</span></td><td><span class=\"katex math inline\">4</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">18,19</span></td><td><span class=\"katex math inline\">2\\times 10^5</span></td><td><span class=\"katex math inline\">\\le n</span></td><td><span class=\"katex math inline\">2^{10}</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">20</span></td><td><span class=\"katex math inline\">2\\times 10^5</span></td><td><span class=\"katex math inline\">\\le n</span></td><td><span class=\"katex math inline\">2^{30}</span></td><td>无</td></tr></tbody></table><p>特殊性质 A：对于所有 <span class=\"katex math inline\">i</span>（<span class=\"katex math inline\">1\\le i\\le n</span>），均存在非负整数 <span class=\"katex math inline\">k_i</span> 满足 <span class=\"katex math inline\">a_i=2^{k_i}-1</span>。</p>\n<p>特殊性质 B：存在非负整数 <span class=\"katex math inline\">k</span> 满足 <span class=\"katex math inline\">n=2^k</span>，且对所有 <span class=\"katex math inline\">i</span>（<span class=\"katex math inline\">1\\le i\\le n</span>），均有 <span class=\"katex math inline\">a_i=i-1</span>。</p>\n</div>\n\n                                            <p>\n                            <h4><b>附件下载</b></h4>\n                        </p>\n                        <p>\n                            \n                                and.zip                            \n                            (430.31 KB)\n                        </p>\n                    \n                </div>",
+      "text": "样例 1 解释\n小 R 有 4 个非负整数：3,15,12,12。\n若小 R 选择 3,15，则按位与的值为 3\\mathbin{\\mathrm{and}}15=3；\n若小 R 选择 3,12，则按位与的值为 3\\mathbin{\\mathrm{and}}12=0；\n若小 R 选择 15,12，则按位与的值为 15\\mathbin{\\mathrm{and}}12=12；\n若小 R 选择 12,12，则按位与的值为 12\\mathbin{\\mathrm{and}}12=12。\n因此，小 R 能选出的 m 个数的按位与的最大值为 12。\n样例 2 解释\n若小 R 选择 31,15,7，则按位与的值为 31\\mathbin{\\mathrm{and}}15\\mathbin{\\mathrm{and}}7=7。可以证明，小 R 能选出的 m 个数的按位与的最大值为 7。\n样例 3\n见题目目录下的 and/3.in 与 and/3.ans。\n该样例满足测试点 8\\sim 10 的约束条件。\n样例 4\n见题目目录下的 and/4.in 与 and/4.ans。\n该样例满足测试点 14,15 的约束条件。\n样例 5\n见题目目录下的 and/5.in 与 and/5.ans。\n该样例满足测试点 18,19 的约束条件。\n数据范围\n对于所有测试数据，均有：\n1\\le m\\le n\\le 2\\times 10^5；\n对于所有 i（1\\le i\\le n），均有 0\\le a_i<2^{30}。\n测试点编号n\\lem\\max_{i=1}^{n}a_i<特殊性质1\\sim 520\\le n2^{20}无62000=12^{20}无72000=n2^{20}无8\\sim 102000=22^{20}无11,122\\times 10^5=n-12^{20}无132\\times 10^5\\le n2^{20}A14,152\\times 10^5\\le n2^{20}B16,172\\times 10^5\\le n4无18,192\\times 10^5\\le n2^{10}无202\\times 10^5\\le n2^{30}无特殊性质 A：对于所有 i（1\\le i\\le n），均存在非负整数 k_i 满足 a_i=2^{k_i}-1。\n特殊性质 B：存在非负整数 k 满足 n=2^k，且对所有 i（1\\le i\\le n），均有 a_i=i-1。\n\n\n                                            \n                            附件下载\n                        \n                        \n                            \n                                and.zip                            \n                            (430.31 KB)"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">CSP-J 2026</span></span></p>\n</div>                </div>",
+      "text": "CSP-J 2026"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 2\r\n3 15 12 12",
+      "output": "12"
+    },
+    {
+      "input": "5 3\r\n31 3 1 15 7",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "1024 MB",
+    "提交次数": "92",
+    "通过人数": "23",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:22"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "6095",
+  "title": "凯撒密码",
+  "tags": [
+    "GESP三级",
+    "26年3月",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6095",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>凯撒密码是一种替换加密技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。例如，当偏移量是 <span class=\"katex math inline\">3</span> 的时候，所有的字母 <span class=\"katex math inline\">A</span> 将被替换成 <span class=\"katex math inline\">D</span>，<span class=\"katex math inline\">B</span> 被替换成 <span class=\"katex math inline\">E</span>，<span class=\"katex math inline\">C</span> 被替换成 <span class=\"katex math inline\">F</span>，以此类推，<span class=\"katex math inline\">W</span> 被替换成 <span class=\"katex math inline\">Z</span>，<span class=\"katex math inline\">X</span> 被替换成 <span class=\"katex math inline\">A</span>，<span class=\"katex math inline\">Y</span> 被替换成 <span class=\"katex math inline\">B</span>，<span class=\"katex math inline\">Z</span> 被替换成 <span class=\"katex math inline\">C</span>。这个加密方法是以罗马共和时期凯撒的名字命名的，据称当年凯撒曾用此方法与其将军们进行联系。</p>\n<p>但是和所有的利用字母表进行替换的加密技术一样，凯撒密码非常容易被破解，而且在实际应用中也无法保证通信安全。</p>\n<p>现在给你一个已破解的凯撒密码明文与密文，与一个有相同偏移量的未破解凯撒密码密文，请你帮忙破解它。</p>\n</div>            </div>",
+      "text": "凯撒密码是一种替换加密技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。例如，当偏移量是 3 的时候，所有的字母 A 将被替换成 D，B 被替换成 E，C 被替换成 F，以此类推，W 被替换成 Z，X 被替换成 A，Y 被替换成 B，Z 被替换成 C。这个加密方法是以罗马共和时期凯撒的名字命名的，据称当年凯撒曾用此方法与其将军们进行联系。\n但是和所有的利用字母表进行替换的加密技术一样，凯撒密码非常容易被破解，而且在实际应用中也无法保证通信安全。\n现在给你一个已破解的凯撒密码明文与密文，与一个有相同偏移量的未破解凯撒密码密文，请你帮忙破解它。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入共三行：</p>\n<p>第一行包含一个字符串，表示已破解的凯撒密码明文；</p>\n<p>第二行包含一个字符串，表示已破解的凯撒密码密文；</p>\n<p>第三行包含一个字符串，表示待破解的凯撒密码密文。</p>\n</div>            </div>",
+      "text": "输入共三行：\n第一行包含一个字符串，表示已破解的凯撒密码明文；\n第二行包含一个字符串，表示已破解的凯撒密码密文；\n第三行包含一个字符串，表示待破解的凯撒密码密文。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含一个字符串，表示待破解的凯撒密码对应的明文。</p>\n</div>            </div>",
+      "text": "输出一行，包含一个字符串，表示待破解的凯撒密码对应的明文。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>ABCDEFGVWXYZ\r\nDEFGHIJYZABC\r\nWKHTXLFNEURZQIRAMXPSVRYHUWKHODCBGRJ</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            ABCDEFGVWXYZ\r\nDEFGHIJYZABC\r\nWKHTXLFNEURZQIRAMXPSVRYHUWKHODCBGRJ\n                        \n                        \n                            输出\n                            THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p>样例 1 中，通过已破解的密码得出偏移量为 <code>&#x27;D&#x27; - &#x27;A&#x27; = 3</code>，因此，对未破解部分进行逆向偏移：密文中的 <code>W</code> 对应明文中的 <code>T</code>（<code>&#x27;W&#x27; - 3 = &#x27;T&#x27;</code>），密文中的 <code>K</code> 对应明文中的 <code>H</code>（<code>&#x27;K&#x27; - 3 = &#x27;H&#x27;</code>），以此类推。</p>\n<h4>数据范围</h4>\n<p>保证密码长度均不超过 <span class=\"katex math inline\">1000</span>，所有字符串由大写字母组成。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n样例 1 中，通过已破解的密码得出偏移量为 'D' - 'A' = 3，因此，对未破解部分进行逆向偏移：密文中的 W 对应明文中的 T（'W' - 3 = 'T'），密文中的 K 对应明文中的 H（'K' - 3 = 'H'），以此类推。\n数据范围\n保证密码长度均不超过 1000，所有字符串由大写字母组成。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP三级</span><span class=\"label label-warning\">26年3月</span><span class=\"label label-info\">字符串</span></span></p>\n</div>                </div>",
+      "text": "GESP三级26年3月字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "ABCDEFGVWXYZ\r\nDEFGHIJYZABC\r\nWKHTXLFNEURZQIRAMXPSVRYHUWKHODCBGRJ",
+      "output": "THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1119",
+    "通过人数": "583",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:53"
+}

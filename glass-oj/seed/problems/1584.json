@@ -1,0 +1,56 @@
+{
+  "id": "1584",
+  "title": "马里奥花银币",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1584",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>马里奥有很多银币，他决定去集市逛逛，他想把自己金额最小的银币全部花光，金额最大的银币花掉 <span class=\"katex math inline\">1</span> 个，请你编程帮助马里奥计算一下，如果按照他的计划去消费，他花掉了多少钱，还剩多少钱？</p>\n<p>比如：假设马里奥存有的银币金额分别为 <span class=\"katex math inline\">8</span> <span class=\"katex math inline\">5</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">8</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">4</span> ，那么按照他的计划消费之后，他会花掉 <span class=\"katex math inline\">1</span> 个金额为 <span class=\"katex math inline\">8</span> 的银币， <span class=\"katex math inline\">2</span> 个金额为 <span class=\"katex math inline\">2</span> 的银币；因此，他总共花掉了金额为 <span class=\"katex math inline\">8+2+2</span> = <span class=\"katex math inline\">12</span> 的银币，还剩金额为 <span class=\"katex math inline\">17</span> 的银币。</p>\n</div>            </div>",
+      "text": "马里奥有很多银币，他决定去集市逛逛，他想把自己金额最小的银币全部花光，金额最大的银币花掉 1 个，请你编程帮助马里奥计算一下，如果按照他的计划去消费，他花掉了多少钱，还剩多少钱？\n比如：假设马里奥存有的银币金额分别为 8 5 2 8 2 4 ，那么按照他的计划消费之后，他会花掉 1 个金额为 8 的银币， 2 个金额为 2 的银币；因此，他总共花掉了金额为 8+2+2 = 12 的银币，还剩金额为 17 的银币。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行是一个整数n代表马里奥有 <span class=\"katex math inline\">n</span> 个银币；（<span class=\"katex math inline\">n \\le 1000</span>）</p>\n<p>第二行有 <span class=\"katex math inline\">n</span> 个整数，用空格隔开，代表马里奥每个银币的金额。</p>\n</div>            </div>",
+      "text": "第一行是一个整数n代表马里奥有 n 个银币；（n \\le 1000）\n第二行有 n 个整数，用空格隔开，代表马里奥每个银币的金额。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输出马里奥花掉的银币金额；</p>\n<p>第二行输出马里奥还剩的银币金额。</p>\n</div>            </div>",
+      "text": "第一行输出马里奥花掉的银币金额；\n第二行输出马里奥还剩的银币金额。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n8 2 7 8 2 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>12\r\n19</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n8 2 7 8 2 4\n                        \n                        \n                            输出\n                            12\r\n19"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n8 2 7 8 2 4",
+      "output": "12\r\n19"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "9565",
+    "通过人数": "6508",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:26"
+}

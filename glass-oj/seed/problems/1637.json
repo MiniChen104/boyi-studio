@@ -1,0 +1,56 @@
+{
+  "id": "1637",
+  "title": "水果批发",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1637",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>水果商店批发桔子， <span class=\"katex math inline\">100</span> 千克或 <span class=\"katex math inline\">100</span> 千克以下，每千克 <span class=\"katex math inline\">2</span> 元。超过 <span class=\"katex math inline\">100</span> 千克，超过部分每千克 <span class=\"katex math inline\">1</span> 元。输入批发重量求批发价格。</p>\n</div>            </div>",
+      "text": "水果商店批发桔子， 100 千克或 100 千克以下，每千克 2 元。超过 100 千克，超过部分每千克 1 元。输入批发重量求批发价格。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数，代表水果重量。</p>\n</div>            </div>",
+      "text": "一行，一个整数，代表水果重量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数，代表水果价钱。</p>\n</div>            </div>",
+      "text": "一行，一个整数，代表水果价钱。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>200</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100\n                        \n                        \n                            输出\n                            200"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100",
+      "output": "200"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "32442",
+    "通过人数": "16408",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:11"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "4891",
+  "title": "最终得分",
+  "tags": [
+    "蓝桥等考",
+    "数组",
+    "循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4891",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一场歌唱比赛，有 <span class=\"katex math inline\">n</span> 个评委对一位选手进行评分。为了公平起见，要去掉一个最高分和一个最低分，然后求出剩余评分的平均分（向下取整），记为选手的最终得分。</p>\n</div>            </div>",
+      "text": "一场歌唱比赛，有 n 个评委对一位选手进行评分。为了公平起见，要去掉一个最高分和一个最低分，然后求出剩余评分的平均分（向下取整），记为选手的最终得分。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入第一行包含一个整数 <span class=\"katex math inline\">n</span>，表示评委的总数。（<span class=\"katex math inline\">1 \\le n \\le 50</span>）</p>\n<p>接下来的一行包含 <span class=\"katex math inline\">n</span> 个整数，分别表示每位评委给出的分数。（数的大小在 <span class=\"katex math inline\">1 \\sim 100</span> ）</p>\n</div>            </div>",
+      "text": "输入第一行包含一个整数 n，表示评委的总数。（1 \\le n \\le 50）\n接下来的一行包含 n 个整数，分别表示每位评委给出的分数。（数的大小在 1 \\sim 100 ）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示选手的最终得分。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示选手的最终得分。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10\r\n95 96 90 88 100 81 97 94 95 96\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>93</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\r\n95 96 90 88 100 81 97 94 95 96\r\n\n                        \n                        \n                            输出\n                            93"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">数组</span><span class=\"label label-info\">循环</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考数组循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10\r\n95 96 90 88 100 81 97 94 95 96\r\n",
+      "output": "93"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "321",
+    "通过人数": "195",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:26"
+}

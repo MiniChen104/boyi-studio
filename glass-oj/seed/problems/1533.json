@@ -1,0 +1,61 @@
+{
+  "id": "1533",
+  "title": "小 X 与机器人 (betago)",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1533",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 X 最近对战胜韩国围棋大神李世石的 AlphaGo 很感兴趣，所以小 X 自己写了一个叫 做 BetaGo的人工智能程序(简称 AI) ， 这个 BetaGo 会做什么呢？</p>\n<p>小 X 首先想要让 BetaGo 做到自己在棋盘上落子， 这一点 AlphaGo 是由程序员来完成的。小 X 的设想是这样的： 在棋盘的边框上放置一个小机器人， 这个小机器人会沿着棋盘的边框移动到最接近落子点的位置，然后伸出它的机械臂将棋子放到棋盘上。 这里面最关键的一步是如何让小机器人在棋盘的边框上沿着最短的路径移动，小 X 想请你帮他编个程序解决这个问题。</p>\n<p>众所周知，围棋棋盘大小为 <span class=\"katex math inline\">19 \\times 19</span>(如下图所示) , 图中加粗的一圈即为边框。</p>\n<p><img src=\"https://assets.boyi.local/d32fd2ade4e4a38cf9e996eb.png\"></p>\n<p>我们用一对整数 (<span class=\"katex math inline\">x</span>, <span class=\"katex math inline\">y</span>) 来表示棋盘上第 <span class=\"katex math inline\">x</span> 条横线（从下往上数）与第 <span class=\"katex math inline\">y</span> 条竖线（从左往右数）的交叉点，如上图中边框上的 <code>A</code> 点用（ <span class=\"katex math inline\">6</span>， <span class=\"katex math inline\">1</span>） 表示， <code>B</code> 点用 (<span class=\"katex math inline\">10</span>， <span class=\"katex math inline\">19</span>) 表示，小机器人初始时放置在 (<span class=\"katex math inline\">x1</span>, <span class=\"katex math inline\">y1</span>) 这个位置上， 它想要移动到 (<span class=\"katex math inline\">x2</span>, <span class=\"katex math inline\">y2</span>) 这个位置上。 (<span class=\"katex math inline\">x1</span>, <span class=\"katex math inline\">y1</span>) 和(<span class=\"katex math inline\">x2</span>, <span class=\"katex math inline\">y2</span>) 一定是棋盘边框上的交叉点每一步小机器人可以从当前位置移动到相邻（上下左右）的某个位置上， 即每次可以从 (<span class=\"katex math inline\">x</span>, <span class=\"katex math inline\">y</span>) 移动到 (<span class=\"katex math inline\">x - 1</span>, <span class=\"katex math inline\">y</span>) 、 (<span class=\"katex math inline\">x + 1</span>, <span class=\"katex math inline\">y</span>) 、 (<span class=\"katex math inline\">x</span>, <span class=\"katex math inline\">y - 1</span>) 、 (<span class=\"katex math inline\">x</span>, <span class=\"katex math inline\">y + 1</span>) 四个位置中的一个， 但是它不能走出或走进棋盘，也就是说它只能沿着棋盘的边框移动到相邻位置， 这就意味着任一时刻相邻位置都恰好只有两个。</p>\n<p>BetaGo 会告诉小机器人最少需要走多少步， 但小 X 还是很担心 BetaGo 有的时候会失控，从而告诉他一个错误值。</p>\n<p>为此小 X 只好求助你， 希望你编一个程序计算从 (<span class=\"katex math inline\">x1</span>, <span class=\"katex math inline\">y1</span>) 沿着棋盘的边框移动到 (<span class=\"katex math inline\">x2</span>, <span class=\"katex math inline\">y2</span>) 最少需要走 多少步 。 上 图 中 从 <code>A</code> 点 （ <span class=\"katex math inline\">6</span> ， <span class=\"katex math inline\">1</span> ） 移 动 到 <code>B</code> 点 (<span class=\"katex math inline\">10</span> ， <span class=\"katex math inline\">19</span>) 最 少需 要 走 <span class=\"katex math inline\">32</span> 步 ， 移 动 路线 是 ：<code>（ 6 ， 1 ） → （ 5 ， 1 ） → （ 4 ， 1 ） → （ 3 ， 1 ） → （ 2 ， 1 ） → （ 1 ， 1 ） → (1 ， 2 ） → (1 ， 3 ） →……→(1， 19） →(2， 19） →……→(10， 19）</code></p>\n</div>            </div>",
+      "text": "小 X 最近对战胜韩国围棋大神李世石的 AlphaGo 很感兴趣，所以小 X 自己写了一个叫 做 BetaGo的人工智能程序(简称 AI) ， 这个 BetaGo 会做什么呢？\n小 X 首先想要让 BetaGo 做到自己在棋盘上落子， 这一点 AlphaGo 是由程序员来完成的。小 X 的设想是这样的： 在棋盘的边框上放置一个小机器人， 这个小机器人会沿着棋盘的边框移动到最接近落子点的位置，然后伸出它的机械臂将棋子放到棋盘上。 这里面最关键的一步是如何让小机器人在棋盘的边框上沿着最短的路径移动，小 X 想请你帮他编个程序解决这个问题。\n众所周知，围棋棋盘大小为 19 \\times 19(如下图所示) , 图中加粗的一圈即为边框。\n\n我们用一对整数 (x, y) 来表示棋盘上第 x 条横线（从下往上数）与第 y 条竖线（从左往右数）的交叉点，如上图中边框上的 A 点用（ 6， 1） 表示， B 点用 (10， 19) 表示，小机器人初始时放置在 (x1, y1) 这个位置上， 它想要移动到 (x2, y2) 这个位置上。 (x1, y1) 和(x2, y2) 一定是棋盘边框上的交叉点每一步小机器人可以从当前位置移动到相邻（上下左右）的某个位置上， 即每次可以从 (x, y) 移动到 (x - 1, y) 、 (x + 1, y) 、 (x, y - 1) 、 (x, y + 1) 四个位置中的一个， 但是它不能走出或走进棋盘，也就是说它只能沿着棋盘的边框移动到相邻位置， 这就意味着任一时刻相邻位置都恰好只有两个。\nBetaGo 会告诉小机器人最少需要走多少步， 但小 X 还是很担心 BetaGo 有的时候会失控，从而告诉他一个错误值。\n为此小 X 只好求助你， 希望你编一个程序计算从 (x1, y1) 沿着棋盘的边框移动到 (x2, y2) 最少需要走 多少步 。 上 图 中 从 A 点 （ 6 ， 1 ） 移 动 到 B 点 (10 ， 19) 最 少需 要 走 32 步 ， 移 动 路线 是 ：（ 6 ， 1 ） → （ 5 ， 1 ） → （ 4 ， 1 ） → （ 3 ， 1 ） → （ 2 ， 1 ） → （ 1 ， 1 ） → (1 ， 2 ） → (1 ， 3 ） →……→(1， 19） →(2， 19） →……→(10， 19）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据仅有一行包含四个用空格隔开的正整数表示 <span class=\"katex math inline\">x1</span>, <span class=\"katex math inline\">y1</span>, <span class=\"katex math inline\">x2</span>,<span class=\"katex math inline\">y2</span>。<br>\n数据保证 (<span class=\"katex math inline\">x1</span>, <span class=\"katex math inline\">y1</span>) ， (<span class=\"katex math inline\">x2</span>, <span class=\"katex math inline\">y2</span>) 一定是棋盘边框上的交叉点。</p>\n</div>            </div>",
+      "text": "输入数据仅有一行包含四个用空格隔开的正整数表示 x1, y1, x2,y2。\n数据保证 (x1, y1) ， (x2, y2) 一定是棋盘边框上的交叉点。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行包含一个整数 <span class=\"katex math inline\">ans</span>， 表示小机器人从 (<span class=\"katex math inline\">x1</span>, <span class=\"katex math inline\">y1</span>) 移动到 (<span class=\"katex math inline\">x2</span>, <span class=\"katex math inline\">y2</span>) 的最少步数。</p>\n</div>            </div>",
+      "text": "输出一行包含一个整数 ans， 表示小机器人从 (x1, y1) 移动到 (x2, y2) 的最少步数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 1 10 19</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>32</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 1 10 19\n                        \n                        \n                            输出\n                            32"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据， (<span class=\"katex math inline\">x1</span>, <span class=\"katex math inline\">y1</span>) ， (<span class=\"katex math inline\">x2</span>, <span class=\"katex math inline\">y2</span>) 在同一条边框上</p>\n<p>对于另外 <span class=\"katex math inline\">30\\%</span> 的数据， (<span class=\"katex math inline\">x1</span>, <span class=\"katex math inline\">y1</span>) ， (<span class=\"katex math inline\">x2</span>, <span class=\"katex math inline\">y2</span>) 在相邻的两条边框上</p>\n<p>对于另外 <span class=\"katex math inline\">40\\%</span> 的数据， (<span class=\"katex math inline\">x1</span>, <span class=\"katex math inline\">y1</span>) ， (<span class=\"katex math inline\">x2</span>, <span class=\"katex math inline\">y2</span>) 在相对的两条边框上</p>\n<h4>【友情提醒】</h4>\n<p>在计算机语言中， 绝对值函数常记作 <code>abs(x)</code> ， 绝对值函数的值一定大于等于 <span class=\"katex math inline\">0</span>， 其意义为 <span class=\"katex math inline\">x</span> 到 <span class=\"katex math inline\">0</span> 的距离，如 <span class=\"katex math inline\">3</span> 到 <span class=\"katex math inline\">0</span> 的距离为 <span class=\"katex math inline\">3</span>， <span class=\"katex math inline\">-3</span> 到 <span class=\"katex math inline\">0</span> 的距离也是 <span class=\"katex math inline\">3</span>，所以 <code>abs(3) =abs(-3) =3</code>，一般地有 <code>abs(x1-x2) =abs(x2-x1) ＝x1</code> 到 <span class=\"katex math inline\">x2</span> 的距离。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 30\\% 的数据， (x1, y1) ， (x2, y2) 在同一条边框上\n对于另外 30\\% 的数据， (x1, y1) ， (x2, y2) 在相邻的两条边框上\n对于另外 40\\% 的数据， (x1, y1) ， (x2, y2) 在相对的两条边框上\n【友情提醒】\n在计算机语言中， 绝对值函数常记作 abs(x) ， 绝对值函数的值一定大于等于 0， 其意义为 x 到 0 的距离，如 3 到 0 的距离为 3， -3 到 0 的距离也是 3，所以 abs(3) =abs(-3) =3，一般地有 abs(x1-x2) =abs(x2-x1) ＝x1 到 x2 的距离。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>常州市2016“信息与未来”夏令营选拔赛</p>\n</div>                </div>",
+      "text": "常州市2016“信息与未来”夏令营选拔赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 1 10 19",
+      "output": "32"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "707",
+    "通过人数": "196",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:20:45"
+}

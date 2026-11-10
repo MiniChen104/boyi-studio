@@ -1,0 +1,52 @@
+{
+  "id": "4832",
+  "title": "计算苹果数",
+  "tags": [
+    "蓝桥等考",
+    "基础"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4832",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小蓝家有 <span class=\"katex math inline\">n</span> 个苹果，小蓝和妈妈各吃了 <span class=\"katex math inline\">2</span> 个。</p>\n<p>请编写程序计算出剩余的苹果还有多少个？</p>\n</div>            </div>",
+      "text": "小蓝家有 n 个苹果，小蓝和妈妈各吃了 2 个。\n请编写程序计算出剩余的苹果还有多少个？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 <span class=\"katex math inline\">n(n</span> 大于 <span class=\"katex math inline\">4</span> ，且小于 <span class=\"katex math inline\">20</span> )，表示小蓝家原有的苹果数。</p>\n</div>            </div>",
+      "text": "输入一个正整数 n(n 大于 4 ，且小于 20 )，表示小蓝家原有的苹果数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个正整数，表示剩余苹果数。</p>\n</div>            </div>",
+      "text": "输出一个正整数，表示剩余苹果数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">基础</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考基础"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "379",
+    "通过人数": "313",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:18"
+}

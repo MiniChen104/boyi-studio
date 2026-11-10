@@ -1,0 +1,56 @@
+{
+  "id": "2134",
+  "title": "自动阅卷",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2134",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n王老师布置了n道<span>“200以内数的加减法”</span>加减计算题，请小明同学完成。\n</p>\n<p>\n小明完成后，王老师请你编程帮助他实现自动阅卷。\n</p>\n<p>\n小明完成后的作业题有n行，<span>每道题目（包括答案）的格式为a+b=c或者a-b=c，其中a和b是作业中给出的，均为不超过200的非负整数；c是小明同学算出的答案，可能是不超过400的非负整数，也可能是单个字符&quot;?&quot;，表示他不会算。</span> \n</p>\n</div>            </div>",
+      "text": "王老师布置了n道“200以内数的加减法”加减计算题，请小明同学完成。\n\n\n小明完成后，王老师请你编程帮助他实现自动阅卷。\n\n\n小明完成后的作业题有n行，每道题目（包括答案）的格式为a+b=c或者a-b=c，其中a和b是作业中给出的，均为不超过200的非负整数；c是小明同学算出的答案，可能是不超过400的非负整数，也可能是单个字符\"?\"，表示他不会算。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n第1行有一个整数n，表示有n道题目。（n≤100）\n</p>\n<p>\n接下来n行，每行包含一道题目，格式保证符合上述规定，且不包含任何空白字符。输入的所有整数均不含前导0。\n</p>\n</div>            </div>",
+      "text": "第1行有一个整数n，表示有n道题目。（n≤100）\n\n\n接下来n行，每行包含一道题目，格式保证符合上述规定，且不包含任何空白字符。输入的所有整数均不含前导0。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出仅一行，包含一个非负整数，表示小明同学最终答对了几道题目。</p>\n</div>            </div>",
+      "text": "输出仅一行，包含一个非负整数，表示小明同学最终答对了几道题目。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n1+2=3\r\n3-1=5\r\n6+7=?\r\n99-0=99</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n1+2=3\r\n3-1=5\r\n6+7=?\r\n99-0=99\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n1+2=3\r\n3-1=5\r\n6+7=?\r\n99-0=99",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "441",
+    "通过人数": "276",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:53"
+}

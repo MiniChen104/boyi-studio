@@ -1,0 +1,56 @@
+{
+  "id": "1307",
+  "title": "数的计数",
+  "tags": [
+    "递归"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1307",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个自然数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n \\le 100</span>），然后对自然数按照如下方法进行处理：</p>\n<ol><li><p>在该自然数的左侧加上一个自然数，但加上的数不能超过 <span class=\"katex math inline\">n</span> 的一半；</p>\n</li>\n<li><p>加上数后继续按此规则处理，直到不能再添加自然数为止；</p>\n</li>\n</ol><p>请问按照这样的方法添加数，能够产生多少个新数？</p>\n<p>例如：<span class=\"katex math inline\">n=6</span> ，则左侧添加数的方案有。</p>\n<pre><code>16\n26\n126\n36\n136\n</code></pre>\n<p>共能够产生 <span class=\"katex math inline\">5</span> 个新数。</p>\n</div>            </div>",
+      "text": "输入一个自然数 n（n \\le 100），然后对自然数按照如下方法进行处理：\n在该自然数的左侧加上一个自然数，但加上的数不能超过 n 的一半；\n\n加上数后继续按此规则处理，直到不能再添加自然数为止；\n\n请问按照这样的方法添加数，能够产生多少个新数？\n例如：n=6 ，则左侧添加数的方案有。\n16\n26\n126\n36\n136\n\n共能够产生 5 个新数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n \\le 100</span>）。</p>\n</div>            </div>",
+      "text": "一个整数 n（n \\le 100）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按照规则能够产生的新数的个数。</p>\n</div>            </div>",
+      "text": "按照规则能够产生的新数的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递归</p>\n</div>                </div>",
+      "text": "递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递归</span></span></p>\n</div>                </div>",
+      "text": "递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "3393",
+    "通过人数": "1981",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:17:39"
+}

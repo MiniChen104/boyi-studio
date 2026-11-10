@@ -1,0 +1,66 @@
+{
+  "id": "1568",
+  "title": "回文日期（date）",
+  "tags": [
+    "noip复赛",
+    "构造法"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1568",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在日常生活中，通过年、月、日这三个要素可以表示出一个唯一确定的日期。</p>\n<p>牛牛习惯用 <span class=\"katex math inline\">8</span> 位数字表示一个日期，其中，前 <span class=\"katex math inline\">4</span> 位代表年份，接下来 <span class=\"katex math inline\">2</span> 位代表月份，最后 <span class=\"katex math inline\">2</span> 位代表日期。显然：一个日期只有一种表示方法，而两个不同的日期的表 示方法不会相同。</p>\n<p>牛牛认为，一个日期是回文的，当且仅当表示这个日期的 <span class=\"katex math inline\">8</span> 位数字是回文的。现在，牛牛想知道：在他指定的两个日期之间包含这两个日期本身），有多少个真实存在的日期是回文的。</p>\n<p>一个 <span class=\"katex math inline\">8</span> 位数字是回文的，当且仅当对于所有的 <span class=\"katex math inline\">i</span>（<span class=\"katex math inline\">1  \\le i \\le 8</span>）从左向右数的第 <span class=\"katex math inline\">i</span> 个数字和第 <span class=\"katex math inline\">9-i</span> 个数字（即从右向左数的第 <span class=\"katex math inline\">i</span> 个数字）是相同的。</p>\n<p>例如：</p>\n<ul><li>对于 2016 年 11 月 19 日，用 <span class=\"katex math inline\">8</span> 位数字 <span class=\"katex math inline\">20161119</span> 表示，它不是回文的。</li>\n<li>对于 2010 年 1 月 2 日，用 <span class=\"katex math inline\">8</span> 位数字 <span class=\"katex math inline\">20100102</span> 表示，它是回文的。</li>\n<li>对于 2010 年 10 月 2 日，用 <span class=\"katex math inline\">8</span> 位数字 <span class=\"katex math inline\">20101002</span> 表示，它不是回文的。</li>\n</ul><p>每一年中都有 <span class=\"katex math inline\">12</span> 个月份：</p>\n<p>其中，<span class=\"katex math inline\">1, 3, 5, 7, 8, 10, 12</span> 月每个月有 <span class=\"katex math inline\">31</span> 天；<span class=\"katex math inline\">4, 6, 9, 11</span> 月每个月有 <span class=\"katex math inline\">30</span> 天；而对于 <span class=\"katex math inline\">2</span> 月，闰年时有 <span class=\"katex math inline\">29</span> 天，平年时有 <span class=\"katex math inline\">28</span> 天。</p>\n<p>一个年份是闰年当且仅当它满足下列两种情况其中的一种：</p>\n<ol><li>这个年份是 <span class=\"katex math inline\">4</span> 的整数倍，但不是 <span class=\"katex math inline\">100</span> 的整数倍；</li>\n<li>这个年份是 <span class=\"katex math inline\">400</span> 的整数倍。</li>\n</ol><p>例如：</p>\n<ul><li>以下几个年份都是闰年：<span class=\"katex math inline\">2000, 2012, 2016</span>。</li>\n<li>以下几个年份是平年：<span class=\"katex math inline\">1900, 2011, 2014</span>。</li>\n</ul></div>            </div>",
+      "text": "在日常生活中，通过年、月、日这三个要素可以表示出一个唯一确定的日期。\n牛牛习惯用 8 位数字表示一个日期，其中，前 4 位代表年份，接下来 2 位代表月份，最后 2 位代表日期。显然：一个日期只有一种表示方法，而两个不同的日期的表 示方法不会相同。\n牛牛认为，一个日期是回文的，当且仅当表示这个日期的 8 位数字是回文的。现在，牛牛想知道：在他指定的两个日期之间包含这两个日期本身），有多少个真实存在的日期是回文的。\n一个 8 位数字是回文的，当且仅当对于所有的 i（1  \\le i \\le 8）从左向右数的第 i 个数字和第 9-i 个数字（即从右向左数的第 i 个数字）是相同的。\n例如：\n对于 2016 年 11 月 19 日，用 8 位数字 20161119 表示，它不是回文的。\n对于 2010 年 1 月 2 日，用 8 位数字 20100102 表示，它是回文的。\n对于 2010 年 10 月 2 日，用 8 位数字 20101002 表示，它不是回文的。\n每一年中都有 12 个月份：\n其中，1, 3, 5, 7, 8, 10, 12 月每个月有 31 天；4, 6, 9, 11 月每个月有 30 天；而对于 2 月，闰年时有 29 天，平年时有 28 天。\n一个年份是闰年当且仅当它满足下列两种情况其中的一种：\n这个年份是 4 的整数倍，但不是 100 的整数倍；\n这个年份是 400 的整数倍。\n例如：\n以下几个年份都是闰年：2000, 2012, 2016。\n以下几个年份是平年：1900, 2011, 2014。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两行，每行包括一个 <span class=\"katex math inline\">8</span> 位数字。</p>\n<p>第一行表示牛牛指定的起始日期。</p>\n<p>第二行表示牛牛指定的终止日期。</p>\n<p>保证 <span class=\"katex math inline\">\\mathit{date}_1</span> 和 <span class=\"katex math inline\">\\mathit{date}_2</span> 都是真实存在的日期，且年份部分一定为 <span class=\"katex math inline\">4</span> 位数字，且首位数字不为 <span class=\"katex math inline\">0</span>。</p>\n<p>保证 <span class=\"katex math inline\">\\mathit{date}_1</span> 一定不晚于 <span class=\"katex math inline\">\\mathit{date}_2</span>。</p>\n</div>            </div>",
+      "text": "两行，每行包括一个 8 位数字。\n第一行表示牛牛指定的起始日期。\n第二行表示牛牛指定的终止日期。\n保证 \\mathit{date}_1 和 \\mathit{date}_2 都是真实存在的日期，且年份部分一定为 4 位数字，且首位数字不为 0。\n保证 \\mathit{date}_1 一定不晚于 \\mathit{date}_2。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示在 <span class=\"katex math inline\">\\mathit{date}_1</span> 和 <span class=\"katex math inline\">\\mathit{date}_2</span> 之间，有多少个日期是回文的。</p>\n</div>            </div>",
+      "text": "一个整数，表示在 \\mathit{date}_1 和 \\mathit{date}_2 之间，有多少个日期是回文的。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>20110101\r\n20111231</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>20000101\r\n20101231</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            20110101\r\n20111231\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                20000101\r\n20101231\n                            \n                            \n                                输出\n                                2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例说明】</strong></p>\n<p>对于样例 1，符合条件的日期是 <span class=\"katex math inline\">20111102</span>。</p>\n<p>对于样例 2，符合条件的日期是 <span class=\"katex math inline\">20011002</span> 和 <span class=\"katex math inline\">20100102</span>。</p>\n<p><strong>【子任务】</strong></p>\n<p>对于 <span class=\"katex math inline\">60 \\%</span> 的数据，满足 <span class=\"katex math inline\">\\mathit{date}_1 = \\mathit{date}_2</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例说明】\n对于样例 1，符合条件的日期是 20111102。\n对于样例 2，符合条件的日期是 20011002 和 20100102。\n【子任务】\n对于 60 \\% 的数据，满足 \\mathit{date}_1 = \\mathit{date}_2。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>NOIP2016普及组复赛第2题</p>\n</div>                </div>",
+      "text": "NOIP2016普及组复赛第2题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span><span class=\"label label-warning\">构造法</span></span></p>\n</div>                </div>",
+      "text": "noip复赛构造法"
+    }
+  ],
+  "samples": [
+    {
+      "input": "20110101\r\n20111231",
+      "output": "1"
+    },
+    {
+      "input": "20000101\r\n20101231",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "2491",
+    "通过人数": "1308",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:21:13"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "1654",
+  "title": "全部排列问题",
+  "tags": [
+    "递归",
+    "排列组合"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1654",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入 <span class=\"katex math inline\">n</span> 输出 <span class=\"katex math inline\">1 \\dots n</span> 个数的全部排列。全部排列中，数字可以重复 。</p>\n<p>例如输入 <span class=\"katex math inline\">3</span> ，输出全部排列的结果如下：<span class=\"katex math inline\">111、112、113、121、122、123、131、132、133、211、212、213、221、222、223、231</span>、<span class=\"katex math inline\">232、233、311、312、313、321、322、323、331、332、333</span>。</p>\n</div>            </div>",
+      "text": "输入 n 输出 1 \\dots n 个数的全部排列。全部排列中，数字可以重复 。\n例如输入 3 ，输出全部排列的结果如下：111、112、113、121、122、123、131、132、133、211、212、213、221、222、223、231、232、233、311、312、313、321、322、323、331、332、333。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">1 \\lt n \\le 6</span>）。</p>\n</div>            </div>",
+      "text": "一个整数 n（1 \\lt n \\le 6）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按照由小到大的顺序输出 <span class=\"katex math inline\">1 \\dots n</span> 这 <span class=\"katex math inline\">n</span> 个数的全部排列情况。</p>\n</div>            </div>",
+      "text": "按照由小到大的顺序输出 1 \\dots n 这 n 个数的全部排列情况。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>11\r\n12\r\n21\r\n22</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\n                        \n                        \n                            输出\n                            11\r\n12\r\n21\r\n22"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递归</p>\n</div>                </div>",
+      "text": "递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递归</span><span class=\"label label-warning\">排列组合</span></span></p>\n</div>                </div>",
+      "text": "递归排列组合"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2",
+      "output": "11\r\n12\r\n21\r\n22"
+    }
+  ],
+  "parameters": {
+    "时间限制": "2 秒",
+    "内存限制": "128 MB",
+    "提交次数": "6958",
+    "通过人数": "4675",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:25"
+}

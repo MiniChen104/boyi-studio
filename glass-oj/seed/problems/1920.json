@@ -1,0 +1,58 @@
+{
+  "id": "1920",
+  "title": "麦香牛肉",
+  "tags": [
+    "USACO",
+    "动态规划",
+    "背包"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1920",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>农夫布朗的奶牛们正在进行斗争，因为它们听说麦当劳正在考虑引进一种新产品：麦香牛块。奶牛们正在想尽一切办法让这种可怕的设想泡汤。奶牛们进行斗争的策略之一是“劣质的包装”。“看，”奶牛们说，“如果你只用一次能装 <span class=\"katex math inline\">3</span> 块、<span class=\"katex math inline\">6</span> 块或者 <span class=\"katex math inline\">10</span> 块的三种包装盒包装麦香牛块，你就不可能满足一次只想买 <span class=\"katex math inline\">1</span>、<span class=\"katex math inline\">2</span>、<span class=\"katex math inline\">4</span>、<span class=\"katex math inline\">5</span>、<span class=\"katex math inline\">7</span>、<span class=\"katex math inline\">8</span>、<span class=\"katex math inline\">11</span>、<span class=\"katex math inline\">14</span> 或者 <span class=\"katex math inline\">17</span> 块麦香牛块的顾客了。劣质的包装意味着劣质的产品。”</p>\n<p>你的任务是帮助这些奶牛。给出包装盒的种类数 <span class=\"katex math inline\">N\\ (1 \\le N \\le 10)</span> 和 <span class=\"katex math inline\">N</span> 个代表不同种类包装盒容纳麦香牛块个数的正整数 <span class=\"katex math inline\">b_i\\ (1 \\le b_i \\le 256)</span>，输出顾客不能用上述包装盒（每种盒子数量无限）买到麦香牛块的最大块数。如果所有购买方案都能得到满足或者不存在不能买到块数的上限，则输出 <span class=\"katex math inline\">0</span>。不能买到的最大块数（如果它存在）不超过 <span class=\"katex math inline\">2\\times 10^9</span>。</p>\n</div>            </div>",
+      "text": "农夫布朗的奶牛们正在进行斗争，因为它们听说麦当劳正在考虑引进一种新产品：麦香牛块。奶牛们正在想尽一切办法让这种可怕的设想泡汤。奶牛们进行斗争的策略之一是“劣质的包装”。“看，”奶牛们说，“如果你只用一次能装 3 块、6 块或者 10 块的三种包装盒包装麦香牛块，你就不可能满足一次只想买 1、2、4、5、7、8、11、14 或者 17 块麦香牛块的顾客了。劣质的包装意味着劣质的产品。”\n你的任务是帮助这些奶牛。给出包装盒的种类数 N\\ (1 \\le N \\le 10) 和 N 个代表不同种类包装盒容纳麦香牛块个数的正整数 b_i\\ (1 \\le b_i \\le 256)，输出顾客不能用上述包装盒（每种盒子数量无限）买到麦香牛块的最大块数。如果所有购买方案都能得到满足或者不存在不能买到块数的上限，则输出 0。不能买到的最大块数（如果它存在）不超过 2\\times 10^9。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行：包装盒的种类数 <span class=\"katex math inline\">N</span>。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行到 <span class=\"katex math inline\">N+1</span> 行：每个种类包装盒容纳麦香牛块的个数。</p>\n</div>            </div>",
+      "text": "第 1 行：包装盒的种类数 N。\n第 2 行到 N+1 行：每个种类包装盒容纳麦香牛块的个数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出文件只有一行数字：顾客不能用包装盒买到麦香牛块的最大块数或 <span class=\"katex math inline\">0</span>（如果所有购买方案都能得到满足或者顾客不能买到的块数没有上限）。</p>\n</div>            </div>",
+      "text": "输出文件只有一行数字：顾客不能用包装盒买到麦香牛块的最大块数或 0（如果所有购买方案都能得到满足或者顾客不能买到的块数没有上限）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n3\r\n6\r\n10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>17</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n3\r\n6\r\n10\n                        \n                        \n                            输出\n                            17"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO 动态规划 背包</p>\n</div>                </div>",
+      "text": "USACO 动态规划 背包"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">USACO</span><span class=\"label label-warning\">动态规划</span><span class=\"label label-info\">背包</span></span></p>\n</div>                </div>",
+      "text": "USACO动态规划背包"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n3\r\n6\r\n10",
+      "output": "17"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "348",
+    "通过人数": "149",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:59"
+}

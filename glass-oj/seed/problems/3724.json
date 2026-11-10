@@ -1,0 +1,69 @@
+{
+  "id": "3724",
+  "title": "红绿灯(light)",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3724",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 X 家门前有两个红绿灯，小 X 做完了数学作业，闲着无聊便在窗边观察。他发现这两个红绿灯亮红灯和亮绿灯的时间是相等的，第一个红绿灯亮 <span class=\"katex math inline\">p</span> 秒绿灯，再亮 <span class=\"katex math inline\">p</span> 秒红灯……， 第二个红绿灯亮 <span class=\"katex math inline\">q</span> 秒绿灯，再亮 <span class=\"katex math inline\">q</span> 秒红灯……，如此循环往复。 </p>\n<p>现在恰好两个红绿灯都从红灯变成了绿灯，小 X 想要知道未来的 <span class=\"katex math inline\">2pq</span> 秒内，有多少秒满足两个红绿灯都亮绿灯。</p>\n</div>            </div>",
+      "text": "小 X 家门前有两个红绿灯，小 X 做完了数学作业，闲着无聊便在窗边观察。他发现这两个红绿灯亮红灯和亮绿灯的时间是相等的，第一个红绿灯亮 p 秒绿灯，再亮 p 秒红灯……， 第二个红绿灯亮 q 秒绿灯，再亮 q 秒红灯……，如此循环往复。 \n现在恰好两个红绿灯都从红灯变成了绿灯，小 X 想要知道未来的 2pq 秒内，有多少秒满足两个红绿灯都亮绿灯。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行 <span class=\"katex math inline\">2</span> 个正整数 <span class=\"katex math inline\">p,q</span>，含义见题面。</p>\n</div>            </div>",
+      "text": "第一行 2 个正整数 p,q，含义见题面。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数表示在未来的 <span class=\"katex math inline\">2pq</span> 秒内，有多少秒满足两个红绿灯都亮绿灯。</p>\n</div>            </div>",
+      "text": "输出一行一个整数表示在未来的 2pq 秒内，有多少秒满足两个红绿灯都亮绿灯。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>18 66</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>612</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1 255</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>128</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            2 3\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                18 66\n                            \n                            \n                                输出\n                                612\n                            \n                        \n                                                    \n                                输入\n                                1 255\n                            \n                            \n                                输出\n                                128"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例1解释】</p>\n<p>在未来的 <span class=\"katex math inline\">12</span> 秒内，第一个红绿灯在第 <span class=\"katex math inline\">1，2，5，6，9，10 </span>秒亮绿灯。</p>\n<p>第一个红绿灯在第 <span class=\"katex math inline\">1，2，3，7，8，9 </span>秒亮绿灯。 </p>\n<p>在第 <span class=\"katex math inline\">1，2，9</span> 秒时，同时亮绿灯，一共 <span class=\"katex math inline\">3</span> 秒。</p>\n<p>【数据规模与解释】</p>\n<p>对于测试点 <span class=\"katex math inline\">1-3</span> ：<span class=\"katex math inline\"> 1 \\leq p,q \\leq 1000 </span> </p>\n<p>对于测试点 <span class=\"katex math inline\">4-5</span> ：<span class=\"katex math inline\"> p=1,1 \\leq q \\leq 10^9 </span> </p>\n<p>对于测试点 <span class=\"katex math inline\">6-9</span> ：<span class=\"katex math inline\"> 1 \\leq p,q \\leq 10^9</span> 且 <span class=\"katex math inline\">p,q</span> 互质，即 <span class=\"katex math inline\">p,q</span> 的最大公约数是 <span class=\"katex math inline\">1</span> </p>\n<p>对于测试点 <span class=\"katex math inline\">10-12</span>：<span class=\"katex math inline\"> 1 \\leq p,q \\leq 10^9</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1解释】\n在未来的 12 秒内，第一个红绿灯在第 1，2，5，6，9，10 秒亮绿灯。\n第一个红绿灯在第 1，2，3，7，8，9 秒亮绿灯。 \n在第 1，2，9 秒时，同时亮绿灯，一共 3 秒。\n【数据规模与解释】\n对于测试点 1-3 ： 1 \\leq p,q \\leq 1000  \n对于测试点 4-5 ： p=1,1 \\leq q \\leq 10^9  \n对于测试点 6-9 ： 1 \\leq p,q \\leq 10^9 且 p,q 互质，即 p,q 的最大公约数是 1 \n对于测试点 10-12： 1 \\leq p,q \\leq 10^9"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>23年常州市赛T6</p>\n</div>                </div>",
+      "text": "23年常州市赛T6"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 3",
+      "output": "3"
+    },
+    {
+      "input": "18 66",
+      "output": "612"
+    },
+    {
+      "input": "1 255",
+      "output": "128"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "10",
+    "通过人数": "8",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:35:55"
+}

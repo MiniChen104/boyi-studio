@@ -1,0 +1,66 @@
+{
+  "id": "6124",
+  "title": "蚂蚁相遇(ant)",
+  "tags": [
+    "市赛",
+    "常州2026"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6124",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">n</span> 只蚂蚁分布在数轴上，第 <span class=\"katex math inline\">i</span> 只蚂蚁初始位置为 <span class=\"katex math inline\">x_i</span>（保证 <span class=\"katex math inline\">x_i</span> 为奇数）。</p>\n<p>任意时刻，每只蚂蚁会选择一只“与自己不在同一位置且距离最近”的蚂蚁作为目标并朝它移动； 若满足最近距离的蚂蚁不止一只，则选择其中位置最靠左的一只。</p>\n<p>所有蚂蚁速度相同。</p>\n<p>当两只（或多只）蚂蚁相遇后，会立即再次按上述规则重新选择目标并继续运动，直到所有蚂蚁最终相遇到同一个位置。</p>\n<p>可以证明，所有蚂蚁一定会相遇。请你求出最终相遇位置。</p>\n</div>            </div>",
+      "text": "有 n 只蚂蚁分布在数轴上，第 i 只蚂蚁初始位置为 x_i（保证 x_i 为奇数）。\n任意时刻，每只蚂蚁会选择一只“与自己不在同一位置且距离最近”的蚂蚁作为目标并朝它移动； 若满足最近距离的蚂蚁不止一只，则选择其中位置最靠左的一只。\n所有蚂蚁速度相同。\n当两只（或多只）蚂蚁相遇后，会立即再次按上述规则重新选择目标并继续运动，直到所有蚂蚁最终相遇到同一个位置。\n可以证明，所有蚂蚁一定会相遇。请你求出最终相遇位置。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入一个整数 <span class=\"katex math inline\">n</span>。</p>\n<p>第二行输入 <span class=\"katex math inline\">n</span> 个整数 <span class=\"katex math inline\">x_1,x_2,...,x_n</span>。</p>\n</div>            </div>",
+      "text": "第一行输入一个整数 n。\n第二行输入 n 个整数 x_1,x_2,...,x_n。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示最终相遇位置。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示最终相遇位置。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1 5 9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4\r\n-7 -1 3 11</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1 5 9\n                        \n                        \n                            输出\n                            5\n                        \n\n                                                    \n                                输入\n                                4\r\n-7 -1 3 11\n                            \n                            \n                                输出\n                                2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p>样例 <span class=\"katex math inline\">1</span> 中，最终相遇位置为最左与最右初始位置中点：<span class=\"katex math inline\">(1+9)/2=5</span>。</p>\n<p>样例 <span class=\"katex math inline\">2</span> 中，最左位置为 <span class=\"katex math inline\">-7</span>，最右位置为 <span class=\"katex math inline\">11</span>，最终相遇位置为 <span class=\"katex math inline\">(-7+11)/2=2</span>。</p>\n<h4>数据范围</h4>\n<table><thead><tr><th>数据点编号</th><th>数据范围</th><th>特殊性质</th></tr></thead><tbody><tr><td>1</td><td><span class=\"katex math inline\">n \\leq 10</span>, <span class=\"katex math inline\">|x_i| \\leq 10^2</span></td><td>输入严格递增</td></tr><tr><td>2</td><td><span class=\"katex math inline\">n \\leq 100</span>, <span class=\"katex math inline\">|x_i| \\leq 10^4</span></td><td>位置互不相同</td></tr><tr><td>3</td><td><span class=\"katex math inline\">n \\leq 1000</span>, <span class=\"katex math inline\">|x_i| \\leq 10^5</span></td><td>等差数列</td></tr><tr><td>4</td><td><span class=\"katex math inline\">n \\leq 5000</span>, <span class=\"katex math inline\">|x_i| \\leq 10^6</span></td><td>大量重复位置</td></tr><tr><td>5</td><td><span class=\"katex math inline\">n \\leq 2 \\times 10^4</span>, <span class=\"katex math inline\">|x_i| \\leq 10^9</span></td><td>无特殊性质</td></tr><tr><td>6</td><td><span class=\"katex math inline\">n \\leq 5 \\times 10^4</span>, <span class=\"katex math inline\">|x_i| \\leq 10^9</span></td><td>无特殊性质</td></tr><tr><td>7</td><td><span class=\"katex math inline\">n \\leq 10^5</span>, <span class=\"katex math inline\">|x_i| \\leq 10^9</span></td><td>输入严格递减</td></tr><tr><td>8</td><td><span class=\"katex math inline\">n \\leq 10^5</span>, <span class=\"katex math inline\">|x_i| \\leq 10^9</span></td><td>不同位置数量不超过20</td></tr><tr><td>9</td><td><span class=\"katex math inline\">n \\leq 2 \\times 10^5</span>, <span class=\"katex math inline\">|x_i| \\leq 10^9</span></td><td>包含边界奇数值</td></tr><tr><td>10</td><td><span class=\"katex math inline\">n \\leq 2 \\times 10^5</span>, <span class=\"katex math inline\">|x_i| \\leq 10^9</span></td><td>无特殊性质</td></tr></tbody></table><p>保证：<span class=\"katex math inline\">n \\geq 2</span>,且所有<span class=\"katex math inline\">x_i</span>均为奇数。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n样例 1 中，最终相遇位置为最左与最右初始位置中点：(1+9)/2=5。\n样例 2 中，最左位置为 -7，最右位置为 11，最终相遇位置为 (-7+11)/2=2。\n数据范围\n数据点编号数据范围特殊性质1n \\leq 10, |x_i| \\leq 10^2输入严格递增2n \\leq 100, |x_i| \\leq 10^4位置互不相同3n \\leq 1000, |x_i| \\leq 10^5等差数列4n \\leq 5000, |x_i| \\leq 10^6大量重复位置5n \\leq 2 \\times 10^4, |x_i| \\leq 10^9无特殊性质6n \\leq 5 \\times 10^4, |x_i| \\leq 10^9无特殊性质7n \\leq 10^5, |x_i| \\leq 10^9输入严格递减8n \\leq 10^5, |x_i| \\leq 10^9不同位置数量不超过209n \\leq 2 \\times 10^5, |x_i| \\leq 10^9包含边界奇数值10n \\leq 2 \\times 10^5, |x_i| \\leq 10^9无特殊性质保证：n \\geq 2,且所有x_i均为奇数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2026年常州“信息与未来”小学生编程比赛线上</p>\n</div>                </div>",
+      "text": "2026年常州“信息与未来”小学生编程比赛线上"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">常州2026</span></span></p>\n</div>                </div>",
+      "text": "市赛常州2026"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1 5 9",
+      "output": "5"
+    },
+    {
+      "input": "4\r\n-7 -1 3 11",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "16",
+    "通过人数": "11",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:40"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "4977",
+  "title": "数三角形",
+  "tags": [
+    "GESP二级",
+    "25年6月",
+    "嵌套循环",
+    "穷举",
+    "枚举"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4977",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>直角三角形有两条直角边与一条斜边，设两条直角边的长度分别为 <span class=\"katex math inline\">a,b</span> ，则直角三角形的面积为 <span class=\"katex math inline\">ab/2</span> 。</p>\n<p>请你计算当直角边长 <span class=\"katex math inline\">a,b</span> 均取不超过 <span class=\"katex math inline\">n</span> 的正整数时，有多少个不同的面积为整数的直角三角形。</p>\n<p>直角边长分别为 <span class=\"katex math inline\">a,b</span> 和  <span class=\"katex math inline\">a&#x27;,b&#x27;</span> 的两个直角三角形相同，当且仅当 <span class=\"katex math inline\">a=a&#x27;,b=b&#x27;</span> 或者 <span class=\"katex math inline\">a=b&#x27;,b=a&#x27;</span> 。</p>\n</div>            </div>",
+      "text": "直角三角形有两条直角边与一条斜边，设两条直角边的长度分别为 a,b ，则直角三角形的面积为 ab/2 。\n请你计算当直角边长 a,b 均取不超过 n 的正整数时，有多少个不同的面积为整数的直角三角形。\n直角边长分别为 a,b 和  a',b' 的两个直角三角形相同，当且仅当 a=a',b=b' 或者 a=b',b=a' 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数 <span class=\"katex math inline\">n</span> ，表示直角边长的最大值。</p>\n</div>            </div>",
+      "text": "一行，一个整数 n ，表示直角边长的最大值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，一个整数，表示不同的直角三角形数量。</p>\n</div>            </div>",
+      "text": "输出一行，一个整数，表示不同的直角三角形数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>9</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                5\n                            \n                            \n                                输出\n                                9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 1000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于所有测试点，保证 1 \\le n \\le 1000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP25年6月二级</p>\n</div>                </div>",
+      "text": "GESP25年6月二级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP二级</span><span class=\"label label-warning\">25年6月</span><span class=\"label label-info\">嵌套循环</span><span class=\"label label-danger\">穷举</span><span class=\"label label-primary\">枚举</span></span></p>\n</div>                </div>",
+      "text": "GESP二级25年6月嵌套循环穷举枚举"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "3"
+    },
+    {
+      "input": "5",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1732",
+    "通过人数": "1249",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:39"
+}

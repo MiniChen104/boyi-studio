@@ -1,0 +1,46 @@
+{
+  "id": "1262",
+  "title": "该存多少钱",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1262",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>假设银行一年整存零取的月息为 <span class=\"katex math inline\">0.63 \\%</span>。现在某人手中有一笔钱，他打算在今后的五年中的年底取出 <span class=\"katex math inline\">1000</span> 元，到第五年时刚好取完，请算出他存钱时应存入多少。</p>\n</div>            </div>",
+      "text": "假设银行一年整存零取的月息为 0.63 \\%。现在某人手中有一笔钱，他打算在今后的五年中的年底取出 1000 元，到第五年时刚好取完，请算出他存钱时应存入多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无</p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一年年初要存入多少钱，结果保留 <span class=\"katex math inline\">2</span> 位小数。</p>\n</div>            </div>",
+      "text": "第一年年初要存入多少钱，结果保留 2 位小数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "1755",
+    "通过人数": "669",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:03"
+}

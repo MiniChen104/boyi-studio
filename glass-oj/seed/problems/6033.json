@@ -1,0 +1,63 @@
+{
+  "id": "6033",
+  "title": "小杨的智慧购物",
+  "tags": [
+    "GESP三级",
+    "25年12月",
+    "数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6033",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨的班级要举办一个环保手工作品展览，老师请小杨去文具店购买 <span class=\"katex math inline\">M</span> 种不同的文具（例如：铅笔、橡皮、尺子等）。</p>\n<p>商店里共有 <span class=\"katex math inline\">N</span> 件文具，每件文具都有一个种类编号（从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">M</span>）和价格。</p>\n<p>小杨的预算有限，他想了一个聪明的办法：对于每种文具，他只买最便宜的那一件（如果同种文具有多件价格相同且都是最便宜的，他只会购买其中的一件）。请你帮小杨计算出，买齐这 <span class=\"katex math inline\">M</span> 种文具一共需要花费多少钱。</p>\n</div>            </div>",
+      "text": "小杨的班级要举办一个环保手工作品展览，老师请小杨去文具店购买 M 种不同的文具（例如：铅笔、橡皮、尺子等）。\n商店里共有 N 件文具，每件文具都有一个种类编号（从 1 到 M）和价格。\n小杨的预算有限，他想了一个聪明的办法：对于每种文具，他只买最便宜的那一件（如果同种文具有多件价格相同且都是最便宜的，他只会购买其中的一件）。请你帮小杨计算出，买齐这 M 种文具一共需要花费多少钱。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个正整数 <span class=\"katex math inline\">M, N</span>，代表文具的种类数和总数。</p>\n<p>之后 <span class=\"katex math inline\">N</span> 行，每行两个正整数 <span class=\"katex math inline\">K_i</span> 和 <span class=\"katex math inline\">P_i</span>，分别代表第 <span class=\"katex math inline\">i</span> 件文具的种类编号和它的价格。数据保证每个种类至少有一件文具可供购买。</p>\n</div>            </div>",
+      "text": "第一行两个正整数 M, N，代表文具的种类数和总数。\n之后 N 行，每行两个正整数 K_i 和 P_i，分别代表第 i 件文具的种类编号和它的价格。数据保证每个种类至少有一件文具可供购买。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，代表购买文具的总价。</p>\n</div>            </div>",
+      "text": "输出一行，代表购买文具的总价。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 5\r\n1 1\r\n1 2\r\n1 1\r\n2 3\r\n2 10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 5\r\n1 1\r\n1 2\r\n1 1\r\n2 3\r\n2 10\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p>文具清单如下：</p>\n<ul><li>文具 1：种类 1，价格 <span class=\"katex math inline\">1</span></li>\n<li>文具 2：种类 1，价格 <span class=\"katex math inline\">2</span></li>\n<li>文具 3：种类 1，价格 <span class=\"katex math inline\">1</span></li>\n<li>文具 4：种类 2，价格 <span class=\"katex math inline\">3</span></li>\n<li>文具 5：种类 2，价格 <span class=\"katex math inline\">10</span></li>\n</ul><p>小杨的选择过程：对于种类 1：有三件商品，价格分别为 <span class=\"katex math inline\">1, 2, 1</span>。其中最便宜的价格是 <span class=\"katex math inline\">1</span>。对于种类 2：有两件商品，价格分别为 <span class=\"katex math inline\">3, 10</span>。其中最便宜的价格是 <span class=\"katex math inline\">3</span>。</p>\n<p>计算总价：小杨购买这两类文具的总花费为 <span class=\"katex math inline\">1 + 3 = 4</span>。</p>\n<h4>数据范围</h4>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\leq M \\leq N \\leq 10^5</span>，<span class=\"katex math inline\">1 \\leq K_i \\leq M</span>，<span class=\"katex math inline\">1 \\leq P_i \\leq 10^3</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n文具清单如下：\n文具 1：种类 1，价格 1\n文具 2：种类 1，价格 2\n文具 3：种类 1，价格 1\n文具 4：种类 2，价格 3\n文具 5：种类 2，价格 10\n小杨的选择过程：对于种类 1：有三件商品，价格分别为 1, 2, 1。其中最便宜的价格是 1。对于种类 2：有两件商品，价格分别为 3, 10。其中最便宜的价格是 3。\n计算总价：小杨购买这两类文具的总花费为 1 + 3 = 4。\n数据范围\n对于所有测试点，保证 1 \\leq M \\leq N \\leq 10^5，1 \\leq K_i \\leq M，1 \\leq P_i \\leq 10^3。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 2025年12月认证 C++3级真题</p>\n</div>                </div>",
+      "text": "GESP 2025年12月认证 C++3级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP三级</span><span class=\"label label-warning\">25年12月</span><span class=\"label label-info\">数组</span></span></p>\n</div>                </div>",
+      "text": "GESP三级25年12月数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 5\r\n1 1\r\n1 2\r\n1 1\r\n2 3\r\n2 10",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1193",
+    "通过人数": "672",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:20"
+}

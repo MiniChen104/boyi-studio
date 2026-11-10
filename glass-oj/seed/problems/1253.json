@@ -1,0 +1,46 @@
+{
+  "id": "1253",
+  "title": "寻找肇事司机",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1253",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一辆卡车违反交通规则，撞人后逃跑。现场有三人目击事件，但都没有记住车号，只记下车号的一些特征。</p>\n<p>甲说：牌照的前两位数字是相同的；乙说：牌照的后两位数字是相同的，但与前两位不同； 丙是数学家，他说：四位的车号刚好是一个整数的平方。</p>\n<p>请根据以上线索求出车号。</p>\n</div>            </div>",
+      "text": "一辆卡车违反交通规则，撞人后逃跑。现场有三人目击事件，但都没有记住车号，只记下车号的一些特征。\n甲说：牌照的前两位数字是相同的；乙说：牌照的后两位数字是相同的，但与前两位不同； 丙是数学家，他说：四位的车号刚好是一个整数的平方。\n请根据以上线索求出车号。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无。</p>\n</div>            </div>",
+      "text": "无。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出肇事司机的车牌号码。</p>\n</div>            </div>",
+      "text": "输出肇事司机的车牌号码。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "12943",
+    "通过人数": "9683",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:16:56"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "1148",
+  "title": "数数小木块",
+  "tags": [
+    "函数问题",
+    "递归"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1148",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在墙角堆放着一堆完全相同的正方体小木块，如下图所示：</p>\n<p><img src=\"https://assets.boyi.local/50f605bf2c424f47f613bf30.jpg\"></p>\n<p>因为木块堆得实在是太有规律了，你只要知道它的层数就可以计算所有木块的数量了。</p>\n</div>            </div>",
+      "text": "在墙角堆放着一堆完全相同的正方体小木块，如下图所示：\n\n因为木块堆得实在是太有规律了，你只要知道它的层数就可以计算所有木块的数量了。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一个整数  <span class=\"katex math inline\">n</span> ，表示这堆小木块的层数，已知 <span class=\"katex math inline\">1 \\le n \\le 100</span>  。</p>\n</div>            </div>",
+      "text": "只有一个整数  n ，表示这堆小木块的层数，已知 1 \\le n \\le 100  。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一个整数，表示这堆小木块的总数量。</p>\n</div>            </div>",
+      "text": "只有一个整数，表示这堆小木块的总数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>35</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            35"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>函数问题 递归</p>\n</div>                </div>",
+      "text": "函数问题 递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">函数问题</span><span class=\"label label-warning\">递归</span></span></p>\n</div>                </div>",
+      "text": "函数问题递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "35"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "22431",
+    "通过人数": "17083",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:15:25"
+}

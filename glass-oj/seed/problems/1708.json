@@ -1,0 +1,56 @@
+{
+  "id": "1708",
+  "title": "四数最小值",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1708",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入四个整数。输出最小的那个数？</p>\n</div>            </div>",
+      "text": "输入四个整数。输出最小的那个数？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行，有四个整数 <span class=\"katex math inline\">a，b，c，d (-10000 \\le a b c d \\le 10000)</span> ，两两之间用空格隔。</p>\n</div>            </div>",
+      "text": "输入一行，有四个整数 a，b，c，d (-10000 \\le a b c d \\le 10000) ，两两之间用空格隔。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一个整数（这意味着末尾有一个回车符号），表示最小的那个。</p>\n</div>            </div>",
+      "text": "输出只有一个整数（这意味着末尾有一个回车符号），表示最小的那个。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7 8 9 10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7 8 9 10\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7 8 9 10",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "4045",
+    "通过人数": "2909",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:11"
+}

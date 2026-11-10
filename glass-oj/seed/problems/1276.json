@@ -1,0 +1,56 @@
+{
+  "id": "1276",
+  "title": "挖地雷的算法",
+  "tags": [
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1276",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一个地图上有 <span class=\"katex math inline\">n</span> 个地窖（ <span class=\"katex math inline\">n \\le 200</span>）,每个地窖中埋有一定数量的地雷。同时，给出地窖之间的连接路径，并规定路径都是单向的,且保证都是小序号地窖指向大序号地窖，也不存在可以从一个地窖出发经过若干地窖后又回到原来地窖的路径。某人可以从任一处开始挖地雷，然后沿着指出的连接往下挖（仅能选择一条路径），当无连接时挖地雷工作结束。设计一个挖地雷的方案，使他能挖到最多的地雷。</p>\n<p>如下图所示：圆圈内的 <span class=\"katex math inline\">1 \\ 2 \\ 3 \\ 4 \\ 5 \\ 6</span>，代表 <span class=\"katex math inline\">6</span> 个地窖的编号，地窖编号旁边的数字代表这个地窖地雷的数量！</p>\n<p><img src=\"https://assets.boyi.local/09733ad6075f45d29b6b753d.jpg\"></p>\n</div>            </div>",
+      "text": "在一个地图上有 n 个地窖（ n \\le 200）,每个地窖中埋有一定数量的地雷。同时，给出地窖之间的连接路径，并规定路径都是单向的,且保证都是小序号地窖指向大序号地窖，也不存在可以从一个地窖出发经过若干地窖后又回到原来地窖的路径。某人可以从任一处开始挖地雷，然后沿着指出的连接往下挖（仅能选择一条路径），当无连接时挖地雷工作结束。设计一个挖地雷的方案，使他能挖到最多的地雷。\n如下图所示：圆圈内的 1 \\ 2 \\ 3 \\ 4 \\ 5 \\ 6，代表 6 个地窖的编号，地窖编号旁边的数字代表这个地窖地雷的数量！"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：地窖的个数；</p>\n<p>第二行为依次每个地窖地雷的个数；</p>\n<p>下面若干行：</p>\n<p><span class=\"katex math inline\">x_i</span> <span class=\"katex math inline\">y_i</span> //表示从 <span class=\"katex math inline\">x_i</span> 可到 <span class=\"katex math inline\">y_i</span>，<span class=\"katex math inline\">x_i \\lt y_i</span>。</p>\n<p>最后一行为&quot;<span class=\"katex math inline\">0</span> <span class=\"katex math inline\">0</span>&quot;表示结束。</p>\n</div>            </div>",
+      "text": "第一行：地窖的个数；\n第二行为依次每个地窖地雷的个数；\n下面若干行：\nx_i y_i //表示从 x_i 可到 y_i，x_i \\lt y_i。\n最后一行为\"0 0\"表示结束。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输出挖地雷的地窖编号的顺序：<span class=\"katex math inline\">k1-k2-\\dots-kv</span>;</p>\n<p>第二行输出一个整数，代表最多能挖到的地雷的数量。</p>\n</div>            </div>",
+      "text": "第一行输出挖地雷的地窖编号的顺序：k1-k2-\\dots-kv;\n第二行输出一个整数，代表最多能挖到的地雷的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n5 10 20 5 4 5\r\n1 2\r\n1 4\r\n2 4\r\n3 4\r\n4 5\r\n4 6\r\n5 6\r\n0 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3-4-5-6\r\n34</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n5 10 20 5 4 5\r\n1 2\r\n1 4\r\n2 4\r\n3 4\r\n4 5\r\n4 6\r\n5 6\r\n0 0\n                        \n                        \n                            输出\n                            3-4-5-6\r\n34"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>动态规划</p>\n</div>                </div>",
+      "text": "动态规划"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n5 10 20 5 4 5\r\n1 2\r\n1 4\r\n2 4\r\n3 4\r\n4 5\r\n4 6\r\n5 6\r\n0 0",
+      "output": "3-4-5-6\r\n34"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5071",
+    "通过人数": "3218",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:17:13"
+}

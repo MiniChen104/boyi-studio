@@ -1,0 +1,61 @@
+{
+  "id": "2277",
+  "title": "忍者道具",
+  "tags": [
+    "电子学会等级考试"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2277",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>忍者道具有很多种，苦无，飞镖，震爆弹。L君热衷于收集忍者道具，现在他有N个道具，每个道具的重量分别是C1、C2…CN。现在他想把这N个道具装到载重量为W的工具包里，请问他最少需要多少个工具包？</p>\n</div>            </div>",
+      "text": "忍者道具有很多种，苦无，飞镖，震爆弹。L君热衷于收集忍者道具，现在他有N个道具，每个道具的重量分别是C1、C2…CN。现在他想把这N个道具装到载重量为W的工具包里，请问他最少需要多少个工具包？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个用空格隔开的整数，N和W。 接下来N行每行一个整数，其中第i+1行的整数表示第i个道具的重量Ci。</p>\n</div>            </div>",
+      "text": "第一行包含两个用空格隔开的整数，N和W。 接下来N行每行一个整数，其中第i+1行的整数表示第i个道具的重量Ci。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，最少需要多少个工具包。</p>\n</div>            </div>",
+      "text": "输出一个整数，最少需要多少个工具包。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 1996\r\n1\r\n2\r\n1994\r\n12\r\n29</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 1996\r\n1\r\n2\r\n1994\r\n12\r\n29\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>对于100%的数据，1&lt;=N&lt;=18，1&lt;=Ci&lt;=W&lt;=10^8。</p>\n</div>\n\n                    \n                </div>",
+      "text": "对于100%的数据，1<=N<=18，1<=Ci<=W<=10^8。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会五级</p>\n</div>                </div>",
+      "text": "电子学会五级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 1996\r\n1\r\n2\r\n1994\r\n12\r\n29",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "207",
+    "通过人数": "50",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:38"
+}

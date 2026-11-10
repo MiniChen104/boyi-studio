@@ -1,0 +1,70 @@
+{
+  "id": "3729",
+  "title": "黑板",
+  "tags": [
+    "市赛",
+    "常州2024"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3729",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">Y</span> 在黑板上从小到大依次写了若干个正整数， 它们分别是 <span class=\"katex math inline\">a,a+1,a+2,…,b-1,b</span> 。接下来，小 <span class=\"katex math inline\">Y</span> 会对黑板上的数进行若干次操作，一次操作是选择两个奇偶性相同的数(两个奇数或两个偶数)，将他们从黑板上擦掉，再在黑板上前一个数的位置写上它们的平均数。小 <span class=\"katex math inline\">Y</span> 想知道，经过若干次操作后能否使黑板上只剩下一个数 <span class=\"katex math inline\">x</span> ？</p>\n</div>            </div>",
+      "text": "小 Y 在黑板上从小到大依次写了若干个正整数， 它们分别是 a,a+1,a+2,…,b-1,b 。接下来，小 Y 会对黑板上的数进行若干次操作，一次操作是选择两个奇偶性相同的数(两个奇数或两个偶数)，将他们从黑板上擦掉，再在黑板上前一个数的位置写上它们的平均数。小 Y 想知道，经过若干次操作后能否使黑板上只剩下一个数 x ？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行 <span class=\"katex math inline\">3</span> 个正整数 <span class=\"katex math inline\">a,b,x</span>，其中 <span class=\"katex math inline\">a \\lt b，a \\le x \\le b</span>。</p>\n</div>            </div>",
+      "text": "一行 3 个正整数 a,b,x，其中 a \\lt b，a \\le x \\le b。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果不可能使黑板上只剩下一个数 <span class=\"katex math inline\">x</span>，输出 <span class=\"katex math inline\">-1</span>，否则输出一种可行的操作方案。</p>\n<p>一种可行的操作方案共有 <span class=\"katex math inline\">b-a</span> 行，每行先小后大依次输出两个非负整数，表示该次操作中选择的两个数的位置，注意位置从 <span class=\"katex math inline\">0</span> 开始。两数之间用严格用一个空格隔开，第二个数之后没有空格。</p>\n</div>            </div>",
+      "text": "如果不可能使黑板上只剩下一个数 x，输出 -1，否则输出一种可行的操作方案。\n一种可行的操作方案共有 b-a 行，每行先小后大依次输出两个非负整数，表示该次操作中选择的两个数的位置，注意位置从 0 开始。两数之间用严格用一个空格隔开，第二个数之后没有空格。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 3 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>-1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2 4 3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0 2\r\n0 1</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 6 4</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1 3\r\n1 2\r\n0 1</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            2 3 2\n                        \n                        \n                            输出\n                            -1\n                        \n\n                                                    \n                                输入\n                                2 4 3\n                            \n                            \n                                输出\n                                0 2\r\n0 1\n                            \n                        \n                                                    \n                                输入\n                                3 6 4\n                            \n                            \n                                输出\n                                1 3\r\n1 2\r\n0 1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释2】</p>\n<p>先选择位置 <span class=\"katex math inline\">0</span> 和位置 <span class=\"katex math inline\">2</span> 上的数 <span class=\"katex math inline\">2</span> 和 <span class=\"katex math inline\">4</span> 得到平均值 <span class=\"katex math inline\">3</span> 放在位置 <span class=\"katex math inline\">0</span> 上，然后选择位置 <span class=\"katex math inline\">0</span> 和位置 <span class=\"katex math inline\">1</span> 上的数 <span class=\"katex math inline\">3</span> 和 <span class=\"katex math inline\">3</span> 得到平均值 <span class=\"katex math inline\">3</span> 放在位置 <span class=\"katex math inline\">0</span> 上。</p>\n<p>【数据范围】</p>\n<p>本题共有 <span class=\"katex math inline\">25</span> 个测试点，每个测试点 <span class=\"katex math inline\">4</span> 分。</p>\n<p>对于所有测试点： <span class=\"katex math inline\">1 \\le a \\lt b \\le 10^5</span></p>\n<p>对于测试点 <span class=\"katex math inline\">1-2</span>：保证 <span class=\"katex math inline\">x=b-1</span></p>\n<p>对于测试点 <span class=\"katex math inline\">3-4</span>：保证 <span class=\"katex math inline\">a=b-1</span></p>\n<p>对于测试点 <span class=\"katex math inline\">5-10</span>：保证 <span class=\"katex math inline\">1 \\le a \\lt b \\le 6</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释2】\n先选择位置 0 和位置 2 上的数 2 和 4 得到平均值 3 放在位置 0 上，然后选择位置 0 和位置 1 上的数 3 和 3 得到平均值 3 放在位置 0 上。\n【数据范围】\n本题共有 25 个测试点，每个测试点 4 分。\n对于所有测试点： 1 \\le a \\lt b \\le 10^5\n对于测试点 1-2：保证 x=b-1\n对于测试点 3-4：保证 a=b-1\n对于测试点 5-10：保证 1 \\le a \\lt b \\le 6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024常州市赛T3</p>\n</div>                </div>",
+      "text": "2024常州市赛T3"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">常州2024</span></span></p>\n</div>                </div>",
+      "text": "市赛常州2024"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 3 2",
+      "output": "-1"
+    },
+    {
+      "input": "2 4 3",
+      "output": "0 2\r\n0 1"
+    },
+    {
+      "input": "3 6 4",
+      "output": "1 3\r\n1 2\r\n0 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "62",
+    "通过人数": "3",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:35:58"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1355",
+  "title": "门票的定价",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1355",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某剧院举办文艺演出，经过调研发现，如果票价定为每张 <span class=\"katex math inline\">30</span> 元，那么 <span class=\"katex math inline\">1200</span> 张门票可以全部售出；如果票价每增加 <span class=\"katex math inline\">1</span> 元，那么售出的门票就减少 <span class=\"katex math inline\">n</span> 张（ <span class=\"katex math inline\">n \\le 100</span> ）。现要求门票价格在不低于 <span class=\"katex math inline\">30</span> 元的情况下，请问门票价格定为多少钱，可以使得总门票收入最高，最高总门票收入是多少元？（如果在多个价格下，门票总收入一样高，就取价格较低的门票单价）（ <span class=\"katex math inline\">9.1</span> ）</p>\n</div>            </div>",
+      "text": "某剧院举办文艺演出，经过调研发现，如果票价定为每张 30 元，那么 1200 张门票可以全部售出；如果票价每增加 1 元，那么售出的门票就减少 n 张（ n \\le 100 ）。现要求门票价格在不低于 30 元的情况下，请问门票价格定为多少钱，可以使得总门票收入最高，最高总门票收入是多少元？（如果在多个价格下，门票总收入一样高，就取价格较低的门票单价）（ 9.1 ）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> </p>\n</div>            </div>",
+      "text": "一个整数 n"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个整数，用空格隔开，代表门票最终的定价以及总门票收入</p>\n</div>            </div>",
+      "text": "两个整数，用空格隔开，代表门票最终的定价以及总门票收入"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>45 40500</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            20\n                        \n                        \n                            输出\n                            45 40500"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "20",
+      "output": "45 40500"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "5880",
+    "通过人数": "3214",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:16"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "4985",
+  "title": "排序",
+  "tags": [
+    "GESP四级",
+    "25年6月",
+    "排序"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4985",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>体育课上有 <span class=\"katex math inline\">n</span> 名同学排成一队，从前往后数第 <span class=\"katex math inline\">i</span> 位同学的身高为 <span class=\"katex math inline\">h_i</span> ，体重为 <span class=\"katex math inline\">w_i</span>。目前排成的队伍看起来参差不齐，老师希望同学们能按照身高从高到低的顺序排队，如果身高相同则按照体重从重到轻排序。在调整队伍时，每次只能交换相邻两位同学的位置。老师想知道，最少需要多少次交换操作，才能将队伍调整成目标顺序。</p>\n</div>            </div>",
+      "text": "体育课上有 n 名同学排成一队，从前往后数第 i 位同学的身高为 h_i ，体重为 w_i。目前排成的队伍看起来参差不齐，老师希望同学们能按照身高从高到低的顺序排队，如果身高相同则按照体重从重到轻排序。在调整队伍时，每次只能交换相邻两位同学的位置。老师想知道，最少需要多少次交换操作，才能将队伍调整成目标顺序。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个正整数 <span class=\"katex math inline\">n</span> ，表示队伍人数。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行两个正整数 <span class=\"katex math inline\">h_i</span> 和 <span class=\"katex math inline\">w_i</span>，分别表示第 <span class=\"katex math inline\">i</span> 位同学的身高和体重。</p>\n</div>            </div>",
+      "text": "第一行，一个正整数 n ，表示队伍人数。\n接下来 n 行，每行两个正整数 h_i 和 w_i，分别表示第 i 位同学的身高和体重。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，一个整数，表示最少需要的交换次数。</p>\n</div>            </div>",
+      "text": "输出一行，一个整数，表示最少需要的交换次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n1 60\r\n3 70\r\n2 80\r\n4 55\r\n4 50</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8\r\n</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n4 0\r\n4 0\r\n2 0\r\n3 0\r\n1 0</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n1 60\r\n3 70\r\n2 80\r\n4 55\r\n4 50\n                        \n                        \n                            输出\n                            8\r\n\n                        \n\n                                                    \n                                输入\n                                5\r\n4 0\r\n4 0\r\n2 0\r\n3 0\r\n1 0\n                            \n                            \n                                输出\n                                1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 3000，0 \\le h_i, w_i \\le 10^{9} </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于所有测试点，保证 1 \\le n \\le 3000，0 \\le h_i, w_i \\le 10^{9} 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP25年6月四级</p>\n</div>                </div>",
+      "text": "GESP25年6月四级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">25年6月</span><span class=\"label label-info\">排序</span></span></p>\n</div>                </div>",
+      "text": "GESP四级25年6月排序"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n1 60\r\n3 70\r\n2 80\r\n4 55\r\n4 50",
+      "output": "8\r\n"
+    },
+    {
+      "input": "5\r\n4 0\r\n4 0\r\n2 0\r\n3 0\r\n1 0",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "694",
+    "通过人数": "398",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:34"
+}

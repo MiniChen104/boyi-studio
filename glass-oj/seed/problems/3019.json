@@ -1,0 +1,61 @@
+{
+  "id": "3019",
+  "title": "可能的三角形 (c.cpp)",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3019",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 X 和小 Y 都是龙城学堂的资深学员，为了丰富学弟学妹们的课余生活，小 X 和小 Y\n发明了一个简单的数字游戏。小 Y 有三个正整数 <span class=\"katex math inline\">A,B,C</span>(<span class=\"katex math inline\">2≤A≤B≤C</span>)，且 <span class=\"katex math inline\">A,B,C</span> 刚好构成\n一个三角形的三条边。这些数字是保密的，他不会直接透露给小 X。他会告诉小 X 一共 <span class=\"katex math inline\">4</span>\n个正整数 <span class=\"katex math inline\">x1,x2,x3,x4</span>，其中 <span class=\"katex math inline\">2≤x1,x2,x3,x4≤10^{9}</span>，并宣称 <span class=\"katex math inline\">x1,x2,x3,x4</span> 每个数必定是\n<span class=\"katex math inline\">A,B,C,A+B,A+C,B+C</span> 或 <span class=\"katex math inline\">A+B+C</span> 之一。为了公平起见，小 Y 不可能撒谎，也就是说他给出\n的这些正整数里一定存在至少一组对应的合法的<span class=\"katex math inline\">(A,B,C)</span>，满足 <span class=\"katex math inline\">A,B,C</span> 恰好是某个三角形的\n三条边。\n小 X 百思不得其解，所以请你来求出有哪些三元组<span class=\"katex math inline\">(A,B,C)</span>符合条件。</p>\n</div>            </div>",
+      "text": "小 X 和小 Y 都是龙城学堂的资深学员，为了丰富学弟学妹们的课余生活，小 X 和小 Y\n发明了一个简单的数字游戏。小 Y 有三个正整数 A,B,C(2≤A≤B≤C)，且 A,B,C 刚好构成\n一个三角形的三条边。这些数字是保密的，他不会直接透露给小 X。他会告诉小 X 一共 4\n个正整数 x1,x2,x3,x4，其中 2≤x1,x2,x3,x4≤10^{9}，并宣称 x1,x2,x3,x4 每个数必定是\nA,B,C,A+B,A+C,B+C 或 A+B+C 之一。为了公平起见，小 Y 不可能撒谎，也就是说他给出\n的这些正整数里一定存在至少一组对应的合法的(A,B,C)，满足 A,B,C 恰好是某个三角形的\n三条边。\n小 X 百思不得其解，所以请你来求出有哪些三元组(A,B,C)符合条件。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行四个用空格隔开的正整数 <span class=\"katex math inline\">x1,x2,x3,x4</span>。 </p>\n</div>            </div>",
+      "text": "一行四个用空格隔开的正整数 x1,x2,x3,x4。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出若干行，每行三个整数，两数之间严格用一个空格隔开，表示一组可能的<span class=\"katex math inline\">(A,B,C)</span>，使得<span class=\"katex math inline\">A,B,C</span>恰好是某个三角形的三条边。输出时要求按照A升序输出，如果A相同则按照B升序输出，如果<span class=\"katex math inline\">A,B</span>都相同则按照<span class=\"katex math inline\">C</span>升序输出。所谓升序是指从小到大的次序，输入数据保证至少有一组解。</p>\n</div>            </div>",
+      "text": "输出若干行，每行三个整数，两数之间严格用一个空格隔开，表示一组可能的(A,B,C)，使得A,B,C恰好是某个三角形的三条边。输出时要求按照A升序输出，如果A相同则按照B升序输出，如果A,B都相同则按照C升序输出。所谓升序是指从小到大的次序，输入数据保证至少有一组解。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 4 5 7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 2 3\r\n2 3 4\r\n2 4 5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 4 5 7\n                        \n                        \n                            输出\n                            2 2 3\r\n2 3 4\r\n2 4 5"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p> 对于第一组解，<span class=\"katex math inline\">A=2，B=2，C=3</span>，输入的4个数对应的值分别是<span class=\"katex math inline\">A,A+B,A+C,A+B+C</span>；</p>\n<p>对于第二组解，<span class=\"katex math inline\">A=2，B=3，C=4</span>，输入的4个数对应的值分别是<span class=\"katex math inline\">A,C,A+B,B+C</span>；</p>\n<p>对于第三组解，<span class=\"katex math inline\">A=2，B=4，C=5</span>，输入的4个数对应的值分别是<span class=\"katex math inline\">A,B,C,A+C</span>；</p>\n<p>除此之外不可能存在其它符合条件的三角形了。注意<span class=\"katex math inline\">(1,2,4)</span>不可能组成三角形。 </p>\n<p><img src=\"https://assets.boyi.local/c3b5ae1c393ab6e48643d568.png\"></p>\n</div>\n\n                    \n                </div>",
+      "text": "对于第一组解，A=2，B=2，C=3，输入的4个数对应的值分别是A,A+B,A+C,A+B+C；\n对于第二组解，A=2，B=3，C=4，输入的4个数对应的值分别是A,C,A+B,B+C；\n对于第三组解，A=2，B=4，C=5，输入的4个数对应的值分别是A,B,C,A+C；\n除此之外不可能存在其它符合条件的三角形了。注意(1,2,4)不可能组成三角形。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2022常州市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2022常州市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 4 5 7",
+      "output": "2 2 3\r\n2 3 4\r\n2 4 5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "36",
+    "通过人数": "8",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:50"
+}

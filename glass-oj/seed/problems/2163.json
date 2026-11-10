@@ -1,0 +1,61 @@
+{
+  "id": "2163",
+  "title": "中缀转后缀表达式",
+  "tags": [
+    "容器",
+    "stack"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2163",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>为了便于处理表达式，常常将普通表达式（称为中缀表示）转换为后缀{运算符在后，如 <span class=\"katex math inline\">X/Y</span> 写为 <span class=\"katex math inline\">XY/</span> 表达式。在这样的表示中可以不用括号即可确定求值的顺序，如：<span class=\"katex math inline\">(P+Q)*(R－S)</span> → <span class=\"katex math inline\">PQ+RS-*</span>。后缀表达式的处理过程如下：扫描后缀表达式，凡遇操作数则将之压进堆栈，遇运算符则从堆栈中弹出两个操作数进行该运算，将运算结果压栈，然后继续扫描，直到后缀表达式被扫描完毕为止，此时栈底元素即为该后缀表达式的值。</p>\n<p>输入一个中缀表达式，编程输出其后缀表达式，要求输出的后缀表达式的运算次序与输入的中缀表达式的运算次序相一致。为简单起见，假设输入的中缀表达式由＋（加）、－（减）、×（乘）、／（除）四个运算符号以及左右圆括号和英文字母、数字组成（如果是数字，保证数字一定是一位数），其中算术运算符遵守先乘除后加减的运算规则。假设输入的中缀表达式长度不超过 <span class=\"katex math inline\">200</span> 个字符，且都是正确的，即没有语法错误，并且凡出现括号其内部一定有表达式，即内部至少有一个运算符号。</p>\n</div>            </div>",
+      "text": "为了便于处理表达式，常常将普通表达式（称为中缀表示）转换为后缀{运算符在后，如 X/Y 写为 XY/ 表达式。在这样的表示中可以不用括号即可确定求值的顺序，如：(P+Q)*(R－S) → PQ+RS-*。后缀表达式的处理过程如下：扫描后缀表达式，凡遇操作数则将之压进堆栈，遇运算符则从堆栈中弹出两个操作数进行该运算，将运算结果压栈，然后继续扫描，直到后缀表达式被扫描完毕为止，此时栈底元素即为该后缀表达式的值。\n输入一个中缀表达式，编程输出其后缀表达式，要求输出的后缀表达式的运算次序与输入的中缀表达式的运算次序相一致。为简单起见，假设输入的中缀表达式由＋（加）、－（减）、×（乘）、／（除）四个运算符号以及左右圆括号和英文字母、数字组成（如果是数字，保证数字一定是一位数），其中算术运算符遵守先乘除后加减的运算规则。假设输入的中缀表达式长度不超过 200 个字符，且都是正确的，即没有语法错误，并且凡出现括号其内部一定有表达式，即内部至少有一个运算符号。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一行，为中缀表达式</p>\n</div>            </div>",
+      "text": "只有一行，为中缀表达式"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一行，为转换后的后缀表达式</p>\n</div>            </div>",
+      "text": "只有一行，为转换后的后缀表达式"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>X+A*(Y-B)-Z/F</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>XAYB-*+ZF/-</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2+((A+B)*2-C)*d+3                                                                 </pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2AB+2*C-d*+3+</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            X+A*(Y-B)-Z/F\n                        \n                        \n                            输出\n                            XAYB-*+ZF/-\n                        \n\n                                                    \n                                输入\n                                2+((A+B)*2-C)*d+3                                                                 \n                            \n                            \n                                输出\n                                2AB+2*C-d*+3+"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>容器 stack</p>\n</div>                </div>",
+      "text": "容器 stack"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">容器</span><span class=\"label label-warning\">stack</span></span></p>\n</div>                </div>",
+      "text": "容器stack"
+    }
+  ],
+  "samples": [
+    {
+      "input": "X+A*(Y-B)-Z/F",
+      "output": "XAYB-*+ZF/-"
+    },
+    {
+      "input": "2+((A+B)*2-C)*d+3                                                                 ",
+      "output": "2AB+2*C-d*+3+"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "710",
+    "通过人数": "367",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:14"
+}

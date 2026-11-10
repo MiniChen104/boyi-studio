@@ -1,0 +1,58 @@
+{
+  "id": "1943",
+  "title": "特殊的质数肋骨 Superprime Rib",
+  "tags": [
+    "USACO",
+    "深搜",
+    "排列组合"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1943",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>农民约翰的母牛总是产生最好的肋骨。你能通过农民约翰和美国农业部标记在每根肋骨上的数字认出它们。</p>\n<p>农民约翰确定他卖给买方的是真正的质数肋骨，是因为从右边开始切下肋骨，每次还剩下的肋骨上的数字都组成一个质数。</p>\n<p>举例来说：<span class=\"katex math inline\">7</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">1</span> 全部肋骨上的数字 <span class=\"katex math inline\">7331</span> 是质数；三根肋骨 <span class=\"katex math inline\">733</span> 是质数；二根肋骨 <span class=\"katex math inline\">73</span> 是质数；当然，最后一根肋骨 <span class=\"katex math inline\">7</span> 也是质数。<span class=\"katex math inline\">7331</span> 被叫做长度 <span class=\"katex math inline\">4</span> 的特殊质数。</p>\n<p>写一个程序对给定的肋骨的数目 <span class=\"katex math inline\">n</span> ，求出所有的特殊质数。 <span class=\"katex math inline\">1</span> 不是质数。</p>\n</div>            </div>",
+      "text": "农民约翰的母牛总是产生最好的肋骨。你能通过农民约翰和美国农业部标记在每根肋骨上的数字认出它们。\n农民约翰确定他卖给买方的是真正的质数肋骨，是因为从右边开始切下肋骨，每次还剩下的肋骨上的数字都组成一个质数。\n举例来说：7 3 3 1 全部肋骨上的数字 7331 是质数；三根肋骨 733 是质数；二根肋骨 73 是质数；当然，最后一根肋骨 7 也是质数。7331 被叫做长度 4 的特殊质数。\n写一个程序对给定的肋骨的数目 n ，求出所有的特殊质数。 1 不是质数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个正整数 <span class=\"katex math inline\">n</span> 。</p>\n<p><strong>【数据范围】</strong></p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1≤n≤8</span> 。</p>\n</div>            </div>",
+      "text": "一行一个正整数 n 。\n【数据范围】\n对于 100\\% 的数据，1≤n≤8 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按顺序输出长度为 <span class=\"katex math inline\">n</span> 的特殊质数，每行一个。</p>\n</div>            </div>",
+      "text": "按顺序输出长度为 n 的特殊质数，每行一个。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2333\r\n2339\r\n2393\r\n2399\r\n2939\r\n3119\r\n3137\r\n3733\r\n3739\r\n3793\r\n3797\r\n5939\r\n7193\r\n7331\r\n7333\r\n7393</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\n                        \n                        \n                            输出\n                            2333\r\n2339\r\n2393\r\n2399\r\n2939\r\n3119\r\n3137\r\n3733\r\n3739\r\n3793\r\n3797\r\n5939\r\n7193\r\n7331\r\n7333\r\n7393"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO 深搜</p>\n</div>                </div>",
+      "text": "USACO 深搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">USACO</span><span class=\"label label-warning\">深搜</span><span class=\"label label-info\">排列组合</span></span></p>\n</div>                </div>",
+      "text": "USACO深搜排列组合"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4",
+      "output": "2333\r\n2339\r\n2393\r\n2399\r\n2939\r\n3119\r\n3137\r\n3733\r\n3739\r\n3793\r\n3797\r\n5939\r\n7193\r\n7331\r\n7333\r\n7393"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2047",
+    "通过人数": "1288",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:20"
+}

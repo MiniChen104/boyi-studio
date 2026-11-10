@@ -1,0 +1,60 @@
+{
+  "id": "1177",
+  "title": "统计字母出现次数",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1177",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一串小写字母（以 <code>.</code> 为结束标志），统计出每个字母在该字符串中出现的次数(若某字母不出现，则不要输出，题目保证每个字母出现的次数<span class=\"katex math inline\"> \\lt 10</span>)。</p>\n</div>            </div>",
+      "text": "输入一串小写字母（以 . 为结束标志），统计出每个字母在该字符串中出现的次数(若某字母不出现，则不要输出，题目保证每个字母出现的次数 \\lt 10)。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一行，包括若干个字符。</p>\n</div>            </div>",
+      "text": "输入只有一行，包括若干个字符。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有两行，第一行为出现的小写字母，第二行为字母的出现次数。</p>\n</div>            </div>",
+      "text": "输出只有两行，第一行为出现的小写字母，第二行为字母的出现次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>abdceeef.</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>abcdef\r\n111131</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>abedcaeegg.</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>abcdeg\r\n211132</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            abdceeef.\n                        \n                        \n                            输出\n                            abcdef\r\n111131\n                        \n\n                                                    \n                                输入\n                                abedcaeegg.\n                            \n                            \n                                输出\n                                abcdeg\r\n211132"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "abdceeef.",
+      "output": "abcdef\r\n111131"
+    },
+    {
+      "input": "abedcaeegg.",
+      "output": "abcdeg\r\n211132"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "7139",
+    "通过人数": "4856",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:15:50"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "2265",
+  "title": "酒鬼",
+  "tags": [
+    "电子学会等级考试",
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2265",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Santo刚刚与房东打赌赢得了一间在New Clondike 的大客厅。今天，他来到这个大客厅欣赏他的奖品。房东摆出了一行瓶子在酒吧上。瓶子里都装有不同体积的酒。令Santo高兴的是，瓶子中的酒都有不同的味道。</p>\n<p>房东说道：“你可以喝尽可能多的酒，但是一旦打开酒盖你就必须把它喝完，喝完一瓶后把它放回原处。还有一件最重要的事，你必须从左至右依次喝，并且不能连续超过两瓶，不然会给你带来坏运气。”</p>\n<p>现在可怜的Santo站在酒吧前努力的想着，他到底应该喝哪几瓶才能使喝的酒最多呢？请帮助他找出他应该喝的酒瓶号，因为思考让他感到不安。</p>\n</div>            </div>",
+      "text": "Santo刚刚与房东打赌赢得了一间在New Clondike 的大客厅。今天，他来到这个大客厅欣赏他的奖品。房东摆出了一行瓶子在酒吧上。瓶子里都装有不同体积的酒。令Santo高兴的是，瓶子中的酒都有不同的味道。\n房东说道：“你可以喝尽可能多的酒，但是一旦打开酒盖你就必须把它喝完，喝完一瓶后把它放回原处。还有一件最重要的事，你必须从左至右依次喝，并且不能连续超过两瓶，不然会给你带来坏运气。”\n现在可怜的Santo站在酒吧前努力的想着，他到底应该喝哪几瓶才能使喝的酒最多呢？请帮助他找出他应该喝的酒瓶号，因为思考让他感到不安。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">N</span>，有 <span class=\"katex math inline\">N</span> 个酒瓶。（<span class=\"katex math inline\">N \\le 700</span>）</p>\n<p>接下有 <span class=\"katex math inline\">N</span> 行，第 <span class=\"katex math inline\">i+1</span> 行的数字代表酒瓶 <span class=\"katex math inline\">i</span> 中酒的体积。</p>\n</div>            </div>",
+      "text": "第一行一个整数 N，有 N 个酒瓶。（N \\le 700）\n接下有 N 行，第 i+1 行的数字代表酒瓶 i 中酒的体积。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数字，喝的酒的最大总体积。遵守以上规则，<strong>使得三个连续瓶子中至少一个瓶子是满的</strong>。（本题测试数据保证计算结果 <span class=\"katex math inline\">≤10^9</span>）</p>\n</div>            </div>",
+      "text": "一个数字，喝的酒的最大总体积。遵守以上规则，使得三个连续瓶子中至少一个瓶子是满的。（本题测试数据保证计算结果 ≤10^9）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n6\r\n10\r\n13\r\n9\r\n8\r\n1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>33</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n6\r\n10\r\n13\r\n9\r\n8\r\n1\n                        \n                        \n                            输出\n                            33"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会等级考试四级</p>\n</div>                </div>",
+      "text": "电子学会等级考试四级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span><span class=\"label label-warning\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n6\r\n10\r\n13\r\n9\r\n8\r\n1",
+      "output": "33"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "444",
+    "通过人数": "304",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:29"
+}

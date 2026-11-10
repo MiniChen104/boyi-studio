@@ -1,0 +1,67 @@
+{
+  "id": "3285",
+  "title": "子集统计",
+  "tags": [
+    "位运算",
+    "二进制枚举",
+    "月赛",
+    "25年8月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3285",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">N</span> 个小朋友坐成一排，他们的位置编号为 <span class=\"katex math inline\">1, \\dots , N</span>，他们的年龄分别是 <span class=\"katex math inline\">A_1,\\dots,A_n</span>。</p>\n<p>请编程计算出，如果从 <span class=\"katex math inline\">N</span> 个小朋友中挑选出 <span class=\"katex math inline\">K</span> (<span class=\"katex math inline\">1 \\le K \\le N</span>) 个小朋友，将他们的年龄进行按位或运算，能得到的最大值 <span class=\"katex math inline\">Max</span> 是多少？</p>\n<p>同时，你还需要计算出，<span class=\"katex math inline\">N</span> 个小朋友中，有多少种不同的挑选方案，可以使得该方案中挑选的小朋友们的年龄进行按位或运算，也能得到 <span class=\"katex math inline\">Max</span>。</p>\n<p>如果某方案和另一个方案挑选的是不同位置的小朋友，那么这两个方案就认为是不同的方案。</p>\n</div>            </div>",
+      "text": "N 个小朋友坐成一排，他们的位置编号为 1, \\dots , N，他们的年龄分别是 A_1,\\dots,A_n。\n请编程计算出，如果从 N 个小朋友中挑选出 K (1 \\le K \\le N) 个小朋友，将他们的年龄进行按位或运算，能得到的最大值 Max 是多少？\n同时，你还需要计算出，N 个小朋友中，有多少种不同的挑选方案，可以使得该方案中挑选的小朋友们的年龄进行按位或运算，也能得到 Max。\n如果某方案和另一个方案挑选的是不同位置的小朋友，那么这两个方案就认为是不同的方案。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行输入整数 <span class=\"katex math inline\">N</span>，代表共有 <span class=\"katex math inline\">N</span> 位小朋友。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行输入 <span class=\"katex math inline\">N</span> 个整数，代表每个小朋友的年龄。</p>\n</div>            </div>",
+      "text": "第 1 行输入整数 N，代表共有 N 位小朋友。\n第 2 行输入 N 个整数，代表每个小朋友的年龄。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">2</span> 行。</p>\n<p>第 <span class=\"katex math inline\">1</span> 行输出一个整数，代表选出若干小朋友将年龄做按位或运算的最大值 <span class=\"katex math inline\">Max</span>。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行输出一个整数，代表有多少种不同的挑选方案，可以使得该方案中挑选的小朋友们的年龄做按位或运算，也可以得到第 <span class=\"katex math inline\">1</span> 行输出的最大值。</p>\n</div>            </div>",
+      "text": "输出 2 行。\n第 1 行输出一个整数，代表选出若干小朋友将年龄做按位或运算的最大值 Max。\n第 2 行输出一个整数，代表有多少种不同的挑选方案，可以使得该方案中挑选的小朋友们的年龄做按位或运算，也可以得到第 1 行输出的最大值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n5 1 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5\r\n4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4\r\n10 10 10 10</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>10\r\n15</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n3 1 2 4 5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>7\r\n17</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n5 1 1\n                        \n                        \n                            输出\n                            5\r\n4\n                        \n\n                                                    \n                                输入\n                                4\r\n10 10 10 10\n                            \n                            \n                                输出\n                                10\r\n15\n                            \n                        \n                                                    \n                                输入\n                                5\r\n3 1 2 4 5\n                            \n                            \n                                输出\n                                7\r\n17"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<p><span class=\"katex math inline\">3</span> 个数选若干数做按位或的最大值为 <span class=\"katex math inline\">5</span>。</p>\n<p>可以选择如下方案：</p>\n<ol><li><p><span class=\"katex math inline\">3</span> 个数都选：<span class=\"katex math inline\">5|1|1=5</span>。</p>\n</li>\n<li><p>选择第 <span class=\"katex math inline\">1</span> 个数 <span class=\"katex math inline\">5</span>，结果只能为 <span class=\"katex math inline\">5</span>。</p>\n</li>\n<li><p>选择第 <span class=\"katex math inline\">1</span> 个数和第 <span class=\"katex math inline\">2</span> 个数：<span class=\"katex math inline\">5|1=5</span>。 </p>\n</li>\n<li><p>选择第 <span class=\"katex math inline\">1</span> 个数和第 <span class=\"katex math inline\">3</span> 个数：<span class=\"katex math inline\">5|1=5</span>。 </p>\n</li>\n</ol><p>共有 <span class=\"katex math inline\">4</span> 种不同的选择方案。</p>\n<h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 \\le N \\le 18</span>，<span class=\"katex math inline\">1 \\le A_i \\le 10^5</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 解释\n3 个数选若干数做按位或的最大值为 5。\n可以选择如下方案：\n3 个数都选：5|1|1=5。\n\n选择第 1 个数 5，结果只能为 5。\n\n选择第 1 个数和第 2 个数：5|1=5。 \n\n选择第 1 个数和第 3 个数：5|1=5。 \n\n共有 4 种不同的选择方案。\n数据范围\n对于 100\\% 的数据，1 \\le N \\le 18，1 \\le A_i \\le 10^5。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">位运算</span><span class=\"label label-warning\">二进制枚举</span><span class=\"label label-info\">月赛</span><span class=\"label label-danger\">25年8月</span></span></p>\n</div>                </div>",
+      "text": "位运算二进制枚举月赛25年8月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n5 1 1",
+      "output": "5\r\n4"
+    },
+    {
+      "input": "4\r\n10 10 10 10",
+      "output": "10\r\n15"
+    },
+    {
+      "input": "5\r\n3 1 2 4 5",
+      "output": "7\r\n17"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "471",
+    "通过人数": "358",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:34:39"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "4769",
+  "title": "十六进制直角三角形",
+  "tags": [
+    "蓝桥等考",
+    "进制转换"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4769",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个十六进制整数 <span class=\"katex math inline\">n</span> 和一个十进制整数 <span class=\"katex math inline\">h</span>，根据规则，输出一个十六进制直角三角形。</p>\n<ol><li><p>第一行的数为 <span class=\"katex math inline\">n</span>。</p>\n</li>\n<li><p>从第二行起，每一行都比上一行多一个数。</p>\n</li>\n<li><p>按从左往右，从上往下的顺序排列，每一个数都比上一个数大 <span class=\"katex math inline\">h</span>。</p>\n</li>\n<li><p>共输出 <span class=\"katex math inline\">h</span> 行。</p>\n</li>\n</ol><p>例如：当 <span class=\"katex math inline\">n</span> = <span class=\"katex math inline\">14</span>，<span class=\"katex math inline\">h</span> = <span class=\"katex math inline\">5</span>时，十六进制直角三角形为：</p>\n<pre><code>14\n19   1E\n23   28   2D\n32   37   3C   41\n46   4B   50   55   5A\n</code></pre>\n<p>第 <span class=\"katex math inline\">1</span> 行的数是十六进制数 <span class=\"katex math inline\">14</span>。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行第 <span class=\"katex math inline\">1</span> 个数是十六进制数 <span class=\"katex math inline\">19</span>，比十六进制数 <span class=\"katex math inline\">14</span> 大 <span class=\"katex math inline\">5</span>。第 <span class=\"katex math inline\">2</span> 个数是十六进制数 <span class=\"katex math inline\">1E</span>，比十六进制数 <span class=\"katex math inline\">19</span> 大 <span class=\"katex math inline\">5</span>。</p>\n<p>第 <span class=\"katex math inline\">3</span> 行第 <span class=\"katex math inline\">1</span> 个数是十六进制数 <span class=\"katex math inline\">23</span>，比十六进制数 <span class=\"katex math inline\">1E</span> 大 <span class=\"katex math inline\">5</span>；……以此类推。</p>\n</div>            </div>",
+      "text": "输入一个十六进制整数 n 和一个十进制整数 h，根据规则，输出一个十六进制直角三角形。\n第一行的数为 n。\n\n从第二行起，每一行都比上一行多一个数。\n\n按从左往右，从上往下的顺序排列，每一个数都比上一个数大 h。\n\n共输出 h 行。\n\n例如：当 n = 14，h = 5时，十六进制直角三角形为：\n14\n19   1E\n23   28   2D\n32   37   3C   41\n46   4B   50   55   5A\n\n第 1 行的数是十六进制数 14。\n第 2 行第 1 个数是十六进制数 19，比十六进制数 14 大 5。第 2 个数是十六进制数 1E，比十六进制数 19 大 5。\n第 3 行第 1 个数是十六进制数 23，比十六进制数 1E 大 5；……以此类推。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含两个整数：第一个是一个十六进制整数 <span class=\"katex math inline\">n</span>，表示直角三角形的第一行数字；第二个是一个十进制整数 <span class=\"katex math inline\">h</span>，表示每一后续数字相较于前一个数字增加的值（以十进制表示），也表示输出的行数。这两个数字由空格分隔。</p>\n</div>            </div>",
+      "text": "输入包含两个整数：第一个是一个十六进制整数 n，表示直角三角形的第一行数字；第二个是一个十进制整数 h，表示每一后续数字相较于前一个数字增加的值（以十进制表示），也表示输出的行数。这两个数字由空格分隔。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>根据给定规则，输出一个 <span class=\"katex math inline\">h</span> 行由十六进制数组成的直角三角形。</p>\n<p>每行的<strong>数字之间用两个空格分隔</strong>。第一行仅包含初始的十六进制数 <span class=\"katex math inline\">n</span>。（<span class=\"katex math inline\">n \\le FF</span>）</p>\n<p>从第二行起，每一行都比上一行多一个数，并且每个数都比它左上方的数大 <span class=\"katex math inline\">h</span>（十进制）。（<span class=\"katex math inline\">h \\le 20</span>）</p>\n<p>所有十六进制数使用大写字母表示。</p>\n</div>            </div>",
+      "text": "根据给定规则，输出一个 h 行由十六进制数组成的直角三角形。\n每行的数字之间用两个空格分隔。第一行仅包含初始的十六进制数 n。（n \\le FF）\n从第二行起，每一行都比上一行多一个数，并且每个数都比它左上方的数大 h（十进制）。（h \\le 20）\n所有十六进制数使用大写字母表示。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>14 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>14\r\n19  1E\r\n23  28  2D\r\n32  37  3C  41\r\n46  4B  50  55  5A</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3C 8</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3C\r\n44  4C\r\n54  5C  64\r\n6C  74  7C  84\r\n8C  94  9C  A4  AC\r\nB4  BC  C4  CC  D4  DC\r\nE4  EC  F4  FC  104  10C  114\r\n11C  124  12C  134  13C  144  14C  154</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1F 10</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1F\r\n29  33\r\n3D  47  51\r\n5B  65  6F  79\r\n83  8D  97  A1  AB\r\nB5  BF  C9  D3  DD  E7\r\nF1  FB  105  10F  119  123  12D\r\n137  141  14B  155  15F  169  173  17D\r\n187  191  19B  1A5  1AF  1B9  1C3  1CD  1D7\r\n1E1  1EB  1F5  1FF  209  213  21D  227  231  23B</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            14 5\n                        \n                        \n                            输出\n                            14\r\n19  1E\r\n23  28  2D\r\n32  37  3C  41\r\n46  4B  50  55  5A\n                        \n\n                                                    \n                                输入\n                                3C 8\n                            \n                            \n                                输出\n                                3C\r\n44  4C\r\n54  5C  64\r\n6C  74  7C  84\r\n8C  94  9C  A4  AC\r\nB4  BC  C4  CC  D4  DC\r\nE4  EC  F4  FC  104  10C  114\r\n11C  124  12C  134  13C  144  14C  154\n                            \n                        \n                                                    \n                                输入\n                                1F 10\n                            \n                            \n                                输出\n                                1F\r\n29  33\r\n3D  47  51\r\n5B  65  6F  79\r\n83  8D  97  A1  AB\r\nB5  BF  C9  D3  DD  E7\r\nF1  FB  105  10F  119  123  12D\r\n137  141  14B  155  15F  169  173  17D\r\n187  191  19B  1A5  1AF  1B9  1C3  1CD  1D7\r\n1E1  1EB  1F5  1FF  209  213  21D  227  231  23B"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">进制转换</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考进制转换"
+    }
+  ],
+  "samples": [
+    {
+      "input": "14 5",
+      "output": "14\r\n19  1E\r\n23  28  2D\r\n32  37  3C  41\r\n46  4B  50  55  5A"
+    },
+    {
+      "input": "3C 8",
+      "output": "3C\r\n44  4C\r\n54  5C  64\r\n6C  74  7C  84\r\n8C  94  9C  A4  AC\r\nB4  BC  C4  CC  D4  DC\r\nE4  EC  F4  FC  104  10C  114\r\n11C  124  12C  134  13C  144  14C  154"
+    },
+    {
+      "input": "1F 10",
+      "output": "1F\r\n29  33\r\n3D  47  51\r\n5B  65  6F  79\r\n83  8D  97  A1  AB\r\nB5  BF  C9  D3  DD  E7\r\nF1  FB  105  10F  119  123  12D\r\n137  141  14B  155  15F  169  173  17D\r\n187  191  19B  1A5  1AF  1B9  1C3  1CD  1D7\r\n1E1  1EB  1F5  1FF  209  213  21D  227  231  23B"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "46",
+    "通过人数": "26",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:15"
+}

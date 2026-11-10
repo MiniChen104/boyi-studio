@@ -1,0 +1,65 @@
+{
+  "id": "1532",
+  "title": "小X与神牛",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1532",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>神牛都长着 <span class=\"katex math inline\">B</span> 只角，<span class=\"katex math inline\">B</span> 只角从左到右在头顶上排成一排。每只角上都标着数字，不是 <span class=\"katex math inline\">0</span> 就是 <span class=\"katex math inline\">1</span>。小X将每头神牛的 <span class=\"katex math inline\">B</span> 只角上的数字从左到右依次取出，组成一个只含 <span class=\"katex math inline\">0</span> 或 <span class=\"katex math inline\">1</span> 的 <span class=\"katex math inline\">B</span> 位二进制数。小X将这个二进制数转化为十进制，用这个十进制数来代表一头神牛，这个十进制就是这头神牛的编号。</p>\n<p>神牛们之间的关系是很微妙的，如果两头神牛的第 <span class=\"katex math inline\">i</span> 只角上的数字不同，则称这两头神牛的第 <span class=\"katex math inline\">i</span> 只角是不一样的。如果两头神牛不同的角的数目大于等于 <span class=\"katex math inline\">D</span> ，则称这两头神牛是友好的。比如当<span class=\"katex math inline\">B=8</span>，<span class=\"katex math inline\">D=2</span>时，</p>\n<pre><code>01010100\n00110100\n xx\n</code></pre>\n<p>这两头神牛的第 <span class=\"katex math inline\">2</span> 和第 <span class=\"katex math inline\">3</span> 只角不同(<span class=\"katex math inline\">x</span> 指向的位置)，不同的角的数目为 <span class=\"katex math inline\">2</span> ，所以这两头神牛是友好的。</p>\n<p>现在小X向你求助：请找出 <span class=\"katex math inline\">N</span> 头神牛，使得任意两头神牛都是友好的，并将这 <span class=\"katex math inline\">N</span> 头神牛的编号按从小到大排序后依次输出。如果有多种符合条件的解，那么排在越前面的牛的编号越小越好。</p>\n</div>            </div>",
+      "text": "神牛都长着 B 只角，B 只角从左到右在头顶上排成一排。每只角上都标着数字，不是 0 就是 1。小X将每头神牛的 B 只角上的数字从左到右依次取出，组成一个只含 0 或 1 的 B 位二进制数。小X将这个二进制数转化为十进制，用这个十进制数来代表一头神牛，这个十进制就是这头神牛的编号。\n神牛们之间的关系是很微妙的，如果两头神牛的第 i 只角上的数字不同，则称这两头神牛的第 i 只角是不一样的。如果两头神牛不同的角的数目大于等于 D ，则称这两头神牛是友好的。比如当B=8，D=2时，\n01010100\n00110100\n xx\n\n这两头神牛的第 2 和第 3 只角不同(x 指向的位置)，不同的角的数目为 2 ，所以这两头神牛是友好的。\n现在小X向你求助：请找出 N 头神牛，使得任意两头神牛都是友好的，并将这 N 头神牛的编号按从小到大排序后依次输出。如果有多种符合条件的解，那么排在越前面的牛的编号越小越好。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入仅有一行包含 <span class=\"katex math inline\">3</span> 个用空格隔开的正整数，分别表示 <span class=\"katex math inline\">N, B, D</span>。</p>\n</div>            </div>",
+      "text": "输入仅有一行包含 3 个用空格隔开的正整数，分别表示 N, B, D。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出仅有一行包含 <span class=\"katex math inline\">N</span> 个非负整数，相邻两个数之间用一个空格隔开，表示 <span class=\"katex math inline\">N</span> 头神牛的编号。</p>\n<p>如果有多解，你的程序要输出这样的解：越前面的牛的编号越小越好。</p>\n</div>            </div>",
+      "text": "输出仅有一行包含 N 个非负整数，相邻两个数之间用一个空格隔开，表示 N 头神牛的编号。\n如果有多解，你的程序要输出这样的解：越前面的牛的编号越小越好。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 5 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0 7 25</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>16 7 3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0 7 25 30 42 45 51 52 75 76 82 85 97 102 120 127</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 5 3\n                        \n                        \n                            输出\n                            0 7 25\n                        \n\n                                                    \n                                输入\n                                16 7 3\n                            \n                            \n                                输出\n                                0 7 25 30 42 45 51 52 75 76 82 85 97 102 120 127"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>样例解释</strong></p>\n<p>每头神牛都长着 <span class=\"katex math inline\">7</span> 只角，若两头神牛不同的角的数目大于等于 <span class=\"katex math inline\">3</span>，则这两头神牛是友好的。现在要找出 <span class=\"katex math inline\">16</span> 头相互都友好的神牛。</p>\n<p>答案是：0000000, 0000111, 0011001, 0011110, 0101010, 0101101, 0110011, 0110100, 1001011, 1001100, 1010010, 1010101, 1100001, 1100110, 1111000, 1111111，转化为十进制就是0 7 25 30 42 45 51 52 75 76 82 85 97 102 120 127；</p>\n<p><strong>数据规模</strong></p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">1≤D≤B≤8，1≤N≤3</span>；</p>\n<p>对于另外 <span class=\"katex math inline\">10\\%</span> 的数据，<span class=\"katex math inline\">D=1</span>；</p>\n<p>对于另外 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">D=2</span>；</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1≤D≤B≤8</span>， <span class=\"katex math inline\">1≤N≤16</span>；</p>\n<p>数据保证有解。</p>\n<p><strong>来源</strong></p>\n<p>常州市2017“信息与未来”夏令营选拔赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n每头神牛都长着 7 只角，若两头神牛不同的角的数目大于等于 3，则这两头神牛是友好的。现在要找出 16 头相互都友好的神牛。\n答案是：0000000, 0000111, 0011001, 0011110, 0101010, 0101101, 0110011, 0110100, 1001011, 1001100, 1010010, 1010101, 1100001, 1100110, 1111000, 1111111，转化为十进制就是0 7 25 30 42 45 51 52 75 76 82 85 97 102 120 127；\n数据规模\n对于 30\\% 的数据，1≤D≤B≤8，1≤N≤3；\n对于另外 10\\% 的数据，D=1；\n对于另外 30\\% 的数据，D=2；\n对于 100\\% 的数据，1≤D≤B≤8， 1≤N≤16；\n数据保证有解。\n来源\n常州市2017“信息与未来”夏令营选拔赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 5 3",
+      "output": "0 7 25"
+    },
+    {
+      "input": "16 7 3",
+      "output": "0 7 25 30 42 45 51 52 75 76 82 85 97 102 120 127"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1804",
+    "通过人数": "1169",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:20:44"
+}

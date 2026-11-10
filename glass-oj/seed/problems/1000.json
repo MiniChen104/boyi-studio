@@ -1,0 +1,61 @@
+{
+  "id": "1000",
+  "title": "熟悉一下Online Judge的环境",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1000",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请不要笑。用来适应环境的题目，自然比较简单些。 </p>\n<p>计算 <span class=\"katex math inline\">2</span> 个整数的和,这两个整数都在 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">100</span> 之间。</p>\n</div>            </div>",
+      "text": "请不要笑。用来适应环境的题目，自然比较简单些。 \n计算 2 个整数的和,这两个整数都在 1 到 100 之间。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一行，包括 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">a</span> , <span class=\"katex math inline\">b</span> ，之间用一个空格分开。</p>\n</div>            </div>",
+      "text": "输入只有一行，包括 2 个整数 a , b ，之间用一个空格分开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，包括 <span class=\"katex math inline\">1</span> 个整数。</p>\n</div>            </div>",
+      "text": "输出只有一行，包括 1 个整数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 2\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>使用OJ做题注意事项：</strong></p>\n<ol><li><p>请不要有任何多余的输入、输出。</p>\n</li>\n<li><p>输出格式、顺序要和题目要求完全一致，如果要输出英文，输出的英文的大小写也需要和题目要求完全一致。</p>\n</li>\n<li><p>特别注意：<strong>样例正确，提交后题库不一定会判正确</strong>，因为样例只是举例子，题库每个题目在实际提交测试时，会有多组数据进行测试。</p>\n</li>\n</ol><p>此处提供多种语言提交的样例代码，供大家参考：</p>\n<p><strong>C++版：</strong></p>\n<pre><code>#include &lt;bits/stdc++.h&gt;\nusing namespace std;\nint main() {\n    //定义两个变量\n    int a,b;\n    cin&gt;&gt;a&gt;&gt;b;\n    //计算它们的和，并输出\n    cout&lt;&lt;a+b;\n    return 0;\n}\n</code></pre>\n<p><strong>C语言版：</strong></p>\n<pre><code>#include &lt;stdio.h&gt;\nint main() {\n\tint a,b;\n\tint c;\n\tscanf(&quot;%d%d&quot;,&amp;a,&amp;b);\n\tc=a+b;\n\tprintf(“%d”,c);\n\treturn 0;\n}\n</code></pre>\n<p><strong>Python版：</strong></p>\n<pre><code>a,b=map(int,input().split())\nc=a+b\nprint(c)\n</code></pre>\n<p><strong>Java版：</strong></p>\n<p>注意：Java的类名只能叫Main，才能被判题机识别。</p>\n<pre><code>import java.util.Scanner;\n\npublic class Main {\n\t\tpublic static void main(String[] args) {\n\t\t\tScanner scanner = new Scanner(System.in);\n\t\t\tint num1 = scanner.nextInt();\n\t\t\tint num2 = scanner.nextInt();\n\t\t\tSystem.out.println(num1 + num2);\n\t\t}\n}\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "使用OJ做题注意事项：\n请不要有任何多余的输入、输出。\n\n输出格式、顺序要和题目要求完全一致，如果要输出英文，输出的英文的大小写也需要和题目要求完全一致。\n\n特别注意：样例正确，提交后题库不一定会判正确，因为样例只是举例子，题库每个题目在实际提交测试时，会有多组数据进行测试。\n\n此处提供多种语言提交的样例代码，供大家参考：\nC++版：\n#include <bits/stdc++.h>\nusing namespace std;\nint main() {\n    //定义两个变量\n    int a,b;\n    cin>>a>>b;\n    //计算它们的和，并输出\n    cout<<a+b;\n    return 0;\n}\n\nC语言版：\n#include <stdio.h>\nint main() {\n\tint a,b;\n\tint c;\n\tscanf(\"%d%d\",&a,&b);\n\tc=a+b;\n\tprintf(“%d”,c);\n\treturn 0;\n}\n\nPython版：\na,b=map(int,input().split())\nc=a+b\nprint(c)\n\nJava版：\n注意：Java的类名只能叫Main，才能被判题机识别。\nimport java.util.Scanner;\n\npublic class Main {\n\t\tpublic static void main(String[] args) {\n\t\t\tScanner scanner = new Scanner(System.in);\n\t\t\tint num1 = scanner.nextInt();\n\t\t\tint num2 = scanner.nextInt();\n\t\t\tSystem.out.println(num1 + num2);\n\t\t}\n}"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 2",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "175043",
+    "通过人数": "107490",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:13:17"
+}

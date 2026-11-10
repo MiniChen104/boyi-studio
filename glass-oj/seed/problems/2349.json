@@ -1,0 +1,62 @@
+{
+  "id": "2349",
+  "title": "打印 STEM86",
+  "tags": [
+    "蓝桥杯等级考试",
+    "输出"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2349",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>【具体要求】  </p>\n<p>设计一个程序，输出如下样例中“STEM86”图形。</p>\n<p><img src=\"https://assets.boyi.local/8b1ae676140953350f18ed3f.png\"></p>\n</div>            </div>",
+      "text": "【具体要求】  \n设计一个程序，输出如下样例中“STEM86”图形。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无 </p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>直接在终端输出“STEM86”图形，每个大字符之间有空格隔开。 </p>\n</div>            </div>",
+      "text": "直接在终端输出“STEM86”图形，每个大字符之间有空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>无 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre></pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            无 \n                        \n                        \n                            输出"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><pre><code>蓝桥等考 C++组单选题样题（九级） \n以下程序片段打印出的图形是选项（ ）。\nfor(int i = 1; i &lt; 5; i++)\n{ \nfor(int j = 1; j &lt; 5-i; j++) \n{ \ncout &lt;&lt; &quot; &quot;; \n} \nfor(int j = 0; j &lt; 2 * i - 1; j++) \n{ \ncout &lt;&lt; &quot;*&quot;; \n} \ncout &lt;&lt; endl; \n} \nA 三角形\nB 正方形\nC 长方形\nD 菱形\n【答案】A \n【解析】for 循环嵌套，外层循环控制行数，总共五行，里面第一个 for 循环控制每一行输出的空格数，第二个 for 循环控制每一行输出的“*”数目，最终图形是一个五行的等腰三角形。\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "蓝桥等考 C++组单选题样题（九级） \n以下程序片段打印出的图形是选项（ ）。\nfor(int i = 1; i < 5; i++)\n{ \nfor(int j = 1; j < 5-i; j++) \n{ \ncout << \" \"; \n} \nfor(int j = 0; j < 2 * i - 1; j++) \n{ \ncout << \"*\"; \n} \ncout << endl; \n} \nA 三角形\nB 正方形\nC 长方形\nD 菱形\n【答案】A \n【解析】for 循环嵌套，外层循环控制行数，总共五行，里面第一个 for 循环控制每一行输出的空格数，第二个 for 循环控制每一行输出的“*”数目，最终图形是一个五行的等腰三角形。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥等考 C++组编程题样题（九级）</p>\n</div>                </div>",
+      "text": "蓝桥等考 C++组编程题样题（九级）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯等级考试</span><span class=\"label label-warning\">输出</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯等级考试输出"
+    }
+  ],
+  "samples": [
+    {
+      "input": "无 ",
+      "output": ""
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1456",
+    "通过人数": "825",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:20"
+}

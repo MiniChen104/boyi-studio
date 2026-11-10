@@ -1,0 +1,62 @@
+{
+  "id": "1826",
+  "title": "水下探测器：deep.cpp",
+  "tags": [
+    "蓝桥杯",
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1826",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><strong>原理：</strong></p>\n<p>水下探测器可以潜入湖中在任意水深进行科学探索。\n湖水的最大深度为 <span class=\"katex math inline\">h</span> 米,即它在湖底时到水面的距离，<span class=\"katex math inline\">0 \\le h \\le 100</span>；</p>\n<p>探测器最初的水下深度为 <span class=\"katex math inline\">s</span> 米，<span class=\"katex math inline\">0 \\le s \\le 100</span>；</p>\n<p>当探测器不在水面（当前深度大于 <span class=\"katex math inline\">0</span>）时，每个 <span class=\"katex math inline\">u</span> 指令可使它上浮 <span class=\"katex math inline\">1</span> 米，而当探测器在水面时，<span class=\"katex math inline\">u</span> 指令是无效的；</p>\n<p>当探测器不在湖底（当前深度小于 <span class=\"katex math inline\">h</span>）时，每个 <span class=\"katex math inline\">d</span> 指令可使它下沉 <span class=\"katex math inline\">1</span> 米，而当探测器在湖底时，<span class=\"katex math inline\">d</span> 指令是无效的；</p>\n<p>在执行到无效指令时，探测器不做任何操作而继续执行下一指令。</p>\n<p><strong>编程实现：</strong></p>\n<p>根据给定的 <span class=\"katex math inline\">h、s</span> 和一个指令序列（由字符 <span class=\"katex math inline\">u、d</span> 组成的字符串，长度不超过 <span class=\"katex math inline\">100</span>），求出执行完整的指令序列后，探测器的水下深度。</p>\n</div>            </div>",
+      "text": "原理：\n水下探测器可以潜入湖中在任意水深进行科学探索。\n湖水的最大深度为 h 米,即它在湖底时到水面的距离，0 \\le h \\le 100；\n探测器最初的水下深度为 s 米，0 \\le s \\le 100；\n当探测器不在水面（当前深度大于 0）时，每个 u 指令可使它上浮 1 米，而当探测器在水面时，u 指令是无效的；\n当探测器不在湖底（当前深度小于 h）时，每个 d 指令可使它下沉 1 米，而当探测器在湖底时，d 指令是无效的；\n在执行到无效指令时，探测器不做任何操作而继续执行下一指令。\n编程实现：\n根据给定的 h、s 和一个指令序列（由字符 u、d 组成的字符串，长度不超过 100），求出执行完整的指令序列后，探测器的水下深度。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：<span class=\"katex math inline\">h</span> 和 <span class=\"katex math inline\">s</span>，以空格分开。<span class=\"katex math inline\">0 \\le s \\le h \\le 100</span>。</p>\n<p>第二行：长度不超过 <span class=\"katex math inline\">100</span> 的指令字符串，串中仅包含字母 <span class=\"katex math inline\">u</span> 或 <span class=\"katex math inline\">d</span>。</p>\n</div>            </div>",
+      "text": "第一行：h 和 s，以空格分开。0 \\le s \\le h \\le 100。\n第二行：长度不超过 100 的指令字符串，串中仅包含字母 u 或 d。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>代表探测器在执行指令后的水下深度的数字。</p>\n</div>            </div>",
+      "text": "代表探测器在执行指令后的水下深度的数字。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>9 1\r\nuduudd</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            9 1\r\nuduudd\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\">【来源】\n<p>第十届蓝桥杯大赛青少年编程C++组省赛第 <span class=\"katex math inline\">1</span> 题。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】\n第十届蓝桥杯大赛青少年编程C++组省赛第 1 题。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 字符串</p>\n</div>                </div>",
+      "text": "蓝桥杯 字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "9 1\r\nuduudd",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1871",
+    "通过人数": "1269",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:24:43"
+}

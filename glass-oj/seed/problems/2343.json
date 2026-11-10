@@ -1,0 +1,62 @@
+{
+  "id": "2343",
+  "title": "闰年判断",
+  "tags": [
+    "蓝桥杯等级考试",
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2343",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>【具体要求】 \n关于闰年的判断我们可能比较熟悉的是四年一闰。闰年详细的描述分为<br>\n普通闰年和世纪闰年，普通闰年能被 <span class=\"katex math inline\">4</span> 整除，但不能被 <span class=\"katex math inline\">100</span> 整除，世纪闰年 能被 <span class=\"katex math inline\">400</span> 整除。<br>\n现在要求输入三个年份，分别输出对应的判断结果，如果是普通闰年则 输出 <code>Leap_year_1</code> ，如果是世纪闰年则输出 <code>Leap_year_2</code> ，如果既不是世纪闰年，也不是普通闰年则输出 <code>Nonleap_year</code> 。  </p>\n</div>            </div>",
+      "text": "【具体要求】 \n关于闰年的判断我们可能比较熟悉的是四年一闰。闰年详细的描述分为\n普通闰年和世纪闰年，普通闰年能被 4 整除，但不能被 100 整除，世纪闰年 能被 400 整除。\n现在要求输入三个年份，分别输出对应的判断结果，如果是普通闰年则 输出 Leap_year_1 ，如果是世纪闰年则输出 Leap_year_2 ，如果既不是世纪闰年，也不是普通闰年则输出 Nonleap_year 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入共三行，分别为三个正整数表示年份。</p>\n</div>            </div>",
+      "text": "输入共三行，分别为三个正整数表示年份。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共三行，分别按顺序输出年份的对应判断结果，注意单词中间下划线的输出。 </p>\n</div>            </div>",
+      "text": "输出共三行，分别按顺序输出年份的对应判断结果，注意单词中间下划线的输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2004\r\n2000 \r\n2003 \r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Leap_year_1 \r\nLeap_year_2 \r\nNonleap_year \r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2004\r\n2000 \r\n2003 \r\n\n                        \n                        \n                            输出\n                            Leap_year_1 \r\nLeap_year_2 \r\nNonleap_year"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。</p>\n<pre><code> 蓝桥等考 C++组单选题样题（四级） \n关于以下程序片段的描述有误的一项是（ ）。\nint a = 10; \ndouble b = 3.24; \nif(a &gt; b) \n\tcout &lt;&lt; b &lt;&lt; &quot; &quot; &lt;&lt; a; \nelse \n\tcout &lt;&lt; a &lt;&lt; &quot; &quot; &lt;&lt; b; \nA 程序会将 a、b 按照从小到大输出\nB 变量 a、b 输出不同类型，不可进行比较\nC if-else 结构后面的执行语句只有一行，所以可以省略大括号\nD if 语句的条件成立会执行 if 语句内的语句，否则执行 else 内的语句\n【答案】 B \n【解析】整型变量 a 和双精度浮点型 b 可以进行比较判断。\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。\n 蓝桥等考 C++组单选题样题（四级） \n关于以下程序片段的描述有误的一项是（ ）。\nint a = 10; \ndouble b = 3.24; \nif(a > b) \n\tcout << b << \" \" << a; \nelse \n\tcout << a << \" \" << b; \nA 程序会将 a、b 按照从小到大输出\nB 变量 a、b 输出不同类型，不可进行比较\nC if-else 结构后面的执行语句只有一行，所以可以省略大括号\nD if 语句的条件成立会执行 if 语句内的语句，否则执行 else 内的语句\n【答案】 B \n【解析】整型变量 a 和双精度浮点型 b 可以进行比较判断。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥等考 C++组编程题样题（四级）</p>\n</div>                </div>",
+      "text": "蓝桥等考 C++组编程题样题（四级）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯等级考试</span><span class=\"label label-warning\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯等级考试分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2004\r\n2000 \r\n2003 \r\n",
+      "output": "Leap_year_1 \r\nLeap_year_2 \r\nNonleap_year \r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "3620",
+    "通过人数": "1737",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:16"
+}

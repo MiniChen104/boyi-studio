@@ -1,0 +1,67 @@
+{
+  "id": "5862",
+  "title": "文档入口",
+  "tags": [
+    "月赛",
+    "树形DP",
+    "换根DP",
+    "25年11月"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/5862",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在某大型企业的内部资料库中，所有文件被分门别类地存放在若干层文件夹中。整个资料库有一个<strong>根目录（root）</strong>，从该目录包含若干子文件夹与文件。每个文件夹下又可以继续包含文件或其他文件夹，从而形成一棵树形的层级结构。</p>\n<p>例如：</p>\n<pre><code>root/\n  folder1/\n    file1\n    folder2/\n      file2\n  folder3/\n    file3\n  file4\n</code></pre>\n<p>该文件结构表示：</p>\n<ul><li>在根目录 <code>root</code> 下有 <code>folder1</code>、<code>folder3</code> 两个文件夹，以及一个 <code>file4</code> 文件。</li>\n<li>在 <code>folder1</code> 文件夹中有一个 <code>file1</code> 文件，以及 <code>folder2</code> 文件夹，<code>folder2</code> 文件夹中有一个 <code>file2</code> 文件。</li>\n<li>在 <code>folder3</code> 文件夹中有一个 <code>file3</code> 文件。</li>\n</ul><p>当你位于某个文件夹中时，你可以通过<strong>相对路径</strong>，来访问到任何你想要访问的文件。</p>\n<p>从一个文件夹到某个文件的<strong>相对路径</strong>是：从当前文件夹出发，使用 <code>../</code> 表示返回上一级文件夹，用 <code>/</code> 连接子文件夹，直到到达目标文件。</p>\n<p><strong>相对路径长度</strong>指的是：路径中所有字符的总数（包括斜杠 <code>/</code> 与点号 <code>.</code>）。</p>\n<p>比如，假设你位于 <code>root</code> 文件夹：</p>\n<ul><li>访问 <code>file1</code>，相对路径为：<code>folder1/file1</code>，相对路径长度为 <span class=\"katex math inline\">13</span>。</li>\n<li>访问 <code>file2</code>，相对路径为：<code>folder1/folder2/file2</code>，相对路径长度为 <span class=\"katex math inline\">21</span>。</li>\n<li>访问 <code>file3</code>，相对路径为：<code>folder3/file3</code>，相对路径长度为 <span class=\"katex math inline\">13</span>。</li>\n<li>访问 <code>file4</code>，相对路径为：<code>file4</code>，相对路径长度为 <span class=\"katex math inline\">5</span>。</li>\n</ul><p>再比如，假设你位于 <code>folder1</code> 文件夹：</p>\n<ul><li>访问 <code>file1</code>，相对路径为：<code>file1</code>，相对路径长度为 <span class=\"katex math inline\">5</span>。</li>\n<li>访问 <code>file2</code>，相对路径为：<code>folder2/file2</code>，相对路径长度为 <span class=\"katex math inline\">13</span>。</li>\n<li>访问 <code>file3</code>，相对路径为：<code>../folder3/file3</code>（注意这里需要先从 <code>folder1</code> 文件夹中通过 <code>../</code> 返回 <code>root</code>，才能访问到 <code>folder3</code>），相对路径长度为 <span class=\"katex math inline\">16</span>。</li>\n<li>访问 <code>file4</code>，相对路径为：<code>../file4</code>，相对路径长度为 <span class=\"katex math inline\">8</span>。</li>\n</ul><p>企业希望设置一个<strong>默认打开位置</strong>（即选择一个文件夹作为入口），使得从这个文件夹出发，访问所有<strong>文件</strong>所需的<strong>相对路径长度总和</strong>最小。</p>\n</div>            </div>",
+      "text": "在某大型企业的内部资料库中，所有文件被分门别类地存放在若干层文件夹中。整个资料库有一个根目录（root），从该目录包含若干子文件夹与文件。每个文件夹下又可以继续包含文件或其他文件夹，从而形成一棵树形的层级结构。\n例如：\nroot/\n  folder1/\n    file1\n    folder2/\n      file2\n  folder3/\n    file3\n  file4\n\n该文件结构表示：\n在根目录 root 下有 folder1、folder3 两个文件夹，以及一个 file4 文件。\n在 folder1 文件夹中有一个 file1 文件，以及 folder2 文件夹，folder2 文件夹中有一个 file2 文件。\n在 folder3 文件夹中有一个 file3 文件。\n当你位于某个文件夹中时，你可以通过相对路径，来访问到任何你想要访问的文件。\n从一个文件夹到某个文件的相对路径是：从当前文件夹出发，使用 ../ 表示返回上一级文件夹，用 / 连接子文件夹，直到到达目标文件。\n相对路径长度指的是：路径中所有字符的总数（包括斜杠 / 与点号 .）。\n比如，假设你位于 root 文件夹：\n访问 file1，相对路径为：folder1/file1，相对路径长度为 13。\n访问 file2，相对路径为：folder1/folder2/file2，相对路径长度为 21。\n访问 file3，相对路径为：folder3/file3，相对路径长度为 13。\n访问 file4，相对路径为：file4，相对路径长度为 5。\n再比如，假设你位于 folder1 文件夹：\n访问 file1，相对路径为：file1，相对路径长度为 5。\n访问 file2，相对路径为：folder2/file2，相对路径长度为 13。\n访问 file3，相对路径为：../folder3/file3（注意这里需要先从 folder1 文件夹中通过 ../ 返回 root，才能访问到 folder3），相对路径长度为 16。\n访问 file4，相对路径为：../file4，相对路径长度为 8。\n企业希望设置一个默认打开位置（即选择一个文件夹作为入口），使得从这个文件夹出发，访问所有文件所需的相对路径长度总和最小。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入一个整数 <span class=\"katex math inline\">N</span>，表示所有文件和文件夹的总数。</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行描述各个文件或文件夹的信息。</p>\n<p>每一行的格式为：</p>\n<pre><code>name m id1 id2 ... idm\n</code></pre>\n<p>其中：</p>\n<ul><li><code>name</code> 表示文件或文件夹的名称，仅由<strong>小写字母和数字</strong>组成。</li>\n<li>如果 <span class=\"katex math inline\">m = 0</span>，表示这是一个文件。</li>\n<li>如果 <span class=\"katex math inline\">m &gt; 0</span>，表示这是一个文件夹，其中包含 <span class=\"katex math inline\">m</span> 个子项（这些子项的编号依次为 <code>id1, id2, ..., idm</code>）。</li>\n</ul><p>文件/文件夹的编号从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">N</span>，其中 <strong>1 号一定是根目录</strong>（即 <code>root</code>）。</p>\n</div>            </div>",
+      "text": "第一行输入一个整数 N，表示所有文件和文件夹的总数。\n接下来 N 行描述各个文件或文件夹的信息。\n每一行的格式为：\nname m id1 id2 ... idm\n\n其中：\nname 表示文件或文件夹的名称，仅由小写字母和数字组成。\n如果 m = 0，表示这是一个文件。\n如果 m > 0，表示这是一个文件夹，其中包含 m 个子项（这些子项的编号依次为 id1, id2, ..., idm）。\n文件/文件夹的编号从 1 到 N，其中 1 号一定是根目录（即 root）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示<strong>最小</strong>的相对路径长度总和。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示最小的相对路径长度总和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\nroot 3 2 6 8\r\nfolder1 2 3 4\r\nfile1 0\r\nfolder2 1 5\r\nfile2 0\r\nfolder3 1 7\r\nfile3 0\r\nfile4 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>42</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>12\r\nroot 5 2 6 8 9 12\r\nfolder1 2 3 4\r\nfile1 0\r\nfolder2 2 5 11\r\nfile2 0\r\nfolder3 2 7 10\r\nfile3 0\r\nfile4 0\r\nfile5 0\r\nfile6 0\r\nfile7 0\r\nfile8 0</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>87</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>20\r\nroot 7 2 6 8 9 12 16 19\r\nfolder1 3 3 4 13\r\nfile1 0\r\nfolder2 3 5 11 18\r\nfile2 0\r\nfolder3 4 7 10 15 20\r\nfile3 0\r\nfile4 0\r\nfile5 0\r\nfile6 0\r\nfile7 0\r\nfile8 0\r\nfolder4 2 14 17\r\nfile9 0\r\nfile10 0\r\nfile11 0\r\nfile12 0\r\nfile13 0\r\nfile14 0\r\nfile15 0</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>180</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\nroot 3 2 6 8\r\nfolder1 2 3 4\r\nfile1 0\r\nfolder2 1 5\r\nfile2 0\r\nfolder3 1 7\r\nfile3 0\r\nfile4 0\n                        \n                        \n                            输出\n                            42\n                        \n\n                                                    \n                                输入\n                                12\r\nroot 5 2 6 8 9 12\r\nfolder1 2 3 4\r\nfile1 0\r\nfolder2 2 5 11\r\nfile2 0\r\nfolder3 2 7 10\r\nfile3 0\r\nfile4 0\r\nfile5 0\r\nfile6 0\r\nfile7 0\r\nfile8 0\n                            \n                            \n                                输出\n                                87\n                            \n                        \n                                                    \n                                输入\n                                20\r\nroot 7 2 6 8 9 12 16 19\r\nfolder1 3 3 4 13\r\nfile1 0\r\nfolder2 3 5 11 18\r\nfile2 0\r\nfolder3 4 7 10 15 20\r\nfile3 0\r\nfile4 0\r\nfile5 0\r\nfile6 0\r\nfile7 0\r\nfile8 0\r\nfolder4 2 14 17\r\nfile9 0\r\nfile10 0\r\nfile11 0\r\nfile12 0\r\nfile13 0\r\nfile14 0\r\nfile15 0\n                            \n                            \n                                输出\n                                180"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 <span class=\"katex math inline\">1</span> 说明</h4>\n<p>该样例对应的目录结构即题目描述中的结构：</p>\n<pre><code>root/\n  folder1/\n    file1\n    folder2/\n      file2\n  folder3/\n    file3\n  file4\n</code></pre>\n<p>将默认打开位置设在 <code>folder1</code> 中，可以使得所有文件访问所需的相对路径长度总和最小。</p>\n<p>所有文件访问相对路径长度总和为：<span class=\"katex math inline\">5+13+16+8=42</span>。（具体相对路径，请参考题目描述）</p>\n<h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">10\\%</span> 的数据，满足 <span class=\"katex math inline\">N \\leq 10</span>。</p>\n<p>对于 <span class=\"katex math inline\">20\\%</span> 的数据，满足 <span class=\"katex math inline\">N \\leq 200</span>。</p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，满足 <span class=\"katex math inline\">N \\leq 3500</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，满足 <span class=\"katex math inline\">2 \\le N \\leq 10^5</span>，<span class=\"katex math inline\">0 \\le m \\lt N</span>，文件/文件夹的名称长度不超过 <span class=\"katex math inline\">16</span> 个字符。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 说明\n该样例对应的目录结构即题目描述中的结构：\nroot/\n  folder1/\n    file1\n    folder2/\n      file2\n  folder3/\n    file3\n  file4\n\n将默认打开位置设在 folder1 中，可以使得所有文件访问所需的相对路径长度总和最小。\n所有文件访问相对路径长度总和为：5+13+16+8=42。（具体相对路径，请参考题目描述）\n数据范围\n对于 10\\% 的数据，满足 N \\leq 10。\n对于 20\\% 的数据，满足 N \\leq 200。\n对于 30\\% 的数据，满足 N \\leq 3500。\n对于 100\\% 的数据，满足 2 \\le N \\leq 10^5，0 \\le m \\lt N，文件/文件夹的名称长度不超过 16 个字符。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">月赛</span><span class=\"label label-warning\">树形DP</span><span class=\"label label-info\">换根DP</span><span class=\"label label-danger\">25年11月</span></span></p>\n</div>                </div>",
+      "text": "月赛树形DP换根DP25年11月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\nroot 3 2 6 8\r\nfolder1 2 3 4\r\nfile1 0\r\nfolder2 1 5\r\nfile2 0\r\nfolder3 1 7\r\nfile3 0\r\nfile4 0",
+      "output": "42"
+    },
+    {
+      "input": "12\r\nroot 5 2 6 8 9 12\r\nfolder1 2 3 4\r\nfile1 0\r\nfolder2 2 5 11\r\nfile2 0\r\nfolder3 2 7 10\r\nfile3 0\r\nfile4 0\r\nfile5 0\r\nfile6 0\r\nfile7 0\r\nfile8 0",
+      "output": "87"
+    },
+    {
+      "input": "20\r\nroot 7 2 6 8 9 12 16 19\r\nfolder1 3 3 4 13\r\nfile1 0\r\nfolder2 3 5 11 18\r\nfile2 0\r\nfolder3 4 7 10 15 20\r\nfile3 0\r\nfile4 0\r\nfile5 0\r\nfile6 0\r\nfile7 0\r\nfile8 0\r\nfolder4 2 14 17\r\nfile9 0\r\nfile10 0\r\nfile11 0\r\nfile12 0\r\nfile13 0\r\nfile14 0\r\nfile15 0",
+      "output": "180"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "117",
+    "通过人数": "35",
+    "金币数量": "0 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:31:56"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "3494",
+  "title": "以“bi”开头的单词数量",
+  "tags": [
+    "字符串",
+    "蓝桥等考17级"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3494",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定若干个英文单词，单词之间以一个空格隔开，请统计出所有以<code>bi</code>开头的单词数量。</p>\n<p>例如：</p>\n<p>给定的英文单词为：gate biweekly bike cook men</p>\n<p>其中以<code>bi</code>开头的有biweekly和bike，故输出 <span class=\"katex math inline\">2</span>。</p>\n</div>            </div>",
+      "text": "给定若干个英文单词，单词之间以一个空格隔开，请统计出所有以bi开头的单词数量。\n例如：\n给定的英文单词为：gate biweekly bike cook men\n其中以bi开头的有biweekly和bike，故输出 2。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>仅 <span class=\"katex math inline\">1</span> 行，包含若干个英文单词（单词都为小写字母，单词长度大于 <span class=\"katex math inline\">2</span> 且小于 <span class=\"katex math inline\">11</span> ），单词之间以一个空格隔开，总长度不超过 <span class=\"katex math inline\">250</span>。</p>\n</div>            </div>",
+      "text": "仅 1 行，包含若干个英文单词（单词都为小写字母，单词长度大于 2 且小于 11 ），单词之间以一个空格隔开，总长度不超过 250。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示以<code>bi</code>开头的单词数量。</p>\n</div>            </div>",
+      "text": "一个整数，表示以bi开头的单词数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>gate biweekly bike cook men</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            gate biweekly bike cook men\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span><span class=\"label label-warning\">蓝桥等考17级</span></span></p>\n</div>                </div>",
+      "text": "字符串蓝桥等考17级"
+    }
+  ],
+  "samples": [
+    {
+      "input": "gate biweekly bike cook men",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "134",
+    "通过人数": "89",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:28"
+}

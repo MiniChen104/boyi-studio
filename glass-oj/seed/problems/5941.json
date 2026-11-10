@@ -1,0 +1,67 @@
+{
+  "id": "5941",
+  "title": "小杨的爱心快递",
+  "tags": [
+    "GESP一级",
+    "25年12月",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5941",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨是“爱心社区”的小志愿者，每周他都会帮助邻居们寄送捐赠给山区小学的文具和书籍。快递公司为了支持公益\n行动，制定了特殊的运费规则，鼓励大家合理包装：</p>\n<p>假设快递的体积为 <span class=\"katex math inline\">V</span> ，重量为 <span class=\"katex math inline\">G</span>。</p>\n<p>按体积计算：运费按体积计算，公式是 <span class=\"katex math inline\">0.5 \\times V</span> 元。</p>\n<p>按重量计算：为了鼓励减轻包裹重量，规则是：当重量小于 <span class=\"katex math inline\">300</span> 克，即 <span class=\"katex math inline\">G \\lt 300</span> 时，运费为 <span class=\"katex math inline\">M</span> 元；当重量达到或超过 <span class=\"katex math inline\">300</span>  克，即 <span class=\"katex math inline\">G \\ge 300</span> 时，运费为 <span class=\"katex math inline\">N</span> 元。</p>\n<p>快递公司的叔叔说：“我们应该选择最公平合理的计费方式。”</p>\n<p>所以，最终的运费会取按体积计算和按重量计算这两种方式中价格较低的那一个，这样对寄件人最公道。</p>\n</div>            </div>",
+      "text": "小杨是“爱心社区”的小志愿者，每周他都会帮助邻居们寄送捐赠给山区小学的文具和书籍。快递公司为了支持公益\n行动，制定了特殊的运费规则，鼓励大家合理包装：\n假设快递的体积为 V ，重量为 G。\n按体积计算：运费按体积计算，公式是 0.5 \\times V 元。\n按重量计算：为了鼓励减轻包裹重量，规则是：当重量小于 300 克，即 G \\lt 300 时，运费为 M 元；当重量达到或超过 300  克，即 G \\ge 300 时，运费为 N 元。\n快递公司的叔叔说：“我们应该选择最公平合理的计费方式。”\n所以，最终的运费会取按体积计算和按重量计算这两种方式中价格较低的那一个，这样对寄件人最公道。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>四行，每行一个一位小数的浮点数，分别代表，快递的体积 <span class=\"katex math inline\">V</span> ，快递的重量 <span class=\"katex math inline\">G</span> ，第一档重量运费 <span class=\"katex math inline\">M</span>，第二档重量运费 <span class=\"katex math inline\">N</span> 。</p>\n</div>            </div>",
+      "text": "四行，每行一个一位小数的浮点数，分别代表，快递的体积 V ，快递的重量 G ，第一档重量运费 M，第二档重量运费 N 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个一位小数，代表实际快递运费。</p>\n</div>            </div>",
+      "text": "一行一个一位小数，代表实际快递运费。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100.4\r\n300.2\r\n60.6\r\n70.5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>50.2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>99.8\r\n200.9\r\n60.2\r\n70.1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>49.9</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100.4\r\n300.2\r\n60.6\r\n70.5\n                        \n                        \n                            输出\n                            50.2\n                        \n\n                                                    \n                                输入\n                                99.8\r\n200.9\r\n60.2\r\n70.1\n                            \n                            \n                                输出\n                                49.9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p>对于样例 <span class=\"katex math inline\">1</span>：快递体积 <span class=\"katex math inline\">V</span> 为 <span class=\"katex math inline\">100.4</span>，重量 <span class=\"katex math inline\">G</span> 为 <span class=\"katex math inline\">300.2</span> ，第一档重量运费 <span class=\"katex math inline\">M</span> 为 <span class=\"katex math inline\">60.6</span> ，第二档重量运费 <span class=\"katex math inline\">N</span> 为 <span class=\"katex math inline\">70.5</span> 。</p>\n<p>– 若按体积收费，费用为 <span class=\"katex math inline\">0.5 \\times 100.4=50.2</span>；</p>\n<p>– 若按重量收费，由于重量 <span class=\"katex math inline\">G=300.2</span> 超过 <span class=\"katex math inline\">300</span> ，费用为 <span class=\"katex math inline\">70.5</span>。</p>\n<p>输出价格较低的 <span class=\"katex math inline\">50.2</span>。</p>\n<p>对于样例 <span class=\"katex math inline\">2</span>：快递体积 <span class=\"katex math inline\">V</span> 为 <span class=\"katex math inline\">99.8</span> ，重量 <span class=\"katex math inline\">G</span> 为 <span class=\"katex math inline\">200.9</span> ，第一档重量运费 <span class=\"katex math inline\">M</span> 为 <span class=\"katex math inline\">60.2</span> ，第二档重量运费 <span class=\"katex math inline\">N</span> 为 <span class=\"katex math inline\">70.1</span> 。</p>\n<p>– 若按体积收费，费用为 <span class=\"katex math inline\">0.5 \\times 99.8=49.9</span>；</p>\n<p>– 若按重量收费，由于重量 <span class=\"katex math inline\">G=200.9</span> 小于 <span class=\"katex math inline\">300</span>，费用为 <span class=\"katex math inline\">60.2</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n对于样例 1：快递体积 V 为 100.4，重量 G 为 300.2 ，第一档重量运费 M 为 60.6 ，第二档重量运费 N 为 70.5 。\n– 若按体积收费，费用为 0.5 \\times 100.4=50.2；\n– 若按重量收费，由于重量 G=300.2 超过 300 ，费用为 70.5。\n输出价格较低的 50.2。\n对于样例 2：快递体积 V 为 99.8 ，重量 G 为 200.9 ，第一档重量运费 M 为 60.2 ，第二档重量运费 N 为 70.1 。\n– 若按体积收费，费用为 0.5 \\times 99.8=49.9；\n– 若按重量收费，由于重量 G=200.9 小于 300，费用为 60.2 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 2025年12月认证 C++1级真题</p>\n</div>                </div>",
+      "text": "GESP 2025年12月认证 C++1级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP一级</span><span class=\"label label-warning\">25年12月</span><span class=\"label label-info\">分支</span></span></p>\n</div>                </div>",
+      "text": "GESP一级25年12月分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100.4\r\n300.2\r\n60.6\r\n70.5",
+      "output": "50.2"
+    },
+    {
+      "input": "99.8\r\n200.9\r\n60.2\r\n70.1",
+      "output": "49.9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "3155",
+    "通过人数": "1472",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:29"
+}

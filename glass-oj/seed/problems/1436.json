@@ -1,0 +1,65 @@
+{
+  "id": "1436",
+  "title": "标题统计（title）",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1436",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>凯凯刚写了一篇美妙的作文，请问这篇作文的标题中有多少个字符？</p>\n<p>注意：标题中可能包含大、小写英文字母、数字字符、空格和换行符。统计标题字符数时，空格和换行符不计算在内。</p>\n</div>            </div>",
+      "text": "凯凯刚写了一篇美妙的作文，请问这篇作文的标题中有多少个字符？\n注意：标题中可能包含大、小写英文字母、数字字符、空格和换行符。统计标题字符数时，空格和换行符不计算在内。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入文件只有一行，一个字符串 <span class=\"katex math inline\">s</span>。</p>\n</div>            </div>",
+      "text": "输入文件只有一行，一个字符串 s。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出文件只有一行，包含一个整数，即作文标题的字符数（不含空格和换行符）。</p>\n</div>            </div>",
+      "text": "输出文件只有一行，包含一个整数，即作文标题的字符数（不含空格和换行符）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>234</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>Ca 45</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>4</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            234\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                Ca 45\n                            \n                            \n                                输出\n                                4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【输入输出样例 1 说明】</h4>\n<p>标题中共有 <span class=\"katex math inline\">3</span> 个字符，这 <span class=\"katex math inline\">3</span> 个字符都是数字字符。</p>\n<h4>【输入输出样例 2 说明】</h4>\n<p>标题中共有 <span class=\"katex math inline\">5</span> 个字符，包括 <span class=\"katex math inline\">1</span> 个大写英文字母， <span class=\"katex math inline\">1</span> 个小写英文字母和 <span class=\"katex math inline\">2</span> 个数字字符， 还有 <span class=\"katex math inline\">1</span> 个空格。由于空格不计入结果中，故标题的有效字符数为 <span class=\"katex math inline\">4</span> 个。</p>\n<h4>【数据规模与约定】</h4>\n<p>规定 <span class=\"katex math inline\">|s|</span> 表示字符串 <span class=\"katex math inline\">s</span> 的长度（即字符串中的字符和空格数）。</p>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的数据，<span class=\"katex math inline\">1 ≤ |s| ≤ 5</span>，保证输入为数字字符及行末换行符。</p>\n<p>对于 <span class=\"katex math inline\">80\\%</span> 的数据，<span class=\"katex math inline\">1 ≤ |s| ≤ 5</span>，输入只可能包含大、小写英文字母、数字字符及行末换行符。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 ≤ |s| ≤ 5</span>，输入可能包含大、小写英文字母、数字字符、空格和行末换行符。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【输入输出样例 1 说明】\n标题中共有 3 个字符，这 3 个字符都是数字字符。\n【输入输出样例 2 说明】\n标题中共有 5 个字符，包括 1 个大写英文字母， 1 个小写英文字母和 2 个数字字符， 还有 1 个空格。由于空格不计入结果中，故标题的有效字符数为 4 个。\n【数据规模与约定】\n规定 |s| 表示字符串 s 的长度（即字符串中的字符和空格数）。\n对于 40\\% 的数据，1 ≤ |s| ≤ 5，保证输入为数字字符及行末换行符。\n对于 80\\% 的数据，1 ≤ |s| ≤ 5，输入只可能包含大、小写英文字母、数字字符及行末换行符。\n对于 100\\% 的数据，1 ≤ |s| ≤ 5，输入可能包含大、小写英文字母、数字字符、空格和行末换行符。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛</p>\n</div>                </div>",
+      "text": "noip复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "234",
+      "output": "3"
+    },
+    {
+      "input": "Ca 45",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3244",
+    "通过人数": "2112",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:19:26"
+}

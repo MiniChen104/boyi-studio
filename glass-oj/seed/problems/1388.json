@@ -1,0 +1,56 @@
+{
+  "id": "1388",
+  "title": "陶陶摘苹果",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1388",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>陶陶家的院子里有一棵苹果树，每到秋天树上就会结出 <span class=\"katex math inline\">10</span> 个苹果。苹果成熟的时候，陶陶就会跑去摘苹果。陶陶有个 <span class=\"katex math inline\">30</span> 厘米高的板凳，当她不能直接用手摘到苹果的时候，就会踩到板凳上再试试。</p>\n<p>现在已知 <span class=\"katex math inline\">10</span> 个苹果到地面的高度，以及陶陶把手伸直的时候能够达到的最大高度，请帮陶陶算一下她能够摘到的苹果的数目。假设她碰到苹果，苹果就会掉下来。</p>\n</div>            </div>",
+      "text": "陶陶家的院子里有一棵苹果树，每到秋天树上就会结出 10 个苹果。苹果成熟的时候，陶陶就会跑去摘苹果。陶陶有个 30 厘米高的板凳，当她不能直接用手摘到苹果的时候，就会踩到板凳上再试试。\n现在已知 10 个苹果到地面的高度，以及陶陶把手伸直的时候能够达到的最大高度，请帮陶陶算一下她能够摘到的苹果的数目。假设她碰到苹果，苹果就会掉下来。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>包括两行数据。</p>\n<p>第一行包含 <span class=\"katex math inline\">10</span> 个 <span class=\"katex math inline\">100</span> 到 <span class=\"katex math inline\">200</span> 之间（包括 <span class=\"katex math inline\">100</span> 和 <span class=\"katex math inline\">200</span> ）的整数（以厘米为单位）分别表示 <span class=\"katex math inline\">10</span> 个苹果到地面的高度，两个相邻的整数之间用一个空格隔开。</p>\n<p>第二行只包括一个 <span class=\"katex math inline\">100</span> 到 <span class=\"katex math inline\">120</span> 之间（包含 <span class=\"katex math inline\">100</span> 和 <span class=\"katex math inline\">120</span> ）的整数（以厘米为单位），表示陶陶把手伸直的时候能够达到的最大高度。</p>\n</div>            </div>",
+      "text": "包括两行数据。\n第一行包含 10 个 100 到 200 之间（包括 100 和 200 ）的整数（以厘米为单位）分别表示 10 个苹果到地面的高度，两个相邻的整数之间用一个空格隔开。\n第二行只包括一个 100 到 120 之间（包含 100 和 120 ）的整数（以厘米为单位），表示陶陶把手伸直的时候能够达到的最大高度。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>包括一行，这一行只包含一个整数，表示陶陶能够摘到的苹果的数目。</p>\n</div>            </div>",
+      "text": "包括一行，这一行只包含一个整数，表示陶陶能够摘到的苹果的数目。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100 200 150 140 129 134 167 198 200 111\r\n110</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100 200 150 140 129 134 167 198 200 111\r\n110\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100 200 150 140 129 134 167 198 200 111\r\n110",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "20326",
+    "通过人数": "14303",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:46"
+}

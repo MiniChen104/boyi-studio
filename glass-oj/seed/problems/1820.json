@@ -1,0 +1,62 @@
+{
+  "id": "1820",
+  "title": "金明的预算方案",
+  "tags": [
+    "动态规划",
+    "背包问题"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1820",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>金明今天很开心，家里购置的新房就要领钥匙了，新房里有一间金明自己专用的很宽敞的房间。更让他高兴的是，妈妈昨天对他说：“你的房间需要购买哪些物品，怎么布置，你说了算，只要不超过 <span class=\"katex math inline\">n</span> 元钱就行”。今天一早，金明就开始做预算了，他把想买的物品分为两类：主件与附件，附件是从属于某个主件的，下表就是一些主件与附件的例子：</p>\n<table><thead><tr><th>主件</th><th>附件</th></tr></thead><tbody><tr><td>电脑</td><td>打印机，扫描仪</td></tr><tr><td>书柜</td><td>图书</td></tr><tr><td>书桌</td><td>台灯，文具</td></tr><tr><td>工作椅</td><td>无</td></tr></tbody></table><p>如果要买归类为附件的物品，必须先买该附件所属的主件。每个主件可以有 <span class=\"katex math inline\">0</span> 个、<span class=\"katex math inline\">1</span> 个或 <span class=\"katex math inline\">2</span> 个附件。每个附件对应一个主件，附件不再有从属于自己的附件。金明想买的东西很多，肯定会超过妈妈限定的 <span class=\"katex math inline\">n</span> 元。于是，他把每件物品规定了一个重要度，分为 <span class=\"katex math inline\">5</span> 等：用整数 <span class=\"katex math inline\">1 \\sim 5</span> 表示，第 <span class=\"katex math inline\">5</span> 等最重要。他还从因特网上查到了每件物品的价格（都是 <span class=\"katex math inline\">10</span> 元的整数倍）。他希望在不超过 <span class=\"katex math inline\">n</span> 元的前提下，使每件物品的价格与重要度的乘积的总和最大。</p>\n<p>设第 <span class=\"katex math inline\">j</span> 件物品的价格为 <span class=\"katex math inline\">v_j</span>，重要度为<span class=\"katex math inline\">w_j</span>，共选中了 <span class=\"katex math inline\">k</span> 件物品，编号依次为 <span class=\"katex math inline\">j_1,j_2,\\dots,j_k</span>，则所求的总和为：</p>\n<p><span class=\"katex math inline\">v</span><sub><span class=\"katex math inline\">j1</span></sub><span class=\"katex math inline\"> \\times w</span><sub><span class=\"katex math inline\">j1</span></sub><span class=\"katex math inline\">+v</span><sub><span class=\"katex math inline\">j2</span></sub><span class=\"katex math inline\"> \\times  w</span><sub><span class=\"katex math inline\">j2</span></sub> <span class=\"katex math inline\">+ \\dots +v</span><sub><span class=\"katex math inline\">jk</span></sub> <span class=\"katex math inline\"> \\times w</span><sub><span class=\"katex math inline\">jk</span></sub>。</p>\n<p>请你帮助金明设计一个满足要求的购物单。</p>\n</div>            </div>",
+      "text": "金明今天很开心，家里购置的新房就要领钥匙了，新房里有一间金明自己专用的很宽敞的房间。更让他高兴的是，妈妈昨天对他说：“你的房间需要购买哪些物品，怎么布置，你说了算，只要不超过 n 元钱就行”。今天一早，金明就开始做预算了，他把想买的物品分为两类：主件与附件，附件是从属于某个主件的，下表就是一些主件与附件的例子：\n主件附件电脑打印机，扫描仪书柜图书书桌台灯，文具工作椅无如果要买归类为附件的物品，必须先买该附件所属的主件。每个主件可以有 0 个、1 个或 2 个附件。每个附件对应一个主件，附件不再有从属于自己的附件。金明想买的东西很多，肯定会超过妈妈限定的 n 元。于是，他把每件物品规定了一个重要度，分为 5 等：用整数 1 \\sim 5 表示，第 5 等最重要。他还从因特网上查到了每件物品的价格（都是 10 元的整数倍）。他希望在不超过 n 元的前提下，使每件物品的价格与重要度的乘积的总和最大。\n设第 j 件物品的价格为 v_j，重要度为w_j，共选中了 k 件物品，编号依次为 j_1,j_2,\\dots,j_k，则所求的总和为：\nvj1 \\times wj1+vj2 \\times  wj2 + \\dots +vjk  \\times wjk。\n请你帮助金明设计一个满足要求的购物单。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个整数，分别表示总钱数 <span class=\"katex math inline\">n</span> 和希望购买的物品个数 <span class=\"katex math inline\">m</span>。</p>\n<p>第 <span class=\"katex math inline\">2</span> 到第 <span class=\"katex math inline\">(m + 1)</span> 行，每行三个整数，第 <span class=\"katex math inline\">(i + 1)</span> 行的整数 <span class=\"katex math inline\">v_i</span>，<span class=\"katex math inline\">p_i</span>，<span class=\"katex math inline\">q_i</span> 分别表示第 <span class=\"katex math inline\">i</span> 件物品的价格、重要度以及它对应的的主件。如果 <span class=\"katex math inline\">q_i=0</span>，表示该物品本身是主件。</p>\n</div>            </div>",
+      "text": "第一行有两个整数，分别表示总钱数 n 和希望购买的物品个数 m。\n第 2 到第 (m + 1) 行，每行三个整数，第 (i + 1) 行的整数 v_i，p_i，q_i 分别表示第 i 件物品的价格、重要度以及它对应的的主件。如果 q_i=0，表示该物品本身是主件。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数表示答案。</p>\n</div>            </div>",
+      "text": "输出一行一个整数表示答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1000 5\r\n800 2 0\r\n400 5 1\r\n300 5 1\r\n400 3 0\r\n500 2 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2200</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1000 5\r\n800 2 0\r\n400 5 1\r\n300 5 1\r\n400 3 0\r\n500 2 0\n                        \n                        \n                            输出\n                            2200"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据规模与约定</h4>\n<p>对于全部的测试点，保证 <span class=\"katex math inline\">1 \\leq n \\leq 3.2 \\times 10^4</span>，<span class=\"katex math inline\">1 \\leq m \\leq 60</span>，<span class=\"katex math inline\">0 \\leq v_i \\leq 10^4</span>，<span class=\"katex math inline\">1 \\leq p_i \\leq 5</span>，<span class=\"katex math inline\">0 \\leq q_i \\leq m</span>，答案不超过 <span class=\"katex math inline\">2 \\times 10^5</span>。</p>\n<p>来源：noip2006提高组第2题。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据规模与约定\n对于全部的测试点，保证 1 \\leq n \\leq 3.2 \\times 10^4，1 \\leq m \\leq 60，0 \\leq v_i \\leq 10^4，1 \\leq p_i \\leq 5，0 \\leq q_i \\leq m，答案不超过 2 \\times 10^5。\n来源：noip2006提高组第2题。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip2006提高组第2题</p>\n</div>                </div>",
+      "text": "noip2006提高组第2题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span><span class=\"label label-warning\">背包问题</span></span></p>\n</div>                </div>",
+      "text": "动态规划背包问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1000 5\r\n800 2 0\r\n400 5 1\r\n300 5 1\r\n400 3 0\r\n500 2 0",
+      "output": "2200"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2722",
+    "通过人数": "1382",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:24:39"
+}

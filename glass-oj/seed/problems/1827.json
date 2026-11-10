@@ -1,0 +1,64 @@
+{
+  "id": "1827",
+  "title": "小猫吃鱼：fish.cpp",
+  "tags": [
+    "蓝桥杯",
+    "数组问题",
+    "递推",
+    "贪心"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1827",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>原理：</p>\n<p>明明家从 <span class=\"katex math inline\">1</span>  号站点出发，开车去旅游，一共要经过 <span class=\"katex math inline\">n</span>  个站点，依次为 <span class=\"katex math inline\">2</span> 、<span class=\"katex math inline\">3</span> …… <span class=\"katex math inline\">n</span> 。</p>\n<p>由于明明带上了心爱的小猫，在每个站点都要为小猫提供一条鱼用做美餐（包括 <span class=\"katex math inline\">1</span> 号站点）。</p>\n<p>除了 <span class=\"katex math inline\">1</span> 号站点只能吃  <span class=\"katex math inline\">1</span>  号站点买的鱼，其他站点既可以吃当地买的鱼，也可吃之前经过的站点买了存入车载冰箱中的鱼。</p>\n<p>但车载冰箱消耗的电能来自汽油，所以每条鱼用冰箱保存到下一站的费用与各个站点的汽油价格有关。</p>\n<p>为使问题简化，我们约定：</p>\n<p>（1）车从某站开出时油箱中都是此站点刚加的汽油。</p>\n<p>（2）车载冰箱能容纳一路上需要的所有鱼。</p>\n<p>即：每条鱼的费用既包括购买时的费用，也包括用冰箱保存鱼的费用。</p>\n<p>编程实现：</p>\n<p>为了降低小猫吃鱼的总代价，明明预先上网查到了这 <span class=\"katex math inline\">n</span> 个站点的鱼价和汽油价格。并据此算出每个站点买一条鱼的费用以及从该站点到下一站用冰箱保存一条鱼的费用。你能帮明明算出这一路上小猫吃鱼的最小总费用吗？</p>\n</div>            </div>",
+      "text": "原理：\n明明家从 1  号站点出发，开车去旅游，一共要经过 n  个站点，依次为 2 、3 …… n 。\n由于明明带上了心爱的小猫，在每个站点都要为小猫提供一条鱼用做美餐（包括 1 号站点）。\n除了 1 号站点只能吃  1  号站点买的鱼，其他站点既可以吃当地买的鱼，也可吃之前经过的站点买了存入车载冰箱中的鱼。\n但车载冰箱消耗的电能来自汽油，所以每条鱼用冰箱保存到下一站的费用与各个站点的汽油价格有关。\n为使问题简化，我们约定：\n（1）车从某站开出时油箱中都是此站点刚加的汽油。\n（2）车载冰箱能容纳一路上需要的所有鱼。\n即：每条鱼的费用既包括购买时的费用，也包括用冰箱保存鱼的费用。\n编程实现：\n为了降低小猫吃鱼的总代价，明明预先上网查到了这 n 个站点的鱼价和汽油价格。并据此算出每个站点买一条鱼的费用以及从该站点到下一站用冰箱保存一条鱼的费用。你能帮明明算出这一路上小猫吃鱼的最小总费用吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：站点数 <span class=\"katex math inline\">n</span> ，<span class=\"katex math inline\">1 \\lt n \\lt100</span>。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行：每行两个以空格分隔的正整数，表示：这一站买一条鱼的费用，以及从这一站把每条鱼保存到下一站的费用，两个费用均为小于 <span class=\"katex math inline\">10000</span> 的正整数。</p>\n</div>            </div>",
+      "text": "第一行：站点数 n ，1 \\lt n \\lt100。\n接下来的 n 行：每行两个以空格分隔的正整数，表示：这一站买一条鱼的费用，以及从这一站把每条鱼保存到下一站的费用，两个费用均为小于 10000 的正整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>最小总费用，是一个正整数。</p>\n</div>            </div>",
+      "text": "最小总费用，是一个正整数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n6 3\r\n7 1\r\n3 2\r\n8 3\r\n9 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>29</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n6 3\r\n7 1\r\n3 2\r\n8 3\r\n9 5\n                        \n                        \n                            输出\n                            29"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】第十届蓝桥杯大赛青少年编程C++组省赛第2题</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】第十届蓝桥杯大赛青少年编程C++组省赛第2题"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 数组问题 递推</p>\n</div>                </div>",
+      "text": "蓝桥杯 数组问题 递推"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">数组问题</span><span class=\"label label-info\">递推</span><span class=\"label label-danger\">贪心</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯数组问题递推贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n6 3\r\n7 1\r\n3 2\r\n8 3\r\n9 5",
+      "output": "29"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2252",
+    "通过人数": "1550",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:24:44"
+}

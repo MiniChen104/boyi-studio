@@ -1,0 +1,63 @@
+{
+  "id": "3899",
+  "title": "小杨的武器",
+  "tags": [
+    "GESP五级",
+    "贪心",
+    "24年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3899",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有 <span class=\"katex math inline\">n</span>种不同的武器，他对第 <span class=\"katex math inline\">i</span> 种武器的初始熟练度为 <span class=\"katex math inline\">c_i</span> 。</p>\n<p>小杨会依次参加 <span class=\"katex math inline\">m</span> 场战斗，每场战斗小杨只能且必须选择一种武器使用，假设小杨使用了第  <span class=\"katex math inline\">i</span> 种武器参加了第 <span class=\"katex math inline\">j</span> 场战斗，战斗前该武器的熟练度为 <span class=\"katex math inline\">c_i</span> ，则战斗后小杨对该武器的熟练度会变为 <span class=\"katex math inline\">c_i+a_j</span> 。需要注意的是 <span class=\"katex math inline\">a_j</span>， 可能是正数， <span class=\"katex math inline\">0</span> 或负数，这意味着小杨参加战斗后对武器的熟练度可能会提高，也可能会不变，还有可能降低。</p>\n<p>小杨想请你编写程序帮他计算出如何选择武器才能使得 <span class=\"katex math inline\">m</span> 场战斗后，自己对 <span class=\"katex math inline\">n</span> 种武器的熟练度的<strong>最大值尽可能大</strong>。</p>\n</div>            </div>",
+      "text": "小杨有 n种不同的武器，他对第 i 种武器的初始熟练度为 c_i 。\n小杨会依次参加 m 场战斗，每场战斗小杨只能且必须选择一种武器使用，假设小杨使用了第  i 种武器参加了第 j 场战斗，战斗前该武器的熟练度为 c_i ，则战斗后小杨对该武器的熟练度会变为 c_i+a_j 。需要注意的是 a_j， 可能是正数， 0 或负数，这意味着小杨参加战斗后对武器的熟练度可能会提高，也可能会不变，还有可能降低。\n小杨想请你编写程序帮他计算出如何选择武器才能使得 m 场战斗后，自己对 n 种武器的熟练度的最大值尽可能大。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个正整数 <span class=\"katex math inline\">n，m</span>，含义如题面所示。</p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个正整数 <span class=\"katex math inline\">c_1,c_2,\\dots,c_n,</span>代表小杨对武器的初始熟练度。</p>\n<p>第三行包含 <span class=\"katex math inline\">m</span> 个正整数 <span class=\"katex math inline\">a_1,a_2,\\dots,a_m,</span>代表每场战斗后武器熟练度的变化值。</p>\n</div>            </div>",
+      "text": "第一行包含两个正整数 n，m，含义如题面所示。\n第二行包含 n 个正整数 c_1,c_2,\\dots,c_n,代表小杨对武器的初始熟练度。\n第三行包含 m 个正整数 a_1,a_2,\\dots,a_m,代表每场战斗后武器熟练度的变化值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表 <span class=\"katex math inline\">m</span>场战斗后小杨对 <span class=\"katex math inline\">n</span>种武器的熟练度的最大值最大是多少。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表 m场战斗后小杨对 n种武器的熟练度的最大值最大是多少。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 2\r\n9 9\r\n1 -1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 2\r\n9 9\r\n1 -1\n                        \n                        \n                            输出\n                            10"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n ,m \\le 10^5 ,-10^4 \\le c_i,a_i \\le 10^4 </span>。</p>\n<h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<p>一种最优的选择方案为，第一场战斗小杨选择第一种武器，第二场战斗小杨选择第二种武器。</p>\n<table><thead><tr><th>子任务编号</th><th>数据点占比</th><th><span class=\"katex math inline\">n</span></th><th><span class=\"katex math inline\">m</span></th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1</span></td><td><span class=\"katex math inline\">20\\%</span></td><td><span class=\"katex math inline\">=1</span></td><td><span class=\"katex math inline\">\\le 10^5</span></td></tr><tr><td><span class=\"katex math inline\">2</span></td><td><span class=\"katex math inline\">20\\%</span></td><td><span class=\"katex math inline\">\\le 10^5</span></td><td><span class=\"katex math inline\">=2</span></td></tr><tr><td><span class=\"katex math inline\">3</span></td><td><span class=\"katex math inline\">60\\%</span></td><td><span class=\"katex math inline\">\\le 10^5</span></td><td><span class=\"katex math inline\">\\le 10^5</span></td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于全部数据，保证有 1 \\le n ,m \\le 10^5 ,-10^4 \\le c_i,a_i \\le 10^4 。\n样例 1 解释\n一种最优的选择方案为，第一场战斗小杨选择第一种武器，第二场战斗小杨选择第二种武器。\n子任务编号数据点占比nm120\\%=1\\le 10^5220\\%\\le 10^5=2360\\%\\le 10^5\\le 10^5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 9月认证 C++ 五级真题</p>\n</div>                </div>",
+      "text": "GESP 9月认证 C++ 五级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">贪心</span><span class=\"label label-info\">24年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP五级贪心24年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 2\r\n9 9\r\n1 -1",
+      "output": "10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "789",
+    "通过人数": "305",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:23"
+}

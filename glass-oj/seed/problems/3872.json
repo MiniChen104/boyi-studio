@@ -1,0 +1,64 @@
+{
+  "id": "3872",
+  "title": "空间跳跃",
+  "tags": [
+    "GESP八级",
+    "图论",
+    "动态规划",
+    "24年6月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3872",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨在二维空间中有 <span class=\"katex math inline\">n</span> 个水平挡板，并且挡板之间彼此不重叠，其中第 <span class=\"katex math inline\">i</span> 个挡板处于水平高度 <span class=\"katex math inline\">h_i</span> ，左右端点分别位于 <span class=\"katex math inline\">l_i</span> 与 <span class=\"katex math inline\">r_i</span>。</p>\n<p>小杨可以在挡板上左右移动，当小杨移动到右端点时，如果再向右移动会竖直掉落，从而落到下方第一个挡板上，移动到左端点时同理。小杨在挡板上每移动 <span class=\"katex math inline\">1</span> 个单位长度会耗费 <span class=\"katex math inline\">1</span> 个单位时间，掉落时每掉落 <span class=\"katex math inline\">1</span> 个单位长度也会耗费 <span class=\"katex math inline\">1</span> 个单位时间。</p>\n<p>小杨想知道，从第 <span class=\"katex math inline\">s</span> 个挡板上的左端点出发到第 <span class=\"katex math inline\">t</span> 个挡板需要耗费的最少时间是多少？</p>\n<p>注意：可能无法从第 <span class=\"katex math inline\">s</span> 个挡板到达到第 <span class=\"katex math inline\">t</span> 个挡板。</p>\n</div>            </div>",
+      "text": "小杨在二维空间中有 n 个水平挡板，并且挡板之间彼此不重叠，其中第 i 个挡板处于水平高度 h_i ，左右端点分别位于 l_i 与 r_i。\n小杨可以在挡板上左右移动，当小杨移动到右端点时，如果再向右移动会竖直掉落，从而落到下方第一个挡板上，移动到左端点时同理。小杨在挡板上每移动 1 个单位长度会耗费 1 个单位时间，掉落时每掉落 1 个单位长度也会耗费 1 个单位时间。\n小杨想知道，从第 s 个挡板上的左端点出发到第 t 个挡板需要耗费的最少时间是多少？\n注意：可能无法从第 s 个挡板到达到第 t 个挡板。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">n</span>,代表挡板数量。</p>\n<p>第二行包含两个正整数 <span class=\"katex math inline\">s,t</span> ，含义如题目所示。</p>\n<p>之后 <span class=\"katex math inline\">n</span>行，每行包含三个正整数 <span class=\"katex math inline\">l_i,r_i,h_i</span> ，代表第 <span class=\"katex math inline\">i</span> 个挡板的左右端点位置与高度。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 n,代表挡板数量。\n第二行包含两个正整数 s,t ，含义如题目所示。\n之后 n行，每行包含三个正整数 l_i,r_i,h_i ，代表第 i 个挡板的左右端点位置与高度。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数代表需要耗费的最少时间，如果无法到达则输出 <span class=\"katex math inline\">-1</span> 。</p>\n</div>            </div>",
+      "text": "输出一个整数代表需要耗费的最少时间，如果无法到达则输出 -1 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n3 1\r\n5 6 3\r\n3 5 6\r\n1 4 100000</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>100001</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n3 1\r\n5 6 3\r\n3 5 6\r\n1 4 100000\n                        \n                        \n                            输出\n                            100001"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例范围】</p>\n<p>耗费时间最少的移动方案为，从第 <span class=\"katex math inline\">3</span> 个挡板左端点移动到右端点，耗费 <span class=\"katex math inline\">3</span> 个单位时间，然后向右移动掉落到第 <span class=\"katex math inline\">2</span> 个挡板上，耗费 <span class=\"katex math inline\">100000-6=99994</span> 个单位时间，之后再向右移动 <span class=\"katex math inline\">1</span> 个单位长度，耗费 <span class=\"katex math inline\">1</span> 个单位时间，最后向右移动掉落到第 <span class=\"katex math inline\">1</span> 个挡板上，耗费 <span class=\"katex math inline\">3</span> 个单位时间。共耗费 <span class=\"katex math inline\">3+99994+1+3=100001</span> 个单位时间。</p>\n<p>【数据范围】</p>\n<p><img src=\"https://assets.boyi.local/421ab6c0d6ce532c641aea25.png\"></p>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n \\le 1000</span> ,<span class=\"katex math inline\">1 \\le l_i \\le r_i \\le 10^5</span> ，<span class=\"katex math inline\">1 \\le h_i \\le 10^5</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例范围】\n耗费时间最少的移动方案为，从第 3 个挡板左端点移动到右端点，耗费 3 个单位时间，然后向右移动掉落到第 2 个挡板上，耗费 100000-6=99994 个单位时间，之后再向右移动 1 个单位长度，耗费 1 个单位时间，最后向右移动掉落到第 1 个挡板上，耗费 3 个单位时间。共耗费 3+99994+1+3=100001 个单位时间。\n【数据范围】\n\n对于全部数据，保证有 1 \\le n \\le 1000 ,1 \\le l_i \\le r_i \\le 10^5 ，1 \\le h_i \\le 10^5 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 6月认证C++八级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 6月认证C++八级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP八级</span><span class=\"label label-warning\">图论</span><span class=\"label label-info\">动态规划</span><span class=\"label label-danger\">24年6月</span></span></p>\n</div>                </div>",
+      "text": "GESP八级图论动态规划24年6月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n3 1\r\n5 6 3\r\n3 5 6\r\n1 4 100000",
+      "output": "100001"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "139",
+    "通过人数": "68",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:36:16"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "2494",
+  "title": "糖果",
+  "tags": [
+    "差分约束"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2494",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>幼儿园里有 <span class=\"katex math inline\">N</span> 个小朋友，老师现在想要给这些小朋友们分配糖果，要求每个小朋友都要分到糖果。  </p>\n<p>但是小朋友们也有嫉妒心，总是会提出一些要求，比如小明不希望小红分到的糖果比他的多，于是在分配糖果的时候， 老师需要满足小朋友们的 <span class=\"katex math inline\">K</span> 个要求。  </p>\n<p>幼儿园的糖果总是有限的，老师想知道他至少需要准备多少个糖果，才能使得每个小朋友都能够分到糖果，并且满足小朋友们所有的要求。</p>\n</div>            </div>",
+      "text": "幼儿园里有 N 个小朋友，老师现在想要给这些小朋友们分配糖果，要求每个小朋友都要分到糖果。  \n但是小朋友们也有嫉妒心，总是会提出一些要求，比如小明不希望小红分到的糖果比他的多，于是在分配糖果的时候， 老师需要满足小朋友们的 K 个要求。  \n幼儿园的糖果总是有限的，老师想知道他至少需要准备多少个糖果，才能使得每个小朋友都能够分到糖果，并且满足小朋友们所有的要求。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行是两个整数 <span class=\"katex math inline\">N</span>,<span class=\"katex math inline\">K</span>。  </p>\n<p>接下来 <span class=\"katex math inline\">K</span> 行，表示分配糖果时需要满足的关系，每行 <span class=\"katex math inline\">3</span> 个数字 <span class=\"katex math inline\">X,A,B</span>。  </p>\n<ul><li>如果 <span class=\"katex math inline\">X</span>=<span class=\"katex math inline\">1</span>，表示第 <span class=\"katex math inline\">A</span> 个小朋友分到的糖果必须和第 <span class=\"katex math inline\">B</span> 个小朋友分到的糖果一样多。</li>\n<li>如果 <span class=\"katex math inline\">X</span>=<span class=\"katex math inline\">2</span>，表示第 <span class=\"katex math inline\">A</span> 个小朋友分到的糖果必须少于第 <span class=\"katex math inline\">B</span> 个小朋友分到的糖果。</li>\n<li>如果 <span class=\"katex math inline\">X</span>=<span class=\"katex math inline\">3</span>，表示第 <span class=\"katex math inline\">A</span> 个小朋友分到的糖果必须不少于第 <span class=\"katex math inline\">B</span> 个小朋友分到的糖果。</li>\n<li>如果 <span class=\"katex math inline\">X</span>=<span class=\"katex math inline\">4</span>，表示第 <span class=\"katex math inline\">A</span> 个小朋友分到的糖果必须多于第 <span class=\"katex math inline\">B</span> 个小朋友分到的糖果。</li>\n<li>如果 <span class=\"katex math inline\">X</span>=<span class=\"katex math inline\">5</span>，表示第 <span class=\"katex math inline\">A</span> 个小朋友分到的糖果必须不多于第 <span class=\"katex math inline\">B</span> 个小朋友分到的糖果。</li>\n</ul><p>小朋友编号从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">N</span>。  </p>\n<p><span class=\"katex math inline\">1</span>≤<span class=\"katex math inline\">N</span>&lt;<span class=\"katex math inline\">10</span><sup><span class=\"katex math inline\">5</span></sup> ,<span class=\"katex math inline\">1</span>≤<span class=\"katex math inline\">K</span>≤<span class=\"katex math inline\">10</span><sup><span class=\"katex math inline\">5</span></sup>,<span class=\"katex math inline\">1</span>≤<span class=\"katex math inline\">X</span>≤<span class=\"katex math inline\">5</span>,<span class=\"katex math inline\">1</span>≤<span class=\"katex math inline\">A,B</span>≤<span class=\"katex math inline\">N</span></p>\n</div>            </div>",
+      "text": "输入的第一行是两个整数 N,K。  \n接下来 K 行，表示分配糖果时需要满足的关系，每行 3 个数字 X,A,B。  \n如果 X=1，表示第 A 个小朋友分到的糖果必须和第 B 个小朋友分到的糖果一样多。\n如果 X=2，表示第 A 个小朋友分到的糖果必须少于第 B 个小朋友分到的糖果。\n如果 X=3，表示第 A 个小朋友分到的糖果必须不少于第 B 个小朋友分到的糖果。\n如果 X=4，表示第 A 个小朋友分到的糖果必须多于第 B 个小朋友分到的糖果。\n如果 X=5，表示第 A 个小朋友分到的糖果必须不多于第 B 个小朋友分到的糖果。\n小朋友编号从 1 到 N。  \n1≤N<105 ,1≤K≤105,1≤X≤5,1≤A,B≤N"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，表示老师至少需要准备的糖果数，如果不能满足小朋友们的所有要求，就输出 <span class=\"katex math inline\">−1</span>。</p>\n</div>            </div>",
+      "text": "输出一行，表示老师至少需要准备的糖果数，如果不能满足小朋友们的所有要求，就输出 −1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 7\r\n1 1 2\r\n2 3 2\r\n4 4 1\r\n3 4 5\r\n5 4 5\r\n2 3 5\r\n4 5 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>11</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 7\r\n1 1 2\r\n2 3 2\r\n4 4 1\r\n3 4 5\r\n5 4 5\r\n2 3 5\r\n4 5 1\n                        \n                        \n                            输出\n                            11"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>bzoj2330</p>\n</div>                </div>",
+      "text": "bzoj2330"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">差分约束</span></span></p>\n</div>                </div>",
+      "text": "差分约束"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 7\r\n1 1 2\r\n2 3 2\r\n4 4 1\r\n3 4 5\r\n5 4 5\r\n2 3 5\r\n4 5 1",
+      "output": "11"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "765",
+    "通过人数": "252",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:58"
+}

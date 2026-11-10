@@ -1,0 +1,67 @@
+{
+  "id": "4683",
+  "title": "平均分配",
+  "tags": [
+    "GESP五级",
+    "贪心",
+    "25年3月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/4683",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>图片中的内容是一个关于物品分配的问题。</p>\n<p>小 <span class=\"katex math inline\">A</span> 有 <span class=\"katex math inline\">2n</span> 件物品，小 <span class=\"katex math inline\">B</span> 和小 <span class=\"katex math inline\">C</span> 想从小 <span class=\"katex math inline\">A</span> 手上买这些物品。</p>\n<p>对于第 <span class=\"katex math inline\">i</span> 件物品，小 <span class=\"katex math inline\">B</span> 会以 <span class=\"katex math inline\">b_i</span> 的价格购买，而小 <span class=\"katex math inline\">C</span> 会以 <span class=\"katex math inline\">c_i</span> 的价格购买。为了平均分配这 <span class=\"katex math inline\">2n</span> 件物品，小 <span class=\"katex math inline\">A</span> 决定小 <span class=\"katex math inline\">B</span> 和小 <span class=\"katex math inline\">C</span> 各自只能买走恰好 <span class=\"katex math inline\">n</span> 件物品。</p>\n<p>问题是求出小 <span class=\"katex math inline\">A</span> 卖出这 <span class=\"katex math inline\">2n</span> 件物品所能获得的最大收入。</p>\n</div>            </div>",
+      "text": "图片中的内容是一个关于物品分配的问题。\n小 A 有 2n 件物品，小 B 和小 C 想从小 A 手上买这些物品。\n对于第 i 件物品，小 B 会以 b_i 的价格购买，而小 C 会以 c_i 的价格购买。为了平均分配这 2n 件物品，小 A 决定小 B 和小 C 各自只能买走恰好 n 件物品。\n问题是求出小 A 卖出这 2n 件物品所能获得的最大收入。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个正整数 <span class=\"katex math inline\"> n </span>。</p>\n<p>第二行，<span class=\"katex math inline\"> 2n </span> 个整数 <span class=\"katex math inline\"> b_1, b_2, \\ldots, b_{2n} </span>。</p>\n<p>第三行，<span class=\"katex math inline\"> 2n </span> 个整数 <span class=\"katex math inline\"> c_1, c_2, \\ldots, c_{2n} </span>。</p>\n</div>            </div>",
+      "text": "第一行，一个正整数  n 。\n第二行， 2n  个整数  b_1, b_2, \\ldots, b_{2n} 。\n第三行， 2n  个整数  c_1, c_2, \\ldots, c_{2n} 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数，表示答案。</p>\n</div>            </div>",
+      "text": "一行，一个整数，表示答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1 3 5 6 8 10\r\n2 4 6 7 9 11</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>36</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2\r\n6 7 9 9\r\n1 2 10 12</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>35</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1 3 5 6 8 10\r\n2 4 6 7 9 11\n                        \n                        \n                            输出\n                            36\n                        \n\n                                                    \n                                输入\n                                2\r\n6 7 9 9\r\n1 2 10 12\n                            \n                            \n                                输出\n                                35"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">20\\%</span> 的测试点，保证 <span class=\"katex math inline\">1 \\leq n \\leq 8</span>。</p>\n<p>对于另外 <span class=\"katex math inline\">20\\%</span> 的测试点，保证 <span class=\"katex math inline\">0 \\leq b_i \\leq 1</span>，<span class=\"katex math inline\">0 \\leq c_i \\leq 1</span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\leq n \\leq 10^5</span>，<span class=\"katex math inline\">0 \\leq b_i \\leq 10^9</span>，<span class=\"katex math inline\">0 \\leq c_i \\leq 10^9</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 20\\% 的测试点，保证 1 \\leq n \\leq 8。\n对于另外 20\\% 的测试点，保证 0 \\leq b_i \\leq 1，0 \\leq c_i \\leq 1。\n对于所有测试点，保证 1 \\leq n \\leq 10^5，0 \\leq b_i \\leq 10^9，0 \\leq c_i \\leq 10^9。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p> 2025GESP3月认证 C++ 五级试题</p>\n</div>                </div>",
+      "text": "2025GESP3月认证 C++ 五级试题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">贪心</span><span class=\"label label-info\">25年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP五级贪心25年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1 3 5 6 8 10\r\n2 4 6 7 9 11",
+      "output": "36"
+    },
+    {
+      "input": "2\r\n6 7 9 9\r\n1 2 10 12",
+      "output": "35"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "622",
+    "通过人数": "265",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:35:59"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "6333",
+  "title": "括号序列",
+  "tags": [
+    "GESP七级",
+    "26年9月",
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/6333",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于字符串 <span class=\"katex math inline\">S</span> 与 <span class=\"katex math inline\">T</span>，如果从 <span class=\"katex math inline\">S</span> 中删除任意多个字符可以得到 <span class=\"katex math inline\">T</span>，那么 <span class=\"katex math inline\">T</span> 是 <span class=\"katex math inline\">S</span> 的子序列。换言之，<span class=\"katex math inline\">T</span> 是选取 <span class=\"katex math inline\">S</span> 中的若干字符按下标顺序连接而成的。两个子序列不同当且仅当所选取的下标不同。</p>\n<p>例如 <code>sun</code> 是 <code>sequence</code> 的子序列，因为从 <code>sequence</code> 中删除 <code>eq</code>、<code>e</code> 和 <code>ce</code> 可以得到 <code>sun</code>；<code>sequence</code> 有 <span class=\"katex math inline\">2^8</span> 个不同的子序列，其中有空字符串，也有三个不同的子序列 <code>e</code>，因为 <code>sequence</code> 的第 <span class=\"katex math inline\">2,5,8</span> 个字符都为 <code>e</code>，分别保留这三个字符得到的子序列是不同的。</p>\n<p>对于字符串 <span class=\"katex math inline\">S</span>，如果 <span class=\"katex math inline\">S</span> 满足以下条件那么 <span class=\"katex math inline\">S</span> 是合法括号序列：</p>\n<ul><li><span class=\"katex math inline\">S</span> 是空字符串，或者</li>\n<li><span class=\"katex math inline\">S</span> 可由 <code>(</code>、合法括号序列、<code>)</code> 三者连接得到，或者</li>\n<li><span class=\"katex math inline\">S</span> 可由两个合法括号序列连接得到。</li>\n</ul><p>例如 <code>()</code>、<code>()()</code>、<code>(())</code> 和 <code>(()())</code> 都是合法括号序列。但是 <code>(()</code>、<code>)(</code> 不是合法括号序列。</p>\n<p>给定一个长度为 <span class=\"katex math inline\">n</span> 的仅包含 <code>(</code> 与 <code>)</code> 的字符串 <span class=\"katex math inline\">S</span>。请你求出 <span class=\"katex math inline\">S</span> 所有 <span class=\"katex math inline\">2^n</span> 个子序列中有多少个合法括号序列。由于答案可能很大，请你输出答案对 <span class=\"katex math inline\">10^9</span> 取模的结果。</p>\n<p>例如，<span class=\"katex math inline\">S</span> 为 <code>))(()(</code> 时共有 <span class=\"katex math inline\">3</span> 个子序列是合法括号序列，分别为空字符串与两个不同的子序列 <code>()</code>。</p>\n</div>            </div>",
+      "text": "对于字符串 S 与 T，如果从 S 中删除任意多个字符可以得到 T，那么 T 是 S 的子序列。换言之，T 是选取 S 中的若干字符按下标顺序连接而成的。两个子序列不同当且仅当所选取的下标不同。\n例如 sun 是 sequence 的子序列，因为从 sequence 中删除 eq、e 和 ce 可以得到 sun；sequence 有 2^8 个不同的子序列，其中有空字符串，也有三个不同的子序列 e，因为 sequence 的第 2,5,8 个字符都为 e，分别保留这三个字符得到的子序列是不同的。\n对于字符串 S，如果 S 满足以下条件那么 S 是合法括号序列：\nS 是空字符串，或者\nS 可由 (、合法括号序列、) 三者连接得到，或者\nS 可由两个合法括号序列连接得到。\n例如 ()、()()、(()) 和 (()()) 都是合法括号序列。但是 (()、)( 不是合法括号序列。\n给定一个长度为 n 的仅包含 ( 与 ) 的字符串 S。请你求出 S 所有 2^n 个子序列中有多少个合法括号序列。由于答案可能很大，请你输出答案对 10^9 取模的结果。\n例如，S 为 ))(()( 时共有 3 个子序列是合法括号序列，分别为空字符串与两个不同的子序列 ()。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个正整数 <span class=\"katex math inline\">n</span>，表示字符串 <span class=\"katex math inline\">S</span> 的长度。</p>\n<p>第二行，长度为 <span class=\"katex math inline\">n</span> 的仅包含 <code>(</code> 与 <code>)</code> 的字符串 <span class=\"katex math inline\">S</span>。</p>\n</div>            </div>",
+      "text": "第一行，一个正整数 n，表示字符串 S 的长度。\n第二行，长度为 n 的仅包含 ( 与 ) 的字符串 S。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，一个整数，表示 <span class=\"katex math inline\">S</span> 的合法括号子序列的数量对 <span class=\"katex math inline\">10^9</span> 取模的结果。</p>\n</div>            </div>",
+      "text": "输出一行，一个整数，表示 S 的合法括号子序列的数量对 10^9 取模的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n))(()(</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>34\r\n((((((((((((((((()))))))))))))))))</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>333606220</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n))(()(\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                34\r\n((((((((((((((((()))))))))))))))))\n                            \n                            \n                                输出\n                                333606220"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的测试点，保证 <span class=\"katex math inline\">1\\le n\\le400</span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1\\le n\\le2000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 40\\% 的测试点，保证 1\\le n\\le400。\n对于所有测试点，保证 1\\le n\\le2000。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP七级</span><span class=\"label label-warning\">26年9月</span><span class=\"label label-info\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "GESP七级26年9月动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n))(()(",
+      "output": "3"
+    },
+    {
+      "input": "34\r\n((((((((((((((((()))))))))))))))))",
+      "output": "333606220"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "20",
+    "通过人数": "9",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:53"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "3174",
+  "title": "创队形",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3174",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>C 组正在拍创意集体照。老师每次都随机抽 <span class=\"katex math inline\">k</span> 个同学搭档，每组搭档都会商量出一款极富创意的独特造型拍照留念（搭档组合不得重复出现，即每组搭档只能拍一张创意照片）。C 组共有 <span class=\"katex math inline\">n</span> 个同学，帮助老师计算不同创意照片的张数。</p>\n</div>            </div>",
+      "text": "C 组正在拍创意集体照。老师每次都随机抽 k 个同学搭档，每组搭档都会商量出一款极富创意的独特造型拍照留念（搭档组合不得重复出现，即每组搭档只能拍一张创意照片）。C 组共有 n 个同学，帮助老师计算不同创意照片的张数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个正整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">k</span>，中间用空格隔开，含义同题意。</p>\n</div>            </div>",
+      "text": "两个正整数 n 和 k，中间用空格隔开，含义同题意。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示不同创意照片的张数。</p>\n</div>            </div>",
+      "text": "一个整数，表示不同创意照片的张数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 2\n                        \n                        \n                            输出\n                            6"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p>共有{<span class=\"katex math inline\">1,2</span>}、{<span class=\"katex math inline\">1,3</span>}、{<span class=\"katex math inline\">1,4</span>}、{<span class=\"katex math inline\">3,2</span>}、{<span class=\"katex math inline\">4,2</span>}、{<span class=\"katex math inline\">3,4</span>}等同学组合拍出的 <span class=\"katex math inline\">6</span> 种不同造型照。</p>\n<p>【数据范围】</p>\n<p>输入的数据保证 <span class=\"katex math inline\"> 0 &lt; k &lt; n &lt; 20 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n共有{1,2}、{1,3}、{1,4}、{3,2}、{4,2}、{3,4}等同学组合拍出的 6 种不同造型照。\n【数据范围】\n输入的数据保证  0 < k < n < 20 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2023南京市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2023南京市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 2",
+      "output": "6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "25",
+    "通过人数": "14",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:34"
+}

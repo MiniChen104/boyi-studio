@@ -1,0 +1,61 @@
+{
+  "id": "2045",
+  "title": "银河英雄传说",
+  "tags": [
+    "带权并查集"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2045",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n        公元五八○一年，地球居民迁移至金牛座α第二行星，在那里发表银河联邦创立宣言，同年改元为宇宙历元年，并开始向银河系深处拓展。\n</p>\n<p class=\"MsoNormal\">\n        宇宙历七九九年，银河系的两大军事集团在<i>巴米利恩星域</i>爆发战争。泰山压顶集团派宇宙舰队司令<i>莱因哈特</i>率领十万余艘战舰出征，气吞山河集团点名将<i>杨威利</i>组织麾下三万艘战舰迎敌。\n</p>\n<p class=\"MsoNormal\">\n        杨威利擅长排兵布阵，巧妙运用各种战术屡次以少胜多，难免恣生骄气。在这次决战中，他将巴米利恩星域战场划分成30000列，每列依次编号为1, 2, …, 30000。之后，他把自己的战舰也依次编号为1, 2, …, 30000，让第i号战舰处于第i列(i = 1, 2, …,\n30000)，形成“一字长蛇阵”，诱敌深入。这是初始阵形。当进犯之敌到达时，杨威利会多次发布合并指令，将大部分战舰集中在某几列上，实施密集攻击。合并指令为M i j，含义为让第i号战舰所在的整个战舰队列，作为一个整体（头在前尾在后）接至第j号战舰所在的战舰队列的尾部。显然战舰队列是由处于同一列的一个或多个战舰组成的。合并指令的执行结果会使队列增大。\n</p>\n<p class=\"MsoNormal\">\n        然而，老谋深算的莱因哈特早已在战略上取得了主动。在交战中，他可以通过庞大的情报网络随时监听杨威利的舰队调动指令。\n</p>\n<p class=\"MsoNormal\">\n        在杨威利发布指令调动舰队的同时，莱因哈特为了及时了解当前杨威利的战舰分布情况，也会发出一些询问指令：C i j。该指令意思是，<i>询问电脑，杨威利的第</i><i>i</i><i>号战舰与第</i><i>j</i><i>号战舰当前是否在同一列中，如果在同一列中，那么它们之间布置有多少战舰。</i> \n</p>\n<p class=\"MsoNormal\">\n        作为一个资深的高级程序设计员，你被要求编写程序分析杨威利的指令，以及回答莱因哈特的询问。\n</p>\n<p class=\"MsoNormal\">\n        最终的决战已经展开，银河的历史又翻过了一页……\n</p>\n</div>            </div>",
+      "text": "公元五八○一年，地球居民迁移至金牛座α第二行星，在那里发表银河联邦创立宣言，同年改元为宇宙历元年，并开始向银河系深处拓展。\n\n\n        宇宙历七九九年，银河系的两大军事集团在巴米利恩星域爆发战争。泰山压顶集团派宇宙舰队司令莱因哈特率领十万余艘战舰出征，气吞山河集团点名将杨威利组织麾下三万艘战舰迎敌。\n\n\n        杨威利擅长排兵布阵，巧妙运用各种战术屡次以少胜多，难免恣生骄气。在这次决战中，他将巴米利恩星域战场划分成30000列，每列依次编号为1, 2, …, 30000。之后，他把自己的战舰也依次编号为1, 2, …, 30000，让第i号战舰处于第i列(i = 1, 2, …,\n30000)，形成“一字长蛇阵”，诱敌深入。这是初始阵形。当进犯之敌到达时，杨威利会多次发布合并指令，将大部分战舰集中在某几列上，实施密集攻击。合并指令为M i j，含义为让第i号战舰所在的整个战舰队列，作为一个整体（头在前尾在后）接至第j号战舰所在的战舰队列的尾部。显然战舰队列是由处于同一列的一个或多个战舰组成的。合并指令的执行结果会使队列增大。\n\n\n        然而，老谋深算的莱因哈特早已在战略上取得了主动。在交战中，他可以通过庞大的情报网络随时监听杨威利的舰队调动指令。\n\n\n        在杨威利发布指令调动舰队的同时，莱因哈特为了及时了解当前杨威利的战舰分布情况，也会发出一些询问指令：C i j。该指令意思是，询问电脑，杨威利的第i号战舰与第j号战舰当前是否在同一列中，如果在同一列中，那么它们之间布置有多少战舰。 \n\n\n        作为一个资深的高级程序设计员，你被要求编写程序分析杨威利的指令，以及回答莱因哈特的询问。\n\n\n        最终的决战已经展开，银河的历史又翻过了一页……"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n输入的第一行有一个整数T（1&lt;=T&lt;=500,000），表示总共有T条指令。\n</p>\n<p class=\"MsoNormal\">\n以下有T行，每行有一条指令。指令有两种格式：\n</p>\n<p class=\"MsoNormal\">\n1.      \nM  i  j  ：i和j是两个整数（1&lt;=i , j&lt;=30000），表示指令涉及的战舰编号。该指令是莱因哈特窃听到的杨威利发布的舰队调动指令，并且保证第i号战舰与第j号战舰不在同一列。\n</p>\n<p class=\"MsoNormal\">\n2.      \nC  i  j  ：i和j是两个整数（1&lt;=i , j&lt;=30000），表示指令涉及的战舰编号。该指令是莱因哈特发布的询问指令。\n</p>\n</div>            </div>",
+      "text": "输入的第一行有一个整数T（1<=T<=500,000），表示总共有T条指令。\n\n\n以下有T行，每行有一条指令。指令有两种格式：\n\n\n1.      \nM  i  j  ：i和j是两个整数（1<=i , j<=30000），表示指令涉及的战舰编号。该指令是莱因哈特窃听到的杨威利发布的舰队调动指令，并且保证第i号战舰与第j号战舰不在同一列。\n\n\n2.      \nC  i  j  ：i和j是两个整数（1<=i , j<=30000），表示指令涉及的战舰编号。该指令是莱因哈特发布的询问指令。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n你的程序应当依次对输入的每一条指令进行分析和处理：\n</p>\n<p class=\"MsoNormal\">\n如果是杨威利发布的舰队调动指令，则表示舰队排列发生了变化，你的程序要注意到这一点，但是不要输出任何信息；\n</p>\n<p class=\"MsoNormal\">\n如果是莱因哈特发布的询问指令，你的程序要输出一行，仅包含一个整数，表示在同一列上，第i号战舰与第j号战舰之间布置的战舰数目。如果第i号战舰与第j号战舰当前不在同一列上，则输出-1。\n</p>\n</div>            </div>",
+      "text": "你的程序应当依次对输入的每一条指令进行分析和处理：\n\n\n如果是杨威利发布的舰队调动指令，则表示舰队排列发生了变化，你的程序要注意到这一点，但是不要输出任何信息；\n\n\n如果是莱因哈特发布的询问指令，你的程序要输出一行，仅包含一个整数，表示在同一列上，第i号战舰与第j号战舰之间布置的战舰数目。如果第i号战舰与第j号战舰当前不在同一列上，则输出-1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\nM 2 3\r\nC 1 2\r\nM 2 4\r\nC 4 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>-1\r\n1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\nM 2 3\r\nC 1 2\r\nM 2 4\r\nC 4 2\n                        \n                        \n                            输出\n                            -1\r\n1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p class=\"MsoNormal\">\n\t战舰位置图：表格中阿拉伯数字表示战舰编号\n</p>\n<table class=\"MsoNormalTable\"><tbody><tr><td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>第一列</span><span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>第二列</span><span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>第三列</span><span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>第四列</span><span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>……</span><span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t</tr><tr><td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>初始时</span><span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>1</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>2</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>3</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>4</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>……</span><span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t</tr><tr><td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>M 2 3</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>1</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>3</span> \n\t\t\t\t</p>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>2</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>4</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>……</span><span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t</tr><tr><td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>C 1 2</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>1</span><span>号战舰与</span><span>2</span><span>号战舰不在同一列，因此输出</span><span>-</span><span>1</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t</tr><tr><td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>M 2 4</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>1</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>4</span> \n\t\t\t\t</p>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>3</span> \n\t\t\t\t</p>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>2</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>……</span><span></span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t</tr><tr><td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>C 4 2</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<p class=\"MsoNormal\">\n\t\t\t\t\t<span>4</span><span>号战舰与</span><span>2</span><span>号战舰之间仅布置了一艘战舰，编号为</span><span>3</span><span>，输出</span><span>1</span> \n\t\t\t\t</p>\n\t\t\t</td>\n\t\t</tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "战舰位置图：表格中阿拉伯数字表示战舰编号\n\n\n\t\t\t\t\n\t\t\t\t\t \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t第一列 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t第二列 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t第三列 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t第四列 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t…… \n\t\t\t\t\n\t\t\t\n\t\t\n\t\t\t\t\n\t\t\t\t\t初始时 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t1 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t2 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t3 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t4 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t…… \n\t\t\t\t\n\t\t\t\n\t\t\n\t\t\t\t\n\t\t\t\t\tM 2 3 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t1 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t3 \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t2 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t4 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t…… \n\t\t\t\t\n\t\t\t\n\t\t\n\t\t\t\t\n\t\t\t\t\tC 1 2 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t1号战舰与2号战舰不在同一列，因此输出-1 \n\t\t\t\t\n\t\t\t\n\t\t\n\t\t\t\t\n\t\t\t\t\tM 2 4 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t1 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t4 \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t3 \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t2 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t…… \n\t\t\t\t\n\t\t\t\n\t\t\n\t\t\t\t\n\t\t\t\t\tC 4 2 \n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t4号战舰与2号战舰之间仅布置了一艘战舰，编号为3，输出1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>带权并查集</p>\n</div>                </div>",
+      "text": "带权并查集"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">带权并查集</span></span></p>\n</div>                </div>",
+      "text": "带权并查集"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\nM 2 3\r\nC 1 2\r\nM 2 4\r\nC 4 2",
+      "output": "-1\r\n1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1089",
+    "通过人数": "316",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:43"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "1488",
+  "title": "论坛帖子",
+  "tags": [
+    "容器",
+    "vector"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1488",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>你是一个论坛的站长,你们论坛有约 <span class=\"katex math inline\">10</span> 万个帖子,每个帖子编号为 <span class=\"katex math inline\">1-100000</span>。每个帖子里面又有若干个回复。现在告诉你每个帖子下面的回复人的ID(ID的范围为 <span class=\"katex math inline\">1-100000</span>)</p>\n<p>现在你要写一个程序,支持插入操作,即 <code>ADD x y</code> 代表编号为 <span class=\"katex math inline\">x</span> 的帖子有一个ID为 <span class=\"katex math inline\">y</span> 的人回复。支持查询操作，即<code>QUERY x y</code> 代表查询编号为 <span class=\"katex math inline\">x</span> 的帖子第 <span class=\"katex math inline\">y</span> 个回复的人的ID。</p>\n</div>            </div>",
+      "text": "你是一个论坛的站长,你们论坛有约 10 万个帖子,每个帖子编号为 1-100000。每个帖子里面又有若干个回复。现在告诉你每个帖子下面的回复人的ID(ID的范围为 1-100000)\n现在你要写一个程序,支持插入操作,即 ADD x y 代表编号为 x 的帖子有一个ID为 y 的人回复。支持查询操作，即QUERY x y 代表查询编号为 x 的帖子第 y 个回复的人的ID。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行一个整数 <span class=\"katex math inline\">N</span>，代表有 <span class=\"katex math inline\">N</span> 次询问（<span class=\"katex math inline\">1 \\le N \\le 100000</span>）</p>\n<p>第 <span class=\"katex math inline\">2</span> 行到第 <span class=\"katex math inline\">N+1</span> 行代表 <span class=\"katex math inline\">N</span> 次询问的内容，每行为以下 <span class=\"katex math inline\">2</span> 种格式之一：</p>\n<p><code>ADD x y</code> 新增加了一个回复，代表编号为 <span class=\"katex math inline\">x</span> 的帖子有一个ID为 <span class=\"katex math inline\">y</span> 的人回复</p>\n<p><code>QUERY x y</code> 代表查询编号为 <span class=\"katex math inline\">x</span> 的帖子第 <span class=\"katex math inline\">y</span> 个回复的人的ID</p>\n<p>保证 <span class=\"katex math inline\">1 \\le x \\le 100000</span>,<span class=\"katex math inline\">1 \\le y \\le 100000</span></p>\n</div>            </div>",
+      "text": "第 1 行一个整数 N，代表有 N 次询问（1 \\le N \\le 100000）\n第 2 行到第 N+1 行代表 N 次询问的内容，每行为以下 2 种格式之一：\nADD x y 新增加了一个回复，代表编号为 x 的帖子有一个ID为 y 的人回复\nQUERY x y 代表查询编号为 x 的帖子第 y 个回复的人的ID\n保证 1 \\le x \\le 100000,1 \\le y \\le 100000"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每个 <code>QUERY</code> 的查询,每次输出占一行,代表编号为 <span class=\"katex math inline\">x</span> 的帖子第 <span class=\"katex math inline\">y</span> 个回复的人的ID，如果编号为 <span class=\"katex math inline\">x</span> 的帖子总的回复数小于 <span class=\"katex math inline\">y</span>，则输出 <code>-1</code>。</p>\n</div>            </div>",
+      "text": "对于每个 QUERY 的查询,每次输出占一行,代表编号为 x 的帖子第 y 个回复的人的ID，如果编号为 x 的帖子总的回复数小于 y，则输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\nADD 10 10086\r\nADD 10 10010\r\nQUERY 10 1\r\nQUERY 88888 1\r\nADD 88888 10010\r\nADD 88888 12580\r\nQUERY 88888 2\r\nQUERY 88888 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10086 \r\n-1 \r\n12580 \r\n-1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\nADD 10 10086\r\nADD 10 10010\r\nQUERY 10 1\r\nQUERY 88888 1\r\nADD 88888 10010\r\nADD 88888 12580\r\nQUERY 88888 2\r\nQUERY 88888 3\n                        \n                        \n                            输出\n                            10086 \r\n-1 \r\n12580 \r\n-1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>容器 vector</p>\n</div>                </div>",
+      "text": "容器 vector"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">容器</span><span class=\"label label-warning\">vector</span></span></p>\n</div>                </div>",
+      "text": "容器vector"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\nADD 10 10086\r\nADD 10 10010\r\nQUERY 10 1\r\nQUERY 88888 1\r\nADD 88888 10010\r\nADD 88888 12580\r\nQUERY 88888 2\r\nQUERY 88888 3",
+      "output": "10086 \r\n-1 \r\n12580 \r\n-1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2415",
+    "通过人数": "1796",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:09"
+}

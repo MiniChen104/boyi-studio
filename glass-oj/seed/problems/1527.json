@@ -1,0 +1,61 @@
+{
+  "id": "1527",
+  "title": "小X与队列",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1527",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小X正和同学们做列队的练习。</p>\n<p>有 <span class=\"katex math inline\">n</span> 名同学排成一路纵队，编号为 <span class=\"katex math inline\">i</span> 的同学排在从前往后数第 <span class=\"katex math inline\">i</span> 个位置上，即：初始时的队列为 <span class=\"katex math inline\">1, 2, 3, ..., n</span> 。</p>\n<p>接下来小X会发出若干条指令，每条指令形如“请编号为 <span class=\"katex math inline\">x</span> 的同学排到最前面来”。（例如：若当前时刻的队列为 <span class=\"katex math inline\">5, 4, 3, 2, 1</span> ，发出一条 <span class=\"katex math inline\">x=2</span> 的指令后，队列变成了 <span class=\"katex math inline\">2, 5, 4, 3, 1</span> ）。</p>\n<p>小X发出了很多很多指令，同学们晕头转向不知道该怎么排列。于是就请你算一算，执行完这些指令后，队列应该变成什么样？</p>\n</div>            </div>",
+      "text": "小X正和同学们做列队的练习。\n有 n 名同学排成一路纵队，编号为 i 的同学排在从前往后数第 i 个位置上，即：初始时的队列为 1, 2, 3, ..., n 。\n接下来小X会发出若干条指令，每条指令形如“请编号为 x 的同学排到最前面来”。（例如：若当前时刻的队列为 5, 4, 3, 2, 1 ，发出一条 x=2 的指令后，队列变成了 2, 5, 4, 3, 1 ）。\n小X发出了很多很多指令，同学们晕头转向不知道该怎么排列。于是就请你算一算，执行完这些指令后，队列应该变成什么样？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个用空格隔开的正整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> ，分别表示人数和指令数。</p>\n<p>第二行 <span class=\"katex math inline\">m</span> 个用空格隔开的正整数 <span class=\"katex math inline\">x_i</span>，按顺序表示每次指令的 <span class=\"katex math inline\">x</span> 值。</p>\n</div>            </div>",
+      "text": "第一行两个用空格隔开的正整数 n 和 m ，分别表示人数和指令数。\n第二行 m 个用空格隔开的正整数 x_i，按顺序表示每次指令的 x 值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出仅有一行包含 <span class=\"katex math inline\">n</span> 个正整数，相邻两个数之间用一个空格隔开，表示执行完所有指令后的队列。</p>\n</div>            </div>",
+      "text": "输出仅有一行包含 n 个正整数，相邻两个数之间用一个空格隔开，表示执行完所有指令后的队列。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 3\r\n2 3 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 3 1 4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 3\r\n2 3 2\n                        \n                        \n                            输出\n                            2 3 1 4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例解释】</strong></p>\n<p>第一条指令前：<span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">4</span></p>\n<p>第一条指令后(<span class=\"katex math inline\">x=2</span>)：<span class=\"katex math inline\">2</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">4</span></p>\n<p>第二条指令后(<span class=\"katex math inline\">x=3</span>)：<span class=\"katex math inline\">3</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">4</span></p>\n<p>第三条指令后(<span class=\"katex math inline\">x=2</span>)：<span class=\"katex math inline\">2</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">4</span></p>\n<p><strong>【数据范围】</strong></p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">1≤n,m≤1000</span>；</p>\n<p>对于另外 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">n=m</span>，且 <span class=\"katex math inline\">1</span>～<span class=\"katex math inline\">n</span> 每个数在 <span class=\"katex math inline\">x_i</span> 中恰好出现一次；</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1≤n,m≤100000</span>；</p>\n<p><strong>来源</strong></p>\n<p>常州市2017“信息与未来”夏令营选拔赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n第一条指令前：1 2 3 4\n第一条指令后(x=2)：2 1 3 4\n第二条指令后(x=3)：3 2 1 4\n第三条指令后(x=2)：2 3 1 4\n【数据范围】\n对于 30\\% 的数据，1≤n,m≤1000；\n对于另外 30\\% 的数据，n=m，且 1～n 每个数在 x_i 中恰好出现一次；\n对于 100\\% 的数据，1≤n,m≤100000；\n来源\n常州市2017“信息与未来”夏令营选拔赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 3\r\n2 3 2",
+      "output": "2 3 1 4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1647",
+    "通过人数": "719",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:40"
+}

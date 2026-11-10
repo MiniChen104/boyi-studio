@@ -1,0 +1,52 @@
+{
+  "id": "4850",
+  "title": "递减等差数列",
+  "tags": [
+    "蓝桥等考",
+    "循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4850",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>等差数列是指从第二项起，每一项与它的前一项的差等于同一个常数的一种数列，这个常数叫做等差数列的公差。</p>\n<p>例如 <span class=\"katex math inline\">2</span>,<span class=\"katex math inline\">5</span>,<span class=\"katex math inline\">8</span>,<span class=\"katex math inline\">11</span> 就是一个公差为 <span class=\"katex math inline\">3</span> 的等差数列。</p>\n<p>如果公差小于 <span class=\"katex math inline\">0</span>，为递减等差数列。如 <span class=\"katex math inline\">11</span>,<span class=\"katex math inline\">7</span>,<span class=\"katex math inline\">3</span> 就是一个公差为 <span class=\"katex math inline\">-4</span> 的递减等差数列。也就是从第二项起，每一项比前一项减少 <span class=\"katex math inline\">4</span>。</p>\n<p>给定两个正整数 <span class=\"katex math inline\">m、n</span>，输出从 <span class=\"katex math inline\">m</span> 到 <span class=\"katex math inline\">n</span> 之间，以 <span class=\"katex math inline\">m</span> 为第一项，公差为 <span class=\"katex math inline\">-4</span> 的等差数列。 </p>\n</div>            </div>",
+      "text": "等差数列是指从第二项起，每一项与它的前一项的差等于同一个常数的一种数列，这个常数叫做等差数列的公差。\n例如 2,5,8,11 就是一个公差为 3 的等差数列。\n如果公差小于 0，为递减等差数列。如 11,7,3 就是一个公差为 -4 的递减等差数列。也就是从第二项起，每一项比前一项减少 4。\n给定两个正整数 m、n，输出从 m 到 n 之间，以 m 为第一项，公差为 -4 的等差数列。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个正整数 <span class=\"katex math inline\">m、n</span>，输出从 <span class=\"katex math inline\">m</span> 到 <span class=\"katex math inline\">n</span> 之间，以 <span class=\"katex math inline\">m</span> 为第一项，公差为 <span class=\"katex math inline\">-4</span> 的等差数列（<span class=\"katex math inline\">1 \\lt m \\lt n \\le 1000</span>）。</p>\n</div>            </div>",
+      "text": "输入两个正整数 m、n，输出从 m 到 n 之间，以 m 为第一项，公差为 -4 的等差数列（1 \\lt m \\lt n \\le 1000）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出从 <span class=\"katex math inline\">m</span> 到 <span class=\"katex math inline\">n</span> 之间的所有满足条件的数。</p>\n</div>            </div>",
+      "text": "输出从 m 到 n 之间的所有满足条件的数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>11 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>11 7 3 </pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            11 1\n                        \n                        \n                            输出\n                            11 7 3"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">循环</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "11 1",
+      "output": "11 7 3 "
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "118",
+    "通过人数": "90",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:03"
+}

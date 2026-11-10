@@ -1,0 +1,56 @@
+{
+  "id": "2230",
+  "title": "数字方格",
+  "tags": [
+    "嵌套循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2230",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><img src=\"https://assets.boyi.local/4d637443085ff7fbd33a6acc.png\"></p>\n<p>如上图，有 <span class=\"katex math inline\">3</span> 个方格，每个方格里面都有一个整数 <span class=\"katex math inline\">a1，a2，a3</span> 。已知 <span class=\"katex math inline\">0 \\le a1</span>, <span class=\"katex math inline\">a2</span> , <span class=\"katex math inline\">a3 \\le n</span> ，而且<span class=\"katex math inline\">a1 + a2</span> 是 <span class=\"katex math inline\">2</span> 的倍数，<span class=\"katex math inline\">a2 + a3</span> 是 <span class=\"katex math inline\">3</span> 的倍数， <span class=\"katex math inline\">a1 + a2 + a3</span> 是 <span class=\"katex math inline\">5</span> 的倍数。</p>\n<p>你的任务是找到一组 <span class=\"katex math inline\">a1，a2，a3</span> ，使得 <span class=\"katex math inline\">a1 + a2 + a3</span> 最大。</p>\n</div>            </div>",
+      "text": "如上图，有 3 个方格，每个方格里面都有一个整数 a1，a2，a3 。已知 0 \\le a1, a2 , a3 \\le n ，而且a1 + a2 是 2 的倍数，a2 + a3 是 3 的倍数， a1 + a2 + a3 是 5 的倍数。\n你的任务是找到一组 a1，a2，a3 ，使得 a1 + a2 + a3 最大。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，包含一个整数 <span class=\"katex math inline\">n (0 \\le n \\le 100</span> )。</p>\n</div>            </div>",
+      "text": "一行，包含一个整数 n (0 \\le n \\le 100 )。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，即 <span class=\"katex math inline\">a1 + a2 + a3</span> 的最大值。</p>\n</div>            </div>",
+      "text": "一个整数，即 a1 + a2 + a3 的最大值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会三级</p>\n</div>                </div>",
+      "text": "电子学会三级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">嵌套循环</span></span></p>\n</div>                </div>",
+      "text": "嵌套循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2934",
+    "通过人数": "1535",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:04"
+}

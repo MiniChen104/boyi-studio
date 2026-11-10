@@ -1,0 +1,56 @@
+{
+  "id": "1109",
+  "title": "加密四位数",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1109",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某军事单位用 <span class=\"katex math inline\">4</span> 位整数来传递信息，传递之前要求先对这个 <span class=\"katex math inline\">4</span> 位数进行加密。加密的方式是每一位都先加上 <span class=\"katex math inline\">5</span> 然后对 <span class=\"katex math inline\">10</span> 取余数，再将得到的新数颠倒过来。</p>\n<p>例如：原数是 <span class=\"katex math inline\">1379</span> ，那么每位加 <span class=\"katex math inline\">5</span> 对 <span class=\"katex math inline\">10</span> 取余数的结果为 <span class=\"katex math inline\">6824</span> ，然后颠倒该数，得到新数：<span class=\"katex math inline\">4286</span>。</p>\n<p>再比如：原数是 <span class=\"katex math inline\">2570</span>，那么每位加 <span class=\"katex math inline\">5</span> 对 <span class=\"katex math inline\">10</span> 取余数的结果为 <span class=\"katex math inline\">7025</span> ，然后颠倒该数，得到新数： <span class=\"katex math inline\">5207</span> 。</p>\n<p>请根据加密要求，写出加密算法！</p>\n</div>            </div>",
+      "text": "某军事单位用 4 位整数来传递信息，传递之前要求先对这个 4 位数进行加密。加密的方式是每一位都先加上 5 然后对 10 取余数，再将得到的新数颠倒过来。\n例如：原数是 1379 ，那么每位加 5 对 10 取余数的结果为 6824 ，然后颠倒该数，得到新数：4286。\n再比如：原数是 2570，那么每位加 5 对 10 取余数的结果为 7025 ，然后颠倒该数，得到新数： 5207 。\n请根据加密要求，写出加密算法！"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>加密前的 <span class=\"katex math inline\">4</span> 位数。</p>\n</div>            </div>",
+      "text": "加密前的 4 位数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>加密后的结果</p>\n</div>            </div>",
+      "text": "加密后的结果"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1379</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4286</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1379\n                        \n                        \n                            输出\n                            4286"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1379",
+      "output": "4286"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "42993",
+    "通过人数": "31058",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:14:52"
+}

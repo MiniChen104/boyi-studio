@@ -1,0 +1,59 @@
+{
+  "id": "4908",
+  "title": "数字的首尾",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4908",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行由英文的大写字母、小写字母、数字构成的字符串，其中连续的数字字符构成一个整数。</p>\n<p>请输出每个整数的第 <span class=\"katex math inline\">1</span> 个数字字符和最后一个数字字符。</p>\n</div>            </div>",
+      "text": "输入一行由英文的大写字母、小写字母、数字构成的字符串，其中连续的数字字符构成一个整数。\n请输出每个整数的第 1 个数字字符和最后一个数字字符。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行由英文的大写字母、小写字母、数字构成的字符串。</p>\n<p>请注意，字符串长度在 <span class=\"katex math inline\">[5, 100]</span> 的范围内，保证输入的字符串中一定有数字字符，且整数一定不会以数字 <span class=\"katex math inline\">0</span> 开头，即不会是类似 <code>Ab0123Cd45</code> 的格式，但可能是 <code>Ab1023Cd45</code> 的格式。</p>\n</div>            </div>",
+      "text": "输入一行由英文的大写字母、小写字母、数字构成的字符串。\n请注意，字符串长度在 [5, 100] 的范围内，保证输入的字符串中一定有数字字符，且整数一定不会以数字 0 开头，即不会是类似 Ab0123Cd45 的格式，但可能是 Ab1023Cd45 的格式。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出若干行，每行输出一个整数的第 <span class=\"katex math inline\">1</span> 个数字字符和最后一个数字字符，两个字符之间用空格隔开。</p>\n<p>特别的，如果一个整数只有一位数，那么这一位数既是第 <span class=\"katex math inline\">1</span> 个数字，也是最后一个数字字符。</p>\n</div>            </div>",
+      "text": "输出若干行，每行输出一个整数的第 1 个数字字符和最后一个数字字符，两个字符之间用空格隔开。\n特别的，如果一个整数只有一位数，那么这一位数既是第 1 个数字，也是最后一个数字字符。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>Abc123de45f678</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 3\r\n4 5\r\n6 8</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>A1b234Cde56</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1 1\r\n2 4\r\n5 6</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>Dr3401345992949243434385439483128832903284dfe</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3 4</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            Abc123de45f678\n                        \n                        \n                            输出\n                            1 3\r\n4 5\r\n6 8\n                        \n\n                                                    \n                                输入\n                                A1b234Cde56\n                            \n                            \n                                输出\n                                1 1\r\n2 4\r\n5 6\n                            \n                        \n                                                    \n                                输入\n                                Dr3401345992949243434385439483128832903284dfe\n                            \n                            \n                                输出\n                                3 4"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "Abc123de45f678",
+      "output": "1 3\r\n4 5\r\n6 8"
+    },
+    {
+      "input": "A1b234Cde56",
+      "output": "1 1\r\n2 4\r\n5 6"
+    },
+    {
+      "input": "Dr3401345992949243434385439483128832903284dfe",
+      "output": "3 4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "233",
+    "通过人数": "168",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:15"
+}

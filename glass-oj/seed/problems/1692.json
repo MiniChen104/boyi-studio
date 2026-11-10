@@ -1,0 +1,56 @@
+{
+  "id": "1692",
+  "title": "一元三次方程求解",
+  "tags": [
+    "递归"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1692",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有形如：<span class=\"katex math inline\">ax^3+bx^2+cx+d＝0</span> 这样的一个一元三次方程。给出该方程中各项的系数（<span class=\"katex math inline\">a,b,c,d</span> 均为实数），并约定该方程存在三个不同实根（根的范围在 <span class=\"katex math inline\">-100</span> 至 <span class=\"katex math inline\">100</span> 之间），且根与根之差的绝对值 <span class=\"katex math inline\"> \\ge 1</span>。</p>\n<p>要求由小到大依次在同一行输出这三个实根（根与根之间留有空格），并精确到小数点后 <span class=\"katex math inline\">2</span> 位。</p>\n</div>            </div>",
+      "text": "有形如：ax^3+bx^2+cx+d＝0 这样的一个一元三次方程。给出该方程中各项的系数（a,b,c,d 均为实数），并约定该方程存在三个不同实根（根的范围在 -100 至 100 之间），且根与根之差的绝对值  \\ge 1。\n要求由小到大依次在同一行输出这三个实根（根与根之间留有空格），并精确到小数点后 2 位。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，输入 <span class=\"katex math inline\">a, b, c, d</span>。</p>\n</div>            </div>",
+      "text": "一行，输入 a, b, c, d。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个实根（根与根之间留有空格）</p>\n</div>            </div>",
+      "text": "三个实根（根与根之间留有空格）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 -5 -4 20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>-2.00 2.00 5.00</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 -5 -4 20\n                        \n                        \n                            输出\n                            -2.00 2.00 5.00"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递归</p>\n</div>                </div>",
+      "text": "递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递归</span></span></p>\n</div>                </div>",
+      "text": "递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 -5 -4 20",
+      "output": "-2.00 2.00 5.00"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "361",
+    "通过人数": "205",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:58"
+}

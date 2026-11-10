@@ -1,0 +1,68 @@
+{
+  "id": "4989",
+  "title": "学习小组",
+  "tags": [
+    "GESP六级",
+    "25年6月",
+    "动态规划",
+    "背包问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4989",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>班主任计划将班级里的 <span class=\"katex math inline\">n</span> 名同学划分为若干个学习小组，每名同学都需要分入某一个学习小组中。观察发现，如果一个学习小组中恰好包含 <span class=\"katex math inline\">k</span> 名同学，则该学习小组的讨论积极度为<span class=\"katex math inline\">a_k</span>。</p>\n<p>给定讨论积极度 <span class=\"katex math inline\">a_1，a_2，...a_n</span>，请你计算将这 <span class=\"katex math inline\">n</span> 名同学划分为学习小组的所有可能方案中，讨论积极度之和的最大\n值。</p>\n</div>            </div>",
+      "text": "班主任计划将班级里的 n 名同学划分为若干个学习小组，每名同学都需要分入某一个学习小组中。观察发现，如果一个学习小组中恰好包含 k 名同学，则该学习小组的讨论积极度为a_k。\n给定讨论积极度 a_1，a_2，...a_n，请你计算将这 n 名同学划分为学习小组的所有可能方案中，讨论积极度之和的最大\n值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个正整数 <span class=\"katex math inline\">n</span>，表示班级人数。</p>\n<p>第二行，<span class=\"katex math inline\">n</span> 个非负整数 <span class=\"katex math inline\">a_1，a_2，...a_n</span>，表示不同人数学习小组的讨论积极度。</p>\n</div>            </div>",
+      "text": "第一行，一个正整数 n，表示班级人数。\n第二行，n 个非负整数 a_1，a_2，...a_n，表示不同人数学习小组的讨论积极度。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共一行，一个整数，表示所有划分方案中，学习小组讨论积极度之和的最大值。</p>\n</div>            </div>",
+      "text": "输出共一行，一个整数，表示所有划分方案中，学习小组讨论积极度之和的最大值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n1 5 6 3\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>8\r\n0 2 5 6 4 3 3 4\r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>12</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n1 5 6 3\r\n\n                        \n                        \n                            输出\n                            10\n                        \n\n                                                    \n                                输入\n                                8\r\n0 2 5 6 4 3 3 4\r\n\n                            \n                            \n                                输出\n                                12"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">40</span>% 的测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 10</span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 1000，0 \\le a_i \\le 10^{4}</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 40% 的测试点，保证 1 \\le n \\le 10。\n对于所有测试点，保证 1 \\le n \\le 1000，0 \\le a_i \\le 10^{4}。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP25年6月六级</p>\n</div>                </div>",
+      "text": "GESP25年6月六级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP六级</span><span class=\"label label-warning\">25年6月</span><span class=\"label label-info\">动态规划</span><span class=\"label label-danger\">背包问题</span></span></p>\n</div>                </div>",
+      "text": "GESP六级25年6月动态规划背包问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n1 5 6 3\r\n",
+      "output": "10"
+    },
+    {
+      "input": "8\r\n0 2 5 6 4 3 3 4\r\n",
+      "output": "12"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "190",
+    "通过人数": "150",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:32"
+}

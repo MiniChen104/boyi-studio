@@ -1,0 +1,62 @@
+{
+  "id": "3975",
+  "title": "期末总评",
+  "tags": [
+    "市赛",
+    "循环",
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3975",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>浙江某大学要求每门课程的期末总评分有着“正态分布”的要求。另外，与数学中的正\n态分布<strong>不同</strong>，这里“正态分布”的定义是：在一门课程中，优秀（总评分大于等于 <span class=\"katex math inline\">90</span> 分）的同学不超过 <span class=\"katex math inline\">30\\%</span>；挂科（总评分小于 <span class=\"katex math inline\">60</span> 分）的同学不超过 <span class=\"katex math inline\">10\\%</span>。</p>\n<p>小 M 是该大学某门课程的助教，现在这门课程的老师已经完成了评分工作。他将课\n程中 <span class=\"katex math inline\">n</span> 个同学的各自的总评分告诉你，希望你帮他检查他打出的总评分是否满足了学校“正态分布”的要求。</p>\n</div>            </div>",
+      "text": "浙江某大学要求每门课程的期末总评分有着“正态分布”的要求。另外，与数学中的正\n态分布不同，这里“正态分布”的定义是：在一门课程中，优秀（总评分大于等于 90 分）的同学不超过 30\\%；挂科（总评分小于 60 分）的同学不超过 10\\%。\n小 M 是该大学某门课程的助教，现在这门课程的老师已经完成了评分工作。他将课\n程中 n 个同学的各自的总评分告诉你，希望你帮他检查他打出的总评分是否满足了学校“正态分布”的要求。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个整数 <span class=\"katex math inline\">n</span>，表示某门课程中同学的总数。</p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个整数，其中第 <span class=\"katex math inline\">i</span> 个整数 <span class=\"katex math inline\">a_i</span>表示第 <span class=\"katex math inline\">i</span> 位同学的总评分。</p>\n</div>            </div>",
+      "text": "第一行包含一个整数 n，表示某门课程中同学的总数。\n第二行包含 n 个整数，其中第 i 个整数 a_i表示第 i 位同学的总评分。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个字符串，表示是否满足了正态分布的要求。若满足输出 <code>YES</code>；否则输出\n<code>NO</code>。</p>\n</div>            </div>",
+      "text": "输出一行一个字符串，表示是否满足了正态分布的要求。若满足输出 YES；否则输出\nNO。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n95 85 75 70 65</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>YES</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n90 85 80 75 55</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>NO</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n95 85 75 70 65\n                        \n                        \n                            输出\n                            YES\n                        \n\n                                                    \n                                输入\n                                5\r\n90 85 80 75 55\n                            \n                            \n                                输出\n                                NO"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例 1 解释】</strong></p>\n<p>在 <span class=\"katex math inline\">5</span> 名同学中，只有一位同学获得了优秀，占 <span class=\"katex math inline\">20\\%</span>，满足优秀学生不超过 <span class=\"katex math inline\">30\\%</span> 的要\n求。可以认为这组评分满足了学校要求的“正态分布”，故输出 <code>YES</code>。</p>\n<p><strong>【样例 2 解释】</strong></p>\n<p>在 <span class=\"katex math inline\">5</span> 名同学中，还是只有一名同学获得了优秀；但有一名同学的总评分小于 <span class=\"katex math inline\">60</span> 分，\n属于挂科，占比 <span class=\"katex math inline\">20\\%</span>，不满足挂科的同学不超过 <span class=\"katex math inline\">10\\%</span> 的要求，故应输出 <code>NO</code>。</p>\n<h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\"> n \\le 10</span>。</p>\n<p>对于 <span class=\"katex math inline\">80\\%</span> 的数据，<span class=\"katex math inline\"> n \\le 100</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\"> n \\le 500</span>，<span class=\"katex math inline\"> 1 \\le a_i \\le 100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 1 解释】\n在 5 名同学中，只有一位同学获得了优秀，占 20\\%，满足优秀学生不超过 30\\% 的要\n求。可以认为这组评分满足了学校要求的“正态分布”，故输出 YES。\n【样例 2 解释】\n在 5 名同学中，还是只有一名同学获得了优秀；但有一名同学的总评分小于 60 分，\n属于挂科，占比 20\\%，不满足挂科的同学不超过 10\\% 的要求，故应输出 NO。\n【数据范围】\n对于 30\\% 的数据， n \\le 10。\n对于 80\\% 的数据， n \\le 100。\n对于 100\\% 的数据， n \\le 500， 1 \\le a_i \\le 100。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">循环</span><span class=\"label label-info\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "市赛循环数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n95 85 75 70 65",
+      "output": "YES"
+    },
+    {
+      "input": "5\r\n90 85 80 75 55",
+      "output": "NO"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "633",
+    "通过人数": "298",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:36"
+}

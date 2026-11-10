@@ -1,0 +1,58 @@
+{
+  "id": "4616",
+  "title": "走楼梯",
+  "tags": [
+    "蓝桥杯STEMA",
+    "高精度",
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/4616",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一段楼梯共有 <span class=\"katex math inline\">n</span> 阶，小明每次最少走 <span class=\"katex math inline\">1</span> 阶，最多走 <span class=\"katex math inline\">k</span> 阶，请问小明共有多少种不同的走法可以走完这 <span class=\"katex math inline\">n</span> 阶楼梯。</p>\n<p>例如：<span class=\"katex math inline\">n = 4</span>，<span class=\"katex math inline\">k = 2</span>；楼梯共有 <span class=\"katex math inline\">4</span>  阶，小明每次最多走 <span class=\"katex math inline\">2</span> 阶；</p>\n<p>有如下走法：</p>\n<ul><li><p>第一种：第一次走 <span class=\"katex math inline\">1</span> 阶，第二次走 <span class=\"katex math inline\">1 </span> 阶，第三次走 <span class=\"katex math inline\">1</span> 阶，第四次走 <span class=\"katex math inline\">1</span> 阶；</p>\n</li>\n<li><p>第二种：第一次走 <span class=\"katex math inline\">1</span> 阶，第二次走 <span class=\"katex math inline\">1</span> 阶，第三次走 <span class=\"katex math inline\">2</span> 阶；</p>\n</li>\n<li><p>第三种：第一次走 <span class=\"katex math inline\">1</span> 阶，第二次走 <span class=\"katex math inline\">2</span>  阶，第三次走 <span class=\"katex math inline\">1</span> 阶；</p>\n</li>\n<li><p>第四种：第一次走 <span class=\"katex math inline\">2</span> 阶，第二次走 <span class=\"katex math inline\">1 </span> 阶，第三次走 <span class=\"katex math inline\">1</span> 阶；</p>\n</li>\n<li><p>第五种：第一次走 <span class=\"katex math inline\">2</span> 阶，第二次走 <span class=\"katex math inline\">2</span> 阶。</p>\n</li>\n</ul><p>所以小明共有 <span class=\"katex math inline\">5</span> 种不同的走法可以走完 <span class=\"katex math inline\">4</span> 阶楼梯。</p>\n</div>            </div>",
+      "text": "一段楼梯共有 n 阶，小明每次最少走 1 阶，最多走 k 阶，请问小明共有多少种不同的走法可以走完这 n 阶楼梯。\n例如：n = 4，k = 2；楼梯共有 4  阶，小明每次最多走 2 阶；\n有如下走法：\n第一种：第一次走 1 阶，第二次走 1  阶，第三次走 1 阶，第四次走 1 阶；\n\n第二种：第一次走 1 阶，第二次走 1 阶，第三次走 2 阶；\n\n第三种：第一次走 1 阶，第二次走 2  阶，第三次走 1 阶；\n\n第四种：第一次走 2 阶，第二次走 1  阶，第三次走 1 阶；\n\n第五种：第一次走 2 阶，第二次走 2 阶。\n\n所以小明共有 5 种不同的走法可以走完 4 阶楼梯。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行输入两个整数 <span class=\"katex math inline\">n（1 \\le n \\le 5000）</span> 和 <span class=\"katex math inline\"> k（1 \\le k \\le 10）</span>，分别表示这段楼梯的阶数及每次最多可以走的楼梯阶数，整数之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "一行输入两个整数 n（1 \\le n \\le 5000） 和  k（1 \\le k \\le 10），分别表示这段楼梯的阶数及每次最多可以走的楼梯阶数，整数之间以一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示小明走完 <span class=\"katex math inline\">n</span> 阶楼梯共有多少种不同的走法。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示小明走完 n 阶楼梯共有多少种不同的走法。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 2\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（24年1月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（24年1月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">高精度</span><span class=\"label label-info\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA高精度动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 2",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "232",
+    "通过人数": "55",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:36:28"
+}

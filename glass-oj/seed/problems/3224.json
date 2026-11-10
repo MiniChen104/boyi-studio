@@ -1,0 +1,51 @@
+{
+  "id": "3224",
+  "title": "画圣诞树",
+  "tags": [
+    "嵌套循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3224",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>同学们已经学会了很多图形的打印，小王老师决定提高难度，于是他找来一颗如下的圣诞树图形，希望同学们利用所学打印出该图形。</p>\n<p><img src=\"https://assets.boyi.local/89a619fb673073b454351dda.png\"></p>\n</div>            </div>",
+      "text": "同学们已经学会了很多图形的打印，小王老师决定提高难度，于是他找来一颗如下的圣诞树图形，希望同学们利用所学打印出该图形。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无</p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按照图形输出。</p>\n</div>            </div>",
+      "text": "按照图形输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre></pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>        *\r\n       ***\r\n      *****\r\n        *\r\n       ***\r\n      *****\r\n     *******\r\n    *********\r\n        *\r\n       ***\r\n      *****\r\n     *******\r\n    *********\r\n   ***********\r\n  *************\r\n ***************\r\n*****************\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            \n                        \n                        \n                            输出\n                                    *\r\n       ***\r\n      *****\r\n        *\r\n       ***\r\n      *****\r\n     *******\r\n    *********\r\n        *\r\n       ***\r\n      *****\r\n     *******\r\n    *********\r\n   ***********\r\n  *************\r\n ***************\r\n*****************\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">嵌套循环</span></span></p>\n</div>                </div>",
+      "text": "嵌套循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "",
+      "output": "        *\r\n       ***\r\n      *****\r\n        *\r\n       ***\r\n      *****\r\n     *******\r\n    *********\r\n        *\r\n       ***\r\n      *****\r\n     *******\r\n    *********\r\n   ***********\r\n  *************\r\n ***************\r\n*****************\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *\r\n        *"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2254",
+    "通过人数": "427",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:37"
+}

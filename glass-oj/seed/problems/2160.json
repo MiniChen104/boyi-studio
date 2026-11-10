@@ -1,0 +1,65 @@
+{
+  "id": "2160",
+  "title": "方格取数（number）",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/2160",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>设有 <span class=\"katex math inline\">n \\times m</span> 的方格图，每个方格中都有一个整数。现有一只小熊，想从图的左上角走到右下角，每一步只能向上、向下或向右走一格，并且不能重复经过已经走过的方格，也不能走出边界。小熊会取走所有经过的方格中的整数，求它能取到的整数之和的最大值。</p>\n</div>            </div>",
+      "text": "设有 n \\times m 的方格图，每个方格中都有一个整数。现有一只小熊，想从图的左上角走到右下角，每一步只能向上、向下或向右走一格，并且不能重复经过已经走过的方格，也不能走出边界。小熊会取走所有经过的方格中的整数，求它能取到的整数之和的最大值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个整数 <span class=\"katex math inline\">n, m</span>。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行每行 <span class=\"katex math inline\">m</span> 个整数，依次代表每个方格中的整数。</p>\n</div>            </div>",
+      "text": "第一行有两个整数 n, m。\n接下来 n 行每行 m 个整数，依次代表每个方格中的整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示小熊能取到的整数之和的最大值。</p>\n</div>            </div>",
+      "text": "一个整数，表示小熊能取到的整数之和的最大值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 4\r\n1 -1 3 2\r\n2 -1 4 -1\r\n-2 2 -3 -1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2 5\r\n-1 -1 -3 -2 -7\r\n-2 -1 -4 -1 -2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>-10</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 4\r\n1 -1 3 2\r\n2 -1 4 -1\r\n-2 2 -3 -1\n                        \n                        \n                            输出\n                            9\n                        \n\n                                                    \n                                输入\n                                2 5\r\n-1 -1 -3 -2 -7\r\n-2 -1 -4 -1 -2\n                            \n                            \n                                输出\n                                -10"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例 <span class=\"katex math inline\">1</span> 解释】  </p>\n<p><img src=\"https://assets.boyi.local/cff13a3a1daa342b7c67b179.jpg\"></p>\n<p>按上述走法，取到的数之和为 <span class=\"katex math inline\">1 + 2 + (-1) + 4 + 3 + 2 + (-1) + (-1) = 9</span>，可以证明为最大值。  </p>\n<p><img src=\"https://assets.boyi.local/9009bd8e70ccc2cd57c6ee85.jpg\"></p>\n<p>注意，上述走法是错误的，因为第 <span class=\"katex math inline\">2</span> 行第 <span class=\"katex math inline\">2</span> 列的方格走过了两次，而根据题意，不能重复经过已经走过的方格。  </p>\n<p><img src=\"https://assets.boyi.local/4dd04ac066513cf1b40e7788.jpg\"></p>\n<p>另外，上述走法也是错误的，因为没有走到右下角的终点。</p>\n<p>【样例 <span class=\"katex math inline\">2</span> 解释】  </p>\n<p><img src=\"https://assets.boyi.local/52a2e8ce03596515e66fc8b1.jpg\"></p>\n<p>按上述走法，取到的数之和为 <span class=\"katex math inline\">(-1) + (-1) + (-3) + (-2) + (-1) + (-2) = -10</span>，可以证明为最大值。因此，请注意，取到的数之和的最大值也可能是负数。</p>\n<p>【数据范围与提示】</p>\n<ul><li>对于 <span class=\"katex math inline\">20\\%</span> 的数据，<span class=\"katex math inline\">n, m \\le 5</span>。</li>\n<li>对于 <span class=\"katex math inline\">40\\%</span> 的数据，<span class=\"katex math inline\">n, m \\le 50</span>。</li>\n<li>对于 <span class=\"katex math inline\">70\\%</span> 的数据，<span class=\"katex math inline\">n, m \\le 300</span>。</li>\n<li>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 \\le n,m \\le 10^3</span>。方格中整数的绝对值不超过 <span class=\"katex math inline\">10^4</span>。</li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "【样例 1 解释】  \n\n按上述走法，取到的数之和为 1 + 2 + (-1) + 4 + 3 + 2 + (-1) + (-1) = 9，可以证明为最大值。  \n\n注意，上述走法是错误的，因为第 2 行第 2 列的方格走过了两次，而根据题意，不能重复经过已经走过的方格。  \n\n另外，上述走法也是错误的，因为没有走到右下角的终点。\n【样例 2 解释】  \n\n按上述走法，取到的数之和为 (-1) + (-1) + (-3) + (-2) + (-1) + (-2) = -10，可以证明为最大值。因此，请注意，取到的数之和的最大值也可能是负数。\n【数据范围与提示】\n对于 20\\% 的数据，n, m \\le 5。\n对于 40\\% 的数据，n, m \\le 50。\n对于 70\\% 的数据，n, m \\le 300。\n对于 100\\% 的数据，1 \\le n,m \\le 10^3。方格中整数的绝对值不超过 10^4。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛</p>\n</div>                </div>",
+      "text": "noip复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 4\r\n1 -1 3 2\r\n2 -1 4 -1\r\n-2 2 -3 -1",
+      "output": "9"
+    },
+    {
+      "input": "2 5\r\n-1 -1 -3 -2 -7\r\n-2 -1 -4 -1 -2",
+      "output": "-10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1663",
+    "通过人数": "748",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:29:11"
+}

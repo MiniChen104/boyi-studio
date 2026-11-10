@@ -1,0 +1,62 @@
+{
+  "id": "1861",
+  "title": "整除问题",
+  "tags": [
+    "简单循环",
+    "蓝桥杯"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1861",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>编写一个程序，输入三个正整数 <span class=\"katex math inline\">min、max</span> 和 <span class=\"katex math inline\">factor</span> ，然后对于 <span class=\"katex math inline\">min</span> 到 <span class=\"katex math inline\">max</span> 之间的每一个整数（包括 <span class=\"katex math inline\">min</span> 和 <span class=\"katex math inline\">max</span> ），如果它能被 <span class=\"katex math inline\">factor</span> 整除，就把它打印出来。</p>\n</div>            </div>",
+      "text": "编写一个程序，输入三个正整数 min、max 和 factor ，然后对于 min 到 max 之间的每一个整数（包括 min 和 max ），如果它能被 factor 整除，就把它打印出来。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一行，包括三个整数 <span class=\"katex math inline\">min、max</span> 和 <span class=\"katex math inline\">factor</span> 。</p>\n</div>            </div>",
+      "text": "输入只有一行，包括三个整数 min、max 和 factor 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，包括若干个整数，数与数之间用空格隔开。</p>\n</div>            </div>",
+      "text": "输出只有一行，包括若干个整数，数与数之间用空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 10 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3 6 9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 10 3\n                        \n                        \n                            输出\n                            3 6 9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】蓝桥杯算法训练</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】蓝桥杯算法训练"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环 蓝桥杯</p>\n</div>                </div>",
+      "text": "简单循环 蓝桥杯"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span><span class=\"label label-warning\">蓝桥杯</span></span></p>\n</div>                </div>",
+      "text": "简单循环蓝桥杯"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 10 3",
+      "output": "3 6 9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "18585",
+    "通过人数": "13866",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:25:10"
+}

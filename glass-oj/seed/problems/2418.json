@@ -1,0 +1,60 @@
+{
+  "id": "2418",
+  "title": "理发",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2418",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>帅帅是一位很爱观察、很爱思考的小学生。他家的正对面有一间理发店，经过观察他发现：理发店共有 <span class=\"katex math inline\">N</span>（<span class=\"katex math inline\">N \\le 255</span>）位师傅给顾客理发，当然一个师傅一次只能为一个顾客服务，为一个人服务完了之后可以马上给另一个人服务。</p>\n<p>帅帅对于进出店内顾客情况作为很详细的记录，他用大写字母 <code>A..Z</code> 来表示不同的人，但现在的人们生活节奏很快，时间很宝贵，如果进来的顾客数量不大于理发店师傅的人数则所有的顾客都可以得到服务，但如果进来的顾客人数多于师傅人数，则意味着有些顾客会离开，因为他们不愿意等。你的任务是帮助帅帅计算有多少个顾客因得不到服务而离开？以便帅帅能够给理发店的老板一些建议。</p>\n</div>            </div>",
+      "text": "帅帅是一位很爱观察、很爱思考的小学生。他家的正对面有一间理发店，经过观察他发现：理发店共有 N（N \\le 255）位师傅给顾客理发，当然一个师傅一次只能为一个顾客服务，为一个人服务完了之后可以马上给另一个人服务。\n帅帅对于进出店内顾客情况作为很详细的记录，他用大写字母 A..Z 来表示不同的人，但现在的人们生活节奏很快，时间很宝贵，如果进来的顾客数量不大于理发店师傅的人数则所有的顾客都可以得到服务，但如果进来的顾客人数多于师傅人数，则意味着有些顾客会离开，因为他们不愿意等。你的任务是帮助帅帅计算有多少个顾客因得不到服务而离开？以便帅帅能够给理发店的老板一些建议。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两行，第一行为一个数 <span class=\"katex math inline\">N</span>。</p>\n<p>第二行为一串字符，其中的字母是成对出现的。每一对字母代表同一个客人，当然第一个代表他的到来第二个代表他的离去。字符串的长度不大于 <span class=\"katex math inline\">255</span>。</p>\n</div>            </div>",
+      "text": "两行，第一行为一个数 N。\n第二行为一串字符，其中的字母是成对出现的。每一对字母代表同一个客人，当然第一个代表他的到来第二个代表他的离去。字符串的长度不大于 255。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数，如果每个顾客都能得到服务就输出 <span class=\"katex math inline\">0</span>，否则就输出多少个客人因得不到服务而离去。</p>\n</div>            </div>",
+      "text": "一个数，如果每个顾客都能得到服务就输出 0，否则就输出多少个客人因得不到服务而离去。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\nABBAJJ</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3\r\nGACCBDDBAG</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\nABBAJJ\n                        \n                        \n                            输出\n                            0\n                        \n\n                                                    \n                                输入\n                                3\r\nGACCBDDBAG\n                            \n                            \n                                输出\n                                1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<p>对于样例 <span class=\"katex math inline\">1</span>，前两位顾客 <span class=\"katex math inline\">A</span>、<span class=\"katex math inline\">B</span> 依次进来，时此刚好有两位师傅为他们服务，此后 <span class=\"katex math inline\">B</span>、<span class=\"katex math inline\">A</span> 相继离开，此时两位师傅处理空闲状态，第三位顾客 <span class=\"katex math inline\">J</span> 进来，理完发后离开。因此所有的顾客都得到了服务，输出 <span class=\"katex math inline\">0</span>。</p>\n<p>对于样例 <span class=\"katex math inline\">2</span>， 前三位顾客 <span class=\"katex math inline\">G</span>、<span class=\"katex math inline\">A</span>、<span class=\"katex math inline\">C</span>，都能得到服务，因为店里有三位理发师傅，第三位顾客 <span class=\"katex math inline\">C</span> 离开后，有一位师傅处于空闲状态，因此第四位顾客 <span class=\"katex math inline\">B</span> 也能得到服务，第五位顾客 <span class=\"katex math inline\">D</span> 进店后，发现三位师傅正在为顾客 <span class=\"katex math inline\">G</span>、<span class=\"katex math inline\">A</span>、<span class=\"katex math inline\">B</span> 理发，因此 <span class=\"katex math inline\">D</span> 会离开，此时 <span class=\"katex math inline\">D</span> 得不到服务，然后顾客 <span class=\"katex math inline\">B</span>、<span class=\"katex math inline\">A</span>、<span class=\"katex math inline\">G</span> 相继离开，整个过程结束。因此只有一位顾客 <span class=\"katex math inline\">D</span> 得不到服务，输出 <span class=\"katex math inline\">1</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n对于样例 1，前两位顾客 A、B 依次进来，时此刚好有两位师傅为他们服务，此后 B、A 相继离开，此时两位师傅处理空闲状态，第三位顾客 J 进来，理完发后离开。因此所有的顾客都得到了服务，输出 0。\n对于样例 2， 前三位顾客 G、A、C，都能得到服务，因为店里有三位理发师傅，第三位顾客 C 离开后，有一位师傅处于空闲状态，因此第四位顾客 B 也能得到服务，第五位顾客 D 进店后，发现三位师傅正在为顾客 G、A、B 理发，因此 D 会离开，此时 D 得不到服务，然后顾客 B、A、G 相继离开，整个过程结束。因此只有一位顾客 D 得不到服务，输出 1。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\nABBAJJ",
+      "output": "0"
+    },
+    {
+      "input": "3\r\nGACCBDDBAG",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "455",
+    "通过人数": "116",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:08"
+}

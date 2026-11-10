@@ -1,0 +1,61 @@
+{
+  "id": "3073",
+  "title": "咒语",
+  "tags": [
+    "二维数组"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3073",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>面壁者罗辑希望在宇宙中标记出一个星球。</p>\n<p>不过罗辑不能以地球为原点发送坐标，因为这会暴露地球位置。一条咒语由若干组坐标组成，当罗辑选定一个目标星球后，他将再选定几个其他的星球，（可能有重复）,以选定的星球为原点构建坐标系，分别确定出目标星球的坐标，作为咒语的一部分。一个咒语是有效的，当且仅当这条咒语标记出的目标星球只有一个（也就是不会有同时两个星球满足这个咒语的标记）。</p>\n<p>作为咒语研究所的一员，你不需要去标定星球，你只需要在咒语发出前判断这条咒语是否有效。罗辑的计划能否成功就取决于你了。</p>\n<p>一共有 <span class=\"katex math inline\">n</span> 个星球，你已经有一个以地球为原点的星图，上面包括了这 <span class=\"katex math inline\">n</span> 个星球，罗辑还会发给你 <span class=\"katex math inline\">m</span> 条咒语，每条咒语有 <span class=\"katex math inline\">k</span> 组坐标，代表以选定的 <span class=\"katex math inline\">k</span> 个星球为原点的目标星球的坐标\n为了简化题目，你可以把宇宙想象成二维的，也就是说，所有的坐标都是二维的。</p>\n</div>            </div>",
+      "text": "面壁者罗辑希望在宇宙中标记出一个星球。\n不过罗辑不能以地球为原点发送坐标，因为这会暴露地球位置。一条咒语由若干组坐标组成，当罗辑选定一个目标星球后，他将再选定几个其他的星球，（可能有重复）,以选定的星球为原点构建坐标系，分别确定出目标星球的坐标，作为咒语的一部分。一个咒语是有效的，当且仅当这条咒语标记出的目标星球只有一个（也就是不会有同时两个星球满足这个咒语的标记）。\n作为咒语研究所的一员，你不需要去标定星球，你只需要在咒语发出前判断这条咒语是否有效。罗辑的计划能否成功就取决于你了。\n一共有 n 个星球，你已经有一个以地球为原点的星图，上面包括了这 n 个星球，罗辑还会发给你 m 条咒语，每条咒语有 k 组坐标，代表以选定的 k 个星球为原点的目标星球的坐标\n为了简化题目，你可以把宇宙想象成二维的，也就是说，所有的坐标都是二维的。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">n</span>，接下来 <span class=\"katex math inline\">n</span> 行每行两个整数，第 <span class=\"katex math inline\">i+1</span> 行是编号为 <span class=\"katex math inline\">i</span> 的星球的坐标;</p>\n<p>接下来一个整数 <span class=\"katex math inline\">m</span>，表示 <span class=\"katex math inline\">m</span> 条咒语;</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行第一个数为 <span class=\"katex math inline\">k</span>，接下来 <span class=\"katex math inline\">k</span> 组整数<span class=\"katex math inline\">x_i</span> , <span class=\"katex math inline\">y_i</span> 为以某个星球建立坐标系中的目标星球的坐标。</p>\n</div>            </div>",
+      "text": "第一行一个整数 n，接下来 n 行每行两个整数，第 i+1 行是编号为 i 的星球的坐标;\n接下来一个整数 m，表示 m 条咒语;\n接下来 m 行，每行第一个数为 k，接下来 k 组整数x_i , y_i 为以某个星球建立坐标系中的目标星球的坐标。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">m</span> 行，对于第 <span class=\"katex math inline\">i</span> 行，如果第 <span class=\"katex math inline\">i</span> 条咒语不能标记唯一的一个星球，输出“ <code>No solution.</code>”（不含双引号），否则输出那个星球的编号。</p>\n</div>            </div>",
+      "text": "输出 m 行，对于第 i 行，如果第 i 条咒语不能标记唯一的一个星球，输出“ No solution.”（不含双引号），否则输出那个星球的编号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1 1\r\n2 2\r\n3 3\r\n2\r\n2 -1 -1 -2 -2\r\n1 3 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\nNo solution.</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1 1\r\n2 2\r\n3 3\r\n2\r\n2 -1 -1 -2 -2\r\n1 3 3\n                        \n                        \n                            输出\n                            1\r\nNo solution."
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p><img src=\"https://assets.boyi.local/6bac0b8b14c3d504f86546e2.png\"></p>\n<p>如图，对于第一条咒语，当目标星球为 <span class=\"katex math inline\">1</span> 时，<span class=\"katex math inline\">1</span> 对于 <span class=\"katex math inline\">2</span> 的坐标为 <span class=\"katex math inline\">(-1,-1)</span>，<span class=\"katex math inline\">1</span>对于<span class=\"katex math inline\">3</span>的坐标为<span class=\"katex math inline\">(-2,-2)</span>，所以<span class=\"katex math inline\">1</span>可以确定是目标星球。</p>\n<p>对于第二条咒语，没有任何一个星球与另一个星球的相对坐标为<span class=\"katex math inline\">(3,3)</span>，所以无解。</p>\n<p>【数据范围】</p>\n<p>对于<span class=\"katex math inline\">30</span>%的数据：<span class=\"katex math inline\">n,m \\leq 100</span>，坐标的绝对值<span class=\"katex math inline\"> \\leq 100</span>;</p>\n<p>对于<span class=\"katex math inline\">100</span>%的数据：<span class=\"katex math inline\">n \\leq 2000,m \\leq 2000,k</span>的和小于等于<span class=\"katex math inline\">3000</span>，坐标的绝对值<span class=\"katex math inline\"> \\leq 2000</span>;</p>\n<p>保证没有两个星球坐标相同。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n\n如图，对于第一条咒语，当目标星球为 1 时，1 对于 2 的坐标为 (-1,-1)，1对于3的坐标为(-2,-2)，所以1可以确定是目标星球。\n对于第二条咒语，没有任何一个星球与另一个星球的相对坐标为(3,3)，所以无解。\n【数据范围】\n对于30%的数据：n,m \\leq 100，坐标的绝对值 \\leq 100;\n对于100%的数据：n \\leq 2000,m \\leq 2000,k的和小于等于3000，坐标的绝对值 \\leq 2000;\n保证没有两个星球坐标相同。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2017中山市第九届小学生信息学竞赛试题 T4</p>\n</div>                </div>",
+      "text": "2017中山市第九届小学生信息学竞赛试题 T4"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1 1\r\n2 2\r\n3 3\r\n2\r\n2 -1 -1 -2 -2\r\n1 3 3",
+      "output": "1\r\nNo solution."
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "356",
+    "通过人数": "60",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:34:01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "4623",
+  "title": "删除数字",
+  "tags": [
+    "蓝桥杯STEMA",
+    "贪心"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4623",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>老师在黑板上写了一个不超过 <span class=\"katex math inline\">500</span> 位的正整数 <span class=\"katex math inline\">n（1 \\le n \\lt 10^{500}）</span>，要求同学们删除其中任意 <span class=\"katex math inline\">k</span> 个数字，剩余数字的顺序不变，希望得到的数最大。</p>\n<p>例如：<span class=\"katex math inline\">n = 69134</span>，<span class=\"katex math inline\">k = 2</span>，从 <span class=\"katex math inline\">69134</span> 中删除 <span class=\"katex math inline\">2</span> 个数字，将第一位 <span class=\"katex math inline\">6</span> 和第三位 <span class=\"katex math inline\">1</span> 删除，得到的新数 <span class=\"katex math inline\">934</span> 是最大的。</p>\n<p><img src=\"https://assets.boyi.local/005a31f680f123124699c6bf.png\"></p>\n</div>            </div>",
+      "text": "老师在黑板上写了一个不超过 500 位的正整数 n（1 \\le n \\lt 10^{500}），要求同学们删除其中任意 k 个数字，剩余数字的顺序不变，希望得到的数最大。\n例如：n = 69134，k = 2，从 69134 中删除 2 个数字，将第一位 6 和第三位 1 删除，得到的新数 934 是最大的。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">k（1 \\le n \\lt 10^{500}，0 \\le k \\lt n</span> 的位数），整数之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "输入两个整数 n 和 k（1 \\le n \\lt 10^{500}，0 \\le k \\lt n 的位数），整数之间以一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示删除 <span class=\"katex math inline\">k</span> 个数字后，得到的最大数。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示删除 k 个数字后，得到的最大数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>69134 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>934</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            69134 2\n                        \n                        \n                            输出\n                            934"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（23年12月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（23年12月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">贪心</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "69134 2",
+      "output": "934"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "381",
+    "通过人数": "168",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:24"
+}

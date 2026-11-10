@@ -1,0 +1,64 @@
+{
+  "id": "6171",
+  "title": "托普利兹矩阵",
+  "tags": [
+    "蓝桥杯",
+    "模拟",
+    "枚举",
+    "贪心"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6171",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个 <span class=\"katex math inline\">n \\times n</span> 的整数矩阵，请判断其是否满足托普利兹矩阵的特点。如果满足，则输出 <code>YES</code>，否则，输出 <code>NO</code>，并统计最少需要修改多少个位置的整数，可以使其满足托普利兹矩阵的特点。</p>\n<p>例如: <span class=\"katex math inline\">n = 4</span>, <span class=\"katex math inline\">4 \\times 4</span> 的矩阵如下:</p>\n<p><img src=\"https://assets.boyi.local/567d3af5188e67a26509111d.png\"></p>\n<p>要使矩阵满足托普利兹矩阵的特点，最少需要修改 <span class=\"katex math inline\">3</span> 个位置的整数，如下图所示：</p>\n<p><img src=\"https://assets.boyi.local/4d29f75afde7059752e97778.png\"></p>\n</div>            </div>",
+      "text": "给定一个 n \\times n 的整数矩阵，请判断其是否满足托普利兹矩阵的特点。如果满足，则输出 YES，否则，输出 NO，并统计最少需要修改多少个位置的整数，可以使其满足托普利兹矩阵的特点。\n例如: n = 4, 4 \\times 4 的矩阵如下:\n\n要使矩阵满足托普利兹矩阵的特点，最少需要修改 3 个位置的整数，如下图所示："
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>本题每个测试点有多组测试数据，格式如下:</p>\n<p>第一行输入一个整数 <span class=\"katex math inline\">t (1 \\le t \\le 10)</span>，表示数据组数；</p>\n<p>每组数据格式输入: 第一行输入一个整数 <span class=\"katex math inline\">n (1 \\le n \\le 30)</span>，表示矩阵的行列数;</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行包含 <span class=\"katex math inline\">n</span> 个整数 (<span class=\"katex math inline\">1 \\le </span>整数<span class=\"katex math inline\"> \\le 100</span>)，表示矩阵中的元素，整数之间以一个空格隔开。 </p>\n</div>            </div>",
+      "text": "本题每个测试点有多组测试数据，格式如下:\n第一行输入一个整数 t (1 \\le t \\le 10)，表示数据组数；\n每组数据格式输入: 第一行输入一个整数 n (1 \\le n \\le 30)，表示矩阵的行列数;\n接下来 n 行，每行包含 n 个整数 (1 \\le 整数 \\le 100)，表示矩阵中的元素，整数之间以一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共 <span class=\"katex math inline\">t</span> 行，对于第 <span class=\"katex math inline\">i</span> 组测试数据，如果其满足托普利兹矩阵的特点，则输出 <code>YES</code>; 否则，输出 <code>NO</code>，并输出要使其满足托普利兹矩阵的特点，最少需要修改的位置数量，数据之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "共 t 行，对于第 i 组测试数据，如果其满足托普利兹矩阵的特点，则输出 YES; 否则，输出 NO，并输出要使其满足托普利兹矩阵的特点，最少需要修改的位置数量，数据之间以一个空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 \r\n2 \r\n2 1 \r\n1 2 \r\n4 \r\n1 4 2 3 \r\n4 3 6 2 \r\n3 4 1 6 \r\n2 3 9 1 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>YES \r\nNO 3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 \r\n2 \r\n2 1 \r\n1 2 \r\n4 \r\n1 4 2 3 \r\n4 3 6 2 \r\n3 4 1 6 \r\n2 3 9 1 \n                        \n                        \n                            输出\n                            YES \r\nNO 3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\">提示信息:\n<p>托普利兹矩阵: 又称常对角矩阵，其特点为每条从左上到右下的斜线上的元素都相等。</p>\n<p>例如:</p>\n<p><img src=\"https://assets.boyi.local/bdb4c5611506f7fc518cbd78.png\"></p>\n</div>\n\n                    \n                </div>",
+      "text": "提示信息:\n托普利兹矩阵: 又称常对角矩阵，其特点为每条从左上到右下的斜线上的元素都相等。\n例如:"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>26年4月STEMA省考</p>\n</div>                </div>",
+      "text": "26年4月STEMA省考"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">模拟</span><span class=\"label label-info\">枚举</span><span class=\"label label-danger\">贪心</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯模拟枚举贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 \r\n2 \r\n2 1 \r\n1 2 \r\n4 \r\n1 4 2 3 \r\n4 3 6 2 \r\n3 4 1 6 \r\n2 3 9 1 ",
+      "output": "YES \r\nNO 3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "94",
+    "通过人数": "39",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:27"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "6026",
+  "title": "子序列(3)",
+  "tags": [
+    "双指针"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/6026",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定两个整数序列 <span class=\"katex math inline\">A</span> 和 <span class=\"katex math inline\">B</span>，长度分别为 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>。</p>\n<p>现在需要在序列 <span class=\"katex math inline\">A</span> 中选取一个<strong>连续子数组</strong>：</p>\n<p><span class=\"katex math multi-line\"> A_l, A_{l+1}, \\dots, A_r \\quad (1 \\le l \\le r \\le n) </span></p>\n<p>要求该连续子数组满足：</p>\n<ul><li>序列 <span class=\"katex math inline\">B</span> 是该子数组的一个<strong>子序列</strong>（即：将该子数组中删除若干元素，但不改变顺序，可以得到序列 <span class=\"katex math inline\">B</span>）。</li>\n</ul><p>请你在所有满足条件的连续子数组中，找出<strong>长度最短的一个</strong>，并输出其长度。</p>\n<p>如果不存在这样的子数组，请输出 <span class=\"katex math inline\">-1</span>。</p>\n</div>            </div>",
+      "text": "给定两个整数序列 A 和 B，长度分别为 n 和 m。\n现在需要在序列 A 中选取一个连续子数组：\n A_l, A_{l+1}, \\dots, A_r \\quad (1 \\le l \\le r \\le n) \n要求该连续子数组满足：\n序列 B 是该子数组的一个子序列（即：将该子数组中删除若干元素，但不改变顺序，可以得到序列 B）。\n请你在所有满足条件的连续子数组中，找出长度最短的一个，并输出其长度。\n如果不存在这样的子数组，请输出 -1。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入共三行：</p>\n<p>第一行包含两个整数 <span class=\"katex math inline\">n, m</span>。</p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个整数，表示序列 <span class=\"katex math inline\">A</span>。</p>\n<p>第三行包含 <span class=\"katex math inline\">m</span> 个整数，表示序列 <span class=\"katex math inline\">B</span>。</p>\n</div>            </div>",
+      "text": "输入共三行：\n第一行包含两个整数 n, m。\n第二行包含 n 个整数，表示序列 A。\n第三行包含 m 个整数，表示序列 B。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示满足条件的最短连续子数组长度；若不存在，则输出 <span class=\"katex math inline\">-1</span>。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示满足条件的最短连续子数组长度；若不存在，则输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8 3\r\n1 2 3 4 2 3 5 6\r\n2 3 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>6 3\r\n1 2 3 4 5 6\r\n3 5 7</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>-1</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10 3\r\n1 2 3 4 5 3 4 3 5 2\r\n3 4 2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>5</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            8 3\r\n1 2 3 4 2 3 5 6\r\n2 3 5\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                6 3\r\n1 2 3 4 5 6\r\n3 5 7\n                            \n                            \n                                输出\n                                -1\n                            \n                        \n                                                    \n                                输入\n                                10 3\r\n1 2 3 4 5 3 4 3 5 2\r\n3 4 2\n                            \n                            \n                                输出\n                                5"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，满足 <span class=\"katex math inline\">1 \\le n, m \\le 1000</span>，<span class=\"katex math inline\">1 \\le A_i, B_i \\le 10^9</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 100\\% 的数据，满足 1 \\le n, m \\le 1000，1 \\le A_i, B_i \\le 10^9。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">双指针</span></span></p>\n</div>                </div>",
+      "text": "双指针"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8 3\r\n1 2 3 4 2 3 5 6\r\n2 3 5",
+      "output": "3"
+    },
+    {
+      "input": "6 3\r\n1 2 3 4 5 6\r\n3 5 7",
+      "output": "-1"
+    },
+    {
+      "input": "10 3\r\n1 2 3 4 5 3 4 3 5 2\r\n3 4 2",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "133",
+    "通过人数": "78",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:22"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "1849",
+  "title": "比赛安排",
+  "tags": [
+    "蓝桥杯"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1849",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n<span> 设有有<span>2 <sup>n</sup></span>（<span>n&lt;=6</span>）个球队进行单循环比赛，计划在<span>2 <sup>n</sup> – 1</span>天内完成，每个队每天进行一场比赛。设计一个比赛的安排，使在<span>2 <sup>n</sup> – 1</span>天内每个队都与不同的对手比赛。</span><span></span>\n</p>\n</div>            </div>",
+      "text": "设有有2 n（n<=6）个球队进行单循环比赛，计划在2 n – 1天内完成，每个队每天进行一场比赛。设计一个比赛的安排，使在2 n – 1天内每个队都与不同的对手比赛。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n<span> 输入<span></span>共一行，输入<span>n</span>的数值。</span><span></span>\n</p>\n</div>            </div>",
+      "text": "输入共一行，输入n的数值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n<span> 输出文件<span></span>共（<span>2 n – 1</span>）行，第<span>i</span>行输出第<span>i</span>天的比赛安排。<span><br></span></span></p><p></p> 格式为：<span>&lt;i&gt; A-B</span> <span>C-D</span>，<span>……</span>。其中<span>i</span>是天数，<span>A</span>，<span>B</span>分别为比赛双方的编号，每行共<span>2 <sup>n-1</sup></span>个比赛场次。<span></span>\n\n</div>            </div>",
+      "text": "输出文件共（2 n – 1）行，第i行输出第i天的比赛安排。 格式为：<i> A-B C-D，……。其中i是天数，A，B分别为比赛双方的编号，每行共2 n-1个比赛场次。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>&lt;1&gt;1-2 3-4\r\n&lt;2&gt;1-3 2-4\r\n&lt;3&gt;1-4 2-3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\n                        \n                        \n                            输出\n                            <1>1-2 3-4\r\n<2>1-3 2-4\r\n<3>1-4 2-3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】蓝桥杯 算法训练<br></p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】蓝桥杯 算法训练"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯</p>\n</div>                </div>",
+      "text": "蓝桥杯"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2",
+      "output": "<1>1-2 3-4\r\n<2>1-3 2-4\r\n<3>1-4 2-3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "142",
+    "通过人数": "53",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:01"
+}

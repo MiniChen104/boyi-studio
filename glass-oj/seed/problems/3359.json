@@ -1,0 +1,59 @@
+{
+  "id": "3359",
+  "title": "逛商场",
+  "tags": [
+    "数组",
+    "GESP三级",
+    "GESP样题",
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3359",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明是个不太有计划的孩子。</p>\n<p>这不，刚到手的零花钱，就全部拿着逛商场去了。小明的原则很简单，只要见到想买的物品而且能买得起，就一定会买下来之后才会继续往前走。</p>\n<p>一天下来，小明到底买了多少物品呢？</p>\n</div>            </div>",
+      "text": "小明是个不太有计划的孩子。\n这不，刚到手的零花钱，就全部拿着逛商场去了。小明的原则很简单，只要见到想买的物品而且能买得起，就一定会买下来之后才会继续往前走。\n一天下来，小明到底买了多少物品呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入共 <span class=\"katex math inline\">3</span> 行：</p>\n<p>第一行是一个整数 <span class=\"katex math inline\">N</span>，表示商场中共有 <span class=\"katex math inline\">N</span> 种小明想买的物品（<span class=\"katex math inline\">1≤N≤100</span>）；</p>\n<p>第二行共有 <span class=\"katex math inline\">N</span> 个整数，分别表示小明先后见到想买的物品的价格；</p>\n<p>第三行是一个整数 <span class=\"katex math inline\">X</span>，表示开始时小明共有 <span class=\"katex math inline\">X</span> 元零花钱。</p>\n</div>            </div>",
+      "text": "输入共 3 行：\n第一行是一个整数 N，表示商场中共有 N 种小明想买的物品（1≤N≤100）；\n第二行共有 N 个整数，分别表示小明先后见到想买的物品的价格；\n第三行是一个整数 X，表示开始时小明共有 X 元零花钱。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">1</span> 行，包含一个整数，表示小明买到的物品数。</p>\n</div>            </div>",
+      "text": "输出 1 行，包含一个整数，表示小明买到的物品数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n7 5 9 10 7 4\r\n30</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n7 5 9 10 7 4\r\n30\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP样题三级</p>\n</div>                </div>",
+      "text": "GESP样题三级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组</span><span class=\"label label-warning\">GESP三级</span><span class=\"label label-info\">GESP样题</span><span class=\"label label-danger\">模拟</span></span></p>\n</div>                </div>",
+      "text": "数组GESP三级GESP样题模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n7 5 9 10 7 4\r\n30",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2250",
+    "通过人数": "1400",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:52"
+}

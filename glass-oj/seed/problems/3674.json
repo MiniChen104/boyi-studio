@@ -1,0 +1,63 @@
+{
+  "id": "3674",
+  "title": "B -smooth 数",
+  "tags": [
+    "GESP五级",
+    "素数筛",
+    "24年3月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3674",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨同学想寻找一种名为 <span class=\"katex math inline\">B-smooth</span> 数的正整数。</p>\n<p>如果一个正整数的最大质因子不超过 <span class=\"katex math inline\">B</span>，则该正整数为 <span class=\"katex math inline\">B-smooth</span> 数。</p>\n<p>小杨同学想知道，对于给定的 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">B</span>，有多少个不超过 <span class=\"katex math inline\">n</span> 的 <span class=\"katex math inline\">B-smooth</span> 数。</p>\n</div>            </div>",
+      "text": "小杨同学想寻找一种名为 B-smooth 数的正整数。\n如果一个正整数的最大质因子不超过 B，则该正整数为 B-smooth 数。\n小杨同学想知道，对于给定的 n 和 B，有多少个不超过 n 的 B-smooth 数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个正整数 <span class=\"katex math inline\">n，B</span>，含义如题面所示。</p>\n</div>            </div>",
+      "text": "第一行包含两个正整数 n，B，含义如题面所示。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个非负整数，表示不超过 <span class=\"katex math inline\">n</span> 的 <span class=\"katex math inline\">B-smooth</span> 数的数量。</p>\n</div>            </div>",
+      "text": "输出一个非负整数，表示不超过 n 的 B-smooth 数的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 3\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 3\r\n\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p>在不超过 <span class=\"katex math inline\">10</span> 的正整数中， <span class=\"katex math inline\">3-smooth</span> 数有 {<span class=\"katex math inline\">1，2，3，4，6，8，9</span>}，共 <span class=\"katex math inline\">7</span> 个。</p>\n<p>【数据范围】</p>\n<p><img src=\"https://assets.boyi.local/afbe3bf69a0439b0e247e30a.png\"></p>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n \\le 10^6， 1 \\le B \\le 10^6</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n在不超过 10 的正整数中， 3-smooth 数有 {1，2，3，4，6，8，9}，共 7 个。\n【数据范围】\n\n对于全部数据，保证有 1 \\le n \\le 10^6， 1 \\le B \\le 10^6。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 3月认证C++五级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 3月认证C++五级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">素数筛</span><span class=\"label label-info\">24年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP五级素数筛24年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 3\r\n",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "724",
+    "通过人数": "370",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:35:45"
+}

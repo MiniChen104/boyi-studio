@@ -1,0 +1,61 @@
+{
+  "id": "2001",
+  "title": "猜先(a.cpp)",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2001",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p> 小 X 凭借出色的棋艺被聘请为少年宫的中国象棋老师。</p>\n<p> 少年宫改造以后所有的设施都焕然一新，象棋教室已不再使用传统的木制棋子和棋盘了，小朋友们所有的操作都是在电脑上进行的，如猜先、对弈、复盘、计算积分等，这给老师的备课带来了极大的挑战，因为除了正常的棋艺教学，还要开发各种应用程序来辅助教学。</p>\n<p> 众所周知任何棋类运动开局前都要猜先，如围棋项目猜先仪式是由上手抓起一把围棋子让对手猜单双，猜中先行。而象棋则是甲、乙两人同时从各自的棋盒中摸出一枚棋子比大小，连续比三次， 获胜次数多的一方执红先行，另一方则执黑后行。</p>\n<p>因现在所有的操作都要在电脑上实现，小 X 需要编写一个象棋猜先程序，具体任务如下： 象棋中有七种棋子，分别是帅、士、相、车、马、炮、兵，程序中用 <span class=\"katex math inline\">7,6,5,4,3,2,1</span> 表示，定义大小的规则为：帅 <span class=\"katex math inline\">\\gt</span> 士 <span class=\"katex math inline\">\\gt</span> 相 <span class=\"katex math inline\">\\gt</span> 车 <span class=\"katex math inline\">\\gt</span> 马 <span class=\"katex math inline\">\\gt</span> 炮，兵最弱，除了帅之外的棋子都比兵大，士 <span class=\"katex math inline\">\\gt</span> 相 <span class=\"katex math inline\">\\gt</span> 车 <span class=\"katex math inline\">\\gt</span> 马 <span class=\"katex math inline\">\\gt</span> 炮 <span class=\"katex math inline\">\\gt</span> 兵，但兵却能吃帅，即兵 <span class=\"katex math inline\">\\gt</span> 帅。</p>\n<p>猜先程序要能实现以下功能：输入三行数据，每行两个棋子的编号，判断谁胜谁负。</p>\n<p>小 X 觉得这个程序太简单了，于是交给了参加本次比赛的你来完成。</p>\n</div>            </div>",
+      "text": "小 X 凭借出色的棋艺被聘请为少年宫的中国象棋老师。\n 少年宫改造以后所有的设施都焕然一新，象棋教室已不再使用传统的木制棋子和棋盘了，小朋友们所有的操作都是在电脑上进行的，如猜先、对弈、复盘、计算积分等，这给老师的备课带来了极大的挑战，因为除了正常的棋艺教学，还要开发各种应用程序来辅助教学。\n 众所周知任何棋类运动开局前都要猜先，如围棋项目猜先仪式是由上手抓起一把围棋子让对手猜单双，猜中先行。而象棋则是甲、乙两人同时从各自的棋盒中摸出一枚棋子比大小，连续比三次， 获胜次数多的一方执红先行，另一方则执黑后行。\n因现在所有的操作都要在电脑上实现，小 X 需要编写一个象棋猜先程序，具体任务如下： 象棋中有七种棋子，分别是帅、士、相、车、马、炮、兵，程序中用 7,6,5,4,3,2,1 表示，定义大小的规则为：帅 \\gt 士 \\gt 相 \\gt 车 \\gt 马 \\gt 炮，兵最弱，除了帅之外的棋子都比兵大，士 \\gt 相 \\gt 车 \\gt 马 \\gt 炮 \\gt 兵，但兵却能吃帅，即兵 \\gt 帅。\n猜先程序要能实现以下功能：输入三行数据，每行两个棋子的编号，判断谁胜谁负。\n小 X 觉得这个程序太简单了，于是交给了参加本次比赛的你来完成。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据共有三行，每行两个用空格隔开的正整数，表示两个棋子对应的编号，第一个数对应甲摸出的棋子的编号，第二个数对应乙摸出的棋子的编号。</p>\n</div>            </div>",
+      "text": "输入数据共有三行，每行两个用空格隔开的正整数，表示两个棋子对应的编号，第一个数对应甲摸出的棋子的编号，第二个数对应乙摸出的棋子的编号。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行包含一个单词，如甲获胜的次数比乙多则输出“ <code>Win</code>”，如乙获胜的次数多则输出“<code>Lose</code>”，如甲乙两人获胜次数相同则输出“<code>Tie</code>”。请注意大小写， 引号不用输出！</p>\n</div>            </div>",
+      "text": "输出一行包含一个单词，如甲获胜的次数比乙多则输出“ Win”，如乙获胜的次数多则输出“Lose”，如甲乙两人获胜次数相同则输出“Tie”。请注意大小写， 引号不用输出！"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 2\r\n3 3\r\n7 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Tie</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 2\r\n3 3\r\n7 1\n                        \n                        \n                            输出\n                            Tie"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【<strong>样例解释</strong>】</p>\n<p>第一次甲摸出的棋子是士，编号为 <span class=\"katex math inline\">6</span>，乙摸出的棋子是炮，编号为 <span class=\"katex math inline\">2</span>，甲胜； 第二次甲乙摸出的棋子都是马，编号为 <span class=\"katex math inline\">3</span>，平； 第三次甲摸出的棋子是帅，编号为 <span class=\"katex math inline\">7</span>，乙摸出的棋子是兵，编号为 <span class=\"katex math inline\">1</span>，乙胜； 三次比下来结果为平手。  </p>\n<p>【<strong>数据范围</strong>】<br>\n对于 <span class=\"katex math inline\">30 \\% </span> 的数据不会出现 <span class=\"katex math inline\">7</span> 。</p>\n<p>对于 <span class=\"katex math inline\">100 \\% </span> 的数据， 每种结果对应的数据均不少于 <span class=\"katex math inline\">1/3</span>。</p>\n<p>【<strong>来源</strong>】</p>\n<p>2019年常州市赛题。  </p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n第一次甲摸出的棋子是士，编号为 6，乙摸出的棋子是炮，编号为 2，甲胜； 第二次甲乙摸出的棋子都是马，编号为 3，平； 第三次甲摸出的棋子是帅，编号为 7，乙摸出的棋子是兵，编号为 1，乙胜； 三次比下来结果为平手。  \n【数据范围】\n对于 30 \\%  的数据不会出现 7 。\n对于 100 \\%  的数据， 每种结果对应的数据均不少于 1/3。\n【来源】\n2019年常州市赛题。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 2\r\n3 3\r\n7 1",
+      "output": "Tie"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2407",
+    "通过人数": "1188",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:27:09"
+}

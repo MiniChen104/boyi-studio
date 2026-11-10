@@ -1,0 +1,56 @@
+{
+  "id": "1350",
+  "title": "纸盒的最大体积是多少？",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1350",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一张尺寸为 <span class=\"katex math inline\">n</span> <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">n</span> 厘米的正方形硬纸板的四个角上，分别裁剪掉一个 <span class=\"katex math inline\">m</span> <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">m</span> 厘米的小正方形，就可以做成一个无盖纸盒，请问这个无盖纸盒的最大体积是多少？</p>\n<p>（立方体的体积 <span class=\"katex math inline\">v =</span> 底面积 <span class=\"katex math inline\"> \\times </span> 高）</p>\n<p>比如： <span class=\"katex math inline\">n = 5</span> ，那么裁掉的小正方形的尺寸可能是 <span class=\"katex math inline\">1</span> 厘米、<span class=\"katex math inline\">2</span> 厘米</p>\n<p>如果裁掉 <span class=\"katex math inline\">1</span> 厘米的四个小正方形，得到纸盒的体积 <span class=\"katex math inline\">= (5 - 2)  \\times  (5 - 2)  \\times  1 = 9</span> 立方厘米</p>\n<p>如果裁掉 <span class=\"katex math inline\">2</span> 厘米的四个小正方形，得到纸盒的体积 <span class=\"katex math inline\">= (5 - 4)  \\times  (5 - 4)  \\times  2 = 2</span> 立方厘米</p>\n<p>因此，裁掉边长为 <span class=\"katex math inline\">1</span> 的四个小正方形得到的纸盒体积最大，最大体积为 <span class=\"katex math inline\">9</span> （立方厘米）</p>\n<p>（ <span class=\"katex math inline\">7.1</span> ）</p>\n</div>            </div>",
+      "text": "在一张尺寸为 n \\times n 厘米的正方形硬纸板的四个角上，分别裁剪掉一个 m \\times m 厘米的小正方形，就可以做成一个无盖纸盒，请问这个无盖纸盒的最大体积是多少？\n（立方体的体积 v = 底面积  \\times  高）\n比如： n = 5 ，那么裁掉的小正方形的尺寸可能是 1 厘米、2 厘米\n如果裁掉 1 厘米的四个小正方形，得到纸盒的体积 = (5 - 2)  \\times  (5 - 2)  \\times  1 = 9 立方厘米\n如果裁掉 2 厘米的四个小正方形，得到纸盒的体积 = (5 - 4)  \\times  (5 - 4)  \\times  2 = 2 立方厘米\n因此，裁掉边长为 1 的四个小正方形得到的纸盒体积最大，最大体积为 9 （立方厘米）\n（ 7.1 ）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> ，代表正方形纸板的边长。</p>\n</div>            </div>",
+      "text": "一个整数 n ，代表正方形纸板的边长。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>纸盒的最大体积。</p>\n</div>            </div>",
+      "text": "纸盒的最大体积。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            9"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "5194",
+    "通过人数": "3345",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:12"
+}

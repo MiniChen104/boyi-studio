@@ -1,0 +1,63 @@
+{
+  "id": "2348",
+  "title": "最大公约数问题",
+  "tags": [
+    "蓝桥杯等级考试",
+    "循环问题",
+    "数学"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2348",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>【具体要求】 \n如果在已知两个正整数 x 和 y 的情况下，我们可以通过计算得到 x 和 y 唯一的最大公约数 a 和唯一的最小公倍数 b，但是反之，如果我们已知最大公约数 a 和最小公倍数 b，我们可能会得到多组正整数 x、y。  </p>\n<p>现在要求编写一个程序，输入 a 和 b，直接输出有多少组数是以 a 为最大公约数和以 b 为最小公倍数。  </p>\n<p>例如：以 3 为最大公约数，60 为最小公倍数，能得到（3，60）、（12，15）、（15，12）、（60，3）共四组 x、y。 </p>\n</div>            </div>",
+      "text": "【具体要求】 \n如果在已知两个正整数 x 和 y 的情况下，我们可以通过计算得到 x 和 y 唯一的最大公约数 a 和唯一的最小公倍数 b，但是反之，如果我们已知最大公约数 a 和最小公倍数 b，我们可能会得到多组正整数 x、y。  \n现在要求编写一个程序，输入 a 和 b，直接输出有多少组数是以 a 为最大公约数和以 b 为最小公倍数。  \n例如：以 3 为最大公约数，60 为最小公倍数，能得到（3，60）、（12，15）、（15，12）、（60，3）共四组 x、y。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个正整数 a 和 b（1 &lt; a,b &lt; 100），中间用空格隔开，分别表示最大公约数和最小公倍数。 </p>\n</div>            </div>",
+      "text": "输入两个正整数 a 和 b（1 < a,b < 100），中间用空格隔开，分别表示最大公约数和最小公倍数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个正整数，表示有多少组符合要求的 x、y。 </p>\n</div>            </div>",
+      "text": "输出一个正整数，表示有多少组符合要求的 x、y。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 60 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4 </pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 60 \n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。</p>\n<pre><code>蓝桥等考 C++组单选题样题（八级） \n阅读以下程序片段，判断程序最终会输出（ ）次字符‘A’。\nint a = 7, b = 13, c = 20; \nwhile(a &lt;= 20 &amp;&amp; c &gt;= 10)\n{ \ncout &lt;&lt; &quot;A&quot;; \nif(a == b || c == b) break; \na++; \nc--; \n}\nA 6 \nB 7 \nC 10 \nD 13 \n【答案】B \n【解析】该程序会在 while 循环内部 if 条件判断成立时提前跳出循环，当 a == b 时循环输出了 7 次字符 A，所以选 B。\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。\n蓝桥等考 C++组单选题样题（八级） \n阅读以下程序片段，判断程序最终会输出（ ）次字符‘A’。\nint a = 7, b = 13, c = 20; \nwhile(a <= 20 && c >= 10)\n{ \ncout << \"A\"; \nif(a == b || c == b) break; \na++; \nc--; \n}\nA 6 \nB 7 \nC 10 \nD 13 \n【答案】B \n【解析】该程序会在 while 循环内部 if 条件判断成立时提前跳出循环，当 a == b 时循环输出了 7 次字符 A，所以选 B。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥等考 C++组编程题样题（八级）</p>\n</div>                </div>",
+      "text": "蓝桥等考 C++组编程题样题（八级）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯等级考试</span><span class=\"label label-warning\">循环问题</span><span class=\"label label-info\">数学</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯等级考试循环问题数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 60 ",
+      "output": "4 "
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "934",
+    "通过人数": "525",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:19"
+}

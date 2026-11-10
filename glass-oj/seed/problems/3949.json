@@ -1,0 +1,51 @@
+{
+  "id": "3949",
+  "title": "摆花",
+  "tags": [
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3949",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>游园活动肯定少不了花朵的装扮，小梦想把一条长为 <span class=\"katex math inline\">L</span> 的道路上摆满花朵，为了让摆放整齐，她希望每两朵花之间都间隔 <span class=\"katex math inline\">1</span> 米。</p>\n<p>我们可以把道路看成一个数轴，道路的一端在数轴 <span class=\"katex math inline\">0</span> 的位置，另一端在 <span class=\"katex math inline\">L</span> 的位置；数轴上的每个整数点，即<span class=\"katex math inline\"> 0，1，2，\\dots，L，</span>都可以种上一朵花。</p>\n<p>但是，游园活动中还要布置很多的游园项目，有一些项目要占用道路的一块区域，这些区域可以用它们在数轴上的起始点和终止点表示。需要注意的是，被占用的区域之间可能有重合的部分。</p>\n<p>请你计算，除了被占用的区域外，这条道路上需要种上多少朵花？</p>\n</div>            </div>",
+      "text": "游园活动肯定少不了花朵的装扮，小梦想把一条长为 L 的道路上摆满花朵，为了让摆放整齐，她希望每两朵花之间都间隔 1 米。\n我们可以把道路看成一个数轴，道路的一端在数轴 0 的位置，另一端在 L 的位置；数轴上的每个整数点，即 0，1，2，\\dots，L，都可以种上一朵花。\n但是，游园活动中还要布置很多的游园项目，有一些项目要占用道路的一块区域，这些区域可以用它们在数轴上的起始点和终止点表示。需要注意的是，被占用的区域之间可能有重合的部分。\n请你计算，除了被占用的区域外，这条道路上需要种上多少朵花？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个整数：<span class=\"katex math inline\">L（1 \\le L \\le 10000）</span>和 <span class=\"katex math inline\">M（1 \\le M \\le 100）</span>，<span class=\"katex math inline\">L</span> 代表道路的长度，<span class=\"katex math inline\">M</span> 代表区域的数目，<span class=\"katex math inline\">L</span> 和 <span class=\"katex math inline\">M</span> 之间用一个空格隔开。</p>\n<p>接下来的 <span class=\"katex math inline\">M</span> 行每行包含两个不同的整数，用一个空格隔开，表示一个区域的起始点和终止点的坐标。</p>\n</div>            </div>",
+      "text": "第一行有两个整数：L（1 \\le L \\le 10000）和 M（1 \\le M \\le 100），L 代表道路的长度，M 代表区域的数目，L 和 M 之间用一个空格隔开。\n接下来的 M 行每行包含两个不同的整数，用一个空格隔开，表示一个区域的起始点和终止点的坐标。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示马路上还有多少棵树。</p>\n</div>            </div>",
+      "text": "一个整数，表示马路上还有多少棵树。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>500 3\r\n150 300\r\n100 200\r\n470 471</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>298</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            500 3\r\n150 300\r\n100 200\r\n470 471\n                        \n                        \n                            输出\n                            298"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">模拟</span></span></p>\n</div>                </div>",
+      "text": "模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "500 3\r\n150 300\r\n100 200\r\n470 471",
+      "output": "298"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "122",
+    "通过人数": "84",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:33"
+}

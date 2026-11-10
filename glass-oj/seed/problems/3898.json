@@ -1,0 +1,63 @@
+{
+  "id": "3898",
+  "title": "区间排序",
+  "tags": [
+    "GESP四级",
+    "数组",
+    "24年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3898",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有一个包含 <span class=\"katex math inline\">n</span>个正整数的序列 <span class=\"katex math inline\">a</span> 。</p>\n<p>小杨计划对序列进行多次升序排序，每次升序排序小杨会选择一个区间 <span class=\"katex math inline\">[l,r]</span><span class=\"katex math inline\">(l \\le r)</span> 并对区间内所有数字，即 <span class=\"katex math inline\">a_l,a_{l+1},\\dots,a_r</span>进行升序排序。每次升序排序会在上一次升序排序的结果上进行。</p>\n<p>小杨想请你计算出多次升序排序后的序列。</p>\n</div>            </div>",
+      "text": "小杨有一个包含 n个正整数的序列 a 。\n小杨计划对序列进行多次升序排序，每次升序排序小杨会选择一个区间 [l,r](l \\le r) 并对区间内所有数字，即 a_l,a_{l+1},\\dots,a_r进行升序排序。每次升序排序会在上一次升序排序的结果上进行。\n小杨想请你计算出多次升序排序后的序列。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">n</span>，含义如题面所示。</p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个正整数 <span class=\"katex math inline\">a_1,a_2,\\dots,a_n</span> ，代表序列。</p>\n<p>第三行包含一个正整数 <span class=\"katex math inline\">q</span>，代表排序次数。</p>\n<p>之后 <span class=\"katex math inline\">q</span>行，每行包含两个正整数 <span class=\"katex math inline\">l_i</span>，<span class=\"katex math inline\">r_i</span> ，代表将区间 <span class=\"katex math inline\">[l_i,r_i]</span> 内所有数字进行升序排序。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 n，含义如题面所示。\n第二行包含 n 个正整数 a_1,a_2,\\dots,a_n ，代表序列。\n第三行包含一个正整数 q，代表排序次数。\n之后 q行，每行包含两个正整数 l_i，r_i ，代表将区间 [l_i,r_i] 内所有数字进行升序排序。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行包含 <span class=\"katex math inline\">n</span> 个正整数，代表多次升序排序后的序列。</p>\n</div>            </div>",
+      "text": "输出一行包含 n 个正整数，代表多次升序排序后的序列。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n3 4 5 2 1\r\n3\r\n4 5\r\n3 4\r\n1 3\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 3 4 5 2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n3 4 5 2 1\r\n3\r\n4 5\r\n3 4\r\n1 3\r\n\n                        \n                        \n                            输出\n                            1 3 4 5 2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n \\le 100 ,1 \\le a_i \\le 100 , 1 \\le q \\le 100, 1 \\le l_i \\le r_i \\le n </span>。</p>\n<h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<p>第一次升序排序后，序列为 <span class=\"katex math inline\">[3,4,5,1,2]</span>；</p>\n<p>第二次升序排序后，序列为 <span class=\"katex math inline\">[3,4,1,5,2]</span>；</p>\n<p>第三次升序排序后，序列为 <span class=\"katex math inline\">[1,3,4,5,2]</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于全部数据，保证有 1 \\le n \\le 100 ,1 \\le a_i \\le 100 , 1 \\le q \\le 100, 1 \\le l_i \\le r_i \\le n 。\n样例 1 解释\n第一次升序排序后，序列为 [3,4,5,1,2]；\n第二次升序排序后，序列为 [3,4,1,5,2]；\n第三次升序排序后，序列为 [1,3,4,5,2]。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 9月认证 C++ 四级真题</p>\n</div>                </div>",
+      "text": "GESP 9月认证 C++ 四级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">数组</span><span class=\"label label-info\">24年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级数组24年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n3 4 5 2 1\r\n3\r\n4 5\r\n3 4\r\n1 3\r\n",
+      "output": "1 3 4 5 2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "714",
+    "通过人数": "590",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:22"
+}

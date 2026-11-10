@@ -1,0 +1,57 @@
+{
+  "id": "1916",
+  "title": "防御迷阵",
+  "tags": [
+    "二分答案",
+    "广搜"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1916",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一队士兵来到了敌军城外，准备进攻敌城。敌人在城外布置一个防御迷阵，要进入城池首先必须通过城池外的防御迷阵。</p>\n<p>迷阵由 <span class=\"katex math inline\">n \\times m</span> 个相同的小房间组成，每个房间与相邻四个房间之间有门可通行。而第 <span class=\"katex math inline\">1</span> 行的 <span class=\"katex math inline\">m</span> 个房间有 <span class=\"katex math inline\">m</span> 扇向外打开的门，是迷阵的入口。除了第 <span class=\"katex math inline\">1</span> 行和第 <span class=\"katex math inline\">n</span> 行的房间外，每个房间都安装了激光杀伤装置，将会对进入房间的人造成一定的伤害。第 <span class=\"katex math inline\">i</span> 行第 <span class=\"katex math inline\">j</span> 列造成的伤害值为<span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">ij</span></sub>。 （第 <span class=\"katex math inline\">1</span> 行和第 <span class=\"katex math inline\">n</span> 行的 <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">ij</span></sub> 值全部为0）。</p>\n<p>现在士兵打算以最小伤害代价通过迷阵，显然，他们可以选择任意多的人从任意的门进入，但必须到达第 <span class=\"katex math inline\">n</span> 行的房间。一个士兵受到的伤害值为他在经过的路径上所有房间的伤害值中的最大值。现在，士兵们掌握了迷阵的情况，他们需要提前知道怎么安排士兵的行进路线可以使得伤害值最小。</p>\n</div>            </div>",
+      "text": "一队士兵来到了敌军城外，准备进攻敌城。敌人在城外布置一个防御迷阵，要进入城池首先必须通过城池外的防御迷阵。\n迷阵由 n \\times m 个相同的小房间组成，每个房间与相邻四个房间之间有门可通行。而第 1 行的 m 个房间有 m 扇向外打开的门，是迷阵的入口。除了第 1 行和第 n 行的房间外，每个房间都安装了激光杀伤装置，将会对进入房间的人造成一定的伤害。第 i 行第 j 列造成的伤害值为aij。 （第 1 行和第 n 行的 aij 值全部为0）。\n现在士兵打算以最小伤害代价通过迷阵，显然，他们可以选择任意多的人从任意的门进入，但必须到达第 n 行的房间。一个士兵受到的伤害值为他在经过的路径上所有房间的伤害值中的最大值。现在，士兵们掌握了迷阵的情况，他们需要提前知道怎么安排士兵的行进路线可以使得伤害值最小。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个整数 <span class=\"katex math inline\">n,m</span> 表示迷阵的大小。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">m</span> 个数，第 <span class=\"katex math inline\">i</span> 行第 <span class=\"katex math inline\">j</span> 列的数表示 <span class=\"katex math inline\">a_{ij}</span> 。</p>\n<p>数据范围：<span class=\"katex math inline\">2≤n,m≤1000</span>，<span class=\"katex math inline\">1≤a</span><sub><span class=\"katex math inline\">ij</span></sub><span class=\"katex math inline\">≤1000</span>。</p>\n</div>            </div>",
+      "text": "第一行有两个整数 n,m 表示迷阵的大小。\n接下来 n 行，每行 m 个数，第 i 行第 j 列的数表示 a_{ij} 。\n数据范围：2≤n,m≤1000，1≤aij≤1000。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个数，表示最小伤害代价。</p>\n</div>            </div>",
+      "text": "输出一个数，表示最小伤害代价。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 2\r\n0 0 \r\n3 5 \r\n2 4 \r\n0 0 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 2\r\n0 0 \r\n3 5 \r\n2 4 \r\n0 0 \n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二分答案 广搜</p>\n</div>                </div>",
+      "text": "二分答案 广搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二分答案</span><span class=\"label label-warning\">广搜</span></span></p>\n</div>                </div>",
+      "text": "二分答案广搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 2\r\n0 0 \r\n3 5 \r\n2 4 \r\n0 0 ",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3828",
+    "通过人数": "1876",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:25:55"
+}

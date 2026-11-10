@@ -1,0 +1,67 @@
+{
+  "id": "4583",
+  "title": "趣味进制（binary）",
+  "tags": [
+    "市赛",
+    "构造法",
+    "南京2024"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4583",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果一个整数的二进制表示是连续若干个 <code>1</code> 后紧跟着连续若干个 <code>0</code> ，我们将这类数称为 “趣味二进制” 数 。例如 ，十进制数 <span class=\"katex math inline\">12</span> 的二进制表示为 <span class=\"katex math inline\">1100</span>， <span class=\"katex math inline\">16</span> 的二进制表示为 <span class=\"katex math inline\">10000</span> ，它们都是 趣味二进制数 。但 <span class=\"katex math inline\">7</span> 的二进制表示只含连续 <code>1</code> 但不含 <code>0</code> 就不属于 “趣味二进制” 数。</p>\n<p>在十进制数 <span class=\"katex math inline\">1,2,…,n</span> 之间 ，有多少个这样的趣味二进制数呢？</p>\n</div>            </div>",
+      "text": "如果一个整数的二进制表示是连续若干个 1 后紧跟着连续若干个 0 ，我们将这类数称为 “趣味二进制” 数 。例如 ，十进制数 12 的二进制表示为 1100， 16 的二进制表示为 10000 ，它们都是 趣味二进制数 。但 7 的二进制表示只含连续 1 但不含 0 就不属于 “趣味二进制” 数。\n在十进制数 1,2,…,n 之间 ，有多少个这样的趣味二进制数呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行 ，一个正整数 <span class=\"katex math inline\">n</span>。</p>\n</div>            </div>",
+      "text": "输入一行 ，一个正整数 n。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行 ，一个整数 ，表示趣味二进制数的个数。</p>\n</div>            </div>",
+      "text": "输出一行 ，一个整数 ，表示趣味二进制数的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>12</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>16384</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>92</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            12\n                        \n                        \n                            输出\n                            5\n                        \n\n                                                    \n                                输入\n                                16384\n                            \n                            \n                                输出\n                                92"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例1解释</h4>\n<p><span class=\"katex math inline\">1,2,…,12</span> 中的趣味二进制数分别是 <span class=\"katex math inline\">2,4,6,8,12</span>。</p>\n<h4>数据规模与提示</h4>\n<p>对于 <span class=\"katex math inline\">60\\%</span> 的数据 ，有 <span class=\"katex math inline\">n≤100,000</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据 ，有 <span class=\"katex math inline\">1≤n≤1,000,000,000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例1解释\n1,2,…,12 中的趣味二进制数分别是 2,4,6,8,12。\n数据规模与提示\n对于 60\\% 的数据 ，有 n≤100,000。\n对于 100\\% 的数据 ，有 1≤n≤1,000,000,000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024南京市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2024南京市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">构造法</span><span class=\"label label-info\">南京2024</span></span></p>\n</div>                </div>",
+      "text": "市赛构造法南京2024"
+    }
+  ],
+  "samples": [
+    {
+      "input": "12",
+      "output": "5"
+    },
+    {
+      "input": "16384",
+      "output": "92"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "85",
+    "通过人数": "46",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:41"
+}

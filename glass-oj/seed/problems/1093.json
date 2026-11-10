@@ -1,0 +1,56 @@
+{
+  "id": "1093",
+  "title": "打印小写字母表",
+  "tags": [
+    "字符型"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1093",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>把英文字母表的小写字母按顺序和倒序打印出来。(每行 <span class=\"katex math inline\">13</span> 个)</p>\n</div>            </div>",
+      "text": "把英文字母表的小写字母按顺序和倒序打印出来。(每行 13 个)"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无</p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出四行。</p>\n</div>            </div>",
+      "text": "输出四行。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre></pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>abcdefghijklm\r\nnopqrstuvwxyz\r\nzyxwvutsrqpon\r\nmlkjihgfedcba</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            \n                        \n                        \n                            输出\n                            abcdefghijklm\r\nnopqrstuvwxyz\r\nzyxwvutsrqpon\r\nmlkjihgfedcba"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符型</p>\n</div>                </div>",
+      "text": "字符型"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符型</span></span></p>\n</div>                </div>",
+      "text": "字符型"
+    }
+  ],
+  "samples": [
+    {
+      "input": "",
+      "output": "abcdefghijklm\r\nnopqrstuvwxyz\r\nzyxwvutsrqpon\r\nmlkjihgfedcba"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "30539",
+    "通过人数": "22649",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:14:37"
+}

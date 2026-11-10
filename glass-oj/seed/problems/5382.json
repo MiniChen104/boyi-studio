@@ -1,0 +1,67 @@
+{
+  "id": "5382",
+  "title": "货物运输",
+  "tags": [
+    "GESP六级",
+    "树的遍历",
+    "25年9月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/5382",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p> <span class=\"katex math inline\">A</span> 国有 <span class=\"katex math inline\"> n </span> 座城市，依次以 <span class=\"katex math inline\"> 1, 2, \\dots, n </span> 编号，其中 1 号城市为首都。这 <span class=\"katex math inline\"> n </span> 座城市由 <span class=\"katex math inline\"> n-1 </span> 条双向道路连接。第 <span class=\"katex math inline\"> i </span> 条道路（<span class=\"katex math inline\"> 1 \\le i \\lt n </span>）连接编号为 <span class=\"katex math inline\"> u_i, v_i </span> 的两座城市，道路长度为 <span class=\"katex math inline\"> l_i </span>。任意两座城市间均可通过双向道路到达。</p>\n<p>现在 <span class=\"katex math inline\">A</span> 国需要从首都向各个城市运送货物。具体来说，满载货物的车队会从首都开出，经过一座城市时将对应的货物送出，因此车队需要经过所有城市。<span class=\"katex math inline\">A</span> 国希望你设计一条路线，在从首都出发经过所有城市的前提下，最小化经过的道路长度总和。注意：一座城市可以经过多次，车队最后可以不返回首都。</p>\n</div>            </div>",
+      "text": "A 国有  n  座城市，依次以  1, 2, \\dots, n  编号，其中 1 号城市为首都。这  n  座城市由  n-1  条双向道路连接。第  i  条道路（ 1 \\le i \\lt n ）连接编号为  u_i, v_i  的两座城市，道路长度为  l_i 。任意两座城市间均可通过双向道路到达。\n现在 A 国需要从首都向各个城市运送货物。具体来说，满载货物的车队会从首都开出，经过一座城市时将对应的货物送出，因此车队需要经过所有城市。A 国希望你设计一条路线，在从首都出发经过所有城市的前提下，最小化经过的道路长度总和。注意：一座城市可以经过多次，车队最后可以不返回首都。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：一个正整数 <span class=\"katex math inline\"> n </span>，表示 <span class=\"katex math inline\">A</span> 国的城市数量。</p>\n<p>接下来 <span class=\"katex math inline\"> n - 1 </span> 行，每行三个整数 <span class=\"katex math inline\"> u_i, v_i, l_i </span>，表示一条双向道路连接编号为 <span class=\"katex math inline\"> u_i, v_i </span> 的两座城市，道路长度为 <span class=\"katex math inline\"> l_i </span>。</p>\n</div>            </div>",
+      "text": "第一行：一个正整数  n ，表示 A 国的城市数量。\n接下来  n - 1  行，每行三个整数  u_i, v_i, l_i ，表示一条双向道路连接编号为  u_i, v_i  的两座城市，道路长度为  l_i 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数，表示你设计的路线所经过的道路长度总和。</p>\n</div>            </div>",
+      "text": "一行，一个整数，表示你设计的路线所经过的道路长度总和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n1 2 6\r\n1 3 1\r\n3 4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>18</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>7\r\n1 2 1\r\n2 3 1\r\n3 4 1\r\n7 6 1\r\n6 5 1\r\n5 1 1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>9</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n1 2 6\r\n1 3 1\r\n3 4 5\n                        \n                        \n                            输出\n                            18\n                        \n\n                                                    \n                                输入\n                                7\r\n1 2 1\r\n2 3 1\r\n3 4 1\r\n7 6 1\r\n6 5 1\r\n5 1 1\n                            \n                            \n                                输出\n                                9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>数据范围</strong></p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 8</span>。</p>\n<p>对于另外 <span class=\"katex math inline\">30\\%</span> 的测试点，保证仅与一条双向道路连接的城市恰有两座。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 10^5</span>，<span class=\"katex math inline\">1 \\le u_i,v_i \\le n</span>，<span class=\"katex math inline\">1 \\le l_i \\le 10^9</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 30\\% 的测试点，保证 1 \\le n \\le 8。\n对于另外 30\\% 的测试点，保证仅与一条双向道路连接的城市恰有两座。\n对于所有测试点，保证 1 \\le n \\le 10^5，1 \\le u_i,v_i \\le n，1 \\le l_i \\le 10^9。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 2025年09月认证 C++6级真题</p>\n</div>                </div>",
+      "text": "GESP 2025年09月认证 C++6级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP六级</span><span class=\"label label-warning\">树的遍历</span><span class=\"label label-info\">25年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP六级树的遍历25年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n1 2 6\r\n1 3 1\r\n3 4 5",
+      "output": "18"
+    },
+    {
+      "input": "7\r\n1 2 1\r\n2 3 1\r\n3 4 1\r\n7 6 1\r\n6 5 1\r\n5 1 1",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "145",
+    "通过人数": "84",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:09"
+}

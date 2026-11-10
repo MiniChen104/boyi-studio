@@ -1,0 +1,57 @@
+{
+  "id": "1919",
+  "title": "数字三角形",
+  "tags": [
+    "USACO",
+    "二维数组"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1919",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>贝茜教奶牛们建造一种数字三角形。它从两个数中构造： 大小和种子。 大小 <span class=\"katex math inline\">N</span> ( <span class=\"katex math inline\">1 \\le N \\le 20</span> ) 决定这个三角形有多少行，种子 <span class=\"katex math inline\">S</span> ( <span class=\"katex math inline\">1 \\le S \\le 9</span> ) 决定三角形的第一个数字。这儿有两个示例：</p>\n<p><span class=\"katex math inline\">N=5, S=3</span></p>\n<pre><code>3 4 6 9 4\n  5 7 1 5               \n    8 2 6\n      3 7\n        8 \n</code></pre>\n<p><span class=\"katex math inline\">N=6, S=1</span>  </p>\n<pre><code>1 2 4 7 2 7    \n  3 5 8 3 8 \n    6 9 4 9  \n      1 5 1   \n        6 2  \n          3\n</code></pre>\n<p>数字三角形的第一行前面没有空格。 分析上面的例子，找寻其中的规律， 然后写一个程序，根据输入的大小 <span class=\"katex math inline\">N</span> ( <span class=\"katex math inline\">1 \\le N \\le 20</span> ) 和种子 <span class=\"katex math inline\">S</span> ( <span class=\"katex math inline\">1 \\le S \\le 9</span> ) ，输出相应的数字三角形。</p>\n</div>            </div>",
+      "text": "贝茜教奶牛们建造一种数字三角形。它从两个数中构造： 大小和种子。 大小 N ( 1 \\le N \\le 20 ) 决定这个三角形有多少行，种子 S ( 1 \\le S \\le 9 ) 决定三角形的第一个数字。这儿有两个示例：\nN=5, S=3\n3 4 6 9 4\n  5 7 1 5               \n    8 2 6\n      3 7\n        8 \n\nN=6, S=1  \n1 2 4 7 2 7    \n  3 5 8 3 8 \n    6 9 4 9  \n      1 5 1   \n        6 2  \n          3\n\n数字三角形的第一行前面没有空格。 分析上面的例子，找寻其中的规律， 然后写一个程序，根据输入的大小 N ( 1 \\le N \\le 20 ) 和种子 S ( 1 \\le S \\le 9 ) ，输出相应的数字三角形。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行： 两个空格隔开的整数  <span class=\"katex math inline\">N</span>  和  <span class=\"katex math inline\">S</span> </p>\n</div>            </div>",
+      "text": "一行： 两个空格隔开的整数  N  和  S"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">N</span>  行：如上所示的数字三角形，要注意每一行的末尾不能有空格。</p>\n</div>            </div>",
+      "text": "N  行：如上所示的数字三角形，要注意每一行的末尾不能有空格。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3 4 6 9 4\r\n  5 7 1 5\r\n    8 2 6\r\n      3 7\r\n        8</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 3\n                        \n                        \n                            输出\n                            3 4 6 9 4\r\n  5 7 1 5\r\n    8 2 6\r\n      3 7\r\n        8"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO 二维数组</p>\n</div>                </div>",
+      "text": "USACO 二维数组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">USACO</span><span class=\"label label-warning\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "USACO二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 3",
+      "output": "3 4 6 9 4\r\n  5 7 1 5\r\n    8 2 6\r\n      3 7\r\n        8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "559",
+    "通过人数": "316",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:58"
+}

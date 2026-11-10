@@ -1,0 +1,56 @@
+{
+  "id": "1658",
+  "title": "游乐设施",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1658",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>游乐场引进了一个新的游乐设施，可以两人一组开动该设施，但设施设计上有一个缺陷，必须一个人的体重在 <span class=\"katex math inline\">60</span> 公斤以上（包含 <span class=\"katex math inline\">60</span> 公斤），另一个人体重在 <span class=\"katex math inline\">60</span> 公斤以下，才能启动该设施。</p>\n<p>请你编程从键盘读入两个游客的体重，判断一下设施能否启动，如果能启动输出 <code>green</code>，不能启动输出 <code>red</code> 。</p>\n<p>比如输入：<span class=\"katex math inline\">65.2</span> <span class=\"katex math inline\">28.5</span>，就可以启动设施，输出 <code>green</code> 。</p>\n<p>再比如输入：<span class=\"katex math inline\">28.5</span> <span class=\"katex math inline\">56.7</span>，就不能启动设施，输出 <code>red</code> 。</p>\n</div>            </div>",
+      "text": "游乐场引进了一个新的游乐设施，可以两人一组开动该设施，但设施设计上有一个缺陷，必须一个人的体重在 60 公斤以上（包含 60 公斤），另一个人体重在 60 公斤以下，才能启动该设施。\n请你编程从键盘读入两个游客的体重，判断一下设施能否启动，如果能启动输出 green，不能启动输出 red 。\n比如输入：65.2 28.5，就可以启动设施，输出 green 。\n再比如输入：28.5 56.7，就不能启动设施，输出 red 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个小数，代表两位游客的体重。</p>\n</div>            </div>",
+      "text": "两个小数，代表两位游客的体重。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果能启动输出 <code>green</code> ，不能启动输出 <code>red</code> 。</p>\n</div>            </div>",
+      "text": "如果能启动输出 green ，不能启动输出 red 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>65.2 28.5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>green</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            65.2 28.5\n                        \n                        \n                            输出\n                            green"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "65.2 28.5",
+      "output": "green"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "27679",
+    "通过人数": "13140",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:30"
+}

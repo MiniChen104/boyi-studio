@@ -1,0 +1,52 @@
+{
+  "id": "2415",
+  "title": "单词混合",
+  "tags": [
+    "动态规划",
+    "记忆化搜索"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2415",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定 <span class=\"katex math inline\">2</span> 个单词 <span class=\"katex math inline\">s_1</span> 和 <span class=\"katex math inline\">s_2</span>，如果前两个单词可以在自身的前后顺序不变的情况下任意混合，请问：再给第 <span class=\"katex math inline\">3</span> 个单词 <span class=\"katex math inline\">s_3</span>，<span class=\"katex math inline\">s_3</span>是否能由前两个单词混合而成。</p>\n</div>            </div>",
+      "text": "给定 2 个单词 s_1 和 s_2，如果前两个单词可以在自身的前后顺序不变的情况下任意混合，请问：再给第 3 个单词 s_3，s_3是否能由前两个单词混合而成。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行为一个正整数 <span class=\"katex math inline\">n</span>（ <span class=\"katex math inline\">1 ≤ n ≤ 1000</span>），表示测试样例的个数。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行输入输入 <span class=\"katex math inline\">3</span> 个字符串，字符串之间由一个空格分隔，所有的字符串仅由英文大小写字母组成，区分大小写。</p>\n<p>输入数据保证第 <span class=\"katex math inline\">3</span> 个字符串的长度是前两个字符串长度之和，前两个字符串的长度范围是 <span class=\"katex math inline\">[1,200]</span> 。</p>\n</div>            </div>",
+      "text": "输入的第一行为一个正整数 n（ 1 ≤ n ≤ 1000），表示测试样例的个数。\n接下来 n 行，每行输入输入 3 个字符串，字符串之间由一个空格分隔，所有的字符串仅由英文大小写字母组成，区分大小写。\n输入数据保证第 3 个字符串的长度是前两个字符串长度之和，前两个字符串的长度范围是 [1,200] 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每个输入样例，首先输出 &quot;Case N: &quot;， <span class=\"katex math inline\">N</span> 表示样例序号，从 <span class=\"katex math inline\">1</span> 开始。（注意&quot;Case N: &quot;，有一个空格）  </p>\n<p>如果第 <span class=\"katex math inline\">3</span> 个单词能够按照要求由前两个单词中的所有字母混合而成，则紧接着输出&quot;yes&quot;，否则输出&quot;no&quot;。</p>\n</div>            </div>",
+      "text": "对于每个输入样例，首先输出 \"Case N: \"， N 表示样例序号，从 1 开始。（注意\"Case N: \"，有一个空格）  \n如果第 3 个单词能够按照要求由前两个单词中的所有字母混合而成，则紧接着输出\"yes\"，否则输出\"no\"。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\ncat tree tcraete\r\ncat tree catrtee\r\ncat tree cttaree</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Case 1: yes\r\nCase 2: yes\r\nCase 3: no</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\ncat tree tcraete\r\ncat tree catrtee\r\ncat tree cttaree\n                        \n                        \n                            输出\n                            Case 1: yes\r\nCase 2: yes\r\nCase 3: no"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span><span class=\"label label-warning\">记忆化搜索</span></span></p>\n</div>                </div>",
+      "text": "动态规划记忆化搜索"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\ncat tree tcraete\r\ncat tree catrtee\r\ncat tree cttaree",
+      "output": "Case 1: yes\r\nCase 2: yes\r\nCase 3: no"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "87",
+    "通过人数": "49",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:06"
+}

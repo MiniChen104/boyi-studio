@@ -1,0 +1,63 @@
+{
+  "id": "2318",
+  "title": "字母项链（necklace）",
+  "tags": [
+    "区赛",
+    "字符串",
+    "前缀和差分"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2318",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 W 有一个用大写字母串成的项链，有一天，他想把项链从中间某位置剪断，拉成一条直线后形成一个线性的字母串，其价值为每个字母的字典序位置 <span class=\"katex math inline\"> \\times </span> 位置号的和。</p>\n<p>所谓字典序位置指该字母在 <span class=\"katex math inline\">26</span> 个字母表中排在第几个位置；位置号指该字母在字符串中排在第几个位置。</p>\n<p>现在的问题是：该从哪里截断，才能让这个线性串的价值最大？</p>\n<p>如：<code>WJOI</code> 组成的项链，<img src=\"https://assets.boyi.local/604003c2f3689baff4546e2e.png\"> ，可能的截断后的线性串有：</p>\n<p><code>IW</code> 中间截断，拉直后是 <code>WJOI</code>，价值为：<span class=\"katex math inline\">23 \\times 1+10 \\times 2+15 \\times 3+9 \\times 4=124</span>。</p>\n<p><code>JO</code> 中间截断，拉直后是 <code>OIWJ</code>，价值为： <span class=\"katex math inline\">15 \\times 1+9 \\times 2+23 \\times 3+10 \\times 4=142</span>。</p>\n<p><code>WJ</code> 中间截断，拉直后是 <code>JOIW</code>，价值为：<span class=\"katex math inline\">10 \\times 1+15 \\times 2+9 \\times 3+23 \\times 4=159</span>。</p>\n<p><code>OI</code> 中间截断，拉直后是 <code>IWJO</code>，价值为：<span class=\"katex math inline\">9 \\times 1+23 \\times 2+10 \\times 3+15 \\times 4=145</span>。</p>\n<p>其中最大的价值为：<span class=\"katex math inline\">159</span>。</p>\n</div>            </div>",
+      "text": "小 W 有一个用大写字母串成的项链，有一天，他想把项链从中间某位置剪断，拉成一条直线后形成一个线性的字母串，其价值为每个字母的字典序位置  \\times  位置号的和。\n所谓字典序位置指该字母在 26 个字母表中排在第几个位置；位置号指该字母在字符串中排在第几个位置。\n现在的问题是：该从哪里截断，才能让这个线性串的价值最大？\n如：WJOI 组成的项链， ，可能的截断后的线性串有：\nIW 中间截断，拉直后是 WJOI，价值为：23 \\times 1+10 \\times 2+15 \\times 3+9 \\times 4=124。\nJO 中间截断，拉直后是 OIWJ，价值为： 15 \\times 1+9 \\times 2+23 \\times 3+10 \\times 4=142。\nWJ 中间截断，拉直后是 JOIW，价值为：10 \\times 1+15 \\times 2+9 \\times 3+23 \\times 4=159。\nOI 中间截断，拉直后是 IWJO，价值为：9 \\times 1+23 \\times 2+10 \\times 3+15 \\times 4=145。\n其中最大的价值为：159。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个只包含大写英文字母的字符串，最大长度不超过 <span class=\"katex math inline\">100000</span>。</p>\n</div>            </div>",
+      "text": "一个只包含大写英文字母的字符串，最大长度不超过 100000。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示最大的价值。</p>\n</div>            </div>",
+      "text": "一个整数，表示最大的价值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>WJOI</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>159</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            WJOI\n                        \n                        \n                            输出\n                            159"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据范围】</p>\n<p><span class=\"katex math inline\">10\\%</span> 的数据，串长<span class=\"katex math inline\">=1</span>。</p>\n<p>另外 <span class=\"katex math inline\">10\\%</span> 的数据，串长<span class=\"katex math inline\">=2</span>。</p>\n<p><span class=\"katex math inline\">50\\%</span> 的数据，串长<span class=\"katex math inline\">≤1000</span>。</p>\n<p><span class=\"katex math inline\">100\\%</span>的数据：<span class=\"katex math inline\">1≤</span>串长<span class=\"katex math inline\">≤100000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n10\\% 的数据，串长=1。\n另外 10\\% 的数据，串长=2。\n50\\% 的数据，串长≤1000。\n100\\%的数据：1≤串长≤100000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2019 年武进区第 12 届程序设计比赛试题-小学组 T5</p>\n</div>                </div>",
+      "text": "2019 年武进区第 12 届程序设计比赛试题-小学组 T5"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">区赛</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">前缀和差分</span></span></p>\n</div>                </div>",
+      "text": "区赛字符串前缀和差分"
+    }
+  ],
+  "samples": [
+    {
+      "input": "WJOI",
+      "output": "159"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1246",
+    "通过人数": "546",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:08"
+}

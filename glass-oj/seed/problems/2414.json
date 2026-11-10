@@ -1,0 +1,52 @@
+{
+  "id": "2414",
+  "title": "滑雪",
+  "tags": [
+    "动态规划",
+    "记忆化搜索"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2414",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Michael喜欢滑雪这并不奇怪， 因为滑雪的确很刺激。可是为了获得速度，滑的区域必须向下倾斜，而且当你滑到坡底，你不得不再次走上坡或者等待升降机来载你。Michael想知道在一个区域中最长的滑坡。区域由一个二维数组给出。数组的每个数字代表点的高度。  </p>\n<p>下面是一个例子：  </p>\n<pre><code> 1  2  3  4 5\n16 17 18 19 6\n15 24 25 20 7\n14 23 22 21 8\n13 12 11 10 9\n</code></pre>\n<p>一个人可以从某个点滑向上下左右相邻四个点之一，当且仅当高度减小。在上面的例子中，一条可滑行的滑坡为 <span class=\"katex math inline\">24 \\rightarrow 17 \\rightarrow 16 \\rightarrow 1</span> 。当然 <span class=\"katex math inline\">25 \\rightarrow 24 \\rightarrow 23 \\rightarrow \\dots \\rightarrow 3 \\rightarrow 2 \\rightarrow 1</span> 更长。事实上，这是最长的一条。</p>\n</div>            </div>",
+      "text": "Michael喜欢滑雪这并不奇怪， 因为滑雪的确很刺激。可是为了获得速度，滑的区域必须向下倾斜，而且当你滑到坡底，你不得不再次走上坡或者等待升降机来载你。Michael想知道在一个区域中最长的滑坡。区域由一个二维数组给出。数组的每个数字代表点的高度。  \n下面是一个例子：  \n 1  2  3  4 5\n16 17 18 19 6\n15 24 25 20 7\n14 23 22 21 8\n13 12 11 10 9\n\n一个人可以从某个点滑向上下左右相邻四个点之一，当且仅当高度减小。在上面的例子中，一条可滑行的滑坡为 24 \\rightarrow 17 \\rightarrow 16 \\rightarrow 1 。当然 25 \\rightarrow 24 \\rightarrow 23 \\rightarrow \\dots \\rightarrow 3 \\rightarrow 2 \\rightarrow 1 更长。事实上，这是最长的一条。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行表示区域的行数 <span class=\"katex math inline\">R</span> 和列数 <span class=\"katex math inline\">C</span> (<span class=\"katex math inline\">1 \\le R,C \\le 100</span>)。</p>\n<p>下面是 <span class=\"katex math inline\">R</span> 行，每行有 <span class=\"katex math inline\">C</span> 个整数，代表高度 <span class=\"katex math inline\">h</span> ，<span class=\"katex math inline\">0 \\le h \\le 10000</span> 。</p>\n</div>            </div>",
+      "text": "输入的第一行表示区域的行数 R 和列数 C (1 \\le R,C \\le 100)。\n下面是 R 行，每行有 C 个整数，代表高度 h ，0 \\le h \\le 10000 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出最长区域的长度。</p>\n</div>            </div>",
+      "text": "输出最长区域的长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 5\r\n1 2 3 4 5\r\n16 17 18 19 6\r\n15 24 25 20 7\r\n14 23 22 21 8\r\n13 12 11 10 9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>25</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 5\r\n1 2 3 4 5\r\n16 17 18 19 6\r\n15 24 25 20 7\r\n14 23 22 21 8\r\n13 12 11 10 9\n                        \n                        \n                            输出\n                            25"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span><span class=\"label label-warning\">记忆化搜索</span></span></p>\n</div>                </div>",
+      "text": "动态规划记忆化搜索"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 5\r\n1 2 3 4 5\r\n16 17 18 19 6\r\n15 24 25 20 7\r\n14 23 22 21 8\r\n13 12 11 10 9",
+      "output": "25"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "860",
+    "通过人数": "522",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:05"
+}

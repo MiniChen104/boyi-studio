@@ -1,0 +1,57 @@
+{
+  "id": "1769",
+  "title": "美食街",
+  "tags": [
+    "map",
+    "双指针"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1769",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">A</span> 是一个美食爱好者。市里新开了一家美食街，这当然是小 <span class=\"katex math inline\">A</span> 不能错过的盛宴啦。</p>\n<p>美食街是一条笔直的直线，在街道的不同的点上，有着不同种类的美食，第 <span class=\"katex math inline\">i</span> 个美食店的位置为 <span class=\"katex math inline\">x_i</span>，美食品种编号为 <span class=\"katex math inline\">p_i</span>。</p>\n<p>这么多种美食让小 <span class=\"katex math inline\">A</span> 眼花缭乱，小 <span class=\"katex math inline\">A</span> 想要<strong>品尝所有品种的美食</strong>，又想走最少的路。</p>\n<p>请编程帮助小 <span class=\"katex math inline\">A</span> 计算，他品尝所有品种的美食，要走的最短路程有多长？</p>\n</div>            </div>",
+      "text": "小 A 是一个美食爱好者。市里新开了一家美食街，这当然是小 A 不能错过的盛宴啦。\n美食街是一条笔直的直线，在街道的不同的点上，有着不同种类的美食，第 i 个美食店的位置为 x_i，美食品种编号为 p_i。\n这么多种美食让小 A 眼花缭乱，小 A 想要品尝所有品种的美食，又想走最少的路。\n请编程帮助小 A 计算，他品尝所有品种的美食，要走的最短路程有多长？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行有一个整数 <span class=\"katex math inline\">N</span> ，表示街道上美食店的总数量；</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行有 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">x_i</span> 和 <span class=\"katex math inline\">p_i</span>，分别代表了不同美食店的位置，以及这个美食店的美食品种。</p>\n<p>测试数据保证同一个位置 <span class=\"katex math inline\">x_i</span> ，只会开一家美食店。</p>\n</div>            </div>",
+      "text": "第 1 行有一个整数 N ，表示街道上美食店的总数量；\n接下来 N 行，每行有 2 个整数 x_i 和 p_i，分别代表了不同美食店的位置，以及这个美食店的美食品种。\n测试数据保证同一个位置 x_i ，只会开一家美食店。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表小 <span class=\"katex math inline\">A</span> 要走的最短路程；</p>\n<p>路程的计算方式为：如果从 <span class=\"katex math inline\">x_i</span> 点到 <span class=\"katex math inline\">x_j</span> （<span class=\"katex math inline\">x_i≤x_j</span>）包含了所有品种的美食，那么路程长度 <span class=\"katex math inline\">=x_j - x_i</span>。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表小 A 要走的最短路程；\n路程的计算方式为：如果从 x_i 点到 x_j （x_i≤x_j）包含了所有品种的美食，那么路程长度 =x_j - x_i。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7\r\n2 2 \r\n1 3\r\n5 2\r\n4 1\r\n6 3\r\n10 2\r\n8 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\r\n2 2 \r\n1 3\r\n5 2\r\n4 1\r\n6 3\r\n10 2\r\n8 1\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p>样例中 <span class=\"katex math inline\">x_i</span> 可选取区间 <span class=\"katex math inline\">[4,6]</span>，可以包含所有的美食品种。</p>\n<p>【数据范围】</p>\n<p>对于 <span class=\"katex math inline\">20\\%</span> 的数据，<span class=\"katex math inline\">10≤n≤20</span>；</p>\n<p>对于另外 <span class=\"katex math inline\">40\\%</span> 的数据，<span class=\"katex math inline\">10≤n≤1000</span>；</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1≤n≤50000</span>，<span class=\"katex math inline\">1≤x_i,p_i≤10^9</span>；</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n样例中 x_i 可选取区间 [4,6]，可以包含所有的美食品种。\n【数据范围】\n对于 20\\% 的数据，10≤n≤20；\n对于另外 40\\% 的数据，10≤n≤1000；\n对于 100\\% 的数据，1≤n≤50000，1≤x_i,p_i≤10^9；"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">map</span><span class=\"label label-warning\">双指针</span></span></p>\n</div>                </div>",
+      "text": "map双指针"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7\r\n2 2 \r\n1 3\r\n5 2\r\n4 1\r\n6 3\r\n10 2\r\n8 1",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1355",
+    "通过人数": "675",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:23:59"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "2002",
+  "title": "投篮(b.cpp)",
+  "tags": [
+    "市赛",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2002",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 X 刚把猜先的程序交给少年宫的小朋友就接到了健身教练的电话，教练要求他马上到中天体育馆练习投篮，之所以选择投篮这个项目，主要目的是要在帮助小 X 减肥的同时还能预防颈椎病。</p>\n<p>小 X 每次必须投满规定的积分才能结束投篮，积分规则是这样的：小 X 每投中一个球得 <span class=\"katex math inline\">1</span> 分，如果没投中但球碰到了篮框、篮板或篮网则既不得分也不扣分，如果球啥也没碰到(俗称三不沾)则倒扣 <span class=\"katex math inline\">1</span> 分，作为奖励小 X 如能连续投中 <span class=\"katex math inline\">3</span> 球则额外加 <span class=\"katex math inline\">1</span> 分，如连续投中 <span class=\"katex math inline\">4</span> 球则额外加 <span class=\"katex math inline\">2</span> 分，依次类推，即连续投中 <span class=\"katex math inline\">K</span> 球(<span class=\"katex math inline\">K \\ge 3</span>)则额外加 <span class=\"katex math inline\">K-2</span> 分。</p>\n<p>教练每次给小X 计分都很辛苦，于是他要求小 X 设计一个能自动计分的程序，小 X 觉得这个程序也很简单，于是他把这个任务又交给了你！</p>\n</div>            </div>",
+      "text": "小 X 刚把猜先的程序交给少年宫的小朋友就接到了健身教练的电话，教练要求他马上到中天体育馆练习投篮，之所以选择投篮这个项目，主要目的是要在帮助小 X 减肥的同时还能预防颈椎病。\n小 X 每次必须投满规定的积分才能结束投篮，积分规则是这样的：小 X 每投中一个球得 1 分，如果没投中但球碰到了篮框、篮板或篮网则既不得分也不扣分，如果球啥也没碰到(俗称三不沾)则倒扣 1 分，作为奖励小 X 如能连续投中 3 球则额外加 1 分，如连续投中 4 球则额外加 2 分，依次类推，即连续投中 K 球(K \\ge 3)则额外加 K-2 分。\n教练每次给小X 计分都很辛苦，于是他要求小 X 设计一个能自动计分的程序，小 X 觉得这个程序也很简单，于是他把这个任务又交给了你！"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据共有两行，第一行为一个正整数 <span class=\"katex math inline\">n</span>，表示小 X 共进行了 <span class=\"katex math inline\">n</span> 次投篮。</p>\n<p>第二行为一个由 <span class=\"katex math inline\">n</span> 个字符组成的字符串，该字符串只包含三种字符，分别是大写字母 <code>V</code>,<code>T</code>,<code>X</code>，其中 <code>V</code> 表示投中了， <code>T</code> 表示没投中但不用扣分， <code>X</code> 表示要扣 <span class=\"katex math inline\">1</span> 分。</p>\n</div>            </div>",
+      "text": "输入数据共有两行，第一行为一个正整数 n，表示小 X 共进行了 n 次投篮。\n第二行为一个由 n 个字符组成的字符串，该字符串只包含三种字符，分别是大写字母 V,T,X，其中 V 表示投中了， T 表示没投中但不用扣分， X 表示要扣 1 分。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行仅有一个整数为小 X 的得分。</p>\n</div>            </div>",
+      "text": "输出一行仅有一个整数为小 X 的得分。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\nVVVVVTXV</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\nVVVVVTXV\n                        \n                        \n                            输出\n                            8"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p>小 X 先连续投中 <span class=\"katex math inline\">5</span> 个球，得到 <span class=\"katex math inline\">5+3</span> 分，其中 <span class=\"katex math inline\">3</span> 分为额外奖励到的。接着第六个球没投中也没扣分，第七个球扣了 <span class=\"katex math inline\">1</span> 分， 最后一球得 <span class=\"katex math inline\">1</span> 分， 因此答案为 <span class=\"katex math inline\">8</span> 。</p>\n<p>【数据范围】</p>\n<p>对于 <span class=\"katex math inline\">20\\%</span> 的数据 <span class=\"katex math inline\">n \\le 10</span>。</p>\n<p>另外 <span class=\"katex math inline\">20\\%</span> 的数据不存在连续的 <span class=\"katex math inline\">3</span> 个 <code>V</code>。</p>\n<p>另外 <span class=\"katex math inline\">30\\%</span> 的数据不存在 <code>X</code>。</p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据 <span class=\"katex math inline\">n \\le 10000</span>。</p>\n<p>【来源】</p>\n<p>2019年常州市赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n小 X 先连续投中 5 个球，得到 5+3 分，其中 3 分为额外奖励到的。接着第六个球没投中也没扣分，第七个球扣了 1 分， 最后一球得 1 分， 因此答案为 8 。\n【数据范围】\n对于 20\\% 的数据 n \\le 10。\n另外 20\\% 的数据不存在连续的 3 个 V。\n另外 30\\% 的数据不存在 X。\n100\\% 的数据 n \\le 10000。\n【来源】\n2019年常州市赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "市赛字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\nVVVVVTXV",
+      "output": "8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "7981",
+    "通过人数": "3316",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:27:10"
+}

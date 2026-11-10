@@ -1,0 +1,56 @@
+{
+  "id": "2574",
+  "title": "最大连续和",
+  "tags": [
+    "单调队列优化DP"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2574",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给你一个长度为 <span class=\"katex math inline\">n</span> 的整数序列 {<span class=\"katex math inline\">A_1</span>,<span class=\"katex math inline\">A_2</span>,⋯,<span class=\"katex math inline\">A_n</span>}，要求从中找出一段连续的长度不超过 <span class=\"katex math inline\">m</span> 的子序列，使得这个序列的和最大。</p>\n</div>            </div>",
+      "text": "给你一个长度为 n 的整数序列 {A_1,A_2,⋯,A_n}，要求从中找出一段连续的长度不超过 m 的子序列，使得这个序列的和最大。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为两个整数 <span class=\"katex math inline\">n</span>,<span class=\"katex math inline\">m</span>。</p>\n<p>第二行为 <span class=\"katex math inline\">n</span> 个用空格分开的整数序列，每个数的绝对值都小于 <span class=\"katex math inline\">1000</span>。</p>\n</div>            </div>",
+      "text": "第一行为两个整数 n,m。\n第二行为 n 个用空格分开的整数序列，每个数的绝对值都小于 1000。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>仅一个整数，表示连续长度不超过 <span class=\"katex math inline\">m</span> 的最大子序列和。</p>\n</div>            </div>",
+      "text": "仅一个整数，表示连续长度不超过 m 的最大子序列和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 4\r\n1 -3 5 1 -2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 4\r\n1 -3 5 1 -2 3\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>数据范围与提示：</strong></p>\n<p>对于 <span class=\"katex math inline\">50\\%</span> 的数据，<span class=\"katex math inline\">1≤N,M≤10^4</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1≤N,M≤2 \\times 10^5</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围与提示：\n对于 50\\% 的数据，1≤N,M≤10^4。\n对于 100\\% 的数据，1≤N,M≤2 \\times 10^5 。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">单调队列优化DP</span></span></p>\n</div>                </div>",
+      "text": "单调队列优化DP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 4\r\n1 -3 5 1 -2 3",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "741",
+    "通过人数": "264",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:21"
+}

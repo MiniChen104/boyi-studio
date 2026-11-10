@@ -1,0 +1,56 @@
+{
+  "id": "1734",
+  "title": "谁的年龄大?",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1734",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明、小王想看看他们俩谁的年龄大，目前已知小明的年龄 <span class=\"katex math inline\">n（n</span> 为一个两位数），小王的年龄为 <span class=\"katex math inline\">n</span> 倒过来后组成的数，请问他们两谁的年龄大？</p>\n</div>            </div>",
+      "text": "小明、小王想看看他们俩谁的年龄大，目前已知小明的年龄 n（n 为一个两位数），小王的年龄为 n 倒过来后组成的数，请问他们两谁的年龄大？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明的年龄 <span class=\"katex math inline\">n</span> 。</p>\n</div>            </div>",
+      "text": "小明的年龄 n 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示他们俩年龄的最大值。</p>\n</div>            </div>",
+      "text": "一个整数，表示他们俩年龄的最大值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>45</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>54</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            45\n                        \n                        \n                            输出\n                            54"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "45",
+      "output": "54"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "3307",
+    "通过人数": "2348",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:33"
+}

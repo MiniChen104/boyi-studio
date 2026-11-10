@@ -1,0 +1,66 @@
+{
+  "id": "1381",
+  "title": "方格取数",
+  "tags": [
+    "省赛",
+    "深搜"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1381",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在 <span class=\"katex math inline\">n</span> 行、<span class=\"katex math inline\">m</span> 列的方格矩阵中，每个方格都包含一个数字。小明可以从任意方格出发开始移动。每次移动可以移到与当前方格有一条边相邻的方格(即向上、下、左或右方向移动 <span class=\"katex math inline\">1</span> 格，且不能移出边界)。除此之外，你移动到的方格中的数字必须比当前方格中的数字更大。</p>\n<p>请你帮助小明编程规划移动路径，使路径上经过的所有数字之和最大。</p>\n<p>本题方格中的数据根据输入的初始数字 <span class=\"katex math inline\">s</span> 按照如下算法生成:</p>\n<pre><code>for i = 1, 2, ... n\n  for j = 1, 2, ... m\n    s ← (s × 345) mod 19997\n\t矩阵第 i 行第 j 列方格中的数字为(s mod 10) + 1\n</code></pre>\n</div>            </div>",
+      "text": "在 n 行、m 列的方格矩阵中，每个方格都包含一个数字。小明可以从任意方格出发开始移动。每次移动可以移到与当前方格有一条边相邻的方格(即向上、下、左或右方向移动 1 格，且不能移出边界)。除此之外，你移动到的方格中的数字必须比当前方格中的数字更大。\n请你帮助小明编程规划移动路径，使路径上经过的所有数字之和最大。\n本题方格中的数据根据输入的初始数字 s 按照如下算法生成:\nfor i = 1, 2, ... n\n  for j = 1, 2, ... m\n    s ← (s × 345) mod 19997\n\t矩阵第 i 行第 j 列方格中的数字为(s mod 10) + 1"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>正整数 <span class=\"katex math inline\">n</span>, <span class=\"katex math inline\">m</span> (方格的大小), <span class=\"katex math inline\">s</span> (数据生成器的初始数值)。</p>\n<p><span class=\"katex math inline\">1 ≤ n,m ≤ 100</span>，<span class=\"katex math inline\">1 ≤ s ≤ 19,997</span>。</p>\n</div>            </div>",
+      "text": "正整数 n, m (方格的大小), s (数据生成器的初始数值)。\n1 ≤ n,m ≤ 100，1 ≤ s ≤ 19,997。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>所有合法路径中的最大数字和。</p>\n</div>            </div>",
+      "text": "所有合法路径中的最大数字和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 5 97</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>24</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>40 50 1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>47</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 5 97\n                        \n                        \n                            输出\n                            24\n                        \n\n                                                    \n                                输入\n                                40 50 1\n                            \n                            \n                                输出\n                                47"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>样例 <span class=\"katex math inline\">1</span> 输入<span class=\"katex math inline\">4</span> <span class=\"katex math inline\">5</span> <span class=\"katex math inline\">97</span>，就会产生如下图所示的矩阵，那么所有合法路径中最大数字和为：<span class=\"katex math inline\">4 + 5 + 7 + 8 = 24</span>。  </p>\n<pre><code>  9  7 10 10  8\n  2  9  2  5  3\n  2  5  5  7  7\n  5  8  4  8  5\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 输入4 5 97，就会产生如下图所示的矩阵，那么所有合法路径中最大数字和为：4 + 5 + 7 + 8 = 24。  \n  9  7 10 10  8\n  2  9  2  5  3\n  2  5  5  7  7\n  5  8  4  8  5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>省赛 深搜 </p>\n</div>                </div>",
+      "text": "省赛 深搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">省赛</span><span class=\"label label-warning\">深搜</span></span></p>\n</div>                </div>",
+      "text": "省赛深搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 5 97",
+      "output": "24"
+    },
+    {
+      "input": "40 50 1",
+      "output": "47"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2933",
+    "通过人数": "2010",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:18:39"
+}

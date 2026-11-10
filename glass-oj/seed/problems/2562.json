@@ -1,0 +1,62 @@
+{
+  "id": "2562",
+  "title": "修剪草坪",
+  "tags": [
+    "单调队列优化DP",
+    "usaco"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2562",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一年前赢得了小镇的最佳草坪比赛后，FJ变得很懒，再也没有修剪过草坪。现在，新一轮的最佳草坪比赛又开始了，FJ希望能够再次夺冠。</p>\n<p>然而，FJ的草坪非常脏乱，因此，FJ只能够让他的奶牛来完成这项工作。FJ有 <span class=\"katex math inline\">N</span>(<span class=\"katex math inline\">1 \\le N \\le 100,000</span>)只排成一排的奶牛，编号为 <span class=\"katex math inline\">1...N</span> 。每只奶牛的效率是不同的，\n奶牛 <span class=\"katex math inline\">i</span> 的效率为 <span class=\"katex math inline\">E_i</span> (<span class=\"katex math inline\">0 \\le E_i \\le 1,000,000,000</span>)。</p>\n<p>靠近的奶牛们很熟悉，因此，如果 FJ 安排超过 <span class=\"katex math inline\">K</span> 只连续的奶牛，那么，这些奶牛就会罢工去开派对:)。</p>\n<p>因此，现在FJ需要你的帮助，计算FJ可以得到的最大效率，并且该方案中没有连续的超过 <span class=\"katex math inline\">K</span> 只奶牛。</p>\n</div>            </div>",
+      "text": "在一年前赢得了小镇的最佳草坪比赛后，FJ变得很懒，再也没有修剪过草坪。现在，新一轮的最佳草坪比赛又开始了，FJ希望能够再次夺冠。\n然而，FJ的草坪非常脏乱，因此，FJ只能够让他的奶牛来完成这项工作。FJ有 N(1 \\le N \\le 100,000)只排成一排的奶牛，编号为 1...N 。每只奶牛的效率是不同的，\n奶牛 i 的效率为 E_i (0 \\le E_i \\le 1,000,000,000)。\n靠近的奶牛们很熟悉，因此，如果 FJ 安排超过 K 只连续的奶牛，那么，这些奶牛就会罢工去开派对:)。\n因此，现在FJ需要你的帮助，计算FJ可以得到的最大效率，并且该方案中没有连续的超过 K 只奶牛。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：空格隔开的两个整数 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">K</span> 。</p>\n<p>第二到 <span class=\"katex math inline\">N+1</span> 行：第 <span class=\"katex math inline\">i+1</span> 行有一个整数 <span class=\"katex math inline\">E_i</span> 。</p>\n</div>            </div>",
+      "text": "第一行：空格隔开的两个整数 N 和 K 。\n第二到 N+1 行：第 i+1 行有一个整数 E_i 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：一个值，表示 FJ 可以得到的最大的效率值。</p>\n</div>            </div>",
+      "text": "第一行：一个值，表示 FJ 可以得到的最大的效率值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 2\r\n1\r\n2\r\n3\r\n4\r\n5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>12</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 2\r\n1\r\n2\r\n3\r\n4\r\n5\n                        \n                        \n                            输出\n                            12"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>FJ 有 <span class=\"katex math inline\">5</span> 只奶牛，效率分别为 <span class=\"katex math inline\">1</span>、<span class=\"katex math inline\">2</span>、<span class=\"katex math inline\">3</span>、<span class=\"katex math inline\">4</span>、<span class=\"katex math inline\">5</span>。</p>\n<p>FJ 希望选取的奶牛效率总和最大，但是他不能选取超过 <span class=\"katex math inline\">2</span> 只连续的奶牛。</p>\n<p>因此可以选择第三只以外的其他奶牛，总的效率为 <span class=\"katex math inline\">1 + 2 + 4 + 5 = 12</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "FJ 有 5 只奶牛，效率分别为 1、2、3、4、5。\nFJ 希望选取的奶牛效率总和最大，但是他不能选取超过 2 只连续的奶牛。\n因此可以选择第三只以外的其他奶牛，总的效率为 1 + 2 + 4 + 5 = 12。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>usaco2011</p>\n</div>                </div>",
+      "text": "usaco2011"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">单调队列优化DP</span><span class=\"label label-warning\">usaco</span></span></p>\n</div>                </div>",
+      "text": "单调队列优化DPusaco"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 2\r\n1\r\n2\r\n3\r\n4\r\n5",
+      "output": "12"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "436",
+    "通过人数": "244",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:17"
+}

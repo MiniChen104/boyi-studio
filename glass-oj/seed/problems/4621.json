@@ -1,0 +1,56 @@
+{
+  "id": "4621",
+  "title": "填涂颜色",
+  "tags": [
+    "蓝桥杯STEMA"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4621",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个由 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列的小方格组成的矩阵图形，接下来对该图形进行如下操作：</p>\n<ul><li><span class=\"katex math inline\">1</span>、先选择其中 <span class=\"katex math inline\">x</span> 行，将其填成黄色；</li>\n<li><span class=\"katex math inline\">2</span>、再选择其中 <span class=\"katex math inline\">y</span> 列，将其填成黄色；</li>\n</ul><p>填色完成后，请统计出有多少个小方格未被填色。</p>\n<p>例如：矩阵图形由 <span class=\"katex math inline\">4</span> 行 <span class=\"katex math inline\">5</span> 列的小方格组成，先选择第 <span class=\"katex math inline\">2、4</span> 行将其填色，再选择第 <span class=\"katex math inline\">1、3、5</span> 列将其填色。</p>\n<p><img src=\"https://assets.boyi.local/d9bd52c8949a3cf6e0422f35.png\"></p>\n<p>填色完成后，有 <span class=\"katex math inline\">4</span> 个小方格未被填色。</p>\n</div>            </div>",
+      "text": "给定一个由 n 行 m 列的小方格组成的矩阵图形，接下来对该图形进行如下操作：\n1、先选择其中 x 行，将其填成黄色；\n2、再选择其中 y 列，将其填成黄色；\n填色完成后，请统计出有多少个小方格未被填色。\n例如：矩阵图形由 4 行 5 列的小方格组成，先选择第 2、4 行将其填色，再选择第 1、3、5 列将其填色。\n\n填色完成后，有 4 个小方格未被填色。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入共三行。</p>\n<p>第一行输入 <span class=\"katex math inline\">4</span> 个整数 <span class=\"katex math inline\">n</span>，<span class=\"katex math inline\">m</span>，<span class=\"katex math inline\">x</span>，<span class=\"katex math inline\">y</span>，分别表示矩阵的行数和列数以及选择填色的行数和列数<span class=\"katex math inline\">（1 \\le x \\le n \\le 10000，1 \\le y \\le m \\le 10000）</span>，整数之间以一个空格隔开；</p>\n<p>第二行输入 <span class=\"katex math inline\">x</span> 个不同的整数（<span class=\"katex math inline\">1 \\le </span> 整数 <span class=\"katex math inline\"> \\le n</span>），表示被填色的行号，整数之间以一个空格隔开；</p>\n<p>第三行输入 <span class=\"katex math inline\">y</span> 个不同的整数（ <span class=\"katex math inline\">1 \\le </span> 整数 <span class=\"katex math inline\"> \\le m </span>），表示被填色的列号，整数之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "输入共三行。\n第一行输入 4 个整数 n，m，x，y，分别表示矩阵的行数和列数以及选择填色的行数和列数（1 \\le x \\le n \\le 10000，1 \\le y \\le m \\le 10000），整数之间以一个空格隔开；\n第二行输入 x 个不同的整数（1 \\le  整数  \\le n），表示被填色的行号，整数之间以一个空格隔开；\n第三行输入 y 个不同的整数（ 1 \\le  整数  \\le m ），表示被填色的列号，整数之间以一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示填色完成后未被填色的小方格数量。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示填色完成后未被填色的小方格数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 5 2 3\r\n2 4\r\n1 3 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 5 2 3\r\n2 4\r\n1 3 5\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（23年12月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（23年12月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 5 2 3\r\n2 4\r\n1 3 5",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "87",
+    "通过人数": "44",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:26"
+}

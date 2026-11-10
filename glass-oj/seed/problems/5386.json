@@ -1,0 +1,68 @@
+{
+  "id": "5386",
+  "title": "最短距离",
+  "tags": [
+    "GESP八级",
+    "25年9月",
+    "图论",
+    "最大公约数"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5386",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定正整数 <span class=\"katex math inline\"> p, q </span> 以及常数 <span class=\"katex math inline\"> N = 10^{18} </span>。现在构建一张包含 <span class=\"katex math inline\"> N </span> 个结点的带权无向图，结点依次以 <span class=\"katex math inline\"> 1, 2, \\dots, N </span> 编号。</p>\n<p>对于任意满足 <span class=\"katex math inline\"> 1 \\le u \\lt v \\le N </span> 的 <span class=\"katex math inline\"> u, v </span>，向图中加入一条连接结点 <span class=\"katex math inline\"> u </span> 与结点 <span class=\"katex math inline\"> v </span> 的无向边，边权取决于 <span class=\"katex math inline\"> u </span> 和 <span class=\"katex math inline\"> v </span> 是否互质：</p>\n<ul><li>若 <span class=\"katex math inline\"> u </span> 与 <span class=\"katex math inline\"> v </span> 互质（即 <span class=\"katex math inline\"> u, v </span> 的最大公因数为 <span class=\"katex math inline\"> 1 </span>），则连接结点 <span class=\"katex math inline\"> u </span> 与结点 <span class=\"katex math inline\"> v </span> 的无向边长度为 <span class=\"katex math inline\"> p </span>；</li>\n<li>否则，连接结点 <span class=\"katex math inline\"> u </span> 与结点 <span class=\"katex math inline\"> v </span> 的无向边长度为 <span class=\"katex math inline\"> q </span>。</li>\n</ul><p>现在给定 <span class=\"katex math inline\"> n </span> 组询问，第 <span class=\"katex math inline\"> i </span>（<span class=\"katex math inline\"> 1 \\le i \\le n </span>）组询问给定两个正整数 <span class=\"katex math inline\"> a_i, b_i </span>，你需要回答结点 <span class=\"katex math inline\"> a_i </span> 与结点 <span class=\"katex math inline\"> b_i </span> 之间的最短距离。</p>\n</div>            </div>",
+      "text": "给定正整数  p, q  以及常数  N = 10^{18} 。现在构建一张包含  N  个结点的带权无向图，结点依次以  1, 2, \\dots, N  编号。\n对于任意满足  1 \\le u \\lt v \\le N  的  u, v ，向图中加入一条连接结点  u  与结点  v  的无向边，边权取决于  u  和  v  是否互质：\n若  u  与  v  互质（即  u, v  的最大公因数为  1 ），则连接结点  u  与结点  v  的无向边长度为  p ；\n否则，连接结点  u  与结点  v  的无向边长度为  q 。\n现在给定  n  组询问，第  i （ 1 \\le i \\le n ）组询问给定两个正整数  a_i, b_i ，你需要回答结点  a_i  与结点  b_i  之间的最短距离。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：三个正整数 <span class=\"katex math inline\"> n, p, q </span>，分别表示查询数量、结点编号互质时的边权，以及结点编号不互质时的边权。</p>\n<p>接下来 <span class=\"katex math inline\"> n </span> 行，每行两个正整数 <span class=\"katex math inline\"> a_i, b_i </span>，表示一组询问。</p>\n</div>            </div>",
+      "text": "第一行：三个正整数  n, p, q ，分别表示查询数量、结点编号互质时的边权，以及结点编号不互质时的边权。\n接下来  n  行，每行两个正整数  a_i, b_i ，表示一组询问。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共 <span class=\"katex math inline\"> n </span> 行，每行一个整数，表示结点 <span class=\"katex math inline\"> a_i </span> 与结点 <span class=\"katex math inline\"> b_i </span> 之间的最短距离。</p>\n</div>            </div>",
+      "text": "输出共  n  行，每行一个整数，表示结点  a_i  与结点  b_i  之间的最短距离。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 4 3\r\n1 2\r\n2 3\r\n4 2\r\n3 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4\r\n4\r\n3\r\n4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 2 6\r\n1 2\r\n2 3\r\n4 2\r\n3 5\r\n6 6</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2\r\n2\r\n4\r\n2\r\n0</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 4 3\r\n1 2\r\n2 3\r\n4 2\r\n3 5\n                        \n                        \n                            输出\n                            4\r\n4\r\n3\r\n4\n                        \n\n                                                    \n                                输入\n                                5 2 6\r\n1 2\r\n2 3\r\n4 2\r\n3 5\r\n6 6\n                            \n                            \n                                输出\n                                2\r\n2\r\n4\r\n2\r\n0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>数据范围</strong></p>\n<p>对于<span class=\"katex math inline\">30\\%</span> 的测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 10</span> , <span class=\"katex math inline\"> 1 \\le a_i,b_i \\le 50</span> 。</p>\n<p>对于另外 <span class=\"katex math inline\">30\\%</span> 的测试点，保证 <span class=\"katex math inline\"> 1 \\le a_i,b_i \\le 250</span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 10^4</span> , <span class=\"katex math inline\">1 \\le a_i,b_i \\le 10^9</span>,   <span class=\"katex math inline\"> 1 \\le p,q \\le 10^9 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于30\\% 的测试点，保证 1 \\le n \\le 10 ,  1 \\le a_i,b_i \\le 50 。\n对于另外 30\\% 的测试点，保证  1 \\le a_i,b_i \\le 250。\n对于所有测试点，保证 1 \\le n \\le 10^4 , 1 \\le a_i,b_i \\le 10^9,    1 \\le p,q \\le 10^9 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 2025年09月认证 C++8级真题</p>\n</div>                </div>",
+      "text": "GESP 2025年09月认证 C++8级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP八级</span><span class=\"label label-warning\">25年9月</span><span class=\"label label-info\">图论</span><span class=\"label label-danger\">最大公约数</span></span></p>\n</div>                </div>",
+      "text": "GESP八级25年9月图论最大公约数"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 4 3\r\n1 2\r\n2 3\r\n4 2\r\n3 5",
+      "output": "4\r\n4\r\n3\r\n4"
+    },
+    {
+      "input": "5 2 6\r\n1 2\r\n2 3\r\n4 2\r\n3 5\r\n6 6",
+      "output": "2\r\n2\r\n4\r\n2\r\n0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "87",
+    "通过人数": "42",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:05"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1629",
+  "title": "六位数是否对称",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1629",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请从键盘读入一个六位整数，判断这个六位整数是否是对称数（对称数指的是，这个数正过来和倒过来是同一个数。</p>\n<p>比如： <span class=\"katex math inline\">123321、685586、862268</span> 等数都是对称数），如果是对称数，则输出 “<code>Y</code>” ，否则输出 “<code>N</code>” 。（请注意字母的大小写）。</p>\n</div>            </div>",
+      "text": "请从键盘读入一个六位整数，判断这个六位整数是否是对称数（对称数指的是，这个数正过来和倒过来是同一个数。\n比如： 123321、685586、862268 等数都是对称数），如果是对称数，则输出 “Y” ，否则输出 “N” 。（请注意字母的大小写）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>读入一个六位的整数。</p>\n</div>            </div>",
+      "text": "读入一个六位的整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果这个六位数是对称数，输出 “<code>Y</code>” ，如果不是，输出 “<code>N</code>” 。</p>\n</div>            </div>",
+      "text": "如果这个六位数是对称数，输出 “Y” ，如果不是，输出 “N” 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>123321</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Y</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            123321\n                        \n                        \n                            输出\n                            Y"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "123321",
+      "output": "Y"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "31532",
+    "通过人数": "21215",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:04"
+}

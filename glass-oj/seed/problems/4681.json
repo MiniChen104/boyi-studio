@@ -1,0 +1,64 @@
+{
+  "id": "4681",
+  "title": "荒地开垦",
+  "tags": [
+    "GESP四级",
+    "二维数组",
+    "枚举",
+    "25年3月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/4681",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有一大片荒地，可以表示为一个 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列的网格图。</p>\n<p>小杨想要开垦这块荒地，但荒地中一些位置存在杂物，对于一块不存在杂物的荒地，该荒地可以开垦当且仅当其上下左右四个方向相邻的格子均不存在杂物。</p>\n<p>小杨可以选择至多一个位置，清除该位置的杂物，移除杂物后该位置变为荒地。小杨想知道在清除至多一个位置的杂物的情况下，最多能够开垦多少块荒地。</p>\n</div>            </div>",
+      "text": "小杨有一大片荒地，可以表示为一个 n 行 m 列的网格图。\n小杨想要开垦这块荒地，但荒地中一些位置存在杂物，对于一块不存在杂物的荒地，该荒地可以开垦当且仅当其上下左右四个方向相邻的格子均不存在杂物。\n小杨可以选择至多一个位置，清除该位置的杂物，移除杂物后该位置变为荒地。小杨想知道在清除至多一个位置的杂物的情况下，最多能够开垦多少块荒地。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个正整数 <span class=\"katex math inline\">n，m</span> ，含义如题面所示。</p>\n<p>之后 <span class=\"katex math inline\">n</span> 行，每行包含一个长度为 <span class=\"katex math inline\">m</span> 且仅包含字符 <code>.</code> 和 <code>#</code> 的字符串。如果为 <code>.</code> ，代表该位置为荒地，如果为 <code>#</code> ，\n代表该位置为杂物。</p>\n</div>            </div>",
+      "text": "第一行包含两个正整数 n，m ，含义如题面所示。\n之后 n 行，每行包含一个长度为 m 且仅包含字符 . 和 # 的字符串。如果为 . ，代表该位置为荒地，如果为 # ，\n代表该位置为杂物。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表在清除至多一个位置的杂物的情况下，最多能够开垦的荒地块数。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表在清除至多一个位置的杂物的情况下，最多能够开垦的荒地块数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 5\r\n.....\r\n.#..#\r\n.....</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>11</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 5\r\n.....\r\n.#..#\r\n.....\n                        \n                        \n                            输出\n                            11"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<p>移除第二行从左数第二块空地的杂物后：</p>\n<pre><code>.....\n....#\n.....\n</code></pre>\n<p>第一行从左数前 <span class=\"katex math inline\">4</span> 块荒地，第二行从左数前 <span class=\"katex math inline\">3</span> 块荒地，第三行从左数前 <span class=\"katex math inline\">4</span> 块荒地，均可开垦，<span class=\"katex math inline\">4+3+4=11</span>。</p>\n<h4>【数据范围】</h4>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n,m \\le 1000</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n移除第二行从左数第二块空地的杂物后：\n.....\n....#\n.....\n\n第一行从左数前 4 块荒地，第二行从左数前 3 块荒地，第三行从左数前 4 块荒地，均可开垦，4+3+4=11。\n【数据范围】\n对于全部数据，保证有 1 \\le n,m \\le 1000 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年GESP3月认证C++四级真题</p>\n</div>                </div>",
+      "text": "2025年GESP3月认证C++四级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">二维数组</span><span class=\"label label-info\">枚举</span><span class=\"label label-danger\">25年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级二维数组枚举25年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 5\r\n.....\r\n.#..#\r\n.....",
+      "output": "11"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1112",
+    "通过人数": "410",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:36:01"
+}

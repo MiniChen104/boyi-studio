@@ -1,0 +1,62 @@
+{
+  "id": "4934",
+  "title": "集合操作",
+  "tags": [
+    "数组",
+    "bitset",
+    "set",
+    "map"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4934",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定两个集合 <span class=\"katex math inline\">A</span> 和集合 <span class=\"katex math inline\">B</span>，请分别执行如下三个操作。</p>\n<ol><li><strong>AND</strong> —— 按升序输出集合 <span class=\"katex math inline\">A \\cap B</span> 中的所有元素。</li>\n<li><strong>OR</strong> —— 按升序输出输出集合 <span class=\"katex math inline\">A \\cup B</span> 中的所有元素。</li>\n<li><strong>A MINUS B</strong> —— 按升序输出输出集合 <span class=\"katex math inline\">A \\setminus B</span>（即 <span class=\"katex math inline\">A</span> 中有但 <span class=\"katex math inline\">B</span> 中没有的元素）。</li>\n</ol><p>请注意，如果计算出来的集合不存在，请输出 <code>EMPTY</code>。</p>\n</div>            </div>",
+      "text": "给定两个集合 A 和集合 B，请分别执行如下三个操作。\nAND —— 按升序输出集合 A \\cap B 中的所有元素。\nOR —— 按升序输出输出集合 A \\cup B 中的所有元素。\nA MINUS B —— 按升序输出输出集合 A \\setminus B（即 A 中有但 B 中没有的元素）。\n请注意，如果计算出来的集合不存在，请输出 EMPTY。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入两个整数 <span class=\"katex math inline\">n, m</span> 表示集合 <span class=\"katex math inline\">A</span> 和集合 <span class=\"katex math inline\">B</span> 的元素个数（<span class=\"katex math inline\">1 \\le n, m \\le 10^5</span>）。</p>\n<p>第二行输入 <span class=\"katex math inline\">n</span> 个正整数，表示集合 <span class=\"katex math inline\">A</span> 的元素（范围为 <span class=\"katex math inline\">1 \\sim 10^6</span>，集合内无重复）。</p>\n<p>第三行输入 <span class=\"katex math inline\">m</span> 个正整数，表示集合 <span class=\"katex math inline\">B</span> 的元素（范围为 <span class=\"katex math inline\">1 \\sim 10^6</span>，集合内无重复）。</p>\n</div>            </div>",
+      "text": "第一行输入两个整数 n, m 表示集合 A 和集合 B 的元素个数（1 \\le n, m \\le 10^5）。\n第二行输入 n 个正整数，表示集合 A 的元素（范围为 1 \\sim 10^6，集合内无重复）。\n第三行输入 m 个正整数，表示集合 B 的元素（范围为 1 \\sim 10^6，集合内无重复）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">3</span> 行，每行按照从小到大的顺序，输出 <span class=\"katex math inline\">A \\cap B</span> 、<span class=\"katex math inline\">A \\cup B</span> 、<span class=\"katex math inline\">A \\setminus B</span> 三个集合。</p>\n</div>            </div>",
+      "text": "输出 3 行，每行按照从小到大的顺序，输出 A \\cap B 、A \\cup B 、A \\setminus B 三个集合。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 4\r\n1 2 3 4 5\r\n4 5 6 7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4 5\r\n1 2 3 4 5 6 7\r\n1 2 3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>8 9\r\n1 3 5 7 9 11 13 15\r\n2 4 6 8 10 12 14 16 20</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>EMPTY\r\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 20\r\n1 3 5 7 9 11 13 15</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 5\r\n10 20 30 40 50\r\n10 50 20 40 30</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>10 20 30 40 50\r\n10 20 30 40 50\r\nEMPTY</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            5 4\r\n1 2 3 4 5\r\n4 5 6 7\n                        \n                        \n                            输出\n                            4 5\r\n1 2 3 4 5 6 7\r\n1 2 3\n                        \n\n                                                    \n                                输入\n                                8 9\r\n1 3 5 7 9 11 13 15\r\n2 4 6 8 10 12 14 16 20\n                            \n                            \n                                输出\n                                EMPTY\r\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 20\r\n1 3 5 7 9 11 13 15\n                            \n                        \n                                                    \n                                输入\n                                5 5\r\n10 20 30 40 50\r\n10 50 20 40 30\n                            \n                            \n                                输出\n                                10 20 30 40 50\r\n10 20 30 40 50\r\nEMPTY"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组</span><span class=\"label label-warning\">bitset</span><span class=\"label label-info\">set</span><span class=\"label label-danger\">map</span></span></p>\n</div>                </div>",
+      "text": "数组bitsetsetmap"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 4\r\n1 2 3 4 5\r\n4 5 6 7",
+      "output": "4 5\r\n1 2 3 4 5 6 7\r\n1 2 3"
+    },
+    {
+      "input": "8 9\r\n1 3 5 7 9 11 13 15\r\n2 4 6 8 10 12 14 16 20",
+      "output": "EMPTY\r\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 20\r\n1 3 5 7 9 11 13 15"
+    },
+    {
+      "input": "5 5\r\n10 20 30 40 50\r\n10 50 20 40 30",
+      "output": "10 20 30 40 50\r\n10 20 30 40 50\r\nEMPTY"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "101",
+    "通过人数": "77",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:02"
+}

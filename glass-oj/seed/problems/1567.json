@@ -1,0 +1,69 @@
+{
+  "id": "1567",
+  "title": "买铅笔（pencil）",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1567",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>P老师需要去商店买 <span class=\"katex math inline\">n</span> 支铅笔作为小朋友们参加 <strong>NOIP</strong>的礼物。她发现商店一共有 <span class=\"katex math inline\">3</span> 种包装的铅笔，不同包装内的铅笔数量有可能不同，价格也有可能不同。</p>\n<p>为了公平起见，P老师决定只买同一种包装的铅笔。</p>\n<p>商店不允许将铅笔的包装拆开，因此P老师可能需要购买超过 <span class=\"katex math inline\">n</span> 支铅笔才够给小朋友们发礼物。</p>\n<p>现在P老师想知道，在商店每种包装的数量都足够的情况下，要买够至少 <span class=\"katex math inline\">n</span> 支铅笔最少需要花费多少钱。</p>\n</div>            </div>",
+      "text": "P老师需要去商店买 n 支铅笔作为小朋友们参加 NOIP的礼物。她发现商店一共有 3 种包装的铅笔，不同包装内的铅笔数量有可能不同，价格也有可能不同。\n为了公平起见，P老师决定只买同一种包装的铅笔。\n商店不允许将铅笔的包装拆开，因此P老师可能需要购买超过 n 支铅笔才够给小朋友们发礼物。\n现在P老师想知道，在商店每种包装的数量都足够的情况下，要买够至少 n 支铅笔最少需要花费多少钱。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含一个正整数 <span class=\"katex math inline\">n</span> ，表示需要的铅笔数量。</p>\n<p>接下来三行，每行用两个正整数描述一种包装的铅笔: 其中第一个整数表示这种包装内铅笔的数量，第二个整数表示这种包装的价格。</p>\n<p>保证所有的 <span class=\"katex math inline\">7</span> 个数都是不超过 <span class=\"katex math inline\">10000</span> 的正整数。</p>\n</div>            </div>",
+      "text": "输入的第一行包含一个正整数 n ，表示需要的铅笔数量。\n接下来三行，每行用两个正整数描述一种包装的铅笔: 其中第一个整数表示这种包装内铅笔的数量，第二个整数表示这种包装的价格。\n保证所有的 7 个数都是不超过 10000 的正整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数，表示P老师最少需要花费的钱。</p>\n</div>            </div>",
+      "text": "输出一行一个整数，表示P老师最少需要花费的钱。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>57\r\n2 2\r\n50 30\r\n30 27</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>54</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>9998\r\n128 233\r\n128 2333\r\n128 666</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>18407</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>9999\r\n101 1111\r\n1 9999\r\n1111 9999</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>89991</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            57\r\n2 2\r\n50 30\r\n30 27\n                        \n                        \n                            输出\n                            54\n                        \n\n                                                    \n                                输入\n                                9998\r\n128 233\r\n128 2333\r\n128 666\n                            \n                            \n                                输出\n                                18407\n                            \n                        \n                                                    \n                                输入\n                                9999\r\n101 1111\r\n1 9999\r\n1111 9999\n                            \n                            \n                                输出\n                                89991"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例1备注】<br>\n铅笔的三种包装分别是:<br>\n<span class=\"katex math inline\">2</span> 支装，价格为 <span class=\"katex math inline\">2</span> ;<br>\n<span class=\"katex math inline\">50</span> 支装，价格为 <span class=\"katex math inline\">30</span> ;<br>\n<span class=\"katex math inline\">30</span> 支装，价格为 <span class=\"katex math inline\">27</span> 。<br>\nP老师需要购买至少 <span class=\"katex math inline\">57</span> 支铅笔。<br>\n如果她选择购买第一种包装，那么她需要购买 <span class=\"katex math inline\">29</span> 份，共计 <span class=\"katex math inline\">2 \\times 29 = 58</span>支，需要花费的钱为 <span class=\"katex math inline\">2 * 29 = 58</span> 。<br>\n实际上，P老师会选择购买第三种包装，这样需要买 <span class=\"katex math inline\">2</span> 份。虽然最后买到的铅笔数量更多了，为 <span class=\"katex math inline\">30 * 2 = 60</span> 支，但花费却减少为 <span class=\"katex math inline\">27 * 2 = 54</span>，比第一种少。<br>\n对于第二种包装，虽然每支铅笔的价格是最低的，但要够发必须买 <span class=\"katex math inline\">2</span> 份，实际的花费达到了 <span class=\"katex math inline\">30 * 2 = 60</span>，因此P老师也不会选择。<br>\n所以最后输出的答案是 <span class=\"katex math inline\">54</span> 。  </p>\n<p>【数据规模】<br>\n子任务会给出部分测试数据的特点。如果你在解决题目中遇到了困难，可以尝试只解决一部分测试数据。<br>\n每个测试点的数据规模及特点如下表:<br><img src=\"https://assets.boyi.local/7e9f31b1127b1c1752c42144.png\"></p>\n<p><strong>【来源】</strong><br>\n<span class=\"katex math inline\">NOIP2016</span> 普及组复赛第 <span class=\"katex math inline\">1</span> 题 \n来源</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1备注】\n铅笔的三种包装分别是:\n2 支装，价格为 2 ;\n50 支装，价格为 30 ;\n30 支装，价格为 27 。\nP老师需要购买至少 57 支铅笔。\n如果她选择购买第一种包装，那么她需要购买 29 份，共计 2 \\times 29 = 58支，需要花费的钱为 2 * 29 = 58 。\n实际上，P老师会选择购买第三种包装，这样需要买 2 份。虽然最后买到的铅笔数量更多了，为 30 * 2 = 60 支，但花费却减少为 27 * 2 = 54，比第一种少。\n对于第二种包装，虽然每支铅笔的价格是最低的，但要够发必须买 2 份，实际的花费达到了 30 * 2 = 60，因此P老师也不会选择。\n所以最后输出的答案是 54 。  \n【数据规模】\n子任务会给出部分测试数据的特点。如果你在解决题目中遇到了困难，可以尝试只解决一部分测试数据。\n每个测试点的数据规模及特点如下表:\n【来源】\nNOIP2016 普及组复赛第 1 题 \n来源"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛</p>\n</div>                </div>",
+      "text": "noip复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "57\r\n2 2\r\n50 30\r\n30 27",
+      "output": "54"
+    },
+    {
+      "input": "9998\r\n128 233\r\n128 2333\r\n128 666",
+      "output": "18407"
+    },
+    {
+      "input": "9999\r\n101 1111\r\n1 9999\r\n1111 9999",
+      "output": "89991"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "2282",
+    "通过人数": "1548",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:12"
+}

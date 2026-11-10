@@ -1,0 +1,56 @@
+{
+  "id": "1231",
+  "title": "考试成绩的分布情况",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1231",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>期末考试结束，小明的语文老师想知道，这次考试的成绩分布情况，主要计算如下几个数据：平均分、<span class=\"katex math inline\"> \\ge </span> 平均分的总人数、 <span class=\"katex math inline\"> \\lt </span> 平均分的总人数，请你写程序帮助小明的语文老师来计算一下！</p>\n</div>            </div>",
+      "text": "期末考试结束，小明的语文老师想知道，这次考试的成绩分布情况，主要计算如下几个数据：平均分、 \\ge  平均分的总人数、  \\lt  平均分的总人数，请你写程序帮助小明的语文老师来计算一下！"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个整数 <span class=\"katex math inline\">n</span> 代表有 <span class=\"katex math inline\">n</span> 个人的成绩（ <span class=\"katex math inline\">n \\le 100</span> ）；</p>\n<p>第二行， <span class=\"katex math inline\">n</span> 个人的语文成绩。</p>\n</div>            </div>",
+      "text": "第一行，一个整数 n 代表有 n 个人的成绩（ n \\le 100 ）；\n第二行， n 个人的语文成绩。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p> <span class=\"katex math inline\">3</span> 个值，分别代表平均分、<span class=\"katex math inline\"> \\ge </span> 平均分的总人数、<span class=\"katex math inline\"> \\lt </span> 平均分的总人数，请注意，平均分保留 <span class=\"katex math inline\">1</span> 位小数！</p>\n</div>            </div>",
+      "text": "3 个值，分别代表平均分、 \\ge  平均分的总人数、 \\lt  平均分的总人数，请注意，平均分保留 1 位小数！"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n100 98 97 99 90</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>96.8 4 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n100 98 97 99 90\n                        \n                        \n                            输出\n                            96.8 4 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n100 98 97 99 90",
+      "output": "96.8 4 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "24528",
+    "通过人数": "14450",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:16:37"
+}

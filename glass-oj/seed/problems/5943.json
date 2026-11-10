@@ -1,0 +1,63 @@
+{
+  "id": "5943",
+  "title": "环保能量球",
+  "tags": [
+    "GESP二级",
+    "25年12月",
+    "循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5943",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨最近在玩一个环保主题的游戏。在游戏中，小杨每行走 <span class=\"katex math inline\">1</span>  公里就可以获得 <span class=\"katex math inline\">1</span> 点“环保能量”。</p>\n<p>为了激励玩家，游戏设置了“里程奖励”：小杨每行走 <span class=\"katex math inline\">x</span> 公里，游戏就会额外奖励 <span class=\"katex math inline\">1</span> 点能量。</p>\n<p>现在已知小杨总共行走了 <span class=\"katex math inline\">n</span> 公里，请你帮他计算，他一共能获得多少点环保能量？</p>\n</div>            </div>",
+      "text": "小杨最近在玩一个环保主题的游戏。在游戏中，小杨每行走 1  公里就可以获得 1 点“环保能量”。\n为了激励玩家，游戏设置了“里程奖励”：小杨每行走 x 公里，游戏就会额外奖励 1 点能量。\n现在已知小杨总共行走了 n 公里，请你帮他计算，他一共能获得多少点环保能量？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">t</span>，代表测试数据组数。</p>\n<p>对于每组测试数据：</p>\n<p>第一行包含一个正整数 <span class=\"katex math inline\">n</span>，代表行走的公里数。</p>\n<p>第二行包含一个正整数 <span class=\"katex math inline\">x</span>，代表奖励触发的间隔。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 t，代表测试数据组数。\n对于每组测试数据：\n第一行包含一个正整数 n，代表行走的公里数。\n第二行包含一个正整数 x，代表奖励触发的间隔。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组测试数据，输出一个整数，代表小杨获得的环保能量总数。</p>\n</div>            </div>",
+      "text": "对于每组测试数据，输出一个整数，代表小杨获得的环保能量总数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n5\r\n2\r\n10\r\n3\r\n2\r\n5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7\r\n13\r\n2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n5\r\n2\r\n10\r\n3\r\n2\r\n5\n                        \n                        \n                            输出\n                            7\r\n13\r\n2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p>对于第 <span class=\"katex math inline\">1</span> 组数据，<span class=\"katex math inline\">n=5,x=2</span> ：小杨行走获得 <span class=\"katex math inline\">5</span> 点能量。此外，他在第 <span class=\"katex math inline\">2</span> 公里和第 <span class=\"katex math inline\">4</span> 公里时各获得 <span class=\"katex math inline\">1</span> 点额外奖励，总共 <span class=\"katex math inline\">5+2=7</span> 点。</p>\n<p>对于第 <span class=\"katex math inline\">2</span> 组数据，<span class=\"katex math inline\">n=10,x=3</span> ：行走获得 <span class=\"katex math inline\">10</span> 点。他在第 <span class=\"katex math inline\">3、6、9</span> 公里时各获得 <span class=\"katex math inline\">1</span> 点额外奖励，总共 <span class=\"katex math inline\">10+3=13</span>点。</p>\n<p>对于第 <span class=\"katex math inline\">3</span> 组数据，<span class=\"katex math inline\">n=2,x=5</span> ：行走获得 <span class=\"katex math inline\">2</span> 点。由于行走路程不足 <span class=\"katex math inline\">5</span> 公里，没有额外奖励，总共 <span class=\"katex math inline\">2</span> 点。</p>\n<h4>数据范围</h4>\n<p>对于全部数据，保证： <span class=\"katex math inline\">1 \\le t \\le 100，1 \\le n,x \\le 1000 </span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n对于第 1 组数据，n=5,x=2 ：小杨行走获得 5 点能量。此外，他在第 2 公里和第 4 公里时各获得 1 点额外奖励，总共 5+2=7 点。\n对于第 2 组数据，n=10,x=3 ：行走获得 10 点。他在第 3、6、9 公里时各获得 1 点额外奖励，总共 10+3=13点。\n对于第 3 组数据，n=2,x=5 ：行走获得 2 点。由于行走路程不足 5 公里，没有额外奖励，总共 2 点。\n数据范围\n对于全部数据，保证： 1 \\le t \\le 100，1 \\le n,x \\le 1000  。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 2025年12月认证 C++2级真题</p>\n</div>                </div>",
+      "text": "GESP 2025年12月认证 C++2级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP二级</span><span class=\"label label-warning\">25年12月</span><span class=\"label label-info\">循环</span></span></p>\n</div>                </div>",
+      "text": "GESP二级25年12月循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n5\r\n2\r\n10\r\n3\r\n2\r\n5",
+      "output": "7\r\n13\r\n2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1488",
+    "通过人数": "1069",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:28"
+}

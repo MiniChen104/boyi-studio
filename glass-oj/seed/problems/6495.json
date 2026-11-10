@@ -1,0 +1,58 @@
+{
+  "id": "6495",
+  "title": "自定义键盘",
+  "tags": [
+    "詹天佑杯四年级组",
+    "字符串",
+    "计数",
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6495",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学编程的都知道，<code>SHIFT</code> 键代表转换的意思，那么他是改变什么呢?\n<img src=\"https://assets.boyi.local/7342bd6f9f4af548f7ad8e46.png\">\n当按下 <code>SHIFT</code> 加数字键，就会从输入数字转换为数字对应的左上角英文半角符号。</p>\n<p><img src=\"https://assets.boyi.local/99427345b3d1e582f173d0cb.png\">\n根据转换规则，小英雄设计了一个自定义键盘，数字键的左上角不再是英文半角符号，而是一一对应一个小写英文字母，他现在很好奇 <span class=\"katex math inline\">n</span> 个用户对他的键盘，除开<code>SHIFT</code>键外的每个键的喜爱程度。</p>\n<p>按键记录先进行转换，再按转换后的字符统计喜爱程度。例如，直接按下 <code>b</code>，或按下 <code>SHIFT 1</code> 得到 <code>b</code>，都使字母键 <code>b</code> 的喜爱程度加一；直接按下 <code>1</code>，或按下 <code>SHIFT b</code> 得到 <code>1</code>，都使数字键 <code>1</code> 的喜爱程度加一。</p>\n<p>转换关系为 <code>0</code> 与 <code>a</code>、<code>1</code> 与 <code>b</code>、……、<code>9</code> 与 <code>j</code> 一一对应。<code>SHIFT</code> 只影响当前这条记录，不持续改变后续记录的状态。</p>\n<p>注:在下圈中，红色的键和绿色的键不属于同一个键，加上 <code>SHIFT</code>键，也就是说小英雄的键盘只有 <span class=\"katex math inline\">21</span> 个键。</p>\n</div>            </div>",
+      "text": "学编程的都知道，SHIFT 键代表转换的意思，那么他是改变什么呢?\n\n当按下 SHIFT 加数字键，就会从输入数字转换为数字对应的左上角英文半角符号。\n\n根据转换规则，小英雄设计了一个自定义键盘，数字键的左上角不再是英文半角符号，而是一一对应一个小写英文字母，他现在很好奇 n 个用户对他的键盘，除开SHIFT键外的每个键的喜爱程度。\n按键记录先进行转换，再按转换后的字符统计喜爱程度。例如，直接按下 b，或按下 SHIFT 1 得到 b，都使字母键 b 的喜爱程度加一；直接按下 1，或按下 SHIFT b 得到 1，都使数字键 1 的喜爱程度加一。\n转换关系为 0 与 a、1 与 b、……、9 与 j 一一对应。SHIFT 只影响当前这条记录，不持续改变后续记录的状态。\n注:在下圈中，红色的键和绿色的键不属于同一个键，加上 SHIFT键，也就是说小英雄的键盘只有 21 个键。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个整数 <span class=\"katex math inline\">n(1 \\le n \\le 10^5)</span>，表示用户的数量。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行代表用户的按下的键，可能为:</p>\n<ul><li>1.一个数字字符 (&#x27;<code>0</code>&#x27; 到 &#x27;<code>9</code>&#x27;)</li>\n<li>2.一个字母字符 (&#x27;<code>a</code>&#x27; 到 &#x27;<code>j</code>&#x27;)</li>\n<li>3.字符串 &quot;<code>SHIFT</code>&quot; 后跟一个数字或字母，中间空格隔(如 &quot;<code>SHIFT 1</code>&quot;、&quot;<code>SHIFT b</code>&quot;)</li>\n</ul></div>            </div>",
+      "text": "第一行包含一个整数 n(1 \\le n \\le 10^5)，表示用户的数量。\n接下来 n 行，每行代表用户的按下的键，可能为:\n1.一个数字字符 ('0' 到 '9')\n2.一个字母字符 ('a' 到 'j')\n3.字符串 \"SHIFT\" 后跟一个数字或字母，中间空格隔(如 \"SHIFT 1\"、\"SHIFT b\")"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共输出两行。</p>\n<p>第一行输出字母键 <code>a</code> 到 <code>j</code> 的喜爱程度，按小写字母顺序用空格隔开。</p>\n<p>第二行输出数字键 <code>0</code> 到 <code>9</code> 的喜爱程度，按数字顺序用空格隔开。</p>\n</div>            </div>",
+      "text": "共输出两行。\n第一行输出字母键 a 到 j 的喜爱程度，按小写字母顺序用空格隔开。\n第二行输出数字键 0 到 9 的喜爱程度，按数字顺序用空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n3\r\n1\r\na\r\nb\r\n4\r\n9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 1 0 0 0 0 0 0 0 0\r\n0 1 0 1 1 0 0 0 0 1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10\r\nSHIFT 1\r\nSHIFT 2\r\nSHIFT b\r\nSHIFT a\r\n3\r\n1\r\na\r\nb\r\n4\r\n9</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1 2 1 0 0 0 0 0 0 0\r\n1 2 0 1 1 0 0 0 0 1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n3\r\n1\r\na\r\nb\r\n4\r\n9\n                        \n                        \n                            输出\n                            1 1 0 0 0 0 0 0 0 0\r\n0 1 0 1 1 0 0 0 0 1\n                        \n\n                                                    \n                                输入\n                                10\r\nSHIFT 1\r\nSHIFT 2\r\nSHIFT b\r\nSHIFT a\r\n3\r\n1\r\na\r\nb\r\n4\r\n9\n                            \n                            \n                                输出\n                                1 2 1 0 0 0 0 0 0 0\r\n1 2 0 1 1 0 0 0 0 1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">詹天佑杯四年级组</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">计数</span><span class=\"label label-danger\">模拟</span></span></p>\n</div>                </div>",
+      "text": "詹天佑杯四年级组字符串计数模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n3\r\n1\r\na\r\nb\r\n4\r\n9",
+      "output": "1 1 0 0 0 0 0 0 0 0\r\n0 1 0 1 1 0 0 0 0 1"
+    },
+    {
+      "input": "10\r\nSHIFT 1\r\nSHIFT 2\r\nSHIFT b\r\nSHIFT a\r\n3\r\n1\r\na\r\nb\r\n4\r\n9",
+      "output": "1 2 1 0 0 0 0 0 0 0\r\n1 2 0 1 1 0 0 0 0 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "4",
+    "通过人数": "3",
+    "金币数量": "2 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:36"
+}

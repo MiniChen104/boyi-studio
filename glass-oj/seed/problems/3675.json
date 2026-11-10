@@ -1,0 +1,71 @@
+{
+  "id": "3675",
+  "title": "游戏",
+  "tags": [
+    "GESP六级",
+    "动态规划",
+    "24年3月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3675",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>你有四个正整数 <span class=\"katex math inline\">n,a,b,c</span> ，并准备用它们玩一个简单的小游戏。</p>\n<p>在一轮游戏操作中，你可以选择将 <span class=\"katex math inline\">n</span> 减去 <span class=\"katex math inline\">a</span>，或是将 <span class=\"katex math inline\">n</span> 减去 <span class=\"katex math inline\">b</span> 。游戏将会进行多轮操作，直到当 <span class=\"katex math inline\">n \\le c </span> 时游戏结束。</p>\n<p>你想知道游戏结束时有多少种不同的游戏操作序列。两种游戏操作序列不同，当且仅当游戏操作轮数不同，或是某一轮游戏操作中，一种操作序列选择将 <span class=\"katex math inline\">n</span> 减去 <span class=\"katex math inline\">a</span> ，而另一种操作序列选择将 <span class=\"katex math inline\">n</span> 减去 <span class=\"katex math inline\">b</span> 。如果 <span class=\"katex math inline\">a=b</span>，也认为将 <span class=\"katex math inline\">n</span> 减去 <span class=\"katex math inline\">a</span> 与将 <span class=\"katex math inline\">n</span> 减去 <span class=\"katex math inline\">b</span> 是不同的操作。</p>\n<p>由于答案可能很大，你只需要求出答案对 <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">000</span> <span class=\"katex math inline\">000</span> <span class=\"katex math inline\">007</span> 取模的结果。</p>\n</div>            </div>",
+      "text": "你有四个正整数 n,a,b,c ，并准备用它们玩一个简单的小游戏。\n在一轮游戏操作中，你可以选择将 n 减去 a，或是将 n 减去 b 。游戏将会进行多轮操作，直到当 n \\le c  时游戏结束。\n你想知道游戏结束时有多少种不同的游戏操作序列。两种游戏操作序列不同，当且仅当游戏操作轮数不同，或是某一轮游戏操作中，一种操作序列选择将 n 减去 a ，而另一种操作序列选择将 n 减去 b 。如果 a=b，也认为将 n 减去 a 与将 n 减去 b 是不同的操作。\n由于答案可能很大，你只需要求出答案对 1 000 000 007 取模的结果。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行四个正整数 <span class=\"katex math inline\">n,a,b,c</span> 。保证 <span class=\"katex math inline\">1 \\le a，b，c \\le n</span>。</p>\n</div>            </div>",
+      "text": "一行四个正整数 n,a,b,c 。保证 1 \\le a，b，c \\le n。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数，表示不同的游戏操作序列数量对 <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">000</span> <span class=\"katex math inline\">000</span> <span class=\"katex math inline\">007</span> 取模的结果。</p>\n</div>            </div>",
+      "text": "一行一个整数，表示不同的游戏操作序列数量对 1 000 000 007 取模的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 1 1 1\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>114 51 4 1\r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>176\r\n</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>114514 191 9 810\r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>384178446</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            1 1 1 1\r\n\n                        \n                        \n                            输出\n                            1\r\n\n                        \n\n                                                    \n                                输入\n                                114 51 4 1\r\n\n                            \n                            \n                                输出\n                                176\r\n\n                            \n                        \n                                                    \n                                输入\n                                114514 191 9 810\r\n\n                            \n                            \n                                输出\n                                384178446"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据范围】</p>\n<p>对于 <span class=\"katex math inline\">20 \\%</span> 的测试点，保证 <span class=\"katex math inline\">a=b=c=1，n \\le 30</span> 。</p>\n<p>对于 <span class=\"katex math inline\">40 \\%</span> 的测试点，保证 <span class=\"katex math inline\">c=1，n \\le 10^3</span> 。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 2 \\times 10^5</span>  。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 20 \\% 的测试点，保证 a=b=c=1，n \\le 30 。\n对于 40 \\% 的测试点，保证 c=1，n \\le 10^3 。\n对于所有测试点，保证 1 \\le n \\le 2 \\times 10^5  。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 3月认证C++六级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 3月认证C++六级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP六级</span><span class=\"label label-warning\">动态规划</span><span class=\"label label-info\">24年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP六级动态规划24年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 1 1 1\r\n",
+      "output": "1\r\n"
+    },
+    {
+      "input": "114 51 4 1\r\n",
+      "output": "176\r\n"
+    },
+    {
+      "input": "114514 191 9 810\r\n",
+      "output": "384178446"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "275",
+    "通过人数": "152",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:35:46"
+}

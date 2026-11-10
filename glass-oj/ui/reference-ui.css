@@ -1,0 +1,7 @@
+.reference-tools{padding:9px 18px;border-bottom:1px solid #9db6cc25;display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:11px;color:var(--muted)}
+.reference-tools select{flex:1;min-width:140px;max-width:360px;border:1px solid #a8c3d64d;background:#ffffff4d;border-radius:8px;padding:7px 9px;color:var(--ink);font:inherit}
+.reference-tools details{width:100%;line-height:1.8}
+.reference-tools summary{cursor:pointer;width:max-content}
+.reference-tools p{margin:8px 0;white-space:pre-wrap}
+.reference-tools #referenceComplexity{font-size:10px}
+body.dark .reference-tools select{background:#20374c;color:var(--ink)}

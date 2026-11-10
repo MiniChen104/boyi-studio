@@ -1,0 +1,56 @@
+{
+  "id": "1875",
+  "title": "数字和",
+  "tags": [
+    "嵌套循环"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1875",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>桐桐把合数 <span class=\"katex math inline\">483</span> 的各位数字相加 <span class=\"katex math inline\">(4+8+3)=15</span> ，再将 <span class=\"katex math inline\">483</span> 分解成质因数相乘：<span class=\"katex math inline\">483=3 \\times 7 \\times 23</span>，把这些质因数各位数字相加 <span class=\"katex math inline\">(3+7+2+3)</span>，其和也为 <span class=\"katex math inline\">15</span>。</p>\n<p>即：某合数的各位数字之和等于它所有质因数的各数字之和。你帮助桐桐把 <span class=\"katex math inline\">n</span> 以内(包括 <span class=\"katex math inline\">n</span> )具有上述特点的所有合数找出来好吗？</p>\n</div>            </div>",
+      "text": "桐桐把合数 483 的各位数字相加 (4+8+3)=15 ，再将 483 分解成质因数相乘：483=3 \\times 7 \\times 23，把这些质因数各位数字相加 (3+7+2+3)，其和也为 15。\n即：某合数的各位数字之和等于它所有质因数的各数字之和。你帮助桐桐把 n 以内(包括 n )具有上述特点的所有合数找出来好吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> (<span class=\"katex math inline\">10 \\le n \\le 30000</span>)。</p>\n</div>            </div>",
+      "text": "一个整数 n (10 \\le n \\le 30000)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>若干行，每行输出 <span class=\"katex math inline\">5</span> 个满足题目条件的数。</p>\n</div>            </div>",
+      "text": "若干行，每行输出 5 个满足题目条件的数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4 22 27 58 85\r\n94</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100\n                        \n                        \n                            输出\n                            4 22 27 58 85\r\n94"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>嵌套循环</p>\n</div>                </div>",
+      "text": "嵌套循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">嵌套循环</span></span></p>\n</div>                </div>",
+      "text": "嵌套循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100",
+      "output": "4 22 27 58 85\r\n94"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "1018",
+    "通过人数": "510",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:21"
+}

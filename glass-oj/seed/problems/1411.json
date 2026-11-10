@@ -1,0 +1,58 @@
+{
+  "id": "1411",
+  "title": "迷宫的路径",
+  "tags": [
+    "回溯",
+    "深搜",
+    "递归"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1411",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Mitch老鼠在森林里游玩，不小心走进了一个迷宫里面，这个迷宫是一个 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列的矩阵，迷宫中有些格子是可以走的，有些格子是不能走的，能走的格子用 <code>o</code> （小写字母 <code>o</code> ）表示，不能走的格子用 <code>#</code> 表示。  </p>\n<p>Mitch选择走出迷宫的策略是：先向右，如果右边走不通则选择向下，如果下边走不通则选择向左，如果左边走不通则选择向上；如果四个方向都走不通，则后退选择其他能走的路径。  </p>\n<p>Mitch从类似下图所示的迷宫的左上角 <span class=\"katex math inline\">(1,1)</span> 点进入迷宫（请注意：入口 <span class=\"katex math inline\">1,1</span> 和出口的 <span class=\"katex math inline\">n,m</span> 点都不是 <code>#</code> ），请问Mitch有哪些方法可以走出迷宫，走到 <span class=\"katex math inline\">(n,m)</span> 点；请编程求出所有可能的路径，输出这些路径，如果不存在任何的路径可以走出迷宫，请输出 <code>no</code>。  </p>\n<p><img src=\"https://assets.boyi.local/454f1006ba64ce9fa999065a.png\"></p>\n</div>            </div>",
+      "text": "Mitch老鼠在森林里游玩，不小心走进了一个迷宫里面，这个迷宫是一个 n 行 m 列的矩阵，迷宫中有些格子是可以走的，有些格子是不能走的，能走的格子用 o （小写字母 o ）表示，不能走的格子用 # 表示。  \nMitch选择走出迷宫的策略是：先向右，如果右边走不通则选择向下，如果下边走不通则选择向左，如果左边走不通则选择向上；如果四个方向都走不通，则后退选择其他能走的路径。  \nMitch从类似下图所示的迷宫的左上角 (1,1) 点进入迷宫（请注意：入口 1,1 和出口的 n,m 点都不是 # ），请问Mitch有哪些方法可以走出迷宫，走到 (n,m) 点；请编程求出所有可能的路径，输出这些路径，如果不存在任何的路径可以走出迷宫，请输出 no。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> ，中间用单个空格隔开，代表迷宫的行和列的数量。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">m</span> 个字符，描述迷宫地图。字符只有<code>o</code> 或 <code>#</code> 两种，<code>o</code> 代表这个格子可以走，<code>#</code> 代表这个格子不能走。( <span class=\"katex math inline\">4 ≤ n,m ≤ 10</span> )</p>\n</div>            </div>",
+      "text": "第一行包含两个整数 n 和 m ，中间用单个空格隔开，代表迷宫的行和列的数量。\n接下来 n 行，每行 m 个字符，描述迷宫地图。字符只有o 或 # 两种，o 代表这个格子可以走，# 代表这个格子不能走。( 4 ≤ n,m ≤ 10 )"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请按照Mitch选择的走出迷宫的策略，输出所有可能的路径，输出形式请参考样例输出的形式。</p>\n<p>如果不存在任何的路径可以走出迷宫，请输出 <code>no</code>。</p>\n</div>            </div>",
+      "text": "请按照Mitch选择的走出迷宫的策略，输出所有可能的路径，输出形式请参考样例输出的形式。\n如果不存在任何的路径可以走出迷宫，请输出 no。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 5\r\nooooo\r\no####\r\nooooo\r\n#oo#o\r\noooo#\r\no#ooo</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1:1,1-&gt;2,1-&gt;3,1-&gt;3,2-&gt;3,3-&gt;4,3-&gt;5,3-&gt;5,4-&gt;6,4-&gt;6,5\r\n2:1,1-&gt;2,1-&gt;3,1-&gt;3,2-&gt;3,3-&gt;4,3-&gt;5,3-&gt;6,3-&gt;6,4-&gt;6,5\r\n3:1,1-&gt;2,1-&gt;3,1-&gt;3,2-&gt;3,3-&gt;4,3-&gt;4,2-&gt;5,2-&gt;5,3-&gt;5,4-&gt;6,4-&gt;6,5\r\n4:1,1-&gt;2,1-&gt;3,1-&gt;3,2-&gt;3,3-&gt;4,3-&gt;4,2-&gt;5,2-&gt;5,3-&gt;6,3-&gt;6,4-&gt;6,5\r\n5:1,1-&gt;2,1-&gt;3,1-&gt;3,2-&gt;4,2-&gt;4,3-&gt;5,3-&gt;5,4-&gt;6,4-&gt;6,5\r\n6:1,1-&gt;2,1-&gt;3,1-&gt;3,2-&gt;4,2-&gt;4,3-&gt;5,3-&gt;6,3-&gt;6,4-&gt;6,5\r\n7:1,1-&gt;2,1-&gt;3,1-&gt;3,2-&gt;4,2-&gt;5,2-&gt;5,3-&gt;5,4-&gt;6,4-&gt;6,5\r\n8:1,1-&gt;2,1-&gt;3,1-&gt;3,2-&gt;4,2-&gt;5,2-&gt;5,3-&gt;6,3-&gt;6,4-&gt;6,5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 5\r\nooooo\r\no####\r\nooooo\r\n#oo#o\r\noooo#\r\no#ooo\n                        \n                        \n                            输出\n                            1:1,1->2,1->3,1->3,2->3,3->4,3->5,3->5,4->6,4->6,5\r\n2:1,1->2,1->3,1->3,2->3,3->4,3->5,3->6,3->6,4->6,5\r\n3:1,1->2,1->3,1->3,2->3,3->4,3->4,2->5,2->5,3->5,4->6,4->6,5\r\n4:1,1->2,1->3,1->3,2->3,3->4,3->4,2->5,2->5,3->6,3->6,4->6,5\r\n5:1,1->2,1->3,1->3,2->4,2->4,3->5,3->5,4->6,4->6,5\r\n6:1,1->2,1->3,1->3,2->4,2->4,3->5,3->6,3->6,4->6,5\r\n7:1,1->2,1->3,1->3,2->4,2->5,2->5,3->5,4->6,4->6,5\r\n8:1,1->2,1->3,1->3,2->4,2->5,2->5,3->6,3->6,4->6,5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>回溯 深搜 递归</p>\n</div>                </div>",
+      "text": "回溯 深搜 递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">回溯</span><span class=\"label label-warning\">深搜</span><span class=\"label label-info\">递归</span></span></p>\n</div>                </div>",
+      "text": "回溯深搜递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 5\r\nooooo\r\no####\r\nooooo\r\n#oo#o\r\noooo#\r\no#ooo",
+      "output": "1:1,1->2,1->3,1->3,2->3,3->4,3->5,3->5,4->6,4->6,5\r\n2:1,1->2,1->3,1->3,2->3,3->4,3->5,3->6,3->6,4->6,5\r\n3:1,1->2,1->3,1->3,2->3,3->4,3->4,2->5,2->5,3->5,4->6,4->6,5\r\n4:1,1->2,1->3,1->3,2->3,3->4,3->4,2->5,2->5,3->6,3->6,4->6,5\r\n5:1,1->2,1->3,1->3,2->4,2->4,3->5,3->5,4->6,4->6,5\r\n6:1,1->2,1->3,1->3,2->4,2->4,3->5,3->6,3->6,4->6,5\r\n7:1,1->2,1->3,1->3,2->4,2->5,2->5,3->5,4->6,4->6,5\r\n8:1,1->2,1->3,1->3,2->4,2->5,2->5,3->6,3->6,4->6,5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "6321",
+    "通过人数": "3152",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:19:06"
+}

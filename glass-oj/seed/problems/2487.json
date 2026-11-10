@@ -1,0 +1,69 @@
+{
+  "id": "2487",
+  "title": "三角魔方",
+  "tags": [
+    "省赛"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/2487",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一个三角形的魔方，初始时，三角形中按行依次填有 <span class=\"katex math inline\">A-P</span> 这 <span class=\"katex math inline\">16</span> 个字母。魔方每次可以选择某个下图箭头所示的方向进行一次 “旋转” 操作。  </p>\n<p><img src=\"https://assets.boyi.local/12bd474a74acb4e924a17f15.jpg\"></p>\n<p>共有 <span class=\"katex math inline\">3</span> 种合法的 “旋转” 方向，分别对应图中左上（红色箭头）、左下（蓝色箭头）、正右（绿色箭头）三个方向，分别记做 <code>U</code> 、 <code>D</code> 和 <code>R</code> 。  </p>\n<p>每次 “旋转” 操作选择该方向上含有一、三、五或七个字母的一行（或列），分别记做<code>1</code>、<code>3</code> 、 <code>5</code> 、 <code>7</code> 。 将不同的方向和行（或列）组合得到十二种合法的 “旋转” 操作，例如：<code>U1</code>、<code>D7</code>、<code>R3</code>。  </p>\n<p>“旋转” 操作会将该行/列的所有字母向对应箭头方向循环移动一格，第一个字母变成第二个字母、第二个字母变成第三个字母……最后一个字母变成第一个字母，以此类推，例如：  </p>\n<p><img src=\"https://assets.boyi.local/a46b5d6f91f8fa502f4f4c34.jpg\"></p>\n<p>如果我们将三角形魔方写成 “字母三角形” 的形式，那么初始状态就是：  </p>\n<pre><code>   A\n  BCD\n EFGHI\nJKLMNOP\n</code></pre>\n<p>如果对初始状态进行两次 <span class=\"katex math inline\">U5</span> 旋转，将会得到：</p>\n<pre><code>   A\n  GCD\n EMNHI\nJKLBFOP\n</code></pre>\n<p>现在，你得到了一个魔方旋转机器人，它可以输入一个操作序列，然后将这个操作序列重复<span class=\"katex math inline\">a^b</span>\n（<span class=\"katex math inline\">a</span> 的 <span class=\"katex math inline\">b</span> 次方，即 <span class=\"katex math inline\">a \\times a \\times a \\times \\dots \\times a</span> ，共 <span class=\"katex math inline\">b</span> 个 <span class=\"katex math inline\">a</span> 相乘）次。但让机器人旋转魔方实在太耗时了。你能预测出从初始状态开始，执行完机器人的动作后魔方的状态吗？</p>\n</div>            </div>",
+      "text": "有一个三角形的魔方，初始时，三角形中按行依次填有 A-P 这 16 个字母。魔方每次可以选择某个下图箭头所示的方向进行一次 “旋转” 操作。  \n\n共有 3 种合法的 “旋转” 方向，分别对应图中左上（红色箭头）、左下（蓝色箭头）、正右（绿色箭头）三个方向，分别记做 U 、 D 和 R 。  \n每次 “旋转” 操作选择该方向上含有一、三、五或七个字母的一行（或列），分别记做1、3 、 5 、 7 。 将不同的方向和行（或列）组合得到十二种合法的 “旋转” 操作，例如：U1、D7、R3。  \n“旋转” 操作会将该行/列的所有字母向对应箭头方向循环移动一格，第一个字母变成第二个字母、第二个字母变成第三个字母……最后一个字母变成第一个字母，以此类推，例如：  \n\n如果我们将三角形魔方写成 “字母三角形” 的形式，那么初始状态就是：  \n   A\n  BCD\n EFGHI\nJKLMNOP\n\n如果对初始状态进行两次 U5 旋转，将会得到：\n   A\n  GCD\n EMNHI\nJKLBFOP\n\n现在，你得到了一个魔方旋转机器人，它可以输入一个操作序列，然后将这个操作序列重复a^b\n（a 的 b 次方，即 a \\times a \\times a \\times \\dots \\times a ，共 b 个 a 相乘）次。但让机器人旋转魔方实在太耗时了。你能预测出从初始状态开始，执行完机器人的动作后魔方的状态吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入一个字符串，代表了一个操作序列。  </p>\n<p>第二行输入两个整数 <span class=\"katex math inline\">a</span>,<span class=\"katex math inline\">b</span> ，代表机器人会将操作序列重复 <span class=\"katex math inline\">a^b</span> 次。</p>\n</div>            </div>",
+      "text": "第一行输入一个字符串，代表了一个操作序列。  \n第二行输入两个整数 a,b ，代表机器人会将操作序列重复 a^b 次。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">16</span> 个字符，为操作序列重复后的魔方的状态，按行依次输出所有字母，例如初始状态输出 “ABCDEFGHIJKLMNOP”。</p>\n</div>            </div>",
+      "text": "输出 16 个字符，为操作序列重复后的魔方的状态，按行依次输出所有字母，例如初始状态输出 “ABCDEFGHIJKLMNOP”。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>U3R5D7\r\n5 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>EJLDHACBFKGIMNOP</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>U3U5U7\r\n105 3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>ABCDEFGHIJKLMNOP</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>R3R5R7U3U5U7D3D5D7D7\r\n2 128</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>KBPDECGHIJFLMNOA</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            U3R5D7\r\n5 2\n                        \n                        \n                            输出\n                            EJLDHACBFKGIMNOP\n                        \n\n                                                    \n                                输入\n                                U3U5U7\r\n105 3\n                            \n                            \n                                输出\n                                ABCDEFGHIJKLMNOP\n                            \n                        \n                                                    \n                                输入\n                                R3R5R7U3U5U7D3D5D7D7\r\n2 128\n                            \n                            \n                                输出\n                                KBPDECGHIJFLMNOA"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据规模】  </p>\n<p>对于 <span class=\"katex math inline\">50\\%</span> 的数据， <span class=\"katex math inline\">b=1</span>。  </p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 ≤ a,b ≤ 1,000</span> 。操作序列中 “旋转” 操作的数量不超过 <span class=\"katex math inline\">100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据规模】  \n对于 50\\% 的数据， b=1。  \n对于 100\\% 的数据，1 ≤ a,b ≤ 1,000 。操作序列中 “旋转” 操作的数量不超过 100。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2021 “信息与未来” ⼩学⽣夏令营编程活动</p>\n</div>                </div>",
+      "text": "2021 “信息与未来” ⼩学⽣夏令营编程活动"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">省赛</span></span></p>\n</div>                </div>",
+      "text": "省赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "U3R5D7\r\n5 2",
+      "output": "EJLDHACBFKGIMNOP"
+    },
+    {
+      "input": "U3U5U7\r\n105 3",
+      "output": "ABCDEFGHIJKLMNOP"
+    },
+    {
+      "input": "R3R5R7U3U5U7D3D5D7D7\r\n2 128",
+      "output": "KBPDECGHIJFLMNOA"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "173",
+    "通过人数": "94",
+    "金币数量": "1 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:32:57"
+}

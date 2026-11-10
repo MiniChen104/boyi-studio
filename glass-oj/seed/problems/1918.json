@@ -1,0 +1,61 @@
+{
+  "id": "1918",
+  "title": "相似的奶牛",
+  "tags": [
+    "USACO"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1918",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>农夫约翰有 N (2 &lt;= N &lt;= 50) 头不同的奶牛，编号为1..N，他想知道哪一对奶牛看起来彼此最为相像。他为每一头奶牛照了5×7大小的照片，而且想让您为他想让您编写一个程序进行比较。 这些5×7的照片显示了牛的黑白斑点，下面是两头不同的牛的照片（“X”代表黑的部分，“.”代表白的部分）：<br>\n奶牛1 奶牛2 <br>\n..X.... ...X... <br>\n.XXX... ..XX... <br>\n.XX.... .XX.... <br>\n.....X. .XX..X. <br>\n.X...X. .X...X.<br>\n比较两头奶牛，要检查每一个方格，如果两头牛的某个方格对应相同，那么记一个“相同点”。上面的两头牛有30个相同点，因为它们只有5个方格不同。（下图“#”处所示）<br>\n++##+++ <br>\n+#+++++ <br>\n+++++++ <br>\n+##++++ <br>\n+++++++<br>\n给出一组奶牛，找出最相似的一对并以升序输出它们的编号，保证拥有最多相同点的奶牛只有一对。</p>\n</div>            </div>",
+      "text": "农夫约翰有 N (2 <= N <= 50) 头不同的奶牛，编号为1..N，他想知道哪一对奶牛看起来彼此最为相像。他为每一头奶牛照了5×7大小的照片，而且想让您为他想让您编写一个程序进行比较。 这些5×7的照片显示了牛的黑白斑点，下面是两头不同的牛的照片（“X”代表黑的部分，“.”代表白的部分）：\n奶牛1 奶牛2 \n..X.... ...X... \n.XXX... ..XX... \n.XX.... .XX.... \n.....X. .XX..X. \n.X...X. .X...X.\n比较两头奶牛，要检查每一个方格，如果两头牛的某个方格对应相同，那么记一个“相同点”。上面的两头牛有30个相同点，因为它们只有5个方格不同。（下图“#”处所示）\n++##+++ \n+#+++++ \n+++++++ \n+##++++ \n+++++++\n给出一组奶牛，找出最相似的一对并以升序输出它们的编号，保证拥有最多相同点的奶牛只有一对。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第1行：N，奶牛的数量 <br>\n第2行到第N*5+1行：牛的照片，奶牛i出现在第i*5+1行到第i*5+5行，请参照样例。</p>\n</div>            </div>",
+      "text": "第1行：N，奶牛的数量 \n第2行到第N*5+1行：牛的照片，奶牛i出现在第i*5+1行到第i*5+5行，请参照样例。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：拥有最多相同点的一对牛，两头牛的编号按升序输出。</p>\n</div>            </div>",
+      "text": "第一行：拥有最多相同点的一对牛，两头牛的编号按升序输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 \r\n..X.... \r\n.XXX... \r\n.XX.... \r\n.....X. \r\n.X...X. \r\n...X... \r\n..XX... \r\n.XX.... \r\n.XX..X. \r\n.X...X. \r\nXX..... \r\nX...... \r\nXX...XX \r\nXXXX.XX \r\nXXX..XX</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 \r\n..X.... \r\n.XXX... \r\n.XX.... \r\n.....X. \r\n.X...X. \r\n...X... \r\n..XX... \r\n.XX.... \r\n.XX..X. \r\n.X...X. \r\nXX..... \r\nX...... \r\nXX...XX \r\nXXXX.XX \r\nXXX..XX\n                        \n                        \n                            输出\n                            1 2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>\n\t样例输入解析： 两头刚才提到的牛，附加一头额外的。\n</p>\n<p>\n\t样例输出解析： 第三头牛与第一头牛有16个相同点，与第二头牛有19个相同点，都比前两头 牛之间的30个相同点少。\n</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例输入解析： 两头刚才提到的牛，附加一头额外的。\n\n\n\t样例输出解析： 第三头牛与第一头牛有16个相同点，与第二头牛有19个相同点，都比前两头 牛之间的30个相同点少。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO</p>\n</div>                </div>",
+      "text": "USACO"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">USACO</span></span></p>\n</div>                </div>",
+      "text": "USACO"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 \r\n..X.... \r\n.XXX... \r\n.XX.... \r\n.....X. \r\n.X...X. \r\n...X... \r\n..XX... \r\n.XX.... \r\n.XX..X. \r\n.X...X. \r\nXX..... \r\nX...... \r\nXX...XX \r\nXXXX.XX \r\nXXX..XX",
+      "output": "1 2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "166",
+    "通过人数": "111",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:57"
+}

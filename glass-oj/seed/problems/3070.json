@@ -1,0 +1,62 @@
+{
+  "id": "3070",
+  "title": "AlphaGo",
+  "tags": [
+    "背包",
+    "动态规划"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3070",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>最近备受关注的人机大战——谷歌机器人 AlphaGo 对战围棋大师李世石。</p>\n<p>经过五盘的对决，最终 AlphaGo 以 <span class=\"katex math inline\">4:1</span> 战胜李世石，并且使得它的排名一举上升为世界第二，仅次于中国选手柯洁。为了准备迎接柯洁的挑战，必须让 AlphaGo 提升自身的处理能力，但由于时间有限，仅能临时采购一些性能不一的处理器。</p>\n<p>现在知道每种处理器的处理能力和发热量，由于机器过热可能会导致 AlphaGo 程序崩溃，必须要控制好它的最大发热量才行，这个艰巨的任务落在你的头上，必须选出一些处理器来尽可能的提供最强的处理能力。</p>\n</div>            </div>",
+      "text": "最近备受关注的人机大战——谷歌机器人 AlphaGo 对战围棋大师李世石。\n经过五盘的对决，最终 AlphaGo 以 4:1 战胜李世石，并且使得它的排名一举上升为世界第二，仅次于中国选手柯洁。为了准备迎接柯洁的挑战，必须让 AlphaGo 提升自身的处理能力，但由于时间有限，仅能临时采购一些性能不一的处理器。\n现在知道每种处理器的处理能力和发热量，由于机器过热可能会导致 AlphaGo 程序崩溃，必须要控制好它的最大发热量才行，这个艰巨的任务落在你的头上，必须选出一些处理器来尽可能的提供最强的处理能力。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个正整数 <span class=\"katex math inline\">n</span>，<span class=\"katex math inline\">t</span>，表示可选择的处理器种类和最大发热量。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行两个正整数，分别表示每种处理器的处理能力和发热量（数值均小于 <span class=\"katex math inline\">100</span> ）。</p>\n<p><strong>注意，每种处理器可以采购多个。本题的最大发热量，指的是最终选择的所有处理器的发热量之和，不能超过本题给定的最大发热量。</strong></p>\n</div>            </div>",
+      "text": "第一行两个正整数 n，t，表示可选择的处理器种类和最大发热量。\n接下来 n 行，每行两个正整数，分别表示每种处理器的处理能力和发热量（数值均小于 100 ）。\n注意，每种处理器可以采购多个。本题的最大发热量，指的是最终选择的所有处理器的发热量之和，不能超过本题给定的最大发热量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个正整数，表示 AlphaGo 的最大处理能力。</p>\n</div>            </div>",
+      "text": "一行，一个正整数，表示 AlphaGo 的最大处理能力。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 5\r\n2 2\r\n4 3\r\n1 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 5\r\n2 2\r\n4 3\r\n1 5\n                        \n                        \n                            输出\n                            6"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">50\\%</span> 数据 <span class=\"katex math inline\">n \\le 30</span>。</p>\n<p><span class=\"katex math inline\">100\\%</span> 数据 <span class=\"katex math inline\">n \\le 300</span>，<span class=\"katex math inline\">t \\le 10000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n50\\% 数据 n \\le 30。\n100\\% 数据 n \\le 300，t \\le 10000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2016中山市第八届小学生信息学竞赛试题 T3</p>\n</div>                </div>",
+      "text": "2016中山市第八届小学生信息学竞赛试题 T3"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">背包</span><span class=\"label label-warning\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "背包动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 5\r\n2 2\r\n4 3\r\n1 5",
+      "output": "6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "485",
+    "通过人数": "239",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:59"
+}

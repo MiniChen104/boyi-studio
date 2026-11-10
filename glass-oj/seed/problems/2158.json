@@ -1,0 +1,65 @@
+{
+  "id": "2158",
+  "title": "直播获奖（live）",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2158",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>NOI2130 即将举行。为了增加观赏性，CCF 决定逐一评出每个选手的成绩，并直播即时的获奖分数线。本次竞赛的获奖率为 <span class=\"katex math inline\">w\\%</span>，即当前排名前 <span class=\"katex math inline\">w\\%</span> 的选手的最低成绩就是即时的分数线。</p>\n<p>更具体地，若当前已评出了 <span class=\"katex math inline\">p</span> 个选手的成绩，则当前计划获奖人数为 <span class=\"katex math inline\">\\max(1, \\lfloor p * w \\%\\rfloor)</span>，其中 <span class=\"katex math inline\">w</span> 是获奖百分比，<span class=\"katex math inline\">\\lfloor x \\rfloor</span> 表示对 <span class=\"katex math inline\">x</span> 向下取整，<span class=\"katex math inline\">\\max(x,y)</span> 表示 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span> 中较大的数。如有选手成绩相同，则所有成绩并列的选手都能获奖，因此实际获奖人数可能比计划中多。</p>\n<p>作为评测组的技术人员，请你帮 CCF 写一个直播程序。</p>\n</div>            </div>",
+      "text": "NOI2130 即将举行。为了增加观赏性，CCF 决定逐一评出每个选手的成绩，并直播即时的获奖分数线。本次竞赛的获奖率为 w\\%，即当前排名前 w\\% 的选手的最低成绩就是即时的分数线。\n更具体地，若当前已评出了 p 个选手的成绩，则当前计划获奖人数为 \\max(1, \\lfloor p * w \\%\\rfloor)，其中 w 是获奖百分比，\\lfloor x \\rfloor 表示对 x 向下取整，\\max(x,y) 表示 x 和 y 中较大的数。如有选手成绩相同，则所有成绩并列的选手都能获奖，因此实际获奖人数可能比计划中多。\n作为评测组的技术人员，请你帮 CCF 写一个直播程序。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个整数 <span class=\"katex math inline\">n, w</span>。分别代表选手总数与获奖率。  </p>\n<p>第二行有 <span class=\"katex math inline\">n</span> 个整数，依次代表逐一评出的选手成绩。</p>\n</div>            </div>",
+      "text": "第一行有两个整数 n, w。分别代表选手总数与获奖率。  \n第二行有 n 个整数，依次代表逐一评出的选手成绩。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一行，包含 <span class=\"katex math inline\">n</span> 个非负整数，依次代表选手成绩逐一评出后，即时的获奖分数线。相邻两个整数间用一个空格分隔。</p>\n</div>            </div>",
+      "text": "只有一行，包含 n 个非负整数，依次代表选手成绩逐一评出后，即时的获奖分数线。相邻两个整数间用一个空格分隔。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 60\r\n200 300 400 500 600 600 0 300 200 100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>200 300 400 400 400 500 400 400 300 300</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10 30\r\n100 100 600 100 100 100 100 100 100 100</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>100 100 600 600 600 600 100 100 100 100</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 60\r\n200 300 400 500 600 600 0 300 200 100\n                        \n                        \n                            输出\n                            200 300 400 400 400 500 400 400 300 300\n                        \n\n                                                    \n                                输入\n                                10 30\r\n100 100 600 100 100 100 100 100 100 100\n                            \n                            \n                                输出\n                                100 100 600 600 600 600 100 100 100 100"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 1 解释</h4>\n<p><img src=\"https://assets.boyi.local/7d9669e9b8e641ca482e045f.jpg\"></p>\n<p>注意，在第 9 名选手的成绩评出之后，计划获奖人数为 5 人，但由于有并列，因此实际会有 6 人获奖。  </p>\n<h4>数据规模与约定</h4>\n<p>各测试点的 <span class=\"katex math inline\">n</span> 如下表：</p>\n<table><thead><tr><th>测试点编号</th><th><span class=\"katex math inline\">n=</span></th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1 \\sim 3</span></td><td><span class=\"katex math inline\">10</span></td></tr><tr><td><span class=\"katex math inline\">4 \\sim 6</span></td><td><span class=\"katex math inline\">500</span></td></tr><tr><td><span class=\"katex math inline\">7 \\sim 10</span></td><td><span class=\"katex math inline\">2000</span></td></tr><tr><td><span class=\"katex math inline\">11 \\sim 17</span></td><td><span class=\"katex math inline\">10^4</span></td></tr><tr><td><span class=\"katex math inline\">18 \\sim 20</span></td><td><span class=\"katex math inline\">10^5</span></td></tr></tbody></table><p>对于所有测试点，每个选手的成绩均为不超过 <span class=\"katex math inline\">600</span> 的非负整数，获奖百分比 <span class=\"katex math inline\">w</span> 是一个正整数且 <span class=\"katex math inline\">1 \\le w \\le 99</span>。</p>\n<h4>提示</h4>\n<p>在计算计划获奖人数时，如用浮点类型的变量（如 C/C++ 中的 <code>float</code> 、 <code>double</code>，Pascal 中的 <code>real</code> 、 <code>double</code> 、 <code>extended</code> 等）存储获奖比例 <span class=\"katex math inline\">w\\%</span>，则计算 <span class=\"katex math inline\">5 \\times 60\\%</span> 时的结果可能为 <span class=\"katex math inline\">3.000001</span>，也可能为 <span class=\"katex math inline\">2.999999</span>，向下取整后的结果不确定。因此，建议仅使用整型变量，以计算出准确值。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 解释\n\n注意，在第 9 名选手的成绩评出之后，计划获奖人数为 5 人，但由于有并列，因此实际会有 6 人获奖。  \n数据规模与约定\n各测试点的 n 如下表：\n测试点编号n=1 \\sim 3104 \\sim 65007 \\sim 10200011 \\sim 1710^418 \\sim 2010^5对于所有测试点，每个选手的成绩均为不超过 600 的非负整数，获奖百分比 w 是一个正整数且 1 \\le w \\le 99。\n提示\n在计算计划获奖人数时，如用浮点类型的变量（如 C/C++ 中的 float 、 double，Pascal 中的 real 、 double 、 extended 等）存储获奖比例 w\\%，则计算 5 \\times 60\\% 时的结果可能为 3.000001，也可能为 2.999999，向下取整后的结果不确定。因此，建议仅使用整型变量，以计算出准确值。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛</p>\n</div>                </div>",
+      "text": "noip复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 60\r\n200 300 400 500 600 600 0 300 200 100",
+      "output": "200 300 400 400 400 500 400 400 300 300"
+    },
+    {
+      "input": "10 30\r\n100 100 600 100 100 100 100 100 100 100",
+      "output": "100 100 600 600 600 600 100 100 100 100"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "4326",
+    "通过人数": "1560",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:10"
+}

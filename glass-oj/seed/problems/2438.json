@@ -1,0 +1,51 @@
+{
+  "id": "2438",
+  "title": "陈氏定理",
+  "tags": [
+    "函数问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2438",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>陈氏定理，是我国著名数学家陈景润在证明哥德巴赫猜想的过程中发现的。  </p>\n<p>定理的内容是：每个充分大的偶数都能表示成一个质数加上两个质数的乘积。现在，请你编个程序验证，对于比较小的范围内的偶数这个定理是否仍然成立。  </p>\n<p>以下给出两组验证：<br>\n <span class=\"katex math inline\">6=2+2 \\times 2</span> <br>\n <span class=\"katex math inline\">8=2+2 \\times 3</span>  </p>\n</div>            </div>",
+      "text": "陈氏定理，是我国著名数学家陈景润在证明哥德巴赫猜想的过程中发现的。  \n定理的内容是：每个充分大的偶数都能表示成一个质数加上两个质数的乘积。现在，请你编个程序验证，对于比较小的范围内的偶数这个定理是否仍然成立。  \n以下给出两组验证：\n 6=2+2 \\times 2 \n 8=2+2 \\times 3"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据仅有一行,包含一个正偶数 <span class=\"katex math inline\">N</span> ( <span class=\"katex math inline\">6 \\le N \\lt </span>  <span class=\"katex math inline\">2</span> <sup> <span class=\"katex math inline\">63</span> </sup> <span class=\"katex math inline\">-1</span> )。  </p>\n<p>本题样例确保一定有解。</p>\n</div>            </div>",
+      "text": "输入数据仅有一行,包含一个正偶数 N ( 6 \\le N \\lt   2  63  -1 )。  \n本题样例确保一定有解。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出数据仅有一行，包含一个形如&quot; <span class=\"katex math inline\">N=A+B \\times C</span> &quot;的等式，要求 <span class=\"katex math inline\">A、B、C</span> 均为质数且 <span class=\"katex math inline\">B \\le C</span> 。若有多组解，请输出 <span class=\"katex math inline\">B \\times C</span>最小时的解。</p>\n</div>            </div>",
+      "text": "输出数据仅有一行，包含一个形如\" N=A+B \\times C \"的等式，要求 A、B、C 均为质数且 B \\le C 。若有多组解，请输出 B \\times C最小时的解。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1073741826</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1073741826=1073741741+5*17</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1073741826\n                        \n                        \n                            输出\n                            1073741826=1073741741+5*17"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">函数问题</span></span></p>\n</div>                </div>",
+      "text": "函数问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1073741826",
+      "output": "1073741826=1073741741+5*17"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "403",
+    "通过人数": "97",
+    "金币数量": "2 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:20"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "4782",
+  "title": "航空母舰的补给",
+  "tags": [
+    "蓝桥等考",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4782",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>航空母舰作为舰员人数最多、武器装备最复杂的海上庞然大物，每天要消耗的各种物资的数量是极其惊人的。在航母出海期间，各种复杂的高强度工作，使得航母舰员的体力、精力消耗成倍增加，因此需要有个良好的伙食保障。</p>\n<p>媒体介绍，中国海军第一艘航空母舰辽宁舰出海期间，每人每天将消耗至少 <span class=\"katex math inline\">5</span> 千克的食物。</p>\n<p>假如让小蓝给辽宁舰运送补给，给定舰员的数量和出海执行任务的天数，请你帮小蓝计算一下，至少需要运送多少千克食物才够用。</p>\n</div>            </div>",
+      "text": "航空母舰作为舰员人数最多、武器装备最复杂的海上庞然大物，每天要消耗的各种物资的数量是极其惊人的。在航母出海期间，各种复杂的高强度工作，使得航母舰员的体力、精力消耗成倍增加，因此需要有个良好的伙食保障。\n媒体介绍，中国海军第一艘航空母舰辽宁舰出海期间，每人每天将消耗至少 5 千克的食物。\n假如让小蓝给辽宁舰运送补给，给定舰员的数量和出海执行任务的天数，请你帮小蓝计算一下，至少需要运送多少千克食物才够用。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">d</span> ，分别表示辽宁舰上的舰员人数和出海执行任务的天数。</p>\n</div>            </div>",
+      "text": "输入包含两个整数 n 和 d ，分别表示辽宁舰上的舰员人数和出海执行任务的天数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示为了保证辽宁舰上所有舰员在出海期间每人每天至少消耗 <span class=\"katex math inline\">5</span> 千克食物的需求，小蓝至少需要运送的食物总量（以千克为单位）。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示为了保证辽宁舰上所有舰员在出海期间每人每天至少消耗 5 千克食物的需求，小蓝至少需要运送的食物总量（以千克为单位）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1200 30</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>180000</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1200 30\n                        \n                        \n                            输出\n                            180000"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">分支</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1200 30",
+      "output": "180000"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "185",
+    "通过人数": "173",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:03"
+}

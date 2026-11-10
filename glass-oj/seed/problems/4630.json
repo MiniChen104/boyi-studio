@@ -1,0 +1,59 @@
+{
+  "id": "4630",
+  "title": "区间最小值",
+  "tags": [
+    "蓝桥杯STEMA",
+    "RMQ",
+    "线段树",
+    "单调队列"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4630",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定 <span class=\"katex math inline\">n</span> 个整数，从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span> 顺序编号，接下来进行 <span class=\"katex math inline\">m</span> 次查询，第 <span class=\"katex math inline\">i</span> 次查询第 <span class=\"katex math inline\">a_i</span> 个数到第 <span class=\"katex math inline\">b_i</span> 个数（包含 <span class=\"katex math inline\">a_i</span> 和 <span class=\"katex math inline\">b_i</span> ）之间的最小值并输出。</p>\n<p>例如：<span class=\"katex math inline\">n = 8</span>， <span class=\"katex math inline\">8</span>个正整数依次为：<span class=\"katex math inline\">40</span> ，<span class=\"katex math inline\">20</span> ，<span class=\"katex math inline\">10</span> ，<span class=\"katex math inline\">30</span> ，<span class=\"katex math inline\">70</span> ，<span class=\"katex math inline\">50</span> ，<span class=\"katex math inline\">80</span> ，<span class=\"katex math inline\">60</span>;</p>\n<p><span class=\"katex math inline\">m = 3</span>，</p>\n<p><span class=\"katex math inline\">3</span> 次查询分别为：</p>\n<p><span class=\"katex math inline\">a_1 = 3, b_1 = 7</span></p>\n<p><span class=\"katex math inline\">a_2 = 1, b_2 = 2</span></p>\n<p><span class=\"katex math inline\">a_3 = 5, b_3 = 8</span></p>\n<ul><li>第一次查询：第 <span class=\"katex math inline\">3</span> 个数（<span class=\"katex math inline\">10</span>）到第 <span class=\"katex math inline\">7</span> 个数（<span class=\"katex math inline\">80</span>）之间最小值是 <span class=\"katex math inline\">10</span>；</li>\n<li>第二次查询：第 <span class=\"katex math inline\">1</span>个数（<span class=\"katex math inline\">40</span>）到第 <span class=\"katex math inline\">2</span> 个数（ <span class=\"katex math inline\">20</span> ）之间最小值是 <span class=\"katex math inline\">20</span>；</li>\n<li>第三次查询：第 <span class=\"katex math inline\">5</span> 个数（<span class=\"katex math inline\">70</span>）到第 <span class=\"katex math inline\">8</span> 个数（ <span class=\"katex math inline\">60</span>）之间最小值是 <span class=\"katex math inline\">50</span>；</li>\n</ul><p>故输出</p>\n<pre><code>10\n20\n50\n</code></pre>\n</div>            </div>",
+      "text": "给定 n 个整数，从 1 到 n 顺序编号，接下来进行 m 次查询，第 i 次查询第 a_i 个数到第 b_i 个数（包含 a_i 和 b_i ）之间的最小值并输出。\n例如：n = 8， 8个正整数依次为：40 ，20 ，10 ，30 ，70 ，50 ，80 ，60;\nm = 3，\n3 次查询分别为：\na_1 = 3, b_1 = 7\na_2 = 1, b_2 = 2\na_3 = 5, b_3 = 8\n第一次查询：第 3 个数（10）到第 7 个数（80）之间最小值是 10；\n第二次查询：第 1个数（40）到第 2 个数（ 20 ）之间最小值是 20；\n第三次查询：第 5 个数（70）到第 8 个数（ 60）之间最小值是 50；\n故输出\n10\n20\n50"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> (<span class=\"katex math inline\">1 \\le n,m \\le 10^5</span>)，分别表示整数的数量及查询次数；</p>\n<p>第二行输入 <span class=\"katex math inline\">n</span> 个整数（ <span class=\"katex math inline\">0 \\le </span> 整数 <span class=\"katex math inline\">\\le 10^5</span>）；</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行输入 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">a_i</span> 和 <span class=\"katex math inline\">b_i</span>（<span class=\"katex math inline\">1 \\le a_i \\le b_i \\le n</span>），分别表示查询的起始位置和终止位置。</p>\n</div>            </div>",
+      "text": "第一行输入两个整数 n 和 m (1 \\le n,m \\le 10^5)，分别表示整数的数量及查询次数；\n第二行输入 n 个整数（ 0 \\le  整数 \\le 10^5）；\n接下来 m 行，每行输入 2 个整数 a_i 和 b_i（1 \\le a_i \\le b_i \\le n），分别表示查询的起始位置和终止位置。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共 <span class=\"katex math inline\">m</span> 行，每行输出一个整数，分别表示每次查询得到的第 <span class=\"katex math inline\">a_i</span> 个数到第 <span class=\"katex math inline\">b_i</span> 个数之间（包含 <span class=\"katex math inline\">a_i</span> 和 <span class=\"katex math inline\">b_i</span> ）的最小值。</p>\n</div>            </div>",
+      "text": "输出共 m 行，每行输出一个整数，分别表示每次查询得到的第 a_i 个数到第 b_i 个数之间（包含 a_i 和 b_i ）的最小值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8 3\r\n40 20 10 30 70 50 80 60\r\n3 7\r\n1 2\r\n5 8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10\r\n20\r\n50</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8 3\r\n40 20 10 30 70 50 80 60\r\n3 7\r\n1 2\r\n5 8\n                        \n                        \n                            输出\n                            10\r\n20\r\n50"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（23年10月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（23年10月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">RMQ</span><span class=\"label label-info\">线段树</span><span class=\"label label-danger\">单调队列</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMARMQ线段树单调队列"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8 3\r\n40 20 10 30 70 50 80 60\r\n3 7\r\n1 2\r\n5 8",
+      "output": "10\r\n20\r\n50"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "342",
+    "通过人数": "198",
+    "金币数量": "2 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:18"
+}

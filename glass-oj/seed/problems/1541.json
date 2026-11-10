@@ -1,0 +1,62 @@
+{
+  "id": "1541",
+  "title": "小 X 学游泳(swim)",
+  "tags": [
+    "市赛",
+    "深搜"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1541",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>暑假快到啦，小 X 准备趁着这个暑假去学游泳。可是一开始小 X 就遇到了一个难题。  </p>\n<p>游泳池划分成了一个 <span class=\"katex math inline\">n \\times m</span> 的方格， 这里 <span class=\"katex math inline\">n \\times m</span> 表示 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列。 因 为游泳池里的水深浅不一，所以这 <span class=\"katex math inline\">n×m</span> 个方格对于小 X 的危险系数也会不一样。  </p>\n<p>而小 X 目前需要从左上角 的方格 <span class=\"katex math inline\">(1,1)</span> 出发， 游到右下角 的方格 <span class=\"katex math inline\">(n,m)</span>，小 X 每次只 能从当前方格游到上下左右四个相邻的方格中的某一格，并且在到达终点前不能离开游泳池。  </p>\n<p>小 X 很担心会发生什么危险，所以希望你能帮他找一条危险系数最小的路径。  </p>\n<p>一条路径的危险系数定义为这条路径所经过的方格的危险系数之和。  </p>\n<p>注意：这条路径不能经过同一个方格两次（小 X 当然不希望去那么危险的地方再游一次）  </p>\n</div>            </div>",
+      "text": "暑假快到啦，小 X 准备趁着这个暑假去学游泳。可是一开始小 X 就遇到了一个难题。  \n游泳池划分成了一个 n \\times m 的方格， 这里 n \\times m 表示 n 行 m 列。 因 为游泳池里的水深浅不一，所以这 n×m 个方格对于小 X 的危险系数也会不一样。  \n而小 X 目前需要从左上角 的方格 (1,1) 出发， 游到右下角 的方格 (n,m)，小 X 每次只 能从当前方格游到上下左右四个相邻的方格中的某一格，并且在到达终点前不能离开游泳池。  \n小 X 很担心会发生什么危险，所以希望你能帮他找一条危险系数最小的路径。  \n一条路径的危险系数定义为这条路径所经过的方格的危险系数之和。  \n注意：这条路径不能经过同一个方格两次（小 X 当然不希望去那么危险的地方再游一次）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据第一行有两个用空格隔开的正整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>， 表示泳池的行数和列数。  </p>\n<p>接下来共有 <span class=\"katex math inline\">n</span> 行数据，每行有 <span class=\"katex math inline\">m</span> 个用空格隔开的大于等于 <span class=\"katex math inline\">0</span> 的整数， 表示每个方格的危险系数  </p>\n</div>            </div>",
+      "text": "输入数据第一行有两个用空格隔开的正整数 n 和 m， 表示泳池的行数和列数。  \n接下来共有 n 行数据，每行有 m 个用空格隔开的大于等于 0 的整数， 表示每个方格的危险系数"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出仅有一行包含一个整数 <span class=\"katex math inline\">ans</span> ， 表示要求的从左上角的方格 <span class=\"katex math inline\">(1,1)</span> 出发， 游到右下角的方格 <span class=\"katex math inline\">(n,m)</span> 的最小的危险系数。  </p>\n</div>            </div>",
+      "text": "输出仅有一行包含一个整数 ans ， 表示要求的从左上角的方格 (1,1) 出发， 游到右下角的方格 (n,m) 的最小的危险系数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 5\r\n1 7 2 8 2\r\n3 10 1 5 1\r\n2 8 3 7 1\r\n1 2 1 20 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>19</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 5\r\n1 7 2 8 2\r\n3 10 1 5 1\r\n2 8 3 7 1\r\n1 2 1 20 1\n                        \n                        \n                            输出\n                            19"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据范围】  </p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据， <span class=\"katex math inline\">1 ≤ n,m ≤ 5</span>  </p>\n<p>对于另外 <span class=\"katex math inline\">40\\%</span> 的数据， <span class=\"katex math inline\">1 ≤ n,m ≤ 20</span> ， 每个方格的危险系数 = <span class=\"katex math inline\">0</span> 或 <span class=\"katex math inline\">1</span>  </p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据， <span class=\"katex math inline\">1 ≤ n,m ≤ 30</span>， <span class=\"katex math inline\">0 ≤</span> 每个方格的危险系数 <span class=\"katex math inline\">≤ 100000</span>  </p>\n<p>【样例解释】</p>\n<p>路径： <span class=\"katex math inline\">(1,1)</span> → <span class=\"katex math inline\">(1,2)</span> → <span class=\"katex math inline\">(1,3)</span> → <span class=\"katex math inline\">(2,3)</span> → <span class=\"katex math inline\">(2,4)</span> → <span class=\"katex math inline\">(2,5)</span> → <span class=\"katex math inline\">(3,5)</span> → <span class=\"katex math inline\">(4,5)</span> ，\n危险系数之和为 <span class=\"katex math inline\">1+7+2+1+5+1+1+1=19</span> 。  </p>\n<p>【来源】  </p>\n<p>常州市2016“信息与未来”夏令营选拔赛  </p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】  \n对于 30\\% 的数据， 1 ≤ n,m ≤ 5  \n对于另外 40\\% 的数据， 1 ≤ n,m ≤ 20 ， 每个方格的危险系数 = 0 或 1  \n对于 100\\% 的数据， 1 ≤ n,m ≤ 30， 0 ≤ 每个方格的危险系数 ≤ 100000  \n【样例解释】\n路径： (1,1) → (1,2) → (1,3) → (2,3) → (2,4) → (2,5) → (3,5) → (4,5) ，\n危险系数之和为 1+7+2+1+5+1+1+1=19 。  \n【来源】  \n常州市2016“信息与未来”夏令营选拔赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">深搜</span></span></p>\n</div>                </div>",
+      "text": "市赛深搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 5\r\n1 7 2 8 2\r\n3 10 1 5 1\r\n2 8 3 7 1\r\n1 2 1 20 1",
+      "output": "19"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "10273",
+    "通过人数": "4414",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:20:51"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "3672",
+  "title": "做题",
+  "tags": [
+    "GESP四级",
+    "数组",
+    "贪心",
+    "24年3月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3672",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨同学为了提高自己的实力制定了做题计划，在第 <span class=\"katex math inline\">k</span> 天时，他必须要完成 <span class=\"katex math inline\">k</span> 道题，否则他就会偷懒。</p>\n<p>小杨同学现在找到了一个题库，一共有 <span class=\"katex math inline\">n</span> 套题单，每一套题单中有一定数量的题目。但是他十分挑剔，每套题单他只会使用一次，每一天也只能使用一套题单里的题目，之后那套题单就会被弃之不用。对于每套题单，他不必完成题单内所有的题。</p>\n<p>那么问题来了，小杨同学最多会做题几天才偷懒呢？</p>\n</div>            </div>",
+      "text": "小杨同学为了提高自己的实力制定了做题计划，在第 k 天时，他必须要完成 k 道题，否则他就会偷懒。\n小杨同学现在找到了一个题库，一共有 n 套题单，每一套题单中有一定数量的题目。但是他十分挑剔，每套题单他只会使用一次，每一天也只能使用一套题单里的题目，之后那套题单就会被弃之不用。对于每套题单，他不必完成题单内所有的题。\n那么问题来了，小杨同学最多会做题几天才偷懒呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，1个数为 <span class=\"katex math inline\">n</span>，表示有多少套题单。</p>\n<p>第二行， <span class=\"katex math inline\">n</span> 个整数 <span class=\"katex math inline\">a_1,a_2,...,a_n</span>，分别表示每套题单有多少道题。</p>\n</div>            </div>",
+      "text": "第一行，1个数为 n，表示有多少套题单。\n第二行， n 个整数 a_1,a_2,...,a_n，分别表示每套题单有多少道题。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，小杨同学偷懒前最多做题天数。</p>\n</div>            </div>",
+      "text": "输出一行，小杨同学偷懒前最多做题天数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n3 1 4 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n3 1 4 1\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据范围】</p>\n<p>对于全部数据，保证有 <span class=\"katex math inline\"> 1 \\leq n \\leq 10^6, 1 \\leq a_i \\leq 10^9 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于全部数据，保证有  1 \\leq n \\leq 10^6, 1 \\leq a_i \\leq 10^9 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 3月认证C++四级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 3月认证C++四级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">数组</span><span class=\"label label-info\">贪心</span><span class=\"label label-danger\">24年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级数组贪心24年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n3 1 4 1",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1771",
+    "通过人数": "764",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:44"
+}

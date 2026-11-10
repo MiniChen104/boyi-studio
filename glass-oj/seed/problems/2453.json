@@ -1,0 +1,51 @@
+{
+  "id": "2453",
+  "title": "编辑子矩阵",
+  "tags": [
+    "前缀和差分"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2453",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一个 <span class=\"katex math inline\">n \\times n</span> 大小的方阵，矩阵中的初始值为 <span class=\"katex math inline\">0</span> ，有 <span class=\"katex math inline\">k</span> 次操作，每次会将矩阵中以 <span class=\"katex math inline\">x</span><sub><span class=\"katex math inline\">1</span></sub> , <span class=\"katex math inline\">y</span><sub><span class=\"katex math inline\">1</span></sub> 和 <span class=\"katex math inline\">x</span><sub><span class=\"katex math inline\">2</span></sub> , <span class=\"katex math inline\">y</span><sub><span class=\"katex math inline\">2</span></sub> 为左上角和右下角的子矩阵中的每个数加 <span class=\"katex math inline\">1</span> 。</p>\n<p>请输出经过 <span class=\"katex math inline\">k</span> 次加数操作后，方阵中每个元素的值。</p>\n</div>            </div>",
+      "text": "有一个 n \\times n 大小的方阵，矩阵中的初始值为 0 ，有 k 次操作，每次会将矩阵中以 x1 , y1 和 x2 , y2 为左上角和右下角的子矩阵中的每个数加 1 。\n请输出经过 k 次加数操作后，方阵中每个元素的值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第1行有两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">k</span>。（<span class=\"katex math inline\">n,k ≤ 1000</span>）<br>\n接下来 <span class=\"katex math inline\">k</span> 行，每行有 <span class=\"katex math inline\">4</span> 个整数 <span class=\"katex math inline\">x</span><sub><span class=\"katex math inline\">1</span></sub> , <span class=\"katex math inline\">y</span><sub><span class=\"katex math inline\">1</span></sub> 和 <span class=\"katex math inline\">x</span><sub><span class=\"katex math inline\">2</span></sub> , <span class=\"katex math inline\">y</span><sub><span class=\"katex math inline\">2</span></sub>，两点坐标均在方阵范围内，且左上角的坐标 ≤ 右下角的坐标。</p>\n</div>            </div>",
+      "text": "第1行有两个整数 n 和 k。（n,k ≤ 1000）\n接下来 k 行，每行有 4 个整数 x1 , y1 和 x2 , y2，两点坐标均在方阵范围内，且左上角的坐标 ≤ 右下角的坐标。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出经过 <span class=\"katex math inline\">k</span> 次操作后，方阵中每个元素的值。</p>\n</div>            </div>",
+      "text": "输出经过 k 次操作后，方阵中每个元素的值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 3\r\n2 2 3 3\r\n3 3 5 5\r\n1 2 1 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0 1 1 1 0\r\n0 1 1 0 0\r\n0 1 2 1 1\r\n0 0 1 1 1\r\n0 0 1 1 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 3\r\n2 2 3 3\r\n3 3 5 5\r\n1 2 1 4\n                        \n                        \n                            输出\n                            0 1 1 1 0\r\n0 1 1 0 0\r\n0 1 2 1 1\r\n0 0 1 1 1\r\n0 0 1 1 1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">前缀和差分</span></span></p>\n</div>                </div>",
+      "text": "前缀和差分"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 3\r\n2 2 3 3\r\n3 3 5 5\r\n1 2 1 4",
+      "output": "0 1 1 1 0\r\n0 1 1 0 0\r\n0 1 2 1 1\r\n0 0 1 1 1\r\n0 0 1 1 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1362",
+    "通过人数": "958",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:31"
+}

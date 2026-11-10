@@ -1,0 +1,57 @@
+{
+  "id": "1347",
+  "title": "游览动物园",
+  "tags": [
+    "二维数组",
+    "结构体"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1347",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>动物园有很多游览区，小红已经在动物园的一个游览区游览，突然接到电话，要半个小时内到动物园外面跟一个朋友见面。半个小时小红只够游览完当前区域之后，游览一个最近的景区。</p>\n<p>已知从一个游览区域只能沿着地图（地图的长宽均小于 <span class=\"katex math inline\">100</span> ）中的直线走（上下左右四个方向），请问离小红当前游览区的最近的一个游览区的坐标是多少，如果有多个点离小红的位置都很近，请输出离出口最近的那个点的坐标（不存在多个点距离出口一样近）？ </p>\n<p>例如：假设小红在孔雀区（ <span class=\"katex math inline\">3,2</span> ），离小红最近的 <span class=\"katex math inline\">2</span> 处游览区分别是猴山（ <span class=\"katex math inline\">2,0</span> ）和虎山（ <span class=\"katex math inline\">5,3</span> ），但猴山离入口更近，因此输出猴山的坐标。 </p>\n<p><img src=\"https://assets.boyi.local/eea760db117d95a8e5fcab4e.jpg\"></p>\n</div>            </div>",
+      "text": "动物园有很多游览区，小红已经在动物园的一个游览区游览，突然接到电话，要半个小时内到动物园外面跟一个朋友见面。半个小时小红只够游览完当前区域之后，游览一个最近的景区。\n已知从一个游览区域只能沿着地图（地图的长宽均小于 100 ）中的直线走（上下左右四个方向），请问离小红当前游览区的最近的一个游览区的坐标是多少，如果有多个点离小红的位置都很近，请输出离出口最近的那个点的坐标（不存在多个点距离出口一样近）？ \n例如：假设小红在孔雀区（ 3,2 ），离小红最近的 2 处游览区分别是猴山（ 2,0 ）和虎山（ 5,3 ），但猴山离入口更近，因此输出猴山的坐标。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行 <span class=\"katex math inline\">2</span> 个变量，为小红所在的游览区的坐标</p>\n<p>第二行一个整数 <span class=\"katex math inline\">n</span> ，为该动物园内游览区的数量（ <span class=\"katex math inline\">n \\le 100</span> ）</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">2</span> 个数，代表动物园的 <span class=\"katex math inline\">n</span> 个游览区的坐标（本题所有的坐标值都在 <span class=\"katex math inline\">1 \\sim 1000</span> 的范围内）</p>\n</div>            </div>",
+      "text": "第一行 2 个变量，为小红所在的游览区的坐标\n第二行一个整数 n ，为该动物园内游览区的数量（ n \\le 100 ）\n接下来的 n 行，每行 2 个数，代表动物园的 n 个游览区的坐标（本题所有的坐标值都在 1 \\sim 1000 的范围内）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>离小红最近的游览区的坐标</p>\n</div>            </div>",
+      "text": "离小红最近的游览区的坐标"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 2\r\n5\r\n2 0 \r\n5 3\r\n3 2\r\n5 5\r\n3 8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 2\r\n5\r\n2 0 \r\n5 3\r\n3 2\r\n5 5\r\n3 8\n                        \n                        \n                            输出\n                            2 0"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二维数组 结构体</p>\n</div>                </div>",
+      "text": "二维数组 结构体"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二维数组</span><span class=\"label label-warning\">结构体</span></span></p>\n</div>                </div>",
+      "text": "二维数组结构体"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 2\r\n5\r\n2 0 \r\n5 3\r\n3 2\r\n5 5\r\n3 8",
+      "output": "2 0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "3458",
+    "通过人数": "1690",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:18:10"
+}

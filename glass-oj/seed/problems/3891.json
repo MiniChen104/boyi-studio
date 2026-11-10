@@ -1,0 +1,67 @@
+{
+  "id": "3891",
+  "title": "小杨购物",
+  "tags": [
+    "GESP一级",
+    "基础问题",
+    "24年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3891",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有 <span class=\"katex math inline\">n</span> 元钱用于购物。商品 <span class=\"katex math inline\">A</span>  的单价是 <span class=\"katex math inline\">a</span> 元，商品 <span class=\"katex math inline\">B</span> 的单价是 <span class=\"katex math inline\">b</span> 元。小杨想购买 <strong>相同数量</strong> 的商品 <span class=\"katex math inline\">A</span> 和商品 <span class=\"katex math inline\">B</span> 。</p>\n<p>请你编写程序帮小杨计算出他 <strong>最多</strong> 能够购买多少个商品 <span class=\"katex math inline\">A</span> 和商品 <span class=\"katex math inline\">B</span> 。</p>\n</div>            </div>",
+      "text": "小杨有 n 元钱用于购物。商品 A  的单价是 a 元，商品 B 的单价是 b 元。小杨想购买 相同数量 的商品 A 和商品 B 。\n请你编写程序帮小杨计算出他 最多 能够购买多少个商品 A 和商品 B 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含 <span class=\"katex math inline\">1</span> 个正整数 <span class=\"katex math inline\">n</span> ，代表小杨用于购物的钱的金额。</p>\n<p>第二行包含 <span class=\"katex math inline\">1</span> 个正整数 <span class=\"katex math inline\">a</span> ，代表商品 <span class=\"katex math inline\">A</span> 的单价。</p>\n<p>第三行包含 <span class=\"katex math inline\">1</span> 个正整数 <span class=\"katex math inline\">b</span> ，代表商品 <span class=\"katex math inline\">B</span> 的单价。</p>\n</div>            </div>",
+      "text": "第一行包含 1 个正整数 n ，代表小杨用于购物的钱的金额。\n第二行包含 1 个正整数 a ，代表商品 A 的单价。\n第三行包含 1 个正整数 b ，代表商品 B 的单价。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含 <span class=\"katex math inline\">1</span> 个整数，代表小杨 <strong>最多</strong> 能够购买的商品 <span class=\"katex math inline\">A</span> 和商品 <span class=\"katex math inline\">B</span> 的数量。</p>\n</div>            </div>",
+      "text": "输出一行，包含 1 个整数，代表小杨 最多 能够购买的商品 A 和商品 B 的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>12\r\n1\r\n2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>13\r\n1\r\n2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>4</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            12\r\n1\r\n2\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                13\r\n1\r\n2\n                            \n                            \n                                输出\n                                4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于全部数据，保证有  <span class=\"katex math inline\"> 1 ≤ n,a,b ≤ 10^{5} </span>。</p>\n<h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<p>由于需要购买相同数量的两种商品，因此小杨最多能够购买 <span class=\"katex math inline\">4</span> 件商品 <span class=\"katex math inline\">A</span> 和 <span class=\"katex math inline\">4</span> 件商品 <span class=\"katex math inline\">B</span> ，共花费 <span class=\"katex math inline\">4 \\times 1 + 4 \\times 2= 12</span> 元。因此，样例 <span class=\"katex math inline\">1</span> 的答案为 <span class=\"katex math inline\">4</span> 。</p>\n<h4>样例 <span class=\"katex math inline\">2</span> 解释</h4>\n<p>由于需要购买相同数量的两种商品，因此小杨最多能够购买 <span class=\"katex math inline\">4</span> 件商品 <span class=\"katex math inline\">A</span> 和 <span class=\"katex math inline\">4</span> 件商品 <span class=\"katex math inline\">B</span> ，共花费\n<span class=\"katex math inline\">4 \\times 1 + 4  \\times 2=12</span>   元。如果小杨想购买 <span class=\"katex math inline\">5</span> 件商品 <span class=\"katex math inline\">A</span> 和 <span class=\"katex math inline\">5</span> 件商品 <span class=\"katex math inline\">B</span> ，则需花费 <span class=\"katex math inline\">5 \\times 1+5 \\times 2=15</span> 元，超过了小杨的预算 <span class=\"katex math inline\">13</span> 元。因此，样例 <span class=\"katex math inline\">2</span> 的答案为 <span class=\"katex math inline\">4</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于全部数据，保证有   1 ≤ n,a,b ≤ 10^{5} 。\n样例 1 解释\n由于需要购买相同数量的两种商品，因此小杨最多能够购买 4 件商品 A 和 4 件商品 B ，共花费 4 \\times 1 + 4 \\times 2= 12 元。因此，样例 1 的答案为 4 。\n样例 2 解释\n由于需要购买相同数量的两种商品，因此小杨最多能够购买 4 件商品 A 和 4 件商品 B ，共花费\n4 \\times 1 + 4  \\times 2=12   元。如果小杨想购买 5 件商品 A 和 5 件商品 B ，则需花费 5 \\times 1+5 \\times 2=15 元，超过了小杨的预算 13 元。因此，样例 2 的答案为 4 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 9月认证 C++ 一级真题</p>\n</div>                </div>",
+      "text": "GESP 9月认证 C++ 一级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP一级</span><span class=\"label label-warning\">基础问题</span><span class=\"label label-info\">24年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP一级基础问题24年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "12\r\n1\r\n2",
+      "output": "4"
+    },
+    {
+      "input": "13\r\n1\r\n2",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "4639",
+    "通过人数": "3810",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:17"
+}

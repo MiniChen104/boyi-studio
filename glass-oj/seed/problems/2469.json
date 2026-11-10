@@ -1,0 +1,57 @@
+{
+  "id": "2469",
+  "title": "素数路径",
+  "tags": [
+    "图论",
+    "深搜"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2469",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在广阔的大陆上有 <span class=\"katex math inline\">n</span> 个城市（编号为 <span class=\"katex math inline\">1</span> ~ <span class=\"katex math inline\">n</span>），城市之间修建了 <span class=\"katex math inline\">m</span> 条双向的道路，且任意两个城市之间最多只有 <span class=\"katex math inline\">1</span> 条路。  </p>\n<p>请编程求：从 <span class=\"katex math inline\">x</span> 号城市出发，如果要求相邻两个城市编号的和是素数，且走过的城市不能重复的访问，那么在其可以访问的路线中，哪条路线经过的城市数量最多，输出最多能经过几个城市？（计算经过城市的数量包含起起点和终点）</p>\n</div>            </div>",
+      "text": "在广阔的大陆上有 n 个城市（编号为 1 ~ n），城市之间修建了 m 条双向的道路，且任意两个城市之间最多只有 1 条路。  \n请编程求：从 x 号城市出发，如果要求相邻两个城市编号的和是素数，且走过的城市不能重复的访问，那么在其可以访问的路线中，哪条路线经过的城市数量最多，输出最多能经过几个城市？（计算经过城市的数量包含起起点和终点）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 1 行，有 2 个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>。（<span class=\"katex math inline\">1≤n≤10</span>,<span class=\"katex math inline\">1≤m≤(n-1)×n/2</span>）  </p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行有 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span>，表示两个城市之间有一条双向道路。（<span class=\"katex math inline\">1≤x,y≤n</span>，<span class=\"katex math inline\">x \\neq y</span>，两个城市之间至多只有一条双向道路）  </p>\n<p>最后一行有一个整数 <span class=\"katex math inline\">x</span> ，表示要求从 <span class=\"katex math inline\">x</span> 号城市出发（<span class=\"katex math inline\">1≤x≤n</span>）。</p>\n</div>            </div>",
+      "text": "第 1 行，有 2 个整数 n 和 m。（1≤n≤10,1≤m≤(n-1)×n/2）  \n接下来 m 行，每行有 2 个整数 x 和 y，表示两个城市之间有一条双向道路。（1≤x,y≤n，x \\neq y，两个城市之间至多只有一条双向道路）  \n最后一行有一个整数 x ，表示要求从 x 号城市出发（1≤x≤n）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示按题意要求访问相邻的城市，最多能经过几个城市，<strong>如果从出发点开始，除了出发点之外，无法访问任何满足题意的城市，请输出 <span class=\"katex math inline\">0</span> </strong>。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示按题意要求访问相邻的城市，最多能经过几个城市，如果从出发点开始，除了出发点之外，无法访问任何满足题意的城市，请输出 0 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 7\r\n1 2\r\n1 3\r\n2 3\r\n3 4\r\n2 5\r\n4 5\r\n3 5\r\n2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 7\r\n1 2\r\n1 3\r\n2 3\r\n3 4\r\n2 5\r\n4 5\r\n3 5\r\n2\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>样例解释</strong><br>\n从点2出发，可以经过1，共经过2个点  </p>\n<p>从点2出发，可以经过3、4，共经过3个点  </p>\n<p>从点2出发，可以经过5，共经过2个点  </p>\n<p>因此从点2出发，满足题意的能经过的最多的城市有3个。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n从点2出发，可以经过1，共经过2个点  \n从点2出发，可以经过3、4，共经过3个点  \n从点2出发，可以经过5，共经过2个点  \n因此从点2出发，满足题意的能经过的最多的城市有3个。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span><span class=\"label label-warning\">深搜</span></span></p>\n</div>                </div>",
+      "text": "图论深搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 7\r\n1 2\r\n1 3\r\n2 3\r\n3 4\r\n2 5\r\n4 5\r\n3 5\r\n2",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "531",
+    "通过人数": "226",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:43"
+}

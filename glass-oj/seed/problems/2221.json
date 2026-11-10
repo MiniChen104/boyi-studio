@@ -1,0 +1,69 @@
+{
+  "id": "2221",
+  "title": "晒衣服",
+  "tags": [
+    "二分答案"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2221",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>熊大妈决定给每个牛宝宝都穿上可爱的婴儿装 。但是由于衣服很湿，为牛宝宝晒衣服就成了很不爽的事情。于是，熊大妈请你（奶牛）帮助她完成这个重任。 </p>\n<p>一件衣服在自然条件下用一秒的时间可以晒干 <span class=\"katex math inline\">a</span> 点湿度。抠门的熊大妈只买了一台烘衣机 。使用用一秒烘衣机可以让一件衣服额外烘干 <span class=\"katex math inline\">b</span> 点湿度（一秒晒干 <span class=\"katex math inline\">a+b</span> 湿度），但在同一时间内只能烘一件衣服。现在有 <span class=\"katex math inline\">n</span> 件衣服，第 <span class=\"katex math inline\">i</span> 衣服的湿度为 <span class=\"katex math inline\">w_i</span> （保证互不相同），要你求出弄干所有衣服的最少时间（湿度为 <span class=\"katex math inline\">0</span> 为干 ）。</p>\n</div>            </div>",
+      "text": "熊大妈决定给每个牛宝宝都穿上可爱的婴儿装 。但是由于衣服很湿，为牛宝宝晒衣服就成了很不爽的事情。于是，熊大妈请你（奶牛）帮助她完成这个重任。 \n一件衣服在自然条件下用一秒的时间可以晒干 a 点湿度。抠门的熊大妈只买了一台烘衣机 。使用用一秒烘衣机可以让一件衣服额外烘干 b 点湿度（一秒晒干 a+b 湿度），但在同一时间内只能烘一件衣服。现在有 n 件衣服，第 i 衣服的湿度为 w_i （保证互不相同），要你求出弄干所有衣服的最少时间（湿度为 0 为干 ）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行三个整数，分别为 <span class=\"katex math inline\">n,a,b</span>。 </p>\n<p>接下来 <span class=\"katex math inline\">2</span> 到 <span class=\"katex math inline\">n+1</span> 行，第 <span class=\"katex math inline\">i</span> 行输入 <span class=\"katex math inline\">w_i</span> 。（<span class=\"katex math inline\">1≤w_i,a,b,n≤5\\times10^5</span>）</p>\n</div>            </div>",
+      "text": "第一行三个整数，分别为 n,a,b。 \n接下来 2 到 n+1 行，第 i 行输入 w_i 。（1≤w_i,a,b,n≤5\\times10^5）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，弄干所有衣服的最少时间。</p>\n</div>            </div>",
+      "text": "一行，弄干所有衣服的最少时间。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 2 1\r\n1\r\n2\r\n3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4 3 2\r\n8\r\n13\r\n11\r\n5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 5 2\r\n10\r\n20\r\n50\r\n32\r\n68</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>10</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            3 2 1\r\n1\r\n2\r\n3\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                4 3 2\r\n8\r\n13\r\n11\r\n5\n                            \n                            \n                                输出\n                                3\n                            \n                        \n                                                    \n                                输入\n                                5 5 2\r\n10\r\n20\r\n50\r\n32\r\n68\n                            \n                            \n                                输出\n                                10"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>样例解释：让机器烘第三件衣服即可一秒完成。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释：让机器烘第三件衣服即可一秒完成。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二分答案</p>\n</div>                </div>",
+      "text": "二分答案"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二分答案</span></span></p>\n</div>                </div>",
+      "text": "二分答案"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 2 1\r\n1\r\n2\r\n3",
+      "output": "1"
+    },
+    {
+      "input": "4 3 2\r\n8\r\n13\r\n11\r\n5",
+      "output": "3"
+    },
+    {
+      "input": "5 5 2\r\n10\r\n20\r\n50\r\n32\r\n68",
+      "output": "10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1394",
+    "通过人数": "646",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:57"
+}

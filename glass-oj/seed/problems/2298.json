@@ -1,0 +1,57 @@
+{
+  "id": "2298",
+  "title": "硬币翻转",
+  "tags": [
+    "电子学会等级考试",
+    "嵌套循环"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2298",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>假设有 <span class=\"katex math inline\">N</span> 个硬币(<span class=\"katex math inline\">N</span>为不大于<span class=\"katex math inline\">5000</span>的正整数)，从<span class=\"katex math inline\">1</span>到<span class=\"katex math inline\">N</span>按顺序依次编号，初始时全部处于正面向上的状态；有<span class=\"katex math inline\">M</span>个人(<span class=\"katex math inline\">M</span>为不大于<span class=\"katex math inline\">N</span>的正整数)也从<span class=\"katex math inline\">1</span>到<span class=\"katex math inline\">M</span>依次编号。<br>\n第一个人（<span class=\"katex math inline\">1</span>号）将硬币全部翻转一次，第二个人（<span class=\"katex math inline\">2</span>号）将编号为<span class=\"katex math inline\">2</span>的倍数的硬币翻转一次，第三个人（<span class=\"katex math inline\">3</span>号）将编号为<span class=\"katex math inline\">3</span>的倍数的硬币翻转一次。依照编号递增顺序，以后的人都和<span class=\"katex math inline\">3</span>号一样，将凡是自己编号倍数的硬币翻转一次。<br>\n请问：当第<span class=\"katex math inline\">M</span>个人操作之后，哪些硬币是正面向上的，按从小到大输出其编号，以空格分开。</p>\n</div>            </div>",
+      "text": "假设有 N 个硬币(N为不大于5000的正整数)，从1到N按顺序依次编号，初始时全部处于正面向上的状态；有M个人(M为不大于N的正整数)也从1到M依次编号。\n第一个人（1号）将硬币全部翻转一次，第二个人（2号）将编号为2的倍数的硬币翻转一次，第三个人（3号）将编号为3的倍数的硬币翻转一次。依照编号递增顺序，以后的人都和3号一样，将凡是自己编号倍数的硬币翻转一次。\n请问：当第M个人操作之后，哪些硬币是正面向上的，按从小到大输出其编号，以空格分开。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入正整数<span class=\"katex math inline\">N</span>和<span class=\"katex math inline\">M</span>，以单个空格隔开。</p>\n</div>            </div>",
+      "text": "输入正整数N和M，以单个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>顺次输出正面向上的硬币的编号，其间用空格间隔。</p>\n</div>            </div>",
+      "text": "顺次输出正面向上的硬币的编号，其间用空格间隔。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 3 5 6 7 8 10</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 10\n                        \n                        \n                            输出\n                            2 3 5 6 7 8 10"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会一级 202106真题</p>\n</div>                </div>",
+      "text": "电子学会一级 202106真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span><span class=\"label label-warning\">嵌套循环</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试嵌套循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 10",
+      "output": "2 3 5 6 7 8 10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4033",
+    "通过人数": "2386",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:54"
+}

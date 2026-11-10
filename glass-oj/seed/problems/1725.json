@@ -1,0 +1,60 @@
+{
+  "id": "1725",
+  "title": "声音识别",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1725",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学校王老师研发了一套新的声音识别系统，该系统预先将每位同学的学号和声音录入之后，只要同学一说话，就知道是哪个学号的同学在说话（不同的同学声音是完全不一样的）。</p>\n<p>王老师将系统装在了教室，系统收集到了一节英语课中同学们说话的 <span class=\"katex math inline\">n</span> 个片段，并转换为了同学们的学号，请你编程帮助王老师计算出，有多少个同学在英语课中发过言，并按照学号由小到大，输出每位同学的学号及该学号的同学发言的次数。</p>\n<p>比如，假设经过系统分析，得到如下的 <span class=\"katex math inline\">8</span> 个同学的学号分别是：<span class=\"katex math inline\">8</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">6</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">8</span> <span class=\"katex math inline\">6</span> <span class=\"katex math inline\">7</span> <span class=\"katex math inline\">2</span>，表示同学们的发言顺序分别是：<span class=\"katex math inline\">8</span> 号、<span class=\"katex math inline\">1</span> 号、<span class=\"katex math inline\">6</span> 号、<span class=\"katex math inline\">1</span> 号、<span class=\"katex math inline\">8</span> 号、<span class=\"katex math inline\">6</span> 号、<span class=\"katex math inline\">7</span> 号、<span class=\"katex math inline\">2</span> 号，那么一共有 <span class=\"katex math inline\">5</span> 位同学发过言，按照学号由小到大输出发言次数如下：</p>\n<pre><code>1 2\n2 1\n6 2\n7 1\n8 2\n</code></pre>\n<p>分别代表 <span class=\"katex math inline\">1</span> 号同学发言 <span class=\"katex math inline\">2</span> 次、<span class=\"katex math inline\">2</span> 号同学发言 <span class=\"katex math inline\">1</span> 次、<span class=\"katex math inline\">6</span> 号同学发言 <span class=\"katex math inline\">2</span> 次、<span class=\"katex math inline\">7</span> 号同学发言 <span class=\"katex math inline\">1</span> 次、<span class=\"katex math inline\">8</span> 号同学发言 <span class=\"katex math inline\">2</span> 次。</p>\n</div>            </div>",
+      "text": "学校王老师研发了一套新的声音识别系统，该系统预先将每位同学的学号和声音录入之后，只要同学一说话，就知道是哪个学号的同学在说话（不同的同学声音是完全不一样的）。\n王老师将系统装在了教室，系统收集到了一节英语课中同学们说话的 n 个片段，并转换为了同学们的学号，请你编程帮助王老师计算出，有多少个同学在英语课中发过言，并按照学号由小到大，输出每位同学的学号及该学号的同学发言的次数。\n比如，假设经过系统分析，得到如下的 8 个同学的学号分别是：8 1 6 1 8 6 7 2，表示同学们的发言顺序分别是：8 号、1 号、6 号、1 号、8 号、6 号、7 号、2 号，那么一共有 5 位同学发过言，按照学号由小到大输出发言次数如下：\n1 2\n2 1\n6 2\n7 1\n8 2\n\n分别代表 1 号同学发言 2 次、2 号同学发言 1 次、6 号同学发言 2 次、7 号同学发言 1 次、8 号同学发言 2 次。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入有 <span class=\"katex math inline\">2</span> 行，第 <span class=\"katex math inline\">1</span> 行有一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">3≤n≤10000</span>）；</p>\n<p>第二行有 <span class=\"katex math inline\">n</span> 个数字（这些整数都是 <span class=\"katex math inline\">1</span>~<span class=\"katex math inline\">100</span> 之间的整数，含 <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">100</span>），数字之间用空格隔开，代表同学们的学号。</p>\n</div>            </div>",
+      "text": "输入有 2 行，第 1 行有一个整数 n（3≤n≤10000）；\n第二行有 n 个数字（这些整数都是 1~100 之间的整数，含 1 和 100），数字之间用空格隔开，代表同学们的学号。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行输出 <span class=\"katex math inline\">1</span> 个整数，代表总共有多少名同学说过话。</p>\n<p>接下来输出若干行，每行 <span class=\"katex math inline\">2</span> 个整数，用空格隔开，表示按照学号由小到大输出发言同学的学号及每位同学发言的次数。</p>\n</div>            </div>",
+      "text": "第 1 行输出 1 个整数，代表总共有多少名同学说过话。\n接下来输出若干行，每行 2 个整数，用空格隔开，表示按照学号由小到大输出发言同学的学号及每位同学发言的次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\n8 1 6 1 8 6 7 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5\r\n1 2\r\n2 1\r\n6 2\r\n7 1\r\n8 2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10\r\n9 8 8 1 3 6 6 6 9 10</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>6\r\n1 1\r\n3 1\r\n6 3\r\n8 2\r\n9 2\r\n10 1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\n8 1 6 1 8 6 7 2\n                        \n                        \n                            输出\n                            5\r\n1 2\r\n2 1\r\n6 2\r\n7 1\r\n8 2\n                        \n\n                                                    \n                                输入\n                                10\r\n9 8 8 1 3 6 6 6 9 10\n                            \n                            \n                                输出\n                                6\r\n1 1\r\n3 1\r\n6 3\r\n8 2\r\n9 2\r\n10 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\n8 1 6 1 8 6 7 2",
+      "output": "5\r\n1 2\r\n2 1\r\n6 2\r\n7 1\r\n8 2"
+    },
+    {
+      "input": "10\r\n9 8 8 1 3 6 6 6 9 10",
+      "output": "6\r\n1 1\r\n3 1\r\n6 3\r\n8 2\r\n9 2\r\n10 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "15777",
+    "通过人数": "7245",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:27"
+}

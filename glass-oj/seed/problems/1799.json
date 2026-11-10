@@ -1,0 +1,62 @@
+{
+  "id": "1799",
+  "title": "计算器的改良 [NOIP2000 普及组]",
+  "tags": [
+    "noip复赛",
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1799",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>NCL 是一家专门从事计算器改良与升级的实验室，最近该实验室收到了某公司所委托的一个任务：需要在该公司某型号的计算器上加上解一元一次方程的功能。实验室将这个任务交给了一个刚进入的新手 ZL 先生。</p>\n<p>为了很好的完成这个任务，ZL 先生首先研究了一些一元一次方程的实例：</p>\n<ul><li><p><span class=\"katex math inline\">4+3x=8</span>。</p>\n</li>\n<li><p><span class=\"katex math inline\">6a-5+1=2-2a</span>。</p>\n</li>\n<li><p><span class=\"katex math inline\">-5+12y=0</span>。</p>\n</li>\n</ul><p>ZL 先生被主管告之，在计算器上键入的一个一元一次方程中，只包含整数、小写字母及 <code>+</code>、<code>-</code>、<code>=</code> 这三个数学符号（当然，符号“<code>-</code>”既可作减号，也可作负号）。方程中并没有括号，也没有除号，方程中的字母表示未知数。</p>\n<p>你可假设对键入的方程的正确性的判断是由另一个程序员在做，或者说可认为键入的一元一次方程均为合法的，且有唯一实数解。</p>\n</div>            </div>",
+      "text": "NCL 是一家专门从事计算器改良与升级的实验室，最近该实验室收到了某公司所委托的一个任务：需要在该公司某型号的计算器上加上解一元一次方程的功能。实验室将这个任务交给了一个刚进入的新手 ZL 先生。\n为了很好的完成这个任务，ZL 先生首先研究了一些一元一次方程的实例：\n4+3x=8。\n\n6a-5+1=2-2a。\n\n-5+12y=0。\n\nZL 先生被主管告之，在计算器上键入的一个一元一次方程中，只包含整数、小写字母及 +、-、= 这三个数学符号（当然，符号“-”既可作减号，也可作负号）。方程中并没有括号，也没有除号，方程中的字母表示未知数。\n你可假设对键入的方程的正确性的判断是由另一个程序员在做，或者说可认为键入的一元一次方程均为合法的，且有唯一实数解。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个一元一次方程。</p>\n</div>            </div>",
+      "text": "一个一元一次方程。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>解方程的结果（精确至小数点后三位）。</p>\n</div>            </div>",
+      "text": "解方程的结果（精确至小数点后三位）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6a-5+1=2-2a</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>a=0.750</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6a-5+1=2-2a\n                        \n                        \n                            输出\n                            a=0.750"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>方程在计算过程中，不会出现超过int范围的整数</p>\n<h4>【来源】</h4>\n<p>noip2000普及组复赛第1题</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n方程在计算过程中，不会出现超过int范围的整数\n【来源】\nnoip2000普及组复赛第1题"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛 字符串</p>\n</div>                </div>",
+      "text": "noip复赛 字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "noip复赛字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6a-5+1=2-2a",
+      "output": "a=0.750"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "619",
+    "通过人数": "411",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:24:21"
+}

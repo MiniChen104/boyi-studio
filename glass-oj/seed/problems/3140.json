@@ -1,0 +1,56 @@
+{
+  "id": "3140",
+  "title": "避开湖泊",
+  "tags": [
+    "电子学会等级考试"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3140",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>农夫约翰的农场在最近的暴风雨中被淹没了，更糟糕的是，他的奶牛们死死地怕水。然而，他的保险公司只会根据他农场上最大的“湖泊”的大小来赔偿他。</p>\n<p>这个农场被表示为一个矩形网格，有 <span class=\"katex math inline\"> N(1 \\leq N \\leq 100)</span> 行和 <span class=\"katex math inline\">M(1 \\leq M \\leq 100)</span> 列。</p>\n<p>网格中的每个单元格都是干燥的或者被淹没的，而且恰好有 <span class=\"katex math inline\"> K(1 \\leq K \\leq N*M) </span> 个单元格被淹没了。</p>\n<p>正如人们所期望的那样，湖泊有一个中心单元格，其他单元格通过共享一个长边（而不是一个角）与该单元格相连。</p>\n<p>任何与中心单元格共享一个长边或与任何连接单元格共享一个长边的单元格都成为连接单元格，并且是湖泊的一部分。</p>\n</div>            </div>",
+      "text": "农夫约翰的农场在最近的暴风雨中被淹没了，更糟糕的是，他的奶牛们死死地怕水。然而，他的保险公司只会根据他农场上最大的“湖泊”的大小来赔偿他。\n这个农场被表示为一个矩形网格，有  N(1 \\leq N \\leq 100) 行和 M(1 \\leq M \\leq 100) 列。\n网格中的每个单元格都是干燥的或者被淹没的，而且恰好有  K(1 \\leq K \\leq N*M)  个单元格被淹没了。\n正如人们所期望的那样，湖泊有一个中心单元格，其他单元格通过共享一个长边（而不是一个角）与该单元格相连。\n任何与中心单元格共享一个长边或与任何连接单元格共享一个长边的单元格都成为连接单元格，并且是湖泊的一部分。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行：三个用空格分隔的整数：<span class=\"katex math inline\">N</span> 、<span class=\"katex math inline\">M</span> 和 <span class=\"katex math inline\">K</span></p>\n<p>第 <span class=\"katex math inline\">2</span> 到 <span class=\"katex math inline\">K+1</span> 行：</p>\n<p>第 <span class=\"katex math inline\">i+1</span> 行描述一个被淹没的位置，由两个用空格分隔的整数 <span class=\"katex math inline\">R</span> 和 <span class=\"katex math inline\">C</span> 表示其行和列。</p>\n</div>            </div>",
+      "text": "第 1 行：三个用空格分隔的整数：N 、M 和 K\n第 2 到 K+1 行：\n第 i+1 行描述一个被淹没的位置，由两个用空格分隔的整数 R 和 C 表示其行和列。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>最大湖泊包含的单元格数。</p>\n</div>            </div>",
+      "text": "最大湖泊包含的单元格数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 4 5\r\n3 2\r\n2 2\r\n3 1\r\n2 3\r\n1 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 4 5\r\n3 2\r\n2 2\r\n3 1\r\n2 3\r\n1 1\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【输入样例说明】</p>\n<p>农场是一个有三行四列的网格；五个单元格被淹没了。</p>\n<p>它们位于以下位置：(行3，列2)；(行2，列2)；(行3，列1)；(行2，列3)；(行1，列1)：</p>\n<pre><code># . . .\n. # # .\n# # . .\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "【输入样例说明】\n农场是一个有三行四列的网格；五个单元格被淹没了。\n它们位于以下位置：(行3，列2)；(行2，列2)；(行3，列1)；(行2，列3)；(行1，列1)：\n# . . .\n. # # .\n# # . ."
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 4 5\r\n3 2\r\n2 2\r\n3 1\r\n2 3\r\n1 1",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "91",
+    "通过人数": "48",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:34:18"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "2407",
+  "title": "特别的抽签",
+  "tags": [
+    "数组",
+    "模拟"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2407",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>A班组织大家参加年终抽奖，数学老师为了增加趣味性，规定抽奖方式如下：抽奖箱中有N个互不相同的数字，N名同学每人随机抽一张，如果谁抽中的数字正好等于另外三名同学抽到的数字之和，他就中奖了。<br>\n如果有多位同学都满足上述条件，那么，满足条件的同学中，谁的数字最大，谁就获奖了。<br>\n如果所有同学都没有抽到满足条件的数，请输出：no。<br>\n请你编程计算出中奖同学抽到的是什么数？</p>\n</div>            </div>",
+      "text": "A班组织大家参加年终抽奖，数学老师为了增加趣味性，规定抽奖方式如下：抽奖箱中有N个互不相同的数字，N名同学每人随机抽一张，如果谁抽中的数字正好等于另外三名同学抽到的数字之和，他就中奖了。\n如果有多位同学都满足上述条件，那么，满足条件的同学中，谁的数字最大，谁就获奖了。\n如果所有同学都没有抽到满足条件的数，请输出：no。\n请你编程计算出中奖同学抽到的是什么数？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第1行有一个整数n（n≤1000）。<br>\n第2行有n个互不相等的整数，代表抽奖箱中的数字（数字的数值在[1,40000]之间）。  </p>\n</div>            </div>",
+      "text": "第1行有一个整数n（n≤1000）。\n第2行有n个互不相等的整数，代表抽奖箱中的数字（数字的数值在[1,40000]之间）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表获奖的同学抽到的数字；如果无人获奖，输出<code>no</code>。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表获奖的同学抽到的数字；如果无人获奖，输出no。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n3 2 1 6 5 9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n3 2 1 6 5 9\n                        \n                        \n                            输出\n                            9"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组</span><span class=\"label label-warning\">模拟</span></span></p>\n</div>                </div>",
+      "text": "数组模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n3 2 1 6 5 9",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "347",
+    "通过人数": "165",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:00"
+}

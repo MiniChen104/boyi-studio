@@ -1,0 +1,52 @@
+{
+  "id": "4757",
+  "title": "数列筛选偶数",
+  "tags": [
+    "蓝桥等考",
+    "数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4757",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>偶数是能够被 <span class=\"katex math inline\">2</span> 整除的整数。</p>\n<p>给定一个长度为 <span class=\"katex math inline\">n</span> 的数列，找出偶数元素并按输入的顺序依次输出。</p>\n<p>例如，当 <span class=\"katex math inline\">n</span> = <span class=\"katex math inline\">8</span>，数列为：<span class=\"katex math inline\">10</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">5</span> <span class=\"katex math inline\">6</span> <span class=\"katex math inline\">8</span> <span class=\"katex math inline\">7</span> <span class=\"katex math inline\">9</span></p>\n<p>输出数列的偶数元素为 <span class=\"katex math inline\">10</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">6</span> <span class=\"katex math inline\">8</span></p>\n</div>            </div>",
+      "text": "偶数是能够被 2 整除的整数。\n给定一个长度为 n 的数列，找出偶数元素并按输入的顺序依次输出。\n例如，当 n = 8，数列为：10 2 3 5 6 8 7 9\n输出数列的偶数元素为 10 2 6 8"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含一个正整数 <span class=\"katex math inline\">n</span>，表示数列的长度。接下来的一行包含 <span class=\"katex math inline\">n</span> 个由空格分隔的整数，表示给定的数列。（<span class=\"katex math inline\">1 \\le n \\le 1000</span>，<span class=\"katex math inline\">n</span> 个整数的大小都在 <span class=\"katex math inline\">[-100000, 100000]</span> 之间）</p>\n</div>            </div>",
+      "text": "输入的第一行包含一个正整数 n，表示数列的长度。接下来的一行包含 n 个由空格分隔的整数，表示给定的数列。（1 \\le n \\le 1000，n 个整数的大小都在 [-100000, 100000] 之间）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按原数列中出现的顺序依次输出所有偶数元素，每个元素后跟一个空格（包括最后一个元素后面）。如果原数列中不存在任何偶数元素，则输出为空。</p>\n</div>            </div>",
+      "text": "按原数列中出现的顺序依次输出所有偶数元素，每个元素后跟一个空格（包括最后一个元素后面）。如果原数列中不存在任何偶数元素，则输出为空。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\n10 2 3 5 6 8 7 9\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10 2 6 8</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\n10 2 3 5 6 8 7 9\r\n\n                        \n                        \n                            输出\n                            10 2 6 8"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\n10 2 3 5 6 8 7 9\r\n",
+      "output": "10 2 6 8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "166",
+    "通过人数": "136",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:26"
+}

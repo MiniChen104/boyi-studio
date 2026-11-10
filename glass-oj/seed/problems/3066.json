@@ -1,0 +1,62 @@
+{
+  "id": "3066",
+  "title": "最小距离(average.cpp)",
+  "tags": [
+    "数组",
+    "数学"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3066",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Cotton最近遇到了一个举世难题，他要为 YYT 的公司的员工规划居住区的位置。</p>\n<p>YYT家里有矿，每天他公司的员工要去上矿。矿分布在一条线段上，总共有 <span class=\"katex math inline\">n</span> 个矿，第 <span class=\"katex math inline\">i</span> 个矿的距离线段左端点的距离为 <span class=\"katex math inline\">a[i]</span> 米。</p>\n<p>YYT作为良心企业家，为了减轻公司员工的负担，他希望居住区到每个矿的距离和最小。然而弱小的Cotton并不会这个问题，现在你能帮帮他吗？</p>\n</div>            </div>",
+      "text": "Cotton最近遇到了一个举世难题，他要为 YYT 的公司的员工规划居住区的位置。\nYYT家里有矿，每天他公司的员工要去上矿。矿分布在一条线段上，总共有 n 个矿，第 i 个矿的距离线段左端点的距离为 a[i] 米。\nYYT作为良心企业家，为了减轻公司员工的负担，他希望居住区到每个矿的距离和最小。然而弱小的Cotton并不会这个问题，现在你能帮帮他吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">n</span> ，表示矿的数量。</p>\n<p>第二行 <span class=\"katex math inline\">n</span> 个整数，第 <span class=\"katex math inline\">i</span> 个数 <span class=\"katex math inline\">a[i]</span> 表示第 <span class=\"katex math inline\">i</span> 个矿距离线段左端点的距离。</p>\n</div>            </div>",
+      "text": "第一行一个整数 n ，表示矿的数量。\n第二行 n 个整数，第 i 个数 a[i] 表示第 i 个矿距离线段左端点的距离。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示居住区距离线段左端点的距离，单位为米。如果有多个答案请输出最小的。</p>\n</div>            </div>",
+      "text": "一个整数，表示居住区距离线段左端点的距离，单位为米。如果有多个答案请输出最小的。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n3 4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n3 4 5\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">20\\%</span> 的数据，<span class=\"katex math inline\">n≤100,1≤a[i]≤100</span> 。</p>\n<p>对于 <span class=\"katex math inline\">50\\%</span> 的数据，<span class=\"katex math inline\">n≤1000000,1≤a[i]≤100</span> 。</p>\n<p>对于 <span class=\"katex math inline\">80\\%</span> 的数据，<span class=\"katex math inline\">n≤1000000,1≤a[i]≤1000000</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">n≤1000000,1≤a[i]≤1000000000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 20\\% 的数据，n≤100,1≤a[i]≤100 。\n对于 50\\% 的数据，n≤1000000,1≤a[i]≤100 。\n对于 80\\% 的数据，n≤1000000,1≤a[i]≤1000000。\n对于 100\\% 的数据，n≤1000000,1≤a[i]≤1000000000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2021-2022年中山市东区第一届义务教育段学生信息学邀请赛 T3</p>\n</div>                </div>",
+      "text": "2021-2022年中山市东区第一届义务教育段学生信息学邀请赛 T3"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组</span><span class=\"label label-warning\">数学</span></span></p>\n</div>                </div>",
+      "text": "数组数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n3 4 5",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "324",
+    "通过人数": "131",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:57"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1651",
+  "title": "跳格子",
+  "tags": [
+    "动态规划"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1651",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>地面上有一排长度为 <span class=\"katex math inline\">n</span> 的格子 <span class=\"katex math inline\">1 \\sim n</span>，每个格子上都有一个数 <span class=\"katex math inline\">x_i</span>，开始时你在位置 <span class=\"katex math inline\">0</span> ，每次你可以向前跳 <span class=\"katex math inline\">1 \\sim 2</span> 格，然后取走格子上的数，直到跳到位置 <span class=\"katex math inline\">n+1</span>。</p>\n<p>取走的数的和就是你的得分，现在你想知道你可能的最大得分是多少。</p>\n</div>            </div>",
+      "text": "地面上有一排长度为 n 的格子 1 \\sim n，每个格子上都有一个数 x_i，开始时你在位置 0 ，每次你可以向前跳 1 \\sim 2 格，然后取走格子上的数，直到跳到位置 n+1。\n取走的数的和就是你的得分，现在你想知道你可能的最大得分是多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行四个整数 <span class=\"katex math inline\">n,A,B,C</span> (<span class=\"katex math inline\">n≤100000</span>，<span class=\"katex math inline\">0≤A,B,C≤10000</span>)，其中 <span class=\"katex math inline\">n</span> 表示格子的数量。</p>\n<p><span class=\"katex math inline\">x[i]</span> 由如下方式生成：</p>\n<pre><code>    for (int i = 1; i &lt;= n; i++){\n    \tint tmp = ((long long)A * i * i + B * i + C) % 20000;\n    \tx[i] = tmp - 10000;\n    }\n</code></pre>\n</div>            </div>",
+      "text": "一行四个整数 n,A,B,C (n≤100000，0≤A,B,C≤10000)，其中 n 表示格子的数量。\nx[i] 由如下方式生成：\n    for (int i = 1; i <= n; i++){\n    \tint tmp = ((long long)A * i * i + B * i + C) % 20000;\n    \tx[i] = tmp - 10000;\n    }"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数 <span class=\"katex math inline\">ans</span> 表示可能的最大得分。</p>\n</div>            </div>",
+      "text": "一行一个整数 ans 表示可能的最大得分。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 1 1 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>-9993</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 1 1 1\n                        \n                        \n                            输出\n                            -9993"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>动态规划</p>\n</div>                </div>",
+      "text": "动态规划"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 1 1 1",
+      "output": "-9993"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "8544",
+    "通过人数": "3954",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:23"
+}

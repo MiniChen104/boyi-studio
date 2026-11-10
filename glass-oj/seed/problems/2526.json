@@ -1,0 +1,56 @@
+{
+  "id": "2526",
+  "title": "打击犯罪",
+  "tags": [
+    "并查集"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2526",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某个地区有 <span class=\"katex math inline\">n</span> (<span class=\"katex math inline\">n≤1000</span>) 个犯罪团伙，当地警方按照他们的危险程度由高到低给他们编号为 <span class=\"katex math inline\">1 \\sim n</span> ，他们有些团伙之间有直接联系，但是任意两个团伙都可以通过直接或间接的方式联系，这样这里就形成了一个庞大的犯罪集团，犯罪集团的危险程度由集团内的犯罪团伙数量唯一确定，而与单个犯罪团伙的危险程度无关（如果 <span class=\"katex math inline\">n</span> 个团伙之间都有直接或者间接的联系，那么该犯罪集团的危险程度为 <span class=\"katex math inline\">n</span> ）。</p>\n<p>现在当地警方希望花尽量少的时间（即打击掉尽量少的团伙），使得庞大的犯罪集团分离成若干个较小的集团，并且他们中最大的一个的危险程度不超过 <span class=\"katex math inline\">n/2</span> 。</p>\n<p>为达到最好的效果，他们将按顺序打击掉编号 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">k</span> 的犯罪团伙，请编程求出 <span class=\"katex math inline\">k</span> 的最小值。</p>\n</div>            </div>",
+      "text": "某个地区有 n (n≤1000) 个犯罪团伙，当地警方按照他们的危险程度由高到低给他们编号为 1 \\sim n ，他们有些团伙之间有直接联系，但是任意两个团伙都可以通过直接或间接的方式联系，这样这里就形成了一个庞大的犯罪集团，犯罪集团的危险程度由集团内的犯罪团伙数量唯一确定，而与单个犯罪团伙的危险程度无关（如果 n 个团伙之间都有直接或者间接的联系，那么该犯罪集团的危险程度为 n ）。\n现在当地警方希望花尽量少的时间（即打击掉尽量少的团伙），使得庞大的犯罪集团分离成若干个较小的集团，并且他们中最大的一个的危险程度不超过 n/2 。\n为达到最好的效果，他们将按顺序打击掉编号 1 到 k 的犯罪团伙，请编程求出 k 的最小值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个正整数 <span class=\"katex math inline\">n</span> 。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行每行有若干个正整数，第一个整数表示该行除第一个外还有多少个整数，若第 <span class=\"katex math inline\">i</span> 行存在正整数 <span class=\"katex math inline\">k</span> ，表示 <span class=\"katex math inline\">i</span> ，<span class=\"katex math inline\">k</span> 两个团伙可以直接联系。</p>\n</div>            </div>",
+      "text": "第一行一个正整数 n 。\n接下来的 n 行每行有若干个正整数，第一个整数表示该行除第一个外还有多少个整数，若第 i 行存在正整数 k ，表示 i ，k 两个团伙可以直接联系。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数，为 <span class=\"katex math inline\">k</span> 的最小值。</p>\n</div>            </div>",
+      "text": "一个正整数，为 k 的最小值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7\r\n2 2 5\r\n3 1 3 4\r\n2 2 4\r\n2 2 3\r\n3 1 6 7\r\n2 5 7\r\n2 5 6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\r\n2 2 5\r\n3 1 3 4\r\n2 2 4\r\n2 2 3\r\n3 1 6 7\r\n2 5 7\r\n2 5 6\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例解释】</strong>  </p>\n<p>输出 <span class=\"katex math inline\">1</span> （打击掉第一个犯罪团伙即可）  </p>\n<p><img src=\"https://assets.boyi.local/19cf059a9ba6f29fd36e571a.jpg\"></p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】  \n输出 1 （打击掉第一个犯罪团伙即可）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">并查集</span></span></p>\n</div>                </div>",
+      "text": "并查集"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7\r\n2 2 5\r\n3 1 3 4\r\n2 2 4\r\n2 2 3\r\n3 1 6 7\r\n2 5 7\r\n2 5 6",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "201",
+    "通过人数": "130",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:08"
+}

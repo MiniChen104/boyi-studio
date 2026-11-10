@@ -1,0 +1,61 @@
+{
+  "id": "2223",
+  "title": "插入排序（sort）",
+  "tags": [
+    "CSP-J"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2223",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>插入排序是一种非常常见且简单的排序算法。小 Z 是一名大一的新生，今天 H 老师刚刚在上课的时候讲了插入排序算法。  </p>\n<p>假设比较两个元素的时间为 <span class=\"katex math inline\">O(1)</span>，则插入排序可以以 <span class=\"katex math inline\">O</span>(<span class=\"katex math inline\">n</span><sup><span class=\"katex math inline\">2</span></sup>) 的时间复杂度完成长度为 <span class=\"katex math inline\">n</span> 的数组的排序。不妨假设这 <span class=\"katex math inline\">n</span> 个数字分别存储在 <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">1</span></sub>, <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">2</span></sub>, · · · , <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">n</span></sub> 之中，则如下伪代码给出了插入排序算法的一种最简单的实现方式：  </p>\n<p>这下面是 C/C++ 的示范代码  </p>\n<pre><code>for (int i = 1; i &lt;= n; i++)\n  for (int j = i; j&gt;=2; j‐‐)\n    if ( a[j] &lt; a[j‐1] ){\n      int t = a[j‐1];\n      a[j‐1] = a[j];\n      a[j] = t;\n    }\n</code></pre>\n<p>这下面是 Pascal 的示范代码  </p>\n<pre><code>for i:=1 to n do\n  for j:=i downto 2 do\n    if a[j]&lt;a[j‐1] then\n      begin\n        t:=a[i];\n        a[i]:=a[j];\n        a[j]:=t;\n      end;\n</code></pre>\n<p>为了帮助小 Z 更好的理解插入排序，小 Z 的老师 H 老师留下了这么一道家庭作业：  </p>\n<p>H 老师给了一个长度为 <span class=\"katex math inline\">n</span> 的数组 <span class=\"katex math inline\">a</span>，数组下标从 <span class=\"katex math inline\">1</span> 开始，并且数组中的所有元素均为非负整数。小 Z 需要支持在数组 <span class=\"katex math inline\">a</span> 上的 <span class=\"katex math inline\">Q</span> 次操作，操作共两种，参数分别如下：  </p>\n<p><span class=\"katex math inline\">1</span> <span class=\"katex math inline\">x</span> <span class=\"katex math inline\">v</span> : 这是第一种操作，会将 <span class=\"katex math inline\">a</span> 的第 <span class=\"katex math inline\">x</span> 个元素，也就是 <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">x</span></sub> 的值，修改为 <span class=\"katex math inline\">v</span>。保证<span class=\"katex math inline\">1</span> ≤ <span class=\"katex math inline\">x</span> ≤ <span class=\"katex math inline\">n</span>, <span class=\"katex math inline\">1</span> ≤ <span class=\"katex math inline\">v</span> ≤ <span class=\"katex math inline\">10</span><sup><span class=\"katex math inline\">9</span></sup>。 <strong>注意这种操作会改变数组的元素，修改得到的数组会被保留，也会影响后续的操作。</strong>  </p>\n<p><span class=\"katex math inline\">2</span> <span class=\"katex math inline\">x</span> : 这是第二种操作，假设 H 老师按照上面的伪代码对 <span class=\"katex math inline\">a</span> 数组进行排序，你需要告诉 H 老师原来 <span class=\"katex math inline\">a</span> 的第 <span class=\"katex math inline\">x</span> 个元素，也就是 <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">x</span></sub>，在排序后的新数组所处的位置。保证<span class=\"katex math inline\">1</span> ≤ <span class=\"katex math inline\">x</span> ≤ <span class=\"katex math inline\">n</span>。<strong>注意这种操作不会改变数组的元素，排序后的数组不会被保留，也不会影响后续的操作。</strong>  </p>\n<p>H 老师不喜欢过多的修改，所以他保证类型 <span class=\"katex math inline\">1</span> 的操作次数不超过 <span class=\"katex math inline\">5000</span>。  </p>\n<p>小 Z 没有学过计算机竞赛，因此小 Z 并不会做这道题。他找到了你来帮助他解决这个问题。</p>\n</div>            </div>",
+      "text": "插入排序是一种非常常见且简单的排序算法。小 Z 是一名大一的新生，今天 H 老师刚刚在上课的时候讲了插入排序算法。  \n假设比较两个元素的时间为 O(1)，则插入排序可以以 O(n2) 的时间复杂度完成长度为 n 的数组的排序。不妨假设这 n 个数字分别存储在 a1, a2, · · · , an 之中，则如下伪代码给出了插入排序算法的一种最简单的实现方式：  \n这下面是 C/C++ 的示范代码  \nfor (int i = 1; i <= n; i++)\n  for (int j = i; j>=2; j‐‐)\n    if ( a[j] < a[j‐1] ){\n      int t = a[j‐1];\n      a[j‐1] = a[j];\n      a[j] = t;\n    }\n\n这下面是 Pascal 的示范代码  \nfor i:=1 to n do\n  for j:=i downto 2 do\n    if a[j]<a[j‐1] then\n      begin\n        t:=a[i];\n        a[i]:=a[j];\n        a[j]:=t;\n      end;\n\n为了帮助小 Z 更好的理解插入排序，小 Z 的老师 H 老师留下了这么一道家庭作业：  \nH 老师给了一个长度为 n 的数组 a，数组下标从 1 开始，并且数组中的所有元素均为非负整数。小 Z 需要支持在数组 a 上的 Q 次操作，操作共两种，参数分别如下：  \n1 x v : 这是第一种操作，会将 a 的第 x 个元素，也就是 ax 的值，修改为 v。保证1 ≤ x ≤ n, 1 ≤ v ≤ 109。 注意这种操作会改变数组的元素，修改得到的数组会被保留，也会影响后续的操作。  \n2 x : 这是第二种操作，假设 H 老师按照上面的伪代码对 a 数组进行排序，你需要告诉 H 老师原来 a 的第 x 个元素，也就是 ax，在排序后的新数组所处的位置。保证1 ≤ x ≤ n。注意这种操作不会改变数组的元素，排序后的数组不会被保留，也不会影响后续的操作。  \nH 老师不喜欢过多的修改，所以他保证类型 1 的操作次数不超过 5000。  \n小 Z 没有学过计算机竞赛，因此小 Z 并不会做这道题。他找到了你来帮助他解决这个问题。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含两个正整数 <span class=\"katex math inline\">n</span>, <span class=\"katex math inline\">Q</span>，表示数组长度和操作次数。保证 <span class=\"katex math inline\">1</span> ≤ <span class=\"katex math inline\">n</span> ≤ <span class=\"katex math inline\">8, 000</span>, <span class=\"katex math inline\">1</span> ≤ <span class=\"katex math inline\">Q</span> ≤ <span class=\"katex math inline\">2</span> * <span class=\"katex math inline\">10</span><sup><span class=\"katex math inline\">5</span></sup>。  </p>\n<p>输入的第二行包含 <span class=\"katex math inline\">n</span> 个空格分隔的非负整数，其中第 <span class=\"katex math inline\">i</span> 个非负整数表示 <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">i</span></sub>。保证<span class=\"katex math inline\">1</span> ≤ <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">i</span></sub> ≤ <span class=\"katex math inline\">10</span><sup><span class=\"katex math inline\">9</span></sup>。\n接下来 <span class=\"katex math inline\">Q</span> 行，每行 <span class=\"katex math inline\">2</span> ∼ <span class=\"katex math inline\">3</span> 个正整数，表示一次操作，操作格式见题目描述。  </p>\n<p>【数据范围】<br>\n对于所有测试数据，满足 <span class=\"katex math inline\">1</span> ≤ <span class=\"katex math inline\">n</span> ≤ <span class=\"katex math inline\">8, 000</span>, <span class=\"katex math inline\">1</span> ≤ <span class=\"katex math inline\">Q</span> ≤ <span class=\"katex math inline\">2</span>×<span class=\"katex math inline\">10</span><sup><span class=\"katex math inline\">5</span></sup>, <span class=\"katex math inline\">1</span> ≤ <span class=\"katex math inline\">x</span> ≤ <span class=\"katex math inline\">n</span>, <span class=\"katex math inline\">1</span> ≤ <span class=\"katex math inline\">v</span>, <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">i</span></sub> ≤ <span class=\"katex math inline\">10</span><sup><span class=\"katex math inline\">9</span></sup>。  </p>\n<p>对于所有测试数据，保证在所有 <span class=\"katex math inline\">Q</span> 次操作中，至多有 <span class=\"katex math inline\">5000</span> 次操作属于类型一。  </p>\n<p>各测试点的附加限制及分值如下表所示。<br><img src=\"https://assets.boyi.local/0569e7dc551b8012c8c604c5.png\"></p>\n</div>            </div>",
+      "text": "输入的第一行包含两个正整数 n, Q，表示数组长度和操作次数。保证 1 ≤ n ≤ 8, 000, 1 ≤ Q ≤ 2 * 105。  \n输入的第二行包含 n 个空格分隔的非负整数，其中第 i 个非负整数表示 ai。保证1 ≤ ai ≤ 109。\n接下来 Q 行，每行 2 ∼ 3 个正整数，表示一次操作，操作格式见题目描述。  \n【数据范围】\n对于所有测试数据，满足 1 ≤ n ≤ 8, 000, 1 ≤ Q ≤ 2×105, 1 ≤ x ≤ n, 1 ≤ v, ai ≤ 109。  \n对于所有测试数据，保证在所有 Q 次操作中，至多有 5000 次操作属于类型一。  \n各测试点的附加限制及分值如下表所示。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每一次类型为 <span class=\"katex math inline\">2</span> 的询问，输出一行一个正整数表示答案。</p>\n</div>            </div>",
+      "text": "对于每一次类型为 2 的询问，输出一行一个正整数表示答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 4\r\n3 2 1\r\n2 3\r\n1 3 2\r\n2 2\r\n2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n1\r\n2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 4\r\n3 2 1\r\n2 3\r\n1 3 2\r\n2 2\r\n2 3\n                        \n                        \n                            输出\n                            1\r\n1\r\n2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例 1 解释】  </p>\n<p>在修改操作之前，假设 H 老师进行了一次插入排序，则原序列的三个元素在排序结束后所处的位置分别是 <span class=\"katex math inline\">3</span>, <span class=\"katex math inline\">2</span>, <span class=\"katex math inline\">1</span>。  </p>\n<p>在修改操作之前，假设 H 老师进行了一次插入排序，则原序列的三个元素在排序结束后所处的位置分别是 <span class=\"katex math inline\">3</span>, <span class=\"katex math inline\">1</span>, <span class=\"katex math inline\">2</span>。  </p>\n<p>注意虽然此时 <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">2</span></sub> = <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">3</span></sub>，但是我们\n不能将其视为相同的元素。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 1 解释】  \n在修改操作之前，假设 H 老师进行了一次插入排序，则原序列的三个元素在排序结束后所处的位置分别是 3, 2, 1。  \n在修改操作之前，假设 H 老师进行了一次插入排序，则原序列的三个元素在排序结束后所处的位置分别是 3, 1, 2。  \n注意虽然此时 a2 = a3，但是我们\n不能将其视为相同的元素。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>csp-j 2021 T2</p>\n</div>                </div>",
+      "text": "csp-j 2021 T2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">CSP-J</span></span></p>\n</div>                </div>",
+      "text": "CSP-J"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 4\r\n3 2 1\r\n2 3\r\n1 3 2\r\n2 2\r\n2 3",
+      "output": "1\r\n1\r\n2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "2766",
+    "通过人数": "792",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:59"
+}

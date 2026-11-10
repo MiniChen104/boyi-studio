@@ -1,0 +1,61 @@
+{
+  "id": "3173",
+  "title": "闯关者",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3173",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 位同学按 <span class=\"katex math inline\">1</span> ~ <span class=\"katex math inline\">n</span> 编号顺时针方向围成一圈玩拼图。每一关同学们都会领到一个特殊的卡片，卡片拼接形成的玄妙图案就是开启下一关的钥匙。</p>\n<p>这次的闯关规则如下：第一轮由 <span class=\"katex math inline\">1</span> 号同学拼图，把手中的卡片拼到图上（用掉手中的卡片），并喊出数字 <span class=\"katex math inline\">1</span>。对于之后的每一轮，假设上一轮喊出的数字是 <span class=\"katex math inline\">x</span>，则从上一轮喊出数字的下一位同学开始，沿着顺时针方向数 <span class=\"katex math inline\">x</span> 个同学。如果这个同学手中没有卡片，则继续顺时针方向数数，直到遇到第一个有卡片的同学为止。最后数到的有卡片同学会完成拼图（用掉手中的卡片），并且喊出这一轮中数过的总数+<span class=\"katex math inline\">1</span>。所有同学按序完成拼图则闯关成功。具体流程如下：</p>\n<p><img src=\"https://assets.boyi.local/f62b5770500ab9c6466a96af.png\"></p>\n<p>假设有 <span class=\"katex math inline\">7</span> 位同学，拼图顺序为：①→②→④→⑦→⑤→⑥→③。从①号同学开 始沿顺时针方向数 <span class=\"katex math inline\">1</span> 个数轮到②号同学；从②号沿顺时针方向数 <span class=\"katex math inline\">2</span> 个数轮到④号同学；从④号数 <span class=\"katex math inline\">3</span> 个数轮到⑦号同学；从⑦号数 <span class=\"katex math inline\">4</span> 个数轮到④号（无卡），继续数到 <span class=\"katex math inline\">5</span> 轮到⑤号同学；从⑤号数 <span class=\"katex math inline\">6</span> 个数轮到④号（无卡），继续数到 <span class=\"katex math inline\">8</span> 轮到⑥号同学；从⑥号数 <span class=\"katex math inline\">9</span> 个数轮到①号（无卡），继续数到 <span class=\"katex math inline\">11</span> 轮到③号同学，③号完成拼图闯关成功。</p>\n<p>现有 <span class=\"katex math inline\">n</span> 位同学，请找出最后一位完成拼图的同学编号。</p>\n</div>            </div>",
+      "text": "n 位同学按 1 ~ n 编号顺时针方向围成一圈玩拼图。每一关同学们都会领到一个特殊的卡片，卡片拼接形成的玄妙图案就是开启下一关的钥匙。\n这次的闯关规则如下：第一轮由 1 号同学拼图，把手中的卡片拼到图上（用掉手中的卡片），并喊出数字 1。对于之后的每一轮，假设上一轮喊出的数字是 x，则从上一轮喊出数字的下一位同学开始，沿着顺时针方向数 x 个同学。如果这个同学手中没有卡片，则继续顺时针方向数数，直到遇到第一个有卡片的同学为止。最后数到的有卡片同学会完成拼图（用掉手中的卡片），并且喊出这一轮中数过的总数+1。所有同学按序完成拼图则闯关成功。具体流程如下：\n\n假设有 7 位同学，拼图顺序为：①→②→④→⑦→⑤→⑥→③。从①号同学开 始沿顺时针方向数 1 个数轮到②号同学；从②号沿顺时针方向数 2 个数轮到④号同学；从④号数 3 个数轮到⑦号同学；从⑦号数 4 个数轮到④号（无卡），继续数到 5 轮到⑤号同学；从⑤号数 6 个数轮到④号（无卡），继续数到 8 轮到⑥号同学；从⑥号数 9 个数轮到①号（无卡），继续数到 11 轮到③号同学，③号完成拼图闯关成功。\n现有 n 位同学，请找出最后一位完成拼图的同学编号。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数 <span class=\"katex math inline\">n</span>，表示小组人数。</p>\n</div>            </div>",
+      "text": "一个正整数 n，表示小组人数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示最后一位完成拼图的同学编号。</p>\n</div>            </div>",
+      "text": "一个整数，表示最后一位完成拼图的同学编号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例说明】</p>\n<p>①号数 <span class=\"katex math inline\">1</span> 个数轮到②号\n②号数 <span class=\"katex math inline\">2</span> 个数轮到④号\n④号数 <span class=\"katex math inline\">3</span> 个数轮到②号，继续数到 <span class=\"katex math inline\">4</span> 轮到③号\n③号数 <span class=\"katex math inline\">5</span> 个数轮到③号，继续数到 <span class=\"katex math inline\">7</span> 轮到⑤号</p>\n<p><img src=\"https://assets.boyi.local/d52a75e3bacba6ccf30c3ef6.png\"></p>\n<p>【数据范围】</p>\n<p>输入的数据保证小于 <span class=\"katex math inline\">100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例说明】\n①号数 1 个数轮到②号\n②号数 2 个数轮到④号\n④号数 3 个数轮到②号，继续数到 4 轮到③号\n③号数 5 个数轮到③号，继续数到 7 轮到⑤号\n\n【数据范围】\n输入的数据保证小于 100。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2023南京市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2023南京市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "24",
+    "通过人数": "13",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:33"
+}

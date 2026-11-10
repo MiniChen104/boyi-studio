@@ -1,0 +1,57 @@
+{
+  "id": "6167",
+  "title": "有几个小朋友",
+  "tags": [
+    "蓝桥杯",
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6167",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小朋友们排成一排，小明也在队伍中，他的左侧有 <span class=\"katex math inline\">n</span> 个小朋友，右侧有 <span class=\"katex math inline\">m</span> 个小朋友，请计算队伍中一共有多少个小朋友。</p>\n<p>例如: <span class=\"katex math inline\">n = 3</span>，<span class=\"katex math inline\">m = 2</span>，小明的左侧有 <span class=\"katex math inline\">3</span> 个小朋友，右侧有 <span class=\"katex math inline\">2</span> 个小朋友，那么队伍中共有 <span class=\"katex math inline\">6</span> 个小朋友 (加上小明自己)。</p>\n</div>            </div>",
+      "text": "小朋友们排成一排，小明也在队伍中，他的左侧有 n 个小朋友，右侧有 m 个小朋友，请计算队伍中一共有多少个小朋友。\n例如: n = 3，m = 2，小明的左侧有 3 个小朋友，右侧有 2 个小朋友，那么队伍中共有 6 个小朋友 (加上小明自己)。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个整数 <span class=\"katex math inline\">n,m (1 \\le n \\le 20, 1 \\le m \\le 20)</span>，分别表示小明左侧和右侧的小朋友数量，整数之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "输入两个整数 n,m (1 \\le n \\le 20, 1 \\le m \\le 20)，分别表示小明左侧和右侧的小朋友数量，整数之间以一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示队伍中小朋友的总人数。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示队伍中小朋友的总人数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 3\n                        \n                        \n                            输出\n                            6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>26年4月STEMA省考</p>\n</div>                </div>",
+      "text": "26年4月STEMA省考"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 3",
+      "output": "6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "644",
+    "通过人数": "506",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:30"
+}

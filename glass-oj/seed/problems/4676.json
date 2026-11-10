@@ -1,0 +1,63 @@
+{
+  "id": "4676",
+  "title": "四舍五入",
+  "tags": [
+    "GESP一级",
+    "循环",
+    "25年3月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4676",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>四舍五入是一种常见的近似计算方法。现在，给定 <span class=\"katex math inline\">n</span> 个整数，你需要将每个整数四舍五入到最接近的整十数。例\n如， <span class=\"katex math inline\">43</span> 四舍五入后为 <span class=\"katex math inline\">40</span> ， <span class=\"katex math inline\">58</span>  四舍五入后为  <span class=\"katex math inline\">60</span> 。</p>\n</div>            </div>",
+      "text": "四舍五入是一种常见的近似计算方法。现在，给定 n 个整数，你需要将每个整数四舍五入到最接近的整十数。例\n如， 43 四舍五入后为 40 ， 58  四舍五入后为  60 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共 <span class=\"katex math inline\">n+1</span> 行，第一行，一个整数 <span class=\"katex math inline\">n</span> ，表示接下来输入的整数个数。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行一个整数 <span class=\"katex math inline\">a_1，...，a_n</span> ，表示需要四舍五入的整数。</p>\n</div>            </div>",
+      "text": "共 n+1 行，第一行，一个整数 n ，表示接下来输入的整数个数。\n接下来 n 行，每行一个整数 a_1，...，a_n ，表示需要四舍五入的整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 行，每行一个整数，表示每个整数四舍五入后的结果。</p>\n</div>            </div>",
+      "text": "n 行，每行一个整数，表示每个整数四舍五入后的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n43\r\n58\r\n25\r\n67\r\n90</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>40\r\n60\r\n30\r\n70\r\n90</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n43\r\n58\r\n25\r\n67\r\n90\n                        \n                        \n                            输出\n                            40\r\n60\r\n30\r\n70\r\n90"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 100，1 \\le a_i \\le 10000</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于所有测试点，保证 1 \\le n \\le 100，1 \\le a_i \\le 10000 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年GESP3月认证C++一级真题</p>\n</div>                </div>",
+      "text": "2025年GESP3月认证C++一级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP一级</span><span class=\"label label-warning\">循环</span><span class=\"label label-info\">25年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP一级循环25年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n43\r\n58\r\n25\r\n67\r\n90",
+      "output": "40\r\n60\r\n30\r\n70\r\n90"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "3759",
+    "通过人数": "2390",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:06"
+}

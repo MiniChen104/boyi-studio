@@ -1,0 +1,61 @@
+{
+  "id": "1759",
+  "title": "任务调度",
+  "tags": [
+    "队列"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1759",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><div>\n一台超级计算机共有N颗CPU。现在这台超级计算机有M个任务要做，但同时还要考虑到不能让CPU过热。所幸的是这台超级计算机已经将任务安排好了，现在要做的只是请你根据安排好的指令来模拟它的工作过程。一开始，这N颗CPU都没有被分配任何的任务。之后，会给你以下几类指令（CPU的编号为1到N的整数，任务的编号为1到M的整数）\n</div>\n<p>\n指令格式     作用\n</p>\n<div>\nADD n k w    将 k 号任务（权值为 w）分配给 n 号 CPU\n</div>\n<div>\nDEC n k w    将 k 号任务的权值减少 w（已知 k 号任务被分配给了 n 号 CPU）\n</div>\n<div>\nTRANS n1 n2  将分配给 n1 号 CPU 的任务全部转移给 n2 号 CPU\n</div>\n<div>\nMIN n        输出分配给 n 号 CPU 的任务中权值最小的任务的权值\n</div>\n<div>\nWORK n w     将分配给 n 号 CPU 的任务中权值最小的任务的权值加上 w，\n</div>\n<div>\n如果权值最小的任务不唯一，则不更改权值，并输出一行“ ERROR”\n</div>\n</div>            </div>",
+      "text": "一台超级计算机共有N颗CPU。现在这台超级计算机有M个任务要做，但同时还要考虑到不能让CPU过热。所幸的是这台超级计算机已经将任务安排好了，现在要做的只是请你根据安排好的指令来模拟它的工作过程。一开始，这N颗CPU都没有被分配任何的任务。之后，会给你以下几类指令（CPU的编号为1到N的整数，任务的编号为1到M的整数）\n\n\n指令格式     作用\n\n\nADD n k w    将 k 号任务（权值为 w）分配给 n 号 CPU\n\n\nDEC n k w    将 k 号任务的权值减少 w（已知 k 号任务被分配给了 n 号 CPU）\n\n\nTRANS n1 n2  将分配给 n1 号 CPU 的任务全部转移给 n2 号 CPU\n\n\nMIN n        输出分配给 n 号 CPU 的任务中权值最小的任务的权值\n\n\nWORK n w     将分配给 n 号 CPU 的任务中权值最小的任务的权值加上 w，\n\n\n如果权值最小的任务不唯一，则不更改权值，并输出一行“ ERROR”"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><div>\n包含K+1行。\n</div>\n<div>\n第1行包含三个正整数N、M、K，分别表示CPU的数目、任务数和指令数。\n</div>\n<div>\n第2行到K+1行，每行包含一条指令。\n</div>\n<div>\n保证任务的权值在 32 位有符号整型的范围内。\n</div>\n<div>\n保证一个任务只会被分配一次（即至多被 ADD 一次）。\n</div>\n<div>\n保证 ADD 指令、DEC 指令和 WORK 指令中的 w 是非负整数。\n</div>\n<div>\n保证 TRANS 指令的两个参数不相同。\n</div>\n<div>\n \n</div>\n</div>            </div>",
+      "text": "包含K+1行。\n\n\n第1行包含三个正整数N、M、K，分别表示CPU的数目、任务数和指令数。\n\n\n第2行到K+1行，每行包含一条指令。\n\n\n保证任务的权值在 32 位有符号整型的范围内。\n\n\n保证一个任务只会被分配一次（即至多被 ADD 一次）。\n\n\n保证 ADD 指令、DEC 指令和 WORK 指令中的 w 是非负整数。\n\n\n保证 TRANS 指令的两个参数不相同。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>若干行，其中包括MIN语句的输出和“ERROR”输出，每个输出占一行</p>\n</div>            </div>",
+      "text": "若干行，其中包括MIN语句的输出和“ERROR”输出，每个输出占一行"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 3 13\r\nADD 1 2 100\r\nADD 1 1 90\r\nMIN 1\r\nWORK 1 20\r\nTRANS 1 2\r\nMIN 2\r\nADD 1 3 105\r\nTRANS 2 1\r\nMIN 1\r\nDEC 1 3 200\r\nMIN 1\r\nDEC 1 1 205\r\nWORK 1 15</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>90\r\n100\r\n100\r\n-95\r\nERROR</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 3 13\r\nADD 1 2 100\r\nADD 1 1 90\r\nMIN 1\r\nWORK 1 20\r\nTRANS 1 2\r\nMIN 2\r\nADD 1 3 105\r\nTRANS 2 1\r\nMIN 1\r\nDEC 1 3 200\r\nMIN 1\r\nDEC 1 1 205\r\nWORK 1 15\n                        \n                        \n                            输出\n                            90\r\n100\r\n100\r\n-95\r\nERROR"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><div class=\"hint content\">\n\t对于全部的数据，N≤500，M≤80000，K≤100000。<br><p>保证任务的权值在32 位有符号整型的范围内。<br>\n保证一个任务只会被分配一次（即至多被ADD 一次）。<br>\n保证ADD 指令、DEC 指令和WORK 指令中的w 是非负整数。<br>\n保证TRANS 指令的两个参数不相同。\n</p></div>\n<br></div>\n\n                    \n                </div>",
+      "text": "对于全部的数据，N≤500，M≤80000，K≤100000。保证任务的权值在32 位有符号整型的范围内。\n保证一个任务只会被分配一次（即至多被ADD 一次）。\n保证ADD 指令、DEC 指令和WORK 指令中的w 是非负整数。\n保证TRANS 指令的两个参数不相同。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>队列</p>\n</div>                </div>",
+      "text": "队列"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">队列</span></span></p>\n</div>                </div>",
+      "text": "队列"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 3 13\r\nADD 1 2 100\r\nADD 1 1 90\r\nMIN 1\r\nWORK 1 20\r\nTRANS 1 2\r\nMIN 2\r\nADD 1 3 105\r\nTRANS 2 1\r\nMIN 1\r\nDEC 1 3 200\r\nMIN 1\r\nDEC 1 1 205\r\nWORK 1 15",
+      "output": "90\r\n100\r\n100\r\n-95\r\nERROR"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "818",
+    "通过人数": "432",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:23:51"
+}

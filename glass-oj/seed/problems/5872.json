@@ -1,0 +1,61 @@
+{
+  "id": "5872",
+  "title": "道路修复（road）",
+  "tags": [
+    "CSP-S 2025"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5872",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>C 国的交通系统由 <span class=\"katex math inline\">n</span> 座城市与 <span class=\"katex math inline\">m</span> 条连接两座城市的双向道路构成，第 <span class=\"katex math inline\">i</span> (<span class=\"katex math inline\">1 \\leq i \\leq m</span>) 条道路连接城市 <span class=\"katex math inline\">u_i</span> 和 <span class=\"katex math inline\">v_i</span>。<strong>任意两座城市都能通过若干条道路相互到达。</strong></p>\n<p>然而，近期由于一场大地震，所有 <span class=\"katex math inline\">m</span> 条道路都被破坏了，修复第 <span class=\"katex math inline\">i</span> (<span class=\"katex math inline\">1 \\leq i \\leq m</span>) 条道路的费用为 <span class=\"katex math inline\">w_i</span>。与此同时，C 国还有 <span class=\"katex math inline\">k</span> 个准备进行城市化改造的乡镇。对于第 <span class=\"katex math inline\">j</span> (<span class=\"katex math inline\">1 \\leq j \\leq k</span>) 个乡镇，C 国对其进行城市化改造的费用为 <span class=\"katex math inline\">c_j</span>。在城市化改造完第 <span class=\"katex math inline\">j</span> (<span class=\"katex math inline\">1 \\leq j \\leq k</span>) 个乡镇后，可以在这个乡镇与原来的 <span class=\"katex math inline\">n</span> 座城市间建造若干条道路，其中在它与第 <span class=\"katex math inline\">i</span> (<span class=\"katex math inline\">1 \\leq i \\leq n</span>) 座城市间建造一条道路的费用为 <span class=\"katex math inline\">a_{j,i}</span>。C 国可以在这 <span class=\"katex math inline\">k</span> 个乡镇中选择<strong>任意多个</strong>进行城市化改造，也可以不选择任何乡镇进行城市化改造。</p>\n<p>为尽快恢复城市间的交通，C 国政<span class=\"katex math inline\"> </span>府希望以最低的费用将<strong>原有</strong>的 <span class=\"katex math inline\">n</span> 座城市两两连通，也即任意两座原有的城市都能通过若干条修复或新建造的道路相互到达。你需要帮助他们求出，将原有的 <span class=\"katex math inline\">n</span> 座城市两两连通的最小费用。</p>\n</div>            </div>",
+      "text": "C 国的交通系统由 n 座城市与 m 条连接两座城市的双向道路构成，第 i (1 \\leq i \\leq m) 条道路连接城市 u_i 和 v_i。任意两座城市都能通过若干条道路相互到达。\n然而，近期由于一场大地震，所有 m 条道路都被破坏了，修复第 i (1 \\leq i \\leq m) 条道路的费用为 w_i。与此同时，C 国还有 k 个准备进行城市化改造的乡镇。对于第 j (1 \\leq j \\leq k) 个乡镇，C 国对其进行城市化改造的费用为 c_j。在城市化改造完第 j (1 \\leq j \\leq k) 个乡镇后，可以在这个乡镇与原来的 n 座城市间建造若干条道路，其中在它与第 i (1 \\leq i \\leq n) 座城市间建造一条道路的费用为 a_{j,i}。C 国可以在这 k 个乡镇中选择任意多个进行城市化改造，也可以不选择任何乡镇进行城市化改造。\n为尽快恢复城市间的交通，C 国政 府希望以最低的费用将原有的 n 座城市两两连通，也即任意两座原有的城市都能通过若干条修复或新建造的道路相互到达。你需要帮助他们求出，将原有的 n 座城市两两连通的最小费用。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含三个非负整数 <span class=\"katex math inline\">n, m, k</span>，分别表示原有的城市数量、道路数量和准备进行城市化改造的乡镇数量。</p>\n<p>输入的第 <span class=\"katex math inline\">i+1</span> (<span class=\"katex math inline\">1 \\leq i \\leq m</span>) 行包含三个非负整数 <span class=\"katex math inline\">u_i, v_i, w_i</span>，表示第 <span class=\"katex math inline\">i</span> 条道路连接的两座城市与修复该道路的费用。</p>\n<p>输入的第 <span class=\"katex math inline\">j+m+1</span> (<span class=\"katex math inline\">1 \\leq j \\leq k</span>) 行包含 <span class=\"katex math inline\">n+1</span> 个非负整数 <span class=\"katex math inline\">c_j, a_{j,1}, a_{j,2}, \\ldots, a_{j,n}</span>，分别表示将第 <span class=\"katex math inline\">j</span> 个乡镇进行城市化改造的费用与在该乡镇与原有的城市间建造道路的费用。</p>\n</div>            </div>",
+      "text": "输入的第一行包含三个非负整数 n, m, k，分别表示原有的城市数量、道路数量和准备进行城市化改造的乡镇数量。\n输入的第 i+1 (1 \\leq i \\leq m) 行包含三个非负整数 u_i, v_i, w_i，表示第 i 条道路连接的两座城市与修复该道路的费用。\n输入的第 j+m+1 (1 \\leq j \\leq k) 行包含 n+1 个非负整数 c_j, a_{j,1}, a_{j,2}, \\ldots, a_{j,n}，分别表示将第 j 个乡镇进行城市化改造的费用与在该乡镇与原有的城市间建造道路的费用。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个非负整数，表示将原有的 <span class=\"katex math inline\">n</span> 座城市两两连通的最小费用。</p>\n</div>            </div>",
+      "text": "输出一行一个非负整数，表示将原有的 n 座城市两两连通的最小费用。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 4 2\r\n1 4 6\r\n2 3 7\r\n4 2 5\r\n4 3 4\r\n1 1 8 2 4\r\n100 1 3 2 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>13</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 4 2\r\n1 4 6\r\n2 3 7\r\n4 2 5\r\n4 3 4\r\n1 1 8 2 4\r\n100 1 3 2 4\n                        \n                        \n                            输出\n                            13"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 解释】</h4>\n<p>C 国政<span class=\"katex math inline\"> </span>府可以选择修复第 <span class=\"katex math inline\">3</span> 条和第 <span class=\"katex math inline\">4</span> 条道路，然后将第 <span class=\"katex math inline\">1</span> 个乡镇进行城市化改造，并建造它与第 <span class=\"katex math inline\">1,3</span> 座城市间的道路，总费用为 <span class=\"katex math inline\">5 + 4 + 1 + 1 + 2 = 13</span>。可以证明，不存在比 <span class=\"katex math inline\">13</span> 更小的费用能使原有的 <span class=\"katex math inline\">4</span> 座城市两两连通。</p>\n<h4>【样例 2】</h4>\n<p>见选手目录下的 road/road2.in 与 road/road2.ans。</p>\n<p>该样例满足测试点 <span class=\"katex math inline\">11,12</span> 的约束条件。</p>\n<h4>【样例 3】</h4>\n<p>见选手目录下的 road/road3.in 与 road/road3.ans。</p>\n<p>该样例满足测试点 <span class=\"katex math inline\">13,14</span> 的约束条件。</p>\n<h4>【样例 4】</h4>\n<p>见选手目录下的 road/road4.in 与 road/road4.ans。</p>\n<p>该样例满足测试点 <span class=\"katex math inline\">15,16</span> 的约束条件。</p>\n<h4>【数据范围】</h4>\n<p>对于所有测试数据，保证：</p>\n<ul><li><span class=\"katex math inline\">1 \\leq n \\leq 10^4</span>，<span class=\"katex math inline\">1 \\leq m \\leq 10^6</span>，<span class=\"katex math inline\">0 \\leq k \\leq 10</span>;</li>\n<li>对于所有 <span class=\"katex math inline\">1 \\leq i \\leq m</span>，均有 <span class=\"katex math inline\">1 \\leq u_i, v_i \\leq n</span>, <span class=\"katex math inline\">u_i \\neq v_i</span> 且 <span class=\"katex math inline\">0 \\leq w_i \\leq 10^9</span>;</li>\n<li>对于所有 <span class=\"katex math inline\">1 \\leq j \\leq k</span>，均有 <span class=\"katex math inline\">0 \\leq c_j \\leq 10^9</span>;</li>\n<li>对于所有 <span class=\"katex math inline\">1 \\leq j \\leq k</span>，<span class=\"katex math inline\">1 \\leq i \\leq n</span>, 均有 <span class=\"katex math inline\">0 \\leq a_{j,i} \\leq 10^9</span>;</li>\n<li>任意两座原有的城市都能通过若干条原有的道路相互到达。</li>\n</ul><table><tr><th> 测试点编号 </th>\n\t\t<th> <span class=\"katex math inline\">n \\leq</span> </th>\n\t\t<th> <span class=\"katex math inline\">m \\leq</span> </th>\n\t\t<th> <span class=\"katex math inline\">k \\leq</span> </th>\n\t\t<th> 特殊性质 </th>\n\t</tr><tr><td> <span class=\"katex math inline\">1 \\sim 4</span> </td>\n\t\t<td> <span class=\"katex math inline\">10^4</span> </td>\n\t\t<td> <span class=\"katex math inline\">10^6</span> </td>\n\t\t<td> <span class=\"katex math inline\">0</span> </td>\n\t\t<td> 无 </td>\n\t</tr><tr><td> <span class=\"katex math inline\">5, 6</span> </td>\n\t\t<td> <span class=\"katex math inline\">10^3</span> </td>\n\t\t<td> <span class=\"katex math inline\">10^5</span> </td>\n\t\t<td> <span class=\"katex math inline\">5</span> </td>\n\t\t<td> A </td>\n\t</tr><tr><td> <span class=\"katex math inline\">7, 8</span> </td>\n\t\t<td> 无 </td>\n\t</tr><tr><td> <span class=\"katex math inline\">9, 10</span> </td>\n\t\t<td> <span class=\"katex math inline\">10^6</span> </td>\n\t\t<td> A </td>\n\t</tr><tr><td> <span class=\"katex math inline\">11, 12</span> </td>\n\t\t<td> 无 </td>\n\t</tr><tr><td> <span class=\"katex math inline\">13, 14</span> </td>\n\t\t<td> <span class=\"katex math inline\">10</span> </td>\n\t\t<td> A </td>\n\t</tr><tr><td> <span class=\"katex math inline\">15, 16</span> </td>\n\t\t<td> 无 </td>\n\t</tr><tr><td> <span class=\"katex math inline\">17, 18</span> </td>\n\t\t<td> <span class=\"katex math inline\">10^4</span> </td>\n\t\t<td> <span class=\"katex math inline\">5</span></td>\n\t\t<td>A</td>\n\t</tr><tr><td> <span class=\"katex math inline\">19, 20</span> </td>\n\t\t<td> 无 </td>\n\t</tr><tr><td> <span class=\"katex math inline\">21 \\sim 25</span> </td>\n\t\t<td> <span class=\"katex math inline\">10</span> </td>\n\t</tr></table><p>特殊性质 <span class=\"katex math inline\">A</span>：对于所有 <span class=\"katex math inline\">1 \\leq j \\leq k</span>，均有 <span class=\"katex math inline\">c_j = 0</span> 且均存在 <span class=\"katex math inline\">1 \\leq i \\leq n</span> 满足 <span class=\"katex math inline\">a_{j,i} = 0</span>。</p>\n<h4>请注意</h4>\n<p>由于评测机性能差异，本题时限提升 1 秒。</p>\n</div>\n\n                                            <p>\n                            <h4><b>附件下载</b></h4>\n                        </p>\n                        <p>\n                            \n                                road.zip                            \n                            (17.35 MB)\n                        </p>\n                    \n                </div>",
+      "text": "【样例 1 解释】\nC 国政 府可以选择修复第 3 条和第 4 条道路，然后将第 1 个乡镇进行城市化改造，并建造它与第 1,3 座城市间的道路，总费用为 5 + 4 + 1 + 1 + 2 = 13。可以证明，不存在比 13 更小的费用能使原有的 4 座城市两两连通。\n【样例 2】\n见选手目录下的 road/road2.in 与 road/road2.ans。\n该样例满足测试点 11,12 的约束条件。\n【样例 3】\n见选手目录下的 road/road3.in 与 road/road3.ans。\n该样例满足测试点 13,14 的约束条件。\n【样例 4】\n见选手目录下的 road/road4.in 与 road/road4.ans。\n该样例满足测试点 15,16 的约束条件。\n【数据范围】\n对于所有测试数据，保证：\n1 \\leq n \\leq 10^4，1 \\leq m \\leq 10^6，0 \\leq k \\leq 10;\n对于所有 1 \\leq i \\leq m，均有 1 \\leq u_i, v_i \\leq n, u_i \\neq v_i 且 0 \\leq w_i \\leq 10^9;\n对于所有 1 \\leq j \\leq k，均有 0 \\leq c_j \\leq 10^9;\n对于所有 1 \\leq j \\leq k，1 \\leq i \\leq n, 均有 0 \\leq a_{j,i} \\leq 10^9;\n任意两座原有的城市都能通过若干条原有的道路相互到达。\n 测试点编号 \n\t\t n \\leq \n\t\t m \\leq \n\t\t k \\leq \n\t\t 特殊性质 \n\t 1 \\sim 4 \n\t\t 10^4 \n\t\t 10^6 \n\t\t 0 \n\t\t 无 \n\t 5, 6 \n\t\t 10^3 \n\t\t 10^5 \n\t\t 5 \n\t\t A \n\t 7, 8 \n\t\t 无 \n\t 9, 10 \n\t\t 10^6 \n\t\t A \n\t 11, 12 \n\t\t 无 \n\t 13, 14 \n\t\t 10 \n\t\t A \n\t 15, 16 \n\t\t 无 \n\t 17, 18 \n\t\t 10^4 \n\t\t 5\n\t\tA\n\t 19, 20 \n\t\t 无 \n\t 21 \\sim 25 \n\t\t 10 \n\t特殊性质 A：对于所有 1 \\leq j \\leq k，均有 c_j = 0 且均存在 1 \\leq i \\leq n 满足 a_{j,i} = 0。\n请注意\n由于评测机性能差异，本题时限提升 1 秒。\n\n\n                                            \n                            附件下载\n                        \n                        \n                            \n                                road.zip                            \n                            (17.35 MB)"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>CSP-J/S 2025 第二轮认证</p>\n</div>                </div>",
+      "text": "CSP-J/S 2025 第二轮认证"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">CSP-S 2025</span></span></p>\n</div>                </div>",
+      "text": "CSP-S 2025"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 4 2\r\n1 4 6\r\n2 3 7\r\n4 2 5\r\n4 3 4\r\n1 1 8 2 4\r\n100 1 3 2 4",
+      "output": "13"
+    }
+  ],
+  "parameters": {
+    "时间限制": "2 秒",
+    "内存限制": "512 MB",
+    "提交次数": "220",
+    "通过人数": "66",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:51"
+}

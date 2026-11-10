@@ -1,0 +1,55 @@
+{
+  "id": "2446",
+  "title": "火灾救援",
+  "tags": [
+    "广搜"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2446",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一片树林中，发生了几处火灾，A小队接到了一个紧急任务，要从 <span class=\"katex math inline\">S</span> 点出发到 <span class=\"katex math inline\">T</span> 点，去保护 <span class=\"katex math inline\">T</span> 点的重要物资。  </p>\n<p>树林可以简化为 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列的地图，该地图中字符 <code>.</code> 表示初始状态下该点没有着火，字符 <code>F</code> 表示初始状态下该点着火了，字符 <code>S</code> 表示出发点，字符 <code>T</code> 表示终点；当然起点和终点在初始状态下不会着火。  </p>\n<p>A小队每秒钟可以向上下左右四方向移动 <span class=\"katex math inline\">1</span> 步，着火的点每秒会蔓延到相邻的 <span class=\"katex math inline\">8</span> 个方向的位置，在任何时刻，A小队都无法移动到已经着火的位置上。  </p>\n<p>请问：A小队从 <span class=\"katex math inline\">S</span> 点出发，最短需要多久能到达 <span class=\"katex math inline\">T</span> 点，如果无论如何都无法到达 <span class=\"katex math inline\">T</span> 点，请输出 <span class=\"katex math inline\">-1</span> 。</p>\n</div>            </div>",
+      "text": "在一片树林中，发生了几处火灾，A小队接到了一个紧急任务，要从 S 点出发到 T 点，去保护 T 点的重要物资。  \n树林可以简化为 n 行 m 列的地图，该地图中字符 . 表示初始状态下该点没有着火，字符 F 表示初始状态下该点着火了，字符 S 表示出发点，字符 T 表示终点；当然起点和终点在初始状态下不会着火。  \nA小队每秒钟可以向上下左右四方向移动 1 步，着火的点每秒会蔓延到相邻的 8 个方向的位置，在任何时刻，A小队都无法移动到已经着火的位置上。  \n请问：A小队从 S 点出发，最短需要多久能到达 T 点，如果无论如何都无法到达 T 点，请输出 -1 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个整数 <span class=\"katex math inline\">n,m</span>（<span class=\"katex math inline\">0 \\lt n, m \\le 100</span>）。  </p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行给出一个字符矩阵，矩阵中字符的含义如题所述。</p>\n</div>            </div>",
+      "text": "第一行包含两个整数 n,m（0 \\lt n, m \\le 100）。  \n接下来 n 行给出一个字符矩阵，矩阵中字符的含义如题所述。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请输出从出发点到终点的最短时间是多少秒，如果无法到达终点，请输出 <span class=\"katex math inline\">-1</span> 。</p>\n</div>            </div>",
+      "text": "请输出从出发点到终点的最短时间是多少秒，如果无法到达终点，请输出 -1 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8 10\r\n..........\r\n.F........\r\n..........\r\n..........\r\n..........\r\n....S.....\r\n.........T\r\n..........</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>6</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>6 10\r\n..........\r\n..........\r\n.S........\r\n..........\r\n.........T\r\n...FF.....</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>-1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8 10\r\n..........\r\n.F........\r\n..........\r\n..........\r\n..........\r\n....S.....\r\n.........T\r\n..........\n                        \n                        \n                            输出\n                            6\n                        \n\n                                                    \n                                输入\n                                6 10\r\n..........\r\n..........\r\n.S........\r\n..........\r\n.........T\r\n...FF.....\n                            \n                            \n                                输出\n                                -1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">广搜</span></span></p>\n</div>                </div>",
+      "text": "广搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8 10\r\n..........\r\n.F........\r\n..........\r\n..........\r\n..........\r\n....S.....\r\n.........T\r\n..........",
+      "output": "6"
+    },
+    {
+      "input": "6 10\r\n..........\r\n..........\r\n.S........\r\n..........\r\n.........T\r\n...FF.....",
+      "output": "-1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "331",
+    "通过人数": "128",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:26"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "1891",
+  "title": "开心的金明",
+  "tags": [
+    "noip复赛",
+    "背包",
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1891",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>金明今天很开心，家里购置的新房就要领钥匙了，新房里有一间他自己专用的很宽敞的房间。更让他高兴的是，妈妈昨天对他说：“你的房间需要购买哪些物品，怎么布置，你说了算，只要不超过 <span class=\"katex math inline\">N</span> 元钱就行”。今天一早金明就开始做预算，但是他想买的东西太多了，肯定会超过妈妈限定的 <span class=\"katex math inline\">N</span> 元。于是，他把每件物品规定了一个重要度，分为 <span class=\"katex math inline\">5</span> 等：用整数 <span class=\"katex math inline\">1\\sim5</span> 表示，第 <span class=\"katex math inline\">5</span> 等最重要。他还从因特网上查到了每件物品的价格（都是整数元）。</p>\n<p>他希望在不超过 <span class=\"katex math inline\">N</span> 元（可以等于<span class=\"katex math inline\">N</span>元）的前提下，使每件物品的价格与重要度的乘积的总和最大。</p>\n<p>设第<span class=\"katex math inline\">j</span>件物品的价格为 <span class=\"katex math inline\">v[j]</span>，重要度为 <span class=\"katex math inline\">w[j]</span>，共选中了 <span class=\"katex math inline\">k</span> 件物品，编号依次为 <span class=\"katex math inline\">j_1,j_2,…,j_k</span>，则所求的总和为：</p>\n<p><span class=\"katex math inline\">v[j_1] \\times w[j_1]+v[j_2] \\times w[j_2]+ …+v[j_k] \\times w[j_k]</span>。</p>\n<p>请你帮助金明设计一个满足要求的购物单。</p>\n</div>            </div>",
+      "text": "金明今天很开心，家里购置的新房就要领钥匙了，新房里有一间他自己专用的很宽敞的房间。更让他高兴的是，妈妈昨天对他说：“你的房间需要购买哪些物品，怎么布置，你说了算，只要不超过 N 元钱就行”。今天一早金明就开始做预算，但是他想买的东西太多了，肯定会超过妈妈限定的 N 元。于是，他把每件物品规定了一个重要度，分为 5 等：用整数 1\\sim5 表示，第 5 等最重要。他还从因特网上查到了每件物品的价格（都是整数元）。\n他希望在不超过 N 元（可以等于N元）的前提下，使每件物品的价格与重要度的乘积的总和最大。\n设第j件物品的价格为 v[j]，重要度为 w[j]，共选中了 k 件物品，编号依次为 j_1,j_2,…,j_k，则所求的总和为：\nv[j_1] \\times w[j_1]+v[j_2] \\times w[j_2]+ …+v[j_k] \\times w[j_k]。\n请你帮助金明设计一个满足要求的购物单。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，为 <span class=\"katex math inline\">2</span> 个正整数，用一个空格隔开：<span class=\"katex math inline\">n,m</span>（其中 <span class=\"katex math inline\">n( &lt; 30000)</span> 表示总钱数，<span class=\"katex math inline\">m( &lt; 25)</span> 为希望购买物品的个数。）</p>\n<p>从第 <span class=\"katex math inline\">2</span> 行到第 <span class=\"katex math inline\">m+1</span> 行，第 <span class=\"katex math inline\">j</span> 行给出了编号为 <span class=\"katex math inline\">j-1</span> 的物品的基本数据，每行有 <span class=\"katex math inline\">2</span> 个非负整数 <span class=\"katex math inline\">v</span> <span class=\"katex math inline\">p</span>（其中 <span class=\"katex math inline\">v</span> 表示该物品的价格 <span class=\"katex math inline\">(v \\le 10000)</span>，<span class=\"katex math inline\">p</span> 表示该物品的重要度(<span class=\"katex math inline\">1-5</span>)。</p>\n</div>            </div>",
+      "text": "第一行，为 2 个正整数，用一个空格隔开：n,m（其中 n( < 30000) 表示总钱数，m( < 25) 为希望购买物品的个数。）\n从第 2 行到第 m+1 行，第 j 行给出了编号为 j-1 的物品的基本数据，每行有 2 个非负整数 v p（其中 v 表示该物品的价格 (v \\le 10000)，p 表示该物品的重要度(1-5)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">1</span> 个正整数，为不超过总钱数的物品的价格与重要度乘积的总和的最大值 <span class=\"katex math inline\">( &lt; 100000000)</span>。</p>\n</div>            </div>",
+      "text": "1 个正整数，为不超过总钱数的物品的价格与重要度乘积的总和的最大值 ( < 100000000)。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1000 5 \r\n800 2 \r\n400 5 \r\n300 5 \r\n400 3 \r\n200 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3900</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1000 5 \r\n800 2 \r\n400 5 \r\n300 5 \r\n400 3 \r\n200 2\n                        \n                        \n                            输出\n                            3900"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】</p>\n<p>NOIP 2006 普及组 第二题</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】\nNOIP 2006 普及组 第二题"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛 背包问题 </p>\n</div>                </div>",
+      "text": "noip复赛 背包问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span><span class=\"label label-warning\">背包</span><span class=\"label label-info\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "noip复赛背包动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1000 5 \r\n800 2 \r\n400 5 \r\n300 5 \r\n400 3 \r\n200 2",
+      "output": "3900"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1540",
+    "通过人数": "1131",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:34"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1009",
+  "title": "数组逆序",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1009",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给你 <span class=\"katex math inline\">n</span> 个整数，将其逆序输出。</p>\n</div>            </div>",
+      "text": "给你 n 个整数，将其逆序输出。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">n</span> （<span class=\"katex math inline\">3 \\le n \\le 100 </span>)代表数的个数。</p>\n<p>第二行 <span class=\"katex math inline\">n</span> 个整数（空格隔开）（这些数在 <span class=\"katex math inline\">0 \\sim 10^6</span> 之间)。</p>\n</div>            </div>",
+      "text": "第一行一个整数 n （3 \\le n \\le 100 )代表数的个数。\n第二行 n 个整数（空格隔开）（这些数在 0 \\sim 10^6 之间)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 个整数（空格隔开）。</p>\n</div>            </div>",
+      "text": "n 个整数（空格隔开）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1 7 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5 7 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1 7 5\n                        \n                        \n                            输出\n                            5 7 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1 7 5",
+      "output": "5 7 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "39790",
+    "通过人数": "27709",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:13:24"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "2317",
+  "title": "角谷猜想之猜想（jiaogu）",
+  "tags": [
+    "区赛",
+    "递推",
+    "深搜",
+    "set"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2317",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>日本一位中学生发现一个奇妙的定理，请角谷教授证明，而教授无能为力，于是产生了角谷猜想。猜想的内容：任给一个自然数，若为偶数则除以 <span class=\"katex math inline\">2</span> ，若为奇数则乘 <span class=\"katex math inline\">3</span> 加 <span class=\"katex math inline\">1</span> ，得到一个新的自然数后按上面的法则继续演算。若干次后得到的结果必为 <span class=\"katex math inline\">1</span> 。  </p>\n<p>如：<span class=\"katex math inline\">22</span>，  </p>\n<pre><code>22/2=11\n11*3+1=34\n34/2=17\n17*3+1=52\n52/2=26\n26/2=13 \n13*3+1=40\n40/2=20\n20/2=10\n10/2=5\n5*3+1=16\n16/2=8\n8/2=4\n4/2=2\n2/2=1\n</code></pre>\n<p>经过 <span class=\"katex math inline\">15</span> 次运算得到自然数 <span class=\"katex math inline\">1</span>。  </p>\n<p>现在的问题是：按这样的方法经过 <span class=\"katex math inline\">k</span>（<span class=\"katex math inline\">0≤k≤31</span>）次运算，计算到 <span class=\"katex math inline\">1</span> 的数有哪些？</p>\n<p>按从小到大的顺序输出。</p>\n</div>            </div>",
+      "text": "日本一位中学生发现一个奇妙的定理，请角谷教授证明，而教授无能为力，于是产生了角谷猜想。猜想的内容：任给一个自然数，若为偶数则除以 2 ，若为奇数则乘 3 加 1 ，得到一个新的自然数后按上面的法则继续演算。若干次后得到的结果必为 1 。  \n如：22，  \n22/2=11\n11*3+1=34\n34/2=17\n17*3+1=52\n52/2=26\n26/2=13 \n13*3+1=40\n40/2=20\n20/2=10\n10/2=5\n5*3+1=16\n16/2=8\n8/2=4\n4/2=2\n2/2=1\n\n经过 15 次运算得到自然数 1。  \n现在的问题是：按这样的方法经过 k（0≤k≤31）次运算，计算到 1 的数有哪些？\n按从小到大的顺序输出。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个单独的整数 <span class=\"katex math inline\">k</span>。</p>\n</div>            </div>",
+      "text": "一个单独的整数 k。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，用一个空格隔开的若干个整数，是所有能经过 <span class=\"katex math inline\">k</span> 次计算，计算到 <span class=\"katex math inline\">1</span> 的数。</p>\n<p>要求从小到大输出。</p>\n</div>            </div>",
+      "text": "一行，用一个空格隔开的若干个整数，是所有能经过 k 次计算，计算到 1 的数。\n要求从小到大输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>12</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>17 96 104 106 113 640 672 680 682 4096</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            8\n                        \n\n                                                    \n                                输入\n                                12\n                            \n                            \n                                输出\n                                17 96 104 106 113 640 672 680 682 4096"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据范围】  </p>\n<p><span class=\"katex math inline\">50\\%</span> 的数据，<span class=\"katex math inline\">k≤13</span>。  </p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">0≤k≤31</span>。  </p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】  \n50\\% 的数据，k≤13。  \n100\\% 的数据，0≤k≤31。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2019 年武进区第 12 届程序设计比赛试题-小学组 T4</p>\n</div>                </div>",
+      "text": "2019 年武进区第 12 届程序设计比赛试题-小学组 T4"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">区赛</span><span class=\"label label-warning\">递推</span><span class=\"label label-info\">深搜</span><span class=\"label label-danger\">set</span></span></p>\n</div>                </div>",
+      "text": "区赛递推深搜set"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "8"
+    },
+    {
+      "input": "12",
+      "output": "17 96 104 106 113 640 672 680 682 4096"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1348",
+    "通过人数": "331",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:08"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "4613",
+  "title": "第二大的数",
+  "tags": [
+    "蓝桥杯STEMA",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4613",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定三个不同的整数，请找出其中第二大的数。</p>\n<p>例如：三个整数分别为 <span class=\"katex math inline\">30</span>、<span class=\"katex math inline\">20</span>、<span class=\"katex math inline\">25</span>，其中第二大的数是 <span class=\"katex math inline\">25</span>。</p>\n</div>            </div>",
+      "text": "给定三个不同的整数，请找出其中第二大的数。\n例如：三个整数分别为 30、20、25，其中第二大的数是 25。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行输入三个不同的整数 <span class=\"katex math inline\">a</span>，<span class=\"katex math inline\">b</span>，<span class=\"katex math inline\">c</span>（<span class=\"katex math inline\">1 \\le a，b，c \\le 1000</span>），整数之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "一行输入三个不同的整数 a，b，c（1 \\le a，b，c \\le 1000），整数之间以一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示三个整数中第二大的数。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示三个整数中第二大的数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>30 20 25</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>25</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            30 20 25\n                        \n                        \n                            输出\n                            25"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（24年1月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（24年1月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">分支</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "30 20 25",
+      "output": "25"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "321",
+    "通过人数": "211",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:31"
+}

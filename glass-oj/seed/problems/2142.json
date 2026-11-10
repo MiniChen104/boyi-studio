@@ -1,0 +1,56 @@
+{
+  "id": "2142",
+  "title": "福布斯富豪排行榜",
+  "tags": [
+    "结构体"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2142",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>1917年创立的福布斯杂志，在编制各种排行榜方面有97年历史，1982年首次推出富豪榜在全球产生空前影响，现在，一年一度的福布斯全球亿万富翁榜在全世界受到密切关注。</p>\n<p>福布斯每年编制一百多个有关人物、公司和生活时尚排行榜，在全球范围内，福布斯富豪榜的江湖地位毋庸置疑。他云集了世界各地的富豪们。</p>\n</div>            </div>",
+      "text": "1917年创立的福布斯杂志，在编制各种排行榜方面有97年历史，1982年首次推出富豪榜在全球产生空前影响，现在，一年一度的福布斯全球亿万富翁榜在全世界受到密切关注。\n福布斯每年编制一百多个有关人物、公司和生活时尚排行榜，在全球范围内，福布斯富豪榜的江湖地位毋庸置疑。他云集了世界各地的富豪们。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘输入两个整数 <span class=\"katex math inline\">n (1 \\le n \\le 100)</span> 和 <span class=\"katex math inline\">k</span> ( <span class=\"katex math inline\">1 \\le k \\le n </span>)，表示有 <span class=\"katex math inline\">n</span> 位候选人，要从中选出排名前 <span class=\"katex math inline\">k</span> 位的富豪，然后是 <span class=\"katex math inline\">n</span> 位候选人的名字和财产（亿元）。 （名字是由不超过 <span class=\"katex math inline\">20</span>个不含空格的字母组成的字符串 ，任意两个人的财产都不一样）。</p>\n</div>            </div>",
+      "text": "从键盘输入两个整数 n (1 \\le n \\le 100) 和 k ( 1 \\le k \\le n )，表示有 n 位候选人，要从中选出排名前 k 位的富豪，然后是 n 位候选人的名字和财产（亿元）。 （名字是由不超过 20个不含空格的字母组成的字符串 ，任意两个人的财产都不一样）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>要求输出排名前 <span class=\"katex math inline\">k</span> 的富豪的名字和财产，按财产从大到小排序（每位富豪的数据占一行，其中姓名和财产之间用一个空格分隔），财产保留 <span class=\"katex math inline\">2</span> 位小数。</p>\n</div>            </div>",
+      "text": "要求输出排名前 k 的富豪的名字和财产，按财产从大到小排序（每位富豪的数据占一行，其中姓名和财产之间用一个空格分隔），财产保留 2 位小数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>20 4\r\nMnzzjs 321.12\r\nJjykaj 19.08\r\nZmrvug 83.88\r\nGspogqoj 35.27\r\nWhqaqvn 152.91\r\nPwozu 164.91\r\nGpcvcb 273.73\r\nTuaqepu 90.69\r\nOhkpg 86.56\r\nYjpja 298.38\r\nWonuxbt 178.96\r\nHgkluswj 37.70\r\nZfasnxk 46.27\r\nLfisss 182.60\r\nYhuicnep 292.79\r\nZdawm 176.73\r\nYfeaf 13.18\r\nMotrl 20.33\r\nSptqoakb 99.45\r\nPsodta 201.26</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Mnzzjs 321.12\r\nYjpja 298.38\r\nYhuicnep 292.79\r\nGpcvcb 273.73</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            20 4\r\nMnzzjs 321.12\r\nJjykaj 19.08\r\nZmrvug 83.88\r\nGspogqoj 35.27\r\nWhqaqvn 152.91\r\nPwozu 164.91\r\nGpcvcb 273.73\r\nTuaqepu 90.69\r\nOhkpg 86.56\r\nYjpja 298.38\r\nWonuxbt 178.96\r\nHgkluswj 37.70\r\nZfasnxk 46.27\r\nLfisss 182.60\r\nYhuicnep 292.79\r\nZdawm 176.73\r\nYfeaf 13.18\r\nMotrl 20.33\r\nSptqoakb 99.45\r\nPsodta 201.26\n                        \n                        \n                            输出\n                            Mnzzjs 321.12\r\nYjpja 298.38\r\nYhuicnep 292.79\r\nGpcvcb 273.73"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>结构体</p>\n</div>                </div>",
+      "text": "结构体"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">结构体</span></span></p>\n</div>                </div>",
+      "text": "结构体"
+    }
+  ],
+  "samples": [
+    {
+      "input": "20 4\r\nMnzzjs 321.12\r\nJjykaj 19.08\r\nZmrvug 83.88\r\nGspogqoj 35.27\r\nWhqaqvn 152.91\r\nPwozu 164.91\r\nGpcvcb 273.73\r\nTuaqepu 90.69\r\nOhkpg 86.56\r\nYjpja 298.38\r\nWonuxbt 178.96\r\nHgkluswj 37.70\r\nZfasnxk 46.27\r\nLfisss 182.60\r\nYhuicnep 292.79\r\nZdawm 176.73\r\nYfeaf 13.18\r\nMotrl 20.33\r\nSptqoakb 99.45\r\nPsodta 201.26",
+      "output": "Mnzzjs 321.12\r\nYjpja 298.38\r\nYhuicnep 292.79\r\nGpcvcb 273.73"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2591",
+    "通过人数": "1377",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:59"
+}

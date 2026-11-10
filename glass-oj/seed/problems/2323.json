@@ -1,0 +1,61 @@
+{
+  "id": "2323",
+  "title": "TT 玩跷跷板（seesaw）",
+  "tags": [
+    "区赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2323",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一段时间的学习后，TT 感觉太累了，准备休息一下，他约了两个朋友一起到户外玩跷跷板（别告诉我翘翘板只能两个人玩哦）。<br>\n为了达到尽可能的平衡，你要合理地安排他们，使翘翘板两边的重量差最小。</p>\n</div>            </div>",
+      "text": "一段时间的学习后，TT 感觉太累了，准备休息一下，他约了两个朋友一起到户外玩跷跷板（别告诉我翘翘板只能两个人玩哦）。\n为了达到尽可能的平衡，你要合理地安排他们，使翘翘板两边的重量差最小。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个整数，表示三个人的体重 <span class=\"katex math inline\">w1,w2,w3</span> 。</p>\n</div>            </div>",
+      "text": "三个整数，表示三个人的体重 w1,w2,w3 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个非负整数，表示最小的重量差。</p>\n</div>            </div>",
+      "text": "一个非负整数，表示最小的重量差。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>50 50 50</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>50</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            50 50 50\n                        \n                        \n                            输出\n                            50"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><span class=\"katex math inline\">100 \\%</span> 的数据，<span class=\"katex math inline\">1 \\le w1,w2,w3 \\le 100</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "100 \\% 的数据，1 \\le w1,w2,w3 \\le 100 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2018 年武进区第 11 届程序设计比赛试题-小学组 T2</p>\n</div>                </div>",
+      "text": "2018 年武进区第 11 届程序设计比赛试题-小学组 T2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">区赛</span></span></p>\n</div>                </div>",
+      "text": "区赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "50 50 50",
+      "output": "50"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "453",
+    "通过人数": "238",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:11"
+}

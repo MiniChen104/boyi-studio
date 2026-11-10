@@ -1,0 +1,56 @@
+{
+  "id": "1374",
+  "title": "摘花生问题（2）",
+  "tags": [
+    "递推"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1374",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Hello Kitty又一次来到花生地里摘花生，从左上角进入花生地，从右下角出去，只能向右或者向下，请问Hello Kitty应该沿着什么样的路线走，能够摘到的花生数量最多（假设花生地里没有任何 <span class=\"katex math inline\">2</span> 株的花生一样多，也不存在多条路线能够摘到一样多的花生的情况）？</p>\n<p>比如输入：</p>\n<pre><code>2 2\n1 2\n3 4\n</code></pre>\n<p>应该输出：<span class=\"katex math inline\">1-3-4</span>，也就是按照 <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">4</span> 这三株数量的花生摘过去，能够摘到最多的花生！</p>\n</div>            </div>",
+      "text": "Hello Kitty又一次来到花生地里摘花生，从左上角进入花生地，从右下角出去，只能向右或者向下，请问Hello Kitty应该沿着什么样的路线走，能够摘到的花生数量最多（假设花生地里没有任何 2 株的花生一样多，也不存在多条路线能够摘到一样多的花生的情况）？\n比如输入：\n2 2\n1 2\n3 4\n\n应该输出：1-3-4，也就是按照 1 3 4 这三株数量的花生摘过去，能够摘到最多的花生！"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行是 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span> （<span class=\"katex math inline\">2 \\le m,n \\le 100</span>），代表花生地有 <span class=\"katex math inline\">m</span> 行，<span class=\"katex math inline\">n</span> 列花生！</p>\n<p>后面 <span class=\"katex math inline\">m</span> 行，每行有 <span class=\"katex math inline\">n</span> 个整数代表了每行中，每株花生的数量。</p>\n</div>            </div>",
+      "text": "第一行是 2 个整数 m 和 n （2 \\le m,n \\le 100），代表花生地有 m 行，n 列花生！\n后面 m 行，每行有 n 个整数代表了每行中，每株花生的数量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出Hello Kitty按照走过的路线中，摘到每株花生的数量。</p>\n</div>            </div>",
+      "text": "输出Hello Kitty按照走过的路线中，摘到每株花生的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 2\r\n1 2 \r\n3 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1-3-4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 2\r\n1 2 \r\n3 4\n                        \n                        \n                            输出\n                            1-3-4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递推</p>\n</div>                </div>",
+      "text": "递推"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递推</span></span></p>\n</div>                </div>",
+      "text": "递推"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 2\r\n1 2 \r\n3 4",
+      "output": "1-3-4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "7574",
+    "通过人数": "3263",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:18:32"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "2536",
+  "title": "找c字符",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2536",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">T</span> 同学在玩一个找字符的游戏，他需要在一个超级长的字符串中，找出连续出现了至少 <span class=\"katex math inline\">c</span> 次以上的字符，如果有多个满足条件的字符，他只要输出找到的第 <span class=\"katex math inline\">1</span> 个满足要求的字符就可以啦，他的眼镜都要看花了也还没找到。  </p>\n<p>作为小 <span class=\"katex math inline\">T</span> 好朋友的你，想邀请小 <span class=\"katex math inline\">T</span> 出去玩，请你编程帮他找出来吧，如果找不到符合条件的字符，请输出 <code>No</code> 。</p>\n</div>            </div>",
+      "text": "小 T 同学在玩一个找字符的游戏，他需要在一个超级长的字符串中，找出连续出现了至少 c 次以上的字符，如果有多个满足条件的字符，他只要输出找到的第 1 个满足要求的字符就可以啦，他的眼镜都要看花了也还没找到。  \n作为小 T 好朋友的你，想邀请小 T 出去玩，请你编程帮他找出来吧，如果找不到符合条件的字符，请输出 No 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第1行是一个整数 <span class=\"katex math inline\">c</span> ，含义如题所述。（<span class=\"katex math inline\">1≤c≤1000</span>）</p>\n<p>第2行，是一个长度不超过 <span class=\"katex math inline\">2500</span> 的<strong>不含空格</strong>的字符串。</p>\n</div>            </div>",
+      "text": "第1行是一个整数 c ，含义如题所述。（1≤c≤1000）\n第2行，是一个长度不超过 2500 的不含空格的字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出你找出的符合题意的字符，如果不存在这样的字符，请输出 <code>No</code>。</p>\n</div>            </div>",
+      "text": "输出你找出的符合题意的字符，如果不存在这样的字符，请输出 No。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\nabcccaaab</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>c</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\nabcccaaab\n                        \n                        \n                            输出\n                            c"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\nabcccaaab",
+      "output": "c"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1064",
+    "通过人数": "470",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:08"
+}

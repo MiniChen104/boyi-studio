@@ -1,0 +1,56 @@
+{
+  "id": "2015",
+  "title": "乐乐的统计",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2015",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>结合佛山市的创文活动，乐乐想做一个关于机动车环保的调查，他来到自己学校附近的一条主干道。他在路边站了几个钟头，记录下经过的所有摩托车与汽车的车牌。乐乐的记录格式为：<span class=\"katex math inline\">k+</span>车牌号，其中 <span class=\"katex math inline\">k</span> 是 <span class=\"katex math inline\">1</span> 代表摩托车，<span class=\"katex math inline\">2</span> 代表汽车，如&quot;<code>2Y99452</code>&quot;是汽车；车牌号由六个字符组成，如<code>Y99452</code>、<code>E88888</code>等，这个字符串从左边数起的第一个字符为大写英文字母，代表车的归属地，佛山代号有<code>Y、E、X</code>，后面的五位由数字组成。他想请你帮忙统计一下这段时间内，经过这条路的车牌为佛山市的汽车与摩托车的数量。</p>\n</div>            </div>",
+      "text": "结合佛山市的创文活动，乐乐想做一个关于机动车环保的调查，他来到自己学校附近的一条主干道。他在路边站了几个钟头，记录下经过的所有摩托车与汽车的车牌。乐乐的记录格式为：k+车牌号，其中 k 是 1 代表摩托车，2 代表汽车，如\"2Y99452\"是汽车；车牌号由六个字符组成，如Y99452、E88888等，这个字符串从左边数起的第一个字符为大写英文字母，代表车的归属地，佛山代号有Y、E、X，后面的五位由数字组成。他想请你帮忙统计一下这段时间内，经过这条路的车牌为佛山市的汽车与摩托车的数量。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行是一个正整数 <span class=\"katex math inline\">N（1 \\le N \\le 105）</span>，表示共有 <span class=\"katex math inline\">N</span> 条记录。</p>\n<p>接下来的 <span class=\"katex math inline\">N</span>行，每行是一条记录。题目保证给出的车牌不会重复。</p>\n</div>            </div>",
+      "text": "第一行是一个正整数 N（1 \\le N \\le 105），表示共有 N 条记录。\n接下来的 N行，每行是一条记录。题目保证给出的车牌不会重复。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，空格分开的两个整数，分别为属于佛山的摩托车数和汽车数。</p>\n</div>            </div>",
+      "text": "输出一行，空格分开的两个整数，分别为属于佛山的摩托车数和汽车数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n1B45451\r\n2Y54672\r\n1E87680\r\n1X77771\r\n2D23445\r\n1T34567</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n1B45451\r\n2Y54672\r\n1E87680\r\n1X77771\r\n2D23445\r\n1T34567\n                        \n                        \n                            输出\n                            2 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n1B45451\r\n2Y54672\r\n1E87680\r\n1X77771\r\n2D23445\r\n1T34567",
+      "output": "2 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "704",
+    "通过人数": "505",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:27:20"
+}

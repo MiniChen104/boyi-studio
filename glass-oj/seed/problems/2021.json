@@ -1,0 +1,56 @@
+{
+  "id": "2021",
+  "title": "字符串的周期性",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2021",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n一个长度为len的字符串，不断的重复多次之后，会得到一个新的字符串，比如：字符串wto，重复2次就得到了一个字符串wtowto。重复4次就得到一个字符串wtowtowtowto，虽然这个字符串也可以认为是由wtowto重复2次得到，但是如果讨论使用最少的字符串重复，那么应是由wto重复4次得到。\n</p>\n<p>\n给你一个字符串，请问该字符串是由最短多长的字符串经过若干次重复得到？\n</p>\n<p>\n注意：也可以经过1次重复得到，比如字符串&quot;abcd&quot;，不能由其某个子串重复多次得到，可以认为是由&quot;abcd&quot;重复一次得到。\n</p>\n</div>            </div>",
+      "text": "一个长度为len的字符串，不断的重复多次之后，会得到一个新的字符串，比如：字符串wto，重复2次就得到了一个字符串wtowto。重复4次就得到一个字符串wtowtowtowto，虽然这个字符串也可以认为是由wtowto重复2次得到，但是如果讨论使用最少的字符串重复，那么应是由wto重复4次得到。\n\n\n给你一个字符串，请问该字符串是由最短多长的字符串经过若干次重复得到？\n\n\n注意：也可以经过1次重复得到，比如字符串\"abcd\"，不能由其某个子串重复多次得到，可以认为是由\"abcd\"重复一次得到。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行字符串，中间无空格。（字符串长度不超过500）</p>\n</div>            </div>",
+      "text": "一行字符串，中间无空格。（字符串长度不超过500）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表结果。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>wtowtowto</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            wtowtowto\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "wtowtowto",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "848",
+    "通过人数": "358",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:27:25"
+}

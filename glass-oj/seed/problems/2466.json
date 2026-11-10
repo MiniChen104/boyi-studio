@@ -1,0 +1,62 @@
+{
+  "id": "2466",
+  "title": "挤牛奶",
+  "tags": [
+    "usaco",
+    "区间问题",
+    "贪心"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2466",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个农民每天清晨 <span class=\"katex math inline\">5</span> 点起床,然后去牛棚给 <span class=\"katex math inline\">3</span> 头牛挤奶。第一个农民在 <span class=\"katex math inline\">300</span> 时刻(从 <span class=\"katex math inline\">5</span> 点开始计时，\n秒为单位)给他的牛挤奶，一直到 <span class=\"katex math inline\">1000</span> 时刻。第二个农民在 <span class=\"katex math inline\">700</span> 时刻开始，在 <span class=\"katex math inline\">1200</span> 时刻结束。第三个农民在 <span class=\"katex math inline\">1500</span> 时刻开始 <span class=\"katex math inline\">2100</span> 时刻结束。  </p>\n<p>期间最长的至少有一个农民在挤奶的连续时间为 <span class=\"katex math inline\">900</span> 秒(从\n<span class=\"katex math inline\">300</span> 时刻到 <span class=\"katex math inline\">1200</span> 时刻)，而最长的无人挤奶的连续时间(从挤奶开始一直到挤奶结束)为 <span class=\"katex math inline\">300</span> 秒(从\n<span class=\"katex math inline\">1200</span> 时刻到 <span class=\"katex math inline\">1500</span> 时刻)。  </p>\n<p>你的任务是编一个程序，读入一个有 <span class=\"katex math inline\">N</span> 个农民(<span class=\"katex math inline\">1 &lt;= N &lt;= 5000</span>) 挤 <span class=\"katex math inline\">N</span> 头牛的工作时间列表，计算以下两点(均以秒为单位)：  </p>\n<ul><li>最长至少有一人在挤奶的时间段。</li>\n<li>最长的无人挤奶的时间段。</li>\n</ul></div>            </div>",
+      "text": "三个农民每天清晨 5 点起床,然后去牛棚给 3 头牛挤奶。第一个农民在 300 时刻(从 5 点开始计时，\n秒为单位)给他的牛挤奶，一直到 1000 时刻。第二个农民在 700 时刻开始，在 1200 时刻结束。第三个农民在 1500 时刻开始 2100 时刻结束。  \n期间最长的至少有一个农民在挤奶的连续时间为 900 秒(从\n300 时刻到 1200 时刻)，而最长的无人挤奶的连续时间(从挤奶开始一直到挤奶结束)为 300 秒(从\n1200 时刻到 1500 时刻)。  \n你的任务是编一个程序，读入一个有 N 个农民(1 <= N <= 5000) 挤 N 头牛的工作时间列表，计算以下两点(均以秒为单位)：  \n最长至少有一人在挤奶的时间段。\n最长的无人挤奶的时间段。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Line 1: 一个整数 <span class=\"katex math inline\">N</span>。  </p>\n<p>Lines 2..N+1: 每行两个小于 <span class=\"katex math inline\">1000000</span> 的非负整数，表示一个农民的开始时刻与结束时刻。</p>\n</div>            </div>",
+      "text": "Line 1: 一个整数 N。  \nLines 2..N+1: 每行两个小于 1000000 的非负整数，表示一个农民的开始时刻与结束时刻。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，两个整数，即题目所要求的两个答案。</p>\n</div>            </div>",
+      "text": "一行，两个整数，即题目所要求的两个答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n300 1000\r\n700 1200\r\n1500 2100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>900 300</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2\r\n100 200\r\n201 301</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>100 1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n300 1000\r\n700 1200\r\n1500 2100\n                        \n                        \n                            输出\n                            900 300\n                        \n\n                                                    \n                                输入\n                                2\r\n100 200\r\n201 301\n                            \n                            \n                                输出\n                                100 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO Section1.2</p>\n</div>                </div>",
+      "text": "USACO Section1.2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">usaco</span><span class=\"label label-warning\">区间问题</span><span class=\"label label-info\">贪心</span></span></p>\n</div>                </div>",
+      "text": "usaco区间问题贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n300 1000\r\n700 1200\r\n1500 2100",
+      "output": "900 300"
+    },
+    {
+      "input": "2\r\n100 200\r\n201 301",
+      "output": "100 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "853",
+    "通过人数": "335",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:41"
+}

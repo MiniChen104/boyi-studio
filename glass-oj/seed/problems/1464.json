@@ -1,0 +1,56 @@
+{
+  "id": "1464",
+  "title": "晶晶的补习班",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1464",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>晶晶上初中了。妈妈认为晶晶应该更加用功学习，所以晶晶除了上学之外，还要参加妈妈为她报名的各科补习班。</p>\n<p>晶晶的妈妈给了晶晶的下周每天上补习班的小时数，晶晶同学想知道，下周平均一天要上多少小时的补习班（结果保留 <span class=\"katex math inline\">1</span> 位小数），最长的补习班需要上几小时，最短的补习班需要上几小时？</p>\n</div>            </div>",
+      "text": "晶晶上初中了。妈妈认为晶晶应该更加用功学习，所以晶晶除了上学之外，还要参加妈妈为她报名的各科补习班。\n晶晶的妈妈给了晶晶的下周每天上补习班的小时数，晶晶同学想知道，下周平均一天要上多少小时的补习班（结果保留 1 位小数），最长的补习班需要上几小时，最短的补习班需要上几小时？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">7</span> 个整数，用空格隔开，代表晶晶同学下周 <span class=\"katex math inline\">7</span> 天需要上的补习班的小时数。</p>\n</div>            </div>",
+      "text": "7 个整数，用空格隔开，代表晶晶同学下周 7 天需要上的补习班的小时数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个小数和两个整数，用空格隔开，第一个小数代表下周平均每天需要上多少小时补习班（结果保留 <span class=\"katex math inline\">1</span> 位小数），第二个整数代表最长的补习班的小时数，第三个整数代表最短的补习班的小时数。</p>\n</div>            </div>",
+      "text": "一个小数和两个整数，用空格隔开，第一个小数代表下周平均每天需要上多少小时补习班（结果保留 1 位小数），第二个整数代表最长的补习班的小时数，第三个整数代表最短的补习班的小时数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 3 2 5 4 7 6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4.0 7 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 3 2 5 4 7 6\n                        \n                        \n                            输出\n                            4.0 7 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 3 2 5 4 7 6",
+      "output": "4.0 7 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "23614",
+    "通过人数": "11621",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:19:49"
+}

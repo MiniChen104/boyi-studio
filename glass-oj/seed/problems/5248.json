@@ -1,0 +1,52 @@
+{
+  "id": "5248",
+  "title": "斐波那契数列",
+  "tags": [
+    "一本通",
+    "递归"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5248",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>斐波那切数列 <span class=\"katex math inline\">0,1,1,2,3,5,8,13,21,34,55……</span> 从第三项起，每一项都是紧挨着的前两项的和。</p>\n<p>写出计算斐波那切数列的第 <span class=\"katex math inline\">N</span> 个数据项递归程序。</p>\n</div>            </div>",
+      "text": "斐波那切数列 0,1,1,2,3,5,8,13,21,34,55…… 从第三项起，每一项都是紧挨着的前两项的和。\n写出计算斐波那切数列的第 N 个数据项递归程序。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入所求的项数 <span class=\"katex math inline\">N</span>（<span class=\"katex math inline\">1 \\le N \\le 35</span>）。</p>\n</div>            </div>",
+      "text": "输入所求的项数 N（1 \\le N \\le 35）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出数据项的值。</p>\n</div>            </div>",
+      "text": "输出数据项的值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>34</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\n                        \n                        \n                            输出\n                            34"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">一本通</span><span class=\"label label-warning\">递归</span></span></p>\n</div>                </div>",
+      "text": "一本通递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10",
+      "output": "34"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1106",
+    "通过人数": "694",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:26"
+}

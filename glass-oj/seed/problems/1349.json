@@ -1,0 +1,46 @@
+{
+  "id": "1349",
+  "title": "植树的人数",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1349",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某班学生分 <span class=\"katex math inline\">2</span> 组参加植树活动，甲组有 <span class=\"katex math inline\">17</span> 人，乙组有 <span class=\"katex math inline\">25</span> 人，后来由于需要，从甲组抽调了部分学生去乙组，结果乙组的人数是甲组的 <span class=\"katex math inline\">2</span> 倍，请问从甲组抽调了多少人去乙组？</p>\n<p>（7.1）</p>\n</div>            </div>",
+      "text": "某班学生分 2 组参加植树活动，甲组有 17 人，乙组有 25 人，后来由于需要，从甲组抽调了部分学生去乙组，结果乙组的人数是甲组的 2 倍，请问从甲组抽调了多少人去乙组？\n（7.1）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无</p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>甲组抽调去乙组的人数。</p>\n</div>            </div>",
+      "text": "甲组抽调去乙组的人数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "17391",
+    "通过人数": "13046",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:11"
+}

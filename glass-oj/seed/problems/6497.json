@@ -1,0 +1,57 @@
+{
+  "id": "6497",
+  "title": "循环隧道",
+  "tags": [
+    "詹天佑杯高年级组",
+    "循环",
+    "数学"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6497",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小英雄发明了一种宇宙火车隧道。隧道终点有一个虫洞，火车头车厢到达隧道终点后，如果继续往前行驶就会瞬间去到虫洞的另一端，恰好这一端就设置到隧道起点。</p>\n<p>问:单位长度为 <span class=\"katex math inline\">n</span> 的隧道和车厢数为 <span class=\"katex math inline\">k</span> 的火车，火车的行驶方向由隧道起点到终点，当火车头(第 <span class=\"katex math inline\">1</span> 个车厢)位于位置 <span class=\"katex math inline\">d</span>时，火车的第 <span class=\"katex math inline\">k</span> 个车厢在隧道哪一个位置?</p>\n<p>注意:火车车厢编号从 <span class=\"katex math inline\">1</span> 开始，隧道的位置描述也是从 <span class=\"katex math inline\">1</span> 开始。一个隧道的单位长度等于车厢长度。\n<img src=\"https://assets.boyi.local/8121aa8a78980122fa8434e0.png\"></p>\n</div>            </div>",
+      "text": "小英雄发明了一种宇宙火车隧道。隧道终点有一个虫洞，火车头车厢到达隧道终点后，如果继续往前行驶就会瞬间去到虫洞的另一端，恰好这一端就设置到隧道起点。\n问:单位长度为 n 的隧道和车厢数为 k 的火车，火车的行驶方向由隧道起点到终点，当火车头(第 1 个车厢)位于位置 d时，火车的第 k 个车厢在隧道哪一个位置?\n注意:火车车厢编号从 1 开始，隧道的位置描述也是从 1 开始。一个隧道的单位长度等于车厢长度。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入三个整数 <span class=\"katex math inline\">n (1 \\le n \\le 10^{18}),k(1 \\le k \\le n),d (1 \\le d \\le n)</span>,分别表示隧道的单位长度、火车车厢数和第一节车厢的位置。</p>\n</div>            </div>",
+      "text": "输入三个整数 n (1 \\le n \\le 10^{18}),k(1 \\le k \\le n),d (1 \\le d \\le n),分别表示隧道的单位长度、火车车厢数和第一节车厢的位置。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示对应询问中第 <span class=\"katex math inline\">k</span> 个车厢的位置。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示对应询问中第 k 个车厢的位置。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 3 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10 5 3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>9</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 3 4\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                10 5 3\n                            \n                            \n                                输出\n                                9"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">詹天佑杯高年级组</span><span class=\"label label-warning\">循环</span><span class=\"label label-info\">数学</span></span></p>\n</div>                </div>",
+      "text": "詹天佑杯高年级组循环数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 3 4",
+      "output": "2"
+    },
+    {
+      "input": "10 5 3",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "5",
+    "通过人数": "2",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:34"
+}

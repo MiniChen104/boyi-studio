@@ -1,0 +1,62 @@
+{
+  "id": "2189",
+  "title": "医院设置",
+  "tags": [
+    "树",
+    "图论"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2189",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>设有一棵二叉树（如图，其中圈中的数字表示结点中居民的人口，圈边上数字表示结点编号。</p>\n<p>现在要求在某个结点上建立一个医院，使所有居民所走的路程之和为最小，同时约定，相邻结点之间的距离为 <span class=\"katex math inline\">1</span> 。就本图而言，若医院建在 <span class=\"katex math inline\">1</span> 处，则距离和<span class=\"katex math inline\">=4+12+2 \\times 20+2 \\times 40=136</span>；若医院建在 <span class=\"katex math inline\">3</span> 处，则距离和<span class=\"katex math inline\">=4 \\times 2+13+20+40=81……</span></p>\n<p><img src=\"https://assets.boyi.local/7d2d4601e1f639ae662165f4.png\"></p>\n</div>            </div>",
+      "text": "设有一棵二叉树（如图，其中圈中的数字表示结点中居民的人口，圈边上数字表示结点编号。\n现在要求在某个结点上建立一个医院，使所有居民所走的路程之和为最小，同时约定，相邻结点之间的距离为 1 。就本图而言，若医院建在 1 处，则距离和=4+12+2 \\times 20+2 \\times 40=136；若医院建在 3 处，则距离和=4 \\times 2+13+20+40=81……"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入第一行一个整数 <span class=\"katex math inline\">n</span> ，表示树的结点数（<span class=\"katex math inline\">n≤100</span>）。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行每行描述了一个结点的状况，包含三个整数，整数之间用空格（一个或多个）分隔，其中：第一个数为居民人口数；第二个数为左链接，为 <span class=\"katex math inline\">0</span> 表示无链接；第三个数为右链接，为 <span class=\"katex math inline\">0</span> 表示无链接。</p>\n</div>            </div>",
+      "text": "输入第一行一个整数 n ，表示树的结点数（n≤100）。\n接下来的 n 行每行描述了一个结点的状况，包含三个整数，整数之间用空格（一个或多个）分隔，其中：第一个数为居民人口数；第二个数为左链接，为 0 表示无链接；第三个数为右链接，为 0 表示无链接。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示最小距离和。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示最小距离和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n13 2 3\r\n4 0 0\r\n12 4 5\r\n20 0 0\r\n40 0 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>81</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n13 2 3\r\n4 0 0\r\n12 4 5\r\n20 0 0\r\n40 0 0\n                        \n                        \n                            输出\n                            81"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数据规模也不大，采用邻接矩阵存储，用Floyed法求出任意两结点之间的最短路径长，然后穷举医院可能建立的n个结点位置</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据规模也不大，采用邻接矩阵存储，用Floyed法求出任意两结点之间的最短路径长，然后穷举医院可能建立的n个结点位置"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>树</p>\n</div>                </div>",
+      "text": "树"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树</span><span class=\"label label-warning\">图论</span></span></p>\n</div>                </div>",
+      "text": "树图论"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n13 2 3\r\n4 0 0\r\n12 4 5\r\n20 0 0\r\n40 0 0",
+      "output": "81"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "387",
+    "通过人数": "308",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:33"
+}

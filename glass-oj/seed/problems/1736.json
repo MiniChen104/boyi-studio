@@ -1,0 +1,56 @@
+{
+  "id": "1736",
+  "title": "班长问题？",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1736",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明暑期开学后，老师们委托小明为某班级选取一个班长，选取要求：要求选取的班长为班级中年龄最大的那位，已知该班级中有 <span class=\"katex math inline\">5</span> 位同学，每位同学的年龄都不相同。</p>\n</div>            </div>",
+      "text": "小明暑期开学后，老师们委托小明为某班级选取一个班长，选取要求：要求选取的班长为班级中年龄最大的那位，已知该班级中有 5 位同学，每位同学的年龄都不相同。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">5</span> 个整数（小于 <span class=\"katex math inline\">100</span> ），分别表示该班级中 <span class=\"katex math inline\">5</span> 位同学的年龄。</p>\n</div>            </div>",
+      "text": "5 个整数（小于 100 ），分别表示该班级中 5 位同学的年龄。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示班长的年龄。</p>\n</div>            </div>",
+      "text": "一个整数，表示班长的年龄。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 2 3 4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 2 3 4 5\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 2 3 4 5",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "16824",
+    "通过人数": "12431",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:34"
+}

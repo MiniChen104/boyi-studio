@@ -1,0 +1,51 @@
+{
+  "id": "2228",
+  "title": "出栈顺序",
+  "tags": [
+    "stack"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2228",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>大家都知道，栈满足先进后出的特性。一个栈，如果按照 <span class=\"katex math inline\">1,2,3...,n</span> 的顺序入栈，出栈顺序可以是：<span class=\"katex math inline\">n...3,2,1</span>。</p>\n<p>考虑到栈可以边进边出，就可能产生多种不同的出栈序列，比如：入栈顺序是 <span class=\"katex math inline\">1,2,3,4,5</span>，出栈顺序可能是： <span class=\"katex math inline\">3,4,2,1,5</span>，但不可能是：<span class=\"katex math inline\">3,5,1,4,2</span>。</p>\n<p>请问：如果一个栈，按照 <span class=\"katex math inline\">1,2,3...,n</span> 的顺序入栈，允许栈边进边出的情况下，判断出栈顺序是否合法。</p>\n</div>            </div>",
+      "text": "大家都知道，栈满足先进后出的特性。一个栈，如果按照 1,2,3...,n 的顺序入栈，出栈顺序可以是：n...3,2,1。\n考虑到栈可以边进边出，就可能产生多种不同的出栈序列，比如：入栈顺序是 1,2,3,4,5，出栈顺序可能是： 3,4,2,1,5，但不可能是：3,5,1,4,2。\n请问：如果一个栈，按照 1,2,3...,n 的顺序入栈，允许栈边进边出的情况下，判断出栈顺序是否合法。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行读入一个整数 <span class=\"katex math inline\">m</span>，代表有多少组出栈的数据等待检测（<span class=\"katex math inline\">m≤30</span>）。</p>\n<p>接下来读入 <span class=\"katex math inline\">m</span> 组数据，每组数据的第 <span class=\"katex math inline\">1</span> 行，读入一个整数 <span class=\"katex math inline\">n</span>，代表本组数据的出栈序列中有 <span class=\"katex math inline\">n</span> 个整数（<span class=\"katex math inline\">1≤n≤100</span>）。</p>\n<p>每组数据的第 <span class=\"katex math inline\">2</span> 行，读入 <span class=\"katex math inline\">n</span> 个整数，数字之间用空格隔开。</p>\n</div>            </div>",
+      "text": "第 1 行读入一个整数 m，代表有多少组出栈的数据等待检测（m≤30）。\n接下来读入 m 组数据，每组数据的第 1 行，读入一个整数 n，代表本组数据的出栈序列中有 n 个整数（1≤n≤100）。\n每组数据的第 2 行，读入 n 个整数，数字之间用空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组输入，请输出该组出栈序列是否合法，如果合法，请输出<code>Yes</code>，不合法请输出<code>No</code>。请注意，每组数据的输出占 <span class=\"katex math inline\">1</span> 行。</p>\n</div>            </div>",
+      "text": "对于每组输入，请输出该组出栈序列是否合法，如果合法，请输出Yes，不合法请输出No。请注意，每组数据的输出占 1 行。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n5\r\n3 4 2 1 5\r\n5\r\n3 5 1 4 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Yes\r\nNo</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n5\r\n3 4 2 1 5\r\n5\r\n3 5 1 4 2\n                        \n                        \n                            输出\n                            Yes\r\nNo"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">stack</span></span></p>\n</div>                </div>",
+      "text": "stack"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n5\r\n3 4 2 1 5\r\n5\r\n3 5 1 4 2",
+      "output": "Yes\r\nNo"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1541",
+    "通过人数": "716",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:02"
+}

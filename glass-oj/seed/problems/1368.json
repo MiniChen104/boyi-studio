@@ -1,0 +1,60 @@
+{
+  "id": "1368",
+  "title": "蜜蜂路线",
+  "tags": [
+    "递推"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1368",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一只蜜蜂在下图所示的数字蜂房上爬动,已知它只能从标号小的蜂房爬到标号大的相邻蜂房,现在问你：蜜蜂从蜂房<span class=\"katex math inline\">M</span>开始爬到蜂房<span class=\"katex math inline\">N</span>，<span class=\"katex math inline\">1 ≤ M &lt; N ≤ 100</span>，有多少种爬行路线？<br><img src=\"https://assets.boyi.local/112fe36eef44fe269f97d820.png\"></p>\n</div>            </div>",
+      "text": "一只蜜蜂在下图所示的数字蜂房上爬动,已知它只能从标号小的蜂房爬到标号大的相邻蜂房,现在问你：蜜蜂从蜂房M开始爬到蜂房N，1 ≤ M < N ≤ 100，有多少种爬行路线？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p> 输入 <span class=\"katex math inline\">M</span>，<span class=\"katex math inline\">N</span> 的值。 （<span class=\"katex math inline\">1 ≤ M &lt; N ≤ 100</span>）</p>\n</div>            </div>",
+      "text": "输入 M，N 的值。 （1 ≤ M < N ≤ 100）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>爬行有多少种路线。</p>\n</div>            </div>",
+      "text": "爬行有多少种路线。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 14</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>377</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1 100</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>354224848179261915075</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 14\n                        \n                        \n                            输出\n                            377\n                        \n\n                                                    \n                                输入\n                                1 100\n                            \n                            \n                                输出\n                                354224848179261915075"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递推</p>\n</div>                </div>",
+      "text": "递推"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递推</span></span></p>\n</div>                </div>",
+      "text": "递推"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 14",
+      "output": "377"
+    },
+    {
+      "input": "1 100",
+      "output": "354224848179261915075"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "7121",
+    "通过人数": "3418",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:18:27"
+}

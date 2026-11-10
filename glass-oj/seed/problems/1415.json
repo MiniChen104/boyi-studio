@@ -1,0 +1,58 @@
+{
+  "id": "1415",
+  "title": "10进制转D进制",
+  "tags": [
+    "容器",
+    "stack",
+    "进制转换"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1415",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>十进制整数 <span class=\"katex math inline\">N</span> 和其他 <span class=\"katex math inline\">D</span>（<span class=\"katex math inline\">D</span> 的值为 <span class=\"katex math inline\">2</span> 到 <span class=\"katex math inline\">16</span>）进制数的转换是计算机实现计算的基本问题，其解决方法很多，其中一个简单算法基于下列原理：<span class=\"katex math inline\">N</span> <span class=\"katex math inline\">=</span> (<span class=\"katex math inline\">N</span> <span class=\"katex math inline\">div</span> <span class=\"katex math inline\">d</span>) <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">d</span> <span class=\"katex math inline\">+</span> <span class=\"katex math inline\">N</span> <span class=\"katex math inline\">mod</span> <span class=\"katex math inline\">d</span> (其中：<span class=\"katex math inline\">div</span> 为整除运算，<span class=\"katex math inline\">mod</span> 为求余运算)。简单来说，就是除 <span class=\"katex math inline\">D</span> 取余，然后倒过来得到 <span class=\"katex math inline\">D</span> 进制的数。</p>\n<p>例如：</p>\n<p><span class=\"katex math inline\">(1348)_{10} = (10101000100)_2</span><br>\n<span class=\"katex math inline\">(1348)_{10} = (2504)_8</span><br>\n<span class=\"katex math inline\">(1000)_{10} = (3E8)_{16}</span>  </p>\n<p>（请注意：转 <span class=\"katex math inline\">16</span> 进制时，用 <span class=\"katex math inline\">A</span> 代表余数 <span class=\"katex math inline\">10</span> ，<span class=\"katex math inline\">B</span> 代表余数 <span class=\"katex math inline\">11</span> ……）</p>\n<p>假设现要编制一个满足下列要求的程序：对于输入的任意一个非负十进制整数（<span class=\"katex math inline\">n≤1,000,000,000</span>），打印输出与其等值的 <span class=\"katex math inline\">D</span> 进制数。</p>\n</div>            </div>",
+      "text": "十进制整数 N 和其他 D（D 的值为 2 到 16）进制数的转换是计算机实现计算的基本问题，其解决方法很多，其中一个简单算法基于下列原理：N = (N div d) \\times d + N mod d (其中：div 为整除运算，mod 为求余运算)。简单来说，就是除 D 取余，然后倒过来得到 D 进制的数。\n例如：\n(1348)_{10} = (10101000100)_2\n(1348)_{10} = (2504)_8\n(1000)_{10} = (3E8)_{16}  \n（请注意：转 16 进制时，用 A 代表余数 10 ，B 代表余数 11 ……）\n假设现要编制一个满足下列要求的程序：对于输入的任意一个非负十进制整数（n≤1,000,000,000），打印输出与其等值的 D 进制数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有两个整数 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">D</span>，<span class=\"katex math inline\">N</span> 表示要转换的十进制非负整数， <span class=\"katex math inline\">D</span> 代表要转换的进制（<span class=\"katex math inline\">2到16</span>）</p>\n</div>            </div>",
+      "text": "有两个整数 N 和 D，N 表示要转换的十进制非负整数， D 代表要转换的进制（2到16）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">N</span> 进制转 <span class=\"katex math inline\">D</span> 进制的结果。</p>\n</div>            </div>",
+      "text": "N 进制转 D 进制的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1348 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10101000100</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1348 2\n                        \n                        \n                            输出\n                            10101000100"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>容器 stack 进制转换</p>\n</div>                </div>",
+      "text": "容器 stack 进制转换"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">容器</span><span class=\"label label-warning\">stack</span><span class=\"label label-info\">进制转换</span></span></p>\n</div>                </div>",
+      "text": "容器stack进制转换"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1348 2",
+      "output": "10101000100"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "15118",
+    "通过人数": "8281",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:19:09"
+}

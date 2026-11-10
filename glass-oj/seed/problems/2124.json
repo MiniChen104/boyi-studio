@@ -1,0 +1,56 @@
+{
+  "id": "2124",
+  "title": "黑白马",
+  "tags": [
+    "广搜"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2124",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>中国象棋博大精深，有很多同学都非常爱下象棋。象棋的走法有一定的规则，比如象棋中马走“日”。有一位同学想如果马能有两种走法，或许更有趣。因此，他增加了一条规则，马既能按“日”走，也能和象一样走“田”字，神奇的马！</p>\n<p>他的同桌看到了这个规则，觉得确实很有意思，就想试一试，在一个（<span class=\"katex math inline\">100 \\times 100</span>）的围棋盘上任选两点 <span class=\"katex math inline\">A</span>、<span class=\"katex math inline\">B</span>，<span class=\"katex math inline\">A</span> 点放上黑子，<span class=\"katex math inline\">B</span> 点放上白子，代表两匹马。棋子可以按“日”字走，也可以按“田”字走，俩人一个走黑马，一个走白马。</p>\n<p>谁用最少的步数走到左上角坐标为 <span class=\"katex math inline\">(1,1)</span> 的点时，谁获胜。现在他请你帮忙，给你 <span class=\"katex math inline\">A</span>、<span class=\"katex math inline\">B</span> 两点的坐标，想知道两个位置到 <span class=\"katex math inline\">(1,1)</span> 点可能的最少步数。</p>\n</div>            </div>",
+      "text": "中国象棋博大精深，有很多同学都非常爱下象棋。象棋的走法有一定的规则，比如象棋中马走“日”。有一位同学想如果马能有两种走法，或许更有趣。因此，他增加了一条规则，马既能按“日”走，也能和象一样走“田”字，神奇的马！\n他的同桌看到了这个规则，觉得确实很有意思，就想试一试，在一个（100 \\times 100）的围棋盘上任选两点 A、B，A 点放上黑子，B 点放上白子，代表两匹马。棋子可以按“日”字走，也可以按“田”字走，俩人一个走黑马，一个走白马。\n谁用最少的步数走到左上角坐标为 (1,1) 的点时，谁获胜。现在他请你帮忙，给你 A、B 两点的坐标，想知道两个位置到 (1,1) 点可能的最少步数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两行，每行两个正整数，表示马所在的坐标（本题数据保两个马的坐标都不是 <span class=\"katex math inline\">1,1</span> ）。</p>\n</div>            </div>",
+      "text": "两行，每行两个正整数，表示马所在的坐标（本题数据保两个马的坐标都不是 1,1 ）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两行，所走的最少步数。</p>\n</div>            </div>",
+      "text": "两行，所走的最少步数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>12 16\r\n18 10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8\r\n9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            12 16\r\n18 10\n                        \n                        \n                            输出\n                            8\r\n9"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>广搜</p>\n</div>                </div>",
+      "text": "广搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">广搜</span></span></p>\n</div>                </div>",
+      "text": "广搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "12 16\r\n18 10",
+      "output": "8\r\n9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "599",
+    "通过人数": "380",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:45"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "1774",
+  "title": "链表操作",
+  "tags": [
+    "vector"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1774",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个 <span class=\"katex math inline\">N</span> 个数的数组，<span class=\"katex math inline\">M</span> 次操作，每次操作为下列操作之一。求最后的数组。</p>\n<p>操作 <span class=\"katex math inline\">1</span> ：在第 <span class=\"katex math inline\">X</span> 个数之后插入一个数 <span class=\"katex math inline\">Y</span>。</p>\n<p>操作 <span class=\"katex math inline\">2</span> ：删除第 <span class=\"katex math inline\">X</span> 个数。</p>\n<p>操作 <span class=\"katex math inline\">3</span> ：对区间 <span class=\"katex math inline\">[X，Y]</span> 进行排序。</p>\n<p>操作 <span class=\"katex math inline\">4</span>：对区间 <span class=\"katex math inline\">[X，Y]</span> 进行翻转。</p>\n<p>操作 <span class=\"katex math inline\">5</span>：删除区间 <span class=\"katex math inline\">[X，Y]</span> 中值为 <span class=\"katex math inline\">Z</span> 的数。</p>\n</div>            </div>",
+      "text": "给定一个 N 个数的数组，M 次操作，每次操作为下列操作之一。求最后的数组。\n操作 1 ：在第 X 个数之后插入一个数 Y。\n操作 2 ：删除第 X 个数。\n操作 3 ：对区间 [X，Y] 进行排序。\n操作 4：对区间 [X，Y] 进行翻转。\n操作 5：删除区间 [X，Y] 中值为 Z 的数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个整数 <span class=\"katex math inline\">N</span>，<span class=\"katex math inline\">M</span>（<span class=\"katex math inline\">N，M \\le 100000</span>）含义见试题描述。</p>\n<p>第二行 <span class=\"katex math inline\">N</span> 个整数，表示原来的数组。</p>\n<p>接下来 <span class=\"katex math inline\">M</span> 行，每行第一个数 <span class=\"katex math inline\">OPT</span> ，表示操作类型。</p>\n<p>对于操作 <span class=\"katex math inline\">1</span> ，接下来两个数 <span class=\"katex math inline\">X</span>，<span class=\"katex math inline\">Y</span>，含义见题面描述，保证 <span class=\"katex math inline\">0 \\le X \\le </span> 当前数的个数，若 <span class=\"katex math inline\">X=0</span>，表示在数组开头插入。</p>\n<p>对于操作 <span class=\"katex math inline\">2</span>，接下来一个数 <span class=\"katex math inline\">X</span>，含义见题面描述，保证<span class=\"katex math inline\">1 \\le X \\le </span> 当前数的个数。</p>\n<p>对于操作 <span class=\"katex math inline\">3</span>，接下来两个数 <span class=\"katex math inline\">X</span>，<span class=\"katex math inline\">Y</span>，含义见题面描述，保证 <span class=\"katex math inline\">1 \\le X \\le Y \\le</span> 当前数的个数，保证操作 <span class=\"katex math inline\">3</span> 不超过 <span class=\"katex math inline\">10</span> 个。</p>\n<p>对于操作 <span class=\"katex math inline\">4</span> ，接下来两个数 <span class=\"katex math inline\">X</span>，<span class=\"katex math inline\">Y</span>，含义见题面描述，保证 <span class=\"katex math inline\">1 \\le X \\le Y \\le </span> 当前数的个数，保证操作 <span class=\"katex math inline\">4</span> 不超过 <span class=\"katex math inline\">10</span> 个。</p>\n<p>对于操作 <span class=\"katex math inline\">5</span>，接下来三个数 <span class=\"katex math inline\">X</span>，<span class=\"katex math inline\">Y</span>，<span class=\"katex math inline\">Z</span>，含义见题面描述，保证 <span class=\"katex math inline\">1 \\le X \\le Y \\le</span> 当前数的个数，保证操作 <span class=\"katex math inline\">5</span> 不超过 <span class=\"katex math inline\">10</span> 个。</p>\n</div>            </div>",
+      "text": "第一行两个整数 N，M（N，M \\le 100000）含义见试题描述。\n第二行 N 个整数，表示原来的数组。\n接下来 M 行，每行第一个数 OPT ，表示操作类型。\n对于操作 1 ，接下来两个数 X，Y，含义见题面描述，保证 0 \\le X \\le  当前数的个数，若 X=0，表示在数组开头插入。\n对于操作 2，接下来一个数 X，含义见题面描述，保证1 \\le X \\le  当前数的个数。\n对于操作 3，接下来两个数 X，Y，含义见题面描述，保证 1 \\le X \\le Y \\le 当前数的个数，保证操作 3 不超过 10 个。\n对于操作 4 ，接下来两个数 X，Y，含义见题面描述，保证 1 \\le X \\le Y \\le  当前数的个数，保证操作 4 不超过 10 个。\n对于操作 5，接下来三个数 X，Y，Z，含义见题面描述，保证 1 \\le X \\le Y \\le 当前数的个数，保证操作 5 不超过 10 个。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出若干个数，表示最后的数组。</p>\n</div>            </div>",
+      "text": "输出若干个数，表示最后的数组。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 5\r\n1 4 3 2 5\r\n3 2 4\r\n4 4 5\r\n5 2 3 2\r\n5 2 3 1\r\n1 0 9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9 1 3 5 4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 5\r\n1 4 3 2 5\r\n3 2 4\r\n4 4 5\r\n5 2 3 2\r\n5 2 3 1\r\n1 0 9\n                        \n                        \n                            输出\n                            9 1 3 5 4"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">vector</span></span></p>\n</div>                </div>",
+      "text": "vector"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 5\r\n1 4 3 2 5\r\n3 2 4\r\n4 4 5\r\n5 2 3 2\r\n5 2 3 1\r\n1 0 9",
+      "output": "9 1 3 5 4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "4032",
+    "通过人数": "1138",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:24:01"
+}

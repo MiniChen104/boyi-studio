@@ -1,0 +1,56 @@
+{
+  "id": "1489",
+  "title": "叫号软件",
+  "tags": [
+    "容器"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1489",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>课代表 SW 由于工作失误被扣了奖学金，所以他不得不去某家饭店打工，饭店很火爆，经常没有位置，所以不得不叫号。</p>\n<p>他管理叫号软件，一天他不小心把叫号软件的程序删除了，他感觉他完蛋了， 正准备跑路，善良的你不忍心他丢工作你能帮他重新写一个叫号软件吗？</p>\n<p>软件有三个指令：</p>\n<ol><li><p><code>END</code> 为结束程序。</p>\n</li>\n<li><p><code>PUSH NAME</code> 为新来了一个名字叫做 <code>NAME</code> 的人排队，<code>NAME</code> 的长度小于等于 <span class=\"katex math inline\">10</span> ，且 <code>NAME</code> 没有重复。</p>\n</li>\n<li><p><code>POP</code> 为如果有人在排队则输出当前队列中来的最早的人的名字并将其从队列里删除，如果队列没有人输出 <code>EMPTY</code>。</p>\n</li>\n</ol></div>            </div>",
+      "text": "课代表 SW 由于工作失误被扣了奖学金，所以他不得不去某家饭店打工，饭店很火爆，经常没有位置，所以不得不叫号。\n他管理叫号软件，一天他不小心把叫号软件的程序删除了，他感觉他完蛋了， 正准备跑路，善良的你不忍心他丢工作你能帮他重新写一个叫号软件吗？\n软件有三个指令：\nEND 为结束程序。\n\nPUSH NAME 为新来了一个名字叫做 NAME 的人排队，NAME 的长度小于等于 10 ，且 NAME 没有重复。\n\nPOP 为如果有人在排队则输出当前队列中来的最早的人的名字并将其从队列里删除，如果队列没有人输出 EMPTY。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入可能有若干行(保证不超过 <span class=\"katex math inline\">100000</span>)，每行一个如下的命令：</p>\n<p><code>PUSH NAME</code>（<code>NAME</code>没有空格）。</p>\n<p><code>POP</code>。</p>\n<p><code>END</code>。</p>\n<p>其中，<code>END</code> 命令只会在最后一行出现，并且保证有<code>END</code>。\n输入 <code>END</code> 命令后立刻结束程序。</p>\n</div>            </div>",
+      "text": "输入可能有若干行(保证不超过 100000)，每行一个如下的命令：\nPUSH NAME（NAME没有空格）。\nPOP。\nEND。\n其中，END 命令只会在最后一行出现，并且保证有END。\n输入 END 命令后立刻结束程序。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>针对每个 <code>POP</code> 命令输出一行，如果有人在排队则输出当前队列中来的最早的人的名字并将其从队列里删除。否则，输出<code>EMPTY</code>。</p>\n</div>            </div>",
+      "text": "针对每个 POP 命令输出一行，如果有人在排队则输出当前队列中来的最早的人的名字并将其从队列里删除。否则，输出EMPTY。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>PUSH LZX\r\nPUSH CQW\r\nPOP\r\nPUSH SW\r\nPOP\r\nPOP\r\nPOP\r\nEND</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>LZX\r\nCQW\r\nSW\r\nEMPTY</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            PUSH LZX\r\nPUSH CQW\r\nPOP\r\nPUSH SW\r\nPOP\r\nPOP\r\nPOP\r\nEND\n                        \n                        \n                            输出\n                            LZX\r\nCQW\r\nSW\r\nEMPTY"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>容器</p>\n</div>                </div>",
+      "text": "容器"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">容器</span></span></p>\n</div>                </div>",
+      "text": "容器"
+    }
+  ],
+  "samples": [
+    {
+      "input": "PUSH LZX\r\nPUSH CQW\r\nPOP\r\nPUSH SW\r\nPOP\r\nPOP\r\nPOP\r\nEND",
+      "output": "LZX\r\nCQW\r\nSW\r\nEMPTY"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2805",
+    "通过人数": "1715",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:20:10"
+}

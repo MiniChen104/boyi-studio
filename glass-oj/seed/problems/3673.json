@@ -1,0 +1,63 @@
+{
+  "id": "3673",
+  "title": "成绩排序",
+  "tags": [
+    "GESP五级",
+    "结构体",
+    "24年3月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3673",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">N</span> 名同学，每名同学有语文、数学、英语三科成绩。你需要按如下规则对所有同学的成绩从高到低排序：</p>\n<ol><li><p>比较总分，高者靠前；</p>\n</li>\n<li><p>如果总分相同，则比较语文和数学两科总分，高者靠前；</p>\n</li>\n<li><p>如果仍相同，则比较语文和数学两科的最高分，高者靠前；</p>\n</li>\n<li><p>如果仍相同，则二人并列。</p>\n</li>\n</ol><p>你需要输出每位同学的排名，如遇 <span class=\"katex math inline\">x</span> 人并列，则他们排名相同，并留空后面的 <span class=\"katex math inline\">x-1</span> 个名次。例如，有 <span class=\"katex math inline\">3</span> 名同学并列第 <span class=\"katex math inline\">1</span>，则后一名同学自动成为第 <span class=\"katex math inline\">4</span> 名。</p>\n</div>            </div>",
+      "text": "有 N 名同学，每名同学有语文、数学、英语三科成绩。你需要按如下规则对所有同学的成绩从高到低排序：\n比较总分，高者靠前；\n\n如果总分相同，则比较语文和数学两科总分，高者靠前；\n\n如果仍相同，则比较语文和数学两科的最高分，高者靠前；\n\n如果仍相同，则二人并列。\n\n你需要输出每位同学的排名，如遇 x 人并列，则他们排名相同，并留空后面的 x-1 个名次。例如，有 3 名同学并列第 1，则后一名同学自动成为第 4 名。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">N</span> ，表示同学的人数。</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行三个非负整数 <span class=\"katex math inline\">c_i，m_i，e_i</span> 分别表示该名同学的语文、数学、英语成绩。</p>\n</div>            </div>",
+      "text": "第一行一个整数 N ，表示同学的人数。\n接下来 N 行，每行三个非负整数 c_i，m_i，e_i 分别表示该名同学的语文、数学、英语成绩。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">N</span> 行，按输入同学的顺序，输出他们的排名。</p>\n</div>            </div>",
+      "text": "输出 N 行，按输入同学的顺序，输出他们的排名。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n140 140 150\r\n140 149 140\r\n148 141 140\r\n141 148 140\r\n145 145 139\r\n0 0 0\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n3\r\n4\r\n4\r\n2\r\n6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n140 140 150\r\n140 149 140\r\n148 141 140\r\n141 148 140\r\n145 145 139\r\n0 0 0\r\n\n                        \n                        \n                            输出\n                            1\r\n3\r\n4\r\n4\r\n2\r\n6"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>请不要按排名输出同学的序号，而是按同学的顺序输出他们各自的排名</strong></p>\n<p>在常规程序中，输入、输出时提供提示是好习惯。但在本场考试中，由于系统限定，请不要在输入、输出中附带任何提示信息。</p>\n<p>【数据规模】</p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的测试点，保证 <span class=\"katex math inline\">N \\le 100</span> ，且所有同学的总分各不相同。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">0 \\le c_i，m_i，e_i \\le 150</span> ，\n<span class=\"katex math inline\">2 \\le N \\le 10^4</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "请不要按排名输出同学的序号，而是按同学的顺序输出他们各自的排名\n在常规程序中，输入、输出时提供提示是好习惯。但在本场考试中，由于系统限定，请不要在输入、输出中附带任何提示信息。\n【数据规模】\n对于 30\\% 的测试点，保证 N \\le 100 ，且所有同学的总分各不相同。\n对于所有测试点，保证 0 \\le c_i，m_i，e_i \\le 150 ，\n2 \\le N \\le 10^4。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 3月认证C++五级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 3月认证C++五级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">结构体</span><span class=\"label label-info\">24年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP五级结构体24年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n140 140 150\r\n140 149 140\r\n148 141 140\r\n141 148 140\r\n145 145 139\r\n0 0 0\r\n",
+      "output": "1\r\n3\r\n4\r\n4\r\n2\r\n6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "826",
+    "通过人数": "438",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:35:44"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "1779",
+  "title": "装箱问题",
+  "tags": [
+    "背包",
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1779",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一个箱子容量为 <span class=\"katex math inline\">V</span>（正整数，<span class=\"katex math inline\">0 \\le V \\le 200000</span> ），同时有 <span class=\"katex math inline\">n</span> 个物品（ <span class=\"katex math inline\">0 \\lt n \\le 30</span> )，每个物品有一个体积（正整数）。</p>\n<p>要求 <span class=\"katex math inline\">n</span> 个物品中，任取若干个装入箱内，使箱子的剩余空间为最小。</p>\n</div>            </div>",
+      "text": "有一个箱子容量为 V（正整数，0 \\le V \\le 200000 ），同时有 n 个物品（ 0 \\lt n \\le 30 )，每个物品有一个体积（正整数）。\n要求 n 个物品中，任取若干个装入箱内，使箱子的剩余空间为最小。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">1</span> 个整数，表示箱子容量；</p>\n<p><span class=\"katex math inline\">1</span> 个整数，表示有 <span class=\"katex math inline\">n</span> 个物品；</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，分别表示这 <span class=\"katex math inline\">n</span> 个物品的各自体积；</p>\n</div>            </div>",
+      "text": "1 个整数，表示箱子容量；\n1 个整数，表示有 n 个物品；\n接下来 n 行，分别表示这 n 个物品的各自体积；"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">1</span> 个整数，表示箱子剩余空间。</p>\n</div>            </div>",
+      "text": "1 个整数，表示箱子剩余空间。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>24\r\n6\r\n8\r\n3\r\n12\r\n7\r\n9\r\n7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            24\r\n6\r\n8\r\n3\r\n12\r\n7\r\n9\r\n7\n                        \n                        \n                            输出\n                            0"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>动态规划</p>\n</div>                </div>",
+      "text": "动态规划"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">背包</span><span class=\"label label-warning\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "背包动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "24\r\n6\r\n8\r\n3\r\n12\r\n7\r\n9\r\n7",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2642",
+    "通过人数": "1682",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:24:05"
+}

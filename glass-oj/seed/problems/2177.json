@@ -1,0 +1,56 @@
+{
+  "id": "2177",
+  "title": "找字符的位置和出现的次数",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2177",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入一句英文的字符串，再读入一个字符 <span class=\"katex math inline\">c</span> ，请问该字符串中字符 <span class=\"katex math inline\">c</span> 在哪些位置出现过，总共出现了多少次？</p>\n</div>            </div>",
+      "text": "从键盘读入一句英文的字符串，再读入一个字符 c ，请问该字符串中字符 c 在哪些位置出现过，总共出现了多少次？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行输入一句英文（可能有空格）（字符串长度<span class=\"katex math inline\">≤100</span>）。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行输入一个字符 <span class=\"katex math inline\">c</span>。</p>\n<p>测试数据保证字符 <span class=\"katex math inline\">c</span> 在字符串中一定会出现。</p>\n</div>            </div>",
+      "text": "第 1 行输入一句英文（可能有空格）（字符串长度≤100）。\n第 2 行输入一个字符 c。\n测试数据保证字符 c 在字符串中一定会出现。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行输出字符 <span class=\"katex math inline\">c</span> 在英文字符串中出现的所有位置，位置之间用空格隔开。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行输出字符 <span class=\"katex math inline\">c</span> 在字符串中出现的次数。</p>\n</div>            </div>",
+      "text": "第 1 行输出字符 c 在英文字符串中出现的所有位置，位置之间用空格隔开。\n第 2 行输出字符 c 在字符串中出现的次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>hello world!\r\nl</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3 4 10 \r\n3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            hello world!\r\nl\n                        \n                        \n                            输出\n                            3 4 10 \r\n3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "hello world!\r\nl",
+      "output": "3 4 10 \r\n3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "604",
+    "通过人数": "459",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:24"
+}

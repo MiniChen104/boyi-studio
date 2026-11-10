@@ -1,0 +1,56 @@
+{
+  "id": "1469",
+  "title": "数的统计",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1469",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>试计算在区间 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span> 的所有整数中，数字 <span class=\"katex math inline\">x</span> ( <span class=\"katex math inline\">0 \\le x \\le 9</span> )共出现了多少次？</p>\n<p>例如，在 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">11</span> 中，即在 <span class=\"katex math inline\">1,2,3,4,5,6,7,8,9,10,11</span> 中，数字 <span class=\"katex math inline\">1</span> 出现了 <span class=\"katex math inline\">4</span> 次。</p>\n<p>再比如，<span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">11</span> 中，数字 <span class=\"katex math inline\">0</span> 只出现了 <span class=\"katex math inline\">1</span> 次。</p>\n</div>            </div>",
+      "text": "试计算在区间 1 到 n 的所有整数中，数字 x ( 0 \\le x \\le 9 )共出现了多少次？\n例如，在 1 到 11 中，即在 1,2,3,4,5,6,7,8,9,10,11 中，数字 1 出现了 4 次。\n再比如，1 到 11 中，数字 0 只出现了 1 次。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">x</span> 之间用一个空格隔开。（ <span class=\"katex math inline\">n \\le 200000</span> ）</p>\n</div>            </div>",
+      "text": "2 个整数 n 和 x 之间用一个空格隔开。（ n \\le 200000 ）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">1</span> 个整数，表示 <span class=\"katex math inline\">x</span> 出现的次数。</p>\n</div>            </div>",
+      "text": "1 个整数，表示 x 出现的次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>11 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            11 1\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "11 1",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "13694",
+    "通过人数": "9388",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:19:53"
+}

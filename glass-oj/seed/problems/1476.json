@@ -1,0 +1,64 @@
+{
+  "id": "1476",
+  "title": "字符串编辑",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1476",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘输入一个字符串（长度 <span class=\"katex math inline\"> \\le 40</span> 个字符），并以字符 <code>.</code> 结束。</p>\n<p>例如：<code>This is a book.</code> 现对该字符串进行编辑，编辑功能有：</p>\n<p><strong>操作一：删除字符。</strong></p>\n<p><code>D</code>：删除一个字符，命令的格式为：<code>D a</code>。其中 <code>a</code>为被删除的字符。</p>\n<p>例如：<code>D s</code>  表示删除字符 <code>s</code> ，若字符串中有多个 <code>s</code>，则删除第一次出现的。</p>\n<p>如上例中删除的结果为： <code>Thi is a book.</code></p>\n<p><strong>操作二：插入字符。</strong></p>\n<p><code>I</code>：插入一个字符，命令的格式为：<code>I a1 a2</code>。其中 <code>a1</code> 表示插入到指定字符前面，<code>a2</code> 表示将要插入的字符。</p>\n<p>例如：<code>I s d</code> 表示在指定字符 <code>s</code> 的前面插入字符 <code>d</code> ，若原串中有多个 <code>s</code> ，则插入在最后一个字符的前面。</p>\n<p>如上例中，原串：<code>This is a book.</code>，插入后：<code>This ids a book.</code>。</p>\n<p><strong>操作三：替换字符。</strong></p>\n<p><code>R</code>：替换一个字符，命令格式为：<code>R a1 a2</code>。其中 <code>a1</code> 为被替换的字符，<code>a2</code> 为替换的字符，若在原串中有多个 <code>a1</code> 则应全部替换。</p>\n<p>例如，原串： <code>This is a book.</code>，输入命令：<code>R o e</code>，替换后的字符串为：<code>This is a beek.</code>。</p>\n<p><strong>特殊情况：</strong></p>\n<p>在编辑过程中，若出现被改的字符不存在时，则给出提示信息 <code>Not exist</code>。</p>\n</div>            </div>",
+      "text": "从键盘输入一个字符串（长度  \\le 40 个字符），并以字符 . 结束。\n例如：This is a book. 现对该字符串进行编辑，编辑功能有：\n操作一：删除字符。\nD：删除一个字符，命令的格式为：D a。其中 a为被删除的字符。\n例如：D s  表示删除字符 s ，若字符串中有多个 s，则删除第一次出现的。\n如上例中删除的结果为： Thi is a book.\n操作二：插入字符。\nI：插入一个字符，命令的格式为：I a1 a2。其中 a1 表示插入到指定字符前面，a2 表示将要插入的字符。\n例如：I s d 表示在指定字符 s 的前面插入字符 d ，若原串中有多个 s ，则插入在最后一个字符的前面。\n如上例中，原串：This is a book.，插入后：This ids a book.。\n操作三：替换字符。\nR：替换一个字符，命令格式为：R a1 a2。其中 a1 为被替换的字符，a2 为替换的字符，若在原串中有多个 a1 则应全部替换。\n例如，原串： This is a book.，输入命令：R o e，替换后的字符串为：This is a beek.。\n特殊情况：\n在编辑过程中，若出现被改的字符不存在时，则给出提示信息 Not exist。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>每个测试文件只包含一组测试数据，每组输入数据包含两行：</p>\n<p>第一行，输入一个字符串，表示原串；</p>\n<p>第二行，输入一个字符串，表示命令，数据保证命令不会出错，也就是命令一定严格按照题目要求输入。</p>\n</div>            </div>",
+      "text": "每个测试文件只包含一组测试数据，每组输入数据包含两行：\n第一行，输入一个字符串，表示原串；\n第二行，输入一个字符串，表示命令，数据保证命令不会出错，也就是命令一定严格按照题目要求输入。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组输入数据，输出编辑后的字符串，如果被改的字符不存在，则输出 <code>Not exist</code> （引号不输出）。</p>\n</div>            </div>",
+      "text": "对于每组输入数据，输出编辑后的字符串，如果被改的字符不存在，则输出 Not exist （引号不输出）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>This is a book.\r\nD s</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Thi is a book.</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>abc dc e.\r\nI c f</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>abc dfc e.</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>This is a book.\r\nR o e</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>This is a beek.</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            This is a book.\r\nD s\n                        \n                        \n                            输出\n                            Thi is a book.\n                        \n\n                                                    \n                                输入\n                                abc dc e.\r\nI c f\n                            \n                            \n                                输出\n                                abc dfc e.\n                            \n                        \n                                                    \n                                输入\n                                This is a book.\r\nR o e\n                            \n                            \n                                输出\n                                This is a beek."
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "This is a book.\r\nD s",
+      "output": "Thi is a book."
+    },
+    {
+      "input": "abc dc e.\r\nI c f",
+      "output": "abc dfc e."
+    },
+    {
+      "input": "This is a book.\r\nR o e",
+      "output": "This is a beek."
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5585",
+    "通过人数": "2168",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:19:59"
+}

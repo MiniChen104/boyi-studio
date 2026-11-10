@@ -1,0 +1,60 @@
+{
+  "id": "1128",
+  "title": "整数串拆段",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1128",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>将一个长度小于 <span class=\"katex math inline\">10</span> 位的数字串拆成 <span class=\"katex math inline\">2</span> 段，使其和为最小的素数。</p>\n<p>例如数字串“ <span class=\"katex math inline\">13304</span> ” ，拆的方法有：</p>\n<pre><code>1 + 3304 = 3305 \n13 + 304 = 317 \n133 + 04 = 137 \n1330 + 4 = 1334 \n</code></pre>\n<p>从上面可看出，和为素数的有：<span class=\"katex math inline\">317</span> 与 <span class=\"katex math inline\">137</span> ，最小的是<span class=\"katex math inline\">137</span>。</p>\n</div>            </div>",
+      "text": "将一个长度小于 10 位的数字串拆成 2 段，使其和为最小的素数。\n例如数字串“ 13304 ” ，拆的方法有：\n1 + 3304 = 3305 \n13 + 304 = 317 \n133 + 04 = 137 \n1330 + 4 = 1334 \n\n从上面可看出，和为素数的有：317 与 137 ，最小的是137。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个长度小于 <span class=\"katex math inline\">10</span> 的数字串。</p>\n</div>            </div>",
+      "text": "一个长度小于 10 的数字串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>最小的和为素数的数，若无素数则输出 <span class=\"katex math inline\">-1</span>。</p>\n</div>            </div>",
+      "text": "最小的和为素数的数，若无素数则输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>13304</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>137</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2468</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>-1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            13304\n                        \n                        \n                            输出\n                            137\n                        \n\n                                                    \n                                输入\n                                2468\n                            \n                            \n                                输出\n                                -1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "13304",
+      "output": "137"
+    },
+    {
+      "input": "2468",
+      "output": "-1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "5315",
+    "通过人数": "3364",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:15:07"
+}

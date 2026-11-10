@@ -1,0 +1,56 @@
+{
+  "id": "2242",
+  "title": "计算(a+b)/c的值",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2242",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定 <span class=\"katex math inline\">3</span> 个整数 <span class=\"katex math inline\">a、b、c</span>，计算表达式 <span class=\"katex math inline\">(a+b)/c</span> 的值，<span class=\"katex math inline\">/</span> 是整除运算。</p>\n</div>            </div>",
+      "text": "给定 3 个整数 a、b、c，计算表达式 (a+b)/c 的值，/ 是整除运算。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入仅一行，包括三个整数 <span class=\"katex math inline\">a、b、c</span> , 数与数之间以一个空格分开。( <span class=\"katex math inline\">－10,000 \\lt a,b,c \\lt 10,000 </span>,  <span class=\"katex math inline\">c</span> 不等于 <span class=\"katex math inline\">0</span> )。</p>\n</div>            </div>",
+      "text": "输入仅一行，包括三个整数 a、b、c , 数与数之间以一个空格分开。( －10,000 \\lt a,b,c \\lt 10,000 ,  c 不等于 0 )。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，即表达式的值。</p>\n</div>            </div>",
+      "text": "输出一行，即表达式的值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 1 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 1 3\n                        \n                        \n                            输出\n                            0"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会一级</p>\n</div>                </div>",
+      "text": "电子学会一级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 1 3",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "12925",
+    "通过人数": "9535",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:12"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "2105",
+  "title": "不太甜的糖果",
+  "tags": [
+    "二分答案",
+    "前缀和差分",
+    "动态规划",
+    "双指针"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2105",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小Y走啊走啊，翻山越岭、跋山涉水，终于，小Y累了。虽然，糖果的诱惑强大，但他的两条腿已经不听使唤，只能坐在地上叹气，内心无比焦急……</p>\n<p>突然眼前一黑，小Y没有昏过去，但是眼前出现了一个糖人。在这无人之地，小Y没有别的办法，只得求助糖人。</p>\n<p>善良的糖人没法拒绝小Y的请求，但还要遵守这个世界的规则，所以，小Y不能”不劳而获”，但小Y现在已经没有力气。糖人只让他玩一个小小的游戏，完成这个游戏，小Y才能获得补充能量，继续前进。</p>\n<p>但是，小Y满脑子都是糖果，他没有心思玩游戏，只想着吃糖。所以，他向你求助。</p>\n<p>游戏的规则是这样的：\n给定一排长度为 <span class=\"katex math inline\">n</span> 的糖果串，每个糖果有一个甜度；在不改变糖果顺序的前提下，求出一个最短的糖果串使得它的甜度之和大于等于 <span class=\"katex math inline\">m</span> 。</p>\n</div>            </div>",
+      "text": "小Y走啊走啊，翻山越岭、跋山涉水，终于，小Y累了。虽然，糖果的诱惑强大，但他的两条腿已经不听使唤，只能坐在地上叹气，内心无比焦急……\n突然眼前一黑，小Y没有昏过去，但是眼前出现了一个糖人。在这无人之地，小Y没有别的办法，只得求助糖人。\n善良的糖人没法拒绝小Y的请求，但还要遵守这个世界的规则，所以，小Y不能”不劳而获”，但小Y现在已经没有力气。糖人只让他玩一个小小的游戏，完成这个游戏，小Y才能获得补充能量，继续前进。\n但是，小Y满脑子都是糖果，他没有心思玩游戏，只想着吃糖。所以，他向你求助。\n游戏的规则是这样的：\n给定一排长度为 n 的糖果串，每个糖果有一个甜度；在不改变糖果顺序的前提下，求出一个最短的糖果串使得它的甜度之和大于等于 m 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>，第二行有 <span class=\"katex math inline\">n</span> 个数。</p>\n</div>            </div>",
+      "text": "第一行包含两个数 n 和 m，第二行有 n 个数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含一个数，即最短的糖果串的长度；如果找不到这样的糖果串，输出 <span class=\"katex math inline\">0</span>。</p>\n</div>            </div>",
+      "text": "输出一行，包含一个数，即最短的糖果串的长度；如果找不到这样的糖果串，输出 0。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 15 \r\n5 1 3 5 10 7 4 9 2 8 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 15 \r\n5 1 3 5 10 7 4 9 2 8 \n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例说明】</strong></p>\n<p>糖果串为连续的。</p>\n<p>对于样例数据，选第四五个可以达到 <span class=\"katex math inline\">15</span> 或者第五六个能达到 <span class=\"katex math inline\">17</span> ，所以最短糖果串为 <span class=\"katex math inline\">2</span> 。</p>\n<p><strong>【数据范围】</strong></p>\n<p>对于 <span class=\"katex math inline\">20\\%</span> 的数据，<span class=\"katex math inline\">n≤200</span></p>\n<p>对于 <span class=\"katex math inline\">50\\%</span> 的数据，<span class=\"katex math inline\">n≤2000</span></p>\n<p>对于 <span class=\"katex math inline\">80\\%</span> 的数据，<span class=\"katex math inline\">n≤100000</span></p>\n<p>对于 <span class=\"katex math inline\">90\\%</span> 的数据，<span class=\"katex math inline\">n≤200000</span></p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">n≤230000</span></p>\n<p><span class=\"katex math inline\">1≤M≤1000</span>，糖果的甜度为正整数，且本题数据保证连续若干糖果的甜度和在int范围内。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例说明】\n糖果串为连续的。\n对于样例数据，选第四五个可以达到 15 或者第五六个能达到 17 ，所以最短糖果串为 2 。\n【数据范围】\n对于 20\\% 的数据，n≤200\n对于 50\\% 的数据，n≤2000\n对于 80\\% 的数据，n≤100000\n对于 90\\% 的数据，n≤200000\n对于 100\\% 的数据，n≤230000\n1≤M≤1000，糖果的甜度为正整数，且本题数据保证连续若干糖果的甜度和在int范围内。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组 二分答案 前缀和差分 动态规划</p>\n</div>                </div>",
+      "text": "数组 二分答案 前缀和差分 动态规划"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二分答案</span><span class=\"label label-warning\">前缀和差分</span><span class=\"label label-info\">动态规划</span><span class=\"label label-danger\">双指针</span></span></p>\n</div>                </div>",
+      "text": "二分答案前缀和差分动态规划双指针"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 15 \r\n5 1 3 5 10 7 4 9 2 8 ",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4058",
+    "通过人数": "2354",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:28:30"
+}

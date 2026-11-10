@@ -1,0 +1,61 @@
+{
+  "id": "1534",
+  "title": "小 X 与机器人 2 (sihuo)",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1534",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 X 在解决了高大上的落子问题后， 开始着手训练 BetaGo 的深度学习 能力， 第一步要教 BetaGo识别各种各样的棋形，小 X 首先教 BetaGo 识别跟死活密切相关的棋型，在成功识别了一些简单的棋形后， BetaGo 在识别聚四棋形时遇到了困难，所谓聚四棋形就是连在一起的四颗棋子， 它们共有五种不同的形状， 五种棋形及其命名如下图所示：</p>\n<p><img src=\"https://assets.boyi.local/46512d5bad5f7e90319e6fea.png\"></p>\n<p>注意： 每种形状经过旋转、翻折得到的图案属于同一种形状。 譬如只要四颗相邻的棋子排成一条直线则不管它们是横着排还是竖着排都称之为直四。</p>\n<p>小 X 希望你编一个程序帮助 BetaGo 识别聚四棋形， 具体要求是：给出四个连在一起的围棋盘上的交叉点位置， 判断这四颗连在一起的棋子属于那种聚四？ 输入数据保证给出的棋形一定是五种聚四棋形中的一种。 棋盘上位置的表示方法与上一题相同。</p>\n</div>            </div>",
+      "text": "小 X 在解决了高大上的落子问题后， 开始着手训练 BetaGo 的深度学习 能力， 第一步要教 BetaGo识别各种各样的棋形，小 X 首先教 BetaGo 识别跟死活密切相关的棋型，在成功识别了一些简单的棋形后， BetaGo 在识别聚四棋形时遇到了困难，所谓聚四棋形就是连在一起的四颗棋子， 它们共有五种不同的形状， 五种棋形及其命名如下图所示：\n\n注意： 每种形状经过旋转、翻折得到的图案属于同一种形状。 譬如只要四颗相邻的棋子排成一条直线则不管它们是横着排还是竖着排都称之为直四。\n小 X 希望你编一个程序帮助 BetaGo 识别聚四棋形， 具体要求是：给出四个连在一起的围棋盘上的交叉点位置， 判断这四颗连在一起的棋子属于那种聚四？ 输入数据保证给出的棋形一定是五种聚四棋形中的一种。 棋盘上位置的表示方法与上一题相同。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据共有四行，每行包含两个用空格隔开的正整数 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span>， 表示棋盘上的一颗棋子的位置。</p>\n</div>            </div>",
+      "text": "输入数据共有四行，每行包含两个用空格隔开的正整数 x 和 y， 表示棋盘上的一颗棋子的位置。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果是直四 ， 则输出“ <code>zhisi</code>” ； 如果是曲四， 则输出“ <code>qusi</code>” ； 如果是弯四， 则输出“ <code>wansi</code>” ；</p>\n<p>如果是丁四， 则输出 “<code>dingsi</code>” ； 如果是方四， 则输出 “<code>fangsi</code>” 。 注意引号不要输出。</p>\n</div>            </div>",
+      "text": "如果是直四 ， 则输出“ zhisi” ； 如果是曲四， 则输出“ qusi” ； 如果是弯四， 则输出“ wansi” ；\n如果是丁四， 则输出 “dingsi” ； 如果是方四， 则输出 “fangsi” 。 注意引号不要输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 1\r\n1 2\r\n2 3\r\n2 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>wansi</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 1\r\n1 2\r\n2 3\r\n2 2\n                        \n                        \n                            输出\n                            wansi"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">1 \\le x \\le 4</span>， <span class=\"katex math inline\">1 \\le y \\le 4</span>，每种棋形分别对应 <span class=\"katex math inline\">20\\%</span> 的数据，也就是说你直接输出某种拼音可以得到 <span class=\"katex math inline\">20</span> 分。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n1 \\le x \\le 4， 1 \\le y \\le 4，每种棋形分别对应 20\\% 的数据，也就是说你直接输出某种拼音可以得到 20 分。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>常州市2016“信息与未来”夏令营选拔赛</p>\n</div>                </div>",
+      "text": "常州市2016“信息与未来”夏令营选拔赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 1\r\n1 2\r\n2 3\r\n2 2",
+      "output": "wansi"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "411",
+    "通过人数": "176",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:45"
+}

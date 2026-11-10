@@ -1,0 +1,68 @@
+{
+  "id": "3488",
+  "title": "工作沟通",
+  "tags": [
+    "GESP六级",
+    "LCA",
+    "树",
+    "23年12月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3488",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某公司有 <span class=\"katex math inline\">N</span> 名员工，编号从 <span class=\"katex math inline\">0</span> 至 <span class=\"katex math inline\">N-1</span>。其中，除了 <span class=\"katex math inline\">0</span> 号员工是老板，其余每名员工都有一个直接领导。我们假设编号为 <span class=\"katex math inline\">i</span> 的员工的直接领导是 <span class=\"katex math inline\">f_i</span>。</p>\n<p>该公司有严格的管理制度，每位员工只能受到本人或本人直接领导或间接领导的管理。具体来说，规定员工 <span class=\"katex math inline\">x</span> 可以\n管理员工 <span class=\"katex math inline\">y</span>，当且仅当 <span class=\"katex math inline\">x=y</span>，或 <span class=\"katex math inline\">x=f_y</span>，或 <span class=\"katex math inline\">x</span> 可以管理 <span class=\"katex math inline\">f_y</span> 。特别地，<span class=\"katex math inline\">0</span> 号员工老板只能自我管理，无法由其他任何员工管理。</p>\n<p>现在，有一些同事要开展合作，他们希望找到一位同事来主持这场合作，这位同事必须能够管理参与合作的所有同事。如果有多名满足这一条件的员工，他们希望找到编号最大的员工。你能帮帮他们吗？</p>\n</div>            </div>",
+      "text": "某公司有 N 名员工，编号从 0 至 N-1。其中，除了 0 号员工是老板，其余每名员工都有一个直接领导。我们假设编号为 i 的员工的直接领导是 f_i。\n该公司有严格的管理制度，每位员工只能受到本人或本人直接领导或间接领导的管理。具体来说，规定员工 x 可以\n管理员工 y，当且仅当 x=y，或 x=f_y，或 x 可以管理 f_y 。特别地，0 号员工老板只能自我管理，无法由其他任何员工管理。\n现在，有一些同事要开展合作，他们希望找到一位同事来主持这场合作，这位同事必须能够管理参与合作的所有同事。如果有多名满足这一条件的员工，他们希望找到编号最大的员工。你能帮帮他们吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">N</span>，表示员工的数量。</p>\n<p>第二行 <span class=\"katex math inline\">N-1</span> 个用空格隔开的正整数，依次为 <span class=\"katex math inline\">f_1,f_2,...,f _ {N-1}</span>。</p>\n<p>第三行一个整数 <span class=\"katex math inline\">Q</span>，表示共有 <span class=\"katex math inline\">Q</span> 场合作需要安排。</p>\n<p>接下来 <span class=\"katex math inline\">Q</span> 行，每行描述一场合作：开头是一个整数 <span class=\"katex math inline\">m</span> （<span class=\"katex math inline\"> 2 \\leq m \\leq N </span> ），表示参与本次合作的员工数量；接着是 <span class=\"katex math inline\">m</span> 个整数，依次表示参与本次合作的员工编号（保证编号合法且不重复）。</p>\n<p>保证公司结构合法，即不存在任意一名员工，其本人是自己的直接或间接领导。</p>\n</div>            </div>",
+      "text": "第一行一个整数 N，表示员工的数量。\n第二行 N-1 个用空格隔开的正整数，依次为 f_1,f_2,...,f _ {N-1}。\n第三行一个整数 Q，表示共有 Q 场合作需要安排。\n接下来 Q 行，每行描述一场合作：开头是一个整数 m （ 2 \\leq m \\leq N  ），表示参与本次合作的员工数量；接着是 m 个整数，依次表示参与本次合作的员工编号（保证编号合法且不重复）。\n保证公司结构合法，即不存在任意一名员工，其本人是自己的直接或间接领导。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">Q</span> 行，每行一个整数，依次为每场合作的主持人选</p>\n</div>            </div>",
+      "text": "输出 Q 行，每行一个整数，依次为每场合作的主持人选"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n0 0 2 2\r\n3\r\n2 3 4\r\n3 2 3 4\r\n2 1 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2\r\n2\r\n0</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>7\r\n0 1 0 2 1 2\r\n5\r\n2 4 6\r\n2 4 5\r\n3 4 5 6\r\n4 2 4 5 6\r\n2 3 4</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2\r\n1\r\n1\r\n1\r\n0</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n0 0 2 2\r\n3\r\n2 3 4\r\n3 2 3 4\r\n2 1 4\n                        \n                        \n                            输出\n                            2\r\n2\r\n0\n                        \n\n                                                    \n                                输入\n                                7\r\n0 1 0 2 1 2\r\n5\r\n2 4 6\r\n2 4 5\r\n3 4 5 6\r\n4 2 4 5 6\r\n2 3 4\n                            \n                            \n                                输出\n                                2\r\n1\r\n1\r\n1\r\n0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例1解释】</p>\n<p>对于第一场合作，员工 <span class=\"katex math inline\"> 3,4 </span> 有共同领导 <span class=\"katex math inline\">2</span> ，可以主持合作。</p>\n<p>对于第二场合作，员工 <span class=\"katex math inline\">2</span> 本人即可以管理所有参与者。</p>\n<p>对于第三场合作，只有 <span class=\"katex math inline\">0</span> 号老板才能管理所有员工。</p>\n<p>【数据规模】</p>\n<p>对于 <span class=\"katex math inline\"> 50 \\% </span>的测试点，保证 <span class=\"katex math inline\"> N \\leq 50</span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">3 \\leq N \\leq 300</span>；<span class=\"katex math inline\"> Q \\leq 100 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1解释】\n对于第一场合作，员工  3,4  有共同领导 2 ，可以主持合作。\n对于第二场合作，员工 2 本人即可以管理所有参与者。\n对于第三场合作，只有 0 号老板才能管理所有员工。\n【数据规模】\n对于  50 \\% 的测试点，保证  N \\leq 50。\n对于所有测试点，保证 3 \\leq N \\leq 300； Q \\leq 100 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年12月六级</p>\n</div>                </div>",
+      "text": "GESP23年12月六级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP六级</span><span class=\"label label-warning\">LCA</span><span class=\"label label-info\">树</span><span class=\"label label-danger\">23年12月</span></span></p>\n</div>                </div>",
+      "text": "GESP六级LCA树23年12月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n0 0 2 2\r\n3\r\n2 3 4\r\n3 2 3 4\r\n2 1 4",
+      "output": "2\r\n2\r\n0"
+    },
+    {
+      "input": "7\r\n0 1 0 2 1 2\r\n5\r\n2 4 6\r\n2 4 5\r\n3 4 5 6\r\n4 2 4 5 6\r\n2 3 4",
+      "output": "2\r\n1\r\n1\r\n1\r\n0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "282",
+    "通过人数": "156",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:23"
+}

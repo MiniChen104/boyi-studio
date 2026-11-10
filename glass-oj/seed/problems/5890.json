@@ -1,0 +1,60 @@
+{
+  "id": "5890",
+  "title": "上数塔",
+  "tags": [
+    "递推",
+    "动态规划"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5890",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一个 <span class=\"katex math inline\">N</span> 层的数塔，数塔的第 <span class=\"katex math inline\">i</span> 层有 <span class=\"katex math inline\">i</span> 个位置，每个位置，可以从下一层的左下角的位置或者右下角的位置走上来。</p>\n<p>请问从数塔的最下面一层，只能向上走，走到数塔的最上面一层，一共有多少条不同的路线？</p>\n<p>比如：下图所示的是一个 <span class=\"katex math inline\">3</span> 层的数塔。</p>\n<pre><code>      1\n    /   \\\n   2     3\n /   \\ /   \\\n4     5     6\n</code></pre>\n<p>从最下面一层，走到最上面一层，共有 <span class=\"katex math inline\">4</span> 条不同的路线，分别是：</p>\n<ol><li>4 -&gt; 2 -&gt; 1</li>\n<li>5 -&gt; 2 -&gt; 1</li>\n<li>5 -&gt; 3 -&gt; 1</li>\n<li>6 -&gt; 3 -&gt; 1</li>\n</ol></div>            </div>",
+      "text": "有一个 N 层的数塔，数塔的第 i 层有 i 个位置，每个位置，可以从下一层的左下角的位置或者右下角的位置走上来。\n请问从数塔的最下面一层，只能向上走，走到数塔的最上面一层，一共有多少条不同的路线？\n比如：下图所示的是一个 3 层的数塔。\n      1\n    /   \\\n   2     3\n /   \\ /   \\\n4     5     6\n\n从最下面一层，走到最上面一层，共有 4 条不同的路线，分别是：\n4 -> 2 -> 1\n5 -> 2 -> 1\n5 -> 3 -> 1\n6 -> 3 -> 1"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数 <span class=\"katex math inline\">N</span>，表示数塔的层数。（<span class=\"katex math inline\">1 \\le N \\le 100</span>）。</p>\n</div>            </div>",
+      "text": "输入一个整数 N，表示数塔的层数。（1 \\le N \\le 100）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示从数塔的最下面一层，只能向上走，走到数塔的最上面一层，一共有多少条不同的路线。</p>\n<p>由于本题路线总数可能很多，请输出路线总数 <span class=\"katex math inline\">\\mod (10^9 + 7)</span> 的结果。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示从数塔的最下面一层，只能向上走，走到数塔的最上面一层，一共有多少条不同的路线。\n由于本题路线总数可能很多，请输出路线总数 \\mod (10^9 + 7) 的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>8</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>128</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>50</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>949480669</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                8\n                            \n                            \n                                输出\n                                128\n                            \n                        \n                                                    \n                                输入\n                                50\n                            \n                            \n                                输出\n                                949480669"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递推</span><span class=\"label label-warning\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "递推动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "4"
+    },
+    {
+      "input": "8",
+      "output": "128"
+    },
+    {
+      "input": "50",
+      "output": "949480669"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "178",
+    "通过人数": "98",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:44"
+}

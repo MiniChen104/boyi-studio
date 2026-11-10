@@ -1,0 +1,64 @@
+{
+  "id": "1162",
+  "title": "数组元素的删除",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1162",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>把一个数组的第 <span class=\"katex math inline\">x</span> 个位置的元素删除掉。</p>\n</div>            </div>",
+      "text": "把一个数组的第 x 个位置的元素删除掉。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出有三行：</p>\n<p>第一行有一个整数 <span class=\"katex math inline\">n</span> ( <span class=\"katex math inline\">n ≤ 10</span> )；</p>\n<p>第二行有 <span class=\"katex math inline\">n</span> 个整数（每个整数在<span class=\"katex math inline\">1</span>~<span class=\"katex math inline\">1000</span>之间）；</p>\n<p>第三行有一个整数 <span class=\"katex math inline\">x</span>（<span class=\"katex math inline\">1≤x≤n</span>），为要删除的位置。</p>\n</div>            </div>",
+      "text": "输出有三行：\n第一行有一个整数 n ( n ≤ 10 )；\n第二行有 n 个整数（每个整数在1~1000之间）；\n第三行有一个整数 x（1≤x≤n），为要删除的位置。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出更新后的数组。</p>\n</div>            </div>",
+      "text": "输出更新后的数组。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n1 2 3 4 5 \r\n3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 2 4 5</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n1 2 3 4 5 \r\n5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1 2 3 4</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n1 2 3 4 5 \r\n1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2 3 4 5 </pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n1 2 3 4 5 \r\n3\n                        \n                        \n                            输出\n                            1 2 4 5\n                        \n\n                                                    \n                                输入\n                                5\r\n1 2 3 4 5 \r\n5\n                            \n                            \n                                输出\n                                1 2 3 4\n                            \n                        \n                                                    \n                                输入\n                                5\r\n1 2 3 4 5 \r\n1\n                            \n                            \n                                输出\n                                2 3 4 5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n1 2 3 4 5 \r\n3",
+      "output": "1 2 4 5"
+    },
+    {
+      "input": "5\r\n1 2 3 4 5 \r\n5",
+      "output": "1 2 3 4"
+    },
+    {
+      "input": "5\r\n1 2 3 4 5 \r\n1",
+      "output": "2 3 4 5 "
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "24257",
+    "通过人数": "17038",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:15:37"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "4986",
+  "title": "奖品兑换",
+  "tags": [
+    "GESP五级",
+    "25年6月",
+    "二分答案"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/4986",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>班主任给上课专心听讲、认真完成作业的同学们分别发放了若干张课堂优秀券和作业优秀券。同学们可以使用这两种券找班主任兑换奖品。具体来说，可以使用 <span class=\"katex math inline\">a</span> 张课堂优秀券和 <span class=\"katex math inline\">b</span> 张作业优秀券兑换一份奖品，或者使用 <span class=\"katex math inline\">b</span> 张课堂优秀券和 <span class=\"katex math inline\">a</span> 张作业优秀券兑换一份奖品。</p>\n<p>现在小 <span class=\"katex math inline\">A</span> 有 <span class=\"katex math inline\">n</span> 张课堂优秀券和 <span class=\"katex math inline\">m</span> 张作业优秀券，他最多能兑换多少份奖品呢？</p>\n</div>            </div>",
+      "text": "班主任给上课专心听讲、认真完成作业的同学们分别发放了若干张课堂优秀券和作业优秀券。同学们可以使用这两种券找班主任兑换奖品。具体来说，可以使用 a 张课堂优秀券和 b 张作业优秀券兑换一份奖品，或者使用 b 张课堂优秀券和 a 张作业优秀券兑换一份奖品。\n现在小 A 有 n 张课堂优秀券和 m 张作业优秀券，他最多能兑换多少份奖品呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，两个正整数 <span class=\"katex math inline\">n，m</span>，分别表示小 <span class=\"katex math inline\">A</span> 持有的课堂优秀券和作业优秀券的数量。</p>\n<p>第二行，两个正整数 <span class=\"katex math inline\">a，b</span> ，表示兑换一份奖品所需的两种券的数量。</p>\n</div>            </div>",
+      "text": "第一行，两个正整数 n，m，分别表示小 A 持有的课堂优秀券和作业优秀券的数量。\n第二行，两个正整数 a，b ，表示兑换一份奖品所需的两种券的数量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共一行，一个整数，表示最多能兑换的奖品份数。</p>\n</div>            </div>",
+      "text": "输出共一行，一个整数，表示最多能兑换的奖品份数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8 8\r\n2 1\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>314159 2653589\r\n27 1828</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1599</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8 8\r\n2 1\r\n\n                        \n                        \n                            输出\n                            5\n                        \n\n                                                    \n                                输入\n                                314159 2653589\r\n27 1828\n                            \n                            \n                                输出\n                                1599"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">60</span>% 的测试点，保证 <span class=\"katex math inline\">1 \\le a，b \\le 100，1 \\le n，m \\le 500 </span> 。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le a，b \\le 10^{4}，1 \\le n，m \\le 10^{9} </span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 60% 的测试点，保证 1 \\le a，b \\le 100，1 \\le n，m \\le 500  。\n对于所有测试点，保证 1 \\le a，b \\le 10^{4}，1 \\le n，m \\le 10^{9}  。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP25年6月五级</p>\n</div>                </div>",
+      "text": "GESP25年6月五级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">25年6月</span><span class=\"label label-info\">二分答案</span></span></p>\n</div>                </div>",
+      "text": "GESP五级25年6月二分答案"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8 8\r\n2 1\r\n",
+      "output": "5"
+    },
+    {
+      "input": "314159 2653589\r\n27 1828",
+      "output": "1599"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "545",
+    "通过人数": "203",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:34"
+}

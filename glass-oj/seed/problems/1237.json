@@ -1,0 +1,56 @@
+{
+  "id": "1237",
+  "title": "黑白子的移动策略",
+  "tags": [
+    "分治"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1237",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">2n</span> 个棋子（ <span class=\"katex math inline\">n \\ge 4</span>）排成一行，开始位置为白子全部在左边，黑子全部在右边，如下图为 <span class=\"katex math inline\">n=5</span>的情形：<br>\n○○○○○●●●●●<br>\n移动棋子的规则是：每次必须同时移动相邻的两个棋子，颜色不限，可以左移也可以右移到空位上去，但不能调换两个棋子的左右位置。每次移动必须跳过若干个棋子（不能平移），要求最后能移成黑白相间的一行棋子。如 <span class=\"katex math inline\">n=5</span> 时，成为：<br>\n     ○●○●○●○●○●  </p>\n<p>请编程打印出移动过程。<br>\n注意：为方便打印，我们在程序中使用小写字母<code>o</code>代表白色棋子，采用<code>*</code>代表黑色棋子，第一步（step0）输出初始化的棋盘的状态。</p>\n</div>            </div>",
+      "text": "有 2n 个棋子（ n \\ge 4）排成一行，开始位置为白子全部在左边，黑子全部在右边，如下图为 n=5的情形：\n○○○○○●●●●●\n移动棋子的规则是：每次必须同时移动相邻的两个棋子，颜色不限，可以左移也可以右移到空位上去，但不能调换两个棋子的左右位置。每次移动必须跳过若干个棋子（不能平移），要求最后能移成黑白相间的一行棋子。如 n=5 时，成为：\n     ○●○●○●○●○●  \n请编程打印出移动过程。\n注意：为方便打印，我们在程序中使用小写字母o代表白色棋子，采用*代表黑色棋子，第一步（step0）输出初始化的棋盘的状态。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数 <span class=\"katex math inline\">n</span>。</p>\n</div>            </div>",
+      "text": "输入一个整数 n。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按题意输出，输出格式可以参考样例输出。</p>\n</div>            </div>",
+      "text": "按题意输出，输出格式可以参考样例输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>step0:ooooooo*******--\r\nstep1:oooooo--******o*\r\nstep2:oooooo******--o*\r\nstep3:ooooo--*****o*o*\r\nstep4:ooooo*****--o*o*\r\nstep5:oooo--****o*o*o*\r\nstep6:oooo****--o*o*o*\r\nstep7:ooo--***o*o*o*o*\r\nstep8:ooo*o**--*o*o*o*\r\nstep9:o--*o**oo*o*o*o*\r\nstep10:o*o*o*--o*o*o*o*\r\nstep11:--o*o*o*o*o*o*o*</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\n                        \n                        \n                            输出\n                            step0:ooooooo*******--\r\nstep1:oooooo--******o*\r\nstep2:oooooo******--o*\r\nstep3:ooooo--*****o*o*\r\nstep4:ooooo*****--o*o*\r\nstep5:oooo--****o*o*o*\r\nstep6:oooo****--o*o*o*\r\nstep7:ooo--***o*o*o*o*\r\nstep8:ooo*o**--*o*o*o*\r\nstep9:o--*o**oo*o*o*o*\r\nstep10:o*o*o*--o*o*o*o*\r\nstep11:--o*o*o*o*o*o*o*"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分治</p>\n</div>                </div>",
+      "text": "分治"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分治</span></span></p>\n</div>                </div>",
+      "text": "分治"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7",
+      "output": "step0:ooooooo*******--\r\nstep1:oooooo--******o*\r\nstep2:oooooo******--o*\r\nstep3:ooooo--*****o*o*\r\nstep4:ooooo*****--o*o*\r\nstep5:oooo--****o*o*o*\r\nstep6:oooo****--o*o*o*\r\nstep7:ooo--***o*o*o*o*\r\nstep8:ooo*o**--*o*o*o*\r\nstep9:o--*o**oo*o*o*o*\r\nstep10:o*o*o*--o*o*o*o*\r\nstep11:--o*o*o*o*o*o*o*"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "934",
+    "通过人数": "285",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:16:42"
+}

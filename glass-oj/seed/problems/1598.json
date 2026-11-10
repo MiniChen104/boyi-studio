@@ -1,0 +1,56 @@
+{
+  "id": "1598",
+  "title": "文具店的折扣",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1598",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>花花去文具店买了 <span class=\"katex math inline\">1</span> 支笔和 <span class=\"katex math inline\">1</span> 块橡皮，已知笔 <span class=\"katex math inline\">x</span>元<span class=\"katex math inline\">/</span> 支，橡皮 <span class=\"katex math inline\">y</span> 元 <span class=\"katex math inline\">/</span> 块，文具店今天有活动，可以给顾客打 <span class=\"katex math inline\">9</span> 折（用购买总价 <span class=\"katex math inline\">\\times 0.9</span> ），花花付给了老板 <span class=\"katex math inline\">n</span> 元，请问老板应该找给花花多少钱？</p>\n</div>            </div>",
+      "text": "花花去文具店买了 1 支笔和 1 块橡皮，已知笔 x元/ 支，橡皮 y 元 / 块，文具店今天有活动，可以给顾客打 9 折（用购买总价 \\times 0.9 ），花花付给了老板 n 元，请问老板应该找给花花多少钱？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个整数 <span class=\"katex math inline\">x、y、n</span> ，分别代表了笔的单价、橡皮的单价和花花付给老板的钱（已知花花付给老板的钱 <span class=\"katex math inline\">n \\ge x+y</span>）。</p>\n</div>            </div>",
+      "text": "三个整数 x、y、n ，分别代表了笔的单价、橡皮的单价和花花付给老板的钱（已知花花付给老板的钱 n \\ge x+y）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个小数（保留 <span class=\"katex math inline\">1</span> 位小数），代表老板应该找给花花的钱。</p>\n</div>            </div>",
+      "text": "一个小数（保留 1 位小数），代表老板应该找给花花的钱。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 1 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2.3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 1 5\n                        \n                        \n                            输出\n                            2.3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 1 5",
+      "output": "2.3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "40385",
+    "通过人数": "28924",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:38"
+}

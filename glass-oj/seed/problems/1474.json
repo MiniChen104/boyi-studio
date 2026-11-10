@@ -1,0 +1,57 @@
+{
+  "id": "1474",
+  "title": "FJ的字符串",
+  "tags": [
+    "蓝桥杯",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1474",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>问题描述： </p>\n<p>FJ在沙盘上写了这样一些字符串： </p>\n<pre><code>A1  =  “A” \nA2  =  “ABA” \nA3  =  “ABACABA” \nA4  =  “ABACABADABACABA”\n</code></pre>\n<p><span class=\"katex math inline\">\\dots</span>  </p>\n<p><span class=\"katex math inline\">\\dots</span><br>\n你能找出其中的规律并写所有的数列 <span class=\"katex math inline\">AN</span> 吗？ </p>\n<p>输入格式</p>\n<p>仅有一个数：<span class=\"katex math inline\">N  \\le  26</span>。 </p>\n<p>输出格式</p>\n<p>请输出相应的字符串 <span class=\"katex math inline\">AN</span>，以一个换行符结束。输出中不得含有多余的空格或换行、回车符。 </p>\n</div>            </div>",
+      "text": "问题描述： \nFJ在沙盘上写了这样一些字符串： \nA1  =  “A” \nA2  =  “ABA” \nA3  =  “ABACABA” \nA4  =  “ABACABADABACABA”\n\n\\dots  \n\\dots\n你能找出其中的规律并写所有的数列 AN 吗？ \n输入格式\n仅有一个数：N  \\le  26。 \n输出格式\n请输出相应的字符串 AN，以一个换行符结束。输出中不得含有多余的空格或换行、回车符。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">3</span> 。</p>\n</div>            </div>",
+      "text": "3 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\"> ABACABA </span>。</p>\n</div>            </div>",
+      "text": "ABACABA 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>ABACABA </pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            ABACABA"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 字符串</p>\n</div>                </div>",
+      "text": "蓝桥杯 字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "ABACABA "
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "910",
+    "通过人数": "678",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:19:58"
+}

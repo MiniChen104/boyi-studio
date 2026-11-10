@@ -1,0 +1,62 @@
+{
+  "id": "1552",
+  "title": "基因组分析",
+  "tags": [
+    "省赛",
+    "字符串"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1552",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>乌龟得到了他的基因组，一个只包含 <code>ATCG</code> 四种字母的字符串。乌龟想起科学家说，基因组中很多片段都多次重复出现，而且这种重复是很有意义的，于是他想计算一下自己基因组里片段的重复情况。</p>\n<p>给定一个基因组，其中一个长度为 <span class=\"katex math inline\">k</span> 的子串称为一个“<span class=\"katex math inline\">k</span> - 片段”。乌龟希望你计算出基因组中不同的 <span class=\"katex math inline\">k</span> - 片段数量。例如，基因组 <code>TACAC</code> 的 <span class=\"katex math inline\">2</span> - 片段有 <code>TA</code> ，<code>AC</code>，<code>CA</code>，<code>AC</code> ，其中不同的片段数量有 <span class=\"katex math inline\">3</span> 个。</p>\n</div>            </div>",
+      "text": "乌龟得到了他的基因组，一个只包含 ATCG 四种字母的字符串。乌龟想起科学家说，基因组中很多片段都多次重复出现，而且这种重复是很有意义的，于是他想计算一下自己基因组里片段的重复情况。\n给定一个基因组，其中一个长度为 k 的子串称为一个“k - 片段”。乌龟希望你计算出基因组中不同的 k - 片段数量。例如，基因组 TACAC 的 2 - 片段有 TA ，AC，CA，AC ，其中不同的片段数量有 3 个。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>整数 <span class=\"katex math inline\">n</span>，<span class=\"katex math inline\">k</span>，<span class=\"katex math inline\">R_1</span>，表示基因组的长度，片段的长度和数列生成的首项。基因组第 <span class=\"katex math inline\">i</span> 个字符在 <span class=\"katex math inline\">R_i \\mod 4</span> 的值为 <span class=\"katex math inline\">0,1,2,3</span> 时分别为 <code>A</code>， <code>T</code>，<code>C</code>，<code>G</code>。</p>\n<p>试题中使用的生成数列 <span class=\"katex math inline\">R</span> 定义如下：整数 <span class=\"katex math inline\">0 ≤ R_1 &lt; 201701</span> 在输入中给出。对于 <span class=\"katex math inline\">i&gt;1</span> ，<span class=\"katex math inline\">R_i = (R</span><sub><span class=\"katex math inline\">i-1</span></sub><span class=\"katex math inline\">\\times 6807 + 2831) \\mod 201701</span> 。</p>\n</div>            </div>",
+      "text": "整数 n，k，R_1，表示基因组的长度，片段的长度和数列生成的首项。基因组第 i 个字符在 R_i \\mod 4 的值为 0,1,2,3 时分别为 A， T，C，G。\n试题中使用的生成数列 R 定义如下：整数 0 ≤ R_1 < 201701 在输入中给出。对于 i>1 ，R_i = (Ri-1\\times 6807 + 2831) \\mod 201701 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示不同的 <span class=\"katex math inline\">k</span> - 片段的数量</p>\n</div>            </div>",
+      "text": "一个整数，表示不同的 k - 片段的数量"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>20 2 37</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            20 2 37\n                        \n                        \n                            输出\n                            10"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据规模</h4>\n<p><span class=\"katex math inline\">30\\%</span> 的数据满足 <span class=\"katex math inline\">n≤10</span>。</p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据满足 <span class=\"katex math inline\">1≤n≤20,1≤k≤10</span>。</p>\n<h4>来源</h4>\n<p>2017江苏省青少年信息学奥林匹克小学组竞赛复赛。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据规模\n30\\% 的数据满足 n≤10。\n100\\% 的数据满足 1≤n≤20,1≤k≤10。\n来源\n2017江苏省青少年信息学奥林匹克小学组竞赛复赛。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>省赛 字符串</p>\n</div>                </div>",
+      "text": "省赛 字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">省赛</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "省赛字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "20 2 37",
+      "output": "10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "863",
+    "通过人数": "510",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:20:59"
+}

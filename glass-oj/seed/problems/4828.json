@@ -1,0 +1,52 @@
+{
+  "id": "4828",
+  "title": "水果派对",
+  "tags": [
+    "蓝桥等考",
+    "基础"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4828",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小蓝最近在学习各种水果的英文单词，比如苹果的英文为 <code>apple</code> ，香蕉的英文为 <code>banana</code>。</p>\n<p>请你编写一个程序，换行输出英文单词 <code>apple</code> 和 <code>banana</code>。</p>\n</div>            </div>",
+      "text": "小蓝最近在学习各种水果的英文单词，比如苹果的英文为 apple ，香蕉的英文为 banana。\n请你编写一个程序，换行输出英文单词 apple 和 banana。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无。</p>\n</div>            </div>",
+      "text": "无。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共两行：</p>\n<p>第一行为单词 <code>apple</code>；</p>\n<p>第二行为单词 <code>banana</code>。</p>\n</div>            </div>",
+      "text": "输出共两行：\n第一行为单词 apple；\n第二行为单词 banana。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>无</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>apple\r\nbanana</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            无\n                        \n                        \n                            输出\n                            apple\r\nbanana"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">基础</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考基础"
+    }
+  ],
+  "samples": [
+    {
+      "input": "无",
+      "output": "apple\r\nbanana"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "379",
+    "通过人数": "337",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:22"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "1059",
+  "title": "求数",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1059",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">1 \\sim 999</span> 中有因数 <span class=\"katex math inline\">3</span> ，且至少有一位数字是 <span class=\"katex math inline\">5</span> 的数。</p>\n</div>            </div>",
+      "text": "输出 1 \\sim 999 中有因数 3 ，且至少有一位数字是 5 的数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无。</p>\n</div>            </div>",
+      "text": "无。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>若干个数 每行一个。</p>\n</div>            </div>",
+      "text": "若干个数 每行一个。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "45913",
+    "通过人数": "24971",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:14:07"
+}

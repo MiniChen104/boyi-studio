@@ -1,0 +1,58 @@
+{
+  "id": "3389",
+  "title": "最大深度和",
+  "tags": [
+    "树",
+    "树形DP",
+    "换根DP"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3389",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一个神奇的树林中，有一棵包含 <span class=\"katex math inline\">n</span> 个节点的树。你的任务是找到一个节点，使得以该节点为根时，所有节点的深度之和达到最大。</p>\n<p>如果有多个根结点都可以使得深度和最大，请输出<strong>编号最小的根</strong>结点。</p>\n</div>            </div>",
+      "text": "在一个神奇的树林中，有一棵包含 n 个节点的树。你的任务是找到一个节点，使得以该节点为根时，所有节点的深度之和达到最大。\n如果有多个根结点都可以使得深度和最大，请输出编号最小的根结点。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个整数 <span class=\"katex math inline\">n</span>，表示树中节点的数量。</p>\n<p>接下来的 <span class=\"katex math inline\">n-1</span> 行，每行包含两个整数 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>，表示节点 <span class=\"katex math inline\">a</span> 和节点 <span class=\"katex math inline\">b</span> 之间存在一条边。</p>\n</div>            </div>",
+      "text": "第一行包含一个整数 n，表示树中节点的数量。\n接下来的 n-1 行，每行包含两个整数 a 和 b，表示节点 a 和节点 b 之间存在一条边。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示你找到的根节点的编号。</p>\n</div>            </div>",
+      "text": "一个整数，表示你找到的根节点的编号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\n1 4\r\n5 6\r\n4 5\r\n6 7\r\n6 8\r\n2 4\r\n3 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\n1 4\r\n5 6\r\n4 5\r\n6 7\r\n6 8\r\n2 4\r\n3 4\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据范围】</p>\n<p><span class=\"katex math inline\">2 \\le n \\le 10^6</span>，<span class=\"katex math inline\">1 \\le a \\lt b \\le n</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n2 \\le n \\le 10^6，1 \\le a \\lt b \\le n。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树</span><span class=\"label label-warning\">树形DP</span><span class=\"label label-info\">换根DP</span></span></p>\n</div>                </div>",
+      "text": "树树形DP换根DP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\n1 4\r\n5 6\r\n4 5\r\n6 7\r\n6 8\r\n2 4\r\n3 4",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "63",
+    "通过人数": "42",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:34:59"
+}

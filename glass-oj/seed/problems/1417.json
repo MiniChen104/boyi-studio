@@ -1,0 +1,56 @@
+{
+  "id": "1417",
+  "title": "买文具",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1417",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>文具店的水笔的单价是一个整数，小明从文具店买了 <span class=\"katex math inline\">x</span> 支水笔花了 <span class=\"katex math inline\">y</span> 元。请问如果你要从该文具店购买 <span class=\"katex math inline\">5</span> 支水笔需要付多少钱？</p>\n</div>            </div>",
+      "text": "文具店的水笔的单价是一个整数，小明从文具店买了 x 支水笔花了 y 元。请问如果你要从该文具店购买 5 支水笔需要付多少钱？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个整数 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span> ，用空格隔开，分别代表小明买的水笔的支数和他付给老板的金额。</p>\n</div>            </div>",
+      "text": "两个整数 x 和 y ，用空格隔开，分别代表小明买的水笔的支数和他付给老板的金额。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，代表如果你买 <span class=\"katex math inline\">5</span> 支水笔，应该付给老板的金额。</p>\n</div>            </div>",
+      "text": "一个整数，代表如果你买 5 支水笔，应该付给老板的金额。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 20\n                        \n                        \n                            输出\n                            10"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 20",
+      "output": "10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "65616",
+    "通过人数": "43112",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:19:11"
+}

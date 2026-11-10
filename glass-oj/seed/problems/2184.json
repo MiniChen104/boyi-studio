@@ -1,0 +1,60 @@
+{
+  "id": "2184",
+  "title": "根据前序中序求后序",
+  "tags": [
+    "二叉树"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2184",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一棵二叉树的前序遍历和中序遍历，求其后序遍历。</p>\n</div>            </div>",
+      "text": "给定一棵二叉树的前序遍历和中序遍历，求其后序遍历。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>读入 <span class=\"katex math inline\">2</span> 个两个字符串，每个一行，长度均小于等于 <span class=\"katex math inline\">26</span>。 </p>\n<p>第一行为前序遍历，第二行为中序遍历。 </p>\n<p>二叉树中的结点名称以大写字母表示： <span class=\"katex math inline\">A，B，C...</span> 。</p>\n</div>            </div>",
+      "text": "读入 2 个两个字符串，每个一行，长度均小于等于 26。 \n第一行为前序遍历，第二行为中序遍历。 \n二叉树中的结点名称以大写字母表示： A，B，C... 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，为后序遍历的字符串。</p>\n</div>            </div>",
+      "text": "输出一行，为后序遍历的字符串。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>ABC\r\nCBA</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>CBA</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>ABCDEFGH\r\nCBEDAFHG</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>CEDBHGFA</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            ABC\r\nCBA\n                        \n                        \n                            输出\n                            CBA\n                        \n\n                                                    \n                                输入\n                                ABCDEFGH\r\nCBEDAFHG\n                            \n                            \n                                输出\n                                CEDBHGFA"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二叉树</p>\n</div>                </div>",
+      "text": "二叉树"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二叉树</span></span></p>\n</div>                </div>",
+      "text": "二叉树"
+    }
+  ],
+  "samples": [
+    {
+      "input": "ABC\r\nCBA",
+      "output": "CBA"
+    },
+    {
+      "input": "ABCDEFGH\r\nCBEDAFHG",
+      "output": "CEDBHGFA"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1352",
+    "通过人数": "1105",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:29"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "5886",
+  "title": "小Z的数学",
+  "tags": [
+    "市赛",
+    "循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5886",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小Z热衷于数学，对于课本外的数学知识特别有兴趣。</p>\n<p>那天，他看到某个编程的题目中，出现了 <code>!</code> 号，他非常好奇地问他爸爸，这个符号是什么意思？</p>\n<p>原来， <code>!</code> 是数学里的阶乘符号，具体含义如下：</p>\n<p><span class=\"katex math inline\">n!=1 \\times 2 \\times 3 \\dots (n-1) \\times n</span></p>\n<p>当然，这个当 <span class=\"katex math inline\">n</span> 变大的时候， <span class=\"katex math inline\">n!</span> 也将变得很大。</p>\n<p>所以，小Z想请你计算一下 <span class=\"katex math inline\">n!</span> 除以 <span class=\"katex math inline\">m</span> 的余数是多少。</p>\n</div>            </div>",
+      "text": "小Z热衷于数学，对于课本外的数学知识特别有兴趣。\n那天，他看到某个编程的题目中，出现了 ! 号，他非常好奇地问他爸爸，这个符号是什么意思？\n原来， ! 是数学里的阶乘符号，具体含义如下：\nn!=1 \\times 2 \\times 3 \\dots (n-1) \\times n\n当然，这个当 n 变大的时候， n! 也将变得很大。\n所以，小Z想请你计算一下 n! 除以 m 的余数是多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，两个整数 <span class=\"katex math inline\">n,m</span>。</p>\n</div>            </div>",
+      "text": "一行，两个整数 n,m。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，表示 <span class=\"katex math inline\">n!</span> 除以 <span class=\"katex math inline\">m</span> 的余数。</p>\n</div>            </div>",
+      "text": "一行，表示 n! 除以 m 的余数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>24</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 100\n                        \n                        \n                            输出\n                            24"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<p><span class=\"katex math inline\">4!=24</span>。</p>\n<p><span class=\"katex math inline\">24</span> 除以 <span class=\"katex math inline\">100</span> 的余数是 <span class=\"katex math inline\">24</span> 。</p>\n<h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">60 \\%</span> 的数据，<span class=\"katex math inline\">1 \\le n \\le 10</span>。</p>\n<p><span class=\"katex math inline\">100 \\%</span> 的数据，<span class=\"katex math inline\">1 \\le n \\le 100000</span>，<span class=\"katex math inline\">1 \\le m \\le 100000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n4!=24。\n24 除以 100 的余数是 24 。\n【数据范围】\n60 \\% 的数据，1 \\le n \\le 10。\n100 \\% 的数据，1 \\le n \\le 100000，1 \\le m \\le 100000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年11月婺城区第三届青少年信息素养大赛小学组试题</p>\n</div>                </div>",
+      "text": "2025年11月婺城区第三届青少年信息素养大赛小学组试题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">循环</span></span></p>\n</div>                </div>",
+      "text": "市赛循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 100",
+      "output": "24"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "440",
+    "通过人数": "130",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:48"
+}

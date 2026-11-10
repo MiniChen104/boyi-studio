@@ -1,0 +1,68 @@
+{
+  "id": "3358",
+  "title": "勾股数",
+  "tags": [
+    "循环",
+    "GESP二级",
+    "GESP样题",
+    "枚举"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3358",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>勾股数是很有趣的数学概念。如果三个正整数 <span class=\"katex math inline\">a</span>、<span class=\"katex math inline\">b</span>、<span class=\"katex math inline\">c</span>，满足 <span class=\"katex math inline\">a^2 + b^2 = c^2</span>，而且 <span class=\"katex math inline\">1 ≤ a ≤ b ≤ c</span>，我们就将 <span class=\"katex math inline\">a、b、c</span> 组成的三元组 (<span class=\"katex math inline\">a, b, c</span>) 称为勾股数。</p>\n<p>你能通过编程，数数有多少组勾股数，能够满足 <span class=\"katex math inline\">c ≤ n</span> 吗？</p>\n</div>            </div>",
+      "text": "勾股数是很有趣的数学概念。如果三个正整数 a、b、c，满足 a^2 + b^2 = c^2，而且 1 ≤ a ≤ b ≤ c，我们就将 a、b、c 组成的三元组 (a, b, c) 称为勾股数。\n你能通过编程，数数有多少组勾股数，能够满足 c ≤ n 吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行，包含一个正整数 <span class=\"katex math inline\">n</span>。约定 <span class=\"katex math inline\">1 ≤ n ≤ 1000</span>。</p>\n</div>            </div>",
+      "text": "输入一行，包含一个正整数 n。约定 1 ≤ n ≤ 1000。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含一个整数 <span class=\"katex math inline\">C</span>，表示有 <span class=\"katex math inline\">C</span> 组满足条件的勾股数。</p>\n</div>            </div>",
+      "text": "输出一行，包含一个整数 C，表示有 C 组满足条件的勾股数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>13</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                13\n                            \n                            \n                                输出\n                                3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释 1】</h4>\n<p>满足 <span class=\"katex math inline\">C ≤ 5</span> 的勾股数只有一组，即 (<span class=\"katex math inline\">3,4,5</span>)。</p>\n<h4>【样例解释 2】</h4>\n<p>满足 <span class=\"katex math inline\">C ≤ 13</span> 的勾股数有 <span class=\"katex math inline\">3</span> 组，即 <span class=\"katex math inline\">(3,4,5)</span>、<span class=\"katex math inline\">(6,8,10)</span> 和 <span class=\"katex math inline\">(5,12,13)</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释 1】\n满足 C ≤ 5 的勾股数只有一组，即 (3,4,5)。\n【样例解释 2】\n满足 C ≤ 13 的勾股数有 3 组，即 (3,4,5)、(6,8,10) 和 (5,12,13)。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP样题二级</p>\n</div>                </div>",
+      "text": "GESP样题二级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">循环</span><span class=\"label label-warning\">GESP二级</span><span class=\"label label-info\">GESP样题</span><span class=\"label label-danger\">枚举</span></span></p>\n</div>                </div>",
+      "text": "循环GESP二级GESP样题枚举"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "1"
+    },
+    {
+      "input": "13",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2510",
+    "通过人数": "1810",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:51"
+}

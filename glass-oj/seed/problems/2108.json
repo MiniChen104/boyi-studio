@@ -1,0 +1,56 @@
+{
+  "id": "2108",
+  "title": "素数的最短距离",
+  "tags": [
+    "数组"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2108",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个数，输出离它最近的素数。如果该数本身是素数，则输出其本身；</p>\n<p>若有两个距离相等，则输出小于它的那个素数。</p>\n</div>            </div>",
+      "text": "输入一个数，输出离它最近的素数。如果该数本身是素数，则输出其本身；\n若有两个距离相等，则输出小于它的那个素数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>测试数据有 <span class=\"katex math inline\">N</span> (<span class=\"katex math inline\">N \\le 1000</span>)组，接下来为 <span class=\"katex math inline\">N</span> 行，每行包括一个整数 <span class=\"katex math inline\">M</span> (<span class=\"katex math inline\">0 \\lt M \\le 1000</span>)。</p>\n</div>            </div>",
+      "text": "测试数据有 N (N \\le 1000)组，接下来为 N 行，每行包括一个整数 M (0 \\lt M \\le 1000)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出有 <span class=\"katex math inline\">N</span> 行，每行为离对应 <span class=\"katex math inline\">M</span> 最近的一个素数。</p>\n<p>输出结果的范围与 <span class=\"katex math inline\">M</span> 的取值范围相同。</p>\n</div>            </div>",
+      "text": "输出有 N 行，每行为离对应 M 最近的一个素数。\n输出结果的范围与 M 的取值范围相同。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n22\r\n5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>23\r\n5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n22\r\n5\n                        \n                        \n                            输出\n                            23\r\n5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组</p>\n</div>                </div>",
+      "text": "数组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组</span></span></p>\n</div>                </div>",
+      "text": "数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n22\r\n5",
+      "output": "23\r\n5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "464",
+    "通过人数": "156",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:28:32"
+}

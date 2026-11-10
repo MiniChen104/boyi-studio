@@ -1,0 +1,64 @@
+{
+  "id": "5944",
+  "title": "黄金格",
+  "tags": [
+    "GESP二级",
+    "25年12月",
+    "循环",
+    "sqrt"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5944",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨在探险时发现一张矩形地图，地图 <span class=\"katex math inline\">H</span> 行和 <span class=\"katex math inline\">W</span> 列，每个格子坐标为( <span class=\"katex math inline\">r, c</span> )（ 其中 <span class=\"katex math inline\">r</span> 表示行号 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">H</span> ，<span class=\"katex math inline\">c</span> 表示列号 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">W</span> ）。</p>\n<p>小杨听说地图中隐藏着一些“黄金格”，这些格子满足一个神秘的数学挑战：当格子坐标 ( <span class=\"katex math inline\">r, c</span> ) 代入特定的不等式关系\n成立时，该格子就是黄金格。具体来说，黄金格的条件是：<span class=\"katex math inline\">\\sqrt{(r^² + c^²)} \\le x + r -c </span>。</p>\n<p>例如，如果参数 <span class=\"katex math inline\">x=5</span>，那么格子 (<span class=\"katex math inline\">4,3</span>) 就是黄金格。因为左边坐标平方和的平方根 <span class=\"katex math inline\">\\sqrt{(4^² + 3^²)}</span> 算出来是 <span class=\"katex math inline\">5</span> ，而右边 <span class=\"katex math inline\">5+4-3</span> 算出来是 <span class=\"katex math inline\">6</span> ，<span class=\"katex math inline\">5</span> 小于等于<span class=\"katex math inline\">6</span> ，符合条件。</p>\n</div>            </div>",
+      "text": "小杨在探险时发现一张矩形地图，地图 H 行和 W 列，每个格子坐标为( r, c )（ 其中 r 表示行号 1 到 H ，c 表示列号 1 到 W ）。\n小杨听说地图中隐藏着一些“黄金格”，这些格子满足一个神秘的数学挑战：当格子坐标 ( r, c ) 代入特定的不等式关系\n成立时，该格子就是黄金格。具体来说，黄金格的条件是：\\sqrt{(r^² + c^²)} \\le x + r -c 。\n例如，如果参数 x=5，那么格子 (4,3) 就是黄金格。因为左边坐标平方和的平方根 \\sqrt{(4^² + 3^²)} 算出来是 5 ，而右边 5+4-3 算出来是 6 ，5 小于等于6 ，符合条件。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三行，每行一个正整数，分别表示 <span class=\"katex math inline\">H,W,x</span> 。含义如题面所示。</p>\n</div>            </div>",
+      "text": "三行，每行一个正整数，分别表示 H,W,x 。含义如题面所示。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数，代表黄金格数量。</p>\n</div>            </div>",
+      "text": "一行一个整数，代表黄金格数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n4\r\n2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n4\r\n2\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p><img src=\"https://assets.boyi.local/9f264924085762849d364890.png\"></p>\n<p>图中标注为黄色的四个格子是黄金格，坐标分别为 <span class=\"katex math inline\">(1,1)， (2,1)，(3,1) ，(4,1) </span>。</p>\n<h4>数据范围</h4>\n<p>对于所有测试点，保证给出的正整数不超过 <span class=\"katex math inline\">1000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n\n图中标注为黄色的四个格子是黄金格，坐标分别为 (1,1)， (2,1)，(3,1) ，(4,1) 。\n数据范围\n对于所有测试点，保证给出的正整数不超过 1000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 2025年12月认证 C++2级真题</p>\n</div>                </div>",
+      "text": "GESP 2025年12月认证 C++2级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP二级</span><span class=\"label label-warning\">25年12月</span><span class=\"label label-info\">循环</span><span class=\"label label-danger\">sqrt</span></span></p>\n</div>                </div>",
+      "text": "GESP二级25年12月循环sqrt"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n4\r\n2",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1354",
+    "通过人数": "992",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:27"
+}

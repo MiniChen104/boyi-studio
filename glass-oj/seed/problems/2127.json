@@ -1,0 +1,56 @@
+{
+  "id": "2127",
+  "title": "0在哪里",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2127",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入 <span class=\"katex math inline\">n</span> 个整数，请问这 <span class=\"katex math inline\">n</span> 个数从前向后数，<span class=\"katex math inline\">0</span> 第一次出现的时候是第几个数？</p>\n</div>            </div>",
+      "text": "从键盘读入 n 个整数，请问这 n 个数从前向后数，0 第一次出现的时候是第几个数？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第1行有一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n \\le 1000</span>）。</p>\n<p>第2行有 <span class=\"katex math inline\">n</span> 个整数（数值在 <span class=\"katex math inline\">int</span> 范围内）。</p>\n<p>本题样例输入确保一定有 <span class=\"katex math inline\">0</span> 这个数。</p>\n</div>            </div>",
+      "text": "第1行有一个整数 n（n \\le 1000）。\n第2行有 n 个整数（数值在 int 范围内）。\n本题样例输入确保一定有 0 这个数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">0</span> 是数组的第几个数？</p>\n</div>            </div>",
+      "text": "输出 0 是数组的第几个数？"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>9\r\n45 532 2343 2 0 234 39 0 9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            9\r\n45 532 2343 2 0 234 39 0 9\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "9\r\n45 532 2343 2 0 234 39 0 9",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1212",
+    "通过人数": "949",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:47"
+}

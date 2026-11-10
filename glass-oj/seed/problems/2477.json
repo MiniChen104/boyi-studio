@@ -1,0 +1,56 @@
+{
+  "id": "2477",
+  "title": "两段和",
+  "tags": [
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2477",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定 <span class=\"katex math inline\">n</span> 个整数，请从 <span class=\"katex math inline\">n</span> 个整数中选择互不相交的 <span class=\"katex math inline\">2</span> 个连续的区间，使得这两个区间的所有数的和尽可能大。  </p>\n<p>请问这个最大和是多少？</p>\n</div>            </div>",
+      "text": "给定 n 个整数，请从 n 个整数中选择互不相交的 2 个连续的区间，使得这两个区间的所有数的和尽可能大。  \n请问这个最大和是多少？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个正整数 <span class=\"katex math inline\">n</span> ，表示整数数量。</p>\n<p>接下来一行有 <span class=\"katex math inline\">n</span> 个整数 <span class=\"katex math inline\">a_i</span>。</p>\n</div>            </div>",
+      "text": "第一行一个正整数 n ，表示整数数量。\n接下来一行有 n 个整数 a_i。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出最大和。</p>\n</div>            </div>",
+      "text": "输出最大和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7\r\n2 -4 3 -1 2 -4 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\r\n2 -4 3 -1 2 -4 3\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例解释】</strong></p>\n<p>选 <span class=\"katex math inline\">[3,5]</span> 和 <span class=\"katex math inline\">[7,7]</span> 两段的和是最大的。</p>\n<p><strong>【数据范围】</strong></p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">n≤100</span>；</p>\n<p>对于另外 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">n≤1000</span>；</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">n≤10^5</span>，<span class=\"katex math inline\">−10^9≤a_i≤10^9</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n选 [3,5] 和 [7,7] 两段的和是最大的。\n【数据范围】\n对于 30\\% 的数据，n≤100；\n对于另外 30\\% 的数据，n≤1000；\n对于 100\\% 的数据，n≤10^5，−10^9≤a_i≤10^9。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7\r\n2 -4 3 -1 2 -4 3",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "606",
+    "通过人数": "223",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:49"
+}

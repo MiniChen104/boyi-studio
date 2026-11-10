@@ -1,0 +1,64 @@
+{
+  "id": "4608",
+  "title": "包含 7 的回文数",
+  "tags": [
+    "蓝桥杯STEMA",
+    "循环",
+    "短除法",
+    "函数"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4608",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定两个整数 <span class=\"katex math inline\">a</span>，<span class=\"katex math inline\">b</span>，请统计 <span class=\"katex math inline\">a</span> 到 <span class=\"katex math inline\">b</span> 之间（包含 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>）有多少个包含数字 <span class=\"katex math inline\">7</span> 的回文数。</p>\n<p>例如：<span class=\"katex math inline\">a = 6</span>，<span class=\"katex math inline\">b = 80</span>，<span class=\"katex math inline\">6</span> 到 <span class=\"katex math inline\">80</span> 之间的回文数有 <span class=\"katex math inline\">6</span>、<span class=\"katex math inline\">7</span>、<span class=\"katex math inline\">8</span>、<span class=\"katex math inline\">9</span>、<span class=\"katex math inline\">11</span>、<span class=\"katex math inline\">22</span>、<span class=\"katex math inline\">33</span>、<span class=\"katex math inline\">44</span>、<span class=\"katex math inline\">55</span>、<span class=\"katex math inline\">66</span>、<span class=\"katex math inline\">77</span>，其中有 <span class=\"katex math inline\">2</span> 个回文数包含 <span class=\"katex math inline\">7</span>（<span class=\"katex math inline\">7</span> 和 <span class=\"katex math inline\">77</span>）。</p>\n</div>            </div>",
+      "text": "给定两个整数 a，b，请统计 a 到 b 之间（包含 a 和 b）有多少个包含数字 7 的回文数。\n例如：a = 6，b = 80，6 到 80 之间的回文数有 6、7、8、9、11、22、33、44、55、66、77，其中有 2 个回文数包含 7（7 和 77）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行输入两个整数 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b（1 \\le a \\le b \\le 100000</span>），整数之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "一行输入两个整数 a 和 b（1 \\le a \\le b \\le 100000），整数之间以一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示 <span class=\"katex math inline\">a</span> 到 <span class=\"katex math inline\">b</span> 之间（包含 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>）包含数字 <span class=\"katex math inline\">7</span> 回文数的个数。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示 a 到 b 之间（包含 a 和 b）包含数字 7 回文数的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 80</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 80\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>提示信息：</h4>\n<p>回文数：一个自然数从左往右读和从右往左读都一样，则该自然数被称为回文数。</p>\n<p>例如：<span class=\"katex math inline\">121</span> 是回文数，<span class=\"katex math inline\">123</span> 不是回文数。</p>\n</div>\n\n                    \n                </div>",
+      "text": "提示信息：\n回文数：一个自然数从左往右读和从右往左读都一样，则该自然数被称为回文数。\n例如：121 是回文数，123 不是回文数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（24年3月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（24年3月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">循环</span><span class=\"label label-info\">短除法</span><span class=\"label label-danger\">函数</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA循环短除法函数"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 80",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "753",
+    "通过人数": "514",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:36"
+}

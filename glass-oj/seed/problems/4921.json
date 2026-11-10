@@ -1,0 +1,71 @@
+{
+  "id": "4921",
+  "title": "拖拉机(tractor)",
+  "tags": [
+    "市赛",
+    "常州2025",
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4921",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>欢乐谷是企鹅公司开发的一个棋牌类益智游戏平台，玩家第一次进平台时，企鹅公司会发给每个玩家一定数量的欢乐豆，欢乐豆是企鹅公司最基本使用的道具之一，可用来玩平台上的各种游戏，属于一种游戏中的虚拟货币。</p>\n<p>欢乐谷既有围棋、象棋、桥牌等烧脑游戏，也有 <span class=\"katex math inline\">80</span> 分升级（俗称拖拉机）这种广受欢迎的雅俗共赏的经典牌类游戏。该游戏由两副牌四个人玩，分为两个阵营：<span class=\"katex math inline\">1</span> 号玩家和 <span class=\"katex math inline\">3</span> 号玩家为一个阵营，<span class=\"katex math inline\">2</span> 号玩家和 <span class=\"katex math inline\">4</span> 号玩家则组成另一个阵营。发牌逆时针进行，牌的大小区分简单，主牌大于副牌，主牌中大小王最大。出牌时需按照规则出对子或拖拉机等，尽量出大牌得分。庄家需保住底牌，最后如果被撬底则得分翻番，具体翻几番要看撬底是单张、对子、拖拉机。玩家需注意对手的牌，尽量让对手得分不超过 <span class=\"katex math inline\">80</span> 分。</p>\n<p><span class=\"katex math inline\">80</span> 分升级有一套复杂的结算规则，首先根据出牌中拖拉机的出现次数、得分情况和撬底番数，得出最终的应胜豆和应输豆，应胜豆等于应输豆。一局开始前四位玩家的欢乐豆数量是已知的，假设 <span class=\"katex math inline\">1</span> 号玩家和 <span class=\"katex math inline\">3</span> 号玩家取得胜利，应胜豆为 <span class=\"katex math inline\">180</span> 欢乐豆，则一局升级下来 <span class=\"katex math inline\">1</span> 号玩家和 <span class=\"katex math inline\">3</span> 号玩家的欢乐豆都将增加 <span class=\"katex math inline\">180</span> 颗，<span class=\"katex math inline\">2</span> 号玩家和 <span class=\"katex math inline\">4</span> 号玩家的欢乐豆都将减少 <span class=\"katex math inline\">180</span> 颗，但实际情况往往不会这么理想，如果 <span class=\"katex math inline\">2</span> 号玩家欢乐豆不足 <span class=\"katex math inline\">180</span> 颗，则 <span class=\"katex math inline\">2</span> 号玩家输光所有欢乐豆，<span class=\"katex math inline\">1</span> 号玩家和 <span class=\"katex math inline\">3</span> 号玩家平分赢得的欢乐豆，前提是开局前的欢乐豆的数量要不小于赢得的欢乐豆数量。具体的结算规则如下：</p>\n<p>假设四位玩家游戏开始前的欢乐豆数量用<code>A</code>、<code>B</code>、<code>C</code>、<code>D</code>表示，应输豆用 <code>E</code>表示，并且胜方为 <span class=\"katex math inline\">1</span> 号玩家和 <span class=\"katex math inline\">3</span> 号玩家，<span class=\"katex math inline\">min</span> 函数为求两数最小值函数，如 <span class=\"katex math inline\">min(3,5)=3</span>。</p>\n<ul><li><p><span class=\"katex math inline\">1</span>. 计算负方理论上的总输豆 <code>F</code>，本条规则中的输豆均为理论上的输豆的简称， <span class=\"katex math inline\">F=2</span> 号玩家输豆 <span class=\"katex math inline\">+4</span> 号玩家输豆，其中 <span class=\"katex math inline\">2</span> 号玩家输豆 <span class=\"katex math inline\">=min(B,E)</span>，<span class=\"katex math inline\">4</span> 号玩家输豆 <span class=\"katex math inline\">=min(D,E)</span>。</p>\n</li>\n<li><p><span class=\"katex math inline\">2</span>. 计算胜方最终胜豆，假设F肯定是偶数，则 <span class=\"katex math inline\">1</span> 号玩家最终胜豆 <span class=\"katex math inline\">=min(A,F/2)</span>，<span class=\"katex math inline\">3</span> 号玩家最终胜豆<span class=\"katex math inline\">=min(C,F/2)</span>。</p>\n</li>\n<li><p><span class=\"katex math inline\">3</span>. 输豆返还，如果 <span class=\"katex math inline\">min(A,F/2)+min(C,F/2) \\lt F</span>，则胜方并没有瓜分完负方理论上的总输豆，此时要把胜方分剩下的欢乐豆返还给输方，返还规则为先返还给输方中输得多的一方，直到返还完或两家输方输的欢乐豆同样多，然后将未返还完的欢乐豆平分给两家输方。具体细节见样例 <span class=\"katex math inline\">3</span> 的解释。</p>\n</li>\n</ul><p>现在企鹅公司找到你，要你写一个 <span class=\"katex math inline\">80</span> 分升级的结算程序。为了简单起见，假设胜方永远是 <span class=\"katex math inline\">1</span> 号玩家和 <span class=\"katex math inline\">3</span> 号玩家。</p>\n</div>            </div>",
+      "text": "欢乐谷是企鹅公司开发的一个棋牌类益智游戏平台，玩家第一次进平台时，企鹅公司会发给每个玩家一定数量的欢乐豆，欢乐豆是企鹅公司最基本使用的道具之一，可用来玩平台上的各种游戏，属于一种游戏中的虚拟货币。\n欢乐谷既有围棋、象棋、桥牌等烧脑游戏，也有 80 分升级（俗称拖拉机）这种广受欢迎的雅俗共赏的经典牌类游戏。该游戏由两副牌四个人玩，分为两个阵营：1 号玩家和 3 号玩家为一个阵营，2 号玩家和 4 号玩家则组成另一个阵营。发牌逆时针进行，牌的大小区分简单，主牌大于副牌，主牌中大小王最大。出牌时需按照规则出对子或拖拉机等，尽量出大牌得分。庄家需保住底牌，最后如果被撬底则得分翻番，具体翻几番要看撬底是单张、对子、拖拉机。玩家需注意对手的牌，尽量让对手得分不超过 80 分。\n80 分升级有一套复杂的结算规则，首先根据出牌中拖拉机的出现次数、得分情况和撬底番数，得出最终的应胜豆和应输豆，应胜豆等于应输豆。一局开始前四位玩家的欢乐豆数量是已知的，假设 1 号玩家和 3 号玩家取得胜利，应胜豆为 180 欢乐豆，则一局升级下来 1 号玩家和 3 号玩家的欢乐豆都将增加 180 颗，2 号玩家和 4 号玩家的欢乐豆都将减少 180 颗，但实际情况往往不会这么理想，如果 2 号玩家欢乐豆不足 180 颗，则 2 号玩家输光所有欢乐豆，1 号玩家和 3 号玩家平分赢得的欢乐豆，前提是开局前的欢乐豆的数量要不小于赢得的欢乐豆数量。具体的结算规则如下：\n假设四位玩家游戏开始前的欢乐豆数量用A、B、C、D表示，应输豆用 E表示，并且胜方为 1 号玩家和 3 号玩家，min 函数为求两数最小值函数，如 min(3,5)=3。\n1. 计算负方理论上的总输豆 F，本条规则中的输豆均为理论上的输豆的简称， F=2 号玩家输豆 +4 号玩家输豆，其中 2 号玩家输豆 =min(B,E)，4 号玩家输豆 =min(D,E)。\n\n2. 计算胜方最终胜豆，假设F肯定是偶数，则 1 号玩家最终胜豆 =min(A,F/2)，3 号玩家最终胜豆=min(C,F/2)。\n\n3. 输豆返还，如果 min(A,F/2)+min(C,F/2) \\lt F，则胜方并没有瓜分完负方理论上的总输豆，此时要把胜方分剩下的欢乐豆返还给输方，返还规则为先返还给输方中输得多的一方，直到返还完或两家输方输的欢乐豆同样多，然后将未返还完的欢乐豆平分给两家输方。具体细节见样例 3 的解释。\n\n现在企鹅公司找到你，要你写一个 80 分升级的结算程序。为了简单起见，假设胜方永远是 1 号玩家和 3 号玩家。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据仅有一行包含 <span class=\"katex math inline\">5</span> 个用空格隔开的正整数，分别表示<span class=\"katex math inline\">A</span>,<span class=\"katex math inline\">B</span>,<span class=\"katex math inline\">C</span>,<span class=\"katex math inline\">D</span>,<span class=\"katex math inline\">E</span>，<span class=\"katex math inline\">5</span> 个数一定都是 <span class=\"katex math inline\">8</span> 的倍数。</p>\n</div>            </div>",
+      "text": "输入数据仅有一行包含 5 个用空格隔开的正整数，分别表示A,B,C,D,E，5 个数一定都是 8 的倍数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出数据仅有一行包含 <span class=\"katex math inline\">4</span> 个正整数，表示一局结束后四家的欢乐豆数量，相邻两数严格用一个空格隔开。</p>\n</div>            </div>",
+      "text": "输出数据仅有一行包含 4 个正整数，表示一局结束后四家的欢乐豆数量，相邻两数严格用一个空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2400 2400 1000 2000 800</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3200 1600 1800 1200</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>6400 4000 3600 20000 4800</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>10800 0 7200 16000</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>20000 6600 3200 9736 9600</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>28100 950 6400 4086</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            2400 2400 1000 2000 800\n                        \n                        \n                            输出\n                            3200 1600 1800 1200\n                        \n\n                                                    \n                                输入\n                                6400 4000 3600 20000 4800\n                            \n                            \n                                输出\n                                10800 0 7200 16000\n                            \n                        \n                                                    \n                                输入\n                                20000 6600 3200 9736 9600\n                            \n                            \n                                输出\n                                28100 950 6400 4086"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p>对于样例 <span class=\"katex math inline\">1</span>:</p>\n<p>四家开始前的欢乐豆数量均大于应输豆，应输为 <span class=\"katex math inline\">800</span>，则根据规则 <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">2</span> 不难算出，胜方每家增加 <span class=\"katex math inline\">800</span> 欢乐豆，输方每家减少 <span class=\"katex math inline\">800</span> 欢乐豆</p>\n<p>对于样例 <span class=\"katex math inline\">2</span>：</p>\n<p>应输豆 <span class=\"katex math inline\">E=4800，则根据规则 </span>1<span class=\"katex math inline\"> ： </span>2<span class=\"katex math inline\"> 号玩家输豆</span>=min(B,E)=min(4000,4800)=4000<span class=\"katex math inline\">，</span>4<span class=\"katex math inline\"> 号玩家输豆</span>=min(D,E)=min(20000,4800)=4800<span class=\"katex math inline\">，总输豆 </span>F=2<span class=\"katex math inline\"> 号玩家输豆 </span>+4<span class=\"katex math inline\"> 号玩家输豆 </span>=4000+4800=8800<span class=\"katex math inline\">，</span>F/2=4400$；</p>\n<p>再根据规则 <span class=\"katex math inline\">2</span> 算出，<span class=\"katex math inline\">1</span> 号玩家最终胜豆<span class=\"katex math inline\">=min(A,F/2)=min(6400,4400)=4400</span>，<span class=\"katex math inline\">3</span> 号玩家最终胜豆<span class=\"katex math inline\">=min(C,F/2)=min(3600,4800)=3600</span>，\n胜方总共赢得 <span class=\"katex math inline\">8000</span> 欢乐豆，少于总输豆，此时要把余下的 <span class=\"katex math inline\">800</span> 欢乐豆返还输家，根据规则 <span class=\"katex math inline\">3</span>：由于 <span class=\"katex math inline\">4</span> 号玩家输得多，则先返还给 <span class=\"katex math inline\">4</span> 号玩家，恰好把 <span class=\"katex math inline\">800</span> 欢乐豆全部返还给 <span class=\"katex math inline\">4</span> 号玩家，此时两家输方输得一样多，返还结束，最终<span class=\"katex math inline\">1</span> 号玩家欢乐豆增加 <span class=\"katex math inline\">4400</span>， <span class=\"katex math inline\">3</span> 号玩家欢乐豆增加 <span class=\"katex math inline\">3600</span> ，两家输方输各输 <span class=\"katex math inline\">4000</span> 欢乐豆。</p>\n<p>对于样例 <span class=\"katex math inline\">3</span>：</p>\n<p>应输豆 <span class=\"katex math inline\">E=9600</span>，则根据规则 <span class=\"katex math inline\">1</span>：<span class=\"katex math inline\">2</span> 号玩家输豆<span class=\"katex math inline\">=min(B,E)=min(6600,9600)=6600</span>，<span class=\"katex math inline\">4</span> 号玩家输豆<span class=\"katex math inline\">=min(D,E)=min(9736,9600)=9600</span>，总输豆 <span class=\"katex math inline\">F=2</span> 号玩家输豆 <span class=\"katex math inline\">+4</span> 号玩家输豆 <span class=\"katex math inline\">=6600+9600=16200</span> ，<span class=\"katex math inline\">F/2=8100</span>；\n再根据规则 <span class=\"katex math inline\">2</span> 算出，<span class=\"katex math inline\">1</span> 号玩家最终胜豆<span class=\"katex math inline\">=min(A,F/2)=min(20000,8100)=8100</span>，<span class=\"katex math inline\">3</span> 号玩家最终胜豆<span class=\"katex math inline\">=min(C,F/2)=min(3200,8100)=3200</span>，\n胜方总共赢得 <span class=\"katex math inline\">11300</span> 欢乐豆，少于总输豆，此时要把余下的 <span class=\"katex math inline\">4900</span> 欢乐豆返还输家，根据规则 <span class=\"katex math inline\">3</span> ：由于 <span class=\"katex math inline\">4</span> 号玩家输得多，则先返还给 <span class=\"katex math inline\">4</span> 号玩家 <span class=\"katex math inline\">3000</span> 欢乐豆，此时两家输方输得一样多，还余<span class=\"katex math inline\">1900</span> 欢乐豆平均返还给两家输方各 <span class=\"katex math inline\">950</span> 欢乐豆，最终 <span class=\"katex math inline\">1</span> 号玩家欢乐豆增加 <span class=\"katex math inline\">8100</span> ，<span class=\"katex math inline\">3</span>号玩家欢乐豆增加<span class=\"katex math inline\">3200</span>，两家输方输各输 <span class=\"katex math inline\">5650</span> 欢乐豆。</p>\n数据范围\n<p>本题共有 <span class=\"katex math inline\">10</span> 个测试点，每个测试点 <span class=\"katex math inline\">10</span> 分。</p>\n<p>对于所有测试点：输入数据均不超过 <span class=\"katex math inline\">10^9</span>,且每个数都是 <span class=\"katex math inline\">8</span> 的倍数。</p>\n<p>对于测试点 <span class=\"katex math inline\">1</span> ：输入的 <span class=\"katex math inline\">5</span> 个数相等。</p>\n<p>对于测试点 <span class=\"katex math inline\">2-4</span>：结算时不会用到规则<span class=\"katex math inline\">3</span> 。</p>\n<p>对于测试点 <span class=\"katex math inline\">5-7</span>：结算时会用到规则 <span class=\"katex math inline\">3</span>，但输豆只会返还一家。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n对于样例 1:\n四家开始前的欢乐豆数量均大于应输豆，应输为 800，则根据规则 1 和 2 不难算出，胜方每家增加 800 欢乐豆，输方每家减少 800 欢乐豆\n对于样例 2：\n应输豆 E=4800，则根据规则 1 ： 2 号玩家输豆=min(B,E)=min(4000,4800)=4000，4 号玩家输豆=min(D,E)=min(20000,4800)=4800，总输豆 F=2 号玩家输豆 +4 号玩家输豆 =4000+4800=8800，F/2=4400$；\n再根据规则 2 算出，1 号玩家最终胜豆=min(A,F/2)=min(6400,4400)=4400，3 号玩家最终胜豆=min(C,F/2)=min(3600,4800)=3600，\n胜方总共赢得 8000 欢乐豆，少于总输豆，此时要把余下的 800 欢乐豆返还输家，根据规则 3：由于 4 号玩家输得多，则先返还给 4 号玩家，恰好把 800 欢乐豆全部返还给 4 号玩家，此时两家输方输得一样多，返还结束，最终1 号玩家欢乐豆增加 4400， 3 号玩家欢乐豆增加 3600 ，两家输方输各输 4000 欢乐豆。\n对于样例 3：\n应输豆 E=9600，则根据规则 1：2 号玩家输豆=min(B,E)=min(6600,9600)=6600，4 号玩家输豆=min(D,E)=min(9736,9600)=9600，总输豆 F=2 号玩家输豆 +4 号玩家输豆 =6600+9600=16200 ，F/2=8100；\n再根据规则 2 算出，1 号玩家最终胜豆=min(A,F/2)=min(20000,8100)=8100，3 号玩家最终胜豆=min(C,F/2)=min(3200,8100)=3200，\n胜方总共赢得 11300 欢乐豆，少于总输豆，此时要把余下的 4900 欢乐豆返还输家，根据规则 3 ：由于 4 号玩家输得多，则先返还给 4 号玩家 3000 欢乐豆，此时两家输方输得一样多，还余1900 欢乐豆平均返还给两家输方各 950 欢乐豆，最终 1 号玩家欢乐豆增加 8100 ，3号玩家欢乐豆增加3200，两家输方输各输 5650 欢乐豆。\n数据范围\n本题共有 10 个测试点，每个测试点 10 分。\n对于所有测试点：输入数据均不超过 10^9,且每个数都是 8 的倍数。\n对于测试点 1 ：输入的 5 个数相等。\n对于测试点 2-4：结算时不会用到规则3 。\n对于测试点 5-7：结算时会用到规则 3，但输豆只会返还一家。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年常州“信息与未来”小学生编程比赛</p>\n</div>                </div>",
+      "text": "2025年常州“信息与未来”小学生编程比赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">常州2025</span><span class=\"label label-info\">模拟</span></span></p>\n</div>                </div>",
+      "text": "市赛常州2025模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2400 2400 1000 2000 800",
+      "output": "3200 1600 1800 1200"
+    },
+    {
+      "input": "6400 4000 3600 20000 4800",
+      "output": "10800 0 7200 16000"
+    },
+    {
+      "input": "20000 6600 3200 9736 9600",
+      "output": "28100 950 6400 4086"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "8",
+    "通过人数": "8",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:11"
+}

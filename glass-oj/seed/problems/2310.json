@@ -1,0 +1,56 @@
+{
+  "id": "2310",
+  "title": "井和绳子",
+  "tags": [
+    "电子学会等级考试"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2310",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有A, B, C, D, E五家人共用一口井，已知井深不超过k米。A, B, C, D, E的绳长各不相同，而且厘米表示的绳长一定是整数。<br>\n从井口放下绳索正好达到水面时：<br>\n(a)需要A家的绳n1条接上B家的绳1条<br>\n(b)需要B家的绳n2条接上C家的绳1条<br>\n(c)需要C家的绳n3条接上D家的绳1条<br>\n(d)需要D家的绳n4条接上E家的绳1条<br>\n(e)需要E家的绳n5条接上A家的绳1条  </p>\n<p>问井深和各家绳长。</p>\n</div>            </div>",
+      "text": "有A, B, C, D, E五家人共用一口井，已知井深不超过k米。A, B, C, D, E的绳长各不相同，而且厘米表示的绳长一定是整数。\n从井口放下绳索正好达到水面时：\n(a)需要A家的绳n1条接上B家的绳1条\n(b)需要B家的绳n2条接上C家的绳1条\n(c)需要C家的绳n3条接上D家的绳1条\n(d)需要D家的绳n4条接上E家的绳1条\n(e)需要E家的绳n5条接上A家的绳1条  \n问井深和各家绳长。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有1行。包括空格分开的6个整数。 第一个整数k（1 &lt;= k &lt;= 20)，代表井的最大深度（单位：米）。 接下来是5个正整数n1, n2, n3, n4, n5。这五个整数的含义见上面的题目描述。</p>\n</div>            </div>",
+      "text": "输入只有1行。包括空格分开的6个整数。 第一个整数k（1 <= k <= 20)，代表井的最大深度（单位：米）。 接下来是5个正整数n1, n2, n3, n4, n5。这五个整数的含义见上面的题目描述。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有1行。 如果找到了可行解，就输出6个整数，用空格分开，分别代表井的深度和A, B, C, D, E的绳长（单位都是厘米）。 如果有多组可行解，输出井的深度最小的那组解。 如果不存在可行解，就输出一行： not found</p>\n</div>            </div>",
+      "text": "输出只有1行。 如果找到了可行解，就输出6个整数，用空格分开，分别代表井的深度和A, B, C, D, E的绳长（单位都是厘米）。 如果有多组可行解，输出井的深度最小的那组解。 如果不存在可行解，就输出一行： not found"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 2 3 4 5 6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>721 265 191 148 129 76</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 2 3 4 5 6\n                        \n                        \n                            输出\n                            721 265 191 148 129 76"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会三级 202106真题</p>\n</div>                </div>",
+      "text": "电子学会三级 202106真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 2 3 4 5 6",
+      "output": "721 265 191 148 129 76"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "595",
+    "通过人数": "339",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:02"
+}

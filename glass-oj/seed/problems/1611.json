@@ -1,0 +1,56 @@
+{
+  "id": "1611",
+  "title": "求六位整数的各个位",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1611",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入一个 <span class=\"katex math inline\">6</span> 位整数 <span class=\"katex math inline\">n</span>，请求出这个 <span class=\"katex math inline\">6</span> 位整数各个位分别是多少？</p>\n<p>从高位到低位依次输出，每行一个。</p>\n</div>            </div>",
+      "text": "从键盘读入一个 6 位整数 n，请求出这个 6 位整数各个位分别是多少？\n从高位到低位依次输出，每行一个。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个 <span class=\"katex math inline\">6</span> 位整数 <span class=\"katex math inline\">n</span> 。</p>\n</div>            </div>",
+      "text": "一个 6 位整数 n 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行输出 <span class=\"katex math inline\">6</span> 位数的十万位</p>\n<p>第 <span class=\"katex math inline\">2</span> 行输出 <span class=\"katex math inline\">6</span> 位数的万位</p>\n<p>第 <span class=\"katex math inline\">3</span> 行输出 <span class=\"katex math inline\">6</span> 位数的千位</p>\n<p>第 <span class=\"katex math inline\">4</span> 行输出 <span class=\"katex math inline\">6</span> 位数的百位</p>\n<p>第 <span class=\"katex math inline\">5</span> 行输出 <span class=\"katex math inline\">6</span> 位数的十位</p>\n<p>第 <span class=\"katex math inline\">6</span> 行输出 <span class=\"katex math inline\">6</span> 位数的个位</p>\n</div>            </div>",
+      "text": "第 1 行输出 6 位数的十万位\n第 2 行输出 6 位数的万位\n第 3 行输出 6 位数的千位\n第 4 行输出 6 位数的百位\n第 5 行输出 6 位数的十位\n第 6 行输出 6 位数的个位"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>123456</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n2\r\n3\r\n4\r\n5\r\n6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            123456\n                        \n                        \n                            输出\n                            1\r\n2\r\n3\r\n4\r\n5\r\n6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "123456",
+      "output": "1\r\n2\r\n3\r\n4\r\n5\r\n6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "30564",
+    "通过人数": "22792",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:49"
+}

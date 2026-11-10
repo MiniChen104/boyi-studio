@@ -1,0 +1,56 @@
+{
+  "id": "3747",
+  "title": "字典树I",
+  "tags": [
+    "Trie字典树"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3747",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>实现一棵字典树，维护字符串集合，支持以下操作：</p>\n<p>1 s：向集合中添加一个字符串 </p>\n<p>2 s：询问集合中是否存在字符串 </p>\n</div>            </div>",
+      "text": "实现一棵字典树，维护字符串集合，支持以下操作：\n1 s：向集合中添加一个字符串 \n2 s：询问集合中是否存在字符串"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">q</span>，表示操作次数。</p>\n<p>接下来 <span class=\"katex math inline\">q</span> 行，每行一个整数以及一个字符串，表示每次的操作。</p>\n</div>            </div>",
+      "text": "第一行一个整数 q，表示操作次数。\n接下来 q 行，每行一个整数以及一个字符串，表示每次的操作。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每次询问操作输出一行，一个字符串，<code>Yes</code> 表示存在，<code>No</code> 表示不存在。</p>\n</div>            </div>",
+      "text": "对于每次询问操作输出一行，一个字符串，Yes 表示存在，No 表示不存在。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10\r\n1 abc\r\n1 arc\r\n2 abc\r\n2 agc\r\n1 agc\r\n2 agc\r\n2 acg\r\n1 srm\r\n2 edu\r\n2 srm\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Yes\r\nNo\r\nYes\r\nNo\r\nNo\r\nYes\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\r\n1 abc\r\n1 arc\r\n2 abc\r\n2 agc\r\n1 agc\r\n2 agc\r\n2 acg\r\n1 srm\r\n2 edu\r\n2 srm\r\n\n                        \n                        \n                            输出\n                            Yes\r\nNo\r\nYes\r\nNo\r\nNo\r\nYes"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>所有测试数据的范围和特点如下表所示：</p>\n<p><img src=\"https://assets.boyi.local/f78fb625b149414fb4a3f5c2.png\"></p>\n<p>字符串中仅包含小写字母。</p>\n</div>\n\n                    \n                </div>",
+      "text": "所有测试数据的范围和特点如下表所示：\n\n字符串中仅包含小写字母。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">Trie字典树</span></span></p>\n</div>                </div>",
+      "text": "Trie字典树"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10\r\n1 abc\r\n1 arc\r\n2 abc\r\n2 agc\r\n1 agc\r\n2 agc\r\n2 acg\r\n1 srm\r\n2 edu\r\n2 srm\r\n",
+      "output": "Yes\r\nNo\r\nYes\r\nNo\r\nNo\r\nYes\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "123",
+    "通过人数": "76",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:02"
+}

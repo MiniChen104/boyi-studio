@@ -1,0 +1,70 @@
+{
+  "id": "1855",
+  "title": "删除多余括号",
+  "tags": [
+    "蓝桥杯",
+    "字符串"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1855",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘输入一个含有括号的四则运算表达式，要求去掉可能含有的多余的括号。</p>\n<p>结果要保持原表达式中变量和运算符的相对位置不变，且与原表达式等价，不要求化简。</p>\n<p>另外不考虑 <code>+</code> <code>-</code> 用作正负号的情况，即输入表达式不会出现(+a)或(-a)的情形。</p>\n</div>            </div>",
+      "text": "从键盘输入一个含有括号的四则运算表达式，要求去掉可能含有的多余的括号。\n结果要保持原表达式中变量和运算符的相对位置不变，且与原表达式等价，不要求化简。\n另外不考虑 + - 用作正负号的情况，即输入表达式不会出现(+a)或(-a)的情形。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>表达式字符串，长度不超过 <span class=\"katex math inline\">255</span>， 并且不含空格字符。</p>\n<p>表达式中的所有变量都是单个小写的英文字母, 运算符只有加<code>+</code>减<code>-</code>乘<code>*</code>除<code>/</code>等运算符号。</p>\n</div>            </div>",
+      "text": "表达式字符串，长度不超过 255， 并且不含空格字符。\n表达式中的所有变量都是单个小写的英文字母, 运算符只有加+减-乘*除/等运算符号。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>去掉多余括号后的表达式。</p>\n</div>            </div>",
+      "text": "去掉多余括号后的表达式。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>a+(b+c)-d</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>a+b+c-d</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>a+b/(c+d)</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>a+b/(c+d)</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>(a*b)+c/d</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>a*b+c/d</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            a+(b+c)-d\n                        \n                        \n                            输出\n                            a+b+c-d\n                        \n\n                                                    \n                                输入\n                                a+b/(c+d)\n                            \n                            \n                                输出\n                                a+b/(c+d)\n                            \n                        \n                                                    \n                                输入\n                                (a*b)+c/d\n                            \n                            \n                                输出\n                                a*b+c/d"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例输入 <span class=\"katex math inline\">4</span></h4>\n<pre><code>((a+b)*f)-(i/j)\n</code></pre>\n<h4>样例输出 <span class=\"katex math inline\">4</span></h4>\n<pre><code>(a+b)*f-i/j\n</code></pre>\n<h4>【来源】</h4>\n<p>蓝桥杯算法训练</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例输入 4\n((a+b)*f)-(i/j)\n\n样例输出 4\n(a+b)*f-i/j\n\n【来源】\n蓝桥杯算法训练"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 字符串</p>\n</div>                </div>",
+      "text": "蓝桥杯 字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "a+(b+c)-d",
+      "output": "a+b+c-d"
+    },
+    {
+      "input": "a+b/(c+d)",
+      "output": "a+b/(c+d)"
+    },
+    {
+      "input": "(a*b)+c/d",
+      "output": "a*b+c/d"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "705",
+    "通过人数": "197",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:25:05"
+}

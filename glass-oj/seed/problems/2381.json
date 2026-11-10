@@ -1,0 +1,52 @@
+{
+  "id": "2381",
+  "title": "三年二班的投票",
+  "tags": [
+    "Trie字典树",
+    "哈希表"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2381",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三年级二班已经完成了竞选班长的投票，已知一共有 <span class=\"katex math inline\">n</span> 张投票，每张投票上写了一位同学的名字。</p>\n<p>投票统计结束后，张老师随意问一个同学的名字，请编程快速检索出，该同学共有几票。</p>\n</div>            </div>",
+      "text": "三年级二班已经完成了竞选班长的投票，已知一共有 n 张投票，每张投票上写了一位同学的名字。\n投票统计结束后，张老师随意问一个同学的名字，请编程快速检索出，该同学共有几票。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行读入一个整数 <span class=\"katex math inline\">n</span> ，代表产生了 <span class=\"katex math inline\">n</span> 张投票。（ <span class=\"katex math inline\">n \\le 10^5 </span>）</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行有一个字符串 <span class=\"katex math inline\">s</span> ，代表该张投票上写的同学的姓名（姓名由不含空格的小写英文字母组成，<span class=\"katex math inline\">n</span> 个姓名的总长度 <span class=\"katex math inline\"> \\le 10^6</span> ）。</p>\n<p>接下来一行读入一个整数 <span class=\"katex math inline\">m</span>（ <span class=\"katex math inline\">m \\le 10^5</span> ），代表王老师提问的同学的姓名数量。</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行有一个字符串 <span class=\"katex math inline\">t</span> ，代表每次询问的姓名；（姓名由不含空格的小写英文字母组成，<span class=\"katex math inline\">m</span> 个姓名的总长度 <span class=\"katex math inline\"> \\le 10^6</span> ）。</p>\n</div>            </div>",
+      "text": "第一行读入一个整数 n ，代表产生了 n 张投票。（ n \\le 10^5 ）\n接下来 n 行，每行有一个字符串 s ，代表该张投票上写的同学的姓名（姓名由不含空格的小写英文字母组成，n 个姓名的总长度  \\le 10^6 ）。\n接下来一行读入一个整数 m（ m \\le 10^5 ），代表王老师提问的同学的姓名数量。\n接下来 m 行，每行有一个字符串 t ，代表每次询问的姓名；（姓名由不含空格的小写英文字母组成，m 个姓名的总长度  \\le 10^6 ）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">m</span> 行，第 <span class=\"katex math inline\">i</span> 行输出第 <span class=\"katex math inline\">i</span> 次询问的姓名，在投票中出现的总次数。</p>\n</div>            </div>",
+      "text": "输出 m 行，第 i 行输出第 i 次询问的姓名，在投票中出现的总次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\nlihua\r\nzhaoxiang\r\nwangfang\r\nlihua\r\nzhangxiang\r\n3\r\nlihua\r\nwangfang\r\nsunming</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2\r\n1\r\n0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\nlihua\r\nzhaoxiang\r\nwangfang\r\nlihua\r\nzhangxiang\r\n3\r\nlihua\r\nwangfang\r\nsunming\n                        \n                        \n                            输出\n                            2\r\n1\r\n0"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">Trie字典树</span><span class=\"label label-warning\">哈希表</span></span></p>\n</div>                </div>",
+      "text": "Trie字典树哈希表"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\nlihua\r\nzhaoxiang\r\nwangfang\r\nlihua\r\nzhangxiang\r\n3\r\nlihua\r\nwangfang\r\nsunming",
+      "output": "2\r\n1\r\n0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "3157",
+    "通过人数": "1418",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:40"
+}

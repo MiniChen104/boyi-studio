@@ -1,0 +1,57 @@
+{
+  "id": "2055",
+  "title": "欧拉路",
+  "tags": [
+    "图论",
+    "欧拉路"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2055",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n有一个无向图，图中要么有两个奇点要么0奇点，如果是欧拉回路请从第一个点（1号点）为起点开始遍历，如果有两个奇点，则以字典序大的为起点开始遍历，在遍历的过程中，字典序小结点的先遍历。\n</p>\n<p>\n请输出满足条件的欧拉路或者欧拉回路。\n</p>\n</div>            </div>",
+      "text": "有一个无向图，图中要么有两个奇点要么0奇点，如果是欧拉回路请从第一个点（1号点）为起点开始遍历，如果有两个奇点，则以字典序大的为起点开始遍历，在遍历的过程中，字典序小结点的先遍历。\n\n\n请输出满足条件的欧拉路或者欧拉回路。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n第一行两个整数，n和e，表示有n个结点（结点编号为1~n），e条边。（5&lt;=n&lt;=20,5&lt;=e&lt;=15）\n</p>\n<p>\n接下来e行，每行有2个数，代表这两个结点之间有一条边。（本题数据保证两个结点之间最多只有1条边，确保本题存在欧拉路或者欧拉回路）\n</p>\n</div>            </div>",
+      "text": "第一行两个整数，n和e，表示有n个结点（结点编号为1~n），e条边。（5<=n<=20,5<=e<=15）\n\n\n接下来e行，每行有2个数，代表这两个结点之间有一条边。（本题数据保证两个结点之间最多只有1条边，确保本题存在欧拉路或者欧拉回路）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一行，为满足条件的欧拉路或欧拉回路。</p>\n</div>            </div>",
+      "text": "只有一行，为满足条件的欧拉路或欧拉回路。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 5\r\n1 2\r\n2 3\r\n3 4\r\n4 5\r\n5 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 2 3 4 5 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 5\r\n1 2\r\n2 3\r\n3 4\r\n4 5\r\n5 1\n                        \n                        \n                            输出\n                            1 2 3 4 5 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>图论 欧拉路</p>\n</div>                </div>",
+      "text": "图论 欧拉路"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span><span class=\"label label-warning\">欧拉路</span></span></p>\n</div>                </div>",
+      "text": "图论欧拉路"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 5\r\n1 2\r\n2 3\r\n3 4\r\n4 5\r\n5 1",
+      "output": "1 2 3 4 5 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4553",
+    "通过人数": "2315",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:27:50"
+}

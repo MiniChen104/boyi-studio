@@ -1,0 +1,70 @@
+{
+  "id": "3728",
+  "title": "最小值",
+  "tags": [
+    "市赛",
+    "常州2024"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3728",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>素数是指一个大于 <span class=\"katex math inline\">1</span> 的自然数，除了 <span class=\"katex math inline\">1</span> 和它本身外，不能被其他自然数整除，换句话说就是该数除了 <span class=\"katex math inline\">1</span> 和它本身以外不再有其他的因数。比如 <span class=\"katex math inline\">2,3,5,7,11,13</span>……都是素数，而 <span class=\"katex math inline\">4,6,8,9,10</span>……都是合数(有 <span class=\"katex math inline\">3</span> 个以上因数)。特别地，<span class=\"katex math inline\">0</span> 和 <span class=\"katex math inline\">1</span> 既不是素数，也不是合数。</p>\n<p>小Y想知道最小的素数，那当然是 <span class=\"katex math inline\">2</span> 。不过他加上了一些限制，就是只通过某些数字构成的素数最小是多少？比如只通过 <span class=\"katex math inline\">3</span> 构成的最小的素数是 <span class=\"katex math inline\">3</span>，只通过 <span class=\"katex math inline\">1</span> 构成的最小的素数是 <span class=\"katex math inline\">11</span>，只通过 <span class=\"katex math inline\">8</span> 和 <span class=\"katex math inline\">9</span> 构成的最小的素数是 <span class=\"katex math inline\">89</span> 等等。另外需要特别指出的是：给出的数字无须全部用到，比如只通过 <span class=\"katex math inline\">3</span> 和 <span class=\"katex math inline\">5</span> 构成的最小的素数是 <span class=\"katex math inline\">3</span>，而不是 <span class=\"katex math inline\">53</span>。</p>\n</div>            </div>",
+      "text": "素数是指一个大于 1 的自然数，除了 1 和它本身外，不能被其他自然数整除，换句话说就是该数除了 1 和它本身以外不再有其他的因数。比如 2,3,5,7,11,13……都是素数，而 4,6,8,9,10……都是合数(有 3 个以上因数)。特别地，0 和 1 既不是素数，也不是合数。\n小Y想知道最小的素数，那当然是 2 。不过他加上了一些限制，就是只通过某些数字构成的素数最小是多少？比如只通过 3 构成的最小的素数是 3，只通过 1 构成的最小的素数是 11，只通过 8 和 9 构成的最小的素数是 89 等等。另外需要特别指出的是：给出的数字无须全部用到，比如只通过 3 和 5 构成的最小的素数是 3，而不是 53。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个正整数 <span class=\"katex math inline\">n</span>，表示可以使用的数字的个数。</p>\n<p>第二行 <span class=\"katex math inline\">n</span> 个个位数字，表示可以使用哪些数字。</p>\n</div>            </div>",
+      "text": "第一行一个正整数 n，表示可以使用的数字的个数。\n第二行 n 个个位数字，表示可以使用哪些数字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个素数表示构成的素数最小是多少，若是无法通过给出的数字构成素数，则输出 <span class=\"katex math inline\">-1</span>。</p>\n</div>            </div>",
+      "text": "一行一个素数表示构成的素数最小是多少，若是无法通过给出的数字构成素数，则输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n3 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1\r\n1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>11</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3\r\n8 0 9</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>89</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n3 5\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                1\r\n1\n                            \n                            \n                                输出\n                                11\n                            \n                        \n                                                    \n                                输入\n                                3\r\n8 0 9\n                            \n                            \n                                输出\n                                89"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据范围】</p>\n<p>本题共有 <span class=\"katex math inline\">10</span> 个测试点，每个测试点 <span class=\"katex math inline\">9</span> 分</p>\n<p>对于全部测试点：<span class=\"katex math inline\">n \\le 10</span>，保证可以使用的数字互不相同</p>\n<p>对于测试点<span class=\"katex math inline\">1-3 ：n=1</span></p>\n<p>对于测试点<span class=\"katex math inline\">4-7 ：n=2</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n本题共有 10 个测试点，每个测试点 9 分\n对于全部测试点：n \\le 10，保证可以使用的数字互不相同\n对于测试点1-3 ：n=1\n对于测试点4-7 ：n=2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024常州市赛T2</p>\n</div>                </div>",
+      "text": "2024常州市赛T2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">常州2024</span></span></p>\n</div>                </div>",
+      "text": "市赛常州2024"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n3 5",
+      "output": "3"
+    },
+    {
+      "input": "1\r\n1",
+      "output": "11"
+    },
+    {
+      "input": "3\r\n8 0 9",
+      "output": "89"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "18",
+    "通过人数": "6",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:35:57"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "1934",
+  "title": "数字游戏（number）",
+  "tags": [
+    "noip复赛",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1934",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 K 同学向小 P 同学发送了一个长度为 <span class=\"katex math inline\">8</span> 的 <strong>01 字符串</strong>来玩数字游戏，小 P 同学想要知道字符串中究竟有多少个 1。</p>\n<p>注意：<span class=\"katex math inline\">01</span> 字符串为每一个字符是 <span class=\"katex math inline\">0</span> 或者 <span class=\"katex math inline\">1</span> 的字符串，如 “<span class=\"katex math inline\">101</span>” （不含双引号）为一个长度为 <span class=\"katex math inline\">3</span> 的 <span class=\"katex math inline\">01</span> 字符串。</p>\n</div>            </div>",
+      "text": "小 K 同学向小 P 同学发送了一个长度为 8 的 01 字符串来玩数字游戏，小 P 同学想要知道字符串中究竟有多少个 1。\n注意：01 字符串为每一个字符是 0 或者 1 的字符串，如 “101” （不含双引号）为一个长度为 3 的 01 字符串。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入文件只有一行，一个长度为 <span class=\"katex math inline\">8</span> 的 <span class=\"katex math inline\">01</span> 字符串 <span class=\"katex math inline\">s</span>。</p>\n</div>            </div>",
+      "text": "输入文件只有一行，一个长度为 8 的 01 字符串 s。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出文件只有一行，包含一个整数，即 <span class=\"katex math inline\">01</span> 字符串中<strong>字符 1</strong> 的个数。</p>\n</div>            </div>",
+      "text": "输出文件只有一行，包含一个整数，即 01 字符串中字符 1 的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>00010100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>11111111</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>8</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            00010100\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                11111111\n                            \n                            \n                                输出\n                                8"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【<strong>输入输出样例 <span class=\"katex math inline\">1</span> 说明</strong>】</p>\n<p>该 <span class=\"katex math inline\">01</span> 字符串中有 <span class=\"katex math inline\">2</span> 个字符 <span class=\"katex math inline\">1</span>。</p>\n<p>【<strong>输入输出样例 <span class=\"katex math inline\">2</span> 说明</strong>】</p>\n<p>该 <span class=\"katex math inline\">01</span> 字符串中有 <span class=\"katex math inline\">8</span> 个字符 <span class=\"katex math inline\">1</span>。</p>\n<p>【<strong>数据规模与约定</strong>】</p>\n<ul><li>对于 <span class=\"katex math inline\">20\\%</span> 的数据，保证输入的字符全部为 <span class=\"katex math inline\">0</span>。</li>\n<li>对于 <span class=\"katex math inline\">100\\%</span> 的数据，输入只可能包含字符 <span class=\"katex math inline\">0</span> 和字符 <span class=\"katex math inline\">1</span>，字符串长度固定为 <span class=\"katex math inline\">8</span>。</li>\n</ul><p>【<strong>来源</strong>】</p>\n<p>noip（csp）2019年普及组复赛第1题。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【输入输出样例 1 说明】\n该 01 字符串中有 2 个字符 1。\n【输入输出样例 2 说明】\n该 01 字符串中有 8 个字符 1。\n【数据规模与约定】\n对于 20\\% 的数据，保证输入的字符全部为 0。\n对于 100\\% 的数据，输入只可能包含字符 0 和字符 1，字符串长度固定为 8。\n【来源】\nnoip（csp）2019年普及组复赛第1题。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip（csp）2019年普及组复赛第1题。</p>\n</div>                </div>",
+      "text": "noip（csp）2019年普及组复赛第1题。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "noip复赛字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "00010100",
+      "output": "2"
+    },
+    {
+      "input": "11111111",
+      "output": "8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4302",
+    "通过人数": "3250",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:26:11"
+}

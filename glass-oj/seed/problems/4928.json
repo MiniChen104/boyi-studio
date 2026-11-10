@@ -1,0 +1,65 @@
+{
+  "id": "4928",
+  "title": "美味水果",
+  "tags": [
+    "江苏省赛2025"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4928",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Dr. X 收到了一份礼物：<span class=\"katex math inline\">n</span> 个水果，其中第 <span class=\"katex math inline\">i</span> 个水果的好吃程度为 <span class=\"katex math inline\">x_i</span>。新鲜的水果会随时间变得不如最初好吃：</p>\n<ul><li>每天，Dr. X 可以选择吃掉一个水果，并记录下该天吃掉的水果的好吃程度。</li>\n<li>没有被吃掉的每个水果，好吃程度将在第二天变为 <span class=\"katex math inline\">y = \\lfloor\\sqrt x\\rfloor</span>，即 “开根号取整”：<span class=\"katex math inline\">y</span> 是满足 <span class=\"katex math inline\">y^2 ≤ x</span> 的最大整数。</li>\n</ul><p>请计算，在所有可能的吃水果顺序中，Dr. X 最多能获得多少好吃程度的总和。</p>\n</div>            </div>",
+      "text": "Dr. X 收到了一份礼物：n 个水果，其中第 i 个水果的好吃程度为 x_i。新鲜的水果会随时间变得不如最初好吃：\n每天，Dr. X 可以选择吃掉一个水果，并记录下该天吃掉的水果的好吃程度。\n没有被吃掉的每个水果，好吃程度将在第二天变为 y = \\lfloor\\sqrt x\\rfloor，即 “开根号取整”：y 是满足 y^2 ≤ x 的最大整数。\n请计算，在所有可能的吃水果顺序中，Dr. X 最多能获得多少好吃程度的总和。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含两行：第一行，一个整数 <span class=\"katex math inline\">n</span>，表示水果数量；第二行，<span class=\"katex math inline\">n</span> 个用空格分隔的整数 <span class=\"katex math inline\">x_1 , x_2 , \\cdots, x_n</span>，表示每个水果的初始好吃程度。</p>\n</div>            </div>",
+      "text": "输入包含两行：第一行，一个整数 n，表示水果数量；第二行，n 个用空格分隔的整数 x_1 , x_2 , \\cdots, x_n，表示每个水果的初始好吃程度。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示能够获得的好吃程度总和的最大值。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示能够获得的好吃程度总和的最大值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n100 10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>103</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>6\r\n1 3 7 10 15 21</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>28</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n100 10\n                        \n                        \n                            输出\n                            103\n                        \n\n                                                    \n                                输入\n                                6\r\n1 3 7 10 15 21\n                            \n                            \n                                输出\n                                28"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\">样例 <span class=\"katex math inline\">\\textbf 1</span> 解释\n<p>在第一天，Dr.X 吃掉第一个水果，好吃程度为 <span class=\"katex math inline\">100</span>，另一个水果在第二天吃，好吃程度为 <span class=\"katex math inline\">\\lfloor\\sqrt{10}\\rfloor = 3</span>，吃完所有水果，好吃程度的总和为 <span class=\"katex math inline\">103</span>。</p>\n数据范围\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的数据，<span class=\"katex math inline\">1 ≤ n ≤ 100</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 ≤ n ≤ 10^5</span>，水果的好吃程度 <span class=\"katex math inline\">1 ≤ x_i ≤ 10^9</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 \\textbf 1 解释\n在第一天，Dr.X 吃掉第一个水果，好吃程度为 100，另一个水果在第二天吃，好吃程度为 \\lfloor\\sqrt{10}\\rfloor = 3，吃完所有水果，好吃程度的总和为 103。\n数据范围\n对于 40\\% 的数据，1 ≤ n ≤ 100。\n对于 100\\% 的数据，1 ≤ n ≤ 10^5，水果的好吃程度 1 ≤ x_i ≤ 10^9。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年江苏省＂信息与未来＂小学生编程</p>\n</div>                </div>",
+      "text": "2025年江苏省＂信息与未来＂小学生编程"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">江苏省赛2025</span></span></p>\n</div>                </div>",
+      "text": "江苏省赛2025"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n100 10",
+      "output": "103"
+    },
+    {
+      "input": "6\r\n1 3 7 10 15 21",
+      "output": "28"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "78",
+    "通过人数": "31",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:05"
+}

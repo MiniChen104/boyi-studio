@@ -1,0 +1,57 @@
+{
+  "id": "1440",
+  "title": "卫星照片",
+  "tags": [
+    "递归",
+    "深搜"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1440",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>农夫约翰总是想要一个农场的地图，所以他拍摄了一张 <span class=\"katex math inline\">N</span> 行 <span class=\"katex math inline\">M</span> 列的卫星照片。一部分的照片看起来像这样：</p>\n<pre><code>..................\n..#####.......##..\n..#####......##...\n..................\n#.......###.....#.\n#.....#####.......\n</code></pre>\n<p>他认为每个联通块都是一个谷仓或一头奶牛。联通块由若干个彼此水平或垂直相邻的 &#x27;＃&#x27; 符号组成。以下的照片被认为是两个联通块：</p>\n<pre><code>....\n.#..\n..#.\n....\n</code></pre>\n<p>农夫约翰认为一个联通块是谷仓，当且仅当它是一个完整的矩形，否则该联通块是一头奶牛。在第一张照片上面，有三个谷仓（大小分别为 <span class=\"katex math inline\">2 \\times 1</span> , <span class=\"katex math inline\">2 \\times 5</span> 和 <span class=\"katex math inline\">1 \\times 1</span> ）和两头奶牛。\n计算他的卫星照片中谷仓和奶牛的数量。</p>\n</div>            </div>",
+      "text": "农夫约翰总是想要一个农场的地图，所以他拍摄了一张 N 行 M 列的卫星照片。一部分的照片看起来像这样：\n..................\n..#####.......##..\n..#####......##...\n..................\n#.......###.....#.\n#.....#####.......\n\n他认为每个联通块都是一个谷仓或一头奶牛。联通块由若干个彼此水平或垂直相邻的 '＃' 符号组成。以下的照片被认为是两个联通块：\n....\n.#..\n..#.\n....\n\n农夫约翰认为一个联通块是谷仓，当且仅当它是一个完整的矩形，否则该联通块是一头奶牛。在第一张照片上面，有三个谷仓（大小分别为 2 \\times 1 , 2 \\times 5 和 1 \\times 1 ）和两头奶牛。\n计算他的卫星照片中谷仓和奶牛的数量。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>行 <span class=\"katex math inline\">1</span>：两个空格分隔的整数： <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">M</span> ( <span class=\"katex math inline\">N,M \\le 80</span>)。</p>\n<p>行 <span class=\"katex math inline\">2..N + 1</span>：行 <span class=\"katex math inline\">i + 1</span> 表示照片的行 <span class=\"katex math inline\">i</span> 包含 <span class=\"katex math inline\">M</span> 个字符（且不含空格）。</p>\n</div>            </div>",
+      "text": "行 1：两个空格分隔的整数： N 和 M ( N,M \\le 80)。\n行 2..N + 1：行 i + 1 表示照片的行 i 包含 M 个字符（且不含空格）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>行1：照片中的谷仓数量。</p>\n<p>行2：照片中的奶牛数量。</p>\n</div>            </div>",
+      "text": "行1：照片中的谷仓数量。\n行2：照片中的奶牛数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 8\r\n#####..#\r\n#####.##\r\n......#.\r\n.###...#\r\n.###..##</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2\r\n2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 8\r\n#####..#\r\n#####.##\r\n......#.\r\n.###...#\r\n.###..##\n                        \n                        \n                            输出\n                            2\r\n2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递归 深搜</p>\n</div>                </div>",
+      "text": "递归 深搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递归</span><span class=\"label label-warning\">深搜</span></span></p>\n</div>                </div>",
+      "text": "递归深搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 8\r\n#####..#\r\n#####.##\r\n......#.\r\n.###...#\r\n.###..##",
+      "output": "2\r\n2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2950",
+    "通过人数": "1816",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:19:30"
+}

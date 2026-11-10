@@ -1,0 +1,60 @@
+{
+  "id": "1111",
+  "title": "找最长单词",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1111",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>编写程序，根据给出的一个结束于 <code>.</code> 的字符字串，找出其中最长的含有字母 <code>a</code> 的单词。</p>\n</div>            </div>",
+      "text": "编写程序，根据给出的一个结束于 . 的字符字串，找出其中最长的含有字母 a 的单词。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，为一个字符字串，结束于句点 <code>.</code>。(读入的字符串的总长度不超过 <span class=\"katex math inline\">300</span> 个字符)</p>\n<p>字串中的单词由一个或几个空格隔开。</p>\n</div>            </div>",
+      "text": "一行，为一个字符字串，结束于句点 .。(读入的字符串的总长度不超过 300 个字符)\n字串中的单词由一个或几个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行。显示找出的最长的含有字母 <code>a</code> 的子串。</p>\n<p>如果有多个这样的子串，只显示其中的第一个；若没有含字母 <code>a</code> 的子串，则显示 <code>NO</code> 。</p>\n</div>            </div>",
+      "text": "一行。显示找出的最长的含有字母 a 的子串。\n如果有多个这样的子串，只显示其中的第一个；若没有含字母 a 的子串，则显示 NO 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>Her  name is Lilan   and she  is a  happy  student.</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Lilan</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>This is my pen.</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>NO</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            Her  name is Lilan   and she  is a  happy  student.\n                        \n                        \n                            输出\n                            Lilan\n                        \n\n                                                    \n                                输入\n                                This is my pen.\n                            \n                            \n                                输出\n                                NO"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "Her  name is Lilan   and she  is a  happy  student.",
+      "output": "Lilan"
+    },
+    {
+      "input": "This is my pen.",
+      "output": "NO"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "12418",
+    "通过人数": "6652",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:14:54"
+}

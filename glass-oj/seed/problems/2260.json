@@ -1,0 +1,61 @@
+{
+  "id": "2260",
+  "title": "石头剪刀布",
+  "tags": [
+    "电子学会等级考试"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2260",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>石头剪刀布是常见的猜拳游戏。石头胜剪刀，剪刀胜布，布胜石头。如果两个人出拳一样，则不分胜负。</p>\n<p>一天，小A和小B正好在玩石头剪刀布。已知他们的出拳都是有周期性规律的，比如：“石头-布-石头-剪刀-石头-布-石头-剪刀……”，就是以“石头-布-石头-剪刀”为周期不断循环的。请问，小A和小B比了N轮之后，谁赢的轮数多？</p>\n</div>            </div>",
+      "text": "石头剪刀布是常见的猜拳游戏。石头胜剪刀，剪刀胜布，布胜石头。如果两个人出拳一样，则不分胜负。\n一天，小A和小B正好在玩石头剪刀布。已知他们的出拳都是有周期性规律的，比如：“石头-布-石头-剪刀-石头-布-石头-剪刀……”，就是以“石头-布-石头-剪刀”为周期不断循环的。请问，小A和小B比了N轮之后，谁赢的轮数多？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含三行。 第一行包含三个整数：N，NA，NB，分别表示比了N轮，小A出拳的周期长度，小B出拳的周期长度。0 &lt; N,NA,NB &lt; 100。 第二行包含NA个整数，表示小A出拳的规律。 第三行包含NB个整数，表示小B出拳的规律。 其中，0表示“石头”，2表示“剪刀”，5表示“布”。相邻两个整数之间用单个空格隔开。</p>\n</div>            </div>",
+      "text": "输入包含三行。 第一行包含三个整数：N，NA，NB，分别表示比了N轮，小A出拳的周期长度，小B出拳的周期长度。0 < N,NA,NB < 100。 第二行包含NA个整数，表示小A出拳的规律。 第三行包含NB个整数，表示小B出拳的规律。 其中，0表示“石头”，2表示“剪刀”，5表示“布”。相邻两个整数之间用单个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，如果小A赢的轮数多，输出A；如果小B赢的轮数多，输出B；如果两人打平，输出draw。</p>\n</div>            </div>",
+      "text": "输出一行，如果小A赢的轮数多，输出A；如果小B赢的轮数多，输出B；如果两人打平，输出draw。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 3 4\r\n0 2 5\r\n0 5 0 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>A</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 3 4\r\n0 2 5\r\n0 5 0 2\n                        \n                        \n                            输出\n                            A"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>对于测试数据，猜拳过程为： A：0 2 5 0 2 5 0 2 5 0 B：0 5 0 2 0 5 0 2 0 5 A赢了4轮，B赢了2轮，双方打平4轮，所以A赢的轮数多。</p>\n</div>\n\n                    \n                </div>",
+      "text": "对于测试数据，猜拳过程为： A：0 2 5 0 2 5 0 2 5 0 B：0 5 0 2 0 5 0 2 0 5 A赢了4轮，B赢了2轮，双方打平4轮，所以A赢的轮数多。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会二级 202103真题</p>\n</div>                </div>",
+      "text": "电子学会二级 202103真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 3 4\r\n0 2 5\r\n0 5 0 2",
+      "output": "A"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1483",
+    "通过人数": "706",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:25"
+}

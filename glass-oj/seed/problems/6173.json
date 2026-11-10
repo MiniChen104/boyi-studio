@@ -1,0 +1,65 @@
+{
+  "id": "6173",
+  "title": "快递无人机",
+  "tags": [
+    "江苏省赛2026"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6173",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Dr. X 制作了一台快递无人机，正在测试投送包裹。</p>\n<p><img src=\"https://assets.boyi.local/7c06934e1bd3168d253196ab.png\"></p>\n<p>投送的目标区域是一个圆形空地，它的边界在地图上用星号 <code>*</code> 标出。地图上的空白区域用半角点号 <code>.</code> 表示，每个包裹的落点用小写字母 <code>o</code> 标记。下图是一个例子：</p>\n<pre><code class=\"language-cpp\">........o\n...***...\n..*****..\n..*...*..\n..*.o.*..\n..*...*..\n..*****..\n...***...\n.........\n</code></pre>\n<p>上图中，<code>*</code> 围成的区域代表圆形空地。包裹 <code>o</code> 如果落在边界围成的区域内部，就是一次正确投送。Dr. X 想请你统计正确投送的包裹数量。包裹要么在圆内，要么在圆外，保证不会在圆形的边界上。</p>\n</div>            </div>",
+      "text": "Dr. X 制作了一台快递无人机，正在测试投送包裹。\n\n投送的目标区域是一个圆形空地，它的边界在地图上用星号 * 标出。地图上的空白区域用半角点号 . 表示，每个包裹的落点用小写字母 o 标记。下图是一个例子：\n........o\n...***...\n..*****..\n..*...*..\n..*.o.*..\n..*...*..\n..*****..\n...***...\n.........\n\n上图中，* 围成的区域代表圆形空地。包裹 o 如果落在边界围成的区域内部，就是一次正确投送。Dr. X 想请你统计正确投送的包裹数量。包裹要么在圆内，要么在圆外，保证不会在圆形的边界上。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入第一行包含两个空格分隔的整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>，表示地图的行数和列数。接下来 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">m</span> 个字符，描述整张地图。字符只包含 <code>*</code>（边界）、<code>.</code>（空白）和 <code>o</code>（包裹）。保证 <code>*</code> 恰好围成一个闭合的环形边界，且地图中至少有一个 <code>o</code>。</p>\n</div>            </div>",
+      "text": "输入第一行包含两个空格分隔的整数 n 和 m，表示地图的行数和列数。接下来 n 行，每行 m 个字符，描述整张地图。字符只包含 *（边界）、.（空白）和 o（包裹）。保证 * 恰好围成一个闭合的环形边界，且地图中至少有一个 o。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示落在圆形区域内部的包裹数量。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示落在圆形区域内部的包裹数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>9 9\r\n........o\r\n...***...\r\n..*****..\r\n..*...*..\r\n..*.o.*..\r\n..*...*..\r\n..*****..\r\n...***...\r\n.........</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>12 13\r\n.............\r\n....*******..\r\n...*.......*.\r\n...*.......*.\r\n...*..o....*.\r\n...*.......*.\r\n...*...o...*.\r\n...*....o..*.\r\n...*.......*.\r\n....*******..\r\n..o..........\r\n.o...........</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            9 9\r\n........o\r\n...***...\r\n..*****..\r\n..*...*..\r\n..*.o.*..\r\n..*...*..\r\n..*****..\r\n...***...\r\n.........\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                12 13\r\n.............\r\n....*******..\r\n...*.......*.\r\n...*.......*.\r\n...*..o....*.\r\n...*.......*.\r\n...*...o...*.\r\n...*....o..*.\r\n...*.......*.\r\n....*******..\r\n..o..........\r\n.o...........\n                            \n                            \n                                输出\n                                3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><ul><li>对于 <span class=\"katex math inline\">40\\%</span> 的数据，满足 <span class=\"katex math inline\">n, m \\leq 10</span>。</li>\n<li>对于 <span class=\"katex math inline\">100\\%</span> 的数据，满足 <span class=\"katex math inline\">3 \\leq n, m \\leq 50</span>。</li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "对于 40\\% 的数据，满足 n, m \\leq 10。\n对于 100\\% 的数据，满足 3 \\leq n, m \\leq 50。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2026年江苏省＂信息与未来＂小学生编程</p>\n</div>                </div>",
+      "text": "2026年江苏省＂信息与未来＂小学生编程"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">江苏省赛2026</span></span></p>\n</div>                </div>",
+      "text": "江苏省赛2026"
+    }
+  ],
+  "samples": [
+    {
+      "input": "9 9\r\n........o\r\n...***...\r\n..*****..\r\n..*...*..\r\n..*.o.*..\r\n..*...*..\r\n..*****..\r\n...***...\r\n.........",
+      "output": "1"
+    },
+    {
+      "input": "12 13\r\n.............\r\n....*******..\r\n...*.......*.\r\n...*.......*.\r\n...*..o....*.\r\n...*.......*.\r\n...*...o...*.\r\n...*....o..*.\r\n...*.......*.\r\n....*******..\r\n..o..........\r\n.o...........",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "510 MB",
+    "提交次数": "62",
+    "通过人数": "25",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:25"
+}

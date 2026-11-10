@@ -1,0 +1,56 @@
+{
+  "id": "1364",
+  "title": "棋盘格数",
+  "tags": [
+    "递推"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1364",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>设有一个 <span class=\"katex math inline\">N * M</span> 方格的棋盘（ <span class=\"katex math inline\">1 \\le N \\le 100</span>，<span class=\"katex math inline\">1 \\le M \\le 100</span>）。求出该棋盘中包含有多少个正方形、多少个长方形（不包括正方形）。  </p>\n<p>例如：当 <span class=\"katex math inline\">N=2</span>， <span class=\"katex math inline\">M＝3</span> 时：  </p>\n<p>正方形的个数有 <span class=\"katex math inline\">8</span> 个：即边长为 <span class=\"katex math inline\">1</span> 的正方形有 <span class=\"katex math inline\">6</span> 个；边长为 <span class=\"katex math inline\">2</span> 的正方形有 <span class=\"katex math inline\">2</span> 个。  </p>\n<p>长方形的个数有 <span class=\"katex math inline\">10</span> 个：即 <span class=\"katex math inline\">2*1</span> 的长方形有 <span class=\"katex math inline\">4</span> 个；<span class=\"katex math inline\">1 * 2</span> 的长方形有 <span class=\"katex math inline\">3</span> 个；<span class=\"katex math inline\">3 * 1</span> 的长方形有 <span class=\"katex math inline\">2</span> 个；<span class=\"katex math inline\">3 * 2</span>的长方形有 <span class=\"katex math inline\">1</span> 个。</p>\n</div>            </div>",
+      "text": "设有一个 N * M 方格的棋盘（ 1 \\le N \\le 100，1 \\le M \\le 100）。求出该棋盘中包含有多少个正方形、多少个长方形（不包括正方形）。  \n例如：当 N=2， M＝3 时：  \n正方形的个数有 8 个：即边长为 1 的正方形有 6 个；边长为 2 的正方形有 2 个。  \n长方形的个数有 10 个：即 2*1 的长方形有 4 个；1 * 2 的长方形有 3 个；3 * 1 的长方形有 2 个；3 * 2的长方形有 1 个。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">M</span> 两个整数。</p>\n</div>            </div>",
+      "text": "N 和 M 两个整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>正方形的个数与长方形的个数。</p>\n</div>            </div>",
+      "text": "正方形的个数与长方形的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8 10</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 3\n                        \n                        \n                            输出\n                            8 10"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递推</p>\n</div>                </div>",
+      "text": "递推"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递推</span></span></p>\n</div>                </div>",
+      "text": "递推"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 3",
+      "output": "8 10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "848",
+    "通过人数": "651",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:18:24"
+}

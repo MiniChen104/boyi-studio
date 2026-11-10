@@ -1,0 +1,56 @@
+{
+  "id": "1400",
+  "title": "补发礼物？",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1400",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学校组织了一次晚会，小明负责为晚会准备 <span class=\"katex math inline\">n</span> 种不同类型的小礼品，学校对于礼品数量的要求是每种至少 <span class=\"katex math inline\">10</span> 个，而且每种礼品的数量必须是 <span class=\"katex math inline\">4</span> 的倍数。小明在准备时由于粗心，很多礼品的数量准备得都不能满足要求。</p>\n<p>请你编程帮小明把每种礼品的数量补充到刚好满足要求，并按照由多到少排序输出各种礼物的数量。当然补充的数量越少越好；比如：有一种礼品小明准备了 <span class=\"katex math inline\">8</span> 个，小明至少要准备到 <span class=\"katex math inline\">12</span> 个才能满足要求；另一种物品小明准备了 <span class=\"katex math inline\">16</span> 个，就不需要补充了。</p>\n</div>            </div>",
+      "text": "学校组织了一次晚会，小明负责为晚会准备 n 种不同类型的小礼品，学校对于礼品数量的要求是每种至少 10 个，而且每种礼品的数量必须是 4 的倍数。小明在准备时由于粗心，很多礼品的数量准备得都不能满足要求。\n请你编程帮小明把每种礼品的数量补充到刚好满足要求，并按照由多到少排序输出各种礼物的数量。当然补充的数量越少越好；比如：有一种礼品小明准备了 8 个，小明至少要准备到 12 个才能满足要求；另一种物品小明准备了 16 个，就不需要补充了。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">n</span> ，代表礼物的种类（ <span class=\"katex math inline\">n \\le 100</span> ）；</p>\n<p>第二行 <span class=\"katex math inline\">n</span> 个整数，分别代表小明目前准备的各类礼物的数量。</p>\n</div>            </div>",
+      "text": "第一行一个整数 n ，代表礼物的种类（ n \\le 100 ）；\n第二行 n 个整数，分别代表小明目前准备的各类礼物的数量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">1</span> 行，<span class=\"katex math inline\">n</span> 个数，空格隔开，代表 <span class=\"katex math inline\">n</span> 种礼物补充到正好满足要求的数值，按照从大到小排序。</p>\n</div>            </div>",
+      "text": "1 行，n 个数，空格隔开，代表 n 种礼物补充到正好满足要求的数值，按照从大到小排序。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n8 30 12 22 18</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>32 24 20 12 12</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n8 30 12 22 18\n                        \n                        \n                            输出\n                            32 24 20 12 12"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n8 30 12 22 18",
+      "output": "32 24 20 12 12"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "3769",
+    "通过人数": "2521",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:18:55"
+}

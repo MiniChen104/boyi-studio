@@ -1,0 +1,57 @@
+{
+  "id": "4622",
+  "title": "外观数列",
+  "tags": [
+    "蓝桥杯STEMA",
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4622",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>外观数列是一个整数序列，给定该数列的第一项数据之后，从第二项开始，每一项都是对前一项数据的描述。</p>\n<p>例如：</p>\n<ul><li>给定外观数列的第一项为 <span class=\"katex math inline\">1</span>；</li>\n<li>接下来第二项是对第一项数据的描述，即“一个 <span class=\"katex math inline\">1</span>”，记作 <span class=\"katex math inline\">11</span>；</li>\n<li>第三项是对第二项数据的描述，即“两个 <span class=\"katex math inline\">1</span>”，记作 <span class=\"katex math inline\">21</span>；</li>\n<li>第四项是对第三项数据的描述，即“一个 <span class=\"katex math inline\">2</span>，一个 <span class=\"katex math inline\">1</span>”，记作 <span class=\"katex math inline\">1211</span>；</li>\n<li>第五项是对第四项数据的描述，即“一个 <span class=\"katex math inline\">1</span>，一个 <span class=\"katex math inline\">2</span>，两个 <span class=\"katex math inline\">1</span>”，记作 <span class=\"katex math inline\">111221</span>；</li>\n</ul><p>以此类推......</p>\n<p>给定外观数列的第一项 <span class=\"katex math inline\">x</span> 以及一个整数 <span class=\"katex math inline\">n</span>，请计算出该外观数列第 <span class=\"katex math inline\">n</span> 项的值。</p>\n<p>例如：<span class=\"katex math inline\">x = 2</span>，<span class=\"katex math inline\">n = 3</span>，外观数列为：</p>\n<pre><code>2\n12\n1112\n3112\n132112\n......\n</code></pre>\n<p>外观数列第 <span class=\"katex math inline\">3</span> 项为 <span class=\"katex math inline\">1112</span>。</p>\n</div>            </div>",
+      "text": "外观数列是一个整数序列，给定该数列的第一项数据之后，从第二项开始，每一项都是对前一项数据的描述。\n例如：\n给定外观数列的第一项为 1；\n接下来第二项是对第一项数据的描述，即“一个 1”，记作 11；\n第三项是对第二项数据的描述，即“两个 1”，记作 21；\n第四项是对第三项数据的描述，即“一个 2，一个 1”，记作 1211；\n第五项是对第四项数据的描述，即“一个 1，一个 2，两个 1”，记作 111221；\n以此类推......\n给定外观数列的第一项 x 以及一个整数 n，请计算出该外观数列第 n 项的值。\n例如：x = 2，n = 3，外观数列为：\n2\n12\n1112\n3112\n132112\n......\n\n外观数列第 3 项为 1112。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个整数 <span class=\"katex math inline\">x（1 \\le x \\le 100）</span>和 <span class=\"katex math inline\">n（1 \\le n \\le 30)</span>。</p>\n</div>            </div>",
+      "text": "输入两个整数 x（1 \\le x \\le 100）和 n（1 \\le n \\le 30)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示外观数列第 <span class=\"katex math inline\">n</span> 项的值。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示外观数列第 n 项的值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1112</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 3\n                        \n                        \n                            输出\n                            1112"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（23年12月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（23年12月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">模拟</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 3",
+      "output": "1112"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "122",
+    "通过人数": "74",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:25"
+}

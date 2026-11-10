@@ -1,0 +1,60 @@
+{
+  "id": "1012",
+  "title": "我是第几个单词",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1012",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个英文句子，例如：<code>This is a Book.</code>，可以看到句子是以 <code>.</code> 来作为结束符号的，并且单词之间以一个空格来分隔。</p>\n<p>接着再输入一个单词 <span class=\"katex math inline\">A</span> ，请找出首次在句子中出现的与 <span class=\"katex math inline\">A</span> 相同的单词，是句子中的第几个单词，若不存在，则输出该句子中单词字符的总个数。</p>\n<p>例如对上句子而言，若输入单词 <code>is</code>，则应输出：<span class=\"katex math inline\">2</span>。 若输入单词 <code>isa</code>，则应输出：<span class=\"katex math inline\">11</span>。</p>\n</div>            </div>",
+      "text": "输入一个英文句子，例如：This is a Book.，可以看到句子是以 . 来作为结束符号的，并且单词之间以一个空格来分隔。\n接着再输入一个单词 A ，请找出首次在句子中出现的与 A 相同的单词，是句子中的第几个单词，若不存在，则输出该句子中单词字符的总个数。\n例如对上句子而言，若输入单词 is，则应输出：2。 若输入单词 isa，则应输出：11。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为以 <code>.</code> 结束的一个词组（仅由若干个大小写字母组成的单词构成，单词间由一空格隔开，除单词和最后的 <code>.</code> 以外，不含其它字符，句子总长度不超过 <span class=\"katex math inline\">800</span>，每个单词长度不超过 <span class=\"katex math inline\">90</span> 个字符）</p>\n<p>第二行是一个单词（不含空格，长度不超过 <span class=\"katex math inline\">90</span>）。</p>\n</div>            </div>",
+      "text": "第一行为以 . 结束的一个词组（仅由若干个大小写字母组成的单词构成，单词间由一空格隔开，除单词和最后的 . 以外，不含其它字符，句子总长度不超过 800，每个单词长度不超过 90 个字符）\n第二行是一个单词（不含空格，长度不超过 90）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数。</p>\n</div>            </div>",
+      "text": "一个整数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>This is a Book.\r\nBook</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>This is a Book.\r\nisa</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>11</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            This is a Book.\r\nBook\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                This is a Book.\r\nisa\n                            \n                            \n                                输出\n                                11"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "This is a Book.\r\nBook",
+      "output": "4"
+    },
+    {
+      "input": "This is a Book.\r\nisa",
+      "output": "11"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "24242",
+    "通过人数": "14768",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:13:27"
+}

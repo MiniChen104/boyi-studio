@@ -1,0 +1,63 @@
+{
+  "id": "1149",
+  "title": "回文数个数",
+  "tags": [
+    "省赛",
+    "函数问题",
+    "简单循环"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1149",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数，正读和反读都相同的数为回文数。</p>\n<p>例如 <span class=\"katex math inline\">22</span>， <span class=\"katex math inline\">131</span>， <span class=\"katex math inline\">2442</span>， <span class=\"katex math inline\">37073</span>， <span class=\"katex math inline\">6</span>，<span class=\"katex math inline\">\\dots</span> 所有 <span class=\"katex math inline\">1</span> 位数都是回文数。</p>\n<p>给出一个正整数 <span class=\"katex math inline\">n</span> （ <span class=\"katex math inline\">1 \\le n \\le 10000</span> ），求出 <span class=\"katex math inline\">1,2, \\dots ,n</span> 之中（包括 <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">n</span> ）的回文数的个数。</p>\n</div>            </div>",
+      "text": "一个正整数，正读和反读都相同的数为回文数。\n例如 22， 131， 2442， 37073， 6，\\dots 所有 1 位数都是回文数。\n给出一个正整数 n （ 1 \\le n \\le 10000 ），求出 1,2, \\dots ,n 之中（包括 1 和 n ）的回文数的个数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>任意给定一个正整数 <span class=\"katex math inline\">n</span> （ <span class=\"katex math inline\">0 \\lt n \\le 10000</span> ）</p>\n</div>            </div>",
+      "text": "任意给定一个正整数 n （ 0 \\lt n \\le 10000 ）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数，表示 <span class=\"katex math inline\">[1,n]</span> 之间的回文数的个数。</p>\n</div>            </div>",
+      "text": "一个正整数，表示 [1,n] 之间的回文数的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>325</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>41</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            325\n                        \n                        \n                            输出\n                            41"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>来源<br>\n2015江苏省青少年信息学奥林匹克竞赛复赛<br></p>\n</div>\n\n                    \n                </div>",
+      "text": "来源\n2015江苏省青少年信息学奥林匹克竞赛复赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>省赛 函数问题 简单循环</p>\n</div>                </div>",
+      "text": "省赛 函数问题 简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">省赛</span><span class=\"label label-warning\">函数问题</span><span class=\"label label-info\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "省赛函数问题简单循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "325",
+      "output": "41"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "25317",
+    "通过人数": "18586",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:15:26"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "4684",
+  "title": "原根判断",
+  "tags": [
+    "GESP五级",
+    "数论",
+    "费马小定理",
+    "快速幂",
+    "25年3月"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/4684",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小A知道，对于质数 <span class=\"katex math inline\"> p </span> 而言，<span class=\"katex math inline\"> p </span> 的原根 <span class=\"katex math inline\"> g </span> 是满足以下条件的正整数：</p>\n<ul><li><span class=\"katex math inline\"> 1 &lt; g &lt; p </span>;</li>\n<li><span class=\"katex math inline\"> g^{p-1} \\mod p = 1 </span>;</li>\n<li>对于任意 <span class=\"katex math inline\"> 1 \\leq i &lt; p-1 </span> 均有 <span class=\"katex math inline\"> g^i \\mod p \\neq 1 </span>。</li>\n</ul><p>其中 <span class=\"katex math inline\"> a \\mod p </span> 表示 <span class=\"katex math inline\"> a </span> 除以 <span class=\"katex math inline\"> p </span> 的余数。</p>\n<p>小A现在有一个整数 <span class=\"katex math inline\"> a </span>，请你帮他判断 <span class=\"katex math inline\"> a </span> 是否是 <span class=\"katex math inline\"> p </span> 的原根。</p>\n</div>            </div>",
+      "text": "小A知道，对于质数  p  而言， p  的原根  g  是满足以下条件的正整数：\n 1 < g < p ;\n g^{p-1} \\mod p = 1 ;\n对于任意  1 \\leq i < p-1  均有  g^i \\mod p \\neq 1 。\n其中  a \\mod p  表示  a  除以  p  的余数。\n小A现在有一个整数  a ，请你帮他判断  a  是否是  p  的原根。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个正整数 <span class=\"katex math inline\"> T </span>，表示测试数据组数。</p>\n<p>每组测试数据包含一行，两个正整数 <span class=\"katex math inline\"> a, p </span>。</p>\n</div>            </div>",
+      "text": "第一行，一个正整数  T ，表示测试数据组数。\n每组测试数据包含一行，两个正整数  a, p 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组测试数据，输出一行，如果 <span class=\"katex math inline\"> a </span> 是 <span class=\"katex math inline\"> p </span> 的原根则输出 <code>Yes</code>，否则输出 <code>No</code>。</p>\n</div>            </div>",
+      "text": "对于每组测试数据，输出一行，如果  a  是  p  的原根则输出 Yes，否则输出 No。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n3 998244353\r\n5 998244353\r\n7 998244353</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Yes\r\nYes\r\nNo</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n3 998244353\r\n5 998244353\r\n7 998244353\n                        \n                        \n                            输出\n                            Yes\r\nYes\r\nNo"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于40%的测试点，保证 <span class=\"katex math inline\">3 \\leq p \\leq 10^3</span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\leq T \\leq 20</span>，<span class=\"katex math inline\">3 \\leq p \\leq 10^9</span>，<span class=\"katex math inline\">1 &lt; a &lt; p</span>，<span class=\"katex math inline\">p</span> 为质数。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于40%的测试点，保证 3 \\leq p \\leq 10^3。\n对于所有测试点，保证 1 \\leq T \\leq 20，3 \\leq p \\leq 10^9，1 < a < p，p 为质数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025GESP3月认证 C++ 五级试题</p>\n</div>                </div>",
+      "text": "2025GESP3月认证 C++ 五级试题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">数论</span><span class=\"label label-info\">费马小定理</span><span class=\"label label-danger\">快速幂</span><span class=\"label label-primary\">25年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP五级数论费马小定理快速幂25年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n3 998244353\r\n5 998244353\r\n7 998244353",
+      "output": "Yes\r\nYes\r\nNo"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "206",
+    "通过人数": "130",
+    "金币数量": "1 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:35:58"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "1467",
+  "title": "等比数",
+  "tags": [
+    "数组问题",
+    "需要找规律的循环"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1467",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>将 <span class=\"katex math inline\">1</span>,<span class=\"katex math inline\">2</span>,<span class=\"katex math inline\">3</span>,<span class=\"katex math inline\">4</span>,<span class=\"katex math inline\">5</span>,<span class=\"katex math inline\">6</span>,<span class=\"katex math inline\">7</span>,<span class=\"katex math inline\">8</span>,<span class=\"katex math inline\">9</span> 共 <span class=\"katex math inline\">9</span> 个数分成 <span class=\"katex math inline\">3</span> 组，分别组成 <span class=\"katex math inline\">3</span> 个三位数，且使这 <span class=\"katex math inline\">3</span> 个三位数构成 <span class=\"katex math inline\">1:2:3</span> 的比例，试求出所有满足条件的 <span class=\"katex math inline\">3</span> 个三位数，按照从小到大输出。(<span class=\"katex math inline\">1 \\sim 9</span> 每一位数只出现一次)</p>\n<p>比如：<span class=\"katex math inline\">192</span> <span class=\"katex math inline\">384</span> <span class=\"katex math inline\">576</span> 就是满足条件的第一组解。</p>\n</div>            </div>",
+      "text": "将 1,2,3,4,5,6,7,8,9 共 9 个数分成 3 组，分别组成 3 个三位数，且使这 3 个三位数构成 1:2:3 的比例，试求出所有满足条件的 3 个三位数，按照从小到大输出。(1 \\sim 9 每一位数只出现一次)\n比如：192 384 576 就是满足条件的第一组解。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无</p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>若干行，每行 <span class=\"katex math inline\">3</span> 个数。按照从小到大输出每组解。</p>\n</div>            </div>",
+      "text": "若干行，每行 3 个数。按照从小到大输出每组解。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题 需要找规律的循环</p>\n</div>                </div>",
+      "text": "数组问题 需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span><span class=\"label label-warning\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "数组问题需要找规律的循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "5155",
+    "通过人数": "2969",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:19:52"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1045",
+  "title": "判断能否构成三角形",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1045",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入三个整数，表示 <span class=\"katex math inline\">3</span> 条线段的长度，判断这三条线段能否构成三角形。能构成就输出 <code>Yes</code> ，否则输出<code>No</code> 。</p>\n<p>三角形的判断标准是：任意两边之和要大于第三边，比如有一个三角形的三条边分别为： <span class=\"katex math inline\">3</span> 、 <span class=\"katex math inline\">5</span> 、<span class=\"katex math inline\">7</span> ，这个三角形的三条边就满足 <span class=\"katex math inline\">3 + 5 \\gt 7</span> 且 <span class=\"katex math inline\">3 + 7 \\gt 5</span> ，且 <span class=\"katex math inline\">5 + 7 \\gt 3</span>，因此这三条边能够构成三角形；</p>\n<p>再比如，一个三角形的三条边为 <span class=\"katex math inline\">3</span> 、 <span class=\"katex math inline\">8</span> 、 <span class=\"katex math inline\">5</span> ，那么因为 <span class=\"katex math inline\">3+5</span> 不满足大于 <span class=\"katex math inline\">8</span> ，就不能构成三角形。</p>\n</div>            </div>",
+      "text": "输入三个整数，表示 3 条线段的长度，判断这三条线段能否构成三角形。能构成就输出 Yes ，否则输出No 。\n三角形的判断标准是：任意两边之和要大于第三边，比如有一个三角形的三条边分别为： 3 、 5 、7 ，这个三角形的三条边就满足 3 + 5 \\gt 7 且 3 + 7 \\gt 5 ，且 5 + 7 \\gt 3，因此这三条边能够构成三角形；\n再比如，一个三角形的三条边为 3 、 8 、 5 ，那么因为 3+5 不满足大于 8 ，就不能构成三角形。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个整数。</p>\n</div>            </div>",
+      "text": "三个整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><code>Yes</code> <span class=\"katex math inline\">or</span> <code>No</code> 。</p>\n</div>            </div>",
+      "text": "Yes or No 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 8 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>No</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 8 5\n                        \n                        \n                            输出\n                            No"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 8 5",
+      "output": "No"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "45515",
+    "通过人数": "27832",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:13:56"
+}

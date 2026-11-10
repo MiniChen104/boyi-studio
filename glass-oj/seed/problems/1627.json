@@ -1,0 +1,56 @@
+{
+  "id": "1627",
+  "title": "暑期的旅游计划（2）",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1627",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>期末考试结束了，小华语文、数学、英语三门功课分别考了 <span class=\"katex math inline\">x、y、z</span> 分，小华的家长说，如果小华三门功课中有一门考到 <span class=\"katex math inline\">90</span> 分或者 <span class=\"katex math inline\">90</span> 分以上，那么就去北京旅游，如果都没考到，那么就去南京玩。</p>\n<p>请从键盘读入小华三门功课的成绩，编程计算出小华暑期旅游的目的地，如果去北京，则输出“<code>beijing</code>”，如果去南京，则输出“<code>nanjing</code>”。（只要输出双引号中间的拼音，不要输出双引号）</p>\n</div>            </div>",
+      "text": "期末考试结束了，小华语文、数学、英语三门功课分别考了 x、y、z 分，小华的家长说，如果小华三门功课中有一门考到 90 分或者 90 分以上，那么就去北京旅游，如果都没考到，那么就去南京玩。\n请从键盘读入小华三门功课的成绩，编程计算出小华暑期旅游的目的地，如果去北京，则输出“beijing”，如果去南京，则输出“nanjing”。（只要输出双引号中间的拼音，不要输出双引号）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个整数，代表小华三门功课的考试成绩。</p>\n</div>            </div>",
+      "text": "三个整数，代表小华三门功课的考试成绩。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按题目要求输出小华旅游的目的地。</p>\n</div>            </div>",
+      "text": "按题目要求输出小华旅游的目的地。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>90 95 91</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>beijing</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            90 95 91\n                        \n                        \n                            输出\n                            beijing"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "90 95 91",
+      "output": "beijing"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "36437",
+    "通过人数": "22438",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:03"
+}

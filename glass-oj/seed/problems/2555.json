@@ -1,0 +1,56 @@
+{
+  "id": "2555",
+  "title": "战略游戏",
+  "tags": [
+    "树形DP"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/2555",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Bob 喜欢玩电脑游戏，特别是战略游戏。但是他经常无法找到快速玩过游戏的方法。现在他有个问题。  </p>\n<p>现在他有座古城堡，古城堡的路形成一棵树。他要在这棵树的节点上放置最少数目的士兵，使得这些士兵能够瞭望到所有的路。  </p>\n<p>注意：某个士兵在一个节点上时，与该节点相连的所有边都将能被瞭望到。  </p>\n<p>请你编一个程序，给定一棵树，帮 Bob 计算出他最少要放置的士兵数。  </p>\n</div>            </div>",
+      "text": "Bob 喜欢玩电脑游戏，特别是战略游戏。但是他经常无法找到快速玩过游戏的方法。现在他有个问题。  \n现在他有座古城堡，古城堡的路形成一棵树。他要在这棵树的节点上放置最少数目的士兵，使得这些士兵能够瞭望到所有的路。  \n注意：某个士兵在一个节点上时，与该节点相连的所有边都将能被瞭望到。  \n请你编一个程序，给定一棵树，帮 Bob 计算出他最少要放置的士兵数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据表示一棵树，描述如下。  </p>\n<p>第一行一个数 <span class=\"katex math inline\">N</span> ，表示树中节点的数目。  </p>\n<p>第二到第 <span class=\"katex math inline\">N+1</span> 行，每行描述每个节点信息，依次为该节点编号 <span class=\"katex math inline\">i</span>，数值 <span class=\"katex math inline\">k</span>，<span class=\"katex math inline\">k</span> 表示后面有 <span class=\"katex math inline\">k</span> 条边与节点 <span class=\"katex math inline\">i</span> 相连，接下来 <span class=\"katex math inline\">k</span> 个数，分别是每条边的所连 <span class=\"katex math inline\">i</span> 的子节点编号 <span class=\"katex math inline\">r1</span>,<span class=\"katex math inline\">r2</span>,⋯,<span class=\"katex math inline\">rk</span> 。  </p>\n<p>对于一个有 <span class=\"katex math inline\">N</span> 个节点的树，节点标号在 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">N−1</span> 之间，且在输入文件中每条边仅出现一次。</p>\n</div>            </div>",
+      "text": "输入数据表示一棵树，描述如下。  \n第一行一个数 N ，表示树中节点的数目。  \n第二到第 N+1 行，每行描述每个节点信息，依次为该节点编号 i，数值 k，k 表示后面有 k 条边与节点 i 相连，接下来 k 个数，分别是每条边的所连 i 的子节点编号 r1,r2,⋯,rk 。  \n对于一个有 N 个节点的树，节点标号在 0 到 N−1 之间，且在输入文件中每条边仅出现一次。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出仅包含一个数，为所求的最少士兵数。</p>\n</div>            </div>",
+      "text": "输出仅包含一个数，为所求的最少士兵数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n0 1 1\r\n1 2 2 3\r\n2 0\r\n3 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n0 1 1\r\n1 2 2 3\r\n2 0\r\n3 0\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，有 <span class=\"katex math inline\">0&lt; N ≤ 1500 </span>。  </p>\n<p>样例构成的树如下图所示：  </p>\n<p><img src=\"https://assets.boyi.local/4aeba783fb02429183ac58f1.jpg\"></p>\n</div>\n\n                    \n                </div>",
+      "text": "对于 100\\% 的数据，有 0< N ≤ 1500 。  \n样例构成的树如下图所示："
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树形DP</span></span></p>\n</div>                </div>",
+      "text": "树形DP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n0 1 1\r\n1 2 2 3\r\n2 0\r\n3 0",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "611",
+    "通过人数": "382",
+    "金币数量": "2 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:33:13"
+}

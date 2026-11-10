@@ -1,0 +1,64 @@
+{
+  "id": "6489",
+  "title": "单词统计",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6489",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出一行英文句子（只包含大小写英文字母和空格，单词之间可能有多个连续空格，行首行尾也可能有空格）。请你统计并输出：</p>\n<ol><li>句子中一共有多少个<strong>单词</strong>；</li>\n<li>出现次数<strong>最多</strong>的单词，以及它出现的次数。如果出现次数最多的单词不止一个，输出<strong>字典序最小</strong>的那个。</li>\n</ol><blockquote><p>说明：单词是由连续字母组成的串；<strong>大小写敏感</strong>，<code>Hello</code> 和 <code>hello</code> 算两个不同的单词。</p>\n</blockquote>\n</div>            </div>",
+      "text": "给出一行英文句子（只包含大小写英文字母和空格，单词之间可能有多个连续空格，行首行尾也可能有空格）。请你统计并输出：\n句子中一共有多少个单词；\n出现次数最多的单词，以及它出现的次数。如果出现次数最多的单词不止一个，输出字典序最小的那个。\n说明：单词是由连续字母组成的串；大小写敏感，Hello 和 hello 算两个不同的单词。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行字符串，长度不超过 <span class=\"katex math inline\">1000</span>。</p>\n</div>            </div>",
+      "text": "一行字符串，长度不超过 1000。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><ul><li>第一行：一个整数，表示单词总数；</li>\n<li>第二行：出现次数最多的单词和它的次数，用一个空格分隔。</li>\n</ul><p>如果句子中没有任何单词，只输出一行 <code>0</code>。</p>\n</div>            </div>",
+      "text": "第一行：一个整数，表示单词总数；\n第二行：出现次数最多的单词和它的次数，用一个空格分隔。\n如果句子中没有任何单词，只输出一行 0。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>hello world  hello goC</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4\r\nhello 2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>aa bb aa bb cc</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>5\r\naa 2</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre></pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            hello world  hello goC\n                        \n                        \n                            输出\n                            4\r\nhello 2\n                        \n\n                                                    \n                                输入\n                                aa bb aa bb cc\n                            \n                            \n                                输出\n                                5\r\naa 2\n                            \n                        \n                                                    \n                                输入\n                                \n                            \n                            \n                                输出\n                                0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 说明】：</h4>\n<p>共 <span class=\"katex math inline\">4</span> 个单词（<code>hello、world、hello、goC</code>），<code>hello</code> 出现 <span class=\"katex math inline\">2</span> 次最多。</p>\n<h4>【样例 2 说明】：</h4>\n<p><code>aa</code> 和 <code>bb</code> 都出现 <span class=\"katex math inline\">2</span> 次，取字典序最小的 <code>aa</code>。</p>\n<h4>数据范围</h4>\n<p>字符串长度 <span class=\"katex math inline\">\\le 1000</span>，仅含英文字母和空格</p>\n<h4>考察点</h4>\n<p>字符串读入（整行读取）；按空格切分；连续空格的处理；字符串比较与字典序；计数统计。</p>\n<h4>提示</h4>\n<ol><li>用 <code>getline(cin, line)</code> 读整行，否则遇空格会截断；</li>\n<li>切分时连续空格只算一个分隔符；</li>\n<li>统计可以先把单词排序，相同的单词就会挨在一起，再一段一段数。</li>\n</ol></div>\n\n                    \n                </div>",
+      "text": "【样例 1 说明】：\n共 4 个单词（hello、world、hello、goC），hello 出现 2 次最多。\n【样例 2 说明】：\naa 和 bb 都出现 2 次，取字典序最小的 aa。\n数据范围\n字符串长度 \\le 1000，仅含英文字母和空格\n考察点\n字符串读入（整行读取）；按空格切分；连续空格的处理；字符串比较与字典序；计数统计。\n提示\n用 getline(cin, line) 读整行，否则遇空格会截断；\n切分时连续空格只算一个分隔符；\n统计可以先把单词排序，相同的单词就会挨在一起，再一段一段数。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "hello world  hello goC",
+      "output": "4\r\nhello 2"
+    },
+    {
+      "input": "aa bb aa bb cc",
+      "output": "5\r\naa 2"
+    },
+    {
+      "input": "",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "28",
+    "通过人数": "14",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:41"
+}

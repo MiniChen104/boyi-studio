@@ -1,0 +1,65 @@
+{
+  "id": "4939",
+  "title": "道路网络",
+  "tags": [
+    "BCSP-X"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4939",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>为追求城市的发展，A 城决定建设新的道路网络，这项规划计划建设 <span class=\"katex math inline\">n</span> 条道路。然而，每条道路的建设过程都面临着额外的挑战，因此为了保证项目的正常完工，需要准备充足的资金。 </p>\n<p>在道路的建设中，每当施工中的道路与已经建成的道路交汇时，必须搭建桥梁防止影响\n修建好的道路正常运行。而这个额外的建设环节，将产生额外的开支，需要注意的是，由于道路情况不同，因此每条道 路所需要建设的桥梁都有其独特的建设花费，  <span class=\"katex math inline\">v_i</span> 代表了在与已建成道路交汇时所需投入的资金。 </p>\n<p>我们将需要建设的区域视为一个大小无限的平面坐标系。这里的 <span class=\"katex math inline\">n</span> 条道路可以看作 <span class=\"katex math inline\">n</span>条<strong>不重合</strong>的直线 （这些直线有可能平行），每条直线都经过特定的点( <span class=\"katex math inline\">x_i,y_i</span> ) 并具有一定的斜率 <span class=\"katex math inline\">k_i</span> 。市政府需要制定预算，确保在最坏的情况下也能够完成新区道路建设。现在需要你提前计算出最坏的情况所需要的资金， 以便于市政府提前准备好充足的资金完成该项目的建设。 </p>\n</div>            </div>",
+      "text": "为追求城市的发展，A 城决定建设新的道路网络，这项规划计划建设 n 条道路。然而，每条道路的建设过程都面临着额外的挑战，因此为了保证项目的正常完工，需要准备充足的资金。 \n在道路的建设中，每当施工中的道路与已经建成的道路交汇时，必须搭建桥梁防止影响\n修建好的道路正常运行。而这个额外的建设环节，将产生额外的开支，需要注意的是，由于道路情况不同，因此每条道 路所需要建设的桥梁都有其独特的建设花费，  v_i 代表了在与已建成道路交汇时所需投入的资金。 \n我们将需要建设的区域视为一个大小无限的平面坐标系。这里的 n 条道路可以看作 n条不重合的直线 （这些直线有可能平行），每条直线都经过特定的点( x_i,y_i ) 并具有一定的斜率 k_i 。市政府需要制定预算，确保在最坏的情况下也能够完成新区道路建设。现在需要你提前计算出最坏的情况所需要的资金， 以便于市政府提前准备好充足的资金完成该项目的建设。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">n</span> 代表道路的数量。 </p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行每行四个整数 <span class=\"katex math inline\">x_i,y_i</span>, <span class=\"katex math inline\">k_i</span> ,<span class=\"katex math inline\">v_i</span>。 \n对于第 <span class=\"katex math inline\">i</span> 条道路， <span class=\"katex math inline\">x_i,y_i</span>, 代表道路经过的点的坐标， <span class=\"katex math inline\">k_i</span> 代表道路的斜率， <span class=\"katex math inline\">v_i</span> 代表建桥产生费用。</p>\n</div>            </div>",
+      "text": "第一行一个整数 n 代表道路的数量。 \n接下来 n 行每行四个整数 x_i,y_i, k_i ,v_i。 \n对于第 i 条道路， x_i,y_i, 代表道路经过的点的坐标， k_i 代表道路的斜率， v_i 代表建桥产生费用。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数代表答案。 </p>\n</div>            </div>",
+      "text": "输出一行一个整数代表答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 \r\n1 2 5 8 \r\n1 3 6 4 \r\n2 2 5 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>12</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 \r\n0 0 5 3 \r\n0 0 10 4 \r\n0 0 15 5 \r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>14</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 \r\n1 2 5 8 \r\n1 3 6 4 \r\n2 2 5 3\n                        \n                        \n                            输出\n                            12\n                        \n\n                                                    \n                                输入\n                                3 \r\n0 0 5 3 \r\n0 0 10 4 \r\n0 0 15 5 \r\n\n                            \n                            \n                                输出\n                                14"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">10\\%</span> 的数据保证： <span class=\"katex math inline\">1 \\le n \\le 10</span>，<span class=\"katex math inline\">1 \\le k \\le 100000</span>，<span class=\"katex math inline\">1 \\le v \\le 100000</span> </p>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的数据保证： \n<span class=\"katex math inline\">1 \\le n \\le 1000</span>，<span class=\"katex math inline\">1 \\le k \\le 100000</span>，<span class=\"katex math inline\">1 \\le v \\le 100000</span> </p>\n<p>对于 <span class=\"katex math inline\">60\\%</span> 的数据保证： \n<span class=\"katex math inline\">1 \\le n \\le 100000</span>，<span class=\"katex math inline\">1 \\le k \\le 100000</span>，<span class=\"katex math inline\">1 \\le v \\le 100000 </span></p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据保证： \n<span class=\"katex math inline\">1 \\le n \\le 100000</span>，<span class=\"katex math inline\">-100000 \\le k \\le 100000</span>，<span class=\"katex math inline\">1 \\le v \\le 100000</span>，<span class=\"katex math inline\">-100000 \\le x,y \\le 100000</span> </p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 10\\% 的数据保证： 1 \\le n \\le 10，1 \\le k \\le 100000，1 \\le v \\le 100000 \n对于 40\\% 的数据保证： \n1 \\le n \\le 1000，1 \\le k \\le 100000，1 \\le v \\le 100000 \n对于 60\\% 的数据保证： \n1 \\le n \\le 100000，1 \\le k \\le 100000，1 \\le v \\le 100000 \n对于 100\\% 的数据保证： \n1 \\le n \\le 100000，-100000 \\le k \\le 100000，1 \\le v \\le 100000，-100000 \\le x,y \\le 100000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>BCSP-X初中组编程能力样卷-T2</p>\n</div>                </div>",
+      "text": "BCSP-X初中组编程能力样卷-T2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">BCSP-X</span></span></p>\n</div>                </div>",
+      "text": "BCSP-X"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 \r\n1 2 5 8 \r\n1 3 6 4 \r\n2 2 5 3",
+      "output": "12"
+    },
+    {
+      "input": "3 \r\n0 0 5 3 \r\n0 0 10 4 \r\n0 0 15 5 \r\n",
+      "output": "14"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "48",
+    "通过人数": "11",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:59"
+}

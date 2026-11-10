@@ -1,0 +1,61 @@
+{
+  "id": "2003",
+  "title": "跳马 (c.cpp)",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2003",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>投完篮后小 X 浑身酸爽，心情愉快地备课去了，第一次上课首先要教小朋友们各种棋子的走法，并且要设计练习帮助小朋友们巩固记忆，小 X 发现马的跳法将是第一节课的难点，首先马的走法很不规则， 它是先沿着直线走一格，然后再沿着斜线走一格，也就是俗称的“马走日”，但中国像棋与国际象棋有所不同，首先中国象棋是从一个交叉点上移动到另一个交叉点上，而国际象棋棋子则在方格中移动； 其次，中国象棋的马还有“蹩马脚”的规则，即如果在马前行的道路上有一个棋子(该棋子可以是任意一方的)则称马被蹩住脚了，它就跳不到相应的位置上，这个蹩字读“别”，意思为“绊”。下图为马的走法规则：</p>\n<p>“马走日”的行棋有条规定：马先沿直线走一格，然后再沿斜线走一格。马每次跳一个“日”字，就是从“日”字的一个角走到其对角，不管这个“日”字是立着还是横着，只要没有被蹩住脚，它都可以跳过去。</p>\n<p><img src=\"https://assets.boyi.local/aeed19c63d2a221b8b2cf64f.jpg\"></p>\n<p>如图 <span class=\"katex math inline\">1</span> 所示，当马在棋盘中部的时候，如果没有障碍，最多能够看管住 <span class=\"katex math inline\">8</span> 个点，所以人们夸它是“八面威风”。如果跳到边线上，它的威力就小多了，如图 <span class=\"katex math inline\">2</span> 所示，我们看到红马在边线上，最多可以看管住 <span class=\"katex math inline\">4</span> 个点，减少了一半的管辖范围。如果跳到角上， 则威力再减半！但是马有一个最大的弱点——害怕被“蹩马脚”，也叫“绊马脚”。一旦马脚被蹩，就寸步难行。怎样是“蹩马脚” 呢？如果紧邻马行进方向的交叉点上有一个棋子(可以是任何一方棋子)，马就不能跳过去，这就是“蹩马脚” 。如下图中所示：</p>\n<p><img src=\"https://assets.boyi.local/65256f2ee5b5662d8fff68c7.jpg\"></p>\n<p>如果在交叉点 <span class=\"katex math inline\">A</span> 处有一枚棋子，则图中的马就跳不到 <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">2</span> 两个交叉点上了；同理如果在交叉点 <span class=\"katex math inline\">B</span> 处有一枚棋子，则图中的马就跳不到 <span class=\"katex math inline\">3</span> 和 <span class=\"katex math inline\">4</span> 两个交叉点上了，如果在交叉点 <span class=\"katex math inline\">C</span> 处有一枚棋子，则图中的马就跳不到 <span class=\"katex math inline\">5</span> 和 <span class=\"katex math inline\">6</span> 两个交叉点上了，如果在交叉点 <span class=\"katex math inline\">D</span> 处有一枚棋子，则图中的马就跳不到 <span class=\"katex math inline\">7</span> 和 <span class=\"katex math inline\">8</span> 两个交叉点上了。</p>\n<p>现在小 X 给你一个棋盘上的局面，此局面最多会有两个马，并且如果有两个马则它们一定是同一方的，另外还有许多别的棋子分布在棋盘上，这些棋子可能是己方的，也可能是对方的，小 X 要你指出有多少个对方的棋子会被马吃到，只要是在马一步能跳到的位置上有一个对方的棋子，则马就能吃到这个棋子。在象棋规则中任何时候任何棋子都不能吃己方的棋子！</p>\n</div>            </div>",
+      "text": "投完篮后小 X 浑身酸爽，心情愉快地备课去了，第一次上课首先要教小朋友们各种棋子的走法，并且要设计练习帮助小朋友们巩固记忆，小 X 发现马的跳法将是第一节课的难点，首先马的走法很不规则， 它是先沿着直线走一格，然后再沿着斜线走一格，也就是俗称的“马走日”，但中国像棋与国际象棋有所不同，首先中国象棋是从一个交叉点上移动到另一个交叉点上，而国际象棋棋子则在方格中移动； 其次，中国象棋的马还有“蹩马脚”的规则，即如果在马前行的道路上有一个棋子(该棋子可以是任意一方的)则称马被蹩住脚了，它就跳不到相应的位置上，这个蹩字读“别”，意思为“绊”。下图为马的走法规则：\n“马走日”的行棋有条规定：马先沿直线走一格，然后再沿斜线走一格。马每次跳一个“日”字，就是从“日”字的一个角走到其对角，不管这个“日”字是立着还是横着，只要没有被蹩住脚，它都可以跳过去。\n\n如图 1 所示，当马在棋盘中部的时候，如果没有障碍，最多能够看管住 8 个点，所以人们夸它是“八面威风”。如果跳到边线上，它的威力就小多了，如图 2 所示，我们看到红马在边线上，最多可以看管住 4 个点，减少了一半的管辖范围。如果跳到角上， 则威力再减半！但是马有一个最大的弱点——害怕被“蹩马脚”，也叫“绊马脚”。一旦马脚被蹩，就寸步难行。怎样是“蹩马脚” 呢？如果紧邻马行进方向的交叉点上有一个棋子(可以是任何一方棋子)，马就不能跳过去，这就是“蹩马脚” 。如下图中所示：\n\n如果在交叉点 A 处有一枚棋子，则图中的马就跳不到 1 和 2 两个交叉点上了；同理如果在交叉点 B 处有一枚棋子，则图中的马就跳不到 3 和 4 两个交叉点上了，如果在交叉点 C 处有一枚棋子，则图中的马就跳不到 5 和 6 两个交叉点上了，如果在交叉点 D 处有一枚棋子，则图中的马就跳不到 7 和 8 两个交叉点上了。\n现在小 X 给你一个棋盘上的局面，此局面最多会有两个马，并且如果有两个马则它们一定是同一方的，另外还有许多别的棋子分布在棋盘上，这些棋子可能是己方的，也可能是对方的，小 X 要你指出有多少个对方的棋子会被马吃到，只要是在马一步能跳到的位置上有一个对方的棋子，则马就能吃到这个棋子。在象棋规则中任何时候任何棋子都不能吃己方的棋子！"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据第一行为一个正整数 <span class=\"katex math inline\">n</span>， <span class=\"katex math inline\">n=1</span> 或 <span class=\"katex math inline\">2</span>，表示棋盘上有 <span class=\"katex math inline\">n</span> 个马，这 <span class=\"katex math inline\">n</span> 个马属于同一方。接下来 <span class=\"katex math inline\">n</span> 行每行包含两个整数表示马的位置，如果有两个马，则它们的位置保证不相同。</p>\n<p>接下来的第 <span class=\"katex math inline\">n+2</span> 行为一个整数 <span class=\"katex math inline\">m</span>，表示棋盘上有 <span class=\"katex math inline\">m</span> 个棋子，最后 <span class=\"katex math inline\">m</span> 行每行有 <span class=\"katex math inline\">3</span> 个整数，表示一个棋子的信息，前两个数为棋子的位置，第三个数表示该棋子与马的关系， <span class=\"katex math inline\">0</span> 表示它与马是同一方的，可以蹩马脚，但不可以被马吃； <span class=\"katex math inline\">1</span> 表示它与马不是同一方的，既可以蹩马脚，又可以被马吃。棋盘上的位置是这样表示的，我们把棋盘上的每条竖线从左往右用 <span class=\"katex math inline\">0 \\sim 8</span> 编号，把棋盘上的每条横线从下往上用 <span class=\"katex math inline\">0 \\sim 9</span> 编号，上图已将编号标在棋盘的下边和左边，图中的马的位置就是 <span class=\"katex math inline\">(4,6)</span>， ①号点的位置就是 <span class=\"katex math inline\">(3,8)</span> 。</p>\n</div>            </div>",
+      "text": "输入数据第一行为一个正整数 n， n=1 或 2，表示棋盘上有 n 个马，这 n 个马属于同一方。接下来 n 行每行包含两个整数表示马的位置，如果有两个马，则它们的位置保证不相同。\n接下来的第 n+2 行为一个整数 m，表示棋盘上有 m 个棋子，最后 m 行每行有 3 个整数，表示一个棋子的信息，前两个数为棋子的位置，第三个数表示该棋子与马的关系， 0 表示它与马是同一方的，可以蹩马脚，但不可以被马吃； 1 表示它与马不是同一方的，既可以蹩马脚，又可以被马吃。棋盘上的位置是这样表示的，我们把棋盘上的每条竖线从左往右用 0 \\sim 8 编号，把棋盘上的每条横线从下往上用 0 \\sim 9 编号，上图已将编号标在棋盘的下边和左边，图中的马的位置就是 (4,6)， ①号点的位置就是 (3,8) 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出数据仅有一行包含一个整数，表示马能够吃到的对方棋子的数量。 如果一个棋子同时被两个马吃到，这个棋子只能被统计一次！</p>\n<p>（本题假设如果一个卒憋住了个马的马脚，即使这个卒被吃另一个马掉了，也依然能产生蹩马脚的作用）</p>\n</div>            </div>",
+      "text": "输出数据仅有一行包含一个整数，表示马能够吃到的对方棋子的数量。 如果一个棋子同时被两个马吃到，这个棋子只能被统计一次！\n（本题假设如果一个卒憋住了个马的马脚，即使这个卒被吃另一个马掉了，也依然能产生蹩马脚的作用）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1\r\n4 6\r\n5\r\n3 8 1\r\n4 7 1\r\n5 8 1\r\n6 7 0\r\n6 5 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\r\n4 6\r\n5\r\n3 8 1\r\n4 7 1\r\n5 8 1\r\n6 7 0\r\n6 5 1\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p>这匹马只能吃到 <span class=\"katex math inline\">(6,5)</span> 位置上的棋子。 <span class=\"katex math inline\">(3,8)</span> 和 <span class=\"katex math inline\">(5,8)</span> 被 <span class=\"katex math inline\">(4,7)</span> 蹩马脚了， <span class=\"katex math inline\">(6,7)</span> 则是自己一方的棋子。</p>\n<p>【数据范围】</p>\n<p><span class=\"katex math inline\">70\\%</span> 的数据棋盘上只有一个马，且其中 <span class=\"katex math inline\">30\\%</span> 的数据不存在“蹩马脚” 的情况。</p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据棋盘上最多只有两个马，同一位置保证只有一个棋子，并且位置不会超出棋盘的范围。</p>\n<p>【来源】</p>\n<p>2019年常州市赛。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n这匹马只能吃到 (6,5) 位置上的棋子。 (3,8) 和 (5,8) 被 (4,7) 蹩马脚了， (6,7) 则是自己一方的棋子。\n【数据范围】\n70\\% 的数据棋盘上只有一个马，且其中 30\\% 的数据不存在“蹩马脚” 的情况。\n100\\% 的数据棋盘上最多只有两个马，同一位置保证只有一个棋子，并且位置不会超出棋盘的范围。\n【来源】\n2019年常州市赛。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1\r\n4 6\r\n5\r\n3 8 1\r\n4 7 1\r\n5 8 1\r\n6 7 0\r\n6 5 1",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "852",
+    "通过人数": "249",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:11"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "1837",
+  "title": "报时助手",
+  "tags": [
+    "蓝桥杯",
+    "分支问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1837",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定当前的时间，请用英文的读法将它读出来。</p>\n<p>时间用时 <span class=\"katex math inline\">h</span> 和分 <span class=\"katex math inline\">m</span> 表示，在英文的读法中，读一个时间的方法是：</p>\n<p>如果 <span class=\"katex math inline\">m</span> 为 <span class=\"katex math inline\">0</span> ，则将时读出来，然后加上 <span class=\"katex math inline\">“o&#x27;clock”</span> ，如 <span class=\"katex math inline\">3:00</span> 读作 <span class=\"katex math inline\">“three o&#x27;clock”</span> 。</p>\n<p>如果 <span class=\"katex math inline\">m</span> 不为 <span class=\"katex math inline\">0</span> ，则将时读出来，然后将分读出来，如<span class=\"katex math inline\">5:30</span> 读作 <span class=\"katex math inline\">“five</span> <span class=\"katex math inline\">thirty”</span> 。</p>\n<p>时和分的读法使用的是英文数字的读法，其中 <span class=\"katex math inline\">0 \\sim 20</span> 读作：</p>\n<p><span class=\"katex math inline\">0:zero, 1: one, 2:two, 3:three, 4:four, 5:five, 6:six, 7:seven, 8:eight, 9:nine, 10:ten, 11:eleven, 12:twelve, 13:thirteen, 14:fourteen, 15:fifteen, 16:sixteen, 17:seventeen, 18:eighteen, 19:nineteen, 20:twenty</span> 。</p>\n<p><span class=\"katex math inline\">30</span> 读作 <span class=\"katex math inline\">thirty</span> ，<span class=\"katex math inline\">40</span> 读作 <span class=\"katex math inline\">forty</span> ， <span class=\"katex math inline\">50</span> 读作<span class=\"katex math inline\">fifty</span> 。</p>\n<p>对于大于 <span class=\"katex math inline\">20</span> 小于 <span class=\"katex math inline\">60</span> 的数字，首先读整十的数，然后再加上个位数。如 <span class=\"katex math inline\">31</span> 首先读 <span class=\"katex math inline\">30</span> 再加 <span class=\"katex math inline\">1</span> 的读法，读作<span class=\"katex math inline\">“thirty</span> <span class=\"katex math inline\">one”</span> 。</p>\n<p>按上面的规则 <span class=\"katex math inline\">21:54</span> 读作 <span class=\"katex math inline\">“twenty</span> <span class=\"katex math inline\">one</span> <span class=\"katex math inline\">fifty</span> <span class=\"katex math inline\">four”</span>， <span class=\"katex math inline\">9:07</span> 读作 <span class=\"katex math inline\">“nine</span> <span class=\"katex math inline\">seven”</span> ， <span class=\"katex math inline\">0:15</span> 读作 <span class=\"katex math inline\">“zero</span> <span class=\"katex math inline\">fifteen”</span> 。</p>\n</div>            </div>",
+      "text": "给定当前的时间，请用英文的读法将它读出来。\n时间用时 h 和分 m 表示，在英文的读法中，读一个时间的方法是：\n如果 m 为 0 ，则将时读出来，然后加上 “o'clock” ，如 3:00 读作 “three o'clock” 。\n如果 m 不为 0 ，则将时读出来，然后将分读出来，如5:30 读作 “five thirty” 。\n时和分的读法使用的是英文数字的读法，其中 0 \\sim 20 读作：\n0:zero, 1: one, 2:two, 3:three, 4:four, 5:five, 6:six, 7:seven, 8:eight, 9:nine, 10:ten, 11:eleven, 12:twelve, 13:thirteen, 14:fourteen, 15:fifteen, 16:sixteen, 17:seventeen, 18:eighteen, 19:nineteen, 20:twenty 。\n30 读作 thirty ，40 读作 forty ， 50 读作fifty 。\n对于大于 20 小于 60 的数字，首先读整十的数，然后再加上个位数。如 31 首先读 30 再加 1 的读法，读作“thirty one” 。\n按上面的规则 21:54 读作 “twenty one fifty four”， 9:07 读作 “nine seven” ， 0:15 读作 “zero fifteen” 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含两个非负整数 <span class=\"katex math inline\">h</span> 和 <span class=\"katex math inline\">m</span> ，表示时间的时和分。非零的数字前没有前导 <span class=\"katex math inline\">0</span> 。<span class=\"katex math inline\">h</span> 小于 <span class=\"katex math inline\">24</span> ，<span class=\"katex math inline\">m</span> 小于 <span class=\"katex math inline\">60</span> 。</p>\n</div>            </div>",
+      "text": "输入包含两个非负整数 h 和 m ，表示时间的时和分。非零的数字前没有前导 0 。h 小于 24 ，m 小于 60 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出时间时刻的英文。</p>\n</div>            </div>",
+      "text": "输出时间时刻的英文。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>0 15</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>zero fifteen</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            0 15\n                        \n                        \n                            输出\n                            zero fifteen"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】蓝桥杯基础训练</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】蓝桥杯基础训练"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 分支问题</p>\n</div>                </div>",
+      "text": "蓝桥杯 分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "0 15",
+      "output": "zero fifteen"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "2703",
+    "通过人数": "921",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:24:51"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "4777",
+  "title": "画空心平行四边形",
+  "tags": [
+    "蓝桥等考",
+    "嵌套循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4777",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>根据输入的正整数 <span class=\"katex math inline\">n</span>，用星号画出如图所示的空心平行四边形图案。</p>\n<p>例如 <span class=\"katex math inline\">n = 5</span>时，图案为：</p>\n<pre><code>    *****\n   *   *\n  *   *\n *   *\n*****\n</code></pre>\n</div>            </div>",
+      "text": "根据输入的正整数 n，用星号画出如图所示的空心平行四边形图案。\n例如 n = 5时，图案为：\n    *****\n   *   *\n  *   *\n *   *\n*****"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 <span class=\"katex math inline\">n</span>，(<span class=\"katex math inline\">n \\le 10</span>) 表示空心平行四边形的高度（行数）。</p>\n</div>            </div>",
+      "text": "输入一个正整数 n，(n \\le 10) 表示空心平行四边形的高度（行数）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个由星号（ <code>* </code>）组成的空心平行四边形图案。图案的顶行和底行是完整的星号，每行的长度为 <span class=\"katex math inline\">n</span> 个星号；中间行仅在行首和行尾各有一个星号，其余部分为空格。每一行的前导空格数量从顶行到中间逐渐减少，到底行时没有前导空格。</p>\n</div>            </div>",
+      "text": "输出一个由星号（ * ）组成的空心平行四边形图案。图案的顶行和底行是完整的星号，每行的长度为 n 个星号；中间行仅在行首和行尾各有一个星号，其余部分为空格。每一行的前导空格数量从顶行到中间逐渐减少，到底行时没有前导空格。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>  ***\r\n * *\r\n***</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                              ***\r\n * *\r\n***"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">嵌套循环</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考嵌套循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "  ***\r\n * *\r\n***"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "272",
+    "通过人数": "211",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:08"
+}

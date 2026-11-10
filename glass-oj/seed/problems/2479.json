@@ -1,0 +1,52 @@
+{
+  "id": "2479",
+  "title": "恢复密码",
+  "tags": [
+    "数组",
+    "模拟"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2479",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">A</span> 同学设置了 <span class=\"katex math inline\">n</span> 个互不相等的整数，作为自己电脑的密码，且这 <span class=\"katex math inline\">n</span> 个数是数字 <span class=\"katex math inline\">1 \\sim n</span> 的全排列。  </p>\n<p>为了防止自己遗忘，他写出一组数作为提示信息，这组数有 <span class=\"katex math inline\">n-1</span> 个数字，其中第 <span class=\"katex math inline\">i</span> 个数是用密码的第 <span class=\"katex math inline\">i</span> 位和第 <span class=\"katex math inline\">i+1</span> 位相加得到的。  </p>\n<p>比如，假设密码为  <span class=\"katex math inline\">1,3,5,4,2</span> ，则提示信息为：<span class=\"katex math inline\">4,8,9,6</span> 。  </p>\n<p>请你根据提示信息，计算出小 <span class=\"katex math inline\">A</span> 的密码，如果有多种可能的解，你只需要输出字典码最小的那组解。  </p>\n<p>全排列指的是：将数字 <span class=\"katex math inline\">1 \\sim n</span> 全部打乱，这组数必定包含 <span class=\"katex math inline\">1 \\sim n</span> 的每个数，且不重复。</p>\n</div>            </div>",
+      "text": "小 A 同学设置了 n 个互不相等的整数，作为自己电脑的密码，且这 n 个数是数字 1 \\sim n 的全排列。  \n为了防止自己遗忘，他写出一组数作为提示信息，这组数有 n-1 个数字，其中第 i 个数是用密码的第 i 位和第 i+1 位相加得到的。  \n比如，假设密码为  1,3,5,4,2 ，则提示信息为：4,8,9,6 。  \n请你根据提示信息，计算出小 A 的密码，如果有多种可能的解，你只需要输出字典码最小的那组解。  \n全排列指的是：将数字 1 \\sim n 全部打乱，这组数必定包含 1 \\sim n 的每个数，且不重复。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含一个整数 <span class=\"katex math inline\">N</span> （<span class=\"katex math inline\">2≤N≤10^3</span>）；  </p>\n<p>第二行包含 <span class=\"katex math inline\">N−1</span> 个空格分隔的整数，数组中的每个数 <span class=\"katex math inline\">A_i</span> 满足<span class=\"katex math inline\">1 \\le A_i \\le 2000</span> 。</p>\n</div>            </div>",
+      "text": "输入的第一行包含一个整数 N （2≤N≤10^3）；  \n第二行包含 N−1 个空格分隔的整数，数组中的每个数 A_i 满足1 \\le A_i \\le 2000 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含 <span class=\"katex math inline\">N</span> 个空格分隔的整数。</p>\n</div>            </div>",
+      "text": "输出一行，包含 N 个空格分隔的整数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n4 8 9 6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 3 5 4 2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n4 8 9 6\n                        \n                        \n                            输出\n                            1 3 5 4 2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组</span><span class=\"label label-warning\">模拟</span></span></p>\n</div>                </div>",
+      "text": "数组模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n4 8 9 6",
+      "output": "1 3 5 4 2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "300",
+    "通过人数": "105",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:51"
+}

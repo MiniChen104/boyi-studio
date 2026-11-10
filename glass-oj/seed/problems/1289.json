@@ -1,0 +1,56 @@
+{
+  "id": "1289",
+  "title": "正整数n转换为16进制",
+  "tags": [
+    "进制转换"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1289",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请从键盘读入一个非负整数 <span class=\"katex math inline\">n</span>（ <span class=\"katex math inline\">n</span> 是一个<strong>不超过 <span class=\"katex math inline\">18</span> 位</strong>的非负整数），将 <span class=\"katex math inline\">n</span> 转换为 <span class=\"katex math inline\">16</span> 进制！</p>\n<p>注意：<span class=\"katex math inline\">16</span> 进制即逢 <span class=\"katex math inline\">16</span> 进 <span class=\"katex math inline\">1</span>，每一位上可以是从小到大为 <span class=\"katex math inline\">0、1、2、3、4、5、6、7、8、9、A、B、C、D、E、F</span> 共 <span class=\"katex math inline\">16</span> 个大小不同的数，即逢 <span class=\"katex math inline\">16</span> 进 <span class=\"katex math inline\">1</span>，其中用 <span class=\"katex math inline\">A，B，C，D，E，F</span> 这六个字母来分别表示 <span class=\"katex math inline\">10，11，12，13，14，15</span>。</p>\n<p>如：<span class=\"katex math inline\">60</span> 的十六进制为 <span class=\"katex math inline\">3C</span>。（字母请用<strong>大写</strong>）</p>\n</div>            </div>",
+      "text": "请从键盘读入一个非负整数 n（ n 是一个不超过 18 位的非负整数），将 n 转换为 16 进制！\n注意：16 进制即逢 16 进 1，每一位上可以是从小到大为 0、1、2、3、4、5、6、7、8、9、A、B、C、D、E、F 共 16 个大小不同的数，即逢 16 进 1，其中用 A，B，C，D，E，F 这六个字母来分别表示 10，11，12，13，14，15。\n如：60 的十六进制为 3C。（字母请用大写）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个不超过 <span class=\"katex math inline\">18</span> 位的非负整数 <span class=\"katex math inline\">n</span> 。</p>\n</div>            </div>",
+      "text": "一个不超过 18 位的非负整数 n 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>该数的十六进制值。</p>\n</div>            </div>",
+      "text": "该数的十六进制值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100000000000</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>174876E800</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100000000000\n                        \n                        \n                            输出\n                            174876E800"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>进制转换</p>\n</div>                </div>",
+      "text": "进制转换"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">进制转换</span></span></p>\n</div>                </div>",
+      "text": "进制转换"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100000000000",
+      "output": "174876E800"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "18551",
+    "通过人数": "10584",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:23"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "4742",
+  "title": "模仿秀前三名",
+  "tags": [
+    "蓝桥等考",
+    "二维数组",
+    "结构体"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4742",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>电视台举办一场模仿秀节目，评委根据选手的体态、语言和形体动作的相似程度进行打分。现在给出 <span class=\"katex math inline\">n</span> 位选手的编号和总分，要求按照总分从大到小的顺序输出排在前三名选手的编号和总分；如果总分相同，则编号小的排在前面。</p>\n</div>            </div>",
+      "text": "电视台举办一场模仿秀节目，评委根据选手的体态、语言和形体动作的相似程度进行打分。现在给出 n 位选手的编号和总分，要求按照总分从大到小的顺序输出排在前三名选手的编号和总分；如果总分相同，则编号小的排在前面。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含一个正整数 <span class=\"katex math inline\">n</span>，表示参赛选手的数量(<span class=\"katex math inline\">n \\le 20)</span>。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行，每行包含两个整数，分别表示选手的编号 <span class=\"katex math inline\">id</span> 和总分 <code>score</code>，用空格隔开。</p>\n</div>            </div>",
+      "text": "输入的第一行包含一个正整数 n，表示参赛选手的数量(n \\le 20)。\n接下来的 n 行，每行包含两个整数，分别表示选手的编号 id 和总分 score，用空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出前三名选手的编号和总分，按照总分从大到小排序；如果总分相同，则按编号从小到大排序。</p>\n<p>输出共三行，每行包含两个整数，分别是选手的编号 <span class=\"katex math inline\">id</span> 和总分 <code>score</code>，用空格隔开。</p>\n<p>若参赛选手不足三名，则输出所有选手的信息，按照上述规则排序。</p>\n</div>            </div>",
+      "text": "输出前三名选手的编号和总分，按照总分从大到小排序；如果总分相同，则按编号从小到大排序。\n输出共三行，每行包含两个整数，分别是选手的编号 id 和总分 score，用空格隔开。\n若参赛选手不足三名，则输出所有选手的信息，按照上述规则排序。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n1 240\r\n2 262\r\n3 229\r\n4 199\r\n5 210\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 262\r\n1 240\r\n3 229\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n1 240\r\n2 262\r\n3 229\r\n4 199\r\n5 210\r\n\n                        \n                        \n                            输出\n                            2 262\r\n1 240\r\n3 229"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">二维数组</span><span class=\"label label-info\">结构体</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考二维数组结构体"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n1 240\r\n2 262\r\n3 229\r\n4 199\r\n5 210\r\n",
+      "output": "2 262\r\n1 240\r\n3 229\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "462",
+    "通过人数": "211",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:39"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "3473",
+  "title": "熊猫币",
+  "tags": [
+    "进制转换",
+    "蓝桥等考15级"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3473",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>熊猫币是熊猫王国的法定货币，熊猫比面值有 <span class=\"katex math inline\">1</span> 元，<span class=\"katex math inline\">7</span> 元，<span class=\"katex math inline\">7^2</span>元，<span class=\"katex math inline\">7^3</span>元共<span class=\"katex math inline\">4</span>种。</p>\n<p>熊猫咪咪想用现金支付 <span class=\"katex math inline\">m</span> 元的竹笋，假设各种熊猫币的数量无限，不允许找零。</p>\n<p>请问要正好支付 <span class=\"katex math inline\">m</span> 元，至少要多少个熊猫币。</p>\n<p>例如： <span class=\"katex math inline\">m = 51</span> 时，咪咪用 <span class=\"katex math inline\">7^2</span>元（ <span class=\"katex math inline\">49</span> 元）的熊猫币 <span class=\"katex math inline\">1</span> 个， <span class=\"katex math inline\">1</span> 元的熊猫币 <span class=\"katex math inline\">2</span> 个。共需要 <span class=\"katex math inline\">3</span> 个熊猫币。 </p>\n</div>            </div>",
+      "text": "熊猫币是熊猫王国的法定货币，熊猫比面值有 1 元，7 元，7^2元，7^3元共4种。\n熊猫咪咪想用现金支付 m 元的竹笋，假设各种熊猫币的数量无限，不允许找零。\n请问要正好支付 m 元，至少要多少个熊猫币。\n例如： m = 51 时，咪咪用 7^2元（ 49 元）的熊猫币 1 个， 1 元的熊猫币 2 个。共需要 3 个熊猫币。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数 <span class=\"katex math inline\">m</span> (<span class=\"katex math inline\">m &lt; 1000</span>)，表示咪咪要支付的金额。</p>\n</div>            </div>",
+      "text": "一个正整数 m (m < 1000)，表示咪咪要支付的金额。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，为正好支付 <span class=\"katex math inline\">m</span> 元，至少需要的熊猫币的数量</p>\n</div>            </div>",
+      "text": "一个整数，为正好支付 m 元，至少需要的熊猫币的数量"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>51</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            51\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥等考15级</p>\n</div>                </div>",
+      "text": "蓝桥等考15级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">进制转换</span><span class=\"label label-warning\">蓝桥等考15级</span></span></p>\n</div>                </div>",
+      "text": "进制转换蓝桥等考15级"
+    }
+  ],
+  "samples": [
+    {
+      "input": "51",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "274",
+    "通过人数": "204",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:13"
+}

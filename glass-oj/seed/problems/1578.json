@@ -1,0 +1,62 @@
+{
+  "id": "1578",
+  "title": "奖牌整理",
+  "tags": [
+    "市赛",
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1578",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>上完一天的课，小 Z 不但没有一丝疲惫感，反而觉得浑身是劲，好象又回到了童年， 他蹦蹦跳跳地回到家，吃过晚饭很快就做完了作业，抬头一看觉得房间太乱了，这不进入初三后由于课业繁重一直没时间整理房间，现在有空了是时候该好好整理一下了。</p>\n<p>小 Z 首 先想要整理的是他那些心爱的奖牌，这些奖牌记录了小 Z 成长的足迹，其中有龙城少儿围 棋比赛的银牌，有华罗庚杯少年数学邀请赛的铜牌，份量最重的当数全国信息学奥林匹克 竞赛（National Olympiad in Informatics,简称 NOI）的金牌，小 Z 喜欢把他获得的奖牌 都挂在床头，并且成一字排开状，他每得到一枚奖牌就会在床头钉一颗钉子，将这枚奖牌 挂在所有奖牌的未尾，也就是说小 Z 的奖牌是按获得时间的先后顺序来排列的，现在小 Z 想把它们按金银铜的顺序排列，即所有的金牌挂在最前面，随后是银牌，最后是铜牌。</p>\n<p>小 Z 重排奖牌的方法很特别，他每次都是同时伸出双手各摘下一块奖牌，然后把这两块奖牌 的位置对换一下，即左手摘下的奖牌放到右手摘下的奖牌的位置，右手摘下的奖牌放到左手摘下的奖牌的位置，咦！这怎么看上去有点象交换赋值，太有才了！</p>\n<p>现在小 Z 想考考你， 给定奖牌序列，计算最少需要几次对换操作就可以将所有奖牌按金银铜牌的顺序排好。</p>\n</div>            </div>",
+      "text": "上完一天的课，小 Z 不但没有一丝疲惫感，反而觉得浑身是劲，好象又回到了童年， 他蹦蹦跳跳地回到家，吃过晚饭很快就做完了作业，抬头一看觉得房间太乱了，这不进入初三后由于课业繁重一直没时间整理房间，现在有空了是时候该好好整理一下了。\n小 Z 首 先想要整理的是他那些心爱的奖牌，这些奖牌记录了小 Z 成长的足迹，其中有龙城少儿围 棋比赛的银牌，有华罗庚杯少年数学邀请赛的铜牌，份量最重的当数全国信息学奥林匹克 竞赛（National Olympiad in Informatics,简称 NOI）的金牌，小 Z 喜欢把他获得的奖牌 都挂在床头，并且成一字排开状，他每得到一枚奖牌就会在床头钉一颗钉子，将这枚奖牌 挂在所有奖牌的未尾，也就是说小 Z 的奖牌是按获得时间的先后顺序来排列的，现在小 Z 想把它们按金银铜的顺序排列，即所有的金牌挂在最前面，随后是银牌，最后是铜牌。\n小 Z 重排奖牌的方法很特别，他每次都是同时伸出双手各摘下一块奖牌，然后把这两块奖牌 的位置对换一下，即左手摘下的奖牌放到右手摘下的奖牌的位置，右手摘下的奖牌放到左手摘下的奖牌的位置，咦！这怎么看上去有点象交换赋值，太有才了！\n现在小 Z 想考考你， 给定奖牌序列，计算最少需要几次对换操作就可以将所有奖牌按金银铜牌的顺序排好。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据第一行只有一个正整数 <span class=\"katex math inline\">N</span> 表示奖牌序列的长度，其中 <span class=\"katex math inline\">1 \\le N \\le 1000</span>；</p>\n<p>第二行有 <span class=\"katex math inline\">N</span> 个大写字母，每个大写字母代表一枚奖牌，其中 <code>G</code> 代表金牌，<code>S</code> 代表银牌，<code>B</code> 代表铜牌。</p>\n</div>            </div>",
+      "text": "输入数据第一行只有一个正整数 N 表示奖牌序列的长度，其中 1 \\le N \\le 1000；\n第二行有 N 个大写字母，每个大写字母代表一枚奖牌，其中 G 代表金牌，S 代表银牌，B 代表铜牌。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出数据仅有一行包含一个整数，表示最少需要几次对换操作。</p>\n</div>            </div>",
+      "text": "输出数据仅有一行包含一个整数，表示最少需要几次对换操作。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>9\r\nSSGBBBSBG</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            9\r\nSSGBBBSBG\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<pre><code>S    S    S＜  G    G\nS＜  G    G    G    G\nG＜  S    S    S    S\nB    B＜  S    S    S\nB    B    B    B＜  S\nB    B    B    B    B\nS    S＜  B    B    B\nB    B    B    B    B\nG    G    G＜  S＜  B\n</code></pre>\n<p>小Z的床头共有 <span class=\"katex math inline\">9</span> 枚奖牌，以上数据第一列为 <span class=\"katex math inline\">9</span> 枚奖牌的初始序列，每次操作将每列中箭头指向的两个位置的奖牌对换，对换后变成右边一列的状态，经过 <span class=\"katex math inline\">4</span> 次对换操作所有奖牌就按金银铜牌的顺序依次排好了，可以验证 <span class=\"katex math inline\">4</span> 步操作是必不可少的。</p>\n<h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">10\\%</span> 的数据满足：奖牌种类只有两种</p>\n<p><span class=\"katex math inline\">30\\%</span> 的数据满足：<span class=\"katex math inline\">n \\le 10</span></p>\n<p><span class=\"katex math inline\">60\\%</span> 的数据满足：<span class=\"katex math inline\">n \\le 100</span></p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据满足：<span class=\"katex math inline\">n \\le 1000</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\nS    S    S＜  G    G\nS＜  G    G    G    G\nG＜  S    S    S    S\nB    B＜  S    S    S\nB    B    B    B＜  S\nB    B    B    B    B\nS    S＜  B    B    B\nB    B    B    B    B\nG    G    G＜  S＜  B\n\n小Z的床头共有 9 枚奖牌，以上数据第一列为 9 枚奖牌的初始序列，每次操作将每列中箭头指向的两个位置的奖牌对换，对换后变成右边一列的状态，经过 4 次对换操作所有奖牌就按金银铜牌的顺序依次排好了，可以验证 4 步操作是必不可少的。\n【数据范围】\n10\\% 的数据满足：奖牌种类只有两种\n30\\% 的数据满足：n \\le 10\n60\\% 的数据满足：n \\le 100\n100\\% 的数据满足：n \\le 1000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>常州市2014“信息与未来”选拔赛</p>\n</div>                </div>",
+      "text": "常州市2014“信息与未来”选拔赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "市赛字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "9\r\nSSGBBBSBG",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "550",
+    "通过人数": "266",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:21:21"
+}

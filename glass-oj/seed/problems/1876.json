@@ -1,0 +1,60 @@
+{
+  "id": "1876",
+  "title": "数字黑洞",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1876",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>任意一个四位正整数（ <span class=\"katex math inline\">4</span> 位数字相同者除外）， 将各位数字组成一个最大数和最小数，两数相减并重复这一过程必得 <span class=\"katex math inline\">6174</span> 。</p>\n</div>            </div>",
+      "text": "任意一个四位正整数（ 4 位数字相同者除外）， 将各位数字组成一个最大数和最小数，两数相减并重复这一过程必得 6174 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个四位正整数。</p>\n</div>            </div>",
+      "text": "输入一个四位正整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出文件包含多行， 组成一个最大数和一个最小数就输出一行，直到结果为 <span class=\"katex math inline\">6174</span> 。</p>\n<p>请注意：如果最大数不足 <span class=\"katex math inline\">4</span> 位，请补足 <span class=\"katex math inline\">4</span> 位再计算，具体请参考样例 <span class=\"katex math inline\">2</span> 。</p>\n</div>            </div>",
+      "text": "输出文件包含多行， 组成一个最大数和一个最小数就输出一行，直到结果为 6174 。\n请注意：如果最大数不足 4 位，请补足 4 位再计算，具体请参考样例 2 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4123</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4321-1234=3087\r\n8730-378=8352\r\n8532-2358=6174</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2221</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2221-1222=999\r\n9990-999=8991\r\n9981-1899=8082\r\n8820-288=8532\r\n8532-2358=6174</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4123\n                        \n                        \n                            输出\n                            4321-1234=3087\r\n8730-378=8352\r\n8532-2358=6174\n                        \n\n                                                    \n                                输入\n                                2221\n                            \n                            \n                                输出\n                                2221-1222=999\r\n9990-999=8991\r\n9981-1899=8082\r\n8820-288=8532\r\n8532-2358=6174"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4123",
+      "output": "4321-1234=3087\r\n8730-378=8352\r\n8532-2358=6174"
+    },
+    {
+      "input": "2221",
+      "output": "2221-1222=999\r\n9990-999=8991\r\n9981-1899=8082\r\n8820-288=8532\r\n8532-2358=6174"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "1983",
+    "通过人数": "1162",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:21"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "6106",
+  "title": "子图最短路",
+  "tags": [
+    "GESP八级",
+    "26年3月",
+    "图论",
+    "最短路",
+    "Floyd"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/6106",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定包含 <span class=\"katex math inline\">n</span> 个结点 <span class=\"katex math inline\">m</span> 条边的<strong>带权无向图</strong> <span class=\"katex math inline\">G</span>，结点依次以 <span class=\"katex math inline\">1, 2, \\dots, n</span> 编号。第 <span class=\"katex math inline\">i</span> (<span class=\"katex math inline\">1 \\le i \\le m</span>) 条边连接编号为 <span class=\"katex math inline\">u_i</span> 与 <span class=\"katex math inline\">v_i</span> 的两个结点，权值为 <span class=\"katex math inline\">w_i</span>。</p>\n<p>对于指定的 <span class=\"katex math inline\">1 \\le \\ell \\le r \\le n</span>，按以下方式构造图 <span class=\"katex math inline\">G</span> 的子图 <span class=\"katex math inline\">G(\\ell, r)</span>：</p>\n<ul><li>保留 <span class=\"katex math inline\">G</span> 中编号在区间 <span class=\"katex math inline\">[\\ell, r]</span> 中的结点。删去其它编号不在 <span class=\"katex math inline\">[\\ell, r]</span> 中的结点以及与之相连的边。剩余的结点和边构成子图 <span class=\"katex math inline\">G(\\ell, r)</span>。</li>\n</ul><p>对于 <span class=\"katex math inline\">G(\\ell, r)</span> 中的任意结点 <span class=\"katex math inline\">u, v</span> 应有 <span class=\"katex math inline\">\\ell \\le u, v \\le r</span>。记 <span class=\"katex math inline\">u, v</span> 在子图 <span class=\"katex math inline\">G(\\ell, r)</span> 上的最短距离为 <span class=\"katex math inline\">d(\\ell, r, u, v)</span>。特殊地，若 <span class=\"katex math inline\">u, v</span> 在子图 <span class=\"katex math inline\">G(\\ell, r)</span> 上不连通，则认为 <span class=\"katex math inline\">d(\\ell, r, u, v) = 0</span>。</p>\n<p>你需要求出 <span class=\"katex math inline\">\\sum_{\\ell=1}^{n} \\sum_{r=\\ell}^{n} \\sum_{u=\\ell}^{r} \\sum_{v=u}^{r} d(\\ell, r, u, v)</span> 对 <span class=\"katex math inline\">10^9</span> 取模的结果。</p>\n<ul><li>题目中的英文字母 <span class=\"katex math inline\">l</span> 使用了特殊写法 <span class=\"katex math inline\">\\ell</span>，以避免英文字母 <span class=\"katex math inline\">l</span> 与数字 <span class=\"katex math inline\">1</span> 混淆。</li>\n</ul></div>            </div>",
+      "text": "给定包含 n 个结点 m 条边的带权无向图 G，结点依次以 1, 2, \\dots, n 编号。第 i (1 \\le i \\le m) 条边连接编号为 u_i 与 v_i 的两个结点，权值为 w_i。\n对于指定的 1 \\le \\ell \\le r \\le n，按以下方式构造图 G 的子图 G(\\ell, r)：\n保留 G 中编号在区间 [\\ell, r] 中的结点。删去其它编号不在 [\\ell, r] 中的结点以及与之相连的边。剩余的结点和边构成子图 G(\\ell, r)。\n对于 G(\\ell, r) 中的任意结点 u, v 应有 \\ell \\le u, v \\le r。记 u, v 在子图 G(\\ell, r) 上的最短距离为 d(\\ell, r, u, v)。特殊地，若 u, v 在子图 G(\\ell, r) 上不连通，则认为 d(\\ell, r, u, v) = 0。\n你需要求出 \\sum_{\\ell=1}^{n} \\sum_{r=\\ell}^{n} \\sum_{u=\\ell}^{r} \\sum_{v=u}^{r} d(\\ell, r, u, v) 对 10^9 取模的结果。\n题目中的英文字母 l 使用了特殊写法 \\ell，以避免英文字母 l 与数字 1 混淆。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，两个正整数 <span class=\"katex math inline\">n, m</span>，表示结点数与边数。</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，第 <span class=\"katex math inline\">i</span> (<span class=\"katex math inline\">1 \\le i \\le m</span>) 行包含三个正整数 <span class=\"katex math inline\">u_i, v_i, w_i</span>，表示一条连接结点 <span class=\"katex math inline\">u_i, v_i</span> 的权值为 <span class=\"katex math inline\">w_i</span> 的边。</p>\n</div>            </div>",
+      "text": "第一行，两个正整数 n, m，表示结点数与边数。\n接下来 m 行，第 i (1 \\le i \\le m) 行包含三个正整数 u_i, v_i, w_i，表示一条连接结点 u_i, v_i 的权值为 w_i 的边。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，一个整数，表示 <span class=\"katex math inline\">\\sum_{\\ell=1}^{n} \\sum_{r=\\ell}^{n} \\sum_{u=\\ell}^{r} \\sum_{v=u}^{r} d(\\ell, r, u, v)</span> 对 <span class=\"katex math inline\">10^9</span> 取模的结果。</p>\n</div>            </div>",
+      "text": "输出一行，一个整数，表示 \\sum_{\\ell=1}^{n} \\sum_{r=\\ell}^{n} \\sum_{u=\\ell}^{r} \\sum_{v=u}^{r} d(\\ell, r, u, v) 对 10^9 取模的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 2\r\n1 2 1\r\n2 3 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4 6\r\n1 2 100\r\n2 3 100\r\n3 4 100\r\n1 3 10\r\n2 4 10\r\n1 4 1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>784</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 2\r\n1 2 1\r\n2 3 2\n                        \n                        \n                            输出\n                            9\n                        \n\n                                                    \n                                输入\n                                4 6\r\n1 2 100\r\n2 3 100\r\n3 4 100\r\n1 3 10\r\n2 4 10\r\n1 4 1\n                            \n                            \n                                输出\n                                784"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>说明/提示</h4>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的测试点，保证 <span class=\"katex math inline\">2 \\le n \\le 20</span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">2 \\le n \\le 100</span>，<span class=\"katex math inline\">2 \\le m \\le \\frac{n(n-1)}{2}</span>，<span class=\"katex math inline\">1 \\le u_i, v_i \\le n</span>，<span class=\"katex math inline\">1 \\le w_i \\le 10^6</span>。图中可能存在重边。</p>\n</div>\n\n                    \n                </div>",
+      "text": "说明/提示\n对于 40\\% 的测试点，保证 2 \\le n \\le 20。\n对于所有测试点，保证 2 \\le n \\le 100，2 \\le m \\le \\frac{n(n-1)}{2}，1 \\le u_i, v_i \\le n，1 \\le w_i \\le 10^6。图中可能存在重边。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP八级</span><span class=\"label label-warning\">26年3月</span><span class=\"label label-info\">图论</span><span class=\"label label-danger\">最短路</span><span class=\"label label-primary\">Floyd</span></span></p>\n</div>                </div>",
+      "text": "GESP八级26年3月图论最短路Floyd"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 2\r\n1 2 1\r\n2 3 2",
+      "output": "9"
+    },
+    {
+      "input": "4 6\r\n1 2 100\r\n2 3 100\r\n3 4 100\r\n1 3 10\r\n2 4 10\r\n1 4 1",
+      "output": "784"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "127",
+    "通过人数": "50",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:30:45"
+}

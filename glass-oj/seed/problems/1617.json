@@ -1,0 +1,56 @@
+{
+  "id": "1617",
+  "title": "金币数量",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1617",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>国王给骑士发金币，奖励他们的忠诚和英勇。第一天国王发的金币是一个四位数，第二天发的金币是这个四位数各个位的和，请问骑士一共拿到多少金币？</p>\n<p>比如：假设第 <span class=\"katex math inline\">1</span> 天骑士拿到了 <span class=\"katex math inline\">1263</span> 个金币，那么第 <span class=\"katex math inline\">2</span> 天就拿到了 <span class=\"katex math inline\">12</span> 个金币（ <span class=\"katex math inline\">1+2+6+3=12</span> ），那么他一共拿到了 <span class=\"katex math inline\">1275</span> 个金币（ <span class=\"katex math inline\">1263+12=1275</span> ）。</p>\n</div>            </div>",
+      "text": "国王给骑士发金币，奖励他们的忠诚和英勇。第一天国王发的金币是一个四位数，第二天发的金币是这个四位数各个位的和，请问骑士一共拿到多少金币？\n比如：假设第 1 天骑士拿到了 1263 个金币，那么第 2 天就拿到了 12 个金币（ 1+2+6+3=12 ），那么他一共拿到了 1275 个金币（ 1263+12=1275 ）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个四位整数，代表国王第 <span class=\"katex math inline\">1</span> 天发给骑士的金币数量。</p>\n</div>            </div>",
+      "text": "一个四位整数，代表国王第 1 天发给骑士的金币数量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，代表骑士一共获得了多少金币。</p>\n</div>            </div>",
+      "text": "一个整数，代表骑士一共获得了多少金币。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1263</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1275</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1263\n                        \n                        \n                            输出\n                            1275"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1263",
+      "output": "1275"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "5305",
+    "通过人数": "4475",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:54"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "4579",
+  "title": "比较字典码",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4579",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入 <span class=\"katex math inline\">2</span> 个不同的、不含空格的字符串，请将其中字典码较大的字符串输出，并输出该字符串的长度。</p>\n</div>            </div>",
+      "text": "从键盘读入 2 个不同的、不含空格的字符串，请将其中字典码较大的字符串输出，并输出该字符串的长度。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两行，每行输入一个仅包含大小写字母的字符串。（字符串长度不超过 <span class=\"katex math inline\">20</span>）</p>\n</div>            </div>",
+      "text": "输入两行，每行输入一个仅包含大小写字母的字符串。（字符串长度不超过 20）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">2</span> 行。</p>\n<p>第 <span class=\"katex math inline\">1</span> 行输出字典码较大的字符串。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行输出字典码较大的字符串的长度。</p>\n</div>            </div>",
+      "text": "输出 2 行。\n第 1 行输出字典码较大的字符串。\n第 2 行输出字典码较大的字符串的长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>abcde\r\nbcd</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>bcd\r\n3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>abcde\r\nabc</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>abcde\r\n5</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            abcde\r\nbcd\n                        \n                        \n                            输出\n                            bcd\r\n3\n                        \n\n                                                    \n                                输入\n                                abcde\r\nabc\n                            \n                            \n                                输出\n                                abcde\r\n5"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "abcde\r\nbcd",
+      "output": "bcd\r\n3"
+    },
+    {
+      "input": "abcde\r\nabc",
+      "output": "abcde\r\n5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "132",
+    "通过人数": "94",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:45"
+}

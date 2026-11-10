@@ -1,0 +1,56 @@
+{
+  "id": "2382",
+  "title": "关键词搜索",
+  "tags": [
+    "ac自动机"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2382",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定 n 个长度不超过 50 的由小写英文字母组成的单词准备查询，以及一篇长为 m 的文章，问：文中出现了多少个待查询的单词。多组数据。</p>\n</div>            </div>",
+      "text": "给定 n 个长度不超过 50 的由小写英文字母组成的单词准备查询，以及一篇长为 m 的文章，问：文中出现了多少个待查询的单词。多组数据。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 T，表示数据组数；<br>\n对于每组数据，第一行一个整数 n，接下去 n 行表示 n 个单词，最后一行输入一个字符串（不含空格），表示文章。（对于全部数据，1≤n≤10<sup>4</sup>,1≤m≤10<sup>6</sup> 。）  </p>\n</div>            </div>",
+      "text": "第一行一个整数 T，表示数据组数；\n对于每组数据，第一行一个整数 n，接下去 n 行表示 n 个单词，最后一行输入一个字符串（不含空格），表示文章。（对于全部数据，1≤n≤104,1≤m≤106 。）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组数据，输出一个数，表示文中出现了多少个待查询的单词（注意：同一个单词在文章中出现多次，也只算一次）。</p>\n</div>            </div>",
+      "text": "对于每组数据，输出一个数，表示文中出现了多少个待查询的单词（注意：同一个单词在文章中出现多次，也只算一次）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1\r\n5\r\nshe\r\nhe\r\nsay\r\nshr\r\nher\r\nyasherhs</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\r\n5\r\nshe\r\nhe\r\nsay\r\nshr\r\nher\r\nyasherhs\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>hdu</p>\n</div>                </div>",
+      "text": "hdu"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">ac自动机</span></span></p>\n</div>                </div>",
+      "text": "ac自动机"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1\r\n5\r\nshe\r\nhe\r\nsay\r\nshr\r\nher\r\nyasherhs",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1247",
+    "通过人数": "635",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:41"
+}

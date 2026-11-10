@@ -1,0 +1,56 @@
+{
+  "id": "2311",
+  "title": "爬楼梯",
+  "tags": [
+    "电子学会等级考试"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2311",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>已知楼梯的数量，可以每次走 <span class=\"katex math inline\">2</span> 级或者 <span class=\"katex math inline\">3</span> 级，求不同的走法数。</p>\n<p><strong>例如</strong>：楼梯一共有 <span class=\"katex math inline\">7</span> 级，一共 <span class=\"katex math inline\">3</span> 种方法：<span class=\"katex math inline\">2+2+3</span>，<span class=\"katex math inline\">2+3+2</span>，<span class=\"katex math inline\">3+2+2</span>。</p>\n</div>            </div>",
+      "text": "已知楼梯的数量，可以每次走 2 级或者 3 级，求不同的走法数。\n例如：楼梯一共有 7 级，一共 3 种方法：2+2+3，2+3+2，3+2+2。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含若干行，每行包含一个正整数 <span class=\"katex math inline\">N</span>，代表楼梯级数，<span class=\"katex math inline\">1 \\le N \\le 50</span>。</p>\n<p>最后一行为 <span class=\"katex math inline\">0</span>，表示测试结束。</p>\n<p>测试数据保证，除了最后一行的 <span class=\"katex math inline\">0</span> 以外，要计算的 <span class=\"katex math inline\">N</span> 不超过 <span class=\"katex math inline\">10</span> 个。</p>\n</div>            </div>",
+      "text": "输入包含若干行，每行包含一个正整数 N，代表楼梯级数，1 \\le N \\le 50。\n最后一行为 0，表示测试结束。\n测试数据保证，除了最后一行的 0 以外，要计算的 N 不超过 10 个。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>不同的走法数，每一行输入对应一行输出。</p>\n</div>            </div>",
+      "text": "不同的走法数，每一行输入对应一行输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7\r\n0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\r\n0\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会三级 202106真题</p>\n</div>                </div>",
+      "text": "电子学会三级 202106真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7\r\n0",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1647",
+    "通过人数": "799",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:03"
+}

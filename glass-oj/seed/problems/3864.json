@@ -1,0 +1,63 @@
+{
+  "id": "3864",
+  "title": "宝箱",
+  "tags": [
+    "GESP四级",
+    "数组",
+    "24年6月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3864",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨发现了<span class=\"katex math inline\">n</span>个宝箱，其中第 <span class=\"katex math inline\">i</span> 个宝箱的价值是 <span class=\"katex math inline\">a_i</span> 。</p>\n<p>小杨可以选择一些宝箱放入背包并带走，但是小杨的背包比较特殊，假设小杨选择的宝箱中最大价值为 <span class=\"katex math inline\">x</span>，最小价值为<span class=\"katex math inline\">y</span>，小杨需要保证 <span class=\"katex math inline\">x-y \\le k</span>，否则小杨的背包会损坏。</p>\n<p>小杨想知道背包不损坏的情况下，自己能够带走宝箱的总价值最大是多少。</p>\n</div>            </div>",
+      "text": "小杨发现了n个宝箱，其中第 i 个宝箱的价值是 a_i 。\n小杨可以选择一些宝箱放入背包并带走，但是小杨的背包比较特殊，假设小杨选择的宝箱中最大价值为 x，最小价值为y，小杨需要保证 x-y \\le k，否则小杨的背包会损坏。\n小杨想知道背包不损坏的情况下，自己能够带走宝箱的总价值最大是多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个正整数 <span class=\"katex math inline\">n，k</span> ，含义如题目所示。</p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个正整数 <span class=\"katex math inline\">a_1, a_2 ,...a_n</span>，代表宝箱的价值。</p>\n</div>            </div>",
+      "text": "第一行包含两个正整数 n，k ，含义如题目所示。\n第二行包含 n 个正整数 a_1, a_2 ,...a_n，代表宝箱的价值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表带走宝箱的最大总价值。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表带走宝箱的最大总价值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 1\r\n1 2 3 1 2\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 1\r\n1 2 3 1 2\r\n\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p>在背包不损坏的情况下，小杨可以拿走两个价值为 <span class=\"katex math inline\">2</span> 的宝箱和一个价值为 <span class=\"katex math inline\">3</span> 的宝箱。</p>\n<p>【数据范围】 </p>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n \\le 1000，0 \\le k  \\le 1000，1 \\le a_i \\le 1000 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n在背包不损坏的情况下，小杨可以拿走两个价值为 2 的宝箱和一个价值为 3 的宝箱。\n【数据范围】 \n对于全部数据，保证有 1 \\le n \\le 1000，0 \\le k  \\le 1000，1 \\le a_i \\le 1000 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 6月认证C++四级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 6月认证C++四级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">数组</span><span class=\"label label-info\">24年6月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级数组24年6月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 1\r\n1 2 3 1 2\r\n",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "968",
+    "通过人数": "524",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:10"
+}

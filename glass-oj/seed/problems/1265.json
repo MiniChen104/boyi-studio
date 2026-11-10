@@ -1,0 +1,46 @@
+{
+  "id": "1265",
+  "title": "爱因斯坦的数学题",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1265",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>爱因斯坦出了一道这样的数学题：有一条长阶梯，若每步跨 <span class=\"katex math inline\">2</span> 阶，则最最后剩一阶，若每步跨 <span class=\"katex math inline\">3</span> 阶，则最后剩 <span class=\"katex math inline\">2</span> 阶，若每步跨 <span class=\"katex math inline\">5</span> 阶，则最后剩 <span class=\"katex math inline\">4</span> 阶，若每步跨 <span class=\"katex math inline\">6</span> 阶则最后剩 <span class=\"katex math inline\">5</span> 阶。</p>\n<p>只有每次跨 <span class=\"katex math inline\">7</span> 阶，最后才正好一阶不剩。</p>\n<p>请问这条阶梯最少共有多少阶？</p>\n</div>            </div>",
+      "text": "爱因斯坦出了一道这样的数学题：有一条长阶梯，若每步跨 2 阶，则最最后剩一阶，若每步跨 3 阶，则最后剩 2 阶，若每步跨 5 阶，则最后剩 4 阶，若每步跨 6 阶则最后剩 5 阶。\n只有每次跨 7 阶，最后才正好一阶不剩。\n请问这条阶梯最少共有多少阶？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无。</p>\n</div>            </div>",
+      "text": "无。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>这条阶梯最少的阶数。</p>\n</div>            </div>",
+      "text": "这条阶梯最少的阶数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "25538",
+    "通过人数": "17833",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:05"
+}

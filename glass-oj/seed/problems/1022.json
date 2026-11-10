@@ -1,0 +1,46 @@
+{
+  "id": "1022",
+  "title": "百钱百鸡问题",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1022",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>用 <span class=\"katex math inline\">100</span> 元钱买 <span class=\"katex math inline\">100</span> 只鸡，公鸡，母鸡，小鸡都要有。</p>\n<p>公鸡 <span class=\"katex math inline\">5</span> 元 <span class=\"katex math inline\">1</span> 只，母鸡 <span class=\"katex math inline\">3</span> 元 <span class=\"katex math inline\">1</span> 只，小鸡 <span class=\"katex math inline\">1</span> 元 <span class=\"katex math inline\">3</span> 只。</p>\n<p>请问公鸡，母鸡，小鸡各应该买多少只？</p>\n</div>            </div>",
+      "text": "用 100 元钱买 100 只鸡，公鸡，母鸡，小鸡都要有。\n公鸡 5 元 1 只，母鸡 3 元 1 只，小鸡 1 元 3 只。\n请问公鸡，母鸡，小鸡各应该买多少只？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无。</p>\n</div>            </div>",
+      "text": "无。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>每种买法占一行，由 <span class=\"katex math inline\">3</span> 个数组成，顺序为 公鸡数 母鸡数 \n小鸡数。每个数字空格隔开。</p>\n<p>输出时，按公鸡数从少到多，母鸡数从多到少的顺序输出，本题符合条件的第一组解为： <span class=\"katex math inline\">4</span> <span class=\"katex math inline\">18</span> <span class=\"katex math inline\">78</span> 。</p>\n</div>            </div>",
+      "text": "每种买法占一行，由 3 个数组成，顺序为 公鸡数 母鸡数 \n小鸡数。每个数字空格隔开。\n输出时，按公鸡数从少到多，母鸡数从多到少的顺序输出，本题符合条件的第一组解为： 4 18 78 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "39275",
+    "通过人数": "23191",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:13:36"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "2253",
+  "title": "计算字符串距离",
+  "tags": [
+    "动态规划",
+    "电子学会等级考试"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2253",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于两个不同的字符串，我们有一套操作方法来把他们变得相同，具体方法为：</p>\n<ol><li>修改一个字符（如把“a”替换为“b”）</li>\n<li>删除一个字符（如把“traveling”变为“travelng”）</li>\n</ol><p>比如对于“abcdefg”和“abcdef”两个字符串来说，我们认为可以通过增加/减少一个“g”的方式来达到目的。无论增加还是减少“g”，我们都仅仅需要一次操作。我们把这个操作所需要的次数定义为两个字符串的距离。 </p>\n<p>给定任意两个字符串，写出一个算法来计算出他们的距离。</p>\n</div>            </div>",
+      "text": "对于两个不同的字符串，我们有一套操作方法来把他们变得相同，具体方法为：\n修改一个字符（如把“a”替换为“b”）\n删除一个字符（如把“traveling”变为“travelng”）\n比如对于“abcdefg”和“abcdef”两个字符串来说，我们认为可以通过增加/减少一个“g”的方式来达到目的。无论增加还是减少“g”，我们都仅仅需要一次操作。我们把这个操作所需要的次数定义为两个字符串的距离。 \n给定任意两个字符串，写出一个算法来计算出他们的距离。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n \\le 50</span>）。表示测试数据的组数。  </p>\n<p>接下来共 <span class=\"katex math inline\">n</span> 行，每行两个字符串，用空格隔开。表示要计算距离的两个字符串，字符串长度不超过 <span class=\"katex math inline\">1000</span> ，字符串不含空格。</p>\n</div>            </div>",
+      "text": "第一行有一个整数 n（n \\le 50）。表示测试数据的组数。  \n接下来共 n 行，每行两个字符串，用空格隔开。表示要计算距离的两个字符串，字符串长度不超过 1000 ，字符串不含空格。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>针对每一组测试数据输出一个整数，值为两个字符串的距离。</p>\n</div>            </div>",
+      "text": "针对每一组测试数据输出一个整数，值为两个字符串的距离。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\nabcdefg abcdef\r\nab ab\r\nmnklj jlknm</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n0\r\n4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\nabcdefg abcdef\r\nab ab\r\nmnklj jlknm\n                        \n                        \n                            输出\n                            1\r\n0\r\n4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会等级考试-四级样题</p>\n</div>                </div>",
+      "text": "电子学会等级考试-四级样题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span><span class=\"label label-warning\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "动态规划电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\nabcdefg abcdef\r\nab ab\r\nmnklj jlknm",
+      "output": "1\r\n0\r\n4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "855",
+    "通过人数": "474",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:20"
+}

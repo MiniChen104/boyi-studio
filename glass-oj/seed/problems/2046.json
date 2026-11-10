@@ -1,0 +1,57 @@
+{
+  "id": "2046",
+  "title": "食物链",
+  "tags": [
+    "带权并查集",
+    "noi"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2046",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n动物王国中有三类动物<span>A,B,C</span>，这三类动物的食物链构成了有趣的环形。<span>A</span>吃<span>B</span>，<span> B</span>吃<span>C</span>，<span>C</span>吃<span>A</span>。<span></span>\n</p>\n<p class=\"MsoNormal\">\n现有<span>N</span>个动物，以<span>1</span>－<span>N</span>编号。每个动物都是<span>A,B,C</span>中的一种，但是我们并不知道它到底是哪一种。<span></span>\n</p>\n<p class=\"MsoNormal\">\n有人用两种说法对这<span>N</span>个动物所构成的食物链关系进行描述：<span></span>\n</p>\n<p class=\"MsoNormal\">\n第一种说法是“<span>1 X Y</span>”，表示<span>X</span>和<span>Y</span>是同类。<span></span>\n</p>\n<p class=\"MsoNormal\">\n第二种说法是“<span>2 X Y</span>”，表示<span>X</span>吃<span>Y</span>。<span></span>\n</p>\n<p class=\"MsoNormal\">\n此人对<span>N</span>个动物，用上述两种说法，一句接一句地说出<span>K</span>句话，这<span>K</span>句话有的是真的，有的是假的。当一句话满足下列三条之一时，这句话就是假话，否则就是真话。<span></span>\n</p>\n<p class=\"MsoNormal\">\n1） \n当前的话与前面的某些真的话冲突，就是假话；<span></span>\n</p>\n<p class=\"MsoNormal\">\n2） \n当前的话中<span>X</span>或<span>Y</span>比<span>N</span>大，就是假话；<span></span>\n</p>\n<p class=\"MsoNormal\">\n3） \n当前的话表示<span>X</span>吃<span>X</span>，就是假话。<span></span>\n</p>\n<p class=\"MsoNormal\">\n你的任务是根据给定的<span>N</span>（<span>1&lt;=N&lt;=50,000</span>）和<span>K</span>句话（<span>0&lt;=K&lt;=100,000</span>），输出假话的总数。<span></span>\n</p>\n</div>            </div>",
+      "text": "动物王国中有三类动物A,B,C，这三类动物的食物链构成了有趣的环形。A吃B， B吃C，C吃A。\n\n\n现有N个动物，以1－N编号。每个动物都是A,B,C中的一种，但是我们并不知道它到底是哪一种。\n\n\n有人用两种说法对这N个动物所构成的食物链关系进行描述：\n\n\n第一种说法是“1 X Y”，表示X和Y是同类。\n\n\n第二种说法是“2 X Y”，表示X吃Y。\n\n\n此人对N个动物，用上述两种说法，一句接一句地说出K句话，这K句话有的是真的，有的是假的。当一句话满足下列三条之一时，这句话就是假话，否则就是真话。\n\n\n1） \n当前的话与前面的某些真的话冲突，就是假话；\n\n\n2） \n当前的话中X或Y比N大，就是假话；\n\n\n3） \n当前的话表示X吃X，就是假话。\n\n\n你的任务是根据给定的N（1<=N<=50,000）和K句话（0<=K<=100,000），输出假话的总数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n第一行是两个整数<span>N</span>和<span>K</span>，以一个空格分隔。<span></span>\n</p>\n<p class=\"MsoNormal\">\n以下<span>K</span>行每行是三个正整数<span> D</span>，<span>X</span>，<span>Y</span>，两数之间用一个空格隔开，其中<span>D</span>表示说法的种类。<span></span>\n</p>\n<p class=\"MsoNormal\">\n若<span>D=1</span>，则表示<span>X</span>和<span>Y</span>是同类。<span></span>\n</p>\n<p class=\"MsoNormal\">\n若<span>D=2</span>，则表示<span>X</span>吃<span>Y</span>。<span></span>\n</p>\n</div>            </div>",
+      "text": "第一行是两个整数N和K，以一个空格分隔。\n\n\n以下K行每行是三个正整数 D，X，Y，两数之间用一个空格隔开，其中D表示说法的种类。\n\n\n若D=1，则表示X和Y是同类。\n\n\n若D=2，则表示X吃Y。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n只有一个整数，表示假话的数目。<span></span>\n</p>\n</div>            </div>",
+      "text": "只有一个整数，表示假话的数目。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100 7\r\n1 101 1\r\n2 1 2\r\n2 2 3\r\n2 3 3\r\n1 1 3\r\n2 3 1\r\n1 5 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100 7\r\n1 101 1\r\n2 1 2\r\n2 2 3\r\n2 3 3\r\n1 1 3\r\n2 3 1\r\n1 5 5\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>带权并查集 noi</p>\n</div>                </div>",
+      "text": "带权并查集 noi"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">带权并查集</span><span class=\"label label-warning\">noi</span></span></p>\n</div>                </div>",
+      "text": "带权并查集noi"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100 7\r\n1 101 1\r\n2 1 2\r\n2 2 3\r\n2 3 3\r\n1 1 3\r\n2 3 1\r\n1 5 5",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "177",
+    "通过人数": "114",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:43"
+}

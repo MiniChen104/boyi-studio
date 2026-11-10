@@ -1,0 +1,64 @@
+{
+  "id": "5945",
+  "title": "建造",
+  "tags": [
+    "GESP四级",
+    "25年12月",
+    "二维数组",
+    "枚举"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5945",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">A</span> 有一张 <span class=\"katex math inline\">M</span> 行 <span class=\"katex math inline\">N</span> 列的地形图，其中第 <span class=\"katex math inline\">i</span> 行第 <span class=\"katex math inline\">j</span> 列的数字 <span class=\"katex math inline\">a_{ij}</span> 代表坐标 (<span class=\"katex math inline\">i,j</span> ) 的海拔高度。</p>\n<p>停机坪为一个 <span class=\"katex math inline\">3 \\times 3</span> 的区域且内部所有 <span class=\"katex math inline\">9</span> 个点的最大高度和最小高度之差不超过 <span class=\"katex math inline\">H</span>。</p>\n<p>小 <span class=\"katex math inline\">A</span> 想请你计算出，在所有适合建造停机坪的区域中，区域内部 <span class=\"katex math inline\">9</span> 个点海拔之和最大是多少。</p>\n</div>            </div>",
+      "text": "小 A 有一张 M 行 N 列的地形图，其中第 i 行第 j 列的数字 a_{ij} 代表坐标 (i,j ) 的海拔高度。\n停机坪为一个 3 \\times 3 的区域且内部所有 9 个点的最大高度和最小高度之差不超过 H。\n小 A 想请你计算出，在所有适合建造停机坪的区域中，区域内部 9 个点海拔之和最大是多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行三个正整数 <span class=\"katex math inline\">M,N,H</span>，含义如题面所示。</p>\n<p>之后 <span class=\"katex math inline\">M</span> 行，第 <span class=\"katex math inline\">i</span> 行包含 <span class=\"katex math inline\">N</span> 个整数 <span class=\"katex math inline\">a_{i1},a_{i2},...,a_{iN}</span> ，代表坐标 (<span class=\"katex math inline\">i,j</span> ) 的高度。</p>\n<p>数据保证总存在一个适合建造停机坪的区域。</p>\n</div>            </div>",
+      "text": "第一行三个正整数 M,N,H，含义如题面所示。\n之后 M 行，第 i 行包含 N 个整数 a_{i1},a_{i2},...,a_{iN} ，代表坐标 (i,j ) 的高度。\n数据保证总存在一个适合建造停机坪的区域。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，代表最大的海拔之和。</p>\n</div>            </div>",
+      "text": "输出一行，代表最大的海拔之和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 5 3\r\n5 5 5 5 5\r\n5 1 5 1 5\r\n5 5 5 5 5\r\n5 2 5 2 5\r\n3 5 5 5 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>40</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 5 3\r\n5 5 5 5 5\r\n5 1 5 1 5\r\n5 5 5 5 5\r\n5 2 5 2 5\r\n3 5 5 5 2\n                        \n                        \n                            输出\n                            40"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le M,N \\le 10^3,1 \\le H,a_{ij} \\le 10^5</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于所有测试点，保证 1 \\le M,N \\le 10^3,1 \\le H,a_{ij} \\le 10^5。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 2025年12月认证 C++4级真题</p>\n</div>                </div>",
+      "text": "GESP 2025年12月认证 C++4级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">25年12月</span><span class=\"label label-info\">二维数组</span><span class=\"label label-danger\">枚举</span></span></p>\n</div>                </div>",
+      "text": "GESP四级25年12月二维数组枚举"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 5 3\r\n5 5 5 5 5\r\n5 1 5 1 5\r\n5 5 5 5 5\r\n5 2 5 2 5\r\n3 5 5 5 2",
+      "output": "40"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "658",
+    "通过人数": "389",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:26"
+}

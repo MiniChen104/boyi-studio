@@ -1,0 +1,52 @@
+{
+  "id": "4741",
+  "title": "幸运大转盘",
+  "tags": [
+    "蓝桥等考",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4741",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>幸运大转盘就是一个被平分为六个扇形的圆盘。每个扇形上都写着一个奖项（ <span class=\"katex math inline\">1</span>-<span class=\"katex math inline\">6</span> 等奖）。幸运大转盘中间有一个指针，转动转盘，转盘停止后指针指向哪一个奖项就代表获得几等奖。</p>\n<p>模拟幸运大转盘，给出一个正整数 <span class=\"katex math inline\">N</span>，表示获得奖项的等级，要输出奖项对应的英文单词。</p>\n</div>            </div>",
+      "text": "幸运大转盘就是一个被平分为六个扇形的圆盘。每个扇形上都写着一个奖项（ 1-6 等奖）。幸运大转盘中间有一个指针，转动转盘，转盘停止后指针指向哪一个奖项就代表获得几等奖。\n模拟幸运大转盘，给出一个正整数 N，表示获得奖项的等级，要输出奖项对应的英文单词。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 <span class=\"katex math inline\">N</span>，代表获得几等奖。</p>\n</div>            </div>",
+      "text": "输入一个正整数 N，代表获得几等奖。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">N</span> 等奖对应的英文单词。</p>\n<p>如果 <span class=\"katex math inline\">N</span> 为 <span class=\"katex math inline\">1</span>，输出“<code>one</code>”；</p>\n<p>如果 <span class=\"katex math inline\">N</span> 为 <span class=\"katex math inline\">2</span>，输出“<code>two</code>”；</p>\n<p>如果 <span class=\"katex math inline\">N</span> 为 <span class=\"katex math inline\">3</span>，输出“<code>three</code>”；</p>\n<p>如果 <span class=\"katex math inline\">N</span> 为 <span class=\"katex math inline\">4</span>，输出“<code>four</code>”；</p>\n<p>如果 <span class=\"katex math inline\">N</span> 为 <span class=\"katex math inline\">5</span>，输出“<code>five</code>”；</p>\n<p>如果 <span class=\"katex math inline\">N</span> 为 <span class=\"katex math inline\">6</span> ，输出“<code>six</code>”；</p>\n<p>如果 <span class=\"katex math inline\">N</span> 为其它，输出“<code>error</code>”。</p>\n</div>            </div>",
+      "text": "输出 N 等奖对应的英文单词。\n如果 N 为 1，输出“one”；\n如果 N 为 2，输出“two”；\n如果 N 为 3，输出“three”；\n如果 N 为 4，输出“four”；\n如果 N 为 5，输出“five”；\n如果 N 为 6 ，输出“six”；\n如果 N 为其它，输出“error”。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>one</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\n                        \n                        \n                            输出\n                            one"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">分支</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1",
+      "output": "one"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "324",
+    "通过人数": "236",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:40"
+}

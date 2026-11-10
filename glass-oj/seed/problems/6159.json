@@ -1,0 +1,57 @@
+{
+  "id": "6159",
+  "title": "车站",
+  "tags": [
+    "树形DP",
+    "换根DP"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/6159",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个 <span class=\"katex math inline\">n</span> 个点的树，请求出一个结点，使得以这个结点为根时，所有结点的深度之和最大。</p>\n<p>一个结点的深度之定义为该节点到根的简单路径上边的数量。</p>\n</div>            </div>",
+      "text": "给定一个 n 个点的树，请求出一个结点，使得以这个结点为根时，所有结点的深度之和最大。\n一个结点的深度之定义为该节点到根的简单路径上边的数量。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有一个整数，表示树的结点个数 <span class=\"katex math inline\">n</span>。<br>\n接下来 <span class=\"katex math inline\">(n - 1)</span> 行，每行两个整数 <span class=\"katex math inline\">u, v</span>，表示存在一条连接 <span class=\"katex math inline\">u, v</span> 的边。</p>\n</div>            </div>",
+      "text": "第一行有一个整数，表示树的结点个数 n。\n接下来 (n - 1) 行，每行两个整数 u, v，表示存在一条连接 u, v 的边。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数表示你选择的结点编号。如果有多个结点符合要求，输出任意一个即可。</p>\n</div>            </div>",
+      "text": "输出一行一个整数表示你选择的结点编号。如果有多个结点符合要求，输出任意一个即可。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\n1 4\r\n5 6\r\n4 5\r\n6 7\r\n6 8\r\n2 4\r\n3 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\n1 4\r\n5 6\r\n4 5\r\n6 7\r\n6 8\r\n2 4\r\n3 4\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 1 解释</h4>\n<p>输出 <span class=\"katex math inline\">7</span> 和 <span class=\"katex math inline\">8</span> 都是正确答案。</p>\n<h4>数据规模与约定</h4>\n<p>对于全部的测试点，保证 <span class=\"katex math inline\">1 \\leq n \\leq 10^6</span>，<span class=\"katex math inline\">1 \\leq u, v \\leq n</span>，给出的是一棵树。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 解释\n输出 7 和 8 都是正确答案。\n数据规模与约定\n对于全部的测试点，保证 1 \\leq n \\leq 10^6，1 \\leq u, v \\leq n，给出的是一棵树。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树形DP</span><span class=\"label label-warning\">换根DP</span></span></p>\n</div>                </div>",
+      "text": "树形DP换根DP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\n1 4\r\n5 6\r\n4 5\r\n6 7\r\n6 8\r\n2 4\r\n3 4",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "29",
+    "通过人数": "11",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:31"
+}

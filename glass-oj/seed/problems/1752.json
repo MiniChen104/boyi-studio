@@ -1,0 +1,62 @@
+{
+  "id": "1752",
+  "title": "合并果子",
+  "tags": [
+    "贪心",
+    "优先队列"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1752",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一个果园里，多多已经将所有的果子打了下来，而且按果子的不同种类分成了不同的堆。多多决定把所有的果子合成一堆。  </p>\n<p>每一次合并，多多可以把两堆果子合并到一起，消耗的体力等于两堆果子的重量之和。可以看出，所有的果子经过 <span class=\"katex math inline\">n-1</span> 次合并之后， 就只剩下一堆了。多多在合并果子时总共消耗的体力等于每次合并所耗体力之和。  </p>\n<p>因为还要花大力气把这些果子搬回家，所以多多在合并果子时要尽可能地节省体力。假定每个果子重量都为 <span class=\"katex math inline\">1</span> ，并且已知果子的种类 数和每种果子的数目，你的任务是设计出合并的次序方案，使多多耗费的体力最少，并输出这个最小的体力耗费值。  </p>\n<p>例如有 <span class=\"katex math inline\">3</span> 种果子，数目依次为 <span class=\"katex math inline\">1</span> ， <span class=\"katex math inline\">2</span> ， <span class=\"katex math inline\">9</span> 。可以先将 <span class=\"katex math inline\">1</span> 、 <span class=\"katex math inline\">2</span> 堆合并，新堆数目为 <span class=\"katex math inline\">3</span> ，耗费体力为 <span class=\"katex math inline\">3</span> 。接着，将新堆与原先的第三堆合并，又得到新的堆，数目为 <span class=\"katex math inline\">12</span> ，耗费体力为 <span class=\"katex math inline\">12</span> 。所以多多总共耗费体力 <span class=\"katex math inline\">=3+12=15</span> 。可以证明 <span class=\"katex math inline\">15</span> 为最小的体力耗费值。</p>\n</div>            </div>",
+      "text": "在一个果园里，多多已经将所有的果子打了下来，而且按果子的不同种类分成了不同的堆。多多决定把所有的果子合成一堆。  \n每一次合并，多多可以把两堆果子合并到一起，消耗的体力等于两堆果子的重量之和。可以看出，所有的果子经过 n-1 次合并之后， 就只剩下一堆了。多多在合并果子时总共消耗的体力等于每次合并所耗体力之和。  \n因为还要花大力气把这些果子搬回家，所以多多在合并果子时要尽可能地节省体力。假定每个果子重量都为 1 ，并且已知果子的种类 数和每种果子的数目，你的任务是设计出合并的次序方案，使多多耗费的体力最少，并输出这个最小的体力耗费值。  \n例如有 3 种果子，数目依次为 1 ， 2 ， 9 。可以先将 1 、 2 堆合并，新堆数目为 3 ，耗费体力为 3 。接着，将新堆与原先的第三堆合并，又得到新的堆，数目为 12 ，耗费体力为 12 。所以多多总共耗费体力 =3+12=15 。可以证明 15 为最小的体力耗费值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共两行。  </p>\n<p>第一行是一个整数 <span class=\"katex math inline\">n(1\\leq n\\leq 10000)</span> ，表示果子的种类数。  </p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个整数，用空格分隔，第 <span class=\"katex math inline\">i</span> 个整数 <span class=\"katex math inline\">a_i(1\\leq a_i\\leq 20000)</span> 是第 <span class=\"katex math inline\">i</span> 种果子的数目。</p>\n</div>            </div>",
+      "text": "共两行。  \n第一行是一个整数 n(1\\leq n\\leq 10000) ，表示果子的种类数。  \n第二行包含 n 个整数，用空格分隔，第 i 个整数 a_i(1\\leq a_i\\leq 20000) 是第 i 种果子的数目。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，也就是最小的体力耗费值。输入数据保证这个值小于 <span class=\"katex math inline\">2</span><sup><span class=\"katex math inline\">31</span></sup> 。</p>\n</div>            </div>",
+      "text": "一个整数，也就是最小的体力耗费值。输入数据保证这个值小于 231 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 \r\n1 2 9 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>15</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 \r\n1 2 9 \n                        \n                        \n                            输出\n                            15"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，保证有 <span class=\"katex math inline\">n \\le 1000</span>：</p>\n<p>对于 <span class=\"katex math inline\">50\\%</span> 的数据，保证有 <span class=\"katex math inline\">n \\le 5000</span>；</p>\n<p>对于全部的数据，保证有 <span class=\"katex math inline\">n \\le 10000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "对于 30\\% 的数据，保证有 n \\le 1000：\n对于 50\\% 的数据，保证有 n \\le 5000；\n对于全部的数据，保证有 n \\le 10000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>贪心 队列</p>\n</div>                </div>",
+      "text": "贪心 队列"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">贪心</span><span class=\"label label-warning\">优先队列</span></span></p>\n</div>                </div>",
+      "text": "贪心优先队列"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 \r\n1 2 9 ",
+      "output": "15"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3256",
+    "通过人数": "2021",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:23:47"
+}

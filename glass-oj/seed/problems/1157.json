@@ -1,0 +1,56 @@
+{
+  "id": "1157",
+  "title": "最小数",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1157",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入 <span class=\"katex math inline\">n</span> 个整数的数列，请找出数列中最小数所在的位置（若有多个最小数，则选最左边的那个最小数），把它与数列的第一个数对调，其他数的位置不动，输出此数列。</p>\n</div>            </div>",
+      "text": "输入 n 个整数的数列，请找出数列中最小数所在的位置（若有多个最小数，则选最左边的那个最小数），把它与数列的第一个数对调，其他数的位置不动，输出此数列。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行输入数组元素的个数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">2 \\le n \\le 200</span>）；  </p>\n<p>第 <span class=\"katex math inline\">2</span> 行输入 <span class=\"katex math inline\">n</span> 个整数，用空格分开（<span class=\"katex math inline\">0 \\le </span>数组元素<span class=\"katex math inline\"> \\le 40000</span>）。</p>\n</div>            </div>",
+      "text": "第 1 行输入数组元素的个数 n（2 \\le n \\le 200）；  \n第 2 行输入 n 个整数，用空格分开（0 \\le 数组元素 \\le 40000）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：最小数所在的位置（只需要输出最左边的一个的位置）；  </p>\n<p>第二行：交换后的数组（一个空格隔开）。</p>\n</div>            </div>",
+      "text": "第一行：最小数所在的位置（只需要输出最左边的一个的位置）；  \n第二行：交换后的数组（一个空格隔开）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n2 6 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3\r\n1 6 2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n2 6 1\n                        \n                        \n                            输出\n                            3\r\n1 6 2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n2 6 1",
+      "output": "3\r\n1 6 2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "28986",
+    "通过人数": "12714",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:15:33"
+}

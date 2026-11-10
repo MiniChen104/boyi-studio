@@ -1,0 +1,66 @@
+{
+  "id": "1535",
+  "title": "小 X 与数字(ten)",
+  "tags": [
+    "市赛",
+    "数组问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1535",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>自从小 X 研究出了 BetaGo 之后， 他发现数学是一门 很重要的学科，在解决实际问题的时候经常会要用到一些数学知识。 导致小 X 最近对数和数字比较感兴趣，而他喜欢把数拆成一位一位的数字来看， 例如 <span class=\"katex math inline\">712839</span> 在小 X 眼中就是 <span class=\"katex math inline\">1, 2, 3, 7, 8,9</span> 六个数字。</p>\n<p>小 X 发现了一种完美数： 如果在一个数中， <span class=\"katex math inline\">1</span>～<span class=\"katex math inline\">9</span> 这 <span class=\"katex math inline\">9</span> 种数字都出现至少一次， 例如 <span class=\"katex math inline\">84376521931</span> 这个数就很完美了。而如果缺了 <span class=\"katex math inline\">1</span>～<span class=\"katex math inline\">9</span> 中的某一种时， 这个数就不太完美， 例如 <span class=\"katex math inline\">712839</span> 中就缺了 <span class=\"katex math inline\">4, 5, 6</span> 三种数字。</p>\n<p>但是小 X 发现 <span class=\"katex math inline\">1</span>～<span class=\"katex math inline\">9</span> 全出现在一个数中时， 这个数会非常大。为了避免这种情况，小 X 想了一个好办法，那就是判断一个数 <span class=\"katex math inline\">n</span> 是否完美时，不仅仅看这个数 <span class=\"katex math inline\">n</span> 本身是否包含 <span class=\"katex math inline\">1</span>～<span class=\"katex math inline\">9</span> 这 <span class=\"katex math inline\">9</span> 种数字，同时去看这个数的倍数。也就是说如果这个数 <span class=\"katex math inline\">n</span> 不完美，那就看 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">2n</span> 两个数中是否包含了 <span class=\"katex math inline\">1</span>～<span class=\"katex math inline\">9</span> 这 <span class=\"katex math inline\">9</span> 种数字。如果还是没有，那就再看 <span class=\"katex math inline\">n</span>， <span class=\"katex math inline\">2n</span>， <span class=\"katex math inline\">3n</span> 三个数中是否包含了 <span class=\"katex math inline\">1</span>～<span class=\"katex math inline\">9</span> 这 <span class=\"katex math inline\">9</span> 种数字，以此类推。</p>\n<p>例如当 <span class=\"katex math inline\">n = 712839</span> 时， 这个数只包含了 <span class=\"katex math inline\">1, 2, 3, 7, 8,9</span>，所以并不完美。<span class=\"katex math inline\">2 \\times n = 1425678</span>，那么 <span class=\"katex math inline\">n</span> 中包含了 <span class=\"katex math inline\">1, 2, 3, 7, 8,9</span>，而 <span class=\"katex math inline\">2 \\times n</span> 中又包含了 <span class=\"katex math inline\">1, 2, 4, 5, 6, 7, 8</span>，所以当我们数到 <span class=\"katex math inline\">2 \\times n</span> 时这个数就完美了。</p>\n<p>小 X 想知道对于任意一个从键盘输入的数 <span class=\"katex math inline\">n</span>， 需要数到多少时， 这个数才完美。小 X 自己并不知道答案， 但是他想到了你，想请你来帮他解决这个问题。</p>\n</div>            </div>",
+      "text": "自从小 X 研究出了 BetaGo 之后， 他发现数学是一门 很重要的学科，在解决实际问题的时候经常会要用到一些数学知识。 导致小 X 最近对数和数字比较感兴趣，而他喜欢把数拆成一位一位的数字来看， 例如 712839 在小 X 眼中就是 1, 2, 3, 7, 8,9 六个数字。\n小 X 发现了一种完美数： 如果在一个数中， 1～9 这 9 种数字都出现至少一次， 例如 84376521931 这个数就很完美了。而如果缺了 1～9 中的某一种时， 这个数就不太完美， 例如 712839 中就缺了 4, 5, 6 三种数字。\n但是小 X 发现 1～9 全出现在一个数中时， 这个数会非常大。为了避免这种情况，小 X 想了一个好办法，那就是判断一个数 n 是否完美时，不仅仅看这个数 n 本身是否包含 1～9 这 9 种数字，同时去看这个数的倍数。也就是说如果这个数 n 不完美，那就看 n 和 2n 两个数中是否包含了 1～9 这 9 种数字。如果还是没有，那就再看 n， 2n， 3n 三个数中是否包含了 1～9 这 9 种数字，以此类推。\n例如当 n = 712839 时， 这个数只包含了 1, 2, 3, 7, 8,9，所以并不完美。2 \\times n = 1425678，那么 n 中包含了 1, 2, 3, 7, 8,9，而 2 \\times n 中又包含了 1, 2, 4, 5, 6, 7, 8，所以当我们数到 2 \\times n 时这个数就完美了。\n小 X 想知道对于任意一个从键盘输入的数 n， 需要数到多少时， 这个数才完美。小 X 自己并不知道答案， 但是他想到了你，想请你来帮他解决这个问题。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据仅有一行包含一个正整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n≤10</span><sup><span class=\"katex math inline\">12</span></sup>）， 表示小 X 想知道这个数 <span class=\"katex math inline\">n</span> 需要数到多少时才完美。</p>\n</div>            </div>",
+      "text": "输入数据仅有一行包含一个正整数 n（n≤1012）， 表示小 X 想知道这个数 n 需要数到多少时才完美。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行仅有一个数 <span class=\"katex math inline\">ans</span>， 表示需要数到 <span class=\"katex math inline\">ans</span> 这个数才完美， <span class=\"katex math inline\">ans = k \\times n</span>（ <span class=\"katex math inline\">k</span> 为正整数）。（<span class=\"katex math inline\">ans≤10</span><sup><span class=\"katex math inline\">18</span></sup>）。</p>\n</div>            </div>",
+      "text": "输出一行仅有一个数 ans， 表示需要数到 ans 这个数才完美， ans = k \\times n（ k 为正整数）。（ans≤1018）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>312</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1872</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\n                        \n                        \n                            输出\n                            9\n                        \n\n                                                    \n                                输入\n                                312\n                            \n                            \n                                输出\n                                1872"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>来源</strong>  </p>\n<p>常州市2016“信息与未来”夏令营选拔赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "来源  \n常州市2016“信息与未来”夏令营选拔赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛 数组问题</p>\n</div>                </div>",
+      "text": "市赛 数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "市赛数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1",
+      "output": "9"
+    },
+    {
+      "input": "312",
+      "output": "1872"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4023",
+    "通过人数": "1957",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:46"
+}

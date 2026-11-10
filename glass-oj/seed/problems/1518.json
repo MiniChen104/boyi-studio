@@ -1,0 +1,56 @@
+{
+  "id": "1518",
+  "title": "多项式求和",
+  "tags": [
+    "嵌套循环"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1518",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 <span class=\"katex math inline\">n</span>，求 <span class=\"katex math inline\">1!-2!+3!-4!+ \\dots +N!</span> 的结果。</p>\n<p>比如：<span class=\"katex math inline\">n=3</span>，则结果 <span class=\"katex math inline\">= 1-(1*2)+(1*2*3) = 5</span>。</p>\n<p><span class=\"katex math inline\">n! = 1 * 2 * 3 * 4 * ... * n</span>，也就是 <span class=\"katex math inline\">1 \\sim n</span> 之间所有数的积，比如：<span class=\"katex math inline\">5!=1*2*3*4*5=120</span>。</p>\n</div>            </div>",
+      "text": "输入一个正整数 n，求 1!-2!+3!-4!+ \\dots +N! 的结果。\n比如：n=3，则结果 = 1-(1*2)+(1*2*3) = 5。\nn! = 1 * 2 * 3 * 4 * ... * n，也就是 1 \\sim n 之间所有数的积，比如：5!=1*2*3*4*5=120。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数 <span class=\"katex math inline\">n（n \\le 10</span> ）</p>\n</div>            </div>",
+      "text": "一个正整数 n（n \\le 10 ）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，代表运算结果。</p>\n</div>            </div>",
+      "text": "一个整数，代表运算结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>嵌套循环</p>\n</div>                </div>",
+      "text": "嵌套循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">嵌套循环</span></span></p>\n</div>                </div>",
+      "text": "嵌套循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "14583",
+    "通过人数": "10373",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:33"
+}

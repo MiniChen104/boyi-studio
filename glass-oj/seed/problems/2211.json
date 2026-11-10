@@ -1,0 +1,56 @@
+{
+  "id": "2211",
+  "title": "求任意两点之间的最短路",
+  "tags": [
+    "图论"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2211",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个 <span class=\"katex math inline\">n</span> 个顶点，<span class=\"katex math inline\">m</span> 条边的有向图（其中某些边权可能为负，但保证没有负环、自环）。</p>\n<p>请编程计算出任意两点之间的最短路。</p>\n</div>            </div>",
+      "text": "给定一个 n 个顶点，m 条边的有向图（其中某些边权可能为负，但保证没有负环、自环）。\n请编程计算出任意两点之间的最短路。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个整数 <span class=\"katex math inline\">n</span>, <span class=\"katex math inline\">m</span>。</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行有 <span class=\"katex math inline\">3</span> 个整数 <span class=\"katex math inline\">u、v、l</span>，表示 <span class=\"katex math inline\">u</span> 点到 <span class=\"katex math inline\">v</span> 点之间有一条有向边，边长为 <span class=\"katex math inline\">l</span>。</p>\n<p><span class=\"katex math inline\">1 ≤ n ≤ 100</span>，<span class=\"katex math inline\">1 ≤ m ≤ 5000</span>，<span class=\"katex math inline\">-1000 \\le l \\le 1000</span>。</p>\n<p>注意：数据保证两点之间只有一条有向边。</p>\n</div>            </div>",
+      "text": "第一行两个整数 n, m。\n接下来 m 行，每行有 3 个整数 u、v、l，表示 u 点到 v 点之间有一条有向边，边长为 l。\n1 ≤ n ≤ 100，1 ≤ m ≤ 5000，-1000 \\le l \\le 1000。\n注意：数据保证两点之间只有一条有向边。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共 <span class=\"katex math inline\">n</span> 行，每行有 <span class=\"katex math inline\">n</span> 个整数，第 <span class=\"katex math inline\">i</span> 行的第 <span class=\"katex math inline\">j</span> 个数，代表的是从点 <span class=\"katex math inline\">i</span> 到点 <span class=\"katex math inline\">j</span> 的最短路的值。</p>\n<p>如果两点之间不存在能达到的路径，请输出字母 <code>N</code>。</p>\n</div>            </div>",
+      "text": "输出共 n 行，每行有 n 个整数，第 i 行的第 j 个数，代表的是从点 i 到点 j 的最短路的值。\n如果两点之间不存在能达到的路径，请输出字母 N。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3\r\n1 2 -1\r\n2 3 -1\r\n3 1 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0 -1 -2\r\n1 0 -1\r\n2 1 0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\r\n1 2 -1\r\n2 3 -1\r\n3 1 2\n                        \n                        \n                            输出\n                            0 -1 -2\r\n1 0 -1\r\n2 1 0"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>图论</p>\n</div>                </div>",
+      "text": "图论"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span></span></p>\n</div>                </div>",
+      "text": "图论"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3\r\n1 2 -1\r\n2 3 -1\r\n3 1 2",
+      "output": "0 -1 -2\r\n1 0 -1\r\n2 1 0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2319",
+    "通过人数": "1087",
+    "金币数量": "2 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:50"
+}

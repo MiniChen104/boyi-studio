@@ -1,0 +1,63 @@
+{
+  "id": "3671",
+  "title": "相似字符串",
+  "tags": [
+    "GESP四级",
+    "字符串",
+    "24年3月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3671",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于两个字符串 <span class=\"katex math inline\">A</span> 和 <span class=\"katex math inline\">B</span> ，如果 <span class=\"katex math inline\">A</span> 可以通过删除一个字符，或插入一个字符，或修改一个字符变成 <span class=\"katex math inline\">B</span> ，那么我们说 <span class=\"katex math inline\">A</span> 和 <span class=\"katex math inline\">B</span> 是相似的。</p>\n<p>比如 <span class=\"katex math inline\">apple</span> 可以通过插入一个字符变成 <span class=\"katex math inline\">applee</span> ，可以通过删除一个字符变成 <span class=\"katex math inline\">appe</span> ，也可以通过修改一个字符\n变成 <span class=\"katex math inline\">bpple</span> ，因此 <span class=\"katex math inline\">apple</span> 和 <span class=\"katex math inline\">applee</span> 、 <span class=\"katex math inline\">appe</span> 、 <span class=\"katex math inline\">bpple</span> 都是相似的。但 <span class=\"katex math inline\">applee</span> 并不能通过任意一个操作变成 <span class=\"katex math inline\">bpple</span> ，因此它们并不相似。</p>\n<p>特别地，完全相同的两个字符串也是相似的。</p>\n<p>给定 <span class=\"katex math inline\">T</span> 组 <span class=\"katex math inline\">A，B</span>，请你分别判断他们是否相似。</p>\n</div>            </div>",
+      "text": "对于两个字符串 A 和 B ，如果 A 可以通过删除一个字符，或插入一个字符，或修改一个字符变成 B ，那么我们说 A 和 B 是相似的。\n比如 apple 可以通过插入一个字符变成 applee ，可以通过删除一个字符变成 appe ，也可以通过修改一个字符\n变成 bpple ，因此 apple 和 applee 、 appe 、 bpple 都是相似的。但 applee 并不能通过任意一个操作变成 bpple ，因此它们并不相似。\n特别地，完全相同的两个字符串也是相似的。\n给定 T 组 A，B，请你分别判断他们是否相似。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个正整数 <span class=\"katex math inline\">T</span> 。</p>\n<p>接下来 <span class=\"katex math inline\">T</span> 行，每行两个用空格隔开的字符串 <span class=\"katex math inline\">A</span> 和 <span class=\"katex math inline\">B</span> 。</p>\n<p>保证 <span class=\"katex math inline\">T \\le 100</span> ， <span class=\"katex math inline\">A，B</span> 的长度不超过 <span class=\"katex math inline\">50</span> 。保证 <span class=\"katex math inline\">A</span> 和 <span class=\"katex math inline\">B</span> 只包含小写字母。</p>\n</div>            </div>",
+      "text": "第一行一个正整数 T 。\n接下来 T 行，每行两个用空格隔开的字符串 A 和 B 。\n保证 T \\le 100 ， A，B 的长度不超过 50 。保证 A 和 B 只包含小写字母。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">T</span> 行，对于每组 <span class=\"katex math inline\">A，B</span>，如果它们相似，则输出 <code> similar</code> ，否则输出 <code>not similar</code> 。</p>\n</div>            </div>",
+      "text": "输出 T 行，对于每组 A，B，如果它们相似，则输出  similar ，否则输出 not similar 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\napple applee\r\napple appe\r\napple bpple\r\napplee bpple\r\napple apple\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>similar\r\nsimilar\r\nsimilar\r\nnot similar\r\nsimilar</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\napple applee\r\napple appe\r\napple bpple\r\napplee bpple\r\napple apple\r\n\n                        \n                        \n                            输出\n                            similar\r\nsimilar\r\nsimilar\r\nnot similar\r\nsimilar"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>在常规程序中，输入、输出时提供提示是好习惯。但在本场考试中，由于系统限定，请不要在输入、输出中附带任\n何提示信息。</p>\n</div>\n\n                    \n                </div>",
+      "text": "在常规程序中，输入、输出时提供提示是好习惯。但在本场考试中，由于系统限定，请不要在输入、输出中附带任\n何提示信息。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 3月认证C++四级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 3月认证C++四级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">24年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级字符串24年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\napple applee\r\napple appe\r\napple bpple\r\napplee bpple\r\napple apple\r\n",
+      "output": "similar\r\nsimilar\r\nsimilar\r\nnot similar\r\nsimilar"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1093",
+    "通过人数": "582",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:43"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1601",
+  "title": "挖胡萝卜",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1601",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小兔朱迪挖了 <span class=\"katex math inline\">x</span> 个胡萝卜，狐狸尼克挖到胡萝卜数量是小兔挖到的 <span class=\"katex math inline\">3</span> 倍，小羊肖恩挖到胡萝卜的数量比狐狸尼克少 <span class=\"katex math inline\">8</span> 个。</p>\n<p>请你编程计算一下狐狸尼克和小羊肖恩分别挖了几个胡萝卜，以及平均每个动物挖了几个胡萝卜？</p>\n</div>            </div>",
+      "text": "小兔朱迪挖了 x 个胡萝卜，狐狸尼克挖到胡萝卜数量是小兔挖到的 3 倍，小羊肖恩挖到胡萝卜的数量比狐狸尼克少 8 个。\n请你编程计算一下狐狸尼克和小羊肖恩分别挖了几个胡萝卜，以及平均每个动物挖了几个胡萝卜？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">x</span> 代表小兔挖走的胡萝卜的数量。</p>\n</div>            </div>",
+      "text": "一个整数 x 代表小兔挖走的胡萝卜的数量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个数，每行 <span class=\"katex math inline\">1</span> 个，第 <span class=\"katex math inline\">1</span> 个整数代表狐狸尼克挖走的胡萝卜的数量，第 <span class=\"katex math inline\">2</span> 个整数代表小羊肖恩挖走的胡萝卜的数量，第 <span class=\"katex math inline\">3</span> 个数是小数代表平均每个动物挖走了几个胡萝卜（结果保留1位小数）。</p>\n</div>            </div>",
+      "text": "三个数，每行 1 个，第 1 个整数代表狐狸尼克挖走的胡萝卜的数量，第 2 个整数代表小羊肖恩挖走的胡萝卜的数量，第 3 个数是小数代表平均每个动物挖走了几个胡萝卜（结果保留1位小数）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>30\r\n22\r\n20.7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\n                        \n                        \n                            输出\n                            30\r\n22\r\n20.7"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10",
+      "output": "30\r\n22\r\n20.7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "39435",
+    "通过人数": "26751",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:40"
+}

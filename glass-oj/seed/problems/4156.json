@@ -1,0 +1,64 @@
+{
+  "id": "4156",
+  "title": "奇妙数字",
+  "tags": [
+    "GESP五级",
+    "唯一分解定理",
+    "约数定理",
+    "24年12月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/4156",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨认为一个数字 <span class=\"katex math inline\">x</span> 是奇妙数字当且仅当 <span class=\"katex math inline\">x=p^a</span>，其中 <span class=\"katex math inline\">p</span> 为任意质数且 <span class=\"katex math inline\">a</span> 为正整数。例如，<span class=\"katex math inline\">8=2^3</span>，所以 <span class=\"katex math inline\">8</span> 是奇妙数字，而 <span class=\"katex math inline\">6</span> 不是。</p>\n<p>对于一个正整数 <span class=\"katex math inline\">n</span>，小杨想要构建一个包含 <span class=\"katex math inline\">m</span> 个奇妙数字的集合<span class=\"katex math inline\">{x_1,x_2, \\dots x_m}</span> ，使其满足以下条件：</p>\n<ul><li>集合中不包含相同的数字。</li>\n<li><span class=\"katex math inline\">x_1 * x_2 * \\dots x_m</span>是 <span class=\"katex math inline\">n</span> 的因子（即 <span class=\"katex math inline\">x_1,x_2 ,\\dots ,x_m</span>  这 <span class=\"katex math inline\">m</span> 个数字的乘积是 <span class=\"katex math inline\">n</span> 的因子）。</li>\n</ul><p>小杨希望集合包含的奇妙数字尽可能多，请你帮他计算出满足条件的集合最多包含多少个奇妙数字。</p>\n</div>            </div>",
+      "text": "小杨认为一个数字 x 是奇妙数字当且仅当 x=p^a，其中 p 为任意质数且 a 为正整数。例如，8=2^3，所以 8 是奇妙数字，而 6 不是。\n对于一个正整数 n，小杨想要构建一个包含 m 个奇妙数字的集合{x_1,x_2, \\dots x_m} ，使其满足以下条件：\n集合中不包含相同的数字。\nx_1 * x_2 * \\dots x_m是 n 的因子（即 x_1,x_2 ,\\dots ,x_m  这 m 个数字的乘积是 n 的因子）。\n小杨希望集合包含的奇妙数字尽可能多，请你帮他计算出满足条件的集合最多包含多少个奇妙数字。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">n</span>，含义如题面所示。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 n，含义如题面所示。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个正整数，代表满足条件的集合最多包含的奇妙数字个数。</p>\n</div>            </div>",
+      "text": "输出一个正整数，代表满足条件的集合最多包含的奇妙数字个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>128</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            128\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例1解释】</strong></p>\n<p>关于本样例，符合题意的一个包含 <span class=\"katex math inline\">3</span> 个奇妙数字的集合是 <span class=\"katex math inline\">2,4,8</span>。⾸先，因为<span class=\"katex math inline\">2=2^1 ，4=2^2，8=2^3，</span>所以 <span class=\"katex math inline\">2,4,8, </span> 均为奇妙数字。同时， <span class=\"katex math inline\">2 * 4 *8 =64</span>是 <span class=\"katex math inline\">128</span> 的因子。</p>\n<p>由于无法找到符合题意且同时包含 <span class=\"katex math inline\">4</span> 个奇妙数字的集合，因此本样例的答案为 <span class=\"katex math inline\">3</span>。</p>\n<table><thead><tr><th>子任务编号</th><th>数据点占比</th><th>n</th></tr></thead><tbody><tr><td>1</td><td><span class=\"katex math inline\">20 \\%</span></td><td><span class=\"katex math inline\">\\le 10</span></td></tr><tr><td>2</td><td><span class=\"katex math inline\">20 \\%</span></td><td><span class=\"katex math inline\">\\le 1000</span></td></tr><tr><td>3</td><td><span class=\"katex math inline\">60 \\%</span></td><td><span class=\"katex math inline\">\\le 10^{12}</span></td></tr></tbody></table><h4>数据范围</h4>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">2 \\le n \\le 10^{12}</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1解释】\n关于本样例，符合题意的一个包含 3 个奇妙数字的集合是 2,4,8。⾸先，因为2=2^1 ，4=2^2，8=2^3，所以 2,4,8,  均为奇妙数字。同时， 2 * 4 *8 =64是 128 的因子。\n由于无法找到符合题意且同时包含 4 个奇妙数字的集合，因此本样例的答案为 3。\n子任务编号数据点占比n120 \\%\\le 10220 \\%\\le 1000360 \\%\\le 10^{12}数据范围\n对于全部数据，保证有 2 \\le n \\le 10^{12}。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 24年12月认证 C++ 五级真题</p>\n</div>                </div>",
+      "text": "GESP 24年12月认证 C++ 五级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">唯一分解定理</span><span class=\"label label-info\">约数定理</span><span class=\"label label-danger\">24年12月</span></span></p>\n</div>                </div>",
+      "text": "GESP五级唯一分解定理约数定理24年12月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "128",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "526",
+    "通过人数": "273",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:36:44"
+}

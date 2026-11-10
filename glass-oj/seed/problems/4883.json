@@ -1,0 +1,53 @@
+{
+  "id": "4883",
+  "title": "奖牌统计",
+  "tags": [
+    "蓝桥等考",
+    "循环",
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4883",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>今年大学生运动会，小蓝要根据每个学校获得的金牌、银牌和铜牌数量，统计出每个学校获得的奖牌总数。</p>\n</div>            </div>",
+      "text": "今年大学生运动会，小蓝要根据每个学校获得的金牌、银牌和铜牌数量，统计出每个学校获得的奖牌总数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含一个整数 <span class=\"katex math inline\">n</span>，表示学校的数量（<span class=\"katex math inline\">1 \\le n \\le 10</span>）。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行，每行包含四个非负整数，分别表示每个学校编号、获得的金牌、银牌和铜牌的数量。</p>\n</div>            </div>",
+      "text": "输入的第一行包含一个整数 n，表示学校的数量（1 \\le n \\le 10）。\n接下来的 n 行，每行包含四个非负整数，分别表示每个学校编号、获得的金牌、银牌和铜牌的数量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">n</span> 行，每行包含两个整数，分别表示学校编号和对应学校获得的奖牌总数。</p>\n</div>            </div>",
+      "text": "输出 n 行，每行包含两个整数，分别表示学校编号和对应学校获得的奖牌总数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1 4 12 24\r\n2 3 20 30\r\n3 0 30 23\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 40\r\n2 53\r\n3 53\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1 4 12 24\r\n2 3 20 30\r\n3 0 30 23\r\n\n                        \n                        \n                            输出\n                            1 40\r\n2 53\r\n3 53"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">循环</span><span class=\"label label-info\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考循环二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1 4 12 24\r\n2 3 20 30\r\n3 0 30 23\r\n",
+      "output": "1 40\r\n2 53\r\n3 53\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "208",
+    "通过人数": "167",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:32"
+}

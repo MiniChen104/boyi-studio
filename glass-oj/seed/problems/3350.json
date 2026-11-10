@@ -1,0 +1,63 @@
+{
+  "id": "3350",
+  "title": "自幂数判断",
+  "tags": [
+    "循环",
+    "短除法",
+    "GESP二级",
+    "23年6月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3350",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>自幂数是指，一个 <span class=\"katex math inline\">N</span> 位数，满足各位数字 <span class=\"katex math inline\">N</span> 次方之和是本身。例如，<span class=\"katex math inline\">153</span> 是 <span class=\"katex math inline\">3</span> 位数，其每位数的 <span class=\"katex math inline\">3</span> 次方之和，<span class=\"katex math inline\">1^3 + 5^3 + 3^3 = 153 </span>，因此 <span class=\"katex math inline\">153</span> 是自幂数；<span class=\"katex math inline\">1634</span> 是 <span class=\"katex math inline\">4</span> 位数，其每位数的 <span class=\"katex math inline\">4</span> 次方之和，<span class=\"katex math inline\">1^4 + 6^4 + 3^4 + 4^4 = 1634</span>，因此 <span class=\"katex math inline\">1634</span> 是自幂数。</p>\n<p>现在，输入若干个正整数，请判断它们是否是自幂数。</p>\n</div>            </div>",
+      "text": "自幂数是指，一个 N 位数，满足各位数字 N 次方之和是本身。例如，153 是 3 位数，其每位数的 3 次方之和，1^3 + 5^3 + 3^3 = 153 ，因此 153 是自幂数；1634 是 4 位数，其每位数的 4 次方之和，1^4 + 6^4 + 3^4 + 4^4 = 1634，因此 1634 是自幂数。\n现在，输入若干个正整数，请判断它们是否是自幂数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入第 <span class=\"katex math inline\">1</span> 行是一个正整数 <span class=\"katex math inline\">M</span>，表示有 <span class=\"katex math inline\">M</span> 个待判断的正整数。约定 <span class=\"katex math inline\"> 1 ≤ M ≤ 100 </span>。</p>\n<p>从第 <span class=\"katex math inline\">2</span> 行开始的 <span class=\"katex math inline\">M</span> 行，每行一个待判断的正整数。约定这些正整数均小于 <span class=\"katex math inline\">10^8</span>。</p>\n</div>            </div>",
+      "text": "输入第 1 行是一个正整数 M，表示有 M 个待判断的正整数。约定  1 ≤ M ≤ 100 。\n从第 2 行开始的 M 行，每行一个待判断的正整数。约定这些正整数均小于 10^8。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">M</span> 行，如果对应的待判断正整数为自幂数，则输出英文大写字母 <code>T</code>，否则输出英文大写字母 <code>F</code> 。</p>\n<p>提示：不需要等到所有输入结束在依次输出，可以输入一个数就判断一个数并输出，再输入下一个数。</p>\n</div>            </div>",
+      "text": "输出 M 行，如果对应的待判断正整数为自幂数，则输出英文大写字母 T，否则输出英文大写字母 F 。\n提示：不需要等到所有输入结束在依次输出，可以输入一个数就判断一个数并输出，再输入下一个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n152\r\n111\r\n153</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>F\r\nF\r\nT</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n8208\r\n548834\r\n88593477\r\n12345\r\n5432</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>T\r\nT\r\nT\r\nF\r\nF</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n152\r\n111\r\n153\n                        \n                        \n                            输出\n                            F\r\nF\r\nT\n                        \n\n                                                    \n                                输入\n                                5\r\n8208\r\n548834\r\n88593477\r\n12345\r\n5432\n                            \n                            \n                                输出\n                                T\r\nT\r\nT\r\nF\r\nF"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP2023年6月二级</p>\n</div>                </div>",
+      "text": "GESP2023年6月二级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">循环</span><span class=\"label label-warning\">短除法</span><span class=\"label label-info\">GESP二级</span><span class=\"label label-danger\">23年6月</span></span></p>\n</div>                </div>",
+      "text": "循环短除法GESP二级23年6月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n152\r\n111\r\n153",
+      "output": "F\r\nF\r\nT"
+    },
+    {
+      "input": "5\r\n8208\r\n548834\r\n88593477\r\n12345\r\n5432",
+      "output": "T\r\nT\r\nT\r\nF\r\nF"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3952",
+    "通过人数": "2835",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:45"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1168",
+  "title": "歌唱比赛评分",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1168",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>四（<span class=\"katex math inline\">1</span>） 班要举行一次歌唱比赛，以选拔更好的苗子参加校的歌唱比赛。评分办法如下：设 <span class=\"katex math inline\">N</span> 个评委，打 <span class=\"katex math inline\">N</span> 个分数（ <span class=\"katex math inline\">0 \\le </span> 每个分数 <span class=\"katex math inline\"> \\le  10</span> ），去掉一个最高分，去掉一个最低分，剩下的评委的平均分即为该选手的最后得分。</p>\n<p>但是选手太多了，靠人工计算每个选手的得分太慢太麻烦。你能不能帮帮他们，设计一个程序让计算机来算出选手的最后得分呢？（ <span class=\"katex math inline\">4.1.53</span> ）</p>\n</div>            </div>",
+      "text": "四（1） 班要举行一次歌唱比赛，以选拔更好的苗子参加校的歌唱比赛。评分办法如下：设 N 个评委，打 N 个分数（ 0 \\le  每个分数  \\le  10 ），去掉一个最高分，去掉一个最低分，剩下的评委的平均分即为该选手的最后得分。\n但是选手太多了，靠人工计算每个选手的得分太慢太麻烦。你能不能帮帮他们，设计一个程序让计算机来算出选手的最后得分呢？（ 4.1.53 ）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为一个整数 <span class=\"katex math inline\">N</span> （<span class=\"katex math inline\"> 5 \\le N \\le  10 </span>）；</p>\n<p>第二行为 <span class=\"katex math inline\">N</span> 个整数 <span class=\"katex math inline\">Ai</span> （<span class=\"katex math inline\"> 0 \\le  Ai \\le  10</span> ）。</p>\n</div>            </div>",
+      "text": "第一行为一个整数 N （ 5 \\le N \\le  10 ）；\n第二行为 N 个整数 Ai （ 0 \\le  Ai \\le  10 ）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>选手的最后得分（保留两位小数）。</p>\n</div>            </div>",
+      "text": "选手的最后得分（保留两位小数）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n5 6 7 8 9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7.00</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n5 6 7 8 9\n                        \n                        \n                            输出\n                            7.00"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n5 6 7 8 9",
+      "output": "7.00"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "24099",
+    "通过人数": "14292",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:15:42"
+}

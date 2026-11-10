@@ -1,0 +1,52 @@
+{
+  "id": "5278",
+  "title": "集合的划分",
+  "tags": [
+    "一本通",
+    "递归"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5278",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>设S是一个具有 <span class=\"katex math inline\">n</span>个元素的集合，<span class=\"katex math inline\">S＝[a_1,a_2,\\dots,a_n]</span>，现将 <span class=\"katex math inline\">S</span> 划分成 <span class=\"katex math inline\">k</span> 个满足下列条件的子集合 <span class=\"katex math inline\">S_1,S_2,\\dots,S_k</span>且满足：</p>\n<ul><li><span class=\"katex math inline\">1</span>．<span class=\"katex math inline\">S_i≠ \\emptyset</span></li>\n<li><span class=\"katex math inline\">2</span>．<span class=\"katex math inline\">S_i∩S_j＝∅ (1 \\le i,j \\le k,i≠j)</span></li>\n<li><span class=\"katex math inline\">3</span>．<span class=\"katex math inline\">S_1∪S_2∪S_3∪ \\dots ∪S_k＝S</span></li>\n</ul><p>则称 <span class=\"katex math inline\">S_1,S_2,\\dots,S_k</span>是集合 <span class=\"katex math inline\">S</span> 的一个划分。</p>\n<p>它相当于把 <span class=\"katex math inline\">S</span> 集合中的 <span class=\"katex math inline\">n</span> 个元素 <span class=\"katex math inline\">a_1,a_2,\\dots,a_n</span> 放入 <span class=\"katex math inline\">k</span> 个（<span class=\"katex math inline\">0 \\lt k \\le n \\lt 30</span>）无标号的盒子中，使得没有一个盒子为空。</p>\n<p>请你确定 <span class=\"katex math inline\">n</span> 个元素 <span class=\"katex math inline\">a_1,a_2,\\dots,a_n</span> 放入 <span class=\"katex math inline\">k</span> 个无标号盒子中去的划分数 <span class=\"katex math inline\">S(n,k)</span>。</p>\n</div>            </div>",
+      "text": "设S是一个具有 n个元素的集合，S＝[a_1,a_2,\\dots,a_n]，现将 S 划分成 k 个满足下列条件的子集合 S_1,S_2,\\dots,S_k且满足：\n1．S_i≠ \\emptyset\n2．S_i∩S_j＝∅ (1 \\le i,j \\le k,i≠j)\n3．S_1∪S_2∪S_3∪ \\dots ∪S_k＝S\n则称 S_1,S_2,\\dots,S_k是集合 S 的一个划分。\n它相当于把 S 集合中的 n 个元素 a_1,a_2,\\dots,a_n 放入 k 个（0 \\lt k \\le n \\lt 30）无标号的盒子中，使得没有一个盒子为空。\n请你确定 n 个元素 a_1,a_2,\\dots,a_n 放入 k 个无标号盒子中去的划分数 S(n,k)。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">k</span>。</p>\n</div>            </div>",
+      "text": "给出 n 和 k。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 个元素 <span class=\"katex math inline\">a_1,a_2,\\dots,a_n</span> 放入 <span class=\"katex math inline\">k</span> 个无标号盒子中去的划分数 <span class=\"katex math inline\">S(n,k)</span>。</p>\n</div>            </div>",
+      "text": "n 个元素 a_1,a_2,\\dots,a_n 放入 k 个无标号盒子中去的划分数 S(n,k)。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>22827</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 6\n                        \n                        \n                            输出\n                            22827"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">一本通</span><span class=\"label label-warning\">递归</span></span></p>\n</div>                </div>",
+      "text": "一本通递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 6",
+      "output": "22827"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "51",
+    "通过人数": "24",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:19"
+}

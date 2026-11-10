@@ -1,0 +1,57 @@
+{
+  "id": "2304",
+  "title": "Minecraft",
+  "tags": [
+    "电子学会等级考试",
+    "循环"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2304",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Minecraft是一个几乎无所不能的沙盒世界，玩家可以利用游戏内的各种资源进行创造，搭建自己的世界。<br>\n在Minecraft中，基本的建筑元素是边长为1个单位的立方体，小明想用N个这种小立方体搭建一个长方体，并用他珍藏已久的贴纸对其进行装饰。如果一张贴纸可以贴满小立方体的一个面。那么，他需要用掉多少张贴纸呢？</p>\n</div>            </div>",
+      "text": "Minecraft是一个几乎无所不能的沙盒世界，玩家可以利用游戏内的各种资源进行创造，搭建自己的世界。\n在Minecraft中，基本的建筑元素是边长为1个单位的立方体，小明想用N个这种小立方体搭建一个长方体，并用他珍藏已久的贴纸对其进行装饰。如果一张贴纸可以贴满小立方体的一个面。那么，他需要用掉多少张贴纸呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数N，表示小明所拥有的小立方体的个数。N不会超过1000。</p>\n</div>            </div>",
+      "text": "一个整数N，表示小明所拥有的小立方体的个数。N不会超过1000。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数。即小明最少用掉的贴纸有多少张</p>\n</div>            </div>",
+      "text": "一个整数。即小明最少用掉的贴纸有多少张"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>30</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            9\n                        \n                        \n                            输出\n                            30"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会三级 202103真题</p>\n</div>                </div>",
+      "text": "电子学会三级 202103真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span><span class=\"label label-warning\">循环</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "9",
+      "output": "30"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1317",
+    "通过人数": "709",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:59"
+}

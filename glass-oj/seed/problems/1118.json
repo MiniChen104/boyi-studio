@@ -1,0 +1,57 @@
+{
+  "id": "1118",
+  "title": "既生瑜，何生亮！",
+  "tags": [
+    "数组问题",
+    "函数问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1118",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某数的平方是 <span class=\"katex math inline\">7</span> 位数，且这 <span class=\"katex math inline\">7</span> 个数字不相同，如<span class=\"katex math inline\">1267^2</span> = <span class=\"katex math inline\">1605289</span>。 编写程序，输入 <span class=\"katex math inline\">x</span> ，<span class=\"katex math inline\">y</span> （ <span class=\"katex math inline\">1000 \\le x \\le y \\le 9999</span> ）在 <span class=\"katex math inline\">x \\sim y</span> 的范围内找出所有符合条件的数并打印出来。</p>\n</div>            </div>",
+      "text": "某数的平方是 7 位数，且这 7 个数字不相同，如1267^2 = 1605289。 编写程序，输入 x ，y （ 1000 \\le x \\le y \\le 9999 ）在 x \\sim y 的范围内找出所有符合条件的数并打印出来。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，两个整数。</p>\n</div>            </div>",
+      "text": "一行，两个整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>若干行，每行一个符合条件的数。</p>\n</div>            </div>",
+      "text": "若干行，每行一个符合条件的数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1000 1025</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1017\r\n1023\r\n1024</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1000 1025\n                        \n                        \n                            输出\n                            1017\r\n1023\r\n1024"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题 函数问题</p>\n</div>                </div>",
+      "text": "数组问题 函数问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span><span class=\"label label-warning\">函数问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题函数问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1000 1025",
+      "output": "1017\r\n1023\r\n1024"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "12200",
+    "通过人数": "6372",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:14:59"
+}

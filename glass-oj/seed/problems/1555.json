@@ -1,0 +1,61 @@
+{
+  "id": "1555",
+  "title": "洗牌",
+  "tags": [
+    "省赛",
+    "数组问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1555",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明把 <span class=\"katex math inline\">n</span> (<span class=\"katex math inline\">n</span> 为偶数)张牌按编号顺序 <span class=\"katex math inline\">1, 2, 3, ..., n</span> 排成一堆，然后开始洗牌。一次洗牌的过程如下:</p>\n<p>1.对于一堆牌编号为 <span class=\"katex math inline\">a_1, a_2, ..., a_n</span>，首先将牌分成均匀的两堆:</p>\n<p><span class=\"katex math inline\">a_1, a_2, ..., a_m</span> 和 <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">m+1</span></sub>, <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">m+2</span></sub>, <span class=\"katex math inline\">...</span>, <span class=\"katex math inline\">a_n</span> (其中<span class=\"katex math inline\">m=n/2</span>)</p>\n<p>2.然后按顺序交叉插入:</p>\n<p><span class=\"katex math inline\">a_1</span>,<span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">m+1</span></sub>,<span class=\"katex math inline\">a_2</span>,<span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">m+2</span></sub>,<span class=\"katex math inline\">...</span>,<span class=\"katex math inline\">a_m</span>,<span class=\"katex math inline\">a_n</span></p>\n<p>洗牌过程总共重复了 <span class=\"katex math inline\">k</span> 次，请你编程帮助小明模拟洗牌的过程。</p>\n<p>例如 <span class=\"katex math inline\">n = 6</span>，初始时牌堆中牌的编号为 <span class=\"katex math inline\">1, 2, 3, 4, 5, 6</span>。</p>\n<p>首次洗牌时，会将牌分成 <span class=\"katex math inline\">1, 2, 3</span> 和 <span class=\"katex math inline\">4, 5, 6</span> 两堆，交叉插入后的结果为 <span class=\"katex math inline\">1, 4, 2, 5, 3, 6</span>。</p>\n<p>再次洗牌，会将牌分成 <span class=\"katex math inline\">1, 4, 2</span> 和 <span class=\"katex math inline\">5, 3, 6</span> 两堆。交叉插入后得到 <span class=\"katex math inline\">1, 5, 4, 3, 2, 6</span>。</p>\n</div>            </div>",
+      "text": "小明把 n (n 为偶数)张牌按编号顺序 1, 2, 3, ..., n 排成一堆，然后开始洗牌。一次洗牌的过程如下:\n1.对于一堆牌编号为 a_1, a_2, ..., a_n，首先将牌分成均匀的两堆:\na_1, a_2, ..., a_m 和 am+1, am+2, ..., a_n (其中m=n/2)\n2.然后按顺序交叉插入:\na_1,am+1,a_2,am+2,...,a_m,a_n\n洗牌过程总共重复了 k 次，请你编程帮助小明模拟洗牌的过程。\n例如 n = 6，初始时牌堆中牌的编号为 1, 2, 3, 4, 5, 6。\n首次洗牌时，会将牌分成 1, 2, 3 和 4, 5, 6 两堆，交叉插入后的结果为 1, 4, 2, 5, 3, 6。\n再次洗牌，会将牌分成 1, 4, 2 和 5, 3, 6 两堆。交叉插入后得到 1, 5, 4, 3, 2, 6。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>正整数 <span class=\"katex math inline\">n</span> (牌的数量), <span class=\"katex math inline\">k</span> (洗牌的次数), <span class=\"katex math inline\">x</span> (牌的位置)。<span class=\"katex math inline\">1 ≤ n, k ≤ 1,000</span>，<span class=\"katex math inline\">1 ≤ x ≤ n</span>， 保证 <span class=\"katex math inline\">n</span> 是偶数。</p>\n</div>            </div>",
+      "text": "正整数 n (牌的数量), k (洗牌的次数), x (牌的位置)。1 ≤ n, k ≤ 1,000，1 ≤ x ≤ n， 保证 n 是偶数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 张牌洗牌 <span class=\"katex math inline\">k</span> 次后，牌堆中第 <span class=\"katex math inline\">x</span> 张牌的编号。</p>\n</div>            </div>",
+      "text": "n 张牌洗牌 k 次后，牌堆中第 x 张牌的编号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 2 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>400 300 200</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>368</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 2 5\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                400 300 200\n                            \n                            \n                                输出\n                                368"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>省赛 数组问题</p>\n</div>                </div>",
+      "text": "省赛 数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">省赛</span><span class=\"label label-warning\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "省赛数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 2 5",
+      "output": "2"
+    },
+    {
+      "input": "400 300 200",
+      "output": "368"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2879",
+    "通过人数": "1928",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:21:02"
+}

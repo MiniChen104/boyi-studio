@@ -1,0 +1,62 @@
+{
+  "id": "3580",
+  "title": "一元二次方程 [CSP-J 2023]",
+  "tags": [
+    "CSP-J",
+    "模拟"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3580",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\">题目背景\n<p>众所周知，对一元二次方程 <span class=\"katex math inline\">ax ^ 2 + bx + c = 0, (a \\neq 0)</span>，可以用以下方式求实数解：</p>\n<ul><li>计算 <span class=\"katex math inline\">\\Delta = b ^ 2 - 4ac</span>，则:<ol><li>若 <span class=\"katex math inline\">\\Delta &lt; 0</span>，则该一元二次方程无实数解。</li>\n<li>否则 <span class=\"katex math inline\">\\Delta \\geq 0</span>，此时该一元二次方程有两个实数解 <span class=\"katex math inline\">x _ {1, 2} = \\frac{-b \\pm \\sqrt \\Delta}{2a}</span>。</li>\n</ol></li>\n</ul><p>例如：</p>\n<ul><li><span class=\"katex math inline\">x ^ 2 + x + 1 = 0</span> 无实数解，因为 <span class=\"katex math inline\">\\Delta = 1 ^ 2 - 4 \\times 1 \\times 1 = -3 &lt; 0</span>。</li>\n<li><span class=\"katex math inline\">x ^ 2 - 2x + 1 = 0</span> 有两相等实数解 <span class=\"katex math inline\">x _ {1, 2} = 1</span>。</li>\n<li><span class=\"katex math inline\">x ^ 2 - 3x + 2 = 0</span> 有两互异实数解 <span class=\"katex math inline\">x _ 1 = 1, x _ 2 = 2</span>。</li>\n</ul><p>在题面描述中 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span> 的最大公因数使用 <span class=\"katex math inline\">\\gcd(a, b)</span> 表示。例如 <span class=\"katex math inline\">12</span> 和 <span class=\"katex math inline\">18</span> 的最大公因数是 <span class=\"katex math inline\">6</span>，即 <span class=\"katex math inline\">\\gcd(12, 18) = 6</span>。</p>\n题目描述\n<p>现在给定一个一元二次方程的系数 <span class=\"katex math inline\">a, b, c</span>，其中 <span class=\"katex math inline\">a, b, c</span> <strong>均为整数且 <span class=\"katex math inline\">a \\neq 0</span></strong>。你需要判断一元二次方程 <span class=\"katex math inline\">a x ^ 2 + bx + c = 0</span> 是否有实数解，并按要求的格式输出。</p>\n<p><strong>在本题中输出有理数 <span class=\"katex math inline\">v</span> 时须遵循以下规则：</strong></p>\n<ul><li>由有理数的定义，存在唯一的两个整数 <span class=\"katex math inline\">p</span> 和 <span class=\"katex math inline\">q</span>，满足 <span class=\"katex math inline\">q &gt; 0</span>，<span class=\"katex math inline\">\\gcd(p, q) = 1</span> 且 <span class=\"katex math inline\">v = \\frac pq</span>。</li>\n<li>若 <span class=\"katex math inline\">q = 1</span>，<strong>则输出 <code>{p}</code>，否则输出 <code>{p}/{q}</code></strong>，其中 <code>{n}</code> 代表整数 <span class=\"katex math inline\">n</span> 的值；</li>\n<li><p>例如：</p>\n<ul><li>当 <span class=\"katex math inline\">v = -0.5</span> 时，<span class=\"katex math inline\">p</span> 和 <span class=\"katex math inline\">q</span> 的值分别为 <span class=\"katex math inline\">-1</span> 和 <span class=\"katex math inline\">2</span>，则应输出 <code>-1/2</code>；</li>\n<li>当 <span class=\"katex math inline\">v = 0</span> 时，<span class=\"katex math inline\">p</span> 和 <span class=\"katex math inline\">q</span> 的值分别为 <span class=\"katex math inline\">0</span> 和 <span class=\"katex math inline\">1</span>，则应输出 <code>0</code>。</li>\n</ul></li>\n</ul><p><strong>对于方程的求解，分两种情况讨论：</strong></p>\n<ol><li>若 <span class=\"katex math inline\">\\Delta = b ^ 2 - 4ac &lt; 0</span>，则表明方程无实数解，此时你应当输出 <code>NO</code>；</li>\n<li><p>否则 <span class=\"katex math inline\">\\Delta \\geq 0</span>，此时方程有两解（可能相等），记其中较大者为 <span class=\"katex math inline\">x</span>，则：</p>\n<ol><li>若 <span class=\"katex math inline\">x</span> 为有理数，则按有理数的格式输出 <span class=\"katex math inline\">x</span>。</li>\n<li><p>否则根据上文公式，<span class=\"katex math inline\">x</span> 可以被<strong>唯一</strong>表示为 <span class=\"katex math inline\">x = q_1 + q_2 \\sqrt r</span> 的形式，其中：</p>\n<ul><li><span class=\"katex math inline\">q_1, q_2</span> 为有理数，且 <span class=\"katex math inline\">q_2 &gt; 0</span>；</li>\n<li><span class=\"katex math inline\">r</span> 为正整数且 <span class=\"katex math inline\">r &gt; 1</span>，且不存在正整数 <span class=\"katex math inline\">d &gt; 1</span> 使 <span class=\"katex math inline\">d^2|r</span>（即 <span class=\"katex math inline\">r</span> 不应是 <span class=\"katex math inline\">d^2</span> 的倍数）；</li>\n</ul></li>\n</ol><p>此时：</p>\n<ol><li>若 <span class=\"katex math inline\">q_1 \\neq 0</span>，则按有理数的格式输出 <span class=\"katex math inline\">q_1</span>，并再输出一个加号 <code>+</code>；</li>\n<li>否则跳过这一步输出；</li>\n</ol><p>随后：</p>\n<ol><li>若 <span class=\"katex math inline\">q_2 = 1</span>，则输出 <code>sqrt({r})</code>；</li>\n<li>否则若 <span class=\"katex math inline\">q_2</span> 为整数，则输出 <code>{q2}*sqrt({r})</code>；</li>\n<li>否则若 <span class=\"katex math inline\">q_3 = \\frac 1{q_2}</span> 为整数，则输出 <code>sqrt({r})/{q3}</code>；</li>\n<li>否则可以证明存在唯一整数 <span class=\"katex math inline\">c, d</span> 满足 <span class=\"katex math inline\">c, d &gt; 1, \\gcd(c, d) = 1</span> 且 <span class=\"katex math inline\">q_2 = \\frac cd</span>，此时输出 <code>{c}*sqrt({r})/{d}</code>；</li>\n</ol><p>上述表示中 <code>{n}</code> 代表整数 <code>{n}</code> 的值，详见样例。</p>\n<p>如果方程有实数解，则按要求的格式输出两个实数解中的较大者。否则若方程没有实数解，则输出 <code>NO</code>。</p>\n</li>\n</ol></div>            </div>",
+      "text": "题目背景\n众所周知，对一元二次方程 ax ^ 2 + bx + c = 0, (a \\neq 0)，可以用以下方式求实数解：\n计算 \\Delta = b ^ 2 - 4ac，则:若 \\Delta < 0，则该一元二次方程无实数解。\n否则 \\Delta \\geq 0，此时该一元二次方程有两个实数解 x _ {1, 2} = \\frac{-b \\pm \\sqrt \\Delta}{2a}。\n\n例如：\nx ^ 2 + x + 1 = 0 无实数解，因为 \\Delta = 1 ^ 2 - 4 \\times 1 \\times 1 = -3 < 0。\nx ^ 2 - 2x + 1 = 0 有两相等实数解 x _ {1, 2} = 1。\nx ^ 2 - 3x + 2 = 0 有两互异实数解 x _ 1 = 1, x _ 2 = 2。\n在题面描述中 a 和 b 的最大公因数使用 \\gcd(a, b) 表示。例如 12 和 18 的最大公因数是 6，即 \\gcd(12, 18) = 6。\n题目描述\n现在给定一个一元二次方程的系数 a, b, c，其中 a, b, c 均为整数且 a \\neq 0。你需要判断一元二次方程 a x ^ 2 + bx + c = 0 是否有实数解，并按要求的格式输出。\n在本题中输出有理数 v 时须遵循以下规则：\n由有理数的定义，存在唯一的两个整数 p 和 q，满足 q > 0，\\gcd(p, q) = 1 且 v = \\frac pq。\n若 q = 1，则输出 {p}，否则输出 {p}/{q}，其中 {n} 代表整数 n 的值；\n例如：\n当 v = -0.5 时，p 和 q 的值分别为 -1 和 2，则应输出 -1/2；\n当 v = 0 时，p 和 q 的值分别为 0 和 1，则应输出 0。\n\n对于方程的求解，分两种情况讨论：\n若 \\Delta = b ^ 2 - 4ac < 0，则表明方程无实数解，此时你应当输出 NO；\n否则 \\Delta \\geq 0，此时方程有两解（可能相等），记其中较大者为 x，则：\n若 x 为有理数，则按有理数的格式输出 x。\n否则根据上文公式，x 可以被唯一表示为 x = q_1 + q_2 \\sqrt r 的形式，其中：\nq_1, q_2 为有理数，且 q_2 > 0；\nr 为正整数且 r > 1，且不存在正整数 d > 1 使 d^2|r（即 r 不应是 d^2 的倍数）；\n\n此时：\n若 q_1 \\neq 0，则按有理数的格式输出 q_1，并再输出一个加号 +；\n否则跳过这一步输出；\n随后：\n若 q_2 = 1，则输出 sqrt({r})；\n否则若 q_2 为整数，则输出 {q2}*sqrt({r})；\n否则若 q_3 = \\frac 1{q_2} 为整数，则输出 sqrt({r})/{q3}；\n否则可以证明存在唯一整数 c, d 满足 c, d > 1, \\gcd(c, d) = 1 且 q_2 = \\frac cd，此时输出 {c}*sqrt({r})/{d}；\n上述表示中 {n} 代表整数 {n} 的值，详见样例。\n如果方程有实数解，则按要求的格式输出两个实数解中的较大者。否则若方程没有实数解，则输出 NO。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含两个正整数 <span class=\"katex math inline\">T, M</span>，分别表示方程数和系数的绝对值上限。</p>\n<p>接下来 <span class=\"katex math inline\">T</span> 行，每行包含三个整数 <span class=\"katex math inline\">a, b, c</span>。</p>\n</div>            </div>",
+      "text": "输入的第一行包含两个正整数 T, M，分别表示方程数和系数的绝对值上限。\n接下来 T 行，每行包含三个整数 a, b, c。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">T</span> 行，每行包含一个字符串，表示对应询问的答案，格式如题面所述。</p>\n</div>            </div>",
+      "text": "输出 T 行，每行包含一个字符串，表示对应询问的答案，格式如题面所述。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>9 1000\r\n1 -1 0\r\n-1 -1 -1\r\n1 -2 1\r\n1 5 4\r\n4 4 1\r\n1 0 -432\r\n1 -3 1\r\n2 -4 1\r\n1 7 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\nNO\r\n1\r\n-1\r\n-1/2\r\n12*sqrt(3)\r\n3/2+sqrt(5)/2\r\n1+sqrt(2)/2\r\n-7/2+3*sqrt(5)/2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            9 1000\r\n1 -1 0\r\n-1 -1 -1\r\n1 -2 1\r\n1 5 4\r\n4 4 1\r\n1 0 -432\r\n1 -3 1\r\n2 -4 1\r\n1 7 1\n                        \n                        \n                            输出\n                            1\r\nNO\r\n1\r\n-1\r\n-1/2\r\n12*sqrt(3)\r\n3/2+sqrt(5)/2\r\n1+sqrt(2)/2\r\n-7/2+3*sqrt(5)/2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【数据范围】</strong></p>\n<p>对于所有数据有：<span class=\"katex math inline\">1 \\leq T \\leq 5000</span>，<span class=\"katex math inline\">1 \\leq M \\leq 10 ^ 3</span>，<span class=\"katex math inline\">|a|,|b|,|c| \\leq M</span>，<span class=\"katex math inline\">a \\neq 0</span>。</p>\n<table><thead><tr><th>测试点编号</th><th><span class=\"katex math inline\">M \\leq</span></th><th>特殊性质 A</th><th>特殊性质 B</th><th>特殊性质 C</th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1</span></td><td><span class=\"katex math inline\">1</span></td><td>是</td><td>是</td><td>是</td></tr><tr><td><span class=\"katex math inline\">2</span></td><td><span class=\"katex math inline\">20</span></td><td>否</td><td>否</td><td>否</td></tr><tr><td><span class=\"katex math inline\">3</span></td><td><span class=\"katex math inline\">10 ^ 3</span></td><td>是</td><td>否</td><td>是</td></tr><tr><td><span class=\"katex math inline\">4</span></td><td><span class=\"katex math inline\">10 ^ 3</span></td><td>是</td><td>否</td><td>否</td></tr><tr><td><span class=\"katex math inline\">5</span></td><td><span class=\"katex math inline\">10 ^ 3</span></td><td>否</td><td>是</td><td>是</td></tr><tr><td><span class=\"katex math inline\">6</span></td><td><span class=\"katex math inline\">10 ^ 3</span></td><td>否</td><td>是</td><td>否</td></tr><tr><td><span class=\"katex math inline\">7, 8</span></td><td><span class=\"katex math inline\">10 ^ 3</span></td><td>否</td><td>否</td><td>是</td></tr><tr><td><span class=\"katex math inline\">9, 10</span></td><td><span class=\"katex math inline\">10 ^ 3</span></td><td>否</td><td>否</td><td>否</td></tr></tbody></table><p>其中：</p>\n<ul><li>特殊性质 A：保证 <span class=\"katex math inline\">b = 0</span>；</li>\n<li>特殊性质 B：保证 <span class=\"katex math inline\">c = 0</span>；</li>\n<li>特殊性质 C：如果方程有解，那么方程的两个解都是整数。</li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于所有数据有：1 \\leq T \\leq 5000，1 \\leq M \\leq 10 ^ 3，|a|,|b|,|c| \\leq M，a \\neq 0。\n测试点编号M \\leq特殊性质 A特殊性质 B特殊性质 C11是是是220否否否310 ^ 3是否是410 ^ 3是否否510 ^ 3否是是610 ^ 3否是否7, 810 ^ 3否否是9, 1010 ^ 3否否否其中：\n特殊性质 A：保证 b = 0；\n特殊性质 B：保证 c = 0；\n特殊性质 C：如果方程有解，那么方程的两个解都是整数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>CSP-J 2023 T3</p>\n</div>                </div>",
+      "text": "CSP-J 2023 T3"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">CSP-J</span><span class=\"label label-warning\">模拟</span></span></p>\n</div>                </div>",
+      "text": "CSP-J模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "9 1000\r\n1 -1 0\r\n-1 -1 -1\r\n1 -2 1\r\n1 5 4\r\n4 4 1\r\n1 0 -432\r\n1 -3 1\r\n2 -4 1\r\n1 7 1",
+      "output": "1\r\nNO\r\n1\r\n-1\r\n-1/2\r\n12*sqrt(3)\r\n3/2+sqrt(5)/2\r\n1+sqrt(2)/2\r\n-7/2+3*sqrt(5)/2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1127",
+    "通过人数": "448",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:35:34"
+}

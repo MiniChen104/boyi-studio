@@ -1,0 +1,54 @@
+{
+  "id": "6498",
+  "title": "购物清单",
+  "tags": [
+    "詹天佑杯高年级组",
+    "字符串",
+    "前缀和",
+    "区间查询"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6498",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小英雄有一个购物清单，上面列出了 <span class=\"katex math inline\">n</span> 件商品的价格，他将按照这个清单去宇宙超市购物。出发前，妈妈想考察一下小英雄的计算能力，于是向小英雄提出了 <span class=\"katex math inline\">m</span> 个问题。</p>\n<p>每个问题中，妈妈会给出两个数字 <span class=\"katex math inline\">x</span> 和<span class=\"katex math inline\">y</span>，表示询问从第 <span class=\"katex math inline\">x</span> 件商品到第 <span class=\"katex math inline\">y</span> 件商品(包括第 <span class=\"katex math inline\">x</span> 件和第 <span class=\"katex math inline\">y</span> 件)中，有多少件商品的价格是可以分别用若干张 <span class=\"katex math inline\">5</span> 元纸币刚好支付的(刚好支付代表宇宙超市没有找回零钱，小英雄也没有多给)。</p>\n</div>            </div>",
+      "text": "小英雄有一个购物清单，上面列出了 n 件商品的价格，他将按照这个清单去宇宙超市购物。出发前，妈妈想考察一下小英雄的计算能力，于是向小英雄提出了 m 个问题。\n每个问题中，妈妈会给出两个数字 x 和y，表示询问从第 x 件商品到第 y 件商品(包括第 x 件和第 y 件)中，有多少件商品的价格是可以分别用若干张 5 元纸币刚好支付的(刚好支付代表宇宙超市没有找回零钱，小英雄也没有多给)。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个整数 <span class=\"katex math inline\">n</span> 和<span class=\"katex math inline\">m(1 \\le n,m \\le 10^5)</span>，分别表示商品的数量和询问的次数。</p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个整数，表示每件商品的价格(商品价格均为正整数，且不超过 <span class=\"katex math inline\">10^{31}</span>)。</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行包含两个整数 <span class=\"katex math inline\">x</span> 和<span class=\"katex math inline\">y</span>，表示一次询问。</p>\n</div>            </div>",
+      "text": "第一行包含两个整数 n 和m(1 \\le n,m \\le 10^5)，分别表示商品的数量和询问的次数。\n第二行包含 n 个整数，表示每件商品的价格(商品价格均为正整数，且不超过 10^{31})。\n接下来 m 行，每行包含两个整数 x 和y，表示一次询问。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每次询问，输出一个整数，表示在第 <span class=\"katex math inline\">x</span> 件商品到第 <span class=\"katex math inline\">y</span> 件商品内满足条件的商品数量。</p>\n<p>每个询问的输出占一行。</p>\n</div>            </div>",
+      "text": "对于每次询问，输出一个整数，表示在第 x 件商品到第 y 件商品内满足条件的商品数量。\n每个询问的输出占一行。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 3\r\n5 10 3 15 20\r\n1 1\r\n2 4\r\n1 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n2\r\n4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 3\r\n5 10 3 15 20\r\n1 1\r\n2 4\r\n1 5\n                        \n                        \n                            输出\n                            1\r\n2\r\n4"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">詹天佑杯高年级组</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">前缀和</span><span class=\"label label-danger\">区间查询</span></span></p>\n</div>                </div>",
+      "text": "詹天佑杯高年级组字符串前缀和区间查询"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 3\r\n5 10 3 15 20\r\n1 1\r\n2 4\r\n1 5",
+      "output": "1\r\n2\r\n4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "7",
+    "通过人数": "3",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:33"
+}

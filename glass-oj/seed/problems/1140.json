@@ -1,0 +1,65 @@
+{
+  "id": "1140",
+  "title": "亲密数对",
+  "tags": [
+    "函数问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1140",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>键盘输入 <span class=\"katex math inline\">N</span> ，<span class=\"katex math inline\">N</span> 在 <span class=\"katex math inline\">2</span> 至 <span class=\"katex math inline\">2000</span> 之间，求 <span class=\"katex math inline\">2</span> 至 <span class=\"katex math inline\">N</span> 中的亲密数对，就是 <span class=\"katex math inline\">A</span> 的因子和等于 <span class=\"katex math inline\">B</span> ，<span class=\"katex math inline\">B</span> 的因子和等于 <span class=\"katex math inline\">A</span> ，且 <span class=\"katex math inline\">A \\neq B</span> 。 </p>\n<p>如 <span class=\"katex math inline\">48</span> 和 <span class=\"katex math inline\">75</span> 是亲密数对。<span class=\"katex math inline\">48</span> 的因子和为 <span class=\"katex math inline\">2+3+4+6+8+12+16+24=75</span> ，而 <span class=\"katex math inline\">75</span> 的因子和为 <span class=\"katex math inline\">3+5+15+25=48</span> 。</p>\n</div>            </div>",
+      "text": "键盘输入 N ，N 在 2 至 2000 之间，求 2 至 N 中的亲密数对，就是 A 的因子和等于 B ，B 的因子和等于 A ，且 A \\neq B 。 \n如 48 和 75 是亲密数对。48 的因子和为 2+3+4+6+8+12+16+24=75 ，而 75 的因子和为 3+5+15+25=48 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一行，为一个整数 <span class=\"katex math inline\">N</span> （ <span class=\"katex math inline\">2 \\le N \\le 2000</span> ）</p>\n</div>            </div>",
+      "text": "只有一行，为一个整数 N （ 2 \\le N \\le 2000 ）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出若干行，每行两个整数（用一个空格隔开）。</p>\n</div>            </div>",
+      "text": "输出若干行，每行两个整数（用一个空格隔开）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>200</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>48 75\r\n75 48\r\n140 195\r\n195 140</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>150</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>48 75\r\n75 48</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            200\n                        \n                        \n                            输出\n                            48 75\r\n75 48\r\n140 195\r\n195 140\n                        \n\n                                                    \n                                输入\n                                150\n                            \n                            \n                                输出\n                                48 75\r\n75 48"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\">请注意\n<p>请注意，求出的亲密数对的 <span class=\"katex math inline\">2</span> 个数都不应该超过 <span class=\"katex math inline\">n</span> 的范围。</p>\n</div>\n\n                    \n                </div>",
+      "text": "请注意\n请注意，求出的亲密数对的 2 个数都不应该超过 n 的范围。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>函数问题</p>\n</div>                </div>",
+      "text": "函数问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">函数问题</span></span></p>\n</div>                </div>",
+      "text": "函数问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "200",
+      "output": "48 75\r\n75 48\r\n140 195\r\n195 140"
+    },
+    {
+      "input": "150",
+      "output": "48 75\r\n75 48"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "8838",
+    "通过人数": "5473",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:15:18"
+}

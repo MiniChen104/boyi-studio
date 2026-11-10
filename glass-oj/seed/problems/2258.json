@@ -1,0 +1,61 @@
+{
+  "id": "2258",
+  "title": "勇士斗恶龙 (fight.cpp)",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2258",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>  小 X 穿越到了异世界，国王命令他招揽勇士，杀死恶龙，救回公主。<br>\n  异世界是高度数据化的。恶龙有一个攻击力 ATK，一个生命值 HP。类似的，每个勇士也有一个攻击力 Ai，一个生命值 Hi。<br>\n  战斗是回合制的，并且每次只能由一个勇士和恶龙单挑。战斗中，每个回合恶龙的生命值会减去这个勇士的攻击力，这个勇士的生命值会减去恶龙的攻击力。<br>\n  如果回合结束的时候恶龙的生命值小于等于 0，那么恶龙就被杀死了；如果这个勇士的生命值小于等于 0，那么这个勇士就被击败了，需要换上另一个勇士继续战斗。当然，如果恶龙还没有被杀死，勇士却全部被击败了，那么这场战役就彻底失败了。<br>\n  不过聪明的小 X 安排了一个特殊的战术：在一名勇士被击败后立刻让另一名勇士发起攻击，这样恶龙在勇士们的车轮战术下疲于招架，受到第二个勇士的伤害变为两倍，受到第三个勇士的伤害变为三倍……以此类推。<br>\n  现在一共有 n 名勇士报名，小 X 想问问你，如果合理安排勇士出战的顺序，最少要招揽多少名勇士才能杀死恶龙？  </p>\n</div>            </div>",
+      "text": "小 X 穿越到了异世界，国王命令他招揽勇士，杀死恶龙，救回公主。\n  异世界是高度数据化的。恶龙有一个攻击力 ATK，一个生命值 HP。类似的，每个勇士也有一个攻击力 Ai，一个生命值 Hi。\n  战斗是回合制的，并且每次只能由一个勇士和恶龙单挑。战斗中，每个回合恶龙的生命值会减去这个勇士的攻击力，这个勇士的生命值会减去恶龙的攻击力。\n  如果回合结束的时候恶龙的生命值小于等于 0，那么恶龙就被杀死了；如果这个勇士的生命值小于等于 0，那么这个勇士就被击败了，需要换上另一个勇士继续战斗。当然，如果恶龙还没有被杀死，勇士却全部被击败了，那么这场战役就彻底失败了。\n  不过聪明的小 X 安排了一个特殊的战术：在一名勇士被击败后立刻让另一名勇士发起攻击，这样恶龙在勇士们的车轮战术下疲于招架，受到第二个勇士的伤害变为两倍，受到第三个勇士的伤害变为三倍……以此类推。\n  现在一共有 n 名勇士报名，小 X 想问问你，如果合理安排勇士出战的顺序，最少要招揽多少名勇士才能杀死恶龙？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为一个正整数 <span class=\"katex math inline\">n</span>，表示一共有 <span class=\"katex math inline\">n</span> 名勇士报名。<br>\n第二行两个正整数 <span class=\"katex math inline\">ATK</span> 和 <span class=\"katex math inline\">HP</span> 表示恶龙的攻击力和生命值。<br>\n接下来共有 <span class=\"katex math inline\">n</span> 行，每行两个正整数 <span class=\"katex math inline\">A_i</span> 和 <span class=\"katex math inline\">H_i</span> 表示这名勇士的攻击力和生命值。  </p>\n</div>            </div>",
+      "text": "第一行为一个正整数 n，表示一共有 n 名勇士报名。\n第二行两个正整数 ATK 和 HP 表示恶龙的攻击力和生命值。\n接下来共有 n 行，每行两个正整数 A_i 和 H_i 表示这名勇士的攻击力和生命值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示最少要招揽多少名勇士才能杀死恶龙。<br>\n如果不可能杀死恶龙，输出<code>Fail</code>。  </p>\n</div>            </div>",
+      "text": "输出一个整数，表示最少要招揽多少名勇士才能杀死恶龙。\n如果不可能杀死恶龙，输出Fail。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n1 9\r\n2 2\r\n1 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n1 9\r\n2 2\r\n1 1\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>样例解释</strong><br>\n两名勇士都招揽。先派出 <span class=\"katex math inline\">2</span> 号勇士第一回合，恶龙生命值变为 <span class=\"katex math inline\">8</span>，勇士生命值变为 <span class=\"katex math inline\">0</span>。勇士被击败\n紧接着派出 <span class=\"katex math inline\">1</span> 号勇士<br>\n第二回合，恶龙生命值变为 <span class=\"katex math inline\">4</span>（两倍伤害），勇士生命值变为 <span class=\"katex math inline\">1</span><br>\n第三回合，恶龙生命值变为 <span class=\"katex math inline\">0</span>，勇士生命值变为 <span class=\"katex math inline\">0</span>。恶龙被杀死<br>\n勇士虽然也被击败了，但恶龙已经死了，所以还是胜利了！  </p>\n<p><strong>数据范围</strong><br>\n本题共有 <span class=\"katex math inline\">10</span> 个测试点<br>\n对于测试点 1-4 ：<span class=\"katex math inline\">n\\leq5</span>，<span class=\"katex math inline\">ATK,H_i,A_i\\leq10</span>，<span class=\"katex math inline\">HP\\leq 100</span><br>\n对于测试点 5-7 ：<span class=\"katex math inline\">n \\leq 1000</span>，<span class=\"katex math inline\">ATK,H_i,A_i \\leq 1000</span>，<span class=\"katex math inline\">HP \\leq 10^9</span><br>\n对于测试点 8-10 ：<span class=\"katex math inline\"> n \\leq 10^5 </span>，<span class=\"katex math inline\">ATK,H_i,A_i \\leq 10^6</span>，<span class=\"katex math inline\">HP \\leq 10^{18}</span>  </p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n两名勇士都招揽。先派出 2 号勇士第一回合，恶龙生命值变为 8，勇士生命值变为 0。勇士被击败\n紧接着派出 1 号勇士\n第二回合，恶龙生命值变为 4（两倍伤害），勇士生命值变为 1\n第三回合，恶龙生命值变为 0，勇士生命值变为 0。恶龙被杀死\n勇士虽然也被击败了，但恶龙已经死了，所以还是胜利了！  \n数据范围\n本题共有 10 个测试点\n对于测试点 1-4 ：n\\leq5，ATK,H_i,A_i\\leq10，HP\\leq 100\n对于测试点 5-7 ：n \\leq 1000，ATK,H_i,A_i \\leq 1000，HP \\leq 10^9\n对于测试点 8-10 ： n \\leq 10^5 ，ATK,H_i,A_i \\leq 10^6，HP \\leq 10^{18}"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2020常州市程序设计小能手(小学组)比赛试题 T5</p>\n</div>                </div>",
+      "text": "2020常州市程序设计小能手(小学组)比赛试题 T5"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n1 9\r\n2 2\r\n1 1",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "405",
+    "通过人数": "110",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:24"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1342",
+  "title": "怎样种树？",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1342",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>公园准备在小山上种桃树、梨树、苹果树，为了美观，总共准备种 <span class=\"katex math inline\">n</span> 棵树（ <span class=\"katex math inline\">n\\ge 6</span> 且 <span class=\"katex math inline\">n</span> 一定是 <span class=\"katex math inline\">6</span> 的倍数），要求三种树都得有，且每种树的数量都得是偶数，桃树的数量不能比梨树的数量多，梨树的数量不能比苹果树的数量多。</p>\n<p>请问有这三种树的数量分别有哪些可能的组合方法，从少到多分别数出桃树、梨树、苹果树可能的数量组合，每行 <span class=\"katex math inline\">1</span> 个方案。（ <span class=\"katex math inline\">6.1.99</span> ）</p>\n</div>            </div>",
+      "text": "公园准备在小山上种桃树、梨树、苹果树，为了美观，总共准备种 n 棵树（ n\\ge 6 且 n 一定是 6 的倍数），要求三种树都得有，且每种树的数量都得是偶数，桃树的数量不能比梨树的数量多，梨树的数量不能比苹果树的数量多。\n请问有这三种树的数量分别有哪些可能的组合方法，从少到多分别数出桃树、梨树、苹果树可能的数量组合，每行 1 个方案。（ 6.1.99 ）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> 。（ <span class=\"katex math inline\">n \\ge 6</span> 且是 <span class=\"katex math inline\">6</span> 的倍数）</p>\n</div>            </div>",
+      "text": "一个整数 n 。（ n \\ge 6 且是 6 的倍数）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>若干行的可能的组合方案，每行 <span class=\"katex math inline\">3</span> 个数，分别代表桃树、梨树、苹果树的可能的方案。</p>\n</div>            </div>",
+      "text": "若干行的可能的组合方案，每行 3 个数，分别代表桃树、梨树、苹果树的可能的方案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>18</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 2 14\r\n2 4 12\r\n2 6 10\r\n2 8 8\r\n4 4 10\r\n4 6 8\r\n6 6 6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            18\n                        \n                        \n                            输出\n                            2 2 14\r\n2 4 12\r\n2 6 10\r\n2 8 8\r\n4 4 10\r\n4 6 8\r\n6 6 6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "18",
+      "output": "2 2 14\r\n2 4 12\r\n2 6 10\r\n2 8 8\r\n4 4 10\r\n4 6 8\r\n6 6 6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "11949",
+    "通过人数": "8768",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:07"
+}

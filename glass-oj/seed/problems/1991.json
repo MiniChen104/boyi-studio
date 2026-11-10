@@ -1,0 +1,68 @@
+{
+  "id": "1991",
+  "title": "跳房子（jump）",
+  "tags": [
+    "noip复赛",
+    "动态规划",
+    "二分答案",
+    "单调队列"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1991",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>跳房子，也叫跳飞机，是一种世界性的儿童游戏，也是中国民间传统的体育游戏之一。</p>\n<p>跳房子的游戏规则如下：</p>\n<p>在地面上确定一个起点，然后在起点右侧画 <span class=\"katex math inline\">n</span> 个格子，这些格子都在同一条直线上。每个格子内有一个数字（整数），表示到达这个格子能得到的分数。玩家第一次从起点开始向右跳，跳到起点右侧的一个格子内。第二次再从当前位置继续向右跳，依此类推。规则规定：</p>\n<p>玩家每次都必须跳到当前位置右侧的一个格子内。玩家可以在任意时刻结束游戏，获得的分数为曾经到达过的格子中的数字之和。</p>\n<p>现在小 R 研发了一款弹跳机器人来参加这个游戏。但是这个机器人有一个非常严重的缺陷，它每次向右弹跳的距离只能为固定的 <span class=\"katex math inline\">d</span>。小 R 希望改进他的机器人，如果他花 <span class=\"katex math inline\">g</span> 个金币改进他的机器人，那么他的机器人灵活性就能增加 <span class=\"katex math inline\">g</span>，但是需要注意的是，每 次弹跳的距离至少为 <span class=\"katex math inline\">1</span>。具体而言，当 <span class=\"katex math inline\">g &lt; d</span> 时，他的机器人每次可以选择向右弹跳的距离为 <span class=\"katex math inline\">d-g,d-g+1,d-g+2,\\ldots,d+g-1,d+g</span>；否则当 <span class=\"katex math inline\">g \\geq d</span> 时，他的机器人每次可以选择向右弹跳的距离为 <span class=\"katex math inline\">1,2,3,\\ldots,d+g-1,d+g</span>。</p>\n<p>现在小 R 希望获得至少 <span class=\"katex math inline\">k</span> 分，请问他至少要花多少金币来改造他的机器人。</p>\n</div>            </div>",
+      "text": "跳房子，也叫跳飞机，是一种世界性的儿童游戏，也是中国民间传统的体育游戏之一。\n跳房子的游戏规则如下：\n在地面上确定一个起点，然后在起点右侧画 n 个格子，这些格子都在同一条直线上。每个格子内有一个数字（整数），表示到达这个格子能得到的分数。玩家第一次从起点开始向右跳，跳到起点右侧的一个格子内。第二次再从当前位置继续向右跳，依此类推。规则规定：\n玩家每次都必须跳到当前位置右侧的一个格子内。玩家可以在任意时刻结束游戏，获得的分数为曾经到达过的格子中的数字之和。\n现在小 R 研发了一款弹跳机器人来参加这个游戏。但是这个机器人有一个非常严重的缺陷，它每次向右弹跳的距离只能为固定的 d。小 R 希望改进他的机器人，如果他花 g 个金币改进他的机器人，那么他的机器人灵活性就能增加 g，但是需要注意的是，每 次弹跳的距离至少为 1。具体而言，当 g < d 时，他的机器人每次可以选择向右弹跳的距离为 d-g,d-g+1,d-g+2,\\ldots,d+g-1,d+g；否则当 g \\geq d 时，他的机器人每次可以选择向右弹跳的距离为 1,2,3,\\ldots,d+g-1,d+g。\n现在小 R 希望获得至少 k 分，请问他至少要花多少金币来改造他的机器人。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行三个正整数 <span class=\"katex math inline\">n,d,k</span>，分别表示格子的数目，改进前机器人弹跳的固定距离，以及希望至少获得的分数。相邻两个数之间用一个空格隔开。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行两个整数 <span class=\"katex math inline\">x_i,s_i</span>，分别表示起点到第 <span class=\"katex math inline\">i</span> 个格子的距离以及第 <span class=\"katex math inline\">i</span> 个格子的分数。两个数之间用一个空格隔开。保证 <span class=\"katex math inline\">x_i</span> 按递增顺序输入。</p>\n</div>            </div>",
+      "text": "第一行三个正整数 n,d,k，分别表示格子的数目，改进前机器人弹跳的固定距离，以及希望至少获得的分数。相邻两个数之间用一个空格隔开。\n接下来 n 行，每行两个整数 x_i,s_i，分别表示起点到第 i 个格子的距离以及第 i 个格子的分数。两个数之间用一个空格隔开。保证 x_i 按递增顺序输入。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共一行，一个整数，表示至少要花多少金币来改造他的机器人。若无论如何他都无法获得至少 <span class=\"katex math inline\">k</span> 分，输出 <span class=\"katex math inline\">-1</span>。</p>\n</div>            </div>",
+      "text": "共一行，一个整数，表示至少要花多少金币来改造他的机器人。若无论如何他都无法获得至少 k 分，输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7 4 10\r\n2 6\r\n5 -3\r\n10 3\r\n11 -3\r\n13 1\r\n17 6\r\n20 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>7 4 20\r\n2 6\r\n5 -3\r\n10 3\r\n11 -3\r\n13 1\r\n17 6\r\n20 2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>-1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7 4 10\r\n2 6\r\n5 -3\r\n10 3\r\n11 -3\r\n13 1\r\n17 6\r\n20 2\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                7 4 20\r\n2 6\r\n5 -3\r\n10 3\r\n11 -3\r\n13 1\r\n17 6\r\n20 2\n                            \n                            \n                                输出\n                                -1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>样例 1 说明</strong></p>\n<p>花费 <span class=\"katex math inline\">2</span> 个金币改进后，小 R 的机器人依次选择的向右弹跳的距离分别为 <span class=\"katex math inline\"> 2, 3, 5, 3, 4,3</span>，先后到达的位置分别为 <span class=\"katex math inline\">2, 5, 10, 13, 17, 20</span>，对应 <span class=\"katex math inline\"> 1, 2, 3, 5, 6, 7</span> 这 <span class=\"katex math inline\">6</span> 个格子。这些格子中的数字之和 <span class=\"katex math inline\"> 15</span> 即为小 R 获得的分数。</p>\n<p><strong>样例 2 说明</strong></p>\n<p>由于样例中 <span class=\"katex math inline\">7</span> 个格子组合的最大可能数字之和只有 <span class=\"katex math inline\">18</span>，所以无论如何都无法获得 <span class=\"katex math inline\">20</span> 分。</p>\n<p><strong>数据规模与约定</strong></p>\n<p>本题共 10 组测试数据，每组数据等分。</p>\n<p>对于全部的数据满足 <span class=\"katex math inline\">1 \\le n \\le 5\\times10^5</span>，<span class=\"katex math inline\">1 \\le d \\le2\\times10^3</span>，<span class=\"katex math inline\">1 \\le x_i, k \\le 10^9</span>，<span class=\"katex math inline\">|s_i| &lt; 10^5</span>。</p>\n<p>对于第 <span class=\"katex math inline\">1, 2</span> 组测试数据，保证 <span class=\"katex math inline\">n\\le 10</span>。</p>\n<p>对于第 <span class=\"katex math inline\">3, 4, 5</span> 组测试数据，保证 <span class=\"katex math inline\">n \\le 500</span>。</p>\n<p>对于第 <span class=\"katex math inline\">6, 7, 8</span> 组测试数据，保证 <span class=\"katex math inline\">d = 1</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 说明\n花费 2 个金币改进后，小 R 的机器人依次选择的向右弹跳的距离分别为  2, 3, 5, 3, 4,3，先后到达的位置分别为 2, 5, 10, 13, 17, 20，对应  1, 2, 3, 5, 6, 7 这 6 个格子。这些格子中的数字之和  15 即为小 R 获得的分数。\n样例 2 说明\n由于样例中 7 个格子组合的最大可能数字之和只有 18，所以无论如何都无法获得 20 分。\n数据规模与约定\n本题共 10 组测试数据，每组数据等分。\n对于全部的数据满足 1 \\le n \\le 5\\times10^5，1 \\le d \\le2\\times10^3，1 \\le x_i, k \\le 10^9，|s_i| < 10^5。\n对于第 1, 2 组测试数据，保证 n\\le 10。\n对于第 3, 4, 5 组测试数据，保证 n \\le 500。\n对于第 6, 7, 8 组测试数据，保证 d = 1。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>NOIP2017 普及组 T4</p>\n</div>                </div>",
+      "text": "NOIP2017 普及组 T4"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span><span class=\"label label-warning\">动态规划</span><span class=\"label label-info\">二分答案</span><span class=\"label label-danger\">单调队列</span></span></p>\n</div>                </div>",
+      "text": "noip复赛动态规划二分答案单调队列"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7 4 10\r\n2 6\r\n5 -3\r\n10 3\r\n11 -3\r\n13 1\r\n17 6\r\n20 2",
+      "output": "2"
+    },
+    {
+      "input": "7 4 20\r\n2 6\r\n5 -3\r\n10 3\r\n11 -3\r\n13 1\r\n17 6\r\n20 2",
+      "output": "-1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "2 秒",
+    "内存限制": "256 MB",
+    "提交次数": "725",
+    "通过人数": "365",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:27:02"
+}

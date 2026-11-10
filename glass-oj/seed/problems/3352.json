@@ -1,0 +1,63 @@
+{
+  "id": "3352",
+  "title": "密码合规检测",
+  "tags": [
+    "字符串",
+    "GESP三级",
+    "23年6月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3352",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>网站注册需要有用户名和密码，编写程序以检查用户输入密码的有效性。合规的密码应满足以下要求：</p>\n<p><span class=\"katex math inline\">1</span>、只能由 <code>a</code>-<code>z</code> 之间 <span class=\"katex math inline\">26</span> 个小写字母、<code>A</code>-<code>Z</code> 之间 <span class=\"katex math inline\">26</span> 个大写字母、<span class=\"katex math inline\">0-9</span> 之间 <span class=\"katex math inline\">10</span> 个数字以及<code>!@#$</code>四个特殊字符构成。</p>\n<p><span class=\"katex math inline\">2</span>、密码最短长度：<span class=\"katex math inline\">6</span> 个字符，密码最大长度：<span class=\"katex math inline\">12</span> 个字符。</p>\n<p>3、大写字母、小写字母和数字必须至少有其中两种，以及至少有四个特殊字符中的一个。</p>\n</div>            </div>",
+      "text": "网站注册需要有用户名和密码，编写程序以检查用户输入密码的有效性。合规的密码应满足以下要求：\n1、只能由 a-z 之间 26 个小写字母、A-Z 之间 26 个大写字母、0-9 之间 10 个数字以及!@#$四个特殊字符构成。\n2、密码最短长度：6 个字符，密码最大长度：12 个字符。\n3、大写字母、小写字母和数字必须至少有其中两种，以及至少有四个特殊字符中的一个。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行不含空格的字符串。约定长度不超过 <span class=\"katex math inline\">100</span>。该字符串被英文逗号分隔为多段，作为多组被检测密码。</p>\n</div>            </div>",
+      "text": "输入一行不含空格的字符串。约定长度不超过 100。该字符串被英文逗号分隔为多段，作为多组被检测密码。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出若干行，每行输出一组合规的密码。</p>\n<p>输出顺序以输入先后为序，即先输入则先输出。</p>\n</div>            </div>",
+      "text": "输出若干行，每行输出一组合规的密码。\n输出顺序以输入先后为序，即先输入则先输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>seHJ12!@,sjdkffH$123,sdf!@&amp;12HDHa!,123&amp;^YUhg@!</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>seHJ12!@\r\nsjdkffH$123</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            seHJ12!@,sjdkffH$123,sdf!@&12HDHa!,123&^YUhg@!\n                        \n                        \n                            输出\n                            seHJ12!@\r\nsjdkffH$123"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释 1】</p>\n<p>输入被英文逗号分为了四组被检测密码： <code>seHJ12!@</code> 、 <code>sjdkffH$123</code> 、\n <code>sdf!@&amp;12HDHa!</code> 、 <code>123&amp;^YUhg@!</code> 。其中， <code>sdf!@&amp;12HDHa!</code> 长度超过 12\n个字符，不合规；<code>123&amp;^YUhg@!</code> 包含四个特殊字符之外的字符 <code>^</code>，不合规。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释 1】\n输入被英文逗号分为了四组被检测密码： seHJ12!@ 、 sjdkffH$123 、\n sdf!@&12HDHa! 、 123&^YUhg@! 。其中， sdf!@&12HDHa! 长度超过 12\n个字符，不合规；123&^YUhg@! 包含四个特殊字符之外的字符 ^，不合规。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP2023年06三级</p>\n</div>                </div>",
+      "text": "GESP2023年06三级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span><span class=\"label label-warning\">GESP三级</span><span class=\"label label-info\">23年6月</span></span></p>\n</div>                </div>",
+      "text": "字符串GESP三级23年6月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "seHJ12!@,sjdkffH$123,sdf!@&12HDHa!,123&^YUhg@!",
+      "output": "seHJ12!@\r\nsjdkffH$123"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3970",
+    "通过人数": "1729",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:46"
+}

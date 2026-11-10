@@ -1,0 +1,62 @@
+{
+  "id": "1572",
+  "title": "黑色星期五（friday）",
+  "tags": [
+    "USACO",
+    "数组问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1572",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">13</span> 号又是一个星期五，那么 <span class=\"katex math inline\">13</span>号在星期五比在其他日子少吗？  </p>\n<p>为了回答这个问题，写一个程序，要求计算每个月的十三号落在周一到周日的次数。给出 <span class=\"katex math inline\">n</span> 年的一个周期，要求计算 <span class=\"katex math inline\">1900</span> 年 <span class=\"katex math inline\">1</span> 月 <span class=\"katex math inline\">1</span> 日至 <span class=\"katex math inline\">1900+n-1</span> 年 <span class=\"katex math inline\">12</span> 月 <span class=\"katex math inline\">31</span> 日中十三号落在周一到周日的次数。</p>\n<p>这里有一些你要知道的:</p>\n<p>1、<span class=\"katex math inline\">1900</span> 年 <span class=\"katex math inline\">1</span> 月 <span class=\"katex math inline\">1</span> 日是星期一。</p>\n<p>2、<span class=\"katex math inline\">4,6,11</span> 和 <span class=\"katex math inline\">9</span> 月有 <span class=\"katex math inline\">30</span> 天，其他月份除了 <span class=\"katex math inline\">2</span> 月都有 <span class=\"katex math inline\">31</span> 天，闰年 <span class=\"katex math inline\">2</span> 月有 <span class=\"katex math inline\">29</span> 天，平年 <span class=\"katex math inline\">2</span> 月有 <span class=\"katex math inline\">28</span> 天。</p>\n<p>3、年份可以被 <span class=\"katex math inline\">4</span> 整除的为闰年 ( <span class=\"katex math inline\">1992=4\\times498</span> 所以 <span class=\"katex math inline\">1992</span> 年是闰年，但是 <span class=\"katex math inline\">1990</span> 年不是闰年 )。</p>\n<p>4、以上规则不适合于世纪年。可以被 <span class=\"katex math inline\">400</span> 整除的世纪年为闰年，否则为平年。所以，<span class=\"katex math inline\">1700,1800,1900,2100</span> 年是平年，而 <span class=\"katex math inline\">2000</span> 年是闰年。</p>\n</div>            </div>",
+      "text": "13 号又是一个星期五，那么 13号在星期五比在其他日子少吗？  \n为了回答这个问题，写一个程序，要求计算每个月的十三号落在周一到周日的次数。给出 n 年的一个周期，要求计算 1900 年 1 月 1 日至 1900+n-1 年 12 月 31 日中十三号落在周一到周日的次数。\n这里有一些你要知道的:\n1、1900 年 1 月 1 日是星期一。\n2、4,6,11 和 9 月有 30 天，其他月份除了 2 月都有 31 天，闰年 2 月有 29 天，平年 2 月有 28 天。\n3、年份可以被 4 整除的为闰年 ( 1992=4\\times498 所以 1992 年是闰年，但是 1990 年不是闰年 )。\n4、以上规则不适合于世纪年。可以被 400 整除的世纪年为闰年，否则为平年。所以，1700,1800,1900,2100 年是平年，而 2000 年是闰年。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数 <span class=\"katex math inline\">n</span>。</p>\n<p>【数据范围】  </p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1\\le n \\le 400</span>。</p>\n</div>            </div>",
+      "text": "一个正整数 n。\n【数据范围】  \n对于 100\\% 的数据，1\\le n \\le 400。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>依次输出周六、日、一、二、三、四、五在 <span class=\"katex math inline\">13</span> 日出现的次数。</p>\n</div>            </div>",
+      "text": "依次输出周六、日、一、二、三、四、五在 13 日出现的次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>36 33 34 33 35 35 34</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            20\n                        \n                        \n                            输出\n                            36 33 34 33 35 35 34"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>\n\t按照题意模拟。\n</p>\n<p>\n\t【来源】\n</p>\n<p>\n\tUSACO 1.1.3\n</p>\n<p>\n\t<br></p><p></p>\n</div>\n\n                    \n                </div>",
+      "text": "按照题意模拟。\n\n\n\t【来源】\n\n\n\tUSACO 1.1.3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO 数组问题</p>\n</div>                </div>",
+      "text": "USACO 数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">USACO</span><span class=\"label label-warning\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "USACO数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "20",
+      "output": "36 33 34 33 35 35 34"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "728",
+    "通过人数": "523",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:21:16"
+}

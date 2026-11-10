@@ -1,0 +1,63 @@
+{
+  "id": "1944",
+  "title": "集合 Subset Sums",
+  "tags": [
+    "USACO",
+    "背包",
+    "递推"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1944",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于从 <span class=\"katex math inline\">1</span> ∼ <span class=\"katex math inline\">n</span> 的连续整数集合，能划分成两个子集合，且保证每个集合的数字和是相等的。举个例子，如果 <span class=\"katex math inline\">n</span>=<span class=\"katex math inline\">3</span>，对于{<span class=\"katex math inline\">1</span>,<span class=\"katex math inline\">2</span>,<span class=\"katex math inline\">3</span>} 能划分成两个子集合，每个子集合的所有数字和是相等的：<br>\n{<span class=\"katex math inline\">3</span>} 和 {<span class=\"katex math inline\">1,2</span>} 是唯一一种分法（交换集合位置被认为是同一种划分方案，因此不会增加划分方案总数）<br>\n如果 <span class=\"katex math inline\">n=7</span>，有四种方法能划分集合{<span class=\"katex math inline\">1,2,3,4,5,6,7</span>}，每一种分法的子集合各数字和是相等的:<br>\n<span class=\"katex math inline\">{1,6,7}</span> 和 <span class=\"katex math inline\">{2,3,4,5}</span><br>\n<span class=\"katex math inline\">{2,5,7}</span> 和 <span class=\"katex math inline\">{1,3,4,6}</span><br>\n<span class=\"katex math inline\">{3,4,7}</span> 和 <span class=\"katex math inline\">{1,2,5,6}</span><br>\n<span class=\"katex math inline\">{1,2,4,7}</span> 和 <span class=\"katex math inline\">{3,5,6}</span><br><br>\n给出<span class=\"katex math inline\">n</span>，你的程序应该输出划分方案总数。</p>\n</div>            </div>",
+      "text": "对于从 1 ∼ n 的连续整数集合，能划分成两个子集合，且保证每个集合的数字和是相等的。举个例子，如果 n=3，对于{1,2,3} 能划分成两个子集合，每个子集合的所有数字和是相等的：\n{3} 和 {1,2} 是唯一一种分法（交换集合位置被认为是同一种划分方案，因此不会增加划分方案总数）\n如果 n=7，有四种方法能划分集合{1,2,3,4,5,6,7}，每一种分法的子集合各数字和是相等的:\n{1,6,7} 和 {2,3,4,5}\n{2,5,7} 和 {1,3,4,6}\n{3,4,7} 和 {1,2,5,6}\n{1,2,4,7} 和 {3,5,6}\n给出n，你的程序应该输出划分方案总数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入文件只有一行，且只有一个整数 <span class=\"katex math inline\">n</span><br></p>\n</div>            </div>",
+      "text": "输入文件只有一行，且只有一个整数 n"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出划分方案总数。</p>\n</div>            </div>",
+      "text": "输出划分方案总数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据范围】<br>\n对于100% 的数据，1≤n≤39。<br></p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于100% 的数据，1≤n≤39。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO 背包 递推</p>\n</div>                </div>",
+      "text": "USACO 背包 递推"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">USACO</span><span class=\"label label-warning\">背包</span><span class=\"label label-info\">递推</span></span></p>\n</div>                </div>",
+      "text": "USACO背包递推"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1289",
+    "通过人数": "596",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:21"
+}

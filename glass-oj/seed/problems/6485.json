@@ -1,0 +1,60 @@
+{
+  "id": "6485",
+  "title": "停车费",
+  "tags": [
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6485",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>横琴口岸停车场按以下规则收费：</p>\n<ol><li>停车时间不超过 <span class=\"katex math inline\">30</span> 分钟（含 <span class=\"katex math inline\">30</span> 分钟），<strong>免费</strong>；</li>\n<li>超过 <span class=\"katex math inline\">30</span> 分钟的部分，按小时计费，<strong>不足 <span class=\"katex math inline\">1</span> 小时按 <span class=\"katex math inline\">1</span> 小时计算</strong>，每小时 <span class=\"katex math inline\">5</span> 元；</li>\n<li>单次停车收费<strong>最高 <span class=\"katex math inline\">40</span> 元</strong>。</li>\n</ol><p>现在给出停车分钟数 <span class=\"katex math inline\">m</span>，请计算应缴费用。</p>\n</div>            </div>",
+      "text": "横琴口岸停车场按以下规则收费：\n停车时间不超过 30 分钟（含 30 分钟），免费；\n超过 30 分钟的部分，按小时计费，不足 1 小时按 1 小时计算，每小时 5 元；\n单次停车收费最高 40 元。\n现在给出停车分钟数 m，请计算应缴费用。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数 <span class=\"katex math inline\">m</span>，表示停车分钟数。</p>\n</div>            </div>",
+      "text": "一行一个整数 m，表示停车分钟数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数，表示应缴费用（单位：元）。</p>\n</div>            </div>",
+      "text": "一行一个整数，表示应缴费用（单位：元）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>90</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1440</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>50</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            90\n                        \n                        \n                            输出\n                            5\n                        \n\n                                                    \n                                输入\n                                1440\n                            \n                            \n                                输出\n                                50"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 说明】</h4>\n<p><span class=\"katex math inline\">90 − 30 = 60</span> 分钟，正好 <span class=\"katex math inline\">1</span> 小时，<span class=\"katex math inline\">1 \\times 5 = 5</span> 元。</p>\n<h4>【样例 2 说明】</h4>\n<p><span class=\"katex math inline\">1440 − 30 = 1410</span> 分钟，按 <span class=\"katex math inline\">24</span> 小时算，<span class=\"katex math inline\">24 \\times 5 = 120</span> 元，超过上限，按 <span class=\"katex math inline\">40</span> 元收取。</p>\n<h4>数据范围</h4>\n<p><span class=\"katex math inline\">0 \\le m \\le 1440</span></p>\n<h4>考察点</h4>\n<p>if / else 分支；向上取整技巧 <code>(a + b - 1) / b</code>；上限封顶。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 1 说明】\n90 − 30 = 60 分钟，正好 1 小时，1 \\times 5 = 5 元。\n【样例 2 说明】\n1440 − 30 = 1410 分钟，按 24 小时算，24 \\times 5 = 120 元，超过上限，按 40 元收取。\n数据范围\n0 \\le m \\le 1440\n考察点\nif / else 分支；向上取整技巧 (a + b - 1) / b；上限封顶。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支</span></span></p>\n</div>                </div>",
+      "text": "分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "90",
+      "output": "5"
+    },
+    {
+      "input": "1440",
+      "output": "50"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "108",
+    "通过人数": "41",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:45"
+}

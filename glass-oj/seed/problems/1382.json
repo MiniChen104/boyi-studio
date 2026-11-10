@@ -1,0 +1,56 @@
+{
+  "id": "1382",
+  "title": "蛇形填充数组",
+  "tags": [
+    "二维数组"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1382",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>用数字 <span class=\"katex math inline\">1,2,3,4, \\dots ,n \\times n</span> 这 <span class=\"katex math inline\">n2</span> 个数蛇形填充规模为 <span class=\"katex math inline\">n \\times n</span> 的方阵。</p>\n<p>蛇形填充方法为：对于每一条左下-右上的斜线，从左上到右下依次编号 <span class=\"katex math inline\">1,2, \\dots ,2n-1</span> ；按编号从小到大的顺序，将数字从小到大填入各条斜线，其中编号为奇数的从左下向右上填写，编号为偶数的从右上到左下填写。</p>\n<p>比如 <span class=\"katex math inline\">n=4</span> 时，方阵填充为如下形式：</p>\n<pre><code>    1    2    6    7\n    3    5    8   13\n    4    9   12   14\n   10   11   15   16\n</code></pre>\n</div>            </div>",
+      "text": "用数字 1,2,3,4, \\dots ,n \\times n 这 n2 个数蛇形填充规模为 n \\times n 的方阵。\n蛇形填充方法为：对于每一条左下-右上的斜线，从左上到右下依次编号 1,2, \\dots ,2n-1 ；按编号从小到大的顺序，将数字从小到大填入各条斜线，其中编号为奇数的从左下向右上填写，编号为偶数的从右上到左下填写。\n比如 n=4 时，方阵填充为如下形式：\n    1    2    6    7\n    3    5    8   13\n    4    9   12   14\n   10   11   15   16"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个不大于 <span class=\"katex math inline\">10</span> 的正整数 <span class=\"katex math inline\">n</span> ，表示方阵的行数。</p>\n</div>            </div>",
+      "text": "输入一个不大于 10 的正整数 n ，表示方阵的行数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出该方阵，数字场宽为 <span class=\"katex math inline\">5</span> 。</p>\n</div>            </div>",
+      "text": "输出该方阵，数字场宽为 5 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>    1    2    6    7\r\n    3    5    8   13\r\n    4    9   12   14\r\n   10   11   15   16</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\n                        \n                        \n                            输出\n                                1    2    6    7\r\n    3    5    8   13\r\n    4    9   12   14\r\n   10   11   15   16"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二维数组</p>\n</div>                </div>",
+      "text": "二维数组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4",
+      "output": "    1    2    6    7\r\n    3    5    8   13\r\n    4    9   12   14\r\n   10   11   15   16"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "1186",
+    "通过人数": "601",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:18:40"
+}

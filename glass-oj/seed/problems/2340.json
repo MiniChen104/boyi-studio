@@ -1,0 +1,61 @@
+{
+  "id": "2340",
+  "title": "Hello Lanqiao",
+  "tags": [
+    "蓝桥杯等级考试"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2340",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>【具体要求】<br>\n请在电脑屏幕上输出字符串“Hello Lanqiao”。</p>\n</div>            </div>",
+      "text": "【具体要求】\n请在电脑屏幕上输出字符串“Hello Lanqiao”。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无 </p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出字符串“Hello Lanqiao”</p>\n</div>            </div>",
+      "text": "输出字符串“Hello Lanqiao”"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>无 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Hello Lanqiao </pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            无 \n                        \n                        \n                            输出\n                            Hello Lanqiao"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>输出的字符串满足要求：50 分 </p>\n<pre><code>蓝桥等考 C++组单选题样题（一级） \n以下关于主函数的描述错误的一项是（ ）。\nA 每个 C++程序有多个主函数\nB 主函数的内容写在“{ }”之间\nC 主函数是 C++程序运行的起点\nD main 后面的“( )”表示它是一个函数\n【答案】 A\n【解析】每个 C++程序有且仅有一个主函数。\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "输出的字符串满足要求：50 分 \n蓝桥等考 C++组单选题样题（一级） \n以下关于主函数的描述错误的一项是（ ）。\nA 每个 C++程序有多个主函数\nB 主函数的内容写在“{ }”之间\nC 主函数是 C++程序运行的起点\nD main 后面的“( )”表示它是一个函数\n【答案】 A\n【解析】每个 C++程序有且仅有一个主函数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥等考 C++组编程题样题（一级）</p>\n</div>                </div>",
+      "text": "蓝桥等考 C++组编程题样题（一级）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯等级考试</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "无 ",
+      "output": "Hello Lanqiao "
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "3138",
+    "通过人数": "2424",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:14"
+}

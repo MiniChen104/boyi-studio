@@ -1,0 +1,52 @@
+{
+  "id": "4849",
+  "title": "最后一个单词的长度",
+  "tags": [
+    "蓝桥等考",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4849",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出一个包含若干个单词的字符串，请编写程序计算出最后一个单词的长度。</p>\n<p>例如：</p>\n<p>输入的字符串为：<code>bike mask friend chick menu</code></p>\n<p>其中，最后一个单词 <code>menu</code>的长度为 <span class=\"katex math inline\">4</span>，故输出 <span class=\"katex math inline\">4</span>。</p>\n</div>            </div>",
+      "text": "给出一个包含若干个单词的字符串，请编写程序计算出最后一个单词的长度。\n例如：\n输入的字符串为：bike mask friend chick menu\n其中，最后一个单词 menu的长度为 4，故输出 4。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个字符串。</p>\n</div>            </div>",
+      "text": "输入一个字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出字符串最后一组单词长度。</p>\n</div>            </div>",
+      "text": "输出字符串最后一组单词长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>bike mask friend chick menu</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            bike mask friend chick menu\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "bike mask friend chick menu",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "171",
+    "通过人数": "78",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:04"
+}

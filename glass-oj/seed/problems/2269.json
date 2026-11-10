@@ -1,0 +1,56 @@
+{
+  "id": "2269",
+  "title": "最小新整数",
+  "tags": [
+    "电子学会等级考试"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2269",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个十进制正整数n(0 &lt; n &lt; 1000000000)，每个数位上数字均不为0。n的位数为m。 现在从m位中删除k位(0 &lt; k &lt; m)，求生成的新整数最小为多少？ \n例如: n = 9128456, k = 2, 则生成的新整数最小为12456</p>\n</div>            </div>",
+      "text": "给定一个十进制正整数n(0 < n < 1000000000)，每个数位上数字均不为0。n的位数为m。 现在从m位中删除k位(0 < k < m)，求生成的新整数最小为多少？ \n例如: n = 9128456, k = 2, 则生成的新整数最小为12456"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行t, 表示有t组数据； 接下来t行，每一行表示一组测试数据，每组测试数据包含两个数字n, k。</p>\n</div>            </div>",
+      "text": "第一行t, 表示有t组数据； 接下来t行，每一行表示一组测试数据，每组测试数据包含两个数字n, k。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>t行，每行一个数字，表示从n中删除k位后得到的最小整数。</p>\n</div>            </div>",
+      "text": "t行，每行一个数字，表示从n中删除k位后得到的最小整数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n9128456 2\r\n1444 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>12456\r\n1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n9128456 2\r\n1444 3\n                        \n                        \n                            输出\n                            12456\r\n1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会五级</p>\n</div>                </div>",
+      "text": "电子学会五级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n9128456 2\r\n1444 3",
+      "output": "12456\r\n1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "369",
+    "通过人数": "175",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:32"
+}

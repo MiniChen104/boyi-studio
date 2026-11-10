@@ -1,0 +1,58 @@
+{
+  "id": "1433",
+  "title": "走出迷宫的最少步数2",
+  "tags": [
+    "深搜",
+    "递归",
+    "广搜"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1433",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>当你站在一个迷宫里的时候，往往会被错综复杂的道路弄得失去方向感，如果你能得到迷宫地图，事情就会变得非常简单。</p>\n<p>假设你已经得到了一个 <span class=\"katex math inline\">n \\times m</span> 的迷宫的图纸，请你找出从起点到出口的最短路。</p>\n</div>            </div>",
+      "text": "当你站在一个迷宫里的时候，往往会被错综复杂的道路弄得失去方向感，如果你能得到迷宫地图，事情就会变得非常简单。\n假设你已经得到了一个 n \\times m 的迷宫的图纸，请你找出从起点到出口的最短路。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行是两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> (<span class=\"katex math inline\">1 \\le n,m \\le 100</span>)，表示迷宫的行数和列数。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行一个长为 <span class=\"katex math inline\">m</span> 的字符串，表示整个迷宫的布局。</p>\n<p>字符 <code>.</code> 表示空地，<code>#</code> 表示墙，<code>S</code> 表示起点 <code>T</code> 表示出口。</p>\n<p>本题数据保证，从起点到出口存在至少一条合法的路径。</p>\n</div>            </div>",
+      "text": "第一行是两个整数 n 和 m (1 \\le n,m \\le 100)，表示迷宫的行数和列数。\n接下来 n 行，每行一个长为 m 的字符串，表示整个迷宫的布局。\n字符 . 表示空地，# 表示墙，S 表示起点 T 表示出口。\n本题数据保证，从起点到出口存在至少一条合法的路径。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出从起点到出口最少需要走的步数。</p>\n</div>            </div>",
+      "text": "输出从起点到出口最少需要走的步数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3\r\nS#T\r\n.#.\r\n...</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\r\nS#T\r\n.#.\r\n...\n                        \n                        \n                            输出\n                            6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>深搜 递归 广搜</p>\n</div>                </div>",
+      "text": "深搜 递归 广搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">深搜</span><span class=\"label label-warning\">递归</span><span class=\"label label-info\">广搜</span></span></p>\n</div>                </div>",
+      "text": "深搜递归广搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3\r\nS#T\r\n.#.\r\n...",
+      "output": "6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "13958",
+    "通过人数": "7186",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:19:24"
+}

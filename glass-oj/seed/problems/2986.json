@@ -1,0 +1,62 @@
+{
+  "id": "2986",
+  "title": "解密（decode）[CSP-J 2022]",
+  "tags": [
+    "csp-j",
+    "数学"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2986",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个正整数 <span class=\"katex math inline\">k</span>，有 <span class=\"katex math inline\">k</span> 次询问，每次给定三个正整数 <span class=\"katex math inline\">n_i, e_i, d_i</span>，求两个正整数 <span class=\"katex math inline\">p_i, q_i</span>，使 <span class=\"katex math inline\">n_i = p_i \\times q_i</span>、<span class=\"katex math inline\">e_i \\times d_i = (p_i - 1)(q_i - 1) + 1</span>。</p>\n</div>            </div>",
+      "text": "给定一个正整数 k，有 k 次询问，每次给定三个正整数 n_i, e_i, d_i，求两个正整数 p_i, q_i，使 n_i = p_i \\times q_i、e_i \\times d_i = (p_i - 1)(q_i - 1) + 1。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个正整数 <span class=\"katex math inline\">k</span>，表示有 <span class=\"katex math inline\">k</span> 次询问。</p>\n<p>接下来 <span class=\"katex math inline\">k</span> 行，第 <span class=\"katex math inline\">i</span> 行三个正整数 <span class=\"katex math inline\">n_i, d_i, e_i</span>。</p>\n</div>            </div>",
+      "text": "第一行一个正整数 k，表示有 k 次询问。\n接下来 k 行，第 i 行三个正整数 n_i, d_i, e_i。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">k</span> 行，每行两个正整数 <span class=\"katex math inline\">p_i, q_i</span> 表示答案。</p>\n<p>为使输出统一，你应当保证 <span class=\"katex math inline\">p_i \\leq q_i</span>。</p>\n<p>如果无解，请输出 <code>NO</code>。</p>\n</div>            </div>",
+      "text": "输出 k 行，每行两个正整数 p_i, q_i 表示答案。\n为使输出统一，你应当保证 p_i \\leq q_i。\n如果无解，请输出 NO。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10\r\n770 77 5\r\n633 1 211\r\n545 1 499\r\n683 3 227\r\n858 3 257\r\n723 37 13\r\n572 26 11\r\n867 17 17\r\n829 3 263\r\n528 4 109</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 385\r\nNO\r\nNO\r\nNO\r\n11 78\r\n3 241\r\n2 286\r\nNO\r\nNO\r\n6 88</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\r\n770 77 5\r\n633 1 211\r\n545 1 499\r\n683 3 227\r\n858 3 257\r\n723 37 13\r\n572 26 11\r\n867 17 17\r\n829 3 263\r\n528 4 109\n                        \n                        \n                            输出\n                            2 385\r\nNO\r\nNO\r\nNO\r\n11 78\r\n3 241\r\n2 286\r\nNO\r\nNO\r\n6 88"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例 #2】</strong></p>\n<p>见附件中的 <code>decode/decode2.in</code> 与 <code>decode/decode2.ans</code>。</p>\n<p><strong>【样例 #3】</strong></p>\n<p>见附件中的 <code>decode/decode3.in</code> 与 <code>decode/decode3.ans</code>。</p>\n<p><strong>【样例 #4】</strong></p>\n<p>见附件中的 <code>decode/decode4.in</code> 与 <code>decode/decode4.ans</code>。</p>\n<p><strong>【数据范围】</strong></p>\n<p>以下记 <span class=\"katex math inline\">m = n - e \\times d + 2</span>。</p>\n<p>保证对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 \\leq k \\leq {10}^5</span>，对于任意的 <span class=\"katex math inline\">1 \\leq i \\leq k</span>，<span class=\"katex math inline\">1 \\leq n_i \\leq {10}^{18}</span>，<span class=\"katex math inline\">1 \\leq e_i \\times d_i \\leq {10}^{18}</span>\n，<span class=\"katex math inline\">1 \\leq m \\leq {10}^9</span>。</p>\n<table><thead><tr><th>测试点编号</th><th><span class=\"katex math inline\">k \\leq</span></th><th><span class=\"katex math inline\">n \\leq</span></th><th><span class=\"katex math inline\">m \\leq</span></th><th>特殊性质</th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1</span></td><td><span class=\"katex math inline\">10^3</span></td><td><span class=\"katex math inline\">10^3</span></td><td><span class=\"katex math inline\">10^3</span></td><td>保证有解</td></tr><tr><td><span class=\"katex math inline\">2</span></td><td><span class=\"katex math inline\">10^3</span></td><td><span class=\"katex math inline\">10^3</span></td><td><span class=\"katex math inline\">10^3</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">3</span></td><td><span class=\"katex math inline\">10^3</span></td><td><span class=\"katex math inline\">10^9</span></td><td><span class=\"katex math inline\">6\\times 10^4</span></td><td>保证有解</td></tr><tr><td><span class=\"katex math inline\">4</span></td><td><span class=\"katex math inline\">10^3</span></td><td><span class=\"katex math inline\">10^9</span></td><td><span class=\"katex math inline\">6\\times 10^4</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">5</span></td><td><span class=\"katex math inline\">10^3</span></td><td><span class=\"katex math inline\">10^9</span></td><td><span class=\"katex math inline\">10^9</span></td><td>保证有解</td></tr><tr><td><span class=\"katex math inline\">6</span></td><td><span class=\"katex math inline\">10^3</span></td><td><span class=\"katex math inline\">10^9</span></td><td><span class=\"katex math inline\">10^9</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">7</span></td><td><span class=\"katex math inline\">10^5</span></td><td><span class=\"katex math inline\">10^{18}</span></td><td><span class=\"katex math inline\">10^9</span></td><td>保证若有解则 <span class=\"katex math inline\">p=q</span></td></tr><tr><td><span class=\"katex math inline\">8</span></td><td><span class=\"katex math inline\">10^5</span></td><td><span class=\"katex math inline\">10^{18}</span></td><td><span class=\"katex math inline\">10^9</span></td><td>保证有解</td></tr><tr><td><span class=\"katex math inline\">9</span></td><td><span class=\"katex math inline\">10^5</span></td><td><span class=\"katex math inline\">10^{18}</span></td><td><span class=\"katex math inline\">10^9</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">10</span></td><td><span class=\"katex math inline\">10^5</span></td><td><span class=\"katex math inline\">10^{18}</span></td><td><span class=\"katex math inline\">10^9</span></td><td>无</td></tr></tbody></table></div>\n\n                                            <p>\n                            <h4><b>附件下载</b></h4>\n                        </p>\n                        <p>\n                            \n                                decode.zip                            \n                            (1.74 KB)\n                        </p>\n                    \n                </div>",
+      "text": "【样例 #2】\n见附件中的 decode/decode2.in 与 decode/decode2.ans。\n【样例 #3】\n见附件中的 decode/decode3.in 与 decode/decode3.ans。\n【样例 #4】\n见附件中的 decode/decode4.in 与 decode/decode4.ans。\n【数据范围】\n以下记 m = n - e \\times d + 2。\n保证对于 100\\% 的数据，1 \\leq k \\leq {10}^5，对于任意的 1 \\leq i \\leq k，1 \\leq n_i \\leq {10}^{18}，1 \\leq e_i \\times d_i \\leq {10}^{18}\n，1 \\leq m \\leq {10}^9。\n测试点编号k \\leqn \\leqm \\leq特殊性质110^310^310^3保证有解210^310^310^3无310^310^96\\times 10^4保证有解410^310^96\\times 10^4无510^310^910^9保证有解610^310^910^9无710^510^{18}10^9保证若有解则 p=q810^510^{18}10^9保证有解910^510^{18}10^9无1010^510^{18}10^9无\n\n                                            \n                            附件下载\n                        \n                        \n                            \n                                decode.zip                            \n                            (1.74 KB)"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>csp-j 2022 T2</p>\n</div>                </div>",
+      "text": "csp-j 2022 T2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">csp-j</span><span class=\"label label-warning\">数学</span></span></p>\n</div>                </div>",
+      "text": "csp-j数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10\r\n770 77 5\r\n633 1 211\r\n545 1 499\r\n683 3 227\r\n858 3 257\r\n723 37 13\r\n572 26 11\r\n867 17 17\r\n829 3 263\r\n528 4 109",
+      "output": "2 385\r\nNO\r\nNO\r\nNO\r\n11 78\r\n3 241\r\n2 286\r\nNO\r\nNO\r\n6 88"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "3937",
+    "通过人数": "971",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:44"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "4853",
+  "title": "矩阵外圈整数之和",
+  "tags": [
+    "蓝桥等考",
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4853",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个 <span class=\"katex math inline\">N * N</span>的整数矩阵，计算矩阵最外圈整数之和。</p>\n<p>例如：<span class=\"katex math inline\">N=3</span>，整数矩阵</p>\n<pre><code>1 2 3\n4 5 6\n7 8 9\n</code></pre>\n<p>最外圈整数之和为 <span class=\"katex math inline\">40（40=1+2+3+6+9+8+7+4）</span>。</p>\n</div>            </div>",
+      "text": "给定一个 N * N的整数矩阵，计算矩阵最外圈整数之和。\n例如：N=3，整数矩阵\n1 2 3\n4 5 6\n7 8 9\n\n最外圈整数之和为 40（40=1+2+3+6+9+8+7+4）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数 <span class=\"katex math inline\">N</span>,代表行列。（<span class=\"katex math inline\">1 \\le N \\le 20</span>）</p>\n</div>            </div>",
+      "text": "输入一个整数 N,代表行列。（1 \\le N \\le 20）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出矩阵最外圈整数之和</p>\n</div>            </div>",
+      "text": "输出矩阵最外圈整数之和"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1 2 3\r\n4 5 6\r\n7 8 9\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>40</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1 2 3\r\n4 5 6\r\n7 8 9\r\n\n                        \n                        \n                            输出\n                            40"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1 2 3\r\n4 5 6\r\n7 8 9\r\n",
+      "output": "40"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "277",
+    "通过人数": "175",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:01"
+}

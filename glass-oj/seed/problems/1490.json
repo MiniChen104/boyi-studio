@@ -1,0 +1,56 @@
+{
+  "id": "1490",
+  "title": "坐标排序",
+  "tags": [
+    "容器"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1490",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入 <span class=\"katex math inline\">n</span> 个不同的坐标，按 <span class=\"katex math inline\">x</span> 轴的值从小到大排序，如果 <span class=\"katex math inline\">x</span> 相同，则按照 <span class=\"katex math inline\">y</span> 排序。</p>\n</div>            </div>",
+      "text": "输入 n 个不同的坐标，按 x 轴的值从小到大排序，如果 x 相同，则按照 y 排序。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行是一个整数 <span class=\"katex math inline\">n</span>（ <span class=\"katex math inline\">n≤10000</span> ）。</p>\n<p>接下来有 <span class=\"katex math inline\">n</span> 行，每行有 <span class=\"katex math inline\">2</span> 个整数，代表了 <span class=\"katex math inline\">1</span> 个点的坐标。</p>\n</div>            </div>",
+      "text": "第 1 行是一个整数 n（ n≤10000 ）。\n接下来有 n 行，每行有 2 个整数，代表了 1 个点的坐标。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">n</span> 行，每行有 <span class=\"katex math inline\">2</span> 个整数，输出排序后的 <span class=\"katex math inline\">n</span> 个坐标。</p>\n</div>            </div>",
+      "text": "输出 n 行，每行有 2 个整数，输出排序后的 n 个坐标。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n-1 -1\r\n1 1\r\n-1 1\r\n1 -1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>-1 -1\r\n-1 1\r\n1 -1\r\n1 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n-1 -1\r\n1 1\r\n-1 1\r\n1 -1\n                        \n                        \n                            输出\n                            -1 -1\r\n-1 1\r\n1 -1\r\n1 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>容器</p>\n</div>                </div>",
+      "text": "容器"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">容器</span></span></p>\n</div>                </div>",
+      "text": "容器"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n-1 -1\r\n1 1\r\n-1 1\r\n1 -1",
+      "output": "-1 -1\r\n-1 1\r\n1 -1\r\n1 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "14243",
+    "通过人数": "9754",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:20:11"
+}

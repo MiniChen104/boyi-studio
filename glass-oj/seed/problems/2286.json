@@ -1,0 +1,57 @@
+{
+  "id": "2286",
+  "title": "统一文件名",
+  "tags": [
+    "电子学会等级考试",
+    "字符型"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2286",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小A在命名文件的时候经常不注意大小写，格式比较混乱。现要求你写一个程序将目录下的文件统一规范的格式，即文件名的第一个字符如果是字母要大写，其他字母小写。如将 <span class=\"katex math inline\">Test</span>、<span class=\"katex math inline\">test</span> 整理成 <span class=\"katex math inline\">Test</span> 。</p>\n</div>            </div>",
+      "text": "小A在命名文件的时候经常不注意大小写，格式比较混乱。现要求你写一个程序将目录下的文件统一规范的格式，即文件名的第一个字符如果是字母要大写，其他字母小写。如将 Test、test 整理成 Test 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个数字 <span class=\"katex math inline\">n</span> ，表示有 <span class=\"katex math inline\">n</span> 个文件名要统一，<span class=\"katex math inline\">n</span> 不超过 <span class=\"katex math inline\">100</span> 。 </p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行一个单词，长度不超过 <span class=\"katex math inline\">20</span>，表示文件的名字。文件名由字母、数字和-组成。</p>\n</div>            </div>",
+      "text": "第一行一个数字 n ，表示有 n 个文件名要统一，n 不超过 100 。 \n接下来 n 行，每行一个单词，长度不超过 20，表示文件的名字。文件名由字母、数字和-组成。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 行，每行一个单词，对应统一后的文件名。</p>\n</div>            </div>",
+      "text": "n 行，每行一个单词，对应统一后的文件名。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\nTest\r\ndata\r\n2-TEST\r\nproblem-6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Test\r\nData\r\n2-test\r\nProblem-6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\nTest\r\ndata\r\n2-TEST\r\nproblem-6\n                        \n                        \n                            输出\n                            Test\r\nData\r\n2-test\r\nProblem-6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会二级 202106真题</p>\n</div>                </div>",
+      "text": "电子学会二级 202106真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span><span class=\"label label-warning\">字符型</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试字符型"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\nTest\r\ndata\r\n2-TEST\r\nproblem-6",
+      "output": "Test\r\nData\r\n2-test\r\nProblem-6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1470",
+    "通过人数": "898",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:45"
+}

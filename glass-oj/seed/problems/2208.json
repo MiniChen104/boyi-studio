@@ -1,0 +1,57 @@
+{
+  "id": "2208",
+  "title": "最大可达点",
+  "tags": [
+    "图论",
+    "邻接表"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2208",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">A</span> 国有 <span class=\"katex math inline\">n</span> 个城市（编号为 <span class=\"katex math inline\">1</span>~<span class=\"katex math inline\">n</span>），城市之间修建了 <span class=\"katex math inline\">m</span> 条单向的高速公路。请求出从每个城市能到达的编号最大的城市是哪个城市？</p>\n<p>例如下图所示的地图，<span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">4</span> <span class=\"katex math inline\">5</span> 号城市分别能到达的编号最大的城市为：<span class=\"katex math inline\">3</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">5</span> <span class=\"katex math inline\">5</span>。</p>\n<p><img src=\"https://assets.boyi.local/59f4fd020f5e8897478a9c46.jpg\"></p>\n</div>            </div>",
+      "text": "A 国有 n 个城市（编号为 1~n），城市之间修建了 m 条单向的高速公路。请求出从每个城市能到达的编号最大的城市是哪个城市？\n例如下图所示的地图，1 2 3 4 5 号城市分别能到达的编号最大的城市为：3 3 3 5 5。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行有 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>，分别代表城市数量和高速公路的数量。（<span class=\"katex math inline\">1≤n≤10^5</span>，<span class=\"katex math inline\">1≤m≤10^5</span>）</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行有 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span>，分别代表从 <span class=\"katex math inline\">x</span> 号城市到 <span class=\"katex math inline\">y</span> 号城市有一条单向的高速公路。（<span class=\"katex math inline\">1≤x,y≤n</span>）</p>\n</div>            </div>",
+      "text": "第 1 行有 2 个整数 n 和 m，分别代表城市数量和高速公路的数量。（1≤n≤10^5，1≤m≤10^5）\n接下来 m 行，每行有 2 个整数 x 和 y，分别代表从 x 号城市到 y 号城市有一条单向的高速公路。（1≤x,y≤n）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">n</span> 个整数，用空格隔开，分别代表编号为 <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">4</span> <span class=\"katex math inline\">...</span> <span class=\"katex math inline\">n</span> 的城市，按照给定的数据，能到达的最大编号的城市。</p>\n</div>            </div>",
+      "text": "输出 n 个整数，用空格隔开，分别代表编号为 1 2 3 4 ... n 的城市，按照给定的数据，能到达的最大编号的城市。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 7\r\n1 2\r\n2 3\r\n3 1\r\n4 3\r\n5 3\r\n4 5\r\n5 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3 3 3 5 5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 7\r\n1 2\r\n2 3\r\n3 1\r\n4 3\r\n5 3\r\n4 5\r\n5 1\n                        \n                        \n                            输出\n                            3 3 3 5 5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>图论</p>\n</div>                </div>",
+      "text": "图论"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span><span class=\"label label-warning\">邻接表</span></span></p>\n</div>                </div>",
+      "text": "图论邻接表"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 7\r\n1 2\r\n2 3\r\n3 1\r\n4 3\r\n5 3\r\n4 5\r\n5 1",
+      "output": "3 3 3 5 5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "505",
+    "通过人数": "257",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:47"
+}

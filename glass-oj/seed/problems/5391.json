@@ -1,0 +1,67 @@
+{
+  "id": "5391",
+  "title": "最长连续段",
+  "tags": [
+    "GESP四级",
+    "贪心",
+    "25年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5391",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于 <span class=\"katex math inline\">k</span> 个整数构成的数组 <span class=\"katex math inline\">[b_1, b_2, \\ldots, b_k]</span>，如果对 <span class=\"katex math inline\">1 \\leq i &lt; k</span> 都有 <span class=\"katex math inline\">b_{i+1} = b_i + 1</span>，那么称数组 <span class=\"katex math inline\">b</span> 是一个连续段。</p>\n<p>给定由 <span class=\"katex math inline\">n</span> 个整数构成的数组 <span class=\"katex math inline\">[a_1, a_2, \\ldots, a_n]</span>，你可以任意重排数组 <span class=\"katex math inline\">a</span> 中元素顺序。请问在重排顺序之后，<span class=\"katex math inline\">a</span> 所有是连续段的子数组中，最长的子数组长度是多少？</p>\n<p>例如，对于数组 <span class=\"katex math inline\">[1, 0, 2, 4]</span>，可以将其重排为 <span class=\"katex math inline\">[4, 0, 1, 2]</span>，有以下 <span class=\"katex math inline\">10</span> 个子数组：</p>\n<p><span class=\"katex math multi-line\">[4], [0], [1], [2], [4, 0], [0, 1], [1, 2], [4, 0, 1], [0, 1, 2], [4, 0, 1, 2]</span></p>\n<p>其中除 <span class=\"katex math inline\">[4, 0], [4, 0, 1], [4, 0, 1, 2]</span> 以外的子数组均是连续段，因此是连续段的子数组中，最长子数组长度为 3。</p>\n</div>            </div>",
+      "text": "对于 k 个整数构成的数组 [b_1, b_2, \\ldots, b_k]，如果对 1 \\leq i < k 都有 b_{i+1} = b_i + 1，那么称数组 b 是一个连续段。\n给定由 n 个整数构成的数组 [a_1, a_2, \\ldots, a_n]，你可以任意重排数组 a 中元素顺序。请问在重排顺序之后，a 所有是连续段的子数组中，最长的子数组长度是多少？\n例如，对于数组 [1, 0, 2, 4]，可以将其重排为 [4, 0, 1, 2]，有以下 10 个子数组：\n[4], [0], [1], [2], [4, 0], [0, 1], [1, 2], [4, 0, 1], [0, 1, 2], [4, 0, 1, 2]\n其中除 [4, 0], [4, 0, 1], [4, 0, 1, 2] 以外的子数组均是连续段，因此是连续段的子数组中，最长子数组长度为 3。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个正整数 <span class=\"katex math inline\">n</span>，表示数组长度。</p>\n<p>第二行， <span class=\"katex math inline\">n</span>个整数 <span class=\"katex math inline\">a_1,a_2,...a_n</span>，表示数组中的整数。</p>\n</div>            </div>",
+      "text": "第一行，一个正整数 n，表示数组长度。\n第二行， n个整数 a_1,a_2,...a_n，表示数组中的整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数，表示数组 <span class=\"katex math inline\">a</span> 重排顺序后，所有是连续段的子数组的最长长度。</p>\n</div>            </div>",
+      "text": "一行，一个整数，表示数组 a 重排顺序后，所有是连续段的子数组的最长长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n1 0 2 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>9\r\n9 9 8 2 4 4 3 5 3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>4</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n1 0 2 4\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                9\r\n9 9 8 2 4 4 3 5 3\n                            \n                            \n                                输出\n                                4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 8</span>。</p>\n<p>对于所有测试点，保证  <span class=\"katex math inline\">1 \\le n \\le 10^5，-10^9 \\le a_i \\le  10^9 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 40\\% 的测试点，保证 1 \\le n \\le 8。\n对于所有测试点，保证  1 \\le n \\le 10^5，-10^9 \\le a_i \\le  10^9 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 2025年09月认证 C++4级真题</p>\n</div>                </div>",
+      "text": "GESP 2025年09月认证 C++4级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">贪心</span><span class=\"label label-info\">25年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级贪心25年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n1 0 2 4",
+      "output": "3"
+    },
+    {
+      "input": "9\r\n9 9 8 2 4 4 3 5 3",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "969",
+    "通过人数": "461",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:01"
+}

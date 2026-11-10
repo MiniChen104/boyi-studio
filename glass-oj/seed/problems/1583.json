@@ -1,0 +1,56 @@
+{
+  "id": "1583",
+  "title": "马里奥的银币3",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1583",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>马里奥有很多银币，有一天他又得到了一张魔法卡，只要使用这张魔法卡，就可以使得他的银币里面所有金额最大的银币都翻倍，所有金额最小的银币都加 <span class=\"katex math inline\">1</span> （也就是银币中金额最大的银币和金额最小的银币都可能不止 <span class=\"katex math inline\">1</span> 个），其余的银币的金额不变；马里奥顿时觉得自己要发财了，迫不及待的使用了这张魔法卡，请你求出，马里奥使用了这张魔法卡之后，他的银币的金额分别是多少？</p>\n<p>比如：假设马里奥存有的银币金额分别为 <span class=\"katex math inline\">8</span>  <span class=\"katex math inline\">5</span>   <span class=\"katex math inline\">2</span>  <span class=\"katex math inline\">8</span>   <span class=\"katex math inline\">2</span>   <span class=\"katex math inline\">4</span> ，那么使用魔法卡之后，他的银币的金额变为 <span class=\"katex math inline\">16</span>  <span class=\"katex math inline\">5</span>  <span class=\"katex math inline\">3</span>  <span class=\"katex math inline\">16</span>  <span class=\"katex math inline\">3</span>  <span class=\"katex math inline\">4</span> 。</p>\n</div>            </div>",
+      "text": "马里奥有很多银币，有一天他又得到了一张魔法卡，只要使用这张魔法卡，就可以使得他的银币里面所有金额最大的银币都翻倍，所有金额最小的银币都加 1 （也就是银币中金额最大的银币和金额最小的银币都可能不止 1 个），其余的银币的金额不变；马里奥顿时觉得自己要发财了，迫不及待的使用了这张魔法卡，请你求出，马里奥使用了这张魔法卡之后，他的银币的金额分别是多少？\n比如：假设马里奥存有的银币金额分别为 8  5   2  8   2   4 ，那么使用魔法卡之后，他的银币的金额变为 16  5  3  16  3  4 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行是一个整数 <span class=\"katex math inline\">n</span> 代表马里奥有 <span class=\"katex math inline\">n</span> 个银币（<span class=\"katex math inline\">n \\le 1000</span>）</p>\n<p>第二行有 <span class=\"katex math inline\">n</span> 个整数，用空格隔开，代表马里奥每个银币的金额。</p>\n</div>            </div>",
+      "text": "第一行是一个整数 n 代表马里奥有 n 个银币（n \\le 1000）\n第二行有 n 个整数，用空格隔开，代表马里奥每个银币的金额。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行有 <span class=\"katex math inline\">n</span> 个整数，用空格隔开，代表使用过魔法卡之后，马里奥的银币的金额，分别是多少？</p>\n</div>            </div>",
+      "text": "一行有 n 个整数，用空格隔开，代表使用过魔法卡之后，马里奥的银币的金额，分别是多少？"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n8 2 7 8 2 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>16 3 7 16 3 4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n8 2 7 8 2 4\n                        \n                        \n                            输出\n                            16 3 7 16 3 4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n8 2 7 8 2 4",
+      "output": "16 3 7 16 3 4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "10847",
+    "通过人数": "7529",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:25"
+}

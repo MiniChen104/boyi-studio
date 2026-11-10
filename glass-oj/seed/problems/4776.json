@@ -1,0 +1,52 @@
+{
+  "id": "4776",
+  "title": "匹配的字符数量",
+  "tags": [
+    "蓝桥等考",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4776",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定两个只包含字母和空格的字符串（两个字符串包含的字母个数相同）。要求忽略大小写和空格，对比两个字符串对应位置上的字符是否相同（匹配），统计出匹配的字符对数。</p>\n<p>例如：\n字符串 <span class=\"katex math inline\">s_1</span> 为  <code>Ab cd </code>，字符串 <span class=\"katex math inline\">s_2</span> 为 <code>a Bce </code>。</p>\n<p>忽略空格后，相当于第一个字符串变为 <code>Abcd </code>，第二个字符串变为 <code>aBce </code>。</p>\n<p>忽略大小写后， <span class=\"katex math inline\">s_1</span> 的第 <span class=\"katex math inline\">1</span> 个字符  <code>A </code> 和 <span class=\"katex math inline\">s_2</span> 的第 <span class=\"katex math inline\">1</span> 个字符 <code>a </code>相同，类似， <span class=\"katex math inline\">s_1</span> 的第 <span class=\"katex math inline\">2</span> 个字符 <code>b </code>和 <span class=\"katex math inline\">s_2</span> 的第 <span class=\"katex math inline\">2</span> 个字符 <code>B </code>也相同，<span class=\"katex math inline\">s_1</span> 的第 <span class=\"katex math inline\">3 </span>个字符 <code>c </code>和 <span class=\"katex math inline\">s_2</span> 的第 <span class=\"katex math inline\">3</span> 个字符 <code>c </code>也相同。\n匹配的字符对数是 <span class=\"katex math inline\">3</span>。</p>\n</div>            </div>",
+      "text": "给定两个只包含字母和空格的字符串（两个字符串包含的字母个数相同）。要求忽略大小写和空格，对比两个字符串对应位置上的字符是否相同（匹配），统计出匹配的字符对数。\n例如：\n字符串 s_1 为  Ab cd ，字符串 s_2 为 a Bce 。\n忽略空格后，相当于第一个字符串变为 Abcd ，第二个字符串变为 aBce 。\n忽略大小写后， s_1 的第 1 个字符  A  和 s_2 的第 1 个字符 a 相同，类似， s_1 的第 2 个字符 b 和 s_2 的第 2 个字符 B 也相同，s_1 的第 3 个字符 c 和 s_2 的第 3 个字符 c 也相同。\n匹配的字符对数是 3。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含两行，每行一个字符串。</p>\n<p>第一行输入字符串 <span class=\"katex math inline\">s_1</span>，第二行输入字符串 <span class=\"katex math inline\">s_2</span>。</p>\n<p>两个字符串均只包含字母和空格，且忽略空格后的字母个数相同。</p>\n</div>            </div>",
+      "text": "输入包含两行，每行一个字符串。\n第一行输入字符串 s_1，第二行输入字符串 s_2。\n两个字符串均只包含字母和空格，且忽略空格后的字母个数相同。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示在忽略大小写和空格后，两个字符串对应位置上的字符匹配的对数。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示在忽略大小写和空格后，两个字符串对应位置上的字符匹配的对数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>Ab cd\r\na Bce\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            Ab cd\r\na Bce\r\n\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "Ab cd\r\na Bce\r\n",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "120",
+    "通过人数": "67",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:09"
+}

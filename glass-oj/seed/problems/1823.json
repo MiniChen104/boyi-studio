@@ -1,0 +1,59 @@
+{
+  "id": "1823",
+  "title": "谷仓的安保",
+  "tags": [
+    "深搜",
+    "递归",
+    "USACO",
+    "排列组合"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1823",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Farmer John给谷仓安装了一个新的安全系统，并且要给牛群中的每一个奶牛安排一个有效的密码。一个有效的密码由 <span class=\"katex math inline\">L</span> (<span class=\"katex math inline\">3 \\le L \\le 15</span>)个小写字母(来自传统的拉丁字母集&#x27;a&#x27;...&#x27;z&#x27;)组成，至少有一个元音(&#x27;a&#x27;, &#x27;e&#x27;, &#x27;i&#x27;, &#x27;o&#x27;, 或者 &#x27;u&#x27;)，至少两个辅音(除去元音以外的音节)，并且有按字母表顺序出现的字母(例如，&#x27;abc&#x27;是有效的，而&#x27;bac&#x27;不是) 。</p>\n<p>给定一个期望长度 <span class=\"katex math inline\">L</span> 和 <span class=\"katex math inline\">C</span> 个小写字母，写一个程序，打印出所有的长度为 <span class=\"katex math inline\">L</span>、能由这些字母组成的有效密码。密码必须按字母表顺序打印出来，一行一个。</p>\n</div>            </div>",
+      "text": "Farmer John给谷仓安装了一个新的安全系统，并且要给牛群中的每一个奶牛安排一个有效的密码。一个有效的密码由 L (3 \\le L \\le 15)个小写字母(来自传统的拉丁字母集'a'...'z')组成，至少有一个元音('a', 'e', 'i', 'o', 或者 'u')，至少两个辅音(除去元音以外的音节)，并且有按字母表顺序出现的字母(例如，'abc'是有效的，而'bac'不是) 。\n给定一个期望长度 L 和 C 个小写字母，写一个程序，打印出所有的长度为 L、能由这些字母组成的有效密码。密码必须按字母表顺序打印出来，一行一个。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行: 两个由空格分开的整数，<span class=\"katex math inline\">L</span> 和 <span class=\"katex math inline\">C</span> 。（<span class=\"katex math inline\">3 \\le C \\le 26</span>）</p>\n<p>第二行: <span class=\"katex math inline\">C</span> 个空格分开的小写字母，密码是由这个字母集中的字母来构建的。</p>\n</div>            </div>",
+      "text": "第一行: 两个由空格分开的整数，L 和 C 。（3 \\le C \\le 26）\n第二行: C 个空格分开的小写字母，密码是由这个字母集中的字母来构建的。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出若干行，每一个输出行包括一个长度为 <span class=\"katex math inline\">L</span> 个字符的密码(没有空格)。输出行必须按照字母顺序排列。</p>\n<p>如果计算出超过 <span class=\"katex math inline\">25000</span> 个有效密码，你的程序只需输出前 <span class=\"katex math inline\">25000</span> 个有效密码，即使后面还存在有效密码。</p>\n</div>            </div>",
+      "text": "输出若干行，每一个输出行包括一个长度为 L 个字符的密码(没有空格)。输出行必须按照字母顺序排列。\n如果计算出超过 25000 个有效密码，你的程序只需输出前 25000 个有效密码，即使后面还存在有效密码。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 6\r\na t c i s w</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>acis\r\nacit\r\naciw\r\nacst\r\nacsw\r\nactw\r\naist\r\naisw\r\naitw\r\nastw\r\ncist\r\ncisw\r\ncitw\r\nistw</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 6\r\na t c i s w\n                        \n                        \n                            输出\n                            acis\r\nacit\r\naciw\r\nacst\r\nacsw\r\nactw\r\naist\r\naisw\r\naitw\r\nastw\r\ncist\r\ncisw\r\ncitw\r\nistw"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>深搜 递归 USACO</p>\n</div>                </div>",
+      "text": "深搜 递归 USACO"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">深搜</span><span class=\"label label-warning\">递归</span><span class=\"label label-info\">USACO</span><span class=\"label label-danger\">排列组合</span></span></p>\n</div>                </div>",
+      "text": "深搜递归USACO排列组合"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 6\r\na t c i s w",
+      "output": "acis\r\nacit\r\naciw\r\nacst\r\nacsw\r\nactw\r\naist\r\naisw\r\naitw\r\nastw\r\ncist\r\ncisw\r\ncitw\r\nistw"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3594",
+    "通过人数": "1541",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:24:41"
+}

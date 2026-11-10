@@ -1,0 +1,56 @@
+{
+  "id": "1795",
+  "title": "拦截导弹",
+  "tags": [
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1795",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某国为了防御敌国的导弹袭击，发展出一种导弹拦截系统。但是这种导弹拦截系统有一个缺陷：虽然它的第一发炮弹能够到达任意的高度，但是以后每一发炮弹都不能高于前一发的高度。</p>\n<p>某天，雷达捕捉到敌国的导弹来袭。由于该系统还在试用阶段，所以只有一套系统，因此有可能不能拦截所有的导弹。</p>\n<p>已知每枚导弹的高度（雷达给出的高度数据均为不大于 <span class=\"katex math inline\">30000</span> 的正整数），请计算这套系统最多能拦截多少导弹。</p>\n</div>            </div>",
+      "text": "某国为了防御敌国的导弹袭击，发展出一种导弹拦截系统。但是这种导弹拦截系统有一个缺陷：虽然它的第一发炮弹能够到达任意的高度，但是以后每一发炮弹都不能高于前一发的高度。\n某天，雷达捕捉到敌国的导弹来袭。由于该系统还在试用阶段，所以只有一套系统，因此有可能不能拦截所有的导弹。\n已知每枚导弹的高度（雷达给出的高度数据均为不大于 30000 的正整数），请计算这套系统最多能拦截多少导弹。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行：一个整数 <span class=\"katex math inline\">n</span>，表示导弹的数量，<span class=\"katex math inline\">1 \\leq n \\leq 1000</span>。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行：<span class=\"katex math inline\">n</span> 个正整数，表示导弹的高度，<span class=\"katex math inline\">1 \\leq h_i \\leq 30000</span>。</p>\n</div>            </div>",
+      "text": "第 1 行：一个整数 n，表示导弹的数量，1 \\leq n \\leq 1000。\n第 2 行：n 个正整数，表示导弹的高度，1 \\leq h_i \\leq 30000。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示该系统最多能拦截多少导弹。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示该系统最多能拦截多少导弹。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\n389 207 155 300 299 170 158 65</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\n389 207 155 300 299 170 158 65\n                        \n                        \n                            输出\n                            6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>动态规划</p>\n</div>                </div>",
+      "text": "动态规划"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\n389 207 155 300 299 170 158 65",
+      "output": "6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "5012",
+    "通过人数": "3116",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:24:18"
+}

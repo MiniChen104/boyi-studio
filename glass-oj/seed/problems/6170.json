@@ -1,0 +1,58 @@
+{
+  "id": "6170",
+  "title": "买票",
+  "tags": [
+    "蓝桥杯",
+    "模拟",
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6170",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>周末，小明和爸爸妈妈去看电影，在买票的时候，小明希望他们一家三口能坐在同一排的三个连续的座位，并且他希望坐在爸爸妈妈的中间。 \n放映大厅有 <span class=\"katex math inline\">n</span> 排，每排有 <span class=\"katex math inline\">m</span> 个座位，其中有一些座位已被售出，请统计剩余的空位置中，有多少个位置可供小明选择。 \n例如: \n<span class=\"katex math inline\">n = 5</span>, <span class=\"katex math inline\">m = 5</span>，放映大厅的座位售出情况如下（ <img src=\"https://assets.boyi.local/67b1c460d9248f15a1b372a3.png\">表示已售出）:</p>\n<p><img src=\"https://assets.boyi.local/7a473f3935196b91e312ae9b.png\"></p>\n<p>其中可供小明选择的座位如下（其中 <img src=\"https://assets.boyi.local/ad0338749ef716bd5ce2b8f0.png\">表示小明可选的位置，当他选好位置后，其左侧和右侧各有一个空位供他的爸爸妈妈选择）：</p>\n<p><img src=\"https://assets.boyi.local/b73bb76593cab775dbbcd1ae.png\"></p>\n<p>由上图可得，共有 <span class=\"katex math inline\">4</span> 个座位可供小明选择。 </p>\n</div>            </div>",
+      "text": "周末，小明和爸爸妈妈去看电影，在买票的时候，小明希望他们一家三口能坐在同一排的三个连续的座位，并且他希望坐在爸爸妈妈的中间。 \n放映大厅有 n 排，每排有 m 个座位，其中有一些座位已被售出，请统计剩余的空位置中，有多少个位置可供小明选择。 \n例如: \nn = 5, m = 5，放映大厅的座位售出情况如下（ 表示已售出）:\n\n其中可供小明选择的座位如下（其中 表示小明可选的位置，当他选好位置后，其左侧和右侧各有一个空位供他的爸爸妈妈选择）：\n\n由上图可得，共有 4 个座位可供小明选择。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入两个整数 <span class=\"katex math inline\">n</span>, <span class=\"katex math inline\">m</span> (<span class=\"katex math inline\">5 \\le n \\le 100</span>, <span class=\"katex math inline\">5 \\le m \\le 100</span>)，分别表示放映大厅座位的排数以及每排座位的数量； </p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行输入 <span class=\"katex math inline\">m</span> 个数字（数字为 <span class=\"katex math inline\">0</span> 或 <span class=\"katex math inline\">1</span>，<span class=\"katex math inline\">0</span> 表示对应座位未售出，<span class=\"katex math inline\">1</span> 表示已售出）； 同一行数据之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "第一行输入两个整数 n, m (5 \\le n \\le 100, 5 \\le m \\le 100)，分别表示放映大厅座位的排数以及每排座位的数量； \n接下来 n 行，每行输入 m 个数字（数字为 0 或 1，0 表示对应座位未售出，1 表示已售出）； 同一行数据之间以一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示可供小明选择的座位数量。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示可供小明选择的座位数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 5 \r\n0 0 0 1 0 \r\n0 0 1 1 0 \r\n0 1 0 0 0 \r\n0 0 1 0 0 \r\n0 0 0 0 1 \r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 5 \r\n0 0 0 1 0 \r\n0 0 1 1 0 \r\n0 1 0 0 0 \r\n0 0 1 0 0 \r\n0 0 0 0 1 \r\n\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>26年4月STEMA省考</p>\n</div>                </div>",
+      "text": "26年4月STEMA省考"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">模拟</span><span class=\"label label-info\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯模拟二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 5 \r\n0 0 0 1 0 \r\n0 0 1 1 0 \r\n0 1 0 0 0 \r\n0 0 1 0 0 \r\n0 0 0 0 1 \r\n",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "152",
+    "通过人数": "93",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:28"
+}

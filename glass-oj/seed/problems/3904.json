@@ -1,0 +1,71 @@
+{
+  "id": "3904",
+  "title": "矩阵移动（matrix）",
+  "tags": [
+    "GESP七级",
+    "动态规划",
+    "24年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3904",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有一个 <span class=\"katex math inline\">n \\times m</span>的矩阵，仅包含 <code>01?</code> 三种字符。矩阵的行从上到下编号依次为 <span class=\"katex math inline\">1,2,\\dots,n</span>，列从左到右编号依次为 <span class=\"katex math inline\">1,2,\\dots,m</span> 编号。小杨开始在矩阵的左上角<span class=\"katex math inline\">（1,1 ）</span>，小杨只能向下或者向右移动，最终到达右下角<span class=\"katex math inline\">（ n,m）</span>时停止，在移动的过程中每经过一个字符 <code>1</code> 得分会增加一分（包括起点和终点），经过其它字符则分数不变。小杨的初始分数为 <span class=\"katex math inline\">0</span> 分。</p>\n<p>小杨可以将矩阵中不超过 <span class=\"katex math inline\">x</span> 个字符 <code>?</code> 变为字符 <code>1</code>。小杨在修改矩阵后，会以最优的策略从左上角移动到右下角。他想知道自己最多能获得多少分。</p>\n</div>            </div>",
+      "text": "小杨有一个 n \\times m的矩阵，仅包含 01? 三种字符。矩阵的行从上到下编号依次为 1,2,\\dots,n，列从左到右编号依次为 1,2,\\dots,m 编号。小杨开始在矩阵的左上角（1,1 ），小杨只能向下或者向右移动，最终到达右下角（ n,m）时停止，在移动的过程中每经过一个字符 1 得分会增加一分（包括起点和终点），经过其它字符则分数不变。小杨的初始分数为 0 分。\n小杨可以将矩阵中不超过 x 个字符 ? 变为字符 1。小杨在修改矩阵后，会以最优的策略从左上角移动到右下角。他想知道自己最多能获得多少分。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">t</span>，代表测试用例组数。</p>\n<p>接下来是 <span class=\"katex math inline\">t</span>组测试用例。对于每组测试用例，一共 <span class=\"katex math inline\">n+1</span> 行。</p>\n<p>第一行包含三个正整数 <span class=\"katex math inline\">n,m,x</span>，含义如题面所示。</p>\n<p>之后 <span class=\"katex math inline\">n</span> 行，每行包含一个长度为 <span class=\"katex math inline\">m</span> 且仅包含 <code>01?</code> 三种字符的字符串。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 t，代表测试用例组数。\n接下来是 t组测试用例。对于每组测试用例，一共 n+1 行。\n第一行包含三个正整数 n,m,x，含义如题面所示。\n之后 n 行，每行包含一个长度为 m 且仅包含 01? 三种字符的字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组测试用例，输出一行一个整数，代表最优策略下小杨的得分最多是多少。</p>\n</div>            </div>",
+      "text": "对于每组测试用例，输出一行一个整数，代表最优策略下小杨的得分最多是多少。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n3 3 1\r\n000\r\n111\r\n01?\r\n3 3 1\r\n000\r\n?0?\r\n01?\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4\r\n2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3\r\n10 11 8\r\n00?01???000\r\n100????000?\r\n01?0????1?0\r\n00?0??101?1\r\n1?0?010?001\r\n???0?00?0?0\r\n?1?0?0000??\r\n00?0?000?00\r\n?000000000?\r\n?0000?000?1\r\n12 5 10\r\n00000\r\n0?000\r\n000?0\r\n00000\r\n00000\r\n000?0\r\n00000\r\n00000\r\n00000\r\n00000\r\n00100\r\n00000\r\n10 12 4\r\n?001?0?00000\r\n1??10???0?10\r\n00?0??0?0??1\r\n00???0?0??11\r\n0??0????0???\r\n???0100???00\r\n??100101????\r\n00??1?1?????\r\n?01??0??0100\r\n1??01?0??0??</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>15\r\n3\r\n10</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4\r\n11 12 7\r\n0?00???0???0\r\n0000?000?01?\r\n?0000??????0\r\n?000000????0\r\n?00?00??0000\r\n0??0000?00?0\r\n0?0?0?0000?1\r\n0001?????000\r\n0??0000??000\r\n?000?1??0?01\r\n??000000????\r\n10 6 8\r\n00?0?0\r\n0010?0\r\n?000??\r\n00????\r\n0000?0\r\n0000?0\r\n??0??0\r\n001???\r\n0?000?\r\n00??00\r\n12 9 7\r\n010101011\r\n110010000\r\n1?1000?1?\r\n001111001\r\n011011101\r\n10??11010\r\n00?100?00\r\n0?110?100\r\n011000??1\r\n1?0?01?10\r\n01000000?\r\n0011?0101\r\n9 9 1\r\n001?00000\r\n000?00000\r\n0000??010\r\n001000000\r\n000010000\r\n110000000\r\n000000000\r\n?00?0000?\r\n000000000</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>10\r\n9\r\n17\r\n4</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n3 3 1\r\n000\r\n111\r\n01?\r\n3 3 1\r\n000\r\n?0?\r\n01?\r\n\n                        \n                        \n                            输出\n                            4\r\n2\n                        \n\n                                                    \n                                输入\n                                3\r\n10 11 8\r\n00?01???000\r\n100????000?\r\n01?0????1?0\r\n00?0??101?1\r\n1?0?010?001\r\n???0?00?0?0\r\n?1?0?0000??\r\n00?0?000?00\r\n?000000000?\r\n?0000?000?1\r\n12 5 10\r\n00000\r\n0?000\r\n000?0\r\n00000\r\n00000\r\n000?0\r\n00000\r\n00000\r\n00000\r\n00000\r\n00100\r\n00000\r\n10 12 4\r\n?001?0?00000\r\n1??10???0?10\r\n00?0??0?0??1\r\n00???0?0??11\r\n0??0????0???\r\n???0100???00\r\n??100101????\r\n00??1?1?????\r\n?01??0??0100\r\n1??01?0??0??\n                            \n                            \n                                输出\n                                15\r\n3\r\n10\n                            \n                        \n                                                    \n                                输入\n                                4\r\n11 12 7\r\n0?00???0???0\r\n0000?000?01?\r\n?0000??????0\r\n?000000????0\r\n?00?00??0000\r\n0??0000?00?0\r\n0?0?0?0000?1\r\n0001?????000\r\n0??0000??000\r\n?000?1??0?01\r\n??000000????\r\n10 6 8\r\n00?0?0\r\n0010?0\r\n?000??\r\n00????\r\n0000?0\r\n0000?0\r\n??0??0\r\n001???\r\n0?000?\r\n00??00\r\n12 9 7\r\n010101011\r\n110010000\r\n1?1000?1?\r\n001111001\r\n011011101\r\n10??11010\r\n00?100?00\r\n0?110?100\r\n011000??1\r\n1?0?01?10\r\n01000000?\r\n0011?0101\r\n9 9 1\r\n001?00000\r\n000?00000\r\n0000??010\r\n001000000\r\n000010000\r\n110000000\r\n000000000\r\n?00?0000?\r\n000000000\n                            \n                            \n                                输出\n                                10\r\n9\r\n17\r\n4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<p>对于样例 <span class=\"katex math inline\">1</span> 的第二组测试用例，将 <span class=\"katex math inline\">（2,1 ）</span>或者 <span class=\"katex math inline\">（ 3,3）</span>变成 <span class=\"katex math inline\">1</span> 均是最优策略。</p>\n<h4>数据范围</h4>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le t  \\le 10,1  \\le n,m \\le 500, 1  \\le x \\le 300 </span>,同时保证所有测试用例 <span class=\"katex math inline\">n\\times m</span> 的总和不超过  <span class=\"katex math inline\">2.5 \\times 10^5</span>。</p>\n<table><thead><tr><th>子任务编号</th><th>数据点占比</th><th><span class=\"katex math inline\">t</span></th><th><span class=\"katex math inline\">n,m</span></th><th><span class=\"katex math inline\">x</span></th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1</span></td><td><span class=\"katex math inline\">30\\%</span></td><td><span class=\"katex math inline\">\\le 5</span></td><td><span class=\"katex math inline\">\\le 10</span></td><td><span class=\"katex math inline\">=1</span></td></tr><tr><td><span class=\"katex math inline\">2</span></td><td><span class=\"katex math inline\">30\\%</span></td><td><span class=\"katex math inline\">\\le 10</span></td><td><span class=\"katex math inline\">\\le 500</span></td><td><span class=\"katex math inline\">\\le 30</span></td></tr><tr><td><span class=\"katex math inline\">3</span></td><td><span class=\"katex math inline\">40\\%</span></td><td><span class=\"katex math inline\">\\le 10</span></td><td><span class=\"katex math inline\">\\le 500</span></td><td><span class=\"katex math inline\">\\le 300</span></td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "样例 1 解释\n对于样例 1 的第二组测试用例，将 （2,1 ）或者 （ 3,3）变成 1 均是最优策略。\n数据范围\n对于全部数据，保证有 1 \\le t  \\le 10,1  \\le n,m \\le 500, 1  \\le x \\le 300 ,同时保证所有测试用例 n\\times m 的总和不超过  2.5 \\times 10^5。\n子任务编号数据点占比tn,mx130\\%\\le 5\\le 10=1230\\%\\le 10\\le 500\\le 30340\\%\\le 10\\le 500\\le 300"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 9月认证 C++ 七级真题</p>\n</div>                </div>",
+      "text": "GESP 9月认证 C++ 七级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP七级</span><span class=\"label label-warning\">动态规划</span><span class=\"label label-info\">24年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP七级动态规划24年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n3 3 1\r\n000\r\n111\r\n01?\r\n3 3 1\r\n000\r\n?0?\r\n01?\r\n",
+      "output": "4\r\n2"
+    },
+    {
+      "input": "3\r\n10 11 8\r\n00?01???000\r\n100????000?\r\n01?0????1?0\r\n00?0??101?1\r\n1?0?010?001\r\n???0?00?0?0\r\n?1?0?0000??\r\n00?0?000?00\r\n?000000000?\r\n?0000?000?1\r\n12 5 10\r\n00000\r\n0?000\r\n000?0\r\n00000\r\n00000\r\n000?0\r\n00000\r\n00000\r\n00000\r\n00000\r\n00100\r\n00000\r\n10 12 4\r\n?001?0?00000\r\n1??10???0?10\r\n00?0??0?0??1\r\n00???0?0??11\r\n0??0????0???\r\n???0100???00\r\n??100101????\r\n00??1?1?????\r\n?01??0??0100\r\n1??01?0??0??",
+      "output": "15\r\n3\r\n10"
+    },
+    {
+      "input": "4\r\n11 12 7\r\n0?00???0???0\r\n0000?000?01?\r\n?0000??????0\r\n?000000????0\r\n?00?00??0000\r\n0??0000?00?0\r\n0?0?0?0000?1\r\n0001?????000\r\n0??0000??000\r\n?000?1??0?01\r\n??000000????\r\n10 6 8\r\n00?0?0\r\n0010?0\r\n?000??\r\n00????\r\n0000?0\r\n0000?0\r\n??0??0\r\n001???\r\n0?000?\r\n00??00\r\n12 9 7\r\n010101011\r\n110010000\r\n1?1000?1?\r\n001111001\r\n011011101\r\n10??11010\r\n00?100?00\r\n0?110?100\r\n011000??1\r\n1?0?01?10\r\n01000000?\r\n0011?0101\r\n9 9 1\r\n001?00000\r\n000?00000\r\n0000??010\r\n001000000\r\n000010000\r\n110000000\r\n000000000\r\n?00?0000?\r\n000000000",
+      "output": "10\r\n9\r\n17\r\n4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "144",
+    "通过人数": "68",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:27"
+}

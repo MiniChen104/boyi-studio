@@ -1,0 +1,57 @@
+{
+  "id": "4661",
+  "title": "八进制回文平方数",
+  "tags": [
+    "蓝桥杯国赛",
+    "进制转换"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4661",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><ul><li><strong>八进制数</strong>：指逢 <span class=\"katex math inline\">8</span> 进位的一种进位计数制，以 <span class=\"katex math inline\">0</span>、<span class=\"katex math inline\">1</span>、<span class=\"katex math inline\">2</span>、<span class=\"katex math inline\">3</span>、<span class=\"katex math inline\">4</span>、<span class=\"katex math inline\">5</span>、<span class=\"katex math inline\">6</span>、<span class=\"katex math inline\">7</span> 共八个数码表示。例如：十进制数 <span class=\"katex math inline\">8</span> 等于八进制数 <span class=\"katex math inline\">10</span>，十进制数 <span class=\"katex math inline\">64</span> 等于八进制数 <span class=\"katex math inline\">100</span>，以此类推。  </li>\n<li><strong>回文数</strong>：反向排列与原来一样的数。例如，<span class=\"katex math inline\">12321</span> 是回文数，<span class=\"katex math inline\">1231</span> 不是回文数。  </li>\n<li><strong>平方数</strong>：可以写成某个整数的平方的数。例如，<span class=\"katex math inline\">9 = 3^2</span>，<span class=\"katex math inline\">9</span> 是一个平方数。</li>\n</ul><p>给定一个十进制正整数 <span class=\"katex math inline\">N</span>（<span class=\"katex math inline\">1 \\leq N \\leq 10^9</span>），请从小到大输出 <span class=\"katex math inline\">1 \\sim N</span> 之间（含 <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">N</span>）所有满足以下要求的数：  </p>\n<ol><li>这个数转换为八进制后是一个回文数；  </li>\n<li>这个数是一个平方数。  </li>\n</ol><p><strong>例如</strong>：<span class=\"katex math inline\">N=20</span>，在 <span class=\"katex math inline\">1 \\sim 20</span> 之间满足要求的数有 <span class=\"katex math inline\">1</span>、<span class=\"katex math inline\">4</span>、<span class=\"katex math inline\">9</span>，因为有：  </p>\n<ul><li><span class=\"katex math inline\">1</span> 转换为八进制为 <span class=\"katex math inline\">1</span>，是一个回文数；且 <span class=\"katex math inline\">1 = 1^2</span>，是一个平方数；  </li>\n<li><span class=\"katex math inline\">4</span> 转换为八进制为 <span class=\"katex math inline\">4</span>，是一个回文数；且 <span class=\"katex math inline\">4 = 2^2</span>，是一个平方数；  </li>\n<li><span class=\"katex math inline\">9</span> 转换为八进制为 <span class=\"katex math inline\">11</span>，是一个回文数；且 <span class=\"katex math inline\">9 = 3^2</span>，是一个平方数。  </li>\n</ul><p>故输出 <span class=\"katex math inline\">1\\ 4\\ 9</span>。</p>\n</div>            </div>",
+      "text": "八进制数：指逢 8 进位的一种进位计数制，以 0、1、2、3、4、5、6、7 共八个数码表示。例如：十进制数 8 等于八进制数 10，十进制数 64 等于八进制数 100，以此类推。  \n回文数：反向排列与原来一样的数。例如，12321 是回文数，1231 不是回文数。  \n平方数：可以写成某个整数的平方的数。例如，9 = 3^2，9 是一个平方数。\n给定一个十进制正整数 N（1 \\leq N \\leq 10^9），请从小到大输出 1 \\sim N 之间（含 1 和 N）所有满足以下要求的数：  \n这个数转换为八进制后是一个回文数；  \n这个数是一个平方数。  \n例如：N=20，在 1 \\sim 20 之间满足要求的数有 1、4、9，因为有：  \n1 转换为八进制为 1，是一个回文数；且 1 = 1^2，是一个平方数；  \n4 转换为八进制为 4，是一个回文数；且 4 = 2^2，是一个平方数；  \n9 转换为八进制为 11，是一个回文数；且 9 = 3^2，是一个平方数。  \n故输出 1\\ 4\\ 9。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个十进制正整数 <span class=\"katex math inline\">N（1 \\le N \\le 10^9）</span>。</p>\n</div>            </div>",
+      "text": "输入一个十进制正整数 N（1 \\le N \\le 10^9）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含若干个十进制正整数，表示满足题目要求的数。结果从小到大输出，两个正整数之间用一个空格隔开。</p>\n</div>            </div>",
+      "text": "输出一行，包含若干个十进制正整数，表示满足题目要求的数。结果从小到大输出，两个正整数之间用一个空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 4 9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            20\n                        \n                        \n                            输出\n                            1 4 9"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十四届国赛C++试卷</p>\n</div>                </div>",
+      "text": "蓝桥杯十四届国赛C++试卷"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯国赛</span><span class=\"label label-warning\">进制转换</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯国赛进制转换"
+    }
+  ],
+  "samples": [
+    {
+      "input": "20",
+      "output": "1 4 9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "322",
+    "通过人数": "135",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:08"
+}

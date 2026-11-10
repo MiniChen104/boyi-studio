@@ -1,0 +1,64 @@
+{
+  "id": "2199",
+  "title": "Milk Visits",
+  "tags": [
+    "树",
+    "并查集",
+    "LCA",
+    "usaco"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2199",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Farmer John 计划建造 <span class=\"katex math inline\">N</span> 个农场，用 <span class=\"katex math inline\">N-1</span> 条道路连接，构成一棵树（也就是说，所有农场之间都互相可以到达，并且没有环）。每个农场有一头奶牛，品种为更赛牛或荷斯坦牛之一。</p>\n<p>Farmer John 的 <span class=\"katex math inline\">M</span> 个朋友经常前来拜访他。在朋友 <span class=\"katex math inline\">i</span> 拜访之时，Farmer John 会与他的朋友沿着从农场 <span class=\"katex math inline\">A_i</span> 到农场 <span class=\"katex math inline\">B_i</span> 之间的唯一路径行走（可能有 <span class=\"katex math inline\">A_i = B_i</span>）。除此之外，他们还可以品尝他们经过的路径上任意一头奶牛的牛奶。由于 Farmer John 的朋友们大多数也是农场主，他们对牛奶有着极强的偏好。他的有些朋友只喝更赛牛的牛奶，其余的只喝荷斯坦牛的牛奶。任何 Farmer John 的朋友只有在他们访问时能喝到他们偏好的牛奶才会高兴。</p>\n<p>请求出每个朋友在拜访过后是否会高兴。</p>\n</div>            </div>",
+      "text": "Farmer John 计划建造 N 个农场，用 N-1 条道路连接，构成一棵树（也就是说，所有农场之间都互相可以到达，并且没有环）。每个农场有一头奶牛，品种为更赛牛或荷斯坦牛之一。\nFarmer John 的 M 个朋友经常前来拜访他。在朋友 i 拜访之时，Farmer John 会与他的朋友沿着从农场 A_i 到农场 B_i 之间的唯一路径行走（可能有 A_i = B_i）。除此之外，他们还可以品尝他们经过的路径上任意一头奶牛的牛奶。由于 Farmer John 的朋友们大多数也是农场主，他们对牛奶有着极强的偏好。他的有些朋友只喝更赛牛的牛奶，其余的只喝荷斯坦牛的牛奶。任何 Farmer John 的朋友只有在他们访问时能喝到他们偏好的牛奶才会高兴。\n请求出每个朋友在拜访过后是否会高兴。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含两个整数 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">M</span>。</p>\n<p>第二行包含一个长为 <span class=\"katex math inline\">N</span> 的字符串。如果第 <span class=\"katex math inline\">i</span> 个农场中的奶牛是更赛牛，则字符串中第 <span class=\"katex math inline\">i</span> 个字符为 <code>G</code>，如果第 <span class=\"katex math inline\">i</span> 个农场中的奶牛是荷斯坦牛则为 <code>H</code>。</p>\n<p>以下 <span class=\"katex math inline\">N-1</span> 行，每行包含两个不同的整数 <span class=\"katex math inline\">X</span> 和 <span class=\"katex math inline\">Y</span>（<span class=\"katex math inline\">1 \\leq X, Y \\leq N</span>），表示农场 <span class=\"katex math inline\">X</span> 与 <span class=\"katex math inline\">Y</span> 之间有一条道路。</p>\n<p>以下 <span class=\"katex math inline\">M</span> 行，每行包含整数 <span class=\"katex math inline\">A_i</span>，<span class=\"katex math inline\">B_i</span>，以及一个字符 <span class=\"katex math inline\">C_i</span>。<span class=\"katex math inline\">A_i</span> 和 <span class=\"katex math inline\">B_i</span> 表示朋友 <span class=\"katex math inline\">i</span> 拜访时行走的路径的端点，<span class=\"katex math inline\">C_i</span> 是 <code>G</code> 或 <code>H</code> 之一，表示第 <span class=\"katex math inline\">i</span> 个朋友喜欢更赛牛的牛奶或是荷斯坦牛的牛奶。</p>\n</div>            </div>",
+      "text": "输入的第一行包含两个整数 N 和 M。\n第二行包含一个长为 N 的字符串。如果第 i 个农场中的奶牛是更赛牛，则字符串中第 i 个字符为 G，如果第 i 个农场中的奶牛是荷斯坦牛则为 H。\n以下 N-1 行，每行包含两个不同的整数 X 和 Y（1 \\leq X, Y \\leq N），表示农场 X 与 Y 之间有一条道路。\n以下 M 行，每行包含整数 A_i，B_i，以及一个字符 C_i。A_i 和 B_i 表示朋友 i 拜访时行走的路径的端点，C_i 是 G 或 H 之一，表示第 i 个朋友喜欢更赛牛的牛奶或是荷斯坦牛的牛奶。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个长为 <span class=\"katex math inline\">M</span> 的二进制字符串。如果第 <span class=\"katex math inline\">i</span> 个朋友会感到高兴，则字符串的第 <span class=\"katex math inline\">i</span> 个字符为 <code>1</code>，否则为 <code>0</code>。</p>\n</div>            </div>",
+      "text": "输出一个长为 M 的二进制字符串。如果第 i 个朋友会感到高兴，则字符串的第 i 个字符为 1，否则为 0。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 5\r\nHHGHG\r\n1 2\r\n2 3\r\n2 4\r\n1 5\r\n1 4 H\r\n1 4 G\r\n1 3 G\r\n1 3 H\r\n5 5 H</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10110</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 5\r\nHHGHG\r\n1 2\r\n2 3\r\n2 4\r\n1 5\r\n1 4 H\r\n1 4 G\r\n1 3 G\r\n1 3 H\r\n5 5 H\n                        \n                        \n                            输出\n                            10110"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<p>在这里，从农场 <span class=\"katex math inline\">1</span> 到农场 <span class=\"katex math inline\">4</span> 的路径包括农场 <span class=\"katex math inline\">1</span>、<span class=\"katex math inline\">2</span> 和 <span class=\"katex math inline\">4</span>。所有这些农场里都是荷斯坦牛，所以第一个朋友会感到满意，而第二个朋友不会。</p>\n<h4>数据范围</h4>\n<p>测试点 <span class=\"katex math inline\">2\\sim 5</span> 满足 <span class=\"katex math inline\">N\\le 10^3</span>，<span class=\"katex math inline\">M\\le 2\\cdot 10^3</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 \\leq N \\leq 10^5</span>，<span class=\"katex math inline\">1 \\leq M \\leq 10^5</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 解释\n在这里，从农场 1 到农场 4 的路径包括农场 1、2 和 4。所有这些农场里都是荷斯坦牛，所以第一个朋友会感到满意，而第二个朋友不会。\n数据范围\n测试点 2\\sim 5 满足 N\\le 10^3，M\\le 2\\cdot 10^3。\n对于 100\\% 的数据，1 \\leq N \\leq 10^5，1 \\leq M \\leq 10^5。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>树</p>\n</div>                </div>",
+      "text": "树"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树</span><span class=\"label label-warning\">并查集</span><span class=\"label label-info\">LCA</span><span class=\"label label-danger\">usaco</span></span></p>\n</div>                </div>",
+      "text": "树并查集LCAusaco"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 5\r\nHHGHG\r\n1 2\r\n2 3\r\n2 4\r\n1 5\r\n1 4 H\r\n1 4 G\r\n1 3 G\r\n1 3 H\r\n5 5 H",
+      "output": "10110"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1139",
+    "通过人数": "533",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:41"
+}

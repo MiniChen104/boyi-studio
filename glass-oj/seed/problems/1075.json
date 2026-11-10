@@ -1,0 +1,56 @@
+{
+  "id": "1075",
+  "title": "寻找2的幂",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1075",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>数学上把 <span class=\"katex math inline\">2</span> 的 <span class=\"katex math inline\">K</span> 次方叫 <span class=\"katex math inline\">2</span> 的 <span class=\"katex math inline\">K</span> 次幂，如 <span class=\"katex math inline\">4、8、32</span> 等。</p>\n<p>给定一个整数 <span class=\"katex math inline\">n</span> ，请输出距离它最近的那个 <span class=\"katex math inline\">2</span> 的幂是多少。</p>\n<p>如果有两个距离相同，输出那个小的。</p>\n</div>            </div>",
+      "text": "数学上把 2 的 K 次方叫 2 的 K 次幂，如 4、8、32 等。\n给定一个整数 n ，请输出距离它最近的那个 2 的幂是多少。\n如果有两个距离相同，输出那个小的。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一个整数 <span class=\"katex math inline\">n（10 \\le n \\le 2 \\times 10^9</span> ）。</p>\n</div>            </div>",
+      "text": "只有一个整数 n（10 \\le n \\le 2 \\times 10^9 ）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一个整数，表示距离最近的那个 <span class=\"katex math inline\">2</span> 的幂。</p>\n</div>            </div>",
+      "text": "只有一个整数，表示距离最近的那个 2 的幂。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>17</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>16</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            17\n                        \n                        \n                            输出\n                            16"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "17",
+      "output": "16"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "17082",
+    "通过人数": "6388",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:14:21"
+}

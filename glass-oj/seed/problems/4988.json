@@ -1,0 +1,68 @@
+{
+  "id": "4988",
+  "title": "最大公因数",
+  "tags": [
+    "GESP五级",
+    "25年6月",
+    "数论",
+    "最大公因数"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/4988",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于两个正整数 <span class=\"katex math inline\">a，b</span>，它们的最大公因数记为 <span class=\"katex math inline\">gcd(a，b)</span>。对于 <span class=\"katex math inline\">k \\ge 3</span> 个正整数 <span class=\"katex math inline\">c_1，c_2，...，c_k</span> ，它们的最大公因数为：</p>\n<p><span class=\"katex math inline\">gcd(c_1，c_2，...，c_k)</span>=<span class=\"katex math inline\">gcd(gcd(c_1，c_2，...，c_{k-1}),c_k)</span></p>\n<p>给定 <span class=\"katex math inline\">n</span> 个正整数 <span class=\"katex math inline\">a_1，a_2，...，a_n</span> 以及 <span class=\"katex math inline\">q</span> 组询问。对于第 <span class=\"katex math inline\">i(1 \\le i \\le q)</span>组询问，请求出 <span class=\"katex math inline\">a_1+i，a_2+i，...，a_n+i</span> 的最大公因数，也即 <span class=\"katex math inline\">gcd(a_1+i，a_2+i，...，a_n+i)</span>。</p>\n</div>            </div>",
+      "text": "对于两个正整数 a，b，它们的最大公因数记为 gcd(a，b)。对于 k \\ge 3 个正整数 c_1，c_2，...，c_k ，它们的最大公因数为：\ngcd(c_1，c_2，...，c_k)=gcd(gcd(c_1，c_2，...，c_{k-1}),c_k)\n给定 n 个正整数 a_1，a_2，...，a_n 以及 q 组询问。对于第 i(1 \\le i \\le q)组询问，请求出 a_1+i，a_2+i，...，a_n+i 的最大公因数，也即 gcd(a_1+i，a_2+i，...，a_n+i)。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，两个正整数 <span class=\"katex math inline\">n，q</span> ，分别表示给定正整数的数量，以及询问组数。</p>\n<p>第二行，<span class=\"katex math inline\">n</span> 个正整数 <span class=\"katex math inline\">a_1，a_2，...，a_n</span> 。</p>\n</div>            </div>",
+      "text": "第一行，两个正整数 n，q ，分别表示给定正整数的数量，以及询问组数。\n第二行，n 个正整数 a_1，a_2，...，a_n 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共 <span class=\"katex math inline\">q</span> 行，第 <span class=\"katex math inline\">i</span> 行包含一个正整数，表示 <span class=\"katex math inline\">a_1+i，a_2+i，...，a_n+i</span>的最大公因数。</p>\n</div>            </div>",
+      "text": "输出共 q 行，第 i 行包含一个正整数，表示 a_1+i，a_2+i，...，a_n+i的最大公因数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 3\r\n6 9 12 18 30</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n1\r\n3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 5\r\n31 47 59</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>4\r\n1\r\n2\r\n1\r\n4</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 3\r\n6 9 12 18 30\n                        \n                        \n                            输出\n                            1\r\n1\r\n3\n                        \n\n                                                    \n                                输入\n                                3 5\r\n31 47 59\n                            \n                            \n                                输出\n                                4\r\n1\r\n2\r\n1\r\n4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">60</span>% 的测试点，保证<span class=\"katex math inline\">1 \\le n \\le 10^{3}，1 \\le q \\le 10</span>  。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 10^{5}，1 \\le q \\le 10^{5}，1 \\le a_i  \\le 1000</span>   。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 60% 的测试点，保证1 \\le n \\le 10^{3}，1 \\le q \\le 10  。\n对于所有测试点，保证 1 \\le n \\le 10^{5}，1 \\le q \\le 10^{5}，1 \\le a_i  \\le 1000   。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP25年6月五级</p>\n</div>                </div>",
+      "text": "GESP25年6月五级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">25年6月</span><span class=\"label label-info\">数论</span><span class=\"label label-danger\">最大公因数</span></span></p>\n</div>                </div>",
+      "text": "GESP五级25年6月数论最大公因数"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 3\r\n6 9 12 18 30",
+      "output": "1\r\n1\r\n3"
+    },
+    {
+      "input": "3 5\r\n31 47 59",
+      "output": "4\r\n1\r\n2\r\n1\r\n4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "708",
+    "通过人数": "180",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:33"
+}

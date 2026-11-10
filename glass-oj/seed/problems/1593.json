@@ -1,0 +1,65 @@
+{
+  "id": "1593",
+  "title": "推销员（salesman）",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1593",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>阿明是一名推销员，他奉命到螺丝街推销他们公司的产品。螺丝街是一条死胡同，出口与入口是同一个，街道的一侧是围墙，另一侧是住户。螺丝街一共有<span class=\"katex math inline\">N</span>家住户，第<span class=\"katex math inline\">i</span>家住户到入口的距离为<span class=\"katex math inline\">S_i</span>米。由于同一栋房子里可以有多家住户，所以可能有多家住户与入口的距离相等。阿明会从入口进入，依次向螺丝街的<span class=\"katex math inline\">X</span>家住户推销产品，然后再原路走出去。</p>\n<p>阿明每走<span class=\"katex math inline\">1</span>米就会积累<span class=\"katex math inline\">1</span>点疲劳值，向第<span class=\"katex math inline\">i</span>家住户推销产品会积累<span class=\"katex math inline\">A_i</span>点疲劳值。阿明是工作狂，他想知道，对于不同的<span class=\"katex math inline\">X</span>，在不走多余的路的前提下，他最多可以积累多少点疲劳值。</p>\n</div>            </div>",
+      "text": "阿明是一名推销员，他奉命到螺丝街推销他们公司的产品。螺丝街是一条死胡同，出口与入口是同一个，街道的一侧是围墙，另一侧是住户。螺丝街一共有N家住户，第i家住户到入口的距离为S_i米。由于同一栋房子里可以有多家住户，所以可能有多家住户与入口的距离相等。阿明会从入口进入，依次向螺丝街的X家住户推销产品，然后再原路走出去。\n阿明每走1米就会积累1点疲劳值，向第i家住户推销产品会积累A_i点疲劳值。阿明是工作狂，他想知道，对于不同的X，在不走多余的路的前提下，他最多可以积累多少点疲劳值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有一个正整数<span class=\"katex math inline\">N</span>，表示螺丝街住户的数量。</p>\n<p>接下来的一行有<span class=\"katex math inline\">N</span>个正整数，其中第<span class=\"katex math inline\">i</span>个整数<span class=\"katex math inline\">S_i</span>表示第<span class=\"katex math inline\">i</span>家住户到入口的距离。数据保证<span class=\"katex math inline\">S_1≤S_2≤…≤S_n &lt; 10^8</span>。</p>\n<p>接下来的一行有<span class=\"katex math inline\">N</span>个正整数，其中第<span class=\"katex math inline\">i</span>个整数<span class=\"katex math inline\">A_i</span>表示向第<span class=\"katex math inline\">i</span>户住户推销产品会积累的疲劳值。数据保证<span class=\"katex math inline\">A_i &lt; 1000</span></p>\n</div>            </div>",
+      "text": "第一行有一个正整数N，表示螺丝街住户的数量。\n接下来的一行有N个正整数，其中第i个整数S_i表示第i家住户到入口的距离。数据保证S_1≤S_2≤…≤S_n < 10^8。\n接下来的一行有N个正整数，其中第i个整数A_i表示向第i户住户推销产品会积累的疲劳值。数据保证A_i < 1000"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出<span class=\"katex math inline\">N</span>行，每行一个正整数，第i行整数表示当<span class=\"katex math inline\">X=i</span>时，阿明最多积累的疲劳值。</p>\n</div>            </div>",
+      "text": "输出N行，每行一个正整数，第i行整数表示当X=i时，阿明最多积累的疲劳值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n1 2 3 4 5\r\n1 2 3 4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>15\r\n19\r\n22\r\n24\r\n25</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n1 2 2 4 5\r\n5 4 3 4 1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>12\r\n17\r\n21\r\n24\r\n27</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n1 2 3 4 5\r\n1 2 3 4 5\n                        \n                        \n                            输出\n                            15\r\n19\r\n22\r\n24\r\n25\n                        \n\n                                                    \n                                输入\n                                5\r\n1 2 2 4 5\r\n5 4 3 4 1\n                            \n                            \n                                输出\n                                12\r\n17\r\n21\r\n24\r\n27"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【输入输出样例1说明】</p>\n<p><span class=\"katex math inline\">X=1</span>:向住户<span class=\"katex math inline\">5</span>推销，往返走路的疲劳值为<span class=\"katex math inline\">5+5</span>，推销的疲劳值为<span class=\"katex math inline\">5</span>，总疲劳值为<span class=\"katex math inline\">15</span>。</p>\n<p><span class=\"katex math inline\">X=2</span>:向住户<span class=\"katex math inline\">4,5</span>推销，往返走路的疲劳值为<span class=\"katex math inline\">5+5</span>，推销的疲劳值为<span class=\"katex math inline\">4+5</span>，总疲劳值为<span class=\"katex math inline\">5+5+4+5=19</span>。</p>\n<p><span class=\"katex math inline\">X=3</span>:向住户<span class=\"katex math inline\">3,4,5</span>推销，往返走路的疲劳值为<span class=\"katex math inline\">5+5</span>，推销的疲劳值<span class=\"katex math inline\">3+4+5</span>，总疲劳值为<span class=\"katex math inline\">5+5+3+4+5=22</span>。</p>\n<p><span class=\"katex math inline\">X=4</span>:向住户<span class=\"katex math inline\">2,3,4,5</span>推销，往返走路的疲劳值为<span class=\"katex math inline\">5+5</span>，推销的疲劳值<span class=\"katex math inline\">2+3+4+5</span>，总疲劳值<span class=\"katex math inline\">5+5+2+3+4+5=24</span>。</p>\n<p><span class=\"katex math inline\">X=5</span>:向住户<span class=\"katex math inline\">1,2,3,4,5</span>推销，往返走路的疲劳值为<span class=\"katex math inline\">5+5</span>，推销的疲劳值<span class=\"katex math inline\">1+2+3+4+5</span>，总疲劳值<span class=\"katex math inline\">5+5+1+2+3+4+5=25</span>。</p>\n<p>【输入输出样例2说明】</p>\n<p><span class=\"katex math inline\">X=1</span>：向住户<span class=\"katex math inline\">4</span>推销，往返走路的疲劳值为<span class=\"katex math inline\">4+4</span>，推销的疲劳值为<span class=\"katex math inline\">4</span>，总疲劳值<span class=\"katex math inline\">4+4+4=12</span>。</p>\n<p><span class=\"katex math inline\">X=2</span>：向住户<span class=\"katex math inline\">1,4</span>推销，往返走路的疲劳值为<span class=\"katex math inline\">4+4</span>，推销的疲劳值为<span class=\"katex math inline\">5+4</span>，总疲劳值<span class=\"katex math inline\">4+4+5+4=17</span>。</p>\n<p><span class=\"katex math inline\">X=3</span>：向住户<span class=\"katex math inline\">1,2,4</span>推销，往返走路的疲劳值为<span class=\"katex math inline\">4+4</span>，推销的疲劳值为<span class=\"katex math inline\">5+4+4</span>，总疲劳值<span class=\"katex math inline\">4+4+5+4+4=21</span>。</p>\n<p><span class=\"katex math inline\">X=4</span>：向住户<span class=\"katex math inline\">1,2,3,4</span>推销，往返走路的疲劳值为<span class=\"katex math inline\">4+4</span>，推销的疲劳值为<span class=\"katex math inline\">5+4+3+4</span>，总疲劳值<span class=\"katex math inline\">4+4+5+4+3+4=24</span>。或者向住户<span class=\"katex math inline\">1,2,4,5</span>推销，往返走路的疲劳值为<span class=\"katex math inline\">5+5</span>，推销的疲劳值为<span class=\"katex math inline\">5+4+4+1</span>，总疲劳值<span class=\"katex math inline\">5+5+5+4+4+1=24</span>。</p>\n<p><span class=\"katex math inline\">X=5</span>：向住户<span class=\"katex math inline\">1,2,3,4,5</span>推销，往返走路的疲劳值为<span class=\"katex math inline\">5+5</span>，推销的疲劳值为<span class=\"katex math inline\">5+4+3+4+1</span>，总疲劳值<span class=\"katex math inline\">5+5+5+4+3+4+1=27</span>。</p>\n<p>【数据说明】</p>\n<p>对于<span class=\"katex math inline\">20\\%</span>的数据，<span class=\"katex math inline\">1≤N≤20</span>；</p>\n<p>对于<span class=\"katex math inline\">40\\%</span>的数据，<span class=\"katex math inline\">1≤N≤100</span>；</p>\n<p>对于<span class=\"katex math inline\">60\\%</span>的数据，<span class=\"katex math inline\">1≤N≤1000</span>；</p>\n<p>对于<span class=\"katex math inline\">100\\%</span>的数据，<span class=\"katex math inline\">1≤N≤100000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【输入输出样例1说明】\nX=1:向住户5推销，往返走路的疲劳值为5+5，推销的疲劳值为5，总疲劳值为15。\nX=2:向住户4,5推销，往返走路的疲劳值为5+5，推销的疲劳值为4+5，总疲劳值为5+5+4+5=19。\nX=3:向住户3,4,5推销，往返走路的疲劳值为5+5，推销的疲劳值3+4+5，总疲劳值为5+5+3+4+5=22。\nX=4:向住户2,3,4,5推销，往返走路的疲劳值为5+5，推销的疲劳值2+3+4+5，总疲劳值5+5+2+3+4+5=24。\nX=5:向住户1,2,3,4,5推销，往返走路的疲劳值为5+5，推销的疲劳值1+2+3+4+5，总疲劳值5+5+1+2+3+4+5=25。\n【输入输出样例2说明】\nX=1：向住户4推销，往返走路的疲劳值为4+4，推销的疲劳值为4，总疲劳值4+4+4=12。\nX=2：向住户1,4推销，往返走路的疲劳值为4+4，推销的疲劳值为5+4，总疲劳值4+4+5+4=17。\nX=3：向住户1,2,4推销，往返走路的疲劳值为4+4，推销的疲劳值为5+4+4，总疲劳值4+4+5+4+4=21。\nX=4：向住户1,2,3,4推销，往返走路的疲劳值为4+4，推销的疲劳值为5+4+3+4，总疲劳值4+4+5+4+3+4=24。或者向住户1,2,4,5推销，往返走路的疲劳值为5+5，推销的疲劳值为5+4+4+1，总疲劳值5+5+5+4+4+1=24。\nX=5：向住户1,2,3,4,5推销，往返走路的疲劳值为5+5，推销的疲劳值为5+4+3+4+1，总疲劳值5+5+5+4+3+4+1=27。\n【数据说明】\n对于20\\%的数据，1≤N≤20；\n对于40\\%的数据，1≤N≤100；\n对于60\\%的数据，1≤N≤1000；\n对于100\\%的数据，1≤N≤100000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛</p>\n</div>                </div>",
+      "text": "noip复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n1 2 3 4 5\r\n1 2 3 4 5",
+      "output": "15\r\n19\r\n22\r\n24\r\n25"
+    },
+    {
+      "input": "5\r\n1 2 2 4 5\r\n5 4 3 4 1",
+      "output": "12\r\n17\r\n21\r\n24\r\n27"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "978",
+    "通过人数": "612",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:21:34"
+}

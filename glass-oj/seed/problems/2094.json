@@ -1,0 +1,56 @@
+{
+  "id": "2094",
+  "title": "比当前数大的最小回文数",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2094",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出一个数 <span class=\"katex math inline\">X</span> , 求比 <span class=\"katex math inline\">X</span> 大的最小的回文数！(如 <span class=\"katex math inline\">12321</span> , <span class=\"katex math inline\">11</span> 都是回文)。</p>\n</div>            </div>",
+      "text": "给出一个数 X , 求比 X 大的最小的回文数！(如 12321 , 11 都是回文)。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一个正整数 <span class=\"katex math inline\">X (X \\gt 1)</span> 。</p>\n</div>            </div>",
+      "text": "输入只有一个正整数 X (X \\gt 1) 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出比 <span class=\"katex math inline\">X</span> 大的最小的回文数！（测试数据保证本题的计算结果 <span class=\"katex math inline\"> \\le 10^9</span>）。</p>\n</div>            </div>",
+      "text": "输出比 X 大的最小的回文数！（测试数据保证本题的计算结果  \\le 10^9）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>12300</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>12321</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            12300\n                        \n                        \n                            输出\n                            12321"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "12300",
+      "output": "12321"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "2019",
+    "通过人数": "1116",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:21"
+}

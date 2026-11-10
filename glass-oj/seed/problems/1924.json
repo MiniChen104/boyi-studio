@@ -1,0 +1,61 @@
+{
+  "id": "1924",
+  "title": "集合",
+  "tags": [
+    "并查集"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1924",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>现在给你一些连续的整数，它们是从A到B的整数。一开始每个整数都属于各自的集合，然后你需要进行以下的操作：<br>\n每次选择两个属于不同集合的整数，如果这两个整数拥有大于等于P的公共质因数，那么把它们所在的集合合并。<br>\n反复如上操作，直到没有可以合并的集合为止。<br>\n现在请编程计算，最后有多少个集合。</p>\n</div>            </div>",
+      "text": "现在给你一些连续的整数，它们是从A到B的整数。一开始每个整数都属于各自的集合，然后你需要进行以下的操作：\n每次选择两个属于不同集合的整数，如果这两个整数拥有大于等于P的公共质因数，那么把它们所在的集合合并。\n反复如上操作，直到没有可以合并的集合为止。\n现在请编程计算，最后有多少个集合。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n一行，三个整数A,B,P。\n</p>\n<p>\nA≤B≤100000；<br></p><p>2≤P≤B。\n</p>\n</div>            </div>",
+      "text": "一行，三个整数A,B,P。\n\n\nA≤B≤100000；2≤P≤B。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数，表示最终集合的个数。</p>\n</div>            </div>",
+      "text": "一个数，表示最终集合的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 20 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 20 3\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>样例说明：7个符合条件的集合如下{10,20,12,15,18}，{13}，{14}，{16}，{17}，{19}，{11}。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例说明：7个符合条件的集合如下{10,20,12,15,18}，{13}，{14}，{16}，{17}，{19}，{11}。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>并查集</p>\n</div>                </div>",
+      "text": "并查集"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">并查集</span></span></p>\n</div>                </div>",
+      "text": "并查集"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 20 3",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1260",
+    "通过人数": "612",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:02"
+}

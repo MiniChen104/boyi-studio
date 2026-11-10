@@ -1,0 +1,57 @@
+{
+  "id": "2393",
+  "title": "种树",
+  "tags": [
+    "贪心",
+    "区间问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2393",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一条街道的一边有几座房子。因为环保原因居民想要在路边种些树，路边的地区被分割成 <span class=\"katex math inline\">n</span> 块，并被编号为 <span class=\"katex math inline\">1...n</span>，每一块大小为一个单位尺寸并最多可种一棵树。每个居民想在门前种些树并指定了三个数 <span class=\"katex math inline\">b，e，t</span> 这三个数分别表示该居民想在 <span class=\"katex math inline\">b</span> 和 <span class=\"katex math inline\">e</span> 之间最少种 <span class=\"katex math inline\">t</span> 棵树，当然，<span class=\"katex math inline\">b ≤ e</span>，<span class=\"katex math inline\">t ≤ e - b + 1</span>，允许居民想种树的子区域可以交叉。  </p>\n<p>出于资金紧缺的原因，环保部门请你求出能够满足所有居民的树所需种的树的最少数量。</p>\n</div>            </div>",
+      "text": "一条街道的一边有几座房子。因为环保原因居民想要在路边种些树，路边的地区被分割成 n 块，并被编号为 1...n，每一块大小为一个单位尺寸并最多可种一棵树。每个居民想在门前种些树并指定了三个数 b，e，t 这三个数分别表示该居民想在 b 和 e 之间最少种 t 棵树，当然，b ≤ e，t ≤ e - b + 1，允许居民想种树的子区域可以交叉。  \n出于资金紧缺的原因，环保部门请你求出能够满足所有居民的树所需种的树的最少数量。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为 <span class=\"katex math inline\">n</span>，表示区域的个数；</p>\n<p>第二行为 <span class=\"katex math inline\">h</span> ，表示房子的数目；</p>\n<p>下面 <span class=\"katex math inline\">h</span> 行描述居民的需要：<span class=\"katex math inline\">b、e、t</span> (<span class=\"katex math inline\">0 &lt; b ≤ e ≤ 30000</span>，<span class=\"katex math inline\">t ≤ e - b + 1</span>) 分别用一个空格分开。</p>\n</div>            </div>",
+      "text": "第一行为 n，表示区域的个数；\n第二行为 h ，表示房子的数目；\n下面 h 行描述居民的需要：b、e、t (0 < b ≤ e ≤ 30000，t ≤ e - b + 1) 分别用一个空格分开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个数，为满足所有居民的要求，所需要种树的最少数量。</p>\n</div>            </div>",
+      "text": "输出一个数，为满足所有居民的要求，所需要种树的最少数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>9\r\n4\r\n1 4 2\r\n4 6 2\r\n8 9 2\r\n3 5 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            9\r\n4\r\n1 4 2\r\n4 6 2\r\n8 9 2\r\n3 5 2\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><span class=\"katex math inline\">30\\%</span> 的数据满足 <span class=\"katex math inline\">0 &lt; n ≤ 1000</span> ， <span class=\"katex math inline\">0 &lt; h ≤ 500</span> 。 </p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据满足 <span class=\"katex math inline\">0 &lt; n ≤ 30000</span> ， <span class=\"katex math inline\">0 &lt; h ≤ 5000</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "30\\% 的数据满足 0 < n ≤ 1000 ， 0 < h ≤ 500 。 \n100\\% 的数据满足 0 < n ≤ 30000 ， 0 < h ≤ 5000 。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">贪心</span><span class=\"label label-warning\">区间问题</span></span></p>\n</div>                </div>",
+      "text": "贪心区间问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "9\r\n4\r\n1 4 2\r\n4 6 2\r\n8 9 2\r\n3 5 2",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "968",
+    "通过人数": "535",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:49"
+}

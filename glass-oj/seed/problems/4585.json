@@ -1,0 +1,62 @@
+{
+  "id": "4585",
+  "title": "城镇地图",
+  "tags": [
+    "市赛",
+    "南京2024"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4585",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>乐乐管理了一个巨大的城镇 。城镇可以看作是⼀个 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列的矩形 ，其中 ，城镇的中心位于 第 <span class=\"katex math inline\">x_0</span> 行 、第 <span class=\"katex math inline\">y_0</span> 列 。城镇中每个格子都用一个字符来表示 ，城镇地图的绘制方法如下：</p>\n<p>首先在城镇的中心画上一个加号 <code>+</code>。</p>\n<p>给穿过城镇中心的一行画上减号 <code>-</code>。(城镇中心位置不画) </p>\n<p>给穿过城镇中心的一列画上竖线 <code>|</code>。(城镇中心位置不画)</p>\n<p>从城镇中心出发 ，分别给斜左上方 、斜右上方 、斜右下方 、斜左下方画上 <code>\\</code>、<code>/</code>、<code>\\</code>、<code>/</code> 字 符 ，一直绘制直到到达地图边界。</p>\n<p>以上横竖斜线将城镇分割为八个区域 ，按照顺时针方向给每个区域分别填上 <code>A</code>-<code>H</code> 八个字母 ，如下图所示：</p>\n<p><img src=\"https://assets.boyi.local/88d3711c115db92c8ba23958.png\"></p>\n<p>例如 ，对于以下 <span class=\"katex math inline\">n=8,m=16</span> 的例子 ，假设城镇的中心位于 <span class=\"katex math inline\">(4,8)</span> ，绘制的城镇地图如下：</p>\n<pre><code class=\"language-cpp\">GGGG\\HH|AA/BBBBB\nGGGGG\\H|A/BBBBBB\nGGGGGG\\|/BBBBBBB\n-------+--------\nFFFFFF/|\\CCCCCCC\nFFFFF/E|D\\CCCCCC\nFFFF/EE|DD\\CCCCC\nFFF/EEE|DDD\\CCCC\n</code></pre>\n<p>对于 <span class=\"katex math inline\">n=7,m=4</span> ，城镇中心位于 <span class=\"katex math inline\">(5,3)</span> ，绘制的城镇地图如下：</p>\n<pre><code class=\"language-cpp\">HH|A\nHH|A\n\\H|A\nG\\|/\n--+-\nF/|\\\n/E|D\n</code></pre>\n<p>如果 <span class=\"katex math inline\">n=2,m=1</span> ，城镇中心位于 <span class=\"katex math inline\">(2,1)</span> ，绘制的城镇地图如下：</p>\n<pre><code class=\"language-cpp\">|\n+\n</code></pre>\n<p>城镇实在是太大了 ，居民们不得不依靠 <span class=\"katex math inline\">GPS</span> 定位 。 因此 ，居民们希望你帮助他们开发一款地图应用 ，根据 <span class=\"katex math inline\">GPS</span> 位置 (第 <span class=\"katex math inline\">x</span> 行第 <span class=\"katex math inline\">y</span> 列) 绘制出以 <span class=\"katex math inline\">(x,y)</span> 为中心 ，大小为 <span class=\"katex math inline\">5 \\times 5</span> 的城镇地图。</p>\n</div>            </div>",
+      "text": "乐乐管理了一个巨大的城镇 。城镇可以看作是⼀个 n 行 m 列的矩形 ，其中 ，城镇的中心位于 第 x_0 行 、第 y_0 列 。城镇中每个格子都用一个字符来表示 ，城镇地图的绘制方法如下：\n首先在城镇的中心画上一个加号 +。\n给穿过城镇中心的一行画上减号 -。(城镇中心位置不画) \n给穿过城镇中心的一列画上竖线 |。(城镇中心位置不画)\n从城镇中心出发 ，分别给斜左上方 、斜右上方 、斜右下方 、斜左下方画上 \\、/、\\、/ 字 符 ，一直绘制直到到达地图边界。\n以上横竖斜线将城镇分割为八个区域 ，按照顺时针方向给每个区域分别填上 A-H 八个字母 ，如下图所示：\n\n例如 ，对于以下 n=8,m=16 的例子 ，假设城镇的中心位于 (4,8) ，绘制的城镇地图如下：\nGGGG\\HH|AA/BBBBB\nGGGGG\\H|A/BBBBBB\nGGGGGG\\|/BBBBBBB\n-------+--------\nFFFFFF/|\\CCCCCCC\nFFFFF/E|D\\CCCCCC\nFFFF/EE|DD\\CCCCC\nFFF/EEE|DDD\\CCCC\n\n对于 n=7,m=4 ，城镇中心位于 (5,3) ，绘制的城镇地图如下：\nHH|A\nHH|A\n\\H|A\nG\\|/\n--+-\nF/|\\\n/E|D\n\n如果 n=2,m=1 ，城镇中心位于 (2,1) ，绘制的城镇地图如下：\n|\n+\n\n城镇实在是太大了 ，居民们不得不依靠 GPS 定位 。 因此 ，居民们希望你帮助他们开发一款地图应用 ，根据 GPS 位置 (第 x 行第 y 列) 绘制出以 (x,y) 为中心 ，大小为 5 \\times 5 的城镇地图。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输⼊第一行四个整数 <span class=\"katex math inline\">n,m,x_0,y_0</span>，分别代表城镇区域的高度 (<span class=\"katex math inline\">n</span> 行) 、宽度 (<span class=\"katex math inline\">m</span> 列) 和城镇中心的位置 (<span class=\"katex math inline\">x_0,y_0</span>) 。城镇中心的位置满足 <span class=\"katex math inline\">1≤x_0≤n,1≤y_0≤m</span>。</p>\n<p>输⼊第二行一个整数 <span class=\"katex math inline\">Q</span> ， 代表绘制地图的请求数量 。 接下来 <span class=\"katex math inline\">Q</span> 行 ， 每行两个整数 <span class=\"katex math inline\">x,y(1≤x≤n,1≤y≤m)</span>，表示一个请求 ，绘制出以第 <span class=\"katex math inline\">x</span> 行第 <span class=\"katex math inline\">y</span> 列为中心的 <span class=\"katex math inline\">5×5</span> 地图。</p>\n</div>            </div>",
+      "text": "输⼊第一行四个整数 n,m,x_0,y_0，分别代表城镇区域的高度 (n 行) 、宽度 (m 列) 和城镇中心的位置 (x_0,y_0) 。城镇中心的位置满足 1≤x_0≤n,1≤y_0≤m。\n输⼊第二行一个整数 Q ， 代表绘制地图的请求数量 。 接下来 Q 行 ， 每行两个整数 x,y(1≤x≤n,1≤y≤m)，表示一个请求 ，绘制出以第 x 行第 y 列为中心的 5×5 地图。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>为每个请求<span class=\"katex math inline\">x,y</span> 输出 <span class=\"katex math inline\">5</span> 行 ，每行 <span class=\"katex math inline\">5</span> 个字符 ，为绘制的地图 。超出城镇边界的部分画井号 <code>#</code> 。</p>\n<p>为了更好的视觉效果 ，你可以选择在每个请求之后输出一个额外的空行 (是否输出额外空行不影响正确性)。</p>\n</div>            </div>",
+      "text": "为每个请求x,y 输出 5 行 ，每行 5 个字符 ，为绘制的地图 。超出城镇边界的部分画井号 # 。\n为了更好的视觉效果 ，你可以选择在每个请求之后输出一个额外的空行 (是否输出额外空行不影响正确性)。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 15 4 8\r\n2\r\n1 1\r\n2 7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>#####\r\n#####\r\n##GGG\r\n##GGG\r\n##GGG\r\n\r\n##### \r\n\\HH|A \r\nG\\H|A \r\nGG\\|/ \r\n---+-\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 15 4 8\r\n2\r\n1 1\r\n2 7\n                        \n                        \n                            输出\n                            #####\r\n#####\r\n##GGG\r\n##GGG\r\n##GGG\r\n\r\n##### \r\n\\HH|A \r\nG\\H|A \r\nGG\\|/ \r\n---+-"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据规模与提示</h4>\n<p>对于 <span class=\"katex math inline\"> 60\\% </span> 的数据 ，满足 <span class=\"katex math inline\">n,m≤1,000</span>。</p>\n<p>对于 <span class=\"katex math inline\"> 100 \\% </span> 的数据 ，满足 <span class=\"katex math inline\">1≤n,m≤1,000,000</span>。</p>\n<p>对于 <span class=\"katex math inline\"> 100 \\% </span> 的数据 ，满足 <span class=\"katex math inline\">Q≤1,000</span>。</p>\n<p>注意：</p>\n<p>char map[1000000][1000000] 将会占用约 <span class=\"katex math inline\">1TB (1024GB)</span> 的内存 。这远超过了我们可用的内存。</p>\n<p></p>\n<pre><code class=\"language-cpp\">char ch = &#x27;\\\\ &#x27;;  \nchar s [] = &quot;\\\\&quot;; // strlen(s) == 1\nstd::string s = &quot;\\\\&quot;; // s.length() == 1\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "数据规模与提示\n对于  60\\%  的数据 ，满足 n,m≤1,000。\n对于  100 \\%  的数据 ，满足 1≤n,m≤1,000,000。\n对于  100 \\%  的数据 ，满足 Q≤1,000。\n注意：\nchar map[1000000][1000000] 将会占用约 1TB (1024GB) 的内存 。这远超过了我们可用的内存。\n\nchar ch = '\\\\ ';  \nchar s [] = \"\\\\\"; // strlen(s) == 1\nstd::string s = \"\\\\\"; // s.length() == 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024南京市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2024南京市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">南京2024</span></span></p>\n</div>                </div>",
+      "text": "市赛南京2024"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 15 4 8\r\n2\r\n1 1\r\n2 7",
+      "output": "#####\r\n#####\r\n##GGG\r\n##GGG\r\n##GGG\r\n\r\n##### \r\n\\HH|A \r\nG\\H|A \r\nGG\\|/ \r\n---+-\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "26",
+    "通过人数": "6",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:39"
+}

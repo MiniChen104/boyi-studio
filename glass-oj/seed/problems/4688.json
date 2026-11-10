@@ -1,0 +1,68 @@
+{
+  "id": "4688",
+  "title": "等价消除",
+  "tags": [
+    "GESP七级",
+    "前缀和",
+    "位运算",
+    "25年3月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/4688",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小A有一个仅包含小写英文字母的字符串 <span class=\"katex math inline\"> S </span>。</p>\n<p>对于一个字符串，如果能通过每次删去其中两个相同字符的方式，将这个字符串变为空串，那么称这个字符串是可以被等价消除的。</p>\n<p>小A想知道 <span class=\"katex math inline\"> S </span> 有多少子串是可以被等价消除的。</p>\n<p>一个字符串 <span class=\"katex math inline\"> S&#x27; </span> 是 <span class=\"katex math inline\"> S </span> 的子串，当且仅当删去 <span class=\"katex math inline\"> S </span> 的某个可以为空的前缀和某个可以为空的后缀之后，可以得到 <span class=\"katex math inline\"> S&#x27; </span>。</p>\n</div>            </div>",
+      "text": "小A有一个仅包含小写英文字母的字符串  S 。\n对于一个字符串，如果能通过每次删去其中两个相同字符的方式，将这个字符串变为空串，那么称这个字符串是可以被等价消除的。\n小A想知道  S  有多少子串是可以被等价消除的。\n一个字符串  S'  是  S  的子串，当且仅当删去  S  的某个可以为空的前缀和某个可以为空的后缀之后，可以得到  S' 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个正整数 <span class=\"katex math inline\"> |S| </span>，表示字符串 <span class=\"katex math inline\"> S </span> 的长度。</p>\n<p>第二行，一个仅包含小写英文字母的字符串 <span class=\"katex math inline\"> S </span>。</p>\n</div>            </div>",
+      "text": "第一行，一个正整数  |S| ，表示字符串  S  的长度。\n第二行，一个仅包含小写英文字母的字符串  S 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数，表示答案。</p>\n</div>            </div>",
+      "text": "一行，一个整数，表示答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7\r\naaaaabb</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>9\r\nbabacabab</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\r\naaaaabb\n                        \n                        \n                            输出\n                            9\n                        \n\n                                                    \n                                输入\n                                9\r\nbabacabab\n                            \n                            \n                                输出\n                                2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">20\\%</span> 的测试点，保证 <span class=\"katex math inline\"> S </span> 中仅包含 <code>a</code> 和 <code>b</code> 两种字符。</p>\n<p>对于另外 <span class=\"katex math inline\">20\\%</span> 的测试点，保证 <span class=\"katex math inline\"> 1 \\leq |S| \\leq 2000 </span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\"> 1 \\leq |S| \\leq 2 \\times 10^5 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 20\\% 的测试点，保证  S  中仅包含 a 和 b 两种字符。\n对于另外 20\\% 的测试点，保证  1 \\leq |S| \\leq 2000 。\n对于所有测试点，保证  1 \\leq |S| \\leq 2 \\times 10^5 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年GESP 3月认证C++七级真题</p>\n</div>                </div>",
+      "text": "2025年GESP 3月认证C++七级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP七级</span><span class=\"label label-warning\">前缀和</span><span class=\"label label-info\">位运算</span><span class=\"label label-danger\">25年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP七级前缀和位运算25年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7\r\naaaaabb",
+      "output": "9"
+    },
+    {
+      "input": "9\r\nbabacabab",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "69",
+    "通过人数": "42",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:35:55"
+}

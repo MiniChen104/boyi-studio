@@ -1,0 +1,61 @@
+{
+  "id": "1544",
+  "title": "吃西瓜（ watermelon ）",
+  "tags": [
+    "区赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1544",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>炎热的夏天来的可真快，小花猫和编程兔决定去买一个又大又甜的西瓜。可是小花和编程兔是两只非常奇怪的动物，都是偶数的爱好者，它们希望把西瓜切成两半后，每一部分的重量都是\n<span class=\"katex math inline\">2</span> 的倍数公斤（大于 <span class=\"katex math inline\">0</span>）。当然有编程兔在，它们很快就决定了买哪个瓜。小朋友你知道要不要买这个瓜吗？ </p>\n</div>            </div>",
+      "text": "炎热的夏天来的可真快，小花猫和编程兔决定去买一个又大又甜的西瓜。可是小花和编程兔是两只非常奇怪的动物，都是偶数的爱好者，它们希望把西瓜切成两半后，每一部分的重量都是\n2 的倍数公斤（大于 0）。当然有编程兔在，它们很快就决定了买哪个瓜。小朋友你知道要不要买这个瓜吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行只有一个正整数，表示西瓜的重量 <span class=\"katex math inline\">w</span>（单位是公斤）。</p>\n</div>            </div>",
+      "text": "第一行只有一个正整数，表示西瓜的重量 w（单位是公斤）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果能达到要求，就输出 <code>YES</code>，否则就输出 <code>NO</code>。(注意区分大小写)。</p>\n</div>            </div>",
+      "text": "如果能达到要求，就输出 YES，否则就输出 NO。(注意区分大小写)。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>YES</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\n                        \n                        \n                            输出\n                            YES"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><span class=\"katex math inline\">8</span> 可以分成 <span class=\"katex math inline\">2</span> 和 <span class=\"katex math inline\">6</span>，或者 <span class=\"katex math inline\">4</span> 和 <span class=\"katex math inline\">4</span>。</p>\n<h4>数据规模：</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 \\le w \\le 100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "8 可以分成 2 和 6，或者 4 和 4。\n数据规模：\n对于 100\\% 的数据，1 \\le w \\le 100。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>区赛</p>\n</div>                </div>",
+      "text": "区赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">区赛</span></span></p>\n</div>                </div>",
+      "text": "区赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8",
+      "output": "YES"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "1106",
+    "通过人数": "651",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:54"
+}

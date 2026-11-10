@@ -1,0 +1,56 @@
+{
+  "id": "1176",
+  "title": "素数问题",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1176",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>编一个程序，计算 <span class=\"katex math inline\">1 \\sim n</span> 范围内素数的个数。</p>\n</div>            </div>",
+      "text": "编一个程序，计算 1 \\sim n 范围内素数的个数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>包括多组数据（不超过 <span class=\"katex math inline\">100</span> 组），每组数据仅有一个整数 <span class=\"katex math inline\">n</span>  （ <span class=\"katex math inline\">1 \\le n \\le 100</span> ），输入以 <span class=\"katex math inline\">0</span> 结束。</p>\n</div>            </div>",
+      "text": "包括多组数据（不超过 100 组），每组数据仅有一个整数 n  （ 1 \\le n \\le 100 ），输入以 0 结束。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组数据输入，输出一行，为 <span class=\"katex math inline\">1 \\sim n</span> （包括 <span class=\"katex math inline\">n</span> ）之间的素数的个数。</p>\n</div>            </div>",
+      "text": "对于每组数据输入，输出一行，为 1 \\sim n （包括 n ）之间的素数的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1\r\n10\r\n65\r\n100\r\n0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0\r\n4\r\n18\r\n25</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\r\n10\r\n65\r\n100\r\n0\n                        \n                        \n                            输出\n                            0\r\n4\r\n18\r\n25"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1\r\n10\r\n65\r\n100\r\n0",
+      "output": "0\r\n4\r\n18\r\n25"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "15285",
+    "通过人数": "8924",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:15:49"
+}

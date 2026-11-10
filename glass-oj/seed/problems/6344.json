@@ -1,0 +1,60 @@
+{
+  "id": "6344",
+  "title": "尾部操作",
+  "tags": [
+    "vector"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6344",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">n</span> 个初始为空的数组，进行 <span class=\"katex math inline\">m</span> 次操作：</p>\n<ul><li><code>1 x y</code>：在第 <span class=\"katex math inline\">x</span> 个数组的末尾追加整数 <span class=\"katex math inline\">y</span>。</li>\n<li><code>2 x</code>：删除第 <span class=\"katex math inline\">x</span> 个数组的末尾元素；如果为空，则不进行任何操作。</li>\n<li><code>3 x</code>：输出第 <span class=\"katex math inline\">x</span> 个数组的长度。</li>\n<li><code>4 x</code>：输出第 <span class=\"katex math inline\">x</span> 个数组的末尾元素；如果为空，则输出 <code>EMPTY</code>。</li>\n</ul></div>            </div>",
+      "text": "有 n 个初始为空的数组，进行 m 次操作：\n1 x y：在第 x 个数组的末尾追加整数 y。\n2 x：删除第 x 个数组的末尾元素；如果为空，则不进行任何操作。\n3 x：输出第 x 个数组的长度。\n4 x：输出第 x 个数组的末尾元素；如果为空，则输出 EMPTY。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入两个整数 <span class=\"katex math inline\">n,m</span>。</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行输入一个操作，格式如题目描述所示。</p>\n</div>            </div>",
+      "text": "第一行输入两个整数 n,m。\n接下来 m 行，每行输入一个操作，格式如题目描述所示。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每次操作 <code>3</code> 或 <code>4</code>，输出一行结果。</p>\n</div>            </div>",
+      "text": "对于每次操作 3 或 4，输出一行结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 12\r\n1 1 5\r\n1 2 8\r\n1 1 9\r\n4 1\r\n2 1\r\n4 1\r\n3 2\r\n2 3\r\n4 3\r\n2 2\r\n3 2\r\n4 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9\r\n5\r\n1\r\nEMPTY\r\n0\r\nEMPTY</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2 14\r\n2 1\r\n2 1\r\n1 1 -1000000000\r\n4 1\r\n1 1 1000000000\r\n4 1\r\n2 1\r\n4 1\r\n2 1\r\n4 1\r\n3 1\r\n1 1 0\r\n4 1\r\n3 2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>-1000000000\r\n1000000000\r\n-1000000000\r\nEMPTY\r\n0\r\n0\r\n0</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 12\r\n1 1 5\r\n1 2 8\r\n1 1 9\r\n4 1\r\n2 1\r\n4 1\r\n3 2\r\n2 3\r\n4 3\r\n2 2\r\n3 2\r\n4 2\n                        \n                        \n                            输出\n                            9\r\n5\r\n1\r\nEMPTY\r\n0\r\nEMPTY\n                        \n\n                                                    \n                                输入\n                                2 14\r\n2 1\r\n2 1\r\n1 1 -1000000000\r\n4 1\r\n1 1 1000000000\r\n4 1\r\n2 1\r\n4 1\r\n2 1\r\n4 1\r\n3 1\r\n1 1 0\r\n4 1\r\n3 2\n                            \n                            \n                                输出\n                                -1000000000\r\n1000000000\r\n-1000000000\r\nEMPTY\r\n0\r\n0\r\n0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p><span class=\"katex math inline\">1 \\le n,m \\le 10^5</span>，<span class=\"katex math inline\">1 \\le x \\le n</span>，<span class=\"katex math inline\">|y| \\le 10^9</span>。保证至少有一次操作 <code>3</code> 或 <code>4</code>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n1 \\le n,m \\le 10^5，1 \\le x \\le n，|y| \\le 10^9。保证至少有一次操作 3 或 4。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">vector</span></span></p>\n</div>                </div>",
+      "text": "vector"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 12\r\n1 1 5\r\n1 2 8\r\n1 1 9\r\n4 1\r\n2 1\r\n4 1\r\n3 2\r\n2 3\r\n4 3\r\n2 2\r\n3 2\r\n4 2",
+      "output": "9\r\n5\r\n1\r\nEMPTY\r\n0\r\nEMPTY"
+    },
+    {
+      "input": "2 14\r\n2 1\r\n2 1\r\n1 1 -1000000000\r\n4 1\r\n1 1 1000000000\r\n4 1\r\n2 1\r\n4 1\r\n2 1\r\n4 1\r\n3 1\r\n1 1 0\r\n4 1\r\n3 2",
+      "output": "-1000000000\r\n1000000000\r\n-1000000000\r\nEMPTY\r\n0\r\n0\r\n0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "18",
+    "通过人数": "9",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:48"
+}

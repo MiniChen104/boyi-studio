@@ -1,0 +1,67 @@
+{
+  "id": "3668",
+  "title": "小杨的日字矩阵",
+  "tags": [
+    "GESP二级",
+    "嵌套循环",
+    "24年3月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3668",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨想要构造一个 <span class=\"katex math inline\"> N \\times N </span> 的日字矩阵（ <span class=\"katex math inline\"> N </span> 为奇数），具体来说，这个矩阵共有 <span class=\"katex math inline\"> N </span> 行，每行 <span class=\"katex math inline\"> N </span> 个字符，其中最左列、最右列都是 <code>|</code> ，而第一行、最后一行、以及中间一行（即第 <span class=\"katex math inline\"> \\frac{N+1}{2} </span> 行）的第 <span class=\"katex math inline\">2</span> ~ <span class=\"katex math inline\"> N-1 </span> 个字符都是 <code>-</code> ，其余所有字符都是半角小写字母 <code>x</code> 。例如，一个 <span class=\"katex math inline\"> N = 5 </span> 的日字矩阵如下：</p>\n<pre><code class=\"language-cpp\">|---|\n|xxx|\n|---|\n|xxx|\n|---|\n</code></pre>\n<p>请你帮小杨根据给定的 <span class=\"katex math inline\"> N </span> 打印出对应的“日字矩阵”。</p>\n</div>            </div>",
+      "text": "小杨想要构造一个  N \\times N  的日字矩阵（  N  为奇数），具体来说，这个矩阵共有  N  行，每行  N  个字符，其中最左列、最右列都是 | ，而第一行、最后一行、以及中间一行（即第  \\frac{N+1}{2}  行）的第 2 ~  N-1  个字符都是 - ，其余所有字符都是半角小写字母 x 。例如，一个  N = 5  的日字矩阵如下：\n|---|\n|xxx|\n|---|\n|xxx|\n|---|\n\n请你帮小杨根据给定的  N  打印出对应的“日字矩阵”。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数 <span class=\"katex math inline\">N</span>（ <span class=\"katex math inline\"> 5 \\leq N \\leq 49 </span>，保证 <span class=\"katex math inline\"> N </span> 为奇数）。</p>\n</div>            </div>",
+      "text": "一行一个整数 N（  5 \\leq N \\leq 49 ，保证  N  为奇数）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出对应的“日字矩阵”。</p>\n<p>请严格按格式要求输出，不要擅自添加任何空格、标点、空行等任何符号。你应该恰好输出 <span class=\"katex math inline\"> N </span> 行，每行除了换行符外恰好包含 <span class=\"katex math inline\"> N </span> 个字符，这些字符要么是 <code>-</code> ，要么是 <code>|</code> ，要么是 <code>x</code> 。**你的输出必须和标准答案完全一致才能得分，请在提交前仔细检查。</p>\n</div>            </div>",
+      "text": "输出对应的“日字矩阵”。\n请严格按格式要求输出，不要擅自添加任何空格、标点、空行等任何符号。你应该恰好输出  N  行，每行除了换行符外恰好包含  N  个字符，这些字符要么是 - ，要么是 | ，要么是 x 。**你的输出必须和标准答案完全一致才能得分，请在提交前仔细检查。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>|---|\r\n|xxx|\r\n|---|\r\n|xxx|\r\n|---|</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>7</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>|-----|\r\n|xxxxx|\r\n|xxxxx|\r\n|-----|\r\n|xxxxx|\r\n|xxxxx|\r\n|-----|</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            |---|\r\n|xxx|\r\n|---|\r\n|xxx|\r\n|---|\n                        \n\n                                                    \n                                输入\n                                7\n                            \n                            \n                                输出\n                                |-----|\r\n|xxxxx|\r\n|xxxxx|\r\n|-----|\r\n|xxxxx|\r\n|xxxxx|\r\n|-----|"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>在常规程序中，输入、输出时提供提示是好习惯。但在本场考试中，由于系统限定，请不要在输入、输出中附带任何提示信息。</p>\n</div>\n\n                    \n                </div>",
+      "text": "在常规程序中，输入、输出时提供提示是好习惯。但在本场考试中，由于系统限定，请不要在输入、输出中附带任何提示信息。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP24年3月二级</p>\n</div>                </div>",
+      "text": "GESP24年3月二级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP二级</span><span class=\"label label-warning\">嵌套循环</span><span class=\"label label-info\">24年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP二级嵌套循环24年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "|---|\r\n|xxx|\r\n|---|\r\n|xxx|\r\n|---|"
+    },
+    {
+      "input": "7",
+      "output": "|-----|\r\n|xxxxx|\r\n|xxxxx|\r\n|-----|\r\n|xxxxx|\r\n|xxxxx|\r\n|-----|"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3431",
+    "通过人数": "2568",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:41"
+}

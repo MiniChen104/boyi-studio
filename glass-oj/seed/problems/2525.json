@@ -1,0 +1,56 @@
+{
+  "id": "2525",
+  "title": "分糖果",
+  "tags": [
+    "图论"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2525",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>童年的我们，将和朋友分享美好的事物作为自己的快乐。这天，C小朋友得到了Plenty of candies，将要把这些糖果分给要好的朋友们。已知糖果从一个人传给另一个人需要 <span class=\"katex math inline\">1</span> 秒的时间，同一个小朋友不会重复接受糖果。</p>\n<p>由于糖果足够多，如果某时刻某小朋友接受了糖果，他会将糖果分成若干份，分给那些在他身旁且还没有得到糖果的小朋友们，而且自己会吃一些糖果。由于嘴馋，小朋友们等不及将糖果发完，会在得到糖果后边吃边发。</p>\n<p>每个小朋友从接受糖果到吃完糖果需要 <span class=\"katex math inline\">m</span> 秒的时间。那么，如果第一秒C小朋友开始发糖，第多少秒所有小朋友都吃完了糖呢？</p>\n</div>            </div>",
+      "text": "童年的我们，将和朋友分享美好的事物作为自己的快乐。这天，C小朋友得到了Plenty of candies，将要把这些糖果分给要好的朋友们。已知糖果从一个人传给另一个人需要 1 秒的时间，同一个小朋友不会重复接受糖果。\n由于糖果足够多，如果某时刻某小朋友接受了糖果，他会将糖果分成若干份，分给那些在他身旁且还没有得到糖果的小朋友们，而且自己会吃一些糖果。由于嘴馋，小朋友们等不及将糖果发完，会在得到糖果后边吃边发。\n每个小朋友从接受糖果到吃完糖果需要 m 秒的时间。那么，如果第一秒C小朋友开始发糖，第多少秒所有小朋友都吃完了糖呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为三个数<span class=\"katex math inline\">n、p、c</span>，为小朋友数、关系数和C小朋友的编号。  </p>\n<p>第二行为一个数 <span class=\"katex math inline\">m</span> ，表示小朋友吃糖的时间。  </p>\n<p>下面 <span class=\"katex math inline\">p</span> 行每行两个整数，表示某两个小朋友在彼此身旁。</p>\n</div>            </div>",
+      "text": "第一行为三个数n、p、c，为小朋友数、关系数和C小朋友的编号。  \n第二行为一个数 m ，表示小朋友吃糖的时间。  \n下面 p 行每行两个整数，表示某两个小朋友在彼此身旁。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数，为所有小朋友都吃完了糖的时间。</p>\n</div>            </div>",
+      "text": "一个数，为所有小朋友都吃完了糖的时间。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 3 1\r\n2\r\n1 2\r\n2 3\r\n1 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 3 1\r\n2\r\n1 2\r\n2 3\r\n1 4\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】  </p>\n<p>第一秒，糖在 1 手上。<br>\n第二秒，糖传到了 2、4 的手中。<br>\n第三秒，糖传到了 3 的手中，此时 1 吃完了。<br>\n第四秒，2、4 吃完了。<br>\n第五秒，3 吃完了。所以答案是 5。  </p>\n<p>【数据范围】  </p>\n<p><span class=\"katex math inline\">40\\%</span> 的数据满足：<span class=\"katex math inline\">1≤n≤100</span>；</p>\n<p><span class=\"katex math inline\">60\\%</span> 的数据满足：<span class=\"katex math inline\">1≤n≤1000</span>；</p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据满足：<span class=\"katex math inline\">1≤n≤100000</span>；</p>\n<p><span class=\"katex math inline\">p≤10^6</span>,<span class=\"katex math inline\">m≤20000</span>；</p>\n<p>不会有同一个关系被描述多次的情况。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】  \n第一秒，糖在 1 手上。\n第二秒，糖传到了 2、4 的手中。\n第三秒，糖传到了 3 的手中，此时 1 吃完了。\n第四秒，2、4 吃完了。\n第五秒，3 吃完了。所以答案是 5。  \n【数据范围】  \n40\\% 的数据满足：1≤n≤100；\n60\\% 的数据满足：1≤n≤1000；\n100\\% 的数据满足：1≤n≤100000；\np≤10^6,m≤20000；\n不会有同一个关系被描述多次的情况。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span></span></p>\n</div>                </div>",
+      "text": "图论"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 3 1\r\n2\r\n1 2\r\n2 3\r\n1 4",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "245",
+    "通过人数": "97",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:07"
+}

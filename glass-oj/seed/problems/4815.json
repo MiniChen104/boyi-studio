@@ -1,0 +1,56 @@
+{
+  "id": "4815",
+  "title": "画直角三角形",
+  "tags": [
+    "蓝桥等考",
+    "循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4815",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>根据参数，画直角三角形。</p>\n</div>            </div>",
+      "text": "根据参数，画直角三角形。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含一个正整数 <span class=\"katex math inline\">n</span> ，表示直角三角形的高度（也可以认为是直角边的长度）。输入要打印的符号，例如“<code>*</code>”。第三个要输入的内容是 <span class=\"katex math inline\">1</span> 或者 <span class=\"katex math inline\">0</span>（ <span class=\"katex math inline\">1</span> 代表实心，<span class=\"katex math inline\">0</span> 代表空心）。（三个值用空格隔开）</p>\n</div>            </div>",
+      "text": "输入包含一个正整数 n ，表示直角三角形的高度（也可以认为是直角边的长度）。输入要打印的符号，例如“*”。第三个要输入的内容是 1 或者 0（ 1 代表实心，0 代表空心）。（三个值用空格隔开）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出由符号（例如：“<code>*</code>”）组成的直角三角形。共有 <span class=\"katex math inline\">n</span> 行。通过第三个输入的数值来确定要输出的直角三角形是空心还是实心。</p>\n</div>            </div>",
+      "text": "输出由符号（例如：“*”）组成的直角三角形。共有 n 行。通过第三个输入的数值来确定要输出的直角三角形是空心还是实心。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 * 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>*\r\n**\r\n* *\r\n*  *\r\n*****\r\n</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4 # 1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>#\r\n##\r\n###\r\n####</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 * 0\n                        \n                        \n                            输出\n                            *\r\n**\r\n* *\r\n*  *\r\n*****\r\n\n                        \n\n                                                    \n                                输入\n                                4 # 1\n                            \n                            \n                                输出\n                                #\r\n##\r\n###\r\n####"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">循环</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 * 0",
+      "output": "*\r\n**\r\n* *\r\n*  *\r\n*****\r\n"
+    },
+    {
+      "input": "4 # 1",
+      "output": "#\r\n##\r\n###\r\n####"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "105",
+    "通过人数": "81",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:35"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1319",
+  "title": "立定跳远成绩求解",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1319",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>四年级二班第一小组在体育课上测试了立定跳远成绩，男生和女生分别测试，请根据记录的立定跳远成绩计算出男生和女生的平均成绩分别是多少？（结果保留 <span class=\"katex math inline\">1</span> 位小数）（4.1.104）</p>\n</div>            </div>",
+      "text": "四年级二班第一小组在体育课上测试了立定跳远成绩，男生和女生分别测试，请根据记录的立定跳远成绩计算出男生和女生的平均成绩分别是多少？（结果保留 1 位小数）（4.1.104）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两行，第一行为若干男生的跳远成绩（人数 <span class=\"katex math inline\"> \\le 100</span>），以 <span class=\"katex math inline\">0</span> 表示结束</p>\n<p>第二行为若干女生的跳远成绩（人数 <span class=\"katex math inline\"> \\le 100 </span>），以 <span class=\"katex math inline\"> 0</span>表示结束。</p>\n</div>            </div>",
+      "text": "两行，第一行为若干男生的跳远成绩（人数  \\le 100），以 0 表示结束\n第二行为若干女生的跳远成绩（人数  \\le 100 ），以  0表示结束。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行 <span class=\"katex math inline\">2</span> 个数以空格隔开，分别代表男生和女生的立定跳远的平均分（结果保留 <span class=\"katex math inline\">1</span> 位小数）。</p>\n</div>            </div>",
+      "text": "一行 2 个数以空格隔开，分别代表男生和女生的立定跳远的平均分（结果保留 1 位小数）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>157 154 159 160 0\r\n142 147 144 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>157.5 144.3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            157 154 159 160 0\r\n142 147 144 0\n                        \n                        \n                            输出\n                            157.5 144.3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "157 154 159 160 0\r\n142 147 144 0",
+      "output": "157.5 144.3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "3620",
+    "通过人数": "2580",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:49"
+}

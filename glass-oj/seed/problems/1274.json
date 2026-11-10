@@ -1,0 +1,56 @@
+{
+  "id": "1274",
+  "title": "求各个科目成绩的平均分",
+  "tags": [
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1274",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请从键盘读入一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n \\le 100</span>），代表一个班级同学的人数，然后读入 <span class=\"katex math inline\">n</span> 个人的语文、数学、英语成绩。</p>\n<p>请求出这 <span class=\"katex math inline\">n</span> 个人的语文、数学、英语三科成绩的平均分分别是多少，结果保留 <span class=\"katex math inline\">1</span> 位小数。</p>\n</div>            </div>",
+      "text": "请从键盘读入一个整数 n（n \\le 100），代表一个班级同学的人数，然后读入 n 个人的语文、数学、英语成绩。\n请求出这 n 个人的语文、数学、英语三科成绩的平均分分别是多少，结果保留 1 位小数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行：一个整数 <span class=\"katex math inline\">n</span> ，代表班级的人数。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行~第 <span class=\"katex math inline\">n+1</span> 行，输入 <span class=\"katex math inline\">n</span> 个同学的语文、数学、英语成绩，每行输入一个同学的成绩，成绩用空格隔开！</p>\n</div>            </div>",
+      "text": "第 1 行：一个整数 n ，代表班级的人数。\n第 2 行~第 n+1 行，输入 n 个同学的语文、数学、英语成绩，每行输入一个同学的成绩，成绩用空格隔开！"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出语文、数学、英语三科的平均成绩，分别用空格隔开，平均成绩保留 <span class=\"katex math inline\">1</span> 位小数！</p>\n</div>            </div>",
+      "text": "输出语文、数学、英语三科的平均成绩，分别用空格隔开，平均成绩保留 1 位小数！"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n100 99 98\r\n99 98 97</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>99.5 98.5 97.5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n100 99 98\r\n99 98 97\n                        \n                        \n                            输出\n                            99.5 98.5 97.5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二维数组</p>\n</div>                </div>",
+      "text": "二维数组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n100 99 98\r\n99 98 97",
+      "output": "99.5 98.5 97.5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "23784",
+    "通过人数": "14401",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:11"
+}

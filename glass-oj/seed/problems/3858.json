@@ -1,0 +1,67 @@
+{
+  "id": "3858",
+  "title": "立方数",
+  "tags": [
+    "GESP一级",
+    "循环",
+    "24年6月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3858",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有一个正整数 <span class=\"katex math inline\">n</span> ，他想知道 <span class=\"katex math inline\">n</span> 是否是一个立方数。</p>\n<p>一个正整数 <span class=\"katex math inline\">n</span> 是立方数当且仅当存在一个正整数 <span class=\"katex math inline\">x</span> 满足<span class=\"katex math inline\"> x \\times x \\times  x=n</span>  。</p>\n</div>            </div>",
+      "text": "小杨有一个正整数 n ，他想知道 n 是否是一个立方数。\n一个正整数 n 是立方数当且仅当存在一个正整数 x 满足 x \\times x \\times  x=n  。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">n</span>。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 n。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果正整数 <span class=\"katex math inline\">n</span> 是一个立方数，输出 <span class=\"katex math inline\">Yes</span>，否则输出 <span class=\"katex math inline\">No</span>。</p>\n</div>            </div>",
+      "text": "如果正整数 n 是一个立方数，输出 Yes，否则输出 No。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Yes\r\n</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>9\r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>No</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\n\n                        \n                        \n                            输出\n                            Yes\r\n\n                        \n\n                                                    \n                                输入\n                                9\r\n\n                            \n                            \n                                输出\n                                No"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】 </p>\n<p>对于样例 <span class=\"katex math inline\">1</span>，存在正整数 <span class=\"katex math inline\">2</span> 使得 <span class=\"katex math inline\">8=2 \\times 2 \\times 2</span> ，因此 <span class=\"katex math inline\">8</span> 为立方数。</p>\n<p>对于样例 <span class=\"katex math inline\">2</span>，不存在满足条件的正整数，因此 <span class=\"katex math inline\">9</span> 不为立方数。</p>\n<p>【数据范围】</p>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n \\le 1000</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】 \n对于样例 1，存在正整数 2 使得 8=2 \\times 2 \\times 2 ，因此 8 为立方数。\n对于样例 2，不存在满足条件的正整数，因此 9 不为立方数。\n【数据范围】\n对于全部数据，保证有 1 \\le n \\le 1000 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 6月认证C++一级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 6月认证C++一级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP一级</span><span class=\"label label-warning\">循环</span><span class=\"label label-info\">24年6月</span></span></p>\n</div>                </div>",
+      "text": "GESP一级循环24年6月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\n",
+      "output": "Yes\r\n"
+    },
+    {
+      "input": "9\r\n",
+      "output": "No"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "6042",
+    "通过人数": "3630",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:06"
+}

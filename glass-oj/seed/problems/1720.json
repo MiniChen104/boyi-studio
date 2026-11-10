@@ -1,0 +1,64 @@
+{
+  "id": "1720",
+  "title": "足球决赛",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1720",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>市里组织了一次青少年足球大赛，阳光队和雷霆队两支队伍最终进入决赛。 决赛共分 <span class=\"katex math inline\">3</span> 场，获胜场次多的那队将获得最终的总冠军。</p>\n<p>请你编程输入两支队伍3场比赛的得分，计算哪一支队伍将获得最终的总冠军。</p>\n<p>如果阳光队获胜，输出 <code>yangguang</code> ，如果雷霆队获胜，输出 <code>leiting</code> ，由于每场比赛一定会分出胜负，因此不存在最终平局的情况。</p>\n<p>比如，假设阳光队和雷霆队三场比赛的得分依次为 <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">1</span> ；</p>\n<p>前两个数代表第1场比赛阳光和雷霆两队的比分为 <span class=\"katex math inline\">3:2</span> ，阳光队胜出；</p>\n<p>中间两个数代表第 <span class=\"katex math inline\">2</span> 场比赛阳光和雷霆两队的比分为 <span class=\"katex math inline\">1:2</span> ，雷霆队胜出；</p>\n<p>最后两个数代表第 <span class=\"katex math inline\">3</span> 场比赛阳光和雷霆两队的比分为 <span class=\"katex math inline\">3:1</span>，阳光队胜出。</p>\n<p>阳光队胜 <span class=\"katex math inline\">2</span> 场，雷霆队胜 <span class=\"katex math inline\">1</span> 场，因此阳光队获得总冠军。</p>\n</div>            </div>",
+      "text": "市里组织了一次青少年足球大赛，阳光队和雷霆队两支队伍最终进入决赛。 决赛共分 3 场，获胜场次多的那队将获得最终的总冠军。\n请你编程输入两支队伍3场比赛的得分，计算哪一支队伍将获得最终的总冠军。\n如果阳光队获胜，输出 yangguang ，如果雷霆队获胜，输出 leiting ，由于每场比赛一定会分出胜负，因此不存在最终平局的情况。\n比如，假设阳光队和雷霆队三场比赛的得分依次为 3 2 1 2 3 1 ；\n前两个数代表第1场比赛阳光和雷霆两队的比分为 3:2 ，阳光队胜出；\n中间两个数代表第 2 场比赛阳光和雷霆两队的比分为 1:2 ，雷霆队胜出；\n最后两个数代表第 3 场比赛阳光和雷霆两队的比分为 3:1，阳光队胜出。\n阳光队胜 2 场，雷霆队胜 1 场，因此阳光队获得总冠军。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">6</span> 个整数，分别代表 <span class=\"katex math inline\">3</span> 场比赛中阳光和雷霆两队的得分。</p>\n</div>            </div>",
+      "text": "6 个整数，分别代表 3 场比赛中阳光和雷霆两队的得分。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>获胜的队名，如果阳光队获胜输出 <code>yangguang</code> ，如果雷霆队获胜输出 <code>leiting</code> 。</p>\n</div>            </div>",
+      "text": "获胜的队名，如果阳光队获胜输出 yangguang ，如果雷霆队获胜输出 leiting 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 2 1 2 3 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>yangguang</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1 2 2 0 3 0</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>yangguang</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1 2 1 2 1 2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>leiting</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            3 2 1 2 3 1\n                        \n                        \n                            输出\n                            yangguang\n                        \n\n                                                    \n                                输入\n                                1 2 2 0 3 0\n                            \n                            \n                                输出\n                                yangguang\n                            \n                        \n                                                    \n                                输入\n                                1 2 1 2 1 2\n                            \n                            \n                                输出\n                                leiting"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 2 1 2 3 1",
+      "output": "yangguang"
+    },
+    {
+      "input": "1 2 2 0 3 0",
+      "output": "yangguang"
+    },
+    {
+      "input": "1 2 1 2 1 2",
+      "output": "leiting"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2417",
+    "通过人数": "1554",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:22"
+}

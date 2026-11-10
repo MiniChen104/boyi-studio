@@ -1,0 +1,62 @@
+{
+  "id": "6326",
+  "title": "新汉诺塔",
+  "tags": [
+    "GESP四级",
+    "26年9月",
+    "递推"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/6326",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>汉诺塔问题是最经典的递推问题之一：</p>\n<p>有三个可以放圆盘柱子，编号为 <span class=\"katex math inline\">A</span>、<span class=\"katex math inline\">B</span> 和 <span class=\"katex math inline\">C</span>。</p>\n<p>开始时柱子 <span class=\"katex math inline\">A</span> 上套着 <span class=\"katex math inline\">n</span> 个圆盘，它们从上到下按照从小到大的顺序排列。</p>\n<p>我们的任务是要把这 <span class=\"katex math inline\">n</span> 个圆盘移到柱子 <span class=\"katex math inline\">C</span> 上，并保持它们的原有顺序不变。</p>\n<p>在移动圆盘的过程中，需要遵守以下规则：</p>\n<ol><li>圆盘只能从一根柱子顶部拿出，从另一根柱子顶部放入。</li>\n<li>每次只能移动一个圆盘。</li>\n<li>小圆盘必须时刻位于大圆盘之上。</li>\n</ol><p>小杨在学习了汉诺塔问题后，决定添加一个新规则：</p>\n<ol><li>每一次移动，圆盘只能从 <span class=\"katex math inline\">A</span> 移动到 <span class=\"katex math inline\">B</span>，从 <span class=\"katex math inline\">B</span> 移动到 <span class=\"katex math inline\">C</span>，或者从 <span class=\"katex math inline\">C</span> 移动到 <span class=\"katex math inline\">A</span>；其它移动是不允许的。</li>\n</ol><p>在新规则下，给定圆盘数量 <span class=\"katex math inline\">n</span>，试问最少移动步数是多少？</p>\n</div>            </div>",
+      "text": "汉诺塔问题是最经典的递推问题之一：\n有三个可以放圆盘柱子，编号为 A、B 和 C。\n开始时柱子 A 上套着 n 个圆盘，它们从上到下按照从小到大的顺序排列。\n我们的任务是要把这 n 个圆盘移到柱子 C 上，并保持它们的原有顺序不变。\n在移动圆盘的过程中，需要遵守以下规则：\n圆盘只能从一根柱子顶部拿出，从另一根柱子顶部放入。\n每次只能移动一个圆盘。\n小圆盘必须时刻位于大圆盘之上。\n小杨在学习了汉诺塔问题后，决定添加一个新规则：\n每一次移动，圆盘只能从 A 移动到 B，从 B 移动到 C，或者从 C 移动到 A；其它移动是不允许的。\n在新规则下，给定圆盘数量 n，试问最少移动步数是多少？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 <span class=\"katex math inline\">n</span>，表示圆盘的数量。</p>\n</div>            </div>",
+      "text": "输入一个正整数 n，表示圆盘的数量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示在新规则下将 <span class=\"katex math inline\">n</span> 个圆盘从 <span class=\"katex math inline\">A</span> 移动到 <span class=\"katex math inline\">C</span> 所需的最少移动步数。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示在新规则下将 n 个圆盘从 A 移动到 C 所需的最少移动步数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>21</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\n                        \n                        \n                            输出\n                            7\n                        \n\n                                                    \n                                输入\n                                3\n                            \n                            \n                                输出\n                                21"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释 1</h4>\n<p>以下步骤是最佳的（编号为 1 的是小盘，为 2 的是大盘）：</p>\n<ol><li>将 1 从 <span class=\"katex math inline\">A</span> 移动到 <span class=\"katex math inline\">B</span>；</li>\n<li>将 1 从 <span class=\"katex math inline\">B</span> 移动到 <span class=\"katex math inline\">C</span>；</li>\n<li>将 2 从 <span class=\"katex math inline\">A</span> 移动到 <span class=\"katex math inline\">B</span>；</li>\n<li>将 1 从 <span class=\"katex math inline\">C</span> 移动到 <span class=\"katex math inline\">A</span>；</li>\n<li>将 2 从 <span class=\"katex math inline\">B</span> 移动到 <span class=\"katex math inline\">C</span>；</li>\n<li>将 1 从 <span class=\"katex math inline\">A</span> 移动到 <span class=\"katex math inline\">B</span>；</li>\n<li>将 1 从 <span class=\"katex math inline\">B</span> 移动到 <span class=\"katex math inline\">C</span>。</li>\n</ol><p>可以证明没有更少步骤可以完成这个任务。</p>\n<h4>数据范围</h4>\n<p>对于所有数据，<span class=\"katex math inline\">n \\le 20</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释 1\n以下步骤是最佳的（编号为 1 的是小盘，为 2 的是大盘）：\n将 1 从 A 移动到 B；\n将 1 从 B 移动到 C；\n将 2 从 A 移动到 B；\n将 1 从 C 移动到 A；\n将 2 从 B 移动到 C；\n将 1 从 A 移动到 B；\n将 1 从 B 移动到 C。\n可以证明没有更少步骤可以完成这个任务。\n数据范围\n对于所有数据，n \\le 20"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">26年9月</span><span class=\"label label-info\">递推</span></span></p>\n</div>                </div>",
+      "text": "GESP四级26年9月递推"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2",
+      "output": "7"
+    },
+    {
+      "input": "3",
+      "output": "21"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "210",
+    "通过人数": "127",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:59"
+}

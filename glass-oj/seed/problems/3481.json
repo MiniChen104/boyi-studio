@@ -1,0 +1,68 @@
+{
+  "id": "3481",
+  "title": "小猫分鱼",
+  "tags": [
+    "GESP三级",
+    "循环",
+    "模拟",
+    "23年12月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3481",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>海滩上有⼀堆鱼 ，<span class=\"katex math inline\">N</span> 只小猫来分 。第一只小猫把这堆鱼平均分为 <span class=\"katex math inline\">N</span> 份 ，多了 <span class=\"katex math inline\"> i &lt; N </span> 个 ，这只小猫把多的 <span class=\"katex math inline\">i</span> 个扔入海中 ，拿走了一份。第二只小猫接着把剩下的鱼平均分成 <span class=\"katex math inline\">N</span> 份 ，又多了 <span class=\"katex math inline\">i</span> 个 ，小猫同样把多的 <span class=\"katex math inline\">i</span> 个扔入海中 ，拿走了一份 。第三、第四、 … … ，第 <span class=\"katex math inline\">N</span> 只小猫仍是最终剩下的鱼分成 <span class=\"katex math inline\">N</span> 份 ，扔掉多了的 <span class=\"katex math inline\">i</span> 个 ，并拿走一份。</p>\n<p>编写程序 ，输入小猫的数量 <span class=\"katex math inline\">N</span> 以及每次扔到海里的鱼的数量 <span class=\"katex math inline\">i</span> ，输出海滩上最少的鱼数 ，使得每只小猫都可吃到鱼。</p>\n<p>例如： 两只小猫来分鱼 <span class=\"katex math inline\"> N = 2 </span> ，每次扔掉鱼的数量为 <span class=\"katex math inline\"> i = 1 </span> ，为了每只小猫都可吃到鱼 ，可令第二只小猫需要拿走 <span class=\"katex math inline\">1</span> 条鱼 ，则此时待分配的有 <span class=\"katex math inline\">3</span> 条鱼 。第一只小猫待分配的鱼有 <span class=\"katex math inline\"> 3 \\times 2 + 1 = 7 </span> 条。</p>\n</div>            </div>",
+      "text": "海滩上有⼀堆鱼 ，N 只小猫来分 。第一只小猫把这堆鱼平均分为 N 份 ，多了  i < N  个 ，这只小猫把多的 i 个扔入海中 ，拿走了一份。第二只小猫接着把剩下的鱼平均分成 N 份 ，又多了 i 个 ，小猫同样把多的 i 个扔入海中 ，拿走了一份 。第三、第四、 … … ，第 N 只小猫仍是最终剩下的鱼分成 N 份 ，扔掉多了的 i 个 ，并拿走一份。\n编写程序 ，输入小猫的数量 N 以及每次扔到海里的鱼的数量 i ，输出海滩上最少的鱼数 ，使得每只小猫都可吃到鱼。\n例如： 两只小猫来分鱼  N = 2  ，每次扔掉鱼的数量为  i = 1  ，为了每只小猫都可吃到鱼 ，可令第二只小猫需要拿走 1 条鱼 ，则此时待分配的有 3 条鱼 。第一只小猫待分配的鱼有  3 \\times 2 + 1 = 7  条。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>总共 <span class=\"katex math inline\">2</span> 行 。</p>\n<p>第一行一个整数 <span class=\"katex math inline\">N</span> ，第二行一个整数 <span class=\"katex math inline\">i</span>。</p>\n</div>            </div>",
+      "text": "总共 2 行 。\n第一行一个整数 N ，第二行一个整数 i。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数 ，表示满足要求的海滩上最少的鱼数。</p>\n</div>            </div>",
+      "text": "一行一个整数 ，表示满足要求的海滩上最少的鱼数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3\r\n1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>25</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n1\n                        \n                        \n                            输出\n                            7\n                        \n\n                                                    \n                                输入\n                                3\r\n1\n                            \n                            \n                                输出\n                                25"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 2 解释】</h4>\n<p>三只小猫来分鱼 <span class=\"katex math inline\"> N = 3 </span>，每次扔掉鱼的数量为 <span class=\"katex math inline\"> i = 1 </span>，为了每只小猫都可吃到鱼 ，可令第三只小猫需要拿走 <span class=\"katex math inline\">3</span> 条鱼（拿走 <span class=\"katex math inline\">1</span> 条和 <span class=\"katex math inline\">2</span> 条不满足要求） ，则此时待分配的有 <span class=\"katex math inline\">10</span> 条鱼 。第二只小猫待分配的鱼有 <span class=\"katex math inline\">10 \\times 3 / 2 + 1 = 16 </span> 条 。第⼀只小猫待分配的鱼有 <span class=\"katex math inline\">16 \\times 3 / 2 + 1 = 25 </span> 条。</p>\n<h4>【数据范围】</h4>\n<p>保证 <span class=\"katex math inline\">0 ＜ N ＜ 10 </span>，<span class=\"katex math inline\"> i &lt; N </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 2 解释】\n三只小猫来分鱼  N = 3 ，每次扔掉鱼的数量为  i = 1 ，为了每只小猫都可吃到鱼 ，可令第三只小猫需要拿走 3 条鱼（拿走 1 条和 2 条不满足要求） ，则此时待分配的有 10 条鱼 。第二只小猫待分配的鱼有 10 \\times 3 / 2 + 1 = 16  条 。第⼀只小猫待分配的鱼有 16 \\times 3 / 2 + 1 = 25  条。\n【数据范围】\n保证 0 ＜ N ＜ 10 ， i < N 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年12月三级</p>\n</div>                </div>",
+      "text": "GESP23年12月三级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP三级</span><span class=\"label label-warning\">循环</span><span class=\"label label-info\">模拟</span><span class=\"label label-danger\">23年12月</span></span></p>\n</div>                </div>",
+      "text": "GESP三级循环模拟23年12月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n1",
+      "output": "7"
+    },
+    {
+      "input": "3\r\n1",
+      "output": "25"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2235",
+    "通过人数": "1056",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:18"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "2662",
+  "title": "指定数出现的次数",
+  "tags": [
+    "二分"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2662",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定 <span class=\"katex math inline\">N</span> 个整数，再给定 <span class=\"katex math inline\">M</span> 次询问，每次询问给出一个整数 <span class=\"katex math inline\">X</span> ，请求出针对每次询问，整数 <span class=\"katex math inline\">X</span> 在 <span class=\"katex math inline\">N</span> 个整数中出现的次数。</p>\n</div>            </div>",
+      "text": "给定 N 个整数，再给定 M 次询问，每次询问给出一个整数 X ，请求出针对每次询问，整数 X 在 N 个整数中出现的次数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行读入一个整数 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">M</span>。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行读入 <span class=\"katex math inline\">N</span> 个整数，整数之间用空格隔开。</p>\n<p>第 <span class=\"katex math inline\">3</span> 行读入 <span class=\"katex math inline\">M</span> 个整数，整数之间用空格隔开。</p>\n</div>            </div>",
+      "text": "第 1 行读入一个整数 N 和 M。\n第 2 行读入 N 个整数，整数之间用空格隔开。\n第 3 行读入 M 个整数，整数之间用空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">M</span> 个整数，用空格隔开，第 <span class=\"katex math inline\">i</span> 个整数，代表针对第 <span class=\"katex math inline\">i</span> 次询问的结果。</p>\n</div>            </div>",
+      "text": "输出 M 个整数，用空格隔开，第 i 个整数，代表针对第 i 次询问的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 3\r\n1 2 1 3 1 2\r\n2 1 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 3 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 3\r\n1 2 1 3 1 2\r\n2 1 3\n                        \n                        \n                            输出\n                            2 3 1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">1 ≤ N,M ≤ 10^5</span>。</p>\n<p>读入的 <span class=\"katex math inline\">N</span> 个整数和 <span class=\"katex math inline\">M</span> 次询问的值均在 <span class=\"katex math inline\">[1,10^9]</span> 范围内。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n1 ≤ N,M ≤ 10^5。\n读入的 N 个整数和 M 次询问的值均在 [1,10^9] 范围内。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二分</span></span></p>\n</div>                </div>",
+      "text": "二分"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 3\r\n1 2 1 3 1 2\r\n2 1 3",
+      "output": "2 3 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1590",
+    "通过人数": "656",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:27"
+}

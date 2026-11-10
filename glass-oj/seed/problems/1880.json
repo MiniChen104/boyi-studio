@@ -1,0 +1,56 @@
+{
+  "id": "1880",
+  "title": "中间值",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1880",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出一个正整数（<span class=\"katex math inline\">1 \\le n \\le 10000</span> )。</p>\n<p>若 <span class=\"katex math inline\">n</span> 为奇数，则输出 <span class=\"katex math inline\">1,2……n</span> 的中间数（位于数列正中位置的数）。例如 <span class=\"katex math inline\">n=9</span> ，则输出 <span class=\"katex math inline\">5</span> 。</p>\n<p>若 <span class=\"katex math inline\">n</span> 为偶数，则输出位于中间两个数的和。例如 <span class=\"katex math inline\">n=10</span>，则输出 <span class=\"katex math inline\">1，2，3，4，5，6，7，8，9，10</span> 中的 <span class=\"katex math inline\">5</span> 和 <span class=\"katex math inline\">6</span> 的和即 <span class=\"katex math inline\">11</span> 。</p>\n</div>            </div>",
+      "text": "给出一个正整数（1 \\le n \\le 10000 )。\n若 n 为奇数，则输出 1,2……n 的中间数（位于数列正中位置的数）。例如 n=9 ，则输出 5 。\n若 n 为偶数，则输出位于中间两个数的和。例如 n=10，则输出 1，2，3，4，5，6，7，8，9，10 中的 5 和 6 的和即 11 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数 <span class=\"katex math inline\">n</span> 。</p>\n</div>            </div>",
+      "text": "一个正整数 n 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数，若 <span class=\"katex math inline\">n</span> 为奇数，则输出其中间值。若 <span class=\"katex math inline\">n</span> 为偶数，则输出两个中间值的和。</p>\n</div>            </div>",
+      "text": "一个正整数，若 n 为奇数，则输出其中间值。若 n 为偶数，则输出两个中间值的和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>11</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\n                        \n                        \n                            输出\n                            11"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10",
+      "output": "11"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "1225",
+    "通过人数": "974",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:25:25"
+}

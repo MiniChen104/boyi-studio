@@ -1,0 +1,52 @@
+{
+  "id": "4834",
+  "title": "信用卡校验",
+  "tags": [
+    "蓝桥等考",
+    "函数"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4834",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Luhn算法是一种验证信用卡号码的方法。如果持卡人在填写卡号时填错了一位，或者填反相邻两个数，计算机用这种方法校验，可以立刻发现错误，避免持卡人的损失。</p>\n<p>我国常用的信用卡卡号由 <span class=\"katex math inline\">16</span> 位数字组成，使用Luhn算法校验的步骤是，从卡号左边第一位数字开始：</p>\n<ul><li><span class=\"katex math inline\">1</span>. 将奇数位数字乘以 <span class=\"katex math inline\">2</span>，如果乘积为两位数，则将其减去 <span class=\"katex math inline\">9</span> ；然后累加求和，结果保存为 <span class=\"katex math inline\">a1</span>；</li>\n<li><span class=\"katex math inline\">2</span>. 将偶数位数字累加求和，结果保存为 <span class=\"katex math inline\">a2</span>；</li>\n<li><span class=\"katex math inline\">3</span>. 如果 <span class=\"katex math inline\">a1+a2</span> 能被 <span class=\"katex math inline\">10</span> 整除，说明卡号是合法的，否则卡号就是非法的。</li>\n</ul><p>例如，卡号 <code>5432123456788881</code> 的 <span class=\"katex math inline\">3</span> 步校验计算过程如下表所示。</p>\n<p><img src=\"https://assets.boyi.local/1dc941a0d8e9b08e6e2371ae.png\"></p>\n<p>请编写一个程序，输入卡号，然后判断是否合法，如果是合法卡号，输出 <code>yes</code>。否则输出 <code>no</code>。</p>\n</div>            </div>",
+      "text": "Luhn算法是一种验证信用卡号码的方法。如果持卡人在填写卡号时填错了一位，或者填反相邻两个数，计算机用这种方法校验，可以立刻发现错误，避免持卡人的损失。\n我国常用的信用卡卡号由 16 位数字组成，使用Luhn算法校验的步骤是，从卡号左边第一位数字开始：\n1. 将奇数位数字乘以 2，如果乘积为两位数，则将其减去 9 ；然后累加求和，结果保存为 a1；\n2. 将偶数位数字累加求和，结果保存为 a2；\n3. 如果 a1+a2 能被 10 整除，说明卡号是合法的，否则卡号就是非法的。\n例如，卡号 5432123456788881 的 3 步校验计算过程如下表所示。\n\n请编写一个程序，输入卡号，然后判断是否合法，如果是合法卡号，输出 yes。否则输出 no。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个字符串。</p>\n</div>            </div>",
+      "text": "输入一个字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出判断卡号是否合法，如果是合法卡号，输出 <code>yes</code>。否则输出 <code>no</code>。</p>\n</div>            </div>",
+      "text": "输出判断卡号是否合法，如果是合法卡号，输出 yes。否则输出 no。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5432123456788881</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>yes</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5432123456788881\n                        \n                        \n                            输出\n                            yes"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">函数</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考函数"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5432123456788881",
+      "output": "yes"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "88",
+    "通过人数": "55",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:16"
+}

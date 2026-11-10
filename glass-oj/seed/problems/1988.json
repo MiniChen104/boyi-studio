@@ -1,0 +1,66 @@
+{
+  "id": "1988",
+  "title": "加工零件（work）",
+  "tags": [
+    "noip复赛",
+    "分层图"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1988",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>凯凯的工厂正在有条不紊地生产一种神奇的零件，神奇的零件的生产过程自然也很神奇。工厂里有 <span class=\"katex math inline\">n</span> 位工人，工人们从 <span class=\"katex math inline\">1 \\sim n</span> 编号。某些工人之间存在双向的零件传送带。保证每两名工人之间最多只存在一条传送带。</p>\n<p>如果 <span class=\"katex math inline\">x</span> 号工人想生产一个被加工到第 <span class=\"katex math inline\">L (L \\gt 1)</span> 阶段的零件，则<strong>所有</strong>与 <span class=\"katex math inline\">x</span> 号工人有传送带<strong>直接</strong>相连的工人，都需要生产一个被加工到第 <span class=\"katex math inline\">L - 1</span> 阶段的零件（但 <span class=\"katex math inline\">x</span> 号工人自己<strong>无需</strong>生产第 <span class=\"katex math inline\">L - 1</span> 阶段的零件）。</p>\n<p>如果 <span class=\"katex math inline\">x</span> 号工人想生产一个被加工到第 1 阶段的零件，则<strong>所有</strong>与 <span class=\"katex math inline\">x</span> 号工人有传送带<strong>直接</strong>相连的工人，都需要为 <span class=\"katex math inline\">x</span> 号工人提供一个原材料。</p>\n<p>轩轩是 1 号工人。现在给出 <span class=\"katex math inline\">q</span> 张工单，第 <span class=\"katex math inline\">i</span> 张工单表示编号为 <span class=\"katex math inline\">a_i</span> 的工人想生产一个第 <span class=\"katex math inline\">L_i</span> 阶段的零件。轩轩想知道对于每张工单，他是否需要给别人提供原材料。他知道聪明的你一定可以帮他计算出来！</p>\n</div>            </div>",
+      "text": "凯凯的工厂正在有条不紊地生产一种神奇的零件，神奇的零件的生产过程自然也很神奇。工厂里有 n 位工人，工人们从 1 \\sim n 编号。某些工人之间存在双向的零件传送带。保证每两名工人之间最多只存在一条传送带。\n如果 x 号工人想生产一个被加工到第 L (L \\gt 1) 阶段的零件，则所有与 x 号工人有传送带直接相连的工人，都需要生产一个被加工到第 L - 1 阶段的零件（但 x 号工人自己无需生产第 L - 1 阶段的零件）。\n如果 x 号工人想生产一个被加工到第 1 阶段的零件，则所有与 x 号工人有传送带直接相连的工人，都需要为 x 号工人提供一个原材料。\n轩轩是 1 号工人。现在给出 q 张工单，第 i 张工单表示编号为 a_i 的工人想生产一个第 L_i 阶段的零件。轩轩想知道对于每张工单，他是否需要给别人提供原材料。他知道聪明的你一定可以帮他计算出来！"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行三个正整数 <span class=\"katex math inline\">n</span>，<span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">q</span>，分别表示工人的数目、传送带的数目和工单的数目。</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行两个正整数 <span class=\"katex math inline\">u</span> 和 <span class=\"katex math inline\">v</span>，表示编号为 <span class=\"katex math inline\">u</span> 和 <span class=\"katex math inline\">v</span> 的工人之间存在一条零件传输带。保证 <span class=\"katex math inline\">u \\neq v</span>。</p>\n<p>接下来 <span class=\"katex math inline\">q</span> 行，每行两个正整数 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">L</span>，表示编号为 <span class=\"katex math inline\">a</span> 的工人想生产一个第 <span class=\"katex math inline\">L</span> 阶段的零件。</p>\n</div>            </div>",
+      "text": "第一行三个正整数 n，m 和 q，分别表示工人的数目、传送带的数目和工单的数目。\n接下来 m 行，每行两个正整数 u 和 v，表示编号为 u 和 v 的工人之间存在一条零件传输带。保证 u \\neq v。\n接下来 q 行，每行两个正整数 a 和 L，表示编号为 a 的工人想生产一个第 L 阶段的零件。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共 <span class=\"katex math inline\">q</span> 行，每行一个字符串 <code>Yes</code> 或者 <code>No</code>。如果按照第 <span class=\"katex math inline\">i</span> 张工单生产，需要编号为 1 的轩轩提供原材料，则在第 <span class=\"katex math inline\">i</span> 行输出 <code>Yes</code>；否则在第 <span class=\"katex math inline\">i</span> 行输出 <code>No</code>。注意输出<strong>不含</strong>引号。</p>\n</div>            </div>",
+      "text": "共 q 行，每行一个字符串 Yes 或者 No。如果按照第 i 张工单生产，需要编号为 1 的轩轩提供原材料，则在第 i 行输出 Yes；否则在第 i 行输出 No。注意输出不含引号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 2 6\r\n1 2\r\n2 3\r\n1 1\r\n2 1\r\n3 1\r\n1 2\r\n2 2\r\n3 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>No\r\nYes\r\nNo\r\nYes\r\nNo\r\nYes</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 5 5\r\n1 2\r\n2 3\r\n3 4\r\n4 5\r\n1 5\r\n1 1\r\n1 2\r\n1 3\r\n1 4\r\n1 5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>No\r\nYes\r\nNo\r\nYes\r\nYes</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 2 6\r\n1 2\r\n2 3\r\n1 1\r\n2 1\r\n3 1\r\n1 2\r\n2 2\r\n3 2\n                        \n                        \n                            输出\n                            No\r\nYes\r\nNo\r\nYes\r\nNo\r\nYes\n                        \n\n                                                    \n                                输入\n                                5 5 5\r\n1 2\r\n2 3\r\n3 4\r\n4 5\r\n1 5\r\n1 1\r\n1 2\r\n1 3\r\n1 4\r\n1 5\n                            \n                            \n                                输出\n                                No\r\nYes\r\nNo\r\nYes\r\nYes"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【输入输出样例 1 说明】<br><img src=\"https://assets.boyi.local/026a410cdf8ec78dab84ad17.png\"></p>\n<p>编号为 1 的工人想生产第 1 阶段的零件，需要编号为 2 的工人提供原材料。</p>\n<p>编号为 2 的工人想生产第 1 阶段的零件，需要编号为 1 和 3 的工人提供原材料。</p>\n<p>编号为 3 的工人想生产第 1 阶段的零件，需要编号为 2 的工人提供原材料。</p>\n<p>编号为 1 的工人想生产第 2 阶段的零件，需要编号为 2 的工人生产第 1 阶段的零 件，需要编号为 1 和 3 的工人提供原材料。</p>\n<p>编号为 2 的工人想生产第 2 阶段的零件，需要编号为 1 和 3 的工人生产第 1 阶段的零件，他/她们都需要编号为 2 的工人提供原材料。</p>\n<p>编号为 3 的工人想生产第 2 阶段的零件，需要编号为 2 的工人生产第 1 阶段的零件，需要编号为 1 和 3 的工人提供原材料。</p>\n<p>【输入输出样例 2 说明】<br><img src=\"https://assets.boyi.local/b83c23d5348917c6e499a63d.png\"></p>\n<p>编号为 1 的工人想生产第 1 阶段的零件，需要编号为 2 和 5 的工人提供原材料。</p>\n<p>编号为 1 的工人想生产第 2 阶段的零件，需要编号为 2 和 5 的工人生产第 1 阶段的零件，需要编号为 <span class=\"katex math inline\">1,3,4</span> 的工人提供原材料。</p>\n<p>编号为 1 的工人想生产第 3 阶段的零件，需要编号为 2 和 5 的工人生产第 2 阶段的零件，需要编号为 <span class=\"katex math inline\">1,3,4</span> 的工人生产第 1 阶段的零件，需要编号为 <span class=\"katex math inline\">2,3,4,5</span> 的工人提供原材料。</p>\n<p>编号为 1 的工人想生产第 4 阶段的零件，需要编号为 2 和 5 的工人生产第 3 阶段的零件，需要编号为 <span class=\"katex math inline\">1,3,4</span> 的工人生产第 2 阶段的零件，需要编号为 <span class=\"katex math inline\">2,3,4,5</span> 的工人生产第 1 阶段的零件，需要全部工人提供原材料。</p>\n<p>编号为 1 的工人想生产第 5 阶段的零件，需要编号为 2 和 5 的工人生产第 4 阶段的零件，需要编号为 <span class=\"katex math inline\">1,3,4</span> 的工人生产第 3 阶段的零件，需要编号为 <span class=\"katex math inline\">2,3,4,5</span> 的工人生产第 2 阶段的零件，需要全部工人生产第 1 阶段的零件，需要全部工人提供原材料。</p>\n<p>【数据规模与约定】</p>\n<p>共 20 个测试点。</p>\n<p><span class=\"katex math inline\">1 \\leq u, v, a \\leq n</span>。</p>\n<p>测试点 1~4，<span class=\"katex math inline\">1 \\leq n, m \\leq 1000</span>，<span class=\"katex math inline\">q = 3</span>，<span class=\"katex math inline\">L = 1</span>。</p>\n<p>测试点 5~8，<span class=\"katex math inline\">1 \\leq n, m \\leq 1000</span>，<span class=\"katex math inline\">q = 3</span>，<span class=\"katex math inline\">1 \\leq L \\leq 10</span>。</p>\n<p>测试点 9~12，<span class=\"katex math inline\">1 \\leq n, m, L \\leq 1000</span>，<span class=\"katex math inline\">1 \\leq q \\leq 100</span>。</p>\n<p>测试点 13~16，<span class=\"katex math inline\">1 \\leq n, m, L \\leq 1000</span>，<span class=\"katex math inline\">1 \\leq q \\leq 10^5</span>。</p>\n<p>测试点 17~20，<span class=\"katex math inline\">1 \\leq n, m, q \\leq 10^5</span>，<span class=\"katex math inline\">1 \\leq L \\leq 10^9</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【输入输出样例 1 说明】\n编号为 1 的工人想生产第 1 阶段的零件，需要编号为 2 的工人提供原材料。\n编号为 2 的工人想生产第 1 阶段的零件，需要编号为 1 和 3 的工人提供原材料。\n编号为 3 的工人想生产第 1 阶段的零件，需要编号为 2 的工人提供原材料。\n编号为 1 的工人想生产第 2 阶段的零件，需要编号为 2 的工人生产第 1 阶段的零 件，需要编号为 1 和 3 的工人提供原材料。\n编号为 2 的工人想生产第 2 阶段的零件，需要编号为 1 和 3 的工人生产第 1 阶段的零件，他/她们都需要编号为 2 的工人提供原材料。\n编号为 3 的工人想生产第 2 阶段的零件，需要编号为 2 的工人生产第 1 阶段的零件，需要编号为 1 和 3 的工人提供原材料。\n【输入输出样例 2 说明】\n编号为 1 的工人想生产第 1 阶段的零件，需要编号为 2 和 5 的工人提供原材料。\n编号为 1 的工人想生产第 2 阶段的零件，需要编号为 2 和 5 的工人生产第 1 阶段的零件，需要编号为 1,3,4 的工人提供原材料。\n编号为 1 的工人想生产第 3 阶段的零件，需要编号为 2 和 5 的工人生产第 2 阶段的零件，需要编号为 1,3,4 的工人生产第 1 阶段的零件，需要编号为 2,3,4,5 的工人提供原材料。\n编号为 1 的工人想生产第 4 阶段的零件，需要编号为 2 和 5 的工人生产第 3 阶段的零件，需要编号为 1,3,4 的工人生产第 2 阶段的零件，需要编号为 2,3,4,5 的工人生产第 1 阶段的零件，需要全部工人提供原材料。\n编号为 1 的工人想生产第 5 阶段的零件，需要编号为 2 和 5 的工人生产第 4 阶段的零件，需要编号为 1,3,4 的工人生产第 3 阶段的零件，需要编号为 2,3,4,5 的工人生产第 2 阶段的零件，需要全部工人生产第 1 阶段的零件，需要全部工人提供原材料。\n【数据规模与约定】\n共 20 个测试点。\n1 \\leq u, v, a \\leq n。\n测试点 1~4，1 \\leq n, m \\leq 1000，q = 3，L = 1。\n测试点 5~8，1 \\leq n, m \\leq 1000，q = 3，1 \\leq L \\leq 10。\n测试点 9~12，1 \\leq n, m, L \\leq 1000，1 \\leq q \\leq 100。\n测试点 13~16，1 \\leq n, m, L \\leq 1000，1 \\leq q \\leq 10^5。\n测试点 17~20，1 \\leq n, m, q \\leq 10^5，1 \\leq L \\leq 10^9。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛</p>\n</div>                </div>",
+      "text": "noip复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span><span class=\"label label-warning\">分层图</span></span></p>\n</div>                </div>",
+      "text": "noip复赛分层图"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 2 6\r\n1 2\r\n2 3\r\n1 1\r\n2 1\r\n3 1\r\n1 2\r\n2 2\r\n3 2",
+      "output": "No\r\nYes\r\nNo\r\nYes\r\nNo\r\nYes"
+    },
+    {
+      "input": "5 5 5\r\n1 2\r\n2 3\r\n3 4\r\n4 5\r\n1 5\r\n1 1\r\n1 2\r\n1 3\r\n1 4\r\n1 5",
+      "output": "No\r\nYes\r\nNo\r\nYes\r\nYes"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "911",
+    "通过人数": "458",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:26:59"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "2050",
+  "title": "最少的手续费",
+  "tags": [
+    "图论"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2050",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某商业银行规定，两个银行账户之间转账，银行需要收取一定的手续费，且不同的账户之间转账，手续费可能不同。</p>\n<p>现给定 <span class=\"katex math inline\">n</span> 个账户中的某些账户之间互相转账的手续费（转账后另一个账户收到的费用 = 转账费用 - 手续费），请问 <span class=\"katex math inline\">A</span> 如果希望通过转账使得 <span class=\"katex math inline\">B</span> 收到 <span class=\"katex math inline\">100</span> 元，那么 <span class=\"katex math inline\">A</span> 需要准备多少钱？</p>\n</div>            </div>",
+      "text": "某商业银行规定，两个银行账户之间转账，银行需要收取一定的手续费，且不同的账户之间转账，手续费可能不同。\n现给定 n 个账户中的某些账户之间互相转账的手续费（转账后另一个账户收到的费用 = 转账费用 - 手续费），请问 A 如果希望通过转账使得 B 收到 100 元，那么 A 需要准备多少钱？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入两个正整数 <span class=\"katex math inline\">n,m</span>，分别表示总人数和可以互相转账的人的对数。</p>\n<p>以下 <span class=\"katex math inline\">m</span> 行每行输入三个正整数 <span class=\"katex math inline\">x,y,z</span>，表示编号为 <span class=\"katex math inline\">x</span> 的人和编号为 <span class=\"katex math inline\">y</span> 的人之间互相转账需要扣除 <span class=\"katex math inline\">z\\%</span> 的手续费 (<span class=\"katex math inline\">z &lt; 100</span>)。</p>\n<p>最后一行输入两个正整数 <span class=\"katex math inline\">A,B</span>。数据保证 <span class=\"katex math inline\">A</span> 与 <span class=\"katex math inline\">B</span> 之间可以直接或间接地转账。</p>\n</div>            </div>",
+      "text": "第一行输入两个正整数 n,m，分别表示总人数和可以互相转账的人的对数。\n以下 m 行每行输入三个正整数 x,y,z，表示编号为 x 的人和编号为 y 的人之间互相转账需要扣除 z\\% 的手续费 (z < 100)。\n最后一行输入两个正整数 A,B。数据保证 A 与 B 之间可以直接或间接地转账。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">A</span> 使得 <span class=\"katex math inline\">B</span> 到账 <span class=\"katex math inline\">100</span> 元最少需要的总费用。精确到小数点后 <span class=\"katex math inline\">8</span> 位。</p>\n</div>            </div>",
+      "text": "输出 A 使得 B 到账 100 元最少需要的总费用。精确到小数点后 8 位。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3\r\n1 2 1\r\n2 3 2\r\n1 3 3\r\n1 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>103.07153164</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\r\n1 2 1\r\n2 3 2\r\n1 3 3\r\n1 3\n                        \n                        \n                            输出\n                            103.07153164"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据范围】</p>\n<p><span class=\"katex math inline\">1</span> <span class=\"katex math inline\">\\leq</span> <span class=\"katex math inline\">n</span> <span class=\"katex math inline\">\\leq</span> <span class=\"katex math inline\">2000</span></p>\n<p><span class=\"katex math inline\">1</span> <span class=\"katex math inline\">\\leq</span> <span class=\"katex math inline\">m</span> <span class=\"katex math inline\">\\leq</span><span class=\"katex math inline\"> 100000</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n1 \\leq n \\leq 2000\n1 \\leq m \\leq 100000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>图论</p>\n</div>                </div>",
+      "text": "图论"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span></span></p>\n</div>                </div>",
+      "text": "图论"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3\r\n1 2 1\r\n2 3 2\r\n1 3 3\r\n1 3",
+      "output": "103.07153164"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1422",
+    "通过人数": "773",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:46"
+}

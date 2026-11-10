@@ -1,0 +1,51 @@
+{
+  "id": "2551",
+  "title": "奶牛排队",
+  "tags": [
+    "单调栈"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2551",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">Bob</span> 的农场养了 <span class=\"katex math inline\">n</span> 头奶牛，每天奶牛们都要经历漫长的排队打饭的过程。</p>\n<p>为了排解长时间排队带来的焦虑，<span class=\"katex math inline\">Bob</span> 让他的奶牛们玩一个游戏，让每头奶牛找出他的左侧第 <span class=\"katex math inline\">1</span> 头比自己体重轻的奶牛。</p>\n<p>请你编程帮助 <span class=\"katex math inline\">Bob</span> 计算出答案，方便他验证奶牛们计算的正确性。</p>\n</div>            </div>",
+      "text": "Bob 的农场养了 n 头奶牛，每天奶牛们都要经历漫长的排队打饭的过程。\n为了排解长时间排队带来的焦虑，Bob 让他的奶牛们玩一个游戏，让每头奶牛找出他的左侧第 1 头比自己体重轻的奶牛。\n请你编程帮助 Bob 计算出答案，方便他验证奶牛们计算的正确性。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行输入一个整数 <span class=\"katex math inline\">n</span>，表示奶牛的数量。（<span class=\"katex math inline\">1 &lt; n ≤ 10^6</span>）</p>\n<p>第 <span class=\"katex math inline\">2</span> 行有空格隔开的 <span class=\"katex math inline\">n</span> 个整数 <span class=\"katex math inline\">a_i</span>，代表奶牛的体重（<span class=\"katex math inline\">1 ≤ a_i ≤ 10^5</span>）。</p>\n</div>            </div>",
+      "text": "第 1 行输入一个整数 n，表示奶牛的数量。（1 < n ≤ 10^6）\n第 2 行有空格隔开的 n 个整数 a_i，代表奶牛的体重（1 ≤ a_i ≤ 10^5）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">n</span> 个整数，用空格隔开，表示每头奶牛左侧第 <span class=\"katex math inline\">1</span> 头体重小于自己的奶牛的体重，如果某头奶牛左侧没有比自己轻的奶牛，请输出整数 <span class=\"katex math inline\">0</span>。</p>\n</div>            </div>",
+      "text": "输出 n 个整数，用空格隔开，表示每头奶牛左侧第 1 头体重小于自己的奶牛的体重，如果某头奶牛左侧没有比自己轻的奶牛，请输出整数 0。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n50 80 100 90 70</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0 50 80 80 50</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n50 80 100 90 70\n                        \n                        \n                            输出\n                            0 50 80 80 50"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">单调栈</span></span></p>\n</div>                </div>",
+      "text": "单调栈"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n50 80 100 90 70",
+      "output": "0 50 80 80 50"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1851",
+    "通过人数": "976",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:11"
+}

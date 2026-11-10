@@ -1,0 +1,68 @@
+{
+  "id": "3906",
+  "title": "美丽路径",
+  "tags": [
+    "GESP八级",
+    "树形dp",
+    "树",
+    "24年9月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3906",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有一棵包含 <span class=\"katex math inline\">n</span> 个节点的树，节点从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span> 编号，并且每个节点要么是白色，要么是黑色。</p>\n<p>对于树上的一条简单路径（不经过重复节点的路径），小杨认为它是<strong>美丽</strong>的当且仅当路径上相邻节点的颜色均不相同。例如下图，其中节点 <span class=\"katex math inline\">1</span> 和节点 <span class=\"katex math inline\">4</span> 是黑色，其余节点是白色，路径<span class=\"katex math inline\">2-1-3-4</span>  是美丽路径，而 路径 <span class=\"katex math inline\">2-1-3-5</span> 不是美丽路径（相邻节点 <span class=\"katex math inline\">3</span> 和 <span class=\"katex math inline\">5</span> 颜色相同）。</p>\n<p>对于树上的一条简单路径，小杨认为它的长度是路径包含节点的数量。小杨想知道<strong>最长的美丽路径</strong>的长度是多少。</p>\n<p><img src=\"https://assets.boyi.local/ed3d80bb8ccade2ad4ca165c.png\"></p>\n</div>            </div>",
+      "text": "小杨有一棵包含 n 个节点的树，节点从 1 到 n 编号，并且每个节点要么是白色，要么是黑色。\n对于树上的一条简单路径（不经过重复节点的路径），小杨认为它是美丽的当且仅当路径上相邻节点的颜色均不相同。例如下图，其中节点 1 和节点 4 是黑色，其余节点是白色，路径2-1-3-4  是美丽路径，而 路径 2-1-3-5 不是美丽路径（相邻节点 3 和 5 颜色相同）。\n对于树上的一条简单路径，小杨认为它的长度是路径包含节点的数量。小杨想知道最长的美丽路径的长度是多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">n</span>，代表节点数量。</p>\n<p>第二行包含  <span class=\"katex math inline\">n</span> 个整数 <span class=\"katex math inline\">c_1 , c_2 , \\dots , c_n,</span>代表每个节点的颜色，如果 <span class=\"katex math inline\">c_i=0</span>，代表节点 <span class=\"katex math inline\">i</span> 为白色，如果 <span class=\"katex math inline\">c_i=1</span>，代表节点 <span class=\"katex math inline\">i</span> 为黑色。</p>\n<p>之后 <span class=\"katex math inline\">n-1</span> 行，每行包含两个正整数 <span class=\"katex math inline\">u_i,v_i</span>，代表存在一条连接节点 <span class=\"katex math inline\">u_i</span> 和节点 <span class=\"katex math inline\">v_i</span> 的边。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 n，代表节点数量。\n第二行包含  n 个整数 c_1 , c_2 , \\dots , c_n,代表每个节点的颜色，如果 c_i=0，代表节点 i 为白色，如果 c_i=1，代表节点 i 为黑色。\n之后 n-1 行，每行包含两个正整数 u_i,v_i，代表存在一条连接节点 u_i 和节点 v_i 的边。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表最长美丽路径的长度。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表最长美丽路径的长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n1 0 0 1 0\r\n1 2\r\n3 5\r\n4 3\r\n1 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n0 0 0 0 0\r\n1 2\r\n2 3\r\n3 4\r\n4 5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n1 0 0 1 0\r\n1 2\r\n3 5\r\n4 3\r\n1 3\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                5\r\n0 0 0 0 0\r\n1 2\r\n2 3\r\n3 4\r\n4 5\n                            \n                            \n                                输出\n                                1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n  \\le 10^5,0 \\le c_i \\le  1</span> ,同时保证给出的数据构成一棵树。</p>\n<table><thead><tr><th>子任务编号</th><th>数据点占比</th><th><span class=\"katex math inline\">n</span></th><th>特殊条件</th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1</span></td><td><span class=\"katex math inline\">30\\%</span></td><td><span class=\"katex math inline\">\\le 1000</span></td><td>树的形态是一条链</td></tr><tr><td><span class=\"katex math inline\">2</span></td><td><span class=\"katex math inline\">30\\%</span></td><td><span class=\"katex math inline\">\\le 1000</span></td><td></td></tr><tr><td><span class=\"katex math inline\">3</span></td><td><span class=\"katex math inline\">40\\%</span></td><td><span class=\"katex math inline\">\\le 10^5</span></td><td></td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于全部数据，保证有 1 \\le n  \\le 10^5,0 \\le c_i \\le  1 ,同时保证给出的数据构成一棵树。\n子任务编号数据点占比n特殊条件130\\%\\le 1000树的形态是一条链230\\%\\le 1000340\\%\\le 10^5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 9月认证 C++ 八级真题</p>\n</div>                </div>",
+      "text": "GESP 9月认证 C++ 八级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP八级</span><span class=\"label label-warning\">树形dp</span><span class=\"label label-info\">树</span><span class=\"label label-danger\">24年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP八级树形dp树24年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n1 0 0 1 0\r\n1 2\r\n3 5\r\n4 3\r\n1 3",
+      "output": "4"
+    },
+    {
+      "input": "5\r\n0 0 0 0 0\r\n1 2\r\n2 3\r\n3 4\r\n4 5",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "202",
+    "通过人数": "118",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:36:29"
+}

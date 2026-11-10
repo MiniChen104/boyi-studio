@@ -1,0 +1,52 @@
+{
+  "id": "4770",
+  "title": "画等腰字符三角形",
+  "tags": [
+    "蓝桥等考",
+    "循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4770",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>根据输入的正整数 <span class=\"katex math inline\">n</span>，画出如图所示的等腰字符三角形。\n例如 <span class=\"katex math inline\">n</span> = <span class=\"katex math inline\">5</span>时，图案为：</p>\n<pre><code>    A\n   BBB\n  CCCCC\n DDDDDDD\nEEEEEEEEE\n</code></pre>\n</div>            </div>",
+      "text": "根据输入的正整数 n，画出如图所示的等腰字符三角形。\n例如 n = 5时，图案为：\n    A\n   BBB\n  CCCCC\n DDDDDDD\nEEEEEEEEE"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 <span class=\"katex math inline\">n</span>，（<span class=\"katex math inline\">n \\le 10</span>）表示等腰字符三角形的高度（行数）。每行的字符从 <code>A</code> 开始依次递增。</p>\n</div>            </div>",
+      "text": "输入一个正整数 n，（n \\le 10）表示等腰字符三角形的高度（行数）。每行的字符从 A 开始依次递增。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个由字符组成的等腰三角形图案。第一行由单个字符 <code>A</code> 组成，之后每一行使用的字符从前一行的字符开始逐个递增，并且每一行的字符数量分别为 <span class=\"katex math inline\">1</span>，<span class=\"katex math inline\">3</span>，<span class=\"katex math inline\">5</span>，<span class=\"katex math inline\">7</span>，<span class=\"katex math inline\">\\dots</span>，形成等腰三角形的形状。每一行的字符应居中对齐，使得图案左右两端对称。对于 <span class=\"katex math inline\">n</span>=<span class=\"katex math inline\">5</span> 的情况，输出如题目描述中的图案所示。</p>\n</div>            </div>",
+      "text": "输出一个由字符组成的等腰三角形图案。第一行由单个字符 A 组成，之后每一行使用的字符从前一行的字符开始逐个递增，并且每一行的字符数量分别为 1，3，5，7，\\dots，形成等腰三角形的形状。每一行的字符应居中对齐，使得图案左右两端对称。对于 n=5 的情况，输出如题目描述中的图案所示。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>  A\r\n BBB\r\nCCCCC\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                              A\r\n BBB\r\nCCCCC"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">循环</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "  A\r\n BBB\r\nCCCCC\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "83",
+    "通过人数": "73",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:14"
+}

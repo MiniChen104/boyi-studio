@@ -1,0 +1,62 @@
+{
+  "id": "1930",
+  "title": "关押罪犯",
+  "tags": [
+    "noip提高组复赛",
+    "并查集"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1930",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>S 城现有两座监狱，一共关押着 <span class=\"katex math inline\">N</span> 名罪犯，编号分别为 <span class=\"katex math inline\">1-N</span>。他们之间的关系自然也极不和谐。很多罪犯之间甚至积怨已久，如果客观条件具备则随时可能爆发冲突。我们用“怨气值”（一个正整数值）来表示某两名罪犯之间的仇恨程度，怨气值越大，则这两名罪犯之间的积怨越多。如果两名怨气值为 <span class=\"katex math inline\">c</span> 的罪犯被关押在同一监狱，他们俩之间会发生摩擦，并造成影响力为 <span class=\"katex math inline\">c</span> 的冲突事件。</p>\n<p>每年年末，警察局会将本年内监狱中的所有冲突事件按影响力从大到小排成一个列表，然后上报到 S 城 Z 市长那里。公务繁忙的 Z 市长只会去看列表中的第一个事件的影响力，如果影响很坏，他就会考虑撤换警察局长。</p>\n<p>在详细考察了<span class=\"katex math inline\">N</span> 名罪犯间的矛盾关系后，警察局长觉得压力巨大。他准备将罪犯们在两座监狱内重新分配，以求产生的冲突事件影响力都较小，从而保住自己的乌纱帽。假设只要处于同一监狱内的某两个罪犯间有仇恨，那么他们一定会在每年的某个时候发生摩擦。</p>\n<p>那么，应如何分配罪犯，才能使 Z 市长看到的那个冲突事件的影响力最小？这个最小值是多少？</p>\n</div>            </div>",
+      "text": "S 城现有两座监狱，一共关押着 N 名罪犯，编号分别为 1-N。他们之间的关系自然也极不和谐。很多罪犯之间甚至积怨已久，如果客观条件具备则随时可能爆发冲突。我们用“怨气值”（一个正整数值）来表示某两名罪犯之间的仇恨程度，怨气值越大，则这两名罪犯之间的积怨越多。如果两名怨气值为 c 的罪犯被关押在同一监狱，他们俩之间会发生摩擦，并造成影响力为 c 的冲突事件。\n每年年末，警察局会将本年内监狱中的所有冲突事件按影响力从大到小排成一个列表，然后上报到 S 城 Z 市长那里。公务繁忙的 Z 市长只会去看列表中的第一个事件的影响力，如果影响很坏，他就会考虑撤换警察局长。\n在详细考察了N 名罪犯间的矛盾关系后，警察局长觉得压力巨大。他准备将罪犯们在两座监狱内重新分配，以求产生的冲突事件影响力都较小，从而保住自己的乌纱帽。假设只要处于同一监狱内的某两个罪犯间有仇恨，那么他们一定会在每年的某个时候发生摩擦。\n那么，应如何分配罪犯，才能使 Z 市长看到的那个冲突事件的影响力最小？这个最小值是多少？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>每行中两个数之间用一个空格隔开。</p>\n<p>第一行为两个正整数 <span class=\"katex math inline\">N,M</span>，分别表示罪犯的数目以及存在仇恨的罪犯对数。</p>\n<p>接下来的 <span class=\"katex math inline\">M</span> 行每行为三个正整数 <span class=\"katex math inline\">a_j,b_j,c_j</span>，表示 <span class=\"katex math inline\">a_j</span> 号和 <span class=\"katex math inline\">b_j</span> 号罪犯之间存在仇恨，其怨气值为 <span class=\"katex math inline\">c_j</span>。</p>\n<p>数据保证 <span class=\"katex math inline\">1 &lt; a_j \\leq b_j \\leq N, 0 &lt; c_j \\leq 10^9</span>，且每对罪犯组合只出现一次。</p>\n</div>            </div>",
+      "text": "每行中两个数之间用一个空格隔开。\n第一行为两个正整数 N,M，分别表示罪犯的数目以及存在仇恨的罪犯对数。\n接下来的 M 行每行为三个正整数 a_j,b_j,c_j，表示 a_j 号和 b_j 号罪犯之间存在仇恨，其怨气值为 c_j。\n数据保证 1 < a_j \\leq b_j \\leq N, 0 < c_j \\leq 10^9，且每对罪犯组合只出现一次。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共 <span class=\"katex math inline\">1</span> 行，为 Z 市长看到的那个冲突事件的影响力。如果本年内监狱中未发生任何冲突事件，请输出 <code>0</code>。</p>\n</div>            </div>",
+      "text": "共 1 行，为 Z 市长看到的那个冲突事件的影响力。如果本年内监狱中未发生任何冲突事件，请输出 0。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 6\r\n1 4 2534\r\n2 3 3512\r\n1 2 28351\r\n1 3 6618\r\n2 4 1805\r\n3 4 12884</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3512</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 6\r\n1 4 2534\r\n2 3 3512\r\n1 2 28351\r\n1 3 6618\r\n2 4 1805\r\n3 4 12884\n                        \n                        \n                            输出\n                            3512"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【输入输出样例说明】</h4>\n<p>罪犯之间的怨气值如下面左图所示，右图所示为罪犯的分配方法，市长看到的冲突事件影响力是 <span class=\"katex math inline\">3512</span>（由 <span class=\"katex math inline\">2</span> 号和 <span class=\"katex math inline\">3</span> 号罪犯引发）。其他任何分法都不会比这个分法更优。</p>\n<p><img src=\"https://assets.boyi.local/ab3924a6dfe26eb5d432bf06.jpg\"></p>\n<h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span>的数据有 <span class=\"katex math inline\">N\\leq 15</span>。</p>\n<p>对于 <span class=\"katex math inline\">70\\%</span> 的数据有 <span class=\"katex math inline\">N\\leq 2000,M\\leq 50000</span>。  </p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据有 <span class=\"katex math inline\">N\\leq 20000,M\\leq 100000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【输入输出样例说明】\n罪犯之间的怨气值如下面左图所示，右图所示为罪犯的分配方法，市长看到的冲突事件影响力是 3512（由 2 号和 3 号罪犯引发）。其他任何分法都不会比这个分法更优。\n\n【数据范围】\n对于 30\\%的数据有 N\\leq 15。\n对于 70\\% 的数据有 N\\leq 2000,M\\leq 50000。  \n对于 100\\% 的数据有 N\\leq 20000,M\\leq 100000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip提高组复赛 并查集</p>\n</div>                </div>",
+      "text": "noip提高组复赛 并查集"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip提高组复赛</span><span class=\"label label-warning\">并查集</span></span></p>\n</div>                </div>",
+      "text": "noip提高组复赛并查集"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 6\r\n1 4 2534\r\n2 3 3512\r\n1 2 28351\r\n1 3 6618\r\n2 4 1805\r\n3 4 12884",
+      "output": "3512"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4208",
+    "通过人数": "2293",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:26:07"
+}

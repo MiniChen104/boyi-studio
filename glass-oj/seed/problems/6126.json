@@ -1,0 +1,62 @@
+{
+  "id": "6126",
+  "title": "日志标准化排序(log)",
+  "tags": [
+    "市赛",
+    "常州2026"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6126",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定 <span class=\"katex math inline\">n</span> 行日志，每行恰好包含 <span class=\"katex math inline\">5</span> 个用空格分隔的字段，格式为：\ndate=YYYY-M-D time=H:M:S user=xxx action=yyy params=k1=v1&amp;k2=v2&amp;...</p>\n<p>其中：</p>\n<ul><li>年保证为四位数</li>\n<li>月/日/时/分/秒没有前导零（例如 <code>2026-3-1</code>、<code>9:2:5</code>）</li>\n<li><code>user</code> 可能含大小写字母与数字（无空格）</li>\n<li><code>action</code> 只含小写字母</li>\n<li><code>params</code> 由若干 <code>key=value</code> 用 <code>&amp;</code> 连接，可能为空（即 <code>params=</code> 后面没有内容）；不会存在重复的键；键值对顺序可能是乱的\n你的任务是把每行日志标准化后，再按规则排序并输出。\n标准化规则：将每条日志转换为如下格式：\nno. YYYY-MM-DD HH:MM:SS user action params<ol><li><code>no.</code> 为排序后的日志序号；需添加前导零使所有序号位数相同（例如共 200 条时第 1 条序号为 <code>001.</code>，共 5 条时序号为 <code>1.</code>）</li>\n<li><code>date</code>、<code>time</code> 的月/日/时/分/秒均补齐两位（年保持四位不变）</li>\n<li><code>user</code> 全部转成小写，数字不变</li>\n<li><code>params</code> 中所有 <code>key=value</code> 按 key 的字典序升序排列后用 <code>&amp;</code> 连接；若 <code>params</code> 为空则该字段为空串</li>\n</ol></li>\n</ul><p>排序规则：对标准化后的日志按以下键升序排序：</p>\n<ol><li>时间戳 <code>YYYY-MM-DD HH:MM:SS</code></li>\n<li><code>user</code></li>\n<li><code>action</code></li>\n<li><code>params</code>（整个字符串）</li>\n</ol></div>            </div>",
+      "text": "给定 n 行日志，每行恰好包含 5 个用空格分隔的字段，格式为：\ndate=YYYY-M-D time=H:M:S user=xxx action=yyy params=k1=v1&k2=v2&...\n其中：\n年保证为四位数\n月/日/时/分/秒没有前导零（例如 2026-3-1、9:2:5）\nuser 可能含大小写字母与数字（无空格）\naction 只含小写字母\nparams 由若干 key=value 用 & 连接，可能为空（即 params= 后面没有内容）；不会存在重复的键；键值对顺序可能是乱的\n你的任务是把每行日志标准化后，再按规则排序并输出。\n标准化规则：将每条日志转换为如下格式：\nno. YYYY-MM-DD HH:MM:SS user action paramsno. 为排序后的日志序号；需添加前导零使所有序号位数相同（例如共 200 条时第 1 条序号为 001.，共 5 条时序号为 1.）\ndate、time 的月/日/时/分/秒均补齐两位（年保持四位不变）\nuser 全部转成小写，数字不变\nparams 中所有 key=value 按 key 的字典序升序排列后用 & 连接；若 params 为空则该字段为空串\n\n排序规则：对标准化后的日志按以下键升序排序：\n时间戳 YYYY-MM-DD HH:MM:SS\nuser\naction\nparams（整个字符串）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入一个整数 <span class=\"katex math inline\">n</span>。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行一条日志。</p>\n</div>            </div>",
+      "text": "第一行输入一个整数 n。\n接下来 n 行，每行一条日志。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">n</span> 行，为标准化并排序后的日志。</p>\n</div>            </div>",
+      "text": "输出 n 行，为标准化并排序后的日志。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\ndate=2026-3-1 time=9:2:5 user=Alice action=login params=b=2&amp;a=1\r\ndate=2026-3-1 time=9:2:4 user=bob action=refund params=\r\ndate=2026-3-1 time=9:2:5 user=alice action=logout params=z=9\r\ndate=2026-3-1 time=9:2:5 user=alice action=login params=a=1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1. 2026-03-01 09:02:04 bob refund \r\n2. 2026-03-01 09:02:05 alice login a=1\r\n3. 2026-03-01 09:02:05 alice login a=1&amp;b=2\r\n4. 2026-03-01 09:02:05 alice logout z=9 </pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\ndate=2026-3-1 time=9:2:5 user=Alice action=login params=b=2&a=1\r\ndate=2026-3-1 time=9:2:4 user=bob action=refund params=\r\ndate=2026-3-1 time=9:2:5 user=alice action=logout params=z=9\r\ndate=2026-3-1 time=9:2:5 user=alice action=login params=a=1\n                        \n                        \n                            输出\n                            1. 2026-03-01 09:02:04 bob refund \r\n2. 2026-03-01 09:02:05 alice login a=1\r\n3. 2026-03-01 09:02:05 alice login a=1&b=2\r\n4. 2026-03-01 09:02:05 alice logout z=9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p>四条日志标准化过程：</p>\n<p>原始第 <span class=\"katex math inline\">1</span> 条：user=Alice 转小写为 alice，params=b=2&amp;a=1 按 key 排序后为 a=1&amp;b=2，时间补零为 2026-03-01 09:02:05</p>\n<p>原始第 <span class=\"katex math inline\">2</span> 条：user=bob 已小写，params 为空，时间补零为 2026-03-01 09:02:04</p>\n<p>原始第 <span class=\"katex math inline\">3</span> 条：user=alice，params=z=9（仅一个键值对，无需排序），时间补零为 2026-03-01 09:02:05</p>\n<p>原始第 <span class=\"katex math inline\">4</span> 条：user=alice，params=a=1（已有序），时间补零为 2026-03-01 09:02:05</p>\n<p>排序后：第 <span class=\"katex math inline\">2</span> 条时间最早排第 <span class=\"katex math inline\">1</span>；其余三条时间相同，再按 user/action/params 排序依次输出。</p>\n<h4>数据范围</h4>\n<table><thead><tr><th>数据点编号</th><th>数据范围</th><th>特殊性质</th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1</span></td><td><span class=\"katex math inline\">n = 1</span></td><td>单条日志，params 为空</td></tr><tr><td><span class=\"katex math inline\">2</span></td><td><span class=\"katex math inline\">n \\leq 10</span></td><td>所有 params 均为空</td></tr><tr><td><span class=\"katex math inline\">3</span></td><td><span class=\"katex math inline\">n \\leq 100</span></td><td>user 均已为纯小写，无需转换</td></tr><tr><td><span class=\"katex math inline\">4</span></td><td><span class=\"katex math inline\">n \\leq 100</span></td><td>所有日志时间戳完全相同</td></tr><tr><td><span class=\"katex math inline\">5</span></td><td><span class=\"katex math inline\">n \\leq 1000</span></td><td>每条 params 至多含一个键值对</td></tr><tr><td><span class=\"katex math inline\">6</span></td><td><span class=\"katex math inline\">n \\leq 5000</span></td><td>月/日/时/分/秒均需补零</td></tr><tr><td><span class=\"katex math inline\">7</span></td><td><span class=\"katex math inline\">n \\leq 10^4</span></td><td>无特殊性质</td></tr><tr><td><span class=\"katex math inline\">8</span></td><td><span class=\"katex math inline\">n \\leq 5 \\times 10^4</span></td><td>每条 params 键值对数量较多</td></tr><tr><td><span class=\"katex math inline\">9</span></td><td><span class=\"katex math inline\">n \\leq 10^5</span></td><td>无特殊性质</td></tr><tr><td><span class=\"katex math inline\">10</span></td><td><span class=\"katex math inline\">n \\leq 10^5</span></td><td>无特殊性质</td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "样例解释\n四条日志标准化过程：\n原始第 1 条：user=Alice 转小写为 alice，params=b=2&a=1 按 key 排序后为 a=1&b=2，时间补零为 2026-03-01 09:02:05\n原始第 2 条：user=bob 已小写，params 为空，时间补零为 2026-03-01 09:02:04\n原始第 3 条：user=alice，params=z=9（仅一个键值对，无需排序），时间补零为 2026-03-01 09:02:05\n原始第 4 条：user=alice，params=a=1（已有序），时间补零为 2026-03-01 09:02:05\n排序后：第 2 条时间最早排第 1；其余三条时间相同，再按 user/action/params 排序依次输出。\n数据范围\n数据点编号数据范围特殊性质1n = 1单条日志，params 为空2n \\leq 10所有 params 均为空3n \\leq 100user 均已为纯小写，无需转换4n \\leq 100所有日志时间戳完全相同5n \\leq 1000每条 params 至多含一个键值对6n \\leq 5000月/日/时/分/秒均需补零7n \\leq 10^4无特殊性质8n \\leq 5 \\times 10^4每条 params 键值对数量较多9n \\leq 10^5无特殊性质10n \\leq 10^5无特殊性质"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2026年常州“信息与未来”小学生编程比赛线上</p>\n</div>                </div>",
+      "text": "2026年常州“信息与未来”小学生编程比赛线上"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">常州2026</span></span></p>\n</div>                </div>",
+      "text": "市赛常州2026"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\ndate=2026-3-1 time=9:2:5 user=Alice action=login params=b=2&a=1\r\ndate=2026-3-1 time=9:2:4 user=bob action=refund params=\r\ndate=2026-3-1 time=9:2:5 user=alice action=logout params=z=9\r\ndate=2026-3-1 time=9:2:5 user=alice action=login params=a=1",
+      "output": "1. 2026-03-01 09:02:04 bob refund \r\n2. 2026-03-01 09:02:05 alice login a=1\r\n3. 2026-03-01 09:02:05 alice login a=1&b=2\r\n4. 2026-03-01 09:02:05 alice logout z=9 "
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "59",
+    "通过人数": "16",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:38"
+}

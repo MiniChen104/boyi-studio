@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; media-src 'self' https://wallpaper.boyi.local; font-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'">
+<title>博宜练习室</title><link rel="stylesheet" href="vendor/codemirror.css"><link rel="stylesheet" href="vendor/katex.min.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="liquid-theme.css"><link rel="stylesheet" href="reference-ui.css">
+<link rel="stylesheet" href="learning.css">
+<link rel="stylesheet" href="drawers.css">
+</head>
+<body>
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 22"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+<symbol id="i-queue" viewBox="0 0 24 24"><path d="M9 6h12M9 12h12M9 18h8M3 6h1M3 12h1M3 18h1"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="16" cy="17" r="3"/></symbol>
+<symbol id="i-sync" viewBox="0 0 24 24"><path d="M20 7a8 8 0 0 0-14-2L3 8m0-5v5h5m-4 9a8 8 0 0 0 14 2l3-3m0 5v-5h-5"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8Z"/></symbol>
+<symbol id="i-focus" viewBox="0 0 24 24"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></symbol>
+<symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L10 14M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+</defs></svg>
+<div class="atmosphere" aria-hidden="true"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orb orb-c"></div><div class="grain"></div></div>
+<div class="app-shell">
+<aside class="sidebar glass">
+  <div class="brand"><div class="brand-symbol">b<span>°</span></div><div><strong>博宜练习室</strong><small>A LITTLE, EVERY DAY</small></div></div>
+  <div class="section-label">你的空间</div>
+  <nav class="nav-list">
+    <button class="nav-item active" data-view="all"><svg><use href="#i-grid"/></svg>全部题目<span id="totalBadge">—</span></button>
+    <button class="nav-item" data-view="drafts"><svg><use href="#i-code"/></svg>我的练习<span id="draftBadge">0</span></button>
+    <button class="nav-item" data-view="favorites"><svg><use href="#i-star"/></svg>收藏题目</button>
+    <button class="nav-item" id="openOnlineLists"><svg><use href="#i-grid"/></svg>官网题单<span>↗</span></button>
+    <button class="nav-item" id="openOnlineGroups"><svg><use href="#i-user"/></svg>小组</button>
+    <button class="nav-item" id="openOnlineHistory"><svg><use href="#i-check"/></svg>提交记录</button>
+    <button class="nav-item" id="openQueue"><svg><use href="#i-queue"/></svg>提交队列<span id="queueBadge">0</span></button>
+  </nav>
+  <div class="section-label label-top">按知识点练习</div>
+  <div class="categories" id="categories"></div>
+  <div class="sidebar-bottom">
+    <div class="account-progress"><strong id="acceptedTotal">—</strong><span>题已通过</span><button id="syncProgress" title="同步账号在官网的全部通过记录">↻</button><small id="progressStatus">连接账号，同步原有进度</small></div>
+    <div class="daily-card"><span class="tiny-dot"></span><span id="syncText">本地题库 · 随时开始</span><button class="icon-btn" id="syncButton" title="同步完整题库"><svg><use href="#i-sync"/></svg></button></div>
+    <button class="nav-item" id="openSettings"><svg><use href="#i-settings"/></svg>外观与设置</button>
+    <button class="account glass-inset" id="openAccount"><span class="avatar"><svg><use href="#i-user"/></svg></span><span><strong id="accountName">我的账号</strong><small id="accountStatus">登录后即可提交</small></span><span class="account-arrow">↗</span></button>
+  </div>
+</aside>
+<section class="library glass">
+  <div class="library-heading"><div><div class="eyebrow">PROBLEM LIBRARY</div><h2 id="listTitle">全部题目</h2></div><span class="pill" id="listCount">—</span></div>
+  <label class="search"><svg><use href="#i-search"/></svg><input id="search" placeholder="搜索题号、标题或标签" autocomplete="off"><kbd>/</kbd></label>
+  <div class="filter-strip"><button class="active" data-filter="all">全部</button><button data-filter="todo">未通过</button><button data-filter="reference">有参考</button></div>
+  <div id="problemList" class="problem-list" aria-label="题目列表"></div>
+  <div class="library-footer"><span id="librarySummary">正在载入题库…</span><span class="offline-dot"></span></div>
+</section>
+<main class="workspace">
+  <header class="workspace-header"><div class="crumb"><span>留一点时间，给思考</span><span class="crumb-dot">·</span><span id="currentCategory">基础问题</span></div><div class="header-actions"><button class="icon-btn" id="favorite" title="收藏本题"><svg><use href="#i-star"/></svg></button><button class="icon-btn" id="source" title="在官网打开题目"><svg><use href="#i-external"/></svg></button><button class="focus-button glass" id="focus"><svg><use href="#i-focus"/></svg><span>专注模式</span></button></div></header>
+  <div class="problem-heading"><div><div class="problem-meta"><span id="problemNumber">NO. 1606</span><span id="difficulty" class="level">入门</span><span id="acceptedLabel" class="accepted-label"></span></div><h1 id="problemTitle">让代码，慢慢成为你的答案。</h1></div></div>
+  <section class="studio glass">
+    <article class="statement"><div class="pane-label"><span>题目</span><span id="limits"></span></div><div id="statementBody" class="statement-body"><div class="welcome"><span>⌘</span><h3>从一道题开始</h3><p>选择题目，读一读，写一写。<br>你的每一次修改都会自动保存。</p></div></div></article>
+    <div id="splitter" class="splitter" title="拖动调整宽度"></div>
+    <section class="editor-pane">
+      <div class="editor-toolbar"><div class="editor-tabs" role="tablist"><button class="active" data-tab="draft" role="tab">我的代码</button><button data-tab="reference" role="tab">参考答案<span id="referenceDot"></span></button><button data-tab="staged" role="tab">待提交</button></div><span class="language">C++ 11</span></div>
+      <div id="referenceTools" class="reference-tools hidden"><label for="referenceChoice">解法</label><select id="referenceChoice" aria-label="选择参考解法"></select><details id="referenceDetails"><summary>思路与复杂度</summary><p id="referenceIdea"></p><p id="referenceComplexity"></p></details></div>
+      <div id="versionNotice" class="version-notice hidden"></div>
+      <div class="editor-wrap"><textarea id="editor" spellcheck="false" aria-label="C++代码编辑器"></textarea><div id="emptyVersion" class="empty-version hidden"><svg><use href="#i-code"/></svg><h3 id="emptyTitle">这道题还没有参考答案</h3><p id="emptyDescription">你可以先独立思考，写下自己的解法。</p></div></div>
+      <div class="editor-status"><span><span id="saveDot" class="saved-dot"></span><span id="saveStatus">自动保存已开启</span></span><span id="cursorStatus">行 1，列 1</span><button id="importCode" title="导入本地C++文件">导入</button><button id="exportCode" title="导出当前代码">导出</button></div>
+      <div class="test-panel" id="testPanel"><div class="test-header"><button id="toggleTest"><span id="testChevron">⌄</span> 本地测试</button><span id="testStatus">样例是起点，不是全部</span><button id="fillSample">填入样例</button></div><div class="test-content"><label><span>标准输入</span><textarea id="testInput" placeholder="在这里输入测试数据…" spellcheck="false"></textarea></label><label><span>运行结果 <button id="clearOutput">清空</button></span><pre id="testOutput">运行代码后，输出会显示在这里。</pre></label></div></div>
+      <footer class="editor-actions"><button class="secondary" id="run"><svg><use href="#i-play"/></svg>运行测试<kbd>Ctrl ↵</kbd></button><button class="copy-ref hidden" id="copyReference">复制到我的代码</button><button class="primary" id="stage">设为待提交<svg><use href="#i-arrow"/></svg></button></footer>
+    </section>
+  </section>
+  <footer class="workspace-footer"><span id="bottomHint">先独立写，再与参考答案比较。</span><button id="queueShortcut"><span class="tiny-dot"></span><span id="queueSummary">提交队列为空</span><span>↗</span></button></footer>
+</main>
+<section id="onlineRoot" class="online-root glass" aria-label="官网账号数据"></section>
+</div>
+<div id="toasts" class="toast-stack" aria-live="polite"></div>
+<dialog id="modal" class="modal glass"><div class="modal-header"><div><span id="modalEyebrow" class="eyebrow"></span><h2 id="modalTitle"></h2></div><button id="closeModal" class="icon-btn" aria-label="关闭"><svg><use href="#i-close"/></svg></button></div><div id="modalBody"></div></dialog>
+<script src="vendor/codemirror.js"></script><script src="vendor/clike.js"></script><script src="vendor/matchbrackets.js"></script><script src="vendor/active-line.js"></script><script src="vendor/katex.min.js"></script><script src="app.js"></script><script src="liquid-ui.js"></script>
+</body></html>

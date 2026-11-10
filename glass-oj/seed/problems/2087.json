@@ -1,0 +1,57 @@
+{
+  "id": "2087",
+  "title": "订做校服",
+  "tags": [
+    "模拟",
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2087",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学校准备召开年度文艺汇演，六年级的同学们决定一起订做新校服，参加汇演。</p>\n<p>现给出每件校服的价钱，以及六年级每个班级的人数，请编程计算出，所有同学订做校服需要的总价钱。</p>\n</div>            </div>",
+      "text": "学校准备召开年度文艺汇演，六年级的同学们决定一起订做新校服，参加汇演。\n现给出每件校服的价钱，以及六年级每个班级的人数，请编程计算出，所有同学订做校服需要的总价钱。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：一个整数 <span class=\"katex math inline\">x</span> ，表示每件校服的价钱。(<span class=\"katex math inline\">x \\le 100</span>)</p>\n<p>第二行：一个整数 <span class=\"katex math inline\">n</span> ，表示六年级的班级数。(<span class=\"katex math inline\">n \\le 10</span>)</p>\n<p>第三行：<span class=\"katex math inline\">n</span> 个整数，表示六年级各班的人数。（各班人数在 <span class=\"katex math inline\">50</span> 人以内）</p>\n</div>            </div>",
+      "text": "第一行：一个整数 x ，表示每件校服的价钱。(x \\le 100)\n第二行：一个整数 n ，表示六年级的班级数。(n \\le 10)\n第三行：n 个整数，表示六年级各班的人数。（各班人数在 50 人以内）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数代表全年级订制校服所需要的总价钱。</p>\n</div>            </div>",
+      "text": "一个整数代表全年级订制校服所需要的总价钱。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>30\r\n6\r\n48 50 51 49 50 52</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9000</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            30\r\n6\r\n48 50 51 49 50 52\n                        \n                        \n                            输出\n                            9000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>模拟 数组问题</p>\n</div>                </div>",
+      "text": "模拟 数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">模拟</span><span class=\"label label-warning\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "模拟数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "30\r\n6\r\n48 50 51 49 50 52",
+      "output": "9000"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1303",
+    "通过人数": "1080",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:15"
+}

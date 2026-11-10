@@ -1,0 +1,62 @@
+{
+  "id": "2255",
+  "title": "比赛(match.cpp)",
+  "tags": [
+    "数组基础",
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2255",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\"> X </span> 参加了一场作文比赛的初赛。算上小  <span class=\"katex math inline\">X</span> ，他的学校一共有 <span class=\"katex math inline\">n</span> 个人参加了这场比赛。</p>\n<p>一个礼拜后，小 <span class=\"katex math inline\">X</span>  兴奋地打开比赛官网，发现一等奖、二等奖、三等奖的分数线和所有人的得分都已经公布了，但没有提到获得什么奖项才能进入复赛。</p>\n<p>小  <span class=\"katex math inline\">X</span>  想问问你，如果要获得了 <span class=\"katex math inline\">A</span>  等奖才能进入复赛的话，他的学校有多少人能进入复赛呢？ </p>\n<p>假设  <span class=\"katex math inline\">A</span>  等奖的分数线是 <span class=\"katex math inline\"> x</span> ，一个人的分数是 <span class=\"katex math inline\">y</span> ，那么如果  <span class=\"katex math inline\">y</span>  大于等于 <span class=\"katex math inline\">x</span>，这个人就获得了 <span class=\"katex math inline\">A</span>  等奖。</p>\n</div>            </div>",
+      "text": "小  X  参加了一场作文比赛的初赛。算上小  X ，他的学校一共有 n 个人参加了这场比赛。\n一个礼拜后，小 X  兴奋地打开比赛官网，发现一等奖、二等奖、三等奖的分数线和所有人的得分都已经公布了，但没有提到获得什么奖项才能进入复赛。\n小  X  想问问你，如果要获得了 A  等奖才能进入复赛的话，他的学校有多少人能进入复赛呢？ \n假设  A  等奖的分数线是  x ，一个人的分数是 y ，那么如果  y  大于等于 x，这个人就获得了 A  等奖。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据共有四行。<br>\n第一行一个正整数 <span class=\"katex math inline\">n</span>，表示小 <span class=\"katex math inline\">X</span> 的学校一共有 <span class=\"katex math inline\">n</span> 个人参加了比赛。<br>\n第二行 <span class=\"katex math inline\">n</span> 个正整数，表示小 <span class=\"katex math inline\">X</span> 的学校中所有人的得分。<br>\n第三行三个正整数 <span class=\"katex math inline\">L3,L2,L1</span>，分别表示三等奖、二等奖、一等奖的分数线。<br>\n第四行一个正整数 <span class=\"katex math inline\">A</span>，表示要获得了 <span class=\"katex math inline\">A</span> 等奖才能进入复赛。  </p>\n</div>            </div>",
+      "text": "输入数据共有四行。\n第一行一个正整数 n，表示小 X 的学校一共有 n 个人参加了比赛。\n第二行 n 个正整数，表示小 X 的学校中所有人的得分。\n第三行三个正整数 L3,L2,L1，分别表示三等奖、二等奖、一等奖的分数线。\n第四行一个正整数 A，表示要获得了 A 等奖才能进入复赛。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行包含一个整数，表示有多少人进入复赛。</p>\n</div>            </div>",
+      "text": "输出一行包含一个整数，表示有多少人进入复赛。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n99 101 200 300\r\n100 200 300\r\n2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n99 101 200 300\r\n100 200 300\r\n2\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>样例解释</strong><br>\n第一个人 99 分，没有奖项<br>\n第二个人 101 分，获得了三等奖<br>\n第三个人 200 分，获得了三等奖、二等奖<br>\n第四个人 300 分，获得了三等奖、二等奖、一等奖<br>\n一共有 2 个人获得了二等奖，所以有 2 个人进入复赛  </p>\n<p><strong>数据范围</strong><br>\n本题共有 10 个测试点<br>\n对于全部数据：所有人的得分&lt;=1000，L3&lt;=L2&lt;=L1&lt;=1000，A 是{1,2,3}中的一个<br>\n对于测试点 1-2 ：n=1<br>\n对于测试点 3-6 ：n&lt;=10<br>\n对于测试点 7-10：n&lt;=10000  </p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n第一个人 99 分，没有奖项\n第二个人 101 分，获得了三等奖\n第三个人 200 分，获得了三等奖、二等奖\n第四个人 300 分，获得了三等奖、二等奖、一等奖\n一共有 2 个人获得了二等奖，所以有 2 个人进入复赛  \n数据范围\n本题共有 10 个测试点\n对于全部数据：所有人的得分<=1000，L3<=L2<=L1<=1000，A 是{1,2,3}中的一个\n对于测试点 1-2 ：n=1\n对于测试点 3-6 ：n<=10\n对于测试点 7-10：n<=10000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2020常州市程序设计小能手(小学组)比赛试题 T2</p>\n</div>                </div>",
+      "text": "2020常州市程序设计小能手(小学组)比赛试题 T2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组基础</span><span class=\"label label-warning\">市赛</span></span></p>\n</div>                </div>",
+      "text": "数组基础市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n99 101 200 300\r\n100 200 300\r\n2",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "669",
+    "通过人数": "344",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:22"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "1994",
+  "title": "格子问题",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1994",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n输入三个自然数N，i，j （1&lt;=i&lt;=N，1&lt;=j&lt;=N），输出在一个N*N格的棋盘中，与格子（i，j）同行、同列、同一对角线的所有格子的位置。\n</p>\n<p class=\"MsoNormal\">\n如：<span>n=4</span>，<span>i=2</span>，<span>j=3</span>表示了棋盘中的第二行第三列的格子，如下图：\n</p>\n<p><img src=\"https://assets.boyi.local/659c06863a96014f0e782c9d.jpg\">     </p>\n<p class=\"MsoNormal\">\n当<span>n=4</span>，<span>i=2</span>，<span>j=3</span>时，输出的结果是：<span></span> \n</p>\n<p>\n<span>(2,1) (2,2) (2,3) (2,4)                     {</span>同一行上格子的位置<span>}</span>\n</p>\n<p>\n<span>(1,3) (2,3) (3,3) (4,3)                     {</span>同列列上格子的位置<span>}</span>\n</p>\n<p>\n<span>(1,2) (2,3) (3,4)                             {</span>左上到右下对角线上的格子的位置<span>}</span>\n</p>\n<p>\n(4,1) (3,2) (2,3) (1,4)                     {左下到右上对角线上的格子的位置}\n</p>\n</div>            </div>",
+      "text": "输入三个自然数N，i，j （1<=i<=N，1<=j<=N），输出在一个N*N格的棋盘中，与格子（i，j）同行、同列、同一对角线的所有格子的位置。\n\n\n如：n=4，i=2，j=3表示了棋盘中的第二行第三列的格子，如下图：\n\n     \n\n当n=4，i=2，j=3时，输出的结果是： \n\n\n(2,1) (2,2) (2,3) (2,4)                     {同一行上格子的位置}\n\n\n(1,3) (2,3) (3,3) (4,3)                     {同列列上格子的位置}\n\n\n(1,2) (2,3) (3,4)                             {左上到右下对角线上的格子的位置}\n\n\n(4,1) (3,2) (2,3) (1,4)                     {左下到右上对角线上的格子的位置}"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n每个测试文件只包含一组测试数据，每组输入数据包含三个自然数N，i，j。\n</p>\n</div>            </div>",
+      "text": "每个测试文件只包含一组测试数据，每组输入数据包含三个自然数N，i，j。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n对于每组输入数据，输出四行数据：\n</p>\n<p>\n第一行：同一行上格子的位置；\n</p>\n<p>\n第二行：同列列上格子的位置；\n</p>\n<p>\n第三行：左上到右下对角线上的格子的位置；\n</p>\n<p>\n第四行：左下到右上对角线上的格子的位置。\n</p>\n<p>\n具体格式见样例输出。\n</p>\n</div>            </div>",
+      "text": "对于每组输入数据，输出四行数据：\n\n\n第一行：同一行上格子的位置；\n\n\n第二行：同列列上格子的位置；\n\n\n第三行：左上到右下对角线上的格子的位置；\n\n\n第四行：左下到右上对角线上的格子的位置。\n\n\n具体格式见样例输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>(2,1)(2,2)(2,3)(2,4)\r\n(1,3)(2,3)(3,3)(4,3)\r\n(1,2)(2,3)(3,4)\r\n(4,1)(3,2)(2,3)(1,4)</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 2 3\n                        \n                        \n                            输出\n                            (2,1)(2,2)(2,3)(2,4)\r\n(1,3)(2,3)(3,3)(4,3)\r\n(1,2)(2,3)(3,4)\r\n(4,1)(3,2)(2,3)(1,4)"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】1996年NOIP全国联赛普及组</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】1996年NOIP全国联赛普及组"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛</p>\n</div>                </div>",
+      "text": "noip复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 2 3",
+      "output": "(2,1)(2,2)(2,3)(2,4)\r\n(1,3)(2,3)(3,3)(4,3)\r\n(1,2)(2,3)(3,4)\r\n(4,1)(3,2)(2,3)(1,4)"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "125 MB",
+    "提交次数": "188",
+    "通过人数": "78",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:04"
+}

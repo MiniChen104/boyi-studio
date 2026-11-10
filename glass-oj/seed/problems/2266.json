@@ -1,0 +1,57 @@
+{
+  "id": "2266",
+  "title": "鸣人的影分身",
+  "tags": [
+    "电子学会等级考试",
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2266",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在火影忍者的世界里，令敌人捉摸不透是非常关键的。我们的主角漩涡鸣人所拥有的一个招数——多重影分身之术——就是一个很好的例子。</p>\n<p>影分身是由鸣人身体的查克拉能量制造的，使用的查克拉越多，制造出的影分身越强。</p>\n<p>针对不同的作战情况，鸣人可以选择制造出各种强度的影分身，有的用来佯攻，有的用来发起致命一击。</p>\n<p>那么问题来了，假设鸣人的查克拉能量为 <span class=\"katex math inline\">M</span> ，他影分身的个数为 <span class=\"katex math inline\">N</span> ，那么制造影分身时有多少种（用 <span class=\"katex math inline\">K</span> 表示）不同的分配方法？（影分身可以被分配到 <span class=\"katex math inline\">0</span> 点查克拉能量）</p>\n</div>            </div>",
+      "text": "在火影忍者的世界里，令敌人捉摸不透是非常关键的。我们的主角漩涡鸣人所拥有的一个招数——多重影分身之术——就是一个很好的例子。\n影分身是由鸣人身体的查克拉能量制造的，使用的查克拉越多，制造出的影分身越强。\n针对不同的作战情况，鸣人可以选择制造出各种强度的影分身，有的用来佯攻，有的用来发起致命一击。\n那么问题来了，假设鸣人的查克拉能量为 M ，他影分身的个数为 N ，那么制造影分身时有多少种（用 K 表示）不同的分配方法？（影分身可以被分配到 0 点查克拉能量）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行是测试数据的数目 <span class=\"katex math inline\">t</span> （<span class=\"katex math inline\">0 \\lt t \\le 20</span>）。</p>\n<p>以下每行均包含二个整数 <span class=\"katex math inline\">M</span> 和 <span class=\"katex math inline\">N</span> ，以空格分开。<span class=\"katex math inline\">1 \\le M，N \\le 10</span>。</p>\n</div>            </div>",
+      "text": "第一行是测试数据的数目 t （0 \\lt t \\le 20）。\n以下每行均包含二个整数 M 和 N ，以空格分开。1 \\le M，N \\le 10。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对输入的每组数据 <span class=\"katex math inline\">M</span> 和 <span class=\"katex math inline\">N</span> ，用一行输出相应的 <span class=\"katex math inline\">K</span> 。</p>\n</div>            </div>",
+      "text": "对输入的每组数据 M 和 N ，用一行输出相应的 K 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1\r\n7 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\r\n7 3\n                        \n                        \n                            输出\n                            8"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会四级</p>\n</div>                </div>",
+      "text": "电子学会四级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span><span class=\"label label-warning\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1\r\n7 3",
+      "output": "8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "479",
+    "通过人数": "286",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:30"
+}

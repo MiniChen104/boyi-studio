@@ -1,0 +1,71 @@
+{
+  "id": "4925",
+  "title": "金币(coin)",
+  "tags": [
+    "市赛",
+    "常州2025",
+    "数论"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4925",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">n</span> 个人在争夺一枚金币。</p>\n<p>所有人排成一队，然后位于第 <span class=\"katex math inline\">1</span>,<span class=\"katex math inline\">1+k</span>,<span class=\"katex math inline\">1+2k</span>,<span class=\"katex math inline\">\\dots</span>,<span class=\"katex math inline\">1+(⌊n/k⌋−1)k</span> 个的人被淘汰，这里 <code>⌊n/k⌋</code> 为 <span class=\"katex math inline\">n</span> 除以 <span class=\"katex math inline\">k</span> 上取整，上取整操作会将一个小数变成大于或等于它的最小整数，如 <code>⌊33/5⌋=⌊6.6⌋=7</code>。重复这一操作，直到仅剩一个人。最终剩下的这个人获得这枚金币。</p>\n<p>小 Y 是所有人中最聪明的。他想知道，要想最终获得金币，一开始他应该站在第几个位置？</p>\n</div>            </div>",
+      "text": "有 n 个人在争夺一枚金币。\n所有人排成一队，然后位于第 1,1+k,1+2k,\\dots,1+(⌊n/k⌋−1)k 个的人被淘汰，这里 ⌊n/k⌋ 为 n 除以 k 上取整，上取整操作会将一个小数变成大于或等于它的最小整数，如 ⌊33/5⌋=⌊6.6⌋=7。重复这一操作，直到仅剩一个人。最终剩下的这个人获得这枚金币。\n小 Y 是所有人中最聪明的。他想知道，要想最终获得金币，一开始他应该站在第几个位置？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行包含两个正整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">k</span>，表示总人数以及淘汰时用到的参数。</p>\n</div>            </div>",
+      "text": "一行包含两个正整数 n 和 k，表示总人数以及淘汰时用到的参数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数，表示小 Y 应该处于的初始队列中的位置。</p>\n</div>            </div>",
+      "text": "输出一行一个整数，表示小 Y 应该处于的初始队列中的位置。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>8 3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>8</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10000 2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>8192</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            6 2\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                8 3\n                            \n                            \n                                输出\n                                8\n                            \n                        \n                                                    \n                                输入\n                                10000 2\n                            \n                            \n                                输出\n                                8192"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><pre><code>样例输入 4\n\n1919810 114514\n\n样例输出 4\n\n1919805\n</code></pre>\n样例解释\n<p>对于样例 <span class=\"katex math inline\">1</span>：<span class=\"katex math inline\">n=6</span>，起初，队列 <code>=[1,2,3,4,5,6]</code>，因为 <span class=\"katex math inline\">k=2</span>，所以位于第 <span class=\"katex math inline\">1</span>,<span class=\"katex math inline\">3</span>,<span class=\"katex math inline\">5</span> 的人被淘汰，队列 <code>=[2,4,6]</code>，然后位于第 <span class=\"katex math inline\">1</span>,<span class=\"katex math inline\">3</span> 的人被淘汰，队列 <code>=[4]</code>，只剩下一个人，所以小 Y 一开始应该站在 <span class=\"katex math inline\">4</span> 号位置。</p>\n<p>对于样例 <span class=\"katex math inline\">2</span>：<span class=\"katex math inline\">n=8</span>，起初，队列 <code>=[1,2,3,4,5,6,7,8]</code>，因为 <span class=\"katex math inline\">k=3</span>，所以位于 <span class=\"katex math inline\">1</span>,<span class=\"katex math inline\">4</span>,<span class=\"katex math inline\">7</span> 的人被淘汰，队列 <code>=[2,3,5,6,8]</code>，然后位于 <span class=\"katex math inline\">1</span>,<span class=\"katex math inline\">4</span> 的人被淘汰，队列 <code>=[2,5,8]</code>，然后位于 <span class=\"katex math inline\">1</span> 的人被淘汰，队列 <code>=[5,8]</code>，然后位于 <span class=\"katex math inline\">1</span> 的人被淘汰，队列 <code>=[8]</code>，只剩下一个人，所以小 Y 一开始应该站在 <span class=\"katex math inline\">8</span> 号位置。</p>\n<h4>数据范围</h4>\n<p>本题共有 <span class=\"katex math inline\">12</span> 个测试点，每个测试点 <span class=\"katex math inline\">10</span> 分。</p>\n<p>对于全部测试点：<span class=\"katex math inline\">2 \\le n,k \\le 10^{12}</span>。</p>\n<p>对于测试点 <span class=\"katex math inline\">1</span> ：<span class=\"katex math inline\">n=k=2</span>。</p>\n<p>对于测试点 <span class=\"katex math inline\">2-4</span> ：<span class=\"katex math inline\">n,k \\le 1000</span>。</p>\n<p>对于测试的 <span class=\"katex math inline\">5-8</span> ：<span class=\"katex math inline\">k \\le 1000000</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "样例输入 4\n\n1919810 114514\n\n样例输出 4\n\n1919805\n\n样例解释\n对于样例 1：n=6，起初，队列 =[1,2,3,4,5,6]，因为 k=2，所以位于第 1,3,5 的人被淘汰，队列 =[2,4,6]，然后位于第 1,3 的人被淘汰，队列 =[4]，只剩下一个人，所以小 Y 一开始应该站在 4 号位置。\n对于样例 2：n=8，起初，队列 =[1,2,3,4,5,6,7,8]，因为 k=3，所以位于 1,4,7 的人被淘汰，队列 =[2,3,5,6,8]，然后位于 1,4 的人被淘汰，队列 =[2,5,8]，然后位于 1 的人被淘汰，队列 =[5,8]，然后位于 1 的人被淘汰，队列 =[8]，只剩下一个人，所以小 Y 一开始应该站在 8 号位置。\n数据范围\n本题共有 12 个测试点，每个测试点 10 分。\n对于全部测试点：2 \\le n,k \\le 10^{12}。\n对于测试点 1 ：n=k=2。\n对于测试点 2-4 ：n,k \\le 1000。\n对于测试的 5-8 ：k \\le 1000000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年常州“信息与未来”小学生编程比赛</p>\n</div>                </div>",
+      "text": "2025年常州“信息与未来”小学生编程比赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">常州2025</span><span class=\"label label-info\">数论</span></span></p>\n</div>                </div>",
+      "text": "市赛常州2025数论"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 2",
+      "output": "4"
+    },
+    {
+      "input": "8 3",
+      "output": "8"
+    },
+    {
+      "input": "10000 2",
+      "output": "8192"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "19",
+    "通过人数": "4",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:07"
+}

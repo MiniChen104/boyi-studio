@@ -1,0 +1,61 @@
+{
+  "id": "3022",
+  "title": "迷宫探险 (f.cpp)",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3022",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>完成了俱乐部可人老师布置的命题任务，小X决定和朋友们玩一款探险类游戏放松一下心情。这个游戏的场景是在一个地下迷宫中，这个迷宫由 <span class=\"katex math inline\">N \\times N</span> 的网格构成，小X和他的朋友们每人占据一个格子，他们每人带领一支探险队。每一分钟小X会让他的探险队员从上下左右四个方向前往相邻的格子(只要相邻的格子不是障碍物)，同时他的朋友们也会跟小X一样做相同的操作。迷宫中有些格子是空的，而有些格子有自动计分器，最早到达这个格子的队员所属的玩家会得到 <span class=\"katex math inline\">1</span> 分，然后这个自动计分器会消失，即之后到达这个格子就不会获得分数，如果有多个玩家的队员同时到达有自动计分器的格子，那么这些玩家都能得到 <span class=\"katex math inline\">1</span> 分。现在小X想知道得分最多的玩家得到了多少分，以及所有玩家一共得到了多少分。你可以认为每位玩家的手下都有足够多的探险队员。 </p>\n</div>            </div>",
+      "text": "完成了俱乐部可人老师布置的命题任务，小X决定和朋友们玩一款探险类游戏放松一下心情。这个游戏的场景是在一个地下迷宫中，这个迷宫由 N \\times N 的网格构成，小X和他的朋友们每人占据一个格子，他们每人带领一支探险队。每一分钟小X会让他的探险队员从上下左右四个方向前往相邻的格子(只要相邻的格子不是障碍物)，同时他的朋友们也会跟小X一样做相同的操作。迷宫中有些格子是空的，而有些格子有自动计分器，最早到达这个格子的队员所属的玩家会得到 1 分，然后这个自动计分器会消失，即之后到达这个格子就不会获得分数，如果有多个玩家的队员同时到达有自动计分器的格子，那么这些玩家都能得到 1 分。现在小X想知道得分最多的玩家得到了多少分，以及所有玩家一共得到了多少分。你可以认为每位玩家的手下都有足够多的探险队员。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">N</span>，表示地下迷宫的大小。</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行 <span class=\"katex math inline\">N</span> 个字符，<code>.</code>表示这个格子是个空地，<code>#</code>表示这个格子是个障碍物，<code>@</code>表示开始时有玩家在这个格子，<code>$</code>表示这个格子有自动计分器。除了障碍物所在格子，所有格子均可通行。</p>\n</div>            </div>",
+      "text": "第一行一个整数 N，表示地下迷宫的大小。\n接下来 N 行，每行 N 个字符，.表示这个格子是个空地，#表示这个格子是个障碍物，@表示开始时有玩家在这个格子，$表示这个格子有自动计分器。除了障碍物所在格子，所有格子均可通行。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出数据共有两行，每行一个整数，第一行的整数表示得分最多的玩家得到了多少分，第二行的整数表示所有的玩家一共得到了多少分。 </p>\n</div>            </div>",
+      "text": "输出数据共有两行，每行一个整数，第一行的整数表示得分最多的玩家得到了多少分，第二行的整数表示所有的玩家一共得到了多少分。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n@$#\r\n#$#\r\n#$@</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2\r\n4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n@$#\r\n#$#\r\n#$@\n                        \n                        \n                            输出\n                            2\r\n4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>在第一分钟，位于<span class=\"katex math inline\">(1,1)</span>的玩家派出的探险队员到达<span class=\"katex math inline\">(1,2)</span>得到<span class=\"katex math inline\">1</span>分，位于<span class=\"katex math inline\">(3,3)</span>的玩家派出的探险队员到达<span class=\"katex math inline\">(3,2)</span>得到<span class=\"katex math inline\">1</span>分。在第二分钟，两位玩家派出的探险队员同时到达<span class=\"katex math inline\">(2,2)</span>，各得<span class=\"katex math inline\">1</span>分，之后即使游戏再进行下去也没有意义了，因为他们不可能再得到任何分数。得分最多的玩家得到的分数为<span class=\"katex math inline\">2</span>分，所有玩家一共得到了<span class=\"katex math inline\">4</span>分。</p>\n<p><img src=\"https://assets.boyi.local/3605f1a980a34326dc625c48.png\"></p>\n<p>对于<span class=\"katex math inline\">100</span>%的数据，玩家的数量<span class=\"katex math inline\">≤10</span>。 </p>\n</div>\n\n                    \n                </div>",
+      "text": "在第一分钟，位于(1,1)的玩家派出的探险队员到达(1,2)得到1分，位于(3,3)的玩家派出的探险队员到达(3,2)得到1分。在第二分钟，两位玩家派出的探险队员同时到达(2,2)，各得1分，之后即使游戏再进行下去也没有意义了，因为他们不可能再得到任何分数。得分最多的玩家得到的分数为2分，所有玩家一共得到了4分。\n\n对于100%的数据，玩家的数量≤10。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2022常州市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2022常州市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n@$#\r\n#$#\r\n#$@",
+      "output": "2\r\n4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "22",
+    "通过人数": "10",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:52"
+}

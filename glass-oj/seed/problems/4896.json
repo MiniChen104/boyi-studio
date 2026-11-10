@@ -1,0 +1,52 @@
+{
+  "id": "4896",
+  "title": "氧气浓度",
+  "tags": [
+    "蓝桥等考",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4896",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>人类能够正常生活的氧气浓度在 <span class=\"katex math inline\">19.5 \\%</span> 至 <span class=\"katex math inline\">23.5 \\%</span> 之间（包含 <span class=\"katex math inline\">19.5 \\%</span> 与 <span class=\"katex math inline\">23.5 \\%</span> ）。</p>\n<p>旅行者号探测器正在探测一颗行星上的氧气浓度。探测完成后它会将大气层的氧气浓度数据传回地球，请你根据传回的数据判断这颗行星上的氧气浓度是否适合人类正常生活。</p>\n</div>            </div>",
+      "text": "人类能够正常生活的氧气浓度在 19.5 \\% 至 23.5 \\% 之间（包含 19.5 \\% 与 23.5 \\% ）。\n旅行者号探测器正在探测一颗行星上的氧气浓度。探测完成后它会将大气层的氧气浓度数据传回地球，请你根据传回的数据判断这颗行星上的氧气浓度是否适合人类正常生活。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个 <span class=\"katex math inline\">n</span>，表示旅行者号探测器传回的行星上的氧气浓度。(<span class=\"katex math inline\">1.0 \\le n \\lt 100.0</span>)</p>\n</div>            </div>",
+      "text": "输入一个 n，表示旅行者号探测器传回的行星上的氧气浓度。(1.0 \\le n \\lt 100.0)"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果该氧气浓度适合人类正常生活（即在 <span class=\"katex math inline\">19.5 \\%</span> 至 <span class=\"katex math inline\">23.5 \\%</span> 之间，包含边界值），则输出 <code>1</code>；否则，输出 <code>0</code>。</p>\n</div>            </div>",
+      "text": "如果该氧气浓度适合人类正常生活（即在 19.5 \\% 至 23.5 \\% 之间，包含边界值），则输出 1；否则，输出 0。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>15</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            15\n                        \n                        \n                            输出\n                            0"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">分支</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "15",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "369",
+    "通过人数": "190",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:22"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "6214",
+  "title": "扫雷",
+  "tags": [
+    "GESP四级",
+    "26年6月",
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6214",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨同学正在游玩经典游戏「扫雷」，他想自己生成一个「扫雷」的地图。</p>\n<p>小杨同学希望生成的地图大小为 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列，一共 <span class=\"katex math inline\">n \\times m</span> 个区块。区块行号为 <span class=\"katex math inline\">1,2,\\cdots,n</span>，列号为 <span class=\"katex math inline\">1,2,\\cdots,m</span>。其中一些区块为雷区，其它区块不为雷区。</p>\n<p>小杨同学指定了 <span class=\"katex math inline\">q</span> 个区块为雷区，而其它区块均不为雷区。小杨同学希望你帮忙计算非雷区的区块，每个区块与多少个雷区相邻？</p>\n<p>我们定义区块相邻，当且仅当两个区块至少有一个公共顶点（也就是说对于不在地图边缘的区块，周围 8 个区块均与其相邻）。</p>\n</div>            </div>",
+      "text": "小杨同学正在游玩经典游戏「扫雷」，他想自己生成一个「扫雷」的地图。\n小杨同学希望生成的地图大小为 n 行 m 列，一共 n \\times m 个区块。区块行号为 1,2,\\cdots,n，列号为 1,2,\\cdots,m。其中一些区块为雷区，其它区块不为雷区。\n小杨同学指定了 q 个区块为雷区，而其它区块均不为雷区。小杨同学希望你帮忙计算非雷区的区块，每个区块与多少个雷区相邻？\n我们定义区块相邻，当且仅当两个区块至少有一个公共顶点（也就是说对于不在地图边缘的区块，周围 8 个区块均与其相邻）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含 <span class=\"katex math inline\">q+1</span> 行。</p>\n<p>第一行，三个正整数 <span class=\"katex math inline\">n,m,q</span>，分别表示地图行数和列数，以及雷区数量。</p>\n<p>接下来的 <span class=\"katex math inline\">q</span> 行，每行有 <span class=\"katex math inline\">2</span> 个整数，分别表示第 <span class=\"katex math inline\">i</span> 个雷区的行号和列号。</p>\n<p>保证输入的雷区不重复。</p>\n</div>            </div>",
+      "text": "输入包含 q+1 行。\n第一行，三个正整数 n,m,q，分别表示地图行数和列数，以及雷区数量。\n接下来的 q 行，每行有 2 个整数，分别表示第 i 个雷区的行号和列号。\n保证输入的雷区不重复。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">m</span> 个字符（使用空格分割），对于第 <span class=\"katex math inline\">i</span> 行第 <span class=\"katex math inline\">j</span> 列，输出地图对应区块的信息：</p>\n<ol><li>如果为雷区，输出 <code>*</code>；</li>\n<li>如果不是雷区，输出其相邻雷区数量（输出 <code>0</code> 到 <code>8</code> 中的一个数字）。</li>\n</ol></div>            </div>",
+      "text": "输出 n 行，每行 m 个字符（使用空格分割），对于第 i 行第 j 列，输出地图对应区块的信息：\n如果为雷区，输出 *；\n如果不是雷区，输出其相邻雷区数量（输出 0 到 8 中的一个数字）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 4 4\r\n1 1\r\n1 3\r\n2 4\r\n3 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>* 2 * 2\r\n2 3 3 *\r\n1 * 2 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 4 4\r\n1 1\r\n1 3\r\n2 4\r\n3 2\n                        \n                        \n                            输出\n                            * 2 * 2\r\n2 3 3 *\r\n1 * 2 1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\">样例解释 1\n<p>根据输入，在 <span class=\"katex math inline\">3 \\times 4</span> 的地图上有 4 个雷区，分别是 <code>(1,1)</code>、<code>(1,3)</code>、<code>(2,4)</code> 和 <code>(3,2)</code>，如输出样例中 <code>*</code> 所示，其它非雷区块的相邻雷区数量可以直观看出。</p>\n数据范围\n<p><span class=\"katex math inline\">3 \\le n,m \\le 500</span>，<span class=\"katex math inline\">1 \\le q \\le n \\cdot m</span>。</p>\n<p>输入的雷区必定在地图内且不重复，注意行号和列号均从 1 开始。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释 1\n根据输入，在 3 \\times 4 的地图上有 4 个雷区，分别是 (1,1)、(1,3)、(2,4) 和 (3,2)，如输出样例中 * 所示，其它非雷区块的相邻雷区数量可以直观看出。\n数据范围\n3 \\le n,m \\le 500，1 \\le q \\le n \\cdot m。\n输入的雷区必定在地图内且不重复，注意行号和列号均从 1 开始。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">26年6月</span><span class=\"label label-info\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "GESP四级26年6月二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 4 4\r\n1 1\r\n1 3\r\n2 4\r\n3 2",
+      "output": "* 2 * 2\r\n2 3 3 *\r\n1 * 2 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "469",
+    "通过人数": "285",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:14"
+}

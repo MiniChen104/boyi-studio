@@ -1,0 +1,56 @@
+{
+  "id": "2081",
+  "title": "放大镜",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2081",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>张老师有一个神奇的放大镜，他可以把一个 <span class=\"katex math inline\">1 \\sim 9</span> 之间的整数 <span class=\"katex math inline\">n</span> ，放大为 <span class=\"katex math inline\">n</span> 个整数 <span class=\"katex math inline\">n</span> 。</p>\n<p>比如：你有 <span class=\"katex math inline\">1</span> 个整数 <span class=\"katex math inline\">5</span> ，通过放大镜放大，你将看到<span class=\"katex math inline\">55555</span> 。</p>\n</div>            </div>",
+      "text": "张老师有一个神奇的放大镜，他可以把一个 1 \\sim 9 之间的整数 n ，放大为 n 个整数 n 。\n比如：你有 1 个整数 5 ，通过放大镜放大，你将看到55555 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个 <span class=\"katex math inline\">1 \\sim 9</span> 之间的整数。 </p>\n</div>            </div>",
+      "text": "一个 1 \\sim 9 之间的整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出放大后的数字。</p>\n</div>            </div>",
+      "text": "输出放大后的数字。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>333</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            333"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "333"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "1879",
+    "通过人数": "1612",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:10"
+}

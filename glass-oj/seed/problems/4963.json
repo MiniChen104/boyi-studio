@@ -1,0 +1,64 @@
+{
+  "id": "4963",
+  "title": "回文子串",
+  "tags": [
+    "manacher"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/4963",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出一个只由小写英文字符 <span class=\"katex math inline\">\\texttt a,\\texttt b,\\texttt c,\\ldots\\texttt y,\\texttt z</span> 组成的字符串 <span class=\"katex math inline\">S</span> 。</p>\n<p>求 <span class=\"katex math inline\">S</span> 中<strong>最长回文子串</strong>的长度 。</p>\n</div>            </div>",
+      "text": "给出一个只由小写英文字符 \\texttt a,\\texttt b,\\texttt c,\\ldots\\texttt y,\\texttt z 组成的字符串 S 。\n求 S 中最长回文子串的长度 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行小写英文字符 <span class=\"katex math inline\">\\texttt a,\\texttt b,\\texttt c,\\cdots,\\texttt y,\\texttt z</span> 组成的字符串 <span class=\"katex math inline\">S</span>。</p>\n</div>            </div>",
+      "text": "一行小写英文字符 \\texttt a,\\texttt b,\\texttt c,\\cdots,\\texttt y,\\texttt z 组成的字符串 S。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数表示答案。</p>\n</div>            </div>",
+      "text": "一个整数表示答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>aaa</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>aabac</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>aabaaacddcaaa</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>10</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            aaa\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                aabac\n                            \n                            \n                                输出\n                                3\n                            \n                        \n                                                    \n                                输入\n                                aabaaacddcaaa\n                            \n                            \n                                输出\n                                10"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>字符串的长度在 <span class=\"katex math inline\">[1, 10^7]</span> 的范围内。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n字符串的长度在 [1, 10^7] 的范围内。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">manacher</span></span></p>\n</div>                </div>",
+      "text": "manacher"
+    }
+  ],
+  "samples": [
+    {
+      "input": "aaa",
+      "output": "3"
+    },
+    {
+      "input": "aabac",
+      "output": "3"
+    },
+    {
+      "input": "aabaaacddcaaa",
+      "output": "10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "79",
+    "通过人数": "56",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:50"
+}

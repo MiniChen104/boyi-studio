@@ -1,0 +1,58 @@
+{
+  "id": "1892",
+  "title": "砝码称重",
+  "tags": [
+    "noip复赛",
+    "背包问题",
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1892",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>设有 <span class=\"katex math inline\">1g</span>、<span class=\"katex math inline\">2g</span>、<span class=\"katex math inline\">3g</span>、<span class=\"katex math inline\">5g</span>、<span class=\"katex math inline\">10g</span>、<span class=\"katex math inline\">20g</span> 的砝码各若干枚（其总重 <span class=\"katex math inline\"> \\le 1000</span>），求这些砝码能称出的不同重量的个数。</p>\n</div>            </div>",
+      "text": "设有 1g、2g、3g、5g、10g、20g 的砝码各若干枚（其总重  \\le 1000），求这些砝码能称出的不同重量的个数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>读入 <span class=\"katex math inline\">a_1,a_2,a_3,a_4,a_5,a_6</span> ，分别表示 <span class=\"katex math inline\">1g</span> 砝码有<span class=\"katex math inline\">a_1</span> 个，<span class=\"katex math inline\">2g</span> 砝码有 <span class=\"katex math inline\">a_2</span> 个，<span class=\"katex math inline\">\\dots</span> <span class=\"katex math inline\">20_g</span> 砝码有 <span class=\"katex math inline\">a_6</span> 个，<span class=\"katex math inline\">0≤</span>每种砝码数量<span class=\"katex math inline\">≤200</span>)。</p>\n</div>            </div>",
+      "text": "读入 a_1,a_2,a_3,a_4,a_5,a_6 ，分别表示 1g 砝码有a_1 个，2g 砝码有 a_2 个，\\dots 20_g 砝码有 a_6 个，0≤每种砝码数量≤200)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>整数 <span class=\"katex math inline\">N</span> (<span class=\"katex math inline\">N</span> 表示用这些砝码能称出的不同重量的个数，但不包括一个砝码也不用的情况)。</p>\n</div>            </div>",
+      "text": "整数 N (N 表示用这些砝码能称出的不同重量的个数，但不包括一个砝码也不用的情况)。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 1 0 0 0 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 1 0 0 0 0\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛 背包问题 动态规划</p>\n</div>                </div>",
+      "text": "noip复赛 背包问题 动态规划"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span><span class=\"label label-warning\">背包问题</span><span class=\"label label-info\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "noip复赛背包问题动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 1 0 0 0 0",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2526",
+    "通过人数": "1390",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:35"
+}

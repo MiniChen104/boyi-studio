@@ -1,0 +1,56 @@
+{
+  "id": "2023",
+  "title": "重叠的字符串",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2023",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个仅有小写字母组成的字符串，请求出两个字符串最长的重复部份的长度。</p>\n<p>两个字符串的重复部份指的是一个字符串的头部的部分字符和另一个字符串的尾部的部分字符是重叠的。</p>\n<p>比如：abcdefg 和 fggoodabcde这两个字符串，第一个字符串的头部和第二个字符串的尾部有 <span class=\"katex math inline\">5</span> 个字符 &quot;abcde&quot; 是重叠的，第一个字符串尾部和第二个字符串的头部有 <span class=\"katex math inline\">2</span> 个字符 &quot;fg&quot; 是重叠的，因此最长的重叠部长度为 <span class=\"katex math inline\">5</span> 。</p>\n</div>            </div>",
+      "text": "输入两个仅有小写字母组成的字符串，请求出两个字符串最长的重复部份的长度。\n两个字符串的重复部份指的是一个字符串的头部的部分字符和另一个字符串的尾部的部分字符是重叠的。\n比如：abcdefg 和 fggoodabcde这两个字符串，第一个字符串的头部和第二个字符串的尾部有 5 个字符 \"abcde\" 是重叠的，第一个字符串尾部和第二个字符串的头部有 2 个字符 \"fg\" 是重叠的，因此最长的重叠部长度为 5 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入 <span class=\"katex math inline\">2</span> 行，每行有一个长度不超过 <span class=\"katex math inline\">100</span> 的仅由小写字母组成的字符串。</p>\n</div>            </div>",
+      "text": "输入 2 行，每行有一个长度不超过 100 的仅由小写字母组成的字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出两个字符串最长的重叠长度。</p>\n</div>            </div>",
+      "text": "输出两个字符串最长的重叠长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>abcxxxxabcxabcd\r\nabcdxabcxxxxabcx</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>11</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            abcxxxxabcxabcd\r\nabcdxabcxxxxabcx\n                        \n                        \n                            输出\n                            11"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "abcxxxxabcxabcd\r\nabcdxabcxxxxabcx",
+      "output": "11"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "454",
+    "通过人数": "290",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:26"
+}

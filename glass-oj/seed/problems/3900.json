@@ -1,0 +1,64 @@
+{
+  "id": "3900",
+  "title": "挑战怪物",
+  "tags": [
+    "GESP五级",
+    "素数筛",
+    "贪心",
+    "24年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3900",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨正在和一个怪物战斗，怪物的血量为 <span class=\"katex math inline\">h</span> ，只有当怪物的血量<strong>恰好</strong>为 <span class=\"katex math inline\">0</span> 时小杨才能够成功击败怪物。\n小杨有两种攻击怪物的方式：</p>\n<ul><li><p>物理攻击。假设当前为小杨第 <span class=\"katex math inline\">i</span> 次使用物理攻击，则会对怪物造成 <span class=\"katex math inline\">2^{i-1}</span> 点伤害。</p>\n</li>\n<li><p>魔法攻击。小杨选择任意一个质数  <span class=\"katex math inline\">x</span>（ <span class=\"katex math inline\">x</span> 不能超过怪物当前血量），对怪物造成  <span class=\"katex math inline\">x</span> 点伤害。由于小杨并不擅长魔法，他只能使用<strong>至多一次</strong>魔法攻击。</p>\n</li>\n</ul><p>小杨想知道自己能否击败怪物，如果能，小杨想知道自己最少需要多少次攻击。</p>\n</div>            </div>",
+      "text": "小杨正在和一个怪物战斗，怪物的血量为 h ，只有当怪物的血量恰好为 0 时小杨才能够成功击败怪物。\n小杨有两种攻击怪物的方式：\n物理攻击。假设当前为小杨第 i 次使用物理攻击，则会对怪物造成 2^{i-1} 点伤害。\n\n魔法攻击。小杨选择任意一个质数  x（ x 不能超过怪物当前血量），对怪物造成  x 点伤害。由于小杨并不擅长魔法，他只能使用至多一次魔法攻击。\n\n小杨想知道自己能否击败怪物，如果能，小杨想知道自己最少需要多少次攻击。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">t</span>，代表测试用例组数。</p>\n<p>接下来是 <span class=\"katex math inline\">t</span> 组测试用例。对于每组测试用例，第一行包含一个正整数 <span class=\"katex math inline\">h</span>，代表怪物血量。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 t，代表测试用例组数。\n接下来是 t 组测试用例。对于每组测试用例，第一行包含一个正整数 h，代表怪物血量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组测试用例，如果小杨能够击败怪物，输出一个整数，代表小杨需要的最少攻击次数，如果不能击败怪物，输出 <code>-1</code>。</p>\n</div>            </div>",
+      "text": "对于每组测试用例，如果小杨能够击败怪物，输出一个整数，代表小杨需要的最少攻击次数，如果不能击败怪物，输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n6\r\n188\r\n9999\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2\r\n4\r\n-1\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n6\r\n188\r\n9999\r\n\n                        \n                        \n                            输出\n                            2\r\n4\r\n-1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le t  \\le 10,1  \\le h  \\le 10^5 </span>。</p>\n<h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<p>对于第一组测试用例，一种可能的最优方案为，小杨先对怪物使用魔法攻击，选择质数 <span class=\"katex math inline\">5</span> 造成 <span class=\"katex math inline\">5</span> 点伤害，之后对怪物使用第 <span class=\"katex math inline\">1</span> 次物理攻击，造成 <span class=\"katex math inline\">2^{l-1}=1</span>点伤害，怪物血量恰好为 <span class=\"katex math inline\">0</span>，小杨成功击败怪物。</p>\n<table><thead><tr><th>子任务编号</th><th>数据点占比</th><th><span class=\"katex math inline\">t</span></th><th><span class=\"katex math inline\">h</span></th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1</span></td><td><span class=\"katex math inline\">20\\%</span></td><td><span class=\"katex math inline\">\\le 5</span></td><td><span class=\"katex math inline\">\\le 10</span></td></tr><tr><td><span class=\"katex math inline\">2</span></td><td><span class=\"katex math inline\">20\\%</span></td><td><span class=\"katex math inline\">\\le 10</span></td><td><span class=\"katex math inline\">\\le 100</span></td></tr><tr><td><span class=\"katex math inline\">3</span></td><td><span class=\"katex math inline\">60\\%</span></td><td><span class=\"katex math inline\">\\le 10</span></td><td><span class=\"katex math inline\">\\le 10^5</span></td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于全部数据，保证有 1 \\le t  \\le 10,1  \\le h  \\le 10^5 。\n样例 1 解释\n对于第一组测试用例，一种可能的最优方案为，小杨先对怪物使用魔法攻击，选择质数 5 造成 5 点伤害，之后对怪物使用第 1 次物理攻击，造成 2^{l-1}=1点伤害，怪物血量恰好为 0，小杨成功击败怪物。\n子任务编号数据点占比th120\\%\\le 5\\le 10220\\%\\le 10\\le 100360\\%\\le 10\\le 10^5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 9月认证 C++ 五级真题</p>\n</div>                </div>",
+      "text": "GESP 9月认证 C++ 五级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">素数筛</span><span class=\"label label-info\">贪心</span><span class=\"label label-danger\">24年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP五级素数筛贪心24年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n6\r\n188\r\n9999\r\n",
+      "output": "2\r\n4\r\n-1\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "757",
+    "通过人数": "330",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:24"
+}

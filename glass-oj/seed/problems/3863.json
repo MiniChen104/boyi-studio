@@ -1,0 +1,64 @@
+{
+  "id": "3863",
+  "title": "黑白方块",
+  "tags": [
+    "GESP四级",
+    "二维数组",
+    "枚举",
+    "24年6月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3863",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有一个 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列的网格图，其中每个格子要么是白色，要么是黑色。</p>\n<p>对于网格图中的一个子矩形，小杨认为它是平衡的当且仅当其中黑色格子与白色格子数量相同。</p>\n<p>小杨想知道最大的平衡子矩形包含了多少个格子。</p>\n</div>            </div>",
+      "text": "小杨有一个 n 行 m 列的网格图，其中每个格子要么是白色，要么是黑色。\n对于网格图中的一个子矩形，小杨认为它是平衡的当且仅当其中黑色格子与白色格子数量相同。\n小杨想知道最大的平衡子矩形包含了多少个格子。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个正整数 <span class=\"katex math inline\">n，m</span> ，含义如题面所示。</p>\n<p>之后 <span class=\"katex math inline\">n</span> 行，每行一个长度为 <span class=\"katex math inline\">m</span> 的 <span class=\"katex math inline\">01</span> 串，代表网格图第 <span class=\"katex math inline\">i</span> 行格子的颜色，如果为 <span class=\"katex math inline\">0</span>，则对应格子为白色，否则为黑色。</p>\n</div>            </div>",
+      "text": "第一行包含两个正整数 n，m ，含义如题面所示。\n之后 n 行，每行一个长度为 m 的 01 串，代表网格图第 i 行格子的颜色，如果为 0，则对应格子为白色，否则为黑色。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表最大的平衡子矩形包含格子的数量，如果不存在则输出 <span class=\"katex math inline\">0</span>。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表最大的平衡子矩形包含格子的数量，如果不存在则输出 0。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 5\r\n00000\r\n01111\r\n00011\r\n00011</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>16</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 5\r\n00000\r\n01111\r\n00011\r\n00011\n                        \n                        \n                            输出\n                            16"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释 】</p>\n<p>对于样例 <span class=\"katex math inline\">1</span>，假设 (<span class=\"katex math inline\">i，j</span> ) 代表第 <span class=\"katex math inline\">i</span> ⾏第 <span class=\"katex math inline\">j</span> 列，最大的平衡子矩形的四个顶点分别为 <span class=\"katex math inline\">(1，2 )，(1,5 )，(4，2)，(4，5 )</span>。</p>\n<p>【数据范围】 </p>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n，m \\le 10</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释 】\n对于样例 1，假设 (i，j ) 代表第 i ⾏第 j 列，最大的平衡子矩形的四个顶点分别为 (1，2 )，(1,5 )，(4，2)，(4，5 )。\n【数据范围】 \n对于全部数据，保证有 1 \\le n，m \\le 10 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 6月认证C++四级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 6月认证C++四级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">二维数组</span><span class=\"label label-info\">枚举</span><span class=\"label label-danger\">24年6月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级二维数组枚举24年6月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 5\r\n00000\r\n01111\r\n00011\r\n00011",
+      "output": "16"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1172",
+    "通过人数": "729",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:10"
+}

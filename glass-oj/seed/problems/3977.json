@@ -1,0 +1,63 @@
+{
+  "id": "3977",
+  "title": "自画像",
+  "tags": [
+    "市赛",
+    "深搜",
+    "广搜",
+    "连通块"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3977",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Capoo是一只可爱的猫猫虫。他想给自己画一张自画像。</p>\n<p>Capoo在一个 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列的方格白纸上完成自己的画作。他会把一些格子涂成蓝色，剩下的格子保持白色。</p>\n<p>对于一个给定的<span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列网格，我们用<code>.</code>表示白色格子，<code>#</code>表示蓝色格子，那么我们认为这个网格图像Capoo，当且仅当这个图的所有蓝色部分恰好构成一个矩形，外加与矩形下边界接触，并且相互不接触的恰好三个单独格子。</p>\n<p>例如，以下网格都是像 Capoo 的：</p>\n<pre><code>........     ........     ########\n.######.     ........     ########\n.######.     ########     ########\n.######.     .#.#...#     ########\n..#.#.#.     ........     #...#..#\n\n</code></pre>\n<p>而以下网格都不是像 Capoo 的：</p>\n<pre><code>........   .....##.   .####...   ........   ........\n.######.   ........   .###....   ########   .######.\n.######.   ########   .####...   ########   .######.\n.######.   ########   .###....   ########   ........\n..##..#.   ..#.#..#   .####...   #.#.#..#   ..#.#.#.\n\n</code></pre>\n<p>其中，第一张网格下方有两个蓝色格子相邻了，第二张网格上面有两个多余的蓝色格\n子，第三张的三个格子到了矩形的右侧，第四章的矩形下面有四个蓝色格子，第五张下面的三个格子和上面的矩形分离了。他们都是不像 Capoo 的。</p>\n<p>现在给出 Capoo 的画作，你需要判断这幅图像不像 Capoo 。</p>\n</div>            </div>",
+      "text": "Capoo是一只可爱的猫猫虫。他想给自己画一张自画像。\nCapoo在一个 n 行 m 列的方格白纸上完成自己的画作。他会把一些格子涂成蓝色，剩下的格子保持白色。\n对于一个给定的n 行 m 列网格，我们用.表示白色格子，#表示蓝色格子，那么我们认为这个网格图像Capoo，当且仅当这个图的所有蓝色部分恰好构成一个矩形，外加与矩形下边界接触，并且相互不接触的恰好三个单独格子。\n例如，以下网格都是像 Capoo 的：\n........     ........     ########\n.######.     ........     ########\n.######.     ########     ########\n.######.     .#.#...#     ########\n..#.#.#.     ........     #...#..#\n\n\n而以下网格都不是像 Capoo 的：\n........   .....##.   .####...   ........   ........\n.######.   ........   .###....   ########   .######.\n.######.   ########   .####...   ########   .######.\n.######.   ########   .###....   ########   ........\n..##..#.   ..#.#..#   .####...   #.#.#..#   ..#.#.#.\n\n\n其中，第一张网格下方有两个蓝色格子相邻了，第二张网格上面有两个多余的蓝色格\n子，第三张的三个格子到了矩形的右侧，第四章的矩形下面有四个蓝色格子，第五张下面的三个格子和上面的矩形分离了。他们都是不像 Capoo 的。\n现在给出 Capoo 的画作，你需要判断这幅图像不像 Capoo 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">T</span> ，表示数据组数。</p>\n<p>接下来输入 <span class=\"katex math inline\">T</span> 组数据，对于每组数据：</p>\n<p>第一行两个整数 <span class=\"katex math inline\">n, m</span>，表示网格的行数和列数。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行一个长度为 <span class=\"katex math inline\">m</span> 的字符串，其中每个字符是 <code>.</code> 或 <code>#</code>，表示 Capoo 的画作。</p>\n</div>            </div>",
+      "text": "第一行一个整数 T ，表示数据组数。\n接下来输入 T 组数据，对于每组数据：\n第一行两个整数 n, m，表示网格的行数和列数。\n接下来 n 行，每行一个长度为 m 的字符串，其中每个字符是 . 或 #，表示 Capoo 的画作。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">T</span> 行，每行为 <code>Like</code> 或 <code>Unlike</code>，分别表示每组数据的答案。其中，输出第 <span class=\"katex math inline\">i</span> 行为 <code>Like</code> 表示第 <span class=\"katex math inline\">i</span> 组数据像 Capoo ，为 <code>Unlike</code> 则表示不像 Capoo。</p>\n</div>            </div>",
+      "text": "输出 T 行，每行为 Like 或 Unlike，分别表示每组数据的答案。其中，输出第 i 行为 Like 表示第 i 组数据像 Capoo ，为 Unlike 则表示不像 Capoo。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n5 8\r\n........\r\n.######.\r\n.######.\r\n.######.\r\n..#.#.#.\r\n5 8\r\n........\r\n........\r\n########\r\n.#.#...#\r\n........\r\n5 8\r\n########\r\n########\r\n########\r\n########\r\n#...#..#\r\n5 8\r\n........\r\n.######.\r\n.######.\r\n........\r\n..#.#.#.</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Like\r\nLike\r\nLike\r\nUnlike</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4\r\n5 8\r\n.....##.\r\n........\r\n########\r\n########\r\n..#.#..#\r\n5 8\r\n.####...\r\n.###....\r\n.####...\r\n.###....\r\n.####...\r\n5 8\r\n........\r\n########\r\n########\r\n########\r\n#.#.#..#\r\n5 8\r\n........\r\n.######.\r\n.######.\r\n ........\r\n ..#.#.#.\r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>Unlike\r\nUnlike\r\nUnlike\r\nUnlike</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n5 8\r\n........\r\n.######.\r\n.######.\r\n.######.\r\n..#.#.#.\r\n5 8\r\n........\r\n........\r\n########\r\n.#.#...#\r\n........\r\n5 8\r\n########\r\n########\r\n########\r\n########\r\n#...#..#\r\n5 8\r\n........\r\n.######.\r\n.######.\r\n........\r\n..#.#.#.\n                        \n                        \n                            输出\n                            Like\r\nLike\r\nLike\r\nUnlike\n                        \n\n                                                    \n                                输入\n                                4\r\n5 8\r\n.....##.\r\n........\r\n########\r\n########\r\n..#.#..#\r\n5 8\r\n.####...\r\n.###....\r\n.####...\r\n.###....\r\n.####...\r\n5 8\r\n........\r\n########\r\n########\r\n########\r\n#.#.#..#\r\n5 8\r\n........\r\n.######.\r\n.######.\r\n ........\r\n ..#.#.#.\r\n\n                            \n                            \n                                输出\n                                Unlike\r\nUnlike\r\nUnlike\r\nUnlike"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">10 \\% </span>的数据，<span class=\"katex math inline\"> T \\leq 10 </span>，<span class=\"katex math inline\"> n, m \\leq 4 </span>。</p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\"> n, m \\leq 10 </span>，<span class=\"katex math inline\"> \\sum n, \\sum m \\leq 10^2 </span>。</p>\n<p>对于 <span class=\"katex math inline\">60\\%</span> 的数据，<span class=\"katex math inline\"> n, m \\leq 10^2 </span>，<span class=\"katex math inline\"> \\sum n, \\sum m \\leq 10^3 </span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\"> 1 \\leq T \\leq 200 </span>，<span class=\"katex math inline\"> 1 \\leq n, m \\leq 10^3 </span>，<span class=\"katex math inline\"> 1 \\leq \\sum n, \\sum m \\leq 2 \\times 10^3 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 10 \\% 的数据， T \\leq 10 ， n, m \\leq 4 。\n对于 30\\% 的数据， n, m \\leq 10 ， \\sum n, \\sum m \\leq 10^2 。\n对于 60\\% 的数据， n, m \\leq 10^2 ， \\sum n, \\sum m \\leq 10^3 。\n对于 100\\% 的数据， 1 \\leq T \\leq 200 ， 1 \\leq n, m \\leq 10^3 ， 1 \\leq \\sum n, \\sum m \\leq 2 \\times 10^3 。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">深搜</span><span class=\"label label-info\">广搜</span><span class=\"label label-danger\">连通块</span></span></p>\n</div>                </div>",
+      "text": "市赛深搜广搜连通块"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n5 8\r\n........\r\n.######.\r\n.######.\r\n.######.\r\n..#.#.#.\r\n5 8\r\n........\r\n........\r\n########\r\n.#.#...#\r\n........\r\n5 8\r\n########\r\n########\r\n########\r\n########\r\n#...#..#\r\n5 8\r\n........\r\n.######.\r\n.######.\r\n........\r\n..#.#.#.",
+      "output": "Like\r\nLike\r\nLike\r\nUnlike"
+    },
+    {
+      "input": "4\r\n5 8\r\n.....##.\r\n........\r\n########\r\n########\r\n..#.#..#\r\n5 8\r\n.####...\r\n.###....\r\n.####...\r\n.###....\r\n.####...\r\n5 8\r\n........\r\n########\r\n########\r\n########\r\n#.#.#..#\r\n5 8\r\n........\r\n.######.\r\n.######.\r\n ........\r\n ..#.#.#.\r\n",
+      "output": "Unlike\r\nUnlike\r\nUnlike\r\nUnlike"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "162",
+    "通过人数": "44",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:36:37"
+}

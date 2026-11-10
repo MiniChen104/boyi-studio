@@ -1,0 +1,57 @@
+{
+  "id": "3124",
+  "title": "集合问题",
+  "tags": [
+    "树",
+    "堆"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3124",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一组正整数，总数不超过 <span class=\"katex math inline\">1000</span> ，其中最大值记为 <span class=\"katex math inline\">M</span> 。\n现要将它们划分成 <span class=\"katex math inline\">N</span> 个集合，使得每个集合的元素之和与  <span class=\"katex math inline\">M</span> 的差的绝对值的和最小。</p>\n<p>集合 <span class=\"katex math inline\">A</span> 中当前各元素之和记为 <span class=\"katex math inline\">SUM(A)</span> ，称为 <span class=\"katex math inline\">A</span> 的负荷；<span class=\"katex math inline\">SUM(A)</span> 与 <span class=\"katex math inline\">M</span> 之差的绝对值称为A的负荷与理想负荷的偏差，简称为A的偏差。</p>\n<p>把这些整数划分成 <span class=\"katex math inline\">N</span> 个集合的方法是：按照从大到小的顺序，依次为每个整数分别选择一个集合；</p>\n<p>确定一个整数所属集合时，先计算各集合的负荷，将该整数分配给负荷最小的那个集合。</p>\n<p>求使得各集合的偏差之和最小的划分方案中，集合的数目 <span class=\"katex math inline\">N</span> 。如果这样的方案不止一种，则输出各方案中，集合数最大的那种方案的集合数 <span class=\"katex math inline\">N</span> 。</p>\n</div>            </div>",
+      "text": "有一组正整数，总数不超过 1000 ，其中最大值记为 M 。\n现要将它们划分成 N 个集合，使得每个集合的元素之和与  M 的差的绝对值的和最小。\n集合 A 中当前各元素之和记为 SUM(A) ，称为 A 的负荷；SUM(A) 与 M 之差的绝对值称为A的负荷与理想负荷的偏差，简称为A的偏差。\n把这些整数划分成 N 个集合的方法是：按照从大到小的顺序，依次为每个整数分别选择一个集合；\n确定一个整数所属集合时，先计算各集合的负荷，将该整数分配给负荷最小的那个集合。\n求使得各集合的偏差之和最小的划分方案中，集合的数目 N 。如果这样的方案不止一种，则输出各方案中，集合数最大的那种方案的集合数 N 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共输入 <span class=\"katex math inline\">K+1</span> 个整数。其中第一个整数是 <span class=\"katex math inline\">K</span> 代表要划分的整数总数，后面依次是 <span class=\"katex math inline\">K</span> 个整数的值。</p>\n<p><span class=\"katex math inline\">K</span> 不超过 <span class=\"katex math inline\">1000</span> 。</p>\n</div>            </div>",
+      "text": "共输入 K+1 个整数。其中第一个整数是 K 代表要划分的整数总数，后面依次是 K 个整数的值。\nK 不超过 1000 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，代表集合数 <span class=\"katex math inline\">N</span> 。</p>\n</div>            </div>",
+      "text": "一个整数，代表集合数 N 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\n2 4 9 12 16 80 28 72</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\n2 4 9 12 16 80 28 72\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会等级考试七级</p>\n</div>                </div>",
+      "text": "电子学会等级考试七级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树</span><span class=\"label label-warning\">堆</span></span></p>\n</div>                </div>",
+      "text": "树堆"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\n2 4 9 12 16 80 28 72",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "66",
+    "通过人数": "34",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:34:13"
+}

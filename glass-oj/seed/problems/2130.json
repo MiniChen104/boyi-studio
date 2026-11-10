@@ -1,0 +1,56 @@
+{
+  "id": "2130",
+  "title": "输出字符",
+  "tags": [
+    "字符型"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2130",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定两个字符 <span class=\"katex math inline\">c_1</span> 和 <span class=\"katex math inline\">c_2</span>，保证 <span class=\"katex math inline\">c_1</span> 的 ascii 码 <span class=\"katex math inline\"> \\le c_2</span> 的 ascii 码 且 <span class=\"katex math inline\">c_1</span> 和 <span class=\"katex math inline\">c_2</span> 同时为大写或小写。</p>\n<p>请输出 <span class=\"katex math inline\">2</span> 行字符，第一行 <span class=\"katex math inline\">c_1</span> 到 <span class=\"katex math inline\">c_2</span> 的字符间隔输出（一个字母输出后，跳一个字母再输出）。</p>\n<p>第二行 <span class=\"katex math inline\">c_2</span> 到 <span class=\"katex math inline\">c_1</span> 的字符间隔输出。</p>\n</div>            </div>",
+      "text": "给定两个字符 c_1 和 c_2，保证 c_1 的 ascii 码  \\le c_2 的 ascii 码 且 c_1 和 c_2 同时为大写或小写。\n请输出 2 行字符，第一行 c_1 到 c_2 的字符间隔输出（一个字母输出后，跳一个字母再输出）。\n第二行 c_2 到 c_1 的字符间隔输出。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个字符 <span class=\"katex math inline\">c_1</span> 和 <span class=\"katex math inline\">c_2</span> 。</p>\n</div>            </div>",
+      "text": "两个字符 c_1 和 c_2 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按题意输出。</p>\n</div>            </div>",
+      "text": "按题意输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>a j</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>a c e g i\r\nj h f d b</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            a j\n                        \n                        \n                            输出\n                            a c e g i\r\nj h f d b"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符型</p>\n</div>                </div>",
+      "text": "字符型"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符型</span></span></p>\n</div>                </div>",
+      "text": "字符型"
+    }
+  ],
+  "samples": [
+    {
+      "input": "a j",
+      "output": "a c e g i\r\nj h f d b"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "760",
+    "通过人数": "494",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:50"
+}

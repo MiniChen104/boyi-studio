@@ -1,0 +1,56 @@
+{
+  "id": "2176",
+  "title": "删除数字",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2176",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入一句英文句子，请把字符串中的数字删除，并输出。</p>\n<p>比如，输入：<code>this123is4my56book</code>，删除数字后输出：<code>thisismybook</code>。</p>\n</div>            </div>",
+      "text": "从键盘读入一句英文句子，请把字符串中的数字删除，并输出。\n比如，输入：this123is4my56book，删除数字后输出：thisismybook。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入一句英文句子，该英文句子可能含空格。（长度 <span class=\"katex math inline\">≤150</span>）</p>\n</div>            </div>",
+      "text": "从键盘读入一句英文句子，该英文句子可能含空格。（长度 ≤150）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出该字符串删除数字字符后的结果。</p>\n</div>            </div>",
+      "text": "输出该字符串删除数字字符后的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>this123is4my56book</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>thisismybook</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            this123is4my56book\n                        \n                        \n                            输出\n                            thisismybook"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "this123is4my56book",
+      "output": "thisismybook"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "954",
+    "通过人数": "506",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:24"
+}

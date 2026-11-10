@@ -1,0 +1,46 @@
+{
+  "id": "1261",
+  "title": "韩信点兵",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1261",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>韩信有一队士兵，他想知道有多少人，他就让士兵报数，如果按照 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">5</span> 报数，最末一个士兵报的数为 <span class=\"katex math inline\">1</span> 。</p>\n<p>按照 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">6</span>  报数，最末一个士兵报的数为 <span class=\"katex math inline\">5</span> 。</p>\n<p>按照 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">7</span> 报数，最末一个士兵报的数为 <span class=\"katex math inline\">4</span> 。</p>\n<p>最后再按 <span class=\"katex math inline\">1</span> 到<span class=\"katex math inline\">11</span> 报数，最末一个士兵报的数为 <span class=\"katex math inline\">10</span> 。</p>\n<p>请问韩信这队士兵最少有多少人？</p>\n</div>            </div>",
+      "text": "韩信有一队士兵，他想知道有多少人，他就让士兵报数，如果按照 1 到 5 报数，最末一个士兵报的数为 1 。\n按照 1 到 6  报数，最末一个士兵报的数为 5 。\n按照 1 到 7 报数，最末一个士兵报的数为 4 。\n最后再按 1 到11 报数，最末一个士兵报的数为 10 。\n请问韩信这队士兵最少有多少人？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无。</p>\n</div>            </div>",
+      "text": "无。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出这队士兵最少有多少人？</p>\n</div>            </div>",
+      "text": "输出这队士兵最少有多少人？"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "38126",
+    "通过人数": "25258",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:02"
+}

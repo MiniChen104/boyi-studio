@@ -1,0 +1,56 @@
+{
+  "id": "2280",
+  "title": "表达式求值",
+  "tags": [
+    "电子学会等级考试"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/2280",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>求一个可能包含加、减、乘、除、乘方运算的中缀表达式的值。\n在计算机中，我们常用栈来解决这一问题。</p>\n<p>首先将中缀表达式转换到后缀表达式，然后对后缀表达式求值。</p>\n<p>加、减、乘、除、乘方分别用 <code>+</code>，<code>-</code>，<code>*</code>, <code>/</code>, <code>^</code> 来表示。表达式可以有圆括号()。</p>\n</div>            </div>",
+      "text": "求一个可能包含加、减、乘、除、乘方运算的中缀表达式的值。\n在计算机中，我们常用栈来解决这一问题。\n首先将中缀表达式转换到后缀表达式，然后对后缀表达式求值。\n加、减、乘、除、乘方分别用 +，-，*, /, ^ 来表示。表达式可以有圆括号()。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为测试数据的组数 <span class=\"katex math inline\">N</span> 。</p>\n<p>接下来的 <span class=\"katex math inline\">N</span> 行，每行是一个中缀表达式。 每个表达式中，圆括号、运算符和运算数相互之间都用空格分隔，运算数是整数。一般运算数可正可负（负数的符号和数字之间无空格），指数一定为自然数(<span class=\"katex math inline\">0</span> 和正整数)。</p>\n<p>不必考虑除 <span class=\"katex math inline\">0</span> 的情况。每个运算数均可由 <span class=\"katex math inline\">int</span> 放下。不必考虑溢出。中缀表达式的字符串长度不超过 <span class=\"katex math inline\">600</span> 。乘方的优先级比乘除都高，结合性是向左结合，如 <code>2 ^ 3 ^ 4</code> 表示 <code>( 2 ^ 3 ) ^ 4 = 4096</code>。 除法的商向下取整。</p>\n</div>            </div>",
+      "text": "第一行为测试数据的组数 N 。\n接下来的 N 行，每行是一个中缀表达式。 每个表达式中，圆括号、运算符和运算数相互之间都用空格分隔，运算数是整数。一般运算数可正可负（负数的符号和数字之间无空格），指数一定为自然数(0 和正整数)。\n不必考虑除 0 的情况。每个运算数均可由 int 放下。不必考虑溢出。中缀表达式的字符串长度不超过 600 。乘方的优先级比乘除都高，结合性是向左结合，如 2 ^ 3 ^ 4 表示 ( 2 ^ 3 ) ^ 4 = 4096。 除法的商向下取整。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对每一组测试数据输出一行，为表达式的值</p>\n</div>            </div>",
+      "text": "对每一组测试数据输出一行，为表达式的值"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n31 * ( 5 - ( -3 + 25 ) ) + 70 ^ 2\r\n2 * 5 + 6 * ( 7 - 8 ) + 6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4373\r\n10</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n31 * ( 5 - ( -3 + 25 ) ) + 70 ^ 2\r\n2 * 5 + 6 * ( 7 - 8 ) + 6\n                        \n                        \n                            输出\n                            4373\r\n10"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会六级</p>\n</div>                </div>",
+      "text": "电子学会六级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n31 * ( 5 - ( -3 + 25 ) ) + 70 ^ 2\r\n2 * 5 + 6 * ( 7 - 8 ) + 6",
+      "output": "4373\r\n10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "367",
+    "通过人数": "156",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:30:40"
+}

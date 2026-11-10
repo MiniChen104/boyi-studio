@@ -1,0 +1,61 @@
+{
+  "id": "1338",
+  "title": "求圆环的面积",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1338",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如下图所示的圆环铁片，中间是空心的，已知圆环外圆的半径是 <span class=\"katex math inline\">r1</span> 厘米（如：<span class=\"katex math inline\">10</span> cm），内圆半径是 <span class=\"katex math inline\">r2</span> 厘米（如：<span class=\"katex math inline\">6</span> cm），请编程计算该铁片的面积。（外圆面积 – 内圆面积，假设 <span class=\"katex math inline\">π=3.14</span>，结果保留 <span class=\"katex math inline\">2</span> 位小数）</p>\n<p>（5.2.99）</p>\n<p><img src=\"https://assets.boyi.local/b944bf876ddf96f42feb8687.jpg\"></p>\n</div>            </div>",
+      "text": "如下图所示的圆环铁片，中间是空心的，已知圆环外圆的半径是 r1 厘米（如：10 cm），内圆半径是 r2 厘米（如：6 cm），请编程计算该铁片的面积。（外圆面积 – 内圆面积，假设 π=3.14，结果保留 2 位小数）\n（5.2.99）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">r1、r2</span> ，分别代表外圆和内圆的半径。</p>\n</div>            </div>",
+      "text": "2 个整数 r1、r2 ，分别代表外圆和内圆的半径。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>铁片的面积。</p>\n</div>            </div>",
+      "text": "铁片的面积。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>200.96</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 6\n                        \n                        \n                            输出\n                            200.96"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>圆的面积和周长求解公式分别如下：</p>\n<p>圆的面积 <span class=\"katex math inline\">S = π \\times </span>  半径 <span class=\"katex math inline\"> \\times </span> 半径；（<span class=\"katex math inline\">π</span> 读作 <span class=\"katex math inline\">pài，π = 3.1415926 \\dots </span> ，在具体的题目中 <span class=\"katex math inline\">π</span> 的值精确到小数点后多少位，取决于具体的题目）</p>\n<p>圆的周长 <span class=\"katex math inline\">C = π  \\times  2  \\times  </span>半径；</p>\n</div>\n\n                    \n                </div>",
+      "text": "圆的面积和周长求解公式分别如下：\n圆的面积 S = π \\times   半径  \\times  半径；（π 读作 pài，π = 3.1415926 \\dots  ，在具体的题目中 π 的值精确到小数点后多少位，取决于具体的题目）\n圆的周长 C = π  \\times  2  \\times  半径；"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 6",
+      "output": "200.96"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "38064",
+    "通过人数": "25260",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:03"
+}

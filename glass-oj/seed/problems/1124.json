@@ -1,0 +1,60 @@
+{
+  "id": "1124",
+  "title": "表达式的值II",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1124",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出一个表达式，其中运算符仅包含 <code>+</code> 和 <code>-</code> 两种运算符，且没有括号。要求求出表达式的最终值。</p>\n<p>数据保证要计算的数字的数量不超过 <span class=\"katex math inline\">100</span> 个，每个整数的数值和计算结果的数值都在 <span class=\"katex math inline\">int</span> 的范围内。</p>\n<p>请注意：数字可能是 <span class=\"katex math inline\">1</span> 位数，也可能是多位数，如：<span class=\"katex math inline\">1+1-1=1</span> ，<span class=\"katex math inline\">12+23-11=24</span> 。</p>\n</div>            </div>",
+      "text": "给出一个表达式，其中运算符仅包含 + 和 - 两种运算符，且没有括号。要求求出表达式的最终值。\n数据保证要计算的数字的数量不超过 100 个，每个整数的数值和计算结果的数值都在 int 的范围内。\n请注意：数字可能是 1 位数，也可能是多位数，如：1+1-1=1 ，12+23-11=24 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>仅一行，即为表达式。</p>\n</div>            </div>",
+      "text": "仅一行，即为表达式。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>计算结果的数值。</p>\n</div>            </div>",
+      "text": "计算结果的数值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1+1-1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>12+23-11</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>24</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1+1-1\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                12+23-11\n                            \n                            \n                                输出\n                                24"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1+1-1",
+      "output": "1"
+    },
+    {
+      "input": "12+23-11",
+      "output": "24"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2789",
+    "通过人数": "2012",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:15:04"
+}

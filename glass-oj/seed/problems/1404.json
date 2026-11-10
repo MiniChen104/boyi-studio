@@ -1,0 +1,56 @@
+{
+  "id": "1404",
+  "title": "有趣的斜角？",
+  "tags": [
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1404",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数 <span class=\"katex math inline\">n（n \\lt 10</span>），输出 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">n</span> 列的如下图所示的数字图形。</p>\n</div>            </div>",
+      "text": "输入一个整数 n（n \\lt 10），输出 n 行 n 列的如下图所示的数字图形。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> 。（ <span class=\"katex math inline\">1 \\lt n \\lt 10</span> )</p>\n</div>            </div>",
+      "text": "一个整数 n 。（ 1 \\lt n \\lt 10 )"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个方阵，每个数字的场宽为 <span class=\"katex math inline\">5</span> 。</p>\n</div>            </div>",
+      "text": "一个方阵，每个数字的场宽为 5 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>    1    5    8   10\r\n    5    2    6    9\r\n    8    6    3    7\r\n   10    9    7    4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\n                        \n                        \n                            输出\n                                1    5    8   10\r\n    5    2    6    9\r\n    8    6    3    7\r\n   10    9    7    4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二维数组</p>\n</div>                </div>",
+      "text": "二维数组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4",
+      "output": "    1    5    8   10\r\n    5    2    6    9\r\n    8    6    3    7\r\n   10    9    7    4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "442",
+    "通过人数": "270",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:59"
+}

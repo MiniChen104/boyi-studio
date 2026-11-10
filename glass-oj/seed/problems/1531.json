@@ -1,0 +1,65 @@
+{
+  "id": "1531",
+  "title": "小X与正方形",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1531",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小X的老师很喜欢围棋。众所周知，围棋的棋盘有 <span class=\"katex math inline\">19</span> 行 <span class=\"katex math inline\">19</span> 列。为方便起见，我们把这些行列按顺序编号为 <span class=\"katex math inline\">1</span>～<span class=\"katex math inline\">19</span>，并用 <span class=\"katex math inline\">(x, y)</span> 表示第 <span class=\"katex math inline\">x</span> 列第 <span class=\"katex math inline\">y</span> 行的位置。例如下图中，<span class=\"katex math inline\">A</span> 用 <span class=\"katex math inline\">(16,4)</span> 表示，<span class=\"katex math inline\">B</span> 用 <span class=\"katex math inline\">(14, 3)</span> 表示。  </p>\n<p>现在老师让小X在棋盘上放 <span class=\"katex math inline\">4</span> 枚棋子，要求这 <span class=\"katex math inline\">4</span> 枚棋子组成一个正方形的四个顶点。但是小X喜欢三角形，不喜欢正方形，于是只放了 <span class=\"katex math inline\">3</span> 枚就跑出去玩去了。那么这最后的棋子就交给你来放了，请求出这枚棋子应该放在哪里？  </p>\n<p><img src=\"https://assets.boyi.local/efa87203f3c043692e3fb4cc.png\"></p>\n</div>            </div>",
+      "text": "小X的老师很喜欢围棋。众所周知，围棋的棋盘有 19 行 19 列。为方便起见，我们把这些行列按顺序编号为 1～19，并用 (x, y) 表示第 x 列第 y 行的位置。例如下图中，A 用 (16,4) 表示，B 用 (14, 3) 表示。  \n现在老师让小X在棋盘上放 4 枚棋子，要求这 4 枚棋子组成一个正方形的四个顶点。但是小X喜欢三角形，不喜欢正方形，于是只放了 3 枚就跑出去玩去了。那么这最后的棋子就交给你来放了，请求出这枚棋子应该放在哪里？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据仅有一行包含6个用空格隔开的正整数 <span class=\"katex math inline\">x_1, y_1, x_2, y_2, x_3, y_3</span>， 表示三枚棋子的位置为 <span class=\"katex math inline\">(x_1, y_1)</span>, <span class=\"katex math inline\">(x_2, y_2)</span>, <span class=\"katex math inline\">(x_3, y_3)</span>；</p>\n</div>            </div>",
+      "text": "输入数据仅有一行包含6个用空格隔开的正整数 x_1, y_1, x_2, y_2, x_3, y_3， 表示三枚棋子的位置为 (x_1, y_1), (x_2, y_2), (x_3, y_3)；"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行包含两个正整数 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span>，两数之间用一个空格隔开；表示若将最后一枚棋子放在位置 <span class=\"katex math inline\">(x, y)</span>，它与之前的三枚棋子能组成一个正方形的四个顶点。数据保证方案唯一。</p>\n</div>            </div>",
+      "text": "输出一行包含两个正整数 x 和 y，两数之间用一个空格隔开；表示若将最后一枚棋子放在位置 (x, y)，它与之前的三枚棋子能组成一个正方形的四个顶点。数据保证方案唯一。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 4 4 16 16 16</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>16 4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2 1 4 2 3 4</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1 3</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 4 4 16 16 16\n                        \n                        \n                            输出\n                            16 4\n                        \n\n                                                    \n                                输入\n                                2 1 4 2 3 4\n                            \n                            \n                                输出\n                                1 3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>样例 <span class=\"katex math inline\">1</span> 解释</strong></p>\n<p>如上图所示，最后一枚棋子应放在 <span class=\"katex math inline\">A</span> <span class=\"katex math inline\">(16, 4)</span>处。</p>\n<p><strong>样例 <span class=\"katex math inline\">2</span> 解释</strong></p>\n<p>注意考虑正方形的四条边不与棋盘上的网格线平行的情况，这种情况你也可以无视它，因为这种情况只占本题 <span class=\"katex math inline\">20\\%</span> 的分数。</p>\n<p><strong>数据范围</strong></p>\n<p>对于 <span class=\"katex math inline\">80\\%</span> 的数据，正方形的四条边与网格线平行。</p>\n<p>其中 <span class=\"katex math inline\">40\\%</span> 的数据，除上一条以外，还保证最后一枚棋子在正方形的左上角。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1≤x_1, y_1, x_2, y_2, x_3, y_3≤19</span>，所有数据保证方案唯一。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 解释\n如上图所示，最后一枚棋子应放在 A (16, 4)处。\n样例 2 解释\n注意考虑正方形的四条边不与棋盘上的网格线平行的情况，这种情况你也可以无视它，因为这种情况只占本题 20\\% 的分数。\n数据范围\n对于 80\\% 的数据，正方形的四条边与网格线平行。\n其中 40\\% 的数据，除上一条以外，还保证最后一枚棋子在正方形的左上角。\n对于 100\\% 的数据，1≤x_1, y_1, x_2, y_2, x_3, y_3≤19，所有数据保证方案唯一。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 4 4 16 16 16",
+      "output": "16 4"
+    },
+    {
+      "input": "2 1 4 2 3 4",
+      "output": "1 3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "619",
+    "通过人数": "319",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:43"
+}

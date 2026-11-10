@@ -1,0 +1,56 @@
+{
+  "id": "1878",
+  "title": "哥德巴赫猜想",
+  "tags": [
+    "函数问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1878",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p> <span class=\"katex math inline\">1742</span> 年 <span class=\"katex math inline\">6</span> 月 <span class=\"katex math inline\">7</span> 日哥德巴赫写信给当时的大数学家欧拉，正式提出了以下的猜想：</p>\n<p>任何一个大于 <span class=\"katex math inline\">9</span> 的奇数都可以表示成 <span class=\"katex math inline\">3</span> 个质数之和。质数是指除了 <span class=\"katex math inline\">1</span> 和本身之外没有其他约数的数，如 <span class=\"katex math inline\">2</span> 和 <span class=\"katex math inline\">11</span> 都是质数，而 <span class=\"katex math inline\">6</span> 不是质数，因为 <span class=\"katex math inline\">6</span> 除了约数 <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">6</span> 之外还有约数 <span class=\"katex math inline\">2</span> 和 <span class=\"katex math inline\">3</span> 。需要特别说明的是 <span class=\"katex math inline\">1</span> 不是质数。\n这就是哥德巴赫猜想。欧拉在回信中说，他相信这个猜想是正确的，但他不能证明。</p>\n<p>从此，这道数学难题引起了几乎所有数学家的注意。哥德巴赫猜想由此成为数学皇冠上一颗可望不可及的“明珠”。\n现在请你编一个程序验证哥德巴赫猜想。</p>\n</div>            </div>",
+      "text": "1742 年 6 月 7 日哥德巴赫写信给当时的大数学家欧拉，正式提出了以下的猜想：\n任何一个大于 9 的奇数都可以表示成 3 个质数之和。质数是指除了 1 和本身之外没有其他约数的数，如 2 和 11 都是质数，而 6 不是质数，因为 6 除了约数 1 和 6 之外还有约数 2 和 3 。需要特别说明的是 1 不是质数。\n这就是哥德巴赫猜想。欧拉在回信中说，他相信这个猜想是正确的，但他不能证明。\n从此，这道数学难题引起了几乎所有数学家的注意。哥德巴赫猜想由此成为数学皇冠上一颗可望不可及的“明珠”。\n现在请你编一个程序验证哥德巴赫猜想。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>仅有一行，包含一个正奇数 <span class=\"katex math inline\">n</span> ，其中 <span class=\"katex math inline\">n</span> 大于 <span class=\"katex math inline\">9</span> 并且小于 <span class=\"katex math inline\">10000</span> 。</p>\n</div>            </div>",
+      "text": "仅有一行，包含一个正奇数 n ，其中 n 大于 9 并且小于 10000 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>仅有一行，输出 <span class=\"katex math inline\">3</span> 个质数，这 <span class=\"katex math inline\">3</span> 个质数之和等于输入的奇数。相邻两个质数之间用一个空格隔开，最后一个质数后面没有空格。如果表示方法不唯一，请输出第一个数最小的方案，如果第一个数最小的方案不唯一，请输出第二个数最小的方案。</p>\n</div>            </div>",
+      "text": "仅有一行，输出 3 个质数，这 3 个质数之和等于输入的奇数。相邻两个质数之间用一个空格隔开，最后一个质数后面没有空格。如果表示方法不唯一，请输出第一个数最小的方案，如果第一个数最小的方案不唯一，请输出第二个数最小的方案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2009</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3 3 2003</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2009\n                        \n                        \n                            输出\n                            3 3 2003"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>函数问题</p>\n</div>                </div>",
+      "text": "函数问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">函数问题</span></span></p>\n</div>                </div>",
+      "text": "函数问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2009",
+      "output": "3 3 2003"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "1177",
+    "通过人数": "658",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:23"
+}

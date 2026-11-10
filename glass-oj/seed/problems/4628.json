@@ -1,0 +1,58 @@
+{
+  "id": "4628",
+  "title": "翻转游戏币",
+  "tags": [
+    "蓝桥杯STEMA",
+    "循环",
+    "数学"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4628",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>桌面上有 <span class=\"katex math inline\">n</span> 枚游戏币，均为反面朝上，编号依次为 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span>。有 <span class=\"katex math inline\">n</span> 个人（游戏币的数量与人的数量相等），首先第 <span class=\"katex math inline\">1</span> 个人将所有游戏币翻转，然后第 <span class=\"katex math inline\">2</span> 个人将所有编号是 <span class=\"katex math inline\">2</span> 的倍数的游戏币翻转，接下来第 <span class=\"katex math inline\">3</span> 个人将所有编号是 <span class=\"katex math inline\">3</span> 的倍数的游戏币翻转......以此类推，当最后一个人完成操作后，还有多少枚游戏币正面朝上？</p>\n<p>例如：<span class=\"katex math inline\">n = 4</span>;</p>\n<p>最初 <span class=\"katex math inline\">4</span> 枚游戏币的状态为：反反反反；</p>\n<p>经过第 <span class=\"katex math inline\">1</span> 个人翻转后，游戏币的状态为：正正正正；</p>\n<p>经过第 <span class=\"katex math inline\">2</span>个人翻转后，游戏币的状态为：正反正反；</p>\n<p>经过第 <span class=\"katex math inline\">3</span> 个人翻转后，游戏币的状态为：正反反反；</p>\n<p>经过第 <span class=\"katex math inline\">4</span> 个人翻转后，游戏币的状态为：正反反正；</p>\n<p>最后，还有两枚游戏币正面朝上，故答案为 <span class=\"katex math inline\">2</span>。</p>\n</div>            </div>",
+      "text": "桌面上有 n 枚游戏币，均为反面朝上，编号依次为 1 到 n。有 n 个人（游戏币的数量与人的数量相等），首先第 1 个人将所有游戏币翻转，然后第 2 个人将所有编号是 2 的倍数的游戏币翻转，接下来第 3 个人将所有编号是 3 的倍数的游戏币翻转......以此类推，当最后一个人完成操作后，还有多少枚游戏币正面朝上？\n例如：n = 4;\n最初 4 枚游戏币的状态为：反反反反；\n经过第 1 个人翻转后，游戏币的状态为：正正正正；\n经过第 2个人翻转后，游戏币的状态为：正反正反；\n经过第 3 个人翻转后，游戏币的状态为：正反反反；\n经过第 4 个人翻转后，游戏币的状态为：正反反正；\n最后，还有两枚游戏币正面朝上，故答案为 2。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 <span class=\"katex math inline\">n（3 \\le n \\le 10^9）</span>，表示游戏币数量及人的数量。</p>\n</div>            </div>",
+      "text": "输入一个正整数 n（3 \\le n \\le 10^9），表示游戏币数量及人的数量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示最终游戏币正面朝上的数量。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示最终游戏币正面朝上的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（23年10月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（23年10月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">循环</span><span class=\"label label-info\">数学</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA循环数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "307",
+    "通过人数": "117",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:20"
+}

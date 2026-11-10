@@ -1,0 +1,67 @@
+{
+  "id": "3400",
+  "title": "小明的幸运数",
+  "tags": [
+    "循环",
+    "GESP一级",
+    "23年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3400",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>所有个位数为 <span class=\"katex math inline\">k</span> 的正整数，以及所有 <span class=\"katex math inline\">k</span> 的倍数，都被小明称为“ 幸运数”。小明想知道正整数 <span class=\"katex math inline\">L</span> 和 <span class=\"katex math inline\">R</span> 之间（包括 <span class=\"katex math inline\">L</span> 和 <span class=\"katex math inline\">R</span> ）所有 <span class=\"katex math inline\">k</span> 幸运数的和，你能帮帮他吗？</p>\n</div>            </div>",
+      "text": "所有个位数为 k 的正整数，以及所有 k 的倍数，都被小明称为“ 幸运数”。小明想知道正整数 L 和 R 之间（包括 L 和 R ）所有 k 幸运数的和，你能帮帮他吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入 <span class=\"katex math inline\">3</span> 行。第一行包含一个正整数 <span class=\"katex math inline\">k</span> ，第二行包含一个正整数 <span class=\"katex math inline\">L</span>，第三行包含一个正整数 <span class=\"katex math inline\">R</span>。约定 <span class=\"katex math inline\">2 \\leq k \\leq 9</span>, <span class=\"katex math inline\">1 \\leq L \\leq R \\leq 1000 </span>。</p>\n</div>            </div>",
+      "text": "输入 3 行。第一行包含一个正整数 k ，第二行包含一个正整数 L，第三行包含一个正整数 R。约定 2 \\leq k \\leq 9, 1 \\leq L \\leq R \\leq 1000 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">1</span> 行，符合题意的幸运数之和。</p>\n</div>            </div>",
+      "text": "输出 1 行，符合题意的幸运数之和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7\r\n1\r\n10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>7\r\n10\r\n20</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>31</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\r\n1\r\n10\n                        \n                        \n                            输出\n                            7\n                        \n\n                                                    \n                                输入\n                                7\r\n10\r\n20\n                            \n                            \n                                输出\n                                31"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释1】</p>\n<p><span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">10</span> 之间共有 <span class=\"katex math inline\">1</span> 个 <span class=\"katex math inline\">7</span> 幸运数：<span class=\"katex math inline\">7</span>。因为 <span class=\"katex math inline\">7</span> 既是 <span class=\"katex math inline\">7</span> 的倍数，个位数又为 <span class=\"katex math inline\">7</span> 。因此，结果为 <span class=\"katex math inline\">7</span>。</p>\n<p>【样例解释2】</p>\n<p><span class=\"katex math inline\">10</span> 和 <span class=\"katex math inline\">20</span> 之间共有 <span class=\"katex math inline\">2</span> 个 <span class=\"katex math inline\">7</span> 幸运数：<span class=\"katex math inline\">14</span> 和 <span class=\"katex math inline\">17</span>。<span class=\"katex math inline\">14</span> 是 <span class=\"katex math inline\">7</span> 的倍数，<span class=\"katex math inline\">17</span> 的个位数为 <span class=\"katex math inline\">7</span>。因此，结果为<span class=\"katex math inline\">31</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释1】\n1 和 10 之间共有 1 个 7 幸运数：7。因为 7 既是 7 的倍数，个位数又为 7 。因此，结果为 7。\n【样例解释2】\n10 和 20 之间共有 2 个 7 幸运数：14 和 17。14 是 7 的倍数，17 的个位数为 7。因此，结果为31。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年9月一级</p>\n</div>                </div>",
+      "text": "GESP23年9月一级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">循环</span><span class=\"label label-warning\">GESP一级</span><span class=\"label label-info\">23年9月</span></span></p>\n</div>                </div>",
+      "text": "循环GESP一级23年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7\r\n1\r\n10",
+      "output": "7"
+    },
+    {
+      "input": "7\r\n10\r\n20",
+      "output": "31"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "7518",
+    "通过人数": "4461",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:00"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "3495",
+  "title": "幸运数字",
+  "tags": [
+    "江苏省赛2023"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3495",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果把一个数字十进制表示的奇数位和偶数位分别相加得到的和相同，小小就认为它是一个幸运的数字。例如：</p>\n<p><span class=\"katex math inline\">12345</span> 奇数位相加 <span class=\"katex math inline\">1 + 3 + 5 = 9</span> 、偶数位相加 <span class=\"katex math inline\">2 + 4 = 6</span>，因此 <span class=\"katex math inline\">12345</span> 不是幸运数字；</p>\n<p><span class=\"katex math inline\">2332</span> 奇数位相加 <span class=\"katex math inline\">2 + 3 = 5</span> 、偶数位相加 <span class=\"katex math inline\">3 + 2 = 5</span>，因此 <span class=\"katex math inline\">2332</span> 是幸运数字。</p>\n<p>对于给定的 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>，小小希望你求出 <span class=\"katex math inline\">a</span>, <span class=\"katex math inline\">a + 1</span>, <span class=\"katex math inline\">a + 2</span>, <span class=\"katex math inline\">\\dots</span>, <span class=\"katex math inline\">b</span> 中幸运数字的数量。</p>\n</div>            </div>",
+      "text": "如果把一个数字十进制表示的奇数位和偶数位分别相加得到的和相同，小小就认为它是一个幸运的数字。例如：\n12345 奇数位相加 1 + 3 + 5 = 9 、偶数位相加 2 + 4 = 6，因此 12345 不是幸运数字；\n2332 奇数位相加 2 + 3 = 5 、偶数位相加 3 + 2 = 5，因此 2332 是幸运数字。\n对于给定的 a 和 b，小小希望你求出 a, a + 1, a + 2, \\dots, b 中幸运数字的数量。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据仅一行，包含空格分隔的两个整数 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>。</p>\n</div>            </div>",
+      "text": "输入数据仅一行，包含空格分隔的两个整数 a 和 b。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数，代表 <span class=\"katex math inline\">a</span>, <span class=\"katex math inline\">a + 1</span>, <span class=\"katex math inline\">a + 2</span>, <span class=\"katex math inline\">\\dots</span>, <span class=\"katex math inline\">b</span>  中幸运数字的数量。</p>\n</div>            </div>",
+      "text": "输出一行一个整数，代表 a, a + 1, a + 2, \\dots, b  中幸运数字的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4096 65536</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3454</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 100\n                        \n                        \n                            输出\n                            9\n                        \n\n                                                    \n                                输入\n                                4096 65536\n                            \n                            \n                                输出\n                                3454"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【数据规模】</strong></p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，满足 <span class=\"katex math inline\">1 \\le a \\le b \\le 1, 000, 000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据规模】\n对于 100\\% 的数据，满足 1 \\le a \\le b \\le 1, 000, 000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2023年江苏省＂信息与未来＂小学生编程</p>\n</div>                </div>",
+      "text": "2023年江苏省＂信息与未来＂小学生编程"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">江苏省赛2023</span></span></p>\n</div>                </div>",
+      "text": "江苏省赛2023"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 100",
+      "output": "9"
+    },
+    {
+      "input": "4096 65536",
+      "output": "3454"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "196",
+    "通过人数": "152",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:28"
+}

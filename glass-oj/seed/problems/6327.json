@@ -1,0 +1,63 @@
+{
+  "id": "6327",
+  "title": "有序网格",
+  "tags": [
+    "GESP四级",
+    "26年9月",
+    "二维数组",
+    "排序"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6327",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 A 有一个 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列格子组成的二维网格，从上到下依次是第 1 行到第 <span class=\"katex math inline\">n</span> 行，从左到右依次是第 1 列到第 <span class=\"katex math inline\">m</span> 列。每个格子里有一个数字，第 <span class=\"katex math inline\">i</span> 行第 <span class=\"katex math inline\">j</span> 列的格子里的数字是 <span class=\"katex math inline\">a_{i,j}</span>。</p>\n<p>小 A 想让二维网格变得有序，因此他先对每一行从左到右按升序排序，再对每一列从上到下按升序排序。以下是一个先完成行排序再完成列排序的例子：</p>\n<table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>1</td><td>3</td><td>2</td><td>5</td></tr><tr><td>6</td><td>2</td><td>4</td><td>4</td></tr><tr><td>5</td><td>4</td><td>1</td><td>3</td></tr></tbody></table><p>每行升序排序</p>\n<table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>1</td><td>2</td><td>3</td><td>5</td></tr><tr><td>2</td><td>4</td><td>4</td><td>6</td></tr><tr><td>1</td><td>3</td><td>4</td><td>5</td></tr></tbody></table><p>每列升序排序</p>\n<table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>1</td><td>2</td><td>3</td><td>5</td></tr><tr><td>1</td><td>3</td><td>4</td><td>5</td></tr><tr><td>2</td><td>4</td><td>4</td><td>6</td></tr></tbody></table><p>小 A 想知道二维网格经过以上排序后的结果。你能编写程序帮助他吗？</p>\n</div>            </div>",
+      "text": "小 A 有一个 n 行 m 列格子组成的二维网格，从上到下依次是第 1 行到第 n 行，从左到右依次是第 1 列到第 m 列。每个格子里有一个数字，第 i 行第 j 列的格子里的数字是 a_{i,j}。\n小 A 想让二维网格变得有序，因此他先对每一行从左到右按升序排序，再对每一列从上到下按升序排序。以下是一个先完成行排序再完成列排序的例子：\n132562445413每行升序排序\n123524461345每列升序排序\n123513452446小 A 想知道二维网格经过以上排序后的结果。你能编写程序帮助他吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，两个正整数 <span class=\"katex math inline\">n,m</span>，分别二维网格的行数与列数。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">m</span> 个整数 <span class=\"katex math inline\">a_{i,1},\\ldots,a_{i,m}</span>，表示二维网格中的数字。</p>\n</div>            </div>",
+      "text": "第一行，两个正整数 n,m，分别二维网格的行数与列数。\n接下来 n 行，每行 m 个整数 a_{i,1},\\ldots,a_{i,m}，表示二维网格中的数字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">m</span> 个整数，表示二维网格先完成行排序再完成列排序后的结果。</p>\n</div>            </div>",
+      "text": "输出 n 行，每行 m 个整数，表示二维网格先完成行排序再完成列排序后的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 2\r\n6 5\r\n4 3\r\n2 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 2\r\n3 4\r\n5 6</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 4\r\n1 3 2 5\r\n6 2 4 4\r\n5 4 1 3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1 2 3 5\r\n1 3 4 5\r\n2 4 4 6</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 2\r\n6 5\r\n4 3\r\n2 1\n                        \n                        \n                            输出\n                            1 2\r\n3 4\r\n5 6\n                        \n\n                                                    \n                                输入\n                                3 4\r\n1 3 2 5\r\n6 2 4 4\r\n5 4 1 3\n                            \n                            \n                                输出\n                                1 2 3 5\r\n1 3 4 5\r\n2 4 4 6"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">2 \\le n \\le 10</span>，<span class=\"katex math inline\">2 \\le m \\le 10</span>，<span class=\"katex math inline\">1 \\le a_{i,j} \\le 100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于所有测试点，保证 2 \\le n \\le 10，2 \\le m \\le 10，1 \\le a_{i,j} \\le 100。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">26年9月</span><span class=\"label label-info\">二维数组</span><span class=\"label label-danger\">排序</span></span></p>\n</div>                </div>",
+      "text": "GESP四级26年9月二维数组排序"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 2\r\n6 5\r\n4 3\r\n2 1",
+      "output": "1 2\r\n3 4\r\n5 6"
+    },
+    {
+      "input": "3 4\r\n1 3 2 5\r\n6 2 4 4\r\n5 4 1 3",
+      "output": "1 2 3 5\r\n1 3 4 5\r\n2 4 4 6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "199",
+    "通过人数": "160",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:58"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1713",
+  "title": "输出满足条件的整数3",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1713",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一个数列，该数列的前 <span class=\"katex math inline\">4</span> 个数是： <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">4</span> <span class=\"katex math inline\">7</span> <span class=\"katex math inline\">10</span> ；</p>\n<p>请从键盘读入一个正整数 <span class=\"katex math inline\">n</span> ，请通过观察前 <span class=\"katex math inline\">4</span> 项的规律，输出 <span class=\"katex math inline\">1 \\sim n</span> 之间所有满足该规律的数字。</p>\n</div>            </div>",
+      "text": "有一个数列，该数列的前 4 个数是： 1 4 7 10 ；\n请从键盘读入一个正整数 n ，请通过观察前 4 项的规律，输出 1 \\sim n 之间所有满足该规律的数字。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一行输入一个整数 <span class=\"katex math inline\">n</span> 。</p>\n</div>            </div>",
+      "text": "在一行输入一个整数 n 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出满足题目要求的整数，每行 <span class=\"katex math inline\">1</span> 个。</p>\n</div>            </div>",
+      "text": "输出满足题目要求的整数，每行 1 个。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n4\r\n7\r\n10</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\n                        \n                        \n                            输出\n                            1\r\n4\r\n7\r\n10"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10",
+      "output": "1\r\n4\r\n7\r\n10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "29187",
+    "通过人数": "22390",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:16"
+}

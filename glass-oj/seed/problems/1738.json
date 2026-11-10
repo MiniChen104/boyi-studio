@@ -1,0 +1,56 @@
+{
+  "id": "1738",
+  "title": "胜负对决",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1738",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一组数本来都是队友，但是一天它们在一个问题上出现分歧，于是他们分成了 <span class=\"katex math inline\">2</span> 派各自为政，第奇数个数分一队叫<code>KING</code>，该队的气势值为该队所有数的和。第偶数个数分另一队<code>WIN</code>，该队的气势值为该队所有数的和。</p>\n<p>请分别求出<code>KING</code>队和<code>WIN</code>队的气势值，并输出哪一队的气势值更高（如果两队气势值相同，也输出<code>KING</code>）？</p>\n<p>比如：有一组数为 <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">8</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">6</span> ，那么<code>KING</code>队气势值 =  <span class=\"katex math inline\">2 + 1 + 6 = 9</span> ，而<code>WIN</code>队气势值 =  <span class=\"katex math inline\">8 + 3 = 11</span> ，因此输出结果如下：</p>\n<p><code>KING</code>  <span class=\"katex math inline\">9</span> </p>\n<p><code>WIN</code>  <span class=\"katex math inline\">11</span> </p>\n<p><code>WIN</code></p>\n</div>            </div>",
+      "text": "有一组数本来都是队友，但是一天它们在一个问题上出现分歧，于是他们分成了 2 派各自为政，第奇数个数分一队叫KING，该队的气势值为该队所有数的和。第偶数个数分另一队WIN，该队的气势值为该队所有数的和。\n请分别求出KING队和WIN队的气势值，并输出哪一队的气势值更高（如果两队气势值相同，也输出KING）？\n比如：有一组数为 2 8 1 3 6 ，那么KING队气势值 =  2 + 1 + 6 = 9 ，而WIN队气势值 =  8 + 3 = 11 ，因此输出结果如下：\nKING  9 \nWIN  11 \nWIN"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入 <span class=\"katex math inline\">n</span> （ <span class=\"katex math inline\">n</span> 是 <span class=\"katex math inline\">1 \\sim 1000</span> 之间的整数）。</p>\n<p>第二行输入 <span class=\"katex math inline\">n</span> 个数（每个数都是 <span class=\"katex math inline\">1 \\sim 100</span> 之间的数）。</p>\n</div>            </div>",
+      "text": "第一行输入 n （ n 是 1 \\sim 1000 之间的整数）。\n第二行输入 n 个数（每个数都是 1 \\sim 100 之间的数）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行先输出队名<code>KING</code>，再空一格输出<code>KING</code>队的气势值。</p>\n<p>第二行先输出队名<code>WIN</code>，再空一格输出<code>WIN</code>队的气势值。</p>\n<p>第三行输出气势值更高的队名，如果两队气势值一样高，也输出<code>KING</code>。</p>\n</div>            </div>",
+      "text": "第一行先输出队名KING，再空一格输出KING队的气势值。\n第二行先输出队名WIN，再空一格输出WIN队的气势值。\n第三行输出气势值更高的队名，如果两队气势值一样高，也输出KING。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n1 2 3 4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>KING 9\r\nWIN 6\r\nKING</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n1 2 3 4 5\n                        \n                        \n                            输出\n                            KING 9\r\nWIN 6\r\nKING"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n1 2 3 4 5",
+      "output": "KING 9\r\nWIN 6\r\nKING"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "14080",
+    "通过人数": "6479",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:36"
+}

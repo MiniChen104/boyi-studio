@@ -1,0 +1,57 @@
+{
+  "id": "1753",
+  "title": "懒羊羊吃草",
+  "tags": [
+    "队列",
+    "优先队列"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1753",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><div class=\"content\">\n众所周知，懒羊羊是所有小羊里最贪吃的一只。然而，鲜为人知的是，懒羊羊也有存储粮食的习惯。而更让大家吃惊的事实是，我们的懒羊羊做事很有条理，每当他存储一份粮食时，他会专门拿出一个筐来存放。因此，他的仓库里有很多很多筐的青草。而我们的懒羊羊又是一个经常馋嘴的小羊，每当他想吃草时，就会从仓库里找出数量最少的一筐草，把它吃掉。可是懒羊羊因为草吃得太多了导致大脑运转缓慢，所以他不得不向你请求支援，帮他找出他应该吃数量为多少的青草。\n</div>\n<div class=\"content\">\n<br><p></p></div>\n</div>            </div>",
+      "text": "众所周知，懒羊羊是所有小羊里最贪吃的一只。然而，鲜为人知的是，懒羊羊也有存储粮食的习惯。而更让大家吃惊的事实是，我们的懒羊羊做事很有条理，每当他存储一份粮食时，他会专门拿出一个筐来存放。因此，他的仓库里有很多很多筐的青草。而我们的懒羊羊又是一个经常馋嘴的小羊，每当他想吃草时，就会从仓库里找出数量最少的一筐草，把它吃掉。可是懒羊羊因为草吃得太多了导致大脑运转缓慢，所以他不得不向你请求支援，帮他找出他应该吃数量为多少的青草。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为一个正整数n，表示懒羊羊一共进行了n次操作(2&lt;=n&lt;=1000000) <br>\n第二行至第n+1行每行表示一个懒羊羊的操作，当这行形式为 单独一个字符‘q’ \n时，表示懒羊羊肚子饿了，要吃掉仓库里当前数量最少的那份青草；当这行形式为一个字符‘i’和一个整数k时，表示懒羊羊将一份数量为k(1&lt;=k&lt;=maxlongint=2^31-1=2147483647，maxlongint是pascal语言中最大的长整型数，长整型数即longint)的青草存入了仓库，‘i’和k之间用空格隔开。\n 输入数据保证每次询问时仓库里都有草可吃且所有操作中懒羊羊至少会吃一次草。</p>\n</div>            </div>",
+      "text": "第一行为一个正整数n，表示懒羊羊一共进行了n次操作(2<=n<=1000000) \n第二行至第n+1行每行表示一个懒羊羊的操作，当这行形式为 单独一个字符‘q’ \n时，表示懒羊羊肚子饿了，要吃掉仓库里当前数量最少的那份青草；当这行形式为一个字符‘i’和一个整数k时，表示懒羊羊将一份数量为k(1<=k<=maxlongint=2^31-1=2147483647，maxlongint是pascal语言中最大的长整型数，长整型数即longint)的青草存入了仓库，‘i’和k之间用空格隔开。\n 输入数据保证每次询问时仓库里都有草可吃且所有操作中懒羊羊至少会吃一次草。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>每当输入为‘q’ 时， 输出懒羊羊当前吃掉的那份青草的数量是多少。</p>\n</div>            </div>",
+      "text": "每当输入为‘q’ 时， 输出懒羊羊当前吃掉的那份青草的数量是多少。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\ni 5\r\ni 2\r\nq\r\ni 9\r\nq</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2\r\n5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\ni 5\r\ni 2\r\nq\r\ni 9\r\nq\n                        \n                        \n                            输出\n                            2\r\n5"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>\n\t<strong>样例解释：</strong> \n</p>\n<p>\n\t共有5次操作，分别为懒羊羊存入数量为5的青草，存入数量为2的青草，吃掉当前数量最少的青草(2)，存入数量为9的青草，吃掉当前数量最少的青草(5)。\n</p>\n<p>\n\t<strong>数据规模：</strong> \n</p>\n<p>\n\t30%数据满足1&lt;=p&lt;=3000; <br></p><p>60%数据满足1&lt;=p&lt;=40000; <br>\n100%数据满足1&lt;=p&lt;=1000000 <br>\n对于使用turbo pascal的同学p太大时内存会不够，此时你可以用free pascal编译运行或在提交时修改定义数组范围的常量值。评测时使用free pascal编译。\n</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释： \n\n\n\t共有5次操作，分别为懒羊羊存入数量为5的青草，存入数量为2的青草，吃掉当前数量最少的青草(2)，存入数量为9的青草，吃掉当前数量最少的青草(5)。\n\n\n\t数据规模： \n\n\n\t30%数据满足1<=p<=3000; 60%数据满足1<=p<=40000; \n100%数据满足1<=p<=1000000 \n对于使用turbo pascal的同学p太大时内存会不够，此时你可以用free pascal编译运行或在提交时修改定义数组范围的常量值。评测时使用free pascal编译。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">队列</span><span class=\"label label-warning\">优先队列</span></span></p>\n</div>                </div>",
+      "text": "队列优先队列"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\ni 5\r\ni 2\r\nq\r\ni 9\r\nq",
+      "output": "2\r\n5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "1847",
+    "通过人数": "1500",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:23:48"
+}

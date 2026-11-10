@@ -1,0 +1,71 @@
+{
+  "id": "4923",
+  "title": "排序(sort)",
+  "tags": [
+    "市赛",
+    "常州2025",
+    "博弈论"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4923",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个长度为 <span class=\"katex math inline\">n</span> 的全排列，即 <span class=\"katex math inline\">1 \\sim n</span> 在全排列中各出现一次，小 Y 的目标是将该全排列按从小到大排好序，小 H 的目标是阻止小 Y 在有限步内排序。两人轮流操作，小 Y 可以交换任意两个位置上的数字，小 H 只能交换相邻两个位置上的数字。无论轮到谁操作，都不可以不操作。</p>\n<p>给定排列和先手，小 Y 想知道，他是否可以达成目标。</p>\n</div>            </div>",
+      "text": "给定一个长度为 n 的全排列，即 1 \\sim n 在全排列中各出现一次，小 Y 的目标是将该全排列按从小到大排好序，小 H 的目标是阻止小 Y 在有限步内排序。两人轮流操作，小 Y 可以交换任意两个位置上的数字，小 H 只能交换相邻两个位置上的数字。无论轮到谁操作，都不可以不操作。\n给定排列和先手，小 Y 想知道，他是否可以达成目标。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为一个正整数 <span class=\"katex math inline\">n</span>。</p>\n<p>第二行为一个字符 <code>Y</code> 或者 <code>H</code> 表示小 Y 还是小 H 是先手。</p>\n<p>第三行 <span class=\"katex math inline\">n</span> 个整数表示这个排列。</p>\n</div>            </div>",
+      "text": "第一行为一个正整数 n。\n第二行为一个字符 Y 或者 H 表示小 Y 还是小 H 是先手。\n第三行 n 个整数表示这个排列。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>若小 Y 可以达成目标，输出 &quot;<code>Win</code>&quot;，否则输出 &quot;<code>Lose</code>&quot;。</p>\n</div>            </div>",
+      "text": "若小 Y 可以达成目标，输出 \"Win\"，否则输出 \"Lose\"。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\nY\r\n2 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Win</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3\r\nH\r\n1 3 2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>Lose</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10\r\nH\r\n1 2 3 4 5 6 7 8 10 9</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>Lose</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\nY\r\n2 1\n                        \n                        \n                            输出\n                            Win\n                        \n\n                                                    \n                                输入\n                                3\r\nH\r\n1 3 2\n                            \n                            \n                                输出\n                                Lose\n                            \n                        \n                                                    \n                                输入\n                                10\r\nH\r\n1 2 3 4 5 6 7 8 10 9\n                            \n                            \n                                输出\n                                Lose"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>本题共有 <span class=\"katex math inline\">11</span> 个测试点，每个测试点 <span class=\"katex math inline\">10</span> 分。</p>\n<p>对于全部测试点：<span class=\"katex math inline\">2 \\le n \\le 100000</span>，保证一开始给定的排列一定不是有序的。</p>\n<p>对于测试点 <span class=\"katex math inline\">1</span> ： <span class=\"katex math inline\">n=2</span>。</p>\n<p>对于测试点 <span class=\"katex math inline\">2-4</span> ： <span class=\"katex math inline\">n=3</span>。</p>\n<p>对于测试的 <span class=\"katex math inline\">5-7</span> ：小 H 一定是先手</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n本题共有 11 个测试点，每个测试点 10 分。\n对于全部测试点：2 \\le n \\le 100000，保证一开始给定的排列一定不是有序的。\n对于测试点 1 ： n=2。\n对于测试点 2-4 ： n=3。\n对于测试的 5-7 ：小 H 一定是先手"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年常州“信息与未来”小学生编程比赛</p>\n</div>                </div>",
+      "text": "2025年常州“信息与未来”小学生编程比赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">常州2025</span><span class=\"label label-info\">博弈论</span></span></p>\n</div>                </div>",
+      "text": "市赛常州2025博弈论"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\nY\r\n2 1",
+      "output": "Win"
+    },
+    {
+      "input": "3\r\nH\r\n1 3 2",
+      "output": "Lose"
+    },
+    {
+      "input": "10\r\nH\r\n1 2 3 4 5 6 7 8 10 9",
+      "output": "Lose"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "20",
+    "通过人数": "4",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:09"
+}

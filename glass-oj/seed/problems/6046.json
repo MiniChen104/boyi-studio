@@ -1,0 +1,52 @@
+{
+  "id": "6046",
+  "title": "捡石头",
+  "tags": [
+    "信息素养大赛",
+    "23年小学组复赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6046",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小强在河边捡了 <span class=\"katex math inline\">2</span> 块漂亮的石头，他想再捡两块石头，让这 <span class=\"katex math inline\">4</span> 块石头的质量正好为 <span class=\"katex math inline\">30</span> 斤，并且新捡的两块石头的质量是介于前两块石头的质量之间的数字。（不能和前两块石头其中一块质量相等）</p>\n<p>请编程输出第 <span class=\"katex math inline\">3</span> 块和第 <span class=\"katex math inline\">4</span> 块石头的质量。注：每个石头的重量都是整数，如果找不到合适的石头，则输出 <code>0 0</code>。</p>\n</div>            </div>",
+      "text": "小强在河边捡了 2 块漂亮的石头，他想再捡两块石头，让这 4 块石头的质量正好为 30 斤，并且新捡的两块石头的质量是介于前两块石头的质量之间的数字。（不能和前两块石头其中一块质量相等）\n请编程输出第 3 块和第 4 块石头的质量。注：每个石头的重量都是整数，如果找不到合适的石头，则输出 0 0。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入 <span class=\"katex math inline\">2</span> 个数，数与数之间以空格间隔，表示 <span class=\"katex math inline\">2</span> 块石头的质量。</p>\n<p>其中第 <span class=\"katex math inline\">1</span> 个数不大于第 <span class=\"katex math inline\">2</span> 个数，且两个数都在 <span class=\"katex math inline\">[1, 30]</span> 的范围内。</p>\n</div>            </div>",
+      "text": "输入 2 个数，数与数之间以空格间隔，表示 2 块石头的质量。\n其中第 1 个数不大于第 2 个数，且两个数都在 [1, 30] 的范围内。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出表示第 <span class=\"katex math inline\">3</span>、<span class=\"katex math inline\">4</span> 块石头的质量的所有可能结果，每块石头质量的数字用空格隔开。</p>\n<p>多组结果时，按第 <span class=\"katex math inline\">3</span> 块石头质量从小到大排序分行输出。</p>\n</div>            </div>",
+      "text": "输出表示第 3、4 块石头的质量的所有可能结果，每块石头质量的数字用空格隔开。\n多组结果时，按第 3 块石头质量从小到大排序分行输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 11\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8 10\r\n9 9\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 11\r\n\n                        \n                        \n                            输出\n                            8 10\r\n9 9"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">信息素养大赛</span><span class=\"label label-warning\">23年小学组复赛</span></span></p>\n</div>                </div>",
+      "text": "信息素养大赛23年小学组复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 11\r\n",
+      "output": "8 10\r\n9 9\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "638",
+    "通过人数": "272",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:19"
+}

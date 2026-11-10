@@ -1,0 +1,56 @@
+{
+  "id": "1366",
+  "title": "平面分割问题",
+  "tags": [
+    "递推"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1366",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>设有 <span class=\"katex math inline\">n</span> 条封闭曲线画在平面上，而任何两条封闭曲线恰好相交于两点，且任何三条封闭曲线不相交于同一点，问这些封闭曲线把平面分割成的区域个数。  </p>\n<p><img src=\"https://assets.boyi.local/074a843b13d0db226ff01edd.png\"></p>\n</div>            </div>",
+      "text": "设有 n 条封闭曲线画在平面上，而任何两条封闭曲线恰好相交于两点，且任何三条封闭曲线不相交于同一点，问这些封闭曲线把平面分割成的区域个数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n \\le 10000</span>），代表封闭曲线的条数。</p>\n</div>            </div>",
+      "text": "一个整数 n（n \\le 10000），代表封闭曲线的条数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 条曲线分割区域的个数。</p>\n</div>            </div>",
+      "text": "n 条曲线分割区域的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递推</p>\n</div>                </div>",
+      "text": "递推"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递推</span></span></p>\n</div>                </div>",
+      "text": "递推"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "5500",
+    "通过人数": "3225",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:26"
+}

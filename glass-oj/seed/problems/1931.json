@@ -1,0 +1,57 @@
+{
+  "id": "1931",
+  "title": "Out of Hay S[USACO05MAR]",
+  "tags": [
+    "USACO",
+    "并查集"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1931",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Bessie计划调查 <span class=\"katex math inline\">N</span>（<span class=\"katex math inline\">2≤N≤2000</span>）个农场的干草情况，它从 <span class=\"katex math inline\">1</span> 号农场出发。农场之间总共有 <span class=\"katex math inline\">M</span>（<span class=\"katex math inline\">1≤M≤10^4</span>）条双向道路，所有道路的总长度不超过 <span class=\"katex math inline\">10^9</span>。</p>\n<p>有些农场之间存在着多条道路，所有的农场之间都是连通的。</p>\n<p>Bessie 希望计算出该图中最小生成树中的最长边的长度。</p>\n</div>            </div>",
+      "text": "Bessie计划调查 N（2≤N≤2000）个农场的干草情况，它从 1 号农场出发。农场之间总共有 M（1≤M≤10^4）条双向道路，所有道路的总长度不超过 10^9。\n有些农场之间存在着多条道路，所有的农场之间都是连通的。\nBessie 希望计算出该图中最小生成树中的最长边的长度。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个整数 <span class=\"katex math inline\">N,M</span> 。</p>\n<p>接下来 <span class=\"katex math inline\">M</span> 行，每行三个用空格隔开的整数 <span class=\"katex math inline\">A_i,B_i,L_i</span>，表示 <span class=\"katex math inline\">A_i</span>、<span class=\"katex math inline\">B_i</span> 之间有一条道路，长度为 <span class=\"katex math inline\">L_i</span>。</p>\n</div>            </div>",
+      "text": "第一行两个整数 N,M 。\n接下来 M 行，每行三个用空格隔开的整数 A_i,B_i,L_i，表示 A_i、B_i 之间有一条道路，长度为 L_i。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示最小生成树中的最长边的长度。</p>\n</div>            </div>",
+      "text": "一个整数，表示最小生成树中的最长边的长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3\r\n1 2 23\r\n2 3 1000\r\n1 3 43</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>43</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\r\n1 2 23\r\n2 3 1000\r\n1 3 43\n                        \n                        \n                            输出\n                            43"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO 并查集</p>\n</div>                </div>",
+      "text": "USACO 并查集"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">USACO</span><span class=\"label label-warning\">并查集</span></span></p>\n</div>                </div>",
+      "text": "USACO并查集"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3\r\n1 2 23\r\n2 3 1000\r\n1 3 43",
+      "output": "43"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1348",
+    "通过人数": "784",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:08"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "2305",
+  "title": "踩方格",
+  "tags": [
+    "电子学会等级考试",
+    "递推"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2305",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一个方格矩阵，矩阵边界在无穷远处。我们做如下假设：<br>\na.每走一步时，只能从当前方格移动一格，走到某个相邻的方格上；<br>\nb.走过的格子立即塌陷无法再走第二次<br>\nc.只能向北、东、西三个方向走；<br>\n请问：如果允许在方格矩阵上走n步，共有多少种不同方案。2种走法只要有一步不一样，即被认为是不同方案。</p>\n</div>            </div>",
+      "text": "有一个方格矩阵，矩阵边界在无穷远处。我们做如下假设：\na.每走一步时，只能从当前方格移动一格，走到某个相邻的方格上；\nb.走过的格子立即塌陷无法再走第二次\nc.只能向北、东、西三个方向走；\n请问：如果允许在方格矩阵上走n步，共有多少种不同方案。2种走法只要有一步不一样，即被认为是不同方案。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>允许在方格上行走的步数n（n&lt;=20）</p>\n</div>            </div>",
+      "text": "允许在方格上行走的步数n（n<=20）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>计算出的方案数量</p>\n</div>            </div>",
+      "text": "计算出的方案数量"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会三级 202103真题</p>\n</div>                </div>",
+      "text": "电子学会三级 202103真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span><span class=\"label label-warning\">递推</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试递推"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1656",
+    "通过人数": "984",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:59"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1160",
+  "title": "打折优惠",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1160",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>商场周末大优惠，规定凡购物超过 <span class=\"katex math inline\">100</span> 元时，超过 <span class=\"katex math inline\">100</span> 元那部分便可打 <span class=\"katex math inline\">9</span> 折。</p>\n<p>小雄同妈妈一起购买了一大批物品，你能帮他算出最终的应付款吗？</p>\n</div>            </div>",
+      "text": "商场周末大优惠，规定凡购物超过 100 元时，超过 100 元那部分便可打 9 折。\n小雄同妈妈一起购买了一大批物品，你能帮他算出最终的应付款吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">N</span> ，表示所买物品的个数。 （<span class=\"katex math inline\">N \\le   100</span>）</p>\n<p>第二行 <span class=\"katex math inline\">N</span> 个空格隔开的整数，表示 <span class=\"katex math inline\">N</span> 件物品要付的元数。</p>\n</div>            </div>",
+      "text": "第一行一个整数 N ，表示所买物品的个数。 （N \\le   100）\n第二行 N 个空格隔开的整数，表示 N 件物品要付的元数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>最终的应付款。（保留两位小数）</p>\n</div>            </div>",
+      "text": "最终的应付款。（保留两位小数）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n60 80 50 30 20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>226.00</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n60 80 50 30 20\n                        \n                        \n                            输出\n                            226.00"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n60 80 50 30 20",
+      "output": "226.00"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "26919",
+    "通过人数": "18308",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:15:36"
+}

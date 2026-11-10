@@ -1,0 +1,56 @@
+{
+  "id": "2013",
+  "title": "求概率",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2013",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>数学中有概率的概念。概率反映的是事件出现的可能性大小。设对某一随机现象进行了 <span class=\"katex math inline\">n</span> 次试验与观察，其中 <span class=\"katex math inline\">A</span> 事件出现了 <span class=\"katex math inline\">m</span> 次，即其出现的频率为 <span class=\"katex math inline\">m/n</span> 。</p>\n<p>比如：有一个字符串 <code>happy</code> ，那么该单词中字符 <code>a</code> 出现的概率<span class=\"katex math inline\"> = 1 / 5 = 0.2</span>，字符 <code>p</code> 出现的概率<span class=\"katex math inline\"> = 2 / 5 = 0.4</span> 。</p>\n<p>现给出 <span class=\"katex math inline\">n</span> 行，每行有一个字符和一个单词，求该字符在单词中出现的概率。</p>\n<p>注意：求字符出现的概率时，不区分大小写，也就是如果求字符 <code>P</code> 在 <code>happy</code> 中出现的概率，结算结果 <span class=\"katex math inline\">=  2 / 5 = 0.4</span> 。</p>\n</div>            </div>",
+      "text": "数学中有概率的概念。概率反映的是事件出现的可能性大小。设对某一随机现象进行了 n 次试验与观察，其中 A 事件出现了 m 次，即其出现的频率为 m/n 。\n比如：有一个字符串 happy ，那么该单词中字符 a 出现的概率 = 1 / 5 = 0.2，字符 p 出现的概率 = 2 / 5 = 0.4 。\n现给出 n 行，每行有一个字符和一个单词，求该字符在单词中出现的概率。\n注意：求字符出现的概率时，不区分大小写，也就是如果求字符 P 在 happy 中出现的概率，结算结果 =  2 / 5 = 0.4 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行是一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n \\le 200</span>），表示接下来有 <span class=\"katex math inline\">n</span> 组数据需要你来计算；</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行有一个字符和一个单词（单词长度<span class=\"katex math inline\"> \\le 500</span> ），字符和单词之间用空格隔开。</p>\n</div>            </div>",
+      "text": "第 1 行是一个整数 n（n \\le 200），表示接下来有 n 组数据需要你来计算；\n接下来 n 行，每行有一个字符和一个单词（单词长度 \\le 500 ），字符和单词之间用空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">n</span> 行，求出输入的 <span class=\"katex math inline\">n</span> 行数据中，每个字符在单词中出现的概率，结果保留 <span class=\"katex math inline\">5</span> 位小数。</p>\n</div>            </div>",
+      "text": "输出 n 行，求出输入的 n 行数据中，每个字符在单词中出现的概率，结果保留 5 位小数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\na apple\r\nc Candy\r\na banana</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0.20000\r\n0.20000\r\n0.50000</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\na apple\r\nc Candy\r\na banana\n                        \n                        \n                            输出\n                            0.20000\r\n0.20000\r\n0.50000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\na apple\r\nc Candy\r\na banana",
+      "output": "0.20000\r\n0.20000\r\n0.50000"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "700",
+    "通过人数": "404",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:27:19"
+}

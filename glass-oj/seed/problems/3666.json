@@ -1,0 +1,71 @@
+{
+  "id": "3666",
+  "title": "找因数",
+  "tags": [
+    "GESP一级",
+    "循环",
+    "24年3月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3666",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 A 最近刚刚学习了因数的概念，具体来说，如果一个正整数 <span class=\"katex math inline\">a</span> 可以被另一个正整数 <span class=\"katex math inline\">b</span> 整除，那么我们就说 <span class=\"katex math inline\">b</span> 是 <span class=\"katex math inline\">a</span> 的因数。</p>\n<p>请你帮忙写一个程序，从小到大输出正整数 <span class=\"katex math inline\">a</span> 的所有因数。</p>\n</div>            </div>",
+      "text": "小 A 最近刚刚学习了因数的概念，具体来说，如果一个正整数 a 可以被另一个正整数 b 整除，那么我们就说 b 是 a 的因数。\n请你帮忙写一个程序，从小到大输出正整数 a 的所有因数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行一个正整数 <span class=\"katex math inline\">a</span>。保证 <span class=\"katex math inline\">a \\leq 1000 </span>。</p>\n</div>            </div>",
+      "text": "输入一行一个正整数 a。保证 a \\leq 1000 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出若干行，为 <span class=\"katex math inline\">a</span> 的所有约数，从小到大排列。</p>\n</div>            </div>",
+      "text": "输出若干行，为 a 的所有约数，从小到大排列。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>6</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1\r\n2\r\n3\r\n6</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1\r\n2\r\n5\r\n10</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            1\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                6\n                            \n                            \n                                输出\n                                1\r\n2\r\n3\r\n6\n                            \n                        \n                                                    \n                                输入\n                                10\n                            \n                            \n                                输出\n                                1\r\n2\r\n5\r\n10"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>在常规程序中，输入、输出时提供提示是好习惯。但在本场考试中，由于系统限定，请不要在输入、输出中附带任何提示信息。</p>\n</div>\n\n                    \n                </div>",
+      "text": "在常规程序中，输入、输出时提供提示是好习惯。但在本场考试中，由于系统限定，请不要在输入、输出中附带任何提示信息。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP24年3月一级</p>\n</div>                </div>",
+      "text": "GESP24年3月一级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP一级</span><span class=\"label label-warning\">循环</span><span class=\"label label-info\">24年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP一级循环24年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1",
+      "output": "1"
+    },
+    {
+      "input": "6",
+      "output": "1\r\n2\r\n3\r\n6"
+    },
+    {
+      "input": "10",
+      "output": "1\r\n2\r\n5\r\n10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4847",
+    "通过人数": "3987",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:39"
+}

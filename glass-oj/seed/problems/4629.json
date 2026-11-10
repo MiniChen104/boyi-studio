@@ -1,0 +1,57 @@
+{
+  "id": "4629",
+  "title": "分发糖果",
+  "tags": [
+    "蓝桥杯STEMA",
+    "贪心"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4629",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 个学生站成一排，已知每名学生的考试成绩，老师要根据成绩按以下规则分发糖果：</p>\n<ul><li><span class=\"katex math inline\">1</span>、每个学生至少得到一个糖果；</li>\n<li><span class=\"katex math inline\">2</span>、相邻两个学生中成绩高的会获得更多的糖果；</li>\n<li><span class=\"katex math inline\">3</span>、相邻两个学生成绩即使相同，获得的糖果数量也可以不同。请计算出老师最少需要准备多少颗糖果？</li>\n</ul><p>例如：有 <span class=\"katex math inline\">3</span> 个学生，他们的考试成绩分别是 <span class=\"katex math inline\">70，50，80</span>，可以给第一个学生 <span class=\"katex math inline\">2</span> 颗糖果，给第二个学生 <span class=\"katex math inline\">1</span>颗糖果，给第三个学生 <span class=\"katex math inline\">2</span> 颗糖果，所以最少需要准备 <span class=\"katex math inline\">5</span> 颗糖果。</p>\n</div>            </div>",
+      "text": "n 个学生站成一排，已知每名学生的考试成绩，老师要根据成绩按以下规则分发糖果：\n1、每个学生至少得到一个糖果；\n2、相邻两个学生中成绩高的会获得更多的糖果；\n3、相邻两个学生成绩即使相同，获得的糖果数量也可以不同。请计算出老师最少需要准备多少颗糖果？\n例如：有 3 个学生，他们的考试成绩分别是 70，50，80，可以给第一个学生 2 颗糖果，给第二个学生 1颗糖果，给第三个学生 2 颗糖果，所以最少需要准备 5 颗糖果。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共两行第一行输入一个正整数 <span class=\"katex math inline\">n（1 \\le n \\le 20000</span>），表示学生人数;</p>\n<p>第二行输入 <span class=\"katex math inline\">n</span> 个整数（ <span class=\"katex math inline\">0 \\le </span> 整数<span class=\"katex math inline\"> \\le 100</span>），表示每个学生的考试成绩，整数之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "共两行第一行输入一个正整数 n（1 \\le n \\le 20000），表示学生人数;\n第二行输入 n 个整数（ 0 \\le  整数 \\le 100），表示每个学生的考试成绩，整数之间以一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示最少需要准备的糖果数量。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示最少需要准备的糖果数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n70 50 80</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n70 50 80\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（23年10月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（23年10月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">贪心</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n70 50 80",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "418",
+    "通过人数": "173",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:19"
+}

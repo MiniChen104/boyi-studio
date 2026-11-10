@@ -1,0 +1,56 @@
+{
+  "id": "2429",
+  "title": "幂次计算",
+  "tags": [
+    "迭代加深搜索"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2429",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从 <span class=\"katex math inline\">x</span> 开始，反复乘以 <span class=\"katex math inline\">x</span> ，我们可以用 <span class=\"katex math inline\">30</span> 次乘法计算得到<span class=\"katex math inline\">x^{31}</span>：</p>\n<p><span class=\"katex math inline\">x^2=x \\times x</span>，<span class=\"katex math inline\">x^3=x^2 \\times x</span>，<span class=\"katex math inline\">x^4=x^3 \\times x</span>，…，<span class=\"katex math inline\">x^{31}=x^{30} \\times x</span>。</p>\n<p>平方运算可以明显缩短乘法的计算次数。以下是 <span class=\"katex math inline\">8</span> 次计算得到 <span class=\"katex math inline\">x^{31}</span> 的算法：  </p>\n<p><span class=\"katex math inline\">x^2=x \\times x</span>，<span class=\"katex math inline\">x^3=x^2 \\times x</span>，<span class=\"katex math inline\">x^6=x^3 \\times x^3</span>，<span class=\"katex math inline\">x^7=x^6 \\times x</span>，<span class=\"katex math inline\">x^{14}=x^7 \\times x^7</span>，<span class=\"katex math inline\">x^{15}=x^{14} \\times x</span>，<span class=\"katex math inline\">x^{30}=x^{15} \\times x^{15}</span>，<span class=\"katex math inline\">x^{31}=x^{30} \\times x</span>。</p>\n<p>这不是计算<span class=\"katex math inline\">x^{31}</span>的最快方法。实际上有多种方法可以用 <span class=\"katex math inline\">7</span> 步运算得到结果。以下方法是其中之一：</p>\n<p><span class=\"katex math inline\">x^2=x \\times x</span>，<span class=\"katex math inline\">x^4=x^2 \\times x^2</span>，<span class=\"katex math inline\">x^8=x^4 \\times x^4</span>，<span class=\"katex math inline\">x^{10}=x^8 \\times x^2</span>，<span class=\"katex math inline\">x^{20}=x^{10} \\times x^{10}</span>，<span class=\"katex math inline\">x^{30}=x^{20} \\times x^{10}</span>，<span class=\"katex math inline\">x^{31}=x^{30} \\times x</span>。</p>\n<p>如果可以用除法，我们会发现有步数更少的方法计算出结果，比如：可以用六步运算（五次乘一次除）计算 <span class=\"katex math inline\">x^{31}</span>：</p>\n<p><span class=\"katex math inline\">x^2=x \\times x</span>，<span class=\"katex math inline\">x^4=x^2 \\times x^2</span>，<span class=\"katex math inline\">x^8=x^4 \\times x^4</span>，<span class=\"katex math inline\">x^{16}=x^8 \\times x^8</span>，<span class=\"katex math inline\">x^{32}=x^{16} \\times x^{16}</span>，<span class=\"katex math inline\">x^{31}=x^{32} \\div x</span>。</p>\n<p>这是计算<span class=\"katex math inline\">x^{31}</span>最有效的方法之一。</p>\n<p>你的任务是编写一个程序，通过对给定的正整数 <span class=\"katex math inline\">n</span> 进行从 <span class=\"katex math inline\">x</span> 开始的乘法和除法运算，找到计算出 <span class=\"katex math inline\">x^n</span> 的最少运算次数。计算中出现的乘和除的值应该是 <span class=\"katex math inline\">x</span> 的正整数幂。换句话说，<span class=\"katex math inline\">x^{−3}</span> 不应该出现。</p>\n</div>            </div>",
+      "text": "从 x 开始，反复乘以 x ，我们可以用 30 次乘法计算得到x^{31}：\nx^2=x \\times x，x^3=x^2 \\times x，x^4=x^3 \\times x，…，x^{31}=x^{30} \\times x。\n平方运算可以明显缩短乘法的计算次数。以下是 8 次计算得到 x^{31} 的算法：  \nx^2=x \\times x，x^3=x^2 \\times x，x^6=x^3 \\times x^3，x^7=x^6 \\times x，x^{14}=x^7 \\times x^7，x^{15}=x^{14} \\times x，x^{30}=x^{15} \\times x^{15}，x^{31}=x^{30} \\times x。\n这不是计算x^{31}的最快方法。实际上有多种方法可以用 7 步运算得到结果。以下方法是其中之一：\nx^2=x \\times x，x^4=x^2 \\times x^2，x^8=x^4 \\times x^4，x^{10}=x^8 \\times x^2，x^{20}=x^{10} \\times x^{10}，x^{30}=x^{20} \\times x^{10}，x^{31}=x^{30} \\times x。\n如果可以用除法，我们会发现有步数更少的方法计算出结果，比如：可以用六步运算（五次乘一次除）计算 x^{31}：\nx^2=x \\times x，x^4=x^2 \\times x^2，x^8=x^4 \\times x^4，x^{16}=x^8 \\times x^8，x^{32}=x^{16} \\times x^{16}，x^{31}=x^{32} \\div x。\n这是计算x^{31}最有效的方法之一。\n你的任务是编写一个程序，通过对给定的正整数 n 进行从 x 开始的乘法和除法运算，找到计算出 x^n 的最少运算次数。计算中出现的乘和除的值应该是 x 的正整数幂。换句话说，x^{−3} 不应该出现。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含一个或多个测试数据（不超过 <span class=\"katex math inline\">20</span> 组），每行包含一个整数 <span class=\"katex math inline\">n</span> 。</p>\n<p><span class=\"katex math inline\">n</span> 为正整数且小于或等于 <span class=\"katex math inline\">1000</span>，输入 <span class=\"katex math inline\">0</span> 表示测试数据的读入结束。</p>\n</div>            </div>",
+      "text": "输入包含一个或多个测试数据（不超过 20 组），每行包含一个整数 n 。\nn 为正整数且小于或等于 1000，输入 0 表示测试数据的读入结束。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出计算到 <span class=\"katex math inline\">x</span><sup><span class=\"katex math inline\">n</span></sup> 所需的最小乘法或除法计算总次数，每个输出占 <span class=\"katex math inline\">1</span> 行。</p>\n</div>            </div>",
+      "text": "输出计算到 xn 所需的最小乘法或除法计算总次数，每个输出占 1 行。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1\r\n31\r\n70\r\n91\r\n473\r\n512\r\n811\r\n953\r\n0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0\r\n6\r\n8\r\n9\r\n11\r\n9\r\n13\r\n12</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\r\n31\r\n70\r\n91\r\n473\r\n512\r\n811\r\n953\r\n0\n                        \n                        \n                            输出\n                            0\r\n6\r\n8\r\n9\r\n11\r\n9\r\n13\r\n12"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>POJ</p>\n</div>                </div>",
+      "text": "POJ"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">迭代加深搜索</span></span></p>\n</div>                </div>",
+      "text": "迭代加深搜索"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1\r\n31\r\n70\r\n91\r\n473\r\n512\r\n811\r\n953\r\n0",
+      "output": "0\r\n6\r\n8\r\n9\r\n11\r\n9\r\n13\r\n12"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "619",
+    "通过人数": "434",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:16"
+}

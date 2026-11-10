@@ -1,0 +1,56 @@
+{
+  "id": "2312",
+  "title": "数对",
+  "tags": [
+    "电子学会等级考试"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2312",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定2到15个不同的正整数，你的任务是计算这些数里面有多少个数对满足：数对中一个数是另一个数的两倍。 比如给定1 4 3 2 9 7 18 22，得到的答案是3，因为2是1的两倍，4是2的两倍，18是9的两倍。</p>\n</div>            </div>",
+      "text": "给定2到15个不同的正整数，你的任务是计算这些数里面有多少个数对满足：数对中一个数是另一个数的两倍。 比如给定1 4 3 2 9 7 18 22，得到的答案是3，因为2是1的两倍，4是2的两倍，18是9的两倍。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，给出2到15个两两不同且小于100的正整数。最后用0表示输入结束。</p>\n</div>            </div>",
+      "text": "一行，给出2到15个两两不同且小于100的正整数。最后用0表示输入结束。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，即有多少个数对满足其中一个数是另一个数的两倍。</p>\n</div>            </div>",
+      "text": "一个整数，即有多少个数对满足其中一个数是另一个数的两倍。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 4 3 2 9 7 18 22 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 4 3 2 9 7 18 22 0\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会三级 202106真题</p>\n</div>                </div>",
+      "text": "电子学会三级 202106真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 4 3 2 9 7 18 22 0",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "308",
+    "通过人数": "203",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:04"
+}

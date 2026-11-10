@@ -1,0 +1,72 @@
+{
+  "id": "5868",
+  "title": "异或和（xor） [CSP-J 2025]",
+  "tags": [
+    "CSP-J 2025",
+    "贪心",
+    "位运算",
+    "前缀和"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/5868",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 R 有一个长度为 <span class=\"katex math inline\">n</span> 的非负整数序列 <span class=\"katex math inline\">a_1, a_2, \\dots , a_n</span>。定义一个区间 <span class=\"katex math inline\">[l, r]</span> (<span class=\"katex math inline\">1 \\le l  \\le r \\le n</span>) 的权值为 <span class=\"katex math inline\">a_l, a_{l+1}, \\dots , a_r </span> 的二进制按位异或和，即 <span class=\"katex math inline\">a_l ⊕ a_{l+1} ⊕ \\dots ⊕ a_r</span>，其中 ⊕ 表示二进制按位异或。</p>\n<p>小 X 给了小 R 一个非负整数 <span class=\"katex math inline\">k</span>。小 X 希望小 R 选择序列中尽可能多的不相交的区间，使得每个区间的权值均为 <span class=\"katex math inline\">k</span>。两个区间 <span class=\"katex math inline\">[l_1, r_1]</span>, <span class=\"katex math inline\">[l_2, r_2]</span> 相交当且仅当两个区间同时包含至少一个相同的下标，即存在 <span class=\"katex math inline\">1 \\le i \\le n</span> 使得 <span class=\"katex math inline\">l_1 \\le i \\le r_1</span> 且 <span class=\"katex math inline\">l_2 \\le i \\le r_2</span>。</p>\n<p>例如，对于序列 <span class=\"katex math inline\">[2, 1, 0, 3]</span>，若 <span class=\"katex math inline\">k = 2</span>，则小 R 可以选择区间 <span class=\"katex math inline\">[1, 1]</span> 和区间 <span class=\"katex math inline\">[2, 4]</span>，权值分别为 <span class=\"katex math inline\">2</span> 和 <span class=\"katex math inline\">1 ⊕ 0 ⊕ 3 = 2</span>；若 <span class=\"katex math inline\">k = 3</span>，则小 R 可以选择区间 <span class=\"katex math inline\">[1, 2]</span> 和区间 <span class=\"katex math inline\">[4, 4]</span>，权值分别为 <span class=\"katex math inline\">1 ⊕ 2 = 3</span> 和 <span class=\"katex math inline\">3</span>。</p>\n<p>你需要帮助小 R 求出他能选出的区间数量的最大值。</p>\n</div>            </div>",
+      "text": "小 R 有一个长度为 n 的非负整数序列 a_1, a_2, \\dots , a_n。定义一个区间 [l, r] (1 \\le l  \\le r \\le n) 的权值为 a_l, a_{l+1}, \\dots , a_r  的二进制按位异或和，即 a_l ⊕ a_{l+1} ⊕ \\dots ⊕ a_r，其中 ⊕ 表示二进制按位异或。\n小 X 给了小 R 一个非负整数 k。小 X 希望小 R 选择序列中尽可能多的不相交的区间，使得每个区间的权值均为 k。两个区间 [l_1, r_1], [l_2, r_2] 相交当且仅当两个区间同时包含至少一个相同的下标，即存在 1 \\le i \\le n 使得 l_1 \\le i \\le r_1 且 l_2 \\le i \\le r_2。\n例如，对于序列 [2, 1, 0, 3]，若 k = 2，则小 R 可以选择区间 [1, 1] 和区间 [2, 4]，权值分别为 2 和 1 ⊕ 0 ⊕ 3 = 2；若 k = 3，则小 R 可以选择区间 [1, 2] 和区间 [4, 4]，权值分别为 1 ⊕ 2 = 3 和 3。\n你需要帮助小 R 求出他能选出的区间数量的最大值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含两个非负整数 <span class=\"katex math inline\">n</span>, <span class=\"katex math inline\">k</span>，分别表示小 R 的序列长度和小 X 给小 R 的非负整数。</p>\n<p>输入的第二行包含 <span class=\"katex math inline\">n</span> 个非负整数 <span class=\"katex math inline\">a_1, a_2, \\dots , a_n</span>，表示小 R 的序列。</p>\n</div>            </div>",
+      "text": "输入的第一行包含两个非负整数 n, k，分别表示小 R 的序列长度和小 X 给小 R 的非负整数。\n输入的第二行包含 n 个非负整数 a_1, a_2, \\dots , a_n，表示小 R 的序列。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个非负整数，表示小 R 能选出的区间数量的最大值。</p>\n</div>            </div>",
+      "text": "输出一行一个非负整数，表示小 R 能选出的区间数量的最大值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 2\r\n2 1 0 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4 3\r\n2 1 0 3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4 0\r\n2 1 0 3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            4 2\r\n2 1 0 3\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                4 3\r\n2 1 0 3\n                            \n                            \n                                输出\n                                2\n                            \n                        \n                                                    \n                                输入\n                                4 0\r\n2 1 0 3\n                            \n                            \n                                输出\n                                1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 解释】</h4>\n<p>小 R 可以选择区间 <span class=\"katex math inline\">[1, 1]</span> 和区间 <span class=\"katex math inline\">[2, 4]</span>，异或和分别为 <span class=\"katex math inline\">2</span> 和 <span class=\"katex math inline\">1 ⊕ 0 ⊕ 3 = 2</span>。可以证明，小 R 能选出的区间数量的最大值为 <span class=\"katex math inline\">2</span>。</p>\n<h4>【样例 2 解释】</h4>\n<p>小 R 可以选择区间 <span class=\"katex math inline\">[1, 2]</span> 和区间 <span class=\"katex math inline\">[4, 4]</span>，异或和分别为 <span class=\"katex math inline\">1 ⊕ 2 = 3</span> 和 <span class=\"katex math inline\">3</span>。可以证明，小R 能选出的区间数量的最大值为 <span class=\"katex math inline\">2</span>。</p>\n<h4>【样例 3 解释】</h4>\n<p>小 R 可以选择区间 <span class=\"katex math inline\">[3, 3]</span>，异或和为 <span class=\"katex math inline\">0</span>。可以证明，小 R 能选出的区间数量的最大值为 <span class=\"katex math inline\">1</span>。注意：小 R 不能同时选择区间 <span class=\"katex math inline\">[3, 3]</span> 和区间 <span class=\"katex math inline\">[1, 4]</span>，因为这两个区间同时包含下标 <span class=\"katex math inline\">3</span>。</p>\n<h4>【样例 4】</h4>\n<p>见选手目录下的 xor/xor4.in 与 xor/xor4.ans。</p>\n<p>该样例满足测试点 <span class=\"katex math inline\">4</span>,<span class=\"katex math inline\">5</span> 的约束条件。</p>\n<h4>【样例 5】</h4>\n<p>见选手目录下的 xor/xor5.in 与 xor/xor5.ans。</p>\n<p>该样例满足测试点 <span class=\"katex math inline\">9</span>,<span class=\"katex math inline\">10</span> 的约束条件。</p>\n<h4>【样例 6】</h4>\n<p>见选手目录下的 xor/xor6.in 与 xor/xor6.ans。</p>\n<p>该样例满足测试点 <span class=\"katex math inline\">14</span>,<span class=\"katex math inline\">15</span> 的约束条件。</p>\n<h4>【数据范围】</h4>\n<p>对于所有测试数据，保证：</p>\n<ul><li><span class=\"katex math inline\">1 \\le n \\le 5 \\times 10^5</span>，<span class=\"katex math inline\">0 \\le k \\lt 2^{20}</span>；</li>\n<li>对于所有 <span class=\"katex math inline\">1 \\le i \\le n</span>，均有 <span class=\"katex math inline\">0 \\le a_i \\lt 2^{20}</span>。</li>\n</ul><table><tr><th>测试点编号</th>\n\t\t<th><span class=\"katex math inline\">n \\le </span></th>\n\t\t<th><span class=\"katex math inline\">k</span></th>\n\t\t<th>特殊性质</th>\n\t</tr><tr><td><span class=\"katex math inline\">1</span></td>\n\t\t<td><span class=\"katex math inline\">2</span></td>\n\t\t<td><span class=\"katex math inline\">=0</span></td>\n\t\t<td>A</td>\n\t</tr><tr><td><span class=\"katex math inline\">2</span></td>\n\t\t<td><span class=\"katex math inline\">10</span></td>\n\t\t<td><span class=\"katex math inline\">\\le 1</span></td>\n\t\t<td>B</td>\n\t</tr><tr><td><span class=\"katex math inline\">3</span></td>\n\t\t<td><span class=\"katex math inline\">10^2</span></td>\n\t\t<td><span class=\"katex math inline\">=0</span></td>\n\t\t<td>A</td>\n\t</tr><tr><td><span class=\"katex math inline\">4,5</span></td>\n\t\t<td><span class=\"katex math inline\">\\le 1</span></td>\n\t\t<td>B</td>\n\t</tr><tr><td><span class=\"katex math inline\">6 \\sim 8</span></td>\n\t\t<td><span class=\"katex math inline\">\\le 255</span></td>\n\t\t<td>C</td>\n\t</tr><tr><td><span class=\"katex math inline\">9,10</span></td>\n\t\t<td><span class=\"katex math inline\">10^3</span></td>\n\t</tr><tr><td><span class=\"katex math inline\">11,12</span></td>\n\t\t<td><span class=\"katex math inline\">\\lt2^{20}</span></td>\n\t\t<td>无</td>\n\t</tr><tr><td><span class=\"katex math inline\">13</span></td>\n\t\t<td><span class=\"katex math inline\">2 \\times 10^5</span></td>\n\t\t<td><span class=\"katex math inline\">\\le 1</span></td>\n\t\t<td>B</td>\n\t</tr><tr><td><span class=\"katex math inline\">14,15</span></td>\n\t\t<td><span class=\"katex math inline\">\\le 255</span></td>\n\t\t<td>C</td>\n\t</tr><tr><td><span class=\"katex math inline\">16</span></td>\n\t\t<td><span class=\"katex math inline\">\\lt2^{20}</span></td>\n\t\t<td>无</td>\n\t</tr><tr><td><span class=\"katex math inline\">17</span></td>\n\t\t<td><span class=\"katex math inline\">5 \\times 10^5</span></td>\n\t\t<td><span class=\"katex math inline\">\\le 255</span></td>\n\t\t<td>C</td>\n\t</tr><tr><td><span class=\"katex math inline\">18 \\sim 20</span></td>\n\t\t<td><span class=\"katex math inline\">\\lt 2^{20}</span></td>\n\t\t<td>无</td>\n\t</tr></table><p>特殊性质 <span class=\"katex math inline\">A</span>：对于所有 <span class=\"katex math inline\">1 \\le i \\le n</span>，均有 <span class=\"katex math inline\">a_i = 1</span>。</p>\n<p>特殊性质 <span class=\"katex math inline\">B</span>：对于所有 <span class=\"katex math inline\">1 \\le i \\le n</span>，均有 <span class=\"katex math inline\">0 \\le a_i \\le 1</span>。</p>\n<p>特殊性质 <span class=\"katex math inline\">C</span>：对于所有 <span class=\"katex math inline\">1 \\le i \\le n</span>，均有 <span class=\"katex math inline\">0 \\le a_i \\le 255</span>。</p>\n</div>\n\n                                            <p>\n                            <h4><b>附件下载</b></h4>\n                        </p>\n                        <p>\n                            \n                                xor.zip                            \n                            (240.24 KB)\n                        </p>\n                    \n                </div>",
+      "text": "【样例 1 解释】\n小 R 可以选择区间 [1, 1] 和区间 [2, 4]，异或和分别为 2 和 1 ⊕ 0 ⊕ 3 = 2。可以证明，小 R 能选出的区间数量的最大值为 2。\n【样例 2 解释】\n小 R 可以选择区间 [1, 2] 和区间 [4, 4]，异或和分别为 1 ⊕ 2 = 3 和 3。可以证明，小R 能选出的区间数量的最大值为 2。\n【样例 3 解释】\n小 R 可以选择区间 [3, 3]，异或和为 0。可以证明，小 R 能选出的区间数量的最大值为 1。注意：小 R 不能同时选择区间 [3, 3] 和区间 [1, 4]，因为这两个区间同时包含下标 3。\n【样例 4】\n见选手目录下的 xor/xor4.in 与 xor/xor4.ans。\n该样例满足测试点 4,5 的约束条件。\n【样例 5】\n见选手目录下的 xor/xor5.in 与 xor/xor5.ans。\n该样例满足测试点 9,10 的约束条件。\n【样例 6】\n见选手目录下的 xor/xor6.in 与 xor/xor6.ans。\n该样例满足测试点 14,15 的约束条件。\n【数据范围】\n对于所有测试数据，保证：\n1 \\le n \\le 5 \\times 10^5，0 \\le k \\lt 2^{20}；\n对于所有 1 \\le i \\le n，均有 0 \\le a_i \\lt 2^{20}。\n测试点编号\n\t\tn \\le \n\t\tk\n\t\t特殊性质\n\t1\n\t\t2\n\t\t=0\n\t\tA\n\t2\n\t\t10\n\t\t\\le 1\n\t\tB\n\t3\n\t\t10^2\n\t\t=0\n\t\tA\n\t4,5\n\t\t\\le 1\n\t\tB\n\t6 \\sim 8\n\t\t\\le 255\n\t\tC\n\t9,10\n\t\t10^3\n\t11,12\n\t\t\\lt2^{20}\n\t\t无\n\t13\n\t\t2 \\times 10^5\n\t\t\\le 1\n\t\tB\n\t14,15\n\t\t\\le 255\n\t\tC\n\t16\n\t\t\\lt2^{20}\n\t\t无\n\t17\n\t\t5 \\times 10^5\n\t\t\\le 255\n\t\tC\n\t18 \\sim 20\n\t\t\\lt 2^{20}\n\t\t无\n\t特殊性质 A：对于所有 1 \\le i \\le n，均有 a_i = 1。\n特殊性质 B：对于所有 1 \\le i \\le n，均有 0 \\le a_i \\le 1。\n特殊性质 C：对于所有 1 \\le i \\le n，均有 0 \\le a_i \\le 255。\n\n\n                                            \n                            附件下载\n                        \n                        \n                            \n                                xor.zip                            \n                            (240.24 KB)"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>CSP-J/S 2025 第二轮认证</p>\n</div>                </div>",
+      "text": "CSP-J/S 2025 第二轮认证"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">CSP-J 2025</span><span class=\"label label-warning\">贪心</span><span class=\"label label-info\">位运算</span><span class=\"label label-danger\">前缀和</span></span></p>\n</div>                </div>",
+      "text": "CSP-J 2025贪心位运算前缀和"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 2\r\n2 1 0 3",
+      "output": "2"
+    },
+    {
+      "input": "4 3\r\n2 1 0 3",
+      "output": "2"
+    },
+    {
+      "input": "4 0\r\n2 1 0 3",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "831",
+    "通过人数": "322",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:53"
+}

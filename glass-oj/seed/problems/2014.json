@@ -1,0 +1,61 @@
+{
+  "id": "2014",
+  "title": "镜像字符串",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2014",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>大家都知道，镜子能把内容左右颠倒，比如，你拿着一个单词 <code>apple</code> ，用它的最后侧的字符 <code>e</code> 贴着镜子，看到的字符串一定是 <code>elppa</code> ，我们把颠倒后的单词，称之为镜像单词。</p>\n<p>现在有 <span class=\"katex math inline\">n</span> 个字符串，每个字符串中包含了若干被镜像的单词，请你编程将这些单词恢复原状。</p>\n<p>请注意，不是整个字符串“颠倒”了，而是字符串中的每个单词“颠倒了”。</p>\n<p>比如：有如下字符串 <code>olleH kcaJ</code> ，这个字符串就包含了 <span class=\"katex math inline\">2</span> 个被“颠倒”的单词，将这两个单词恢复原状，结果应该是 <code>Hello Jack</code> 。</p>\n</div>            </div>",
+      "text": "大家都知道，镜子能把内容左右颠倒，比如，你拿着一个单词 apple ，用它的最后侧的字符 e 贴着镜子，看到的字符串一定是 elppa ，我们把颠倒后的单词，称之为镜像单词。\n现在有 n 个字符串，每个字符串中包含了若干被镜像的单词，请你编程将这些单词恢复原状。\n请注意，不是整个字符串“颠倒”了，而是字符串中的每个单词“颠倒了”。\n比如：有如下字符串 olleH kcaJ ，这个字符串就包含了 2 个被“颠倒”的单词，将这两个单词恢复原状，结果应该是 Hello Jack 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行有一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n \\le 500</span>）表示接下来有 <span class=\"katex math inline\">n</span> 行字符串需要我们来处理。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行有一个字符串，字符串中包含了若干被“颠倒”的单词，单词之间使用一个或多个空格分隔。（一行最多有 <span class=\"katex math inline\">1000</span> 个字符）</p>\n</div>            </div>",
+      "text": "第 1 行有一个整数 n（n \\le 500）表示接下来有 n 行字符串需要我们来处理。\n接下来 n 行，每行有一个字符串，字符串中包含了若干被“颠倒”的单词，单词之间使用一个或多个空格分隔。（一行最多有 1000 个字符）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">n</span> 行，每行表示对输入每行字符串处理的结果。</p>\n</div>            </div>",
+      "text": "输出 n 行，每行表示对输入每行字符串处理的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\nolleh !dlrow\r\nI ekil .bulcmca\r\nI evol .mca</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>hello world!\r\nI like acmclub.\r\nI love acm.</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\nolleh !dlrow\r\nI ekil .bulcmca\r\nI evol .mca\n                        \n                        \n                            输出\n                            hello world!\r\nI like acmclub.\r\nI love acm."
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>请注意</strong></p>\n<p>C++如果要先cin一个整数，再getline一个字符串，要注意在cin之后添加getchar()来读掉整数后多余的换行符！</p>\n<pre><code>int n;\nstring s;\ncin&gt;&gt;n;\ngetchar();//读掉n后面多余的换行符 \ngetline(cin,s);\ncout&lt;&lt;n&lt;&lt;endl&lt;&lt;s;\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "请注意\nC++如果要先cin一个整数，再getline一个字符串，要注意在cin之后添加getchar()来读掉整数后多余的换行符！\nint n;\nstring s;\ncin>>n;\ngetchar();//读掉n后面多余的换行符 \ngetline(cin,s);\ncout<<n<<endl<<s;"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\nolleh !dlrow\r\nI ekil .bulcmca\r\nI evol .mca",
+      "output": "hello world!\r\nI like acmclub.\r\nI love acm."
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "829",
+    "通过人数": "365",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:19"
+}

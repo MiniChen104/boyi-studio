@@ -1,0 +1,56 @@
+{
+  "id": "1908",
+  "title": "伐木工",
+  "tags": [
+    "二分答案"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1908",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>伐木工人米尔科需要砍倒 <span class=\"katex math inline\">M</span> 米长的木材。这是一个对米尔科来说很容易的工作，因为他有一个漂亮的新伐木机，可以像野火一样砍倒森林。不过，米尔科只被允许砍倒单行树木。</p>\n<p>米尔科的伐木机工作过程如下：米尔科设置一个高度参数 <span class=\"katex math inline\">H</span>（米），伐木机升起一个巨大的锯片到高度 <span class=\"katex math inline\">H</span>，并锯掉所有的树比 <span class=\"katex math inline\">H</span> 高的部分（当然，树木不高于 <span class=\"katex math inline\">H</span> 米的部分保持不变）。米尔科就得到树木被锯下的部分。</p>\n<p>例如，如果一行树的高度分别为 <span class=\"katex math inline\">20</span>，<span class=\"katex math inline\">15</span>，<span class=\"katex math inline\">10</span> 和 <span class=\"katex math inline\">17</span> ，米尔科把锯片升到 <span class=\"katex math inline\">15</span> 米的高度，切割后树木剩下的高度将是 <span class=\"katex math inline\">15</span>，<span class=\"katex math inline\">15</span>，<span class=\"katex math inline\">10</span> 和 <span class=\"katex math inline\">15</span>，而米尔科将从第 <span class=\"katex math inline\">1</span> 棵树得到 <span class=\"katex math inline\">5</span> 米，从第 <span class=\"katex math inline\">4</span> 棵树得到 <span class=\"katex math inline\">2</span> 米，共得到 <span class=\"katex math inline\">7</span> 米木材。</p>\n<p>米尔科非常关注生态保护，所以他不会砍掉过多的木材。这正是他为什么尽可能高地设定伐木机锯片的原因。帮助米尔科找到伐木机锯片的最大的整数高度 <span class=\"katex math inline\">H</span> ，使得他能得到木材至少为 <span class=\"katex math inline\">M</span> 米。换句话说，如果再升高 <span class=\"katex math inline\">1</span>米，则他将得不到 <span class=\"katex math inline\">M</span> 米木材。</p>\n</div>            </div>",
+      "text": "伐木工人米尔科需要砍倒 M 米长的木材。这是一个对米尔科来说很容易的工作，因为他有一个漂亮的新伐木机，可以像野火一样砍倒森林。不过，米尔科只被允许砍倒单行树木。\n米尔科的伐木机工作过程如下：米尔科设置一个高度参数 H（米），伐木机升起一个巨大的锯片到高度 H，并锯掉所有的树比 H 高的部分（当然，树木不高于 H 米的部分保持不变）。米尔科就得到树木被锯下的部分。\n例如，如果一行树的高度分别为 20，15，10 和 17 ，米尔科把锯片升到 15 米的高度，切割后树木剩下的高度将是 15，15，10 和 15，而米尔科将从第 1 棵树得到 5 米，从第 4 棵树得到 2 米，共得到 7 米木材。\n米尔科非常关注生态保护，所以他不会砍掉过多的木材。这正是他为什么尽可能高地设定伐木机锯片的原因。帮助米尔科找到伐木机锯片的最大的整数高度 H ，使得他能得到木材至少为 M 米。换句话说，如果再升高 1米，则他将得不到 M 米木材。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行：<span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">M</span>，<span class=\"katex math inline\">N</span> 表示树木的数量（<span class=\"katex math inline\">1 \\le N \\le 10^6</span>），<span class=\"katex math inline\">M</span> 表示需要的木材总长度（<span class=\"katex math inline\">1 \\le M \\le 2 \\times 10^9</span>）。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行：<span class=\"katex math inline\">N</span> 个整数表示每棵树的高度，值均不超过 <span class=\"katex math inline\">10^9</span>。所有木材长度之和大于 <span class=\"katex math inline\">M</span> ，因此必有解。</p>\n</div>            </div>",
+      "text": "第 1 行：2 个整数 N 和 M，N 表示树木的数量（1 \\le N \\le 10^6），M 表示需要的木材总长度（1 \\le M \\le 2 \\times 10^9）。\n第 2 行：N 个整数表示每棵树的高度，值均不超过 10^9。所有木材长度之和大于 M ，因此必有解。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">1</span> 个整数，表示砍树的最高高度。</p>\n</div>            </div>",
+      "text": "1 个整数，表示砍树的最高高度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 20\r\n4 42 40 26 46</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>36</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 20\r\n4 42 40 26 46\n                        \n                        \n                            输出\n                            36"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二分答案</p>\n</div>                </div>",
+      "text": "二分答案"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二分答案</span></span></p>\n</div>                </div>",
+      "text": "二分答案"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 20\r\n4 42 40 26 46",
+      "output": "36"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "12362",
+    "通过人数": "5895",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:48"
+}

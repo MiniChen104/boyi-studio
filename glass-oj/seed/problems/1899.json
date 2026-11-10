@@ -1,0 +1,57 @@
+{
+  "id": "1899",
+  "title": "最满意的方案",
+  "tags": [
+    "数组问题",
+    "二分"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1899",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>高考结束了，同学们要开始了紧张的填写志愿的过程，大家希望找一个自己最满意的大学填报方案，请你编程帮忙实现。\n现有 <span class=\"katex math inline\">m</span> (<span class=\"katex math inline\">m≤100000</span>) 所学校，每所学校预计分数线是 <span class=\"katex math inline\">a_i</span> (<span class=\"katex math inline\">a_i≤10^6</span>) 。有 <span class=\"katex math inline\">n</span>(<span class=\"katex math inline\">n≤100000</span>) 位学生，估分分别为 <span class=\"katex math inline\">b_i</span> (<span class=\"katex math inline\">b_i≤10^6</span>)。</p>\n<p>根据 <span class=\"katex math inline\">n</span> 位学生的估分情况，分别给每位学生推荐一所学校，要求学校的预计分数线和学生的估分相差最小（可高可低，毕竟是估分嘛），这个最小值为不满意度。求所有学生不满意度和的最小值。</p>\n</div>            </div>",
+      "text": "高考结束了，同学们要开始了紧张的填写志愿的过程，大家希望找一个自己最满意的大学填报方案，请你编程帮忙实现。\n现有 m (m≤100000) 所学校，每所学校预计分数线是 a_i (a_i≤10^6) 。有 n(n≤100000) 位学生，估分分别为 b_i (b_i≤10^6)。\n根据 n 位学生的估分情况，分别给每位学生推荐一所学校，要求学校的预计分数线和学生的估分相差最小（可高可低，毕竟是估分嘛），这个最小值为不满意度。求所有学生不满意度和的最小值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行读入两个整数 <span class=\"katex math inline\">m,n</span>，<span class=\"katex math inline\">m</span> 表示学校数， <span class=\"katex math inline\">n</span> 表示学生数。</p>\n<p>第二行共有 <span class=\"katex math inline\">m</span> 个数，表示 <span class=\"katex math inline\">m</span> 个学校的预计录取分数。</p>\n<p>第三行有 <span class=\"katex math inline\">n</span> 个数，表示 <span class=\"katex math inline\">n</span> 个学生的估分成绩。</p>\n</div>            </div>",
+      "text": "第一行读入两个整数 m,n，m 表示学校数， n 表示学生数。\n第二行共有 m 个数，表示 m 个学校的预计录取分数。\n第三行有 n 个数，表示 n 个学生的估分成绩。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，为最小的不满意度之和。（数据保证计算结果<span class=\"katex math inline\">≤10^9</span>）</p>\n</div>            </div>",
+      "text": "一行，为最小的不满意度之和。（数据保证计算结果≤10^9）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 3\r\n513 598 567 689\r\n500 600 550</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>32</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 3\r\n513 598 567 689\r\n500 600 550\n                        \n                        \n                            输出\n                            32"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题 二分</p>\n</div>                </div>",
+      "text": "数组问题 二分"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span><span class=\"label label-warning\">二分</span></span></p>\n</div>                </div>",
+      "text": "数组问题二分"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 3\r\n513 598 567 689\r\n500 600 550",
+      "output": "32"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "10859",
+    "通过人数": "4549",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:40"
+}

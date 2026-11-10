@@ -1,0 +1,57 @@
+{
+  "id": "4611",
+  "title": "比 n 小的最大数",
+  "tags": [
+    "蓝桥杯STEMA",
+    "贪心"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4611",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个正整数 <span class=\"katex math inline\">n</span>，请将 <span class=\"katex math inline\">n</span> 中的每位数字重新排列并组成一个新数，要求新数的值要小于 <span class=\"katex math inline\">n</span>，请找出所有符合要求的新数中最大的那个正整数，如果不存在这样的正整数，则输出 <span class=\"katex math inline\">-1</span>。</p>\n<p>例 <span class=\"katex math inline\">1</span>：<span class=\"katex math inline\">n = 312</span>，<span class=\"katex math inline\">312</span> 中每位上的数字依次是 <span class=\"katex math inline\">3</span>、<span class=\"katex math inline\">1</span>、<span class=\"katex math inline\">2</span>，重新排列组成的新数有 <span class=\"katex math inline\">321</span>、<span class=\"katex math inline\">231</span>、<span class=\"katex math inline\">213</span>、<span class=\"katex math inline\">132</span>、<span class=\"katex math inline\">123</span>，新数中小于 <span class=\"katex math inline\">312</span> 的有 <span class=\"katex math inline\">231</span>、<span class=\"katex math inline\">213</span>、<span class=\"katex math inline\">132</span>、<span class=\"katex math inline\">123</span>，其中符合要求的最大正整数是 <span class=\"katex math inline\">231</span>；</p>\n<p>例 <span class=\"katex math inline\">2</span>：<span class=\"katex math inline\">n = 123</span>，<span class=\"katex math inline\">123</span> 中每位上的数字依次是 <span class=\"katex math inline\">1</span>、<span class=\"katex math inline\">2</span>、<span class=\"katex math inline\">3</span>，重新排列组成的新数有 <span class=\"katex math inline\">312</span>、<span class=\"katex math inline\">321</span>、<span class=\"katex math inline\">231</span>、<span class=\"katex math inline\">213</span>、<span class=\"katex math inline\">132</span>，新数中不存在小于 <span class=\"katex math inline\">123</span> 的正整数，故输出 <span class=\"katex math inline\">-1</span>。</p>\n</div>            </div>",
+      "text": "给定一个正整数 n，请将 n 中的每位数字重新排列并组成一个新数，要求新数的值要小于 n，请找出所有符合要求的新数中最大的那个正整数，如果不存在这样的正整数，则输出 -1。\n例 1：n = 312，312 中每位上的数字依次是 3、1、2，重新排列组成的新数有 321、231、213、132、123，新数中小于 312 的有 231、213、132、123，其中符合要求的最大正整数是 231；\n例 2：n = 123，123 中每位上的数字依次是 1、2、3，重新排列组成的新数有 312、321、231、213、132，新数中不存在小于 123 的正整数，故输出 -1。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">1 \\le n \\lt 2^{63}</span>）。</p>\n</div>            </div>",
+      "text": "输入一个正整数 n（1 \\le n \\lt 2^{63}）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个正整数，表示符合要求的最大正整数。</p>\n</div>            </div>",
+      "text": "输出一个正整数，表示符合要求的最大正整数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>312</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>231</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            312\n                        \n                        \n                            输出\n                            231"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（24年3月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（24年3月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">贪心</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "312",
+      "output": "231"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "270",
+    "通过人数": "129",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:33"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "2203",
+  "title": "二叉树遍历",
+  "tags": [
+    "二叉树"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2203",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明学完了树的基本知识，想做二叉树遍历的程序设计练习。</p>\n<p>根据二叉树的深度从数据文件中读入 <span class=\"katex math inline\">n</span> 个整数生成顺序存储的二叉树，做各种遍历的输出。小明发现输出的数据中有不少重复的，为此他先将重复的数据过滤掉，然后再生成二叉树的结构。</p>\n<p>现在要求你从数据文件中读取若干个整数，生成一个满二叉树，然后输出一个二叉树遍历的序列。</p>\n</div>            </div>",
+      "text": "小明学完了树的基本知识，想做二叉树遍历的程序设计练习。\n根据二叉树的深度从数据文件中读入 n 个整数生成顺序存储的二叉树，做各种遍历的输出。小明发现输出的数据中有不少重复的，为此他先将重复的数据过滤掉，然后再生成二叉树的结构。\n现在要求你从数据文件中读取若干个整数，生成一个满二叉树，然后输出一个二叉树遍历的序列。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含 <span class=\"katex math inline\">2</span> 行；</p>\n<p>第一行是两个整数 <span class=\"katex math inline\">h</span> 和 <span class=\"katex math inline\">p</span> ，<span class=\"katex math inline\">h</span> 是二叉树的深度， <span class=\"katex math inline\">h≤8</span> 。<span class=\"katex math inline\">p=1</span>时先序输出，<span class=\"katex math inline\">p=2</span> 时中序输出，<span class=\"katex math inline\">p=3</span> 时后序输出。</p>\n<p>第二行若干个整数（数字小于等于 <span class=\"katex math inline\">1000</span> ），读入数据前，先要计算二叉树的结点个数 <span class=\"katex math inline\">n</span> ，然后在数据中顺序读取 <span class=\"katex math inline\">n</span> 个不重复的整数。</p>\n<p>例如深度为 <span class=\"katex math inline\">3</span> 的二叉树结点有 <span class=\"katex math inline\">7</span> 个。</p>\n</div>            </div>",
+      "text": "输入包含 2 行；\n第一行是两个整数 h 和 p ，h 是二叉树的深度， h≤8 。p=1时先序输出，p=2 时中序输出，p=3 时后序输出。\n第二行若干个整数（数字小于等于 1000 ），读入数据前，先要计算二叉树的结点个数 n ，然后在数据中顺序读取 n 个不重复的整数。\n例如深度为 3 的二叉树结点有 7 个。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出文只有一行，是二叉树遍历的序列。</p>\n</div>            </div>",
+      "text": "输出文只有一行，是二叉树遍历的序列。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 2\r\n277 248 494 88 277 371 387 88 494 216 227</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>88 248 371 277 387 494 216</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 2\r\n277 248 494 88 277 371 387 88 494 216 227\n                        \n                        \n                            输出\n                            88 248 371 277 387 494 216"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例解释】</strong></p>\n<p>样例数据构建的二叉树为：</p>\n<p><img src=\"https://assets.boyi.local/34771f6e920117ac5eb68bb2.jpg\"> </p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n样例数据构建的二叉树为："
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二叉树</p>\n</div>                </div>",
+      "text": "二叉树"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二叉树</span></span></p>\n</div>                </div>",
+      "text": "二叉树"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 2\r\n277 248 494 88 277 371 387 88 494 216 227",
+      "output": "88 248 371 277 387 494 216"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "609",
+    "通过人数": "320",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:44"
+}

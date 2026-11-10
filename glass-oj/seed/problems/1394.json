@@ -1,0 +1,60 @@
+{
+  "id": "1394",
+  "title": "恐龙园买玩具？",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1394",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明暑假来到恐龙园游玩，在恐龙园的礼物店里，有一些形形色色的小恐龙玩偶，小明想购买其中霸王龙和三角龙玩偶送给自己的 <span class=\"katex math inline\">5</span> 位好朋友。</p>\n<p>店员告诉小明，霸王龙玩偶一只需要 <span class=\"katex math inline\">x</span> 元，三角龙玩偶一只需要 <span class=\"katex math inline\">y</span> 元。 小明有 <span class=\"katex math inline\">n</span> 元，希望两种恐龙都能购买，购买的霸王龙的数量 <span class=\"katex math inline\"> \\ge </span> 三角龙的数量，购买的总数要在 <span class=\"katex math inline\">5</span> 个或者 <span class=\"katex math inline\">5</span> 个以上（这样才够分），而且不能有钱剩下。</p>\n<p>请你编程帮助小明输出所有可能的购买方案，每组方案占 <span class=\"katex math inline\">1</span>行，先输出霸王龙的数量，再输出三角龙的数量（霸王龙的数量从少到多，三角龙的数量从多到少）</p>\n</div>            </div>",
+      "text": "小明暑假来到恐龙园游玩，在恐龙园的礼物店里，有一些形形色色的小恐龙玩偶，小明想购买其中霸王龙和三角龙玩偶送给自己的 5 位好朋友。\n店员告诉小明，霸王龙玩偶一只需要 x 元，三角龙玩偶一只需要 y 元。 小明有 n 元，希望两种恐龙都能购买，购买的霸王龙的数量  \\ge  三角龙的数量，购买的总数要在 5 个或者 5 个以上（这样才够分），而且不能有钱剩下。\n请你编程帮助小明输出所有可能的购买方案，每组方案占 1行，先输出霸王龙的数量，再输出三角龙的数量（霸王龙的数量从少到多，三角龙的数量从多到少）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个整数 <span class=\"katex math inline\">n</span> <span class=\"katex math inline\">x</span> <span class=\"katex math inline\">y</span>，分别代表总金额、霸王龙的单价、三角龙的单价。</p>\n</div>            </div>",
+      "text": "三个整数 n x y，分别代表总金额、霸王龙的单价、三角龙的单价。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>所有满足条件的购买方案，每组购买方案占 <span class=\"katex math inline\">1</span> 行，用空格隔开 <span class=\"katex math inline\">2</span> 个数分别代表霸王龙的数量和三角龙的数量。</p>\n</div>            </div>",
+      "text": "所有满足条件的购买方案，每组购买方案占 1 行，用空格隔开 2 个数分别代表霸王龙的数量和三角龙的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100 10 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7 6\r\n8 4\r\n9 2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>60 10 20</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>4 1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100 10 5\n                        \n                        \n                            输出\n                            7 6\r\n8 4\r\n9 2\n                        \n\n                                                    \n                                输入\n                                60 10 20\n                            \n                            \n                                输出\n                                4 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100 10 5",
+      "output": "7 6\r\n8 4\r\n9 2"
+    },
+    {
+      "input": "60 10 20",
+      "output": "4 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "18422",
+    "通过人数": "9504",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:51"
+}

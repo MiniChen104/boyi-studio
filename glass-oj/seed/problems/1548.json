@@ -1,0 +1,61 @@
+{
+  "id": "1548",
+  "title": "龟兔赛跑",
+  "tags": [
+    "省赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1548",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>兔子又来找乌龟赛跑啦！同样的错误兔子不会犯两次，所以兔子提出赛跑的时候，乌龟就觉得这场比赛很不公平。于是兔子进一步放宽了条件，表示他可以在比赛开始以后先睡 <span class=\"katex math inline\">t</span> 分钟再开始追乌龟。</p>\n<p>乌龟这下没办法确定比赛到底公平不公平了，所以请你来帮忙。假设乌龟每分钟可以跑 <span class=\"katex math inline\">x</span> 米，兔子每分钟跑 <span class=\"katex math inline\">y</span> 米 (<span class=\"katex math inline\">x \\lt y</span>)。他希望你计算最大的整数赛跑距离(米)，满足乌龟能在兔子先睡 <span class=\"katex math inline\">t</span> 分钟的前提下，比兔子更早或同时到达终点。</p>\n</div>            </div>",
+      "text": "兔子又来找乌龟赛跑啦！同样的错误兔子不会犯两次，所以兔子提出赛跑的时候，乌龟就觉得这场比赛很不公平。于是兔子进一步放宽了条件，表示他可以在比赛开始以后先睡 t 分钟再开始追乌龟。\n乌龟这下没办法确定比赛到底公平不公平了，所以请你来帮忙。假设乌龟每分钟可以跑 x 米，兔子每分钟跑 y 米 (x \\lt y)。他希望你计算最大的整数赛跑距离(米)，满足乌龟能在兔子先睡 t 分钟的前提下，比兔子更早或同时到达终点。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个整数 <span class=\"katex math inline\">x</span>, <span class=\"katex math inline\">y</span>, <span class=\"katex math inline\">t</span>。</p>\n</div>            </div>",
+      "text": "三个整数 x, y, t。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示要求的最长赛跑距离。</p>\n</div>            </div>",
+      "text": "一个整数，表示要求的最长赛跑距离。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>11 21 7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>161</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            11 21 7\n                        \n                        \n                            输出\n                            161"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据规模</h4>\n<p><span class=\"katex math inline\">1 \\le x \\lt y \\le 100</span>, <span class=\"katex math inline\">t \\le 1000</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "数据规模\n1 \\le x \\lt y \\le 100, t \\le 1000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2017江苏省青少年信息学奥林匹克竞赛复赛</p>\n</div>                </div>",
+      "text": "2017江苏省青少年信息学奥林匹克竞赛复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">省赛</span></span></p>\n</div>                </div>",
+      "text": "省赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "11 21 7",
+      "output": "161"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "862",
+    "通过人数": "471",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:56"
+}

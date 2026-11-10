@@ -1,0 +1,56 @@
+{
+  "id": "1679",
+  "title": "暑假的旅行计划3",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1679",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>期末考试结束了，小华语文、数学、英语三门功课分别考了 <span class=\"katex math inline\">x、y、z</span> 分，小华的家长说，如果小华三门功课的平均分在<span class=\"katex math inline\">90</span> 分或者 <span class=\"katex math inline\">90</span> 分以上，那么会安排一次远途旅游，如果平均分不到 <span class=\"katex math inline\">90</span> 但在 <span class=\"katex math inline\">85</span> 分及 <span class=\"katex math inline\">85</span> 分以上，就安排周边旅游。</p>\n<p>远途旅游有 <span class=\"katex math inline\">3</span> 个备选目标：北京、厦门、桂林，其中小华最想去北京、其次是厦门、再次是桂林。如果小华 <span class=\"katex math inline\">3</span> 门功课都是 <span class=\"katex math inline\">90</span> 分及 <span class=\"katex math inline\">90</span> 分以上，那么就去北京，如果有 <span class=\"katex math inline\">2</span> 门功课在 <span class=\"katex math inline\">90</span> 分及 <span class=\"katex math inline\">90</span> 分以上，那么去厦门，如果只有 <span class=\"katex math inline\">1</span> 门功课在 <span class=\"katex math inline\">90</span> 分及 <span class=\"katex math inline\">90</span> 分以上，就去桂林。</p>\n<p>周边旅游有 <span class=\"katex math inline\">2</span> 个备选目标：南京和上海，如果小华平均分不到 <span class=\"katex math inline\">90</span> ，但三门功课都在 <span class=\"katex math inline\">85</span> 分及 <span class=\"katex math inline\">85</span> 分以上，就去上海，否则就去南京。</p>\n<p>请从键盘读入小华同学三门功课的分数，编程计算出，小华到底会去哪里旅行？</p>\n<p>输出时，目的地用拼音替代，也就是输出 <code>beijing</code> 、<code>xiamen</code> 、 <code>guilin</code> 、 <code>nanjing</code> 、 <code>shanghai</code> 这样的拼音。</p>\n</div>            </div>",
+      "text": "期末考试结束了，小华语文、数学、英语三门功课分别考了 x、y、z 分，小华的家长说，如果小华三门功课的平均分在90 分或者 90 分以上，那么会安排一次远途旅游，如果平均分不到 90 但在 85 分及 85 分以上，就安排周边旅游。\n远途旅游有 3 个备选目标：北京、厦门、桂林，其中小华最想去北京、其次是厦门、再次是桂林。如果小华 3 门功课都是 90 分及 90 分以上，那么就去北京，如果有 2 门功课在 90 分及 90 分以上，那么去厦门，如果只有 1 门功课在 90 分及 90 分以上，就去桂林。\n周边旅游有 2 个备选目标：南京和上海，如果小华平均分不到 90 ，但三门功课都在 85 分及 85 分以上，就去上海，否则就去南京。\n请从键盘读入小华同学三门功课的分数，编程计算出，小华到底会去哪里旅行？\n输出时，目的地用拼音替代，也就是输出 beijing 、xiamen 、 guilin 、 nanjing 、 shanghai 这样的拼音。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">3</span> 个整数，代表小华 <span class=\"katex math inline\">3</span> 门功课的成绩。</p>\n</div>            </div>",
+      "text": "3 个整数，代表小华 3 门功课的成绩。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小华旅行目的地的拼音。</p>\n</div>            </div>",
+      "text": "小华旅行目的地的拼音。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>98 90 82</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>xiamen</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            98 90 82\n                        \n                        \n                            输出\n                            xiamen"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "98 90 82",
+      "output": "xiamen"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5417",
+    "通过人数": "1808",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:48"
+}

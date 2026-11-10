@@ -1,0 +1,57 @@
+{
+  "id": "2292",
+  "title": "计算乘积",
+  "tags": [
+    "电子学会等级考试",
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2292",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定两个数 <span class=\"katex math inline\">a，b</span>，计算它们的乘积。</p>\n</div>            </div>",
+      "text": "给定两个数 a，b，计算它们的乘积。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行两个整数 <span class=\"katex math inline\">a、b</span>，以空格分隔。（ <span class=\"katex math inline\">0 \\lt a</span> , <span class=\"katex math inline\">b \\lt 10 </span><sup>8</sup>）。</p>\n</div>            </div>",
+      "text": "一行两个整数 a、b，以空格分隔。（ 0 \\lt a , b \\lt 10 8）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示 <span class=\"katex math inline\">a、b</span> 的乘积</p>\n</div>            </div>",
+      "text": "输出一个整数，表示 a、b 的乘积"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>123456 123456</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>15241383936</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            123456 123456\n                        \n                        \n                            输出\n                            15241383936"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会一级 202109真题</p>\n</div>                </div>",
+      "text": "电子学会一级 202109真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span><span class=\"label label-warning\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "123456 123456",
+      "output": "15241383936"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "7129",
+    "通过人数": "4701",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:49"
+}

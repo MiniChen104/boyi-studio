@@ -1,0 +1,62 @@
+{
+  "id": "3347",
+  "title": "时间规划",
+  "tags": [
+    "基础",
+    "GESP一级",
+    "23年6月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3347",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明在为自己规划学习时间。现在他想知道两个时刻之间有多少分钟，你能通过编程帮他做到吗？</p>\n</div>            </div>",
+      "text": "小明在为自己规划学习时间。现在他想知道两个时刻之间有多少分钟，你能通过编程帮他做到吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入 <span class=\"katex math inline\">4</span> 行，第一行为开始时刻的小时，第二行为开始时刻的分钟，第三行为结束时刻的小时，第四行为结束时刻的分钟。</p>\n<p>输入保证两个时刻是同一天，开始时刻一定在结束时刻之前。时刻使用 <span class=\"katex math inline\">24</span> 小时制，即小时在 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">23</span> 之间，分钟在 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">59</span> 之间。</p>\n</div>            </div>",
+      "text": "输入 4 行，第一行为开始时刻的小时，第二行为开始时刻的分钟，第三行为结束时刻的小时，第四行为结束时刻的分钟。\n输入保证两个时刻是同一天，开始时刻一定在结束时刻之前。时刻使用 24 小时制，即小时在 0 到 23 之间，分钟在 0 到 59 之间。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含一个整数，从开始时刻到结束时刻之间有多少分钟。</p>\n</div>            </div>",
+      "text": "输出一行，包含一个整数，从开始时刻到结束时刻之间有多少分钟。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>9\r\n5\r\n9\r\n6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>9\r\n5\r\n10\r\n0</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>55</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            9\r\n5\r\n9\r\n6\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                9\r\n5\r\n10\r\n0\n                            \n                            \n                                输出\n                                55"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP2023年6月一级</p>\n</div>                </div>",
+      "text": "GESP2023年6月一级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础</span><span class=\"label label-warning\">GESP一级</span><span class=\"label label-info\">23年6月</span></span></p>\n</div>                </div>",
+      "text": "基础GESP一级23年6月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "9\r\n5\r\n9\r\n6",
+      "output": "1"
+    },
+    {
+      "input": "9\r\n5\r\n10\r\n0",
+      "output": "55"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "6503",
+    "通过人数": "4739",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:43"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "2175",
+  "title": "第x位小数是几？",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2175",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n给定一个小数n，请编程计算出该小数的第x位小数的值？（1&lt;=x&lt;=20）\n</p>\n<p>\n比如：1.234的第1位小数是2；<span>3.456的第3位小数是6；</span> \n</p>\n<p>\n如果要求2.345第6位小数，那么应该输出Error，因为该小数不存在第6位小数。\n</p>\n</div>            </div>",
+      "text": "给定一个小数n，请编程计算出该小数的第x位小数的值？（1<=x<=20）\n\n\n比如：1.234的第1位小数是2；3.456的第3位小数是6； \n\n\n如果要求2.345第6位小数，那么应该输出Error，因为该小数不存在第6位小数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n首先输入一个t，表示有t组数据（t≤10）；\n</p>\n<p>\n接下来t行，每行先输入一个小数d，再输入一个整数x，表示求d的小数点的第x位，两数之间用空格隔开；\n</p>\n<p>\n<span>（输入数据保证小数一定是a.b的形式，且a和b都不超过10位）</span> \n</p>\n</div>            </div>",
+      "text": "首先输入一个t，表示有t组数据（t≤10）；\n\n\n接下来t行，每行先输入一个小数d，再输入一个整数x，表示求d的小数点的第x位，两数之间用空格隔开；\n\n\n（输入数据保证小数一定是a.b的形式，且a和b都不超过10位）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n对每一组输入，输出一个数表示小数点后第n位的数，如果输入的小数点后第n位数不存在则输出“Error”。\n</p>\n</div>            </div>",
+      "text": "对每一组输入，输出一个数表示小数点后第n位的数，如果输入的小数点后第n位数不存在则输出“Error”。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1.234 1\r\n2.345 6\r\n3.456 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2\r\nError\r\n6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1.234 1\r\n2.345 6\r\n3.456 3\n                        \n                        \n                            输出\n                            2\r\nError\r\n6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1.234 1\r\n2.345 6\r\n3.456 3",
+      "output": "2\r\nError\r\n6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "353",
+    "通过人数": "233",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:23"
+}

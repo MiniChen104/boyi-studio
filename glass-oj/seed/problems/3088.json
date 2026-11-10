@@ -1,0 +1,61 @@
+{
+  "id": "3088",
+  "title": "蒙氏数学难题",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3088",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>大家都知道蒙氏数学教学法是面向幼儿园孩子的一种数学教学法，实际上就是使用大量的教具来帮助孩子们掌握数字的概念。这其实是很普通的教学方法，只不过披上了一个洋名字后就身价倍增了。</p>\n<p>今天的课程中，老师使用了喜羊羊公仔作为教具，她先在自己左边放了几只喜羊羊，又在自己右边放在上几只，然后让孩子们数出左右两边各有多少只喜羊羊，并且要计算出两边一共有多少只喜羊羊。</p>\n<p>小芷虽然才 <span class=\"katex math inline\">5</span> 岁，虽然没有进入过蒙氏数学班学习，但是她已经展现出了高人一等的数学才能，不仅喜羊羊的加法她会做，就连灰太狼的加法她也会做呢。而且，她还希望你帮她编写一个程序，解决老师出的喜羊羊问题。</p>\n</div>            </div>",
+      "text": "大家都知道蒙氏数学教学法是面向幼儿园孩子的一种数学教学法，实际上就是使用大量的教具来帮助孩子们掌握数字的概念。这其实是很普通的教学方法，只不过披上了一个洋名字后就身价倍增了。\n今天的课程中，老师使用了喜羊羊公仔作为教具，她先在自己左边放了几只喜羊羊，又在自己右边放在上几只，然后让孩子们数出左右两边各有多少只喜羊羊，并且要计算出两边一共有多少只喜羊羊。\n小芷虽然才 5 岁，虽然没有进入过蒙氏数学班学习，但是她已经展现出了高人一等的数学才能，不仅喜羊羊的加法她会做，就连灰太狼的加法她也会做呢。而且，她还希望你帮她编写一个程序，解决老师出的喜羊羊问题。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一行，共 <span class=\"katex math inline\">2</span> 个数字 <span class=\"katex math inline\">n、m</span> ，分别表示左右两边喜羊羊的个数。( 取值范围：<span class=\"katex math inline\">0\\le n,m \\le 30000</span> )。</p>\n</div>            </div>",
+      "text": "只有一行，共 2 个数字 n、m ，分别表示左右两边喜羊羊的个数。( 取值范围：0\\le n,m \\le 30000 )。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一个数据，即左右两边喜羊羊的数量和。</p>\n</div>            </div>",
+      "text": "只有一个数据，即左右两边喜羊羊的数量和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 5\n                        \n                        \n                            输出\n                            9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例解释】</strong></p>\n<p>左边有 <span class=\"katex math inline\">4</span> 只喜羊羊，右边有 <span class=\"katex math inline\">5</span> 只喜羊羊，一共有 <span class=\"katex math inline\">9</span> 只喜羊羊。</p>\n<p><strong>【数据说明】</strong></p>\n<p>对于 <span class=\"katex math inline\">100 \\%</span> 的数据：<span class=\"katex math inline\">0 \\le n</span>,<span class=\"katex math inline\">m \\le 30000</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n左边有 4 只喜羊羊，右边有 5 只喜羊羊，一共有 9 只喜羊羊。\n【数据说明】\n对于 100 \\% 的数据：0 \\le n,m \\le 30000 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>中山市第三届小学生信息学邀请赛试题T1</p>\n</div>                </div>",
+      "text": "中山市第三届小学生信息学邀请赛试题T1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 5",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "3261",
+    "通过人数": "2857",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:04"
+}

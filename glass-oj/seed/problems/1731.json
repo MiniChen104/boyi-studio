@@ -1,0 +1,61 @@
+{
+  "id": "1731",
+  "title": "破译密码",
+  "tags": [
+    "高精度算法",
+    "进制转换"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1731",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>我军拦截敌军传递了 <span class=\"katex math inline\">2</span> 个数字串，后经侦查得知，这两个数字串中包含了一个很重要的密码，这个密码的破译方式为，用这两个数字串中的大数 <span class=\"katex math inline\">–</span> 小数，得到结果后将结果转换为 <span class=\"katex math inline\">16</span> 进制（转换时如需使用字母请使用大写字母），就是敌军想要传递的密码。  </p>\n<p>比如，敌军传递了下列两个数字串：  </p>\n<p><span class=\"katex math inline\">99999999999999999999999999999999999999973</span><br>\n<span class=\"katex math inline\">99999999999999999999999999999999999999999</span>  </p>\n<p>大数 <span class=\"katex math inline\">–</span> 小数的差值 <span class=\"katex math inline\">= 26</span>，转换为 <span class=\"katex math inline\">16</span> 进制的结果为<span class=\"katex math inline\">1A</span>，也就是 <span class=\"katex math inline\">1A</span> 就是敌军想要传递的密码。  </p>\n<p>请编程实现破译密码的过程。</p>\n</div>            </div>",
+      "text": "我军拦截敌军传递了 2 个数字串，后经侦查得知，这两个数字串中包含了一个很重要的密码，这个密码的破译方式为，用这两个数字串中的大数 – 小数，得到结果后将结果转换为 16 进制（转换时如需使用字母请使用大写字母），就是敌军想要传递的密码。  \n比如，敌军传递了下列两个数字串：  \n99999999999999999999999999999999999999973\n99999999999999999999999999999999999999999  \n大数 – 小数的差值 = 26，转换为 16 进制的结果为1A，也就是 1A 就是敌军想要传递的密码。  \n请编程实现破译密码的过程。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入有 <span class=\"katex math inline\">2</span> 行，分别是 <span class=\"katex math inline\">2</span> 个不超过 <span class=\"katex math inline\">200</span> 位的整数（<span class=\"katex math inline\">2</span> 个数不存在前导 <span class=\"katex math inline\">0</span> ，也就是不会读入类似 <span class=\"katex math inline\">00123</span> 这样的数），且已知 <span class=\"katex math inline\">2</span> 个整数的差是一个不超过 <span class=\"katex math inline\">18</span> 位的整数。</p>\n</div>            </div>",
+      "text": "输入有 2 行，分别是 2 个不超过 200 位的整数（2 个数不存在前导 0 ，也就是不会读入类似 00123 这样的数），且已知 2 个整数的差是一个不超过 18 位的整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出按题意计算出的 <span class=\"katex math inline\">16</span> 进制数。</p>\n</div>            </div>",
+      "text": "输出按题意计算出的 16 进制数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>99999999999999999999999999999999999999973\r\n99999999999999999999999999999999999999999</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1A</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>999999999\r\n3847</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3B9ABAF8</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            99999999999999999999999999999999999999973\r\n99999999999999999999999999999999999999999\n                        \n                        \n                            输出\n                            1A\n                        \n\n                                                    \n                                输入\n                                999999999\r\n3847\n                            \n                            \n                                输出\n                                3B9ABAF8"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>高精度算法 进制转换</p>\n</div>                </div>",
+      "text": "高精度算法 进制转换"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">高精度算法</span><span class=\"label label-warning\">进制转换</span></span></p>\n</div>                </div>",
+      "text": "高精度算法进制转换"
+    }
+  ],
+  "samples": [
+    {
+      "input": "99999999999999999999999999999999999999973\r\n99999999999999999999999999999999999999999",
+      "output": "1A"
+    },
+    {
+      "input": "999999999\r\n3847",
+      "output": "3B9ABAF8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1532",
+    "通过人数": "610",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:23:31"
+}

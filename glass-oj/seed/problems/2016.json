@@ -1,0 +1,56 @@
+{
+  "id": "2016",
+  "title": "旅游景点大排名",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2016",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小宇今年的信息学竞赛拿到好成绩，妈妈为了奖励他，想带他去旅游，但前提是小宇要讲出不少于 <span class=\"katex math inline\">10</span> 个我国旅游景点的英文名字，并按字典排好序给妈妈听。</p>\n<p>聪明的你，能帮小宇完成这个 easy 的任务，让小宇顺利PASS，跟妈妈去旅游吗?</p>\n</div>            </div>",
+      "text": "小宇今年的信息学竞赛拿到好成绩，妈妈为了奖励他，想带他去旅游，但前提是小宇要讲出不少于 10 个我国旅游景点的英文名字，并按字典排好序给妈妈听。\n聪明的你，能帮小宇完成这个 easy 的任务，让小宇顺利PASS，跟妈妈去旅游吗?"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共 <span class=\"katex math inline\">n</span> 行，以 <code>end</code> 结束。（最多不超过 <span class=\"katex math inline\">1000</span> 行）</p>\n</div>            </div>",
+      "text": "共 n 行，以 end 结束。（最多不超过 1000 行）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>排好序的旅游景点英文名字。</p>\n</div>            </div>",
+      "text": "排好序的旅游景点英文名字。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>HongKong\r\nTsingTao\r\nMacau\r\nCanton\r\nAmoy\r\nKiangSu\r\nNingpo\r\nFoochow\r\nchu-hai\r\nTienTisn\r\nend</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Amoy\r\nCanton\r\nFoochow\r\nHongKong\r\nKiangSu\r\nMacau\r\nNingpo\r\nTienTisn\r\nTsingTao\r\nchu-hai</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            HongKong\r\nTsingTao\r\nMacau\r\nCanton\r\nAmoy\r\nKiangSu\r\nNingpo\r\nFoochow\r\nchu-hai\r\nTienTisn\r\nend\n                        \n                        \n                            输出\n                            Amoy\r\nCanton\r\nFoochow\r\nHongKong\r\nKiangSu\r\nMacau\r\nNingpo\r\nTienTisn\r\nTsingTao\r\nchu-hai"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "HongKong\r\nTsingTao\r\nMacau\r\nCanton\r\nAmoy\r\nKiangSu\r\nNingpo\r\nFoochow\r\nchu-hai\r\nTienTisn\r\nend",
+      "output": "Amoy\r\nCanton\r\nFoochow\r\nHongKong\r\nKiangSu\r\nMacau\r\nNingpo\r\nTienTisn\r\nTsingTao\r\nchu-hai"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "599",
+    "通过人数": "435",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:27:21"
+}

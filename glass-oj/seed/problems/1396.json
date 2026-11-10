@@ -1,0 +1,56 @@
+{
+  "id": "1396",
+  "title": "开学大采购？",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1396",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>新学期开始了，学校计划采购一批新的篮球和排球用来上体育课。</p>\n<p>学校共有 <span class=\"katex math inline\">n</span> 元经费，咨询体育用品店得知篮球 <span class=\"katex math inline\">x</span> 元 <span class=\"katex math inline\">/</span> 个，排球 <span class=\"katex math inline\">y</span> 元 <span class=\"katex math inline\">/</span> 个，现要求篮球和排球都至少采购 <span class=\"katex math inline\">1</span> 个， <span class=\"katex math inline\">n</span> 元经费全部用完，且篮球和排球的总数要超过 <span class=\"katex math inline\">50</span> 个。</p>\n<p>请问有哪些采购方案？（按照篮球从少到多，排球从多到少输出所有可行的方案）</p>\n</div>            </div>",
+      "text": "新学期开始了，学校计划采购一批新的篮球和排球用来上体育课。\n学校共有 n 元经费，咨询体育用品店得知篮球 x 元 / 个，排球 y 元 / 个，现要求篮球和排球都至少采购 1 个， n 元经费全部用完，且篮球和排球的总数要超过 50 个。\n请问有哪些采购方案？（按照篮球从少到多，排球从多到少输出所有可行的方案）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个整数，<span class=\"katex math inline\">n、x、y</span> 用空格隔开分别代表总经费、篮球单价、排球单价。</p>\n</div>            </div>",
+      "text": "三个整数，n、x、y 用空格隔开分别代表总经费、篮球单价、排球单价。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>所有可行的采购方案，每个组方案有 <span class=\"katex math inline\">2</span> 个整数用空格隔开，第 <span class=\"katex math inline\">1</span> 个整数代表篮球的采购个数，第 <span class=\"katex math inline\">2</span> 个整数代表排球的采购个数。</p>\n</div>            </div>",
+      "text": "所有可行的采购方案，每个组方案有 2 个整数用空格隔开，第 1 个整数代表篮球的采购个数，第 2 个整数代表排球的采购个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1000 25 15</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 65\r\n4 60\r\n7 55\r\n10 50\r\n13 45\r\n16 40\r\n19 35\r\n22 30</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1000 25 15\n                        \n                        \n                            输出\n                            1 65\r\n4 60\r\n7 55\r\n10 50\r\n13 45\r\n16 40\r\n19 35\r\n22 30"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1000 25 15",
+      "output": "1 65\r\n4 60\r\n7 55\r\n10 50\r\n13 45\r\n16 40\r\n19 35\r\n22 30"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "17186",
+    "通过人数": "11086",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:52"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "2157",
+  "title": "优秀的拆分（power）",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2157",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一般来说，一个正整数可以拆分成若干个正整数的和。</p>\n<p>例如，<span class=\"katex math inline\">1=1</span>，<span class=\"katex math inline\">10=1+2+3+4</span> 等。对于正整数 <span class=\"katex math inline\">n</span> 的一种特定拆分，我们称它为“优秀的”，当且仅当在这种拆分下，<span class=\"katex math inline\">n</span> 被分解为了若干个<strong>不同</strong>的 <span class=\"katex math inline\">2</span> 的<strong>正整数</strong>次幂。注意，一个数 <span class=\"katex math inline\">x</span> 能被表示成 <span class=\"katex math inline\">2</span> 的正整数次幂，当且仅当 <span class=\"katex math inline\">x</span> 能通过正整数个 <span class=\"katex math inline\">2</span> 相乘在一起得到。</p>\n<p>例如，<span class=\"katex math inline\">10=8+2=2^3+2^1</span> 是一个优秀的拆分。但是，<span class=\"katex math inline\">7=4+2+1=2^2+2^1+2^0</span> 就不是一个优秀的拆分，因为 <span class=\"katex math inline\">1</span> 不是 <span class=\"katex math inline\">2</span> 的正整数次幂。</p>\n<p>现在，给定正整数 <span class=\"katex math inline\">n</span>，你需要判断这个数的所有拆分中，是否存在优秀的拆分。若存在，请你给出具体的拆分方案。</p>\n</div>            </div>",
+      "text": "一般来说，一个正整数可以拆分成若干个正整数的和。\n例如，1=1，10=1+2+3+4 等。对于正整数 n 的一种特定拆分，我们称它为“优秀的”，当且仅当在这种拆分下，n 被分解为了若干个不同的 2 的正整数次幂。注意，一个数 x 能被表示成 2 的正整数次幂，当且仅当 x 能通过正整数个 2 相乘在一起得到。\n例如，10=8+2=2^3+2^1 是一个优秀的拆分。但是，7=4+2+1=2^2+2^1+2^0 就不是一个优秀的拆分，因为 1 不是 2 的正整数次幂。\n现在，给定正整数 n，你需要判断这个数的所有拆分中，是否存在优秀的拆分。若存在，请你给出具体的拆分方案。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一行，一个整数 <span class=\"katex math inline\">n</span>，代表需要判断的数。</p>\n</div>            </div>",
+      "text": "输入只有一行，一个整数 n，代表需要判断的数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果这个数的所有拆分中，存在优秀的拆分。那么，你需要从大到小输出这个拆分中的每一个数，相邻两个数之间用一个空格隔开。可以证明，在规定了拆分数字的顺序后，该拆分方案是唯一的。</p>\n<p>若不存在优秀的拆分，输出 <code>-1</code>。</p>\n</div>            </div>",
+      "text": "如果这个数的所有拆分中，存在优秀的拆分。那么，你需要从大到小输出这个拆分中的每一个数，相邻两个数之间用一个空格隔开。可以证明，在规定了拆分数字的顺序后，该拆分方案是唯一的。\n若不存在优秀的拆分，输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4 2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>7</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>-1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\n                        \n                        \n                            输出\n                            4 2\n                        \n\n                                                    \n                                输入\n                                7\n                            \n                            \n                                输出\n                                -1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\">样例 1 解释\n<p><span class=\"katex math inline\">6=4+2=2^2+2^1</span> 是一个优秀的拆分。注意，<span class=\"katex math inline\">6=2+2+2</span> 不是一个优秀的拆分，因为拆分成的 <span class=\"katex math inline\">3</span> 个数不满足每个数互不相同。</p>\n数据规模与约定\n<ul><li>对于 <span class=\"katex math inline\">20\\%</span> 的数据，<span class=\"katex math inline\">n \\le 10</span>。</li>\n<li>对于另外 <span class=\"katex math inline\">20\\%</span> 的数据，保证 <span class=\"katex math inline\">n</span> 为奇数。</li>\n<li>对于另外 <span class=\"katex math inline\">20\\%</span> 的数据，保证 <span class=\"katex math inline\">n</span> 为 <span class=\"katex math inline\">2</span> 的正整数次幂。</li>\n<li>对于 <span class=\"katex math inline\">80\\%</span> 的数据，<span class=\"katex math inline\">n \\le 1024</span>。</li>\n<li>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 \\le n \\le {10}^7</span>。</li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "样例 1 解释\n6=4+2=2^2+2^1 是一个优秀的拆分。注意，6=2+2+2 不是一个优秀的拆分，因为拆分成的 3 个数不满足每个数互不相同。\n数据规模与约定\n对于 20\\% 的数据，n \\le 10。\n对于另外 20\\% 的数据，保证 n 为奇数。\n对于另外 20\\% 的数据，保证 n 为 2 的正整数次幂。\n对于 80\\% 的数据，n \\le 1024。\n对于 100\\% 的数据，1 \\le n \\le {10}^7。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛</p>\n</div>                </div>",
+      "text": "noip复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6",
+      "output": "4 2"
+    },
+    {
+      "input": "7",
+      "output": "-1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "4003",
+    "通过人数": "2110",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:09"
+}

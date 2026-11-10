@@ -1,0 +1,56 @@
+{
+  "id": "1129",
+  "title": "简单a*b",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1129",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按照 <code>a*b=</code> 的格式输入算式，通过计算输出 <code>a*b</code> 的结果。</p>\n</div>            </div>",
+      "text": "按照 a*b= 的格式输入算式，通过计算输出 a*b 的结果。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入中包括一个表达式，如：<code>a*b=</code>，<span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span> 都是 int 类型的正整数。</p>\n</div>            </div>",
+      "text": "输入中包括一个表达式，如：a*b=，a 和 b 都是 int 类型的正整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>结果只有一个正整数，整数在 long long 范围内。</p>\n</div>            </div>",
+      "text": "结果只有一个正整数，整数在 long long 范围内。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100*200=</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>20000</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100*200=\n                        \n                        \n                            输出\n                            20000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100*200=",
+      "output": "20000"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "20214",
+    "通过人数": "10145",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:15:08"
+}

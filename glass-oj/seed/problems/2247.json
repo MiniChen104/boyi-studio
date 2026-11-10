@@ -1,0 +1,57 @@
+{
+  "id": "2247",
+  "title": "骑车与走路",
+  "tags": [
+    "基础问题",
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2247",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在北大校园里,没有自行车,上课办事会很不方便。但实际上,并非去办任何事情都是骑车快,因为骑车总要找车、开锁、停车、锁车等,这要耽误一些时间.假设找到自行车,开锁并车上自行车的时间为 <span class=\"katex math inline\">27</span> 秒;停车锁车的时间为 <span class=\"katex math inline\">23</span> 秒;步行每秒行走 <span class=\"katex math inline\">1.2</span> 米,骑车每秒行走 <span class=\"katex math inline\">3.0</span> 米。</p>\n<p>请判断走不同的距离去办事,是骑车快还是走路快。</p>\n</div>            </div>",
+      "text": "在北大校园里,没有自行车,上课办事会很不方便。但实际上,并非去办任何事情都是骑车快,因为骑车总要找车、开锁、停车、锁车等,这要耽误一些时间.假设找到自行车,开锁并车上自行车的时间为 27 秒;停车锁车的时间为 23 秒;步行每秒行走 1.2 米,骑车每秒行走 3.0 米。\n请判断走不同的距离去办事,是骑车快还是走路快。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行，包含一个整数，表示一次办事要行走的距离,单位为米。</p>\n</div>            </div>",
+      "text": "输入一行，包含一个整数，表示一次办事要行走的距离,单位为米。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行,如果骑车快,输出一行&quot; <code>Bike</code> ;如果走路快,输出一行 <code>Walk</code> ;如果一样快,输出一行 <code>All</code> 。</p>\n</div>            </div>",
+      "text": "输出一行,如果骑车快,输出一行\" Bike ;如果走路快,输出一行 Walk ;如果一样快,输出一行 All 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>120</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Bike</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            120\n                        \n                        \n                            输出\n                            Bike"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会一级</p>\n</div>                </div>",
+      "text": "电子学会一级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span><span class=\"label label-warning\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "120",
+      "output": "Bike"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "11343",
+    "通过人数": "5332",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:16"
+}

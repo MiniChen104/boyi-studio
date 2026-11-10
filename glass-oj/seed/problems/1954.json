@@ -1,0 +1,62 @@
+{
+  "id": "1954",
+  "title": "最大纯色正方形",
+  "tags": [
+    "蓝桥杯",
+    "前缀和"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1954",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>铺砖的工人来到一个操场，将整个操场按正方形铺砖（整个操场可视为 <span class=\"katex math inline\">R</span> 行 <span class=\"katex math inline\">C</span> 列的矩阵，矩阵的每个元素为一块正方形砖块），正方形砖块有两种，一种为蓝色，另一种为红色。请你写一个程序求出为最大纯色正方形的面积。</p>\n</div>            </div>",
+      "text": "铺砖的工人来到一个操场，将整个操场按正方形铺砖（整个操场可视为 R 行 C 列的矩阵，矩阵的每个元素为一块正方形砖块），正方形砖块有两种，一种为蓝色，另一种为红色。请你写一个程序求出为最大纯色正方形的面积。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个正整数 <span class=\"katex math inline\">R</span> 和 <span class=\"katex math inline\">C</span> 。</p>\n<p>接下来 <span class=\"katex math inline\">R</span> 行 <span class=\"katex math inline\">C</span> 列描述整个操场，红色砖块用 <span class=\"katex math inline\">1</span> 来表示，蓝色砖块用 <span class=\"katex math inline\">0</span> 来表示。</p>\n<h4>数据范围</h4>\n<p><span class=\"katex math inline\">40\\%</span> 的数据 <span class=\"katex math inline\">R,C \\le 10</span> 。</p>\n<p><span class=\"katex math inline\">70\\%</span> 的数据 <span class=\"katex math inline\">R,C \\le 50</span> 。</p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据 <span class=\"katex math inline\">R,C \\le 200</span> 。</p>\n</div>            </div>",
+      "text": "第一行两个正整数 R 和 C 。\n接下来 R 行 C 列描述整个操场，红色砖块用 1 来表示，蓝色砖块用 0 来表示。\n数据范围\n40\\% 的数据 R,C \\le 10 。\n70\\% 的数据 R,C \\le 50 。\n100\\% 的数据 R,C \\le 200 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数，表示最大纯色正方形的面积。</p>\n</div>            </div>",
+      "text": "一个数，表示最大纯色正方形的面积。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 8\r\n0 0 0 1 1 1 0 1\r\n1 1 0 1 1 1 1 1\r\n0 1 1 1 1 1 0 1\r\n1 0 1 1 1 1 1 0\r\n1 1 1 0 1 1 0 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 8\r\n0 0 0 1 1 1 0 1\r\n1 1 0 1 1 1 1 1\r\n0 1 1 1 1 1 0 1\r\n1 0 1 1 1 1 1 0\r\n1 1 1 0 1 1 0 1\n                        \n                        \n                            输出\n                            9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】</p>\n<p>蓝桥杯算法训练</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】\n蓝桥杯算法训练"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯</p>\n</div>                </div>",
+      "text": "蓝桥杯"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">前缀和</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯前缀和"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 8\r\n0 0 0 1 1 1 0 1\r\n1 1 0 1 1 1 1 1\r\n0 1 1 1 1 1 0 1\r\n1 0 1 1 1 1 1 0\r\n1 1 1 0 1 1 0 1",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1399",
+    "通过人数": "714",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:29"
+}

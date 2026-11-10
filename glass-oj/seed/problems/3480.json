@@ -1,0 +1,67 @@
+{
+  "id": "3480",
+  "title": "小杨的H字矩阵",
+  "tags": [
+    "GESP二级",
+    "嵌套循环",
+    "23年12月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3480",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨想要构造一个 <span class=\"katex math inline\">N \\times N</span> 的 <span class=\"katex math inline\">H</span> 字矩阵（<span class=\"katex math inline\">N</span> 为奇数），具体来说，这个矩阵共有 <span class=\"katex math inline\">N</span> 行，每行 <span class=\"katex math inline\">N</span> 个字符，其中最左列、最右列都是 <code>|</code>，而中间一行 （即第 <span class=\"katex math inline\">\\frac{N+1}{2}</span> 行）的第 <span class=\"katex math inline\">2</span> ~ <span class=\"katex math inline\">N-1</span> 个字符都是 <code>-</code>，其余所有字符都是半角小写字母 <code>a</code>。例如，一个 <span class=\"katex math inline\"> N=5 </span>的 <span class=\"katex math inline\">H</span> 字矩阵如下：</p>\n<pre><code class=\"language-cpp\">|aaa|\n|aaa|\n|---|\n|aaa|\n|aaa|\n</code></pre>\n<p>请你帮小杨根据给定的 <span class=\"katex math inline\">N</span> 打印出对应的 “<span class=\"katex math inline\">H</span> 字矩阵”。</p>\n</div>            </div>",
+      "text": "小杨想要构造一个 N \\times N 的 H 字矩阵（N 为奇数），具体来说，这个矩阵共有 N 行，每行 N 个字符，其中最左列、最右列都是 |，而中间一行 （即第 \\frac{N+1}{2} 行）的第 2 ~ N-1 个字符都是 -，其余所有字符都是半角小写字母 a。例如，一个  N=5 的 H 字矩阵如下：\n|aaa|\n|aaa|\n|---|\n|aaa|\n|aaa|\n\n请你帮小杨根据给定的 N 打印出对应的 “H 字矩阵”。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数 <span class=\"katex math inline\">N</span>。</p>\n</div>            </div>",
+      "text": "一行一个整数 N。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出对应的“<span class=\"katex math inline\">H</span> 字矩阵”。</p>\n<p>请严格按格式要求输出，不要擅自添加任何空格、标点、空行等任何符号。你应该恰好输出 <span class=\"katex math inline\">N</span> 行，每行除了换行符外恰好包含 <span class=\"katex math inline\">N</span> 个字符，这些字符要么是 <code>-</code> ，要么是 <code>|</code> ，要么是 <code>a</code> 。<strong>你的输出必须和标准答案完全一致才能得分，请在提交前仔细检查</strong></p>\n</div>            </div>",
+      "text": "输出对应的“H 字矩阵”。\n请严格按格式要求输出，不要擅自添加任何空格、标点、空行等任何符号。你应该恰好输出 N 行，每行除了换行符外恰好包含 N 个字符，这些字符要么是 - ，要么是 | ，要么是 a 。你的输出必须和标准答案完全一致才能得分，请在提交前仔细检查"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>|aaa|\r\n|aaa|\r\n|---|\r\n|aaa|\r\n|aaa|</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>7</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>|aaaaa|\r\n|aaaaa|\r\n|aaaaa|\r\n|-----|\r\n|aaaaa|\r\n|aaaaa|\r\n|aaaaa|</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            |aaa|\r\n|aaa|\r\n|---|\r\n|aaa|\r\n|aaa|\n                        \n\n                                                    \n                                输入\n                                7\n                            \n                            \n                                输出\n                                |aaaaa|\r\n|aaaaa|\r\n|aaaaa|\r\n|-----|\r\n|aaaaa|\r\n|aaaaa|\r\n|aaaaa|"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据范围】</p>\n<p><span class=\"katex math inline\">5 \\leq N \\leq 49</span>，保证 <span class=\"katex math inline\">N</span> 为奇数。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n5 \\leq N \\leq 49，保证 N 为奇数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年12月二级</p>\n</div>                </div>",
+      "text": "GESP23年12月二级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP二级</span><span class=\"label label-warning\">嵌套循环</span><span class=\"label label-info\">23年12月</span></span></p>\n</div>                </div>",
+      "text": "GESP二级嵌套循环23年12月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "|aaa|\r\n|aaa|\r\n|---|\r\n|aaa|\r\n|aaa|"
+    },
+    {
+      "input": "7",
+      "output": "|aaaaa|\r\n|aaaaa|\r\n|aaaaa|\r\n|-----|\r\n|aaaaa|\r\n|aaaaa|\r\n|aaaaa|"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3460",
+    "通过人数": "2812",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:17"
+}

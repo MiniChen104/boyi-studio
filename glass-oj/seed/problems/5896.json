@@ -1,0 +1,60 @@
+{
+  "id": "5896",
+  "title": "矩阵移动(1)",
+  "tags": [
+    "递推",
+    "动态规划"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5896",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个大小为 <span class=\"katex math inline\">N \\times M</span> 的矩阵，你可以从矩阵的第 <span class=\"katex math inline\">1</span> 行的任意位置出发，按如下规则在矩阵中移动：</p>\n<ol><li>从任意的位置 <span class=\"katex math inline\">i,j</span> ，只能向其左下方 <span class=\"katex math inline\">i+1,j-1</span> 或者右下方 <span class=\"katex math inline\">i+1,j+1</span> 移动。</li>\n<li>在从最后一行的任意位置离开矩阵前，不能走出矩阵。</li>\n</ol><p>请求出，按上述规则，从进入矩阵到离开矩阵，一共有多少条不同的路线？</p>\n</div>            </div>",
+      "text": "给定一个大小为 N \\times M 的矩阵，你可以从矩阵的第 1 行的任意位置出发，按如下规则在矩阵中移动：\n从任意的位置 i,j ，只能向其左下方 i+1,j-1 或者右下方 i+1,j+1 移动。\n在从最后一行的任意位置离开矩阵前，不能走出矩阵。\n请求出，按上述规则，从进入矩阵到离开矩阵，一共有多少条不同的路线？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个整数 <span class=\"katex math inline\">N,M</span>，代表矩阵大小。（<span class=\"katex math inline\">2 \\le N \\le 100</span>，<span class=\"katex math inline\">2 \\le M \\le 100</span>）</p>\n</div>            </div>",
+      "text": "输入两个整数 N,M，代表矩阵大小。（2 \\le N \\le 100，2 \\le M \\le 100）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示从进入矩阵到离开矩阵，一共有多少条不同的路线。</p>\n<p>请注意：路线数值可能非常大，请输出路线总数 <span class=\"katex math inline\"> \\mod(10^5 + 3)</span> 的结果。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示从进入矩阵到离开矩阵，一共有多少条不同的路线。\n请注意：路线数值可能非常大，请输出路线总数  \\mod(10^5 + 3) 的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10 20</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>8232</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>50 80</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>11029</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            2 3\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                10 20\n                            \n                            \n                                输出\n                                8232\n                            \n                        \n                                                    \n                                输入\n                                50 80\n                            \n                            \n                                输出\n                                11029"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递推</span><span class=\"label label-warning\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "递推动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 3",
+      "output": "4"
+    },
+    {
+      "input": "10 20",
+      "output": "8232"
+    },
+    {
+      "input": "50 80",
+      "output": "11029"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "297",
+    "通过人数": "156",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:39"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "3482",
+  "title": "单位转换",
+  "tags": [
+    "GESP三级",
+    "字符串",
+    "23年12月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3482",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨这周的数学作业是做单位转换，喜欢编程的小杨决定编程帮他解决这些问题。</p>\n<p>小杨只学了长度单位和重量单位，具体来说：</p>\n<ul><li><p>长度单位包括千米（<code>km</code>）、米（<code>m</code>）、毫米（<code>mm</code>），它们之间的关系是：<span class=\"katex math inline\">1\\text{km} = 1000\\text{m} = 1000000\\text{mm}</span>。</p>\n</li>\n<li><p>重量单位包括千克（<code>kg</code>）、克（<code>g</code>）、毫克（<code>mg</code>），它们之间的关系是：<span class=\"katex math inline\">1\\text{kg} = 1000\\text{g} = 1000000\\text{mg}</span>。</p>\n</li>\n</ul><p>小杨的作业只涉及将更大的单位转换为更小的单位，也就是说，小杨的作业只会包含如下题型：米转换为毫米，千米转换为毫米，千米转换为米，克转换为毫克，千克转换为毫克，千克转换为克。</p>\n<p>现在，请你帮忙完成单位转换的程序。</p>\n</div>            </div>",
+      "text": "小杨这周的数学作业是做单位转换，喜欢编程的小杨决定编程帮他解决这些问题。\n小杨只学了长度单位和重量单位，具体来说：\n长度单位包括千米（km）、米（m）、毫米（mm），它们之间的关系是：1\\text{km} = 1000\\text{m} = 1000000\\text{mm}。\n\n重量单位包括千克（kg）、克（g）、毫克（mg），它们之间的关系是：1\\text{kg} = 1000\\text{g} = 1000000\\text{mg}。\n\n小杨的作业只涉及将更大的单位转换为更小的单位，也就是说，小杨的作业只会包含如下题型：米转换为毫米，千米转换为毫米，千米转换为米，克转换为毫克，千克转换为毫克，千克转换为克。\n现在，请你帮忙完成单位转换的程序。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>接下来 <span class=\"katex math inline\">N</span> 行，每行一个字符串，表示转换单位的题目，格式为 <span class=\"katex math inline\">x</span> 单位 <span class=\"katex math inline\">1 = ?</span> 单位 <span class=\"katex math inline\">2</span>。其中，<span class=\"katex math inline\">x</span> 为一个不超过 <span class=\"katex math inline\">1000</span> 的非负整数， 单位 <span class=\"katex math inline\">1</span> 和 单位 <span class=\"katex math inline\">2</span> 分别为两个单位的英文缩写，保证它们都是长度单位或都是重量单位，且 <strong>单位 1</strong> 比 <strong>单位 2</strong> 更大。</p>\n<p>例如，如果题目需要你将 <span class=\"katex math inline\">1\\text{km}</span> 转换为 <span class=\"katex math inline\">\\text{mm}</span>，则输入为 <code>1 km = ? mm</code>。</p>\n<p>保证 <span class=\"katex math inline\">1\\le N \\le 1000</span>。</p>\n</div>            </div>",
+      "text": "接下来 N 行，每行一个字符串，表示转换单位的题目，格式为 x 单位 1 = ? 单位 2。其中，x 为一个不超过 1000 的非负整数， 单位 1 和 单位 2 分别为两个单位的英文缩写，保证它们都是长度单位或都是重量单位，且 单位 1 比 单位 2 更大。\n例如，如果题目需要你将 1\\text{km} 转换为 \\text{mm}，则输入为 1 km = ? mm。\n保证 1\\le N \\le 1000。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">N</span> 行，依次输出所有题目的答案，输出时，只需要将输入中的 <span class=\"katex math inline\">?</span> 代入答案，其余部分一字不差地输出即可。由于小杨的题目只涉及将更大的单位转换为更小的单位，并且输入的 <span class=\"katex math inline\">x</span> 是整数，因此答案一定也是整数。</p>\n<p>例如，如果题目需要你将 <span class=\"katex math inline\">1\\text{km}</span> 转换为 <span class=\"katex math inline\">\\text{mm}</span>，则输入为 <code>1 km = ? mm</code>。则你需要输出 <code>1 km = 1000000 mm</code>。</p>\n</div>            </div>",
+      "text": "输出 N 行，依次输出所有题目的答案，输出时，只需要将输入中的 ? 代入答案，其余部分一字不差地输出即可。由于小杨的题目只涉及将更大的单位转换为更小的单位，并且输入的 x 是整数，因此答案一定也是整数。\n例如，如果题目需要你将 1\\text{km} 转换为 \\text{mm}，则输入为 1 km = ? mm。则你需要输出 1 km = 1000000 mm。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n1 km = ? mm\r\n1 m = ? mm</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 km = 1000000 mm\r\n1 m = 1000 mm</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n100 m = ? mm\r\n1000 km = ? m\r\n20 kg = ? g\r\n200 g = ? mg\r\n0 kg = ? mg</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>100 m = 100000 mm\r\n1000 km = 1000000 m\r\n20 kg = 20000 g\r\n200 g = 200000 mg\r\n0 kg = 0 mg</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n1 km = ? mm\r\n1 m = ? mm\n                        \n                        \n                            输出\n                            1 km = 1000000 mm\r\n1 m = 1000 mm\n                        \n\n                                                    \n                                输入\n                                5\r\n100 m = ? mm\r\n1000 km = ? m\r\n20 kg = ? g\r\n200 g = ? mg\r\n0 kg = ? mg\n                            \n                            \n                                输出\n                                100 m = 100000 mm\r\n1000 km = 1000000 m\r\n20 kg = 20000 g\r\n200 g = 200000 mg\r\n0 kg = 0 mg"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>保证 <span class=\"katex math inline\">1 \\leq N \\leq 1000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n保证 1 \\leq N \\leq 1000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年12月三级</p>\n</div>                </div>",
+      "text": "GESP23年12月三级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP三级</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">23年12月</span></span></p>\n</div>                </div>",
+      "text": "GESP三级字符串23年12月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n1 km = ? mm\r\n1 m = ? mm",
+      "output": "1 km = 1000000 mm\r\n1 m = 1000 mm"
+    },
+    {
+      "input": "5\r\n100 m = ? mm\r\n1000 km = ? m\r\n20 kg = ? g\r\n200 g = ? mg\r\n0 kg = ? mg",
+      "output": "100 m = 100000 mm\r\n1000 km = 1000000 m\r\n20 kg = 20000 g\r\n200 g = 200000 mg\r\n0 kg = 0 mg"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1741",
+    "通过人数": "962",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:18"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "4919",
+  "title": "数字旋转(rotate)",
+  "tags": [
+    "市赛",
+    "常州2025",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4919",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在电子显示屏幕上有 <span class=\"katex math inline\">n</span> 个数字，小 Y 想知道，最少需要修改 <span class=\"katex math inline\">n</span> 个数字中的几个数字，使得这 <span class=\"katex math inline\">n</span> 个数字按中心整体旋转 <span class=\"katex math inline\">180</span> 度之后，和原来一模一样。</p>\n<p>在这个任务中，我们规定，<span class=\"katex math inline\">0,1,2,5,8</span> 这 <span class=\"katex math inline\">5</span> 个数字旋转 <span class=\"katex math inline\">180</span> 度之后和原来一模一样。<span class=\"katex math inline\">6</span> 旋转后变为 <span class=\"katex math inline\">9</span>，<span class=\"katex math inline\">9</span> 旋转后变为 <span class=\"katex math inline\">6</span>。<span class=\"katex math inline\">3,4,7</span> 这 <span class=\"katex math inline\">3</span> 个数字旋转 <span class=\"katex math inline\">180</span> 度后不能称作数字，<span class=\"katex math inline\">3</span> 变成了大写字母 <code>E</code>，<span class=\"katex math inline\">7</span> 变成了大写字母 <code>L</code>，<span class=\"katex math inline\">4</span> 旋转后变成的图案既不是数字，也不是字母。</p>\n<p><img src=\"https://assets.boyi.local/f9d3c2f92f1f21f4f9abe213.png\"></p>\n<p>举例来说，如果 <span class=\"katex math inline\">n=3</span> ，数字为 <span class=\"katex math inline\">121</span>，旋转 <span class=\"katex math inline\">180</span> 度之后数字仍然为 <span class=\"katex math inline\">121</span>，不需要进行任何修改。如果 <span class=\"katex math inline\">n=3</span>，数字为 <span class=\"katex math inline\">125</span>，旋转 <span class=\"katex math inline\">180</span> 度之后数字为 <span class=\"katex math inline\">521</span>，和原来不一样，因此需要在原来的基础上，把 <span class=\"katex math inline\">125</span> 的第一个数字改成 <span class=\"katex math inline\">5</span>（变成 <span class=\"katex math inline\">525</span>）或者第三个数字改成 <span class=\"katex math inline\">1</span>（变成 <span class=\"katex math inline\">121</span>），旋转 <span class=\"katex math inline\">180</span> 度后才会和原来一样。</p>\n</div>            </div>",
+      "text": "在电子显示屏幕上有 n 个数字，小 Y 想知道，最少需要修改 n 个数字中的几个数字，使得这 n 个数字按中心整体旋转 180 度之后，和原来一模一样。\n在这个任务中，我们规定，0,1,2,5,8 这 5 个数字旋转 180 度之后和原来一模一样。6 旋转后变为 9，9 旋转后变为 6。3,4,7 这 3 个数字旋转 180 度后不能称作数字，3 变成了大写字母 E，7 变成了大写字母 L，4 旋转后变成的图案既不是数字，也不是字母。\n\n举例来说，如果 n=3 ，数字为 121，旋转 180 度之后数字仍然为 121，不需要进行任何修改。如果 n=3，数字为 125，旋转 180 度之后数字为 521，和原来不一样，因此需要在原来的基础上，把 125 的第一个数字改成 5（变成 525）或者第三个数字改成 1（变成 121），旋转 180 度后才会和原来一样。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个正整数 <span class=\"katex math inline\">n</span>。</p>\n<p>第二行一个长度为 <span class=\"katex math inline\">n</span> 的字符串表示 <span class=\"katex math inline\">n</span> 个数字。</p>\n</div>            </div>",
+      "text": "第一行一个正整数 n。\n第二行一个长度为 n 的字符串表示 n 个数字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行 <span class=\"katex math inline\">1</span> 个数表示最少需要修改的数字数量是多少。</p>\n</div>            </div>",
+      "text": "一行 1 个数表示最少需要修改的数字数量是多少。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n125</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n61819</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4\r\n3473</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>4</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n125\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                5\r\n61819\n                            \n                            \n                                输出\n                                0\n                            \n                        \n                                                    \n                                输入\n                                4\r\n3473\n                            \n                            \n                                输出\n                                4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>本题共有 <span class=\"katex math inline\">6</span> 个测试点，每个测试点 <span class=\"katex math inline\">10</span> 分。</p>\n<p>对于所有测试点： <span class=\"katex math inline\">1\\le n \\le 100000</span>，数字包含 <span class=\"katex math inline\">0,1,2,3,4,5,6,7,8,9</span>。</p>\n<p>对于测试点 <span class=\"katex math inline\">1</span>：保证 <span class=\"katex math inline\">n=1</span>。</p>\n<p>对于测试点 <span class=\"katex math inline\">2</span>：保证数字仅包含 <span class=\"katex math inline\">3,4,7</span>。</p>\n<p>对于测试点 <span class=\"katex math inline\">3-4</span>：保证 <span class=\"katex math inline\">n</span> 是偶数。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n本题共有 6 个测试点，每个测试点 10 分。\n对于所有测试点： 1\\le n \\le 100000，数字包含 0,1,2,3,4,5,6,7,8,9。\n对于测试点 1：保证 n=1。\n对于测试点 2：保证数字仅包含 3,4,7。\n对于测试点 3-4：保证 n 是偶数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年常州“信息与未来”小学生编程比赛</p>\n</div>                </div>",
+      "text": "2025年常州“信息与未来”小学生编程比赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">常州2025</span><span class=\"label label-info\">字符串</span></span></p>\n</div>                </div>",
+      "text": "市赛常州2025字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n125",
+      "output": "1"
+    },
+    {
+      "input": "5\r\n61819",
+      "output": "0"
+    },
+    {
+      "input": "4\r\n3473",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "11",
+    "通过人数": "7",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:13"
+}

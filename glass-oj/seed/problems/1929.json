@@ -1,0 +1,58 @@
+{
+  "id": "1929",
+  "title": "最短网络 Agri-Net（USACO3.1）",
+  "tags": [
+    "USACO",
+    "并查集",
+    "贪心"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1929",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Farmer John 被选为他们镇的镇长！他其中一个竞选承诺就是在镇上建立起互联网，并连接到所有的农场。当然，他需要你的帮助。</p>\n<p>FJ 已经给他的农场安排了一条高速的网络线路，他想把这条线路共享给其他农场。为了用最小的消费，他想铺设最短的光纤去连接所有的农场。</p>\n<p>你将得到一份各农场之间连接费用的列表，你必须找出能连接所有农场并所用光纤最短的方案。每两个农场间的距离不会超过 <span class=\"katex math inline\">10^5</span> 。</p>\n</div>            </div>",
+      "text": "Farmer John 被选为他们镇的镇长！他其中一个竞选承诺就是在镇上建立起互联网，并连接到所有的农场。当然，他需要你的帮助。\nFJ 已经给他的农场安排了一条高速的网络线路，他想把这条线路共享给其他农场。为了用最小的消费，他想铺设最短的光纤去连接所有的农场。\n你将得到一份各农场之间连接费用的列表，你必须找出能连接所有农场并所用光纤最短的方案。每两个农场间的距离不会超过 10^5 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行农场的个数 <span class=\"katex math inline\">N</span>（<span class=\"katex math inline\">3≤N≤100</span>）。</p>\n<p>接下来是一个 <span class=\"katex math inline\">N \\times N</span> 的矩阵，表示每个农场之间的距离。理论上，他们是 <span class=\"katex math inline\">N</span> 行，每行由 <span class=\"katex math inline\">N</span> 个用空格分隔的数组成，实际上，由于每行 <span class=\"katex math inline\">80</span> 个字符的限制，因此，某些行会紧接着另一些行。当然，对角线将会是 <span class=\"katex math inline\">0</span> ，因为不会有线路从第 <span class=\"katex math inline\">i</span> 个农场到它本身。</p>\n</div>            </div>",
+      "text": "第一行农场的个数 N（3≤N≤100）。\n接下来是一个 N \\times N 的矩阵，表示每个农场之间的距离。理论上，他们是 N 行，每行由 N 个用空格分隔的数组成，实际上，由于每行 80 个字符的限制，因此，某些行会紧接着另一些行。当然，对角线将会是 0 ，因为不会有线路从第 i 个农场到它本身。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一个输出，其中包含连接到每个农场的光纤的最小长度。</p>\n</div>            </div>",
+      "text": "只有一个输出，其中包含连接到每个农场的光纤的最小长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n0 4 9 21\r\n4 0 8 17\r\n9 8 0 16\r\n21 17 16 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>28</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n0 4 9 21\r\n4 0 8 17\r\n9 8 0 16\r\n21 17 16 0\n                        \n                        \n                            输出\n                            28"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO 并查集 贪心</p>\n</div>                </div>",
+      "text": "USACO 并查集 贪心"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">USACO</span><span class=\"label label-warning\">并查集</span><span class=\"label label-info\">贪心</span></span></p>\n</div>                </div>",
+      "text": "USACO并查集贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n0 4 9 21\r\n4 0 8 17\r\n9 8 0 16\r\n21 17 16 0",
+      "output": "28"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2896",
+    "通过人数": "1998",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:07"
+}

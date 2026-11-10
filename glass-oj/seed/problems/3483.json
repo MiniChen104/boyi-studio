@@ -1,0 +1,67 @@
+{
+  "id": "3483",
+  "title": "小杨的字典",
+  "tags": [
+    "GESP四级",
+    "字符串",
+    "map",
+    "23年12月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3483",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在遥远的星球，有两个国家 <span class=\"katex math inline\">A</span> 国和 <span class=\"katex math inline\">B</span> 国，他们使用着不同的语言：<span class=\"katex math inline\">A</span> 语言和 <span class=\"katex math inline\">B</span> 语言。小杨是 <span class=\"katex math inline\">B</span> 国的翻译官，他的工作是将 <span class=\"katex math inline\">A</span> 语言的文章翻译成 <span class=\"katex math inline\">B</span> 语言的文章。</p>\n<p>为了顺利完成工作，小杨制作了一本字典，里面记录了 <span class=\"katex math inline\">N</span> 个 <span class=\"katex math inline\">A</span> 语言单词对应的 <span class=\"katex math inline\">B</span> 语言单词，巧合的是，这些单词都由地球上的 <span class=\"katex math inline\">26</span> 个小写英文字母组成。</p>\n<p>小杨希望你写一个程序，帮助他根据这本字典翻译一段 <span class=\"katex math inline\">A</span> 语言文章。这段文章由标点符号 <code>!()-[]{}\\|;:&#x27;&quot;,./?&lt;&gt;</code> 和一些 <span class=\"katex math inline\">A</span> 语言单词构成，每个单词之间必定由至少一个标点符号分割，你的程序需要把这段话中的所有 <span class=\"katex math inline\">A</span> 语言单词替换成它的 <span class=\"katex math inline\">B</span> 语言翻译。特别地，如果遇到不在字典中的单词，请使用大写 <code>UNK</code> 来替换它。</p>\n<p>例如，小杨的字典中包含 <span class=\"katex math inline\">2</span> 个 <span class=\"katex math inline\">A</span> 语言单词 <code>abc</code> 和 <code>d</code> ，它们的 <span class=\"katex math inline\">B</span> 语言翻译分别为 <code>a</code> 和 <code>def</code> ，那么我们可以把 <span class=\"katex math inline\">A</span> 语言文章 <code>abc.d.d.abc.abcd.</code> 翻译成 <span class=\"katex math inline\">B</span> 语言文章 <code>a.def.def.a.UNK.</code> ，其中，单词 <code>abcd</code> 不在词典内，因此我\n们需要使用 <code>UNK</code> 来替换它。</p>\n</div>            </div>",
+      "text": "在遥远的星球，有两个国家 A 国和 B 国，他们使用着不同的语言：A 语言和 B 语言。小杨是 B 国的翻译官，他的工作是将 A 语言的文章翻译成 B 语言的文章。\n为了顺利完成工作，小杨制作了一本字典，里面记录了 N 个 A 语言单词对应的 B 语言单词，巧合的是，这些单词都由地球上的 26 个小写英文字母组成。\n小杨希望你写一个程序，帮助他根据这本字典翻译一段 A 语言文章。这段文章由标点符号 !()-[]{}\\|;:'\",./?<> 和一些 A 语言单词构成，每个单词之间必定由至少一个标点符号分割，你的程序需要把这段话中的所有 A 语言单词替换成它的 B 语言翻译。特别地，如果遇到不在字典中的单词，请使用大写 UNK 来替换它。\n例如，小杨的字典中包含 2 个 A 语言单词 abc 和 d ，它们的 B 语言翻译分别为 a 和 def ，那么我们可以把 A 语言文章 abc.d.d.abc.abcd. 翻译成 B 语言文章 a.def.def.a.UNK. ，其中，单词 abcd 不在词典内，因此我\n们需要使用 UNK 来替换它。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">N</span>，表示词典中的条目数。保证 <span class=\"katex math inline\"> N \\leq 100 </span>。</p>\n<p>接下来 <span class=\"katex math inline\"> N </span> 行，每行两个用单个空格隔开的字符串 <span class=\"katex math inline\"> A,B </span>，分别表示字典中的一个 <span class=\"katex math inline\">A</span> 语言单词以及它对应的 <span class=\"katex math inline\">B</span> 语言翻\n译。保证所有 <span class=\"katex math inline\"> A </span> 不重复；保证 <span class=\"katex math inline\"> A </span> 和 <span class=\"katex math inline\"> B </span> 的长度不超过 <span class=\"katex math inline\">10</span>。</p>\n<p>最后一行一个字符串 <span class=\"katex math inline\">S</span>，表示需要翻译的 <span class=\"katex math inline\">A</span> 语言文章。保证字符串 <span class=\"katex math inline\">S</span> 的长度不超过 <span class=\"katex math inline\">1000</span> ，保证字符串 <span class=\"katex math inline\">S</span> 只包含小写字母以及标点符号 <code>!()-[]{}\\|;:&#x27;&quot;,./?&lt;&gt;</code> 。</p>\n</div>            </div>",
+      "text": "第一行一个整数 N，表示词典中的条目数。保证  N \\leq 100 。\n接下来  N  行，每行两个用单个空格隔开的字符串  A,B ，分别表示字典中的一个 A 语言单词以及它对应的 B 语言翻\n译。保证所有  A  不重复；保证  A  和  B  的长度不超过 10。\n最后一行一个字符串 S，表示需要翻译的 A 语言文章。保证字符串 S 的长度不超过 1000 ，保证字符串 S 只包含小写字母以及标点符号 !()-[]{}\\|;:'\",./?<> 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，表示翻译后的结果。</p>\n</div>            </div>",
+      "text": "输出一行，表示翻译后的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\nabc a\r\nd def\r\nabc.d.d.abc.abcd.</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>a.def.def.a.UNK.</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3\r\nabc a\r\nd def\r\nabcd xxxx\r\nabc,(d)d!-abc?abcd</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>a,(def)def!-a?xxxx</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1\r\nabcdefghij klmnopqrst\r\n!()-[]{}\\|;:&#x27;&quot;,./?&lt;&gt;abcdefghijklmnopqrstuvwxyz</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>!()-[]{}\\|;:&#x27;&quot;,./?&lt;&gt;UNK</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\nabc a\r\nd def\r\nabc.d.d.abc.abcd.\n                        \n                        \n                            输出\n                            a.def.def.a.UNK.\n                        \n\n                                                    \n                                输入\n                                3\r\nabc a\r\nd def\r\nabcd xxxx\r\nabc,(d)d!-abc?abcd\n                            \n                            \n                                输出\n                                a,(def)def!-a?xxxx\n                            \n                        \n                                                    \n                                输入\n                                1\r\nabcdefghij klmnopqrst\r\n!()-[]{}\\|;:'\",./?<>abcdefghijklmnopqrstuvwxyz\n                            \n                            \n                                输出\n                                !()-[]{}\\|;:'\",./?<>UNK"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年12月四级</p>\n</div>                </div>",
+      "text": "GESP23年12月四级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">map</span><span class=\"label label-danger\">23年12月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级字符串map23年12月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\nabc a\r\nd def\r\nabc.d.d.abc.abcd.",
+      "output": "a.def.def.a.UNK."
+    },
+    {
+      "input": "3\r\nabc a\r\nd def\r\nabcd xxxx\r\nabc,(d)d!-abc?abcd",
+      "output": "a,(def)def!-a?xxxx"
+    },
+    {
+      "input": "1\r\nabcdefghij klmnopqrst\r\n!()-[]{}\\|;:'\",./?<>abcdefghijklmnopqrstuvwxyz",
+      "output": "!()-[]{}\\|;:'\",./?<>UNK"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1020",
+    "通过人数": "632",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:19"
+}

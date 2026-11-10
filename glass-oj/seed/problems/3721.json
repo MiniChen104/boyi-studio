@@ -1,0 +1,65 @@
+{
+  "id": "3721",
+  "title": "ABC 字符串 (string)",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3721",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 Y 给了小 X 一个只包含大写字母 <code>A</code>,<code>B</code>,<code>C</code> 的字符串 。你可以对这个字符串进行如下操作：将子串 <code>ABC</code> 变成 <code>BCA</code>。 </p>\n<p>小 X 想知道这个字符串最多能进行多少次操作。 </p>\n<p>一个字符串的子串是把这个字符串通过删去头部和尾部若干个字符形成的字符串。 </p>\n<p>例如：<code>A</code>,<code>B</code>,<code>BB</code>,<code>AB</code>,<code>ABB</code> 是 <code>ABB</code> 的子串，<code>ABA</code> 不是 <code>ABBA</code> 的子串。</p>\n</div>            </div>",
+      "text": "小 Y 给了小 X 一个只包含大写字母 A,B,C 的字符串 。你可以对这个字符串进行如下操作：将子串 ABC 变成 BCA。 \n小 X 想知道这个字符串最多能进行多少次操作。 \n一个字符串的子串是把这个字符串通过删去头部和尾部若干个字符形成的字符串。 \n例如：A,B,BB,AB,ABB 是 ABB 的子串，ABA 不是 ABBA 的子串。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个字符串 <span class=\"katex math inline\">S</span>。</p>\n</div>            </div>",
+      "text": "一行一个字符串 S。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数表示答案。</p>\n</div>            </div>",
+      "text": "一行一个整数表示答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>ABCABC</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>ABCACCBABCBCAABCB</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>6</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            ABCABC\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                ABCACCBABCBCAABCB\n                            \n                            \n                                输出\n                                6"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例1解释】</p>\n<p><code>ABCABC</code> </p>\n<p><code>ABCBCA</code> </p>\n<p><code>BCABCA</code> </p>\n<p><code>BCBCAA</code></p>\n<p>最多操作 <span class=\"katex math inline\">3</span> 次。</p>\n<p>【数据范围与说明】</p>\n<p>对于全部测试点：<span class=\"katex math inline\">n\\leq200000</span>，<span class=\"katex math inline\">n</span> 表示输入的字符串的长度。 </p>\n<p>对于测试点 <span class=\"katex math inline\">1-4</span> ：<span class=\"katex math inline\">n\\leq10</span> ;</p>\n<p>对于测试点 <span class=\"katex math inline\">5-7</span> ：<span class=\"katex math inline\">n\\leq1000</span>, 并且保证无论按照什么顺序操作，被操作的子串两两不相交（换句话说，一个下标不会被两个操作的字符串同时覆盖）; </p>\n<p>对于测试点 <span class=\"katex math inline\">8-10</span>：<span class=\"katex math inline\">n\\leq200000</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1解释】\nABCABC \nABCBCA \nBCABCA \nBCBCAA\n最多操作 3 次。\n【数据范围与说明】\n对于全部测试点：n\\leq200000，n 表示输入的字符串的长度。 \n对于测试点 1-4 ：n\\leq10 ;\n对于测试点 5-7 ：n\\leq1000, 并且保证无论按照什么顺序操作，被操作的子串两两不相交（换句话说，一个下标不会被两个操作的字符串同时覆盖）; \n对于测试点 8-10：n\\leq200000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>23年常州市赛T3</p>\n</div>                </div>",
+      "text": "23年常州市赛T3"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "ABCABC",
+      "output": "3"
+    },
+    {
+      "input": "ABCACCBABCBCAABCB",
+      "output": "6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "16",
+    "通过人数": "10",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:35:53"
+}

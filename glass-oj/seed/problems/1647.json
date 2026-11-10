@@ -1,0 +1,56 @@
+{
+  "id": "1647",
+  "title": "判断四位数是否为对称数",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1647",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘输入一个四位数，判断其是否为对称数(正过来和倒过来一样，比如 <span class=\"katex math inline\">1221,1331</span> 等等)，如果是则输出 <code>yes</code>，否则输出 <code>no</code> 。</p>\n</div>            </div>",
+      "text": "从键盘输入一个四位数，判断其是否为对称数(正过来和倒过来一样，比如 1221,1331 等等)，如果是则输出 yes，否则输出 no 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个四位数 <span class=\"katex math inline\">n（1000 \\lt n \\lt 9999） </span> 。</p>\n</div>            </div>",
+      "text": "输入一个四位数 n（1000 \\lt n \\lt 9999）  。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <code>yes</code> 或者 <code>no</code> 。</p>\n</div>            </div>",
+      "text": "输出 yes 或者 no 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1234</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>no</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1234\n                        \n                        \n                            输出\n                            no"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1234",
+      "output": "no"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "3286",
+    "通过人数": "2490",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:19"
+}

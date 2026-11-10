@@ -1,0 +1,56 @@
+{
+  "id": "1391",
+  "title": "公交卡充值问题？",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1391",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明去公交卡充值中心为自己的公交卡充值，公交充值中心搞了一个充值优惠活动，活动详情如下：</p>\n<p><span class=\"katex math inline\">（1）</span> 充值 <span class=\"katex math inline\">200</span> 元<span class=\"katex math inline\"> \\sim 299 </span> 元，赠送 <span class=\"katex math inline\">50</span> 元余额到卡中；</p>\n<p><span class=\"katex math inline\">（2）</span> 充值 <span class=\"katex math inline\">300</span> 元<span class=\"katex math inline\"> \\sim 499 </span> 元，赠送 <span class=\"katex math inline\">100</span> 元余额到卡中；</p>\n<p><span class=\"katex math inline\">（3）</span> 充值 <span class=\"katex math inline\">500</span> 元及 <span class=\"katex math inline\">500</span> 元以上，赠送 <span class=\"katex math inline\">200</span> 元余额到卡中；</p>\n<p><span class=\"katex math inline\">（4）</span> 充值 <span class=\"katex math inline\">200</span> 元以下，则没有赠送活动；</p>\n<p>比如：小明如果充值 <span class=\"katex math inline\">350</span> 元，那么实际卡中到账的金额将会是 <span class=\"katex math inline\">450</span> 元（ <span class=\"katex math inline\">350</span> 元充值 <span class=\"katex math inline\">+ 100</span> 元赠送）。\n请编程帮助公交卡充值中心，根据客户的充值金额，计算实际应当到账的金额？</p>\n</div>            </div>",
+      "text": "小明去公交卡充值中心为自己的公交卡充值，公交充值中心搞了一个充值优惠活动，活动详情如下：\n（1） 充值 200 元 \\sim 299  元，赠送 50 元余额到卡中；\n（2） 充值 300 元 \\sim 499  元，赠送 100 元余额到卡中；\n（3） 充值 500 元及 500 元以上，赠送 200 元余额到卡中；\n（4） 充值 200 元以下，则没有赠送活动；\n比如：小明如果充值 350 元，那么实际卡中到账的金额将会是 450 元（ 350 元充值 + 100 元赠送）。\n请编程帮助公交卡充值中心，根据客户的充值金额，计算实际应当到账的金额？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> ，代表小明的充值金额（<span class=\"katex math inline\">n</span> 是 <span class=\"katex math inline\">1 \\sim 9299 </span> 之间的整数）。</p>\n</div>            </div>",
+      "text": "一个整数 n ，代表小明的充值金额（n 是 1 \\sim 9299  之间的整数）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，代表实际到账的金额。</p>\n</div>            </div>",
+      "text": "一个整数，代表实际到账的金额。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>200</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>250</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            200\n                        \n                        \n                            输出\n                            250"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "200",
+      "output": "250"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "36580",
+    "通过人数": "22510",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:48"
+}

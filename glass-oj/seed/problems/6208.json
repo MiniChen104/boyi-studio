@@ -1,0 +1,62 @@
+{
+  "id": "6208",
+  "title": "去旅行",
+  "tags": [
+    "GESP一级",
+    "26年6月",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6208",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>快暑假了，小杨同学正在计划出去旅行，前往目的地的方案多种多样，小杨同学想知道如何前往目的地最便宜。</p>\n<p>小杨同学住在 A 市，旅行目的地是 B 市，小杨同学前往目的地有三种方案：</p>\n<ol><li>从 A 市直飞 B 市；</li>\n<li>从 A 市坐高铁到 C 市，然后坐飞机到 B 市；</li>\n<li>从 A 市坐高铁到 C 市，然后坐高铁到 B 市。</li>\n</ol><p>请帮小杨同学求出最便宜的出行方案的价格。</p>\n</div>            </div>",
+      "text": "快暑假了，小杨同学正在计划出去旅行，前往目的地的方案多种多样，小杨同学想知道如何前往目的地最便宜。\n小杨同学住在 A 市，旅行目的地是 B 市，小杨同学前往目的地有三种方案：\n从 A 市直飞 B 市；\n从 A 市坐高铁到 C 市，然后坐飞机到 B 市；\n从 A 市坐高铁到 C 市，然后坐高铁到 B 市。\n请帮小杨同学求出最便宜的出行方案的价格。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含 <span class=\"katex math inline\">4</span> 行，每行一个正整数：</p>\n<p>第 1 行的正整数表示「从 A 市直飞 B 市」的价格；</p>\n<p>第 2 行的正整数表示「从 A 市坐高铁到 C 市」的价格；</p>\n<p>第 3 行的正整数表示「从 C 市坐飞机到 B 市」的价格；</p>\n<p>第 4 行的正整数表示「从 C 市坐高铁到 B 市」的价格。</p>\n</div>            </div>",
+      "text": "输入包含 4 行，每行一个正整数：\n第 1 行的正整数表示「从 A 市直飞 B 市」的价格；\n第 2 行的正整数表示「从 A 市坐高铁到 C 市」的价格；\n第 3 行的正整数表示「从 C 市坐飞机到 B 市」的价格；\n第 4 行的正整数表示「从 C 市坐高铁到 B 市」的价格。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个正整数，表示 <span class=\"katex math inline\">3</span> 种方式中，最便宜的出行方案的价格。</p>\n</div>            </div>",
+      "text": "输出一个正整数，表示 3 种方式中，最便宜的出行方案的价格。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>999\r\n105\r\n699\r\n588</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>693</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>9\r\n3\r\n8\r\n7</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>9</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            999\r\n105\r\n699\r\n588\n                        \n                        \n                            输出\n                            693\n                        \n\n                                                    \n                                输入\n                                9\r\n3\r\n8\r\n7\n                            \n                            \n                                输出\n                                9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\">样例解释 1\n<p>方案 1. 直飞价格为 <code>999</code>；</p>\n<p>方案 2. 高铁转飞机价格为 <code>105 + 699 = 804</code>；</p>\n<p>方案 3. 高铁的价格为 <code>105 + 588 = 693</code>；</p>\n<p>因此最便宜的价格是 <code>693</code>。</p>\n样例解释 2\n<p>方案 1. 直飞价格为 <code>9</code>；</p>\n<p>方案 2. 高铁转飞机价格为 <code>3 + 8 = 11</code>；</p>\n<p>方案 3. 高铁的价格为 <code>3 + 7 = 10</code>；</p>\n<p>因此最便宜的价格是 <code>9</code>。</p>\n数据范围\n<p>所有输入均为正整数，且不超过 <code>10000</code>。</p>\n<p>本题共 <code>10</code> 个测试点，每个测试点 <code>10</code> 分。具体数据范围如下：</p>\n<table><thead><tr><th>测试点编号</th><th>价格范围</th><th>设计重点</th></tr></thead><tbody><tr><td><code>1</code></td><td><code>1</code> 到 <code>10000</code></td><td>最优方案为高铁转高铁</td></tr><tr><td><code>2</code></td><td><code>1</code> 到 <code>10000</code></td><td>直飞最便宜，且数值较小</td></tr><tr><td><code>3</code></td><td><code>1</code> 到 <code>10000</code></td><td>高铁转飞机最便宜</td></tr><tr><td><code>4</code></td><td><code>1</code> 到 <code>10000</code></td><td>高铁转高铁最便宜</td></tr><tr><td><code>5</code></td><td><code>1</code> 到 <code>10000</code></td><td>三种方案费用相同</td></tr><tr><td><code>6</code></td><td><code>1</code> 到 <code>10000</code></td><td>直飞与高铁转飞机并列最优</td></tr><tr><td><code>7</code></td><td><code>1</code> 到 <code>10000</code></td><td>高铁转飞机最便宜，含接近上限的数据</td></tr><tr><td><code>8</code></td><td><code>1</code> 到 <code>10000</code></td><td>高铁转高铁最便宜，含接近上限的数据</td></tr><tr><td><code>9</code></td><td><code>1</code> 到 <code>10000</code></td><td>直飞价格取最小值</td></tr><tr><td><code>10</code></td><td><code>10000</code></td><td>所有价格均为最大值</td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "样例解释 1\n方案 1. 直飞价格为 999；\n方案 2. 高铁转飞机价格为 105 + 699 = 804；\n方案 3. 高铁的价格为 105 + 588 = 693；\n因此最便宜的价格是 693。\n样例解释 2\n方案 1. 直飞价格为 9；\n方案 2. 高铁转飞机价格为 3 + 8 = 11；\n方案 3. 高铁的价格为 3 + 7 = 10；\n因此最便宜的价格是 9。\n数据范围\n所有输入均为正整数，且不超过 10000。\n本题共 10 个测试点，每个测试点 10 分。具体数据范围如下：\n测试点编号价格范围设计重点11 到 10000最优方案为高铁转高铁21 到 10000直飞最便宜，且数值较小31 到 10000高铁转飞机最便宜41 到 10000高铁转高铁最便宜51 到 10000三种方案费用相同61 到 10000直飞与高铁转飞机并列最优71 到 10000高铁转飞机最便宜，含接近上限的数据81 到 10000高铁转高铁最便宜，含接近上限的数据91 到 10000直飞价格取最小值1010000所有价格均为最大值"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP一级</span><span class=\"label label-warning\">26年6月</span><span class=\"label label-info\">分支</span></span></p>\n</div>                </div>",
+      "text": "GESP一级26年6月分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "999\r\n105\r\n699\r\n588",
+      "output": "693"
+    },
+    {
+      "input": "9\r\n3\r\n8\r\n7",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1731",
+    "通过人数": "846",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:20"
+}

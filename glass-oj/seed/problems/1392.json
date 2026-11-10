@@ -1,0 +1,46 @@
+{
+  "id": "1392",
+  "title": "回文偶数？",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1392",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明发现有一类数非常有趣，他们正过来读和反过来读是一样的，比如：<span class=\"katex math inline\">121、202、383</span> 等，小明给这类数起了一个名字，叫做回文数。</p>\n<p>请你写程序帮助小明找出所有 <span class=\"katex math inline\">3</span> 位的既是回文数，又是偶数的数，比如： <span class=\"katex math inline\">202</span> 就是满足条件的数，而 <span class=\"katex math inline\">121</span> 虽然是回文数但不是偶数。</p>\n</div>            </div>",
+      "text": "小明发现有一类数非常有趣，他们正过来读和反过来读是一样的，比如：121、202、383 等，小明给这类数起了一个名字，叫做回文数。\n请你写程序帮助小明找出所有 3 位的既是回文数，又是偶数的数，比如： 202 就是满足条件的数，而 121 虽然是回文数但不是偶数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无。</p>\n</div>            </div>",
+      "text": "无。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>所有满足条件的 <span class=\"katex math inline\">3</span> 位的回文偶数，每行 <span class=\"katex math inline\">1</span> 个。</p>\n</div>            </div>",
+      "text": "所有满足条件的 3 位的回文偶数，每行 1 个。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "30064",
+    "通过人数": "21291",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:49"
+}

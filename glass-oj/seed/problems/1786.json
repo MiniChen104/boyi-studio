@@ -1,0 +1,56 @@
+{
+  "id": "1786",
+  "title": "数字直角（4）",
+  "tags": [
+    "嵌套循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1786",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请打印 <span class=\"katex math inline\">n</span> 行的数字倒直角三角形。</p>\n</div>            </div>",
+      "text": "请打印 n 行的数字倒直角三角形。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n \\lt 10</span>）。</p>\n</div>            </div>",
+      "text": "一个整数 n（n \\lt 10）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出如下方图所示n行的数字倒直角三角形。</p>\n</div>            </div>",
+      "text": "输出如下方图所示n行的数字倒直角三角形。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>333\r\n22\r\n1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            333\r\n22\r\n1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>嵌套循环</p>\n</div>                </div>",
+      "text": "嵌套循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">嵌套循环</span></span></p>\n</div>                </div>",
+      "text": "嵌套循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "333\r\n22\r\n1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "22774",
+    "通过人数": "18765",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:24:10"
+}

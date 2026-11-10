@@ -1,0 +1,61 @@
+{
+  "id": "3159",
+  "title": "文字处理（word）",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3159",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Jimmy 老师决定用一个文字处理器来输入作文：这篇作文共有 <span class=\"katex math inline\">N</span> 个单词，用空格分隔。每个单词的长度在 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">15</span> 之间，仅由大写和小写字母组成。这篇作文将用一种特别的方式排版：每一行包含的字符不超过 <span class=\"katex math inline\">K</span> 个，<strong>空格不计</strong>。Jimmy 老师会按照如下的方式进行：</p>\n<p>如果输入了一个单词，这个单词能够放进当前行，就放在当前行。</p>\n<p>否则，将这个单词放到下一行，然后继续向下一行添加单词。</p>\n<p>当然，同一行中的单词之间仍然用一个空格分隔。每一行的结尾都不应当有空格。</p>\n</div>            </div>",
+      "text": "Jimmy 老师决定用一个文字处理器来输入作文：这篇作文共有 N 个单词，用空格分隔。每个单词的长度在 1 到 15 之间，仅由大写和小写字母组成。这篇作文将用一种特别的方式排版：每一行包含的字符不超过 K 个，空格不计。Jimmy 老师会按照如下的方式进行：\n如果输入了一个单词，这个单词能够放进当前行，就放在当前行。\n否则，将这个单词放到下一行，然后继续向下一行添加单词。\n当然，同一行中的单词之间仍然用一个空格分隔。每一行的结尾都不应当有空格。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含两个空格分隔的整数 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">K</span>。</p>\n<p>下一行包含 <span class=\"katex math inline\">N</span> 个单词，单词之间用单个空格分隔。所有单词的长度都不超过一行中的字符上限数 <span class=\"katex math inline\">K</span>。</p>\n</div>            </div>",
+      "text": "输入的第一行包含两个空格分隔的整数 N 和 K。\n下一行包含 N 个单词，单词之间用单个空格分隔。所有单词的长度都不超过一行中的字符上限数 K。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出正确排版的作文。</p>\n</div>            </div>",
+      "text": "输出正确排版的作文。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 7\r\nhello my name is Jimmy and this is my essay</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>hello my\r\nname is\r\nJimmy\r\nand this\r\nis my\r\nessay</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 7\r\nhello my name is Jimmy and this is my essay\n                        \n                        \n                            输出\n                            hello my\r\nname is\r\nJimmy\r\nand this\r\nis my\r\nessay"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p>第一行包含 <span class=\"katex math inline\">7</span> 个非空格字符，包括 &quot;hello&quot; 以及 &quot;my&quot;。再加入&quot;name&quot;会使得第一行包含 <span class=\"katex math inline\"> 11 &gt; 7 </span> 个非空格字符，所以这个单词会被放到下一行。</p>\n<p>【数据范围】</p>\n<p><span class=\"katex math inline\"> 1\\leq N \\leq 100 </span>;</p>\n<p><span class=\"katex math inline\"> 1 \\leq K \\leq 80 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n第一行包含 7 个非空格字符，包括 \"hello\" 以及 \"my\"。再加入\"name\"会使得第一行包含  11 > 7  个非空格字符，所以这个单词会被放到下一行。\n【数据范围】\n 1\\leq N \\leq 100 ;\n 1 \\leq K \\leq 80 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2023 年中山市东区青少年信息学奥林匹克竞赛小学组</p>\n</div>                </div>",
+      "text": "2023 年中山市东区青少年信息学奥林匹克竞赛小学组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 7\r\nhello my name is Jimmy and this is my essay",
+      "output": "hello my\r\nname is\r\nJimmy\r\nand this\r\nis my\r\nessay"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "19",
+    "通过人数": "15",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:29"
+}

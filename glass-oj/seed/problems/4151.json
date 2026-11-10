@@ -1,0 +1,64 @@
+{
+  "id": "4151",
+  "title": "字符排序",
+  "tags": [
+    "GESP四级",
+    "字符串",
+    "贪心",
+    "24年12月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4151",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有 <span class=\"katex math inline\">n</span> 个仅包含小写字母的字符串 <span class=\"katex math inline\">s_1,s_2,\\dots,s_n</span>，小杨想将这些字符串按一定顺序排列后拼接到一起构成字符串 <span class=\"katex math inline\">t</span>。小杨希望最后构成的字符串 <span class=\"katex math inline\">t</span> 满足：</p>\n<ul><li>假设 <span class=\"katex math inline\">t_i</span> 为字符串 <span class=\"katex math inline\">t</span> 的第 <span class=\"katex math inline\">i</span> 个字符，对于所有的 <span class=\"katex math inline\">j \\lt i</span> 均有 <span class=\"katex math inline\">t_j \\le t_i</span>。两个字符的大小关系与其在字母表中的顺序一致，例如 <span class=\"katex math inline\">e \\lt g \\lt p \\lt s</span>。</li>\n</ul><p>小杨想知道是否存在满足条件的字符串排列顺序。</p>\n</div>            </div>",
+      "text": "小杨有 n 个仅包含小写字母的字符串 s_1,s_2,\\dots,s_n，小杨想将这些字符串按一定顺序排列后拼接到一起构成字符串 t。小杨希望最后构成的字符串 t 满足：\n假设 t_i 为字符串 t 的第 i 个字符，对于所有的 j \\lt i 均有 t_j \\le t_i。两个字符的大小关系与其在字母表中的顺序一致，例如 e \\lt g \\lt p \\lt s。\n小杨想知道是否存在满足条件的字符串排列顺序。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">T</span>，代表测试数据组数。</p>\n<p>对于每组测试数据，第一行包含一个正整数 <span class=\"katex math inline\">n</span>，含义如题面所示。</p>\n<p>之后 <span class=\"katex math inline\">n</span> 行，每行包含一个字符串 <span class=\"katex math inline\">s_i</span> 。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 T，代表测试数据组数。\n对于每组测试数据，第一行包含一个正整数 n，含义如题面所示。\n之后 n 行，每行包含一个字符串 s_i 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组测试数据，如果存在满足条件的排列顺序，输出 <span class=\"katex math inline\">1</span>，否则输出 <span class=\"katex math inline\">0</span>。</p>\n</div>            </div>",
+      "text": "对于每组测试数据，如果存在满足条件的排列顺序，输出 1，否则输出 0。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n3\r\naa\r\nac\r\nde\r\n2\r\naac\r\nbc\r\n1\r\ngesp</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n0\r\n0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n3\r\naa\r\nac\r\nde\r\n2\r\naac\r\nbc\r\n1\r\ngesp\n                        \n                        \n                            输出\n                            1\r\n0\r\n0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例1解释】</strong></p>\n<p>对于第一组测试数据，一种可行的排列顺序为 <span class=\"katex math inline\">aa + ac + de</span>，构成的字符串 <span class=\"katex math inline\">t</span> 为 <span class=\"katex math inline\">aaacde</span>，满足条件。</p>\n<h4>数据范围</h4>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le t,n \\le 100</span>，每个字符串的长度不超过 <span class=\"katex math inline\">10</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1解释】\n对于第一组测试数据，一种可行的排列顺序为 aa + ac + de，构成的字符串 t 为 aaacde，满足条件。\n数据范围\n对于全部数据，保证有 1 \\le t,n \\le 100，每个字符串的长度不超过 10。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 24年12月认证 C++ 四级真题</p>\n</div>                </div>",
+      "text": "GESP 24年12月认证 C++ 四级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">贪心</span><span class=\"label label-danger\">24年12月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级字符串贪心24年12月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n3\r\naa\r\nac\r\nde\r\n2\r\naac\r\nbc\r\n1\r\ngesp",
+      "output": "1\r\n0\r\n0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1192",
+    "通过人数": "563",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:44"
+}

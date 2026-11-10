@@ -1,0 +1,69 @@
+{
+  "id": "2322",
+  "title": "TT 的时间（time）",
+  "tags": [
+    "区赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2322",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>我们的记时方法分为 <span class=\"katex math inline\">12</span> 时记时法和 <span class=\"katex math inline\">24</span> 时记时法两种。  </p>\n<p>所谓 <span class=\"katex math inline\">12</span> 时记时法是指：深夜 <span class=\"katex math inline\">12</span> 时是一日的开始，<span class=\"katex math inline\">1</span> 天的 <span class=\"katex math inline\">24</span> 小时又分为两段，每段 <span class=\"katex math inline\">12</span> 小时。从深夜 <span class=\"katex math inline\">12</span> 时起到中午 <span class=\"katex math inline\">12</span> 时是上午（<span class=\"katex math inline\">AM</span>），再从中午 <span class=\"katex math inline\">12</span> 时起到深夜 <span class=\"katex math inline\">12</span> 时是下午（<span class=\"katex math inline\">PM</span>），<strong>请注意：中午12点算作PM</strong>。生活中通常采用这种计时法。  </p>\n<p><span class=\"katex math inline\">24</span> 时记时法是广播电台、车站、邮电局等部门采用的 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">24</span> 时计时法，按照这种计时法，下午 <span class=\"katex math inline\">1</span> 时就是 <span class=\"katex math inline\">13：00</span>，下午 <span class=\"katex math inline\">2</span> 时就是 <span class=\"katex math inline\">14：00</span>，夜里 <span class=\"katex math inline\">12</span> 时就是 <span class=\"katex math inline\">24：00</span>，又是第二天的 <span class=\"katex math inline\">00：00</span> 。 TT 有一时钟，上面有个切换的按钮，按一下为 <span class=\"katex math inline\">12</span> 时记时法显示的时间，再按一下为 <span class=\"katex math inline\">24</span> 时记时法 <span class=\"katex math inline\"> \\dots</span> ，请写一相互转换并显示的程序。</p>\n</div>            </div>",
+      "text": "我们的记时方法分为 12 时记时法和 24 时记时法两种。  \n所谓 12 时记时法是指：深夜 12 时是一日的开始，1 天的 24 小时又分为两段，每段 12 小时。从深夜 12 时起到中午 12 时是上午（AM），再从中午 12 时起到深夜 12 时是下午（PM），请注意：中午12点算作PM。生活中通常采用这种计时法。  \n24 时记时法是广播电台、车站、邮电局等部门采用的 0 到 24 时计时法，按照这种计时法，下午 1 时就是 13：00，下午 2 时就是 14：00，夜里 12 时就是 24：00，又是第二天的 00：00 。 TT 有一时钟，上面有个切换的按钮，按一下为 12 时记时法显示的时间，再按一下为 24 时记时法  \\dots ，请写一相互转换并显示的程序。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：一个整数 <span class=\"katex math inline\">t，12</span> 或者 <span class=\"katex math inline\">24</span>，表示给出的时间为何种记时法。</p>\n<p>第二行：<span class=\"katex math inline\">t</span> 是 <span class=\"katex math inline\">12</span>，则先给出 <span class=\"katex math inline\">AM</span> 或 <span class=\"katex math inline\">PM</span>，表示时间为上午或下午，后面三个整数 <span class=\"katex math inline\">h，m，s</span> ，表示时，分，秒；如果 <span class=\"katex math inline\">t</span> 是 <span class=\"katex math inline\">24</span>，则只有 <span class=\"katex math inline\">h，m，s</span>。</p>\n</div>            </div>",
+      "text": "第一行：一个整数 t，12 或者 24，表示给出的时间为何种记时法。\n第二行：t 是 12，则先给出 AM 或 PM，表示时间为上午或下午，后面三个整数 h，m，s ，表示时，分，秒；如果 t 是 24，则只有 h，m，s。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">1</span> 行：转换为 <span class=\"katex math inline\">12</span> 时记时法，则先输出” <span class=\"katex math inline\">AM</span> ”或” <span class=\"katex math inline\">PM</span> ”，一个空格后面三个整数，中间用” <span class=\"katex math inline\">:</span> ”隔开，表示转换后的时间；转换为 <span class=\"katex math inline\">24</span> 时记时法，则直接输出” <span class=\"katex math inline\">：</span> ”隔开的时，分，秒。</p>\n</div>            </div>",
+      "text": "1 行：转换为 12 时记时法，则先输出” AM ”或” PM ”，一个空格后面三个整数，中间用” : ”隔开，表示转换后的时间；转换为 24 时记时法，则直接输出” ： ”隔开的时，分，秒。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>12\r\nPM 8 12 30</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>20:12:30</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>24\r\n9 18 23</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>AM 9:18:23</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>24\r\n12 21 9</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>PM 12:21:9</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            12\r\nPM 8 12 30\n                        \n                        \n                            输出\n                            20:12:30\n                        \n\n                                                    \n                                输入\n                                24\r\n9 18 23\n                            \n                            \n                                输出\n                                AM 9:18:23\n                            \n                        \n                                                    \n                                输入\n                                24\r\n12 21 9\n                            \n                            \n                                输出\n                                PM 12:21:9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><span class=\"katex math inline\">100 \\%</span> 的数据，<span class=\"katex math inline\">t=12</span> 或 <span class=\"katex math inline\">24</span>，<span class=\"katex math inline\">0 \\le m</span>, <span class=\"katex math inline\">s \\le 59</span> 。当 <span class=\"katex math inline\">t=12</span> 时，<span class=\"katex math inline\">0\\le h \\le 12</span>； 当 <span class=\"katex math inline\">t=24</span> 时，<span class=\"katex math inline\">0 \\le h \\lt 24</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "100 \\% 的数据，t=12 或 24，0 \\le m, s \\le 59 。当 t=12 时，0\\le h \\le 12； 当 t=24 时，0 \\le h \\lt 24。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2018 年武进区第 11 届程序设计比赛试题-小学组 T1</p>\n</div>                </div>",
+      "text": "2018 年武进区第 11 届程序设计比赛试题-小学组 T1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">区赛</span></span></p>\n</div>                </div>",
+      "text": "区赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "12\r\nPM 8 12 30",
+      "output": "20:12:30"
+    },
+    {
+      "input": "24\r\n9 18 23",
+      "output": "AM 9:18:23"
+    },
+    {
+      "input": "24\r\n12 21 9",
+      "output": "PM 12:21:9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "856",
+    "通过人数": "167",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:10"
+}

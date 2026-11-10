@@ -1,0 +1,56 @@
+{
+  "id": "1051",
+  "title": "填数",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1051",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>由于小星同学上课不专心，今天老师布置了几道数学题目他不会解答了。怎么办呢？这下他可发愁了！请热心的你来帮帮他。</p>\n<p>题目是给你一组有规律序列的前面 <span class=\"katex math inline\">3</span> 个整数，请你给出它后面跟着的 <span class=\"katex math inline\">3</span> 个整数，如：<code>1,2,4,___,___,___</code>。这个是等比数列，后面应该是 <span class=\"katex math inline\">8,16,32</span> 。（等比数列可以简单理解为相邻两项的比值（商））</p>\n<p>如果是<code>1,2,3,___,___,___</code>。这是个等差数列，后面应该是<span class=\"katex math inline\">4,5,6</span> 。（等差数列可以简单理解为相邻两项的差值一定）</p>\n<p>现在小星已经知道这串序列要么是等比数列，要么是等差数列。</p>\n</div>            </div>",
+      "text": "由于小星同学上课不专心，今天老师布置了几道数学题目他不会解答了。怎么办呢？这下他可发愁了！请热心的你来帮帮他。\n题目是给你一组有规律序列的前面 3 个整数，请你给出它后面跟着的 3 个整数，如：1,2,4,___,___,___。这个是等比数列，后面应该是 8,16,32 。（等比数列可以简单理解为相邻两项的比值（商））\n如果是1,2,3,___,___,___。这是个等差数列，后面应该是4,5,6 。（等差数列可以简单理解为相邻两项的差值一定）\n现在小星已经知道这串序列要么是等比数列，要么是等差数列。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行： <span class=\"katex math inline\">3</span> 个整数 <span class=\"katex math inline\">a1，a2，a3</span> 。（ <span class=\"katex math inline\">0 \\le a1 \\le a2 \\le a3 \\le 100</span> ）</p>\n</div>            </div>",
+      "text": "一行： 3 个整数 a1，a2，a3 。（ 0 \\le a1 \\le a2 \\le a3 \\le 100 ）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行： <span class=\"katex math inline\">3</span> 个整数，之间用一个空格隔开。</p>\n</div>            </div>",
+      "text": "一行： 3 个整数，之间用一个空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 2 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8 16 32</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 2 4\n                        \n                        \n                            输出\n                            8 16 32"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 2 4",
+      "output": "8 16 32"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "6775",
+    "通过人数": "3792",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:14:01"
+}

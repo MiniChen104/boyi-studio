@@ -1,0 +1,67 @@
+{
+  "id": "4974",
+  "title": "假期阅读",
+  "tags": [
+    "GESP一级",
+    "25年6月",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4974",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">A</span> 有一本厚厚的书。这本书总共有 <span class=\"katex math inline\">n</span> 页，小 <span class=\"katex math inline\">A</span> 一天中最多只能阅读完其中的 <span class=\"katex math inline\">k</span> 页。小 <span class=\"katex math inline\">A</span> 的假期总共有 <span class=\"katex math inline\">t</span> 天，他想知道在假期中最多能阅读完这本书的多少页。</p>\n</div>            </div>",
+      "text": "小 A 有一本厚厚的书。这本书总共有 n 页，小 A 一天中最多只能阅读完其中的 k 页。小 A 的假期总共有 t 天，他想知道在假期中最多能阅读完这本书的多少页。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个正整数 <span class=\"katex math inline\">n</span>，表示书的页数。</p>\n<p>第二行，一个正整数 <span class=\"katex math inline\">k</span> ，表示小 <span class=\"katex math inline\">A</span> 每天最多阅读的页数。</p>\n<p>第三行，一个正整数 <span class=\"katex math inline\">t</span> ，表示小 <span class=\"katex math inline\">A</span> 假期的天数。</p>\n</div>            </div>",
+      "text": "第一行，一个正整数 n，表示书的页数。\n第二行，一个正整数 k ，表示小 A 每天最多阅读的页数。\n第三行，一个正整数 t ，表示小 A 假期的天数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数，表示假期中所能阅读的最多页数。</p>\n</div>            </div>",
+      "text": "一行，一个整数，表示假期中所能阅读的最多页数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\n3\r\n2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>6</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>19\r\n3\r\n30</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>19</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\n3\r\n2\n                        \n                        \n                            输出\n                            6\n                        \n\n                                                    \n                                输入\n                                19\r\n3\r\n30\n                            \n                            \n                                输出\n                                19"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p> 对于所有测试点，保证 <span class=\"katex math inline\">n，k，t</span> 均不超过 <span class=\"katex math inline\">1000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n 对于所有测试点，保证 n，k，t 均不超过 1000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP25年6月一级</p>\n</div>                </div>",
+      "text": "GESP25年6月一级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP一级</span><span class=\"label label-warning\">25年6月</span><span class=\"label label-info\">分支</span></span></p>\n</div>                </div>",
+      "text": "GESP一级25年6月分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\n3\r\n2",
+      "output": "6"
+    },
+    {
+      "input": "19\r\n3\r\n30",
+      "output": "19"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "2132",
+    "通过人数": "1726",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:41"
+}

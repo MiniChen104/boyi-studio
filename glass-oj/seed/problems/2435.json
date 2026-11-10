@@ -1,0 +1,61 @@
+{
+  "id": "2435",
+  "title": "有趣的游戏",
+  "tags": [
+    "数组",
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2435",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明和小红在玩一个游戏，每轮游戏开始时给他们每个人分配两张牌，由牌上的点数决定赢家。</p>\n<p><strong>游戏的规则如下：</strong></p>\n<p>两张牌点数相同，称为对牌，点数不同，称为散牌。</p>\n<p>当两人都是对牌时，以两张牌的点数之和大的那个人赢。\n一人为对牌，一人为散牌时，拿对牌的人赢。</p>\n<p>当两人都是散牌时，以两张牌的点数之和对 <span class=\"katex math inline\">10</span> 取模之后大的那个人赢。</p>\n<p>如果没有办法决定赢家，则两人打平。</p>\n</div>            </div>",
+      "text": "小明和小红在玩一个游戏，每轮游戏开始时给他们每个人分配两张牌，由牌上的点数决定赢家。\n游戏的规则如下：\n两张牌点数相同，称为对牌，点数不同，称为散牌。\n当两人都是对牌时，以两张牌的点数之和大的那个人赢。\n一人为对牌，一人为散牌时，拿对牌的人赢。\n当两人都是散牌时，以两张牌的点数之和对 10 取模之后大的那个人赢。\n如果没有办法决定赢家，则两人打平。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为一个正整数 <span class=\"katex math inline\">N</span>，代表游戏进行了 <span class=\"katex math inline\">N</span> 轮。</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，代表每一轮的游戏情况，每行四个数，前两个数为分配给小明的两张牌，后两个数为分配给小红的两张牌。</p>\n</div>            </div>",
+      "text": "第一行为一个正整数 N，代表游戏进行了 N 轮。\n接下来 N 行，代表每一轮的游戏情况，每行四个数，前两个数为分配给小明的两张牌，后两个数为分配给小红的两张牌。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">N</span> 行，每行一个字符串，代表该轮比赛的结果，如果小明赢，输出 <span class=\"katex math inline\">1</span> ，如果小明输了，输出 <span class=\"katex math inline\">-1</span>。</p>\n<p>如果两人打平，输出 <span class=\"katex math inline\">0</span> 。</p>\n</div>            </div>",
+      "text": "N 行，每行一个字符串，代表该轮比赛的结果，如果小明赢，输出 1 ，如果小明输了，输出 -1。\n如果两人打平，输出 0 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1\r\n2 2 3 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>-1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n1 2 3 4\r\n2 2 3 4\r\n3 2 3 4\r\n7 8 2 3\r\n3 3 12 12\r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>-1\r\n1\r\n-1 \r\n0\r\n-1\r\n</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\r\n2 2 3 3\n                        \n                        \n                            输出\n                            -1\n                        \n\n                                                    \n                                输入\n                                5\r\n1 2 3 4\r\n2 2 3 4\r\n3 2 3 4\r\n7 8 2 3\r\n3 3 12 12\r\n\n                            \n                            \n                                输出\n                                -1\r\n1\r\n-1 \r\n0\r\n-1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 <span class=\"katex math inline\">1</span> 解释】</h4>\n<p>游戏进行了一轮，两人都是对牌，小明两张牌和为 <span class=\"katex math inline\">4</span> ，小红和为 <span class=\"katex math inline\">6</span> ，小明输了。</p>\n<h4>【样例 <span class=\"katex math inline\">2</span> 解释】</h4>\n<p>游戏进行了五轮：\n第一轮两人都是散牌，小明两张牌和对 <span class=\"katex math inline\">10</span> 取模后为 <span class=\"katex math inline\">3</span>，小红为 <span class=\"katex math inline\">7</span>，小明输了。</p>\n<p>第二轮小明是对牌，小红是散牌，小明获胜。</p>\n<p>第三轮两人都是散牌，小明两张牌和对 <span class=\"katex math inline\">10</span> 取模后为 <span class=\"katex math inline\">5</span>，小红为 <span class=\"katex math inline\">7</span>，小明输了。</p>\n<p>第四轮两人都是散牌，小明两张牌和对 <span class=\"katex math inline\">10</span> 取模后为 <span class=\"katex math inline\">5</span>，小红也为 <span class=\"katex math inline\">5</span>，两人打平。</p>\n<p>第五轮两人都是对牌，小明两张牌和为 <span class=\"katex math inline\">6</span>，小红两张牌和 <span class=\"katex math inline\">24</span>，小明输了。</p>\n<h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">30\\%</span> 的数据满足：两人都对牌。</p>\n<p>另 <span class=\"katex math inline\">30\\%</span> 的数据满足：两人都是散牌。</p>\n<p><span class=\"katex math inline\">40\\%</span> 的数据满足：每人的两张牌的点数之和都小于10。</p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据满足：<span class=\"katex math inline\">1 \\le N \\le 10^6</span>，牌上的点数为 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">13</span> 之间的正整数。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 1 解释】\n游戏进行了一轮，两人都是对牌，小明两张牌和为 4 ，小红和为 6 ，小明输了。\n【样例 2 解释】\n游戏进行了五轮：\n第一轮两人都是散牌，小明两张牌和对 10 取模后为 3，小红为 7，小明输了。\n第二轮小明是对牌，小红是散牌，小明获胜。\n第三轮两人都是散牌，小明两张牌和对 10 取模后为 5，小红为 7，小明输了。\n第四轮两人都是散牌，小明两张牌和对 10 取模后为 5，小红也为 5，两人打平。\n第五轮两人都是对牌，小明两张牌和为 6，小红两张牌和 24，小明输了。\n【数据范围】\n30\\% 的数据满足：两人都对牌。\n另 30\\% 的数据满足：两人都是散牌。\n40\\% 的数据满足：每人的两张牌的点数之和都小于10。\n100\\% 的数据满足：1 \\le N \\le 10^6，牌上的点数为 1 到 13 之间的正整数。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组</span><span class=\"label label-warning\">模拟</span></span></p>\n</div>                </div>",
+      "text": "数组模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1\r\n2 2 3 3",
+      "output": "-1"
+    },
+    {
+      "input": "5\r\n1 2 3 4\r\n2 2 3 4\r\n3 2 3 4\r\n7 8 2 3\r\n3 3 12 12\r\n",
+      "output": "-1\r\n1\r\n-1 \r\n0\r\n-1\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "666",
+    "通过人数": "377",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:18"
+}

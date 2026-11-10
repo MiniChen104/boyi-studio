@@ -1,0 +1,57 @@
+{
+  "id": "1865",
+  "title": "黑白无常",
+  "tags": [
+    "蓝桥杯",
+    "深搜"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1865",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某寝室的同学们在学术完之后准备玩一个游戏：\n游戏是这样的，每个人头上都被贴了一张白色或者黑色的纸，现在每个人都会说一句话“我看到x张白色纸条和张黑色的纸条”，又已知每个头上贴着白色纸的人 说的是真话、每个头上贴着黑色纸的人说的是谎话，现在要求你判断哪些人头上贴着的是白色的纸条。</p>\n<p>如果无解输出<code>NoSolution.</code>,如果有多组解， 则把每个答案中贴白条的人的编号按照大小排列后组成一个数。</p>\n<p>（比如第一个人和第三个人头上贴着的是白纸条，那么这个数就是13；如果第6、7、8个人都贴的 是白纸条，那么这个数就是678）输出最小的那个数（如果全部都是黑纸条也满足情况的话，那么输出<code>0</code>）</p>\n</div>            </div>",
+      "text": "某寝室的同学们在学术完之后准备玩一个游戏：\n游戏是这样的，每个人头上都被贴了一张白色或者黑色的纸，现在每个人都会说一句话“我看到x张白色纸条和张黑色的纸条”，又已知每个头上贴着白色纸的人 说的是真话、每个头上贴着黑色纸的人说的是谎话，现在要求你判断哪些人头上贴着的是白色的纸条。\n如果无解输出NoSolution.,如果有多组解， 则把每个答案中贴白条的人的编号按照大小排列后组成一个数。\n（比如第一个人和第三个人头上贴着的是白纸条，那么这个数就是13；如果第6、7、8个人都贴的 是白纸条，那么这个数就是678）输出最小的那个数（如果全部都是黑纸条也满足情况的话，那么输出0）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为一个整数 <span class=\"katex math inline\">n</span> ，接下来 <span class=\"katex math inline\">n</span> 行中的第 <span class=\"katex math inline\">i</span> 行有两个整数 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span> ，分别表示第 <span class=\"katex math inline\">i</span> 个人说 “我看到 <span class=\"katex math inline\">x</span> 张白色纸条和 <span class=\"katex math inline\">y</span> 张黑色的纸条 ”。</p>\n</div>            </div>",
+      "text": "第一行为一个整数 n ，接下来 n 行中的第 i 行有两个整数 x 和 y ，分别表示第 i 个人说 “我看到 x 张白色纸条和 y 张黑色的纸条 ”。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行。如果无解输出 <code>NoSolution.</code> 。\n否则输出答案中数值（具体见问题描述）最小的那个，如果全部都是黑纸条也满足情况的话，那么输出 <code>0</code></p>\n</div>            </div>",
+      "text": "一行。如果无解输出 NoSolution. 。\n否则输出答案中数值（具体见问题描述）最小的那个，如果全部都是黑纸条也满足情况的话，那么输出 0"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n1 0\r\n1 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n1 0\r\n1 0\n                        \n                        \n                            输出\n                            0"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 深搜</p>\n</div>                </div>",
+      "text": "蓝桥杯 深搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">深搜</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯深搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n1 0\r\n1 0",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "350",
+    "通过人数": "183",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:25:13"
+}

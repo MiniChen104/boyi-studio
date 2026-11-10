@@ -1,0 +1,65 @@
+{
+  "id": "4929",
+  "title": "成语接龙",
+  "tags": [
+    "江苏省赛2025"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4929",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小朋友们都很喜欢成语接龙，但如果遇到可以无限接龙的 “防不胜防”、“忍无可忍” 和 “为所欲为”，游戏就会陷入僵局。Dr. X 发明了改进版的成语接龙：把 <span class=\"katex math inline\">16</span> 个汉字写在 <span class=\"katex math inline\">4</span> 行 <span class=\"katex math inline\">4</span> 列的方阵中，要求：</p>\n<ul><li>第一行（从左往右读）是一个四字成语。</li>\n<li>最后一列（从上往下读）是一个四字成语。</li>\n<li>最后一行（从右往左读）是一个四字成语。</li>\n<li>第一列（从下往上读）是一个四字成语。</li>\n<li>对角线（从左上到右下读）是一个四字成语。</li>\n<li>对角线（从右上到左下读）是一个四字成语。</li>\n<li>上面 <span class=\"katex math inline\">6</span> 个成语各不相同。</li>\n</ul><p>下面是一个满足条件的成语接龙：</p>\n<p><img src=\"https://assets.boyi.local/e3ddf9842b0908cd9efd85a9.png\"></p>\n<p>Dr. X 找到了一本成语词典，你能帮 Dr. X 编程找到词典中所有满足条件的成语接龙方阵吗？</p>\n</div>            </div>",
+      "text": "小朋友们都很喜欢成语接龙，但如果遇到可以无限接龙的 “防不胜防”、“忍无可忍” 和 “为所欲为”，游戏就会陷入僵局。Dr. X 发明了改进版的成语接龙：把 16 个汉字写在 4 行 4 列的方阵中，要求：\n第一行（从左往右读）是一个四字成语。\n最后一列（从上往下读）是一个四字成语。\n最后一行（从右往左读）是一个四字成语。\n第一列（从下往上读）是一个四字成语。\n对角线（从左上到右下读）是一个四字成语。\n对角线（从右上到左下读）是一个四字成语。\n上面 6 个成语各不相同。\n下面是一个满足条件的成语接龙：\n\nDr. X 找到了一本成语词典，你能帮 Dr. X 编程找到词典中所有满足条件的成语接龙方阵吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入第一行是整数 <span class=\"katex math inline\">n</span>，表示成语词典中成语的数量。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行四个空格分开的、长度不超过 <span class=\"katex math inline\">8</span> 的字符串（由小写字母和数字组成）。相同的字符串代表同一个汉字。</p>\n</div>            </div>",
+      "text": "输入第一行是整数 n，表示成语词典中成语的数量。\n接下来 n 行，每行四个空格分开的、长度不超过 8 的字符串（由小写字母和数字组成）。相同的字符串代表同一个汉字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表不同成语接龙方阵的数量。对于两个 <span class=\"katex math inline\">4 × 4</span> 的方阵，只要存在任意位置的汉字不同，就认为是不同的方阵。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表不同成语接龙方阵的数量。对于两个 4 × 4 的方阵，只要存在任意位置的汉字不同，就认为是不同的方阵。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10\r\nhua xiang niao yu\r\nyu miao tian xia\r\nxia li ba ren\r\nren mian tao hua\r\nhua qian yue xia\r\nyu chu jing ren\r\nji xiang ru yi\r\nxin xiang shi cheng\r\ncong ming ling li\r\njian kang cheng zhang</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>（见下发文件 idiom.txt）</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>58</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\r\nhua xiang niao yu\r\nyu miao tian xia\r\nxia li ba ren\r\nren mian tao hua\r\nhua qian yue xia\r\nyu chu jing ren\r\nji xiang ru yi\r\nxin xiang shi cheng\r\ncong ming ling li\r\njian kang cheng zhang\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                （见下发文件 idiom.txt）\n                            \n                            \n                                输出\n                                58"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据规模</h4>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的数据，<span class=\"katex math inline\">n ≤ 100</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">10 ≤ n ≤ 10^4</span>，且输入中的所有成语均来自真实的成语词典。成语词典中没有重复的成语。</p>\n</div>\n\n                                            <p>\n                            <h4><b>附件下载</b></h4>\n                        </p>\n                        <p>\n                            \n                                idioms.rar                            \n                            (76.16 KB)\n                        </p>\n                    \n                </div>",
+      "text": "数据规模\n对于 40\\% 的数据，n ≤ 100。\n对于 100\\% 的数据，10 ≤ n ≤ 10^4，且输入中的所有成语均来自真实的成语词典。成语词典中没有重复的成语。\n\n\n                                            \n                            附件下载\n                        \n                        \n                            \n                                idioms.rar                            \n                            (76.16 KB)"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年江苏省＂信息与未来＂小学生编程</p>\n</div>                </div>",
+      "text": "2025年江苏省＂信息与未来＂小学生编程"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">江苏省赛2025</span></span></p>\n</div>                </div>",
+      "text": "江苏省赛2025"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10\r\nhua xiang niao yu\r\nyu miao tian xia\r\nxia li ba ren\r\nren mian tao hua\r\nhua qian yue xia\r\nyu chu jing ren\r\nji xiang ru yi\r\nxin xiang shi cheng\r\ncong ming ling li\r\njian kang cheng zhang",
+      "output": "1"
+    },
+    {
+      "input": "（见下发文件 idiom.txt）",
+      "output": "58"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "36",
+    "通过人数": "11",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:04"
+}

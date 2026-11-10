@@ -1,0 +1,61 @@
+{
+  "id": "2162",
+  "title": "前缀式计算",
+  "tags": [
+    "容器",
+    "stack"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2162",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>先说明一下什么是中缀式：</p>\n<p>如 <span class=\"katex math inline\">2+(3+4)*5</span> 这种我们最常见的式子就是中缀式。</p>\n<p>而把中缀式按运算顺序加上括号就是：<span class=\"katex math inline\">(2+((3+4)*5))</span> ；</p>\n<p>然后把运算符写到括号前面就是：<span class=\"katex math inline\">+(2 *( +(3 4) 5) )</span> ；</p>\n<p>把括号去掉就是：<span class=\"katex math inline\">+ 2 * + 3 4 5</span> ；</p>\n<p>最后这个式子就是该表达式的前缀表示，它的优势是运算优先级不需要用括号来额外说明。</p>\n<p>给你一个前缀表达式，请你计算出该前缀式的值。</p>\n<p>比如：<span class=\"katex math inline\">+ 2 * + 3 4 5</span> 的值就是 <span class=\"katex math inline\">37</span>。</p>\n</div>            </div>",
+      "text": "先说明一下什么是中缀式：\n如 2+(3+4)*5 这种我们最常见的式子就是中缀式。\n而把中缀式按运算顺序加上括号就是：(2+((3+4)*5)) ；\n然后把运算符写到括号前面就是：+(2 *( +(3 4) 5) ) ；\n把括号去掉就是：+ 2 * + 3 4 5 ；\n最后这个式子就是该表达式的前缀表示，它的优势是运算优先级不需要用括号来额外说明。\n给你一个前缀表达式，请你计算出该前缀式的值。\n比如：+ 2 * + 3 4 5 的值就是 37。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>读入一个前缀表达式，该表达式任意两个操作符之间，任意两个操作数之间，操作数与操作符之间都有一个空格。</p>\n<p>输入的两个操作数可能是小数，每个操作数的值是在 <span class=\"katex math inline\">[0,1000]</span> 范围内的数，操作数数目不超过 <span class=\"katex math inline\">500</span> ，计算过程中不会出现绝对值超过 <span class=\"katex math inline\">10^8</span> 的数。</p>\n</div>            </div>",
+      "text": "读入一个前缀表达式，该表达式任意两个操作符之间，任意两个操作数之间，操作数与操作符之间都有一个空格。\n输入的两个操作数可能是小数，每个操作数的值是在 [0,1000] 范围内的数，操作数数目不超过 500 ，计算过程中不会出现绝对值超过 10^8 的数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对每组数据，输出该前缀表达式的值。输出结果保留两位小数。</p>\n</div>            </div>",
+      "text": "对每组数据，输出该前缀表达式的值。输出结果保留两位小数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>+ 2 * + 3 4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>37.00</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>+ 5.1 / 3 7</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>5.53</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            + 2 * + 3 4 5\n                        \n                        \n                            输出\n                            37.00\n                        \n\n                                                    \n                                输入\n                                + 5.1 / 3 7\n                            \n                            \n                                输出\n                                5.53"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>容器 stack</p>\n</div>                </div>",
+      "text": "容器 stack"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">容器</span><span class=\"label label-warning\">stack</span></span></p>\n</div>                </div>",
+      "text": "容器stack"
+    }
+  ],
+  "samples": [
+    {
+      "input": "+ 2 * + 3 4 5",
+      "output": "37.00"
+    },
+    {
+      "input": "+ 5.1 / 3 7",
+      "output": "5.53"
+    }
+  ],
+  "parameters": {
+    "时间限制": "3 秒",
+    "内存限制": "128 MB",
+    "提交次数": "716",
+    "通过人数": "407",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:13"
+}

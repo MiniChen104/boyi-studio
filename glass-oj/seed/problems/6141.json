@@ -1,0 +1,61 @@
+{
+  "id": "6141",
+  "title": "倍数调整（adjust）",
+  "tags": [
+    "科大国创杯"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6141",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小可可有两个正整数 <span class=\"katex math inline\">a,b</span>。\n定义一次操作为：选择 <span class=\"katex math inline\">a,b</span> 的其中一个，并把它 <span class=\"katex math inline\">+1</span> 或 <span class=\"katex math inline\">−1</span>。注意，<strong>你需要时刻保证 </strong> <span class=\"katex math inline\">a \\ge 1, b \\ge 1</span>。</p>\n<p>现在小可可想要通过若干次操作使得 <span class=\"katex math inline\">a</span> 是 <span class=\"katex math inline\">b</span> 的倍数。那么请你告诉他，他最少要\n操作多少次呢？</p>\n</div>            </div>",
+      "text": "小可可有两个正整数 a,b。\n定义一次操作为：选择 a,b 的其中一个，并把它 +1 或 −1。注意，你需要时刻保证  a \\ge 1, b \\ge 1。\n现在小可可想要通过若干次操作使得 a 是 b 的倍数。那么请你告诉他，他最少要\n操作多少次呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行两个正整数<span class=\"katex math inline\">a,b</span>。</p>\n</div>            </div>",
+      "text": "一行两个正整数a,b。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个数字，表示小可可至少要操作多少次使得 <span class=\"katex math inline\">a</span> 是 <span class=\"katex math inline\">b</span> 的倍数。</p>\n</div>            </div>",
+      "text": "一行一个数字，表示小可可至少要操作多少次使得 a 是 b 的倍数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>9 6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            9 6\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<p>可以令 <span class=\"katex math inline\">a ← a + 1，b ← b − 1</span>。这样 <span class=\"katex math inline\">a = 10, b = 5</span>，符合条件，此时操作数为 <span class=\"katex math inline\">2</span>。可以证明不存在更小的操作数。</p>\n<h4>【输入输出样例 <span class=\"katex math inline\">2 \\sim 6</span>】</h4>\n<p>见选手目录下的 <code>adjust/adjust*.in</code> 与 <code>adjust/adjust*.ans</code>。</p>\n<h4>【数据范围】</h4>\n<p>对于所有数据，保证 <span class=\"katex math inline\">1 ≤ a ≤ 10^{18}，1 ≤ b ≤ 10^6</span>，且 <span class=\"katex math inline\">a, b</span> 均为正整数。</p>\n<table><thead><tr><th>测试点编号</th><th>a ≤</th><th>b ≤</th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1 \\sim 2</span></td><td><span class=\"katex math inline\">10^{18}</span></td><td>1</td></tr><tr><td><span class=\"katex math inline\">3</span></td><td><span class=\"katex math inline\">10</span></td><td><span class=\"katex math inline\">1</span></td></tr><tr><td><span class=\"katex math inline\">4\\sim 5</span></td><td><span class=\"katex math inline\">4000</span></td><td><span class=\"katex math inline\">4000</span></td></tr><tr><td><span class=\"katex math inline\">6\\sim 7</span></td><td><span class=\"katex math inline\">10^6</span></td><td><span class=\"katex math inline\">10^6</span></td></tr><tr><td><span class=\"katex math inline\">8\\sim 10</span></td><td><span class=\"katex math inline\">10^{18}</span></td><td><span class=\"katex math inline\">10^6</span></td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n可以令 a ← a + 1，b ← b − 1。这样 a = 10, b = 5，符合条件，此时操作数为 2。可以证明不存在更小的操作数。\n【输入输出样例 2 \\sim 6】\n见选手目录下的 adjust/adjust*.in 与 adjust/adjust*.ans。\n【数据范围】\n对于所有数据，保证 1 ≤ a ≤ 10^{18}，1 ≤ b ≤ 10^6，且 a, b 均为正整数。\n测试点编号a ≤b ≤1 \\sim 210^{18}131014\\sim 5400040006\\sim 710^610^68\\sim 1010^{18}10^6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>“科大国创杯”2026 年安徽省青少年信息学科普日活动 中学组</p>\n</div>                </div>",
+      "text": "“科大国创杯”2026 年安徽省青少年信息学科普日活动 中学组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">科大国创杯</span></span></p>\n</div>                </div>",
+      "text": "科大国创杯"
+    }
+  ],
+  "samples": [
+    {
+      "input": "9 6",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "30",
+    "通过人数": "10",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:32"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1762",
+  "title": "数字查询",
+  "tags": [
+    "map"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1762",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">n</span> 个同学，每个同学的名字用一个英文小写字母的字符串表示，<strong>所有同学名字互不相同</strong>，并为每个同学分配一个数字。</p>\n<p>给出 <span class=\"katex math inline\">q</span> 次询问，每次询问给出一个同学的名字，请求出该同学分配到的数字是多少？</p>\n</div>            </div>",
+      "text": "有 n 个同学，每个同学的名字用一个英文小写字母的字符串表示，所有同学名字互不相同，并为每个同学分配一个数字。\n给出 q 次询问，每次询问给出一个同学的名字，请求出该同学分配到的数字是多少？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行 <span class=\"katex math inline\">n</span> ，<span class=\"katex math inline\">q</span> 。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行有一个英文字母构成的字符串，以及一个数字，中间用空格隔开；</p>\n<p>接下来 <span class=\"katex math inline\">q</span> 行，每行一次询问，代表一个同学的名字。</p>\n</div>            </div>",
+      "text": "第 1 行 n ，q 。\n接下来 n 行，每行有一个英文字母构成的字符串，以及一个数字，中间用空格隔开；\n接下来 q 行，每行一次询问，代表一个同学的名字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">q</span> 行，每行输出询问同学名字对应的数字。</p>\n</div>            </div>",
+      "text": "输出 q 行，每行输出询问同学名字对应的数字。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 3\r\nalice 3\r\njack 4\r\nsmith 88\r\nbob 100\r\nwangfang 500\r\njack\r\nalice\r\nsmith</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4\r\n3\r\n88</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 3\r\nalice 3\r\njack 4\r\nsmith 88\r\nbob 100\r\nwangfang 500\r\njack\r\nalice\r\nsmith\n                        \n                        \n                            输出\n                            4\r\n3\r\n88"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，字符串仅包含小写字母，字符串长度在 <span class=\"katex math inline\">[1,20]</span> 的范围内，<span class=\"katex math inline\">1≤n,q≤10^4</span>；</p>\n<p>每位同学分配到的数字在 <span class=\"katex math inline\">[1,10^4]</span> 的范围内，测试数据保证所有的名字不重复， <span class=\"katex math inline\">q</span> 次询问的名字一定存在。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 100\\% 的数据，字符串仅包含小写字母，字符串长度在 [1,20] 的范围内，1≤n,q≤10^4；\n每位同学分配到的数字在 [1,10^4] 的范围内，测试数据保证所有的名字不重复， q 次询问的名字一定存在。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">map</span></span></p>\n</div>                </div>",
+      "text": "map"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 3\r\nalice 3\r\njack 4\r\nsmith 88\r\nbob 100\r\nwangfang 500\r\njack\r\nalice\r\nsmith",
+      "output": "4\r\n3\r\n88"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1821",
+    "通过人数": "1334",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:54"
+}

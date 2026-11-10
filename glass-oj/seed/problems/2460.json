@@ -1,0 +1,56 @@
+{
+  "id": "2460",
+  "title": "最少换乘",
+  "tags": [
+    "图论"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2460",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">A</span> 市迎来了一年一度的旅游盛典，为方便大家出行，公交公司在旅游景点、酒店等地设置了若干条公交路线，每条公交路线会经过若干个公交站台，站台编号为<span class=\"katex math inline\">1 \\dots n</span>。  </p>\n<p>某游客想从 <span class=\"katex math inline\">1</span> 号公交站台上车，游览若干地点之后到达 <span class=\"katex math inline\">n</span> 号公交站台。  </p>\n<p>请问：该游客最少要<strong>换乘</strong>几次公交车，才能到达 <span class=\"katex math inline\">n</span> 号公交站台？</p>\n</div>            </div>",
+      "text": "A 市迎来了一年一度的旅游盛典，为方便大家出行，公交公司在旅游景点、酒店等地设置了若干条公交路线，每条公交路线会经过若干个公交站台，站台编号为1 \\dots n。  \n某游客想从 1 号公交站台上车，游览若干地点之后到达 n 号公交站台。  \n请问：该游客最少要换乘几次公交车，才能到达 n 号公交站台？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行有两个整数 <span class=\"katex math inline\">m,n</span>（<span class=\"katex math inline\">1 \\le m \\le 100</span>， <span class=\"katex math inline\">1 \\lt n \\le 500</span>），表示开通了 <span class=\"katex math inline\">m</span> 条<strong>单程</strong>公交线路，共有 <span class=\"katex math inline\">n</span> 个车站。  </p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行给出了每条公交线路的信息。  </p>\n<p>其中第 <span class=\"katex math inline\">i+1</span> 行给出的是第 <span class=\"katex math inline\">i</span> 条公交线路的信息，每行先给出一个整数 <span class=\"katex math inline\">x</span> 表示该条公交路线会经过 <span class=\"katex math inline\">x</span> 个公交站台，接着从左至右按运行顺序依次给出了该线路上的所有站号，相邻两个站号之间用一个空格隔开。</p>\n</div>            </div>",
+      "text": "第 1 行有两个整数 m,n（1 \\le m \\le 100， 1 \\lt n \\le 500），表示开通了 m 条单程公交线路，共有 n 个车站。  \n接下来 m 行，每行给出了每条公交线路的信息。  \n其中第 i+1 行给出的是第 i 条公交线路的信息，每行先给出一个整数 x 表示该条公交路线会经过 x 个公交站台，接着从左至右按运行顺序依次给出了该线路上的所有站号，相邻两个站号之间用一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出乘客最少需要换乘公交的次数，如果无论怎样换乘都无法达到目的地，请输出<code>NO</code>。</p>\n</div>            </div>",
+      "text": "输出乘客最少需要换乘公交的次数，如果无论怎样换乘都无法达到目的地，请输出NO。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 7\r\n2 6 7\r\n4 4 7 3 6\r\n4 2 1 3 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 7\r\n2 6 7\r\n4 4 7 3 6\r\n4 2 1 3 5\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例解释】</strong><br>\n共有3条公交线路，有7个公交站台，样例给定的3条公交线路，示意图如下。  </p>\n<p><img src=\"https://assets.boyi.local/8e5f5b4923decab48c20326e.jpg\"></p>\n<p>根据示意图可以发现，从1站台到7站台，可以：<br>\n先乘坐路线为2-1-3-5的公交车，从1站台上车，到3站台下车；  </p>\n<p>再乘坐路线为4-7-3-6的公交车，从3站台上车，到6站台下车；  </p>\n<p>再乘坐路线为6-7的公交车，从6站台上车，到7站台下车。  </p>\n<p>因此需要换乘2次公交车，到达终点n号站台。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n共有3条公交线路，有7个公交站台，样例给定的3条公交线路，示意图如下。  \n\n根据示意图可以发现，从1站台到7站台，可以：\n先乘坐路线为2-1-3-5的公交车，从1站台上车，到3站台下车；  \n再乘坐路线为4-7-3-6的公交车，从3站台上车，到6站台下车；  \n再乘坐路线为6-7的公交车，从6站台上车，到7站台下车。  \n因此需要换乘2次公交车，到达终点n号站台。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span></span></p>\n</div>                </div>",
+      "text": "图论"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 7\r\n2 6 7\r\n4 4 7 3 6\r\n4 2 1 3 5",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "332",
+    "通过人数": "167",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:36"
+}

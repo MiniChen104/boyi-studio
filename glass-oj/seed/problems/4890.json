@@ -1,0 +1,53 @@
+{
+  "id": "4890",
+  "title": "输出指定字符串",
+  "tags": [
+    "蓝桥等考",
+    "字符串",
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4890",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请在电脑屏幕上输出一个字符串 <code>dengkao</code>。</p>\n</div>            </div>",
+      "text": "请在电脑屏幕上输出一个字符串 dengkao。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无。</p>\n</div>            </div>",
+      "text": "无。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个字符串 <code>dengkao</code> 。</p>\n</div>            </div>",
+      "text": "输出一个字符串 dengkao 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>无</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>dengkao</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            无\n                        \n                        \n                            输出\n                            dengkao"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考字符串基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "无",
+      "output": "dengkao"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "986",
+    "通过人数": "865",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:27"
+}

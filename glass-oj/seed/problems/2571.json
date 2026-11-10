@@ -1,0 +1,51 @@
+{
+  "id": "2571",
+  "title": "数位统计",
+  "tags": [
+    "数位DP"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2571",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个区间[<span class=\"katex math inline\">L</span> , <span class=\"katex math inline\">R</span>]，求从 <span class=\"katex math inline\">L</span> 开始到 <span class=\"katex math inline\">R</span> 结束，数字 <span class=\"katex math inline\">0</span> - <span class=\"katex math inline\">9</span> 分别出现了多少次。  </p>\n<p>比如：区间[<span class=\"katex math inline\">1</span>,<span class=\"katex math inline\">10</span>]中，数字 <span class=\"katex math inline\">0</span> - <span class=\"katex math inline\">9</span> 分别出现的次数为：<span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">1</span>。</p>\n</div>            </div>",
+      "text": "给定一个区间[L , R]，求从 L 开始到 R 结束，数字 0 - 9 分别出现了多少次。  \n比如：区间[1,10]中，数字 0 - 9 分别出现的次数为：1 2 1 1 1 1 1 1 1 1。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个整数 <span class=\"katex math inline\">L</span> , <span class=\"katex math inline\">R</span> 表示求解的区间范围。(1 ≤ <span class=\"katex math inline\">L</span> ≤ <span class=\"katex math inline\">R</span> ≤ <span class=\"katex math inline\">10</span><sup><span class=\"katex math inline\">9</span></sup>)</p>\n</div>            </div>",
+      "text": "输入两个整数 L , R 表示求解的区间范围。(1 ≤ L ≤ R ≤ 109)"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">10</span> 个整数，用空格隔开，分别代表了在该区间中数字 <span class=\"katex math inline\">0</span> 到数字 <span class=\"katex math inline\">9</span> 出现的次数。</p>\n</div>            </div>",
+      "text": "输出 10 个整数，用空格隔开，分别代表了在该区间中数字 0 到数字 9 出现的次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 2 1 1 1 1 1 1 1 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 10\n                        \n                        \n                            输出\n                            1 2 1 1 1 1 1 1 1 1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数位DP</span></span></p>\n</div>                </div>",
+      "text": "数位DP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 10",
+      "output": "1 2 1 1 1 1 1 1 1 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "549",
+    "通过人数": "324",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:19"
+}

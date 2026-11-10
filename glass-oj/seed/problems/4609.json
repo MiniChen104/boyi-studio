@@ -1,0 +1,63 @@
+{
+  "id": "4609",
+  "title": "ABB",
+  "tags": [
+    "蓝桥杯STEMA",
+    "模拟",
+    "set"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4609",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个字符串 <span class=\"katex math inline\">S</span>，请统计 <span class=\"katex math inline\">S</span> 中有多少个 <span class=\"katex math inline\">ABB</span> 形式的子串，以及多少种 <span class=\"katex math inline\">ABB</span> 形式的子串。</p>\n<p>例如：<code>S = &quot;nnnseebbetoosee&quot;</code>，<span class=\"katex math inline\">ABB </span>形式的子串有 <code>see、ebb、too、see</code>，共 <span class=\"katex math inline\">4</span> 个；不同子串有 <code>see、ebb、too</code>，共 <span class=\"katex math inline\">3</span> 种。</p>\n</div>            </div>",
+      "text": "给定一个字符串 S，请统计 S 中有多少个 ABB 形式的子串，以及多少种 ABB 形式的子串。\n例如：S = \"nnnseebbetoosee\"，ABB 形式的子串有 see、ebb、too、see，共 4 个；不同子串有 see、ebb、too，共 3 种。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个长度不超过 <span class=\"katex math inline\">100</span> 的字符串 <span class=\"katex math inline\">S</span>。</p>\n</div>            </div>",
+      "text": "输入一个长度不超过 100 的字符串 S。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出两个整数，分别表示 <span class=\"katex math inline\">S</span> 中有多少个 <span class=\"katex math inline\">ABB</span> 形式的子串，以及多少种 <span class=\"katex math inline\">ABB</span> 形式的子串，整数之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "输出两个整数，分别表示 S 中有多少个 ABB 形式的子串，以及多少种 ABB 形式的子串，整数之间以一个空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>nnnseebbetoosee</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4 3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            nnnseebbetoosee\n                        \n                        \n                            输出\n                            4 3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>提示信息：</h4>\n<p><code>ABB</code> 形式的字符串：是由 <span class=\"katex math inline\">3</span> 个字符组成，其中后两个字符相同，第一个字符与后两个字符不同。\n如：<code>&quot;cbb&quot;、&quot;q22&quot;、&quot;688&quot;</code> 都是 <code>ABB</code> 形式的字符串；<code>&quot;abc&quot;、&quot;wwe&quot;、&quot;pop&quot;</code> 都不是 <code>ABB</code> 形式的字符串。</p>\n<p>子串：是指一个字符串中连续的一段字符序列。\n如：字符串 <code>&quot;Hello, World!&quot;</code> 中，<code>&quot;Hello&quot;、&quot;ello&quot;、&quot;World&quot;、&quot;or&quot;</code> 都是该字符串的子串。</p>\n</div>\n\n                    \n                </div>",
+      "text": "提示信息：\nABB 形式的字符串：是由 3 个字符组成，其中后两个字符相同，第一个字符与后两个字符不同。\n如：\"cbb\"、\"q22\"、\"688\" 都是 ABB 形式的字符串；\"abc\"、\"wwe\"、\"pop\" 都不是 ABB 形式的字符串。\n子串：是指一个字符串中连续的一段字符序列。\n如：字符串 \"Hello, World!\" 中，\"Hello\"、\"ello\"、\"World\"、\"or\" 都是该字符串的子串。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（24年3月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（24年3月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">模拟</span><span class=\"label label-info\">set</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA模拟set"
+    }
+  ],
+  "samples": [
+    {
+      "input": "nnnseebbetoosee",
+      "output": "4 3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "415",
+    "通过人数": "258",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:35"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "6055",
+  "title": "大数比较大小",
+  "tags": [
+    "信息素养大赛",
+    "23年中学组复赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6055",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个很大的十进制正实数（长度超过 <span class=\"katex math inline\">20</span> 位），输出代表数值较大的数。\n说明：</p>\n<ul><li>1）两个数都大于 <span class=\"katex math inline\">10000000000000000000</span>；</li>\n<li>2）实数包含有小数点的数，一个数里只可能有一个小数点，且不在数的最前或最后。</li>\n</ul></div>            </div>",
+      "text": "输入两个很大的十进制正实数（长度超过 20 位），输出代表数值较大的数。\n说明：\n1）两个数都大于 10000000000000000000；\n2）实数包含有小数点的数，一个数里只可能有一个小数点，且不在数的最前或最后。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两行，每行一个数字。</p>\n</div>            </div>",
+      "text": "输入两行，每行一个数字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>数值较大的数。\n如果两数相等，则输出“<code>equation</code>”。\n如果输入的数不符合数字规则，则输出“<code>error</code>”。</p>\n</div>            </div>",
+      "text": "数值较大的数。\n如果两数相等，则输出“equation”。\n如果输入的数不符合数字规则，则输出“error”。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>11111111111111111111111111111111111111\r\n2222222222222222222222222222222222222222</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2222222222222222222222222222222222222222</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            11111111111111111111111111111111111111\r\n2222222222222222222222222222222222222222\n                        \n                        \n                            输出\n                            2222222222222222222222222222222222222222"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">信息素养大赛</span><span class=\"label label-warning\">23年中学组复赛</span></span></p>\n</div>                </div>",
+      "text": "信息素养大赛23年中学组复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "11111111111111111111111111111111111111\r\n2222222222222222222222222222222222222222",
+      "output": "2222222222222222222222222222222222222222"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "342",
+    "通过人数": "60",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:15"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "2190",
+  "title": "树的重心",
+  "tags": [
+    "树"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2190",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一颗树，树中有 <span class=\"katex math inline\">n</span> 个结点（编号 <span class=\"katex math inline\">1 \\sim n</span> ）。 请你找到树的重心，并输出树的重心的结点编号。</p>\n<p>重心定义：重心是指树中的一个结点，如果将这个点删除后，剩余各个连通块中结点数的最大值最小，那么这个结点被称为树的重心。</p>\n<p>如下图所示的树的重心为 <span class=\"katex math inline\">1</span> 号结点。</p>\n<p><img src=\"https://assets.boyi.local/9fda0b79f1abc088d9e406ff.png\"></p>\n</div>            </div>",
+      "text": "给定一颗树，树中有 n 个结点（编号 1 \\sim n ）。 请你找到树的重心，并输出树的重心的结点编号。\n重心定义：重心是指树中的一个结点，如果将这个点删除后，剩余各个连通块中结点数的最大值最小，那么这个结点被称为树的重心。\n如下图所示的树的重心为 1 号结点。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行读入一个整数 <span class=\"katex math inline\">n</span>，代表树的结点的数量（ <span class=\"katex math inline\">1≤n≤10^5</span> ）；</p>\n<p>接下来 <span class=\"katex math inline\">n-1</span> 行，每行读入两个整数 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span> ，表示结点 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span> 之间有一条边（注意：不确定 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span> 的父子关系）。</p>\n</div>            </div>",
+      "text": "第 1 行读入一个整数 n，代表树的结点的数量（ 1≤n≤10^5 ）；\n接下来 n-1 行，每行读入两个整数 x 和 y ，表示结点 x 和 y 之间有一条边（注意：不确定 x 和 y 的父子关系）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请输出树的重心的结点编号，如果树有多个重心，请按照编号从小到大依次输出，数字之间用空格隔开。</p>\n</div>            </div>",
+      "text": "请输出树的重心的结点编号，如果树有多个重心，请按照编号从小到大依次输出，数字之间用空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>9\r\n1 2\r\n1 7\r\n2 8\r\n2 5\r\n4 3\r\n1 4\r\n3 9\r\n4 6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            9\r\n1 2\r\n1 7\r\n2 8\r\n2 5\r\n4 3\r\n1 4\r\n3 9\r\n4 6\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>树</p>\n</div>                </div>",
+      "text": "树"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树</span></span></p>\n</div>                </div>",
+      "text": "树"
+    }
+  ],
+  "samples": [
+    {
+      "input": "9\r\n1 2\r\n1 7\r\n2 8\r\n2 5\r\n4 3\r\n1 4\r\n3 9\r\n4 6",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2308",
+    "通过人数": "1200",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:34"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "5346",
+  "title": "数花盆",
+  "tags": [
+    "市赛",
+    "周期性问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5346",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学校操场上摆放了 <span class=\"katex math inline\">m</span> 组花排成了一排，每组花有 <span class=\"katex math inline\">5</span> 盆颜色分别是蓝花(<code>blue</code>)、黄花(<code>yellow</code>)、红花(<code>red</code>)、紫花(<code>purple</code>)和粉花(<code>pink</code>)。小芳和同学们开始玩一个游戏，从第一盆花开始数数，当数到 <span class=\"katex math inline\">n</span> 的时候让同学们来计算他面前的是什么颜色的花。如果数到最后一盆了，就倒过来往前数。</p>\n<p>例如：有 <span class=\"katex math inline\">3</span> 组花，小芳数到了 <span class=\"katex math inline\">14</span> ，就是倒数第二盆紫花（<span class=\"katex math inline\">3</span> 组花有 <span class=\"katex math inline\">15</span> 盆）；小芳数到了 <span class=\"katex math inline\">15</span> 就是最后一盆粉花；小芳数到 <span class=\"katex math inline\">16</span> ，又回到倒数第二盆紫花。</p>\n</div>            </div>",
+      "text": "学校操场上摆放了 m 组花排成了一排，每组花有 5 盆颜色分别是蓝花(blue)、黄花(yellow)、红花(red)、紫花(purple)和粉花(pink)。小芳和同学们开始玩一个游戏，从第一盆花开始数数，当数到 n 的时候让同学们来计算他面前的是什么颜色的花。如果数到最后一盆了，就倒过来往前数。\n例如：有 3 组花，小芳数到了 14 ，就是倒数第二盆紫花（3 组花有 15 盆）；小芳数到了 15 就是最后一盆粉花；小芳数到 16 ，又回到倒数第二盆紫花。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个整数 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span>，<span class=\"katex math inline\">m</span> 代表总共有多少组花，<span class=\"katex math inline\">n</span> 代表小芳数到的数字。</p>\n</div>            </div>",
+      "text": "两个整数 m 和 n，m 代表总共有多少组花，n 代表小芳数到的数字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出花的颜色。</p>\n</div>            </div>",
+      "text": "输出花的颜色。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 14</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>purple</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 15</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>pink</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 16</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>purple</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            3 14\n                        \n                        \n                            输出\n                            purple\n                        \n\n                                                    \n                                输入\n                                3 15\n                            \n                            \n                                输出\n                                pink\n                            \n                        \n                                                    \n                                输入\n                                3 16\n                            \n                            \n                                输出\n                                purple"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据规模】</h4>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的数据，<span class=\"katex math inline\">n \\le m * 5</span>，<span class=\"katex math inline\">m \\le 10^5</span>。</p>\n<p>对于 <span class=\"katex math inline\">80\\%</span> 的数据，<span class=\"katex math inline\">1 \\le m</span>，<span class=\"katex math inline\">n \\le 10^6</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 \\le m</span>，<span class=\"katex math inline\">n \\le 10^9</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据规模】\n对于 40\\% 的数据，n \\le m * 5，m \\le 10^5。\n对于 80\\% 的数据，1 \\le m，n \\le 10^6。\n对于 100\\% 的数据，1 \\le m，n \\le 10^9"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>婺城区第二届青少年信息素养大赛小学组试题</p>\n</div>                </div>",
+      "text": "婺城区第二届青少年信息素养大赛小学组试题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">周期性问题</span></span></p>\n</div>                </div>",
+      "text": "市赛周期性问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 14",
+      "output": "purple"
+    },
+    {
+      "input": "3 15",
+      "output": "pink"
+    },
+    {
+      "input": "3 16",
+      "output": "purple"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "105",
+    "通过人数": "37",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:18"
+}

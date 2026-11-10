@@ -1,0 +1,61 @@
+{
+  "id": "3158",
+  "title": "分数减法（subtraction）",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3158",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Jimmy 老师觉得像下面这样的分式运算我们小学的同学们\n都会，请你编程计算给定的两个分数相减的结果。</p>\n<p><img src=\"https://assets.boyi.local/0ecd5e1acd59258c92ecff51.png\"></p>\n</div>            </div>",
+      "text": "Jimmy 老师觉得像下面这样的分式运算我们小学的同学们\n都会，请你编程计算给定的两个分数相减的结果。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>，表示一个分数 <span class=\"katex math inline\"> a/b </span>。</p>\n<p>第二行 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">c</span> 和 <span class=\"katex math inline\">d</span>，表示一个分数 <span class=\"katex math inline\"> c/d </span>。</p>\n</div>            </div>",
+      "text": "第一行 2 个整数 a 和 b，表示一个分数  a/b 。\n第二行 2 个整数 c 和 d，表示一个分数  c/d 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">2</span> 个整数，用一个空格隔开，表示结果。</p>\n</div>            </div>",
+      "text": "2 个整数，用一个空格隔开，表示结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 7\r\n1 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5 21</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 7\r\n1 3\n                        \n                        \n                            输出\n                            5 21"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据说明】</p>\n<p><span class=\"katex math inline\"> 1 \\leq a &lt; b \\leq 10000 </span>；</p>\n<p><span class=\"katex math inline\"> 1 \\leq c &lt; d \\leq 10000 </span>。</p>\n<p>输入数据保证计算结果为正。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据说明】\n 1 \\leq a < b \\leq 10000 ；\n 1 \\leq c < d \\leq 10000 。\n输入数据保证计算结果为正。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2023 年中山市东区青少年信息学奥林匹克竞赛小学组</p>\n</div>                </div>",
+      "text": "2023 年中山市东区青少年信息学奥林匹克竞赛小学组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 7\r\n1 3",
+      "output": "5 21"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "76",
+    "通过人数": "38",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:28"
+}

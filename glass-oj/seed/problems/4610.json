@@ -1,0 +1,58 @@
+{
+  "id": "4610",
+  "title": "分割数列",
+  "tags": [
+    "蓝桥杯STEMA",
+    "数组问题",
+    "前缀和"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4610",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个由 <span class=\"katex math inline\">n</span> 个整数组成的数列，请将其分割成左右两部分，要求左半部分子数列的和与右半部分子数列的和最接近，请输出这两部分子数列和的差值（取非负值）。</p>\n<p>例如：<span class=\"katex math inline\">n = 5</span>，数列中的 <span class=\"katex math inline\">5</span> 个整数分别是 <span class=\"katex math inline\">2</span>、<span class=\"katex math inline\">1</span>、<span class=\"katex math inline\">3</span>、<span class=\"katex math inline\">4</span>、<span class=\"katex math inline\">3</span>，将其分割成左右两部分，左半部分是 <span class=\"katex math inline\">2</span>、<span class=\"katex math inline\">1</span>、<span class=\"katex math inline\">3</span>，右半部分是 <span class=\"katex math inline\">4</span>、<span class=\"katex math inline\">3</span>；此时两部分子数列的和最接近，差值为 <span class=\"katex math inline\">1</span>。</p>\n</div>            </div>",
+      "text": "给定一个由 n 个整数组成的数列，请将其分割成左右两部分，要求左半部分子数列的和与右半部分子数列的和最接近，请输出这两部分子数列和的差值（取非负值）。\n例如：n = 5，数列中的 5 个整数分别是 2、1、3、4、3，将其分割成左右两部分，左半部分是 2、1、3，右半部分是 4、3；此时两部分子数列的和最接近，差值为 1。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入一个整数 <span class=\"katex math inline\">n（2 \\le n \\le 100000）</span>。</p>\n<p>第二行输入 <span class=\"katex math inline\">n</span> 个整数（<span class=\"katex math inline\">1 \\le </span>整数 <span class=\"katex math inline\"> \\le 1000</span>），整数之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "第一行输入一个整数 n（2 \\le n \\le 100000）。\n第二行输入 n 个整数（1 \\le 整数  \\le 1000），整数之间以一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示这两部分子数列和的差值（取非负值）。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示这两部分子数列和的差值（取非负值）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n2 1 3 4 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n2 1 3 4 3\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（24年3月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（24年3月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">数组问题</span><span class=\"label label-info\">前缀和</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA数组问题前缀和"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n2 1 3 4 3",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "862",
+    "通过人数": "451",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:34"
+}

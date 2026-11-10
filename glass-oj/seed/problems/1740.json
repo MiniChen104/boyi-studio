@@ -1,0 +1,58 @@
+{
+  "id": "1740",
+  "title": "统计每个数出现的次数",
+  "tags": [
+    "数组问题",
+    "容器",
+    "map"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1740",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入 <span class=\"katex math inline\">n</span> 个数（ <span class=\"katex math inline\">n≤1000</span> ），统计每个数出现的次数，从小到大输出每个出现过的数，及每个数出现的次数。</p>\n<p>比如：假设从键盘读入 <span class=\"katex math inline\">6</span> 个数，分别是：<span class=\"katex math inline\">1</span> <span class=\"katex math inline\">6</span> <span class=\"katex math inline\">8</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">6</span>，那么输出如下：</p>\n<pre><code>1 2\n2 1\n6 2\n8 1\n</code></pre>\n<p>输出含义为：<span class=\"katex math inline\">1</span> 出现了 <span class=\"katex math inline\">2</span> 次， <span class=\"katex math inline\">2</span> 出现了 <span class=\"katex math inline\">1</span> 次， <span class=\"katex math inline\">6</span> 出现了 <span class=\"katex math inline\">2</span> 次， <span class=\"katex math inline\">8</span> 出现了 <span class=\"katex math inline\">1</span> 次。</p>\n</div>            </div>",
+      "text": "从键盘读入 n 个数（ n≤1000 ），统计每个数出现的次数，从小到大输出每个出现过的数，及每个数出现的次数。\n比如：假设从键盘读入 6 个数，分别是：1 6 8 1 2 6，那么输出如下：\n1 2\n2 1\n6 2\n8 1\n\n输出含义为：1 出现了 2 次， 2 出现了 1 次， 6 出现了 2 次， 8 出现了 1 次。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行有一个整数 <span class=\"katex math inline\">n</span> （<span class=\"katex math inline\">n≤1000</span>）</p>\n<p>第 <span class=\"katex math inline\">2</span> 行有 <span class=\"katex math inline\">n</span> 个整数，数字之间用空格隔开，这 <span class=\"katex math inline\">n</span> 个数<strong>都是 <span class=\"katex math inline\">int</span> 范围内的数</strong>。</p>\n</div>            </div>",
+      "text": "第 1 行有一个整数 n （n≤1000）\n第 2 行有 n 个整数，数字之间用空格隔开，这 n 个数都是 int 范围内的数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出若干行，每行 <span class=\"katex math inline\">2</span> 个数，第 <span class=\"katex math inline\">1</span> 个数是出现过的数，第 <span class=\"katex math inline\">2</span> 个数是该数出现的次数，要求从小到大输出每个数及每个数出现的次数。</p>\n</div>            </div>",
+      "text": "输出若干行，每行 2 个数，第 1 个数是出现过的数，第 2 个数是该数出现的次数，要求从小到大输出每个数及每个数出现的次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10\r\n2 8 1 2 3 3 6 1 1 1000</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 3\r\n2 2\r\n3 2\r\n6 1\r\n8 1\r\n1000 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\r\n2 8 1 2 3 3 6 1 1 1000\n                        \n                        \n                            输出\n                            1 3\r\n2 2\r\n3 2\r\n6 1\r\n8 1\r\n1000 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题 容器 map</p>\n</div>                </div>",
+      "text": "数组问题 容器 map"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span><span class=\"label label-warning\">容器</span><span class=\"label label-info\">map</span></span></p>\n</div>                </div>",
+      "text": "数组问题容器map"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10\r\n2 8 1 2 3 3 6 1 1 1000",
+      "output": "1 3\r\n2 2\r\n3 2\r\n6 1\r\n8 1\r\n1000 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "23090",
+    "通过人数": "11167",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:23:37"
+}

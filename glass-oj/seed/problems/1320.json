@@ -1,0 +1,56 @@
+{
+  "id": "1320",
+  "title": "时钟旋转（1）",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1320",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>时钟上面的时针从 <span class=\"katex math inline\">m</span> 时走到 <span class=\"katex math inline\">n</span> 时旋转了多少度？（<span class=\"katex math inline\">m \\le n </span>，且 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span> 都是<span class=\"katex math inline\">1 \\sim 12</span>之间的整数）。（4.2.4）</p>\n<p><img src=\"https://assets.boyi.local/df885214f7de61fee7425052.jpg\"></p>\n</div>            </div>",
+      "text": "时钟上面的时针从 m 时走到 n 时旋转了多少度？（m \\le n ，且 m 和 n 都是1 \\sim 12之间的整数）。（4.2.4）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span>。</p>\n</div>            </div>",
+      "text": "2 个整数 m 和 n。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">1</span> 个整数代表时针旋转的度数。</p>\n</div>            </div>",
+      "text": "1 个整数代表时针旋转的度数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>90</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 4\n                        \n                        \n                            输出\n                            90"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 4",
+      "output": "90"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "60201",
+    "通过人数": "41458",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:49"
+}

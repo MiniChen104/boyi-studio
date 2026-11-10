@@ -1,0 +1,67 @@
+{
+  "id": "5390",
+  "title": "排兵布阵",
+  "tags": [
+    "GESP四级",
+    "枚举",
+    "25年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5390",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>作为将军，你自然需要合理地排兵布阵。地图可以视为 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列的网格，适合排兵的网格以 <span class=\"katex math inline\">1</span> 标注，不适合排兵的网格以 <span class=\"katex math inline\">0</span> 标注。现在你需要在地图上选择一个矩形区域排兵，这个矩形区域内不能包含不适合排兵的网格。请问可选择的矩形区域最多能包含多少网格？</p>\n</div>            </div>",
+      "text": "作为将军，你自然需要合理地排兵布阵。地图可以视为 n 行 m 列的网格，适合排兵的网格以 1 标注，不适合排兵的网格以 0 标注。现在你需要在地图上选择一个矩形区域排兵，这个矩形区域内不能包含不适合排兵的网格。请问可选择的矩形区域最多能包含多少网格？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，两个正整数 <span class=\"katex math inline\">n,m</span>，分别表示地图网格的行数与列数。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">m</span> 个整数 <span class=\"katex math inline\">a_{i,1},a_{i,2},...,a_{i,m}</span>，表示各行中的网格是否适合排兵。</p>\n</div>            </div>",
+      "text": "第一行，两个正整数 n,m，分别表示地图网格的行数与列数。\n接下来 n 行，每行 m 个整数 a_{i,1},a_{i,2},...,a_{i,m}，表示各行中的网格是否适合排兵。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数，表示适合排兵的矩形区域包含的最大网格数。</p>\n</div>            </div>",
+      "text": "一行，一个整数，表示适合排兵的矩形区域包含的最大网格数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 3\r\n0 1 1\r\n1 0 1\r\n0 1 1\r\n1 1 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 5\r\n1 0 1 0 1\r\n0 1 0 1 0\r\n0 1 1 1 0</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 3\r\n0 1 1\r\n1 0 1\r\n0 1 1\r\n1 1 1\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                3 5\r\n1 0 1 0 1\r\n0 1 0 1 0\r\n0 1 1 1 0\n                            \n                            \n                                输出\n                                3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le n,m \\le 12，0 \\le a_{i,j} \\le 1 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于所有测试点，保证 1 \\le n,m \\le 12，0 \\le a_{i,j} \\le 1 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 2025年09月认证 C++4级真题</p>\n</div>                </div>",
+      "text": "GESP 2025年09月认证 C++4级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">枚举</span><span class=\"label label-info\">25年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级枚举25年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 3\r\n0 1 1\r\n1 0 1\r\n0 1 1\r\n1 1 1",
+      "output": "4"
+    },
+    {
+      "input": "3 5\r\n1 0 1 0 1\r\n0 1 0 1 0\r\n0 1 1 1 0",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "674",
+    "通过人数": "391",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:02"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "5947",
+  "title": "数字移动",
+  "tags": [
+    "GESP五级",
+    "25年12月",
+    "二分"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/5947",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">A</span> 有一个包含 <span class=\"katex math inline\">N</span> 个正整数的序列 <span class=\"katex math inline\">A=</span> { <span class=\"katex math inline\">A_1,A_2,...,A_N</span> }，序列 <span class=\"katex math inline\">A</span> 恰好包含 <span class=\"katex math inline\">N/2</span> 对不同的正整数。形式化地，对于任意 <span class=\"katex math inline\">1 \\le i \\le N</span>，存在唯一一个 <span class=\"katex math inline\">j</span> 满足 <span class=\"katex math inline\">1 \\le j \\le N</span>，<span class=\"katex math inline\">i \\neq j,A_i=A_j</span>。</p>\n<p>小 <span class=\"katex math inline\">A</span> 希望每对相同的数字在序列中相邻，为了实现这一目的，小 <span class=\"katex math inline\">A</span> 每次操作会选择任意 <span class=\"katex math inline\">i</span>( <span class=\"katex math inline\">1 \\le i \\le N</span> )，将当前序列的第 <span class=\"katex math inline\">i</span> 个数字移动到任意位置，并花费对应数字的体力。</p>\n<p>例如，假设序列 <span class=\"katex math inline\">A=</span> { <span class=\"katex math inline\">1,2,1,3,2,3</span> } ，小 <span class=\"katex math inline\">A</span> 可以选择 <span class=\"katex math inline\">i=2</span>，将 <span class=\"katex math inline\">A_2=2</span> 移动到 <span class=\"katex math inline\">A_3=1</span> 的后面，此时序列变为 {<span class=\"katex math inline\">1,1,2,3,2,3</span>} ，耗费 <span class=\"katex math inline\">2</span> 点体力。小 <span class=\"katex math inline\">A</span> 也可以选择 <span class=\"katex math inline\">i=3</span> ，将 <span class=\"katex math inline\">A_3=1</span> 移动到 <span class=\"katex math inline\">A_2=2</span> 的前面，此时序列变为 {<span class=\"katex math inline\">1,1,2,3,2,3</span>} ，花费 <span class=\"katex math inline\">1</span> 点体力。</p>\n<p>小 <span class=\"katex math inline\">A</span> 可以执行任意次操作，但他希望自己每次花费的体力尽可能小。小 <span class=\"katex math inline\">A</span> 希望你能帮他计算出一个最小的 <span class=\"katex math inline\">x</span>，使得\n他能够在每次花费的体力均不超过 <span class=\"katex math inline\">x</span> 的情况下令每对相同的数字在序列中相邻。</p>\n</div>            </div>",
+      "text": "小 A 有一个包含 N 个正整数的序列 A= { A_1,A_2,...,A_N }，序列 A 恰好包含 N/2 对不同的正整数。形式化地，对于任意 1 \\le i \\le N，存在唯一一个 j 满足 1 \\le j \\le N，i \\neq j,A_i=A_j。\n小 A 希望每对相同的数字在序列中相邻，为了实现这一目的，小 A 每次操作会选择任意 i( 1 \\le i \\le N )，将当前序列的第 i 个数字移动到任意位置，并花费对应数字的体力。\n例如，假设序列 A= { 1,2,1,3,2,3 } ，小 A 可以选择 i=2，将 A_2=2 移动到 A_3=1 的后面，此时序列变为 {1,1,2,3,2,3} ，耗费 2 点体力。小 A 也可以选择 i=3 ，将 A_3=1 移动到 A_2=2 的前面，此时序列变为 {1,1,2,3,2,3} ，花费 1 点体力。\n小 A 可以执行任意次操作，但他希望自己每次花费的体力尽可能小。小 A 希望你能帮他计算出一个最小的 x，使得\n他能够在每次花费的体力均不超过 x 的情况下令每对相同的数字在序列中相邻。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个正整数 <span class=\"katex math inline\">N</span>，代表序列长度，保证 <span class=\"katex math inline\">N</span> 为偶数。</p>\n<p>第二行包含 <span class=\"katex math inline\">N</span> 个正整数 <span class=\"katex math inline\">A_1,A_2,...,A_N</span>，代表序列 <span class=\"katex math inline\">A</span> 。且对于任意 <span class=\"katex math inline\">1 \\le i \\le N</span>，存在唯一一个 <span class=\"katex math inline\">j</span> 满足 <span class=\"katex math inline\">1 \\le j \\le N</span>，<span class=\"katex math inline\">i \\neq j,A_i=A_j</span> 。</p>\n</div>            </div>",
+      "text": "第一行一个正整数 N，代表序列长度，保证 N 为偶数。\n第二行包含 N 个正整数 A_1,A_2,...,A_N，代表序列 A 。且对于任意 1 \\le i \\le N，存在唯一一个 j 满足 1 \\le j \\le N，i \\neq j,A_i=A_j 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，代表满足要求的 <span class=\"katex math inline\">x</span> 的最小值。</p>\n</div>            </div>",
+      "text": "输出一行，代表满足要求的 x 的最小值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n1 2 1 3 2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n1 2 1 3 2 3\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">40</span> %的测试点，保证 <span class=\"katex math inline\">1 \\le N，a_i \\le 100</span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le N，a_i \\le 10^5</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 40 %的测试点，保证 1 \\le N，a_i \\le 100。\n对于所有测试点，保证 1 \\le N，a_i \\le 10^5。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 2025年12月认证 C++5级真题</p>\n</div>                </div>",
+      "text": "GESP 2025年12月认证 C++5级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">25年12月</span><span class=\"label label-info\">二分</span></span></p>\n</div>                </div>",
+      "text": "GESP五级25年12月二分"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n1 2 1 3 2 3",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "325",
+    "通过人数": "201",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:24"
+}

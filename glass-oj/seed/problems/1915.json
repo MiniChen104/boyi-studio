@@ -1,0 +1,56 @@
+{
+  "id": "1915",
+  "title": "子串判重",
+  "tags": [
+    "哈希"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1915",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个含有 <span class=\"katex math inline\">26</span> 个小写英文字母的字符串。有 <span class=\"katex math inline\">m</span> 次询问，每次给出 <span class=\"katex math inline\">2</span> 个区间，请问这两个区间里的子字符串是否一样？</p>\n</div>            </div>",
+      "text": "给定一个含有 26 个小写英文字母的字符串。有 m 次询问，每次给出 2 个区间，请问这两个区间里的子字符串是否一样？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入一个字符串 <span class=\"katex math inline\">S</span> 。</p>\n<p>第二行一个数字 <span class=\"katex math inline\">m</span>，表示 <span class=\"katex math inline\">m</span> 次询问。</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行四个数字 <span class=\"katex math inline\">l_1,r_1,l_2,r_2</span> ，分别表示此次询问的两个区间，注意字符串的位置从 <span class=\"katex math inline\">1</span> 开始编号。</p>\n<p><strong>数据范围：</strong></p>\n<p><span class=\"katex math inline\">1≤length(S),m,l_1,r_1,l_2,r_2≤1000000</span>。</p>\n</div>            </div>",
+      "text": "第一行输入一个字符串 S 。\n第二行一个数字 m，表示 m 次询问。\n接下来 m 行，每行四个数字 l_1,r_1,l_2,r_2 ，分别表示此次询问的两个区间，注意字符串的位置从 1 开始编号。\n数据范围：\n1≤length(S),m,l_1,r_1,l_2,r_2≤1000000。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每次询问，输出一行表示结果。</p>\n<p>如果两个子串完全一样，输出 <code>Yes</code>，否则输出 <code>No</code>（注意大小写）。</p>\n</div>            </div>",
+      "text": "对于每次询问，输出一行表示结果。\n如果两个子串完全一样，输出 Yes，否则输出 No（注意大小写）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>aabbaabb\r\n3\r\n1 3 5 7\r\n1 3 6 8\r\n1 2 1 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Yes\r\nNo\r\nYes</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            aabbaabb\r\n3\r\n1 3 5 7\r\n1 3 6 8\r\n1 2 1 2\n                        \n                        \n                            输出\n                            Yes\r\nNo\r\nYes"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>哈希</p>\n</div>                </div>",
+      "text": "哈希"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">哈希</span></span></p>\n</div>                </div>",
+      "text": "哈希"
+    }
+  ],
+  "samples": [
+    {
+      "input": "aabbaabb\r\n3\r\n1 3 5 7\r\n1 3 6 8\r\n1 2 1 2",
+      "output": "Yes\r\nNo\r\nYes"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4038",
+    "通过人数": "1690",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:54"
+}

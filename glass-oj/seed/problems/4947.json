@@ -1,0 +1,58 @@
+{
+  "id": "4947",
+  "title": "猴子摘桃",
+  "tags": [
+    "信息素养大赛",
+    "2024",
+    "循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4947",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>花果山上有一只猴子，每天都去蟠桃园摘桃子。</p>\n<p>第一天，猴子只摘了一个桃子，之后两天(第二天和第三天)，猴子每天都摘两个桃子，之后三天(第四、五、六天)，猴子每天都摘三个桃子，之后四天(第七、八、九、十天)，猴子每天都四个桃子……这种模式会一直持续下去，因为蟠桃园里的桃子无穷无尽，请计算在前 <span class=\"katex math inline\">n</span> 天里，猴子一共摘了多少个挑子。</p>\n</div>            </div>",
+      "text": "花果山上有一只猴子，每天都去蟠桃园摘桃子。\n第一天，猴子只摘了一个桃子，之后两天(第二天和第三天)，猴子每天都摘两个桃子，之后三天(第四、五、六天)，猴子每天都摘三个桃子，之后四天(第七、八、九、十天)，猴子每天都四个桃子……这种模式会一直持续下去，因为蟠桃园里的桃子无穷无尽，请计算在前 n 天里，猴子一共摘了多少个挑子。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一行，一个正整数 <span class=\"katex math inline\">n</span>，表示前 <span class=\"katex math inline\">n</span> 天。（ <span class=\"katex math inline\">1 \\le n \\le 1000</span> ）</p>\n</div>            </div>",
+      "text": "输入只有一行，一个正整数 n，表示前 n 天。（ 1 \\le n \\le 1000 ）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，一个正整数，表示前 <span class=\"katex math inline\">n</span> 天猴子一共摘了多少个桃子。</p>\n</div>            </div>",
+      "text": "输出只有一行，一个正整数，表示前 n 天猴子一共摘了多少个桃子。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>14</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\n                        \n                        \n                            输出\n                            14"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年信息素养大赛C++算法创意挑战赛复赛真题（小学组）</p>\n</div>                </div>",
+      "text": "2024年信息素养大赛C++算法创意挑战赛复赛真题（小学组）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">信息素养大赛</span><span class=\"label label-warning\">2024</span><span class=\"label label-info\">循环</span></span></p>\n</div>                </div>",
+      "text": "信息素养大赛2024循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6",
+      "output": "14"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "2016",
+    "通过人数": "1264",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:51"
+}

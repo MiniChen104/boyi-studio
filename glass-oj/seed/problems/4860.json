@@ -1,0 +1,52 @@
+{
+  "id": "4860",
+  "title": "实习工资",
+  "tags": [
+    "蓝桥等考",
+    "数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4860",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>暑假期间，佩琪在一家快餐店做实习服务生，她每周领一次工资。佩琪希望对自己的工资数据进行统计分析，以便做好今后的财务规划。</p>\n<p>请你帮助她设计一个程序，通过统计过去几周的工资数额，计算每周的平均工资。</p>\n</div>            </div>",
+      "text": "暑假期间，佩琪在一家快餐店做实习服务生，她每周领一次工资。佩琪希望对自己的工资数据进行统计分析，以便做好今后的财务规划。\n请你帮助她设计一个程序，通过统计过去几周的工资数额，计算每周的平均工资。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含一个整数 <span class=\"katex math inline\">n</span>，表示过去几周的周数。(<span class=\"katex math inline\">1 \\le n \\le 10</span>)</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行，每行包含一个整数 <span class=\"katex math inline\">w_i</span>，表示第 <span class=\"katex math inline\">i</span> 周的工资数额。</p>\n</div>            </div>",
+      "text": "输入的第一行包含一个整数 n，表示过去几周的周数。(1 \\le n \\le 10)\n接下来的 n 行，每行包含一个整数 w_i，表示第 i 周的工资数额。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示每周的平均工资。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示每周的平均工资。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n510 510 500 520</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>510</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n510 510 500 520\n                        \n                        \n                            输出\n                            510"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n510 510 500 520",
+      "output": "510"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "184",
+    "通过人数": "129",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:54"
+}

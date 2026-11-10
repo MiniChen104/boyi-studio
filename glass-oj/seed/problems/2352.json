@@ -1,0 +1,61 @@
+{
+  "id": "2352",
+  "title": "阶乘累加和",
+  "tags": [
+    "蓝桥杯等级考试"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2352",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>【具体要求】  </p>\n<p>数学课上，老师给同学们布置了一道家庭作业：计算从 1 到正整数 n（1 &lt; n &lt;= 20）之间每个正整数的阶乘累加和。当 n = 4 时，最终结果 s = 1! + 2! + 3! + 4! = 33。当数字逐渐增大时计算难度也在增大。  </p>\n<p>小蓝通过编写程序来完成作业。 </p>\n</div>            </div>",
+      "text": "【具体要求】  \n数学课上，老师给同学们布置了一道家庭作业：计算从 1 到正整数 n（1 < n <= 20）之间每个正整数的阶乘累加和。当 n = 4 时，最终结果 s = 1! + 2! + 3! + 4! = 33。当数字逐渐增大时计算难度也在增大。  \n小蓝通过编写程序来完成作业。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 n（1 &lt; n &lt;= 20）。 </p>\n</div>            </div>",
+      "text": "输入一个正整数 n（1 < n <= 20）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出最终的计算结果 s 。</p>\n</div>            </div>",
+      "text": "输出最终的计算结果 s 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 \n                        \n                        \n                            输出\n                            9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【评分标准】  </p>\n<p>本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。</p>\n<pre><code>蓝桥等考 C++组单选题样题（十二级） \n以下程序片段是一个函数的定义，该函数的功能是比较两个数的大小，返回较小的那一个，仔细查看程序，程序中共有（ ）处错误。\nvoid minn(x, y) \n{ \n\treturn x &gt; y ? y : x; \n} \nA 0 \nB 1 \nC 2 \nD 3 \n【答案】D \n【解析】三处错误，第一处函数类型应该是 int，第二、三处错误为形参 x、y 无类型，应该是 int x, int y。\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "【评分标准】  \n本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。\n蓝桥等考 C++组单选题样题（十二级） \n以下程序片段是一个函数的定义，该函数的功能是比较两个数的大小，返回较小的那一个，仔细查看程序，程序中共有（ ）处错误。\nvoid minn(x, y) \n{ \n\treturn x > y ? y : x; \n} \nA 0 \nB 1 \nC 2 \nD 3 \n【答案】D \n【解析】三处错误，第一处函数类型应该是 int，第二、三处错误为形参 x、y 无类型，应该是 int x, int y。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥等考 C++组编程题样题（十二级）</p>\n</div>                </div>",
+      "text": "蓝桥等考 C++组编程题样题（十二级）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯等级考试</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 ",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "2041",
+    "通过人数": "877",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:22"
+}

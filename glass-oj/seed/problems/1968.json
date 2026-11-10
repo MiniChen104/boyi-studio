@@ -1,0 +1,56 @@
+{
+  "id": "1968",
+  "title": "输出ascii码对应的字符",
+  "tags": [
+    "字符型"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1968",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入一个整数（ascii 码），请计算并输出该 ascii 码对应的字符。</p>\n<p>比如：ascii 码 <span class=\"katex math inline\">65</span> 对应的字符是 &#x27;<span class=\"katex math inline\">A</span>&#x27; ，<span class=\"katex math inline\">97</span> 对应的字符是 &#x27;<span class=\"katex math inline\">a</span>&#x27; ，<span class=\"katex math inline\">48</span> 对应的字符是 &#x27;<span class=\"katex math inline\">0</span>&#x27; 。</p>\n</div>            </div>",
+      "text": "从键盘读入一个整数（ascii 码），请计算并输出该 ascii 码对应的字符。\n比如：ascii 码 65 对应的字符是 'A' ，97 对应的字符是 'a' ，48 对应的字符是 '0' 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数（值在ascii码表的范围内）。</p>\n</div>            </div>",
+      "text": "一个整数（值在ascii码表的范围内）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>该ascii码对应的字符。</p>\n</div>            </div>",
+      "text": "该ascii码对应的字符。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>65</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>A</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            65\n                        \n                        \n                            输出\n                            A"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符型</p>\n</div>                </div>",
+      "text": "字符型"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符型</span></span></p>\n</div>                </div>",
+      "text": "字符型"
+    }
+  ],
+  "samples": [
+    {
+      "input": "65",
+      "output": "A"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "16441",
+    "通过人数": "13822",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:26:42"
+}

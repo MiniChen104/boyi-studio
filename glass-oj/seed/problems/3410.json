@@ -1,0 +1,69 @@
+{
+  "id": "3410",
+  "title": "小杨的握手问题",
+  "tags": [
+    "GESP六级",
+    "归并排序",
+    "逆序对",
+    "树状数组",
+    "23年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3410",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨的班级里共有 <span class=\"katex math inline\">N</span> 名同学，学号从 <span class=\"katex math inline\">0</span> 至 <span class=\"katex math inline\">N-1</span>。</p>\n<p>某节课上，老师安排全班同学进行一次握手游戏，具体规则如下：老师安排了一个顺序，让全班 <span class=\"katex math inline\">N</span> 名同学依次进入教室。每位同学进入教室时，需要和<strong>已经在教室内</strong>且<strong>学号小于自己</strong>的同学握手。</p>\n<p>现在，小杨想知道，整个班级总共会进行多少次握手。</p>\n<p>提示：可以考虑使用归并排序进行降序排序，并在此过程中求解。</p>\n</div>            </div>",
+      "text": "小杨的班级里共有 N 名同学，学号从 0 至 N-1。\n某节课上，老师安排全班同学进行一次握手游戏，具体规则如下：老师安排了一个顺序，让全班 N 名同学依次进入教室。每位同学进入教室时，需要和已经在教室内且学号小于自己的同学握手。\n现在，小杨想知道，整个班级总共会进行多少次握手。\n提示：可以考虑使用归并排序进行降序排序，并在此过程中求解。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含 <span class=\"katex math inline\">2</span> 行。第一行一个整数 <span class=\"katex math inline\">N</span>，表示同学的个数；第二行 <span class=\"katex math inline\">N</span> 个用单个空格隔开的整数，依次描述同学们进入教室的顺序，每个整数在 <span class=\"katex math inline\">0</span> ~ <span class=\"katex math inline\">N-1</span> 之间，表示该同学的学号。</p>\n<p>保证每位同学会且只会进入教室一次。</p>\n</div>            </div>",
+      "text": "输入包含 2 行。第一行一个整数 N，表示同学的个数；第二行 N 个用单个空格隔开的整数，依次描述同学们进入教室的顺序，每个整数在 0 ~ N-1 之间，表示该同学的学号。\n保证每位同学会且只会进入教室一次。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数，表示全班握手的总次数。</p>\n</div>            </div>",
+      "text": "输出一行一个整数，表示全班握手的总次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n2 1 3 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>6\r\n0 1 2 3 4 5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>15</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n2 1 3 0\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                6\r\n0 1 2 3 4 5\n                            \n                            \n                                输出\n                                15"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释 1】</p>\n<p><span class=\"katex math inline\">2</span> 号同学进入教室，此时教室里没有其他同学。</p>\n<p><span class=\"katex math inline\">1</span> 号同学进入教室，此时教室里有 <span class=\"katex math inline\">2</span> 号同学。<span class=\"katex math inline\">1</span> 号同学的学号小于 <span class=\"katex math inline\">2</span> 号同学，因此他们之间不需要握手。</p>\n<p><span class=\"katex math inline\">3</span> 号同学进入教室，此时教室里有 <span class=\"katex math inline\">1,2</span> 号同学。<span class=\"katex math inline\">3</span>号同学的学号比他们都大，因此 <span class=\"katex math inline\">3</span> 号同学需要分别和另外两位同学握手。</p>\n<p><span class=\"katex math inline\">0</span> 号同学进入教室，此时教室里有 <span class=\"katex math inline\">1,2,3</span> 号同学。 <span class=\"katex math inline\">0</span> 号同学的学号比他们都小，因此 <span class=\"katex math inline\">0</span> 号同学不需要与其他同学握手。</p>\n<p>综上所述全班一共握手 <span class=\"katex math inline\">0 + 0 + 2 + 0 = 2</span> 次。</p>\n<p>【样例解释 2】</p>\n<p>全班所有同学之间都会进行握手，因为每位同学来到教室时，都会发现他的学号是当前教室里最大的，所以他需要和教室里的每位其他同学进行握手。</p>\n<p>【数据规模】</p>\n<p>对于 <span class=\"katex math inline\">30</span> % 的测试点，保证 <span class=\"katex math inline\">N \\leq 100</span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\"> 2 \\leq N \\leq 3 \\times 10^5 </span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释 1】\n2 号同学进入教室，此时教室里没有其他同学。\n1 号同学进入教室，此时教室里有 2 号同学。1 号同学的学号小于 2 号同学，因此他们之间不需要握手。\n3 号同学进入教室，此时教室里有 1,2 号同学。3号同学的学号比他们都大，因此 3 号同学需要分别和另外两位同学握手。\n0 号同学进入教室，此时教室里有 1,2,3 号同学。 0 号同学的学号比他们都小，因此 0 号同学不需要与其他同学握手。\n综上所述全班一共握手 0 + 0 + 2 + 0 = 2 次。\n【样例解释 2】\n全班所有同学之间都会进行握手，因为每位同学来到教室时，都会发现他的学号是当前教室里最大的，所以他需要和教室里的每位其他同学进行握手。\n【数据规模】\n对于 30 % 的测试点，保证 N \\leq 100。\n对于所有测试点，保证  2 \\leq N \\leq 3 \\times 10^5  。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年9月六级</p>\n</div>                </div>",
+      "text": "GESP23年9月六级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP六级</span><span class=\"label label-warning\">归并排序</span><span class=\"label label-info\">逆序对</span><span class=\"label label-danger\">树状数组</span><span class=\"label label-primary\">23年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP六级归并排序逆序对树状数组23年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n2 1 3 0",
+      "output": "2"
+    },
+    {
+      "input": "6\r\n0 1 2 3 4 5",
+      "output": "15"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "515",
+    "通过人数": "209",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:08"
+}

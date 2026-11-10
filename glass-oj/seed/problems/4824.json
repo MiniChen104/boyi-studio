@@ -1,0 +1,61 @@
+{
+  "id": "4824",
+  "title": "打字速度",
+  "tags": [
+    "蓝桥等考",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4824",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>普通人的打字速度是每分钟 <span class=\"katex math inline\">50</span> 到 <span class=\"katex math inline\">80</span> 字，给出一个人的打字速度，请编写程序判定他的打字等级。</p>\n</div>            </div>",
+      "text": "普通人的打字速度是每分钟 50 到 80 字，给出一个人的打字速度，请编写程序判定他的打字等级。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数 <span class=\"katex math inline\">n</span>，表示每分钟打字的数量。</p>\n</div>            </div>",
+      "text": "输入一个整数 n，表示每分钟打字的数量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果 <span class=\"katex math inline\">n</span> 小于 <span class=\"katex math inline\">50</span>，输出 <code>0</code>；</p>\n<p>如果 <span class=\"katex math inline\">n</span> 在 <span class=\"katex math inline\">50 \\sim 80</span> 之间（包含 <span class=\"katex math inline\">50</span> 和 <span class=\"katex math inline\">80</span>），输出 <code>1</code>；</p>\n<p>如果 <span class=\"katex math inline\">n</span> 大于 <span class=\"katex math inline\">80</span>，输出 <code>2</code>。</p>\n</div>            </div>",
+      "text": "如果 n 小于 50，输出 0；\n如果 n 在 50 \\sim 80 之间（包含 50 和 80），输出 1；\n如果 n 大于 80，输出 2。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>40</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>120 </pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            40\n                        \n                        \n                            输出\n                            0\n                        \n\n                                                    \n                                输入\n                                120 \n                            \n                            \n                                输出\n                                2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>说明/提示：</h4>\n<p>题目保证输入数据范围为 <span class=\"katex math inline\">1 \\sim 400</span>。</p>\n<p>输入输出格式要和样例严格保持一致，不要输出任何与答案无关的内容，如“请输入：”之类的提示信息，或者在数据前面输出多余的空格或空行。</p>\n</div>\n\n                    \n                </div>",
+      "text": "说明/提示：\n题目保证输入数据范围为 1 \\sim 400。\n输入输出格式要和样例严格保持一致，不要输出任何与答案无关的内容，如“请输入：”之类的提示信息，或者在数据前面输出多余的空格或空行。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">分支</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "40",
+      "output": "0"
+    },
+    {
+      "input": "120 ",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "312",
+    "通过人数": "261",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:26"
+}

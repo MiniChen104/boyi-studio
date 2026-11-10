@@ -1,0 +1,61 @@
+{
+  "id": "1575",
+  "title": "国王",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1575",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小T自幼学习中国象棋，小学时曾荣获龙城小学象棋比赛冠军，他对中国象棋情有独钟，外出参加信息学夏令营等活动时都要随身携带一副中国象棋，一有空就会摆开棋跟小 伙伴们杀上几盘。</p>\n<p>自从在小学编程班上听了国际象棋的起源传说后，小T又对神秘的国际象棋产生了浓厚兴趣，由于学习任务繁重并且课余时间还要用来编写程序，小 T 一直没有 机会学习国际象棋，前不久小 T 通过自主招生提前考上了心仪已久的 CZ 中学创新实验班， 一举摆脱了中考的烦恼，自主招生面试一结束小 T 立马到龙城棋院买了一副国际象棋，一 进家门就迫不及待地摆开了，小 T 首先学习的是国王的走法，国际象棋棋盘由 <span class=\"katex math inline\">8</span> 行 <span class=\"katex math inline\">8</span> 列的 <span class=\"katex math inline\">64</span>   个方格组成，如下图中的左图所示，棋子是放在方格中的，这一点跟中国象棋有着很大 的区别，国王可移动至八个邻近方格中的任意一个，如下图中的右图所示，只要不掉到棋 盘外面即可，图中的黑色实心圆代表国王，八个白色的空心圆代表国王一步能走到的位置。 小T想知道国王从棋盘上的一个格子到达另一个格子至少需要走几步？</p>\n<p><img src=\"https://assets.boyi.local/415fd6f02a344b3585c217f9.jpg\"></p>\n</div>            </div>",
+      "text": "小T自幼学习中国象棋，小学时曾荣获龙城小学象棋比赛冠军，他对中国象棋情有独钟，外出参加信息学夏令营等活动时都要随身携带一副中国象棋，一有空就会摆开棋跟小 伙伴们杀上几盘。\n自从在小学编程班上听了国际象棋的起源传说后，小T又对神秘的国际象棋产生了浓厚兴趣，由于学习任务繁重并且课余时间还要用来编写程序，小 T 一直没有 机会学习国际象棋，前不久小 T 通过自主招生提前考上了心仪已久的 CZ 中学创新实验班， 一举摆脱了中考的烦恼，自主招生面试一结束小 T 立马到龙城棋院买了一副国际象棋，一 进家门就迫不及待地摆开了，小 T 首先学习的是国王的走法，国际象棋棋盘由 8 行 8 列的 64   个方格组成，如下图中的左图所示，棋子是放在方格中的，这一点跟中国象棋有着很大 的区别，国王可移动至八个邻近方格中的任意一个，如下图中的右图所示，只要不掉到棋 盘外面即可，图中的黑色实心圆代表国王，八个白色的空心圆代表国王一步能走到的位置。 小T想知道国王从棋盘上的一个格子到达另一个格子至少需要走几步？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据共有两行，每行包含两个用空格隔开的不超过 <span class=\"katex math inline\">8</span> 的正整数，</p>\n<p>第一行的两个数</p>\n<p><span class=\"katex math inline\">R1,C1</span> 表示国王初始时的位置在第 <span class=\"katex math inline\">R1</span> 行第 <span class=\"katex math inline\">C1</span> 列，</p>\n<p>第二行的两个数 <span class=\"katex math inline\">R2,C2</span> 表示国王要走到 的目标位置在第 <span class=\"katex math inline\">R2</span> 行第 <span class=\"katex math inline\">C2</span> 列。</p>\n</div>            </div>",
+      "text": "输入数据共有两行，每行包含两个用空格隔开的不超过 8 的正整数，\n第一行的两个数\nR1,C1 表示国王初始时的位置在第 R1 行第 C1 列，\n第二行的两个数 R2,C2 表示国王要走到 的目标位置在第 R2 行第 C2 列。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出数据仅有一行包含一个整数表示国王从棋盘上的初始位置走到目标位置至少需要走几步？</p>\n</div>            </div>",
+      "text": "输出数据仅有一行包含一个整数表示国王从棋盘上的初始位置走到目标位置至少需要走几步？"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 2\r\n8 8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 2\r\n8 8\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<p>样例中国王(上图中用“王”表示)初始时在棋盘上的第 <span class=\"katex math inline\">1</span> 行第 <span class=\"katex math inline\">2</span> 列，要走到棋盘右下角的方格即第 <span class=\"katex math inline\">8</span> 行第 <span class=\"katex math inline\">8</span> 列，小 T 只要第一步将国王向下移一格走到第 <span class=\"katex math inline\">2</span> 行第 <span class=\"katex math inline\">2</span> 列，然后一 直沿斜线向右下方向连续走 <span class=\"katex math inline\">6</span> 步即可到达目标位置，图中将国王走过的位置用 <span class=\"katex math inline\">1\\sim7</span> 依次 标出来了，总共需要走 <span class=\"katex math inline\">7</span> 步，可以验证其它走法都不可能少于 <span class=\"katex math inline\">7</span> 步。</p>\n<h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">20\\%</span> 的数据满足：国王的初始位置和目标位置在同一行或同一列</p>\n<p><span class=\"katex math inline\">30\\%</span> 的数据满足：<span class=\"katex math inline\">R1 \\lt R2</span>，<span class=\"katex math inline\">C1 \\lt C2</span></p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据满足：<span class=\"katex math inline\">1 \\le R1,R2,C1,C2 \\le 8</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n样例中国王(上图中用“王”表示)初始时在棋盘上的第 1 行第 2 列，要走到棋盘右下角的方格即第 8 行第 8 列，小 T 只要第一步将国王向下移一格走到第 2 行第 2 列，然后一 直沿斜线向右下方向连续走 6 步即可到达目标位置，图中将国王走过的位置用 1\\sim7 依次 标出来了，总共需要走 7 步，可以验证其它走法都不可能少于 7 步。\n【数据范围】\n20\\% 的数据满足：国王的初始位置和目标位置在同一行或同一列\n30\\% 的数据满足：R1 \\lt R2，C1 \\lt C2\n100\\% 的数据满足：1 \\le R1,R2,C1,C2 \\le 8"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>常州市2014“信息与未来”选拔赛</p>\n</div>                </div>",
+      "text": "常州市2014“信息与未来”选拔赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 2\r\n8 8",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "602",
+    "通过人数": "367",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:19"
+}

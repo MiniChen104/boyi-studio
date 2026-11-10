@@ -1,0 +1,71 @@
+{
+  "id": "4922",
+  "title": "压缩(compression)",
+  "tags": [
+    "市赛",
+    "常州2025",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4922",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 Y 开发了一种名为“别重复”的新型数据压缩策略。“别重复”作用于字符串，若字符串中存在两个连续相同的子串，则会删除其中一个。例如，在字符串“<code>alfalfaseeds</code>”中，“别重复”可删除“<code>seeds</code>”中的一个“<code>e</code>”和“<code>alfalfa</code>”中的一个“<code>lfa</code>”，得到“<code>alfaseds</code>”。“别重复”还能利用先前的删除效果，例如在“<code>seventeenth baggage</code>”中，先删除重复的“<code>e</code>”和“<code>g</code>”得到“<code>sevententh bagage</code>”，再删除重复的“<code>ent</code>”和“<code>ag</code>”，最终得到“<code>seventh bage</code>”。</p>\n<p>当存在多个重复子串可删除时，最优的“别重复”会选择使最终字符串最短的方式。例如，在“<code>ABBCDCABCDCD</code>”中，优先删除开头的“<code>B</code>”再删除“<code>ABCDC</code>”可压缩为“<code>ABCD</code>”，而若先删除末尾的“<code>CD</code>”再删除“<code>B</code>”则最终只能得到“<code>ABCDCABCD</code>”。最优的“别重复”会选择先删除“<code>B</code>”再删除“<code>ABCDC</code>”的方式。</p>\n<p>小 Y 要求为带通配符的二进制字符串（仅含 &#x27;<span class=\"katex math inline\">0</span>&#x27;, &#x27;<span class=\"katex math inline\">1</span>&#x27; ,&#x27;<code>#</code>&#x27;（通配符））实现最优的“别重复”算法。你需要在进行“别重复”压缩算法前为通配符进行赋值，值为 &#x27;<span class=\"katex math inline\">0</span>&#x27; 或者 &#x27;<span class=\"katex math inline\">1</span> &#x27;，使得赋值之后的二进制字符串通过应用最优的“别重复”能得到最短的字符串。</p>\n</div>            </div>",
+      "text": "小 Y 开发了一种名为“别重复”的新型数据压缩策略。“别重复”作用于字符串，若字符串中存在两个连续相同的子串，则会删除其中一个。例如，在字符串“alfalfaseeds”中，“别重复”可删除“seeds”中的一个“e”和“alfalfa”中的一个“lfa”，得到“alfaseds”。“别重复”还能利用先前的删除效果，例如在“seventeenth baggage”中，先删除重复的“e”和“g”得到“sevententh bagage”，再删除重复的“ent”和“ag”，最终得到“seventh bage”。\n当存在多个重复子串可删除时，最优的“别重复”会选择使最终字符串最短的方式。例如，在“ABBCDCABCDCD”中，优先删除开头的“B”再删除“ABCDC”可压缩为“ABCD”，而若先删除末尾的“CD”再删除“B”则最终只能得到“ABCDCABCD”。最优的“别重复”会选择先删除“B”再删除“ABCDC”的方式。\n小 Y 要求为带通配符的二进制字符串（仅含 '0', '1' ,'#'（通配符））实现最优的“别重复”算法。你需要在进行“别重复”压缩算法前为通配符进行赋值，值为 '0' 或者 '1 '，使得赋值之后的二进制字符串通过应用最优的“别重复”能得到最短的字符串。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个带通配符的二进制字符串。</p>\n</div>            </div>",
+      "text": "一行一个带通配符的二进制字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个字符串表示应用最优的“别重复”能得到的最短字符串。题目数据保证应用最优的“别重复”能得到的最短字符串有且只有一种唯一情况。</p>\n</div>            </div>",
+      "text": "一行一个字符串表示应用最优的“别重复”能得到的最短字符串。题目数据保证应用最优的“别重复”能得到的最短字符串有且只有一种唯一情况。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>111#</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10#</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>10</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10##1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>101</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            111#\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                10#\n                            \n                            \n                                输出\n                                10\n                            \n                        \n                                                    \n                                输入\n                                10##1\n                            \n                            \n                                输出\n                                101"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>本任务共有 <span class=\"katex math inline\">10</span> 个数据。</p>\n<p>对于全部数据：保证字符串长度不超过 <span class=\"katex math inline\">10^5</span>，数据保证应用最优的“别重复”能得到的最短字符串有且只有一种唯一情况。</p>\n<table><thead><tr><th>测试点编号</th><th>特殊性质</th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1\\sim2</span></td><td>字符串长度不超过 <span class=\"katex math inline\">3</span></td></tr><tr><td><span class=\"katex math inline\">3\\sim4</span></td><td>字符串中不包含 <span class=\"katex math inline\">\\tt0</span></td></tr><tr><td><span class=\"katex math inline\">5\\sim8</span></td><td>字符串中不包含 #</td></tr><tr><td><span class=\"katex math inline\">9\\sim10</span></td><td>无</td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "数据范围\n本任务共有 10 个数据。\n对于全部数据：保证字符串长度不超过 10^5，数据保证应用最优的“别重复”能得到的最短字符串有且只有一种唯一情况。\n测试点编号特殊性质1\\sim2字符串长度不超过 33\\sim4字符串中不包含 \\tt05\\sim8字符串中不包含 #9\\sim10无"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年常州“信息与未来”小学生编程比赛</p>\n</div>                </div>",
+      "text": "2025年常州“信息与未来”小学生编程比赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">常州2025</span><span class=\"label label-info\">字符串</span></span></p>\n</div>                </div>",
+      "text": "市赛常州2025字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "111#",
+      "output": "1"
+    },
+    {
+      "input": "10#",
+      "output": "10"
+    },
+    {
+      "input": "10##1",
+      "output": "101"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "34",
+    "通过人数": "6",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:10"
+}

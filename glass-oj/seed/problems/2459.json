@@ -1,0 +1,61 @@
+{
+  "id": "2459",
+  "title": "牛年",
+  "tags": [
+    "usaco"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2459",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Farmer John 的奶牛们得知最近正在庆祝牛年的到来时十分兴奋。牛年总是奶牛们的最爱。  </p>\n<p>我们知道，中国历法中每一年所对应的生肖遵循 12 年的周期：Ox, Tiger, Rabbit, Dragon, Snake, Horse, Goat, Monkey, Rooster, Dog, Pig, Rat（牛、虎、兔、龙、蛇、马、羊、猴、鸡、狗、猪、鼠），然后回到牛。  </p>\n<p>奶牛 Bessie 自豪地说她是在许多年前的一个牛年出生的。她的朋友 Elsie 想要知道她与 Bessie 出生相差多少年，并且希望你能够通过查看农场上若干奶牛出生年份之间的关系来帮助她推算。</p>\n</div>            </div>",
+      "text": "Farmer John 的奶牛们得知最近正在庆祝牛年的到来时十分兴奋。牛年总是奶牛们的最爱。  \n我们知道，中国历法中每一年所对应的生肖遵循 12 年的周期：Ox, Tiger, Rabbit, Dragon, Snake, Horse, Goat, Monkey, Rooster, Dog, Pig, Rat（牛、虎、兔、龙、蛇、马、羊、猴、鸡、狗、猪、鼠），然后回到牛。  \n奶牛 Bessie 自豪地说她是在许多年前的一个牛年出生的。她的朋友 Elsie 想要知道她与 Bessie 出生相差多少年，并且希望你能够通过查看农场上若干奶牛出生年份之间的关系来帮助她推算。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含一个整数 <span class=\"katex math inline\">N</span>（<span class=\"katex math inline\">1≤N≤100</span>）。以下 <span class=\"katex math inline\">N</span> 行每行包含一个 <span class=\"katex math inline\">8</span> 个单词的短语，指定了两头奶牛的出生年份之间的关系，格式为：  </p>\n<p>&quot;Mildred born in previous Dragon year from Bessie&quot;（Mildred 在 Bessie 出生的前一个龙年出生），  </p>\n<p>或  </p>\n<p>&quot;Mildred born in next Dragon year from Bessie&quot;（Mildred 在 Bessie 出生的后一个龙年出生）。  </p>\n<p>最后一个单词是农场上某一头奶牛的名字，为 &quot;Bessie&quot; 或一头已经在之前的输入中出现过的奶牛。  </p>\n<p>第一个单词是农场上某一头奶牛的名字，不为 &quot;Bessie&quot; 且未在之前的输入中出现过。所有的奶牛名字不超过 10 个字符，且仅包含字符 a..z 或 A..Z。  </p>\n<p>第 5 个单词是上述十二生肖之一。  </p>\n<p>第 4 个单词是 &quot;previous&quot;（之前）或 &quot;next&quot;（之后）之一。例如，如果短语为 &quot;Mildred born in previous Dragon year from Bessie&quot;，则 Mildred 的出生年份为最为接近且严格处于 Bessie 的出生年份之前（不等于）的龙年。  </p>\n</div>            </div>",
+      "text": "输入的第一行包含一个整数 N（1≤N≤100）。以下 N 行每行包含一个 8 个单词的短语，指定了两头奶牛的出生年份之间的关系，格式为：  \n\"Mildred born in previous Dragon year from Bessie\"（Mildred 在 Bessie 出生的前一个龙年出生），  \n或  \n\"Mildred born in next Dragon year from Bessie\"（Mildred 在 Bessie 出生的后一个龙年出生）。  \n最后一个单词是农场上某一头奶牛的名字，为 \"Bessie\" 或一头已经在之前的输入中出现过的奶牛。  \n第一个单词是农场上某一头奶牛的名字，不为 \"Bessie\" 且未在之前的输入中出现过。所有的奶牛名字不超过 10 个字符，且仅包含字符 a..z 或 A..Z。  \n第 5 个单词是上述十二生肖之一。  \n第 4 个单词是 \"previous\"（之前）或 \"next\"（之后）之一。例如，如果短语为 \"Mildred born in previous Dragon year from Bessie\"，则 Mildred 的出生年份为最为接近且严格处于 Bessie 的出生年份之前（不等于）的龙年。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 Bessie 和 Elsie 的出生年份之间相差的年数。输入保证可以通过给定的信息求出结果。</p>\n</div>            </div>",
+      "text": "输出 Bessie 和 Elsie 的出生年份之间相差的年数。输入保证可以通过给定的信息求出结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\nMildred born in previous Dragon year from Bessie\r\nGretta born in previous Monkey year from Mildred\r\nElsie born in next Ox year from Gretta\r\nPaulina born in next Dog year from Bessie</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>12</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\nMildred born in previous Dragon year from Bessie\r\nGretta born in previous Monkey year from Mildred\r\nElsie born in next Ox year from Gretta\r\nPaulina born in next Dog year from Bessie\n                        \n                        \n                            输出\n                            12"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例解释】</strong>  </p>\n<p>在以上的输入中：  </p>\n<p>Elsie 在 Bessie 之前 12 年出生。<br>\nMildred 在 Bessie 之前 9 年出生。<br>\nGretta 在 Bessie 之前 17 年出生。<br>\nPaulina 在 Bessie 之前 9 年出生。  </p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】  \n在以上的输入中：  \nElsie 在 Bessie 之前 12 年出生。\nMildred 在 Bessie 之前 9 年出生。\nGretta 在 Bessie 之前 17 年出生。\nPaulina 在 Bessie 之前 9 年出生。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO 2021 February Contest, Bronze Problem 1. Year of the Cow</p>\n</div>                </div>",
+      "text": "USACO 2021 February Contest, Bronze Problem 1. Year of the Cow"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">usaco</span></span></p>\n</div>                </div>",
+      "text": "usaco"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\nMildred born in previous Dragon year from Bessie\r\nGretta born in previous Monkey year from Mildred\r\nElsie born in next Ox year from Gretta\r\nPaulina born in next Dog year from Bessie",
+      "output": "12"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "59",
+    "通过人数": "44",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:36"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1596",
+  "title": "火柴棒三角形问题",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1596",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如下图所示，摆 <span class=\"katex math inline\">1</span> 个火柴棒三角形需要 <span class=\"katex math inline\">3</span> 根火柴，那么摆 <span class=\"katex math inline\">2</span> 个火柴棒三角形就需要 <span class=\"katex math inline\">6</span> 根火柴，请问摆 <span class=\"katex math inline\">n</span> 个火柴棒三角形需要多少根火柴？</p>\n<p><img src=\"https://assets.boyi.local/8297134165a43bb4bf7cc173.jpg\"></p>\n</div>            </div>",
+      "text": "如下图所示，摆 1 个火柴棒三角形需要 3 根火柴，那么摆 2 个火柴棒三角形就需要 6 根火柴，请问摆 n 个火柴棒三角形需要多少根火柴？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> ，代表想要摆放的火柴棒三角形的数量。</p>\n</div>            </div>",
+      "text": "一个整数 n ，代表想要摆放的火柴棒三角形的数量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，代表了需要多少根火柴的数量。</p>\n</div>            </div>",
+      "text": "一个整数，代表了需要多少根火柴的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            9"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "50192",
+    "通过人数": "41934",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:36"
+}

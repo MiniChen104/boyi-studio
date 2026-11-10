@@ -1,0 +1,62 @@
+{
+  "id": "1966",
+  "title": "人造星空",
+  "tags": [
+    "深搜",
+    "广搜"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1966",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">A</span> 市利用无人机制造了一个 <span class=\"katex math inline\">n \\times m</span> 大小的人造星空，在这个 <span class=\"katex math inline\">n \\times m</span> 大小的星空中，每个点都有一个无人机，无人机有发光和不发光两种不同的状态，对于所有的发光点，在空中就能形成独特的星空图形。</p>\n<p>图形中有多个不同的图案，同一个图案的定义是这样的，对于两个发光的点，如果他们的曼哈顿距离（对于 <span class=\"katex math inline\">A(x_1,y_1)</span> 和 <span class=\"katex math inline\">B(x_2,y_2)</span> ，<span class=\"katex math inline\">A</span> 和 <span class=\"katex math inline\">B</span> 之间的曼哈顿距离为 <span class=\"katex math inline\">|x_1-x_2|+|y_1-y_2|</span> ）小于等于 <span class=\"katex math inline\">2</span> ，那么这两个点就属于一个图案。</p>\n<p>请你编程计算一下，这个 <span class=\"katex math inline\">n \\times m</span> 的图形中，有多少个不同的图案。</p>\n<p>比如：一个 <span class=\"katex math inline\">6 \\times 6</span> 的图形如下，该图形中有 <span class=\"katex math inline\">2</span> 个符合条件的图案。</p>\n<pre><code>-#----\n##----\n--##--\n------\n-#----\n--#-##\n</code></pre>\n</div>            </div>",
+      "text": "A 市利用无人机制造了一个 n \\times m 大小的人造星空，在这个 n \\times m 大小的星空中，每个点都有一个无人机，无人机有发光和不发光两种不同的状态，对于所有的发光点，在空中就能形成独特的星空图形。\n图形中有多个不同的图案，同一个图案的定义是这样的，对于两个发光的点，如果他们的曼哈顿距离（对于 A(x_1,y_1) 和 B(x_2,y_2) ，A 和 B 之间的曼哈顿距离为 |x_1-x_2|+|y_1-y_2| ）小于等于 2 ，那么这两个点就属于一个图案。\n请你编程计算一下，这个 n \\times m 的图形中，有多少个不同的图案。\n比如：一个 6 \\times 6 的图形如下，该图形中有 2 个符合条件的图案。\n-#----\n##----\n--##--\n------\n-#----\n--#-##"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，两个数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> 。（<span class=\"katex math inline\">1 \\le n,m \\le 100</span>）</p>\n<p>接下来一共 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">m</span> 个字符。对于第 <span class=\"katex math inline\">i</span> 行第 <span class=\"katex math inline\">j</span> 个字符，如果其为 <code>-</code> ，那么表示该点不发光，如果其为 <code>#</code> ，那么表示该点发光。不可能出现其他的字符。</p>\n</div>            </div>",
+      "text": "第一行，两个数 n 和 m 。（1 \\le n,m \\le 100）\n接下来一共 n 行，每行 m 个字符。对于第 i 行第 j 个字符，如果其为 - ，那么表示该点不发光，如果其为 # ，那么表示该点发光。不可能出现其他的字符。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表图案的个数。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表图案的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 6\r\n-#----\r\n##----\r\n--##--\r\n------\r\n-#----\r\n--#-##</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 6\r\n-#----\r\n##----\r\n--##--\r\n------\r\n-#----\r\n--#-##\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>符合题意的点的示意图如下：</p>\n<p><img src=\"https://assets.boyi.local/b103f6425cf6009d05e697e3.jpg\"></p>\n</div>\n\n                    \n                </div>",
+      "text": "符合题意的点的示意图如下："
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>深搜 广搜</p>\n</div>                </div>",
+      "text": "深搜 广搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">深搜</span><span class=\"label label-warning\">广搜</span></span></p>\n</div>                </div>",
+      "text": "深搜广搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 6\r\n-#----\r\n##----\r\n--##--\r\n------\r\n-#----\r\n--#-##",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3422",
+    "通过人数": "2165",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:40"
+}

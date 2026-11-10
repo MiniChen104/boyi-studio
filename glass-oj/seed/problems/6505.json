@@ -1,0 +1,65 @@
+{
+  "id": "6505",
+  "title": "双项达标（targets）",
+  "tags": [
+    "双指针",
+    "尺取法"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/6505",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定两个长度均为 <span class=\"katex math inline\">n</span> 的正整数序列 <span class=\"katex math inline\">a,b</span>，以及两个目标值 <span class=\"katex math inline\">A,B</span>。</p>\n<p>选择一个<strong>非空连续区间 <span class=\"katex math inline\">[l,r]</span></strong>，要求这一段中 <span class=\"katex math inline\">a</span> 的元素和<strong>至少为 <span class=\"katex math inline\">A</span></strong>，同时 <span class=\"katex math inline\">b</span> 的元素和<strong>至少为 <span class=\"katex math inline\">B</span></strong>。</p>\n<p>求满足条件的<strong>最短区间长度</strong>。如果不存在，输出 <code>-1</code>。<strong>两个序列必须选择相同的左右端点。</strong></p>\n</div>            </div>",
+      "text": "给定两个长度均为 n 的正整数序列 a,b，以及两个目标值 A,B。\n选择一个非空连续区间 [l,r]，要求这一段中 a 的元素和至少为 A，同时 b 的元素和至少为 B。\n求满足条件的最短区间长度。如果不存在，输出 -1。两个序列必须选择相同的左右端点。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入三个整数 <span class=\"katex math inline\">n,A,B</span>。</p>\n<p>第二行输入 <span class=\"katex math inline\">n</span> 个正整数 <span class=\"katex math inline\">a_1,a_2,\\ldots,a_n</span>。</p>\n<p>第三行输入 <span class=\"katex math inline\">n</span> 个正整数 <span class=\"katex math inline\">b_1,b_2,\\ldots,b_n</span>。</p>\n</div>            </div>",
+      "text": "第一行输入三个整数 n,A,B。\n第二行输入 n 个正整数 a_1,a_2,\\ldots,a_n。\n第三行输入 n 个正整数 b_1,b_2,\\ldots,b_n。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示最短区间长度；如果不存在，输出 <code>-1</code>。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示最短区间长度；如果不存在，输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 7 6\r\n2 4 1 3 2 5\r\n3 1 4 2 3 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>12 12 13\r\n3 1 4 2 5 2 1 6 3 2 4 1\r\n1 5 2 4 1 3 6 1 2 5 1 4</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>4</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>30 30 28\r\n2 5 1 3 6 2 4 1 5 3 2 7 1 4 2 6 3 1 5 2 4 3 6 1 2 5 3 4 1 6\r\n4 1 5 2 1 6 2 3 1 5 4 1 6 2 3 1 4 5 2 3 1 6 2 4 5 1 3 2 6 1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>9</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            6 7 6\r\n2 4 1 3 2 5\r\n3 1 4 2 3 1\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                12 12 13\r\n3 1 4 2 5 2 1 6 3 2 4 1\r\n1 5 2 4 1 3 6 1 2 5 1 4\n                            \n                            \n                                输出\n                                4\n                            \n                        \n                                                    \n                                输入\n                                30 30 28\r\n2 5 1 3 6 2 4 1 5 3 2 7 1 4 2 6 3 1 5 2 4 3 6 1 2 5 3 4 1 6\r\n4 1 5 2 1 6 2 3 1 5 4 1 6 2 3 1 4 5 2 3 1 6 2 4 5 1 3 2 6 1\n                            \n                            \n                                输出\n                                9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例说明 1</h4>\n<p>区间 <span class=\"katex math inline\">[2,4]</span> 中，<span class=\"katex math inline\">a</span> 的元素和为 <span class=\"katex math inline\">4+1+3=8</span>，<span class=\"katex math inline\">b</span> 的元素和为 <span class=\"katex math inline\">1+4+2=7</span>，两项都达标，长度为 <span class=\"katex math inline\">3</span>。</p>\n<p>没有长度为 <span class=\"katex math inline\">1</span> 的区间达标。长度为 <span class=\"katex math inline\">2</span> 的区间中，只有 <span class=\"katex math inline\">[5,6]</span> 的 <span class=\"katex math inline\">a</span> 元素和达到 <span class=\"katex math inline\">7</span>，但它的 <span class=\"katex math inline\">b</span> 元素和为 <span class=\"katex math inline\">4</span>，仍不达标。因此最短长度为 <span class=\"katex math inline\">3</span>。</p>\n<h4>数据范围与提示</h4>\n<p>对于所有测试数据，保证：<span class=\"katex math inline\">1\\le n\\le10^5</span>，<span class=\"katex math inline\">1\\le A,B\\le10^{14}</span>，<span class=\"katex math inline\">1\\le a_i,b_i\\le10^9</span>。</p>\n<p>本题共 <span class=\"katex math inline\">20</span> 个测试点，每个测试点 <span class=\"katex math inline\">5</span> 分，<strong>各测试点独立计分</strong>。</p>\n<table><thead><tr><th>测试点编号</th><th><span class=\"katex math inline\">n\\le</span></th><th>特殊性质</th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1</span></td><td><span class=\"katex math inline\">1</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">2 \\sim 3</span></td><td><span class=\"katex math inline\">10</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">4 \\sim 7</span></td><td><span class=\"katex math inline\">10^3</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">8 \\sim 11</span></td><td><span class=\"katex math inline\">10^5</span></td><td>A</td></tr><tr><td><span class=\"katex math inline\">12 \\sim 20</span></td><td><span class=\"katex math inline\">10^5</span></td><td>无</td></tr></tbody></table><p>特殊性质 A：对于所有 <span class=\"katex math inline\">1\\le i\\le n</span>，均有 <span class=\"katex math inline\">a_i=b_i</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例说明 1\n区间 [2,4] 中，a 的元素和为 4+1+3=8，b 的元素和为 1+4+2=7，两项都达标，长度为 3。\n没有长度为 1 的区间达标。长度为 2 的区间中，只有 [5,6] 的 a 元素和达到 7，但它的 b 元素和为 4，仍不达标。因此最短长度为 3。\n数据范围与提示\n对于所有测试数据，保证：1\\le n\\le10^5，1\\le A,B\\le10^{14}，1\\le a_i,b_i\\le10^9。\n本题共 20 个测试点，每个测试点 5 分，各测试点独立计分。\n测试点编号n\\le特殊性质11无2 \\sim 310无4 \\sim 710^3无8 \\sim 1110^5A12 \\sim 2010^5无特殊性质 A：对于所有 1\\le i\\le n，均有 a_i=b_i。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">双指针</span><span class=\"label label-warning\">尺取法</span></span></p>\n</div>                </div>",
+      "text": "双指针尺取法"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 7 6\r\n2 4 1 3 2 5\r\n3 1 4 2 3 1",
+      "output": "3"
+    },
+    {
+      "input": "12 12 13\r\n3 1 4 2 5 2 1 6 3 2 4 1\r\n1 5 2 4 1 3 6 1 2 5 1 4",
+      "output": "4"
+    },
+    {
+      "input": "30 30 28\r\n2 5 1 3 6 2 4 1 5 3 2 7 1 4 2 6 3 1 5 2 4 3 6 1 2 5 3 4 1 6\r\n4 1 5 2 1 6 2 3 1 5 4 1 6 2 3 1 4 5 2 3 1 6 2 4 5 1 3 2 6 1",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "15",
+    "通过人数": "11",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:27"
+}

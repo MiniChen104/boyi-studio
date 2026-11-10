@@ -1,0 +1,65 @@
+{
+  "id": "6487",
+  "title": "代金券凑数",
+  "tags": [
+    "循环",
+    "穷举"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6487",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学校为编程挑战赛准备了三种面额的代金券：<strong>3 元、5 元、7 元</strong>，每种面额的数量都足够多。</p>\n<p>要用代金券恰好凑出 <span class=\"katex math inline\">n</span> 元（可以只用其中一种，也可以某一种一张都不用），请问一共有多少种不同的凑法？</p>\n<p>两种凑法不同，指的是<strong>至少有一种面额的张数不同</strong>。</p>\n</div>            </div>",
+      "text": "学校为编程挑战赛准备了三种面额的代金券：3 元、5 元、7 元，每种面额的数量都足够多。\n要用代金券恰好凑出 n 元（可以只用其中一种，也可以某一种一张都不用），请问一共有多少种不同的凑法？\n两种凑法不同，指的是至少有一种面额的张数不同。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数 n，表示要凑出的金额。</p>\n</div>            </div>",
+      "text": "一行一个整数 n，表示要凑出的金额。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数，表示不同的凑法数量。</p>\n</div>            </div>",
+      "text": "一行一个整数，表示不同的凑法数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>7</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            10\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                7\n                            \n                            \n                                输出\n                                1\n                            \n                        \n                                                    \n                                输入\n                                1\n                            \n                            \n                                输出\n                                0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 说明】：</h4>\n<p>两种凑法是 5 + 5、3 + 7。</p>\n<h4>【样例 2 说明】：</h4>\n<p>只有 <span class=\"katex math inline\">7</span> 一张这一种。</p>\n<h4>数据范围</h4>\n<p><span class=\"katex math inline\">1 \\le n \\le 500</span></p>\n<h4>考察点</h4>\n<p>枚举算法；枚举范围的确定；用取余判断&quot;能否被整除&quot;。</p>\n<h4>提示</h4>\n<p>枚举 <span class=\"katex math inline\">7</span> 元和 <span class=\"katex math inline\">5</span> 元的张数，剩下的钱如果正好能被 <span class=\"katex math inline\">3</span> 整除，就是一种合法方案。注意枚举边界：<code>7 * z &lt;= n</code>、<code>7 * z + 5 * y &lt;= n</code>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 1 说明】：\n两种凑法是 5 + 5、3 + 7。\n【样例 2 说明】：\n只有 7 一张这一种。\n数据范围\n1 \\le n \\le 500\n考察点\n枚举算法；枚举范围的确定；用取余判断\"能否被整除\"。\n提示\n枚举 7 元和 5 元的张数，剩下的钱如果正好能被 3 整除，就是一种合法方案。注意枚举边界：7 * z <= n、7 * z + 5 * y <= n。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">循环</span><span class=\"label label-warning\">穷举</span></span></p>\n</div>                </div>",
+      "text": "循环穷举"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10",
+      "output": "2"
+    },
+    {
+      "input": "7",
+      "output": "1"
+    },
+    {
+      "input": "1",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "56",
+    "通过人数": "32",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:43"
+}

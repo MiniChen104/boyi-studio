@@ -1,0 +1,56 @@
+{
+  "id": "1048",
+  "title": "猜拳",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1048",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">T</span> 和小 <span class=\"katex math inline\">K</span> 在同一个小组，平时两人非常友爱，可每当轮到他们小组值日时，两人经常会为了扫地擦黑板之类的小事起争执，一旦争执起来，他们就通过古老的猜拳游戏石头、剪刀、布来决定胜负，胜的一方获得优先选择权。</p>\n<p>如小 <span class=\"katex math inline\">T</span> 胜了他总是选择擦黑板，因为他长得人高手长，擦起黑板来挥洒自如，相对而言扫地就费劲多了，由于扫帚很短，他要把腰弯得很低才能扫到地面。</p>\n<p>令小 <span class=\"katex math inline\">T</span> 烦恼的是他总是输多胜少，原因是小 <span class=\"katex math inline\">K</span> 常常在最后时刻变换手势，明明开始时是石头，可到了小 <span class=\"katex math inline\">T</span> 面前又变成了剪刀。小 <span class=\"katex math inline\">T</span> 想了很久也没能想出什么好办法，直到有一天小<span class=\"katex math inline\">T</span> 去莱蒙看了电影《非诚勿扰》，影片中介绍了科学家秦奋发明“分歧终端机”的事迹，小 <span class=\"katex math inline\">T</span> 看完后深受启发，一回家就立刻着手制作起自己的“分歧终端机”来。</p>\n<p>小 <span class=\"katex math inline\">T</span> 的“分歧终端机”形状是一个全封闭的长方体盒子，盒子的上表面装有一个电子显示屏，用来显示结果，左右两侧各有一个开口，以供两位选手把手伸进去出招，盒子内部被一块木板隔成了左右两部分，两部分都装了一个键盘，键盘上有3个键，上面标有数字 <span class=\"katex math inline\">1、2、3</span> ，分别代表石头、剪刀、布。</p>\n<p>如果选手要出石头则按 <span class=\"katex math inline\">1</span> 号键，要出剪刀则按 <span class=\"katex math inline\">2</span> 号键，要出布则按 <span class=\"katex math inline\">3</span> 号键。猜拳开始前小 <span class=\"katex math inline\">T</span> 和小 <span class=\"katex math inline\">K</span> 分别在“分歧终端机”左右两侧入座，然后各伸一只手进去，此时小 <span class=\"katex math inline\">T</span> 会大喊一声“开始”，两位选手随即根据自己的意愿去按相应的键，如果第一次两人按的键相同，则不分胜负，继续第二次按键，直到决出胜负为止。</p>\n<p>小 <span class=\"katex math inline\">T</span> 因忙于硬件的采购和制作，顾不上给“分歧终端机”写判断胜负的程序，他希望你来帮他完成这个任务，<b>这个任务非常简单</b>，你可不能让小 <span class=\"katex math inline\">T</span> 失望哦～。</p>\n</div>            </div>",
+      "text": "小 T 和小 K 在同一个小组，平时两人非常友爱，可每当轮到他们小组值日时，两人经常会为了扫地擦黑板之类的小事起争执，一旦争执起来，他们就通过古老的猜拳游戏石头、剪刀、布来决定胜负，胜的一方获得优先选择权。\n如小 T 胜了他总是选择擦黑板，因为他长得人高手长，擦起黑板来挥洒自如，相对而言扫地就费劲多了，由于扫帚很短，他要把腰弯得很低才能扫到地面。\n令小 T 烦恼的是他总是输多胜少，原因是小 K 常常在最后时刻变换手势，明明开始时是石头，可到了小 T 面前又变成了剪刀。小 T 想了很久也没能想出什么好办法，直到有一天小T 去莱蒙看了电影《非诚勿扰》，影片中介绍了科学家秦奋发明“分歧终端机”的事迹，小 T 看完后深受启发，一回家就立刻着手制作起自己的“分歧终端机”来。\n小 T 的“分歧终端机”形状是一个全封闭的长方体盒子，盒子的上表面装有一个电子显示屏，用来显示结果，左右两侧各有一个开口，以供两位选手把手伸进去出招，盒子内部被一块木板隔成了左右两部分，两部分都装了一个键盘，键盘上有3个键，上面标有数字 1、2、3 ，分别代表石头、剪刀、布。\n如果选手要出石头则按 1 号键，要出剪刀则按 2 号键，要出布则按 3 号键。猜拳开始前小 T 和小 K 分别在“分歧终端机”左右两侧入座，然后各伸一只手进去，此时小 T 会大喊一声“开始”，两位选手随即根据自己的意愿去按相应的键，如果第一次两人按的键相同，则不分胜负，继续第二次按键，直到决出胜负为止。\n小 T 因忙于硬件的采购和制作，顾不上给“分歧终端机”写判断胜负的程序，他希望你来帮他完成这个任务，这个任务非常简单，你可不能让小 T 失望哦～。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>仅有一行包含两个用空格隔开的不超过 <span class=\"katex math inline\">3</span> 的自然数，表示小 <span class=\"katex math inline\">T</span> 和小 <span class=\"katex math inline\">K</span> 所按键上的数字，<span class=\"katex math inline\">1</span> 表示石头，<span class=\"katex math inline\">2</span> 表示剪刀， <span class=\"katex math inline\">3</span> 表示布。<b>游戏规则是石头胜剪刀，剪刀胜布，布胜石头</b>。</p>\n</div>            </div>",
+      "text": "仅有一行包含两个用空格隔开的不超过 3 的自然数，表示小 T 和小 K 所按键上的数字，1 表示石头，2 表示剪刀， 3 表示布。游戏规则是石头胜剪刀，剪刀胜布，布胜石头。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>仅有一行输出本次猜拳的结果，如果小T胜则输出 <code>win</code>，如果小T输则输出 <code><span class=\"katex math inline\">lose</span></code> ，如果两人不分胜负则输出 <code>tie</code> 。注意输出时都用小写字母，<b>引号不要输出</b>。</p>\n</div>            </div>",
+      "text": "仅有一行输出本次猜拳的结果，如果小T胜则输出 win，如果小T输则输出 lose ，如果两人不分胜负则输出 tie 。注意输出时都用小写字母，引号不要输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>win</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 2\n                        \n                        \n                            输出\n                            win"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 2",
+      "output": "win"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "10010",
+    "通过人数": "6435",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:13:59"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "4941",
+  "title": "最强塔防",
+  "tags": [
+    "BCSP-X"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4941",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>古埃及法王有着一个巨大的宝库，里面珍藏着无数价值连城的珠宝。由于觊觎宝库的坏\n蛋 很多，因此法王邀请你帮他设计一个环形的防守圈，来抵御强盗的入侵。他想在宝库周\n围均匀地布置上 <span class=\"katex math inline\">n</span> 个炮塔（注意：由于是环形，首尾相接，第一个炮塔和第 <span class=\"katex math inline\">n</span> 个炮塔是相邻的），塔防的位置很重要，每个位置适合摆的炮塔都不一样，也就是说每个位置摆放不同的炮塔获得的战斗力是不同的。 </p>\n<p>如第一个位置摆放三种炮塔获得的战斗力分别是：<span class=\"katex math inline\">1</span>，<span class=\"katex math inline\">3</span>，<span class=\"katex math inline\">2</span>，此时摆放中射炮获得的战斗力最高；而第二个位置摆放三种炮塔获得的战斗力分别是：<span class=\"katex math inline\">3</span>，<span class=\"katex math inline\">1</span>，<span class=\"katex math inline\">2</span>，此时摆放低射炮获得的战斗力最高。 </p>\n<p>我们的军火库中有三种炮塔，分别为低射对地炮，中射迫击炮以及高射对空炮。法王希\n望这一圈炮塔摆的很有层次感，所以任何一个位置的炮塔要比它相邻的两个炮塔的高度都高\n或者都低（高射炮 <span class=\"katex math inline\">\\lt</span> 中射炮 <span class=\"katex math inline\">\\lt</span> 低射炮），并且在此条件下，法王想要你设计出一套方案，使得防御力也就是战斗力最高。 </p>\n</div>            </div>",
+      "text": "古埃及法王有着一个巨大的宝库，里面珍藏着无数价值连城的珠宝。由于觊觎宝库的坏\n蛋 很多，因此法王邀请你帮他设计一个环形的防守圈，来抵御强盗的入侵。他想在宝库周\n围均匀地布置上 n 个炮塔（注意：由于是环形，首尾相接，第一个炮塔和第 n 个炮塔是相邻的），塔防的位置很重要，每个位置适合摆的炮塔都不一样，也就是说每个位置摆放不同的炮塔获得的战斗力是不同的。 \n如第一个位置摆放三种炮塔获得的战斗力分别是：1，3，2，此时摆放中射炮获得的战斗力最高；而第二个位置摆放三种炮塔获得的战斗力分别是：3，1，2，此时摆放低射炮获得的战斗力最高。 \n我们的军火库中有三种炮塔，分别为低射对地炮，中射迫击炮以及高射对空炮。法王希\n望这一圈炮塔摆的很有层次感，所以任何一个位置的炮塔要比它相邻的两个炮塔的高度都高\n或者都低（高射炮 \\lt 中射炮 \\lt 低射炮），并且在此条件下，法王想要你设计出一套方案，使得防御力也就是战斗力最高。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为一个正整数 <span class=\"katex math inline\">n</span>，表示需要摆的炮塔个数。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">3</span> 个不超过 <span class=\"katex math inline\">10000</span> 的正整数 <span class=\"katex math inline\">a_i,b_i,c_i</span> ，按顺时针顺序表示了第 <span class=\"katex math inline\">i</span>个位置摆低射,中射以及高射炮能获得的战斗力。 </p>\n<p>第 <span class=\"katex math inline\">i</span> 个位置的炮塔与第 <span class=\"katex math inline\">i+1</span> 个位置的炮塔相邻，特别地，第 <span class=\"katex math inline\">1</span> 个位置的炮塔与第 <span class=\"katex math inline\">n</span> 个位置的炮塔相邻。</p>\n</div>            </div>",
+      "text": "第一行为一个正整数 n，表示需要摆的炮塔个数。\n接下来 n 行，每行 3 个不超过 10000 的正整数 a_i,b_i,c_i ，按顺时针顺序表示了第 i个位置摆低射,中射以及高射炮能获得的战斗力。 \n第 i 个位置的炮塔与第 i+1 个位置的炮塔相邻，特别地，第 1 个位置的炮塔与第 n 个位置的炮塔相邻。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数，为最大的战斗力之和。</p>\n</div>            </div>",
+      "text": "一个正整数，为最大的战斗力之和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 \r\n1 3 2 \r\n3 1 2 \r\n3 1 2 \r\n3 1 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>11</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 \r\n1 3 2 \r\n3 1 2 \r\n3 1 2 \r\n3 1 2\n                        \n                        \n                            输出\n                            11"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p>第 <span class=\"katex math inline\">1</span> 至 <span class=\"katex math inline\">n</span> 个位置分别摆上高度为中射,低射,高射,低射炮，战斗力最高 </p>\n<h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">20\\%</span> 的数据，有 <span class=\"katex math inline\">n \\le 10</span>；</p>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的数据，有 <span class=\"katex math inline\">n \\le 100</span>；</p>\n<p>对于 <span class=\"katex math inline\">60\\%</span> 的数据，有 <span class=\"katex math inline\">n \\le 1000</span>；</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，有 <span class=\"katex math inline\">4 \\le n \\le 100000</span>，<span class=\"katex math inline\">1 \\le ai,bi,ci  \\le 10000</span> ，并保证 <span class=\"katex math inline\">n</span> 一定为偶数。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n第 1 至 n 个位置分别摆上高度为中射,低射,高射,低射炮，战斗力最高 \n数据范围\n对于 20\\% 的数据，有 n \\le 10；\n对于 40\\% 的数据，有 n \\le 100；\n对于 60\\% 的数据，有 n \\le 1000；\n对于 100\\% 的数据，有 4 \\le n \\le 100000，1 \\le ai,bi,ci  \\le 10000 ，并保证 n 一定为偶数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>BCSP-X初中组编程能力样卷-T4</p>\n</div>                </div>",
+      "text": "BCSP-X初中组编程能力样卷-T4"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">BCSP-X</span></span></p>\n</div>                </div>",
+      "text": "BCSP-X"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 \r\n1 3 2 \r\n3 1 2 \r\n3 1 2 \r\n3 1 2",
+      "output": "11"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "60",
+    "通过人数": "15",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:56"
+}

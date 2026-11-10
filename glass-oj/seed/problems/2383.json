@@ -1,0 +1,52 @@
+{
+  "id": "2383",
+  "title": "数列修改求和",
+  "tags": [
+    "树状数组",
+    "线段树"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2383",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一个 <span class=\"katex math inline\">n</span> 个数的整数数列。现可以对数列做 <span class=\"katex math inline\">2</span> 种不同的操作：</p>\n<ol><li><p>修改：在数组的第 <span class=\"katex math inline\">x</span> 个数上增加值 <span class=\"katex math inline\">y</span> ；</p>\n</li>\n<li><p>求和：求数组的第 <span class=\"katex math inline\">x</span> 到第 <span class=\"katex math inline\">y</span> 个数的和，包含 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span> 两个位置；</p>\n</li>\n</ol></div>            </div>",
+      "text": "有一个 n 个数的整数数列。现可以对数列做 2 种不同的操作：\n修改：在数组的第 x 个数上增加值 y ；\n\n求和：求数组的第 x 到第 y 个数的和，包含 x 和 y 两个位置；"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行输入 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">n</span>、<span class=\"katex math inline\">m</span>，分别代表数列中元素个数 以及 操作次数。（<span class=\"katex math inline\">n,m ≤ 10^5</span>）。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行输入 <span class=\"katex math inline\">n</span> 个整数，用空格隔开。</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行有 <span class=\"katex math inline\">3</span> 个整数 <span class=\"katex math inline\">k</span>、<span class=\"katex math inline\">x</span>、<span class=\"katex math inline\">y</span>，如果 <span class=\"katex math inline\">k=0</span> ，表示求数列中区间 <span class=\"katex math inline\">[x,y]</span> 之间所有数的和，<span class=\"katex math inline\">k=1</span> 表示在第 <span class=\"katex math inline\">x</span> 数上加上值 <span class=\"katex math inline\">y</span> 。</p>\n<p>（测试数据保证 <span class=\"katex math inline\">k</span>、<span class=\"katex math inline\">x</span>、<span class=\"katex math inline\">y</span> 三个整数的合理性(<span class=\"katex math inline\">1 \\le x \\le n</span>)，也确保所有数据在运算后依然在 <span class=\"katex math inline\">int</span> 的范围内）</p>\n</div>            </div>",
+      "text": "第 1 行输入 2 个整数 n、m，分别代表数列中元素个数 以及 操作次数。（n,m ≤ 10^5）。\n第 2 行输入 n 个整数，用空格隔开。\n接下来 m 行，每行有 3 个整数 k、x、y，如果 k=0 ，表示求数列中区间 [x,y] 之间所有数的和，k=1 表示在第 x 数上加上值 y 。\n（测试数据保证 k、x、y 三个整数的合理性(1 \\le x \\le n)，也确保所有数据在运算后依然在 int 的范围内）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出若干行，按照读入的顺序输出 <span class=\"katex math inline\">k=0</span> 时求出的区间和。</p>\n</div>            </div>",
+      "text": "输出若干行，按照读入的顺序输出 k=0 时求出的区间和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 5\r\n1 2 3 4 5 6 7 8 9 10\r\n1 1 5\r\n0 1 3\r\n0 4 8\r\n1 7 5\r\n0 4 8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>11\r\n30\r\n35</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 5\r\n1 2 3 4 5 6 7 8 9 10\r\n1 1 5\r\n0 1 3\r\n0 4 8\r\n1 7 5\r\n0 4 8\n                        \n                        \n                            输出\n                            11\r\n30\r\n35"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树状数组</span><span class=\"label label-warning\">线段树</span></span></p>\n</div>                </div>",
+      "text": "树状数组线段树"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 5\r\n1 2 3 4 5 6 7 8 9 10\r\n1 1 5\r\n0 1 3\r\n0 4 8\r\n1 7 5\r\n0 4 8",
+      "output": "11\r\n30\r\n35"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1483",
+    "通过人数": "1140",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:42"
+}

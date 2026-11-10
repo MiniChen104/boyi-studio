@@ -1,0 +1,55 @@
+{
+  "id": "1874",
+  "title": "H数2",
+  "tags": [
+    "集合"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1874",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>所谓H数，是指该数除1以外最多只有2,3,5,7四种因子，如630即为H数，而22不是。特别的，1也认为是丑数。<br>\n要求对键盘输入的自然数N，求出第N个H数。如N=30，应输出49。<br>\n本题要求的H数不超出10<sup>9</sup>范围。</p>\n</div>            </div>",
+      "text": "所谓H数，是指该数除1以外最多只有2,3,5,7四种因子，如630即为H数，而22不是。特别的，1也认为是丑数。\n要求对键盘输入的自然数N，求出第N个H数。如N=30，应输出49。\n本题要求的H数不超出109范围。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p> n(n&lt;=4000)</p>\n</div>            </div>",
+      "text": "n(n<=4000)"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第n个h数。</p>\n</div>            </div>",
+      "text": "第n个h数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>100</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>450</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                100\n                            \n                            \n                                输出\n                                450"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">集合</span></span></p>\n</div>                </div>",
+      "text": "集合"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1",
+      "output": "1"
+    },
+    {
+      "input": "100",
+      "output": "450"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "150",
+    "通过人数": "84",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:20"
+}

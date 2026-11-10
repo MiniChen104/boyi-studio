@@ -1,0 +1,65 @@
+{
+  "id": "3496",
+  "title": "精密计时",
+  "tags": [
+    "江苏省赛2023"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3496",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小小有一个非常精密的计时器，每秒可以计数 <span class=\"katex math inline\">100</span> 次 (两个连续的时钟计数之间恰好间隔百分之一秒)。</p>\n<p>例如，以下是从 13:01:02.37 到 13:01:03.01 的计时过程：</p>\n<pre><code>13:01:02.37 (13 时 1 分 2 秒.37)\n13:01:02.38\n13:01:02.39\n...\n13:01:02.98\n13:01:02.99 (13 时 1 分 2 秒.99)\n13:01:03.00 (13 时 1 分 3 秒.00)\n13:01:03.01\n</code></pre>\n<p>小小记录了计时器上的两个时刻，你能帮助他计算这两个时刻之间经过了多少个 “百分之一秒”吗？</p>\n</div>            </div>",
+      "text": "小小有一个非常精密的计时器，每秒可以计数 100 次 (两个连续的时钟计数之间恰好间隔百分之一秒)。\n例如，以下是从 13:01:02.37 到 13:01:03.01 的计时过程：\n13:01:02.37 (13 时 1 分 2 秒.37)\n13:01:02.38\n13:01:02.39\n...\n13:01:02.98\n13:01:02.99 (13 时 1 分 2 秒.99)\n13:01:03.00 (13 时 1 分 3 秒.00)\n13:01:03.01\n\n小小记录了计时器上的两个时刻，你能帮助他计算这两个时刻之间经过了多少个 “百分之一秒”吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据仅一行，包含空格分开的两个字符串，代表了两个计时器上显示的时刻。时刻中的时、分、秒、百分之一秒均使用两位十进制数字表示，不足两位时在十位添零。时、分、秒之间用冒号 : 分隔，秒和百分之一秒之间用小数点 . 分隔。</p>\n</div>            </div>",
+      "text": "输入数据仅一行，包含空格分开的两个字符串，代表了两个计时器上显示的时刻。时刻中的时、分、秒、百分之一秒均使用两位十进制数字表示，不足两位时在十位添零。时、分、秒之间用冒号 : 分隔，秒和百分之一秒之间用小数点 . 分隔。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数，代表两个时刻之间经过的 “百分之一秒” 数。</p>\n</div>            </div>",
+      "text": "输出一行一个整数，代表两个时刻之间经过的 “百分之一秒” 数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>01:02:34.56 01:03:00.10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2554</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>00:00:00.00 23:59:59.99</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>8639999</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            01:02:34.56 01:03:00.10\n                        \n                        \n                            输出\n                            2554\n                        \n\n                                                    \n                                输入\n                                00:00:00.00 23:59:59.99\n                            \n                            \n                                输出\n                                8639999"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【数据规模】</strong></p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，两个时刻都来自 <span class=\"katex math inline\">24</span> 小时制的同一天 (<span class=\"katex math inline\">00:00:00.00</span> 到 <span class=\"katex math inline\">23:59:59.99</span>)，且保证后一个时刻晚于前一个时刻。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据规模】\n对于 100\\% 的数据，两个时刻都来自 24 小时制的同一天 (00:00:00.00 到 23:59:59.99)，且保证后一个时刻晚于前一个时刻。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2023年江苏省＂信息与未来＂小学生编程</p>\n</div>                </div>",
+      "text": "2023年江苏省＂信息与未来＂小学生编程"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">江苏省赛2023</span></span></p>\n</div>                </div>",
+      "text": "江苏省赛2023"
+    }
+  ],
+  "samples": [
+    {
+      "input": "01:02:34.56 01:03:00.10",
+      "output": "2554"
+    },
+    {
+      "input": "00:00:00.00 23:59:59.99",
+      "output": "8639999"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "63",
+    "通过人数": "50",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:29"
+}

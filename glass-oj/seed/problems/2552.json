@@ -1,0 +1,56 @@
+{
+  "id": "2552",
+  "title": "二叉苹果树",
+  "tags": [
+    "树形DP"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/2552",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一棵二叉苹果树，如果树枝有分叉，一定是分两叉，即没有只有一个儿子的节点。这棵树共 <span class=\"katex math inline\">N</span> 个节点，标号 <span class=\"katex math inline\">1</span> 至 <span class=\"katex math inline\">N</span>，树根编号一定为 <span class=\"katex math inline\">1</span>。</p>\n<p>我们用一根树枝两端连接的节点编号描述一根树枝的位置，因为树枝太多了，需要剪枝。但是一些树枝上长有苹果，给定需要保留的树枝数量，求最多能留住多少苹果。<br><img src=\"https://assets.boyi.local/e6a7923ef14d9253255e5b97.png\"></p>\n</div>            </div>",
+      "text": "有一棵二叉苹果树，如果树枝有分叉，一定是分两叉，即没有只有一个儿子的节点。这棵树共 N 个节点，标号 1 至 N，树根编号一定为 1。\n我们用一根树枝两端连接的节点编号描述一根树枝的位置，因为树枝太多了，需要剪枝。但是一些树枝上长有苹果，给定需要保留的树枝数量，求最多能留住多少苹果。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个数 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">Q</span> ，<span class=\"katex math inline\">N</span> 表示树的节点数，<span class=\"katex math inline\">Q</span> 表示要保留的树枝数量。  </p>\n<p>接下来 <span class=\"katex math inline\">N−1</span> 行描述树枝信息，每行三个整数，前两个是它连接的节点的编号，第三个数是这根树枝上苹果数量。</p>\n</div>            </div>",
+      "text": "第一行两个数 N 和 Q ，N 表示树的节点数，Q 表示要保留的树枝数量。  \n接下来 N−1 行描述树枝信息，每行三个整数，前两个是它连接的节点的编号，第三个数是这根树枝上苹果数量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出仅一行，表示最多能留住的苹果的数量。</p>\n</div>            </div>",
+      "text": "输出仅一行，表示最多能留住的苹果的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 2\r\n1 3 1\r\n1 4 10\r\n2 3 20\r\n3 5 20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>21</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 2\r\n1 3 1\r\n1 4 10\r\n2 3 20\r\n3 5 20\n                        \n                        \n                            输出\n                            21"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1≤Q≤N≤100</span>,<span class=\"katex math inline\">N≠1</span>，每根树枝上苹果不超过 <span class=\"katex math inline\">30000</span> 个。</p>\n</div>\n\n                    \n                </div>",
+      "text": "对于 100\\% 的数据，1≤Q≤N≤100,N≠1，每根树枝上苹果不超过 30000 个。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树形DP</span></span></p>\n</div>                </div>",
+      "text": "树形DP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 2\r\n1 3 1\r\n1 4 10\r\n2 3 20\r\n3 5 20",
+      "output": "21"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "651",
+    "通过人数": "436",
+    "金币数量": "2 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:33:11"
+}

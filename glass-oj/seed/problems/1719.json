@@ -1,0 +1,64 @@
+{
+  "id": "1719",
+  "title": "买礼物？",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1719",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>暑假小华来到北京旅游，第一次来到北京的小华非常开心，他想买一些礼物带给自己的好朋友。小华在礼物店看上了 <span class=\"katex math inline\">3</span> 件礼物，价格分别是三个不相等的整数 <span class=\"katex math inline\">x</span>、<span class=\"katex math inline\">y</span> 和 <span class=\"katex math inline\">z</span> 元，小华买了三件礼物中价格最高的一件和价格最低的一件。  </p>\n<p>请问小华总共要花多少钱，平均一件礼物要花多少钱（平均值保留1位小数）？  </p>\n<p>比如，假设小华看上的3件礼物的价格分别是 <span class=\"katex math inline\">8、3、5</span> ，那么小华买的两件礼物的价格分别是 <span class=\"katex math inline\">8</span> 和 <span class=\"katex math inline\">3</span> ，总共花了<span class=\"katex math inline\">8+3=11</span> 元，平均一件礼物花了 <span class=\"katex math inline\">5.5</span> 元。</p>\n</div>            </div>",
+      "text": "暑假小华来到北京旅游，第一次来到北京的小华非常开心，他想买一些礼物带给自己的好朋友。小华在礼物店看上了 3 件礼物，价格分别是三个不相等的整数 x、y 和 z 元，小华买了三件礼物中价格最高的一件和价格最低的一件。  \n请问小华总共要花多少钱，平均一件礼物要花多少钱（平均值保留1位小数）？  \n比如，假设小华看上的3件礼物的价格分别是 8、3、5 ，那么小华买的两件礼物的价格分别是 8 和 3 ，总共花了8+3=11 元，平均一件礼物花了 5.5 元。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三个不相等的整数 <span class=\"katex math inline\">x、y、z</span> ，分别代表小华看上的 <span class=\"katex math inline\">3</span> 件礼物的价格。</p>\n</div>            </div>",
+      "text": "三个不相等的整数 x、y、z ，分别代表小华看上的 3 件礼物的价格。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出有 <span class=\"katex math inline\">2</span> 行，第 <span class=\"katex math inline\">1</span> 行输出小华买礼物总共花了多少钱；  </p>\n<p>第 <span class=\"katex math inline\">2</span> 行输出小华平均一件礼物花了多少钱，平均值保留 <span class=\"katex math inline\">1</span> 位小数。</p>\n</div>            </div>",
+      "text": "输出有 2 行，第 1 行输出小华买礼物总共花了多少钱；  \n第 2 行输出小华平均一件礼物花了多少钱，平均值保留 1 位小数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8 3 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>11\r\n5.5</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>30 12 10</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>40\r\n20.0</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>18 2 31</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>33\r\n16.5</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            8 3 5\n                        \n                        \n                            输出\n                            11\r\n5.5\n                        \n\n                                                    \n                                输入\n                                30 12 10\n                            \n                            \n                                输出\n                                40\r\n20.0\n                            \n                        \n                                                    \n                                输入\n                                18 2 31\n                            \n                            \n                                输出\n                                33\r\n16.5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8 3 5",
+      "output": "11\r\n5.5"
+    },
+    {
+      "input": "30 12 10",
+      "output": "40\r\n20.0"
+    },
+    {
+      "input": "18 2 31",
+      "output": "33\r\n16.5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2883",
+    "通过人数": "1703",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:22"
+}

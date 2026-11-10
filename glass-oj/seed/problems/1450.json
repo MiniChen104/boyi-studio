@@ -1,0 +1,56 @@
+{
+  "id": "1450",
+  "title": "数字之和为x的整数",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1450",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请在 <span class=\"katex math inline\">n</span> 个数中，找出各个位的数字和为 <span class=\"katex math inline\">x</span> 的数，求出满足条件的数有多少个，他们的总和是多少，并对满足条件的数按照由小到大排序。 例如： <span class=\"katex math inline\">x</span> = <span class=\"katex math inline\">13</span> ，那么数 <span class=\"katex math inline\">85、373</span> 就是满足条件的数，因为 <span class=\"katex math inline\">8+5</span> = <span class=\"katex math inline\">13</span> 、<span class=\"katex math inline\">3+7+3</span> = <span class=\"katex math inline\">13</span> 。</p>\n</div>            </div>",
+      "text": "请在 n 个数中，找出各个位的数字和为 x 的数，求出满足条件的数有多少个，他们的总和是多少，并对满足条件的数按照由小到大排序。 例如： x = 13 ，那么数 85、373 就是满足条件的数，因为 8+5 = 13 、3+7+3 = 13 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个整数，分别表示 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">n</span> （<span class=\"katex math inline\">n \\le 10000</span>）。</p>\n<p>第二行有 <span class=\"katex math inline\">n</span> 个整数，用空格隔开（这些数在 <span class=\"katex math inline\">1 \\sim 9999</span> 之间）。</p>\n</div>            </div>",
+      "text": "第一行有两个整数，分别表示 x 和 n （n \\le 10000）。\n第二行有 n 个整数，用空格隔开（这些数在 1 \\sim 9999 之间）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个整数，分别代表满足条件的数的总和及总个数。</p>\n<p>第二行输出满足条件的数，并按照由小到大排序。</p>\n</div>            </div>",
+      "text": "第一行有两个整数，分别代表满足条件的数的总和及总个数。\n第二行输出满足条件的数，并按照由小到大排序。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>13 5\r\n373 85 67 18 49</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>574 4\r\n49 67 85 373</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            13 5\r\n373 85 67 18 49\n                        \n                        \n                            输出\n                            574 4\r\n49 67 85 373"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "13 5\r\n373 85 67 18 49",
+      "output": "574 4\r\n49 67 85 373"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "10397",
+    "通过人数": "5541",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:19:37"
+}

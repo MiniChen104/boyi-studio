@@ -1,0 +1,56 @@
+{
+  "id": "1695",
+  "title": "阿克曼（Ackmann）函数",
+  "tags": [
+    "递归"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1695",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>阿克曼（ <span class=\"katex math inline\">Ackmann</span> ）函数 <span class=\"katex math inline\">A</span> ( <span class=\"katex math inline\">m，n</span> )中， <span class=\"katex math inline\">m，n</span> 定义域是非负整数，函数值定义为：</p>\n<p><img src=\"https://assets.boyi.local/514514e61c8a09b8a0208d8f.jpg\"></p>\n<p>写出计算 <span class=\"katex math inline\">Ack(m，n)</span> 的递归算法程序。</p>\n</div>            </div>",
+      "text": "阿克曼（ Ackmann ）函数 A ( m，n )中， m，n 定义域是非负整数，函数值定义为：\n\n写出计算 Ack(m，n) 的递归算法程序。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个非负整数 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span> 。</p>\n</div>            </div>",
+      "text": "两个非负整数 m 和 n 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>阿克曼函数 <span class=\"katex math inline\">A(m,n)</span> 的值。测试数据保证结果不超过 <span class=\"katex math inline\">int</span> 范围，直接用递归不超时。</p>\n<p>（提示：阿克曼函数的值增长速度非常高，仅是对于 <span class=\"katex math inline\">A(4,2)</span> 的输出就有 <span class=\"katex math inline\">19729</span> 位，而 <span class=\"katex math inline\">A(4,3)</span> 则即使是位数也不易估计。）</p>\n</div>            </div>",
+      "text": "阿克曼函数 A(m,n) 的值。测试数据保证结果不超过 int 范围，直接用递归不超时。\n（提示：阿克曼函数的值增长速度非常高，仅是对于 A(4,2) 的输出就有 19729 位，而 A(4,3) 则即使是位数也不易估计。）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 3\n                        \n                        \n                            输出\n                            9"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递归</p>\n</div>                </div>",
+      "text": "递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递归</span></span></p>\n</div>                </div>",
+      "text": "递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 3",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "5033",
+    "通过人数": "3913",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:23:00"
+}

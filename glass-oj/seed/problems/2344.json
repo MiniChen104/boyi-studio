@@ -1,0 +1,70 @@
+{
+  "id": "2344",
+  "title": "奖项划分",
+  "tags": [
+    "蓝桥杯等级考试",
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2344",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>【具体要求】<br>\n一年一度的朗诵杯比赛又开始了，该比赛分为初赛和复赛两轮，每轮采取满分 <span class=\"katex math inline\">100</span> 分制。</p>\n<p>关于该比赛的奖项划分规则如下：</p>\n<p>初赛和复赛都是满分则被评为 <code>Top1</code> ;</p>\n<p>初赛和复赛都在 <span class=\"katex math inline\">90</span> 分以上（包含 <span class=\"katex math inline\">90</span> 分）且不是 <code>Top1</code>，则被评为一等奖，输出 <code>Gold</code>；</p>\n<p>初赛和复赛分数均在 <span class=\"katex math inline\">80 \\sim 90</span> 分之间（包含 <span class=\"katex math inline\">80</span> 分，不包含 <span class=\"katex math inline\">90</span> 分）则被评为二等奖，输出 <code>Silver</code>；</p>\n<p>初赛和复赛总分在 <span class=\"katex math inline\">140 \\sim 160</span> 分之间（包含 <span class=\"katex math inline\">140</span>  分，不包含 <span class=\"katex math inline\">160</span> 分），且每轮分数不低于及格分数 <span class=\"katex math inline\">60</span> 分，则被评为三等奖，输出 <code>Bronze</code> ；</p>\n<p>其他分数不参与评奖，输出 <code>-1</code> 。</p>\n<p>现在要求你帮大赛组委会写一个自动评判程序，根据每位参赛选手两轮分数划分对应奖项。 </p>\n</div>            </div>",
+      "text": "【具体要求】\n一年一度的朗诵杯比赛又开始了，该比赛分为初赛和复赛两轮，每轮采取满分 100 分制。\n关于该比赛的奖项划分规则如下：\n初赛和复赛都是满分则被评为 Top1 ;\n初赛和复赛都在 90 分以上（包含 90 分）且不是 Top1，则被评为一等奖，输出 Gold；\n初赛和复赛分数均在 80 \\sim 90 分之间（包含 80 分，不包含 90 分）则被评为二等奖，输出 Silver；\n初赛和复赛总分在 140 \\sim 160 分之间（包含 140  分，不包含 160 分），且每轮分数不低于及格分数 60 分，则被评为三等奖，输出 Bronze ；\n其他分数不参与评奖，输出 -1 。\n现在要求你帮大赛组委会写一个自动评判程序，根据每位参赛选手两轮分数划分对应奖项。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个正整数 <span class=\"katex math inline\">n、m（0 \\lt n, m \\le 100）</span>， <span class=\"katex math inline\">n</span> 代表初赛成绩，<span class=\"katex math inline\">m</span> 代表复赛成绩，中间用空格隔开。 </p>\n</div>            </div>",
+      "text": "输入两个正整数 n、m（0 \\lt n, m \\le 100）， n 代表初赛成绩，m 代表复赛成绩，中间用空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出该选手的对应奖项，如： <code>Top1</code> 、 <code>Gold</code> 、<code>Silver</code> 、 <code>Bronze</code> 和 <code>-1</code> 。 </p>\n</div>            </div>",
+      "text": "输出该选手的对应奖项，如： Top1 、 Gold 、Silver 、 Bronze 和 -1 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>99 101 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>-1 </pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>95 90</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>Gold</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>72 75</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>Bronze</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            99 101 \n                        \n                        \n                            输出\n                            -1 \n                        \n\n                                                    \n                                输入\n                                95 90\n                            \n                            \n                                输出\n                                Gold\n                            \n                        \n                                                    \n                                输入\n                                72 75\n                            \n                            \n                                输出\n                                Bronze"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【评分标准】<br>\n本题共有五组测试数据，每通过一组测试数据得 <span class=\"katex math inline\">10</span> 分，满分 <span class=\"katex math inline\">50</span> 分。 </p>\n<pre><code>蓝桥等考 C++组单选题样题（五级） \n已知整型变量 a = -1、b = 1、c = 0，以下逻辑表达式的计算结果为 false 的一项是（ ）。\nA a &amp;&amp; b \nB a || c \nC !(b &lt;= c) &amp;&amp; (a &lt; c) \nD (b &lt;= c) || ((a + b) != c) \n【答案】 D \n【解析】选项 D 中，逻辑||的左右两边关系表达式的值都为 false，所以最终结果为 false。\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "【评分标准】\n本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。 \n蓝桥等考 C++组单选题样题（五级） \n已知整型变量 a = -1、b = 1、c = 0，以下逻辑表达式的计算结果为 false 的一项是（ ）。\nA a && b \nB a || c \nC !(b <= c) && (a < c) \nD (b <= c) || ((a + b) != c) \n【答案】 D \n【解析】选项 D 中，逻辑||的左右两边关系表达式的值都为 false，所以最终结果为 false。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥等考 C++组编程题样题（五级）</p>\n</div>                </div>",
+      "text": "蓝桥等考 C++组编程题样题（五级）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯等级考试</span><span class=\"label label-warning\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯等级考试分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "99 101 ",
+      "output": "-1 "
+    },
+    {
+      "input": "95 90",
+      "output": "Gold"
+    },
+    {
+      "input": "72 75",
+      "output": "Bronze"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "2932",
+    "通过人数": "1242",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:17"
+}

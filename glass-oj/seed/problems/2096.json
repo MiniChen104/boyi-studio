@@ -1,0 +1,61 @@
+{
+  "id": "2096",
+  "title": "按月份输出天数",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2096",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p> 输入年份和月份，让计算机输出该月份的天数。</p>\n</div>            </div>",
+      "text": "输入年份和月份，让计算机输出该月份的天数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行：分别输入年份和月份。</p>\n</div>            </div>",
+      "text": "一行：分别输入年份和月份。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行：按年份和月份输出天数。</p>\n</div>            </div>",
+      "text": "一行：按年份和月份输出天数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2003 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>28</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2003 2\n                        \n                        \n                            输出\n                            28"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><span class=\"katex math inline\">2</span> 月，闰年（指年份能被 <span class=\"katex math inline\">4</span> 整除但不能被 <span class=\"katex math inline\">100</span> 整除，或者能被 <span class=\"katex math inline\">400</span> 整除的年份）为 <span class=\"katex math inline\">29</span> 天，平年为 <span class=\"katex math inline\">28</span> 天。</p>\n</div>\n\n                    \n                </div>",
+      "text": "2 月，闰年（指年份能被 4 整除但不能被 100 整除，或者能被 400 整除的年份）为 29 天，平年为 28 天。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2003 2",
+      "output": "28"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2049",
+    "通过人数": "1271",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:23"
+}

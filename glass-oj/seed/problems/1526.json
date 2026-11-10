@@ -1,0 +1,62 @@
+{
+  "id": "1526",
+  "title": "小X与游戏",
+  "tags": [
+    "市赛",
+    "贪心"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1526",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小X和小Y正在玩一个游戏，这个游戏是这样的：桌上放着 <span class=\"katex math inline\">n</span> 叠卡片，每叠恰好有两张。每张卡片有一个分数。小X为先手，双方轮流操作。轮到一方操作时，他可以选择取走某一叠卡片顶端的那一张（即：若这一叠还剩 <span class=\"katex math inline\">2</span> 张则取走上面的一张，否则取走下面的一张），并获得它的分数。他也可以选择不取。若卡片取完了、或者双方都选择不取卡片，那么游戏结束。</p>\n<p>小X和小Y都希望自己的分数减去对方的分数尽可能大。现在假设小X和小Y都绝顶聪明，总是做出对自己最有利的决策，请算出游戏结束时小X比小Y高多少分。</p>\n<p>在任何时刻，<strong>同一叠牌的上下两张牌的的大小，小X和小Y都是能看到的</strong>。</p>\n</div>            </div>",
+      "text": "小X和小Y正在玩一个游戏，这个游戏是这样的：桌上放着 n 叠卡片，每叠恰好有两张。每张卡片有一个分数。小X为先手，双方轮流操作。轮到一方操作时，他可以选择取走某一叠卡片顶端的那一张（即：若这一叠还剩 2 张则取走上面的一张，否则取走下面的一张），并获得它的分数。他也可以选择不取。若卡片取完了、或者双方都选择不取卡片，那么游戏结束。\n小X和小Y都希望自己的分数减去对方的分数尽可能大。现在假设小X和小Y都绝顶聪明，总是做出对自己最有利的决策，请算出游戏结束时小X比小Y高多少分。\n在任何时刻，同一叠牌的上下两张牌的的大小，小X和小Y都是能看到的。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含一个正整数 <span class=\"katex math inline\">n</span>。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行包含 <span class=\"katex math inline\">2</span> 个用空格隔开的非负整数 <span class=\"katex math inline\">a_i</span>, <span class=\"katex math inline\">b_i</span>，分别表示第 <span class=\"katex math inline\">i</span> 叠中放在上面、下面的卡片的分值。</p>\n</div>            </div>",
+      "text": "输入的第一行包含一个正整数 n。\n接下来 n 行，每行包含 2 个用空格隔开的非负整数 a_i, b_i，分别表示第 i 叠中放在上面、下面的卡片的分值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出仅有一行包含一个整数，表示游戏结束时小X比小Y高多少分。如果小X的分数比小Y低则输出一个负数。</p>\n</div>            </div>",
+      "text": "输出仅有一行包含一个整数，表示游戏结束时小X比小Y高多少分。如果小X的分数比小Y低则输出一个负数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n1 2\r\n4 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n1 2\r\n4 3\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>样例解释</strong></p>\n<p>小X取走 <span class=\"katex math inline\">4</span>，小Y取走 <span class=\"katex math inline\">3</span>，小X不取，小Y不取，游戏结束，<span class=\"katex math inline\">4-3=1</span>。</p>\n<p><strong>数据范围</strong></p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">1≤n≤1000</span>, <span class=\"katex math inline\">b_i=0</span>；</p>\n<p>对于 <span class=\"katex math inline\">70\\%</span> 的数据，<span class=\"katex math inline\">1≤n≤1000</span>；</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1≤n≤100000</span>, <span class=\"katex math inline\">0≤a_i,b_i≤1000000</span>；</p>\n<p>（常州市2017“信息与未来”夏令营选拔赛）</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n小X取走 4，小Y取走 3，小X不取，小Y不取，游戏结束，4-3=1。\n数据范围\n对于 30\\% 的数据，1≤n≤1000, b_i=0；\n对于 70\\% 的数据，1≤n≤1000；\n对于 100\\% 的数据，1≤n≤100000, 0≤a_i,b_i≤1000000；\n（常州市2017“信息与未来”夏令营选拔赛）"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">贪心</span></span></p>\n</div>                </div>",
+      "text": "市赛贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n1 2\r\n4 3",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1797",
+    "通过人数": "551",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:20:39"
+}

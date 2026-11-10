@@ -1,0 +1,65 @@
+{
+  "id": "2538",
+  "title": "冷饮店选址",
+  "tags": [
+    "模拟",
+    "数学"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2538",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>炎热的夏天到了，<span class=\"katex math inline\">Bob</span> 准备在小镇上开一家冷饮店，开店选址是一门大学问，为了让自己的店火爆起来，<span class=\"katex math inline\">Bob</span> 要精心选择自己的开店地址。</p>\n<p>小镇的道路规划是横平竖直的。如果将小镇想象成坐标轴，小镇中任意两个房子 (<span class=\"katex math inline\">x_1</span>,<span class=\"katex math inline\">y_1</span>) 和 (<span class=\"katex math inline\">x_2</span>,<span class=\"katex math inline\">y_2</span>) 之间的距离，可以直接用曼哈顿距离来计算，也就是 <span class=\"katex math inline\">= |x_1-x_2| + |y_1-y_2|</span> 。</p>\n<p>现在已经统计到了小镇上所有住户房子的坐标值，请你帮 <span class=\"katex math inline\">Bob</span> 选一下冷饮店的地址，使得<strong>该点到所有住户房子的距离和最小</strong>。（请注意：允许选到的开冷饮店的位置，是某住户房子的位置，也允许选到开冷饮电的位置，不是某住户房子的位置）</p>\n</div>            </div>",
+      "text": "炎热的夏天到了，Bob 准备在小镇上开一家冷饮店，开店选址是一门大学问，为了让自己的店火爆起来，Bob 要精心选择自己的开店地址。\n小镇的道路规划是横平竖直的。如果将小镇想象成坐标轴，小镇中任意两个房子 (x_1,y_1) 和 (x_2,y_2) 之间的距离，可以直接用曼哈顿距离来计算，也就是 = |x_1-x_2| + |y_1-y_2| 。\n现在已经统计到了小镇上所有住户房子的坐标值，请你帮 Bob 选一下冷饮店的地址，使得该点到所有住户房子的距离和最小。（请注意：允许选到的开冷饮店的位置，是某住户房子的位置，也允许选到开冷饮电的位置，不是某住户房子的位置）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第1行输入一个整数 <span class=\"katex math inline\">n</span> ，代表了小镇有<span class=\"katex math inline\">n</span>个住户。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行有 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span>，表示小镇中某个住户的房子的坐标值。</p>\n</div>            </div>",
+      "text": "第1行输入一个整数 n ，代表了小镇有n个住户。\n接下来 n 行，每行有 2 个整数 x 和 y，表示小镇中某个住户的房子的坐标值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请输出 <span class=\"katex math inline\">Bob</span> 的冷饮店，到所有住户的房子距离和的最小值。</p>\n</div>            </div>",
+      "text": "请输出 Bob 的冷饮店，到所有住户的房子距离和的最小值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n1 2\r\n2 2\r\n1 3\r\n3 -2\r\n3 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>7\r\n12 0\r\n0 19\r\n0 15\r\n0 0\r\n1 10\r\n0 -1\r\n-1 -1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>60</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>15\r\n-25 -31\r\n-9 -9\r\n7 30\r\n7 -13\r\n0 -4\r\n14 10\r\n10 -5\r\n1 -34\r\n-3 -36\r\n-1 -6\r\n2 -4\r\n2 10\r\n12 14\r\n9 14\r\n13 90</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>405</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n1 2\r\n2 2\r\n1 3\r\n3 -2\r\n3 3\n                        \n                        \n                            输出\n                            10\n                        \n\n                                                    \n                                输入\n                                7\r\n12 0\r\n0 19\r\n0 15\r\n0 0\r\n1 10\r\n0 -1\r\n-1 -1\n                            \n                            \n                                输出\n                                60\n                            \n                        \n                                                    \n                                输入\n                                15\r\n-25 -31\r\n-9 -9\r\n7 30\r\n7 -13\r\n0 -4\r\n14 10\r\n10 -5\r\n1 -34\r\n-3 -36\r\n-1 -6\r\n2 -4\r\n2 10\r\n12 14\r\n9 14\r\n13 90\n                            \n                            \n                                输出\n                                405"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>说明</h4>\n<p><span class=\"katex math inline\">|x|</span> 表示求 <span class=\"katex math inline\">x</span> 的绝对值，如果 <span class=\"katex math inline\">x</span> 是非负整数，则 <span class=\"katex math inline\">x</span> 的绝对值是自己，如果 <span class=\"katex math inline\">x</span> 是否负整数，则 <span class=\"katex math inline\">x</span> 的绝对值为相反数。比如，<span class=\"katex math inline\">|2|=2</span>，<span class=\"katex math inline\">|-2|=2</span> 。</p>\n<h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<p>将Bob的冷饮店建在坐标 <span class=\"katex math inline\">2,2</span> 处，可以使得该点到所有住户距离的和最小。</p>\n<h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">50\\%</span> 的数据，满足 <span class=\"katex math inline\">1 \\le n \\le 100</span>，房子的坐标 <span class=\"katex math inline\">x,y</span> 满足 <span class=\"katex math inline\">-200 ≤ x,y ≤ 200</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，满足 <span class=\"katex math inline\">1 \\le n \\le 10000</span>，房子的坐标 <span class=\"katex math inline\">x,y</span> 满足 <span class=\"katex math inline\">-10000 ≤ x,y ≤ 10000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "说明\n|x| 表示求 x 的绝对值，如果 x 是非负整数，则 x 的绝对值是自己，如果 x 是否负整数，则 x 的绝对值为相反数。比如，|2|=2，|-2|=2 。\n样例 1 解释\n将Bob的冷饮店建在坐标 2,2 处，可以使得该点到所有住户距离的和最小。\n数据范围\n对于 50\\% 的数据，满足 1 \\le n \\le 100，房子的坐标 x,y 满足 -200 ≤ x,y ≤ 200。\n对于 100\\% 的数据，满足 1 \\le n \\le 10000，房子的坐标 x,y 满足 -10000 ≤ x,y ≤ 10000。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">模拟</span><span class=\"label label-warning\">数学</span></span></p>\n</div>                </div>",
+      "text": "模拟数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n1 2\r\n2 2\r\n1 3\r\n3 -2\r\n3 3",
+      "output": "10"
+    },
+    {
+      "input": "7\r\n12 0\r\n0 19\r\n0 15\r\n0 0\r\n1 10\r\n0 -1\r\n-1 -1",
+      "output": "60"
+    },
+    {
+      "input": "15\r\n-25 -31\r\n-9 -9\r\n7 30\r\n7 -13\r\n0 -4\r\n14 10\r\n10 -5\r\n1 -34\r\n-3 -36\r\n-1 -6\r\n2 -4\r\n2 10\r\n12 14\r\n9 14\r\n13 90",
+      "output": "405"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "687",
+    "通过人数": "441",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:10"
+}

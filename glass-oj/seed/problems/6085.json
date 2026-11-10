@@ -1,0 +1,66 @@
+{
+  "id": "6085",
+  "title": "天数统计",
+  "tags": [
+    "循环",
+    "数组",
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6085",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定两个日期，它们都位于 2026 年。已知第一个日期不晚于第二个日期，请你计算从第一个日期到第二个日期之间<strong>一共有多少天</strong>。</p>\n<p>这里的天数统计 <strong>包含两个日期本身</strong>。例如：</p>\n<ul><li>从 <strong>2026-01-01</strong> 到 <strong>2026-01-01</strong> 一共有 1 天；</li>\n<li>从 <strong>2026-01-01</strong> 到 <strong>2026-01-03</strong> 一共有 3 天。</li>\n</ul><p>已知 <strong>2026 年不是闰年</strong>。</p>\n<p>请你编写程序计算两个日期之间的天数。</p>\n</div>            </div>",
+      "text": "给定两个日期，它们都位于 2026 年。已知第一个日期不晚于第二个日期，请你计算从第一个日期到第二个日期之间一共有多少天。\n这里的天数统计 包含两个日期本身。例如：\n从 2026-01-01 到 2026-01-01 一共有 1 天；\n从 2026-01-01 到 2026-01-03 一共有 3 天。\n已知 2026 年不是闰年。\n请你编写程序计算两个日期之间的天数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入两个整数，分别代表第一个日期的月、日。</p>\n<p>第二行输入两个整数，分别代表第二个日期的月、日。</p>\n<p>保证输入的日期合法，并且 <strong>第一行日期不晚于第二行日期</strong>。</p>\n</div>            </div>",
+      "text": "第一行输入两个整数，分别代表第一个日期的月、日。\n第二行输入两个整数，分别代表第二个日期的月、日。\n保证输入的日期合法，并且 第一行日期不晚于第二行日期。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示两个日期之间<strong>一共有多少天</strong>。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示两个日期之间一共有多少天。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 1\r\n1 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2 28\r\n3 1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 10\r\n5 10</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            1 1\r\n1 3\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                2 28\r\n3 1\n                            \n                            \n                                输出\n                                2\n                            \n                        \n                                                    \n                                输入\n                                5 10\r\n5 10\n                            \n                            \n                                输出\n                                1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">100 \\%</span> 的数据，保证日期合法，且第一个日期不晚于第二个日期。</p>\n<p>2026 年各月天数如下：</p>\n<table><thead><tr><th>月份</th><th>天数</th></tr></thead><tbody><tr><td>1</td><td>31</td></tr><tr><td>2</td><td>28</td></tr><tr><td>3</td><td>31</td></tr><tr><td>4</td><td>30</td></tr><tr><td>5</td><td>31</td></tr><tr><td>6</td><td>30</td></tr><tr><td>7</td><td>31</td></tr><tr><td>8</td><td>31</td></tr><tr><td>9</td><td>30</td></tr><tr><td>10</td><td>31</td></tr><tr><td>11</td><td>30</td></tr><tr><td>12</td><td>31</td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 100 \\% 的数据，保证日期合法，且第一个日期不晚于第二个日期。\n2026 年各月天数如下：\n月份天数131228331430531630731831930103111301231"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">循环</span><span class=\"label label-warning\">数组</span><span class=\"label label-info\">模拟</span></span></p>\n</div>                </div>",
+      "text": "循环数组模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 1\r\n1 3",
+      "output": "3"
+    },
+    {
+      "input": "2 28\r\n3 1",
+      "output": "2"
+    },
+    {
+      "input": "5 10\r\n5 10",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "84",
+    "通过人数": "60",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:01"
+}

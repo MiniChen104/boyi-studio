@@ -1,0 +1,52 @@
+{
+  "id": "2443",
+  "title": "答案提示",
+  "tags": [
+    "字符串",
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2443",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在当今流行的互联网测验中，选手在答不出一道难题时，测试软件通常会根据标准答案给出三次提示，标准答案由大小写字母以及标点符号和空格构成，其中元音字母为：&#x27;aeiouAEIOU&#x27;。  </p>\n<p>测试软件产生提示的算法如下：  </p>\n<p>第一次提示是将标准答案中的所有字母替换成&#x27;.&#x27;；  </p>\n<p>第二次提示来自于第一次提示，将最前面的1/3个字母显示出来，若字母总数不是3的倍数则按四舍五入处理。  </p>\n<p>第三次提示来自于第二次提示，将余下的所有元音字母显示出来，如果余下的字母中没有元音字母则显示最前面的2/3个字母，若字母总数不是3的倍数则小数部分按四舍五入处理。  </p>\n<p>写一个程序实现以上产生提示的算法。</p>\n</div>            </div>",
+      "text": "在当今流行的互联网测验中，选手在答不出一道难题时，测试软件通常会根据标准答案给出三次提示，标准答案由大小写字母以及标点符号和空格构成，其中元音字母为：'aeiouAEIOU'。  \n测试软件产生提示的算法如下：  \n第一次提示是将标准答案中的所有字母替换成'.'；  \n第二次提示来自于第一次提示，将最前面的1/3个字母显示出来，若字母总数不是3的倍数则按四舍五入处理。  \n第三次提示来自于第二次提示，将余下的所有元音字母显示出来，如果余下的字母中没有元音字母则显示最前面的2/3个字母，若字母总数不是3的倍数则小数部分按四舍五入处理。  \n写一个程序实现以上产生提示的算法。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据仅一行包含一条标准答案，标准答案最多由50个字符组成。</p>\n</div>            </div>",
+      "text": "输入数据仅一行包含一条标准答案，标准答案最多由50个字符组成。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出数据共有三行，分别为第一次提示，第二次提示和第三次提示。</p>\n</div>            </div>",
+      "text": "输出数据共有三行，分别为第一次提示，第二次提示和第三次提示。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>Upomoc! Lpv s nm pkrl sv smglsnk.</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>......! ... . .. .... .. ........\r\nUpomoc! Lp. . .. .... .. ........\r\nUpomoc! Lpv s nm pkrl s. ........</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            Upomoc! Lpv s nm pkrl sv smglsnk.\n                        \n                        \n                            输出\n                            ......! ... . .. .... .. ........\r\nUpomoc! Lp. . .. .... .. ........\r\nUpomoc! Lpv s nm pkrl s. ........"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span><span class=\"label label-warning\">模拟</span></span></p>\n</div>                </div>",
+      "text": "字符串模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "Upomoc! Lpv s nm pkrl sv smglsnk.",
+      "output": "......! ... . .. .... .. ........\r\nUpomoc! Lp. . .. .... .. ........\r\nUpomoc! Lpv s nm pkrl s. ........"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "619",
+    "通过人数": "175",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:24"
+}

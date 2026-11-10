@@ -1,0 +1,56 @@
+{
+  "id": "1102",
+  "title": "字符串中的空格移位",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1102",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个字符串，将其中的所有空格都移到最前面，然后输出。</p>\n</div>            </div>",
+      "text": "输入一个字符串，将其中的所有空格都移到最前面，然后输出。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个字符串。如：a□b□c（为了能看清空格，<span>□代表一个空格，但实际测试数据中不用<span>□表示空格</span></span>）</p>\n</div>            </div>",
+      "text": "一个字符串。如：a□b□c（为了能看清空格，□代表一个空格，但实际测试数据中不用□表示空格）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>空格全部移到了串前的字符串。如：<span></span><span>□</span><span>□abc</span></p>\n</div>            </div>",
+      "text": "空格全部移到了串前的字符串。如：□□abc"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>a b c</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>  abc</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            a b c\n                        \n                        \n                            输出\n                              abc"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "a b c",
+      "output": "  abc"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "14001",
+    "通过人数": "9706",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:14:46"
+}

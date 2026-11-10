@@ -1,0 +1,46 @@
+{
+  "id": "1701",
+  "title": "请输出所有的3位对称数",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1701",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请输出所有的 <span class=\"katex math inline\">3</span> 位对称数，对称数指的是一个整数 <span class=\"katex math inline\">n</span> 正过来和倒过来是一样的，比如：<span class=\"katex math inline\">101、121、282 \\dots </span></p>\n<p>请从小到大输出符合条件的3位对称数，每行 <span class=\"katex math inline\">1</span> 个。</p>\n</div>            </div>",
+      "text": "请输出所有的 3 位对称数，对称数指的是一个整数 n 正过来和倒过来是一样的，比如：101、121、282 \\dots \n请从小到大输出符合条件的3位对称数，每行 1 个。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无。</p>\n</div>            </div>",
+      "text": "无。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从小到大按题意输出符合条件的数，每行 <span class=\"katex math inline\">1</span> 个。</p>\n</div>            </div>",
+      "text": "从小到大按题意输出符合条件的数，每行 1 个。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "37711",
+    "通过人数": "27459",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:05"
+}

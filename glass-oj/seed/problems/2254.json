@@ -1,0 +1,61 @@
+{
+  "id": "2254",
+  "title": "欢迎(welcome.cpp)",
+  "tags": [
+    "嵌套循环",
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2254",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>  欢迎参加 2020 年常州市“程序设计小能手”比赛！小 X 想为你献上一张贺卡，不过...你得自己打印出来。<br>\n  贺卡由三行组成。其中第二行为<code>*Welcome,ContestantNo.A!*</code>，其中 <code>A</code> 是\n选手的编号。第一行和第三行相同，是和第二行字符数量相同的\n&quot;*&quot;组成。你可以通过样例来理解。</p>\n</div>            </div>",
+      "text": "欢迎参加 2020 年常州市“程序设计小能手”比赛！小 X 想为你献上一张贺卡，不过...你得自己打印出来。\n  贺卡由三行组成。其中第二行为*Welcome,ContestantNo.A!*，其中 A 是\n选手的编号。第一行和第三行相同，是和第二行字符数量相同的\n\"*\"组成。你可以通过样例来理解。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据只有一行，包含一个正整数 <code>A</code>，表示选手的编号。  </p>\n<p>本题共有 <span class=\"katex math inline\">5</span> 个测试点：<br>\n对于测试点 <span class=\"katex math inline\">1</span> ：<span class=\"katex math inline\">A=8</span><br>\n对于测试点 <span class=\"katex math inline\">2</span> ：<span class=\"katex math inline\">A=88</span><br>\n对于测试点 <span class=\"katex math inline\">3 \\sim 5</span>：<span class=\"katex math inline\">A \\le 10^9</span><br>\n提示：你可以通过复制样例输出来避免一些问题  </p>\n</div>            </div>",
+      "text": "输入数据只有一行，包含一个正整数 A，表示选手的编号。  \n本题共有 5 个测试点：\n对于测试点 1 ：A=8\n对于测试点 2 ：A=88\n对于测试点 3 \\sim 5：A \\le 10^9\n提示：你可以通过复制样例输出来避免一些问题"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出三行，表示贺卡。  </p>\n</div>            </div>",
+      "text": "输出三行，表示贺卡。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>*************************\r\n*Welcome,ContestantNo.1!*\r\n*************************</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>233</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>***************************\r\n*Welcome,ContestantNo.233!*\r\n***************************</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\n                        \n                        \n                            输出\n                            *************************\r\n*Welcome,ContestantNo.1!*\r\n*************************\n                        \n\n                                                    \n                                输入\n                                233\n                            \n                            \n                                输出\n                                ***************************\r\n*Welcome,ContestantNo.233!*\r\n***************************"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2020常州市程序设计小能手(小学组)比赛试题 T1</p>\n</div>                </div>",
+      "text": "2020常州市程序设计小能手(小学组)比赛试题 T1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">嵌套循环</span><span class=\"label label-warning\">市赛</span></span></p>\n</div>                </div>",
+      "text": "嵌套循环市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1",
+      "output": "*************************\r\n*Welcome,ContestantNo.1!*\r\n*************************"
+    },
+    {
+      "input": "233",
+      "output": "***************************\r\n*Welcome,ContestantNo.233!*\r\n***************************"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1733",
+    "通过人数": "939",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:21"
+}

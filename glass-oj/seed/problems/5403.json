@@ -1,0 +1,63 @@
+{
+  "id": "5403",
+  "title": "递归练习2",
+  "tags": [
+    "基础语法",
+    "递归",
+    "一本通编程"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5403",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个 <span class=\"katex math inline\">n</span> 。请你按照以下规则输出序列：</p>\n<p>设输出这一序列的过程为 <span class=\"katex math inline\">F(n)</span>。</p>\n<ol><li><p>如果 <span class=\"katex math inline\">n</span> 是 <span class=\"katex math inline\">1</span> ，那么输出 <span class=\"katex math inline\">1</span> 并返回。</p>\n</li>\n<li><p>否则，先执行 <span class=\"katex math inline\">F([n/2])</span> ，再输出 <span class=\"katex math inline\">n</span>，再执行 <span class=\"katex math inline\">F(n-[n/2])</span>。</p>\n</li>\n</ol><p>这里 <span class=\"katex math inline\">[n/2]</span> 的意思是下取整。</p>\n</div>            </div>",
+      "text": "输入一个 n 。请你按照以下规则输出序列：\n设输出这一序列的过程为 F(n)。\n如果 n 是 1 ，那么输出 1 并返回。\n\n否则，先执行 F([n/2]) ，再输出 n，再执行 F(n-[n/2])。\n\n这里 [n/2] 的意思是下取整。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数 <span class=\"katex math inline\">n</span> 。</p>\n</div>            </div>",
+      "text": "一个正整数 n 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数列表示答案。</p>\n</div>            </div>",
+      "text": "一个数列表示答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 2 1 5 1 3 1 2 1 10 1 2 1 5 1 3 1 2 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\n                        \n                        \n                            输出\n                            1 2 1 5 1 3 1 2 1 10 1 2 1 5 1 3 1 2 1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p><span class=\"katex math inline\">1\\le n\\le 100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n1\\le n\\le 100。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>一本通编程</p>\n</div>                </div>",
+      "text": "一本通编程"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础语法</span><span class=\"label label-warning\">递归</span><span class=\"label label-info\">一本通编程</span></span></p>\n</div>                </div>",
+      "text": "基础语法递归一本通编程"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10",
+      "output": "1 2 1 5 1 3 1 2 1 10 1 2 1 5 1 3 1 2 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "142",
+    "通过人数": "112",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:00"
+}

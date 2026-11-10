@@ -1,0 +1,65 @@
+{
+  "id": "2985",
+  "title": "乘方 [CSP-J 2022]",
+  "tags": [
+    "csp-j"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2985",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小文同学刚刚接触了信息学竞赛，有一天她遇到了这样一个题：给定正整数 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>，求 <span class=\"katex math inline\">a^b</span> 的值是多少。</p>\n<p><span class=\"katex math inline\">a^b</span> 即 <span class=\"katex math inline\">b</span> 个 <span class=\"katex math inline\">a</span> 相乘的值，例如 <span class=\"katex math inline\">2^3</span> 即为 <span class=\"katex math inline\">3</span> 个 <span class=\"katex math inline\">2</span> 相乘，结果为 <span class=\"katex math inline\">2 \\times 2 \\times 2 = 8</span>。</p>\n<p>“简单！”小文心想，同时很快就写出了一份程序，可是测试时却出现了错误。</p>\n<p>小文很快意识到，她的程序里的变量都是 <code>int</code> 类型的。在大多数机器上，<code>int</code> 类型能表示的最大数为 <span class=\"katex math inline\">2^{31} - 1</span>，因此只要计算结果超过这个数，她的程序就会出现错误。</p>\n<p>由于小文刚刚学会编程，她担心使用 <code>int</code> 计算会出现问题。因此她希望你在 <span class=\"katex math inline\">a^b</span> 的值超过 <span class=\"katex math inline\">{10}^9</span> 时，输出一个 <code>-1</code> 进行警示，否则就输出正确的 <span class=\"katex math inline\">a^b</span> 的值。</p>\n<p>然而小文还是不知道怎么实现这份程序，因此她想请你帮忙。</p>\n</div>            </div>",
+      "text": "小文同学刚刚接触了信息学竞赛，有一天她遇到了这样一个题：给定正整数 a 和 b，求 a^b 的值是多少。\na^b 即 b 个 a 相乘的值，例如 2^3 即为 3 个 2 相乘，结果为 2 \\times 2 \\times 2 = 8。\n“简单！”小文心想，同时很快就写出了一份程序，可是测试时却出现了错误。\n小文很快意识到，她的程序里的变量都是 int 类型的。在大多数机器上，int 类型能表示的最大数为 2^{31} - 1，因此只要计算结果超过这个数，她的程序就会出现错误。\n由于小文刚刚学会编程，她担心使用 int 计算会出现问题。因此她希望你在 a^b 的值超过 {10}^9 时，输出一个 -1 进行警示，否则就输出正确的 a^b 的值。\n然而小文还是不知道怎么实现这份程序，因此她想请你帮忙。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入共一行，两个正整数 <span class=\"katex math inline\">a, b</span>。</p>\n</div>            </div>",
+      "text": "输入共一行，两个正整数 a, b。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共一行，如果 <span class=\"katex math inline\">a^b</span> 的值不超过 <span class=\"katex math inline\">{10}^9</span>，则输出 <span class=\"katex math inline\">a^b</span> 的值，否则输出 <code>-1</code>。</p>\n</div>            </div>",
+      "text": "输出共一行，如果 a^b 的值不超过 {10}^9，则输出 a^b 的值，否则输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1000000000</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>23333 66666</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>-1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 9\n                        \n                        \n                            输出\n                            1000000000\n                        \n\n                                                    \n                                输入\n                                23333 66666\n                            \n                            \n                                输出\n                                -1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">10 \\%</span> 的数据，保证 <span class=\"katex math inline\">b = 1</span>。<br>\n对于 <span class=\"katex math inline\">30 \\%</span> 的数据，保证 <span class=\"katex math inline\">b \\le 2</span>。<br>\n对于 <span class=\"katex math inline\">60 \\%</span> 的数据，保证 <span class=\"katex math inline\">b \\le 30</span>，<span class=\"katex math inline\">a^b \\le {10}^{18}</span>。<br>\n对于 <span class=\"katex math inline\">100 \\%</span> 的数据，保证 <span class=\"katex math inline\">1 \\le a, b \\le {10}^9</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 10 \\% 的数据，保证 b = 1。\n对于 30 \\% 的数据，保证 b \\le 2。\n对于 60 \\% 的数据，保证 b \\le 30，a^b \\le {10}^{18}。\n对于 100 \\% 的数据，保证 1 \\le a, b \\le {10}^9。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>csp-j 2022 T1</p>\n</div>                </div>",
+      "text": "csp-j 2022 T1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">csp-j</span></span></p>\n</div>                </div>",
+      "text": "csp-j"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 9",
+      "output": "1000000000"
+    },
+    {
+      "input": "23333 66666",
+      "output": "-1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "7684",
+    "通过人数": "2956",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:43"
+}

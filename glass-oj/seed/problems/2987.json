@@ -1,0 +1,65 @@
+{
+  "id": "2987",
+  "title": "逻辑表达式 [CSP-J 2022]",
+  "tags": [
+    "csp-j"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2987",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>逻辑表达式是计算机科学中的重要概念和工具，包含逻辑值、逻辑运算、逻辑运算优先级等内容。</p>\n<p>在一个逻辑表达式中，元素的值只有两种可能：<span class=\"katex math inline\">0</span>（表示假）和 <span class=\"katex math inline\">1</span>（表示真）。元素之间有多种可能的逻辑运算，本题中只需考虑如下两种：“与”（符号为 <code>&amp;</code>）和“或”（符号为 <code>|</code>）。其运算规则如下：</p>\n<p><span class=\"katex math inline\">0 \\mathbin{\\&amp;} 0 = 0 \\mathbin{\\&amp;} 1 = 1 \\mathbin{\\&amp;} 0 = 0</span>，<span class=\"katex math inline\">1 \\mathbin{\\&amp;} 1 = 1</span>；<br>\n<span class=\"katex math inline\">0 \\mathbin{|} 0 = 0</span>，<span class=\"katex math inline\">0 \\mathbin{|} 1 = 1 \\mathbin{|} 0 = 1 \\mathbin{|} 1 = 1</span>。</p>\n<p>在一个逻辑表达式中还可能有括号。规定在运算时，括号内的部分先运算；两种运算并列时，<code>&amp;</code> 运算优先于 <code>|</code> 运算；同种运算并列时，从左向右运算。</p>\n<p>比如，表达式 <code>0|1&amp;0</code> 的运算顺序等同于 <code>0|(1&amp;0)</code>；表达式 <code>0&amp;1&amp;0|1</code> 的运算顺序等同于 <code>((0&amp;1)&amp;0)|1</code>。</p>\n<p>此外，在 C++ 等语言的有些编译器中，对逻辑表达式的计算会采用一种“短路”的策略：在形如 <code>a&amp;b</code> 的逻辑表达式中，会先计算 <code>a</code> 部分的值，如果 <span class=\"katex math inline\">a = 0</span>，那么整个逻辑表达式的值就一定为 <span class=\"katex math inline\">0</span>，故无需再计算 <code>b</code> 部分的值；同理，在形如 <code>a|b</code> 的逻辑表达式中，会先计算 <code>a</code> 部分的值，如果 <span class=\"katex math inline\">a = 1</span>，那么整个逻辑表达式的值就一定为 <span class=\"katex math inline\">1</span>，无需再计算 <code>b</code> 部分的值。</p>\n<p>现在给你一个逻辑表达式，你需要计算出它的值，并且统计出在计算过程中，两种类型的“短路”各出现了多少次。需要注意的是，如果某处“短路”包含在更外层被“短路”的部分内则不被统计，如表达式 <code>1|(0&amp;1)</code> 中，尽管 <code>0&amp;1</code> 是一处“短路”，但由于外层的 <code>1|(0&amp;1)</code> 本身就是一处“短路”，无需再计算 <code>0&amp;1</code> 部分的值，因此不应当把这里的 <code>0&amp;1</code> 计入一处“短路”。</p>\n</div>            </div>",
+      "text": "逻辑表达式是计算机科学中的重要概念和工具，包含逻辑值、逻辑运算、逻辑运算优先级等内容。\n在一个逻辑表达式中，元素的值只有两种可能：0（表示假）和 1（表示真）。元素之间有多种可能的逻辑运算，本题中只需考虑如下两种：“与”（符号为 &）和“或”（符号为 |）。其运算规则如下：\n0 \\mathbin{\\&} 0 = 0 \\mathbin{\\&} 1 = 1 \\mathbin{\\&} 0 = 0，1 \\mathbin{\\&} 1 = 1；\n0 \\mathbin{|} 0 = 0，0 \\mathbin{|} 1 = 1 \\mathbin{|} 0 = 1 \\mathbin{|} 1 = 1。\n在一个逻辑表达式中还可能有括号。规定在运算时，括号内的部分先运算；两种运算并列时，& 运算优先于 | 运算；同种运算并列时，从左向右运算。\n比如，表达式 0|1&0 的运算顺序等同于 0|(1&0)；表达式 0&1&0|1 的运算顺序等同于 ((0&1)&0)|1。\n此外，在 C++ 等语言的有些编译器中，对逻辑表达式的计算会采用一种“短路”的策略：在形如 a&b 的逻辑表达式中，会先计算 a 部分的值，如果 a = 0，那么整个逻辑表达式的值就一定为 0，故无需再计算 b 部分的值；同理，在形如 a|b 的逻辑表达式中，会先计算 a 部分的值，如果 a = 1，那么整个逻辑表达式的值就一定为 1，无需再计算 b 部分的值。\n现在给你一个逻辑表达式，你需要计算出它的值，并且统计出在计算过程中，两种类型的“短路”各出现了多少次。需要注意的是，如果某处“短路”包含在更外层被“短路”的部分内则不被统计，如表达式 1|(0&1) 中，尽管 0&1 是一处“短路”，但由于外层的 1|(0&1) 本身就是一处“短路”，无需再计算 0&1 部分的值，因此不应当把这里的 0&1 计入一处“短路”。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入共一行，一个非空字符串 <span class=\"katex math inline\">s</span> 表示待计算的逻辑表达式。</p>\n</div>            </div>",
+      "text": "输入共一行，一个非空字符串 s 表示待计算的逻辑表达式。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共两行，第一行输出一个字符 <code>0</code> 或 <code>1</code>，表示这个逻辑表达式的值；第二行输出两个非负整数，分别表示计算上述逻辑表达式的过程中，形如 <code>a&amp;b</code> 和 <code>a|b</code> 的“短路”各出现了多少次。</p>\n</div>            </div>",
+      "text": "输出共两行，第一行输出一个字符 0 或 1，表示这个逻辑表达式的值；第二行输出两个非负整数，分别表示计算上述逻辑表达式的过程中，形如 a&b 和 a|b 的“短路”各出现了多少次。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>0&amp;(1|0)|(1|1|1&amp;0)</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n1 2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>(0|1&amp;0|1|1|(1|1))&amp;(0&amp;1&amp;(1|0)|0|1|0)&amp;0</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0\r\n2 3</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            0&(1|0)|(1|1|1&0)\n                        \n                        \n                            输出\n                            1\r\n1 2\n                        \n\n                                                    \n                                输入\n                                (0|1&0|1|1|(1|1))&(0&1&(1|0)|0|1|0)&0\n                            \n                            \n                                输出\n                                0\r\n2 3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【样例解释 #1】</strong></p>\n<p>该逻辑表达式的计算过程如下，每一行的注释表示上一行计算的过程：</p>\n<pre><code class=\"language-plain\">0&amp;(1|0)|(1|1|1&amp;0)\n=(0&amp;(1|0))|((1|1)|(1&amp;0)) //用括号标明计算顺序\n=0|((1|1)|(1&amp;0))   //先计算最左侧的 &amp;，是一次形如 a&amp;b 的“短路”\n=0|(1|(1&amp;0))       //再计算中间的 |，是一次形如 a|b 的“短路”\n=0|1               //再计算中间的 |，是一次形如 a|b 的“短路”\n=1\n</code></pre>\n<p><strong>【数据范围】</strong></p>\n<p>设 <span class=\"katex math inline\">\\lvert s \\rvert</span> 为字符串 <span class=\"katex math inline\">s</span> 的长度。</p>\n<p>对于所有数据，<span class=\"katex math inline\">1 \\le \\lvert s \\rvert \\le {10}^6</span>。保证 <span class=\"katex math inline\">s</span> 中仅含有字符 <code>0</code>、<code>1</code>、<code>&amp;</code>、<code>|</code>、<code>(</code>、<code>)</code> 且是一个符合规范的逻辑表达式。保证输入字符串的开头、中间和结尾均无额外的空格。保证 <span class=\"katex math inline\">s</span>\n中没有重复的括号嵌套（即没有形如 <code>((a))</code> 形式的子串，其中 <code>a</code> 是符合规范的逻辑表\n达式）。</p>\n<table><thead><tr><th>测试点编号</th><th><span class=\"katex math inline\">\\lvert s \\rvert \\le</span></th><th>特殊条件</th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1 \\sim 2</span></td><td><span class=\"katex math inline\">3</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">3 \\sim 4</span></td><td><span class=\"katex math inline\">5</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">5</span></td><td><span class=\"katex math inline\">2000</span></td><td>1</td></tr><tr><td><span class=\"katex math inline\">6</span></td><td><span class=\"katex math inline\">2000</span></td><td>2</td></tr><tr><td><span class=\"katex math inline\">7</span></td><td><span class=\"katex math inline\">2000</span></td><td>3</td></tr><tr><td><span class=\"katex math inline\">8 \\sim 10</span></td><td><span class=\"katex math inline\">2000</span></td><td>无</td></tr><tr><td><span class=\"katex math inline\">11 \\sim 12</span></td><td><span class=\"katex math inline\">{10}^6</span></td><td>1</td></tr><tr><td><span class=\"katex math inline\">13 \\sim 14</span></td><td><span class=\"katex math inline\">{10}^6</span></td><td>2</td></tr><tr><td><span class=\"katex math inline\">15 \\sim 17</span></td><td><span class=\"katex math inline\">{10}^6</span></td><td>3</td></tr><tr><td><span class=\"katex math inline\">18 \\sim 20</span></td><td><span class=\"katex math inline\">{10}^6</span></td><td>无</td></tr></tbody></table><p>其中：<br>\n特殊性质 1 为：保证 <span class=\"katex math inline\">s</span> 中没有字符 <code>&amp;</code>。<br>\n特殊性质 2 为：保证 <span class=\"katex math inline\">s</span> 中没有字符 <code>|</code>。<br>\n特殊性质 3 为：保证 <span class=\"katex math inline\">s</span> 中没有字符 <code>(</code> 和 <code>)</code>。</p>\n<p><strong>【提示】</strong></p>\n<p>以下给出一个“符合规范的逻辑表达式”的形式化定义：</p>\n<ul><li>字符串 <code>0</code> 和 <code>1</code> 是符合规范的；</li>\n<li>如果字符串 <code>s</code> 是符合规范的，且 <code>s</code> 不是形如 <code>(t)</code> 的字符串（其中 <code>t</code> 是符合规范的），那么字符串 <code>(s)</code> 也是符合规范的；</li>\n<li>如果字符串 <code>a</code> 和 <code>b</code> 均是符合规范的，那么字符串 <code>a&amp;b</code>、<code>a|b</code> 均是符合规范的；</li>\n<li>所有符合规范的逻辑表达式均可由以上方法生成。</li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "【样例解释 #1】\n该逻辑表达式的计算过程如下，每一行的注释表示上一行计算的过程：\n0&(1|0)|(1|1|1&0)\n=(0&(1|0))|((1|1)|(1&0)) //用括号标明计算顺序\n=0|((1|1)|(1&0))   //先计算最左侧的 &，是一次形如 a&b 的“短路”\n=0|(1|(1&0))       //再计算中间的 |，是一次形如 a|b 的“短路”\n=0|1               //再计算中间的 |，是一次形如 a|b 的“短路”\n=1\n\n【数据范围】\n设 \\lvert s \\rvert 为字符串 s 的长度。\n对于所有数据，1 \\le \\lvert s \\rvert \\le {10}^6。保证 s 中仅含有字符 0、1、&、|、(、) 且是一个符合规范的逻辑表达式。保证输入字符串的开头、中间和结尾均无额外的空格。保证 s\n中没有重复的括号嵌套（即没有形如 ((a)) 形式的子串，其中 a 是符合规范的逻辑表\n达式）。\n测试点编号\\lvert s \\rvert \\le特殊条件1 \\sim 23无3 \\sim 45无5200016200027200038 \\sim 102000无11 \\sim 12{10}^6113 \\sim 14{10}^6215 \\sim 17{10}^6318 \\sim 20{10}^6无其中：\n特殊性质 1 为：保证 s 中没有字符 &。\n特殊性质 2 为：保证 s 中没有字符 |。\n特殊性质 3 为：保证 s 中没有字符 ( 和 )。\n【提示】\n以下给出一个“符合规范的逻辑表达式”的形式化定义：\n字符串 0 和 1 是符合规范的；\n如果字符串 s 是符合规范的，且 s 不是形如 (t) 的字符串（其中 t 是符合规范的），那么字符串 (s) 也是符合规范的；\n如果字符串 a 和 b 均是符合规范的，那么字符串 a&b、a|b 均是符合规范的；\n所有符合规范的逻辑表达式均可由以上方法生成。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>csp-j</p>\n</div>                </div>",
+      "text": "csp-j"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">csp-j</span></span></p>\n</div>                </div>",
+      "text": "csp-j"
+    }
+  ],
+  "samples": [
+    {
+      "input": "0&(1|0)|(1|1|1&0)",
+      "output": "1\r\n1 2"
+    },
+    {
+      "input": "(0|1&0|1|1|(1|1))&(0&1&(1|0)|0|1|0)&0",
+      "output": "0\r\n2 3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "606",
+    "通过人数": "408",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:45"
+}

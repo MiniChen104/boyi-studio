@@ -1,0 +1,62 @@
+{
+  "id": "1859",
+  "title": "完数判断",
+  "tags": [
+    "蓝桥杯",
+    "循环的应用"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1859",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数如果恰好等于它的因子之和，这个数就称 为“完数”。</p>\n<p>例如，<span class=\"katex math inline\">6</span> 的因子为 <span class=\"katex math inline\">1、2、3</span> ，而 <span class=\"katex math inline\">6＝1＋2＋3</span> ，因此 <span class=\"katex math inline\">6</span> 就是“完数”。又如，<span class=\"katex math inline\">28</span> 的因子为 <span class=\"katex math inline\">1、2、4、7、14</span> ，而 <span class=\"katex math inline\">28＝1＋2＋4＋7＋14</span> ，因此 <span class=\"katex math inline\">28</span> 也是“完数”。</p>\n<p>编写一个程序，判断用户输入的一个数是否为“完数”</p>\n</div>            </div>",
+      "text": "一个数如果恰好等于它的因子之和，这个数就称 为“完数”。\n例如，6 的因子为 1、2、3 ，而 6＝1＋2＋3 ，因此 6 就是“完数”。又如，28 的因子为 1、2、4、7、14 ，而 28＝1＋2＋4＋7＋14 ，因此 28 也是“完数”。\n编写一个程序，判断用户输入的一个数是否为“完数”"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一行，即一个整数。</p>\n</div>            </div>",
+      "text": "输入只有一行，即一个整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，如果该数为完数，输出 <code>yes</code>，否则输出<code>no</code>。</p>\n</div>            </div>",
+      "text": "输出只有一行，如果该数为完数，输出 yes，否则输出no。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>yes</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\n                        \n                        \n                            输出\n                            yes"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】蓝桥杯算法训练</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】蓝桥杯算法训练"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 循环的应用</p>\n</div>                </div>",
+      "text": "蓝桥杯 循环的应用"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">循环的应用</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯循环的应用"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6",
+      "output": "yes"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "10320",
+    "通过人数": "5585",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:25:09"
+}

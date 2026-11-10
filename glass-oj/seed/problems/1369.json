@@ -1,0 +1,57 @@
+{
+  "id": "1369",
+  "title": "Pell数列",
+  "tags": [
+    "递推",
+    "高精度"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1369",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一种数列，它的前 <span class=\"katex math inline\">10</span> 项的值分别为：<span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">5</span> <span class=\"katex math inline\">12</span> <span class=\"katex math inline\">29</span> <span class=\"katex math inline\">70</span> <span class=\"katex math inline\">169</span> <span class=\"katex math inline\">408</span> <span class=\"katex math inline\">985</span> <span class=\"katex math inline\">2378</span>，这个数列被称为 Pell 数列，请问该数列的第 <span class=\"katex math inline\">n</span> 项的值是多少？（<span class=\"katex math inline\">n \\le 1000</span>）</p>\n</div>            </div>",
+      "text": "有一种数列，它的前 10 项的值分别为：1 2 5 12 29 70 169 408 985 2378，这个数列被称为 Pell 数列，请问该数列的第 n 项的值是多少？（n \\le 1000）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> 。</p>\n</div>            </div>",
+      "text": "一个整数 n 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">n</span> 项的值。</p>\n</div>            </div>",
+      "text": "第 n 项的值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2378</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\n                        \n                        \n                            输出\n                            2378"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递推</p>\n</div>                </div>",
+      "text": "递推"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递推</span><span class=\"label label-warning\">高精度</span></span></p>\n</div>                </div>",
+      "text": "递推高精度"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10",
+      "output": "2378"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "12372",
+    "通过人数": "4438",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:18:28"
+}

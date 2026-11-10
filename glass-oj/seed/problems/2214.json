@@ -1,0 +1,57 @@
+{
+  "id": "2214",
+  "title": "取数游戏",
+  "tags": [
+    "深搜",
+    "排列组合"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2214",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个 <span class=\"katex math inline\">N \\times M</span> 的由非负整数构成的数字矩阵，你需要在其中取出若干个数字，使得取出的任意两个数字不相邻（若一个数字在另外一个数字相邻 <span class=\"katex math inline\">8</span> 个格子中的一个即认为这两个数字相邻），求取出数字和最大是多少。</p>\n</div>            </div>",
+      "text": "一个 N \\times M 的由非负整数构成的数字矩阵，你需要在其中取出若干个数字，使得取出的任意两个数字不相邻（若一个数字在另外一个数字相邻 8 个格子中的一个即认为这两个数字相邻），求取出数字和最大是多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个正整数 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">M</span> ，表示了数字矩阵为 <span class=\"katex math inline\">N</span> 行 <span class=\"katex math inline\">M</span> 列。（ <span class=\"katex math inline\">1≤N,M≤6</span> ）</p>\n</div>            </div>",
+      "text": "第一行有两个正整数 N 和 M ，表示了数字矩阵为 N 行 M 列。（ 1≤N,M≤6 ）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表符合题目要求的最大的数字和。（样例确保数字和在int范围内）</p>\n</div>            </div>",
+      "text": "输出一个整数，代表符合题目要求的最大的数字和。（样例确保数字和在int范围内）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3\r\n2 8 9\r\n4 6 4\r\n9 10 7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>27</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\r\n2 8 9\r\n4 6 4\r\n9 10 7\n                        \n                        \n                            输出\n                            27"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>深搜</p>\n</div>                </div>",
+      "text": "深搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">深搜</span><span class=\"label label-warning\">排列组合</span></span></p>\n</div>                </div>",
+      "text": "深搜排列组合"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3\r\n2 8 9\r\n4 6 4\r\n9 10 7",
+      "output": "27"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "897",
+    "通过人数": "528",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:52"
+}

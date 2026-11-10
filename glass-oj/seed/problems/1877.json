@@ -1,0 +1,56 @@
+{
+  "id": "1877",
+  "title": "数字接力",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1877",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>奶牛们在玩一个数字游戏，它们从一个整数开始，比如：<span class=\"katex math inline\">6593</span> 。将这个整数中的各位数字全部取出，将他们相乘，得到一个新的整数。</p>\n<p>上面的例子就是 <span class=\"katex math inline\">6 \\times 5 \\times 9 \\times 3=810</span> ，然后继续做下去， <span class=\"katex math inline\">8 \\times 1 \\times 0 =0</span> 得到了一个个位数 <span class=\"katex math inline\">0</span> 。</p>\n<p>帮助奶牛完成这个游戏，读入一个数并计算出游戏得到一个个位数的过程。</p>\n</div>            </div>",
+      "text": "奶牛们在玩一个数字游戏，它们从一个整数开始，比如：6593 。将这个整数中的各位数字全部取出，将他们相乘，得到一个新的整数。\n上面的例子就是 6 \\times 5 \\times 9 \\times 3=810 ，然后继续做下去， 8 \\times 1 \\times 0 =0 得到了一个个位数 0 。\n帮助奶牛完成这个游戏，读入一个数并计算出游戏得到一个个位数的过程。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n (10 \\le n \\le  2,000,000,000)</span>。</p>\n</div>            </div>",
+      "text": "一个整数 n (10 \\le n \\le  2,000,000,000)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p> 在单独的一行中按顺序输出游戏过程中产生的每一个数直到一个个位数结束。相邻两数之间要求严格用一个空格隔开，最后一个数之后不能有空格。</p>\n</div>            </div>",
+      "text": "在单独的一行中按顺序输出游戏过程中产生的每一个数直到一个个位数结束。相邻两数之间要求严格用一个空格隔开，最后一个数之后不能有空格。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>98886</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>98886 27648 2688 768 336 54 20 0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            98886\n                        \n                        \n                            输出\n                            98886 27648 2688 768 336 54 20 0"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "98886",
+      "output": "98886 27648 2688 768 336 54 20 0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "1857",
+    "通过人数": "813",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:25:22"
+}

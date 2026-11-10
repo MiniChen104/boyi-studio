@@ -1,0 +1,56 @@
+{
+  "id": "2511",
+  "title": "道路和航路",
+  "tags": [
+    "图论"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2511",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>农夫约翰正在针对一个新区域的牛奶配送合同进行研究。他打算分发牛奶到 <span class=\"katex math inline\">T</span> 个城镇（标号为<span class=\"katex math inline\">1 \\dots T</span>），这些城镇通过 <span class=\"katex math inline\">R</span> 条标号为（<span class=\"katex math inline\">1 \\dots R</span>）的道路和 <span class=\"katex math inline\">P</span> 条标号为（<span class=\"katex math inline\">1 \\dots P</span>）的航路相连。</p>\n<p>每一条公路 <span class=\"katex math inline\">i</span> 或者航路 <span class=\"katex math inline\">i</span> 表示成连接城镇 <span class=\"katex math inline\">A_i</span>（<span class=\"katex math inline\">1 \\le A_i \\le T</span>）和 <span class=\"katex math inline\">B_i</span>（<span class=\"katex math inline\">1 \\le B_i \\le T</span>）代价为<span class=\"katex math inline\">C_i</span> 。每一条公路，<span class=\"katex math inline\">C_i</span> 的范围为 <span class=\"katex math inline\">0 \\le C_i \\le 10,000</span> ；由于奇怪的运营策略，每一条航路的 <span class=\"katex math inline\">C_i</span> 可能为负的，也就是 <span class=\"katex math inline\">-10,000 \\le C_i \\le 10,000</span>。</p>\n<p>每一条公路都是<strong>双向</strong>的，正向和反向的花费是一样的，都是<strong>非负</strong>的。</p>\n<p>每一条航路都根据输入的 <span class=\"katex math inline\">A_i</span> 和 <span class=\"katex math inline\">B_i</span> 进行从 <span class=\"katex math inline\">A_i</span> -&gt; <span class=\"katex math inline\">B_i</span> 的<strong>单向通行</strong>。实际上，如果现在有一条航路是从 <span class=\"katex math inline\">A_i</span> 到 <span class=\"katex math inline\">B_i</span> 的话，那么意味着肯定<strong>没有任何通行方案</strong>从 <span class=\"katex math inline\">B_i</span> 回到 <span class=\"katex math inline\">A_i</span>。</p>\n<p>农夫约翰想把他那优良的牛奶从配送中心送到各个城镇，当然希望代价越小越好，你可以帮助他嘛？配送中心位于城镇 <span class=\"katex math inline\">S</span> 中（<span class=\"katex math inline\">1 \\le S \\le T</span>）。</p>\n</div>            </div>",
+      "text": "农夫约翰正在针对一个新区域的牛奶配送合同进行研究。他打算分发牛奶到 T 个城镇（标号为1 \\dots T），这些城镇通过 R 条标号为（1 \\dots R）的道路和 P 条标号为（1 \\dots P）的航路相连。\n每一条公路 i 或者航路 i 表示成连接城镇 A_i（1 \\le A_i \\le T）和 B_i（1 \\le B_i \\le T）代价为C_i 。每一条公路，C_i 的范围为 0 \\le C_i \\le 10,000 ；由于奇怪的运营策略，每一条航路的 C_i 可能为负的，也就是 -10,000 \\le C_i \\le 10,000。\n每一条公路都是双向的，正向和反向的花费是一样的，都是非负的。\n每一条航路都根据输入的 A_i 和 B_i 进行从 A_i -> B_i 的单向通行。实际上，如果现在有一条航路是从 A_i 到 B_i 的话，那么意味着肯定没有任何通行方案从 B_i 回到 A_i。\n农夫约翰想把他那优良的牛奶从配送中心送到各个城镇，当然希望代价越小越好，你可以帮助他嘛？配送中心位于城镇 S 中（1 \\le S \\le T）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含四个用空格隔开的整数<span class=\"katex math inline\">T,R,P,S</span>。</p>\n<p>接下来 <span class=\"katex math inline\">R</span> 行，描述公路信息，每行包含三个整数，分别表示<span class=\"katex math inline\">A_i</span> ， <span class=\"katex math inline\">B_i</span> 和 <span class=\"katex math inline\">C_i</span>。</p>\n<p>接下来<span class=\"katex math inline\">P</span>行，描述航路信息，每行包含三个整数，分别表示<span class=\"katex math inline\">A_i</span> ，  <span class=\"katex math inline\">B_i</span> 和 <span class=\"katex math inline\">C_i</span>。</p>\n</div>            </div>",
+      "text": "输入的第一行包含四个用空格隔开的整数T,R,P,S。\n接下来 R 行，描述公路信息，每行包含三个整数，分别表示A_i ， B_i 和 C_i。\n接下来P行，描述航路信息，每行包含三个整数，分别表示A_i ，  B_i 和 C_i。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">T</span> 行，分别表示从城镇 <span class=\"katex math inline\">S</span> 到每个城市的最小花费，如果到不了的话输出 <code>NO PATH</code>。</p>\n</div>            </div>",
+      "text": "输出 T 行，分别表示从城镇 S 到每个城市的最小花费，如果到不了的话输出 NO PATH。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 3 3 4\r\n1 2 5\r\n3 4 5\r\n5 6 10\r\n3 5 -100\r\n4 6 -100\r\n1 3 -10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>NO PATH\r\nNO PATH\r\n5\r\n0\r\n-95\r\n-100</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 3 3 4\r\n1 2 5\r\n3 4 5\r\n5 6 10\r\n3 5 -100\r\n4 6 -100\r\n1 3 -10\n                        \n                        \n                            输出\n                            NO PATH\r\nNO PATH\r\n5\r\n0\r\n-95\r\n-100"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据规模】</p>\n<p>对于 <span class=\"katex math inline\">20\\%</span> 的数据，<span class=\"katex math inline\">T \\le 100</span>，<span class=\"katex math inline\">R \\le 500</span>，<span class=\"katex math inline\">P \\le 500</span>；</p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">R \\le 1000</span>，<span class=\"katex math inline\">R \\le 10000</span>，<span class=\"katex math inline\">P \\le 3000</span>；</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 \\le T \\le 25000</span>，<span class=\"katex math inline\">1 \\le R \\le 50000</span>，<span class=\"katex math inline\">1 \\le P \\le 50000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据规模】\n对于 20\\% 的数据，T \\le 100，R \\le 500，P \\le 500；\n对于 30\\% 的数据，R \\le 1000，R \\le 10000，P \\le 3000；\n对于 100\\% 的数据，1 \\le T \\le 25000，1 \\le R \\le 50000，1 \\le P \\le 50000。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span></span></p>\n</div>                </div>",
+      "text": "图论"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 3 3 4\r\n1 2 5\r\n3 4 5\r\n5 6 10\r\n3 5 -100\r\n4 6 -100\r\n1 3 -10",
+      "output": "NO PATH\r\nNO PATH\r\n5\r\n0\r\n-95\r\n-100"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "132",
+    "通过人数": "48",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:02"
+}

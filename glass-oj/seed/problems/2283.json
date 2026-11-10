@@ -1,0 +1,61 @@
+{
+  "id": "2283",
+  "title": "扑克牌排序",
+  "tags": [
+    "电子学会等级考试"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/2283",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>假设这里有36张扑克牌，分别为A1~A9,B1~B9,C1~C9,D1~D9，其中A代表方片，B代表草花，C代表红桃，D代表黑桃，那么，设定如下的排序规则：</p>\n<p>1.对于两张卡牌，X1Y1与X2Y2，X1与X2表示A～D，Y1与Y2表示1～9，如果X1与X2不同，那么依照DCBA的方式进行排序</p>\n<p>2.假如有X1与X2相同时，那么就比较Y1与Y2的大小。</p>\n<p>例如，对于如下的四张牌，有如下的升序排序结果：</p>\n<p>D3，C4，A4，C1</p>\n<p>升序排序的结果为A4，C1，C4，D3</p>\n<p>有人提出了如下的排序策略：</p>\n<p>先建立9个队列，用于存放点数的大小，将卡牌依点数存放入各自的队列之中，然后再按队列1到队列9依次出队。</p>\n<p>例如，对于上面的结果，依次进队后，结果如下：</p>\n<p>队列1：C1；队列3：D3，队列4：C4，A4</p>\n<p>将其依次出队后，结果为C1，D3，C4，A4</p>\n<p>然后，再建立4个队列，用于存放花色。将卡牌依花色A～D存放入队列1～4中，然后再按队列1到队列4依次出队。</p>\n<p>例如，对于上面刚刚出队的序列C1，D3，C4，A4，将其依次进队，结果如下：</p>\n<p>队列1：A4；队列3：C1，C4；队列4：D3</p>\n<p>将其依次出队后，结果为A4，C1，C4，D3，排序结束。</p>\n<p>请根据上面的算法，编写一个用队列对扑克牌排序的程序，要求依照上面的排序规则，根据先花色后点数的方法进行排序。</p>\n</div>            </div>",
+      "text": "假设这里有36张扑克牌，分别为A1~A9,B1~B9,C1~C9,D1~D9，其中A代表方片，B代表草花，C代表红桃，D代表黑桃，那么，设定如下的排序规则：\n1.对于两张卡牌，X1Y1与X2Y2，X1与X2表示A～D，Y1与Y2表示1～9，如果X1与X2不同，那么依照DCBA的方式进行排序\n2.假如有X1与X2相同时，那么就比较Y1与Y2的大小。\n例如，对于如下的四张牌，有如下的升序排序结果：\nD3，C4，A4，C1\n升序排序的结果为A4，C1，C4，D3\n有人提出了如下的排序策略：\n先建立9个队列，用于存放点数的大小，将卡牌依点数存放入各自的队列之中，然后再按队列1到队列9依次出队。\n例如，对于上面的结果，依次进队后，结果如下：\n队列1：C1；队列3：D3，队列4：C4，A4\n将其依次出队后，结果为C1，D3，C4，A4\n然后，再建立4个队列，用于存放花色。将卡牌依花色A～D存放入队列1～4中，然后再按队列1到队列4依次出队。\n例如，对于上面刚刚出队的序列C1，D3，C4，A4，将其依次进队，结果如下：\n队列1：A4；队列3：C1，C4；队列4：D3\n将其依次出队后，结果为A4，C1，C4，D3，排序结束。\n请根据上面的算法，编写一个用队列对扑克牌排序的程序，要求依照上面的排序规则，根据先花色后点数的方法进行排序。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入分为两行，第一行为一个整数n，表示一共有n张牌（1&lt;=n&lt;=100） 第二行用XY的形式表示每一张牌，其中X为A～D，Y为1～9</p>\n</div>            </div>",
+      "text": "输入分为两行，第一行为一个整数n，表示一共有n张牌（1<=n<=100） 第二行用XY的形式表示每一张牌，其中X为A～D，Y为1～9"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出三个部分<br>\n第一个部分为第一次进队出队的结果，用Queue1:...表示，共9行，结果用空格分隔，下同<br>\n第二部分为第二次进队出队的结果，用QueueA:...表示，共4行<br>\n第三部分为一行，即将卡牌排序后的结果（升序排序）</p>\n</div>            </div>",
+      "text": "输出三个部分\n第一个部分为第一次进队出队的结果，用Queue1:...表示，共9行，结果用空格分隔，下同\n第二部分为第二次进队出队的结果，用QueueA:...表示，共4行\n第三部分为一行，即将卡牌排序后的结果（升序排序）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\nD8 A6 C3 B8 C5 A1 B5 D3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Queue1:A1\r\nQueue2:\r\nQueue3:C3 D3\r\nQueue4:\r\nQueue5:C5 B5\r\nQueue6:A6\r\nQueue7:\r\nQueue8:D8 B8\r\nQueue9:\r\nQueueA:A1 A6\r\nQueueB:B5 B8\r\nQueueC:C3 C5\r\nQueueD:D3 D8\r\nA1 A6 B5 B8 C3 C5 D3 D8</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\nD8 A6 C3 B8 C5 A1 B5 D3\n                        \n                        \n                            输出\n                            Queue1:A1\r\nQueue2:\r\nQueue3:C3 D3\r\nQueue4:\r\nQueue5:C5 B5\r\nQueue6:A6\r\nQueue7:\r\nQueue8:D8 B8\r\nQueue9:\r\nQueueA:A1 A6\r\nQueueB:B5 B8\r\nQueueC:C3 C5\r\nQueueD:D3 D8\r\nA1 A6 B5 B8 C3 C5 D3 D8"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>第二次入队出队时，可以复用第一次时9个队列中的4个。所以其实只需要开辟9个队列即可。</p>\n</div>\n\n                    \n                </div>",
+      "text": "第二次入队出队时，可以复用第一次时9个队列中的4个。所以其实只需要开辟9个队列即可。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会六级</p>\n</div>                </div>",
+      "text": "电子学会六级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\nD8 A6 C3 B8 C5 A1 B5 D3",
+      "output": "Queue1:A1\r\nQueue2:\r\nQueue3:C3 D3\r\nQueue4:\r\nQueue5:C5 B5\r\nQueue6:A6\r\nQueue7:\r\nQueue8:D8 B8\r\nQueue9:\r\nQueueA:A1 A6\r\nQueueB:B5 B8\r\nQueueC:C3 C5\r\nQueueD:D3 D8\r\nA1 A6 B5 B8 C3 C5 D3 D8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "567",
+    "通过人数": "16",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:30:43"
+}

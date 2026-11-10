@@ -1,0 +1,63 @@
+{
+  "id": "3905",
+  "title": "手套配对",
+  "tags": [
+    "GESP八级",
+    "排列组合",
+    "24年9月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3905",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有 <span class=\"katex math inline\">n</span> 对不同的手套，每对手套由左右各一只组成。</p>\n<p>小杨想知道从中取出 <span class=\"katex math inline\">m</span> 只手套， <span class=\"katex math inline\">m</span>  只手套恰好包含 <span class=\"katex math inline\">k</span> 对手套的情况有多少种。</p>\n<p>小杨认为两种取出的情况不同，当且仅当两种情况取出的手套中存在不同的手套（同一对手套的左右手也视为不同的手套）。</p>\n</div>            </div>",
+      "text": "小杨有 n 对不同的手套，每对手套由左右各一只组成。\n小杨想知道从中取出 m 只手套， m  只手套恰好包含 k 对手套的情况有多少种。\n小杨认为两种取出的情况不同，当且仅当两种情况取出的手套中存在不同的手套（同一对手套的左右手也视为不同的手套）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">t</span>，代表测试用例组数。</p>\n<p>接下来是  <span class=\"katex math inline\">t</span> 组测试用例。对于每组测试用例，一共一行。</p>\n<p>第一行包含三个正整数 <span class=\"katex math inline\">n,m,k</span>，代表手套数量，取出的手套数和目标对数。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 t，代表测试用例组数。\n接下来是  t 组测试用例。对于每组测试用例，一共一行。\n第一行包含三个正整数 n,m,k，代表手套数量，取出的手套数和目标对数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组测试数据，输出一个整数，代表可能的情况数量对 <span class=\"katex math inline\">10^9+7</span> 取模的结果。</p>\n</div>            </div>",
+      "text": "对于每组测试数据，输出一个整数，代表可能的情况数量对 10^9+7 取模的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n5 6 2\r\n5 1 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>120\r\n0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n5 6 2\r\n5 1 5\n                        \n                        \n                            输出\n                            120\r\n0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le t  \\le 10^5,1  \\le n \\le 1000, 1  \\le m \\le 2 \\times n ,1 \\le k \\le n</span>。</p>\n<h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<table><thead><tr><th>子任务编号</th><th>数据点占比</th><th><span class=\"katex math inline\">t</span></th><th><span class=\"katex math inline\">n</span></th><th><span class=\"katex math inline\">m</span></th><th><span class=\"katex math inline\">k</span></th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1</span></td><td><span class=\"katex math inline\">30\\%</span></td><td><span class=\"katex math inline\">\\le 5</span></td><td><span class=\"katex math inline\">\\le 1000</span></td><td><span class=\"katex math inline\">\\le 3</span></td><td><span class=\"katex math inline\">=1</span></td></tr><tr><td><span class=\"katex math inline\">2</span></td><td><span class=\"katex math inline\">30\\%</span></td><td><span class=\"katex math inline\">\\le 5</span></td><td><span class=\"katex math inline\">\\le 5</span></td><td><span class=\"katex math inline\">\\le 10</span></td><td><span class=\"katex math inline\"> \\le 5</span></td></tr><tr><td><span class=\"katex math inline\">3</span></td><td><span class=\"katex math inline\">40\\%</span></td><td><span class=\"katex math inline\">\\le 10^5</span></td><td><span class=\"katex math inline\">\\le 1000</span></td><td><span class=\"katex math inline\">\\le 2000</span></td><td><span class=\"katex math inline\"> \\le 2000</span></td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于全部数据，保证有 1 \\le t  \\le 10^5,1  \\le n \\le 1000, 1  \\le m \\le 2 \\times n ,1 \\le k \\le n。\n样例 1 解释\n子任务编号数据点占比tnmk130\\%\\le 5\\le 1000\\le 3=1230\\%\\le 5\\le 5\\le 10 \\le 5340\\%\\le 10^5\\le 1000\\le 2000 \\le 2000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 9月认证 C++ 八级真题</p>\n</div>                </div>",
+      "text": "GESP 9月认证 C++ 八级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP八级</span><span class=\"label label-warning\">排列组合</span><span class=\"label label-info\">24年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP八级排列组合24年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n5 6 2\r\n5 1 5",
+      "output": "120\r\n0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "220",
+    "通过人数": "105",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:36:28"
+}

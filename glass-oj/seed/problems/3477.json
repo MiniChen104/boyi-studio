@@ -1,0 +1,67 @@
+{
+  "id": "3477",
+  "title": "小杨的考试",
+  "tags": [
+    "GESP一级",
+    "基础",
+    "23年12月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3477",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>今天是星期 <span class=\"katex math inline\">X</span> ，小杨还有 <span class=\"katex math inline\">N</span> 天就要考试了，你能推算出小杨考试那天是星期几吗？（本题中使用 <span class=\"katex math inline\">7</span> 表示星期日）</p>\n</div>            </div>",
+      "text": "今天是星期 X ，小杨还有 N 天就要考试了，你能推算出小杨考试那天是星期几吗？（本题中使用 7 表示星期日）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入 <span class=\"katex math inline\">2</span> 行，第一行一个整数 <span class=\"katex math inline\">X</span> (<span class=\"katex math inline\"> 1 \\leq X \\leq 7 </span>);</p>\n<p>第二行一个整数 <span class=\"katex math inline\">N</span> (<span class=\"katex math inline\"> 1 \\leq N \\leq 364 </span>)。</p>\n</div>            </div>",
+      "text": "输入 2 行，第一行一个整数 X ( 1 \\leq X \\leq 7 );\n第二行一个整数 N ( 1 \\leq N \\leq 364 )。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示小杨考试那天是星期几。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示小杨考试那天是星期几。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1\r\n6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\r\n6\n                        \n                        \n                            输出\n                            7\n                        \n\n                                                    \n                                输入\n                                5\r\n3\n                            \n                            \n                                输出\n                                1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例1解释】</p>\n<p>今天是星期 <span class=\"katex math inline\">1</span>,那么 <span class=\"katex math inline\">6</span> 天后就是星期日，星期日在本题中用 <span class=\"katex math inline\">7</span> 表示。</p>\n<p>【样例2解释】</p>\n<p>今天是星期 <span class=\"katex math inline\">5</span>，那么 <span class=\"katex math inline\">3</span> 天后就是星期 <span class=\"katex math inline\">1</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1解释】\n今天是星期 1,那么 6 天后就是星期日，星期日在本题中用 7 表示。\n【样例2解释】\n今天是星期 5，那么 3 天后就是星期 1。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年12月一级</p>\n</div>                </div>",
+      "text": "GESP23年12月一级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP一级</span><span class=\"label label-warning\">基础</span><span class=\"label label-info\">23年12月</span></span></p>\n</div>                </div>",
+      "text": "GESP一级基础23年12月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1\r\n6",
+      "output": "7"
+    },
+    {
+      "input": "5\r\n3",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "7939",
+    "通过人数": "4059",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:15"
+}

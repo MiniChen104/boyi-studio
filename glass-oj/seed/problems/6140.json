@@ -1,0 +1,65 @@
+{
+  "id": "6140",
+  "title": "乘积（multiply）",
+  "tags": [
+    "科大国创杯"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6140",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小可可有一个正整数序列，他想知道能否在这个序列中找出连续一段数字的乘积等于一个正整数 <span class=\"katex math inline\">x</span>。</p>\n</div>            </div>",
+      "text": "小可可有一个正整数序列，他想知道能否在这个序列中找出连续一段数字的乘积等于一个正整数 x。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个正整数 <span class=\"katex math inline\">n</span>, <span class=\"katex math inline\">x</span> 表示序列长度和乘积。<br>\n第二行 <span class=\"katex math inline\">n</span> 个正整数 <span class=\"katex math inline\">a_1, ..., a_n</span> 表示小可可的序列。</p>\n</div>            </div>",
+      "text": "第一行两个正整数 n, x 表示序列长度和乘积。\n第二行 n 个正整数 a_1, ..., a_n 表示小可可的序列。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果找不出连续一段数字的乘积等于 <span class=\"katex math inline\">x</span>，输出 <span class=\"katex math inline\">-1</span>，否则输出两个数 <span class=\"katex math inline\">l</span>, <span class=\"katex math inline\">r（l \\le r）</span>表示  <span class=\"katex math inline\">a_l × a_{l+1} × ... × a_r = x</span>。<br>\n如果 <span class=\"katex math inline\">l</span>, <span class=\"katex math inline\">r</span> 不止一组，请输出 <span class=\"katex math inline\">l</span> 最小的；如果最小的 <span class=\"katex math inline\">l</span> 相同，请输出 <span class=\"katex math inline\">r</span> 最小的。</p>\n</div>            </div>",
+      "text": "如果找不出连续一段数字的乘积等于 x，输出 -1，否则输出两个数 l, r（l \\le r）表示  a_l × a_{l+1} × ... × a_r = x。\n如果 l, r 不止一组，请输出 l 最小的；如果最小的 l 相同，请输出 r 最小的。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 24\r\n1 2 3 4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 9\r\n1 2 3 4 5\r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>-1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 24\r\n1 2 3 4 5\n                        \n                        \n                            输出\n                            1 4\n                        \n\n                                                    \n                                输入\n                                5 9\r\n1 2 3 4 5\r\n\n                            \n                            \n                                输出\n                                -1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【输入输出样例 3 <span class=\"katex math inline\">\\sim</span> 4】</h4>\n<p>见选手目录下的 <code>multiply/multiply*.in</code> 与 <code>multiply/multiply*.ans</code>。</p>\n<h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">n = 2</span>。</p>\n<p>对于另外 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">x = 1</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">n \\le 100, 1 \\le a_i,x \\le 10^4</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【输入输出样例 3 \\sim 4】\n见选手目录下的 multiply/multiply*.in 与 multiply/multiply*.ans。\n【数据范围】\n对于 30\\% 的数据，n = 2。\n对于另外 30\\% 的数据，x = 1。\n对于 100\\% 的数据，n \\le 100, 1 \\le a_i,x \\le 10^4。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>“科大国创杯”2026 年安徽省青少年信息学科普日活动 中学组</p>\n</div>                </div>",
+      "text": "“科大国创杯”2026 年安徽省青少年信息学科普日活动 中学组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">科大国创杯</span></span></p>\n</div>                </div>",
+      "text": "科大国创杯"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 24\r\n1 2 3 4 5",
+      "output": "1 4"
+    },
+    {
+      "input": "5 9\r\n1 2 3 4 5\r\n",
+      "output": "-1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "19",
+    "通过人数": "13",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:33"
+}

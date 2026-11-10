@@ -1,0 +1,65 @@
+{
+  "id": "1485",
+  "title": "接水问题",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1485",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学校里有一个水房，水房里一共装有 <span class=\"katex math inline\">m</span> 个龙头可供同学们打开水，每个龙头每秒钟的供水量相等，均为 <span class=\"katex math inline\">1</span>。</p>\n<p>现在有 <span class=\"katex math inline\">n</span> 名同学准备接水，他们的初始接水顺序已经确定。将这些同学按接水顺序从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span> 编号，<span class=\"katex math inline\">i</span> 号同学的接水量为 <span class=\"katex math inline\">w_i</span>。接水开始时，<span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">m</span> 号同学各占一个水龙头，并同时打开水龙头接水。当其中某名同学 <span class=\"katex math inline\">j</span> 完成其接水量要求 <span class=\"katex math inline\">w_j</span> 后，下一名排队等候接水的同学 <span class=\"katex math inline\">k</span> 马上接替 <span class=\"katex math inline\">j</span> 同学的位置开始接水。这个换人的过程是瞬间完成的，且没有任何水的浪费。即 <span class=\"katex math inline\">j</span> 同学第 <span class=\"katex math inline\">x</span> 秒结束时完成接水，则 <span class=\"katex math inline\">k</span> 同学第 <span class=\"katex math inline\">x+1</span> 秒立刻开始接水。若当前接水人数 <span class=\"katex math inline\">n&#x27;</span> 不足 <span class=\"katex math inline\">m</span>，则只有 <span class=\"katex math inline\">n&#x27;</span> 个龙头供水，其它 <span class=\"katex math inline\">m - n&#x27;</span> 个龙头关闭。</p>\n<p>现在给出 <span class=\"katex math inline\">n</span> 名同学的接水量，按照上述接水规则，问所有同学都接完水需要多少秒。</p>\n</div>            </div>",
+      "text": "学校里有一个水房，水房里一共装有 m 个龙头可供同学们打开水，每个龙头每秒钟的供水量相等，均为 1。\n现在有 n 名同学准备接水，他们的初始接水顺序已经确定。将这些同学按接水顺序从 1 到 n 编号，i 号同学的接水量为 w_i。接水开始时，1 到 m 号同学各占一个水龙头，并同时打开水龙头接水。当其中某名同学 j 完成其接水量要求 w_j 后，下一名排队等候接水的同学 k 马上接替 j 同学的位置开始接水。这个换人的过程是瞬间完成的，且没有任何水的浪费。即 j 同学第 x 秒结束时完成接水，则 k 同学第 x+1 秒立刻开始接水。若当前接水人数 n' 不足 m，则只有 n' 个龙头供水，其它 m - n' 个龙头关闭。\n现在给出 n 名同学的接水量，按照上述接水规则，问所有同学都接完水需要多少秒。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>，用一个空格隔开，分别表示接水人数和龙头个数。</p>\n<p>第二行 <span class=\"katex math inline\">n</span> 个整数 <span class=\"katex math inline\">w_1,w_2,\\ldots,w_n</span>，每两个整数之间用一个空格隔开，<span class=\"katex math inline\">w_i</span> 表示 <span class=\"katex math inline\">i</span> 号同学的接水量。</p>\n</div>            </div>",
+      "text": "第一行两个整数 n 和 m，用一个空格隔开，分别表示接水人数和龙头个数。\n第二行 n 个整数 w_1,w_2,\\ldots,w_n，每两个整数之间用一个空格隔开，w_i 表示 i 号同学的接水量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，1 个整数，表示接水所需的总时间。</p>\n</div>            </div>",
+      "text": "输出只有一行，1 个整数，表示接水所需的总时间。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 3\r\n4 4 1 2 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>8 4\r\n23 71 87 32 70 93 80 76</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>163</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 3\r\n4 4 1 2 1\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                8 4\r\n23 71 87 32 70 93 80 76\n                            \n                            \n                                输出\n                                163"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【输入输出样例 #1 说明】</p>\n<p>第 <span class=\"katex math inline\">1</span> 秒，<span class=\"katex math inline\">3</span> 人接水。第 <span class=\"katex math inline\">1</span> 秒结束时，<span class=\"katex math inline\">1,2,3</span> 号同学每人的已接水量为 <span class=\"katex math inline\">1,3</span> 号同学接完水，<span class=\"katex math inline\">4</span> 号同学接替 <span class=\"katex math inline\">3</span> 号同学开始接水。</p>\n<p>第 <span class=\"katex math inline\">2</span> 秒，<span class=\"katex math inline\">3</span> 人接水。第 <span class=\"katex math inline\">2</span> 秒结束时，<span class=\"katex math inline\">1,2</span> 号同学每人的已接水量为 <span class=\"katex math inline\">2,4</span> 号同学的已接水量为 <span class=\"katex math inline\">1</span>。</p>\n<p>第 <span class=\"katex math inline\">3</span> 秒，<span class=\"katex math inline\">3</span> 人接水。第 <span class=\"katex math inline\">3</span> 秒结束时，<span class=\"katex math inline\">1,2</span> 号同学每人的已接水量为 <span class=\"katex math inline\">3,4</span> 号同学的已接水量为 <span class=\"katex math inline\">2</span>。<span class=\"katex math inline\">4</span> 号同学接完水，<span class=\"katex math inline\">5</span> 号同学接替 <span class=\"katex math inline\">4</span> 号同学开始接水。</p>\n<p>第 <span class=\"katex math inline\">4</span> 秒，<span class=\"katex math inline\">3</span> 人接水。第 <span class=\"katex math inline\">4</span> 秒结束时，<span class=\"katex math inline\">1,2</span> 号同学每人的已接水量为 <span class=\"katex math inline\">4,5</span> 号同学的已接水量为 <span class=\"katex math inline\">1</span>。<span class=\"katex math inline\">1,2,5</span> 号同学接完水，即所有人完成接水的总接水时间为 <span class=\"katex math inline\">4</span> 秒。</p>\n<p>【数据范围】</p>\n<p><span class=\"katex math inline\">1 \\le n \\le {10}^4</span>，<span class=\"katex math inline\">1 \\le m \\le 100</span>，<span class=\"katex math inline\">m \\le n</span>；</p>\n<p><span class=\"katex math inline\">1 \\le w_i \\le 100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【输入输出样例 #1 说明】\n第 1 秒，3 人接水。第 1 秒结束时，1,2,3 号同学每人的已接水量为 1,3 号同学接完水，4 号同学接替 3 号同学开始接水。\n第 2 秒，3 人接水。第 2 秒结束时，1,2 号同学每人的已接水量为 2,4 号同学的已接水量为 1。\n第 3 秒，3 人接水。第 3 秒结束时，1,2 号同学每人的已接水量为 3,4 号同学的已接水量为 2。4 号同学接完水，5 号同学接替 4 号同学开始接水。\n第 4 秒，3 人接水。第 4 秒结束时，1,2 号同学每人的已接水量为 4,5 号同学的已接水量为 1。1,2,5 号同学接完水，即所有人完成接水的总接水时间为 4 秒。\n【数据范围】\n1 \\le n \\le {10}^4，1 \\le m \\le 100，m \\le n；\n1 \\le w_i \\le 100。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip2010普及组复赛第2题</p>\n</div>                </div>",
+      "text": "noip2010普及组复赛第2题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 3\r\n4 4 1 2 1",
+      "output": "4"
+    },
+    {
+      "input": "8 4\r\n23 71 87 32 70 93 80 76",
+      "output": "163"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "7244",
+    "通过人数": "4141",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:07"
+}

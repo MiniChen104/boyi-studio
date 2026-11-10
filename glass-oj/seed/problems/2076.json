@@ -1,0 +1,57 @@
+{
+  "id": "2076",
+  "title": "环游世界之背包问题",
+  "tags": [
+    "动态规划",
+    "混合背包"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2076",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n张老师准备环游世界，出发之前要做的最重要的事情，当然是整理自己的背包啦。张老师有一个容积为m的背包 ，有n个物品作为放入背包的待选物品 ，每样东西都有自己的价值Wi，和体积Vi ，第i个物品有Ni个 （Ni=0时表示有无限多个），请你编程帮助张老师计算，他的背包能够存入的最大价值是多少？\n</p>\n<p><span class=\"katex math inline\">30\\%</span>数据满足  1 &lt;= m,n &lt;=1000</p>\n<p><span class=\"katex math inline\">100\\%</span>数据满足  1 &lt;=m,n &lt;= 10000</p>\n</div>            </div>",
+      "text": "张老师准备环游世界，出发之前要做的最重要的事情，当然是整理自己的背包啦。张老师有一个容积为m的背包 ，有n个物品作为放入背包的待选物品 ，每样东西都有自己的价值Wi，和体积Vi ，第i个物品有Ni个 （Ni=0时表示有无限多个），请你编程帮助张老师计算，他的背包能够存入的最大价值是多少？\n\n30\\%数据满足  1 <= m,n <=1000\n100\\%数据满足  1 <=m,n <= 10000"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第<span class=\"katex math inline\">1</span>行有<span class=\"katex math inline\">2</span>个整数<span class=\"katex math inline\">N,M</span>，表示物品的种类和背包的容积；</p>\n<p>第<span class=\"katex math inline\">2-N+1</span>行，每行有<span class=\"katex math inline\">3</span>个整数<span class=\"katex math inline\">Vi</span>，<span class=\"katex math inline\">Wi</span>，<span class=\"katex math inline\">Pi</span>，分别表示每个物品的体积，价值，个数。（体积&lt;=5000,价值&lt;=5000,个数&lt;=1000）</p>\n</div>            </div>",
+      "text": "第1行有2个整数N,M，表示物品的种类和背包的容积；\n第2-N+1行，每行有3个整数Vi，Wi，Pi，分别表示每个物品的体积，价值，个数。（体积<=5000,价值<=5000,个数<=1000）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n一个整数，表示能够存入背包的最大价值。<span></span> \n</p>\n</div>            </div>",
+      "text": "一个整数，表示能够存入背包的最大价值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 50 \r\n1 1 50\r\n2 4 3\r\n48 49 1\r\n1 51 1\r\n3 3 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>106</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 50 \r\n1 1 50\r\n2 4 3\r\n48 49 1\r\n1 51 1\r\n3 3 3\n                        \n                        \n                            输出\n                            106"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>动态规划 混合背包</p>\n</div>                </div>",
+      "text": "动态规划 混合背包"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span><span class=\"label label-warning\">混合背包</span></span></p>\n</div>                </div>",
+      "text": "动态规划混合背包"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 50 \r\n1 1 50\r\n2 4 3\r\n48 49 1\r\n1 51 1\r\n3 3 3",
+      "output": "106"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2943",
+    "通过人数": "1097",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:06"
+}

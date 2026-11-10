@@ -1,0 +1,60 @@
+{
+  "id": "5276",
+  "title": "十进制转换成十六进制",
+  "tags": [
+    "一本通",
+    "递归"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5276",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>用递归算法，把任一给定的十进制正整数转换成十六进制数输出。</p>\n</div>            </div>",
+      "text": "用递归算法，把任一给定的十进制正整数转换成十六进制数输出。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数，表示需要转换的十进制数 <span class=\"katex math inline\">N</span>。（1 \\le N \\le 10^9）</p>\n</div>            </div>",
+      "text": "输入一个正整数，表示需要转换的十进制数 N。（1 \\le N \\le 10^9）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个正整数，表示转换之后的十六进制的数。</p>\n</div>            </div>",
+      "text": "输出一个正整数，表示转换之后的十六进制的数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>30</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1E</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>120</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>78</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>767</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2FF</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            30\n                        \n                        \n                            输出\n                            1E\n                        \n\n                                                    \n                                输入\n                                120\n                            \n                            \n                                输出\n                                78\n                            \n                        \n                                                    \n                                输入\n                                767\n                            \n                            \n                                输出\n                                2FF"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">一本通</span><span class=\"label label-warning\">递归</span></span></p>\n</div>                </div>",
+      "text": "一本通递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "30",
+      "output": "1E"
+    },
+    {
+      "input": "120",
+      "output": "78"
+    },
+    {
+      "input": "767",
+      "output": "2FF"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "241",
+    "通过人数": "130",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:20"
+}

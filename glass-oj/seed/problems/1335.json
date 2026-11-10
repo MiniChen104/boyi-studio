@@ -1,0 +1,56 @@
+{
+  "id": "1335",
+  "title": "土地分割",
+  "tags": [
+    "递归"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1335",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>把一块 <span class=\"katex math inline\">m * n</span>米的土地分割成同样大的正方形，如果要求没有土地剩余，分割出的正方形土地最大边长是多少米？（最少不能少于 <span class=\"katex math inline\">1</span> 米 <span class=\"katex math inline\"> *</span> <span class=\"katex math inline\">1</span>米）</p>\n<p>如：一块 <span class=\"katex math inline\">6</span> 米 <span class=\"katex math inline\">*</span> <span class=\"katex math inline\">4</span>米的土地，能够分割的最大的正方形的边长为 <span class=\"katex math inline\">2</span>米。（5.2.45）\n<img src=\"https://assets.boyi.local/194b29fe753e977a2a9fd8a0.jpg\"></p>\n</div>            </div>",
+      "text": "把一块 m * n米的土地分割成同样大的正方形，如果要求没有土地剩余，分割出的正方形土地最大边长是多少米？（最少不能少于 1 米  * 1米）\n如：一块 6 米 * 4米的土地，能够分割的最大的正方形的边长为 2米。（5.2.45）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个整数 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">m,n \\le 10^{18}</span>）</p>\n</div>            </div>",
+      "text": "两个整数 m 和 n（m,n \\le 10^{18}）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>能够分割的最大正方形的边长。</p>\n</div>            </div>",
+      "text": "能够分割的最大正方形的边长。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 4\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递归</p>\n</div>                </div>",
+      "text": "递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递归</span></span></p>\n</div>                </div>",
+      "text": "递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 4",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "16550",
+    "通过人数": "6183",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:18:01"
+}

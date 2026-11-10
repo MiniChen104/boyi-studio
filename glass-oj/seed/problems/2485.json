@@ -1,0 +1,56 @@
+{
+  "id": "2485",
+  "title": "牛的旅行",
+  "tags": [
+    "图论"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2485",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Farmer John 的农场里有很多 <strong>牧区</strong>。有的路径连接一些特定的牧区。<strong>一片所有连通的牧区</strong> 称为一个 <strong>牧场</strong>。但是就目前而言，你能看到至少有两个牧区通过任何路径都不连通。这样，Farmer John 就有 <strong>多个</strong> 牧场了。  </p>\n<p>John 想在牧场里添加 <strong>恰好</strong> 一条路径。对这条路径有以下限制：  </p>\n<p>一个牧场的 <strong>直径</strong> 就是牧场中 <strong>最远</strong> 的两个牧区的距离（本题中所提到的所有距离指的都是 <strong>最短的距离</strong>）。考虑如下图 1 所示的有 5 个牧区的牧场，牧区用 <code>*</code> 表示，路径用直线表示。每一个牧区都有自己的坐标：  </p>\n<p><img src=\"https://assets.boyi.local/c8e4cc276fe6e9e42f688312.png\"></p>\n<p>图 1 牧场的直径大约是 <span class=\"katex math inline\">12.07106</span>，最远的两个牧区是 A 和 E，它们之间的最短路径是 <span class=\"katex math inline\">A \\to B \\to E</span>。  </p>\n<p>图 2 是 John 的另一个牧场：  </p>\n<p>John 将会在这两个牧场中各选一个牧区（即从 <span class=\"katex math inline\">{A,B,C,D,E}</span> 中选择一个牧区，从 <span class=\"katex math inline\">{F,G,H}</span> 中选择一个牧区），然后用一条路径将它们连起来，使得连通后这个新的更大的牧场的直径尽可能小。  </p>\n<p>注意，如果两条路径中途相交，我们不认为它们是连通的。只有两条路径在同一个牧区相交，我们才认为它们是连通的。  </p>\n<p>输入文件包括牧区、它们各自的坐标，还有一个如下的对称邻接矩阵：  </p>\n<pre><code>　 A  B  C  D  E  F  G  H \nA  0  1  0  0  0  0  0  0\nB  1  0  1  1  1  0  0  0\nC  0  1  0  0  1  0  0  0\nD  0  1  0  0  1  0  0  0\nE  0  1  1  1  0  0  0  0\nF  0  0  0  0  0  0  1  0\nG  0  0  0  0  0  1  0  1\nH  0  0  0  0  0  0  1  0\n</code></pre>\n<p>输入 <strong>至少</strong> 包括两个不连通的牧区。</p>\n<p>请编程找出一条连接属于两个 <strong>不同牧场</strong> 的牧区的路径，使得连上这条路径后，使得所有牧场（含：连接边后生成的新牧场和原有的牧场）最大的直径尽可能小。  </p>\n<p>输出在所有合法的连接方案中，最大直径的最小值。</p>\n</div>            </div>",
+      "text": "Farmer John 的农场里有很多 牧区。有的路径连接一些特定的牧区。一片所有连通的牧区 称为一个 牧场。但是就目前而言，你能看到至少有两个牧区通过任何路径都不连通。这样，Farmer John 就有 多个 牧场了。  \nJohn 想在牧场里添加 恰好 一条路径。对这条路径有以下限制：  \n一个牧场的 直径 就是牧场中 最远 的两个牧区的距离（本题中所提到的所有距离指的都是 最短的距离）。考虑如下图 1 所示的有 5 个牧区的牧场，牧区用 * 表示，路径用直线表示。每一个牧区都有自己的坐标：  \n\n图 1 牧场的直径大约是 12.07106，最远的两个牧区是 A 和 E，它们之间的最短路径是 A \\to B \\to E。  \n图 2 是 John 的另一个牧场：  \nJohn 将会在这两个牧场中各选一个牧区（即从 {A,B,C,D,E} 中选择一个牧区，从 {F,G,H} 中选择一个牧区），然后用一条路径将它们连起来，使得连通后这个新的更大的牧场的直径尽可能小。  \n注意，如果两条路径中途相交，我们不认为它们是连通的。只有两条路径在同一个牧区相交，我们才认为它们是连通的。  \n输入文件包括牧区、它们各自的坐标，还有一个如下的对称邻接矩阵：  \n　 A  B  C  D  E  F  G  H \nA  0  1  0  0  0  0  0  0\nB  1  0  1  1  1  0  0  0\nC  0  1  0  0  1  0  0  0\nD  0  1  0  0  1  0  0  0\nE  0  1  1  1  0  0  0  0\nF  0  0  0  0  0  0  1  0\nG  0  0  0  0  0  1  0  1\nH  0  0  0  0  0  0  1  0\n\n输入 至少 包括两个不连通的牧区。\n请编程找出一条连接属于两个 不同牧场 的牧区的路径，使得连上这条路径后，使得所有牧场（含：连接边后生成的新牧场和原有的牧场）最大的直径尽可能小。  \n输出在所有合法的连接方案中，最大直径的最小值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">N</span>（<span class=\"katex math inline\">1 \\leq N \\leq 150</span>），表示牧区数。  </p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行两个整数 <span class=\"katex math inline\">X,Y</span>（<span class=\"katex math inline\">0 \\leq X ,Y \\leq 10^5</span>），表示 <span class=\"katex math inline\">N</span> 个牧区的坐标。注意每个牧区的坐标都是不一样的。  </p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行 <span class=\"katex math inline\">N</span> 个数字，代表邻接矩阵 <span class=\"katex math inline\">M</span>。第 <span class=\"katex math inline\">i</span> 行第 <span class=\"katex math inline\">j</span> 列的数字为 <span class=\"katex math inline\">1</span>，表示 <span class=\"katex math inline\">i</span> 号牧区和 <span class=\"katex math inline\">j</span> 号牧区之间存在一条道路直接相连；第 <span class=\"katex math inline\">i</span> 行第 <span class=\"katex math inline\">j</span> 列的数字为 <span class=\"katex math inline\">0</span>，表示 <span class=\"katex math inline\">i</span> 号牧区和 <span class=\"katex math inline\">j</span> 号牧区之间不存在直接相连的道路。  </p>\n<p>保证 <span class=\"katex math inline\">M{i,j} = M{j,i}</span>。  </p>\n</div>            </div>",
+      "text": "第一行一个整数 N（1 \\leq N \\leq 150），表示牧区数。  \n接下来 N 行，每行两个整数 X,Y（0 \\leq X ,Y \\leq 10^5），表示 N 个牧区的坐标。注意每个牧区的坐标都是不一样的。  \n接下来 N 行，每行 N 个数字，代表邻接矩阵 M。第 i 行第 j 列的数字为 1，表示 i 号牧区和 j 号牧区之间存在一条道路直接相连；第 i 行第 j 列的数字为 0，表示 i 号牧区和 j 号牧区之间不存在直接相连的道路。  \n保证 M{i,j} = M{j,i}。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一行，包括一个实数，表示所求直径。数字保留六位小数。  </p>\n</div>            </div>",
+      "text": "只有一行，包括一个实数，表示所求直径。数字保留六位小数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\n10 10\r\n15 10\r\n20 10\r\n15 15\r\n20 15\r\n30 15\r\n25 10\r\n30 10\r\n01000000\r\n10111000\r\n01001000\r\n01001000\r\n01110000\r\n00000010\r\n00000101\r\n00000010</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>22.071068</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\n10 10\r\n15 10\r\n20 10\r\n15 15\r\n20 15\r\n30 15\r\n25 10\r\n30 10\r\n01000000\r\n10111000\r\n01001000\r\n01001000\r\n01110000\r\n00000010\r\n00000101\r\n00000010\n                        \n                        \n                            输出\n                            22.071068"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>样例对应题目描述中的情况。  </p>\n<p>最优解是连接 C 牧区和 G 牧区，连接后图上只有一个牧场。这个牧场的直径为 <span class=\"katex math inline\">A \\to B \\to C \\to G \\to F</span>，长度约为 <span class=\"katex math inline\">22.071068</span>。可以证明不存在更优的方案。  </p>\n</div>\n\n                    \n                </div>",
+      "text": "样例对应题目描述中的情况。  \n最优解是连接 C 牧区和 G 牧区，连接后图上只有一个牧场。这个牧场的直径为 A \\to B \\to C \\to G \\to F，长度约为 22.071068。可以证明不存在更优的方案。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span></span></p>\n</div>                </div>",
+      "text": "图论"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\n10 10\r\n15 10\r\n20 10\r\n15 15\r\n20 15\r\n30 15\r\n25 10\r\n30 10\r\n01000000\r\n10111000\r\n01001000\r\n01001000\r\n01110000\r\n00000010\r\n00000101\r\n00000010",
+      "output": "22.071068"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "257",
+    "通过人数": "158",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:55"
+}

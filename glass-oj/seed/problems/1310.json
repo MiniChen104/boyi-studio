@@ -1,0 +1,56 @@
+{
+  "id": "1310",
+  "title": "至少要买几瓶止咳糖浆？",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1310",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>花花生病了，妈妈去给花花买儿童止咳糖浆。一瓶儿童止咳糖浆的规格及用法如下所示，一般花花咳嗽需要 <span class=\"katex math inline\">5</span> 天才能痊愈。</p>\n<p>止咳糖浆规格：每瓶 <span class=\"katex math inline\">120</span> 毫升，每日 <span class=\"katex math inline\">3</span> 次， <span class=\"katex math inline\">10</span> 岁以上儿童：每次 <span class=\"katex math inline\">25</span> 毫升，<span class=\"katex math inline\">7 \\sim 10</span> 岁儿童：每次 <span class=\"katex math inline\">15</span> 毫升， <span class=\"katex math inline\">3 \\sim 6</span> 岁儿童：每次 <span class=\"katex math inline\">5</span> 毫升。</p>\n<p>请根据止咳糖浆的规格以及花花的年龄计算，写一个程序计算如果花花要痊愈，妈妈至少要买几瓶止咳糖浆？（4.1.7）</p>\n</div>            </div>",
+      "text": "花花生病了，妈妈去给花花买儿童止咳糖浆。一瓶儿童止咳糖浆的规格及用法如下所示，一般花花咳嗽需要 5 天才能痊愈。\n止咳糖浆规格：每瓶 120 毫升，每日 3 次， 10 岁以上儿童：每次 25 毫升，7 \\sim 10 岁儿童：每次 15 毫升， 3 \\sim 6 岁儿童：每次 5 毫升。\n请根据止咳糖浆的规格以及花花的年龄计算，写一个程序计算如果花花要痊愈，妈妈至少要买几瓶止咳糖浆？（4.1.7）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，代表花花的年龄（花花的年龄在 <span class=\"katex math inline\">2</span> 岁以上）。</p>\n</div>            </div>",
+      "text": "一个整数，代表花花的年龄（花花的年龄在 2 岁以上）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，代表妈妈最少需要购买的糖浆瓶数。</p>\n</div>            </div>",
+      "text": "一个整数，代表妈妈最少需要购买的糖浆瓶数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "38396",
+    "通过人数": "19840",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:41"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "4650",
+  "title": "红绿灯",
+  "tags": [
+    "江苏省赛2024"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4650",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>七段数码管是一种用来显示数字的电子元件，由七个可以发光的小段组成，这些小段排列成一个数字 <span class=\"katex math inline\">8</span> 的形状。通过点亮不同的段,数码管可以显示出从 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">9</span> 的数字。每个小段都有一个名字，从 <span class=\"katex math inline\">\\tt A</span> 到 <span class=\"katex math inline\">\\tt G</span>，按下图方式排列和命名：</p>\n<p><img src=\"https://assets.boyi.local/594822a64cd4c39455eb0edc.png\"></p>\n<p>数码管通过点亮不同的段显示不同的数字。例如：</p>\n<ul><li><p>数字 <span class=\"katex math inline\">0</span> 需要点亮 <span class=\"katex math inline\">\\tt{A,B,C,D,E,F}</span> 段。</p>\n</li>\n<li><p>数字 <span class=\"katex math inline\">1</span> 需要点亮 <span class=\"katex math inline\">\\tt{B,C}</span> 段。</p>\n</li>\n<li><p>数字 <span class=\"katex math inline\">2</span> 需要点亮 <span class=\"katex math inline\">\\tt{A,B,D,E,G}</span> 段。</p>\n</li>\n</ul><p>Dr. X 发现，红绿灯上的数码管经常发生故障，故障分为两类：<strong>常亮</strong>和<strong>不亮</strong>：</p>\n<ul><li><p>如果数码管的某段发生了<strong>常亮</strong>故障，这一段都会始终保持点亮的状态。</p>\n</li>\n<li><p>如果数码管的某段发生了<strong>不亮</strong>故障，这一段都会始终保持不亮的状态。</p>\n</li>\n</ul><p>今天，Dr. X 感觉红绿灯的一个数字显示异常,因此记录了数码管显示数字的日志。Dr. X 希望\n你根据日志推测数码管的每一段分别可能发生了怎样的故障?</p>\n</div>            </div>",
+      "text": "七段数码管是一种用来显示数字的电子元件，由七个可以发光的小段组成，这些小段排列成一个数字 8 的形状。通过点亮不同的段,数码管可以显示出从 0 到 9 的数字。每个小段都有一个名字，从 \\tt A 到 \\tt G，按下图方式排列和命名：\n\n数码管通过点亮不同的段显示不同的数字。例如：\n数字 0 需要点亮 \\tt{A,B,C,D,E,F} 段。\n\n数字 1 需要点亮 \\tt{B,C} 段。\n\n数字 2 需要点亮 \\tt{A,B,D,E,G} 段。\n\nDr. X 发现，红绿灯上的数码管经常发生故障，故障分为两类：常亮和不亮：\n如果数码管的某段发生了常亮故障，这一段都会始终保持点亮的状态。\n\n如果数码管的某段发生了不亮故障，这一段都会始终保持不亮的状态。\n\n今天，Dr. X 感觉红绿灯的一个数字显示异常,因此记录了数码管显示数字的日志。Dr. X 希望\n你根据日志推测数码管的每一段分别可能发生了怎样的故障?"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据第一行一个整数 <span class=\"katex math inline\">n</span>，代表 Dr. X 日志的数量。接下来 <span class=\"katex math inline\">n</span> 行，每行一条日志 (一个字符\n串)：</p>\n<ul><li><p>日志从一个数字 <span class=\"katex math inline\">k(0 \\leq k \\leq 9)</span> 开始,代表本次观察的数字。</p>\n</li>\n<li><p>紧跟着数字的是若干的字母（<span class=\"katex math inline\">\\tt{A\\sim G}</span>，且每个字母至多出现一次），代表观察到数字 <span class=\"katex math inline\">k</span> 显示时，处于“亮”状态的数码管段。日志准确、没有遗漏地记录了数码管亮着的段，且记录日志的过程中，红绿灯的状态保持不变：常亮的段一直常亮、不亮的段一直不亮、正常的段一直正常。日志中可能有同一个数字的多次记录，但不会自相矛盾。</p>\n</li>\n</ul></div>            </div>",
+      "text": "输入数据第一行一个整数 n，代表 Dr. X 日志的数量。接下来 n 行，每行一条日志 (一个字符\n串)：\n日志从一个数字 k(0 \\leq k \\leq 9) 开始,代表本次观察的数字。\n\n紧跟着数字的是若干的字母（\\tt{A\\sim G}，且每个字母至多出现一次），代表观察到数字 k 显示时，处于“亮”状态的数码管段。日志准确、没有遗漏地记录了数码管亮着的段，且记录日志的过程中，红绿灯的状态保持不变：常亮的段一直常亮、不亮的段一直不亮、正常的段一直正常。日志中可能有同一个数字的多次记录，但不会自相矛盾。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行 <span class=\"katex math inline\">7</span> 个字符，分别代表数码管 <span class=\"katex math inline\">\\tt{A\\sim G}</span> 段的状态。对于每一段，如果有证据表明它常亮，输出大写字母 <code>X</code>。如果有证据表明它不亮，输出小写字母 <code>x</code>，否则输出半角减号 <code>-</code>。</p>\n</div>            </div>",
+      "text": "输出一行 7 个字符，分别代表数码管 \\tt{A\\sim G} 段的状态。对于每一段，如果有证据表明它常亮，输出大写字母 X。如果有证据表明它不亮，输出小写字母 x，否则输出半角减号 -。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1BCD\r\n7BCD\r\n7DCB</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>x--X---</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3\r\n0\r\n1\r\n8G</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>xxxxxx-</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1BCD\r\n7BCD\r\n7DCB\n                        \n                        \n                            输出\n                            x--X---\n                        \n\n                                                    \n                                输入\n                                3\r\n0\r\n1\r\n8G\n                            \n                            \n                                输出\n                                xxxxxx-"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围与提示</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，满足 <span class=\"katex math inline\">0 \\leq n \\leq 100</span>。</p>\n<blockquote><p>本题原始满分为 <span class=\"katex math inline\">15\\text{pts}</span>。</p>\n</blockquote>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围与提示\n对于 100\\% 的数据，满足 0 \\leq n \\leq 100。\n本题原始满分为 15\\text{pts}。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年江苏省＂信息与未来＂小学生编程</p>\n</div>                </div>",
+      "text": "2024年江苏省＂信息与未来＂小学生编程"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">江苏省赛2024</span></span></p>\n</div>                </div>",
+      "text": "江苏省赛2024"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1BCD\r\n7BCD\r\n7DCB",
+      "output": "x--X---"
+    },
+    {
+      "input": "3\r\n0\r\n1\r\n8G",
+      "output": "xxxxxx-"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "33",
+    "通过人数": "20",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:09"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "3486",
+  "title": "烹饪问题",
+  "tags": [
+    "GESP五级",
+    "基数排序",
+    "位运算",
+    "双指针",
+    "23年12月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3486",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">N</span> 种食材，编号从 <span class=\"katex math inline\">0</span> 至 <span class=\"katex math inline\">N-1</span>，其中第 <span class=\"katex math inline\">i</span> 种食材的美味度为<span class=\"katex math inline\">a_i</span>。</p>\n<p>不同食材之间的组合可能产生奇妙的化学反应。具体来说，如果两种食材的美味度分别为 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span>，那么它们的契合\n度为 <span class=\"katex math inline\">x</span> <span class=\"katex math inline\">and</span> <span class=\"katex math inline\">y</span>。</p>\n<p>其中，<span class=\"katex math inline\">and</span> 运算为按位与运算，需要先将两个运算数转换为二进制，然后在高位补足 <span class=\"katex math inline\">0</span>，再逐位进行与运算。例如，\n<span class=\"katex math inline\"> 12 </span> 与 <span class=\"katex math inline\"> 6 </span> 的二进制表示分别为 <span class=\"katex math inline\">1100</span> 和 <span class=\"katex math inline\">0110</span> ，将它们逐位进行与运算，得到 <span class=\"katex math inline\">0100</span> ，转换为十进制得到<span class=\"katex math inline\">4</span> ，因此 <span class=\"katex math inline\">12</span> <span class=\"katex math inline\">and</span> <span class=\"katex math inline\">6</span> <span class=\"katex math inline\">=</span> <span class=\"katex math inline\">4</span>。<strong>在 C++ 或 Python 中，可以直接使用 &amp; 运算符表示与运算。</strong></p>\n<p>现在，请你找到契合度最高的两种食材，并输出它们的契合度.</p>\n</div>            </div>",
+      "text": "有 N 种食材，编号从 0 至 N-1，其中第 i 种食材的美味度为a_i。\n不同食材之间的组合可能产生奇妙的化学反应。具体来说，如果两种食材的美味度分别为 x 和 y，那么它们的契合\n度为 x and y。\n其中，and 运算为按位与运算，需要先将两个运算数转换为二进制，然后在高位补足 0，再逐位进行与运算。例如，\n 12  与  6  的二进制表示分别为 1100 和 0110 ，将它们逐位进行与运算，得到 0100 ，转换为十进制得到4 ，因此 12 and 6 = 4。在 C++ 或 Python 中，可以直接使用 & 运算符表示与运算。\n现在，请你找到契合度最高的两种食材，并输出它们的契合度."
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">N</span>，表示食材的种数。</p>\n<p>接下来一行 <span class=\"katex math inline\">N</span> 个用空格隔开的整数，依次为 <span class=\"katex math inline\">a_0,...,a_N-1</span> ，表示各种食材的美味度。</p>\n</div>            </div>",
+      "text": "第一行一个整数 N，表示食材的种数。\n接下来一行 N 个用空格隔开的整数，依次为 a_0,...,a_N-1 ，表示各种食材的美味度。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数，表示最高的契合度。</p>\n</div>            </div>",
+      "text": "输出一行一个整数，表示最高的契合度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1 2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n5 6 2 10 13</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>8</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1 2 3\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                5\r\n5 6 2 10 13\n                            \n                            \n                                输出\n                                8"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例1解释】</p>\n<p>可以编号为 <span class=\"katex math inline\">3,4</span> 的食材之间的契合度为<span class=\"katex math inline\">10</span> <span class=\"katex math inline\">and</span> <span class=\"katex math inline\">13</span> <span class=\"katex math inline\">=</span> <span class=\"katex math inline\">8</span> ，是所有食材两两之间最高的契合度。</p>\n<p>【数据规模】</p>\n<p>对于 <span class=\"katex math inline\"> 40 \\% </span>的测试点，保证 <span class=\"katex math inline\">N \\leq 1,000</span>；</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">N \\leq 10^6</span>， <span class=\"katex math inline\"> 0 \\leq a_i \\leq 2,147,483,647 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1解释】\n可以编号为 3,4 的食材之间的契合度为10 and 13 = 8 ，是所有食材两两之间最高的契合度。\n【数据规模】\n对于  40 \\% 的测试点，保证 N \\leq 1,000；\n对于所有测试点，保证 N \\leq 10^6，  0 \\leq a_i \\leq 2,147,483,647 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年12月五级</p>\n</div>                </div>",
+      "text": "GESP23年12月五级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">基数排序</span><span class=\"label label-info\">位运算</span><span class=\"label label-danger\">双指针</span><span class=\"label label-primary\">23年12月</span></span></p>\n</div>                </div>",
+      "text": "GESP五级基数排序位运算双指针23年12月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1 2 3",
+      "output": "2"
+    },
+    {
+      "input": "5\r\n5 6 2 10 13",
+      "output": "8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "806",
+    "通过人数": "309",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:22"
+}

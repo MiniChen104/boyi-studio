@@ -1,0 +1,56 @@
+{
+  "id": "1646",
+  "title": "闰年判断",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1646",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入年份，判断是否为闰年。如果是，则输出 <code>yes</code> ，否则输出 <code>no</code> 。</p>\n<p>提示：闰年的判断有两个条件，只需满足一个即可。</p>\n<p><span class=\"katex math inline\">1</span> .能够被 <span class=\"katex math inline\">4</span> 整除但不能被 <span class=\"katex math inline\">100</span> 整除的为闰年。</p>\n<p><span class=\"katex math inline\">2</span> .能够被 <span class=\"katex math inline\">400</span> 整除的为闰年。  </p>\n</div>            </div>",
+      "text": "输入年份，判断是否为闰年。如果是，则输出 yes ，否则输出 no 。\n提示：闰年的判断有两个条件，只需满足一个即可。\n1 .能够被 4 整除但不能被 100 整除的为闰年。\n2 .能够被 400 整除的为闰年。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个四位整数，表示年份。</p>\n</div>            </div>",
+      "text": "一个四位整数，表示年份。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>闰年则输出 <code>yes</code> ，否则输出 <code>no</code> 。</p>\n</div>            </div>",
+      "text": "闰年则输出 yes ，否则输出 no 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1996</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>yes</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1996\n                        \n                        \n                            输出\n                            yes"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1996",
+      "output": "yes"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "41654",
+    "通过人数": "22903",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:22:19"
+}

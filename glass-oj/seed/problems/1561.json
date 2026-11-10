@@ -1,0 +1,59 @@
+{
+  "id": "1561",
+  "title": "买木头",
+  "tags": [
+    "省赛",
+    "数组问题",
+    "二分答案",
+    "贪心"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1561",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">n</span> 个木材供应商，每个供货商有长度相同一定数量的木头。长木头可以锯短，但短木头不能接长。有一个客人要求 <span class=\"katex math inline\">m</span> 根长度相同的木头。要求计算出，此时供货商提供的木头满足客人要求的最长的长度是多少。</p>\n<p>例如 <span class=\"katex math inline\">n=2,m=30</span>，两个供货商的木头为</p>\n<p><span class=\"katex math inline\">12,10</span>  第 <span class=\"katex math inline\">1</span> 个供货商的木头长度为 <span class=\"katex math inline\">12</span> ，共有 <span class=\"katex math inline\">10</span> 根；</p>\n<p><span class=\"katex math inline\">5,10</span>  第 <span class=\"katex math inline\">2</span> 个供货商的木头长度为 <span class=\"katex math inline\">5</span> ，共有 <span class=\"katex math inline\">10</span> 根。</p>\n<p>计算的结果为 <span class=\"katex math inline\">5</span> ，即长度为 <span class=\"katex math inline\">12</span> 的木头一根可锯出两根长度为 <span class=\"katex math inline\">5</span> 的木头，多余的无用，长度为 <span class=\"katex math inline\">5</span> 的木头不动，此时可得到 <span class=\"katex math inline\">30</span> 根长度为 <span class=\"katex math inline\">5</span> 的木头。</p>\n</div>            </div>",
+      "text": "有 n 个木材供应商，每个供货商有长度相同一定数量的木头。长木头可以锯短，但短木头不能接长。有一个客人要求 m 根长度相同的木头。要求计算出，此时供货商提供的木头满足客人要求的最长的长度是多少。\n例如 n=2,m=30，两个供货商的木头为\n12,10  第 1 个供货商的木头长度为 12 ，共有 10 根；\n5,10  第 2 个供货商的木头长度为 5 ，共有 10 根。\n计算的结果为 5 ，即长度为 12 的木头一根可锯出两根长度为 5 的木头，多余的无用，长度为 5 的木头不动，此时可得到 30 根长度为 5 的木头。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>整数 <span class=\"katex math inline\">n,m,L_1,S_1</span> （<span class=\"katex math inline\">1≤n≤10000,1≤m≤1000000,1≤L_1≤10000,1≤S_1≤100</span>）</p>\n<p>其中 <span class=\"katex math inline\">L_1</span> 是第一个供货商木头的长，<span class=\"katex math inline\">S_1</span> 是第一个供货商木头数量。其他供货商木头的长度和数量 <span class=\"katex math inline\">L_i</span> 和 <span class=\"katex math inline\">S_i</span>（<span class=\"katex math inline\">i≥2</span>），由下面的公式给出：</p>\n<p><span class=\"katex math inline\">L_i=((L</span><sub><span class=\"katex math inline\">i-1</span></sub><span class=\"katex math inline\"> \\times 37011+10193)  \\mod 10000)+1</span></p>\n<p><span class=\"katex math inline\">S_i=((S</span><sub><span class=\"katex math inline\">i-1</span></sub><span class=\"katex math inline\"> \\times 73011+24793)  \\mod 100)+1</span></p>\n</div>            </div>",
+      "text": "整数 n,m,L_1,S_1 （1≤n≤10000,1≤m≤1000000,1≤L_1≤10000,1≤S_1≤100）\n其中 L_1 是第一个供货商木头的长，S_1 是第一个供货商木头数量。其他供货商木头的长度和数量 L_i 和 S_i（i≥2），由下面的公式给出：\nL_i=((Li-1 \\times 37011+10193)  \\mod 10000)+1\nS_i=((Si-1 \\times 73011+24793)  \\mod 100)+1"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，即满足要求的 <span class=\"katex math inline\">m</span> 根长度相同的木头的最大长度。</p>\n<p>本题测试数据保证一定有解。</p>\n</div>            </div>",
+      "text": "一个整数，即满足要求的 m 根长度相同的木头的最大长度。\n本题测试数据保证一定有解。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 10000 8 20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>201</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 10000 8 20\n                        \n                        \n                            输出\n                            201"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>来源</p>\n<p>2015江苏省青少年信息学奥林匹克竞赛复赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "来源\n2015江苏省青少年信息学奥林匹克竞赛复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">省赛</span><span class=\"label label-warning\">数组问题</span><span class=\"label label-info\">二分答案</span><span class=\"label label-danger\">贪心</span></span></p>\n</div>                </div>",
+      "text": "省赛数组问题二分答案贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 10000 8 20",
+      "output": "201"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "7462",
+    "通过人数": "4685",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:21:07"
+}

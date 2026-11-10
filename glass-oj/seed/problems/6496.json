@@ -1,0 +1,58 @@
+{
+  "id": "6496",
+  "title": "无想的一刀",
+  "tags": [
+    "詹天佑杯四年级组",
+    "二维数组",
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6496",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小英雄最近正在沉迷于某款游戏的一个角色--雷电将军，她的大招”无想的一刀”，是她升空之后往地面斜劈(正斜 <span class=\"katex math inline\">45°</span>)的一段长范围高速线段攻击，能够贯穿整个场地。</p>\n<p>某次为了感受角色的大招效果，他控制雷电将军来到了游戏中的一个场地，可以视为<span class=\"katex math inline\">n \\times m</span>的矩阵，左上角为 <span class=\"katex math inline\">(1,1)</span> 这个场地中存在着一些敌人。攻击范围为经过角色所在格、从左上方向到右下方向贯穿场地的整条对角线，包含角色两侧的格子，直到场地边界。</p>\n<p>在某一时刻小英雄控制雷电将军释放了&quot;无想的一刀”，请你计算一下这个场地中有多少敌人被大招击中。</p>\n</div>            </div>",
+      "text": "小英雄最近正在沉迷于某款游戏的一个角色--雷电将军，她的大招”无想的一刀”，是她升空之后往地面斜劈(正斜 45°)的一段长范围高速线段攻击，能够贯穿整个场地。\n某次为了感受角色的大招效果，他控制雷电将军来到了游戏中的一个场地，可以视为n \\times m的矩阵，左上角为 (1,1) 这个场地中存在着一些敌人。攻击范围为经过角色所在格、从左上方向到右下方向贯穿场地的整条对角线，包含角色两侧的格子，直到场地边界。\n在某一时刻小英雄控制雷电将军释放了\"无想的一刀”，请你计算一下这个场地中有多少敌人被大招击中。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行: <span class=\"katex math inline\">2</span> 个正整数 <span class=\"katex math inline\">n、m</span></p>\n<p>接下来 <span class=\"katex math inline\">n</span>行:每行 <span class=\"katex math inline\">m</span> 个字符，其中<code>.</code>表示空地，<code>@</code>表示敌人，<code>*</code>表示雷电将军。</p>\n</div>            </div>",
+      "text": "第一行: 2 个正整数 n、m\n接下来 n行:每行 m 个字符，其中.表示空地，@表示敌人，*表示雷电将军。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">1</span> 个整数，表示被大招&quot;无想的一刀&quot;击中的敌人数量。</p>\n</div>            </div>",
+      "text": "1 个整数，表示被大招\"无想的一刀\"击中的敌人数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 6\r\n.@....\r\n.....@\r\n...*..\r\n..@...\r\n.....@\r\n......</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 6\r\n.@....\r\n.....@\r\n...*..\r\n..@...\r\n.....@\r\n......\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 解释】</h4>\n<p>如下图，一共有 <span class=\"katex math inline\">2</span> 名敌人被击中\n<img src=\"https://assets.boyi.local/86c39eebaa5c9f2ff5f3f081.png\"></p>\n<h4>数据规模与提示</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">5 \\le n、m \\le 1000</span>，保证输入的字符仅为 <code>.@*</code>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 1 解释】\n如下图，一共有 2 名敌人被击中\n\n数据规模与提示\n对于 100\\% 的数据，5 \\le n、m \\le 1000，保证输入的字符仅为 .@*。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">詹天佑杯四年级组</span><span class=\"label label-warning\">二维数组</span><span class=\"label label-info\">模拟</span></span></p>\n</div>                </div>",
+      "text": "詹天佑杯四年级组二维数组模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 6\r\n.@....\r\n.....@\r\n...*..\r\n..@...\r\n.....@\r\n......",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "3",
+    "通过人数": "2",
+    "金币数量": "2 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:35"
+}

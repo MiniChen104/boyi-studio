@@ -1,0 +1,56 @@
+{
+  "id": "1457",
+  "title": "子数整除",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1457",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>于一个五位数 <span class=\"katex math inline\">abcde</span> ，可将其拆分为三个子数：</p>\n<p><span class=\"katex math inline\">sub_1=abc</span></p>\n<p><span class=\"katex math inline\">sub_2=bcd</span></p>\n<p><span class=\"katex math inline\">sub_3=cde</span></p>\n<p>例如，五位数 <span class=\"katex math inline\">20207</span> 可以拆分成\n<span class=\"katex math inline\">sub_1=202</span></p>\n<p><span class=\"katex math inline\">sub_2=020</span> (也就是 <span class=\"katex math inline\">20</span>)</p>\n<p><span class=\"katex math inline\">sub_3=207</span></p>\n<p>现在给定一个正整数 <span class=\"katex math inline\">K</span> ，要求你编程求出 <span class=\"katex math inline\">10000</span> 到 <span class=\"katex math inline\">30000</span> 之间所有满足下述条件的五位数，条件是这些五位数的三个子数 <span class=\"katex math inline\">sub_1,sub_2,sub_3</span> 都可被 <span class=\"katex math inline\">K</span> 整除。</p>\n</div>            </div>",
+      "text": "于一个五位数 abcde ，可将其拆分为三个子数：\nsub_1=abc\nsub_2=bcd\nsub_3=cde\n例如，五位数 20207 可以拆分成\nsub_1=202\nsub_2=020 (也就是 20)\nsub_3=207\n现在给定一个正整数 K ，要求你编程求出 10000 到 30000 之间所有满足下述条件的五位数，条件是这些五位数的三个子数 sub_1,sub_2,sub_3 都可被 K 整除。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个正整数 <span class=\"katex math inline\">K（0 \\lt K \\lt 1000）</span> 。</p>\n</div>            </div>",
+      "text": "一个正整数 K（0 \\lt K \\lt 1000） 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>每一行为一个满足条件的五位数，要求从小到大输出。</p>\n<p>不得重复输出或遗漏。如果无解，则输出 <code>No</code>。</p>\n</div>            </div>",
+      "text": "每一行为一个满足条件的五位数，要求从小到大输出。\n不得重复输出或遗漏。如果无解，则输出 No。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>15</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>22555\r\n25555\r\n28555\r\n30000</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            15\n                        \n                        \n                            输出\n                            22555\r\n25555\r\n28555\r\n30000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "15",
+      "output": "22555\r\n25555\r\n28555\r\n30000"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "12861",
+    "通过人数": "6181",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:19:43"
+}

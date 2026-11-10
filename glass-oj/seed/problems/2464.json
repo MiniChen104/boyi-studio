@@ -1,0 +1,62 @@
+{
+  "id": "2464",
+  "title": "烧菜(cook.cpp)",
+  "tags": [
+    "市赛",
+    "模拟"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2464",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 X 正在指挥 <span class=\"katex math inline\">M</span> 个机器人做一道家常菜： 白灼青菜。  </p>\n<p>把一根青菜烧成菜肴需要两个步骤： 洗菜和水煮。 显然， 一根青菜不可能同时被清洗和水煮， 也不可能先被水煮后被清洗。  </p>\n<p>现在小 X 告诉你他是怎么指挥的。 每当一个机器人空下来：</p>\n<ul><li>如果有青菜还没被清洗， 就让这个机器人清洗这根青菜</li>\n<li>否则如果有青菜还没被水煮， 就让这个机器人水煮这根青菜</li>\n<li>都没有就让这个机器人关机  </li>\n</ul><p>现在一共需要把 <span class=\"katex math inline\">N</span> 根青菜烧成菜肴， 任何一个机器人清洗都要花 <span class=\"katex math inline\">A</span> 分钟， 水煮要花 <span class=\"katex math inline\">B</span> 分钟。 小 X 想请你告诉他多少分钟后所有菜能被烧好。</p>\n</div>            </div>",
+      "text": "小 X 正在指挥 M 个机器人做一道家常菜： 白灼青菜。  \n把一根青菜烧成菜肴需要两个步骤： 洗菜和水煮。 显然， 一根青菜不可能同时被清洗和水煮， 也不可能先被水煮后被清洗。  \n现在小 X 告诉你他是怎么指挥的。 每当一个机器人空下来：\n如果有青菜还没被清洗， 就让这个机器人清洗这根青菜\n否则如果有青菜还没被水煮， 就让这个机器人水煮这根青菜\n都没有就让这个机器人关机  \n现在一共需要把 N 根青菜烧成菜肴， 任何一个机器人清洗都要花 A 分钟， 水煮要花 B 分钟。 小 X 想请你告诉他多少分钟后所有菜能被烧好。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行 4 个正整数 <span class=\"katex math inline\">N</span>,<span class=\"katex math inline\">M</span>,<span class=\"katex math inline\">A</span>,<span class=\"katex math inline\">B</span>， 含义见问题描述。</p>\n</div>            </div>",
+      "text": "第一行 4 个正整数 N,M,A,B， 含义见问题描述。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 1 行包含一个整数， 表示多少分钟后所有菜能被烧好。</p>\n</div>            </div>",
+      "text": "输出 1 行包含一个整数， 表示多少分钟后所有菜能被烧好。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 2 9 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>23</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 2 9 5\n                        \n                        \n                            输出\n                            23"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>样例 1 解释</strong>  </p>\n<p>为了方便说明， 把机器人标号为 1 号机器人和 2 号机器人； 把青菜标号为 1 号、 2 号、3 号青菜。 实际上， 机器人间是没有区别的， 青菜间也是没有区别的。  </p>\n<p>第 0 分钟， 1 号机器人开始洗 1 号青菜， 2 号机器人开始洗 2 号青菜。  </p>\n<p>第 9 分钟， 1 号机器人开始洗 3 号青菜， 2 号机器人开始煮 1 号青菜。  </p>\n<p>第 14 分钟， 2 号机器人开始煮 2 号青菜。  </p>\n<p>第 18 分钟， 1 号机器人开始煮 3 号青菜。  </p>\n<p>第 19 分钟， 2 号机器人关机。  </p>\n<p>第 23 分钟， 所有菜都被烧好了， 1 号机器人关机。</p>\n<p><strong>数据范围</strong>\n本题共有 20 个测试点， 每个测试点 5 分。  </p>\n<p>对于测试点 1-10 ： <span class=\"katex math inline\">1&lt;=N,M,A,B&lt;=50</span>  </p>\n<p>对于测试点 11-20： <span class=\"katex math inline\">1&lt;=N,M,A,B&lt;=2000</span>  </p>\n<p>对于测试点 1,2,11,12： <span class=\"katex math inline\">M&gt;N</span>， 即机器人比青菜多  </p>\n<p>对于测试点 3,4,13,14： <span class=\"katex math inline\">M=1</span>， 即只有 1 个机器人  </p>\n<p>对于测试点 5,6,15,16： <span class=\"katex math inline\">A=B</span>， 即两个步骤需要的时间相同</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 解释  \n为了方便说明， 把机器人标号为 1 号机器人和 2 号机器人； 把青菜标号为 1 号、 2 号、3 号青菜。 实际上， 机器人间是没有区别的， 青菜间也是没有区别的。  \n第 0 分钟， 1 号机器人开始洗 1 号青菜， 2 号机器人开始洗 2 号青菜。  \n第 9 分钟， 1 号机器人开始洗 3 号青菜， 2 号机器人开始煮 1 号青菜。  \n第 14 分钟， 2 号机器人开始煮 2 号青菜。  \n第 18 分钟， 1 号机器人开始煮 3 号青菜。  \n第 19 分钟， 2 号机器人关机。  \n第 23 分钟， 所有菜都被烧好了， 1 号机器人关机。\n数据范围\n本题共有 20 个测试点， 每个测试点 5 分。  \n对于测试点 1-10 ： 1<=N,M,A,B<=50  \n对于测试点 11-20： 1<=N,M,A,B<=2000  \n对于测试点 1,2,11,12： M>N， 即机器人比青菜多  \n对于测试点 3,4,13,14： M=1， 即只有 1 个机器人  \n对于测试点 5,6,15,16： A=B， 即两个步骤需要的时间相同"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2021常州市程序设计小能手比赛试题 T3</p>\n</div>                </div>",
+      "text": "2021常州市程序设计小能手比赛试题 T3"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">模拟</span></span></p>\n</div>                </div>",
+      "text": "市赛模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 2 9 5",
+      "output": "23"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "310",
+    "通过人数": "100",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:40"
+}

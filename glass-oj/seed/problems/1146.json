@@ -1,0 +1,46 @@
+{
+  "id": "1146",
+  "title": "求S的值",
+  "tags": [
+    "函数问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1146",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>求 <span class=\"katex math inline\">S=1+2+4+7+11+16 \\dots </span>的值刚好大于等于 <span class=\"katex math inline\">5000</span> 时 <span class=\"katex math inline\">S</span> 的值。</p>\n</div>            </div>",
+      "text": "求 S=1+2+4+7+11+16 \\dots 的值刚好大于等于 5000 时 S 的值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无</p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数。</p>\n</div>            </div>",
+      "text": "一行，一个整数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>函数问题</p>\n</div>                </div>",
+      "text": "函数问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">函数问题</span></span></p>\n</div>                </div>",
+      "text": "函数问题"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "29333",
+    "通过人数": "14767",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:15:23"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "2210",
+  "title": "选数",
+  "tags": [
+    "noip复赛",
+    "回溯"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2210",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n已知n（1&lt;=n&lt;=20）个整数x1,x2,…,xn（1&lt;=xi&lt;=5000000），以及一个整数k（k&lt;n）。从n个整数中任选k个整数相加，可分别得到一系列的和。现在，要求你计算出和为素数共有多少种。\n</p>\n<p>\n例如当 n=4，k=3，4 个整数分别为 3,7,12,19 时，可得全部的组合与它们的和为：\n</p>\n<p>\n3+7+12=22\n</p>\n<p>\n3+7+19=29\n</p>\n<p>\n7+12+19=38\n</p>\n<p>\n3+12+19=34\n</p>\n<p>\n现在，要求你计算出和为素数共有多少种。\n</p>\n<p>\n例如上例，只有一种的和为素数：3+7+19=29。\n</p>\n</div>            </div>",
+      "text": "已知n（1<=n<=20）个整数x1,x2,…,xn（1<=xi<=5000000），以及一个整数k（k<n）。从n个整数中任选k个整数相加，可分别得到一系列的和。现在，要求你计算出和为素数共有多少种。\n\n\n例如当 n=4，k=3，4 个整数分别为 3,7,12,19 时，可得全部的组合与它们的和为：\n\n\n3+7+12=22\n\n\n3+7+19=29\n\n\n7+12+19=38\n\n\n3+12+19=34\n\n\n现在，要求你计算出和为素数共有多少种。\n\n\n例如上例，只有一种的和为素数：3+7+19=29。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n第一行两个空格隔开的整数 n,k（1≤n≤20，k&lt;n）。 \n</p>\n<p>\n第二行 n 个整数，分别为x1,x2...xn（1≤xi≤5*10<sup>6</sup>）\n</p>\n</div>            </div>",
+      "text": "第一行两个空格隔开的整数 n,k（1≤n≤20，k<n）。 \n\n\n第二行 n 个整数，分别为x1,x2...xn（1≤xi≤5*106）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示种类数。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示种类数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 3\r\n3 7 12 19</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 3\r\n3 7 12 19\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>NOIP 2002 普及组第二题。</p>\n</div>                </div>",
+      "text": "NOIP 2002 普及组第二题。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span><span class=\"label label-warning\">回溯</span></span></p>\n</div>                </div>",
+      "text": "noip复赛回溯"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 3\r\n3 7 12 19",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "927",
+    "通过人数": "558",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:49"
+}

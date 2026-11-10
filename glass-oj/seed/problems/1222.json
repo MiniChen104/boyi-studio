@@ -1,0 +1,56 @@
+{
+  "id": "1222",
+  "title": "经典递归问题——汉诺塔",
+  "tags": [
+    "递归"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1222",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>汉诺塔（又称河内塔）问题是印度的一个古老的传说。开天辟地的神勃拉玛在一个庙里留下了三根金刚石的棒，第一根上面套着 <span class=\"katex math inline\">64</span> 个圆的金片，最大的一个在底下，其余一个比一个小，依次叠上去，庙里的众僧不倦地把它们一个个地从这根棒搬到另一根棒上，规定可利用中间的一根棒作为帮助，但每次只能搬一个，而且大的不能放在小的上面。</p>\n<p>面对庞大的数字(移动圆片的次数) <span class=\"katex math inline\">18446744073709551615</span>，看来，众僧们耗尽毕生精力也不可能完成金片的移动。</p>\n<p><img src=\"https://assets.boyi.local/e21f5b51b082f8c6e64c4a01.jpg\"></p>\n<p>后来，这个传说就演变为汉诺塔游戏:</p>\n<ol><li><p>有三根杆子 <span class=\"katex math inline\">A,B,C</span> 。<span class=\"katex math inline\">A</span>杆上有若干碟子。</p>\n</li>\n<li><p>每次移动一块碟子，小的只能叠在大的上面。</p>\n</li>\n<li><p>把所有碟子从 <span class=\"katex math inline\">A</span> 杆全部移到 <span class=\"katex math inline\">C</span>杆上。</p>\n</li>\n</ol><p>经过研究发现，汉诺塔的破解很简单，就是按照移动规则向一个方向移动金片：</p>\n<p>如 <span class=\"katex math inline\">3</span> 阶汉诺塔的移动：<span class=\"katex math inline\">A→C,A→B,C→B,A→C,B→A,B→C,A→C</span>。</p>\n<p>此外，汉诺塔问题也是程序设计中的经典递归问题。</p>\n<p>算法思路：</p>\n<ol><li><p>如果只有一个金片，则把该金片从源移动到目标棒，结束。</p>\n</li>\n<li><p>如果有 <span class=\"katex math inline\">n</span> 个金片，则把前 <span class=\"katex math inline\">n-1</span> 个金片移动到辅助的棒，然后把自己移动到目标棒，最后再把前 <span class=\"katex math inline\">n-1</span> 个移动到目标棒。</p>\n</li>\n</ol></div>            </div>",
+      "text": "汉诺塔（又称河内塔）问题是印度的一个古老的传说。开天辟地的神勃拉玛在一个庙里留下了三根金刚石的棒，第一根上面套着 64 个圆的金片，最大的一个在底下，其余一个比一个小，依次叠上去，庙里的众僧不倦地把它们一个个地从这根棒搬到另一根棒上，规定可利用中间的一根棒作为帮助，但每次只能搬一个，而且大的不能放在小的上面。\n面对庞大的数字(移动圆片的次数) 18446744073709551615，看来，众僧们耗尽毕生精力也不可能完成金片的移动。\n\n后来，这个传说就演变为汉诺塔游戏:\n有三根杆子 A,B,C 。A杆上有若干碟子。\n\n每次移动一块碟子，小的只能叠在大的上面。\n\n把所有碟子从 A 杆全部移到 C杆上。\n\n经过研究发现，汉诺塔的破解很简单，就是按照移动规则向一个方向移动金片：\n如 3 阶汉诺塔的移动：A→C,A→B,C→B,A→C,B→A,B→C,A→C。\n此外，汉诺塔问题也是程序设计中的经典递归问题。\n算法思路：\n如果只有一个金片，则把该金片从源移动到目标棒，结束。\n\n如果有 n 个金片，则把前 n-1 个金片移动到辅助的棒，然后把自己移动到目标棒，最后再把前 n-1 个移动到目标棒。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">N</span> ，表示 <span class=\"katex math inline\">A</span> 柱上有 <span class=\"katex math inline\">N</span> 个碟子。（<span class=\"katex math inline\">0 \\lt n \\le 10</span>）</p>\n</div>            </div>",
+      "text": "一个整数 N ，表示 A 柱上有 N 个碟子。（0 \\lt n \\le 10）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>若干行，即移动的最少步骤。</p>\n</div>            </div>",
+      "text": "若干行，即移动的最少步骤。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>A To C\r\nA To B\r\nC To B\r\nA To C\r\nB To A\r\nB To C\r\nA To C</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            A To C\r\nA To B\r\nC To B\r\nA To C\r\nB To A\r\nB To C\r\nA To C"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递归</p>\n</div>                </div>",
+      "text": "递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递归</span></span></p>\n</div>                </div>",
+      "text": "递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "A To C\r\nA To B\r\nC To B\r\nA To C\r\nB To A\r\nB To C\r\nA To C"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "12109",
+    "通过人数": "6975",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:16:29"
+}

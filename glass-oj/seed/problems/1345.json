@@ -1,0 +1,56 @@
+{
+  "id": "1345",
+  "title": "玫瑰花圃",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1345",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一块<span class=\"katex math inline\">n \\times  n</span>（<span class=\"katex math inline\">n≥5</span>，且 <span class=\"katex math inline\">n</span> 是奇数）的红玫瑰花圃，由 <span class=\"katex math inline\">n \\times n</span> 个小正方形花圃组成，现要求在花圃中最中间的一行、最中间的一列以及 <span class=\"katex math inline\">4</span> 个顶点处种植粉色玫瑰，请问粉玫瑰占地面积占整个玫瑰花圃总面积的百分比是多少？（ <span class=\"katex math inline\"> 6.2.72 </span>）  </p>\n<p>如 <span class=\"katex math inline\">n=5</span>，花圃形状如下，粉玫瑰占地百分比 <span class=\"katex math inline\">= 13/25 = 52.0\\%</span>  </p>\n<p><img src=\"https://assets.boyi.local/bafab95eecfd88f90379e3fb.jpg\"></p>\n<p>如 <span class=\"katex math inline\">n=7</span>，花圃形状为如下，粉玫瑰占地百分比 <span class=\"katex math inline\">= 17 / 49 = 34.7\\%</span>  </p>\n<p><img src=\"https://assets.boyi.local/69679da27ee4982d84a91ba9.jpg\"></p>\n</div>            </div>",
+      "text": "有一块n \\times  n（n≥5，且 n 是奇数）的红玫瑰花圃，由 n \\times n 个小正方形花圃组成，现要求在花圃中最中间的一行、最中间的一列以及 4 个顶点处种植粉色玫瑰，请问粉玫瑰占地面积占整个玫瑰花圃总面积的百分比是多少？（  6.2.72 ）  \n如 n=5，花圃形状如下，粉玫瑰占地百分比 = 13/25 = 52.0\\%  \n\n如 n=7，花圃形状为如下，粉玫瑰占地百分比 = 17 / 49 = 34.7\\%"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> （ <span class=\"katex math inline\">5 \\le n \\le 99</span>，且 <span class=\"katex math inline\">n</span>是奇数）</p>\n</div>            </div>",
+      "text": "一个整数 n （ 5 \\le n \\le 99，且 n是奇数）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>粉玫瑰占总玫瑰园的百分比，结果保留 <span class=\"katex math inline\">1</span> 位小数，显示为百分比的形式。</p>\n</div>            </div>",
+      "text": "粉玫瑰占总玫瑰园的百分比，结果保留 1 位小数，显示为百分比的形式。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>52.0%</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            52.0%"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "52.0%"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "32565",
+    "通过人数": "21215",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:08"
+}

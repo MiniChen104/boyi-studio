@@ -1,0 +1,62 @@
+{
+  "id": "2326",
+  "title": "TT 植树（tree）",
+  "tags": [
+    "区赛",
+    "区间问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2326",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>TT 学校大门外长度为 <span class=\"katex math inline\">L</span> 的马路上有一排树，每两棵相邻的树之间的间隔都是 <span class=\"katex math inline\">1</span> 米。</p>\n<p>我们可以把马路看成一个数轴，马路的一端在数轴 <span class=\"katex math inline\">0</span> 的位置，另一端在 <span class=\"katex math inline\">L</span> 的位置；数轴上的每个整数点，即 <span class=\"katex math inline\">0,1,2,\\dots ,L</span>，都种有一棵树。</p>\n<p>由于马路上有一些区域要用来建地铁。这些区域用它们在数轴上的起始点和终止点表示。已知任一区域的起始点和终止点的坐标都是整数，区域之间可能有重合的部分。现在要把这些区域中的树（包括区域端点处的两棵树）移走。你的任务是帮 TT 计算将这些树都移走后，马路上还有多少棵树。</p>\n</div>            </div>",
+      "text": "TT 学校大门外长度为 L 的马路上有一排树，每两棵相邻的树之间的间隔都是 1 米。\n我们可以把马路看成一个数轴，马路的一端在数轴 0 的位置，另一端在 L 的位置；数轴上的每个整数点，即 0,1,2,\\dots ,L，都种有一棵树。\n由于马路上有一些区域要用来建地铁。这些区域用它们在数轴上的起始点和终止点表示。已知任一区域的起始点和终止点的坐标都是整数，区域之间可能有重合的部分。现在要把这些区域中的树（包括区域端点处的两棵树）移走。你的任务是帮 TT 计算将这些树都移走后，马路上还有多少棵树。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个整数 <span class=\"katex math inline\">L</span>（<span class=\"katex math inline\">1 ≤ L ≤ 1000000000</span>）和 <span class=\"katex math inline\">M</span>（<span class=\"katex math inline\">1 ≤ M ≤ 500000</span>），<span class=\"katex math inline\">L</span> 代表马路的长度，<span class=\"katex math inline\">M</span> 代表区域的数目，<span class=\"katex math inline\">L</span> 和 <span class=\"katex math inline\">M</span> 之间用一个空格隔开。  </p>\n<p>接下来的 <span class=\"katex math inline\">M</span> 行每行包含两个不同的整数，用一个空格隔开，表示一个区域的起始点 <span class=\"katex math inline\">a_i</span> 和终止点的坐标 <span class=\"katex math inline\">b_i</span>。  </p>\n<p><strong>提示：请注意仔细阅读本题的数据范围。</strong></p>\n</div>            </div>",
+      "text": "第一行有两个整数 L（1 ≤ L ≤ 1000000000）和 M（1 ≤ M ≤ 500000），L 代表马路的长度，M 代表区域的数目，L 和 M 之间用一个空格隔开。  \n接下来的 M 行每行包含两个不同的整数，用一个空格隔开，表示一个区域的起始点 a_i 和终止点的坐标 b_i。  \n提示：请注意仔细阅读本题的数据范围。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，这一行只包含一个整数，表示马路上剩余的树的数目。</p>\n</div>            </div>",
+      "text": "一行，这一行只包含一个整数，表示马路上剩余的树的数目。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>500 3\r\n150 300\r\n100 200\r\n470 471</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>298</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            500 3\r\n150 300\r\n100 200\r\n470 471\n                        \n                        \n                            输出\n                            298"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【数据范围】</strong></p>\n<p><span class=\"katex math inline\">45\\%</span> 的数据 <span class=\"katex math inline\">L≤10000</span>，<span class=\"katex math inline\">M≤100</span>， 其中 <span class=\"katex math inline\">15\\%</span> 的数据 <span class=\"katex math inline\">M</span> 个区间两两不交叉和包含。  </p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据 <span class=\"katex math inline\">1 ≤ L ≤ 1000000000</span>，<span class=\"katex math inline\">1≤M≤500000</span>，<span class=\"katex math inline\">0≤a_i≤b_i≤L</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n45\\% 的数据 L≤10000，M≤100， 其中 15\\% 的数据 M 个区间两两不交叉和包含。  \n100\\% 的数据 1 ≤ L ≤ 1000000000，1≤M≤500000，0≤a_i≤b_i≤L。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2018 年武进区第 11 届程序设计比赛试题-小学组 T5</p>\n</div>                </div>",
+      "text": "2018 年武进区第 11 届程序设计比赛试题-小学组 T5"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">区赛</span><span class=\"label label-warning\">区间问题</span></span></p>\n</div>                </div>",
+      "text": "区赛区间问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "500 3\r\n150 300\r\n100 200\r\n470 471",
+      "output": "298"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1516",
+    "通过人数": "453",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:12"
+}

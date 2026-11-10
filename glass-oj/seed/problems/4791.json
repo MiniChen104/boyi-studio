@@ -1,0 +1,53 @@
+{
+  "id": "4791",
+  "title": "猴王",
+  "tags": [
+    "蓝桥等考",
+    "数组问题",
+    "数组计数"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4791",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>猴群中有严格的等级制度。猴王在猴群中地位显赫，有至高无上的权利，主要体现在食物的优先享用和分配权。</p>\n<p>猴子们对争夺王位的厮杀感到厌倦和恐惧，决定选举产生猴王。<span class=\"katex math inline\">n</span> 只猴子从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span> 编号，每人投票 <span class=\"katex math inline\">1</span> 次，得票最多的猴子当选猴王，如果有两只以上的猴子得票并列最多，编号大的猴子当选猴王。</p>\n<p>输入猴子数量和每只猴子的投票（投票用猴子编号表示，每只猴子可以选 <span class=\"katex math inline\">1</span> 只猴子，可以选自己，不许弃权），输出猴王的编号。</p>\n<p>例如：<span class=\"katex math inline\">10</span> 只猴子编号是 <span class=\"katex math inline\">1</span> ~ <span class=\"katex math inline\">10</span> ，它们的投票分别是<span class=\"katex math inline\">1</span>, <span class=\"katex math inline\">3</span>, <span class=\"katex math inline\">4</span>, <span class=\"katex math inline\">3</span>, <span class=\"katex math inline\">1</span>, <span class=\"katex math inline\">1</span>, <span class=\"katex math inline\">3</span>, <span class=\"katex math inline\">5</span>, <span class=\"katex math inline\">7</span>, <span class=\"katex math inline\">5</span>。其中 <span class=\"katex math inline\">1</span> 号猴子得了 <span class=\"katex math inline\">3</span> 票，<span class=\"katex math inline\">3</span> 号猴子也是 <span class=\"katex math inline\">3</span> 票，并列最多，所以 <span class=\"katex math inline\">3</span> 号猴子当选猴王。</p>\n</div>            </div>",
+      "text": "猴群中有严格的等级制度。猴王在猴群中地位显赫，有至高无上的权利，主要体现在食物的优先享用和分配权。\n猴子们对争夺王位的厮杀感到厌倦和恐惧，决定选举产生猴王。n 只猴子从 1 到 n 编号，每人投票 1 次，得票最多的猴子当选猴王，如果有两只以上的猴子得票并列最多，编号大的猴子当选猴王。\n输入猴子数量和每只猴子的投票（投票用猴子编号表示，每只猴子可以选 1 只猴子，可以选自己，不许弃权），输出猴王的编号。\n例如：10 只猴子编号是 1 ~ 10 ，它们的投票分别是1, 3, 4, 3, 1, 1, 3, 5, 7, 5。其中 1 号猴子得了 3 票，3 号猴子也是 3 票，并列最多，所以 3 号猴子当选猴王。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入第一行包含一个整数 <span class=\"katex math inline\">n</span>，表示猴子的数量。（<span class=\"katex math inline\">1 \\le n \\le 100</span>）</p>\n<p>接下来的一行包含 <span class=\"katex math inline\">n</span> 个空格分隔的整数，每个整数代表对应编号猴子的投票对象（即每只猴子选择的猴王候选人编号），这些编号在 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span> 之间。</p>\n</div>            </div>",
+      "text": "输入第一行包含一个整数 n，表示猴子的数量。（1 \\le n \\le 100）\n接下来的一行包含 n 个空格分隔的整数，每个整数代表对应编号猴子的投票对象（即每只猴子选择的猴王候选人编号），这些编号在 1 到 n 之间。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示最终当选猴王的猴子编号。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示最终当选猴王的猴子编号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10\r\n1 3 4 3 1 1 3 5 7 5\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\r\n1 3 4 3 1 1 3 5 7 5\r\n\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">数组问题</span><span class=\"label label-info\">数组计数</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考数组问题数组计数"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10\r\n1 3 4 3 1 1 3 5 7 5\r\n",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "337",
+    "通过人数": "207",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:55"
+}

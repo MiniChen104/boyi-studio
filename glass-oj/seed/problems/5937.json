@@ -1,0 +1,68 @@
+{
+  "id": "5937",
+  "title": "城市规划",
+  "tags": [
+    "GESP七级",
+    "25年12月",
+    "图论",
+    "最短路"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5937",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>A 国有 <span class=\"katex math inline\"> n </span> 座城市，城市之间由 <span class=\"katex math inline\"> m </span> 条双向道路连接，任意一座城市均可经过若干条双向道路到达另一座城市。城市依次以 <span class=\"katex math inline\"> 1, 2, \\ldots, n </span> 编号。第 <span class=\"katex math inline\"> i </span>（<span class=\"katex math inline\"> 1 \\leq i \\leq m </span>）条双向道路连接城市 <span class=\"katex math inline\"> u_i </span> 与城市 <span class=\"katex math inline\"> v_i </span>。</p>\n<p>对于城市 <span class=\"katex math inline\"> u </span> 和城市 <span class=\"katex math inline\"> v </span> 而言，它们之间的连通度 <span class=\"katex math inline\"> d(u, v) </span> 定义为从城市 <span class=\"katex math inline\"> u </span> 出发到达城市 <span class=\"katex math inline\"> v </span> 所需经过的双向道路的最少条数。由于道路是双向的，可以知道连通度满足 <span class=\"katex math inline\"> d(u, v) = d(v, u) </span>，特殊地有 <span class=\"katex math inline\"> d(u, u) = 0 </span>。</p>\n<p>现在 A 国正在规划城市建设方案。城市 <span class=\"katex math inline\"> u </span> 的建设难度为它到其它城市的最大连通度。请你求出建设难度最小的城市。如果有多个满足条件的城市，则选取其中编号最小的城市。形式化地，你需要求出使得 <span class=\"katex math inline\"> \\max \\limits_{1 \\leq i \\leq n} d(u, i) </span> 最小的 <span class=\"katex math inline\"> u </span>，若存在多个可能的 <span class=\"katex math inline\"> u </span> 则选取其中最小的。</p>\n</div>            </div>",
+      "text": "A 国有  n  座城市，城市之间由  m  条双向道路连接，任意一座城市均可经过若干条双向道路到达另一座城市。城市依次以  1, 2, \\ldots, n  编号。第  i （ 1 \\leq i \\leq m ）条双向道路连接城市  u_i  与城市  v_i 。\n对于城市  u  和城市  v  而言，它们之间的连通度  d(u, v)  定义为从城市  u  出发到达城市  v  所需经过的双向道路的最少条数。由于道路是双向的，可以知道连通度满足  d(u, v) = d(v, u) ，特殊地有  d(u, u) = 0 。\n现在 A 国正在规划城市建设方案。城市  u  的建设难度为它到其它城市的最大连通度。请你求出建设难度最小的城市。如果有多个满足条件的城市，则选取其中编号最小的城市。形式化地，你需要求出使得  \\max \\limits_{1 \\leq i \\leq n} d(u, i)  最小的  u ，若存在多个可能的  u  则选取其中最小的。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：两个正整数 <span class=\"katex math inline\"> n, m </span>，表示 A 国的城市数量与双向道路数量。</p>\n<p>接下来 <span class=\"katex math inline\"> m </span> 行：每行两个整数 <span class=\"katex math inline\"> u_i, v_i </span>，表示一条连接城市 <span class=\"katex math inline\"> u_i </span> 与城市 <span class=\"katex math inline\"> v_i </span> 的双向道路。</p>\n</div>            </div>",
+      "text": "第一行：两个正整数  n, m ，表示 A 国的城市数量与双向道路数量。\n接下来  m  行：每行两个整数  u_i, v_i ，表示一条连接城市  u_i  与城市  v_i  的双向道路。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，一个整数，表示建设难度最小的城市编号。如果有多个满足条件的城市，则选取其中编号最小的城市。</p>\n</div>            </div>",
+      "text": "输出一行，一个整数，表示建设难度最小的城市编号。如果有多个满足条件的城市，则选取其中编号最小的城市。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3\r\n1 2\r\n1 3\r\n2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4 4\r\n1 2\r\n2 3\r\n3 4\r\n2 4</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\r\n1 2\r\n1 3\r\n2 3\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                4 4\r\n1 2\r\n2 3\r\n3 4\r\n2 4\n                            \n                            \n                                输出\n                                2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<ul><li>对于 <span class=\"katex math inline\">40\\%</span> 的测试点，保证 <span class=\"katex math inline\"> 1 \\leq n \\leq 300 </span>。</li>\n<li>对于所有测试点，保证 <span class=\"katex math inline\"> 1 \\leq n \\leq 2000 </span>，<span class=\"katex math inline\"> 1 \\leq m \\leq 2000 </span>，<span class=\"katex math inline\"> 1 \\leq u_i, v_i \\leq n </span>。</li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 40\\% 的测试点，保证  1 \\leq n \\leq 300 。\n对于所有测试点，保证  1 \\leq n \\leq 2000 ， 1 \\leq m \\leq 2000 ， 1 \\leq u_i, v_i \\leq n 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP25年12月七级</p>\n</div>                </div>",
+      "text": "GESP25年12月七级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP七级</span><span class=\"label label-warning\">25年12月</span><span class=\"label label-info\">图论</span><span class=\"label label-danger\">最短路</span></span></p>\n</div>                </div>",
+      "text": "GESP七级25年12月图论最短路"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3\r\n1 2\r\n1 3\r\n2 3",
+      "output": "1"
+    },
+    {
+      "input": "4 4\r\n1 2\r\n2 3\r\n3 4\r\n2 4",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "100",
+    "通过人数": "41",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:33"
+}

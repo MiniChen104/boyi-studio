@@ -1,0 +1,52 @@
+{
+  "id": "4788",
+  "title": "打印字母",
+  "tags": [
+    "蓝桥等考",
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4788",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小蓝最近刚学习英文字母表。为了加深记忆，小蓝决定通过编程输出字母表中前 <span class=\"katex math inline\">5</span> 个字母的小写形式：<code>a</code> 、<code>b</code> 、<code>c</code> 、<code>d</code> 、<code>e</code>。</p>\n</div>            </div>",
+      "text": "小蓝最近刚学习英文字母表。为了加深记忆，小蓝决定通过编程输出字母表中前 5 个字母的小写形式：a 、b 、c 、d 、e。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>本题目无需输入。</p>\n</div>            </div>",
+      "text": "本题目无需输入。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出由英文字母表中前 <span class=\"katex math inline\">5</span> 个字母的小写，即 <code>abcde</code>。<strong>每个字母一行。</strong></p>\n</div>            </div>",
+      "text": "输出由英文字母表中前 5 个字母的小写，即 abcde。每个字母一行。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>无</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>a\r\nb\r\nc\r\nd\r\ne</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            无\n                        \n                        \n                            输出\n                            a\r\nb\r\nc\r\nd\r\ne"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "无",
+      "output": "a\r\nb\r\nc\r\nd\r\ne"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1285",
+    "通过人数": "971",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:58"
+}

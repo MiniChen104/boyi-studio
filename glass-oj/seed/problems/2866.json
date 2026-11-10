@@ -1,0 +1,63 @@
+{
+  "id": "2866",
+  "title": "聪明的木匠",
+  "tags": [
+    "月赛",
+    "反悔贪心",
+    "2022"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2866",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小镇上有一条笔直的街道，街道的每个整数点上住着一户人家，从位置 <span class=\"katex math inline\">0</span> 开始，到位置 <span class=\"katex math inline\">10</span><sup><span class=\"katex math inline\">18</span></sup> 结束。</p>\n<p>在街道的位置 <span class=\"katex math inline\">0</span> 处住着本镇唯一的木匠，他为人善良、勤劳朴实，而且很聪明，镇上的家家户户，只要家具、木器坏了，都会打电话找木匠来修。</p>\n<p>一天木匠接到了 <span class=\"katex math inline\">N</span> 户人家的维修电话。他工整的在自己的本子上整理出了要去维修的每户人家的位置 <span class=\"katex math inline\">X_i</span>，并根据来电描述的损坏情况评估了在每户人家维修所需要的时间 <span class=\"katex math inline\">T_i</span> 。</p>\n<p>木匠在街道上行走，每走一个单位的距离，需要消耗一个单位的时间，从第 <span class=\"katex math inline\">i</span> 户人家的位置 <span class=\"katex math inline\">X_i</span> 走到 第 <span class=\"katex math inline\">j</span> 户人家的位置 <span class=\"katex math inline\">X_j</span>，他所需要的行走时间为 <span class=\"katex math inline\">|X_i - X_j|</span>。</p>\n<p>木匠看了看手表，估算了一下，现在出发到天黑只有 <span class=\"katex math inline\">M</span> 个单位的时间了，他必须在天黑之前尽可能给更多的人家维修，维修完最后一户人家，主人会热情的招待木匠住在他家，一起吃饭。因此你不用考虑木匠回家的时间，只需要让木匠在 <span class=\"katex math inline\">M</span> 个单位的时间内，尽可能帮助更多的人家完成维修工作。</p>\n<p>请编程计算出，如果木匠选择部分人家来维修，最多能完成多少户人家的维修工作。</p>\n</div>            </div>",
+      "text": "小镇上有一条笔直的街道，街道的每个整数点上住着一户人家，从位置 0 开始，到位置 1018 结束。\n在街道的位置 0 处住着本镇唯一的木匠，他为人善良、勤劳朴实，而且很聪明，镇上的家家户户，只要家具、木器坏了，都会打电话找木匠来修。\n一天木匠接到了 N 户人家的维修电话。他工整的在自己的本子上整理出了要去维修的每户人家的位置 X_i，并根据来电描述的损坏情况评估了在每户人家维修所需要的时间 T_i 。\n木匠在街道上行走，每走一个单位的距离，需要消耗一个单位的时间，从第 i 户人家的位置 X_i 走到 第 j 户人家的位置 X_j，他所需要的行走时间为 |X_i - X_j|。\n木匠看了看手表，估算了一下，现在出发到天黑只有 M 个单位的时间了，他必须在天黑之前尽可能给更多的人家维修，维修完最后一户人家，主人会热情的招待木匠住在他家，一起吃饭。因此你不用考虑木匠回家的时间，只需要让木匠在 M 个单位的时间内，尽可能帮助更多的人家完成维修工作。\n请编程计算出，如果木匠选择部分人家来维修，最多能完成多少户人家的维修工作。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行读入 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">M</span>，含义如题所述。</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行读入 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">X_i</span>、<span class=\"katex math inline\">T_i</span> 表示第 <span class=\"katex math inline\">i</span> 户打维修电话人家的位置，及木匠评估为该户维修所需的时间。</p>\n</div>            </div>",
+      "text": "第 1 行读入 2 个整数 N 和 M，含义如题所述。\n接下来 N 行，每行读入 2 个整数 X_i、T_i 表示第 i 户打维修电话人家的位置，及木匠评估为该户维修所需的时间。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出聪明的木匠，最多能够维修的户数。</p>\n</div>            </div>",
+      "text": "输出聪明的木匠，最多能够维修的户数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 10\r\n5 5\r\n1 100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 10\r\n5 5\r\n1 100\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 <span class=\"katex math inline\">1</span> 描述</h4>\n<p>木匠接到 <span class=\"katex math inline\">2</span> 家的电话，他有 <span class=\"katex math inline\">10</span> 个单位的时间，第 <span class=\"katex math inline\">1</span> 户人家位于位置 <span class=\"katex math inline\">5</span> ，维修时间为 <span class=\"katex math inline\">5</span> ，木匠可以完成该户的维修工作。</p>\n<p>第 <span class=\"katex math inline\">2</span> 户人家位于位置 <span class=\"katex math inline\">1</span>，虽然木匠在去第 <span class=\"katex math inline\">1</span> 户人家的路上会经过该位置，但这户人家的维修时间太长，需要 <span class=\"katex math inline\">100</span> 个单位的时间，因此木匠今天不会为该户维修。</p>\n<h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据， <span class=\"katex math inline\">n ≤ 20</span> 。</p>\n<p>对于 <span class=\"katex math inline\">60\\%</span> 的数据， <span class=\"katex math inline\">n ≤ 1000</span> 。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 ≤ n ≤ 10^5</span>，<span class=\"katex math inline\">1 ≤ M ≤ 10</span><sup><span class=\"katex math inline\">18</span></sup>， <span class=\"katex math inline\">0 ≤ X_i ≤ 10</span><sup><span class=\"katex math inline\">18</span></sup>， <span class=\"katex math inline\">0 ≤ T_i ≤ 10^9</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 描述\n木匠接到 2 家的电话，他有 10 个单位的时间，第 1 户人家位于位置 5 ，维修时间为 5 ，木匠可以完成该户的维修工作。\n第 2 户人家位于位置 1，虽然木匠在去第 1 户人家的路上会经过该位置，但这户人家的维修时间太长，需要 100 个单位的时间，因此木匠今天不会为该户维修。\n数据范围\n对于 30\\% 的数据， n ≤ 20 。\n对于 60\\% 的数据， n ≤ 1000 。\n对于 100\\% 的数据，1 ≤ n ≤ 10^5，1 ≤ M ≤ 1018， 0 ≤ X_i ≤ 1018， 0 ≤ T_i ≤ 10^9。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>东方博宜OJ</p>\n</div>                </div>",
+      "text": "东方博宜OJ"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">月赛</span><span class=\"label label-warning\">反悔贪心</span><span class=\"label label-info\">2022</span></span></p>\n</div>                </div>",
+      "text": "月赛反悔贪心2022"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 10\r\n5 5\r\n1 100",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "506",
+    "通过人数": "166",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:39"
+}

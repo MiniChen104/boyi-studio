@@ -1,0 +1,46 @@
+{
+  "id": "1142",
+  "title": "素数回文数",
+  "tags": [
+    "函数问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1142",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果一个数从左边读和右边读都是同一个数，就称为回文数，例如 <span class=\"katex math inline\">686</span> 就是一个回文数。</p>\n<p>编程求 <span class=\"katex math inline\">10</span> 到 <span class=\"katex math inline\">1000</span> 内所有的既是回文数同时又是素数的自然数。</p>\n</div>            </div>",
+      "text": "如果一个数从左边读和右边读都是同一个数，就称为回文数，例如 686 就是一个回文数。\n编程求 10 到 1000 内所有的既是回文数同时又是素数的自然数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无</p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>若干个数，每行一个</p>\n</div>            </div>",
+      "text": "若干个数，每行一个"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>函数问题</p>\n</div>                </div>",
+      "text": "函数问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">函数问题</span></span></p>\n</div>                </div>",
+      "text": "函数问题"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "7108",
+    "通过人数": "4542",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:15:19"
+}

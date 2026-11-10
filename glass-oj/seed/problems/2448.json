@@ -1,0 +1,62 @@
+{
+  "id": "2448",
+  "title": "雏菊",
+  "tags": [
+    "usaco",
+    "模拟"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2448",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>每天，作为她绕农场行走的一部分，奶牛 Bessie 会经过她最喜爱的草地，其中种有 <span class=\"katex math inline\">N</span> 朵花（五颜六色的雏菊），编号为 <span class=\"katex math inline\">1\\ldots N</span>（<span class=\"katex math inline\">1\\le N \\le 100</span>），排列成一行。花 <span class=\"katex math inline\">i</span> 有 <span class=\"katex math inline\">p_i</span> 朵花瓣（<span class=\"katex math inline\">1 \\le p_i \\le 1000</span>）。\n作为一名崭露头角的摄影家，Bessie 决定给这些花拍些照片。具体地说，对于每一对满足 <span class=\"katex math inline\">1\\le i\\le j\\le N</span> 的花 <span class=\"katex math inline\">(i,j)</span>，Bessie 会给从花 <span class=\"katex math inline\">i</span> 到花 <span class=\"katex math inline\">j</span> 之间的所有花（包括 <span class=\"katex math inline\">i</span> 和 <span class=\"katex math inline\">j</span>）拍一张照。  </p>\n<p>后来 Bessie 查看这些照片时注意到有些照片里存在「平均」的花——一朵恰好有 <span class=\"katex math inline\">P</span> 朵花瓣的花，其中 <span class=\"katex math inline\">P</span> 等于照片中所有花的花瓣数量的平均值。  </p>\n<p>Bessie 的照片中有几张存在平均的花？</p>\n</div>            </div>",
+      "text": "每天，作为她绕农场行走的一部分，奶牛 Bessie 会经过她最喜爱的草地，其中种有 N 朵花（五颜六色的雏菊），编号为 1\\ldots N（1\\le N \\le 100），排列成一行。花 i 有 p_i 朵花瓣（1 \\le p_i \\le 1000）。\n作为一名崭露头角的摄影家，Bessie 决定给这些花拍些照片。具体地说，对于每一对满足 1\\le i\\le j\\le N 的花 (i,j)，Bessie 会给从花 i 到花 j 之间的所有花（包括 i 和 j）拍一张照。  \n后来 Bessie 查看这些照片时注意到有些照片里存在「平均」的花——一朵恰好有 P 朵花瓣的花，其中 P 等于照片中所有花的花瓣数量的平均值。  \nBessie 的照片中有几张存在平均的花？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含 <span class=\"katex math inline\">N</span>。第二行包含 <span class=\"katex math inline\">N</span> 个空格分隔的整数 <span class=\"katex math inline\">p_1 \\dots p_N</span>。</p>\n</div>            </div>",
+      "text": "输入的第一行包含 N。第二行包含 N 个空格分隔的整数 p_1 \\dots p_N。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出存在平均的花的照片数量。</p>\n</div>            </div>",
+      "text": "输出存在平均的花的照片数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n1 1 2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n1 1 2 3\n                        \n                        \n                            输出\n                            6"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>每张仅包含一朵花的照片均会被计入答案（在这个样例中有 <span class=\"katex math inline\">4</span> 张）。另外，在这个样例中 <span class=\"katex math inline\">(i,j)</span> 为 <span class=\"katex math inline\">(1,2)</span> 和 <span class=\"katex math inline\">(2,4)</span> 所对应的照片也存在平均的花。</p>\n</div>\n\n                    \n                </div>",
+      "text": "每张仅包含一朵花的照片均会被计入答案（在这个样例中有 4 张）。另外，在这个样例中 (i,j) 为 (1,2) 和 (2,4) 所对应的照片也存在平均的花。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO 2020 December Contest, Bronze Problem 2. Daisy Chains</p>\n</div>                </div>",
+      "text": "USACO 2020 December Contest, Bronze Problem 2. Daisy Chains"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">usaco</span><span class=\"label label-warning\">模拟</span></span></p>\n</div>                </div>",
+      "text": "usaco模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n1 1 2 3",
+      "output": "6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "350",
+    "通过人数": "210",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:28"
+}

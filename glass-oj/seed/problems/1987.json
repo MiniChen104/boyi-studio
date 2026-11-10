@@ -1,0 +1,56 @@
+{
+  "id": "1987",
+  "title": "吉祥数",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1987",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明喜欢 <span class=\"katex math inline\">8</span> 这个数，他认为这个数字很吉祥，请编程帮助小明求解 <span class=\"katex math inline\">1 \\sim n</span> 中，总共有多少个数字 <span class=\"katex math inline\">8</span> ，如果一个数字中含有多个数字 <span class=\"katex math inline\">8</span> ，那么都要算上。</p>\n<p>比如： <span class=\"katex math inline\">88</span> 中有<span class=\"katex math inline\">2</span> 个数字 <span class=\"katex math inline\">8</span> 。（请注意：本题不是要求有多少个数字含有<span class=\"katex math inline\">8</span>，而是要求总共出现了多少个 <span class=\"katex math inline\">8</span> ）。</p>\n<p>如果输入 <span class=\"katex math inline\">n=100</span> ，那么输出应该是 <span class=\"katex math inline\">20</span>，因为 <span class=\"katex math inline\">100</span> 以内含有<span class=\"katex math inline\">8</span>的数有：<span class=\"katex math inline\">8 、18 、28 、38 、48、 58 、68、 78 、80、 81、 82、 83 、84、 85、 86、 87 、88、 89 、98</span> ，其中有 <span class=\"katex math inline\">20</span> 个 <span class=\"katex math inline\">8</span> 出现了。</p>\n</div>            </div>",
+      "text": "小明喜欢 8 这个数，他认为这个数字很吉祥，请编程帮助小明求解 1 \\sim n 中，总共有多少个数字 8 ，如果一个数字中含有多个数字 8 ，那么都要算上。\n比如： 88 中有2 个数字 8 。（请注意：本题不是要求有多少个数字含有8，而是要求总共出现了多少个 8 ）。\n如果输入 n=100 ，那么输出应该是 20，因为 100 以内含有8的数有：8 、18 、28 、38 、48、 58 、68、 78 、80、 81、 82、 83 、84、 85、 86、 87 、88、 89 、98 ，其中有 20 个 8 出现了。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数 <span class=\"katex math inline\">n（n \\lt 10000）</span> 。</p>\n</div>            </div>",
+      "text": "输入一个整数 n（n \\lt 10000） 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">1 \\sim n</span> 中有多少个数字 <span class=\"katex math inline\">8</span> 。</p>\n</div>            </div>",
+      "text": "输出 1 \\sim n 中有多少个数字 8 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>20</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100\n                        \n                        \n                            输出\n                            20"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100",
+      "output": "20"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "1764",
+    "通过人数": "1189",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:26:58"
+}

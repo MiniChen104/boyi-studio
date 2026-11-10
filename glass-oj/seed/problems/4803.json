@@ -1,0 +1,52 @@
+{
+  "id": "4803",
+  "title": "最小的数",
+  "tags": [
+    "蓝桥等考",
+    "数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4803",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个有 <span class=\"katex math inline\">n</span> 个无重复元素的整数数组 <span class=\"katex math inline\">a</span> ，输出数组中最小的数。</p>\n</div>            </div>",
+      "text": "输入一个有 n 个无重复元素的整数数组 a ，输出数组中最小的数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入第一行包含一个整数 <span class=\"katex math inline\">n</span> ，表示数组 <span class=\"katex math inline\">a</span> 的长度。接下来的一行包含 <span class=\"katex math inline\">n</span> 个空格分隔的整数，表示数组 <span class=\"katex math inline\">a</span> 的元素。</p>\n</div>            </div>",
+      "text": "输入第一行包含一个整数 n ，表示数组 a 的长度。接下来的一行包含 n 个空格分隔的整数，表示数组 a 的元素。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表数组 <span class=\"katex math inline\">a</span> 中最小的元素。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表数组 a 中最小的元素。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n4 5 1 3 8\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n4 5 1 3 8\r\n\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n4 5 1 3 8\r\n",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "257",
+    "通过人数": "212",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:43"
+}

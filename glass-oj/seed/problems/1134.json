@@ -1,0 +1,56 @@
+{
+  "id": "1134",
+  "title": "国王的魔镜",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1134",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>国王有一个魔镜，可以把任何接触镜面的东西变成原来的两倍——只是，因为是镜子嘛，增加的那部分是反的。 </p>\n<p>比如一条项链，我们用 <span class=\"katex math inline\">AB</span> 来表示，不同的字母表示不同颜色的珍珠。如果把 <span class=\"katex math inline\">B</span> 端接触镜面的话，魔镜会把这条项链变为 <span class=\"katex math inline\">ABBA</span> 。如果再用一端接触的话，则会变成 <span class=\"katex math inline\">ABBAABBA</span> （假定国王只用项链的某一端接触魔镜）。 </p>\n<p>给定最终的项链，请编写程序输出国王没使用魔镜之前，最初的项链可能的最小长度。</p>\n</div>            </div>",
+      "text": "国王有一个魔镜，可以把任何接触镜面的东西变成原来的两倍——只是，因为是镜子嘛，增加的那部分是反的。 \n比如一条项链，我们用 AB 来表示，不同的字母表示不同颜色的珍珠。如果把 B 端接触镜面的话，魔镜会把这条项链变为 ABBA 。如果再用一端接触的话，则会变成 ABBAABBA （假定国王只用项链的某一端接触魔镜）。 \n给定最终的项链，请编写程序输出国王没使用魔镜之前，最初的项链可能的最小长度。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一个字符串（长度 <span class=\"katex math inline\"> \\le 100</span>），由大写英文字母组成，表示最终的项链。</p>\n</div>            </div>",
+      "text": "只有一个字符串（长度  \\le 100），由大写英文字母组成，表示最终的项链。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一个整数，表示国王没使用魔镜前，最初的项链可能的最小长度。</p>\n</div>            </div>",
+      "text": "只有一个整数，表示国王没使用魔镜前，最初的项链可能的最小长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>ABBAABBA</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            ABBAABBA\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "ABBAABBA",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "22300",
+    "通过人数": "13852",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:15:12"
+}

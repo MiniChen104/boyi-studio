@@ -1,0 +1,55 @@
+{
+  "id": "1727",
+  "title": "英文统计",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1727",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一句英文的长句，该长句由若干单词组成（长句仅包含大写字母、小写字母和空格），单词之间由一个或多个空格隔开。</p>\n<p>请编程统计一下，该英文长句中共有多少个单词，平均一个单词有多长（平均长度保留 <span class=\"katex math inline\">1</span> 位小数），最长的单词是哪个单词（如果有多个最长的单词，输出最左边的那个单词）？</p>\n<p>比如，假设读入英文长句如下：</p>\n<p><code>This is  my    Book</code></p>\n<p>该长句中包含 <span class=\"katex math inline\">4</span> 个单词；</p>\n<p>平均一个单词长度为 <span class=\"katex math inline\">3.0</span> ；</p>\n<p><code>This</code> 和 <code>Book</code> 都是句子中最长的单词，但 <code>This</code> 是最左边的最长单词，因此最长单词输出 <code>This</code> 。</p>\n</div>            </div>",
+      "text": "有一句英文的长句，该长句由若干单词组成（长句仅包含大写字母、小写字母和空格），单词之间由一个或多个空格隔开。\n请编程统计一下，该英文长句中共有多少个单词，平均一个单词有多长（平均长度保留 1 位小数），最长的单词是哪个单词（如果有多个最长的单词，输出最左边的那个单词）？\n比如，假设读入英文长句如下：\nThis is  my    Book\n该长句中包含 4 个单词；\n平均一个单词长度为 3.0 ；\nThis 和 Book 都是句子中最长的单词，但 This 是最左边的最长单词，因此最长单词输出 This 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，若干个单词组成的英文长句，单词只包含大写字母和小写字母，用一个或多个空格隔开（第一个单词前和最后一个单词后也可能有空格），单词数量不超过 <span class=\"katex math inline\">1000</span> 个，每个单词长度不超过10个字母。</p>\n</div>            </div>",
+      "text": "一行，若干个单词组成的英文长句，单词只包含大写字母和小写字母，用一个或多个空格隔开（第一个单词前和最后一个单词后也可能有空格），单词数量不超过 1000 个，每个单词长度不超过10个字母。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出有 <span class=\"katex math inline\">3</span> 行，第 <span class=\"katex math inline\">1</span> 行输出长句中的单词数量，第 <span class=\"katex math inline\">2</span> 行输出平均一个单词的长度（保留 <span class=\"katex math inline\">1</span> 位小数），第 <span class=\"katex math inline\">3</span> 行输出最长的单词。</p>\n</div>            </div>",
+      "text": "输出有 3 行，第 1 行输出长句中的单词数量，第 2 行输出平均一个单词的长度（保留 1 位小数），第 3 行输出最长的单词。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>This is  my    Book</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4\r\n3.0\r\nThis</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>John  reed was a  schoolboy of fourteen years old</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>9\r\n4.3\r\nschoolboy</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            This is  my    Book\n                        \n                        \n                            输出\n                            4\r\n3.0\r\nThis\n                        \n\n                                                    \n                                输入\n                                John  reed was a  schoolboy of fourteen years old\n                            \n                            \n                                输出\n                                9\r\n4.3\r\nschoolboy"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "This is  my    Book",
+      "output": "4\r\n3.0\r\nThis"
+    },
+    {
+      "input": "John  reed was a  schoolboy of fourteen years old",
+      "output": "9\r\n4.3\r\nschoolboy"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1004",
+    "通过人数": "559",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:23:28"
+}

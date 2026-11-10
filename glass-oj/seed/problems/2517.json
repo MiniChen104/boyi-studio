@@ -1,0 +1,67 @@
+{
+  "id": "2517",
+  "title": "战略要地",
+  "tags": [
+    "图论",
+    "并查集",
+    "割点",
+    "双连通分量"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2517",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">A</span> 国有 <span class=\"katex math inline\">n</span> 个城市（城市编号为 <span class=\"katex math inline\">1 \\sim n</span> ），城市间建有 <span class=\"katex math inline\">m</span> 条双向的道路。</p>\n<p>该国战争爆发后，国防部长下令要重点保护 <span class=\"katex math inline\">t_1</span> 、 <span class=\"katex math inline\">t_2</span> 这两个城市，且为了保障这两个城市之间的运输保障，要计算出两个城市之间有哪些战略保障城市。</p>\n<p>战略保障城市的意思是说，如果某城市 <span class=\"katex math inline\">x</span> 被敌人攻下了，那么 <span class=\"katex math inline\">t_1</span> 到 <span class=\"katex math inline\">t_2</span> 就无法实现运输，也就是两个城市之间通过任何路线都不能互相到达。（<span class=\"katex math inline\">x \\neq t_1,x \\neq t_2</span>）</p>\n<p>请编程计算出，该国有几个战略保障城市。</p>\n</div>            </div>",
+      "text": "A 国有 n 个城市（城市编号为 1 \\sim n ），城市间建有 m 条双向的道路。\n该国战争爆发后，国防部长下令要重点保护 t_1 、 t_2 这两个城市，且为了保障这两个城市之间的运输保障，要计算出两个城市之间有哪些战略保障城市。\n战略保障城市的意思是说，如果某城市 x 被敌人攻下了，那么 t_1 到 t_2 就无法实现运输，也就是两个城市之间通过任何路线都不能互相到达。（x \\neq t_1,x \\neq t_2）\n请编程计算出，该国有几个战略保障城市。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行输入 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> ，含义如题所述。(<span class=\"katex math inline\">2 \\le n \\le 1000</span>), (<span class=\"katex math inline\">0 \\le m \\le 2000</span>)</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行有 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span> （<span class=\"katex math inline\">x \\neq y</span>），代表这两个城市之间修建了一条双向道路。</p>\n<p>最后 <span class=\"katex math inline\">1</span> 行，输入 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">t_1</span> ， <span class=\"katex math inline\">t_2</span> ，含义如题所述。（<span class=\"katex math inline\">t_1 \\neq t_2</span>）</p>\n</div>            </div>",
+      "text": "第 1 行输入 n 和 m ，含义如题所述。(2 \\le n \\le 1000), (0 \\le m \\le 2000)\n接下来 m 行，每行有 2 个整数 x 和 y （x \\neq y），代表这两个城市之间修建了一条双向道路。\n最后 1 行，输入 2 个整数 t_1 ， t_2 ，含义如题所述。（t_1 \\neq t_2）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表战略保障城市的数量，如果两个城市本来就不连通，请输出 <code>-1</code>。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表战略保障城市的数量，如果两个城市本来就不连通，请输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7 6\r\n1 3\r\n2 3\r\n3 4\r\n3 5\r\n4 5\r\n5 6\r\n1 6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>8 9\r\n1 2\r\n2 3\r\n2 4\r\n3 4\r\n4 5\r\n5 6\r\n5 7\r\n6 7\r\n7 8\r\n1 8</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>4</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 4\r\n1 2\r\n2 3\r\n2 4\r\n3 4\r\n1 5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>-1</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            7 6\r\n1 3\r\n2 3\r\n3 4\r\n3 5\r\n4 5\r\n5 6\r\n1 6\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                8 9\r\n1 2\r\n2 3\r\n2 4\r\n3 4\r\n4 5\r\n5 6\r\n5 7\r\n6 7\r\n7 8\r\n1 8\n                            \n                            \n                                输出\n                                4\n                            \n                        \n                                                    \n                                输入\n                                5 4\r\n1 2\r\n2 3\r\n2 4\r\n3 4\r\n1 5\n                            \n                            \n                                输出\n                                -1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>东方博宜OJ</p>\n</div>                </div>",
+      "text": "东方博宜OJ"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span><span class=\"label label-warning\">并查集</span><span class=\"label label-info\">割点</span><span class=\"label label-danger\">双连通分量</span></span></p>\n</div>                </div>",
+      "text": "图论并查集割点双连通分量"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7 6\r\n1 3\r\n2 3\r\n3 4\r\n3 5\r\n4 5\r\n5 6\r\n1 6",
+      "output": "2"
+    },
+    {
+      "input": "8 9\r\n1 2\r\n2 3\r\n2 4\r\n3 4\r\n4 5\r\n5 6\r\n5 7\r\n6 7\r\n7 8\r\n1 8",
+      "output": "4"
+    },
+    {
+      "input": "5 4\r\n1 2\r\n2 3\r\n2 4\r\n3 4\r\n1 5",
+      "output": "-1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "185",
+    "通过人数": "78",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:03"
+}

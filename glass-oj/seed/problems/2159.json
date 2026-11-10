@@ -1,0 +1,65 @@
+{
+  "id": "2159",
+  "title": "表达式（expr）",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2159",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 C 热衷于学习数理逻辑。有一天，他发现了一种特别的逻辑表达式。在这种逻辑表达式中，所有操作数都是变量，且它们的取值只能为 <span class=\"katex math inline\">0</span> 或 <span class=\"katex math inline\">1</span>，运算从左往右进行。如果表达式中有括号，则先计算括号内的子表达式的值。特别的，这种表达式有且仅有以下几种运算：</p>\n<ol><li>与运算：<code>a &amp; b</code>。当且仅当 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span> 的值都为 <span class=\"katex math inline\">1</span> 时，该表达式的值为 <span class=\"katex math inline\">1</span>。其余情况该表达式的值为 <span class=\"katex math inline\">0</span>。</li>\n<li>或运算：<code>a | b</code>。当且仅当 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span> 的值都为 <span class=\"katex math inline\">0</span> 时，该表达式的值为 <span class=\"katex math inline\">0</span>。其余情况该表达式的值为 <span class=\"katex math inline\">1</span>。</li>\n<li>取反运算：<code>!a</code>。当且仅当 <span class=\"katex math inline\">a</span> 的值为 <span class=\"katex math inline\">0</span> 时，该表达式的值为 <span class=\"katex math inline\">1</span>。其余情况该表达式的值为 <span class=\"katex math inline\">0</span>。</li>\n</ol><p>小 C 想知道，给定一个逻辑表达式和其中每一个操作数的初始取值后，再取反某一个操作数的值时，原表达式的值为多少。</p>\n<p>为了化简对表达式的处理，我们有如下约定：</p>\n<p>表达式将采用<strong>后缀表达式</strong>的方式输入。</p>\n<p>后缀表达式的定义如下：</p>\n<ol><li>如果 <span class=\"katex math inline\">E</span> 是一个操作数，则 <span class=\"katex math inline\">E</span> 的后缀表达式是它本身。</li>\n<li>如果 <span class=\"katex math inline\">E</span> 是 <span class=\"katex math inline\">E_1~\\texttt{op}~E_2</span> 形式的表达式，其中 <span class=\"katex math inline\">\\texttt{op}</span> 是任何二元操作符，且优先级不高于 <span class=\"katex math inline\">E_1</span> 、<span class=\"katex math inline\">E_2</span> 中括号外的操作符，则 <span class=\"katex math inline\">E</span> 的后缀式为 <span class=\"katex math inline\">E_1&#x27; E_2&#x27; \\texttt{op}</span>，其中 <span class=\"katex math inline\">E_1&#x27;</span> 、<span class=\"katex math inline\">E_2&#x27;</span> 分别为 <span class=\"katex math inline\">E_1</span>、<span class=\"katex math inline\">E_2</span> 的后缀式。</li>\n<li>如果 <span class=\"katex math inline\">E</span> 是 <span class=\"katex math inline\">E_1</span> 形式的表达式，则 <span class=\"katex math inline\">E_1</span> 的后缀式就是 <span class=\"katex math inline\">E</span> 的后缀式。</li>\n</ol><p>同时为了方便，输入中：</p>\n<ol><li>与运算符（&amp;）、或运算符（|）、取反运算符（！）的左右<strong>均有一个空格</strong>，但<strong>表达式末尾没有空格</strong>。</li>\n<li>操作数由小写字母 <span class=\"katex math inline\">x</span> 与一个正整数拼接而成，正整数表示这个变量的下标。例如：<code>x10</code>，表示下标为 <span class=\"katex math inline\">10</span> 的变量 <span class=\"katex math inline\">x_{10}</span>。数据保证<strong>每个变量在表达式中出现恰好一次</strong>。</li>\n</ol></div>            </div>",
+      "text": "小 C 热衷于学习数理逻辑。有一天，他发现了一种特别的逻辑表达式。在这种逻辑表达式中，所有操作数都是变量，且它们的取值只能为 0 或 1，运算从左往右进行。如果表达式中有括号，则先计算括号内的子表达式的值。特别的，这种表达式有且仅有以下几种运算：\n与运算：a & b。当且仅当 a 和 b 的值都为 1 时，该表达式的值为 1。其余情况该表达式的值为 0。\n或运算：a | b。当且仅当 a 和 b 的值都为 0 时，该表达式的值为 0。其余情况该表达式的值为 1。\n取反运算：!a。当且仅当 a 的值为 0 时，该表达式的值为 1。其余情况该表达式的值为 0。\n小 C 想知道，给定一个逻辑表达式和其中每一个操作数的初始取值后，再取反某一个操作数的值时，原表达式的值为多少。\n为了化简对表达式的处理，我们有如下约定：\n表达式将采用后缀表达式的方式输入。\n后缀表达式的定义如下：\n如果 E 是一个操作数，则 E 的后缀表达式是它本身。\n如果 E 是 E_1~\\texttt{op}~E_2 形式的表达式，其中 \\texttt{op} 是任何二元操作符，且优先级不高于 E_1 、E_2 中括号外的操作符，则 E 的后缀式为 E_1' E_2' \\texttt{op}，其中 E_1' 、E_2' 分别为 E_1、E_2 的后缀式。\n如果 E 是 E_1 形式的表达式，则 E_1 的后缀式就是 E 的后缀式。\n同时为了方便，输入中：\n与运算符（&）、或运算符（|）、取反运算符（！）的左右均有一个空格，但表达式末尾没有空格。\n操作数由小写字母 x 与一个正整数拼接而成，正整数表示这个变量的下标。例如：x10，表示下标为 10 的变量 x_{10}。数据保证每个变量在表达式中出现恰好一次。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个字符串 <span class=\"katex math inline\">s</span>，表示上文描述的表达式。<br>\n第二行包含一个正整数 <span class=\"katex math inline\">n</span>，表示表达式中变量的数量。表达式中变量的下标为 <span class=\"katex math inline\">1,2, \\cdots , n</span>。<br>\n第三行包含 <span class=\"katex math inline\">n</span> 个整数，第 <span class=\"katex math inline\">i</span> 个整数表示变量 <span class=\"katex math inline\">x_i</span> 的初值。<br>\n第四行包含一个正整数 <span class=\"katex math inline\">q</span>，表示询问的个数。<br>\n接下来 <span class=\"katex math inline\">q</span> 行，每行一个正整数，表示需要取反的变量的下标。注意，每一个询问的修改都是<strong>临时的</strong>，即之前询问中的修改不会对后续的询问造成影响。<br>\n数据保证输入的表达式合法。变量的初值为 <span class=\"katex math inline\">0</span> 或 <span class=\"katex math inline\">1</span>。</p>\n</div>            </div>",
+      "text": "第一行包含一个字符串 s，表示上文描述的表达式。\n第二行包含一个正整数 n，表示表达式中变量的数量。表达式中变量的下标为 1,2, \\cdots , n。\n第三行包含 n 个整数，第 i 个整数表示变量 x_i 的初值。\n第四行包含一个正整数 q，表示询问的个数。\n接下来 q 行，每行一个正整数，表示需要取反的变量的下标。注意，每一个询问的修改都是临时的，即之前询问中的修改不会对后续的询问造成影响。\n数据保证输入的表达式合法。变量的初值为 0 或 1。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一共有 <span class=\"katex math inline\">q</span> 行，每行一个 <span class=\"katex math inline\">0</span> 或 <span class=\"katex math inline\">1</span>，表示该询问下表达式的值。</p>\n</div>            </div>",
+      "text": "输出一共有 q 行，每行一个 0 或 1，表示该询问下表达式的值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>x1 x2 &amp; x3 |\r\n3\r\n1 0 1\r\n3 \r\n1 \r\n2 \r\n3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n1\r\n0</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>x1 ! x2 x4 | x3 x5 ! &amp; &amp; ! &amp;\r\n5\r\n0 1 0 1 1\r\n3\r\n1\r\n3\r\n5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0\r\n1\r\n1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            x1 x2 & x3 |\r\n3\r\n1 0 1\r\n3 \r\n1 \r\n2 \r\n3\n                        \n                        \n                            输出\n                            1\r\n1\r\n0\n                        \n\n                                                    \n                                输入\n                                x1 ! x2 x4 | x3 x5 ! & & ! &\r\n5\r\n0 1 0 1 1\r\n3\r\n1\r\n3\r\n5\n                            \n                            \n                                输出\n                                0\r\n1\r\n1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 1 解释</h4>\n<p>该后缀表达式的中缀表达式形式为 <span class=\"katex math inline\">(x_1 \\operatorname{and} x_2) \\operatorname{or} x_3</span>。</p>\n<ul><li>对于第一次询问，将 <span class=\"katex math inline\">x_1</span> 的值取反。此时，三个操作数对应的赋值依次为 <span class=\"katex math inline\">0</span>，<span class=\"katex math inline\">0</span>，<span class=\"katex math inline\">1</span>。原表达式的值为 <span class=\"katex math inline\">(0\\&amp;0)|1=1</span>。</li>\n<li>对于第二次询问，将 <span class=\"katex math inline\">x_2</span> 的值取反。此时，三个操作数对应的赋值依次为 <span class=\"katex math inline\">1</span>，<span class=\"katex math inline\">1</span>，<span class=\"katex math inline\">1</span>。原表达式的值为 <span class=\"katex math inline\">(1\\&amp;1)|1=1</span>。</li>\n<li>对于第三次询问，将 <span class=\"katex math inline\">x_3</span> 的值取反。此时，三个操作数对应的赋值依次为 <span class=\"katex math inline\">1</span>，<span class=\"katex math inline\">0</span>，<span class=\"katex math inline\">0</span>。原表达式的值为 <span class=\"katex math inline\">(1\\&amp;0)|0=0</span>。</li>\n</ul>样例 2 解释\n<p>该表达式的中缀表达式形式为 <span class=\"katex math inline\">(\\operatorname{not}x_1)\\operatorname{and}(\\operatorname{not}((x_2\\operatorname{or}x_4)\\operatorname{and}(x_3\\operatorname{and}(\\operatorname{not}x_5))))</span>。</p>\n<h4>数据规模与约定</h4>\n<ul><li>对于 <span class=\"katex math inline\">20\\%</span> 的数据，表达式中有且仅有与运算（&amp;）或者或运算（|）。</li>\n<li>对于另外 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">|s| \\le 1000</span>，<span class=\"katex math inline\">q \\le 1000</span>，<span class=\"katex math inline\">n \\le 1000</span>。</li>\n<li>对于另外 <span class=\"katex math inline\">20\\%</span> 的数据，变量的初值全为 <span class=\"katex math inline\">0</span> 或全为 <span class=\"katex math inline\">1</span>。</li>\n<li>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 \\le |s| \\le 1 \\times 10^6</span>，<span class=\"katex math inline\">1 \\le q \\le 1 \\times 10^5</span>，<span class=\"katex math inline\">2 \\le n \\le 1 \\times 10^5</span>。</li>\n</ul><p>其中，<span class=\"katex math inline\">|s|</span> 表示字符串 <span class=\"katex math inline\">s</span> 的长度。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 解释\n该后缀表达式的中缀表达式形式为 (x_1 \\operatorname{and} x_2) \\operatorname{or} x_3。\n对于第一次询问，将 x_1 的值取反。此时，三个操作数对应的赋值依次为 0，0，1。原表达式的值为 (0\\&0)|1=1。\n对于第二次询问，将 x_2 的值取反。此时，三个操作数对应的赋值依次为 1，1，1。原表达式的值为 (1\\&1)|1=1。\n对于第三次询问，将 x_3 的值取反。此时，三个操作数对应的赋值依次为 1，0，0。原表达式的值为 (1\\&0)|0=0。\n样例 2 解释\n该表达式的中缀表达式形式为 (\\operatorname{not}x_1)\\operatorname{and}(\\operatorname{not}((x_2\\operatorname{or}x_4)\\operatorname{and}(x_3\\operatorname{and}(\\operatorname{not}x_5))))。\n数据规模与约定\n对于 20\\% 的数据，表达式中有且仅有与运算（&）或者或运算（|）。\n对于另外 30\\% 的数据，|s| \\le 1000，q \\le 1000，n \\le 1000。\n对于另外 20\\% 的数据，变量的初值全为 0 或全为 1。\n对于 100\\% 的数据，1 \\le |s| \\le 1 \\times 10^6，1 \\le q \\le 1 \\times 10^5，2 \\le n \\le 1 \\times 10^5。\n其中，|s| 表示字符串 s 的长度。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛</p>\n</div>                </div>",
+      "text": "noip复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "x1 x2 & x3 |\r\n3\r\n1 0 1\r\n3 \r\n1 \r\n2 \r\n3",
+      "output": "1\r\n1\r\n0"
+    },
+    {
+      "input": "x1 ! x2 x4 | x3 x5 ! & & ! &\r\n5\r\n0 1 0 1 1\r\n3\r\n1\r\n3\r\n5",
+      "output": "0\r\n1\r\n1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "700",
+    "通过人数": "380",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:29:11"
+}

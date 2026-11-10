@@ -1,0 +1,56 @@
+{
+  "id": "1301",
+  "title": "小明有没有考到90分",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1301",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明同学有一个习惯，如果考试考到 <span class=\"katex math inline\">90</span> 分及以上，他就会说 <code>yes</code> ，如果没有考到，他就不说话。</p>\n<p>请从键盘读入一个整数 <span class=\"katex math inline\">n</span> 代表小明同学 的考试成绩，判断是否要输出 <code>yes</code> 。</p>\n</div>            </div>",
+      "text": "小明同学有一个习惯，如果考试考到 90 分及以上，他就会说 yes ，如果没有考到，他就不说话。\n请从键盘读入一个整数 n 代表小明同学 的考试成绩，判断是否要输出 yes 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> 代表小明同学的考试成绩。</p>\n</div>            </div>",
+      "text": "一个整数 n 代表小明同学的考试成绩。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果考到 <span class=\"katex math inline\">90</span> 分及以上，输出 <code>yes</code>，否则不输出。</p>\n</div>            </div>",
+      "text": "如果考到 90 分及以上，输出 yes，否则不输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>95</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>yes</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            95\n                        \n                        \n                            输出\n                            yes"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "95",
+      "output": "yes"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "10107",
+    "通过人数": "6852",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:34"
+}

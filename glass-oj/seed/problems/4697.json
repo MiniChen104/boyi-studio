@@ -1,0 +1,55 @@
+{
+  "id": "4697",
+  "title": "添加说明",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4697",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>作家小明在编写小说时，需要在小说的特定位置处插入一条说明，以提高文章的可读性，让读者理解文章的背景。</p>\n<p>为简化问题，本题小明编写的小说，以一行字符串的形式读入。</p>\n<p>比如：<code>This is a funny story</code>，如果我们希望在第 <span class=\"katex math inline\">16</span> 个字符的位置（即：在 <code>funny</code> 的后面）插入一句说明 <code>(and good)</code>，则插入后的结果为：<code>This is a funny(and good) story</code>。</p>\n<p>给定小明的小说字符串 <span class=\"katex math inline\">S</span>，要插入的位置 <span class=\"katex math inline\">p</span>，以及要插入的说明内容 <span class=\"katex math inline\">T</span>，请输出插入后的结果。</p>\n</div>            </div>",
+      "text": "作家小明在编写小说时，需要在小说的特定位置处插入一条说明，以提高文章的可读性，让读者理解文章的背景。\n为简化问题，本题小明编写的小说，以一行字符串的形式读入。\n比如：This is a funny story，如果我们希望在第 16 个字符的位置（即：在 funny 的后面）插入一句说明 (and good)，则插入后的结果为：This is a funny(and good) story。\n给定小明的小说字符串 S，要插入的位置 p，以及要插入的说明内容 T，请输出插入后的结果。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，输入字符串 <span class=\"katex math inline\">S</span>。（代码字符串长度在 <span class=\"katex math inline\">[1, 500]</span> 的范围内）</p>\n<p>第二行，输入插入的位置 <span class=\"katex math inline\">p</span>。（<span class=\"katex math inline\">1 \\le p \\le 500</span>）</p>\n<p>第三行，输入要插入的内容 <span class=\"katex math inline\">T</span>。（要插入的字符串长度在 <span class=\"katex math inline\">[1, 100]</span> 的范围内）</p>\n<p>为简化问题，本题字符串 <span class=\"katex math inline\">S</span> 和 <span class=\"katex math inline\">T</span> 都<strong>不含空格</strong>。</p>\n</div>            </div>",
+      "text": "第一行，输入字符串 S。（代码字符串长度在 [1, 500] 的范围内）\n第二行，输入插入的位置 p。（1 \\le p \\le 500）\n第三行，输入要插入的内容 T。（要插入的字符串长度在 [1, 100] 的范围内）\n为简化问题，本题字符串 S 和 T 都不含空格。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，表示插入后形成的字符串。</p>\n<p>请注意：如果字符串长度为 <span class=\"katex math inline\">len</span>，则插入位置 <span class=\"katex math inline\">p \\lt 1</span> 或者 <span class=\"katex math inline\">p \\gt len</span>，那么位置 <span class=\"katex math inline\">p</span> 都是非法的，对于非法的位置 <span class=\"katex math inline\">p</span>，请输出 <code>Invalid position</code>。</p>\n</div>            </div>",
+      "text": "输出一行，表示插入后形成的字符串。\n请注意：如果字符串长度为 len，则插入位置 p \\lt 1 或者 p \\gt len，那么位置 p 都是非法的，对于非法的位置 p，请输出 Invalid position。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>Thisisafunnystory\r\n13\r\n(andgood)</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Thisisafunny(andgood)story</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>Thisisafunnystory\r\n18\r\n(andgood)</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>Invalid position</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            Thisisafunnystory\r\n13\r\n(andgood)\n                        \n                        \n                            输出\n                            Thisisafunny(andgood)story\n                        \n\n                                                    \n                                输入\n                                Thisisafunnystory\r\n18\r\n(andgood)\n                            \n                            \n                                输出\n                                Invalid position"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "Thisisafunnystory\r\n13\r\n(andgood)",
+      "output": "Thisisafunny(andgood)story"
+    },
+    {
+      "input": "Thisisafunnystory\r\n18\r\n(andgood)",
+      "output": "Invalid position"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "177",
+    "通过人数": "98",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:48"
+}

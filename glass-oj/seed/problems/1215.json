@@ -1,0 +1,61 @@
+{
+  "id": "1215",
+  "title": "Fish学数学",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1215",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>花了一个多月的时间，Fish 终于学会了比较两个数的大小。他想检测下自己是否已经真的学会了，找来了 Bug 考考他。  Bug 马上写出了 <span class=\"katex math inline\">n</span> 个数，要 Fish 数出每个数后面比他小的数的总个数， Fish 马上开始数了起来。 Bug 自己也在旁边算，可他发现自己也还不太清楚，但又不想在 Fish 面前丢脸，所以来求助你，希望你能够在 Fish 面前算出标准答案。</p>\n</div>            </div>",
+      "text": "花了一个多月的时间，Fish 终于学会了比较两个数的大小。他想检测下自己是否已经真的学会了，找来了 Bug 考考他。  Bug 马上写出了 n 个数，要 Fish 数出每个数后面比他小的数的总个数， Fish 马上开始数了起来。 Bug 自己也在旁边算，可他发现自己也还不太清楚，但又不想在 Fish 面前丢脸，所以来求助你，希望你能够在 Fish 面前算出标准答案。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为数 <span class=\"katex math inline\">n</span> ( <span class=\"katex math inline\">n \\le 200</span> )；</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行每行一个数 <span class=\"katex math inline\">a_i</span> （ <span class=\"katex math inline\"> a_i \\le 1000000</span> )。</p>\n</div>            </div>",
+      "text": "第一行为数 n ( n \\le 200 )；\n接下来 n 行每行一个数 a_i （  a_i \\le 1000000 )。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数，每个数后面比他小的总个数。</p>\n</div>            </div>",
+      "text": "一个数，每个数后面比他小的总个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n3\r\n2\r\n1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n3\r\n2\r\n1\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>比如： <span class=\"katex math inline\">3</span> 个数 <span class=\"katex math inline\">3</span>   <span class=\"katex math inline\">2</span>   <span class=\"katex math inline\">1</span> ，那么 <span class=\"katex math inline\">3</span> 后面比它小的数有 <span class=\"katex math inline\">2</span> 个， <span class=\"katex math inline\">2</span> 后面比它小的数有 <span class=\"katex math inline\">1</span> 个，每个数后面比它小的数共有 <span class=\"katex math inline\">3</span>  个；</p>\n<p>再比如： <span class=\"katex math inline\">3</span> 个数 <span class=\"katex math inline\">1</span>   <span class=\"katex math inline\">3</span>   <span class=\"katex math inline\">2</span>  ，那么 <span class=\"katex math inline\">1</span> 后面比它小的数有 <span class=\"katex math inline\">0</span> 个， <span class=\"katex math inline\">3</span> 后面比它小的数有 <span class=\"katex math inline\">1</span> 个，每个数后面比它小的数共有 <span class=\"katex math inline\">1</span> 个！</p>\n</div>\n\n                    \n                </div>",
+      "text": "比如： 3 个数 3   2   1 ，那么 3 后面比它小的数有 2 个， 2 后面比它小的数有 1 个，每个数后面比它小的数共有 3  个；\n再比如： 3 个数 1   3   2  ，那么 1 后面比它小的数有 0 个， 3 后面比它小的数有 1 个，每个数后面比它小的数共有 1 个！"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n3\r\n2\r\n1",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "6023",
+    "通过人数": "3800",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:16:23"
+}

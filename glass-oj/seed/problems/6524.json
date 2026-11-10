@@ -1,0 +1,68 @@
+{
+  "id": "6524",
+  "title": "展品运输",
+  "tags": [
+    "横琴赛",
+    "二分",
+    "贪心",
+    "双指针"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6524",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">n</span> 批展品按出库顺序排成一列，第 <span class=\"katex math inline\">i</span> 批体积为 <span class=\"katex math inline\">a_i</span>，整批不能拆开。</p>\n<p>每航次必须取走队列最前面连续若干批，<strong>不能跳批或调换顺序</strong>。运输船有两个舱：</p>\n<ul><li>主舱：总容量为 <span class=\"katex math inline\">C</span>；</li>\n<li>独立展品舱：每航次最多装本次运输中的任意一整批，该批体积不计入 <span class=\"katex math inline\">C</span>。所有批次都符合独立舱规格。</li>\n</ul><p>每航次至少运一批，两舱合计运完这一段。</p>\n<p>现在最多允许 <span class=\"katex math inline\">m</span> 航次，主舱容量 <span class=\"katex math inline\">C</span> 最小可以是多少？<strong><span class=\"katex math inline\">C</span> 允许为 0。</strong></p>\n</div>            </div>",
+      "text": "有 n 批展品按出库顺序排成一列，第 i 批体积为 a_i，整批不能拆开。\n每航次必须取走队列最前面连续若干批，不能跳批或调换顺序。运输船有两个舱：\n主舱：总容量为 C；\n独立展品舱：每航次最多装本次运输中的任意一整批，该批体积不计入 C。所有批次都符合独立舱规格。\n每航次至少运一批，两舱合计运完这一段。\n现在最多允许 m 航次，主舱容量 C 最小可以是多少？C 允许为 0。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>。</p>\n<p>第二行输入 <span class=\"katex math inline\">n</span> 个整数 <span class=\"katex math inline\">a_1,a_2,\\ldots,a_n</span>。</p>\n</div>            </div>",
+      "text": "第一行输入整数 n 和 m。\n第二行输入 n 个整数 a_1,a_2,\\ldots,a_n。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个非负整数，表示能运完全部展品的最小主舱容量 <span class=\"katex math inline\">C</span>。</p>\n</div>            </div>",
+      "text": "输出一个非负整数，表示能运完全部展品的最小主舱容量 C。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 2\r\n4 8 2 7 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 3\r\n5 9 2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 2\r\n4 8 2 7 3\n                        \n                        \n                            输出\n                            5\n                        \n\n                                                    \n                                输入\n                                3 3\r\n5 9 2\n                            \n                            \n                                输出\n                                0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 解释】</h4>\n<p>分成 <code>[4,8]</code> 和 <code>[2,7,3]</code>，独立舱分别装 8 和 7，主舱载量为 4 和 5。<span class=\"katex math inline\">C=4</span> 时至少需要 3 航次。</p>\n<h4>【样例 2 解释】</h4>\n<p>每航次只运一批并放入独立舱，主舱容量可以为 <span class=\"katex math inline\">0</span>。</p>\n<h4>数据范围</h4>\n<p><span class=\"katex math inline\">1 \\le m \\le n \\le 200000</span>，<span class=\"katex math inline\">1 \\le a_i \\le 10^9</span>。</p>\n<table><thead><tr><th>测试点</th><th>附加限制</th></tr></thead><tbody><tr><td>01—03</td><td><span class=\"katex math inline\">n \\le 16</span></td></tr><tr><td>04—06</td><td><span class=\"katex math inline\">n \\le 2000</span>，<span class=\"katex math inline\">a_i \\le 1000</span></td></tr><tr><td>07—10</td><td>完整范围</td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "【样例 1 解释】\n分成 [4,8] 和 [2,7,3]，独立舱分别装 8 和 7，主舱载量为 4 和 5。C=4 时至少需要 3 航次。\n【样例 2 解释】\n每航次只运一批并放入独立舱，主舱容量可以为 0。\n数据范围\n1 \\le m \\le n \\le 200000，1 \\le a_i \\le 10^9。\n测试点附加限制01—03n \\le 1604—06n \\le 2000，a_i \\le 100007—10完整范围"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2026 年横琴粤澳深度合作区人工智能大赛暨第八届粤港澳青少年机器人大赛，GoC 专项赛先锋组</p>\n</div>                </div>",
+      "text": "2026 年横琴粤澳深度合作区人工智能大赛暨第八届粤港澳青少年机器人大赛，GoC 专项赛先锋组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">横琴赛</span><span class=\"label label-warning\">二分</span><span class=\"label label-info\">贪心</span><span class=\"label label-danger\">双指针</span></span></p>\n</div>                </div>",
+      "text": "横琴赛二分贪心双指针"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 2\r\n4 8 2 7 3",
+      "output": "5"
+    },
+    {
+      "input": "3 3\r\n5 9 2",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "10",
+    "通过人数": "3",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:12"
+}

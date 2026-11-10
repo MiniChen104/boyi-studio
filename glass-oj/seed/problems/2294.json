@@ -1,0 +1,57 @@
+{
+  "id": "2294",
+  "title": "数的输入和输出",
+  "tags": [
+    "电子学会等级考试",
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2294",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数和双精度浮点数，先将浮点数保留 <span class=\"katex math inline\">2</span> 位小数输出，然后输出整数。</p>\n</div>            </div>",
+      "text": "输入一个整数和双精度浮点数，先将浮点数保留 2 位小数输出，然后输出整数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行两个数，分别为整数 <span class=\"katex math inline\">N</span> （不超过整型范围），双精度浮点数 <span class=\"katex math inline\">F</span> ，以一个空格分开。</p>\n</div>            </div>",
+      "text": "一行两个数，分别为整数 N （不超过整型范围），双精度浮点数 F ，以一个空格分开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行两个数，分别为保留 <span class=\"katex math inline\">2</span> 位小数输出的 <span class=\"katex math inline\">F</span> ,以及整数<span class=\"katex math inline\">N</span> ，以一个空格分开。</p>\n</div>            </div>",
+      "text": "一行两个数，分别为保留 2 位小数输出的 F ,以及整数N ，以一个空格分开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100 123.456789</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>123.46 100</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100 123.456789\n                        \n                        \n                            输出\n                            123.46 100"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会一级 202106真题</p>\n</div>                </div>",
+      "text": "电子学会一级 202106真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span><span class=\"label label-warning\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100 123.456789",
+      "output": "123.46 100"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5608",
+    "通过人数": "4071",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:51"
+}

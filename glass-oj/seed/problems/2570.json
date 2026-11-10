@@ -1,0 +1,60 @@
+{
+  "id": "2570",
+  "title": "最远点对",
+  "tags": [
+    "树形DP"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2570",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一棵 <span class=\"katex math inline\">n</span> 个结点的带权树（结点编号 <span class=\"katex math inline\">1 \\sim n</span>），树上的每条边都有一个权值。</p>\n<p>请求出该树上的最远点对的路径长度。最远点对的定义是树上任意取 <span class=\"katex math inline\">2</span> 个结点，这 <span class=\"katex math inline\">2</span> 个结点之间的路径长度最长。</p>\n</div>            </div>",
+      "text": "给定一棵 n 个结点的带权树（结点编号 1 \\sim n），树上的每条边都有一个权值。\n请求出该树上的最远点对的路径长度。最远点对的定义是树上任意取 2 个结点，这 2 个结点之间的路径长度最长。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行有一个整数 <span class=\"katex math inline\">n</span> （<span class=\"katex math inline\">1≤n≤10^5</span>）。</p>\n<p>接下来 <span class=\"katex math inline\">n-1</span> 行每行有 <span class=\"katex math inline\">3</span> 个整数 <span class=\"katex math inline\">x,y,z</span>，表示结点 <span class=\"katex math inline\">x</span> 到 结点 <span class=\"katex math inline\">y</span> 之间有一条长度为 <span class=\"katex math inline\">z</span> 的边。(<span class=\"katex math inline\">1≤x,y≤n</span>，<span class=\"katex math inline\">x \\neq y</span>，<span class=\"katex math inline\">-10^4≤z≤10^4</span>)。</p>\n</div>            </div>",
+      "text": "第 1 行有一个整数 n （1≤n≤10^5）。\n接下来 n-1 行每行有 3 个整数 x,y,z，表示结点 x 到 结点 y 之间有一条长度为 z 的边。(1≤x,y≤n，x \\neq y，-10^4≤z≤10^4)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表最远点对之间的距离。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表最远点对之间的距离。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\n2 1 1\r\n3 2 2\r\n1 4 -3\r\n5 1 5\r\n7 8 8\r\n6 5 -4\r\n7 5 -1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>15</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3\r\n1 2 -1\r\n1 3 -2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\n2 1 1\r\n3 2 2\r\n1 4 -3\r\n5 1 5\r\n7 8 8\r\n6 5 -4\r\n7 5 -1\n                        \n                        \n                            输出\n                            15\n                        \n\n                                                    \n                                输入\n                                3\r\n1 2 -1\r\n1 3 -2\n                            \n                            \n                                输出\n                                0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例 <span class=\"katex math inline\">2</span> 解释】</p>\n<p>样例 <span class=\"katex math inline\">2</span> 中所有边的权值均为负数，可以选择相同的点对，比如选择 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">1</span>，也就是自己到自己不移动，得到路径长度为 <span class=\"katex math inline\">0</span> ，也是允许的。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 2 解释】\n样例 2 中所有边的权值均为负数，可以选择相同的点对，比如选择 1 到 1，也就是自己到自己不移动，得到路径长度为 0 ，也是允许的。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树形DP</span></span></p>\n</div>                </div>",
+      "text": "树形DP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\n2 1 1\r\n3 2 2\r\n1 4 -3\r\n5 1 5\r\n7 8 8\r\n6 5 -4\r\n7 5 -1",
+      "output": "15"
+    },
+    {
+      "input": "3\r\n1 2 -1\r\n1 3 -2",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "775",
+    "通过人数": "470",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:18"
+}

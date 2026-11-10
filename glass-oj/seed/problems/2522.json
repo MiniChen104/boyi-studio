@@ -1,0 +1,56 @@
+{
+  "id": "2522",
+  "title": "开餐馆",
+  "tags": [
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2522",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>信息学院的同学小明毕业之后打算创业开餐馆，现在共有 <span class=\"katex math inline\">n</span> 个地点可供选择。  </p>\n<p>小明打算从中选择合适的位置开设一些餐馆。这 <span class=\"katex math inline\">n</span> 个地点排列在同一条直线上。</p>\n<p>我们用一个整数序列 <span class=\"katex math inline\">m_1,m_2, \\dots ,m_n</span> 来表示他们的相对位置。</p>\n<p>由于地段关系，开餐馆的利润会有所不同。我们用 <span class=\"katex math inline\">p_i</span> 表示在 <span class=\"katex math inline\">m_i</span> 处开餐馆的利润。</p>\n<p>为了避免自己的餐馆的内部竞争，餐馆之间的距离必须大于 <span class=\"katex math inline\">k</span>。</p>\n<p>请你帮助小明选择一个总利润最大的方案。</p>\n</div>            </div>",
+      "text": "信息学院的同学小明毕业之后打算创业开餐馆，现在共有 n 个地点可供选择。  \n小明打算从中选择合适的位置开设一些餐馆。这 n 个地点排列在同一条直线上。\n我们用一个整数序列 m_1,m_2, \\dots ,m_n 来表示他们的相对位置。\n由于地段关系，开餐馆的利润会有所不同。我们用 p_i 表示在 m_i 处开餐馆的利润。\n为了避免自己的餐馆的内部竞争，餐馆之间的距离必须大于 k。\n请你帮助小明选择一个总利润最大的方案。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入第一行是整数 <span class=\"katex math inline\">T</span>，表明有 <span class=\"katex math inline\">T</span> 组测试数据。紧接着有 <span class=\"katex math inline\">T</span> 组连续的测试。每组测试数据有 <span class=\"katex math inline\">3</span> 行。</p>\n<p>第 <span class=\"katex math inline\">1</span> 行：地点总数 <span class=\"katex math inline\">n</span>，距离限制 <span class=\"katex math inline\">k</span>。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行: <span class=\"katex math inline\">n</span> 个整数，表示 <span class=\"katex math inline\">n</span> 个地点的位置 <span class=\"katex math inline\">m_1,m_2, \\dots ,m_n</span> (按升序排列)。</p>\n<p>第 <span class=\"katex math inline\">3</span> 行: <span class=\"katex math inline\">n</span> 个整数，表示 <span class=\"katex math inline\">n</span> 个地点的餐馆利润 <span class=\"katex math inline\">p_1,p_2, \\dots ,p_n</span> 。</p>\n</div>            </div>",
+      "text": "输入第一行是整数 T，表明有 T 组测试数据。紧接着有 T 组连续的测试。每组测试数据有 3 行。\n第 1 行：地点总数 n，距离限制 k。\n第 2 行: n 个整数，表示 n 个地点的位置 m_1,m_2, \\dots ,m_n (按升序排列)。\n第 3 行: n 个整数，表示 n 个地点的餐馆利润 p_1,p_2, \\dots ,p_n 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共 <span class=\"katex math inline\">T</span> 行，每行输出一组测试数据可能的最大利润。</p>\n</div>            </div>",
+      "text": "输出共 T 行，每行输出一组测试数据可能的最大利润。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n3 11\r\n1 2 15\r\n10 2 30\r\n3 16\r\n1 2 15\r\n10 2 30</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>40\r\n30</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n3 11\r\n1 2 15\r\n10 2 30\r\n3 16\r\n1 2 15\r\n10 2 30\n                        \n                        \n                            输出\n                            40\r\n30"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，满足 <span class=\"katex math inline\">1 ≤ T ≤ 1000</span>，<span class=\"katex math inline\">n &lt; 100</span>，<span class=\"katex math inline\">0 &lt; k &lt; 1000</span>，<span class=\"katex math inline\">0 &lt; m_i &lt; 10^6</span>，<span class=\"katex math inline\">0 &lt; p_i &lt; 1000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 100\\% 的数据，满足 1 ≤ T ≤ 1000，n < 100，0 < k < 1000，0 < m_i < 10^6，0 < p_i < 1000。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n3 11\r\n1 2 15\r\n10 2 30\r\n3 16\r\n1 2 15\r\n10 2 30",
+      "output": "40\r\n30"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "402",
+    "通过人数": "247",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:05"
+}

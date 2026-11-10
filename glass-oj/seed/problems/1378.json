@@ -1,0 +1,56 @@
+{
+  "id": "1378",
+  "title": "机器分配",
+  "tags": [
+    "动态规划"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1378",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>总公司拥有高效设备 <span class=\"katex math inline\">M</span> 台，准备分给下属的 <span class=\"katex math inline\">N</span> 个分公司。各分公司若获得这些设备，可以为国家提供一定的盈利。问：如何分配这 <span class=\"katex math inline\">M</span> 台设备才能使国家得到的盈利最大？求出最大盈利值。  </p>\n<p>其中 <span class=\"katex math inline\">M \\le 15</span>，<span class=\"katex math inline\">N \\le 10</span>。分配原则：每个公司有权获得任意数目的设备，但总台数不超过设备数 <span class=\"katex math inline\">M</span> 。</p>\n</div>            </div>",
+      "text": "总公司拥有高效设备 M 台，准备分给下属的 N 个分公司。各分公司若获得这些设备，可以为国家提供一定的盈利。问：如何分配这 M 台设备才能使国家得到的盈利最大？求出最大盈利值。  \n其中 M \\le 15，N \\le 10。分配原则：每个公司有权获得任意数目的设备，但总台数不超过设备数 M 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个数，第一个数是分公司数 <span class=\"katex math inline\">N</span> ，第二个数是设备台数 <span class=\"katex math inline\">M</span> 。  </p>\n<p>接下来是一个 <span class=\"katex math inline\">N \\times M</span> 的矩阵，表明了第 <span class=\"katex math inline\">i</span> 个公司分配 <span class=\"katex math inline\">j</span> 台机器的盈利。</p>\n</div>            </div>",
+      "text": "第一行有两个数，第一个数是分公司数 N ，第二个数是设备台数 M 。  \n接下来是一个 N \\times M 的矩阵，表明了第 i 个公司分配 j 台机器的盈利。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为一个整数，代表最大盈利的值。  </p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行两个数，用空格隔开，第一个数代表了第 <span class=\"katex math inline\">i</span> 个公司的序号，第二个数代表该公司分得机器的数量。</p>\n</div>            </div>",
+      "text": "第一行为一个整数，代表最大盈利的值。  \n接下来 N 行，每行两个数，用空格隔开，第一个数代表了第 i 个公司的序号，第二个数代表该公司分得机器的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3\r\n30 40 50\r\n20 30 50\r\n20 25 30</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>70\r\n1 1\r\n2 1\r\n3 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\r\n30 40 50\r\n20 30 50\r\n20 25 30\n                        \n                        \n                            输出\n                            70\r\n1 1\r\n2 1\r\n3 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>动态规划</p>\n</div>                </div>",
+      "text": "动态规划"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3\r\n30 40 50\r\n20 30 50\r\n20 25 30",
+      "output": "70\r\n1 1\r\n2 1\r\n3 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1774",
+    "通过人数": "1119",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:18:37"
+}

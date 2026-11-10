@@ -1,0 +1,61 @@
+{
+  "id": "2475",
+  "title": "大数组区间和",
+  "tags": [
+    "贪心",
+    "双指针"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2475",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一个长度为 <span class=\"katex math inline\">N</span> 的数值，元素分别为 <span class=\"katex math inline\">a_1, a_2,..., a_n</span>，再给一个整数 <span class=\"katex math inline\">K</span>，问数组中有多少个连续的区间，满足区间的和至少为 <span class=\"katex math inline\">K</span> 。</p>\n</div>            </div>",
+      "text": "有一个长度为 N 的数值，元素分别为 a_1, a_2,..., a_n，再给一个整数 K，问数组中有多少个连续的区间，满足区间的和至少为 K 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个整数 <span class=\"katex math inline\">N,K</span>，接下来有 <span class=\"katex math inline\">N</span> 个整数。</p>\n</div>            </div>",
+      "text": "第一行两个整数 N,K，接下来有 N 个整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示答案。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 10\r\n6 1 2 7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10 53462\r\n103 35322 232 342 21099 90000 18843 9010 35221 19352</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>36</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 10\r\n6 1 2 7\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                10 53462\r\n103 35322 232 342 21099 90000 18843 9010 35221 19352\n                            \n                            \n                                输出\n                                36"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p><span class=\"katex math inline\">1 ≤ N ≤ 10^5</span>，<span class=\"katex math inline\">1 ≤a_i ≤ 10^5</span>，<span class=\"katex math inline\">1 ≤ K ≤ 10^{10}</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n1 ≤ N ≤ 10^5，1 ≤a_i ≤ 10^5，1 ≤ K ≤ 10^{10}。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">贪心</span><span class=\"label label-warning\">双指针</span></span></p>\n</div>                </div>",
+      "text": "贪心双指针"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 10\r\n6 1 2 7",
+      "output": "2"
+    },
+    {
+      "input": "10 53462\r\n103 35322 232 342 21099 90000 18843 9010 35221 19352",
+      "output": "36"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1104",
+    "通过人数": "487",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:48"
+}

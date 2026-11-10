@@ -1,0 +1,56 @@
+{
+  "id": "2271",
+  "title": "括号画家",
+  "tags": [
+    "电子学会等级考试"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/2271",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Candela是一名漫画家，她有一个奇特的爱好，就是在纸上画括号。这一天，刚刚起床的Candela画了一排括号序列，其中包含小括号()、中括号[]和大括号{}，总长度为N。这排随意绘制的括号序列显得杂乱无章，于是Candela定义了什么样的括号序列是美观的：\n(1) 空的括号序列是美观的；\n(2) 若括号序列A是美观的，则括号序列(A)、[A]、{A}也是美观的；\n(3) 若括号序列A、B都是美观的，则括号序列AB也是美观的；\n例如 (){} 是美观的括号序列，而 )({)[}]( 则不是。\n现在Candela想知道她画出的括号序列是不是美观的。你能帮帮她吗？</p>\n</div>            </div>",
+      "text": "Candela是一名漫画家，她有一个奇特的爱好，就是在纸上画括号。这一天，刚刚起床的Candela画了一排括号序列，其中包含小括号()、中括号[]和大括号{}，总长度为N。这排随意绘制的括号序列显得杂乱无章，于是Candela定义了什么样的括号序列是美观的：\n(1) 空的括号序列是美观的；\n(2) 若括号序列A是美观的，则括号序列(A)、[A]、{A}也是美观的；\n(3) 若括号序列A、B都是美观的，则括号序列AB也是美观的；\n例如 (){} 是美观的括号序列，而 )({)[}]( 则不是。\n现在Candela想知道她画出的括号序列是不是美观的。你能帮帮她吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个括号序列，长度不超过10000。</p>\n</div>            </div>",
+      "text": "一个括号序列，长度不超过10000。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果它是美观的，输出Yes，否则输出No。</p>\n</div>            </div>",
+      "text": "如果它是美观的，输出Yes，否则输出No。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>{}[(){}]()</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Yes</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            {}[(){}]()\n                        \n                        \n                            输出\n                            Yes"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会六级</p>\n</div>                </div>",
+      "text": "电子学会六级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "{}[(){}]()",
+      "output": "Yes"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "225",
+    "通过人数": "138",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:30:34"
+}

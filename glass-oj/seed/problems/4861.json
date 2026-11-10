@@ -1,0 +1,56 @@
+{
+  "id": "4861",
+  "title": "数字分类",
+  "tags": [
+    "蓝桥等考",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4861",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个整数 <span class=\"katex math inline\">N</span>，判断 <span class=\"katex math inline\">N</span> 为哪一类整数。</p>\n</div>            </div>",
+      "text": "给定一个整数 N，判断 N 为哪一类整数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数 <span class=\"katex math inline\">N</span>。(<span class=\"katex math inline\">N</span> 在int范围内)</p>\n</div>            </div>",
+      "text": "输入一个整数 N。(N 在int范围内)"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，如果 <span class=\"katex math inline\">N</span>小于 <span class=\"katex math inline\">0</span>，输出 <code>-1</code>;如果 <span class=\"katex math inline\">N</span> 为<span class=\"katex math inline\">0</span>，输出 <code>0</code> ;如果 <span class=\"katex math inline\">N</span> 大于 <code>0</code>，输出 <code>1</code>。</p>\n</div>            </div>",
+      "text": "输出一个整数，如果 N小于 0，输出 -1;如果 N 为0，输出 0 ;如果 N 大于 0，输出 1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>-300</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>-1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>0</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            -300\n                        \n                        \n                            输出\n                            -1\n                        \n\n                                                    \n                                输入\n                                0\n                            \n                            \n                                输出\n                                0"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">分支</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "-300",
+      "output": "-1"
+    },
+    {
+      "input": "0",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "319",
+    "通过人数": "227",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:53"
+}

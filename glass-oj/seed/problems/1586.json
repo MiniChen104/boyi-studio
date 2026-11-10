@@ -1,0 +1,56 @@
+{
+  "id": "1586",
+  "title": "扫地机器人",
+  "tags": [
+    "深搜"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1586",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Mike同学在为扫地机器人设计一个在矩形区域中行走的算法，Mike是这样设计的：先把机器人放在出发点 <span class=\"katex math inline\">(1,1)</span> 点上，机器人在每个点上都会沿用如下的规则来判断下一个该去的点是哪里。规则：优先向右，如果向右不能走（比如：右侧出了矩形或者右侧扫过了）则尝试向下，向下不能走则尝试向左，向左不能走则尝试向上；直到所有的点都扫过。  </p>\n<p>Mike为了验证自己设计的算法是否正确，打算先模拟一下这个算法，每当机器人走过一个单元格时，会在单元格内标记一个数字，这个数字从 <span class=\"katex math inline\">1</span> 开始，每经过一个单元格数字会递增 <span class=\"katex math inline\">1</span> ，直到所有的单元格都扫一遍，也就是所有的单元格都标记过数字，机器人会自动停止。  </p>\n<p>比如：如果机器人按照上面的规则，清扫一个 <span class=\"katex math inline\">3 \\times 4</span> 大小的矩形区域，那么标记数字的结果如下图所示。  </p>\n<p><img src=\"https://assets.boyi.local/11b6f9377f1eae162b562889.png\"></p>\n<p>再比如：如果机器人按照上面的规则，清扫一个 <span class=\"katex math inline\">5 \\times 5</span> 大小的矩形区域，那么标记数字的结果如下图所示。  </p>\n<p><img src=\"https://assets.boyi.local/b183279184c23f12046e26e8.png\"></p>\n<p>请你帮助Mike设计一个程序，按照上面的规则，将一个 <span class=\"katex math inline\">n \\times m</span> 大小的矩形，标记一下数字，输出最终标记的结果。</p>\n</div>            </div>",
+      "text": "Mike同学在为扫地机器人设计一个在矩形区域中行走的算法，Mike是这样设计的：先把机器人放在出发点 (1,1) 点上，机器人在每个点上都会沿用如下的规则来判断下一个该去的点是哪里。规则：优先向右，如果向右不能走（比如：右侧出了矩形或者右侧扫过了）则尝试向下，向下不能走则尝试向左，向左不能走则尝试向上；直到所有的点都扫过。  \nMike为了验证自己设计的算法是否正确，打算先模拟一下这个算法，每当机器人走过一个单元格时，会在单元格内标记一个数字，这个数字从 1 开始，每经过一个单元格数字会递增 1 ，直到所有的单元格都扫一遍，也就是所有的单元格都标记过数字，机器人会自动停止。  \n比如：如果机器人按照上面的规则，清扫一个 3 \\times 4 大小的矩形区域，那么标记数字的结果如下图所示。  \n\n再比如：如果机器人按照上面的规则，清扫一个 5 \\times 5 大小的矩形区域，那么标记数字的结果如下图所示。  \n\n请你帮助Mike设计一个程序，按照上面的规则，将一个 n \\times m 大小的矩形，标记一下数字，输出最终标记的结果。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行内有 <span class=\"katex math inline\">2</span> 个两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> ，用空格隔开，分别代表矩形区域的行数（高）和列数（宽）。</p>\n<p><span class=\"katex math inline\">1 ＜ n,m ＜ 10</span>。</p>\n</div>            </div>",
+      "text": "一行内有 2 个两个整数 n 和 m ，用空格隔开，分别代表矩形区域的行数（高）和列数（宽）。\n1 ＜ n,m ＜ 10。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出按题意机器人走过每个点之后，标记数字的结果，每个数字输出时场宽设置为 <span class=\"katex math inline\">3</span>。</p>\n</div>            </div>",
+      "text": "输出按题意机器人走过每个点之后，标记数字的结果，每个数字输出时场宽设置为 3。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>  1  2  3  4\r\n 10 11 12  5\r\n  9  8  7  6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 4\n                        \n                        \n                            输出\n                              1  2  3  4\r\n 10 11 12  5\r\n  9  8  7  6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>深搜</p>\n</div>                </div>",
+      "text": "深搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">深搜</span></span></p>\n</div>                </div>",
+      "text": "深搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 4",
+      "output": "  1  2  3  4\r\n 10 11 12  5\r\n  9  8  7  6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "23735",
+    "通过人数": "15715",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:28"
+}

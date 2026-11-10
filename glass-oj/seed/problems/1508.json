@@ -1,0 +1,57 @@
+{
+  "id": "1508",
+  "title": "寻找祖先",
+  "tags": [
+    "并查集",
+    "容器"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1508",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出充足的父子关系，请你编写程序找到某个人的最早的祖先。</p>\n<p>规定每个人的名字都没有空格，且没有任意两个人的名字相同。最多可能有 <span class=\"katex math inline\">1000</span> 组父子关系，总人数最多可能达到 <span class=\"katex math inline\">50000</span> 人，家谱中的记载不超过 <span class=\"katex math inline\">30</span> 代。</p>\n</div>            </div>",
+      "text": "给出充足的父子关系，请你编写程序找到某个人的最早的祖先。\n规定每个人的名字都没有空格，且没有任意两个人的名字相同。最多可能有 1000 组父子关系，总人数最多可能达到 50000 人，家谱中的记载不超过 30 代。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入由多行组成，首先是一系列有关父子关系的描述，其中每一组父子关系中父亲只有一行，儿子可能有若干行；用 <code>#name</code> 的形式描写一组父子关系中的父亲的名字，用 <code>+name</code> 的形式描写一组父子关系中的儿子的名字，儿子的名字一定紧接着父亲的名字出现；</p>\n<p>接下来用 <code>?name</code> 的形式表示要求该人的最早的祖先；（ <code>?name</code> 一定在父子关系描述结束之后出现）</p>\n<p>最后用单独的一个 <code>$</code> 表示文件结束。</p>\n</div>            </div>",
+      "text": "输入由多行组成，首先是一系列有关父子关系的描述，其中每一组父子关系中父亲只有一行，儿子可能有若干行；用 #name 的形式描写一组父子关系中的父亲的名字，用 +name 的形式描写一组父子关系中的儿子的名字，儿子的名字一定紧接着父亲的名字出现；\n接下来用 ?name 的形式表示要求该人的最早的祖先；（ ?name 一定在父子关系描述结束之后出现）\n最后用单独的一个 $ 表示文件结束。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按照输入文件的要求顺序，求出每一个要找祖先的人的祖先，格式：本人的名字 <span class=\"katex math inline\">+</span> 一个空格 <span class=\"katex math inline\">+</span> 祖先的名字 <span class=\"katex math inline\">+</span> 回车。</p>\n</div>            </div>",
+      "text": "按照输入文件的要求顺序，求出每一个要找祖先的人的祖先，格式：本人的名字 + 一个空格 + 祖先的名字 + 回车。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>#George\r\n+Rodney\r\n#Arthur\r\n+Gareth\r\n+Walter\r\n#Gareth\r\n+Edward\r\n?Edward\r\n?Walter\r\n?Rodney\r\n?Arthur\r\n$</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Edward Arthur\r\nWalter Arthur\r\nRodney George\r\nArthur Arthur</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            #George\r\n+Rodney\r\n#Arthur\r\n+Gareth\r\n+Walter\r\n#Gareth\r\n+Edward\r\n?Edward\r\n?Walter\r\n?Rodney\r\n?Arthur\r\n$\n                        \n                        \n                            输出\n                            Edward Arthur\r\nWalter Arthur\r\nRodney George\r\nArthur Arthur"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>并查集 容器</p>\n</div>                </div>",
+      "text": "并查集 容器"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">并查集</span><span class=\"label label-warning\">容器</span></span></p>\n</div>                </div>",
+      "text": "并查集容器"
+    }
+  ],
+  "samples": [
+    {
+      "input": "#George\r\n+Rodney\r\n#Arthur\r\n+Gareth\r\n+Walter\r\n#Gareth\r\n+Edward\r\n?Edward\r\n?Walter\r\n?Rodney\r\n?Arthur\r\n$",
+      "output": "Edward Arthur\r\nWalter Arthur\r\nRodney George\r\nArthur Arthur"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "674",
+    "通过人数": "382",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:25"
+}

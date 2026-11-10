@@ -1,0 +1,56 @@
+{
+  "id": "4972",
+  "title": "素数子区间",
+  "tags": [
+    "嵌套循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4972",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个数组，从数组中取出若干个<strong>连续</strong>的元素（至少取一个元素）称为<strong>数组的子区间</strong>。</p>\n<p>请求出数组中子区间和为素数的子区间个数。</p>\n</div>            </div>",
+      "text": "给定一个数组，从数组中取出若干个连续的元素（至少取一个元素）称为数组的子区间。\n请求出数组中子区间和为素数的子区间个数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">n</span>。（<span class=\"katex math inline\">1 ≤ n ≤ 100</span>）</p>\n<p>第二行 <span class=\"katex math inline\">n</span> 个整数 <span class=\"katex math inline\">a[i]</span>。（<span class=\"katex math inline\">1 ≤ a[i] ≤ 1000</span>）</p>\n</div>            </div>",
+      "text": "第一行一个整数 n。（1 ≤ n ≤ 100）\n第二行 n 个整数 a[i]。（1 ≤ a[i] ≤ 1000）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示区间和为素数的子区间个数。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示区间和为素数的子区间个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n4 3 1 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n4 3 1 2\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<p>样例 <span class=\"katex math inline\">1</span> 共有 <span class=\"katex math inline\">4</span> 个元素，能取出的子区间共有 <span class=\"katex math inline\">10</span> 个，其中子区间和为素数的子区间，分别为：</p>\n<ul><li>下标范围 <span class=\"katex math inline\">[1, 2]</span>，区间和为 <span class=\"katex math inline\">7</span>。</li>\n<li>下标范围 <span class=\"katex math inline\">[2, 2]</span>，区间和为 <span class=\"katex math inline\">3</span>。</li>\n<li>下标范围 <span class=\"katex math inline\">[3, 4]</span>，区间和为 <span class=\"katex math inline\">3</span>。</li>\n<li>下标范围 <span class=\"katex math inline\">[4, 4]</span>，区间和为 <span class=\"katex math inline\">2</span>。</li>\n</ul><p>共有 <span class=\"katex math inline\">4</span> 个。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 解释\n样例 1 共有 4 个元素，能取出的子区间共有 10 个，其中子区间和为素数的子区间，分别为：\n下标范围 [1, 2]，区间和为 7。\n下标范围 [2, 2]，区间和为 3。\n下标范围 [3, 4]，区间和为 3。\n下标范围 [4, 4]，区间和为 2。\n共有 4 个。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">嵌套循环</span></span></p>\n</div>                </div>",
+      "text": "嵌套循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n4 3 1 2",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "164",
+    "通过人数": "93",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:42"
+}

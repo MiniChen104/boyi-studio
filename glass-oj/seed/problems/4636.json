@@ -1,0 +1,57 @@
+{
+  "id": "4636",
+  "title": "斗鱼养殖场",
+  "tags": [
+    "蓝桥杯STEMA",
+    "压状DP"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4636",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>聪聪用钢丝网建造了一批同样大小的正方体网箱，将它们拼成了 <span class=\"katex math inline\">M \\times N</span> 的矩形网格（每个格子都是一个网箱），放在池塘里，专门用来养殖一种凶猛的斗鱼。斗鱼天生好斗，只要旁边有其它斗鱼靠近，哪怕隔着钢丝网，它们都能斗个你死我活，所以每个网箱里最多只能饲养一条斗鱼；而且，两条斗鱼必须在不相邻的网箱（竖直或水平方向）。</p>\n<p>另外，聪聪在某些网箱里还安装了养殖设备，这些网箱里也不能养斗鱼。</p>\n<p>聪聪想知道，这组网箱一共有多少种可行的饲养方案（至少养一条斗鱼）。由于方案数量比较大，所以只需要求出方案数量对 <span class=\"katex math inline\">100000007</span> 的取模结果。</p>\n<p>例如：<span class=\"katex math inline\">M = 2</span>，<span class=\"katex math inline\">N = 2</span>，矩形网格的格局如图所示（蓝色为水，灰色为设备）：</p>\n<p><img src=\"https://assets.boyi.local/9dd3be8b72edab7cbeee88c8.png\"></p>\n<p>饲养 <span class=\"katex math inline\">1</span> 条鱼的方案有 <span class=\"katex math inline\">3</span> 种（ <span class=\"katex math inline\">3</span> 个蓝色网箱都可以养鱼）；</p>\n<p>饲养 <span class=\"katex math inline\">2</span> 条鱼的方案有 <span class=\"katex math inline\">1</span> 种（用左上角和右下角的蓝色网箱养鱼）；</p>\n<p>这个 <span class=\"katex math inline\">2 \\times 2</span> 的矩形网格有 <span class=\"katex math inline\">4</span> 种饲养方案，<span class=\"katex math inline\">4</span> 对 <span class=\"katex math inline\">100000007</span> 取模的结果是 <span class=\"katex math inline\">4</span>，故输出 <span class=\"katex math inline\">4</span>。</p>\n</div>            </div>",
+      "text": "聪聪用钢丝网建造了一批同样大小的正方体网箱，将它们拼成了 M \\times N 的矩形网格（每个格子都是一个网箱），放在池塘里，专门用来养殖一种凶猛的斗鱼。斗鱼天生好斗，只要旁边有其它斗鱼靠近，哪怕隔着钢丝网，它们都能斗个你死我活，所以每个网箱里最多只能饲养一条斗鱼；而且，两条斗鱼必须在不相邻的网箱（竖直或水平方向）。\n另外，聪聪在某些网箱里还安装了养殖设备，这些网箱里也不能养斗鱼。\n聪聪想知道，这组网箱一共有多少种可行的饲养方案（至少养一条斗鱼）。由于方案数量比较大，所以只需要求出方案数量对 100000007 的取模结果。\n例如：M = 2，N = 2，矩形网格的格局如图所示（蓝色为水，灰色为设备）：\n\n饲养 1 条鱼的方案有 3 种（ 3 个蓝色网箱都可以养鱼）；\n饲养 2 条鱼的方案有 1 种（用左上角和右下角的蓝色网箱养鱼）；\n这个 2 \\times 2 的矩形网格有 4 种饲养方案，4 对 100000007 取模的结果是 4，故输出 4。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入两个正整数 <span class=\"katex math inline\">M</span> 和 <span class=\"katex math inline\">N（2 \\le M \\le 100，2 \\le N \\le 10）</span>，分别表示矩形网格的行数和列数，两个正整数之间以一个空格隔开。</p>\n<p>第二行开始输入 <span class=\"katex math inline\">M</span> 行，每行 <span class=\"katex math inline\">N</span> 个整数（只能是 <span class=\"katex math inline\">1</span> 或 <span class=\"katex math inline\">0</span> ），<span class=\"katex math inline\">1</span> 表示水，<span class=\"katex math inline\">0</span> 表示设备，整数之间以一个空格隔开。</p>\n</div>            </div>",
+      "text": "第一行输入两个正整数 M 和 N（2 \\le M \\le 100，2 \\le N \\le 10），分别表示矩形网格的行数和列数，两个正整数之间以一个空格隔开。\n第二行开始输入 M 行，每行 N 个整数（只能是 1 或 0 ），1 表示水，0 表示设备，整数之间以一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示至少养 <span class=\"katex math inline\">1</span> 条斗鱼的饲养方案数量对 <span class=\"katex math inline\">100000007</span> 取模的结果。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示至少养 1 条斗鱼的饲养方案数量对 100000007 取模的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 2\r\n1 1\r\n0 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 2\r\n1 1\r\n0 1\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯十五届STEMA考试 C++试卷（23年8月）</p>\n</div>                </div>",
+      "text": "蓝桥杯十五届STEMA考试 C++试卷（23年8月）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯STEMA</span><span class=\"label label-warning\">压状DP</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯STEMA压状DP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 2\r\n1 1\r\n0 1",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "88",
+    "通过人数": "31",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:13"
+}

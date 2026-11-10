@@ -1,0 +1,57 @@
+{
+  "id": "2360",
+  "title": "最多子串重复次数",
+  "tags": [
+    "哈希",
+    "KMP"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2360",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定若干个长度 <span class=\"katex math inline\">≤10^6</span> 的字符串，询问每个字符串最多是由多少个相同的子字符串重复连接而成的。如：<span class=\"katex math inline\">ababab</span> 则最多有 <span class=\"katex math inline\">3</span> 个 <span class=\"katex math inline\">ab</span> 连接而成。</p>\n</div>            </div>",
+      "text": "给定若干个长度 ≤10^6 的字符串，询问每个字符串最多是由多少个相同的子字符串重复连接而成的。如：ababab 则最多有 3 个 ab 连接而成。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入若干行（所有行的字符串的长度之和<span class=\"katex math inline\">≤10^7</span>），每行有一个字符串，字符串仅含英语小写字母。特别的，字符串可能为 <code>.</code> 即一个半角句号，此时输入结束。</p>\n</div>            </div>",
+      "text": "输入若干行（所有行的字符串的长度之和≤10^7），每行有一个字符串，字符串仅含英语小写字母。特别的，字符串可能为 . 即一个半角句号，此时输入结束。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每行输入，输出一个整数，代表计算的结果。</p>\n</div>            </div>",
+      "text": "对于每行输入，输出一个整数，代表计算的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>abcd\r\naaaa\r\nababab\r\n.</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n4\r\n3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            abcd\r\naaaa\r\nababab\r\n.\n                        \n                        \n                            输出\n                            1\r\n4\r\n3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>POJ</p>\n</div>                </div>",
+      "text": "POJ"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">哈希</span><span class=\"label label-warning\">KMP</span></span></p>\n</div>                </div>",
+      "text": "哈希KMP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "abcd\r\naaaa\r\nababab\r\n.",
+      "output": "1\r\n4\r\n3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2140",
+    "通过人数": "1195",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:28"
+}

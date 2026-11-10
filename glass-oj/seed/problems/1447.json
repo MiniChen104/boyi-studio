@@ -1,0 +1,46 @@
+{
+  "id": "1447",
+  "title": "统计4位的回文数",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1447",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>回文数指的是正过来读和反过来读都是一样的数，比如 <span class=\"katex math inline\">1661</span> 、 <span class=\"katex math inline\">2772</span> 都是回文数，请你编程找出所有的 <span class=\"katex math inline\">4</span> 位的回文数。</p>\n</div>            </div>",
+      "text": "回文数指的是正过来读和反过来读都是一样的数，比如 1661 、 2772 都是回文数，请你编程找出所有的 4 位的回文数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无</p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>由小到大输出所有的 <span class=\"katex math inline\">4</span> 位回文数，每行 <span class=\"katex math inline\">1</span> 个。</p>\n</div>            </div>",
+      "text": "由小到大输出所有的 4 位回文数，每行 1 个。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "23186",
+    "通过人数": "16814",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:19:35"
+}

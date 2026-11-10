@@ -1,0 +1,64 @@
+{
+  "id": "1950",
+  "title": "蓝桥杯赛迷宫",
+  "tags": [
+    "蓝桥杯"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1950",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>把一个 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列的字符阵列看做一个迷宫，迷宫仅包含 <code>L</code>、<code>Q</code>、<code>B</code>、<code>S</code> 中的大写字母（蓝桥杯赛的汉语拼音首字母）。</p>\n<p>初始时，你可以从任意一个 <code>L</code> 字母开始，移向相邻的 <code>Q</code> 字母，然后从此 <code>Q</code> 字母出发，移向相邻的 <code>B</code> 字母，然后从此 <code>B</code> 字母出发，移向相邻的 <code>S</code> 字母……。这样，你就算是走过了一个 <code>LQBS</code> 字符序列。</p>\n<p>接下来，仍然可以从此 <code>S</code> 字母出发，移向相邻的 <code>L</code> 字母……，重复上述的动作，你就可以不断地走过 <code>LQBS</code> 序列。</p>\n<p>请注意，所谓相邻仅包含上、下、左、右 <span class=\"katex math inline\">4</span> 个方向，且只能从 <code>L-&gt;Q</code>，从 <code>Q-&gt;B</code>，从 <code>B-&gt;S</code>，从 <code>S-&gt;L</code>。</p>\n<p>可以想像，由于选择的出发点不同，我们有可能在迷宫中走过无数次的 <code>LQBS</code> ，或者是有限次的 <code>LQBS</code> ，或者一次也走不了。</p>\n<p>编程实现：请你编写程序，求出在给定的迷宫中，我们最多可以走过多少次 <code>LQBS</code>?</p>\n</div>            </div>",
+      "text": "把一个 n 行 m 列的字符阵列看做一个迷宫，迷宫仅包含 L、Q、B、S 中的大写字母（蓝桥杯赛的汉语拼音首字母）。\n初始时，你可以从任意一个 L 字母开始，移向相邻的 Q 字母，然后从此 Q 字母出发，移向相邻的 B 字母，然后从此 B 字母出发，移向相邻的 S 字母……。这样，你就算是走过了一个 LQBS 字符序列。\n接下来，仍然可以从此 S 字母出发，移向相邻的 L 字母……，重复上述的动作，你就可以不断地走过 LQBS 序列。\n请注意，所谓相邻仅包含上、下、左、右 4 个方向，且只能从 L->Q，从 Q->B，从 B->S，从 S->L。\n可以想像，由于选择的出发点不同，我们有可能在迷宫中走过无数次的 LQBS ，或者是有限次的 LQBS ，或者一次也走不了。\n编程实现：请你编写程序，求出在给定的迷宫中，我们最多可以走过多少次 LQBS?"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：正整数 <span class=\"katex math inline\">n,m</span>，表示迷宫的规模为 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列，<span class=\"katex math inline\">0 &lt; m &lt; 100，0 &lt; n &lt; 100</span>。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行：每行 <span class=\"katex math inline\">m</span> 个符合题意的字母，字母间无空格。</p>\n</div>            </div>",
+      "text": "第一行：正整数 n,m，表示迷宫的规模为 n 行 m 列，0 < m < 100，0 < n < 100。\n接下来的 n 行：每行 m 个符合题意的字母，字母间无空格。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数。</p>\n<p>即：如果在迷宫中可以无限次的走过 <code>LQBS</code>，输出 <span class=\"katex math inline\">-1</span>，否则，输出可以走过 <code>LQBS</code> 的最多次数。</p>\n</div>            </div>",
+      "text": "一个整数。\n即：如果在迷宫中可以无限次的走过 LQBS，输出 -1，否则，输出可以走过 LQBS 的最多次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 2\r\nLQ</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 3\r\nLSB\r\nQBQ\r\nBSL</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>-1</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4 4\r\nBLQB\r\nBBQS\r\nSBQL\r\nQQQQ</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            1 2\r\nLQ\n                        \n                        \n                            输出\n                            0\n                        \n\n                                                    \n                                输入\n                                3 3\r\nLSB\r\nQBQ\r\nBSL\n                            \n                            \n                                输出\n                                -1\n                            \n                        \n                                                    \n                                输入\n                                4 4\r\nBLQB\r\nBBQS\r\nSBQL\r\nQQQQ\n                            \n                            \n                                输出\n                                2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯</p>\n</div>                </div>",
+      "text": "蓝桥杯"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 2\r\nLQ",
+      "output": "0"
+    },
+    {
+      "input": "3 3\r\nLSB\r\nQBQ\r\nBSL",
+      "output": "-1"
+    },
+    {
+      "input": "4 4\r\nBLQB\r\nBBQS\r\nSBQL\r\nQQQQ",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "520",
+    "通过人数": "196",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:26:26"
+}

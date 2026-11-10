@@ -1,0 +1,57 @@
+{
+  "id": "6063",
+  "title": "游乐园门票",
+  "tags": [
+    "信息素养大赛",
+    "25年中学组复赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6063",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学校组织全年级同学去游乐园春游。游乐园门票分为学生票和成人票，学生票 <span class=\"katex math inline\">a</span> 元张，成人票 <span class=\"katex math inline\">b</span> 元一张。共有 <span class=\"katex math inline\">x</span> 名同学参加春游，用于买票的经费为 <span class=\"katex math inline\">y</span> 元，请计算为 <span class=\"katex math inline\">x</span> 名同学买票后，剩下的钱最多能为多少位教师买票。</p>\n</div>            </div>",
+      "text": "学校组织全年级同学去游乐园春游。游乐园门票分为学生票和成人票，学生票 a 元张，成人票 b 元一张。共有 x 名同学参加春游，用于买票的经费为 y 元，请计算为 x 名同学买票后，剩下的钱最多能为多少位教师买票。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>四个整数 <span class=\"katex math inline\">a</span>, <span class=\"katex math inline\">b</span>, <span class=\"katex math inline\">x</span>, <span class=\"katex math inline\">y</span>,分别代表学生票价格、成人票价格、同学人数、经费。保证经费足够购买 <span class=\"katex math inline\">x</span> 张学生票。</p>\n</div>            </div>",
+      "text": "四个整数 a, b, x, y,分别代表学生票价格、成人票价格、同学人数、经费。保证经费足够购买 x 张学生票。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，剩下的钱最多能为多少位教师买票。</p>\n</div>            </div>",
+      "text": "一个整数，剩下的钱最多能为多少位教师买票。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>20  40  100  2201</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            20  40  100  2201\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例说明】</h4>\n<p>买 <span class=\"katex math inline\">100</span> 张学生票花费 <span class=\"katex math inline\">20 * 100=2000</span>元,剩余 <span class=\"katex math inline\">201</span> 元最多购买 <span class=\"katex math inline\">201/40=5</span> 张成人票。</p>\n<h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">1 \\le a,b,x \\le 100</span>,<span class=\"katex math inline\">a * x \\le y \\le 100000</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例说明】\n买 100 张学生票花费 20 * 100=2000元,剩余 201 元最多购买 201/40=5 张成人票。\n【数据范围】\n1 \\le a,b,x \\le 100,a * x \\le y \\le 100000"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">信息素养大赛</span><span class=\"label label-warning\">25年中学组复赛</span></span></p>\n</div>                </div>",
+      "text": "信息素养大赛25年中学组复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "20  40  100  2201",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "237",
+    "通过人数": "216",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:09"
+}

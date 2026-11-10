@@ -1,0 +1,58 @@
+{
+  "id": "4936",
+  "title": "数字集合",
+  "tags": [
+    "bitset",
+    "动态规划",
+    "01背包"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4936",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一个长度为 <span class=\"katex math inline\">n</span> 的数列 <code>a[1..n]</code>。</p>\n<p>你可以从中选择任意 <span class=\"katex math inline\">0</span> 个或多个元素求和，每个最多选一次，请编程求出最多能形成多少种不同的和。</p>\n</div>            </div>",
+      "text": "有一个长度为 n 的数列 a[1..n]。\n你可以从中选择任意 0 个或多个元素求和，每个最多选一次，请编程求出最多能形成多少种不同的和。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行读入整数 <span class=\"katex math inline\">n</span>。</p>\n<p>第 <span class=\"katex math inline\">2</span> 行读入 <span class=\"katex math inline\">n</span> 个整数 <span class=\"katex math inline\">a_1, a_2, \\dots, a_n</span>。</p>\n</div>            </div>",
+      "text": "第 1 行读入整数 n。\n第 2 行读入 n 个整数 a_1, a_2, \\dots, a_n。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示最多能形成多少种不同的和。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示最多能形成多少种不同的和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1 3 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1 3 4\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p>可能的和：0, 1, 3, 4, 1+3=4, 1+4=5, 3+4=7, 1+3+4=8。因此共有 7 种不同的和。</p>\n<h4>数据范围</h4>\n<p>对于所有的测评数据，满足 <span class=\"katex math inline\">1 ≤ n ≤ 100</span>，<span class=\"katex math inline\">1 ≤ a_i ≤ 10^4</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n可能的和：0, 1, 3, 4, 1+3=4, 1+4=5, 3+4=7, 1+3+4=8。因此共有 7 种不同的和。\n数据范围\n对于所有的测评数据，满足 1 ≤ n ≤ 100，1 ≤ a_i ≤ 10^4。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">bitset</span><span class=\"label label-warning\">动态规划</span><span class=\"label label-info\">01背包</span></span></p>\n</div>                </div>",
+      "text": "bitset动态规划01背包"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1 3 4",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "150",
+    "通过人数": "110",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:01"
+}

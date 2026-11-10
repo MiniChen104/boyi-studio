@@ -1,0 +1,62 @@
+{
+  "id": "2875",
+  "title": "平衡树的操作",
+  "tags": [
+    "平衡树",
+    "treap"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2875",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请编写一种数据结构，来维护一些数，其中需要提供以下操作：</p>\n<ol><li><p>插入值为 <span class=\"katex math inline\">x</span> 的数</p>\n</li>\n<li><p>删除值为 <span class=\"katex math inline\">x</span> 的数(若有多个相同的数，因只删除一个)</p>\n</li>\n<li><p>查询值为 <span class=\"katex math inline\">x</span> 数的排名(排名定义为比当前数小的数的个数 <span class=\"katex math inline\">+1</span> )</p>\n</li>\n<li><p>查询排名为 <span class=\"katex math inline\">x</span> 的数的值</p>\n</li>\n<li><p>求值为 <span class=\"katex math inline\">x</span> 的前驱(前驱定义为小于 <span class=\"katex math inline\">x</span>，且最大的数)</p>\n</li>\n<li><p>求值为 <span class=\"katex math inline\">x</span> 的后继(后继定义为大于 <span class=\"katex math inline\">x</span>，且最小的数)</p>\n</li>\n</ol></div>            </div>",
+      "text": "请编写一种数据结构，来维护一些数，其中需要提供以下操作：\n插入值为 x 的数\n\n删除值为 x 的数(若有多个相同的数，因只删除一个)\n\n查询值为 x 数的排名(排名定义为比当前数小的数的个数 +1 )\n\n查询排名为 x 的数的值\n\n求值为 x 的前驱(前驱定义为小于 x，且最大的数)\n\n求值为 x 的后继(后继定义为大于 x，且最小的数)"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为 <span class=\"katex math inline\">n</span>，表示操作的个数；</p>\n<p>下面 <span class=\"katex math inline\">n</span> 行每行有两个数 <span class=\"katex math inline\">\\text{opt}</span> 和 <span class=\"katex math inline\">x</span>，<span class=\"katex math inline\">\\text{opt}</span> 表示操作的序号( <span class=\"katex math inline\"> 1 \\leq \\text{opt} \\leq 6 </span> )；</p>\n<p>本题输入数据保证待查询的数据一定是存在的。</p>\n</div>            </div>",
+      "text": "第一行为 n，表示操作的个数；\n下面 n 行每行有两个数 \\text{opt} 和 x，\\text{opt} 表示操作的序号(  1 \\leq \\text{opt} \\leq 6  )；\n本题输入数据保证待查询的数据一定是存在的。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于操作 <span class=\"katex math inline\">3,4,5,6</span> 每行输出一个数，表示对应答案。</p>\n</div>            </div>",
+      "text": "对于操作 3,4,5,6 每行输出一个数，表示对应答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10\r\n1 106465\r\n4 1\r\n1 317721\r\n1 460929\r\n1 644985\r\n1 84185\r\n1 89851\r\n6 81968\r\n1 492737\r\n5 493598</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>106465\r\n84185\r\n492737</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\r\n1 106465\r\n4 1\r\n1 317721\r\n1 460929\r\n1 644985\r\n1 84185\r\n1 89851\r\n6 81968\r\n1 492737\r\n5 493598\n                        \n                        \n                            输出\n                            106465\r\n84185\r\n492737"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>数据范围</strong></p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1\\le n \\le 10^5</span>，<span class=\"katex math inline\">|x| \\le 10^7</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 100\\% 的数据，1\\le n \\le 10^5，|x| \\le 10^7。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>tyvj</p>\n</div>                </div>",
+      "text": "tyvj"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">平衡树</span><span class=\"label label-warning\">treap</span></span></p>\n</div>                </div>",
+      "text": "平衡树treap"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10\r\n1 106465\r\n4 1\r\n1 317721\r\n1 460929\r\n1 644985\r\n1 84185\r\n1 89851\r\n6 81968\r\n1 492737\r\n5 493598",
+      "output": "106465\r\n84185\r\n492737"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "403",
+    "通过人数": "188",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:40"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1007",
+  "title": "统计大写英文字母的个数",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1007",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>算算以 &#x27;<code>.</code>&#x27; 结束的一串字符中含有多少个大写的英文字母。</p>\n</div>            </div>",
+      "text": "算算以 '.' 结束的一串字符中含有多少个大写的英文字母。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一串字符（长度不超过 <span class=\"katex math inline\">80</span> ），以 &#x27;<code>.</code>&#x27; 结束。</p>\n</div>            </div>",
+      "text": "输入一串字符（长度不超过 80 ），以 '.' 结束。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，即这串字符中大写字母的个数。</p>\n</div>            </div>",
+      "text": "输出一行，即这串字符中大写字母的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>PRC,PRC,I&#x27;m from China.</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            PRC,PRC,I'm from China.\n                        \n                        \n                            输出\n                            8"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "PRC,PRC,I'm from China.",
+      "output": "8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "22561",
+    "通过人数": "13106",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:13:22"
+}

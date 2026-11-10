@@ -1,0 +1,46 @@
+{
+  "id": "1882",
+  "title": "循环输出100~1之间的每个数",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1882",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请循环输出 <span class=\"katex math inline\">100 \\sim 1</span> 之间的每个整数，输出时每行输出 <span class=\"katex math inline\">1</span> 个数，比如，输出结果的前 <span class=\"katex math inline\">10</span> 个数是这样的：</p>\n<p><span class=\"katex math inline\">100</span></p>\n<p><span class=\"katex math inline\">99</span></p>\n<p><span class=\"katex math inline\">98</span></p>\n<p><span class=\"katex math inline\">97</span></p>\n<p><span class=\"katex math inline\">96</span></p>\n<p><span class=\"katex math inline\">95</span></p>\n<p><span class=\"katex math inline\">94</span></p>\n<p><span class=\"katex math inline\">93</span></p>\n<p><span class=\"katex math inline\">92</span></p>\n<p><span class=\"katex math inline\">91</span></p>\n<p><span class=\"katex math inline\"> \\dots </span></p>\n</div>            </div>",
+      "text": "请循环输出 100 \\sim 1 之间的每个整数，输出时每行输出 1 个数，比如，输出结果的前 10 个数是这样的：\n100\n99\n98\n97\n96\n95\n94\n93\n92\n91\n \\dots"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无。</p>\n</div>            </div>",
+      "text": "无。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按要求输出 <span class=\"katex math inline\">100~1</span> 之间的每个数。</p>\n</div>            </div>",
+      "text": "按要求输出 100~1 之间的每个数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "54820",
+    "通过人数": "39713",
+    "金币数量": "1 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:25:26"
+}

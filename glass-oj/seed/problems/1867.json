@@ -1,0 +1,60 @@
+{
+  "id": "1867",
+  "title": "有几天",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1867",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>大家都知道每年都有分为 <span class=\"katex math inline\">12</span> 个月，月份又被分为大月小月和平月，每种月份的天数都不一样。小明为了方便记忆，把每个月的天数都整理到了自己的笔记本上：</p>\n<p><span class=\"katex math inline\">1、3、5、7、8、10、12</span> 月，每月 <span class=\"katex math inline\">31</span> 天。</p>\n<p><span class=\"katex math inline\">2</span> 月闰年 <span class=\"katex math inline\">29</span> 天，不是闰年就是 <span class=\"katex math inline\">28</span> 天。</p>\n<p><span class=\"katex math inline\">4、6、9、11</span> 月，每月 <span class=\"katex math inline\">30</span> 天。</p>\n<p>闰年的判断有两个条件，只需满足一个即可</p>\n<p><span class=\"katex math inline\">1</span> 、能够被 <span class=\"katex math inline\">4</span> 整除但不能被 <span class=\"katex math inline\">100</span> 整除的为闰年；</p>\n<p><span class=\"katex math inline\">2</span> 、能够被 <span class=\"katex math inline\">400</span> 整除的为闰年；</p>\n<p>请你编写一个程序，输入年和月的数值，输出该年的这个月，有多少天？</p>\n<p>比如：输入 <span class=\"katex math inline\">2020</span> <span class=\"katex math inline\">1</span>，代表要查询 <span class=\"katex math inline\">2020</span> 年 <span class=\"katex math inline\">1</span> 月的天数，那么输出为 <span class=\"katex math inline\">31</span> ；</p>\n<p>再比如：输入 <span class=\"katex math inline\">2020</span> <span class=\"katex math inline\">2</span>，代表要查询 <span class=\"katex math inline\">2020</span> 年 <span class=\"katex math inline\">2</span> 月的天数，那么输出 <span class=\"katex math inline\">29</span> 。</p>\n</div>            </div>",
+      "text": "大家都知道每年都有分为 12 个月，月份又被分为大月小月和平月，每种月份的天数都不一样。小明为了方便记忆，把每个月的天数都整理到了自己的笔记本上：\n1、3、5、7、8、10、12 月，每月 31 天。\n2 月闰年 29 天，不是闰年就是 28 天。\n4、6、9、11 月，每月 30 天。\n闰年的判断有两个条件，只需满足一个即可\n1 、能够被 4 整除但不能被 100 整除的为闰年；\n2 、能够被 400 整除的为闰年；\n请你编写一个程序，输入年和月的数值，输出该年的这个月，有多少天？\n比如：输入 2020 1，代表要查询 2020 年 1 月的天数，那么输出为 31 ；\n再比如：输入 2020 2，代表要查询 2020 年 2 月的天数，那么输出 29 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入 <span class=\"katex math inline\">2</span> 个整数，</p>\n<p>第 <span class=\"katex math inline\">1</span> 个整数是一个 <span class=\"katex math inline\">4</span> 位数，代表年，</p>\n<p>第 <span class=\"katex math inline\">2</span> 个整数是 <span class=\"katex math inline\">1 \\sim 12</span> 之间的数字，代表月。</p>\n</div>            </div>",
+      "text": "输入 2 个整数，\n第 1 个整数是一个 4 位数，代表年，\n第 2 个整数是 1 \\sim 12 之间的数字，代表月。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出当月的天数。</p>\n</div>            </div>",
+      "text": "输出当月的天数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2020 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>31</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2020 2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>29</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2020 1\n                        \n                        \n                            输出\n                            31\n                        \n\n                                                    \n                                输入\n                                2020 2\n                            \n                            \n                                输出\n                                29"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2020 1",
+      "output": "31"
+    },
+    {
+      "input": "2020 2",
+      "output": "29"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "1943",
+    "通过人数": "1206",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:25:15"
+}

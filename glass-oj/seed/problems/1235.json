@@ -1,0 +1,56 @@
+{
+  "id": "1235",
+  "title": "过河的最短时间",
+  "tags": [
+    "贪心"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1235",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在漆黑的夜里，<span class=\"katex math inline\">N</span> 位旅行者来到了一座狭窄而且没有护栏的桥边。如果不借助手电筒的话，大家是无论如何也不敢过桥去的。</p>\n<p>不幸的是，<span class=\"katex math inline\">N</span> 个人一共只带了一只手电筒，而桥窄得只够让两个人同时过。</p>\n<p>如果各自单独过桥的话，<span class=\"katex math inline\">N</span> 人所需要的时间已知；而如果两人同时过桥，所需要的时间就是走得比较慢的那个人单独行动时所需的时间。</p>\n<p>问题是，如何设计一个方案，让这 <span class=\"katex math inline\">N</span> 人尽快过桥，计算成绩这 <span class=\"katex math inline\">N</span> 个人的最短过桥时间。</p>\n<p>比如：有四个人甲乙丙丁，他们过河需要的时间分别为，甲：<span class=\"katex math inline\">1</span>，乙：<span class=\"katex math inline\">2</span>，丙：<span class=\"katex math inline\">5</span>，丁：<span class=\"katex math inline\">10</span>。</p>\n<p>第一种办法：最快的 <span class=\"katex math inline\">2</span> 个人先过桥，然后让跑的最快的人来回去接剩下的人：</p>\n<p>先让甲乙过去（<span class=\"katex math inline\">2</span> 分钟），甲回来（<span class=\"katex math inline\">1</span> 分钟），甲丙过去（<span class=\"katex math inline\">5</span> 分钟），甲回来（<span class=\"katex math inline\">1</span> 分钟），甲丁再过去（<span class=\"katex math inline\">10</span> 分钟），总共需要 <span class=\"katex math inline\">19</span> 分钟就可以让四个人都过去。</p>\n<p>第二种办法：让最慢的地 <span class=\"katex math inline\">2</span> 个人一起过桥，减少最慢的人在桥上的次数。</p>\n<p>先让甲乙过去（<span class=\"katex math inline\">2</span> 分钟），甲回来（<span class=\"katex math inline\">1</span> 分钟），丙丁过去（<span class=\"katex math inline\">10</span> 分钟），乙回来（<span class=\"katex math inline\">2</span> 分钟），甲乙再过去（<span class=\"katex math inline\">2</span> 分钟），总共需要 <span class=\"katex math inline\">17</span> 分钟可以让四个人都过去。</p>\n<p>那么最慢的时间就是需要 <span class=\"katex math inline\">17</span> 分钟！</p>\n</div>            </div>",
+      "text": "在漆黑的夜里，N 位旅行者来到了一座狭窄而且没有护栏的桥边。如果不借助手电筒的话，大家是无论如何也不敢过桥去的。\n不幸的是，N 个人一共只带了一只手电筒，而桥窄得只够让两个人同时过。\n如果各自单独过桥的话，N 人所需要的时间已知；而如果两人同时过桥，所需要的时间就是走得比较慢的那个人单独行动时所需的时间。\n问题是，如何设计一个方案，让这 N 人尽快过桥，计算成绩这 N 个人的最短过桥时间。\n比如：有四个人甲乙丙丁，他们过河需要的时间分别为，甲：1，乙：2，丙：5，丁：10。\n第一种办法：最快的 2 个人先过桥，然后让跑的最快的人来回去接剩下的人：\n先让甲乙过去（2 分钟），甲回来（1 分钟），甲丙过去（5 分钟），甲回来（1 分钟），甲丁再过去（10 分钟），总共需要 19 分钟就可以让四个人都过去。\n第二种办法：让最慢的地 2 个人一起过桥，减少最慢的人在桥上的次数。\n先让甲乙过去（2 分钟），甲回来（1 分钟），丙丁过去（10 分钟），乙回来（2 分钟），甲乙再过去（2 分钟），总共需要 17 分钟可以让四个人都过去。\n那么最慢的时间就是需要 17 分钟！"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>每组测试数据的第一行是一个整数 <span class=\"katex math inline\">N</span> (<span class=\"katex math inline\">1 \\le N \\le 1000</span>)，表示共有 <span class=\"katex math inline\">N</span> 个人要过河。</p>\n<p>每组测试数据的第二行是 <span class=\"katex math inline\">N</span> 个整数 <span class=\"katex math inline\">S_i</span>,表示这 <span class=\"katex math inline\">N</span> 个人过河所需要花时间。(<span class=\"katex math inline\">0 \\lt S_i \\le 100</span>)</p>\n</div>            </div>",
+      "text": "每组测试数据的第一行是一个整数 N (1 \\le N \\le 1000)，表示共有 N 个人要过河。\n每组测试数据的第二行是 N 个整数 S_i,表示这 N 个人过河所需要花时间。(0 \\lt S_i \\le 100)"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>所有人过河的最短时间。</p>\n</div>            </div>",
+      "text": "所有人过河的最短时间。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n1 2 5 10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>17</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n1 2 5 10\n                        \n                        \n                            输出\n                            17"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>贪心</p>\n</div>                </div>",
+      "text": "贪心"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">贪心</span></span></p>\n</div>                </div>",
+      "text": "贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n1 2 5 10",
+      "output": "17"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "3894",
+    "通过人数": "1609",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:16:40"
+}

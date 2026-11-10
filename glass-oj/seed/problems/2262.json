@@ -1,0 +1,57 @@
+{
+  "id": "2262",
+  "title": "谁考了第k名",
+  "tags": [
+    "电子学会等级考试",
+    "结构体"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2262",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一次考试中，每个学生的成绩都不相同，现知道了每个学生的学号和成绩，求考第 <span class=\"katex math inline\">k</span> 名学生的学号和成绩。</p>\n</div>            </div>",
+      "text": "在一次考试中，每个学生的成绩都不相同，现知道了每个学生的学号和成绩，求考第 k 名学生的学号和成绩。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个整数，分别是学生的人数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">1≤n≤100</span>），和求第 <span class=\"katex math inline\">k</span> 名学生的 <span class=\"katex math inline\">k</span>（<span class=\"katex math inline\">1≤k≤n</span>）。</p>\n<p>其后有 <span class=\"katex math inline\">n</span> 行数据，每行包括一个学号（整数）和一个成绩（浮点数），中间用一个空格分隔。</p>\n</div>            </div>",
+      "text": "第一行有两个整数，分别是学生的人数 n（1≤n≤100），和求第 k 名学生的 k（1≤k≤n）。\n其后有 n 行数据，每行包括一个学号（整数）和一个成绩（浮点数），中间用一个空格分隔。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出第 <span class=\"katex math inline\">k</span> 名学生的学号和成绩，中间用空格分隔。</p>\n</div>            </div>",
+      "text": "输出第 k 名学生的学号和成绩，中间用空格分隔。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 3\r\n90788001 67.8\r\n90788002 90.3\r\n90788003 61\r\n90788004 68.4\r\n90788005 73.9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>90788004 68.4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 3\r\n90788001 67.8\r\n90788002 90.3\r\n90788003 61\r\n90788004 68.4\r\n90788005 73.9\n                        \n                        \n                            输出\n                            90788004 68.4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会二级 202103真题</p>\n</div>                </div>",
+      "text": "电子学会二级 202103真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span><span class=\"label label-warning\">结构体</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试结构体"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 3\r\n90788001 67.8\r\n90788002 90.3\r\n90788003 61\r\n90788004 68.4\r\n90788005 73.9",
+      "output": "90788004 68.4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2592",
+    "通过人数": "1477",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:27"
+}

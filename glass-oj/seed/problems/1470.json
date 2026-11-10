@@ -1,0 +1,62 @@
+{
+  "id": "1470",
+  "title": "校门外的树",
+  "tags": [
+    "noip复赛",
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1470",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某校大门外长度为 <span class=\"katex math inline\">l</span> 的马路上有一排树，每两棵相邻的树之间的间隔都是 <span class=\"katex math inline\">1</span> 米。我们可以把马路看成一个数轴，马路的一端在数轴 <span class=\"katex math inline\">0</span> 的位置，另一端在 <span class=\"katex math inline\">l</span> 的位置；数轴上的每个整数点，即 <span class=\"katex math inline\">0,1,2,\\dots,l</span>，都种有一棵树。</p>\n<p>由于马路上有一些区域要用来建地铁。这些区域用它们在数轴上的起始点和终止点表示。已知任一区域的起始点和终止点的坐标都是整数，区域之间可能有重合的部分。现在要把这些区域中的树（包括区域端点处的两棵树）移走。你的任务是计算将这些树都移走后，马路上还有多少棵树。</p>\n<p>比如：<span class=\"katex math inline\">l=5</span>，那么马路上默认有 <span class=\"katex math inline\">6</span> 棵树，分别种在<span class=\"katex math inline\">0,1,2,3,4,5</span> 这几个位置，现要求将 <span class=\"katex math inline\">1</span>-<span class=\"katex math inline\">3</span> 及 <span class=\"katex math inline\">2</span>-<span class=\"katex math inline\">4</span> 之间的树移走，那么需要移走 <span class=\"katex math inline\">4</span> 棵树，还剩 <span class=\"katex math inline\">2</span> 棵树。</p>\n</div>            </div>",
+      "text": "某校大门外长度为 l 的马路上有一排树，每两棵相邻的树之间的间隔都是 1 米。我们可以把马路看成一个数轴，马路的一端在数轴 0 的位置，另一端在 l 的位置；数轴上的每个整数点，即 0,1,2,\\dots,l，都种有一棵树。\n由于马路上有一些区域要用来建地铁。这些区域用它们在数轴上的起始点和终止点表示。已知任一区域的起始点和终止点的坐标都是整数，区域之间可能有重合的部分。现在要把这些区域中的树（包括区域端点处的两棵树）移走。你的任务是计算将这些树都移走后，马路上还有多少棵树。\n比如：l=5，那么马路上默认有 6 棵树，分别种在0,1,2,3,4,5 这几个位置，现要求将 1-3 及 2-4 之间的树移走，那么需要移走 4 棵树，还剩 2 棵树。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个整数，分别表示马路的长度 <span class=\"katex math inline\">l</span> 和区域的数目 <span class=\"katex math inline\">m</span>；</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行两个整数 <span class=\"katex math inline\">u, v</span>，表示一个区域的起始点和终止点的坐标。</p>\n</div>            </div>",
+      "text": "第一行有两个整数，分别表示马路的长度 l 和区域的数目 m；\n接下来 m 行，每行两个整数 u, v，表示一个区域的起始点和终止点的坐标。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数，表示将这些树都移走后，马路上剩余的树木数量。</p>\n</div>            </div>",
+      "text": "输出一行一个整数，表示将这些树都移走后，马路上剩余的树木数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>500 3\r\n150 300\r\n100 200\r\n470 471</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>298</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            500 3\r\n150 300\r\n100 200\r\n470 471\n                        \n                        \n                            输出\n                            298"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【数据范围】</strong></p>\n<ul><li>对于 <span class=\"katex math inline\">20\\%</span> 的数据，保证区域之间没有重合的部分。</li>\n<li>对于 <span class=\"katex math inline\">100\\%</span> 的数据，保证 <span class=\"katex math inline\">1 \\leq l \\leq 10^4</span>，<span class=\"katex math inline\">1 \\leq m \\leq 100</span>，<span class=\"katex math inline\">0 \\leq u \\leq v \\leq l</span>。</li>\n</ul><p><strong>【题目来源】</strong></p>\n<p>NOIP 2005 普及组第二题</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 20\\% 的数据，保证区域之间没有重合的部分。\n对于 100\\% 的数据，保证 1 \\leq l \\leq 10^4，1 \\leq m \\leq 100，0 \\leq u \\leq v \\leq l。\n【题目来源】\nNOIP 2005 普及组第二题"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛 数组问题</p>\n</div>                </div>",
+      "text": "noip复赛 数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span><span class=\"label label-warning\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "noip复赛数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "500 3\r\n150 300\r\n100 200\r\n470 471",
+      "output": "298"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "6559",
+    "通过人数": "4116",
+    "金币数量": "2 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:19:54"
+}

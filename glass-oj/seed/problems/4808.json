@@ -1,0 +1,52 @@
+{
+  "id": "4808",
+  "title": "旗帜",
+  "tags": [
+    "蓝桥等考",
+    "循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4808",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请你用字符画的形式输出一面旗帜。</p>\n</div>            </div>",
+      "text": "请你用字符画的形式输出一面旗帜。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无</p>\n<p>注意：本题没有输入！</p>\n</div>            </div>",
+      "text": "无\n注意：本题没有输入！"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如输出样例所示。</p>\n<p>注意事项：</p>\n<p>1.图案的第一行前面不能有多余的空行；</p>\n<p>2.图案的最左侧从第一列开始输出，左边不能有多余的空格。</p>\n<p>3.输入输出格式要和样例严格保持一致，不要输出任何与答案无关的内容，如“请输入：”之类的提示信息。</p>\n</div>            </div>",
+      "text": "如输出样例所示。\n注意事项：\n1.图案的第一行前面不能有多余的空行；\n2.图案的最左侧从第一列开始输出，左边不能有多余的空格。\n3.输入输出格式要和样例严格保持一致，不要输出任何与答案无关的内容，如“请输入：”之类的提示信息。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>无</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>*****\r\n*****\r\n*****\r\n*\r\n*</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            无\n                        \n                        \n                            输出\n                            *****\r\n*****\r\n*****\r\n*\r\n*"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">循环</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "无",
+      "output": "*****\r\n*****\r\n*****\r\n*\r\n*"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "238",
+    "通过人数": "200",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:40"
+}

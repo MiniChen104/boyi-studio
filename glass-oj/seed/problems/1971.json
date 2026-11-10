@@ -1,0 +1,56 @@
+{
+  "id": "1971",
+  "title": "大小写转换",
+  "tags": [
+    "字符型"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1971",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入一个字母，可能是大写字母也可能是小写字母。</p>\n<p>请判断一下如果是大写字母，输出其对应的小写字母，如果是小写字母，输出其对应的大写字母。</p>\n<p>比如：&#x27;<span class=\"katex math inline\">a</span>&#x27; 对应的大写字母是 &#x27;<span class=\"katex math inline\">A</span>&#x27;，&#x27;<span class=\"katex math inline\">M</span>&#x27; 对应的小写字母是 &#x27;<span class=\"katex math inline\">m</span>&#x27; 。</p>\n</div>            </div>",
+      "text": "从键盘读入一个字母，可能是大写字母也可能是小写字母。\n请判断一下如果是大写字母，输出其对应的小写字母，如果是小写字母，输出其对应的大写字母。\n比如：'a' 对应的大写字母是 'A'，'M' 对应的小写字母是 'm' 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个字母。</p>\n</div>            </div>",
+      "text": "输出一个字母。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果输入是大写字母，输出对应的小写字母；如果输入是小写字母，输出对应的大写字母。</p>\n</div>            </div>",
+      "text": "如果输入是大写字母，输出对应的小写字母；如果输入是小写字母，输出对应的大写字母。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>A</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>a</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            A\n                        \n                        \n                            输出\n                            a"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符型</p>\n</div>                </div>",
+      "text": "字符型"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符型</span></span></p>\n</div>                </div>",
+      "text": "字符型"
+    }
+  ],
+  "samples": [
+    {
+      "input": "A",
+      "output": "a"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "19989",
+    "通过人数": "13350",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:26:45"
+}

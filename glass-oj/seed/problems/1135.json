@@ -1,0 +1,56 @@
+{
+  "id": "1135",
+  "title": "歌德巴赫猜想",
+  "tags": [
+    "函数问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1135",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>任一个大于等于 <span class=\"katex math inline\">4</span> 的偶数都可以拆分为两个素数之和。</p>\n<p>从键盘读入一个整数 <span class=\"katex math inline\">n</span>，请将小于等于 <span class=\"katex math inline\">n</span> 的偶数拆分为 <span class=\"katex math inline\">2</span> 个质数之和，列出所有方案。</p>\n</div>            </div>",
+      "text": "任一个大于等于 4 的偶数都可以拆分为两个素数之和。\n从键盘读入一个整数 n，请将小于等于 n 的偶数拆分为 2 个质数之和，列出所有方案。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> (<span class=\"katex math inline\">4 \\le n \\le 200</span>）；</p>\n</div>            </div>",
+      "text": "一个整数 n (4 \\le n \\le 200）；"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>将小于等于 <span class=\"katex math inline\">n</span> 的偶数拆分为 <span class=\"katex math inline\">2</span> 个质数之和，列出所有方案，输出格式请参考样例输出。</p>\n</div>            </div>",
+      "text": "将小于等于 n 的偶数拆分为 2 个质数之和，列出所有方案，输出格式请参考样例输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4=2+2\r\n6=3+3\r\n8=3+5\r\n10=3+7\r\n10=5+5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\n                        \n                        \n                            输出\n                            4=2+2\r\n6=3+3\r\n8=3+5\r\n10=3+7\r\n10=5+5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>函数问题</p>\n</div>                </div>",
+      "text": "函数问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">函数问题</span></span></p>\n</div>                </div>",
+      "text": "函数问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10",
+      "output": "4=2+2\r\n6=3+3\r\n8=3+5\r\n10=3+7\r\n10=5+5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "8965",
+    "通过人数": "5960",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:15:13"
+}

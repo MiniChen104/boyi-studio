@@ -1,0 +1,60 @@
+{
+  "id": "2663",
+  "title": "天使的起誓",
+  "tags": [
+    "高精度"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2663",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Tenshi 非常幸运地被选为掌管智慧之匙的天使。在正式任职之前，她必须和其他新当选的天使一样要宣誓。</p>\n<p>宣誓仪式是每位天使各自表述自己的使命，他们的发言稿放在 <span class=\"katex math inline\">n</span> 个呈圆形排列的宝盒中。这些宝盒按顺时针方向被编上号码 <span class=\"katex math inline\">1, 2, \\cdots, n - 1, n</span>。</p>\n<p>一开始天使们站在编号为 <span class=\"katex math inline\">n</span> 的宝盒旁。她们各自手上都有一个数字，代表她们自己的发言稿所在的盒子是从 <span class=\"katex math inline\">1</span> 号盒子开始按顺时针方向的第几个。例如：有  <span class=\"katex math inline\">7</span> 个盒子，如果 Tenshi 手上的数字为 <span class=\"katex math inline\">9</span>，那么她的发言稿所在的盒子就是 <span class=\"katex math inline\">2</span> 个。现在天使们开始按照自己手上的数字来找发言稿，先找到的就可以先发言。 </p>\n<p>Tenshi 一下子就找到了，于是她最先上台宣誓：“我将带领大家开启 NOI 之门……” Tenshi 宣誓结束后，陆续有天使上台宣誓。可是有一位天使找了好久都找不到她的发言稿，原来她手上的数字 <span class=\"katex math inline\">m</span> 非常大，她转了好久都找不到她想找的宝盒。</p>\n<p>请帮助这位天使找到她想找的宝盒编号。</p>\n</div>            </div>",
+      "text": "Tenshi 非常幸运地被选为掌管智慧之匙的天使。在正式任职之前，她必须和其他新当选的天使一样要宣誓。\n宣誓仪式是每位天使各自表述自己的使命，他们的发言稿放在 n 个呈圆形排列的宝盒中。这些宝盒按顺时针方向被编上号码 1, 2, \\cdots, n - 1, n。\n一开始天使们站在编号为 n 的宝盒旁。她们各自手上都有一个数字，代表她们自己的发言稿所在的盒子是从 1 号盒子开始按顺时针方向的第几个。例如：有  7 个盒子，如果 Tenshi 手上的数字为 9，那么她的发言稿所在的盒子就是 2 个。现在天使们开始按照自己手上的数字来找发言稿，先找到的就可以先发言。 \nTenshi 一下子就找到了，于是她最先上台宣誓：“我将带领大家开启 NOI 之门……” Tenshi 宣誓结束后，陆续有天使上台宣誓。可是有一位天使找了好久都找不到她的发言稿，原来她手上的数字 m 非常大，她转了好久都找不到她想找的宝盒。\n请帮助这位天使找到她想找的宝盒编号。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为正整数 <span class=\"katex math inline\">n</span>，第二行为正整数 <span class=\"katex math inline\">m</span>。</p>\n</div>            </div>",
+      "text": "第一行为正整数 n，第二行为正整数 m。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一行（包括换行符），即天使想找的宝盒的编号。</p>\n</div>            </div>",
+      "text": "只有一行（包括换行符），即天使想找的宝盒的编号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7\r\n9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>11\r\n108</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>9</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\r\n9\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                11\r\n108\n                            \n                            \n                                输出\n                                9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>数据范围</strong></p>\n<p>对于 <span class=\"katex math inline\">100 \\%</span> 的数据，<span class=\"katex math inline\">2\\le n\\le 10^8</span>，<span class=\"katex math inline\">2\\le m\\le 10^{1000}</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 100 \\% 的数据，2\\le n\\le 10^8，2\\le m\\le 10^{1000}。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">高精度</span></span></p>\n</div>                </div>",
+      "text": "高精度"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7\r\n9",
+      "output": "2"
+    },
+    {
+      "input": "11\r\n108",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "380",
+    "通过人数": "151",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:28"
+}

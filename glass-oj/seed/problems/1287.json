@@ -1,0 +1,56 @@
+{
+  "id": "1287",
+  "title": "高精度乘",
+  "tags": [
+    "高精度算法"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1287",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>高精度乘，求两个很大的非负整数相乘的结果。</p>\n</div>            </div>",
+      "text": "高精度乘，求两个很大的非负整数相乘的结果。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">2</span> 个非负整数，每个一行，每个整数不超过 <span class=\"katex math inline\">240</span> 位。</p>\n</div>            </div>",
+      "text": "2 个非负整数，每个一行，每个整数不超过 240 位。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示相乘的结果。</p>\n</div>            </div>",
+      "text": "一个整数，表示相乘的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1111111111111111111111111\r\n2222222222222222222222222</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2469135802469135802469135308641975308641975308642</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1111111111111111111111111\r\n2222222222222222222222222\n                        \n                        \n                            输出\n                            2469135802469135802469135308641975308641975308642"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>高精度算法</p>\n</div>                </div>",
+      "text": "高精度算法"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">高精度算法</span></span></p>\n</div>                </div>",
+      "text": "高精度算法"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1111111111111111111111111\r\n2222222222222222222222222",
+      "output": "2469135802469135802469135308641975308641975308642"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "17009",
+    "通过人数": "8973",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:17:21"
+}

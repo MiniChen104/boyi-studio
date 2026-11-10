@@ -1,0 +1,61 @@
+{
+  "id": "3138",
+  "title": "编钟演绎",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3138",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>同学们在古典乐器馆见到了编钟，领略了编钟清脆明亮、悠扬动听的音质。谱曲体验更是让同学们跃跃欲试。游戏开始，屏幕上自动生成若干个音符，每个音符都用一个整数表示其音调高低，同学们可以选择保留或舍弃这个音符，最终按音符原有顺序形成自己的曲谱。</p>\n<p>峰谷交错的曲谱被认为是优美的，计算机会自动合成编钟的音质并播放出来。不满足峰谷交错的曲谱会被系统拒绝。所谓峰谷交错，即除了首尾的音符外，其他所有的音符的音调要么\n同时比左右两个音低，要么同时比左右两个音高。如下图所示的曲谱计算机就不会认定为优秀，系统将拒绝播放。</p>\n<p><img src=\"https://assets.boyi.local/ddf676fa8c847b2dcde1353f.png\"></p>\n<p>面对屏幕上给出的 <span class=\"katex math inline\">n</span> 个音符，计算优美乐谱的最大长度。</p>\n</div>            </div>",
+      "text": "同学们在古典乐器馆见到了编钟，领略了编钟清脆明亮、悠扬动听的音质。谱曲体验更是让同学们跃跃欲试。游戏开始，屏幕上自动生成若干个音符，每个音符都用一个整数表示其音调高低，同学们可以选择保留或舍弃这个音符，最终按音符原有顺序形成自己的曲谱。\n峰谷交错的曲谱被认为是优美的，计算机会自动合成编钟的音质并播放出来。不满足峰谷交错的曲谱会被系统拒绝。所谓峰谷交错，即除了首尾的音符外，其他所有的音符的音调要么\n同时比左右两个音低，要么同时比左右两个音高。如下图所示的曲谱计算机就不会认定为优秀，系统将拒绝播放。\n\n面对屏幕上给出的 n 个音符，计算优美乐谱的最大长度。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，包含一个正整数 <span class=\"katex math inline\">n</span>，表示生成的音符个数。</p>\n<p>第二行，包含 <span class=\"katex math inline\">n</span> 个整数，依次表示每个音符的强度 <span class=\"katex math inline\">hi</span>。</p>\n</div>            </div>",
+      "text": "第一行，包含一个正整数 n，表示生成的音符个数。\n第二行，包含 n 个整数，依次表示每个音符的强度 hi。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，包含一个数，表示优美乐谱的最大长度。</p>\n</div>            </div>",
+      "text": "一行，包含一个数，表示优美乐谱的最大长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n5 3 2 1 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n5 3 2 1 2\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p><span class=\"katex math inline\">5</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span>；<span class=\"katex math inline\">3</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span>；<span class=\"katex math inline\">2</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span> 都是优美乐谱，最大长度为 <span class=\"katex math inline\">3</span>。</p>\n<p>【数据范围】</p>\n<p>对于 <span class=\"katex math inline\">20</span> %的数据，<span class=\"katex math inline\">n ≤ 10</span>；</p>\n<p>对于 <span class=\"katex math inline\">30</span> %的数据，<span class=\"katex math inline\">n ≤ 25</span>；</p>\n<p>对于 <span class=\"katex math inline\">70</span>%的数据，<span class=\"katex math inline\">n ≤ 1 000，0 ≤ hi≤ 1 000</span>；</p>\n<p>对于 <span class=\"katex math inline\">100</span>%的数据，<span class=\"katex math inline\">1 ≤ n ≤ 100 000，0 ≤ hi≤ 1 000 000</span>，所有的 <span class=\"katex math inline\">hi</span> 随机生成，所有随机数服从某区间内的均匀分布</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n5 1 2；3 1 2；2 1 2 都是优美乐谱，最大长度为 3。\n【数据范围】\n对于 20 %的数据，n ≤ 10；\n对于 30 %的数据，n ≤ 25；\n对于 70%的数据，n ≤ 1 000，0 ≤ hi≤ 1 000；\n对于 100%的数据，1 ≤ n ≤ 100 000，0 ≤ hi≤ 1 000 000，所有的 hi 随机生成，所有随机数服从某区间内的均匀分布"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2021南京市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2021南京市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n5 3 2 1 2",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "19",
+    "通过人数": "14",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:34:16"
+}

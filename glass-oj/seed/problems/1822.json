@@ -1,0 +1,61 @@
+{
+  "id": "1822",
+  "title": "最长公共子序列(LCS)(2)",
+  "tags": [
+    "动态规划"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1822",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出 <span class=\"katex math inline\">1 \\sim n</span> 的两个排列 <span class=\"katex math inline\">P_1</span> 和 <span class=\"katex math inline\">P_2</span>，求它们的最长公共子序列。</p>\n<p>和最长公共子序列(LCS)(1)问题不同的是，本题的 <span class=\"katex math inline\">n</span> 在 <span class=\"katex math inline\">5 \\sim 100000</span> 之间。</p>\n</div>            </div>",
+      "text": "给出 1 \\sim n 的两个排列 P_1 和 P_2，求它们的最长公共子序列。\n和最长公共子序列(LCS)(1)问题不同的是，本题的 n 在 5 \\sim 100000 之间。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行是一个数 <span class=\"katex math inline\">n</span> ；（<span class=\"katex math inline\">n</span> 是 <span class=\"katex math inline\">5 \\sim 100000</span> 之间的整数）</p>\n<p>接下来两行，每行为 <span class=\"katex math inline\">n</span> 个数，为自然数 <span class=\"katex math inline\">1 \\sim n</span> 的一个排列（<span class=\"katex math inline\">1 \\sim n</span> 的排列每行的数据都是 <span class=\"katex math inline\">1 \\sim n</span> 之间的数，但顺序可能不同，比如 <span class=\"katex math inline\">1 \\sim 5</span> 的排列可以是：<span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">4</span> <span class=\"katex math inline\">5</span>，也可以是 <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">5</span> <span class=\"katex math inline\">4</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">1</span>）。</p>\n</div>            </div>",
+      "text": "第一行是一个数 n ；（n 是 5 \\sim 100000 之间的整数）\n接下来两行，每行为 n 个数，为自然数 1 \\sim n 的一个排列（1 \\sim n 的排列每行的数据都是 1 \\sim n 之间的数，但顺序可能不同，比如 1 \\sim 5 的排列可以是：1 2 3 4 5，也可以是 2 5 4 3 1）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，即最长公共子序列的长度。</p>\n</div>            </div>",
+      "text": "一个整数，即最长公共子序列的长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 \r\n3 2 1 4 5\r\n1 2 3 4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 \r\n3 2 1 4 5\r\n1 2 3 4 5\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">50\\%</span> 的数据，<span class=\"katex math inline\">n≤1000</span>；</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">n≤100000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 50\\% 的数据，n≤1000；\n对于 100\\% 的数据，n≤100000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>动态规划</p>\n</div>                </div>",
+      "text": "动态规划"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 \r\n3 2 1 4 5\r\n1 2 3 4 5",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4902",
+    "通过人数": "2313",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:24:40"
+}

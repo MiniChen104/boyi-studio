@@ -1,0 +1,62 @@
+{
+  "id": "1540",
+  "title": "小X数字母",
+  "tags": [
+    "市赛",
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1540",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 X 喜欢研究字符串。</p>\n<p>这天，小 X 随手在草稿纸上写下了一个大写字母字符串。此时，班长把成绩报告单发到了每位同学的手中。小 X 看到自己每门都是 <code>A</code> （优秀），非常高兴，灵光一闪想到一个问题：\n在刚刚写下的字符串中，字母 <code>A</code> 最多连续出现了多少次呢？</p>\n<p>小 X 立刻数了起来，但这个字符串实在是太长了，希望你帮帮他。</p>\n</div>            </div>",
+      "text": "小 X 喜欢研究字符串。\n这天，小 X 随手在草稿纸上写下了一个大写字母字符串。此时，班长把成绩报告单发到了每位同学的手中。小 X 看到自己每门都是 A （优秀），非常高兴，灵光一闪想到一个问题：\n在刚刚写下的字符串中，字母 A 最多连续出现了多少次呢？\n小 X 立刻数了起来，但这个字符串实在是太长了，希望你帮帮他。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个整数 <span class=\"katex math inline\">N</span> ，表示字符串长度。</p>\n<p>第二行包含一个字符串。</p>\n</div>            </div>",
+      "text": "第一行包含一个整数 N ，表示字符串长度。\n第二行包含一个字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个整数，表示该字符串中字母 <code>A</code> 最多连续出现的次数。</p>\n</div>            </div>",
+      "text": "第一行包含一个整数，表示该字符串中字母 A 最多连续出现的次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\nBAACA</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\nBAACA\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>数据范围</strong></p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">N≤100</span> 。</p>\n<p>对于 <span class=\"katex math inline\">60\\%</span> 的数据，<span class=\"katex math inline\">N≤1000</span> 。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1≤N≤100000</span>。</p>\n<p><strong>来源</strong></p>\n<p>常州市2015“信息与未来”夏令营选拔赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 30\\% 的数据，N≤100 。\n对于 60\\% 的数据，N≤1000 。\n对于 100\\% 的数据，1≤N≤100000。\n来源\n常州市2015“信息与未来”夏令营选拔赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "市赛字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\nBAACA",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "8343",
+    "通过人数": "3584",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:50"
+}

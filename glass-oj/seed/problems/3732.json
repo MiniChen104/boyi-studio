@@ -1,0 +1,70 @@
+{
+  "id": "3732",
+  "title": "盒子",
+  "tags": [
+    "市赛",
+    "常州2024"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3732",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">Y</span> 有 <span class=\"katex math inline\">n</span> 个盒子，第 <span class=\"katex math inline\">i</span> 个盒子的大小是 <span class=\"katex math inline\">a[i]</span>, 小 <span class=\"katex math inline\">Y</span> 保证 <span class=\"katex math inline\">a[i]</span> 一定是 <span class=\"katex math inline\">2</span> 的若干次方，比如<span class=\"katex math inline\">1,2,4,8,16,32,64,128,512,1024……</span>，一个大小为 <span class=\"katex math inline\">a[i]</span>  的盒子的容量是 <span class=\"katex math inline\">a[i]/2</span> ，就是说它可以装下总大小不超过 <span class=\"katex math inline\">a[i]/2</span> 的其他盒子，特别地，大小为 <span class=\"katex math inline\">1</span> 的盒子不能装下其他盒子。并且，装在盒子里的盒子也可以装其他盒子，比如，大小为 <span class=\"katex math inline\">8</span> 的盒子可以装下一个大小为 <span class=\"katex math inline\">4</span> 的盒子且大小为 <span class=\"katex math inline\">4</span> 的盒子事先已经装了一个大小为 <span class=\"katex math inline\">2</span> 的盒子。</p>\n<p>现在小 <span class=\"katex math inline\">Y</span> 想知道，最少能有多少个不被其他盒子装下的盒子？</p>\n</div>            </div>",
+      "text": "小 Y 有 n 个盒子，第 i 个盒子的大小是 a[i], 小 Y 保证 a[i] 一定是 2 的若干次方，比如1,2,4,8,16,32,64,128,512,1024……，一个大小为 a[i]  的盒子的容量是 a[i]/2 ，就是说它可以装下总大小不超过 a[i]/2 的其他盒子，特别地，大小为 1 的盒子不能装下其他盒子。并且，装在盒子里的盒子也可以装其他盒子，比如，大小为 8 的盒子可以装下一个大小为 4 的盒子且大小为 4 的盒子事先已经装了一个大小为 2 的盒子。\n现在小 Y 想知道，最少能有多少个不被其他盒子装下的盒子？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行 <span class=\"katex math inline\">1</span> 个正整数 <span class=\"katex math inline\">n</span>，表示盒子的数量。</p>\n<p>第二行 <span class=\"katex math inline\">n</span> 个正整数 <span class=\"katex math inline\">a[i]</span>，表示每个盒子的大小，保证<span class=\"katex math inline\">a[i]</span> 一定是 <span class=\"katex math inline\">2</span> 的若干次方。</p>\n</div>            </div>",
+      "text": "第一行 1 个正整数 n，表示盒子的数量。\n第二行 n 个正整数 a[i]，表示每个盒子的大小，保证a[i] 一定是 2 的若干次方。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个正整数表示最少能有多少个不被其他盒子装下的盒子。</p>\n</div>            </div>",
+      "text": "一行一个正整数表示最少能有多少个不被其他盒子装下的盒子。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n1 2 1 1 8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3\r\n1 1 1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>6\r\n1 1 1 4 1 2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n1 2 1 1 8\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                3\r\n1 1 1\n                            \n                            \n                                输出\n                                3\n                            \n                        \n                                                    \n                                输入\n                                6\r\n1 1 1 4 1 2\n                            \n                            \n                                输出\n                                3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释1】</p>\n<p><img src=\"https://assets.boyi.local/9b37f55a226661048f9f30ec.png\">\n图中盒子内部的灰色部分表示盒子不能用来装东西的一半容量，白色部分表示能用来装东西的一半容量，图中只有最大的盒子没有被装在其它盒子中，因此答案为 <span class=\"katex math inline\">1</span>。</p>\n<p>【样例解释2】</p>\n<p><img src=\"https://assets.boyi.local/ce4047fb3b186e24d97bad09.png\"></p>\n<p>【样例解释3】</p>\n<p><img src=\"https://assets.boyi.local/10626024711a7ccc77cc554d.png\"></p>\n<p>【数据规模】</p>\n<p>本题共有 <span class=\"katex math inline\">12</span> 个测试点，每个测试点 <span class=\"katex math inline\">10</span> 分</p>\n<p>对于全部测试点：<span class=\"katex math inline\">1 \\le n \\le 100000, 1 \\le a[i] \\le 2^{60}</span></p>\n<p>对于测试点1-3 ：<span class=\"katex math inline\">1 \\le n \\le 3</span></p>\n<p>对于测试点4-5 ：<span class=\"katex math inline\">1 \\le a[i] \\le 4</span></p>\n<p>对于测试点6-9 ：<span class=\"katex math inline\">1 \\le n \\le 1000</span></p>\n<p><span class=\"katex math inline\">2^{60}=1152921504606846976</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释1】\n\n图中盒子内部的灰色部分表示盒子不能用来装东西的一半容量，白色部分表示能用来装东西的一半容量，图中只有最大的盒子没有被装在其它盒子中，因此答案为 1。\n【样例解释2】\n\n【样例解释3】\n\n【数据规模】\n本题共有 12 个测试点，每个测试点 10 分\n对于全部测试点：1 \\le n \\le 100000, 1 \\le a[i] \\le 2^{60}\n对于测试点1-3 ：1 \\le n \\le 3\n对于测试点4-5 ：1 \\le a[i] \\le 4\n对于测试点6-9 ：1 \\le n \\le 1000\n2^{60}=1152921504606846976"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024常州市赛T6</p>\n</div>                </div>",
+      "text": "2024常州市赛T6"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">常州2024</span></span></p>\n</div>                </div>",
+      "text": "市赛常州2024"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n1 2 1 1 8",
+      "output": "1"
+    },
+    {
+      "input": "3\r\n1 1 1",
+      "output": "3"
+    },
+    {
+      "input": "6\r\n1 1 1 4 1 2",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "15",
+    "通过人数": "5",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:36:01"
+}

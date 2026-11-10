@@ -1,0 +1,56 @@
+{
+  "id": "1359",
+  "title": "八进制转换二进制",
+  "tags": [
+    "进制转换"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1359",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请将一个 <span class=\"katex math inline\">100</span> 位以内的 <span class=\"katex math inline\">8</span> 进制整数转换为 <span class=\"katex math inline\">2</span> 进制整数！</p>\n</div>            </div>",
+      "text": "请将一个 100 位以内的 8 进制整数转换为 2 进制整数！"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">100</span> 位以内的 <span class=\"katex math inline\">8</span> 进制整数。</p>\n</div>            </div>",
+      "text": "100 位以内的 8 进制整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>该数对应的 <span class=\"katex math inline\">2</span> 进制整数。</p>\n</div>            </div>",
+      "text": "该数对应的 2 进制整数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>12376532347173217361</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1010011111110101011010011100111001111011010001111011110001</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            12376532347173217361\n                        \n                        \n                            输出\n                            1010011111110101011010011100111001111011010001111011110001"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>进制转换</p>\n</div>                </div>",
+      "text": "进制转换"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">进制转换</span></span></p>\n</div>                </div>",
+      "text": "进制转换"
+    }
+  ],
+  "samples": [
+    {
+      "input": "12376532347173217361",
+      "output": "1010011111110101011010011100111001111011010001111011110001"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "7552",
+    "通过人数": "4107",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:18:19"
+}

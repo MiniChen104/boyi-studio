@@ -1,0 +1,66 @@
+{
+  "id": "1949",
+  "title": "最大购物优惠",
+  "tags": [
+    "蓝桥杯",
+    "背包"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1949",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小惠听说超市正在打折促销，要制订一个得到最大优惠的购物计划。</p>\n<p>小惠的体力可以提起 <span class=\"katex math inline\">w</span> 单位重量的东西，还有一个能装 <span class=\"katex math inline\">v</span> 个单位体积的购物袋，并详细了解了各打折商品的重量、体积及此商品实际优惠的金额。她想在自己体力的限度和购物袋容积限度内，尽可能多地得到购物优惠。</p>\n<p>超市规定这些打折商品每种只能购买一件。</p>\n<p>请你编写程序，制定一个购买商品的计划，求出小惠能得到的最大优惠金额和实际应购买的各商品序号。</p>\n</div>            </div>",
+      "text": "小惠听说超市正在打折促销，要制订一个得到最大优惠的购物计划。\n小惠的体力可以提起 w 单位重量的东西，还有一个能装 v 个单位体积的购物袋，并详细了解了各打折商品的重量、体积及此商品实际优惠的金额。她想在自己体力的限度和购物袋容积限度内，尽可能多地得到购物优惠。\n超市规定这些打折商品每种只能购买一件。\n请你编写程序，制定一个购买商品的计划，求出小惠能得到的最大优惠金额和实际应购买的各商品序号。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：依次为 <span class=\"katex math inline\">w</span>、<span class=\"katex math inline\">v</span> 和 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n</span> 为商品种类数），所有数值均为不超过 <span class=\"katex math inline\">100</span> 的正整数。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行：每行有三个整数，依次为某种商品的重量、体积和让利金额，数值间以空格分开，所有数值均为不超过 <span class=\"katex math inline\">100</span> 的正整数。</p>\n</div>            </div>",
+      "text": "第一行：依次为 w、v 和 n（n 为商品种类数），所有数值均为不超过 100 的正整数。\n接下来的 n 行：每行有三个整数，依次为某种商品的重量、体积和让利金额，数值间以空格分开，所有数值均为不超过 100 的正整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：小惠能够得到的最大让利金额。</p>\n<p>第二行：依次为从小到大排列的商品序号，序号从 <span class=\"katex math inline\">1</span> 开始，序号间用空格分开。若第二行输出的序列不唯一，则输出其最小字典序。</p>\n</div>            </div>",
+      "text": "第一行：小惠能够得到的最大让利金额。\n第二行：依次为从小到大排列的商品序号，序号从 1 开始，序号间用空格分开。若第二行输出的序列不唯一，则输出其最小字典序。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 9 4\r\n8 3 6\r\n5 4 5\r\n3 7 7\r\n4 5 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9\r\n2 4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>20 20 7\r\n5 5 10\r\n6 6 12\r\n7 7 14\r\n4 4 8\r\n3 3 6\r\n8 8 16\r\n2 2 4</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>40\r\n1 2 3 7</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 9 4\r\n8 3 6\r\n5 4 5\r\n3 7 7\r\n4 5 4\n                        \n                        \n                            输出\n                            9\r\n2 4\n                        \n\n                                                    \n                                输入\n                                20 20 7\r\n5 5 10\r\n6 6 12\r\n7 7 14\r\n4 4 8\r\n3 3 6\r\n8 8 16\r\n2 2 4\n                            \n                            \n                                输出\n                                40\r\n1 2 3 7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>本题要注意，如果有多个方案都能得到最大购物优惠，要<strong>保留字典序最小</strong>的的方案。（本题数据已于26年1月加强）</p>\n</div>\n\n                    \n                </div>",
+      "text": "本题要注意，如果有多个方案都能得到最大购物优惠，要保留字典序最小的的方案。（本题数据已于26年1月加强）"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 背包</p>\n</div>                </div>",
+      "text": "蓝桥杯 背包"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">背包</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯背包"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 9 4\r\n8 3 6\r\n5 4 5\r\n3 7 7\r\n4 5 4",
+      "output": "9\r\n2 4"
+    },
+    {
+      "input": "20 20 7\r\n5 5 10\r\n6 6 12\r\n7 7 14\r\n4 4 8\r\n3 3 6\r\n8 8 16\r\n2 2 4",
+      "output": "40\r\n1 2 3 7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1387",
+    "通过人数": "766",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:25"
+}

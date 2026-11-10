@@ -1,0 +1,52 @@
+{
+  "id": "1772",
+  "title": "滑动窗口",
+  "tags": [
+    "单调队列",
+    "RMQ"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1772",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个长度为 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n \\le 10^6</span>）的数组。有一个大小为 <span class=\"katex math inline\">k</span> 的滑动窗口从数组的最左端移动到最右端。你可以看到窗口中的 <span class=\"katex math inline\">k</span> 个数字。窗口每次向右滑动一个数字的距离。</p>\n<p>下面是一个例子：</p>\n<p>数组是 [<span class=\"katex math inline\">1</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">-1</span> <span class=\"katex math inline\">-3</span> <span class=\"katex math inline\">5</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">6</span> <span class=\"katex math inline\">7</span>]， <span class=\"katex math inline\">k = 3</span>。\n<img src=\"https://assets.boyi.local/58a03837995de3f4c13c03da.png\"></p>\n<p>你的任务是得到滑动窗口在每个位置时的最大值和最小值。</p>\n</div>            </div>",
+      "text": "给定一个长度为 n（n \\le 10^6）的数组。有一个大小为 k 的滑动窗口从数组的最左端移动到最右端。你可以看到窗口中的 k 个数字。窗口每次向右滑动一个数字的距离。\n下面是一个例子：\n数组是 [1 3 -1 -3 5 3 6 7]， k = 3。\n\n你的任务是得到滑动窗口在每个位置时的最大值和最小值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包括两行。</p>\n<p>第一行包括 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">k</span> ，分别表示数组的长度和窗口的大小。（<span class=\"katex math inline\">k＜n</span>）</p>\n<p>第二行包括 <span class=\"katex math inline\">n</span> 个数字。</p>\n</div>            </div>",
+      "text": "输入包括两行。\n第一行包括 n 和 k ，分别表示数组的长度和窗口的大小。（k＜n）\n第二行包括 n 个数字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出包括两行。</p>\n<p>第一行包括窗口从左至右移动的每个位置的最小值。</p>\n<p>第二行包括窗口从左至右移动的每个位置的最大值。</p>\n</div>            </div>",
+      "text": "输出包括两行。\n第一行包括窗口从左至右移动的每个位置的最小值。\n第二行包括窗口从左至右移动的每个位置的最大值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8 3\r\n1 3 -1 -3 5 3 6 7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>-1 -3 -3 -3 3 3\r\n3 3 5 5 6 7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8 3\r\n1 3 -1 -3 5 3 6 7\n                        \n                        \n                            输出\n                            -1 -3 -3 -3 3 3\r\n3 3 5 5 6 7"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">单调队列</span><span class=\"label label-warning\">RMQ</span></span></p>\n</div>                </div>",
+      "text": "单调队列RMQ"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8 3\r\n1 3 -1 -3 5 3 6 7",
+      "output": "-1 -3 -3 -3 3 3\r\n3 3 5 5 6 7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "3 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1941",
+    "通过人数": "1033",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:24:00"
+}

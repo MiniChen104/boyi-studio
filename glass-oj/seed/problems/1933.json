@@ -1,0 +1,61 @@
+{
+  "id": "1933",
+  "title": "比赛组队",
+  "tags": [
+    "并查集",
+    "背包"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1933",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一场数学团体赛，学校要从 <span class=\"katex math inline\">n</span> 个人中选出 <span class=\"katex math inline\">m</span>个人组队参赛，这 <span class=\"katex math inline\">m</span> 个人中有 <span class=\"katex math inline\">k</span> 对人本身在校内就是一个团队的，因此在一个团队的同学要么都选，要么都不选。</p>\n<p>请你编程选出尽可能和 <span class=\"katex math inline\">m</span> 接近的人数。</p>\n</div>            </div>",
+      "text": "有一场数学团体赛，学校要从 n 个人中选出 m个人组队参赛，这 m 个人中有 k 对人本身在校内就是一个团队的，因此在一个团队的同学要么都选，要么都不选。\n请你编程选出尽可能和 m 接近的人数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，三个正整数 <span class=\"katex math inline\">n,m,k</span>。</p>\n<p>第 <span class=\"katex math inline\">2</span> 至第 <span class=\"katex math inline\">k</span> 行,每行 <span class=\"katex math inline\">2</span>个数，表示在校内就在一个团队的 <span class=\"katex math inline\">2</span> 个人的编号（编号为 <span class=\"katex math inline\">1,2, \\dots ,n</span>）。</p>\n<p>数据范围：</p>\n<p><span class=\"katex math inline\">1≤n,m≤2 \\times 10^4</span>。</p>\n</div>            </div>",
+      "text": "第一行，三个正整数 n,m,k。\n第 2 至第 k 行,每行 2个数，表示在校内就在一个团队的 2 个人的编号（编号为 1,2, \\dots ,n）。\n数据范围：\n1≤n,m≤2 \\times 10^4。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，与原来的 <span class=\"katex math inline\">m</span> 尽可能接近的选出的人数。</p>\n<p>如果有两种方案与 <span class=\"katex math inline\">m</span> 的差的绝对值相等，选较小的一种。</p>\n</div>            </div>",
+      "text": "一行，与原来的 m 尽可能接近的选出的人数。\n如果有两种方案与 m 的差的绝对值相等，选较小的一种。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 3 2\r\n1 2\r\n3 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>6 4 4\r\n2 3\r\n3 4\r\n4 5\r\n5 6</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>5</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 3 2\r\n1 2\r\n3 4\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                6 4 4\r\n2 3\r\n3 4\r\n4 5\r\n5 6\n                            \n                            \n                                输出\n                                5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>并查集 背包</p>\n</div>                </div>",
+      "text": "并查集 背包"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">并查集</span><span class=\"label label-warning\">背包</span></span></p>\n</div>                </div>",
+      "text": "并查集背包"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 3 2\r\n1 2\r\n3 4",
+      "output": "2"
+    },
+    {
+      "input": "6 4 4\r\n2 3\r\n3 4\r\n4 5\r\n5 6",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1238",
+    "通过人数": "594",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:26:10"
+}

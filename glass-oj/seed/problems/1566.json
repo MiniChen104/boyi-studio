@@ -1,0 +1,63 @@
+{
+  "id": "1566",
+  "title": "图书管理员（librarian）",
+  "tags": [
+    "noip复赛",
+    "函数问题",
+    "数组问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1566",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>图书馆中每本书都有一个图书编码，可以用于快速检索图书，这个图书编码是一个正整数。 </p>\n<p>每位借书的读者手中有一个需求码，这个需求码也是一个正整数。如果一本书的图书编码恰好以读者的需求码结尾，那么这本书就是这位读者所需要的。 </p>\n<p>小D刚刚当上图书馆的管理员，她知道图书馆里所有书的图书编码，她请你帮她写一个程序，对于每一位读者，求出他所需要的书中图书编码最小的那本书，如果没有他需要的书，请输出 <span class=\"katex math inline\">-1</span> 。</p>\n</div>            </div>",
+      "text": "图书馆中每本书都有一个图书编码，可以用于快速检索图书，这个图书编码是一个正整数。 \n每位借书的读者手中有一个需求码，这个需求码也是一个正整数。如果一本书的图书编码恰好以读者的需求码结尾，那么这本书就是这位读者所需要的。 \n小D刚刚当上图书馆的管理员，她知道图书馆里所有书的图书编码，她请你帮她写一个程序，对于每一位读者，求出他所需要的书中图书编码最小的那本书，如果没有他需要的书，请输出 -1 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，包含两个正整数 <span class=\"katex math inline\">n , q</span>，以一个空格分开，分别代表图书馆里 书的数量和读者的数量。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行，每行包含一个正整数，代表图书馆里某本书的图书编码。</p>\n<p>接下来的 <span class=\"katex math inline\">q</span> 行，每行包含两个正整数，以一个空格分开，第一个正整数代表图书馆 里读者的需求码的长度，第二个正整数代表读者的需求码。</p>\n</div>            </div>",
+      "text": "第一行，包含两个正整数 n , q，以一个空格分开，分别代表图书馆里 书的数量和读者的数量。\n接下来的 n 行，每行包含一个正整数，代表图书馆里某本书的图书编码。\n接下来的 q 行，每行包含两个正整数，以一个空格分开，第一个正整数代表图书馆 里读者的需求码的长度，第二个正整数代表读者的需求码。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\"> q</span> 行，每行包含一个整数，如果存在第 <span class=\"katex math inline\">i</span> 个读者所需要的书，则在第 <span class=\"katex math inline\">i</span> 行输出第 <span class=\"katex math inline\">i</span> 个读者所需要的书中图书编码最小的那本书的图书编码，否则输出<span class=\"katex math inline\">-1</span>。</p>\n</div>            </div>",
+      "text": "q 行，每行包含一个整数，如果存在第 i 个读者所需要的书，则在第 i 行输出第 i 个读者所需要的书中图书编码最小的那本书的图书编码，否则输出-1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 5 \r\n2123 \r\n1123 \r\n23 \r\n24 \r\n24 \r\n2 23 \r\n3 123 \r\n3 124 \r\n2 12 \r\n2 12</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>23 \r\n1123 \r\n-1 \r\n-1 \r\n-1 </pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 5 \r\n2123 \r\n1123 \r\n23 \r\n24 \r\n24 \r\n2 23 \r\n3 123 \r\n3 124 \r\n2 12 \r\n2 12\n                        \n                        \n                            输出\n                            23 \r\n1123 \r\n-1 \r\n-1 \r\n-1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【输入输出样例 <span class=\"katex math inline\">1</span> 说明】 </p>\n<p>第一位读者需要的书有 <span class=\"katex math inline\">2123</span>、<span class=\"katex math inline\">1123</span>、<span class=\"katex math inline\">23</span>，其中 <span class=\"katex math inline\">23</span> 是最小的图书编码。第二位读者需要的书有 <span class=\"katex math inline\">2123</span>、<span class=\"katex math inline\">1123</span> ，其中 <span class=\"katex math inline\">1123</span> 是最小的图书编码。对于第三位，第四位和第五位读者，没有书的图书编码以他们的需求码结尾，即没有他们需要的书，输出 <span class=\"katex math inline\">-1</span> 。</p>\n<p>【数据规模与约定】</p>\n<p>对于 <span class=\"katex math inline\">20\\%</span>的数据，<span class=\"katex math inline\">1 ≤ n ≤ 2</span>。</p>\n<p>另有 <span class=\"katex math inline\">20\\%</span>的数据，<span class=\"katex math inline\">q = 1</span>。</p>\n<p>另有 <span class=\"katex math inline\">20\\%</span>的数据，所有读者的需求码的长度均为 <span class=\"katex math inline\">1</span>。</p>\n<p>另有 <span class=\"katex math inline\">20\\%</span>的数据，所有的图书编码按从小到大的顺序给出。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span>的数据，<span class=\"katex math inline\">1 ≤ n ≤ 1,000,1 ≤ q ≤ 1,000</span>，所有的图书编码和需求码均 不超过 <span class=\"katex math inline\">10,000,000</span>。</p>\n<p>【来源】</p>\n<p>NOIP2017-普及组复赛第2题</p>\n</div>\n\n                    \n                </div>",
+      "text": "【输入输出样例 1 说明】 \n第一位读者需要的书有 2123、1123、23，其中 23 是最小的图书编码。第二位读者需要的书有 2123、1123 ，其中 1123 是最小的图书编码。对于第三位，第四位和第五位读者，没有书的图书编码以他们的需求码结尾，即没有他们需要的书，输出 -1 。\n【数据规模与约定】\n对于 20\\%的数据，1 ≤ n ≤ 2。\n另有 20\\%的数据，q = 1。\n另有 20\\%的数据，所有读者的需求码的长度均为 1。\n另有 20\\%的数据，所有的图书编码按从小到大的顺序给出。\n对于 100\\%的数据，1 ≤ n ≤ 1,000,1 ≤ q ≤ 1,000，所有的图书编码和需求码均 不超过 10,000,000。\n【来源】\nNOIP2017-普及组复赛第2题"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>NOIP2017-普及组复赛第2题</p>\n</div>                </div>",
+      "text": "NOIP2017-普及组复赛第2题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span><span class=\"label label-warning\">函数问题</span><span class=\"label label-info\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "noip复赛函数问题数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 5 \r\n2123 \r\n1123 \r\n23 \r\n24 \r\n24 \r\n2 23 \r\n3 123 \r\n3 124 \r\n2 12 \r\n2 12",
+      "output": "23 \r\n1123 \r\n-1 \r\n-1 \r\n-1 "
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "2078",
+    "通过人数": "1357",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:21:11"
+}

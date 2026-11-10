@@ -1,0 +1,56 @@
+{
+  "id": "1357",
+  "title": "哪个厂家的零件更标准？",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1357",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在统计描述中，方差用来计算每一个变量（观察值）与总体均数之间的差异。比如：甲乙 <span class=\"katex math inline\">2</span> 个厂商生产某零件，一批零件要求在尺寸合格的情况下，大小越一致越好，由于生产工艺的问题，零件生产厂商生产的零件不可能一模一样。</p>\n<p>为了检测甲乙两个厂商，哪个厂商生产的零件更符合标准，分别从 <span class=\"katex math inline\">2</span> 个厂商生产的零件中抽取 <span class=\"katex math inline\">5</span> 个样品尺寸如下：</p>\n<p>甲：<span class=\"katex math inline\">100</span> <span class=\"katex math inline\">101</span> <span class=\"katex math inline\">102</span> <span class=\"katex math inline\">100</span> <span class=\"katex math inline\">99</span>；</p>\n<p>乙：<span class=\"katex math inline\">98</span> <span class=\"katex math inline\">100</span> <span class=\"katex math inline\">105</span> <span class=\"katex math inline\">103</span> <span class=\"katex math inline\">96</span>；</p>\n<p>假设零件尺寸在 <span class=\"katex math inline\">95 \\sim 110</span> 之间都算合格，那么两批零件都是合格的；如果按照平均数计算，两组数据的平均值都是 <span class=\"katex math inline\">100.4</span>。</p>\n<p>但如果将两组数据画到数轴上：</p>\n<p><img src=\"https://assets.boyi.local/9b65c4672e08d39328e93775.jpg\"></p>\n<p><img src=\"https://assets.boyi.local/8662d571e8a69a83ef03f7b4.jpg\"></p>\n<p>从两个厂抽检的零件分布图可以看出，甲厂的零件大小更加一致，更加符合标准。</p>\n<p>为了方便计算数据的离散程度，我们引入方差的概念，方差的计算公式为：</p>\n<p><span class=\"katex math multi-line\">s^2 = [(x_1-\\overline{x})^2+(x_2-\\overline{x})^2+ \\dots + (x_n-\\overline{x})^2]</span></p>\n<p>其中 <span class=\"katex math inline\">x_1 \\sim x_n</span> 代表一组数据中的每个元素， <span class=\"katex math inline\"> \\overline{x} </span> 代表这组数据的平均值。</p>\n<p>按照公式，甲厂零件的方差为：</p>\n<p><span class=\"katex math multi-line\">(100-100.4)^2+(101-100.4)^2+(102-100.4)^2+(100-100.4)^2+(99-100.4)^2 = 5.2</span></p>\n<p>乙厂零件的方差为：</p>\n<p><span class=\"katex math multi-line\">(98 -100.4)^2+(100-100.4)^2+(105-100.4)^2+(103-100.4)^2+(96-100.4)^2 = 53.2</span></p>\n<p>从方差上也可以看出，甲厂的零件更符合标准！</p>\n<p>现从键盘读入 <span class=\"katex math inline\">2</span> 个厂生产的零件尺寸（假设零件的尺寸都是合格的），请计算哪个厂的零件尺寸更加一致（方差更小）？\n（9.2）</p>\n</div>            </div>",
+      "text": "在统计描述中，方差用来计算每一个变量（观察值）与总体均数之间的差异。比如：甲乙 2 个厂商生产某零件，一批零件要求在尺寸合格的情况下，大小越一致越好，由于生产工艺的问题，零件生产厂商生产的零件不可能一模一样。\n为了检测甲乙两个厂商，哪个厂商生产的零件更符合标准，分别从 2 个厂商生产的零件中抽取 5 个样品尺寸如下：\n甲：100 101 102 100 99；\n乙：98 100 105 103 96；\n假设零件尺寸在 95 \\sim 110 之间都算合格，那么两批零件都是合格的；如果按照平均数计算，两组数据的平均值都是 100.4。\n但如果将两组数据画到数轴上：\n\n\n从两个厂抽检的零件分布图可以看出，甲厂的零件大小更加一致，更加符合标准。\n为了方便计算数据的离散程度，我们引入方差的概念，方差的计算公式为：\ns^2 = [(x_1-\\overline{x})^2+(x_2-\\overline{x})^2+ \\dots + (x_n-\\overline{x})^2]\n其中 x_1 \\sim x_n 代表一组数据中的每个元素，  \\overline{x}  代表这组数据的平均值。\n按照公式，甲厂零件的方差为：\n(100-100.4)^2+(101-100.4)^2+(102-100.4)^2+(100-100.4)^2+(99-100.4)^2 = 5.2\n乙厂零件的方差为：\n(98 -100.4)^2+(100-100.4)^2+(105-100.4)^2+(103-100.4)^2+(96-100.4)^2 = 53.2\n从方差上也可以看出，甲厂的零件更符合标准！\n现从键盘读入 2 个厂生产的零件尺寸（假设零件的尺寸都是合格的），请计算哪个厂的零件尺寸更加一致（方差更小）？\n（9.2）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为一个整数 <span class=\"katex math inline\">n</span>，代表 <span class=\"katex math inline\">2</span> 个厂抽检的零件的个数！（ <span class=\"katex math inline\">n</span> 在 <span class=\"katex math inline\">5 \\sim 100</span> 之间）；</p>\n<p>第二行为 <span class=\"katex math inline\">n</span> 个整数，代表甲厂的 <span class=\"katex math inline\">n</span> 个零件的尺寸；</p>\n<p>第三行为 <span class=\"katex math inline\">n</span> 个整数，代表乙厂的 <span class=\"katex math inline\">n</span> 个零件的尺寸。</p>\n<p>所有零件的尺寸都在 <span class=\"katex math inline\">1 \\sim 1000</span> 的范围内。</p>\n</div>            </div>",
+      "text": "第一行为一个整数 n，代表 2 个厂抽检的零件的个数！（ n 在 5 \\sim 100 之间）；\n第二行为 n 个整数，代表甲厂的 n 个零件的尺寸；\n第三行为 n 个整数，代表乙厂的 n 个零件的尺寸。\n所有零件的尺寸都在 1 \\sim 1000 的范围内。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>哪个厂的零件更加符合标准，甲厂请输出<code>jia</code>，乙厂请输出<code>yi</code>。</p>\n</div>            </div>",
+      "text": "哪个厂的零件更加符合标准，甲厂请输出jia，乙厂请输出yi。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n100 101 102 100 99\r\n98 100 105 103 96</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>jia</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n100 101 102 100 99\r\n98 100 105 103 96\n                        \n                        \n                            输出\n                            jia"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n100 101 102 100 99\r\n98 100 105 103 96",
+      "output": "jia"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "12536",
+    "通过人数": "6559",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:18"
+}

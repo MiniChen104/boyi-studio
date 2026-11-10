@@ -1,0 +1,52 @@
+{
+  "id": "6047",
+  "title": "判断数字出现了几次",
+  "tags": [
+    "信息素养大赛",
+    "23年小学组复赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6047",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个正整数 <span class=\"katex math inline\">n</span>，判断从 <span class=\"katex math inline\">1</span> 到这个数本身的所有数中，一共出现了多少次数字 <span class=\"katex math inline\">k</span>。</p>\n</div>            </div>",
+      "text": "给定一个正整数 n，判断从 1 到这个数本身的所有数中，一共出现了多少次数字 k。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入共 <span class=\"katex math inline\">1</span> 行，包括一个正整数 <span class=\"katex math inline\">n</span> 和一个正整数 <span class=\"katex math inline\">k</span>。(<span class=\"katex math inline\">0 \\lt n \\lt 32767</span>，<span class=\"katex math inline\">0 \\lt k \\lt 10</span>）</p>\n</div>            </div>",
+      "text": "输入共 1 行，包括一个正整数 n 和一个正整数 k。(0 \\lt n \\lt 32767，0 \\lt k \\lt 10）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共 <span class=\"katex math inline\">1</span> 行，一个整数，表示 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span> 之间的所有数 (包括 <span class=\"katex math inline\">n</span>)，一共出现了几次 <span class=\"katex math inline\">k</span>。</p>\n</div>            </div>",
+      "text": "输出共 1 行，一个整数，表示 1 到 n 之间的所有数 (包括 n)，一共出现了几次 k。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>13 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            13 3\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">信息素养大赛</span><span class=\"label label-warning\">23年小学组复赛</span></span></p>\n</div>                </div>",
+      "text": "信息素养大赛23年小学组复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "13 3",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "517",
+    "通过人数": "327",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:18"
+}

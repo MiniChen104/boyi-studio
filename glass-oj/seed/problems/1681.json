@@ -1,0 +1,61 @@
+{
+  "id": "1681",
+  "title": "铺地毯",
+  "tags": [
+    "noip"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1681",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><div class=\"marked\">\n<p>\n为了准备一个独特的颁奖典礼，组织者在会场的一片矩形区域（可看做是平面直角坐标系的第一象限）铺上一些矩形地毯。一共有 <span><span class=\"katex\"><span class=\"katex-mathml\">nn</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">n</span></span></span></span></span> 张地毯，编号从 <span><span class=\"katex\"><span class=\"katex-mathml\">11</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord\">1</span></span></span></span></span> 到<span><span class=\"katex\"><span class=\"katex-mathml\">nn</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">n</span></span></span></span></span>。现在将这些地毯按照编号从小到大的顺序平行于坐标轴先后铺设，后铺的地毯覆盖在前面已经铺好的地毯之上。\n</p>\n<p>\n地毯铺设完成后，组织者想知道覆盖地面某个点的最上面的那张地毯的编号。注意：在矩形地毯边界和四个顶点上的点也算被地毯覆盖。\n</p>\n</div>\n</div>            </div>",
+      "text": "为了准备一个独特的颁奖典礼，组织者在会场的一片矩形区域（可看做是平面直角坐标系的第一象限）铺上一些矩形地毯。一共有 nnn 张地毯，编号从 111 到nnn。现在将这些地毯按照编号从小到大的顺序平行于坐标轴先后铺设，后铺的地毯覆盖在前面已经铺好的地毯之上。\n\n\n地毯铺设完成后，组织者想知道覆盖地面某个点的最上面的那张地毯的编号。注意：在矩形地毯边界和四个顶点上的点也算被地毯覆盖。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><div class=\"marked\">\n<p>\n输入共<span><span class=\"katex\"><span class=\"katex-mathml\">n+2n+2</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">n</span><span class=\"mord rule\"></span><span class=\"mbin\">+</span><span class=\"mord rule\"></span><span class=\"mord\">2</span></span></span></span></span>行\n</p>\n<p>\n第一行，一个整数<span><span class=\"katex\"><span class=\"katex-mathml\">nn</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">n</span></span></span></span></span>，表示总共有<span><span class=\"katex\"><span class=\"katex-mathml\">nn</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">n</span></span></span></span></span>张地毯\n</p>\n<p>\n接下来的<span><span class=\"katex\"><span class=\"katex-mathml\">nn</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">n</span></span></span></span></span>行中，第 <span><span class=\"katex\"><span class=\"katex-mathml\">i+1i+1</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">i</span><span class=\"mord rule\"></span><span class=\"mbin\">+</span><span class=\"mord rule\"></span><span class=\"mord\">1</span></span></span></span></span>行表示编号<span><span class=\"katex\"><span class=\"katex-mathml\">ii</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">i</span></span></span></span></span>的地毯的信息，包含四个正整数<span><span class=\"katex\"><span class=\"katex-mathml\">a,b,g,ka ,b ,g ,k</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">a</span><span class=\"mpunct\">,</span><span class=\"mord rule\"></span><span class=\"mord mathit\">b</span><span class=\"mpunct\">,</span><span class=\"mord rule\"></span><span class=\"mord mathit\">g</span><span class=\"mpunct\">,</span><span class=\"mord rule\"></span><span class=\"mord mathit\">k</span></span></span></span></span> ，每两个整数之间用一个空格隔开，分别表示铺设地毯的左下角的坐标<span><span class=\"katex\"><span class=\"katex-mathml\">(a,b)(a,b)</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mopen\">(</span><span class=\"mord mathit\">a</span><span class=\"mpunct\">,</span><span class=\"mord rule\"></span><span class=\"mord mathit\">b</span><span class=\"mclose\">)</span></span></span></span></span>以及地毯在<span><span class=\"katex\"><span class=\"katex-mathml\">xx</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">x</span></span></span></span></span>轴和<span><span class=\"katex\"><span class=\"katex-mathml\">yy</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">y</span></span></span></span></span>轴方向的长度\n</p>\n<p>\n第<span><span class=\"katex\"><span class=\"katex-mathml\">n+2n+2</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">n</span><span class=\"mord rule\"></span><span class=\"mbin\">+</span><span class=\"mord rule\"></span><span class=\"mord\">2</span></span></span></span></span>行包含两个正整数<span><span class=\"katex\"><span class=\"katex-mathml\">xx</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">x</span></span></span></span></span>和<span><span class=\"katex\"><span class=\"katex-mathml\">yy</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord mathit\">y</span></span></span></span></span>，表示所求的地面的点的坐标<span><span class=\"katex\"><span class=\"katex-mathml\">(x,y)(x,y)</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mopen\">(</span><span class=\"mord mathit\">x</span><span class=\"mpunct\">,</span><span class=\"mord rule\"></span><span class=\"mord mathit\">y</span><span class=\"mclose\">)</span></span></span></span></span> \n</p>\n</div>\n</div>            </div>",
+      "text": "输入共n+2n+2n+2行\n\n\n第一行，一个整数nnn，表示总共有nnn张地毯\n\n\n接下来的nnn行中，第 i+1i+1i+1行表示编号iii的地毯的信息，包含四个正整数a,b,g,ka ,b ,g ,ka,b,g,k ，每两个整数之间用一个空格隔开，分别表示铺设地毯的左下角的坐标(a,b)(a,b)(a,b)以及地毯在xxx轴和yyy轴方向的长度\n\n\n第n+2n+2n+2行包含两个正整数xxx和yyy，表示所求的地面的点的坐标(x,y)(x,y)(x,y)"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共<span><span class=\"katex\"><span class=\"katex-mathml\">11</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord\">1</span></span></span></span></span>行，一个整数，表示所求的地毯的编号；若此处没有被地毯覆盖则输出<span><span class=\"katex\"><span class=\"katex-mathml\">−1-1</span><span class=\"katex-html\"><span class=\"strut\"></span><span class=\"strut bottom\"></span><span class=\"base\"><span class=\"mord\">−</span><span class=\"mord\">1</span></span></span></span></span></p>\n</div>            </div>",
+      "text": "输出共111行，一个整数，表示所求的地毯的编号；若此处没有被地毯覆盖则输出−1-1−1"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1 0 2 3\r\n0 2 3 3\r\n2 1 3 3\r\n2 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1 0 2 3\r\n0 2 3 3\r\n2 1 3 3\r\n2 2\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释1】</p>\n<p>如下图，111 号地毯用实线表示，222 号地毯用虚线表示，333 号用双实线表示，覆盖点(2,2)(2,2)(2,2)的最上面一张地毯是 333 号地毯。\n<img src=\"https://assets.boyi.local/d2484aef5188cf5c0f463adf.png\"></p>\n<p>【数据范围】</p>\n<p>对于30% 的数据，有 n≤2n ≤2n≤2 ；\n对于50% 的数据，0≤a,b,g,k≤1000 ≤a, b, g, k≤1000≤a,b,g,k≤100；\n对于100%的数据，有 0≤n≤10,0000 ≤n ≤10,0000≤n≤10,000 ，0≤a,b,g,k≤100,0000≤a, b, g, k ≤100,0000≤a,b,g,k≤100,000。</p>\n<p>noip2011提高组day1第1题</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释1】\n如下图，111 号地毯用实线表示，222 号地毯用虚线表示，333 号用双实线表示，覆盖点(2,2)(2,2)(2,2)的最上面一张地毯是 333 号地毯。\n\n【数据范围】\n对于30% 的数据，有 n≤2n ≤2n≤2 ；\n对于50% 的数据，0≤a,b,g,k≤1000 ≤a, b, g, k≤1000≤a,b,g,k≤100；\n对于100%的数据，有 0≤n≤10,0000 ≤n ≤10,0000≤n≤10,000 ，0≤a,b,g,k≤100,0000≤a, b, g, k ≤100,0000≤a,b,g,k≤100,000。\nnoip2011提高组day1第1题"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip</p>\n</div>                </div>",
+      "text": "noip"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip</span></span></p>\n</div>                </div>",
+      "text": "noip"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1 0 2 3\r\n0 2 3 3\r\n2 1 3 3\r\n2 2",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "560",
+    "通过人数": "328",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:22:49"
+}

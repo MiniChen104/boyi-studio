@@ -1,0 +1,61 @@
+{
+  "id": "1087",
+  "title": "两个数M和N的最小公倍数",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1087",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>求两个正整数 <span class=\"katex math inline\">M</span> 和 <span class=\"katex math inline\">N</span> 的最小公倍数。  </p>\n<p>（ <span class=\"katex math inline\">5.1.44</span> ）</p>\n</div>            </div>",
+      "text": "求两个正整数 M 和 N 的最小公倍数。  \n（ 5.1.44 ）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行，包括两个正整数。</p>\n</div>            </div>",
+      "text": "输入一行，包括两个正整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，包括 <span class=\"katex math inline\">1</span> 个正整数。</p>\n</div>            </div>",
+      "text": "输出只有一行，包括 1 个正整数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>45 60</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>180</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            45 60\n                        \n                        \n                            输出\n                            180"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><span class=\"katex math inline\">100\\%</span>数据，确保 <span class=\"katex math inline\">1 \\le M,N \\le 2^{63}-1</span>，题目测试数据确保 <span class=\"katex math inline\">M \\times N</span> 的乘积在 <span class=\"katex math inline\">[1,2^{63}-1]</span> 的范围内。</p>\n</div>\n\n                    \n                </div>",
+      "text": "100\\%数据，确保 1 \\le M,N \\le 2^{63}-1，题目测试数据确保 M \\times N 的乘积在 [1,2^{63}-1] 的范围内。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "45 60",
+      "output": "180"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "16341",
+    "通过人数": "7169",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:14:32"
+}

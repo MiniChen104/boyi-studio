@@ -1,0 +1,61 @@
+{
+  "id": "2358",
+  "title": "A+B 问题",
+  "tags": [
+    "蓝桥杯等级考试"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2358",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>【具体要求】  </p>\n<p>一张白纸上被调皮的小蓝写上了若干个整数数字，你需要快速的算出这些数字之和是多少。 </p>\n</div>            </div>",
+      "text": "【具体要求】  \n一张白纸上被调皮的小蓝写上了若干个整数数字，你需要快速的算出这些数字之和是多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入若干行，每行有若干个整数数字。</p>\n</div>            </div>",
+      "text": "输入若干行，每行有若干个整数数字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出所有输入整数数字之和。(-2<sup>63</sup>≤数字和≤2<sup>63</sup>-1) </p>\n</div>            </div>",
+      "text": "输出所有输入整数数字之和。(-263≤数字和≤263-1)"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 2 3 \r\n4 5 6 7 \r\n-8 -9 -10\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 </pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 2 3 \r\n4 5 6 7 \r\n-8 -9 -10\r\n\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>注意是任意行数，任意列数！</p>\n<p>【评分标准】  </p>\n<p>本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。</p>\n<pre><code>蓝桥等考 C++组单选题样题（十八级）\n以下描述错误的选项为（ ）。\nA 函数 sscanf()从字符串读取格式化输入数据\nB getchar()函数单次只能读取单个字符\nC 用 C++输入输出流比 C 语言标准输入/输出库函数效率低\nD 字符串流 stringstream 对应的头文件是 cstream \n【答案】D \n【解析】字符串流 stringstream 对应的头文件是 sstream，而不是 cstream。\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "注意是任意行数，任意列数！\n【评分标准】  \n本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。\n蓝桥等考 C++组单选题样题（十八级）\n以下描述错误的选项为（ ）。\nA 函数 sscanf()从字符串读取格式化输入数据\nB getchar()函数单次只能读取单个字符\nC 用 C++输入输出流比 C 语言标准输入/输出库函数效率低\nD 字符串流 stringstream 对应的头文件是 cstream \n【答案】D \n【解析】字符串流 stringstream 对应的头文件是 sstream，而不是 cstream。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥等考 C++组编程题样题（十八级）</p>\n</div>                </div>",
+      "text": "蓝桥等考 C++组编程题样题（十八级）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯等级考试</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 2 3 \r\n4 5 6 7 \r\n-8 -9 -10\r\n",
+      "output": "1 "
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "550",
+    "通过人数": "295",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:26"
+}

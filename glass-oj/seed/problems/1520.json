@@ -1,0 +1,62 @@
+{
+  "id": "1520",
+  "title": "骑士的金币（coin）",
+  "tags": [
+    "noip复赛",
+    "需要找规律的循环"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1520",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>国王将金币作为奖励，发放给忠诚的骑士。</p>\n<p>第一天，骑士收到一枚金币；之后两天（第二天和第三天）里，每天收到两枚金币；之后三天（第四、五、六天）里，每天收到三枚金币；之后四天（第七、八、九、十天）里，每天收到四枚金币 <span class=\"katex math inline\">\\dots</span> 这种工资发放模式会一直这样延续下去：当连续 <span class=\"katex math inline\">N</span> 天每天收到 <span class=\"katex math inline\">N</span> 枚金币后，骑士会在之后的连续 <span class=\"katex math inline\">N+1</span> 天里，每天收到 <span class=\"katex math inline\">N+1</span> 枚金币（ <span class=\"katex math inline\">N</span> 为任意正整数）。</p>\n<p>你需要编写一个程序，确定从第一天开始的给定天数内，骑士一共获得了多少金币。</p>\n</div>            </div>",
+      "text": "国王将金币作为奖励，发放给忠诚的骑士。\n第一天，骑士收到一枚金币；之后两天（第二天和第三天）里，每天收到两枚金币；之后三天（第四、五、六天）里，每天收到三枚金币；之后四天（第七、八、九、十天）里，每天收到四枚金币 \\dots 这种工资发放模式会一直这样延续下去：当连续 N 天每天收到 N 枚金币后，骑士会在之后的连续 N+1 天里，每天收到 N+1 枚金币（ N 为任意正整数）。\n你需要编写一个程序，确定从第一天开始的给定天数内，骑士一共获得了多少金币。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数（范围 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">10000</span>），表示天数。</p>\n</div>            </div>",
+      "text": "一个整数（范围 1 到 10000），表示天数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>骑士获得的金币数。</p>\n</div>            </div>",
+      "text": "骑士获得的金币数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>14</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\n                        \n                        \n                            输出\n                            14"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【来源】</strong></p>\n<p>noip2015普及组复赛第1题</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】\nnoip2015普及组复赛第1题"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛 需要找规律的循环</p>\n</div>                </div>",
+      "text": "noip复赛 需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span><span class=\"label label-warning\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "noip复赛需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6",
+      "output": "14"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "14076",
+    "通过人数": "9294",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:34"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "3153",
+  "title": "暗号",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3153",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个等差数列 <span class=\"katex math inline\">a_i</span> 的首项，第二项，末项，求和。</p>\n</div>            </div>",
+      "text": "给定一个等差数列 a_i 的首项，第二项，末项，求和。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入三个数，分别为等差数列的首项，第二项和末项。</p>\n</div>            </div>",
+      "text": "输入三个数，分别为等差数列的首项，第二项和末项。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果该等差数列只有三项，输出 <span class=\"katex math inline\"> a_1 + a_2 + a_3 = s</span> 。</p>\n<p>超过三项只显示前两项和最后一项，中间用 ... 省略。</p>\n<p>等号左侧的加数如果是负数要加()。</p>\n</div>            </div>",
+      "text": "如果该等差数列只有三项，输出  a_1 + a_2 + a_3 = s 。\n超过三项只显示前两项和最后一项，中间用 ... 省略。\n等号左侧的加数如果是负数要加()。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1+2+3=6</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>-3 -2 0</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>(-3)+(-2)+...+0=-6</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 2 3\n                        \n                        \n                            输出\n                            1+2+3=6\n                        \n\n                                                    \n                                输入\n                                -3 -2 0\n                            \n                            \n                                输出\n                                (-3)+(-2)+...+0=-6"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据范围】</p>\n<p><span class=\"katex math inline\">-10^5 \\leq a_i \\leq 10^5</span></p>\n<p><span class=\"katex math inline\">3 \\leq </span> 等差数列的项数<span class=\"katex math inline\">n</span> <span class=\"katex math inline\">\\leq 10^4</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n-10^5 \\leq a_i \\leq 10^5\n3 \\leq  等差数列的项数n \\leq 10^4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2022南京市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2022南京市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 2 3",
+      "output": "1+2+3=6"
+    },
+    {
+      "input": "-3 -2 0",
+      "output": "(-3)+(-2)+...+0=-6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "80",
+    "通过人数": "31",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:24"
+}

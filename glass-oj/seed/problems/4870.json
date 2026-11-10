@@ -1,0 +1,52 @@
+{
+  "id": "4870",
+  "title": "求年龄",
+  "tags": [
+    "蓝桥等考",
+    "基础"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4870",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小蓝的年龄是 <span class=\"katex math inline\">n</span> 岁，小青比小蓝大 <span class=\"katex math inline\">3</span> 岁，请编写程序计算出小青的年龄。</p>\n</div>            </div>",
+      "text": "小蓝的年龄是 n 岁，小青比小蓝大 3 岁，请编写程序计算出小青的年龄。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个 <span class=\"katex math inline\">n</span>，代表小蓝的年龄（<span class=\"katex math inline\">1 \\le n \\le 20</span>）。</p>\n</div>            </div>",
+      "text": "输入一个 n，代表小蓝的年龄（1 \\le n \\le 20）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出小青的年龄。</p>\n</div>            </div>",
+      "text": "输出小青的年龄。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            8"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">基础</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考基础"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "376",
+    "通过人数": "327",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:45"
+}

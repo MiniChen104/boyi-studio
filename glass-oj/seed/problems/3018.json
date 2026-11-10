@@ -1,0 +1,61 @@
+{
+  "id": "3018",
+  "title": "最早对决 (b.cpp)",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3018",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小X和小Y凭借出色的程序设计能力，顺利入选了“我们爱科学”活动，该活动以科学\n精神、创新意识、实践能力的培养为目标，激发广大中小学生爱科学、学科学、用科学的兴\n趣。</p>\n<p>报到之后小X和小Y有幸被分进了人工智能(简称AI)班，经过一周紧张刺激的AI学习，\n每位同学都编写了一个AI程序“黑白棋”，经过对弈平台的双循环赛，一共选出了 <span class=\"katex math inline\">32</span> 位种\n子选手，编号分别为 <span class=\"katex math inline\">1～32</span>，其余选手均为非种子选手，编号为 <span class=\"katex math inline\">33～128</span>。\n最后的决战拉开帷幕，比赛采用淘汰赛制，共有 <span class=\"katex math inline\">128</span> 位选手参加这场淘汰赛，两两对决，\n胜者进入下一轮，而输的将被直接淘汰出局。通过抽签产生这 <span class=\"katex math inline\">128</span>位选手的对阵表，抽签规\n则如下：</p>\n<p><img src=\"https://assets.boyi.local/d6a283a1c4d94f032bca28ae.png\"></p>\n<p>首先将种子选手的编号从小到大排序，<span class=\"katex math inline\">1</span> 号种子安排在 <span class=\"katex math inline\">1</span> 号位置， <span class=\"katex math inline\">2</span> 号种子安排在 <span class=\"katex math inline\">128</span> 号位置。接着将整个赛区分为上半赛区和下半赛区，即上半赛区是 <span class=\"katex math inline\">1～64</span> 号位置，下半赛区是 <span class=\"katex math inline\">65～128</span> 号位置，将上半赛区的最后一个位置和下半赛区的第一个位置选出来( <span class=\"katex math inline\">64</span> 号和 <span class=\"katex math inline\">65</span> 号)，然后将接下来的 <span class=\"katex math inline\">2</span> 位种子选手( <span class=\"katex math inline\">3</span> 号和 <span class=\"katex math inline\">4</span> 号)通过随机抽签的方式安排在这2个位置中，也就是说 <span class=\"katex math inline\">3</span> 号种子既可能抽到 <span class=\"katex math inline\">64</span> 号位置，也可能抽到 <span class=\"katex math inline\">65</span> 号位置， <span class=\"katex math inline\">3</span> 号种子的位置通过抽签定下来之后，<span class=\"katex math inline\">４</span>号种子就自动被安排到另一个位置；接下去对于每个赛区再继续分上半赛区和下半赛区，这样就形成了 <span class=\"katex math inline\">1～32，33～64，65～96，97～128</span> 四个赛区，将所有上半赛区的最后一个位置和下半赛区的第一个位置选出来( <span class=\"katex math inline\">32</span> 号, <span class=\"katex math inline\">33</span> 号, <span class=\"katex math inline\">96</span> 号, <span class=\"katex math inline\">97</span> 号)。然后将接下来的 <span class=\"katex math inline\">4</span> 位种子选手(<span class=\"katex math inline\">5</span>号,<span class=\"katex math inline\">6</span>号,<span class=\"katex math inline\">7</span>号,<span class=\"katex math inline\">8</span>号)通过随机抽签的方式安排到这<span class=\"katex math inline\">4</span>个位置中，然后继续划分赛区，直到所有种子选手被安排完毕，剩下的<span class=\"katex math inline\">96</span>个非种子选手通过随机抽签安排到余下空位中。</p>\n<p>小X和小Y的AI十分强大，两人的AI可以打败除了他们以外的所有对手，但是他们发现，假如小X的编号是<span class=\"katex math inline\">1</span>号，小Y的编号是<span class=\"katex math inline\">2</span>号，他们将作为头两号种子坐在<span class=\"katex math inline\">1</span>号位置和<span class=\"katex math inline\">128</span>号位置， 两人将所向披靡一路击败所有的对手，直到决赛(第<span class=\"katex math inline\">7</span>轮)才会相遇。</p>\n<p>现在给出小X和小Y的编号，他们想知道最早会在哪一轮相遇？ </p>\n</div>            </div>",
+      "text": "小X和小Y凭借出色的程序设计能力，顺利入选了“我们爱科学”活动，该活动以科学\n精神、创新意识、实践能力的培养为目标，激发广大中小学生爱科学、学科学、用科学的兴\n趣。\n报到之后小X和小Y有幸被分进了人工智能(简称AI)班，经过一周紧张刺激的AI学习，\n每位同学都编写了一个AI程序“黑白棋”，经过对弈平台的双循环赛，一共选出了 32 位种\n子选手，编号分别为 1～32，其余选手均为非种子选手，编号为 33～128。\n最后的决战拉开帷幕，比赛采用淘汰赛制，共有 128 位选手参加这场淘汰赛，两两对决，\n胜者进入下一轮，而输的将被直接淘汰出局。通过抽签产生这 128位选手的对阵表，抽签规\n则如下：\n\n首先将种子选手的编号从小到大排序，1 号种子安排在 1 号位置， 2 号种子安排在 128 号位置。接着将整个赛区分为上半赛区和下半赛区，即上半赛区是 1～64 号位置，下半赛区是 65～128 号位置，将上半赛区的最后一个位置和下半赛区的第一个位置选出来( 64 号和 65 号)，然后将接下来的 2 位种子选手( 3 号和 4 号)通过随机抽签的方式安排在这2个位置中，也就是说 3 号种子既可能抽到 64 号位置，也可能抽到 65 号位置， 3 号种子的位置通过抽签定下来之后，４号种子就自动被安排到另一个位置；接下去对于每个赛区再继续分上半赛区和下半赛区，这样就形成了 1～32，33～64，65～96，97～128 四个赛区，将所有上半赛区的最后一个位置和下半赛区的第一个位置选出来( 32 号, 33 号, 96 号, 97 号)。然后将接下来的 4 位种子选手(5号,6号,7号,8号)通过随机抽签的方式安排到这4个位置中，然后继续划分赛区，直到所有种子选手被安排完毕，剩下的96个非种子选手通过随机抽签安排到余下空位中。\n小X和小Y的AI十分强大，两人的AI可以打败除了他们以外的所有对手，但是他们发现，假如小X的编号是1号，小Y的编号是2号，他们将作为头两号种子坐在1号位置和128号位置， 两人将所向披靡一路击败所有的对手，直到决赛(第7轮)才会相遇。\n现在给出小X和小Y的编号，他们想知道最早会在哪一轮相遇？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据仅有一行包含两个用空格隔开的正整数 <span class=\"katex math inline\">S</span> 和 <span class=\"katex math inline\">T</span>，表示小X和小Y的编号。</p>\n</div>            </div>",
+      "text": "输入数据仅有一行包含两个用空格隔开的正整数 S 和 T，表示小X和小Y的编号。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出数据仅有一行包含一个正整数，表示他们最早相遇的轮数。</p>\n<p>第<span class=\"katex math inline\">1</span>轮：<span class=\"katex math inline\">128进64</span></p>\n<p>第<span class=\"katex math inline\">2</span>轮：<span class=\"katex math inline\">64进32</span></p>\n<p>第<span class=\"katex math inline\">3</span>轮：<span class=\"katex math inline\">32进16</span></p>\n<p>第<span class=\"katex math inline\">4</span>轮：<span class=\"katex math inline\">16进8</span></p>\n<p>第<span class=\"katex math inline\">5</span>轮：<span class=\"katex math inline\">8进4</span></p>\n<p>第<span class=\"katex math inline\">6</span>轮：半决赛</p>\n<p>第<span class=\"katex math inline\">7</span>轮：决赛 </p>\n</div>            </div>",
+      "text": "输出数据仅有一行包含一个正整数，表示他们最早相遇的轮数。\n第1轮：128进64\n第2轮：64进32\n第3轮：32进16\n第4轮：16进8\n第5轮：8进4\n第6轮：半决赛\n第7轮：决赛"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 3\n                        \n                        \n                            输出\n                            6"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>小X是1号种子，坐在1号位置，小Y是3号种子，他可能抽到64号或65号位置，如果小Y抽到64号位置，他跟小X会在半决赛(第6轮)相遇。如果小Y抽到65号位置，他跟小X会在决赛(第7轮)相遇。所以他们最早会在第6轮相遇。</p>\n<p>对于10%的数据，小X和小Y都是非种子选手即编号都大于32</p>\n<p>对于另外10%的数据，小X和小Y有一个是非种子选手</p>\n<p>对于100%的数据，1≤S,T≤128 </p>\n</div>\n\n                    \n                </div>",
+      "text": "小X是1号种子，坐在1号位置，小Y是3号种子，他可能抽到64号或65号位置，如果小Y抽到64号位置，他跟小X会在半决赛(第6轮)相遇。如果小Y抽到65号位置，他跟小X会在决赛(第7轮)相遇。所以他们最早会在第6轮相遇。\n对于10%的数据，小X和小Y都是非种子选手即编号都大于32\n对于另外10%的数据，小X和小Y有一个是非种子选手\n对于100%的数据，1≤S,T≤128"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2022常州市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2022常州市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 3",
+      "output": "6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "29",
+    "通过人数": "13",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:49"
+}

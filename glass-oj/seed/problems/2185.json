@@ -1,0 +1,56 @@
+{
+  "id": "2185",
+  "title": "子树的大小",
+  "tags": [
+    "二叉树"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2185",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><img src=\"https://assets.boyi.local/2a3576a3af296697847206e2.jpg\"></p>\n<p>有如上图所示的完全二叉树，该二叉树有 <span class=\"katex math inline\">n</span> 个结点，编号从上向下、从左向右以此为 <span class=\"katex math inline\">1 \\sim n</span>。请问，编号为 <span class=\"katex math inline\">m</span> 的结点所在的子树，包含了多少个结点？</p>\n<p>比如，<span class=\"katex math inline\">n = 12</span>，<span class=\"katex math inline\">m = 3</span>，则上图中的结点 <span class=\"katex math inline\">13</span>，<span class=\"katex math inline\">14</span>，<span class=\"katex math inline\">15</span> 以及后面的结点都是不存在的，结点 <span class=\"katex math inline\">m=3</span> 所在子树中包括的结点有 <span class=\"katex math inline\">3</span>，<span class=\"katex math inline\">6</span>，<span class=\"katex math inline\">7</span>，<span class=\"katex math inline\">12</span>，因此结点 <span class=\"katex math inline\">m</span> 的所在子树中共有 <span class=\"katex math inline\">4</span> 个结点。</p>\n</div>            </div>",
+      "text": "有如上图所示的完全二叉树，该二叉树有 n 个结点，编号从上向下、从左向右以此为 1 \\sim n。请问，编号为 m 的结点所在的子树，包含了多少个结点？\n比如，n = 12，m = 3，则上图中的结点 13，14，15 以及后面的结点都是不存在的，结点 m=3 所在子树中包括的结点有 3，6，7，12，因此结点 m 的所在子树中共有 4 个结点。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个整数 <span class=\"katex math inline\">m</span>，<span class=\"katex math inline\">n</span>。 (<span class=\"katex math inline\">1 \\le m \\le n \\le 10^9</span>)</p>\n</div>            </div>",
+      "text": "输入两个整数 m，n。 (1 \\le m \\le n \\le 10^9)"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出结点 <span class=\"katex math inline\">m</span> 所在子树中包含的结点的数目。</p>\n</div>            </div>",
+      "text": "输出结点 m 所在子树中包含的结点的数目。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 7\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二叉树</p>\n</div>                </div>",
+      "text": "二叉树"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二叉树</span></span></p>\n</div>                </div>",
+      "text": "二叉树"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 7",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1360",
+    "通过人数": "844",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:30"
+}

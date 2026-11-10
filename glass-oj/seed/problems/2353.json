@@ -1,0 +1,61 @@
+{
+  "id": "2353",
+  "title": "排队看电影",
+  "tags": [
+    "蓝桥杯等级考试"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2353",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>【具体要求】  </p>\n<p>今天是星期五，班主任老师提前跟同学们说好，今天组织大家去电影院看一场历史革命主题的电影。  </p>\n<p>来到电影院，全班 n 位同学已经排成一队，班主任老师请班长小蓝根据同学们的身高进行从低到高排序，方便观影。  </p>\n<p>小蓝思考了一下，决定采取以下策略来排队，比较相邻两位同学的身高，将身高低一点的调整到前面，直到所有同学有序排队。   </p>\n<p>为防止混乱，规定只能相邻的两位同学可调整位置，请问最少需要多少次交换才能完成从小到大排序。 </p>\n</div>            </div>",
+      "text": "【具体要求】  \n今天是星期五，班主任老师提前跟同学们说好，今天组织大家去电影院看一场历史革命主题的电影。  \n来到电影院，全班 n 位同学已经排成一队，班主任老师请班长小蓝根据同学们的身高进行从低到高排序，方便观影。  \n小蓝思考了一下，决定采取以下策略来排队，比较相邻两位同学的身高，将身高低一点的调整到前面，直到所有同学有序排队。   \n为防止混乱，规定只能相邻的两位同学可调整位置，请问最少需要多少次交换才能完成从小到大排序。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入共两行，第一行输入一个正整数 n（3 &lt; n &lt; 100），表示全班同学人数；  </p>\n<p>第二行输入 n 个正整数 a1, a2, ... an(1 &lt; ai &lt;= 200)，表示正在排队中的同学身高，正整数之间一个空格隔开。 </p>\n</div>            </div>",
+      "text": "输入共两行，第一行输入一个正整数 n（3 < n < 100），表示全班同学人数；  \n第二行输入 n 个正整数 a1, a2, ... an(1 < ai <= 200)，表示正在排队中的同学身高，正整数之间一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个正整数，表示最少需要多少次交换才能完成从小到大排序。 </p>\n</div>            </div>",
+      "text": "输出一个正整数，表示最少需要多少次交换才能完成从小到大排序。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 \r\n150 154 149 162 \r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 </pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 \r\n150 154 149 162 \r\n\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。 </p>\n<pre><code>蓝桥等考 C++组单选题样题（十三级） \n已知整型数组 a[5] = {3, 1, 2, 4, 5}，最少经过（ ）次比较可以找出数组中最大的数和最小的数。\nA 6 \nB 7 \nC 8 \nD 9 \n【答案】A \n【解析】声明两个整型变量，maxn 存储最大值，minn 存储最小值，第一次 3 和 1 比较，maxn = 3, minn = 1，第二次 2 和 4 比较，第三次较大的 4 和 maxn 比较，maxn = 4， 第四次 2 和 minn 比较，minn = 1，第五、六次分别拿最后一个数 5 和 maxn、minn 比较，最后得到 maxn = 5，minn = 1。\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。 \n蓝桥等考 C++组单选题样题（十三级） \n已知整型数组 a[5] = {3, 1, 2, 4, 5}，最少经过（ ）次比较可以找出数组中最大的数和最小的数。\nA 6 \nB 7 \nC 8 \nD 9 \n【答案】A \n【解析】声明两个整型变量，maxn 存储最大值，minn 存储最小值，第一次 3 和 1 比较，maxn = 3, minn = 1，第二次 2 和 4 比较，第三次较大的 4 和 maxn 比较，maxn = 4， 第四次 2 和 minn 比较，minn = 1，第五、六次分别拿最后一个数 5 和 maxn、minn 比较，最后得到 maxn = 5，minn = 1。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥等考 C++组编程题样题（十三级）</p>\n</div>                </div>",
+      "text": "蓝桥等考 C++组编程题样题（十三级）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯等级考试</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 \r\n150 154 149 162 \r\n",
+      "output": "2 "
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "516",
+    "通过人数": "295",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:23"
+}

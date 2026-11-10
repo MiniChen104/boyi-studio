@@ -1,0 +1,62 @@
+{
+  "id": "6320",
+  "title": "新龟兔赛跑",
+  "tags": [
+    "GESP一级",
+    "26年9月",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6320",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>自从上次龟兔赛跑，兔子因为轻敌而惨败后，一直心有不甘，因此有了新一届龟兔赛跑。</p>\n<p>乌龟和上次一样，将会以恒定的速度往终点爬行，题目将给出乌龟从起点到终点所需时间；</p>\n<p>兔子并没有吸取教训，只是打算在终点前少睡一会儿，题目将给出兔子的速度，和兔子打算在终点前睡觉的时间；</p>\n<p>起点和终点之间的距离固定为 <span class=\"katex math inline\">1000.0</span>，请帮忙计算乌龟和兔子谁会获胜？</p>\n</div>            </div>",
+      "text": "自从上次龟兔赛跑，兔子因为轻敌而惨败后，一直心有不甘，因此有了新一届龟兔赛跑。\n乌龟和上次一样，将会以恒定的速度往终点爬行，题目将给出乌龟从起点到终点所需时间；\n兔子并没有吸取教训，只是打算在终点前少睡一会儿，题目将给出兔子的速度，和兔子打算在终点前睡觉的时间；\n起点和终点之间的距离固定为 1000.0，请帮忙计算乌龟和兔子谁会获胜？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含 3 行，每行一个浮点数：</p>\n<p>第 1 行的浮点数表示乌龟从起点到终点所需时间；</p>\n<p>第 2 行的浮点数表示兔子的速度；</p>\n<p>第 3 行的浮点数表示兔子打算在终点前睡觉的时间。</p>\n</div>            </div>",
+      "text": "输入包含 3 行，每行一个浮点数：\n第 1 行的浮点数表示乌龟从起点到终点所需时间；\n第 2 行的浮点数表示兔子的速度；\n第 3 行的浮点数表示兔子打算在终点前睡觉的时间。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出包含 2 行：</p>\n<p>第 1 行，如果乌龟获胜，输出 <code>turtle</code>；如果兔子获胜，输出 <code>rabbit</code>；如果平局，输出 <code>tie</code>；</p>\n<p>第 2 行，输出兔子到达终点所需的总时间（含兔子睡觉的时间），保留两位小数。</p>\n</div>            </div>",
+      "text": "输出包含 2 行：\n第 1 行，如果乌龟获胜，输出 turtle；如果兔子获胜，输出 rabbit；如果平局，输出 tie；\n第 2 行，输出兔子到达终点所需的总时间（含兔子睡觉的时间），保留两位小数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>20.0\r\n100.0\r\n11.0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>turtle\r\n21.00</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>20.0\r\n100.0\r\n9.0</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>rabbit\r\n19.00</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            20.0\r\n100.0\r\n11.0\n                        \n                        \n                            输出\n                            turtle\r\n21.00\n                        \n\n                                                    \n                                输入\n                                20.0\r\n100.0\r\n9.0\n                            \n                            \n                                输出\n                                rabbit\r\n19.00"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释 1</h4>\n<p>兔子跑完全程所需时间是 <span class=\"katex math inline\">1000.0 \\div 100.0 = 10.0</span>，而兔子要睡觉 <span class=\"katex math inline\">11.0</span> 单位时间，所以兔子一共需要 <span class=\"katex math inline\">21.0</span> 单位时间才能到达终点，这大于乌龟所需时间。</p>\n<h4>样例解释 2</h4>\n<p>与样例 1 类似，兔子跑完全程所需时间是 <span class=\"katex math inline\">1000.0 \\div 100.0 = 10.0</span>，但兔子仅睡觉 <span class=\"katex math inline\">9.0</span> 单位时间，所以兔子一共需要 <span class=\"katex math inline\">19.0</span> 单位时间就能到达终点，这小于乌龟所需时间。</p>\n<h4>数据范围</h4>\n<p>所有输入均有且仅有一位小数，且是不超过 <span class=\"katex math inline\">1000.0</span> 的正数。</p>\n<p>本题默认给出的数值均为龟兔世界中的标准单位，不需要进行任何单位换算。</p>\n<p>路程 = 速度 × 时间</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释 1\n兔子跑完全程所需时间是 1000.0 \\div 100.0 = 10.0，而兔子要睡觉 11.0 单位时间，所以兔子一共需要 21.0 单位时间才能到达终点，这大于乌龟所需时间。\n样例解释 2\n与样例 1 类似，兔子跑完全程所需时间是 1000.0 \\div 100.0 = 10.0，但兔子仅睡觉 9.0 单位时间，所以兔子一共需要 19.0 单位时间就能到达终点，这小于乌龟所需时间。\n数据范围\n所有输入均有且仅有一位小数，且是不超过 1000.0 的正数。\n本题默认给出的数值均为龟兔世界中的标准单位，不需要进行任何单位换算。\n路程 = 速度 × 时间"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP一级</span><span class=\"label label-warning\">26年9月</span><span class=\"label label-info\">分支</span></span></p>\n</div>                </div>",
+      "text": "GESP一级26年9月分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "20.0\r\n100.0\r\n11.0",
+      "output": "turtle\r\n21.00"
+    },
+    {
+      "input": "20.0\r\n100.0\r\n9.0",
+      "output": "rabbit\r\n19.00"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "944",
+    "通过人数": "445",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:05"
+}

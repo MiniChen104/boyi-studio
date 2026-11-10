@@ -1,0 +1,56 @@
+{
+  "id": "2239",
+  "title": "成绩排序",
+  "tags": [
+    "结构体"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2239",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出班里某门课程的成绩单，请你按成绩从高到低对成绩单排序输出，如果有相同分数则名字字典序小的在前。</p>\n</div>            </div>",
+      "text": "给出班里某门课程的成绩单，请你按成绩从高到低对成绩单排序输出，如果有相同分数则名字字典序小的在前。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为 <span class=\"katex math inline\">n</span> (<span class=\"katex math inline\">0 &lt; n &lt; 20</span>)，表示班里的学生数目； 接下来的 <span class=\"katex math inline\">n</span> 行，每行为每个学生的名字和他的成绩，中间用单个空格隔开。名字只包含字母且长度不超过 <span class=\"katex math inline\">20</span>，成绩为一个不大于 <span class=\"katex math inline\">100</span> 的非负整数。</p>\n</div>            </div>",
+      "text": "第一行为 n (0 < n < 20)，表示班里的学生数目； 接下来的 n 行，每行为每个学生的名字和他的成绩，中间用单个空格隔开。名字只包含字母且长度不超过 20，成绩为一个不大于 100 的非负整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>把成绩单按分数从高到低的顺序进行排序并输出，每行包含名字和分数两项，之间有一个空格。</p>\n</div>            </div>",
+      "text": "把成绩单按分数从高到低的顺序进行排序并输出，每行包含名字和分数两项，之间有一个空格。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\nKitty 80\r\nHanmeimei 90\r\nJoey 92\r\nTim 28</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Joey 92\r\nHanmeimei 90 \r\nKitty 80\r\nTim 28</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\nKitty 80\r\nHanmeimei 90\r\nJoey 92\r\nTim 28\n                        \n                        \n                            输出\n                            Joey 92\r\nHanmeimei 90 \r\nKitty 80\r\nTim 28"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会二级</p>\n</div>                </div>",
+      "text": "电子学会二级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">结构体</span></span></p>\n</div>                </div>",
+      "text": "结构体"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\nKitty 80\r\nHanmeimei 90\r\nJoey 92\r\nTim 28",
+      "output": "Joey 92\r\nHanmeimei 90 \r\nKitty 80\r\nTim 28"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5418",
+    "通过人数": "2517",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:10"
+}

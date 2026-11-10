@@ -1,0 +1,65 @@
+{
+  "id": "6174",
+  "title": "南京名片",
+  "tags": [
+    "江苏省赛2026"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6174",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Dr. X 要给南京展会议设计巨幅广告，图案由两个大写字母 N、J 组成。给定一个正整数 <span class=\"katex math inline\">n</span>，表示字母的大小。你需要按照以下规则输出这两个字母，<strong>并且两个字母之间恰好用一个空格隔开</strong>：</p>\n<ul><li>字母 N 由一个 <span class=\"katex math inline\">n \\times n</span> 的方阵组成。第一列和最后一列需要涂黑，并且从左上角到右下角的主对角线也要涂黑。</li>\n<li>字母 J 由一个 <span class=\"katex math inline\">n \\times n</span> 的方阵组成。第一行需要涂黑，中间那一列（即第 <span class=\"katex math inline\">\\lfloor n/2 \\rfloor + 1</span> 列）从第一行到最后一行也涂黑，最后一行从第一列到中间列也涂黑。</li>\n<li>涂黑的位置用星号 <code>*</code> 表示，其余位置为<strong>空格</strong>，注意不是数值为 <span class=\"katex math inline\">0</span> 的 ASCII 字符。行末的空格不影响评分。</li>\n</ul></div>            </div>",
+      "text": "Dr. X 要给南京展会议设计巨幅广告，图案由两个大写字母 N、J 组成。给定一个正整数 n，表示字母的大小。你需要按照以下规则输出这两个字母，并且两个字母之间恰好用一个空格隔开：\n字母 N 由一个 n \\times n 的方阵组成。第一列和最后一列需要涂黑，并且从左上角到右下角的主对角线也要涂黑。\n字母 J 由一个 n \\times n 的方阵组成。第一行需要涂黑，中间那一列（即第 \\lfloor n/2 \\rfloor + 1 列）从第一行到最后一行也涂黑，最后一行从第一列到中间列也涂黑。\n涂黑的位置用星号 * 表示，其余位置为空格，注意不是数值为 0 的 ASCII 字符。行末的空格不影响评分。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 <span class=\"katex math inline\">n</span>。</p>\n</div>            </div>",
+      "text": "输入一个正整数 n。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">n</span> 行，每行包含两个由单个空格隔开的字母图案。</p>\n</div>            </div>",
+      "text": "输出 n 行，每行包含两个由单个空格隔开的字母图案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>*   * *****\r\n**  *   *\r\n* * *   *\r\n*  **   *\r\n*   * ***</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>* * ***\r\n***  *\r\n* * **</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            *   * *****\r\n**  *   *\r\n* * *   *\r\n*  **   *\r\n*   * ***\n                        \n\n                                                    \n                                输入\n                                3\n                            \n                            \n                                输出\n                                * * ***\r\n***  *\r\n* * **"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例1解释</h4>\n<ul><li>当 <span class=\"katex math inline\">n = 5</span> 时，需要分别构造大小为 <span class=\"katex math inline\">5 \\times 5</span> 的字母 N、J，并按顺序输出，且相邻字母之间恰好保留一个空格。</li>\n</ul><h4>样例2解释</h4>\n<ul><li>当 <span class=\"katex math inline\">n = 3</span> 时，字母规模最小，更容易看出 N 的主对角线、J 的中间列和底边。</li>\n</ul><h4>数据规模</h4>\n<ul><li>对于 <span class=\"katex math inline\">60\\%</span> 的数据，满足 <span class=\"katex math inline\">n \\leq 10</span>。</li>\n<li>对于 <span class=\"katex math inline\">100\\%</span> 的数据，满足 <span class=\"katex math inline\">3 \\leq n \\leq 50</span>，且保证 <span class=\"katex math inline\">n</span> 为奇数。</li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "样例1解释\n当 n = 5 时，需要分别构造大小为 5 \\times 5 的字母 N、J，并按顺序输出，且相邻字母之间恰好保留一个空格。\n样例2解释\n当 n = 3 时，字母规模最小，更容易看出 N 的主对角线、J 的中间列和底边。\n数据规模\n对于 60\\% 的数据，满足 n \\leq 10。\n对于 100\\% 的数据，满足 3 \\leq n \\leq 50，且保证 n 为奇数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2026年江苏省＂信息与未来＂小学生编程</p>\n</div>                </div>",
+      "text": "2026年江苏省＂信息与未来＂小学生编程"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">江苏省赛2026</span></span></p>\n</div>                </div>",
+      "text": "江苏省赛2026"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "*   * *****\r\n**  *   *\r\n* * *   *\r\n*  **   *\r\n*   * ***"
+    },
+    {
+      "input": "3",
+      "output": "* * ***\r\n***  *\r\n* * **"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "510 MB",
+    "提交次数": "52",
+    "通过人数": "36",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:24"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "6490",
+  "title": "纪念品分组",
+  "tags": [
+    "贪心"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6490",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学校为比赛准备了 <span class=\"katex math inline\">n</span> 件纪念品，第 <span class=\"katex math inline\">i</span> 件的价格是 <span class=\"katex math inline\">p_i</span>。现在要把它们装袋发给选手：</p>\n<ul><li>每个袋子<strong>最多装 <span class=\"katex math inline\">2</span> 件</strong>纪念品；</li>\n<li>每个袋子里纪念品的<strong>总价不能超过 w</strong>。</li>\n</ul><p>请问最少需要多少个袋子？</p>\n</div>            </div>",
+      "text": "学校为比赛准备了 n 件纪念品，第 i 件的价格是 p_i。现在要把它们装袋发给选手：\n每个袋子最多装 2 件纪念品；\n每个袋子里纪念品的总价不能超过 w。\n请问最少需要多少个袋子？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><ul><li>第一行：两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">w</span>；</li>\n<li>第二行：<span class=\"katex math inline\">n</span> 个整数，表示每件纪念品的价格。</li>\n</ul></div>            </div>",
+      "text": "第一行：两个整数 n 和 w；\n第二行：n 个整数，表示每件纪念品的价格。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个整数，表示最少需要的袋子数量。</p>\n</div>            </div>",
+      "text": "一行一个整数，表示最少需要的袋子数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 100\r\n90 20 20 30 50 60</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4 10\r\n5 5 5 5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 100\r\n90 20 20 30 50 60\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                4 10\r\n5 5 5 5\n                            \n                            \n                                输出\n                                2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例说明】：</h4>\n<p><span class=\"katex math inline\">90</span> 单独一袋；<span class=\"katex math inline\">20 + 60</span> 一袋；<span class=\"katex math inline\">20 + 50</span> 一袋；<span class=\"katex math inline\">30 </span> 单独一袋，共 <span class=\"katex math inline\">4</span> 袋。</p>\n<h4>【样例说明】：</h4>\n<p>每两件装一袋，<span class=\"katex math inline\">2</span> 袋。</p>\n<h4>数据范围</h4>\n<p><span class=\"katex math inline\">1 \\le n \\le 100000</span>；<span class=\"katex math inline\">1 \\le w \\le 10^9</span>；<span class=\"katex math inline\">1 \\le </span> 价格 <span class=\"katex math inline\"> \\le w</span></p>\n<h4>考察点</h4>\n<p>排序；贪心思想；双指针扫描。</p>\n<h4>提示</h4>\n<p>先把价格从小到大排序。每次看最贵的和当前最便宜的：两件能装进一个袋子就一起装（袋子数 +1，两个指针都往中间收），装不下就说明最贵的那件只能单独一袋（袋子数 +1，只移动贵的指针）。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例说明】：\n90 单独一袋；20 + 60 一袋；20 + 50 一袋；30  单独一袋，共 4 袋。\n【样例说明】：\n每两件装一袋，2 袋。\n数据范围\n1 \\le n \\le 100000；1 \\le w \\le 10^9；1 \\le  价格  \\le w\n考察点\n排序；贪心思想；双指针扫描。\n提示\n先把价格从小到大排序。每次看最贵的和当前最便宜的：两件能装进一个袋子就一起装（袋子数 +1，两个指针都往中间收），装不下就说明最贵的那件只能单独一袋（袋子数 +1，只移动贵的指针）。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">贪心</span></span></p>\n</div>                </div>",
+      "text": "贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 100\r\n90 20 20 30 50 60",
+      "output": "4"
+    },
+    {
+      "input": "4 10\r\n5 5 5 5",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "56",
+    "通过人数": "32",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:40"
+}

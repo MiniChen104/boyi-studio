@@ -1,0 +1,57 @@
+{
+  "id": "2275",
+  "title": "最大子矩阵",
+  "tags": [
+    "电子学会等级考试",
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2275",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>已知矩阵的大小定义为矩阵中所有元素的和。给定一个矩阵，你的任务是找到最大的非空（大小至少是 <span class=\"katex math inline\">1 \\times 1</span> ）子矩阵。</p>\n<p>比如，如下 <span class=\"katex math inline\">4 \\times 4</span> 子矩阵。</p>\n<pre><code>0 -2 -7 0\n9 2 -6 2\n-4 1 -4 1\n-1 8 0 -2\n</code></pre>\n<p>的最大子矩阵是：</p>\n<pre><code>9 2\n-4 1\n-1 8\n</code></pre>\n<p>这个子矩阵的大小是<span class=\"katex math inline\">15</span>。</p>\n</div>            </div>",
+      "text": "已知矩阵的大小定义为矩阵中所有元素的和。给定一个矩阵，你的任务是找到最大的非空（大小至少是 1 \\times 1 ）子矩阵。\n比如，如下 4 \\times 4 子矩阵。\n0 -2 -7 0\n9 2 -6 2\n-4 1 -4 1\n-1 8 0 -2\n\n的最大子矩阵是：\n9 2\n-4 1\n-1 8\n\n这个子矩阵的大小是15。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入是一个<span class=\"katex math inline\">N \\times N</span>的矩阵。</p>\n<p>输入的第一行给出<span class=\"katex math inline\">N (0 &lt; N ≤ 100)</span>。</p>\n<p>再后面的若干行中，依次（首先从左到右给出第一行的 <span class=\"katex math inline\">N</span> 个整数，再从左到右给出第二行的 <span class=\"katex math inline\">N</span> 个整数 <span class=\"katex math inline\"> \\dots </span>）</p>\n<p>给出矩阵中的 <span class=\"katex math inline\">N^2</span> 个整数，整数之间由空白字符分隔（空格或者空行）。</p>\n<p>已知矩阵中整数的范围都在<span class=\"katex math inline\">[-127, 127]</span>。</p>\n</div>            </div>",
+      "text": "输入是一个N \\times N的矩阵。\n输入的第一行给出N (0 < N ≤ 100)。\n再后面的若干行中，依次（首先从左到右给出第一行的 N 个整数，再从左到右给出第二行的 N 个整数  \\dots ）\n给出矩阵中的 N^2 个整数，整数之间由空白字符分隔（空格或者空行）。\n已知矩阵中整数的范围都在[-127, 127]。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出最大子矩阵的大小。</p>\n</div>            </div>",
+      "text": "输出最大子矩阵的大小。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n0 -2 -7 0 \r\n9 2 -6 2\r\n-4 1 -4  1 \r\n-1 8  0 -2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>15</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n0 -2 -7 0 \r\n9 2 -6 2\r\n-4 1 -4  1 \r\n-1 8  0 -2\n                        \n                        \n                            输出\n                            15"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会四级</p>\n</div>                </div>",
+      "text": "电子学会四级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span><span class=\"label label-warning\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n0 -2 -7 0 \r\n9 2 -6 2\r\n-4 1 -4  1 \r\n-1 8  0 -2",
+      "output": "15"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "465",
+    "通过人数": "328",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:37"
+}

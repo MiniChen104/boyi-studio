@@ -1,0 +1,57 @@
+{
+  "id": "1928",
+  "title": "采购礼品",
+  "tags": [
+    "背包",
+    "并查集"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1928",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>王老师来到商店为同学们采购礼品。</p>\n<p>这家店有 <span class=\"katex math inline\">n</span> 种礼品（编号是 <span class=\"katex math inline\">1 \\sim n</span> ），每种礼品只有 <span class=\"katex math inline\">1</span> 件。老板为了促销，对礼品进行搭配销售，有关联性的礼品必须都要采购（奇怪的规定），比如 <span class=\"katex math inline\">1</span> 号礼品和 <span class=\"katex math inline\">3</span> 号礼品搭配了，<span class=\"katex math inline\">3</span> 号和 <span class=\"katex math inline\">8</span> 号礼品搭配了，那么王老师想要买 <span class=\"katex math inline\">1</span> 号礼品的话，就需要把 <span class=\"katex math inline\">3</span> 号和 <span class=\"katex math inline\">8</span> 号礼品都买了。</p>\n<p>现给定每种礼品的价钱和价值，请问在有限的钱 <span class=\"katex math inline\">w</span> 的情况下，能够买到礼品的最大价值是多少？</p>\n</div>            </div>",
+      "text": "王老师来到商店为同学们采购礼品。\n这家店有 n 种礼品（编号是 1 \\sim n ），每种礼品只有 1 件。老板为了促销，对礼品进行搭配销售，有关联性的礼品必须都要采购（奇怪的规定），比如 1 号礼品和 3 号礼品搭配了，3 号和 8 号礼品搭配了，那么王老师想要买 1 号礼品的话，就需要把 3 号和 8 号礼品都买了。\n现给定每种礼品的价钱和价值，请问在有限的钱 w 的情况下，能够买到礼品的最大价值是多少？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入三个整数，<span class=\"katex math inline\">n</span>,<span class=\"katex math inline\">m</span>,<span class=\"katex math inline\">w</span>，表示有 <span class=\"katex math inline\">n</span> 种礼品，<span class=\"katex math inline\">m</span> 个搭配和你现有的钱的数目。</p>\n<p>第二行至 <span class=\"katex math inline\">n+1</span> 行，每行有两个整数，<span class=\"katex math inline\">c</span>、<span class=\"katex math inline\">d</span>，表示第 <span class=\"katex math inline\">i</span> 种礼品的价钱和价值。（<span class=\"katex math inline\">1≤c,d≤10^5</span>）</p>\n<p>第 <span class=\"katex math inline\">n+2</span> 至 <span class=\"katex math inline\">n+1+m</span> 行 ，每行有两个整数，<span class=\"katex math inline\">u</span>、<span class=\"katex math inline\">v</span>，表示 <span class=\"katex math inline\">u</span> 号礼品和 <span class=\"katex math inline\">v</span> 号礼品是有关联的，已经形成搭配销售的关系。</p>\n<p>数据范围：</p>\n<p><span class=\"katex math inline\">1≤n,w≤10^4,0≤m≤5 \\times 10^3</span>。</p>\n</div>            </div>",
+      "text": "第一行输入三个整数，n,m,w，表示有 n 种礼品，m 个搭配和你现有的钱的数目。\n第二行至 n+1 行，每行有两个整数，c、d，表示第 i 种礼品的价钱和价值。（1≤c,d≤10^5）\n第 n+2 至 n+1+m 行 ，每行有两个整数，u、v，表示 u 号礼品和 v 号礼品是有关联的，已经形成搭配销售的关系。\n数据范围：\n1≤n,w≤10^4,0≤m≤5 \\times 10^3。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，表示可以获得的最大价值。</p>\n</div>            </div>",
+      "text": "一行，表示可以获得的最大价值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 3 10\r\n3 10\r\n3 10\r\n3 10\r\n5 100\r\n10 1\r\n1 3\r\n3 2\r\n4 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 3 10\r\n3 10\r\n3 10\r\n3 10\r\n5 100\r\n10 1\r\n1 3\r\n3 2\r\n4 2\n                        \n                        \n                            输出\n                            1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>背包 并查集</p>\n</div>                </div>",
+      "text": "背包 并查集"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">背包</span><span class=\"label label-warning\">并查集</span></span></p>\n</div>                </div>",
+      "text": "背包并查集"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 3 10\r\n3 10\r\n3 10\r\n3 10\r\n5 100\r\n10 1\r\n1 3\r\n3 2\r\n4 2",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2619",
+    "通过人数": "1563",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:06"
+}

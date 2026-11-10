@@ -1,0 +1,56 @@
+{
+  "id": "1886",
+  "title": "连胜统计",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1886",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在篮球比赛中，连胜是一件让球迷非常兴奋的事情。现给出 <span class=\"katex math inline\">n</span> 场比赛的获胜队伍编号，请输出每个球队连胜的场数，要求至少连胜 <span class=\"katex math inline\">2</span> 场才能列入统计范围。</p>\n<p>比如，输入获得胜利的球队编号为：<span class=\"katex math inline\">9</span> <span class=\"katex math inline\">9</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">9</span> <span class=\"katex math inline\">9</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">2</span>，那么输出结果如下：</p>\n<pre><code>9 2\n2 3\n9 2\n3 3\n</code></pre>\n<p>输出的含义是： <span class=\"katex math inline\">9</span> 号球队连胜 <span class=\"katex math inline\">2</span> 场、 <span class=\"katex math inline\">2</span> 号球队连胜 <span class=\"katex math inline\">3</span> 场、 <span class=\"katex math inline\">9</span> 号球队连胜 <span class=\"katex math inline\">2</span> 场、 <span class=\"katex math inline\">3</span> 号球队连胜 <span class=\"katex math inline\">3</span> 场。</p>\n</div>            </div>",
+      "text": "在篮球比赛中，连胜是一件让球迷非常兴奋的事情。现给出 n 场比赛的获胜队伍编号，请输出每个球队连胜的场数，要求至少连胜 2 场才能列入统计范围。\n比如，输入获得胜利的球队编号为：9 9 1 2 2 2 9 9 3 3 3 2，那么输出结果如下：\n9 2\n2 3\n9 2\n3 3\n\n输出的含义是： 9 号球队连胜 2 场、 2 号球队连胜 3 场、 9 号球队连胜 2 场、 3 号球队连胜 3 场。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行有一个整数 <span class=\"katex math inline\">n</span> ，代表比赛的场数。（ <span class=\"katex math inline\">5≤n≤100</span> ）</p>\n<p>第 <span class=\"katex math inline\">2</span> 行有 <span class=\"katex math inline\">n</span> 个整数，分别代表了每场比赛获得胜利的球队的编号。（球队编号在 <span class=\"katex math inline\">[1,10^9]</span> 范围内）</p>\n</div>            </div>",
+      "text": "第 1 行有一个整数 n ，代表比赛的场数。（ 5≤n≤100 ）\n第 2 行有 n 个整数，分别代表了每场比赛获得胜利的球队的编号。（球队编号在 [1,10^9] 范围内）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出若干行，每行 <span class=\"katex math inline\">2</span> 个整数，按照读入的顺序输出获得连胜的球队的编号以及连胜的场次。</p>\n</div>            </div>",
+      "text": "输出若干行，每行 2 个整数，按照读入的顺序输出获得连胜的球队的编号以及连胜的场次。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>12\r\n9 9 1 2 2 2 9 9 3 3 3 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9 2\r\n2 3\r\n9 2\r\n3 3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            12\r\n9 9 1 2 2 2 9 9 3 3 3 2\n                        \n                        \n                            输出\n                            9 2\r\n2 3\r\n9 2\r\n3 3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "12\r\n9 9 1 2 2 2 9 9 3 3 3 2",
+      "output": "9 2\r\n2 3\r\n9 2\r\n3 3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "10477",
+    "通过人数": "6486",
+    "金币数量": "3 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:30"
+}

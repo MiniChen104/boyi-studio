@@ -1,0 +1,62 @@
+{
+  "id": "1864",
+  "title": "单词接龙的最长长度",
+  "tags": [
+    "深搜",
+    "蓝桥杯"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1864",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>单词接龙是一个与我们经常玩的成语接龙相类似的游戏，现在我们已知一组单词，且给定一个开头的字母，要求出以这个字母开头的最长的“龙”（每个单词都 最多在“龙”中出现两次），在两个单词相连时，其重合部分合为一部分。  </p>\n<p>例如 beast 和 astonish，如果接成一条龙则变为beastonish，另外相邻的两部分不能存在包含关系，例如 at 和 atide 间不能相连。</p>\n</div>            </div>",
+      "text": "单词接龙是一个与我们经常玩的成语接龙相类似的游戏，现在我们已知一组单词，且给定一个开头的字母，要求出以这个字母开头的最长的“龙”（每个单词都 最多在“龙”中出现两次），在两个单词相连时，其重合部分合为一部分。  \n例如 beast 和 astonish，如果接成一条龙则变为beastonish，另外相邻的两部分不能存在包含关系，例如 at 和 atide 间不能相连。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行为一个单独的整数<span class=\"katex math inline\">n</span> (<span class=\"katex math inline\">n≤20</span>)表示单词数，以下 <span class=\"katex math inline\">n</span> 行每行有一个单词，输入的最后一行为一个单个字符，表示“龙”开头的字母。  </p>\n<p>你可以假定以此字母开头的“龙”一定存在。</p>\n</div>            </div>",
+      "text": "输入的第一行为一个单独的整数n (n≤20)表示单词数，以下 n 行每行有一个单词，输入的最后一行为一个单个字符，表示“龙”开头的字母。  \n你可以假定以此字母开头的“龙”一定存在。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只需输出以此字母开头的最长的“龙”的长度。</p>\n</div>            </div>",
+      "text": "只需输出以此字母开头的最长的“龙”的长度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\nat\r\ntouch\r\ncheat\r\nchoose\r\ntact\r\na</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>23</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\nat\r\ntouch\r\ncheat\r\nchoose\r\ntact\r\na\n                        \n                        \n                            输出\n                            23"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】蓝桥杯算法训练  </p>\n<p>样例说明<br>\n连成的“龙”为atoucheatactactouchoose  </p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】蓝桥杯算法训练  \n样例说明\n连成的“龙”为atoucheatactactouchoose"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>深搜 蓝桥杯</p>\n</div>                </div>",
+      "text": "深搜 蓝桥杯"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">深搜</span><span class=\"label label-warning\">蓝桥杯</span></span></p>\n</div>                </div>",
+      "text": "深搜蓝桥杯"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\nat\r\ntouch\r\ncheat\r\nchoose\r\ntact\r\na",
+      "output": "23"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "2161",
+    "通过人数": "1326",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:25:12"
+}

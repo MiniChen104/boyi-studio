@@ -1,0 +1,56 @@
+{
+  "id": "1509",
+  "title": "户口统计",
+  "tags": [
+    "容器"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1509",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某小区统计了一下该小区的常住人数，并详细统计了家庭关系，每个家庭的户口簿中有户主1名，还有若干家庭成员。请你写程序，读入每个家庭的户主及家庭成员，读入结束后，根据户主的名字可以打印出该家庭的所有成员（含户主），并按家庭成员姓名的字典码升序排序！</p>\n</div>            </div>",
+      "text": "某小区统计了一下该小区的常住人数，并详细统计了家庭关系，每个家庭的户口簿中有户主1名，还有若干家庭成员。请你写程序，读入每个家庭的户主及家庭成员，读入结束后，根据户主的名字可以打印出该家庭的所有成员（含户主），并按家庭成员姓名的字典码升序排序！"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入由多行组成，首先是一系列家庭关系的描述，其中每一组关系中户主只有一行，家庭成员可能有若干行；用 <code>#name</code> 的形式描写一组家庭关系中的户主的名字，用 <code>+name</code>的形式描写一组家庭关系中的成员的名字，成员的名字一定紧接着户主的名字出现；（请注意，读入时，户主以 <code>#</code> 读入，不再以 <code>+</code> 再次读入）接下来用一个 <code>?name</code> 的形式表示要求该户主对应的所有家庭成员（含户主）；（<code>?name</code> 一定在家庭关系描述结束之后出现）</p>\n<p>最后用单独的一个<code>$</code> 表示文件结束。</p>\n</div>            </div>",
+      "text": "输入由多行组成，首先是一系列家庭关系的描述，其中每一组关系中户主只有一行，家庭成员可能有若干行；用 #name 的形式描写一组家庭关系中的户主的名字，用 +name的形式描写一组家庭关系中的成员的名字，成员的名字一定紧接着户主的名字出现；（请注意，读入时，户主以 # 读入，不再以 + 再次读入）接下来用一个 ?name 的形式表示要求该户主对应的所有家庭成员（含户主）；（?name 一定在家庭关系描述结束之后出现）\n最后用单独的一个$ 表示文件结束。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出该户主对应的家庭中，所有成员的名字，每行 <span class=\"katex math inline\">1</span> 个（假设小区中户主名字不存在重复，而家庭成员名字可以重复），如果户主名字不存在，请输出“<code>no data</code>”（双引号中间的内容）。</p>\n</div>            </div>",
+      "text": "输出该户主对应的家庭中，所有成员的名字，每行 1 个（假设小区中户主名字不存在重复，而家庭成员名字可以重复），如果户主名字不存在，请输出“no data”（双引号中间的内容）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>#wangxiaoming\r\n+wangguixiang\r\n+lidaxin\r\n+zhangxiaoyang\r\n+wangyunfei\r\n#zhangfang\r\n+zhangxinyu\r\n+zhangyufei\r\n+zhaochengyu\r\n+anqi\r\n+anjia\r\n?zhangfang\r\n$</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>anjia\r\nanqi\r\nzhangfang\r\nzhangxinyu\r\nzhangyufei\r\nzhaochengyu</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            #wangxiaoming\r\n+wangguixiang\r\n+lidaxin\r\n+zhangxiaoyang\r\n+wangyunfei\r\n#zhangfang\r\n+zhangxinyu\r\n+zhangyufei\r\n+zhaochengyu\r\n+anqi\r\n+anjia\r\n?zhangfang\r\n$\n                        \n                        \n                            输出\n                            anjia\r\nanqi\r\nzhangfang\r\nzhangxinyu\r\nzhangyufei\r\nzhaochengyu"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>容器</p>\n</div>                </div>",
+      "text": "容器"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">容器</span></span></p>\n</div>                </div>",
+      "text": "容器"
+    }
+  ],
+  "samples": [
+    {
+      "input": "#wangxiaoming\r\n+wangguixiang\r\n+lidaxin\r\n+zhangxiaoyang\r\n+wangyunfei\r\n#zhangfang\r\n+zhangxinyu\r\n+zhangyufei\r\n+zhaochengyu\r\n+anqi\r\n+anjia\r\n?zhangfang\r\n$",
+      "output": "anjia\r\nanqi\r\nzhangfang\r\nzhangxinyu\r\nzhangyufei\r\nzhaochengyu"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "290",
+    "通过人数": "153",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:25"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "3687",
+  "title": "数字游戏",
+  "tags": [
+    "BCSP-X",
+    "字符串",
+    "贪心"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3687",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明和小红在做一个数字游戏。小明写出一个二进制数，小红必须交换其中的两个数字来得出一个新的二进制数（必须进行交换操作且只能交换两个数字）。小明想知道所有得到的新二进制数中第二大的数是几。小红知道怎么计算最大的数，但是她不知道怎么计算第二大的数，你能帮帮她么？</p>\n</div>            </div>",
+      "text": "小明和小红在做一个数字游戏。小明写出一个二进制数，小红必须交换其中的两个数字来得出一个新的二进制数（必须进行交换操作且只能交换两个数字）。小明想知道所有得到的新二进制数中第二大的数是几。小红知道怎么计算最大的数，但是她不知道怎么计算第二大的数，你能帮帮她么？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共一行。为小明给出的一个二进制数，不包含前导零。保证所有输入的二进制数通过交换一定能产生至少两个比原数更大的数字。</p>\n</div>            </div>",
+      "text": "共一行。为小明给出的一个二进制数，不包含前导零。保证所有输入的二进制数通过交换一定能产生至少两个比原数更大的数字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共一行。为小红执行交换操作后第二大的二进制数。</p>\n</div>            </div>",
+      "text": "共一行。为小红执行交换操作后第二大的二进制数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1110011</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1111001</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1110011\n                        \n                        \n                            输出\n                            1111001"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p>交换后最大的二进制数为 <span class=\"katex math inline\">1111010</span>，交换的是第四位的 <span class=\"katex math inline\">0</span> 和第 <span class=\"katex math inline\">7</span> 位的 <span class=\"katex math inline\">1</span>。第二大的二进制数为 <span class=\"katex math inline\">1111001</span>，交换的是第四位的 <span class=\"katex math inline\">0</span> 和第 <span class=\"katex math inline\">6</span> 位的 <span class=\"katex math inline\">1</span>。</p>\n<h4>输入解释</h4>\n<p>如数字:<span class=\"katex math inline\">11110000</span>，不论如何交换，交换后一定会变小，这种输入情况不会存在；再比如数字：<span class=\"katex math inline\">101000</span>，交换后只会产生一个比他大的数字 <span class=\"katex math inline\">110000</span>，无法通过交换得到第二个比原数字更大的数，这种输入情况也不会存在。</p>\n<h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">30 \\%</span> 的数据，保证输入的二进制数长度<span class=\"katex math inline\"> \\leq 10</span>。</p>\n<p>对于 <span class=\"katex math inline\">60 \\%</span> 的数据，保证输入的二进制数长度<span class=\"katex math inline\"> \\leq 1000 </span>。</p>\n<p>对于 <span class=\"katex math inline\">100 \\%</span> 的数据，保证输入的二进制数长度<span class=\"katex math inline\"> \\leq 1000000 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n交换后最大的二进制数为 1111010，交换的是第四位的 0 和第 7 位的 1。第二大的二进制数为 1111001，交换的是第四位的 0 和第 6 位的 1。\n输入解释\n如数字:11110000，不论如何交换，交换后一定会变小，这种输入情况不会存在；再比如数字：101000，交换后只会产生一个比他大的数字 110000，无法通过交换得到第二个比原数字更大的数，这种输入情况也不会存在。\n数据范围\n对于 30 \\% 的数据，保证输入的二进制数长度 \\leq 10。\n对于 60 \\% 的数据，保证输入的二进制数长度 \\leq 1000 。\n对于 100 \\% 的数据，保证输入的二进制数长度 \\leq 1000000 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>BCSP-X小高组编程能力样卷-T2</p>\n</div>                </div>",
+      "text": "BCSP-X小高组编程能力样卷-T2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">BCSP-X</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">贪心</span></span></p>\n</div>                </div>",
+      "text": "BCSP-X字符串贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1110011",
+      "output": "1111001"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "140",
+    "通过人数": "23",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:51"
+}

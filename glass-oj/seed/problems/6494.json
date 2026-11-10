@@ -1,0 +1,63 @@
+{
+  "id": "6494",
+  "title": "班级毕业照",
+  "tags": [
+    "詹天佑杯四年级组",
+    "排序",
+    "数组",
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6494",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小英雄今年准备毕业了，在此之前大家要一起拍一个班级照，摄影师要求他们班里的 <span class=\"katex math inline\">n</span> 名同学从左到右排成一个山峰队列，排队的规则就是</p>\n<ul><li>1、先按身高从低到高排好</li>\n<li>2、然后让右边一半(整除)多一名的学生从高到低排</li>\n</ul><p>例如:</p>\n<p>如果人数是 <span class=\"katex math inline\">5</span>，那么右边 <span class=\"katex math inline\">3</span> 位同学要重排;</p>\n<p>如果人数是 <span class=\"katex math inline\">6</span>，那么右边 <span class=\"katex math inline\">4</span> 位要重排，目的都是尽量让最高的站在中间的位置</p>\n<p>排好之后，请你看看从左到右第 <span class=\"katex math inline\">x</span> 名同学的身高是多少?</p>\n</div>            </div>",
+      "text": "小英雄今年准备毕业了，在此之前大家要一起拍一个班级照，摄影师要求他们班里的 n 名同学从左到右排成一个山峰队列，排队的规则就是\n1、先按身高从低到高排好\n2、然后让右边一半(整除)多一名的学生从高到低排\n例如:\n如果人数是 5，那么右边 3 位同学要重排;\n如果人数是 6，那么右边 4 位要重排，目的都是尽量让最高的站在中间的位置\n排好之后，请你看看从左到右第 x 名同学的身高是多少?"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行: <span class=\"katex math inline\">1</span> 个正整数 <span class=\"katex math inline\">n</span>;</p>\n<p>第二行: <span class=\"katex math inline\">n</span> 个正整数 <span class=\"katex math inline\">h_i(1 \\le i \\le n)</span>，表示每位同学的身高;</p>\n<p>第三行: <span class=\"katex math inline\">1</span> 个正整数 <span class=\"katex math inline\">x</span>。</p>\n</div>            </div>",
+      "text": "第一行: 1 个正整数 n;\n第二行: n 个正整数 h_i(1 \\le i \\le n)，表示每位同学的身高;\n第三行: 1 个正整数 x。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">1</span>个正整数，表示排好队后从左到右第 <span class=\"katex math inline\">x</span> 名同学的身高。</p>\n</div>            </div>",
+      "text": "1个正整数，表示排好队后从左到右第 x 名同学的身高。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n192 178 165 188 173\r\n4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>188</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>6\r\n166 197 172 185 177 200\r\n5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>185</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n192 178 165 188 173\r\n4\n                        \n                        \n                            输出\n                            188\n                        \n\n                                                    \n                                输入\n                                6\r\n166 197 172 185 177 200\r\n5\n                            \n                            \n                                输出\n                                185"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 解释】:</h4>\n<p>最终的队形身高是:<code>[165,173,192,188,178]</code>，所以从左到右第 <span class=\"katex math inline\">4</span> 名同学的身高是 <span class=\"katex math inline\">188</span>。</p>\n<h4>【样例 2 解释】:</h4>\n<p>最终的队形身高是:<code>[166,172,200,197,185,177]</code>，所以从左到右第 <span class=\"katex math inline\">5</span> 名同学的身高是 <span class=\"katex math inline\">185</span>。</p>\n<h4>数据规模与提示。</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">3 \\le x \\le n  \\le 1000,150 \\le h_i \\le 200</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 1 解释】:\n最终的队形身高是:[165,173,192,188,178]，所以从左到右第 4 名同学的身高是 188。\n【样例 2 解释】:\n最终的队形身高是:[166,172,200,197,185,177]，所以从左到右第 5 名同学的身高是 185。\n数据规模与提示。\n对于 100\\% 的数据，3 \\le x \\le n  \\le 1000,150 \\le h_i \\le 200。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">詹天佑杯四年级组</span><span class=\"label label-warning\">排序</span><span class=\"label label-info\">数组</span><span class=\"label label-danger\">模拟</span></span></p>\n</div>                </div>",
+      "text": "詹天佑杯四年级组排序数组模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n192 178 165 188 173\r\n4",
+      "output": "188"
+    },
+    {
+      "input": "6\r\n166 197 172 185 177 200\r\n5",
+      "output": "185"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "6",
+    "通过人数": "3",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:37"
+}

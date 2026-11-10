@@ -1,0 +1,64 @@
+{
+  "id": "4975",
+  "title": "值日",
+  "tags": [
+    "GESP一级",
+    "25年6月",
+    "循环",
+    "辗转相除法"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4975",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨和小红是值日生，负责打扫教室。小杨每 <span class=\"katex math inline\">m</span> 天值日一次，小红每 <span class=\"katex math inline\">n</span> 天值日一次。今天他们两个一起值日，请问\n至少多少天后，他们会再次同一天值日？</p>\n</div>            </div>",
+      "text": "小杨和小红是值日生，负责打扫教室。小杨每 m 天值日一次，小红每 n 天值日一次。今天他们两个一起值日，请问\n至少多少天后，他们会再次同一天值日？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个正整数 <span class=\"katex math inline\">m</span>，表示小杨的值日周期；</p>\n<p>第二行，一个正整数 <span class=\"katex math inline\">n</span>，表示小红的值日周期。</p>\n</div>            </div>",
+      "text": "第一行，一个正整数 m，表示小杨的值日周期；\n第二行，一个正整数 n，表示小红的值日周期。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数，表示至少多少天后他们会再次同一天值日。</p>\n</div>            </div>",
+      "text": "一行，一个整数，表示至少多少天后他们会再次同一天值日。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>12</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n6\n                        \n                        \n                            输出\n                            12"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le m，n \\le 100</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于所有测试点，保证 1 \\le m，n \\le 100 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP25年6月一级</p>\n</div>                </div>",
+      "text": "GESP25年6月一级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP一级</span><span class=\"label label-warning\">25年6月</span><span class=\"label label-info\">循环</span><span class=\"label label-danger\">辗转相除法</span></span></p>\n</div>                </div>",
+      "text": "GESP一级25年6月循环辗转相除法"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n6",
+      "output": "12"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "2630",
+    "通过人数": "1827",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:40"
+}

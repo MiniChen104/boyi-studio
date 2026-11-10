@@ -1,0 +1,57 @@
+{
+  "id": "2129",
+  "title": "购物停车",
+  "tags": [
+    "数组问题",
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2129",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小丽是个购物达人，每周末都要去贝壳大街购物。贝壳大街是一条笔直的大街，我们把它抽象成是 <span class=\"katex math inline\">X</span> 轴上的一条线段，街上的每个商铺都位于线段上整数点的位置，而顾客可以在线段上的任何一个位置停车，并且每停一次车都需要交一次费用。</p>\n<p>小丽希望交纳最低的停车费用。于是小丽请你帮她编程计算一下，如果自己就停一次车，然后步行去之前计划好要去的那些商铺，最后回到停车的位置，那么最短的步行路程是多少。</p>\n</div>            </div>",
+      "text": "小丽是个购物达人，每周末都要去贝壳大街购物。贝壳大街是一条笔直的大街，我们把它抽象成是 X 轴上的一条线段，街上的每个商铺都位于线段上整数点的位置，而顾客可以在线段上的任何一个位置停车，并且每停一次车都需要交一次费用。\n小丽希望交纳最低的停车费用。于是小丽请你帮她编程计算一下，如果自己就停一次车，然后步行去之前计划好要去的那些商铺，最后回到停车的位置，那么最短的步行路程是多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">1 \\le n \\le 20</span>），表示小丽计划要去的商铺的个数；</p>\n<p>第二行输入 <span class=\"katex math inline\">n</span> 个整数，表示计划要去的那些商铺的位置，位置范围为 <span class=\"katex math inline\">[0,99]</span> 。</p>\n</div>            </div>",
+      "text": "第一行输入一个整数 n（1 \\le n \\le 20），表示小丽计划要去的商铺的个数；\n第二行输入 n 个整数，表示计划要去的那些商铺的位置，位置范围为 [0,99] 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出题目要求的最短的步行路程。</p>\n</div>            </div>",
+      "text": "输出题目要求的最短的步行路程。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n24 13 89 37</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>152</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n24 13 89 37\n                        \n                        \n                            输出\n                            152"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题 模拟</p>\n</div>                </div>",
+      "text": "数组问题 模拟"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span><span class=\"label label-warning\">模拟</span></span></p>\n</div>                </div>",
+      "text": "数组问题模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n24 13 89 37",
+      "output": "152"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "971",
+    "通过人数": "728",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:49"
+}

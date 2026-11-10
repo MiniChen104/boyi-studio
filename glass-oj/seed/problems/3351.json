@@ -1,0 +1,62 @@
+{
+  "id": "3351",
+  "title": "春游",
+  "tags": [
+    "数组",
+    "GESP三级",
+    "23年6月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3351",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>老师带领同学们春游。已知班上有 <span class=\"katex math inline\">N</span> 位同学，每位同学有从 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">N − 1</span> 的唯\n一编号。到了集合时间，老师确认是否所有同学都到达了集合地点，就让同学们报出自己的编号。到达的同学都会报出自己的编号，不会报出别人的编号，但有的同学很顽皮，会多次报出。你能帮老师找出有哪些同学没有到达吗？</p>\n</div>            </div>",
+      "text": "老师带领同学们春游。已知班上有 N 位同学，每位同学有从 0 到 N − 1 的唯\n一编号。到了集合时间，老师确认是否所有同学都到达了集合地点，就让同学们报出自己的编号。到达的同学都会报出自己的编号，不会报出别人的编号，但有的同学很顽皮，会多次报出。你能帮老师找出有哪些同学没有到达吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含 <span class=\"katex math inline\">2</span> 行。第一行包含两个整数 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">M</span>，表示班级有 <span class=\"katex math inline\">N</span> 位同学，同学们\n共有 <span class=\"katex math inline\">M</span> 次报出编号。约定 <span class=\"katex math inline\"> 2 ≤ N, M ≤ 1000 </span>。</p>\n<p>第二行包含 <span class=\"katex math inline\">M</span> 个整数，分别为 <span class=\"katex math inline\">M</span> 次报出的编号。约定所有编号都在合理范围\n内。</p>\n</div>            </div>",
+      "text": "输入包含 2 行。第一行包含两个整数 N 和 M，表示班级有 N 位同学，同学们\n共有 M 次报出编号。约定  2 ≤ N, M ≤ 1000 。\n第二行包含 M 个整数，分别为 M 次报出的编号。约定所有编号都在合理范围\n内。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行。如果所有同学都到达，则输出<span class=\"katex math inline\">N</span>；否则由小到大输出所有未到达的同学编号，空格分隔。</p>\n</div>            </div>",
+      "text": "输出一行。如果所有同学都到达，则输出N；否则由小到大输出所有未到达的同学编号，空格分隔。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3\r\n0 2 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 5\r\n0 0 0 0 0</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1 2</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\r\n0 2 1\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                3 5\r\n0 0 0 0 0\n                            \n                            \n                                输出\n                                1 2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP2023年6月三级</p>\n</div>                </div>",
+      "text": "GESP2023年6月三级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组</span><span class=\"label label-warning\">GESP三级</span><span class=\"label label-info\">23年6月</span></span></p>\n</div>                </div>",
+      "text": "数组GESP三级23年6月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3\r\n0 2 1",
+      "output": "3"
+    },
+    {
+      "input": "3 5\r\n0 0 0 0 0",
+      "output": "1 2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3733",
+    "通过人数": "2084",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:46"
+}

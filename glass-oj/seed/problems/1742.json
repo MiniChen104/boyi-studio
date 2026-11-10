@@ -1,0 +1,56 @@
+{
+  "id": "1742",
+  "title": "三位回文数",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1742",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请从小到大输出 <span class=\"katex math inline\">m \\sim n</span> 之间所有的 <span class=\"katex math inline\">3</span> 位的回文数，并求出这些数有多少个。</p>\n</div>            </div>",
+      "text": "请从小到大输出 m \\sim n 之间所有的 3 位的回文数，并求出这些数有多少个。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个整数 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span> 用空格隔开（ <span class=\"katex math inline\">m&lt;=n</span> ，且 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span> 一定都是 <span class=\"katex math inline\">3</span> 位数）。</p>\n</div>            </div>",
+      "text": "两个整数 m 和 n 用空格隔开（ m<=n ，且 m 和 n 一定都是 3 位数）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>先输出 <span class=\"katex math inline\">m \\sim n</span>之间所有的 <span class=\"katex math inline\">3</span> 位的回文数，每行 <span class=\"katex math inline\">1</span>个；</p>\n<p>最后 <span class=\"katex math inline\">1</span> 行输出 <span class=\"katex math inline\">3</span> 位回文数总共有多少个；</p>\n</div>            </div>",
+      "text": "先输出 m \\sim n之间所有的 3 位的回文数，每行 1个；\n最后 1 行输出 3 位回文数总共有多少个；"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100 200</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>101\r\n111\r\n121\r\n131\r\n141\r\n151\r\n161\r\n171\r\n181\r\n191\r\n10</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100 200\n                        \n                        \n                            输出\n                            101\r\n111\r\n121\r\n131\r\n141\r\n151\r\n161\r\n171\r\n181\r\n191\r\n10"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100 200",
+      "output": "101\r\n111\r\n121\r\n131\r\n141\r\n151\r\n161\r\n171\r\n181\r\n191\r\n10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "23573",
+    "通过人数": "14677",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:39"
+}

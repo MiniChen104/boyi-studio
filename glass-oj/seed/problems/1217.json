@@ -1,0 +1,56 @@
+{
+  "id": "1217",
+  "title": "小明排队做操迟到",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1217",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>做操的时间到了，小明在教室还在思考刚刚老师讲的一道题目，当他想通这个题时，同学们都已经在操场上排好队了，他赶快跑到操场上找到自己的班级队伍，希望尽快找到以前排队的位置，准备做操，小明记得应该排在第 <span class=\"katex math inline\">x</span> 学号同学的后面。</p>\n<p>你能不能来帮帮小明呢？</p>\n</div>            </div>",
+      "text": "做操的时间到了，小明在教室还在思考刚刚老师讲的一道题目，当他想通这个题时，同学们都已经在操场上排好队了，他赶快跑到操场上找到自己的班级队伍，希望尽快找到以前排队的位置，准备做操，小明记得应该排在第 x 学号同学的后面。\n你能不能来帮帮小明呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入（两行）：</p>\n<p>第一行 <span class=\"katex math inline\">3</span> 个整数：<span class=\"katex math inline\">n</span> <span class=\"katex math inline\">x</span> <span class=\"katex math inline\">y</span>（现在队伍的长度、第 <span class=\"katex math inline\">x</span> 同学的学号、小明的学号）；</p>\n<p>第二行 <span class=\"katex math inline\">n</span> 个整数：<span class=\"katex math inline\">n</span> 个同学的学号，<span class=\"katex math inline\">1 \\le n \\le 100</span>，每位同学的学号都在 <span class=\"katex math inline\">[1,1000]</span> 的范围内。</p>\n</div>            </div>",
+      "text": "输入（两行）：\n第一行 3 个整数：n x y（现在队伍的长度、第 x 同学的学号、小明的学号）；\n第二行 n 个整数：n 个同学的学号，1 \\le n \\le 100，每位同学的学号都在 [1,1000] 的范围内。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">n+1</span> 个学号（小明加入队伍后队伍中的每个数据）。</p>\n</div>            </div>",
+      "text": "输出 n+1 个学号（小明加入队伍后队伍中的每个数据）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 32 23\r\n1 8 32 56</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 8 32 23 56</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 32 23\r\n1 8 32 56\n                        \n                        \n                            输出\n                            1 8 32 23 56"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 32 23\r\n1 8 32 56",
+      "output": "1 8 32 23 56"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "11321",
+    "通过人数": "8418",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:16:25"
+}

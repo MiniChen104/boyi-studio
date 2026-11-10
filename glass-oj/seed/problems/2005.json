@@ -1,0 +1,65 @@
+{
+  "id": "2005",
+  "title": "选班委",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2005",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">T</span> 和他的小伙伴们到 <span class=\"katex math inline\">CZ</span> 中学的创新实验班报到后的第一件事就是选班委，班主任 <span class=\"katex math inline\">R</span> 老师走上讲台宣布了选举办法，首先让全班 <span class=\"katex math inline\">40</span> 位同学依次上讲台做自我介绍，然后按照 职位一个一个依次进行选举，先选班长，再选学习委员……，选举办法是每人投一票，谁 的票数最高就选谁担任这个职位，最后围棋高手小 <span class=\"katex math inline\">W</span> 颇具大将风范被选为班长，学神小 <span class=\"katex math inline\">Z</span> 当选为学习委员那是众望所归，小 <span class=\"katex math inline\">S</span> 则有天生一副好嗓子，不但歌唱得好，并且能将多种 动物的叫声模仿得惟妙惟肖，因此当选为文体委员。小 <span class=\"katex math inline\">T</span> 同学在本次选举中负责计票，他 觉得手工计票太慢了，且容易出错，因此想请你编一个程序实现机器计票功能。</p>\n<p>这个程序 要能实现以下功能：全班共有 <span class=\"katex math inline\">n</span> 个同学，依次用 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span> 编号，共有 <span class=\"katex math inline\">m</span> 个人（包括班主任和 任课老师等）参与了投票，每张选票上写有一个同学的编号，得票最多的同学当选。</p>\n</div>            </div>",
+      "text": "小 T 和他的小伙伴们到 CZ 中学的创新实验班报到后的第一件事就是选班委，班主任 R 老师走上讲台宣布了选举办法，首先让全班 40 位同学依次上讲台做自我介绍，然后按照 职位一个一个依次进行选举，先选班长，再选学习委员……，选举办法是每人投一票，谁 的票数最高就选谁担任这个职位，最后围棋高手小 W 颇具大将风范被选为班长，学神小 Z 当选为学习委员那是众望所归，小 S 则有天生一副好嗓子，不但歌唱得好，并且能将多种 动物的叫声模仿得惟妙惟肖，因此当选为文体委员。小 T 同学在本次选举中负责计票，他 觉得手工计票太慢了，且容易出错，因此想请你编一个程序实现机器计票功能。\n这个程序 要能实现以下功能：全班共有 n 个同学，依次用 1 到 n 编号，共有 m 个人（包括班主任和 任课老师等）参与了投票，每张选票上写有一个同学的编号，得票最多的同学当选。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据第一行包含两个用空格隔开的正整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>，其中 <span class=\"katex math inline\">n \\le 200</span>，<span class=\"katex math inline\">m \\le 2000</span>。</p>\n<p>第二行有 <span class=\"katex math inline\">m</span> 个用空格隔开的不超过 <span class=\"katex math inline\">n</span> 的正整数，表示这 <span class=\"katex math inline\">m</span> 张选票上所写的编号。</p>\n</div>            </div>",
+      "text": "输入数据第一行包含两个用空格隔开的正整数 n 和 m，其中 n \\le 200，m \\le 2000。\n第二行有 m 个用空格隔开的不超过 n 的正整数，表示这 m 张选票上所写的编号。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出得票最多的那个同学的编号。如果同时有两名以上同学得票最多，输出编号最小的那个同学的编号。</p>\n</div>            </div>",
+      "text": "输出得票最多的那个同学的编号。如果同时有两名以上同学得票最多，输出编号最小的那个同学的编号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 4\r\n1 3 2 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 10\r\n1 2 1 3 2 3 1 2 2 1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 4\r\n1 3 2 1\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                3 10\r\n1 2 1 3 2 3 1 2 2 1\n                            \n                            \n                                输出\n                                1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<p>全班共有 <span class=\"katex math inline\">3</span> 位同学参选，共有 <span class=\"katex math inline\">4</span> 人进行了投票，其中有 <span class=\"katex math inline\">2</span> 人选了 <span class=\"katex math inline\">1</span> 号同学，选 <span class=\"katex math inline\">2</span> 号和 <span class=\"katex math inline\">3</span> 号同学的都只有 <span class=\"katex math inline\">1</span> 人，最后 <span class=\"katex math inline\">1</span> 号同学得 <span class=\"katex math inline\">2</span> 票，<span class=\"katex math inline\">2</span> 号和 <span class=\"katex math inline\">3</span> 号同学各得 <span class=\"katex math inline\">1</span> 票，<span class=\"katex math inline\">1</span> 号同学得票最多， 当选班委。  </p>\n<h4>【数据范围】</h4>\n<ul><li><span class=\"katex math inline\">20 \\%</span>的数据满足：<span class=\"katex math inline\">n \\le 3，m \\le 20</span>  </li>\n<li><span class=\"katex math inline\">60 \\%</span>的数据满足：<span class=\"katex math inline\">n \\le 100，m \\le 500</span>  </li>\n<li><span class=\"katex math inline\">70 \\%</span>的数据满足：得票最多的同学是唯一的  </li>\n<li><span class=\"katex math inline\">100 \\%</span>的数据满足：<span class=\"katex math inline\">n \\le 200，m \\le 2000</span>  </li>\n</ul><h4>【来源】</h4>\n<p>常州市2014年市赛  </p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n全班共有 3 位同学参选，共有 4 人进行了投票，其中有 2 人选了 1 号同学，选 2 号和 3 号同学的都只有 1 人，最后 1 号同学得 2 票，2 号和 3 号同学各得 1 票，1 号同学得票最多， 当选班委。  \n【数据范围】\n20 \\%的数据满足：n \\le 3，m \\le 20  \n60 \\%的数据满足：n \\le 100，m \\le 500  \n70 \\%的数据满足：得票最多的同学是唯一的  \n100 \\%的数据满足：n \\le 200，m \\le 2000  \n【来源】\n常州市2014年市赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 4\r\n1 3 2 1",
+      "output": "1"
+    },
+    {
+      "input": "3 10\r\n1 2 1 3 2 3 1 2 2 1",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "10241",
+    "通过人数": "4678",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:27:12"
+}

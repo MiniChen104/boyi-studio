@@ -1,0 +1,60 @@
+{
+  "id": "6486",
+  "title": "成绩统计",
+  "tags": [
+    "数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6486",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某班 <span class=\"katex math inline\">n</span> 名学生参加了信息学答题测试，每人得分是一个 <span class=\"katex math inline\">0  </span>到 <span class=\"katex math inline\">100</span> 之间的整数。请你统计并输出：</p>\n<ol><li>最高分和最低分；</li>\n<li>平均分（<strong>四舍五入</strong>保留两位小数）；</li>\n<li>得分<strong>不低于平均分</strong>的人数。</li>\n</ol></div>            </div>",
+      "text": "某班 n 名学生参加了信息学答题测试，每人得分是一个 0  到 100 之间的整数。请你统计并输出：\n最高分和最低分；\n平均分（四舍五入保留两位小数）；\n得分不低于平均分的人数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><ul><li>第一行：一个整数 <span class=\"katex math inline\">n</span>，表示学生人数；</li>\n<li>第二行：<span class=\"katex math inline\">n</span> 个整数，表示每名学生的得分，相邻两数之间用一个空格分隔。</li>\n</ul></div>            </div>",
+      "text": "第一行：一个整数 n，表示学生人数；\n第二行：n 个整数，表示每名学生的得分，相邻两数之间用一个空格分隔。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><ul><li>第一行：两个整数，最高分和最低分，用一个空格分隔；</li>\n<li>第二行：一个实数，平均分，保留两位小数；</li>\n<li>第三行：一个整数，不低于平均分的人数。</li>\n</ul></div>            </div>",
+      "text": "第一行：两个整数，最高分和最低分，用一个空格分隔；\n第二行：一个实数，平均分，保留两位小数；\n第三行：一个整数，不低于平均分的人数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n88 92 76 100 64</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>100 64\r\n84.00\r\n3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1\r\n100</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>100 100\r\n100.00\r\n1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n88 92 76 100 64\n                        \n                        \n                            输出\n                            100 64\r\n84.00\r\n3\n                        \n\n                                                    \n                                输入\n                                1\r\n100\n                            \n                            \n                                输出\n                                100 100\r\n100.00\r\n1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 说明】：</h4>\n<p>最高 <span class=\"katex math inline\">100</span>、最低 <span class=\"katex math inline\">64</span>，总分 <span class=\"katex math inline\">420</span>，平均 <span class=\"katex math inline\">84.00</span>；不低于 <span class=\"katex math inline\">84</span> 分的有 <span class=\"katex math inline\">88、92、100</span>，共 <span class=\"katex math inline\">3</span> 人。</p>\n<h4>数据范围</h4>\n<p><span class=\"katex math inline\">1 \\le n \\le 100000</span>，<span class=\"katex math inline\">0 \\le</span> 得分 <span class=\"katex math inline\">\\le 100</span></p>\n<blockquote><p>平均分统一按四舍五入保留两位小数输出（数据不会出现两位小数后的舍入歧义）。</p>\n</blockquote>\n<h4>考察点</h4>\n<p>一维数组存储与遍历；求最值、求和、计数；浮点数输出格式（<code>fixed</code> + <code>setprecision(2)</code>）。</p>\n<h4>提示</h4>\n<p>判断&quot;不低于平均分&quot;时，用 <code>a[i] * n &gt;= sum</code> 做整数比较，可以避开小数精度问题。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 1 说明】：\n最高 100、最低 64，总分 420，平均 84.00；不低于 84 分的有 88、92、100，共 3 人。\n数据范围\n1 \\le n \\le 100000，0 \\le 得分 \\le 100\n平均分统一按四舍五入保留两位小数输出（数据不会出现两位小数后的舍入歧义）。\n\n考察点\n一维数组存储与遍历；求最值、求和、计数；浮点数输出格式（fixed + setprecision(2)）。\n提示\n判断\"不低于平均分\"时，用 a[i] * n >= sum 做整数比较，可以避开小数精度问题。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组</span></span></p>\n</div>                </div>",
+      "text": "数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n88 92 76 100 64",
+      "output": "100 64\r\n84.00\r\n3"
+    },
+    {
+      "input": "1\r\n100",
+      "output": "100 100\r\n100.00\r\n1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "88",
+    "通过人数": "35",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:44"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "2509",
+  "title": "电器快递",
+  "tags": [
+    "图论"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2509",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">A</span> 市的电器城开张啦，琳琅满目的电器给市民的生活带来了很多便捷。为了方便大家购物，电器城推出了免费送达的服务，你在电器城购买的电器只要超过指定的金额，电器城会在第 <span class=\"katex math inline\">2</span> 天将电器免费送到你的家里。  </p>\n<p>由于给每户人家要送的电器比较多，家电城的货车又比较小，<strong>每次司机只能给一户人家派送电器</strong>，然后回电器城再取下一家要派送的电器送货。  </p>\n<p>某天，司机收到了当天要派送的所有电器的收货地址。该天一共要派送到 <span class=\"katex math inline\">N-1</span> 个收货地址。地址编号为 <span class=\"katex math inline\">2 \\sim N</span>，其中编号为 <span class=\"katex math inline\">1</span> 的位置是电器城的地址。  </p>\n<p>该市有 <span class=\"katex math inline\">M</span> 条<strong>单向</strong>道路，并统计出了通过每条道路的需要的小时数。  </p>\n<p>请编程计算出，司机从电器城出发，送完所有的电器并回到电器城，最少需要多少个小时？</p>\n</div>            </div>",
+      "text": "A 市的电器城开张啦，琳琅满目的电器给市民的生活带来了很多便捷。为了方便大家购物，电器城推出了免费送达的服务，你在电器城购买的电器只要超过指定的金额，电器城会在第 2 天将电器免费送到你的家里。  \n由于给每户人家要送的电器比较多，家电城的货车又比较小，每次司机只能给一户人家派送电器，然后回电器城再取下一家要派送的电器送货。  \n某天，司机收到了当天要派送的所有电器的收货地址。该天一共要派送到 N-1 个收货地址。地址编号为 2 \\sim N，其中编号为 1 的位置是电器城的地址。  \n该市有 M 条单向道路，并统计出了通过每条道路的需要的小时数。  \n请编程计算出，司机从电器城出发，送完所有的电器并回到电器城，最少需要多少个小时？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入文件第一行包含一个正整数 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">M</span>；  </p>\n<p>接下来 <span class=\"katex math inline\">M</span> 行， 每行三个正整数 <span class=\"katex math inline\">X</span>、 <span class=\"katex math inline\">Y</span>、 <span class=\"katex math inline\">T</span>， 表示该条道路为从 <span class=\"katex math inline\">X</span> 到 <span class=\"katex math inline\">Y</span> 的<strong>单向道路</strong>， 通过这条道路\n需要 <span class=\"katex math inline\">T</span> 个小时。  </p>\n<p>满足 <span class=\"katex math inline\">1≤X,Y≤N</span>，<span class=\"katex math inline\">1≤T≤10000</span>， 输入保证任意两点都能互相到达。</p>\n</div>            </div>",
+      "text": "输入文件第一行包含一个正整数 N 和 M；  \n接下来 M 行， 每行三个正整数 X、 Y、 T， 表示该条道路为从 X 到 Y 的单向道路， 通过这条道路\n需要 T 个小时。  \n满足 1≤X,Y≤N，1≤T≤10000， 输入保证任意两点都能互相到达。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出包含一个整数，为最少需要的小时数。</p>\n</div>            </div>",
+      "text": "输出包含一个整数，为最少需要的小时数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 10\r\n2 3 5\r\n1 5 5\r\n3 5 6\r\n1 2 8\r\n1 3 8\r\n5 3 4\r\n4 1 8\r\n4 5 3\r\n3 5 6\r\n5 4 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>83</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 10\r\n2 3 5\r\n1 5 5\r\n3 5 6\r\n1 2 8\r\n1 3 8\r\n5 3 4\r\n4 1 8\r\n4 5 3\r\n3 5 6\r\n5 4 2\n                        \n                        \n                            输出\n                            83"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，满足 <span class=\"katex math inline\">1≤N≤200</span>。  </p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，满足 <span class=\"katex math inline\">1≤N≤1000</span>，<span class=\"katex math inline\">1≤M≤100000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "对于 30\\% 的数据，满足 1≤N≤200。  \n对于 100\\% 的数据，满足 1≤N≤1000，1≤M≤100000。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span></span></p>\n</div>                </div>",
+      "text": "图论"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 10\r\n2 3 5\r\n1 5 5\r\n3 5 6\r\n1 2 8\r\n1 3 8\r\n5 3 4\r\n4 1 8\r\n4 5 3\r\n3 5 6\r\n5 4 2",
+      "output": "83"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "229",
+    "通过人数": "147",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:01"
+}

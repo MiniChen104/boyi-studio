@@ -1,0 +1,57 @@
+{
+  "id": "6335",
+  "title": "末班车",
+  "tags": [
+    "GESP八级",
+    "26年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6335",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>城市里有 <span class=\"katex math inline\">n</span> 个地铁站以及 <span class=\"katex math inline\">m</span> 条地铁线路，地铁站依次以 <span class=\"katex math inline\">1,2,\\ldots,n</span> 编号。</p>\n<p>第 <span class=\"katex math inline\">i</span> 条地铁线路（<span class=\"katex math inline\">1\\le i\\le m</span>）的列车从地铁站 <span class=\"katex math inline\">u_i</span> 单向驶向地铁站 <span class=\"katex math inline\">v_i</span>，最晚发车时间为第 <span class=\"katex math inline\">l_i</span> 分钟，途中行驶需要 <span class=\"katex math inline\">t_i</span> 分钟。从第 <span class=\"katex math inline\">0</span> 分钟到第 <span class=\"katex math inline\">l_i</span> 分钟，每分钟都会有一班列车从地铁站 <span class=\"katex math inline\">u_i</span> 发出。第 <span class=\"katex math inline\">x</span> 分钟（<span class=\"katex math inline\">0\\le x\\le l_i</span>）发出的列车会在第 <span class=\"katex math inline\">x+t_i</span> 分钟到达地铁站 <span class=\"katex math inline\">v_i</span>，乘坐这班列车的乘客可以换乘第 <span class=\"katex math inline\">x+t_i</span> 分钟以及之后的所有从地铁站 <span class=\"katex math inline\">v_i</span> 发出的任意线路的列车。</p>\n<p>现在有 <span class=\"katex math inline\">q</span> 组询问。第 <span class=\"katex math inline\">i</span> 组询问（<span class=\"katex math inline\">1\\le i\\le q</span>）给出起点地铁站编号 <span class=\"katex math inline\">x_i</span>，终点地铁站编号 <span class=\"katex math inline\">y_i</span> 以及出发时间 <span class=\"katex math inline\">s_i</span>，你需要判断第 <span class=\"katex math inline\">s_i</span> 分钟从地铁站 <span class=\"katex math inline\">x_i</span> 出发是否能到达地铁站 <span class=\"katex math inline\">y_i</span>。第 <span class=\"katex math inline\">s_i</span> 分钟从地铁站 <span class=\"katex math inline\">x_i</span> 出发意味着你可以乘坐第 <span class=\"katex math inline\">s_i</span> 分钟以及之后的所有从地铁站 <span class=\"katex math inline\">x_i</span> 发出的任意线路的列车。</p>\n</div>            </div>",
+      "text": "城市里有 n 个地铁站以及 m 条地铁线路，地铁站依次以 1,2,\\ldots,n 编号。\n第 i 条地铁线路（1\\le i\\le m）的列车从地铁站 u_i 单向驶向地铁站 v_i，最晚发车时间为第 l_i 分钟，途中行驶需要 t_i 分钟。从第 0 分钟到第 l_i 分钟，每分钟都会有一班列车从地铁站 u_i 发出。第 x 分钟（0\\le x\\le l_i）发出的列车会在第 x+t_i 分钟到达地铁站 v_i，乘坐这班列车的乘客可以换乘第 x+t_i 分钟以及之后的所有从地铁站 v_i 发出的任意线路的列车。\n现在有 q 组询问。第 i 组询问（1\\le i\\le q）给出起点地铁站编号 x_i，终点地铁站编号 y_i 以及出发时间 s_i，你需要判断第 s_i 分钟从地铁站 x_i 出发是否能到达地铁站 y_i。第 s_i 分钟从地铁站 x_i 出发意味着你可以乘坐第 s_i 分钟以及之后的所有从地铁站 x_i 发出的任意线路的列车。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，三个正整数 <span class=\"katex math inline\">n,m,q</span>，分别表示地铁站数量，地铁线路数量，询问数量。</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行四个整数 <span class=\"katex math inline\">u_i,v_i,l_i,t_i</span>，分别表示地铁线路的起点、终点、最晚发车时间、行驶所需时间。</p>\n<p>接下来 <span class=\"katex math inline\">q</span> 行，每行三个整数 <span class=\"katex math inline\">x_i,y_i,s_i</span>，分别表示行程起点、行程终点、出发时间。</p>\n</div>            </div>",
+      "text": "第一行，三个正整数 n,m,q，分别表示地铁站数量，地铁线路数量，询问数量。\n接下来 m 行，每行四个整数 u_i,v_i,l_i,t_i，分别表示地铁线路的起点、终点、最晚发车时间、行驶所需时间。\n接下来 q 行，每行三个整数 x_i,y_i,s_i，分别表示行程起点、行程终点、出发时间。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共 <span class=\"katex math inline\">q</span> 行。对于每组询问，如果第 <span class=\"katex math inline\">s_i</span> 分钟从地铁站 <span class=\"katex math inline\">x_i</span> 出发能到达地铁站 <span class=\"katex math inline\">y_i</span> 则输出一行 <code>Yes</code>，否则输出一行 <code>No</code>。请注意输出区分大小写。</p>\n</div>            </div>",
+      "text": "输出共 q 行。对于每组询问，如果第 s_i 分钟从地铁站 x_i 出发能到达地铁站 y_i 则输出一行 Yes，否则输出一行 No。请注意输出区分大小写。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 4 5\r\n1 2 3 3\r\n2 3 5 2\r\n3 1 4 1\r\n1 3 0 6\r\n1 3 2\r\n2 1 2\r\n2 1 3\r\n3 2 2\r\n3 2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Yes\r\nYes\r\nNo\r\nYes\r\nNo</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 4 5\r\n1 2 3 3\r\n2 3 5 2\r\n3 1 4 1\r\n1 3 0 6\r\n1 3 2\r\n2 1 2\r\n2 1 3\r\n3 2 2\r\n3 2 3\n                        \n                        \n                            输出\n                            Yes\r\nYes\r\nNo\r\nYes\r\nNo"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的测试点，保证 <span class=\"katex math inline\">q\\le100</span>。</p>\n<p>对于所有测试点，保证：</p>\n<ul><li><span class=\"katex math inline\">1\\le n\\le500</span></li>\n<li><span class=\"katex math inline\">1\\le m\\le1000</span></li>\n<li><span class=\"katex math inline\">1\\le q\\le5\\times10^5</span></li>\n<li><span class=\"katex math inline\">1\\le u_i,v_i,x_i,y_i\\le n</span></li>\n<li><span class=\"katex math inline\">0\\le l_i,s_i\\le10^5</span></li>\n<li><span class=\"katex math inline\">1\\le t_i\\le10^4</span></li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 40\\% 的测试点，保证 q\\le100。\n对于所有测试点，保证：\n1\\le n\\le500\n1\\le m\\le1000\n1\\le q\\le5\\times10^5\n1\\le u_i,v_i,x_i,y_i\\le n\n0\\le l_i,s_i\\le10^5\n1\\le t_i\\le10^4"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP八级</span><span class=\"label label-warning\">26年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP八级26年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 4 5\r\n1 2 3 3\r\n2 3 5 2\r\n3 1 4 1\r\n1 3 0 6\r\n1 3 2\r\n2 1 2\r\n2 1 3\r\n3 2 2\r\n3 2 3",
+      "output": "Yes\r\nYes\r\nNo\r\nYes\r\nNo"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "15",
+    "通过人数": "8",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:51"
+}

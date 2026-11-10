@@ -1,0 +1,56 @@
+{
+  "id": "2170",
+  "title": "树的高度",
+  "tags": [
+    "树"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2170",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一棵树有 <span class=\"katex math inline\">n</span> 个结点，结点编号为 <span class=\"katex math inline\">1</span>~<span class=\"katex math inline\">n</span>，其中 <span class=\"katex math inline\">1</span> 号结点为根结点，根结点的深度为 <span class=\"katex math inline\">1</span> ，请问树的高度是多少。</p>\n</div>            </div>",
+      "text": "一棵树有 n 个结点，结点编号为 1~n，其中 1 号结点为根结点，根结点的深度为 1 ，请问树的高度是多少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行是整数 <span class=\"katex math inline\">n</span>，表示结点数。（<span class=\"katex math inline\">1≤n≤100</span>）</p>\n<p>后面若干行，每行两个整数<span class=\"katex math inline\">a</span> <span class=\"katex math inline\">b</span>，表示 <span class=\"katex math inline\">b</span> 是 <span class=\"katex math inline\">a</span> 的子结点。</p>\n<p>本题测试数据保证所有结点能构建为一棵树。</p>\n</div>            </div>",
+      "text": "第一行是整数 n，表示结点数。（1≤n≤100）\n后面若干行，每行两个整数a b，表示 b 是 a 的子结点。\n本题测试数据保证所有结点能构建为一棵树。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>求这棵树的高度。</p>\n</div>            </div>",
+      "text": "求这棵树的高度。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n1 2\r\n1 3\r\n3 4\r\n3 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n1 2\r\n1 3\r\n3 4\r\n3 5\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>树</p>\n</div>                </div>",
+      "text": "树"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树</span></span></p>\n</div>                </div>",
+      "text": "树"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n1 2\r\n1 3\r\n3 4\r\n3 5",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3647",
+    "通过人数": "2475",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:19"
+}

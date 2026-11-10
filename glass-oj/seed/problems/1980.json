@@ -1,0 +1,56 @@
+{
+  "id": "1980",
+  "title": "捉虫子",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1980",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>虫子的英文是 <code>bug</code>，同时 <code>bug</code> 在程序中也表示程序的错误或者漏洞。</p>\n<p>现输入一句英文短句（总长度不超过 <span class=\"katex math inline\">100</span> 个字符），短句中含有若干英文单词和空格，请问：单词 <code>bug</code> 出现了多少次？</p>\n<p>比如输入：<code>My programe has a bug and the bug is not founded and i am debug now</code> ，其中 <code>bug</code> 这个单词出现 <span class=\"katex math inline\">2</span> 次；</p>\n<p>要注意：单词 <code>debug</code> 不能算作我们要找的 <code>bug</code> ，本题要找的单词 <code>bug</code> 是<strong>不区分大小写的</strong>，也就是说，如果找到的是单词 <code>Bug</code> 或者 <code>BUg</code> 之类的，也算作我们要找的单词。</p>\n</div>            </div>",
+      "text": "虫子的英文是 bug，同时 bug 在程序中也表示程序的错误或者漏洞。\n现输入一句英文短句（总长度不超过 100 个字符），短句中含有若干英文单词和空格，请问：单词 bug 出现了多少次？\n比如输入：My programe has a bug and the bug is not founded and i am debug now ，其中 bug 这个单词出现 2 次；\n要注意：单词 debug 不能算作我们要找的 bug ，本题要找的单词 bug 是不区分大小写的，也就是说，如果找到的是单词 Bug 或者 BUg 之类的，也算作我们要找的单词。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一句英文短句，总长度不超过 <span class=\"katex math inline\">100</span> 个字符。</p>\n</div>            </div>",
+      "text": "一句英文短句，总长度不超过 100 个字符。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <code>bug</code> 出现的次数。</p>\n</div>            </div>",
+      "text": "输出 bug 出现的次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>My programe has a bug and the bug is not founded and i am debug now</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            My programe has a bug and the bug is not founded and i am debug now\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "My programe has a bug and the bug is not founded and i am debug now",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "946",
+    "通过人数": "550",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:26:53"
+}

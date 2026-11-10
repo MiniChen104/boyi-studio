@@ -1,0 +1,52 @@
+{
+  "id": "4792",
+  "title": "4的倍数",
+  "tags": [
+    "蓝桥等考",
+    "循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4792",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果整数 <span class=\"katex math inline\">a</span> 能被整数 <span class=\"katex math inline\">b</span> 整除，那么 <span class=\"katex math inline\">a</span> 就是 <span class=\"katex math inline\">b</span> 的倍数。</p>\n<p>例如：<span class=\"katex math inline\">8</span> 能被 <span class=\"katex math inline\">4</span> 整除，所以 <span class=\"katex math inline\">8</span> 是 <span class=\"katex math inline\">4</span> 的倍数。</p>\n<p>给定两个正整数 <span class=\"katex math inline\">m</span>、<span class=\"katex math inline\">n</span>，统计从 <span class=\"katex math inline\">m</span> 到 <span class=\"katex math inline\">n</span> 之间 <span class=\"katex math inline\">4</span> 的倍数有多少。 </p>\n<p>例如：<span class=\"katex math inline\">m = 1, n = 13</span>，\n在 <span class=\"katex math inline\">1 \\sim 13</span> 之间，<span class=\"katex math inline\">4</span> 的倍数有 <span class=\"katex math inline\">4</span>，<span class=\"katex math inline\">8</span>，<span class=\"katex math inline\">12</span>，总共有 <span class=\"katex math inline\">3</span> 个，所以输出 <span class=\"katex math inline\">3</span>。</p>\n</div>            </div>",
+      "text": "如果整数 a 能被整数 b 整除，那么 a 就是 b 的倍数。\n例如：8 能被 4 整除，所以 8 是 4 的倍数。\n给定两个正整数 m、n，统计从 m 到 n 之间 4 的倍数有多少。 \n例如：m = 1, n = 13，\n在 1 \\sim 13 之间，4 的倍数有 4，8，12，总共有 3 个，所以输出 3。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含两个正整数 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span> ，分别表示区间的起始和结束。这两个数字在同一行给出，并且用空格分隔。（<span class=\"katex math inline\">1 \\le m \\le n \\le 1000</span>）</p>\n</div>            </div>",
+      "text": "输入包含两个正整数 m 和 n ，分别表示区间的起始和结束。这两个数字在同一行给出，并且用空格分隔。（1 \\le m \\le n \\le 1000）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示从 <span class=\"katex math inline\">m</span> 到 <span class=\"katex math inline\">n</span> （包括 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span>）之间 <span class=\"katex math inline\">4</span> 的倍数的数量。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示从 m 到 n （包括 m 和 n）之间 4 的倍数的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 13</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 13\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">循环</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 13",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "367",
+    "通过人数": "270",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:54"
+}

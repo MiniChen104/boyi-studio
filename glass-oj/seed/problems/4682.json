@@ -1,0 +1,64 @@
+{
+  "id": "4682",
+  "title": "二阶矩阵",
+  "tags": [
+    "GESP四级",
+    "二维数组",
+    "枚举",
+    "25年3月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4682",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">A</span> 有一个 <span class=\"katex math inline\">n</span>行 <span class=\"katex math inline\">m</span>列的矩阵 <span class=\"katex math inline\">A</span>  。</p>\n<p>小 <span class=\"katex math inline\">A</span> 认为一个 <span class=\"katex math inline\">2 \\times 2</span> 的矩阵 <span class=\"katex math inline\">D</span> 是好的，当且仅当 <span class=\"katex math inline\">D_{1，1} \\times D_{2，2}=D_{1，2} \\times D_{2，1}</span> 。其中 <span class=\"katex math inline\">D</span> 表示矩阵 <span class=\"katex math inline\">D_{i，j}</span> 的第 <span class=\"katex math inline\">i</span> 行第 <span class=\"katex math inline\">j</span> 列的元素。</p>\n<p>小  <span class=\"katex math inline\">A</span> 想知道  <span class=\"katex math inline\">A</span> 中有多少个好的子矩阵。</p>\n</div>            </div>",
+      "text": "小 A 有一个 n行 m列的矩阵 A  。\n小 A 认为一个 2 \\times 2 的矩阵 D 是好的，当且仅当 D_{1，1} \\times D_{2，2}=D_{1，2} \\times D_{2，1} 。其中 D 表示矩阵 D_{i，j} 的第 i 行第 j 列的元素。\n小  A 想知道  A 中有多少个好的子矩阵。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，两个正整数 <span class=\"katex math inline\">n，m</span> 。</p>\n<p>接下来  <span class=\"katex math inline\">n</span>行，每行 <span class=\"katex math inline\">m</span> 个整数 <span class=\"katex math inline\">A_{i，1}，A_{i，2}，...A_{i，m}</span>。</p>\n</div>            </div>",
+      "text": "第一行，两个正整数 n，m 。\n接下来  n行，每行 m 个整数 A_{i，1}，A_{i，2}，...A_{i，m}。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个整数，表示 <span class=\"katex math inline\">A</span> 中好的子矩阵的数量。</p>\n</div>            </div>",
+      "text": "一行，一个整数，表示 A 中好的子矩阵的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 4\r\n1 2 1 0\r\n2 4 2 1\r\n0 3 3 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 4\r\n1 2 1 0\r\n2 4 2 1\r\n0 3 3 0\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<p>样例中的好的子矩阵如下：</p>\n<p><img src=\"https://assets.boyi.local/63ecbe660fe4bd80921c666f.png\"></p>\n<h4>【数据范围】</h4>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 500，1 \\le m \\le 500 ，-100 \\le A_{i,j} \\le 100</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n样例中的好的子矩阵如下：\n\n【数据范围】\n对于所有测试点，保证 1 \\le n \\le 500，1 \\le m \\le 500 ，-100 \\le A_{i,j} \\le 100 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年GESP3月认证C++四级真题</p>\n</div>                </div>",
+      "text": "2025年GESP3月认证C++四级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">二维数组</span><span class=\"label label-info\">枚举</span><span class=\"label label-danger\">25年3月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级二维数组枚举25年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 4\r\n1 2 1 0\r\n2 4 2 1\r\n0 3 3 0",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "708",
+    "通过人数": "469",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:00"
+}

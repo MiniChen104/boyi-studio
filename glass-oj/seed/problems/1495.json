@@ -1,0 +1,56 @@
+{
+  "id": "1495",
+  "title": "求因子数量",
+  "tags": [
+    "嵌套循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1495",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入一个整数 <span class=\"katex math inline\">n</span>（ <span class=\"katex math inline\">n \\le 100</span> ），请求出 <span class=\"katex math inline\">1 \\sim n</span> 的每个数的因子个数（求因子个数时，不含 <span class=\"katex math inline\">1</span> 和自己，比如 <span class=\"katex math inline\">10</span> 只有 <span class=\"katex math inline\">2</span> 个因子），每行一个打印出来。</p>\n</div>            </div>",
+      "text": "从键盘读入一个整数 n（ n \\le 100 ），请求出 1 \\sim n 的每个数的因子个数（求因子个数时，不含 1 和自己，比如 10 只有 2 个因子），每行一个打印出来。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span>；</p>\n</div>            </div>",
+      "text": "一个整数 n；"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 行，每行一个整数，代表了每个整数的因子个数。</p>\n</div>            </div>",
+      "text": "n 行，每行一个整数，代表了每个整数的因子个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0\r\n0\r\n0\r\n1\r\n0\r\n2\r\n0\r\n2\r\n1\r\n2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\n                        \n                        \n                            输出\n                            0\r\n0\r\n0\r\n1\r\n0\r\n2\r\n0\r\n2\r\n1\r\n2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>嵌套循环</p>\n</div>                </div>",
+      "text": "嵌套循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">嵌套循环</span></span></p>\n</div>                </div>",
+      "text": "嵌套循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10",
+      "output": "0\r\n0\r\n0\r\n1\r\n0\r\n2\r\n0\r\n2\r\n1\r\n2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "19342",
+    "通过人数": "14664",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:20:14"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1471",
+  "title": "并集与交集",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1471",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小鱼同学学习了并集和交集的概念。</p>\n<p>（1）数组的并集：给定两个数组 <span class=\"katex math inline\">A，B</span> ，把他们所有的元素合并在一起，并按照从小到大排序组成的集合，叫做数组A与数组B的并集；比如：数组{ <span class=\"katex math inline\">1, 2, 3</span> } 和 { <span class=\"katex math inline\">2, 3, 4</span> } 的并集是 { <span class=\"katex math inline\">1, 2, 3, 4</span> }。</p>\n<p>（2）数的交集：给定两个数组 <span class=\"katex math inline\">A，B</span> ，由所有属于数组 <span class=\"katex math inline\"> A</span> 且属于数组 <span class=\"katex math inline\">B</span> 的元素，并按照从小到大排序组成的集合，所组成的集合，叫做集合A与集合B的交集；比如：数组 { <span class=\"katex math inline\">1,2,3</span> } 和 { <span class=\"katex math inline\">2,3,4</span> } 的交集为 { <span class=\"katex math inline\">2,3</span> }。</p>\n<p>现给定 <span class=\"katex math inline\">2</span> 个数组，每个数组都含有若干不重复的元素，请分别求出两个数组的并集和交集（测试数据确认两个集合一定有交集）。</p>\n</div>            </div>",
+      "text": "小鱼同学学习了并集和交集的概念。\n（1）数组的并集：给定两个数组 A，B ，把他们所有的元素合并在一起，并按照从小到大排序组成的集合，叫做数组A与数组B的并集；比如：数组{ 1, 2, 3 } 和 { 2, 3, 4 } 的并集是 { 1, 2, 3, 4 }。\n（2）数的交集：给定两个数组 A，B ，由所有属于数组  A 且属于数组 B 的元素，并按照从小到大排序组成的集合，所组成的集合，叫做集合A与集合B的交集；比如：数组 { 1,2,3 } 和 { 2,3,4 } 的交集为 { 2,3 }。\n现给定 2 个数组，每个数组都含有若干不重复的元素，请分别求出两个数组的并集和交集（测试数据确认两个集合一定有交集）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个整数 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span> （ <span class=\"katex math inline\">m,n</span> 都是 <span class=\"katex math inline\">10 \\sim 1000</span>之间的整数），分别代表 <span class=\"katex math inline\">A,B</span> 两个数组的长度。</p>\n<p>第二行有 <span class=\"katex math inline\">m</span> 个整数，代表 <span class=\"katex math inline\">A</span> 数组存储的整数，用空格隔开。</p>\n<p>第三行有 <span class=\"katex math inline\">n</span> 个整数，代表 <span class=\"katex math inline\">B</span> 数组存储的整数，用空格隔开。</p>\n<p>注：两个集合的数都是大于等于 <span class=\"katex math inline\">0</span> 的整数。</p>\n</div>            </div>",
+      "text": "第一行有两个整数 m 和 n （ m,n 都是 10 \\sim 1000之间的整数），分别代表 A,B 两个数组的长度。\n第二行有 m 个整数，代表 A 数组存储的整数，用空格隔开。\n第三行有 n 个整数，代表 B 数组存储的整数，用空格隔开。\n注：两个集合的数都是大于等于 0 的整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输出两个数组的并集，用空格隔开这些元素。</p>\n<p>第二行输出两个数组的交集，用空格隔开这些元素。</p>\n</div>            </div>",
+      "text": "第一行输出两个数组的并集，用空格隔开这些元素。\n第二行输出两个数组的交集，用空格隔开这些元素。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 4\r\n2 1 3\r\n5 4 3 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 2 3 4 5\r\n2 3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 4\r\n2 1 3\r\n5 4 3 2\n                        \n                        \n                            输出\n                            1 2 3 4 5\r\n2 3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 4\r\n2 1 3\r\n5 4 3 2",
+      "output": "1 2 3 4 5\r\n2 3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "3311",
+    "通过人数": "2055",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:19:55"
+}

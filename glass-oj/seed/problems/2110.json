@@ -1,0 +1,56 @@
+{
+  "id": "2110",
+  "title": "古希腊之争（二）",
+  "tags": [
+    "深搜"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2110",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>话说，年轻的斯巴达勇士们终于走出迷宫，取得胜利并顺利赶了回来。可是等他们回到斯巴达的时候才发现，雅典人趁他们不在偷袭了城邦，并抓走了他们的臣民。</p>\n<p>侥幸逃出来的几个人说，他们被关押在一个迷宫的牢房里，并把关押他们的迷宫里的情况告诉了年轻的勇士：迷宫中的<code>S</code>点表示迷宫的入口，<code>T</code>点表示迷宫中牢房的位置，<code>.</code>表示空地，可以通过，<code>#</code>表示墙，不能直接通过，<code>K</code>表示陷阱，一旦进入就必死无疑。</p>\n<p>每次只能向上下左右四个方向移动，每移动一个单位距离需要耗费一个单位时间，所有斯巴达勇士的移动速度相同。</p>\n<p>又是迷宫！！！这次斯巴达的勇士们彻底愤怒了！What’s more, today is the Magpie Festival！</p>\n<p>由于斯巴达的勇士们无比愤怒，而且他们也想尽可能的在今天就能救出他们的臣民。所以当他们在迷宫中遇到墙的阻碍时，也能破墙进入。不过<strong>破墙的过程会花费一个单位的时间</strong>。现在请你计算一下他们最短需要多少时间才能找到迷宫的牢房。</p>\n<p>PS：假设迷宫中每个点可以容纳的人数没有限制，所有勇士都是一起行动的，他们每次会一起向同一个方向移动。</p>\n</div>            </div>",
+      "text": "话说，年轻的斯巴达勇士们终于走出迷宫，取得胜利并顺利赶了回来。可是等他们回到斯巴达的时候才发现，雅典人趁他们不在偷袭了城邦，并抓走了他们的臣民。\n侥幸逃出来的几个人说，他们被关押在一个迷宫的牢房里，并把关押他们的迷宫里的情况告诉了年轻的勇士：迷宫中的S点表示迷宫的入口，T点表示迷宫中牢房的位置，.表示空地，可以通过，#表示墙，不能直接通过，K表示陷阱，一旦进入就必死无疑。\n每次只能向上下左右四个方向移动，每移动一个单位距离需要耗费一个单位时间，所有斯巴达勇士的移动速度相同。\n又是迷宫！！！这次斯巴达的勇士们彻底愤怒了！What’s more, today is the Magpie Festival！\n由于斯巴达的勇士们无比愤怒，而且他们也想尽可能的在今天就能救出他们的臣民。所以当他们在迷宫中遇到墙的阻碍时，也能破墙进入。不过破墙的过程会花费一个单位的时间。现在请你计算一下他们最短需要多少时间才能找到迷宫的牢房。\nPS：假设迷宫中每个点可以容纳的人数没有限制，所有勇士都是一起行动的，他们每次会一起向同一个方向移动。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>测试数据第一行输入二个数 <span class=\"katex math inline\">n,m</span> (<span class=\"katex math inline\">2≤m≤n≤20</span>)分别代表迷宫的行数和列数。</p>\n<p>下面 <span class=\"katex math inline\">n</span> 行每行有 <span class=\"katex math inline\">m</span> 个字符用来表示迷宫地图。</p>\n</div>            </div>",
+      "text": "测试数据第一行输入二个数 n,m (2≤m≤n≤20)分别代表迷宫的行数和列数。\n下面 n 行每行有 m 个字符用来表示迷宫地图。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示找到迷宫出口的最短时间，如不能找到出口输出<code>-1</code>。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示找到迷宫出口的最短时间，如不能找到出口输出-1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 4\r\nS#.#\r\n..K.\r\nKKT.</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 4\r\nS#.#\r\n..K.\r\nKKT.\n                        \n                        \n                            输出\n                            8"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>深搜</p>\n</div>                </div>",
+      "text": "深搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">深搜</span></span></p>\n</div>                </div>",
+      "text": "深搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 4\r\nS#.#\r\n..K.\r\nKKT.",
+      "output": "8"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "550",
+    "通过人数": "310",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:34"
+}

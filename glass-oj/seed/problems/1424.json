@@ -1,0 +1,56 @@
+{
+  "id": "1424",
+  "title": "自然数的分解",
+  "tags": [
+    "递归"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1424",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定自然数 <span class=\"katex math inline\">n</span> ，将其拆分成若干自然数的和。输出所有解，每组解中数字按从小到大排列。相同数字的不同排列算一组解。</p>\n<p>如，读入整数 <span class=\"katex math inline\">3</span> ，分解方案如下：</p>\n<pre><code>1+1+1  \n1+2\n</code></pre>\n<p>再比如，读入整数 <span class=\"katex math inline\">7</span> ，分解方案如下：</p>\n<pre><code>1+1+1+1+1+1+1\n1+1+1+1+1+2\n1+1+1+1+3\n1+1+1+2+2\n1+1+1+4\n1+1+2+3\n1+1+5\n1+2+2+2\n1+2+4\n1+3+3\n1+6\n2+2+3\n2+5\n3+4\n</code></pre>\n</div>            </div>",
+      "text": "给定自然数 n ，将其拆分成若干自然数的和。输出所有解，每组解中数字按从小到大排列。相同数字的不同排列算一组解。\n如，读入整数 3 ，分解方案如下：\n1+1+1  \n1+2\n\n再比如，读入整数 7 ，分解方案如下：\n1+1+1+1+1+1+1\n1+1+1+1+1+2\n1+1+1+1+3\n1+1+1+2+2\n1+1+1+4\n1+1+2+3\n1+1+5\n1+2+2+2\n1+2+4\n1+3+3\n1+6\n2+2+3\n2+5\n3+4"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n \\le 20</span>）；</p>\n</div>            </div>",
+      "text": "一个整数 n（n \\le 20）；"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 可以分解的自然数和的方案；</p>\n</div>            </div>",
+      "text": "n 可以分解的自然数和的方案；"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 1 1\r\n1 2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            1 1 1\r\n1 2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递归</p>\n</div>                </div>",
+      "text": "递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递归</span></span></p>\n</div>                </div>",
+      "text": "递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "1 1 1\r\n1 2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "1250",
+    "通过人数": "436",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:19:16"
+}

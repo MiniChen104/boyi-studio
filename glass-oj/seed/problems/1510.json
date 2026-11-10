@@ -1,0 +1,56 @@
+{
+  "id": "1510",
+  "title": "会话列表",
+  "tags": [
+    "容器"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1510",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小云正在参与开发一个即时聊天工具，他负责其中的会话列表部分。会话列表为显示为一个从上到下的多行控件，其中每一行表示一个会话，每一个会话都可以以一个唯一正整数id表示。</p>\n<p>当用户在一个会话中发送或接收信息时，如果该会话已经在会话列表中，则会从原来的位置移到列表的最上方；如果没有在会话列表中，则在会话列表最上方插入该会话。小云在现在要做的工作是测试，他会先把会话列表清空等待接收信息。当接收完大量来自不同会话的信息后，就输出当前的会话列表，以检查其中是否有bug。 </p>\n</div>            </div>",
+      "text": "小云正在参与开发一个即时聊天工具，他负责其中的会话列表部分。会话列表为显示为一个从上到下的多行控件，其中每一行表示一个会话，每一个会话都可以以一个唯一正整数id表示。\n当用户在一个会话中发送或接收信息时，如果该会话已经在会话列表中，则会从原来的位置移到列表的最上方；如果没有在会话列表中，则在会话列表最上方插入该会话。小云在现在要做的工作是测试，他会先把会话列表清空等待接收信息。当接收完大量来自不同会话的信息后，就输出当前的会话列表，以检查其中是否有bug。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行为一个正整数 <span class=\"katex math inline\">T</span>（ <span class=\"katex math inline\">T \\le 1000</span>），表示测试数据组数。</p>\n<p>接下来有T组数据。每组数据的第一行为一个正整数 <span class=\"katex math inline\">N</span>（<span class=\"katex math inline\">1 \\le N \\le 200</span>），表示接收到信息的次数。</p>\n<p>第二行为 <span class=\"katex math inline\">N</span>个正整数，按时间从先到后的顺序表示接收到信息的会话id。会话id不大于 <span class=\"katex math inline\">1000000000</span>。</p>\n</div>            </div>",
+      "text": "输入的第一行为一个正整数 T（ T \\le 1000），表示测试数据组数。\n接下来有T组数据。每组数据的第一行为一个正整数 N（1 \\le N \\le 200），表示接收到信息的次数。\n第二行为 N个正整数，按时间从先到后的顺序表示接收到信息的会话id。会话id不大于 1000000000。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每一组数据，输出一行，按会话列表从上到下的顺序，输出会话id。</p>\n<p>相邻的会话id以一个空格分隔，行末没有空格。</p>\n</div>            </div>",
+      "text": "对于每一组数据，输出一行，按会话列表从上到下的顺序，输出会话id。\n相邻的会话id以一个空格分隔，行末没有空格。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n5\r\n1 2 3 4 5\r\n6\r\n1 100 1000 1000 100 1\r\n7\r\n1 6 3 3 1 8 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5 4 3 2 1\r\n1 100 1000\r\n1 8 3 6</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n5\r\n1 2 3 4 5\r\n6\r\n1 100 1000 1000 100 1\r\n7\r\n1 6 3 3 1 8 1\n                        \n                        \n                            输出\n                            5 4 3 2 1\r\n1 100 1000\r\n1 8 3 6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>容器</p>\n</div>                </div>",
+      "text": "容器"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">容器</span></span></p>\n</div>                </div>",
+      "text": "容器"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n5\r\n1 2 3 4 5\r\n6\r\n1 100 1000 1000 100 1\r\n7\r\n1 6 3 3 1 8 1",
+      "output": "5 4 3 2 1\r\n1 100 1000\r\n1 8 3 6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "275",
+    "通过人数": "190",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:26"
+}

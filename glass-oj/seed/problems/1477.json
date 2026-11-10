@@ -1,0 +1,56 @@
+{
+  "id": "1477",
+  "title": "字符串出现次数",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1477",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个字符串中任意个连续的字符组成的子序列为该字符串的子串。给定子串 <span class=\"katex math inline\">s_1</span> 和它的一个字符串 <span class=\"katex math inline\">s_2</span> ，求 <span class=\"katex math inline\">s_1</span> 在 <span class=\"katex math inline\">s_2</span> 中出现的次数。</p>\n</div>            </div>",
+      "text": "一个字符串中任意个连续的字符组成的子序列为该字符串的子串。给定子串 s_1 和它的一个字符串 s_2 ，求 s_1 在 s_2 中出现的次数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，表示字符串 <span class=\"katex math inline\">s_1</span> ， 第二行，表示字符串 <span class=\"katex math inline\">s_2</span> 。</p>\n</div>            </div>",
+      "text": "第一行，表示字符串 s_1 ， 第二行，表示字符串 s_2 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，代表 <span class=\"katex math inline\">s_1</span> 在 <span class=\"katex math inline\">s_2</span> 中出现的次数。</p>\n</div>            </div>",
+      "text": "一个整数，代表 s_1 在 s_2 中出现的次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>ab\r\nabbaabcaabc</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            ab\r\nabbaabcaabc\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "ab\r\nabbaabcaabc",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4803",
+    "通过人数": "3211",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:20:00"
+}

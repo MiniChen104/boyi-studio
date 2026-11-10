@@ -1,0 +1,66 @@
+{
+  "id": "4943",
+  "title": "判断三角形",
+  "tags": [
+    "信息素养大赛",
+    "2024",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4943",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一个小镇上，有一位名叫艾米的小女孩，她非常喜欢观察各种形状。一天，她在公园里发现了一块奇特的三角形玻璃。这块玻璃不仅外形完美，还能反射出七彩的光芒。艾米觉得这块玻璃一定有神秘的力量，于是她把它带回家仔细研究。几天后，艾米发现这块三角形玻璃可以用来聚焦阳光，点燃火柴。这个发现让她惊喜不已，也激发了她对科学的浓厚兴趣。</p>\n<p>现在艾米想知道这块三角形玻璃的形状:</p>\n<ul><li><p><span class=\"katex math inline\">1</span>. 如果三角形的三条边都相等，那么这个三角形是等边三角形;</p>\n</li>\n<li><p><span class=\"katex math inline\">2</span>. 如果三角形中有两条边的长度相等，那么这个三角形是等腰三角形;</p>\n</li>\n<li><p><span class=\"katex math inline\">3</span>. 如果三角形的一条边长的平方等于另外两条边长的平方和，那么这个三角形是直角三角形。</p>\n</li>\n</ul><p>输入三角形的三边长度，判断该三角形是等腰三角形、直角三角形还是等边三角形。(输入数据保证能构成三角形)。</p>\n<p>如果是等腰三角形，输出&quot;<code>Isosceles glass</code>”；</p>\n<p>如果是等边三角形，输出&quot;<code>Equilateral glass</code>”；</p>\n<p>如果是直角三角形，输出&quot;<code>Right angle glass</code>”；</p>\n<p>如果三者都不是，输出&quot;<code>None</code>”。</p>\n</div>            </div>",
+      "text": "在一个小镇上，有一位名叫艾米的小女孩，她非常喜欢观察各种形状。一天，她在公园里发现了一块奇特的三角形玻璃。这块玻璃不仅外形完美，还能反射出七彩的光芒。艾米觉得这块玻璃一定有神秘的力量，于是她把它带回家仔细研究。几天后，艾米发现这块三角形玻璃可以用来聚焦阳光，点燃火柴。这个发现让她惊喜不已，也激发了她对科学的浓厚兴趣。\n现在艾米想知道这块三角形玻璃的形状:\n1. 如果三角形的三条边都相等，那么这个三角形是等边三角形;\n\n2. 如果三角形中有两条边的长度相等，那么这个三角形是等腰三角形;\n\n3. 如果三角形的一条边长的平方等于另外两条边长的平方和，那么这个三角形是直角三角形。\n\n输入三角形的三边长度，判断该三角形是等腰三角形、直角三角形还是等边三角形。(输入数据保证能构成三角形)。\n如果是等腰三角形，输出\"Isosceles glass”；\n如果是等边三角形，输出\"Equilateral glass”；\n如果是直角三角形，输出\"Right angle glass”；\n如果三者都不是，输出\"None”。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一行，三个正整数，代表三角形的三条边长，之间用空格隔开。</p>\n</div>            </div>",
+      "text": "输入只有一行，三个正整数，代表三角形的三条边长，之间用空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，一个字符串。</p>\n</div>            </div>",
+      "text": "输出只有一行，一个字符串。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1001 1001 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Isosceles glass</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 4 5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>Right angle glass</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 7 8</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>None</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            1001 1001 1\n                        \n                        \n                            输出\n                            Isosceles glass\n                        \n\n                                                    \n                                输入\n                                3 4 5\n                            \n                            \n                                输出\n                                Right angle glass\n                            \n                        \n                                                    \n                                输入\n                                5 7 8\n                            \n                            \n                                输出\n                                None"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年信息素养大赛C++算法创意挑战赛复赛真题（小学组）</p>\n</div>                </div>",
+      "text": "2024年信息素养大赛C++算法创意挑战赛复赛真题（小学组）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">信息素养大赛</span><span class=\"label label-warning\">2024</span><span class=\"label label-info\">分支</span></span></p>\n</div>                </div>",
+      "text": "信息素养大赛2024分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1001 1001 1",
+      "output": "Isosceles glass"
+    },
+    {
+      "input": "3 4 5",
+      "output": "Right angle glass"
+    },
+    {
+      "input": "5 7 8",
+      "output": "None"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "4150",
+    "通过人数": "1694",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:55"
+}

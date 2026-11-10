@@ -1,0 +1,56 @@
+{
+  "id": "2576",
+  "title": "青蛙的约会",
+  "tags": [
+    "数学"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2576",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两只青蛙在网上相识了，它们聊得很开心，于是觉得很有必要见一面。它们很高兴地发现它们住在同一条纬度线上，于是它们约定各自朝西跳，直到碰面为止。  </p>\n<p>可是它们出发之前忘记了一件很重要的事情，既没有问清楚对方的特征，也没有约定见面的具体位置。不过青蛙们都是很乐观的，它们觉得只要一直朝着某个方向跳下去，总能碰到对方的。但是除非这两只青蛙在同一时间跳到同一点上，不然是永远都不可能碰面的。  </p>\n<p>为了帮助这两只乐观的青蛙，你被要求写一个程序来判断这两只青蛙是否能够碰面，会在什么时候碰面。  </p>\n<p>我们把这两只青蛙分别叫做青蛙 <span class=\"katex math inline\">A</span> 和青蛙 <span class=\"katex math inline\">B</span> ，并且规定纬度线上东经 <span class=\"katex math inline\">0</span> 度处为原点，由东往西为正方向，单位长度 <span class=\"katex math inline\">1</span> 米，这样我们就得到了一条首尾相接的数轴。  </p>\n<p>设青蛙 <span class=\"katex math inline\">A</span> 的出发点坐标是 <span class=\"katex math inline\">x</span> ，青蛙 <span class=\"katex math inline\">B</span> 的出发点坐标是 <span class=\"katex math inline\">y</span> 。青蛙 <span class=\"katex math inline\">A</span> 一次能跳 <span class=\"katex math inline\">m</span> 米，青蛙 <span class=\"katex math inline\">B</span> 一次能跳 <span class=\"katex math inline\">n</span> 米，两只青蛙跳一次所花费的时间相同。纬度线总长 <span class=\"katex math inline\">L</span> 米。现在要你求出它们跳了几次以后才会碰面。</p>\n</div>            </div>",
+      "text": "两只青蛙在网上相识了，它们聊得很开心，于是觉得很有必要见一面。它们很高兴地发现它们住在同一条纬度线上，于是它们约定各自朝西跳，直到碰面为止。  \n可是它们出发之前忘记了一件很重要的事情，既没有问清楚对方的特征，也没有约定见面的具体位置。不过青蛙们都是很乐观的，它们觉得只要一直朝着某个方向跳下去，总能碰到对方的。但是除非这两只青蛙在同一时间跳到同一点上，不然是永远都不可能碰面的。  \n为了帮助这两只乐观的青蛙，你被要求写一个程序来判断这两只青蛙是否能够碰面，会在什么时候碰面。  \n我们把这两只青蛙分别叫做青蛙 A 和青蛙 B ，并且规定纬度线上东经 0 度处为原点，由东往西为正方向，单位长度 1 米，这样我们就得到了一条首尾相接的数轴。  \n设青蛙 A 的出发点坐标是 x ，青蛙 B 的出发点坐标是 y 。青蛙 A 一次能跳 m 米，青蛙 B 一次能跳 n 米，两只青蛙跳一次所花费的时间相同。纬度线总长 L 米。现在要你求出它们跳了几次以后才会碰面。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只包括一行 <span class=\"katex math inline\">5</span> 个整数 <span class=\"katex math inline\">x</span>,<span class=\"katex math inline\">y</span>,<span class=\"katex math inline\">m</span>,<span class=\"katex math inline\">n</span>,<span class=\"katex math inline\">L</span> 。</p>\n</div>            </div>",
+      "text": "输入只包括一行 5 个整数 x,y,m,n,L 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出碰面所需要的跳跃次数，如果永远不可能碰面则输出一行 <code>Impossible</code> 。</p>\n</div>            </div>",
+      "text": "输出碰面所需要的跳跃次数，如果永远不可能碰面则输出一行 Impossible 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 2 3 4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 2 3 4 5\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围与提示：</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 \\le x \\ne y \\le 2 \\times 10^{9}</span>，<span class=\"katex math inline\">1 \\le m, n \\le 2 \\times 10^{9}</span>，<span class=\"katex math inline\">1 \\le L \\le 2.1 \\times 10^{9}</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围与提示：\n对于 100\\% 的数据，1 \\le x \\ne y \\le 2 \\times 10^{9}，1 \\le m, n \\le 2 \\times 10^{9}，1 \\le L \\le 2.1 \\times 10^{9}。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数学</span></span></p>\n</div>                </div>",
+      "text": "数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 2 3 4 5",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "513",
+    "通过人数": "252",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:22"
+}

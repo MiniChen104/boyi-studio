@@ -1,0 +1,65 @@
+{
+  "id": "4926",
+  "title": "幸运数字",
+  "tags": [
+    "江苏省赛2025"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4926",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果一个 <span class=\"katex math inline\">n</span> 位正整数恰好由数字 <span class=\"katex math inline\">0, 1, 2, \\cdots , n - 1</span> 组成，Dr. X 就称它为“幸运数字”，例如：</p>\n<ul><li><span class=\"katex math inline\">1023</span> 是一个幸运数字，因为它是一个四位数，且恰好由数字 <span class=\"katex math inline\">0, 1, 2, 3</span> 组成。</li>\n<li><span class=\"katex math inline\">123</span> 不是幸运数字，因为三位幸运数字应该由数字 <span class=\"katex math inline\">0, 1, 2</span> 组成。</li>\n<li><span class=\"katex math inline\">012</span> 不是幸运数字，因为我们只考虑不含前导零的正整数。</li>\n</ul><p>现在，给定两个正整数 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>，请你计算 <span class=\"katex math inline\">a, a + 1, a + 2, \\cdots, b</span> 中幸运数字的数量。</p>\n</div>            </div>",
+      "text": "如果一个 n 位正整数恰好由数字 0, 1, 2, \\cdots , n - 1 组成，Dr. X 就称它为“幸运数字”，例如：\n1023 是一个幸运数字，因为它是一个四位数，且恰好由数字 0, 1, 2, 3 组成。\n123 不是幸运数字，因为三位幸运数字应该由数字 0, 1, 2 组成。\n012 不是幸运数字，因为我们只考虑不含前导零的正整数。\n现在，给定两个正整数 a 和 b，请你计算 a, a + 1, a + 2, \\cdots, b 中幸运数字的数量。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个空格分隔的正整数 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>。</p>\n</div>            </div>",
+      "text": "输入两个空格分隔的正整数 a 和 b。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示 <span class=\"katex math inline\">a, a + 1, a + 2, \\cdots, b</span> 中幸运数字的数量。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示 a, a + 1, a + 2, \\cdots, b 中幸运数字的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 202</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1 100000</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>119</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 202\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                1 100000\n                            \n                            \n                                输出\n                                119"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\">样例 <span class=\"katex math inline\">\\textbf 1</span> 解释\n<p>在 <span class=\"katex math inline\">4</span> 和 <span class=\"katex math inline\">202</span> 之间，幸运数字有 <span class=\"katex math inline\">10, 102, 120, 201</span>。</p>\n数据范围\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，满足 <span class=\"katex math inline\">1 ≤ a ≤ b ≤ 10^6</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 \\textbf 1 解释\n在 4 和 202 之间，幸运数字有 10, 102, 120, 201。\n数据范围\n对于 100\\% 的数据，满足 1 ≤ a ≤ b ≤ 10^6。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年江苏省＂信息与未来＂小学生编程</p>\n</div>                </div>",
+      "text": "2025年江苏省＂信息与未来＂小学生编程"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">江苏省赛2025</span></span></p>\n</div>                </div>",
+      "text": "江苏省赛2025"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 202",
+      "output": "4"
+    },
+    {
+      "input": "1 100000",
+      "output": "119"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "41",
+    "通过人数": "29",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:06"
+}

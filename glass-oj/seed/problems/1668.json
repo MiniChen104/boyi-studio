@@ -1,0 +1,56 @@
+{
+  "id": "1668",
+  "title": "运动会成绩统计",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1668",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学校运动会的跳水比赛已经结束，裁判统计出了选手们的成绩，并根据大家的成绩划分好了金牌、银牌和铜牌的获奖分数线。</p>\n<p>裁判规定，总分 <span class=\"katex math inline\">100</span> 分；获得 <span class=\"katex math inline\">92.8</span> 分及 <span class=\"katex math inline\">92.8</span> 分以上的选手获得金牌；在 <span class=\"katex math inline\">92.8</span> 分以下但在 <span class=\"katex math inline\">85.6</span> 分及<span class=\"katex math inline\">85.6</span> 分以上的选手获得银牌；在 <span class=\"katex math inline\">85.6</span> 分以下，但在<span class=\"katex math inline\">82.1</span> 分及 <span class=\"katex math inline\">82.1</span> 分以上的选手获得铜牌；分数在 <span class=\"katex math inline\">82.1</span> 分以下的选手不获奖。</p>\n<p>请从键盘读入一名选手的分数，判断他应该获得哪个奖项？</p>\n<p>如获得金牌，请输出 <code>jin</code> ，银牌请输出 <code>yin</code> ，铜牌请输出 <code>tong</code> ，没有获得奖项请输出 <code>sorry</code> 。</p>\n</div>            </div>",
+      "text": "学校运动会的跳水比赛已经结束，裁判统计出了选手们的成绩，并根据大家的成绩划分好了金牌、银牌和铜牌的获奖分数线。\n裁判规定，总分 100 分；获得 92.8 分及 92.8 分以上的选手获得金牌；在 92.8 分以下但在 85.6 分及85.6 分以上的选手获得银牌；在 85.6 分以下，但在82.1 分及 82.1 分以上的选手获得铜牌；分数在 82.1 分以下的选手不获奖。\n请从键盘读入一名选手的分数，判断他应该获得哪个奖项？\n如获得金牌，请输出 jin ，银牌请输出 yin ，铜牌请输出 tong ，没有获得奖项请输出 sorry 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某位选手的分数。</p>\n</div>            </div>",
+      "text": "某位选手的分数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如获奖请输出该选手获得的奖项，如不获奖，请输出 <code>sorry</code> 。</p>\n</div>            </div>",
+      "text": "如获奖请输出该选手获得的奖项，如不获奖，请输出 sorry 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>92.8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>jin</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            92.8\n                        \n                        \n                            输出\n                            jin"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "92.8",
+      "output": "jin"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "33236",
+    "通过人数": "16821",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:39"
+}

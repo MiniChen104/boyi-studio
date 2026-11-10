@@ -1,0 +1,62 @@
+{
+  "id": "3355",
+  "title": "时间换算",
+  "tags": [
+    "分支",
+    "GESP一级",
+    "GESP样题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3355",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明刚刚学习了小时、分和秒的换算关系。他想知道一个给定的时刻是这一天的第几秒，你能编写一个程序帮帮他吗？</p>\n</div>            </div>",
+      "text": "小明刚刚学习了小时、分和秒的换算关系。他想知道一个给定的时刻是这一天的第几秒，你能编写一个程序帮帮他吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行，包含三个整数和一个字符。三个整数分别表示时刻的时、分、秒；字符有两种取值，大写字母 <code>A</code> 表示上午，大写字母 <code>P</code> 表示下午。</p>\n</div>            </div>",
+      "text": "输入一行，包含三个整数和一个字符。三个整数分别表示时刻的时、分、秒；字符有两种取值，大写字母 A 表示上午，大写字母 P 表示下午。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含一个整数，表示输入时刻是当天的第几秒。</p>\n</div>            </div>",
+      "text": "输出一行，包含一个整数，表示输入时刻是当天的第几秒。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>0 0 0 A</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>11 59 59 P</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>86399</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            0 0 0 A\n                        \n                        \n                            输出\n                            0\n                        \n\n                                                    \n                                输入\n                                11 59 59 P\n                            \n                            \n                                输出\n                                86399"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP样题一级</p>\n</div>                </div>",
+      "text": "GESP样题一级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支</span><span class=\"label label-warning\">GESP一级</span><span class=\"label label-info\">GESP样题</span></span></p>\n</div>                </div>",
+      "text": "分支GESP一级GESP样题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "0 0 0 A",
+      "output": "0"
+    },
+    {
+      "input": "11 59 59 P",
+      "output": "86399"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "3990",
+    "通过人数": "2750",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:49"
+}

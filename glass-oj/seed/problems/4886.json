@@ -1,0 +1,53 @@
+{
+  "id": "4886",
+  "title": "13位ISBN号码的校验码",
+  "tags": [
+    "蓝桥等考",
+    "字符串",
+    "模拟"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4886",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>每一本正式出版的书的封底都有一串号码，如 <code>ISBN 978-7-121-41489-3</code>，它叫做&quot;国际标准书号&quot;（International Standard Book Number，缩写为 <code>ISBN</code>），用来唯一代表一本书。</p>\n<p>从 <span class=\"katex math inline\">2007</span> 年 <span class=\"katex math inline\">1</span> 月 <span class=\"katex math inline\">1</span> 日起，国际标准书号升级为 <span class=\"katex math inline\">13</span> 位，这 <span class=\"katex math inline\">13</span> 位数字可以分为 <span class=\"katex math inline\">5</span> 个区（为提高可读性，用连字符“<code>-</code>”将 <span class=\"katex math inline\">5</span>个区隔开），从左往右，<span class=\"katex math inline\">5</span> 个区的含义依次如下：</p>\n<ul><li>（<span class=\"katex math inline\">1</span>）EAN号码段，一共包含 <span class=\"katex math inline\">3</span> 位数字。</li>\n<li>（<span class=\"katex math inline\">2</span>）国家、语言或区位代码，长度为 <span class=\"katex math inline\">1-5</span> 位，<span class=\"katex math inline\">7</span> 表示中国大陆。</li>\n<li>（<span class=\"katex math inline\">3</span>）出版社代码，长度为 <span class=\"katex math inline\">2-7</span> 位，用以识别书籍的出版社。</li>\n<li>（<span class=\"katex math inline\">4</span>）出版序号，由出版者自行编配，以识别书目或版本。</li>\n<li>（<span class=\"katex math inline\">5</span>）校验码，一位数字，用以核对书号是否正确。</li>\n</ul><p>其中，书号校验码的计算步骤如下：</p>\n<ul><li><span class=\"katex math inline\">1</span>、前 <span class=\"katex math inline\">12</span> 个数字交替地乘以权数 <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">3</span>；</li>\n<li><span class=\"katex math inline\">2</span>、所有积相加；</li>\n<li><span class=\"katex math inline\">3</span>、总和除以 <span class=\"katex math inline\">10</span>，得出余数；</li>\n<li><span class=\"katex math inline\">4</span>、如果余数为 <span class=\"katex math inline\">0</span>，则校验码为 <span class=\"katex math inline\">0</span>。否则用 <span class=\"katex math inline\">10</span> 减去余数，所得的数字就是校验码。</li>\n</ul><p>例如：书号为 <span class=\"katex math inline\">978-7-121-41489-3</span>，校验码 <span class=\"katex math inline\">3</span> 的计算步骤为：</p>\n<pre><code>1、9*1、7*3、8*1、7*3、1*1、2*3、1*1、4*3、1*1、4*3、8*1、9*3\n2、9*1+7*3+8*1+7*3+1*1+2*3+1*1+4*3+1*1+4*3+8*1+9*3 = 127\n3、127%10 = 7\n4、10-7 = 3\n</code></pre>\n<p>请编写程序判断输入的 <code>ISBN</code> 号码中校验码是否正确，如果正确，输出 <code>yes</code>。否则输出 <code>no</code>。</p>\n</div>            </div>",
+      "text": "每一本正式出版的书的封底都有一串号码，如 ISBN 978-7-121-41489-3，它叫做\"国际标准书号\"（International Standard Book Number，缩写为 ISBN），用来唯一代表一本书。\n从 2007 年 1 月 1 日起，国际标准书号升级为 13 位，这 13 位数字可以分为 5 个区（为提高可读性，用连字符“-”将 5个区隔开），从左往右，5 个区的含义依次如下：\n（1）EAN号码段，一共包含 3 位数字。\n（2）国家、语言或区位代码，长度为 1-5 位，7 表示中国大陆。\n（3）出版社代码，长度为 2-7 位，用以识别书籍的出版社。\n（4）出版序号，由出版者自行编配，以识别书目或版本。\n（5）校验码，一位数字，用以核对书号是否正确。\n其中，书号校验码的计算步骤如下：\n1、前 12 个数字交替地乘以权数 1 和 3；\n2、所有积相加；\n3、总和除以 10，得出余数；\n4、如果余数为 0，则校验码为 0。否则用 10 减去余数，所得的数字就是校验码。\n例如：书号为 978-7-121-41489-3，校验码 3 的计算步骤为：\n1、9*1、7*3、8*1、7*3、1*1、2*3、1*1、4*3、1*1、4*3、8*1、9*3\n2、9*1+7*3+8*1+7*3+1*1+2*3+1*1+4*3+1*1+4*3+8*1+9*3 = 127\n3、127%10 = 7\n4、10-7 = 3\n\n请编写程序判断输入的 ISBN 号码中校验码是否正确，如果正确，输出 yes。否则输出 no。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个字符串 <span class=\"katex math inline\">s</span>，表示一本书的 <code>ISBN</code>号码。该字符串长度为 <span class=\"katex math inline\">13</span> ，由数字和连字符“<code>-</code>”组成。</p>\n</div>            </div>",
+      "text": "输入一个字符串 s，表示一本书的 ISBN号码。该字符串长度为 13 ，由数字和连字符“-”组成。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>根据输入的 <code>ISBN</code> 号码计算其校验码并与给出的校验码进行比较。</p>\n<p>如果计算出的校验码与输入的 <code>ISBN</code> 号码中的校验码相匹配，则输出 <code>yes</code>；否则，输出 <code>no</code>。</p>\n</div>            </div>",
+      "text": "根据输入的 ISBN 号码计算其校验码并与给出的校验码进行比较。\n如果计算出的校验码与输入的 ISBN 号码中的校验码相匹配，则输出 yes；否则，输出 no。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>978-7-121-41489-3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>yes</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            978-7-121-41489-3\n                        \n                        \n                            输出\n                            yes"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">模拟</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考字符串模拟"
+    }
+  ],
+  "samples": [
+    {
+      "input": "978-7-121-41489-3",
+      "output": "yes"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "205",
+    "通过人数": "113",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:29"
+}

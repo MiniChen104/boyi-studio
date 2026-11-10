@@ -1,0 +1,62 @@
+{
+  "id": "1537",
+  "title": "小 X 玩游戏(game)",
+  "tags": [
+    "市赛",
+    "双指针"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1537",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>听完了故事，小 <span class=\"katex math inline\">X</span> 又想去玩一会儿游戏了。 这是一个很奇特的单机游戏， 游戏规则如下：  </p>\n<p>游戏中一共有 <span class=\"katex math inline\">4 × n</span> 张牌，每张牌上有一个数字， 这些数字恰好是 <span class=\"katex math inline\">1</span>～<span class=\"katex math inline\">4 × n</span>。一开始电脑会把这 <span class=\"katex math inline\">4 × n</span> 张牌随机打乱，然后会发 <span class=\"katex math inline\">2 × n</span> 张牌给小 <span class=\"katex math inline\">X</span>。那些剩下的 <span class=\"katex math inline\">2 × n</span> 牌电脑会再打乱一次，然后排成一排展示给小 <span class=\"katex math inline\">X</span> 看。而小 <span class=\"katex math inline\">X</span> 需要做的就是将自己的 <span class=\"katex math inline\">2 × n</span> 张牌也排成一排，与电脑展示的 <span class=\"katex math inline\">2 × n</span> 张牌一一对应。  </p>\n<p>之后就开始评分了，对于前 <span class=\"katex math inline\">n</span> 对牌（一对牌是指小 <span class=\"katex math inline\">X</span> 的一张加上电脑的一张）， 牌上数字小的一方获得一分； 而对于后 <span class=\"katex math inline\">n</span> 对牌， 牌上数字大的一方获得一分。  </p>\n<p>例如当 <span class=\"katex math inline\">n=3</span> 时， 共有 <span class=\"katex math inline\">12</span> 张牌 ， 牌上的数字是 <span class=\"katex math inline\">1</span> ～ <span class=\"katex math inline\">12</span> 。 电脑打乱后，小 <span class=\"katex math inline\">X</span> 拿到 <span class=\"katex math inline\">6</span> 张牌 ，假设是<span class=\"katex math inline\">1</span>, <span class=\"katex math inline\">3</span>, <span class=\"katex math inline\">4</span>, <span class=\"katex math inline\">5</span>, <span class=\"katex math inline\">7</span>, <span class=\"katex math inline\">8</span>。 此时电脑手中还剩下 <span class=\"katex math inline\">2</span>, <span class=\"katex math inline\">6</span>, <span class=\"katex math inline\">9</span>, <span class=\"katex math inline\">10</span>, <span class=\"katex math inline\">11</span>, <span class=\"katex math inline\">12</span>。同样假设电脑会将这 <span class=\"katex math inline\">6</span> 张牌按照 <span class=\"katex math inline\">9</span>, <span class=\"katex math inline\">11</span>, <span class=\"katex math inline\">6</span>, <span class=\"katex math inline\">2</span>, <span class=\"katex math inline\">12</span>, <span class=\"katex math inline\">10</span> 这样的顺序展示给小 <span class=\"katex math inline\">X</span> 看。如果小 <span class=\"katex math inline\">X</span> 是将 <span class=\"katex math inline\">6</span> 张牌按 <span class=\"katex math inline\">1</span>, <span class=\"katex math inline\">7</span>, <span class=\"katex math inline\">5</span>, <span class=\"katex math inline\">8</span>, <span class=\"katex math inline\">4</span>, <span class=\"katex math inline\">3</span> 这么排的，那么小 <span class=\"katex math inline\">X</span> 会获得 <span class=\"katex math inline\">4</span> 分。  </p>\n<p>第 <span class=\"katex math inline\">1</span> 对： <span class=\"katex math inline\">1 – 9</span> ，小 <span class=\"katex math inline\">X</span> 得 <span class=\"katex math inline\">1</span> 分， 电脑得 <span class=\"katex math inline\">0</span> 分<br>\n第 <span class=\"katex math inline\">2</span> 对： <span class=\"katex math inline\">7 – 11</span>，小 <span class=\"katex math inline\">X</span> 得 <span class=\"katex math inline\">1</span> 分， 电脑得 <span class=\"katex math inline\">0</span> 分<br>\n第 <span class=\"katex math inline\">3</span> 对： <span class=\"katex math inline\">5 – 6</span> ，小 <span class=\"katex math inline\">X</span> 得 <span class=\"katex math inline\">1</span> 分， 电脑得 <span class=\"katex math inline\">0</span> 分<br>\n第 <span class=\"katex math inline\">4</span> 对： <span class=\"katex math inline\">8 – 2</span> ，小 <span class=\"katex math inline\">X</span> 得 <span class=\"katex math inline\">1</span> 分， 电脑得 <span class=\"katex math inline\">0</span> 分<br>\n第 <span class=\"katex math inline\">5</span> 对： <span class=\"katex math inline\">4 – 12</span>， 电脑得 <span class=\"katex math inline\">1</span> 分，小 <span class=\"katex math inline\">X</span> 得 <span class=\"katex math inline\">0</span> 分<br>\n第 <span class=\"katex math inline\">6</span> 对： <span class=\"katex math inline\">3 – 10</span>， 电脑得 <span class=\"katex math inline\">1</span> 分，小 <span class=\"katex math inline\">X</span> 得 <span class=\"katex math inline\">0</span> 分  </p>\n<p>前一半第 <span class=\"katex math inline\">1</span> 对～第 <span class=\"katex math inline\">3</span> 对牌是比谁小，后一半第 <span class=\"katex math inline\">4</span> 对～第 <span class=\"katex math inline\">6</span> 对牌是比谁大。前一列数字代表的是小 <span class=\"katex math inline\">X</span> 的牌，后一列数字代表的是电脑的牌。  </p>\n<p>小 <span class=\"katex math inline\">X</span> 现在已经拿到了 <span class=\"katex math inline\">2 × n</span> 张牌，同时电脑也已经展示出了它的 <span class=\"katex math inline\">2 × n</span> 张牌是怎么排列的，小 <span class=\"katex math inline\">X</span> 想知道他最多能够获得多少分？</p>\n</div>            </div>",
+      "text": "听完了故事，小 X 又想去玩一会儿游戏了。 这是一个很奇特的单机游戏， 游戏规则如下：  \n游戏中一共有 4 × n 张牌，每张牌上有一个数字， 这些数字恰好是 1～4 × n。一开始电脑会把这 4 × n 张牌随机打乱，然后会发 2 × n 张牌给小 X。那些剩下的 2 × n 牌电脑会再打乱一次，然后排成一排展示给小 X 看。而小 X 需要做的就是将自己的 2 × n 张牌也排成一排，与电脑展示的 2 × n 张牌一一对应。  \n之后就开始评分了，对于前 n 对牌（一对牌是指小 X 的一张加上电脑的一张）， 牌上数字小的一方获得一分； 而对于后 n 对牌， 牌上数字大的一方获得一分。  \n例如当 n=3 时， 共有 12 张牌 ， 牌上的数字是 1 ～ 12 。 电脑打乱后，小 X 拿到 6 张牌 ，假设是1, 3, 4, 5, 7, 8。 此时电脑手中还剩下 2, 6, 9, 10, 11, 12。同样假设电脑会将这 6 张牌按照 9, 11, 6, 2, 12, 10 这样的顺序展示给小 X 看。如果小 X 是将 6 张牌按 1, 7, 5, 8, 4, 3 这么排的，那么小 X 会获得 4 分。  \n第 1 对： 1 – 9 ，小 X 得 1 分， 电脑得 0 分\n第 2 对： 7 – 11，小 X 得 1 分， 电脑得 0 分\n第 3 对： 5 – 6 ，小 X 得 1 分， 电脑得 0 分\n第 4 对： 8 – 2 ，小 X 得 1 分， 电脑得 0 分\n第 5 对： 4 – 12， 电脑得 1 分，小 X 得 0 分\n第 6 对： 3 – 10， 电脑得 1 分，小 X 得 0 分  \n前一半第 1 对～第 3 对牌是比谁小，后一半第 4 对～第 6 对牌是比谁大。前一列数字代表的是小 X 的牌，后一列数字代表的是电脑的牌。  \n小 X 现在已经拿到了 2 × n 张牌，同时电脑也已经展示出了它的 2 × n 张牌是怎么排列的，小 X 想知道他最多能够获得多少分？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据第一行为一个正整数 <span class=\"katex math inline\">n</span>。  </p>\n<p>接下来一行共有 <span class=\"katex math inline\">2 × n</span> 个用空格隔开的正整数， 表示小 <span class=\"katex math inline\">X</span> 手中拥有的 <span class=\"katex math inline\">2 × n</span> 张牌。  </p>\n<p>再下一行同样是 <span class=\"katex math inline\">2 × n</span> 个用空格隔开的正整数， 表示电脑展示出的 <span class=\"katex math inline\">2 × n</span> 张牌（以读入的顺序展示）。</p>\n</div>            </div>",
+      "text": "输入数据第一行为一个正整数 n。  \n接下来一行共有 2 × n 个用空格隔开的正整数， 表示小 X 手中拥有的 2 × n 张牌。  \n再下一行同样是 2 × n 个用空格隔开的正整数， 表示电脑展示出的 2 × n 张牌（以读入的顺序展示）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行只有一个数 <span class=\"katex math inline\">ans</span>， 表示小 <span class=\"katex math inline\">X</span> 最多能够获得的分数。</p>\n</div>            </div>",
+      "text": "输出一行只有一个数 ans， 表示小 X 最多能够获得的分数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n5 3 2 16 14 13 9 7\r\n1 8 12 11 15 6 4 10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n5 3 2 16 14 13 9 7\r\n1 8 12 11 15 6 4 10\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据， <span class=\"katex math inline\">1 ≤ n ≤ 4</span>；</p>\n<p>对于另外 <span class=\"katex math inline\">40\\%</span> 的数据， 电脑展示的 <span class=\"katex math inline\">2 \\times n</span> 张牌是从小到大排好序的；</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据， <span class=\"katex math inline\">1 ≤ n ≤ 1000</span>。</p>\n<h4>来源</h4>\n<p>常州市2016“信息与未来”夏令营选拔赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 30\\% 的数据， 1 ≤ n ≤ 4；\n对于另外 40\\% 的数据， 电脑展示的 2 \\times n 张牌是从小到大排好序的；\n对于 100\\% 的数据， 1 ≤ n ≤ 1000。\n来源\n常州市2016“信息与未来”夏令营选拔赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">双指针</span></span></p>\n</div>                </div>",
+      "text": "市赛双指针"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n5 3 2 16 14 13 9 7\r\n1 8 12 11 15 6 4 10",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "956",
+    "通过人数": "432",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:48"
+}

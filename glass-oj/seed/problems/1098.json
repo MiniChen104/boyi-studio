@@ -1,0 +1,60 @@
+{
+  "id": "1098",
+  "title": "判断是否构成回文",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1098",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一串字符，字符个数不超过 <span class=\"katex math inline\">100</span> ，且以 <code>.</code> 结束。 </p>\n<p>判断它们是否构成回文，如果不含 <code>.</code> 能构成回文输出 <code>TRUE</code>，否则输出 <code>FALSE</code>。</p>\n</div>            </div>",
+      "text": "输入一串字符，字符个数不超过 100 ，且以 . 结束。 \n判断它们是否构成回文，如果不含 . 能构成回文输出 TRUE，否则输出 FALSE。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一行，包括一串字符。（测试数据不含空格）</p>\n</div>            </div>",
+      "text": "输入只有一行，包括一串字符。（测试数据不含空格）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，<code>TRUE</code> 或者 <code>FALSE</code> 。</p>\n</div>            </div>",
+      "text": "输出只有一行，TRUE 或者 FALSE 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>12321.</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>TRUE</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>abcbb.</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>FALSE</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            12321.\n                        \n                        \n                            输出\n                            TRUE\n                        \n\n                                                    \n                                输入\n                                abcbb.\n                            \n                            \n                                输出\n                                FALSE"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "12321.",
+      "output": "TRUE"
+    },
+    {
+      "input": "abcbb.",
+      "output": "FALSE"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "27999",
+    "通过人数": "16000",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:14:42"
+}

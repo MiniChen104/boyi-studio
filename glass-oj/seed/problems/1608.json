@@ -1,0 +1,56 @@
+{
+  "id": "1608",
+  "title": "三位数运算",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1608",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小丽在编程课上学会了拆位运算，她已经可以拆出一个三位整数的百位、十位和个位了，她想知道这个整数的（百位 <span class=\"katex math inline\">+</span> 十位） <span class=\"katex math inline\">/</span> （十位 <span class=\"katex math inline\">+</span> 个位）的结果是多少，请编程帮她实现？（请注意，计算结果要保留 <span class=\"katex math inline\">2</span> 位小数）。</p>\n<p>比如：整数 <span class=\"katex math inline\">135</span> 的（百位 <span class=\"katex math inline\">+</span> 十位）<span class=\"katex math inline\">/</span> （十位 <span class=\"katex math inline\">+</span> 个位）的计算结果 <span class=\"katex math inline\">= （1+3）/（3+5） = 4 / 8 = 0.50</span> 。</p>\n</div>            </div>",
+      "text": "小丽在编程课上学会了拆位运算，她已经可以拆出一个三位整数的百位、十位和个位了，她想知道这个整数的（百位 + 十位） / （十位 + 个位）的结果是多少，请编程帮她实现？（请注意，计算结果要保留 2 位小数）。\n比如：整数 135 的（百位 + 十位）/ （十位 + 个位）的计算结果 = （1+3）/（3+5） = 4 / 8 = 0.50 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>读入一个三位的正整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n</span> 的各个位中都不含数字 <span class=\"katex math inline\">0</span>）。</p>\n</div>            </div>",
+      "text": "读入一个三位的正整数 n（n 的各个位中都不含数字 0）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出这个三位正整数（百位 <span class=\"katex math inline\">+</span> 十位）除以（十位 <span class=\"katex math inline\">+</span> 个位）的计算结果，保留 <span class=\"katex math inline\">2</span> 位小数。</p>\n</div>            </div>",
+      "text": "输出这个三位正整数（百位 + 十位）除以（十位 + 个位）的计算结果，保留 2 位小数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>135</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0.50</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            135\n                        \n                        \n                            输出\n                            0.50"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "135",
+      "output": "0.50"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "31514",
+    "通过人数": "22335",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:47"
+}

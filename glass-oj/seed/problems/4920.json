@@ -1,0 +1,71 @@
+{
+  "id": "4920",
+  "title": "生成(onegram)",
+  "tags": [
+    "市赛",
+    "常州2025",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4920",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 Y 对现在的大模型生成技术非常感兴趣，他设计了一个非常简单的生成策略。这个生成策略是逐个字符生成的，字符集只包含小写字母。</p>\n<p>对于一个字符串，生成的下一个字符只和当前的末尾字符有关，他会把字符串中跟当前末尾字符相同的字符挑出来，再把这些字符的下一个字符选中，在选中的字符中找到出现频率最高的字符作为当前的生成。特别的，如果有多个出现频率最高的字符，小 Y 会选择字典序最小的那个字符生成。如果末尾字符在前面没有出现过，则生成 <code>a</code>。</p>\n<p>举例来说，如果当前的字符串为 <code>ababaca</code>,生成过程是这样的：此时末尾字母为 <code>a</code>，首先选中所有的字母 <code>a</code>，将小写字母 <code>a</code> 标成红色后字符串将是 <code>ababaca</code>，可以看到所有红色字符的下一个字符为依次 <code>b</code>、<code>b</code>、<code>c</code>，因为 <code>b</code> 出现了 <span class=\"katex math inline\">2</span> 次而 <code>c</code> 仅出现了 <span class=\"katex math inline\">1</span> 次，所以生成的下一个字符是 <code>b</code>，新字符串变为 <code>ababacab</code>。</p>\n<p>对于一个长度为 <span class=\"katex math inline\">n</span> 的字符串，小 Y 希望按照以上生成策略进行 <span class=\"katex math inline\">n</span> 次生成，他希望知道生成之后的长度为 <span class=\"katex math inline\">2n</span> 的字符串是什么样的。</p>\n</div>            </div>",
+      "text": "小 Y 对现在的大模型生成技术非常感兴趣，他设计了一个非常简单的生成策略。这个生成策略是逐个字符生成的，字符集只包含小写字母。\n对于一个字符串，生成的下一个字符只和当前的末尾字符有关，他会把字符串中跟当前末尾字符相同的字符挑出来，再把这些字符的下一个字符选中，在选中的字符中找到出现频率最高的字符作为当前的生成。特别的，如果有多个出现频率最高的字符，小 Y 会选择字典序最小的那个字符生成。如果末尾字符在前面没有出现过，则生成 a。\n举例来说，如果当前的字符串为 ababaca,生成过程是这样的：此时末尾字母为 a，首先选中所有的字母 a，将小写字母 a 标成红色后字符串将是 ababaca，可以看到所有红色字符的下一个字符为依次 b、b、c，因为 b 出现了 2 次而 c 仅出现了 1 次，所以生成的下一个字符是 b，新字符串变为 ababacab。\n对于一个长度为 n 的字符串，小 Y 希望按照以上生成策略进行 n 次生成，他希望知道生成之后的长度为 2n 的字符串是什么样的。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个字符串。</p>\n</div>            </div>",
+      "text": "一行一个字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个字符串，长度为输入字符串的两倍。</p>\n</div>            </div>",
+      "text": "一行一个字符串，长度为输入字符串的两倍。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>aba</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>ababab</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>abc</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>abcabc</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>tsdaasfadgfbdbdgiojiasjid</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>tsdaasfadgfbdbdgiojiasjidgfasadgfasdgfasdgfasd</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            aba\n                        \n                        \n                            输出\n                            ababab\n                        \n\n                                                    \n                                输入\n                                abc\n                            \n                            \n                                输出\n                                abcabc\n                            \n                        \n                                                    \n                                输入\n                                tsdaasfadgfbdbdgiojiasjid\n                            \n                            \n                                输出\n                                tsdaasfadgfbdbdgiojiasjidgfasadgfasdgfasdgfasd"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\">数据范围\n<p>本题共有 <span class=\"katex math inline\">9</span> 个测试点，每个测试点 <span class=\"katex math inline\">10</span> 分。</p>\n<p>对于所有测试点：<span class=\"katex math inline\">1 \\le n \\le 100000</span>，字符集仅包含小写字母，<span class=\"katex math inline\">n</span> 表示字符串长度。</p>\n<p>对于测试点 <span class=\"katex math inline\">1-2</span> ：<span class=\"katex math inline\">1 \\le n \\le 5</span>。</p>\n<p>对于测试点 <span class=\"katex math inline\">3</span> ：保证字符串中的所有字符完全相同。</p>\n<p>对于测试点 <span class=\"katex math inline\">4-5</span>：保证字符串中只包含 <span class=\"katex math inline\">a</span>,<span class=\"katex math inline\">b</span> 这 <span class=\"katex math inline\">2</span> 种字符。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n本题共有 9 个测试点，每个测试点 10 分。\n对于所有测试点：1 \\le n \\le 100000，字符集仅包含小写字母，n 表示字符串长度。\n对于测试点 1-2 ：1 \\le n \\le 5。\n对于测试点 3 ：保证字符串中的所有字符完全相同。\n对于测试点 4-5：保证字符串中只包含 a,b 这 2 种字符。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年常州“信息与未来”小学生编程比赛</p>\n</div>                </div>",
+      "text": "2025年常州“信息与未来”小学生编程比赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">常州2025</span><span class=\"label label-info\">字符串</span></span></p>\n</div>                </div>",
+      "text": "市赛常州2025字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "aba",
+      "output": "ababab"
+    },
+    {
+      "input": "abc",
+      "output": "abcabc"
+    },
+    {
+      "input": "tsdaasfadgfbdbdgiojiasjid",
+      "output": "tsdaasfadgfbdbdgiojiasjidgfasadgfasdgfasdgfasd"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "15",
+    "通过人数": "9",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:12"
+}

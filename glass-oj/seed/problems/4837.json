@@ -1,0 +1,52 @@
+{
+  "id": "4837",
+  "title": "最高分",
+  "tags": [
+    "蓝桥等考",
+    "数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4837",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学校计算机社团组织了一次内部选拔赛，成绩出来后，请你设计一个程序，根据这次竞赛的成绩单，找出最高分。 </p>\n</div>            </div>",
+      "text": "学校计算机社团组织了一次内部选拔赛，成绩出来后，请你设计一个程序，根据这次竞赛的成绩单，找出最高分。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数 <span class=\"katex math inline\">n</span>，表示参赛学生的数量。(<span class=\"katex math inline\">1 \\le n \\le 100</span>)</p>\n</div>            </div>",
+      "text": "输入一个整数 n，表示参赛学生的数量。(1 \\le n \\le 100)"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示所有参赛学生中的最高分。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示所有参赛学生中的最高分。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n380 440 320 420</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>440</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n380 440 320 420\n                        \n                        \n                            输出\n                            440"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n380 440 320 420",
+      "output": "440"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "266",
+    "通过人数": "195",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:13"
+}

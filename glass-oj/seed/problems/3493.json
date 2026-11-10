@@ -1,0 +1,52 @@
+{
+  "id": "3493",
+  "title": "命名法转换",
+  "tags": [
+    "字符串",
+    "蓝桥等考17级"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3493",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>帕斯卡命名法指当标识符是由两个或两个以上单词连载一起构成时，每个单词只有首字母大写，其它字母都是小写。</p>\n<p>例如： GateWidth、RodaLength、UserName、TotalCost、UserBalance  下划线命名法是将多个单词使用下划线来连接（单词都为小写字母）。</p>\n<p>例如：\n gate_width、road_length、user_name、total_cost、user_balance 现在给定若干个符合帕斯卡命名法的标识符，请你按照一下规则编写程序将它们转换成符合下划线命名法的名称。</p>\n<p>规则：</p>\n<p><span class=\"katex math inline\">1</span>.在帕斯卡命名标识符中所有大写字母前加一个下划线（除首字母）；</p>\n<p><span class=\"katex math inline\">2</span>.再将帕斯卡命名标识符中所有大写字母转为小写字母。</p>\n<p>例如： GateWidth  转换为 gate_width , RoadLength 转换为 road_length , UserName 转换为 user_name , TotalCost 转换为 total_cost , UserBalance 转换为 user_balance </p>\n</div>            </div>",
+      "text": "帕斯卡命名法指当标识符是由两个或两个以上单词连载一起构成时，每个单词只有首字母大写，其它字母都是小写。\n例如： GateWidth、RodaLength、UserName、TotalCost、UserBalance  下划线命名法是将多个单词使用下划线来连接（单词都为小写字母）。\n例如：\n gate_width、road_length、user_name、total_cost、user_balance 现在给定若干个符合帕斯卡命名法的标识符，请你按照一下规则编写程序将它们转换成符合下划线命名法的名称。\n规则：\n1.在帕斯卡命名标识符中所有大写字母前加一个下划线（除首字母）；\n2.再将帕斯卡命名标识符中所有大写字母转为小写字母。\n例如： GateWidth  转换为 gate_width , RoadLength 转换为 road_length , UserName 转换为 user_name , TotalCost 转换为 total_cost , UserBalance 转换为 user_balance"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个字符串，包含诺干个标识符，标识符之间以一个空格隔开，总长度不超过 <span class=\"katex math inline\"> 500 </span>。</p>\n<p>题目数据保证符合：</p>\n<p><span class=\"katex math inline\">1</span>.标识符仅包含英文字母</p>\n<p><span class=\"katex math inline\">2</span>.组成标识符的单词数量不小于 <span class=\"katex math inline\"> 2 </span>，单词长度介于 <span class=\"katex math inline\"> 2 </span> ~ <span class=\"katex math inline\"> 10 </span> 之间</p>\n<p><span class=\"katex math inline\">3</span>.标识符数量不超过 <span class=\"katex math inline\"> 50 </span></p>\n</div>            </div>",
+      "text": "一个字符串，包含诺干个标识符，标识符之间以一个空格隔开，总长度不超过  500 。\n题目数据保证符合：\n1.标识符仅包含英文字母\n2.组成标识符的单词数量不小于  2 ，单词长度介于  2  ~  10  之间\n3.标识符数量不超过  50"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个字符串，表示将所有给定的标识符转换为下划线命名法的结果。相邻两个标识符之间以一个空格分隔。</p>\n</div>            </div>",
+      "text": "一个字符串，表示将所有给定的标识符转换为下划线命名法的结果。相邻两个标识符之间以一个空格分隔。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>GateWidth RoadLength</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>gate_width road_length</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            GateWidth RoadLength\n                        \n                        \n                            输出\n                            gate_width road_length"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span><span class=\"label label-warning\">蓝桥等考17级</span></span></p>\n</div>                </div>",
+      "text": "字符串蓝桥等考17级"
+    }
+  ],
+  "samples": [
+    {
+      "input": "GateWidth RoadLength",
+      "output": "gate_width road_length"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "115",
+    "通过人数": "29",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:27"
+}

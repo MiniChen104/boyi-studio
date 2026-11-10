@@ -1,0 +1,52 @@
+{
+  "id": "2434",
+  "title": "安保设置",
+  "tags": [
+    "贪心",
+    "区间问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2434",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>华罗庚大道在国庆时准备举办庆祝活动，为了确保活动的顺利举行，<span class=\"katex math inline\">A</span>市的相关部门要在该条道路上设置安保人员。  </p>\n<p>该大道可以看作一条坐标从 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">10000</span> 的线段，该线段上有 <span class=\"katex math inline\">n</span> 个点可以设置安保人员，每个点的安保人员负责安保的范围是为区域半径为 <span class=\"katex math inline\">r</span> 的区间，也就是说，位于坐标值为 <span class=\"katex math inline\">x</span> 的位置的安保人员，将会负责 <span class=\"katex math inline\">[x-r,x+r]</span> 的区域。  </p>\n<p>请问，这 <span class=\"katex math inline\">n</span> 个点至少要选择几个点设置安保人员，才能使得整条大道的所有位置都有安保人员负责？</p>\n</div>            </div>",
+      "text": "华罗庚大道在国庆时准备举办庆祝活动，为了确保活动的顺利举行，A市的相关部门要在该条道路上设置安保人员。  \n该大道可以看作一条坐标从 0 到 10000 的线段，该线段上有 n 个点可以设置安保人员，每个点的安保人员负责安保的范围是为区域半径为 r 的区间，也就是说，位于坐标值为 x 的位置的安保人员，将会负责 [x-r,x+r] 的区域。  \n请问，这 n 个点至少要选择几个点设置安保人员，才能使得整条大道的所有位置都有安保人员负责？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">r</span>（<span class=\"katex math inline\">n≤1000</span>，<span class=\"katex math inline\">r≤20000</span>）。分别表示可设置安保人员的位置数量和安保人员可以负责的区域半径。  </p>\n<p>第二行 <span class=\"katex math inline\">n</span> 个数，分别表示可设置安保人员的点的坐标。</p>\n</div>            </div>",
+      "text": "第一行两个整数 n 和 r（n≤1000，r≤20000）。分别表示可设置安保人员的位置数量和安保人员可以负责的区域半径。  \n第二行 n 个数，分别表示可设置安保人员的点的坐标。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p> 一个数，表示最少需要选择设置安保人员的位置数量。（本题测试数据确保有解）</p>\n</div>            </div>",
+      "text": "一个数，表示最少需要选择设置安保人员的位置数量。（本题测试数据确保有解）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 4000\r\n0 1000 3000 2000 9000</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 4000\r\n0 1000 3000 2000 9000\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">贪心</span><span class=\"label label-warning\">区间问题</span></span></p>\n</div>                </div>",
+      "text": "贪心区间问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 4000\r\n0 1000 3000 2000 9000",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "961",
+    "通过人数": "474",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:17"
+}

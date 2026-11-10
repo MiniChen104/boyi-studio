@@ -1,0 +1,57 @@
+{
+  "id": "1854",
+  "title": "寂寞的数",
+  "tags": [
+    "蓝桥杯",
+    "循环的应用"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1854",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n<span>     道德经曰：一生二，二生三，三生万物。<span><br></span></span></p><p>     </p> 对于任意正整数<span>n</span>，我们定义<span>d(n)</span>的值为为<span>n</span>加上组成<span>n</span>的各个数字的和。例如，<span>d(23)=23+2+3=28,\nd(1481)=1481+1+4+8+1=1495</span>。<span><br>\n     </span> 因此，给定了任意一个<span>n</span>作为起点，你可以构造如下一个递增序列：<span>n,d(n),d(d(n)),d(d(d(n)))....</span>例如，从<span>33</span>开始的递增序列为：<span><br>\n     </span><span>33, 39, 51, 57, 69, 84, 96, 111, 114, 120, 123, 129,\n141, ...<br>\n     </span> 我们把<span>n</span>叫做<span>d(n)</span>的生成元，在上面的数列中，<span>33</span>是<span>39</span>的生成元，<span>39</span>是<span>51</span>的生成元，等等。有一些数字甚至可以有两个生成元，比如<span>101</span>，可以由<span>91</span>和<span>100</span>生成。但也有一些数字没有任何生成元，如<span>42</span>。我们把这样的数字称为寂寞的数字。<span></span> \n\n</div>            </div>",
+      "text": "道德经曰：一生二，二生三，三生万物。      对于任意正整数n，我们定义d(n)的值为为n加上组成n的各个数字的和。例如，d(23)=23+2+3=28,\nd(1481)=1481+1+4+8+1=1495。\n      因此，给定了任意一个n作为起点，你可以构造如下一个递增序列：n,d(n),d(d(n)),d(d(d(n)))....例如，从33开始的递增序列为：\n     33, 39, 51, 57, 69, 84, 96, 111, 114, 120, 123, 129,\n141, ...\n      我们把n叫做d(n)的生成元，在上面的数列中，33是39的生成元，39是51的生成元，等等。有一些数字甚至可以有两个生成元，比如101，可以由91和100生成。但也有一些数字没有任何生成元，如42。我们把这样的数字称为寂寞的数字。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n<span><span> </span></span>\n</p>\n<p class=\"MsoNormal\">\n<span></span> \n</p>\n<p><span>一行，一个正整数<span>n</span>。（</span><span></span><span><span><span><span>n&lt;=10000</span></span><span></span><span>）</span></span></span><span></span><span></span> \n</p><p>\n<br></p>\n</div>            </div>",
+      "text": "一行，一个正整数n。（n<=10000）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n<span> 按照升序输出小于<span>n</span>的所有寂寞的数字，每行一个。</span><span></span> \n</p>\n</div>            </div>",
+      "text": "按照升序输出小于n的所有寂寞的数字，每行一个。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>40</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n3\r\n5\r\n7\r\n9\r\n20\r\n31</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            40\n                        \n                        \n                            输出\n                            1\r\n3\r\n5\r\n7\r\n9\r\n20\r\n31"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 循环的应用</p>\n</div>                </div>",
+      "text": "蓝桥杯 循环的应用"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">循环的应用</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯循环的应用"
+    }
+  ],
+  "samples": [
+    {
+      "input": "40",
+      "output": "1\r\n3\r\n5\r\n7\r\n9\r\n20\r\n31"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "637",
+    "通过人数": "440",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:04"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "4946",
+  "title": "字符操作",
+  "tags": [
+    "信息素养大赛",
+    "2024",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4946",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从前有一个叫做小 A 的字符串，它住在编程世界的字符村。小 A 喜欢和其他字符交朋友，比如空格、逗号和字母 B。</p>\n<p>有一天，小 A 遇到了一个神秘的函数，这个函数告诉它，只要加入更多的字符，就能变成更强大的字符串。</p>\n<p>于是，小 A 开始了冒险，结识了字符 <code>1</code>、符号 <code>#</code>，甚至还有换行符 <code>\\n</code>。</p>\n<p>最终，小 A 成为了一个长长的、有意义的句子，实现了自己的梦想。在这个过程中，小 A 明白了合作的重要性，也找到了自己在代码中的位置。</p>\n<p>小 A 在旅途中遇到了很多字符串 <span class=\"katex math inline\">str</span>，随着小 A 不断的结交朋友，它的长度也逐渐变长，具体有两种变长操作:</p>\n<p><code>F str</code>：前插入。表示在字符串小 A 前面插入字符串 <code>str</code>。</p>\n<p><code>B str</code>：后插入。表示在字符串小 A 后面插入字符串 <code>str</code>。</p>\n<p><code>R</code>：表示反转整个字符串。</p>\n<p>规定字符串小 A 的初始模样和每次操作的 <code>str</code> 都不含空格或换行。</p>\n<p>请你计算出字符串小 A 旅途结束后的模样。</p>\n</div>            </div>",
+      "text": "从前有一个叫做小 A 的字符串，它住在编程世界的字符村。小 A 喜欢和其他字符交朋友，比如空格、逗号和字母 B。\n有一天，小 A 遇到了一个神秘的函数，这个函数告诉它，只要加入更多的字符，就能变成更强大的字符串。\n于是，小 A 开始了冒险，结识了字符 1、符号 #，甚至还有换行符 \\n。\n最终，小 A 成为了一个长长的、有意义的句子，实现了自己的梦想。在这个过程中，小 A 明白了合作的重要性，也找到了自己在代码中的位置。\n小 A 在旅途中遇到了很多字符串 str，随着小 A 不断的结交朋友，它的长度也逐渐变长，具体有两种变长操作:\nF str：前插入。表示在字符串小 A 前面插入字符串 str。\nB str：后插入。表示在字符串小 A 后面插入字符串 str。\nR：表示反转整个字符串。\n规定字符串小 A 的初始模样和每次操作的 str 都不含空格或换行。\n请你计算出字符串小 A 旅途结束后的模样。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入共 <span class=\"katex math inline\">n+2</span> 行：</p>\n<p>第一行，输入一个正整数 <span class=\"katex math inline\">n</span>，表示操作次数；</p>\n<p>第二行，输入一个字符串 <span class=\"katex math inline\">str</span>，表示文档最开始的字符串；</p>\n<p>从第三行开始，往下 <span class=\"katex math inline\">n</span> 行，每行表示一个操作。</p>\n</div>            </div>",
+      "text": "输入共 n+2 行：\n第一行，输入一个正整数 n，表示操作次数；\n第二行，输入一个字符串 str，表示文档最开始的字符串；\n从第三行开始，往下 n 行，每行表示一个操作。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，一个字符串。</p>\n</div>            </div>",
+      "text": "输出只有一行，一个字符串。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\nTom\r\nF ht\r\nB ut \r\nR\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>tumoTth\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\nTom\r\nF ht\r\nB ut \r\nR\r\n\n                        \n                        \n                            输出\n                            tumoTth"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>保证操作次数 <span class=\"katex math inline\">1 \\le n \\le 1000</span>，字符串小 A 的初始长度和每次插入的字符串 <span class=\"katex math inline\">str</span> 的长度均不大于 <span class=\"katex math inline\">100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n保证操作次数 1 \\le n \\le 1000，字符串小 A 的初始长度和每次插入的字符串 str 的长度均不大于 100。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年信息素养大赛C++算法创意挑战赛复赛真题（小学组）</p>\n</div>                </div>",
+      "text": "2024年信息素养大赛C++算法创意挑战赛复赛真题（小学组）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">信息素养大赛</span><span class=\"label label-warning\">2024</span><span class=\"label label-info\">字符串</span></span></p>\n</div>                </div>",
+      "text": "信息素养大赛2024字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\nTom\r\nF ht\r\nB ut \r\nR\r\n",
+      "output": "tumoTth\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1613",
+    "通过人数": "894",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:52"
+}

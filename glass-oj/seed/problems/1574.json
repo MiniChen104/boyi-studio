@@ -1,0 +1,56 @@
+{
+  "id": "1574",
+  "title": "机器人的移动(robot.cpp)",
+  "tags": [
+    "区赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1574",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一个小机器人在围棋棋盘（即行数和列数均为 <span class=\"katex math inline\">19</span>）（左上角为（<span class=\"katex math inline\">1,1</span>）右下角为（<span class=\"katex math inline\">19,19</span>））上移动，起点在天元，天元用 (<span class=\"katex math inline\">10，10</span>)表示，向四个方向直着走，不会走出棋盘。它记下了自己的移动路线，一共走 <span class=\"katex math inline\">D(1 \\le D \\le 1000)</span> 段路，每段路的描述如“向上 <span class=\"katex math inline\">3</span> 格”或“向左 <span class=\"katex math inline\">2</span> 格”。现在给出移动路线，请你统计它经过了多少点（包括起始点），多次经过同一个点只算一次。</p>\n<p><img src=\"https://assets.boyi.local/0c41b868912fbbfdad9c4bf8.jpg\"></p>\n</div>            </div>",
+      "text": "有一个小机器人在围棋棋盘（即行数和列数均为 19）（左上角为（1,1）右下角为（19,19））上移动，起点在天元，天元用 (10，10)表示，向四个方向直着走，不会走出棋盘。它记下了自己的移动路线，一共走 D(1 \\le D \\le 1000) 段路，每段路的描述如“向上 3 格”或“向左 2 格”。现在给出移动路线，请你统计它经过了多少点（包括起始点），多次经过同一个点只算一次。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">D</span>。 </p>\n<p>接下来 <span class=\"katex math inline\">D</span> 行，每行由一个字符和一个数字构成，表示方向和在此方向上的步数（可能出现步数为 <span class=\"katex math inline\">0</span>）<code>L</code>，<code>R</code>，<code>U</code>，<code>D</code>分别表示左，右，上，下。</p>\n</div>            </div>",
+      "text": "第一行一个整数 D。 \n接下来 D 行，每行由一个字符和一个数字构成，表示方向和在此方向上的步数（可能出现步数为 0）L，R，U，D分别表示左，右，上，下。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行<strong>一个</strong>整数表示小机器人走过的点的个数。没有多余空格，但有换行符。</p>\n</div>            </div>",
+      "text": "一行一个整数表示小机器人走过的点的个数。没有多余空格，但有换行符。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\nL 1\r\nR 4\r\nU 2\r\nR 3\r\nD 2\r\nL 7</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>14</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\nL 1\r\nR 4\r\nU 2\r\nR 3\r\nD 2\r\nL 7\n                        \n                        \n                            输出\n                            14"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2019年天宁区选拔赛</p>\n</div>                </div>",
+      "text": "2019年天宁区选拔赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">区赛</span></span></p>\n</div>                </div>",
+      "text": "区赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\nL 1\r\nR 4\r\nU 2\r\nR 3\r\nD 2\r\nL 7",
+      "output": "14"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "263",
+    "通过人数": "174",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:21:18"
+}

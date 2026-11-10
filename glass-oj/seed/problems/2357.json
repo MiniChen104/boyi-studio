@@ -1,0 +1,62 @@
+{
+  "id": "2357",
+  "title": "文本替换",
+  "tags": [
+    "蓝桥杯等级考试",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2357",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>【具体要求】  </p>\n<p>现在有一行英文单词组成的文本（区分大小写，以“.”结尾），请你设计一个程序，输入要替换的单词和替换后的目标单词，将整篇文本所有需要替换的单词全部更改成目标单词，最后将全部文本输出。 </p>\n</div>            </div>",
+      "text": "【具体要求】  \n现在有一行英文单词组成的文本（区分大小写，以“.”结尾），请你设计一个程序，输入要替换的单词和替换后的目标单词，将整篇文本所有需要替换的单词全部更改成目标单词，最后将全部文本输出。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入共三行，第一行为一串单词文本 s， s 的长度为 l（0 &lt; l &lt; 200)，单词之间用空格隔开；  </p>\n<p>第二行为要替换的单词 s1，s1 的长度为 l1（0 &lt; l1 &lt; 10）；  </p>\n<p>第三行为目标单词 s2，s2 的长度为 l2（0 &lt; l2 &lt; 10）。 </p>\n</div>            </div>",
+      "text": "输入共三行，第一行为一串单词文本 s， s 的长度为 l（0 < l < 200)，单词之间用空格隔开；  \n第二行为要替换的单词 s1，s1 的长度为 l1（0 < l1 < 10）；  \n第三行为目标单词 s2，s2 的长度为 l2（0 < l2 < 10）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出替换后新的一串单词文本。 </p>\n</div>            </div>",
+      "text": "输出替换后新的一串单词文本。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>To ba or not to ba, that is a question. \r\nba\r\nbe \r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>To be or not to be, that is a question. </pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            To ba or not to ba, that is a question. \r\nba\r\nbe \r\n\n                        \n                        \n                            输出\n                            To be or not to be, that is a question."
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【评分标准】  </p>\n<p>本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。 </p>\n<pre><code>蓝桥等考 C++组单选题样题（十七级） \n以下哪个函数是用来在 string 类中删除字符（ ）。\nA empty() \nB replace() \nC substr() \nD erase() \n【答案】D \n【解析】empty()判断是否为空串，substr()复制子字符串，erase()删除若干字符，replace()替换字符\n</code></pre>\n</div>\n\n                    \n                </div>",
+      "text": "【评分标准】  \n本题共有五组测试数据，每通过一组测试数据得 10 分，满分 50 分。 \n蓝桥等考 C++组单选题样题（十七级） \n以下哪个函数是用来在 string 类中删除字符（ ）。\nA empty() \nB replace() \nC substr() \nD erase() \n【答案】D \n【解析】empty()判断是否为空串，substr()复制子字符串，erase()删除若干字符，replace()替换字符"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥等考 C++组编程题样题（十七级）</p>\n</div>                </div>",
+      "text": "蓝桥等考 C++组编程题样题（十七级）"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯等级考试</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯等级考试字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "To ba or not to ba, that is a question. \r\nba\r\nbe \r\n",
+      "output": "To be or not to be, that is a question. "
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "609",
+    "通过人数": "315",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:26"
+}

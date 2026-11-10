@@ -1,0 +1,61 @@
+{
+  "id": "3065",
+  "title": "费用(switch.cpp)",
+  "tags": [
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3065",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>众所周知，X 校的饭堂饭菜十分美味，每天都有许多老师会去饭堂吃饭，这就会涉及到老师吃饭的费用问题。</p>\n<p>X 校在编教工每一天早餐和中餐累计不超过 <span class=\"katex math inline\">25</span> 元可享受 <span class=\"katex math inline\">5</span> 折优惠，晚餐原价。</p>\n<p>现在Cotton收到了一位 X 校老师的来信。这位老师给出了他早、中、晚三餐的价格，现在他想知道他需要付多少钱，你能帮帮他吗？</p>\n</div>            </div>",
+      "text": "众所周知，X 校的饭堂饭菜十分美味，每天都有许多老师会去饭堂吃饭，这就会涉及到老师吃饭的费用问题。\nX 校在编教工每一天早餐和中餐累计不超过 25 元可享受 5 折优惠，晚餐原价。\n现在Cotton收到了一位 X 校老师的来信。这位老师给出了他早、中、晚三餐的价格，现在他想知道他需要付多少钱，你能帮帮他吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行三个正整数 <span class=\"katex math inline\">a,b,c</span>，表示早、中、晚三餐的价格。</p>\n</div>            </div>",
+      "text": "一行三个正整数 a,b,c，表示早、中、晚三餐的价格。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个小数，保留小数点后两位，表示所需的费用。</p>\n</div>            </div>",
+      "text": "一个小数，保留小数点后两位，表示所需的费用。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 4 5 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8.50</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 4 5 \n                        \n                        \n                            输出\n                            8.50"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">a+b≤25</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">a,b,c≤100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 30\\% 的数据，a+b≤25。\n对于 100\\% 的数据，a,b,c≤100。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2021-2022年中山市东区第一届义务教育段学生信息学邀请赛 T2</p>\n</div>                </div>",
+      "text": "2021-2022年中山市东区第一届义务教育段学生信息学邀请赛 T2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支</span></span></p>\n</div>                </div>",
+      "text": "分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 4 5 ",
+      "output": "8.50"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "710",
+    "通过人数": "329",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:56"
+}

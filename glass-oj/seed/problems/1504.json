@@ -1,0 +1,57 @@
+{
+  "id": "1504",
+  "title": "约瑟夫问题",
+  "tags": [
+    "容器",
+    "vector"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1504",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>约瑟夫问题来源于公元 <span class=\"katex math inline\">1</span> 世纪的犹太历史学家Josephus。问题描述，有 <span class=\"katex math inline\">n</span> 个人（分别以编号 <span class=\"katex math inline\">1，2，3 \\dots n</span> 表示）围成一个圆圈，从编号为 <span class=\"katex math inline\">1</span> 的人开始进行 <span class=\"katex math inline\">1 \\sim m</span> 正向报数，报到 <span class=\"katex math inline\">m</span> 的那个人出列；他的下一个人又从 <span class=\"katex math inline\">1</span> 开始报数，数到 <span class=\"katex math inline\">m</span> 的那个人又出列；如此重复下去，直到所有的人全部出列，求最后一个出列人的编号</p>\n</div>            </div>",
+      "text": "约瑟夫问题来源于公元 1 世纪的犹太历史学家Josephus。问题描述，有 n 个人（分别以编号 1，2，3 \\dots n 表示）围成一个圆圈，从编号为 1 的人开始进行 1 \\sim m 正向报数，报到 m 的那个人出列；他的下一个人又从 1 开始报数，数到 m 的那个人又出列；如此重复下去，直到所有的人全部出列，求最后一个出列人的编号"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入文件仅有一行包含二个用空格隔开的整数 <span class=\"katex math inline\">N</span>，<span class=\"katex math inline\">M</span> （ <span class=\"katex math inline\">2 \\le N \\le 100000</span>，<span class=\"katex math inline\">M \\le 10^9</span>）。</p>\n</div>            </div>",
+      "text": "输入文件仅有一行包含二个用空格隔开的整数 N，M （ 2 \\le N \\le 100000，M \\le 10^9）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出文件仅有一行包含一个整数表示一个整数，表示最后一个人在队列中的编号。</p>\n</div>            </div>",
+      "text": "输出文件仅有一行包含一个整数表示一个整数，表示最后一个人在队列中的编号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8 3\n                        \n                        \n                            输出\n                            7"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>容器 vector</p>\n</div>                </div>",
+      "text": "容器 vector"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">容器</span><span class=\"label label-warning\">vector</span></span></p>\n</div>                </div>",
+      "text": "容器vector"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8 3",
+      "output": "7"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "7304",
+    "通过人数": "3570",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:21"
+}

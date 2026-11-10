@@ -1,0 +1,56 @@
+{
+  "id": "1097",
+  "title": "统计字符的个数",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1097",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘中任意输入一串字符，直至输入 <code>#</code> 字符代表结束。</p>\n<p>请编程统计输入的字符中的大写字母，小写字母和数字字符的个数分别是多少？</p>\n</div>            </div>",
+      "text": "从键盘中任意输入一串字符，直至输入 # 字符代表结束。\n请编程统计输入的字符中的大写字母，小写字母和数字字符的个数分别是多少？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一行，包括一串字符。(长度小于 <span class=\"katex math inline\">20</span>，且没有空格)</p>\n</div>            </div>",
+      "text": "输入只有一行，包括一串字符。(长度小于 20，且没有空格)"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，包括 <span class=\"katex math inline\">3</span> 个整数。分别代表大写字符，小写字符和数字字符的个数。</p>\n</div>            </div>",
+      "text": "输出只有一行，包括 3 个整数。分别代表大写字符，小写字符和数字字符的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>daDSALDdcada3240#</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5 7 4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            daDSALDdcada3240#\n                        \n                        \n                            输出\n                            5 7 4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "daDSALDdcada3240#",
+      "output": "5 7 4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "17826",
+    "通过人数": "12406",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:14:40"
+}

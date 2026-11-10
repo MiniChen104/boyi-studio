@@ -1,0 +1,66 @@
+{
+  "id": "1856",
+  "title": "输出米字形",
+  "tags": [
+    "蓝桥杯",
+    "循环的应用"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1856",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>根据输入的正整数n (1 米字形由一个(2n-1)*(2n-1)的矩阵组成，矩阵包含从大写A开始的n个字母  </p>\n<p>例如:n=3时，包含A,B,C；n=4时，包含A,B,C,D。  </p>\n<p>矩阵的正中间为n个字母中字典序最大的那个，从这个字母开始，沿着西北、正北、东北、正西、正东、西南、正南、东南八个方向各有一条由大写字母组成的直线。并且直线上的字母按字典序依次减小，直到大写字母A。</p>\n<p>矩阵的其它位置用英文句号．填充。</p>\n</div>            </div>",
+      "text": "根据输入的正整数n (1 米字形由一个(2n-1)*(2n-1)的矩阵组成，矩阵包含从大写A开始的n个字母  \n例如:n=3时，包含A,B,C；n=4时，包含A,B,C,D。  \n矩阵的正中间为n个字母中字典序最大的那个，从这个字母开始，沿着西北、正北、东北、正西、正东、西南、正南、东南八个方向各有一条由大写字母组成的直线。并且直线上的字母按字典序依次减小，直到大写字母A。\n矩阵的其它位置用英文句号．填充。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数n（n&lt;=30）</p>\n</div>            </div>",
+      "text": "输入一个整数n（n<=30）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按题意输出图形</p>\n</div>            </div>",
+      "text": "按题意输出图形"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>A.A.A\r\n.BBB.\r\nABCBA\r\n.BBB.\r\nA.A.A</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>A..A..A\r\n.B.B.B.\r\n..CCC..\r\nABCDCBA\r\n..CCC..\r\n.B.B.B.\r\nA..A..A</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            A.A.A\r\n.BBB.\r\nABCBA\r\n.BBB.\r\nA.A.A\n                        \n\n                                                    \n                                输入\n                                4\n                            \n                            \n                                输出\n                                A..A..A\r\n.B.B.B.\r\n..CCC..\r\nABCDCBA\r\n..CCC..\r\n.B.B.B.\r\nA..A..A"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【来源】蓝桥杯算法训练</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】蓝桥杯算法训练"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯 循环的应用</p>\n</div>                </div>",
+      "text": "蓝桥杯 循环的应用"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">循环的应用</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯循环的应用"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "A.A.A\r\n.BBB.\r\nABCBA\r\n.BBB.\r\nA.A.A"
+    },
+    {
+      "input": "4",
+      "output": "A..A..A\r\n.B.B.B.\r\n..CCC..\r\nABCDCBA\r\n..CCC..\r\n.B.B.B.\r\nA..A..A"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "565",
+    "通过人数": "385",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:06"
+}

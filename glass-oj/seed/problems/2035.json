@@ -1,0 +1,56 @@
+{
+  "id": "2035",
+  "title": "破译文件",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2035",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>张警官拦截了一封加密的文件，该文件中的字符很奇怪，完全不通顺，只有一些符号和一些数字，经过缜密的侦查，张警官终于找到了文件的解密方法。请根据张警官提供的解密方法，编程将文件解密。  </p>\n<p>解密规则如下：  </p>\n<p>1.将<span class=\"katex math inline\">1</span>变为&#x27;<span class=\"katex math inline\">A</span>&#x27;，<span class=\"katex math inline\">2</span>变为&#x27;<span class=\"katex math inline\">B</span>&#x27;，...，<span class=\"katex math inline\">26</span>变为&#x27;<span class=\"katex math inline\">Z</span>&#x27;；  </p>\n<p>2.将&#x27;#&#x27;变为一个空格；  </p>\n<p>3.忽略&#x27;<span class=\"katex math inline\">-</span>&#x27;，原始信件中&#x27;<span class=\"katex math inline\">-</span>&#x27;仅仅用来分割数字。  </p>\n</div>            </div>",
+      "text": "张警官拦截了一封加密的文件，该文件中的字符很奇怪，完全不通顺，只有一些符号和一些数字，经过缜密的侦查，张警官终于找到了文件的解密方法。请根据张警官提供的解密方法，编程将文件解密。  \n解密规则如下：  \n1.将1变为'A'，2变为'B'，...，26变为'Z'；  \n2.将'#'变为一个空格；  \n3.忽略'-'，原始信件中'-'仅仅用来分割数字。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行为一个整数<span class=\"katex math inline\">n</span>，表示测试数据的组数。（<span class=\"katex math inline\">n</span>&lt;=<span class=\"katex math inline\">100</span>）  </p>\n<p>接下来<span class=\"katex math inline\">n</span>行，每行输入一个待破译的字符串，字符串中<strong>只包含</strong>数字、&#x27;-&#x27;和&#x27;#&#x27;，长度不超过<span class=\"katex math inline\">100</span>。</p>\n</div>            </div>",
+      "text": "输入的第一行为一个整数n，表示测试数据的组数。（n<=100）  \n接下来n行，每行输入一个待破译的字符串，字符串中只包含数字、'-'和'#'，长度不超过100。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组输入，输出破译后的字符串。</p>\n</div>            </div>",
+      "text": "对于每组输入，输出破译后的字符串。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n9#23-9-12-12#19-20-5-1-12#1-20#12-5-1-19-20#15-14-5#10-5-23-5-12\r\n1-14-4#12-5-1-22-5#20-8-5#13-21-19-5-21-13#9-14#20#13-9-14-21-20-5-19\r\n1-6-20-5-18#20-8-5#15-16-5-14-9-14-7#15-6#20-8-5#5-24-8-9-2-9-20-9-15-14\r\n7-15-15-4#12-21-3-11</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>I WILL STEAL AT LEAST ONE JEWEL\r\nAND LEAVE THE MUSEUM IN T MINUTES\r\nAFTER THE OPENING OF THE EXHIBITION\r\nGOOD LUCK</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n9#23-9-12-12#19-20-5-1-12#1-20#12-5-1-19-20#15-14-5#10-5-23-5-12\r\n1-14-4#12-5-1-22-5#20-8-5#13-21-19-5-21-13#9-14#20#13-9-14-21-20-5-19\r\n1-6-20-5-18#20-8-5#15-16-5-14-9-14-7#15-6#20-8-5#5-24-8-9-2-9-20-9-15-14\r\n7-15-15-4#12-21-3-11\n                        \n                        \n                            输出\n                            I WILL STEAL AT LEAST ONE JEWEL\r\nAND LEAVE THE MUSEUM IN T MINUTES\r\nAFTER THE OPENING OF THE EXHIBITION\r\nGOOD LUCK"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n9#23-9-12-12#19-20-5-1-12#1-20#12-5-1-19-20#15-14-5#10-5-23-5-12\r\n1-14-4#12-5-1-22-5#20-8-5#13-21-19-5-21-13#9-14#20#13-9-14-21-20-5-19\r\n1-6-20-5-18#20-8-5#15-16-5-14-9-14-7#15-6#20-8-5#5-24-8-9-2-9-20-9-15-14\r\n7-15-15-4#12-21-3-11",
+      "output": "I WILL STEAL AT LEAST ONE JEWEL\r\nAND LEAVE THE MUSEUM IN T MINUTES\r\nAFTER THE OPENING OF THE EXHIBITION\r\nGOOD LUCK"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "976",
+    "通过人数": "450",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:35"
+}

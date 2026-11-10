@@ -1,0 +1,64 @@
+{
+  "id": "3860",
+  "title": "计数",
+  "tags": [
+    "GESP二级",
+    "循环",
+    "24年6月",
+    "短除法"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3860",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨认为自己的幸运数是正整数 <span class=\"katex math inline\">k</span> （注：保证<span class=\"katex math inline\"> 1 \\le k \\le 9</span>）。小杨想知道，对于从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span> 的所有正整数中，<span class=\"katex math inline\">k</span> 出现了多少次。</p>\n</div>            </div>",
+      "text": "小杨认为自己的幸运数是正整数 k （注：保证 1 \\le k \\le 9）。小杨想知道，对于从 1 到 n 的所有正整数中，k 出现了多少次。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">n</span>。</p>\n<p>第一行包含一个正整数 <span class=\"katex math inline\">k</span>。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 n。\n第一行包含一个正整数 k。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span> 的所有正整数中，<span class=\"katex math inline\">k</span> 出现的次数。</p>\n</div>            </div>",
+      "text": "输出从 1 到 n 的所有正整数中，k 出现的次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>25\r\n2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            25\r\n2\n                        \n                        \n                            输出\n                            9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】 </p>\n<p>从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">25</span> 中，<span class=\"katex math inline\">2</span> 出现的正整数有 <span class=\"katex math inline\">2，12，20，21，22，23，24，25</span>，一共出现了 <span class=\"katex math inline\">9</span> 次。</p>\n<p>【数据范围】</p>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n \\le 1000,1 \\le k \\le 9  </span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】 \n从 1 到 25 中，2 出现的正整数有 2，12，20，21，22，23，24，25，一共出现了 9 次。\n【数据范围】\n对于全部数据，保证有 1 \\le n \\le 1000,1 \\le k \\le 9   。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 6月认证C++二级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 6月认证C++二级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP二级</span><span class=\"label label-warning\">循环</span><span class=\"label label-info\">24年6月</span><span class=\"label label-danger\">短除法</span></span></p>\n</div>                </div>",
+      "text": "GESP二级循环24年6月短除法"
+    }
+  ],
+  "samples": [
+    {
+      "input": "25\r\n2",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "3250",
+    "通过人数": "2303",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:07"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "2377",
+  "title": "子串计算",
+  "tags": [
+    "电子学会等级考试",
+    "字符串",
+    "枚举"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2377",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出一个只包含 0 和 1 的字阵串 （ 长度在 1 到 100 之间） ，求其每一个子串出现的次数。</p>\n</div>            </div>",
+      "text": "给出一个只包含 0 和 1 的字阵串 （ 长度在 1 到 100 之间） ，求其每一个子串出现的次数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个01字符串。</p>\n</div>            </div>",
+      "text": "一行，一个01字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对所有出现次数在 1 次以上的子串，输出该子串及出现次数，中间用单个空格隔开。按子串的字典序从小到大依次输出，每行一个。</p>\n</div>            </div>",
+      "text": "对所有出现次数在 1 次以上的子串，输出该子串及出现次数，中间用单个空格隔开。按子串的字典序从小到大依次输出，每行一个。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10101</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0 2\r\n01 2\r\n1 3\r\n10 2\r\n101 2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10101\n                        \n                        \n                            输出\n                            0 2\r\n01 2\r\n1 3\r\n10 2\r\n101 2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会三级</p>\n</div>                </div>",
+      "text": "电子学会三级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">枚举</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试字符串枚举"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10101",
+      "output": "0 2\r\n01 2\r\n1 3\r\n10 2\r\n101 2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "255",
+    "通过人数": "178",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:37"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "3344",
+  "title": "长方形面积",
+  "tags": [
+    "循环",
+    "GESP一级",
+    "23年3月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3344",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明刚刚学习了如何计算长方形面积。他发现，如果一个长方形的长和宽都是整数，它的面积一定也是整数。现在，小明想知道如果给定长方形的面积，有多少种可能的长方形，满足长和宽都是整数？</p>\n<p>如果两个长方形的长相等、宽也相等，则认为是同一种长方形。约定长方形的长大于等于宽。正方形是长方形的特例，即长方形的长和宽可以相等。</p>\n</div>            </div>",
+      "text": "小明刚刚学习了如何计算长方形面积。他发现，如果一个长方形的长和宽都是整数，它的面积一定也是整数。现在，小明想知道如果给定长方形的面积，有多少种可能的长方形，满足长和宽都是整数？\n如果两个长方形的长相等、宽也相等，则认为是同一种长方形。约定长方形的长大于等于宽。正方形是长方形的特例，即长方形的长和宽可以相等。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行，包含一个整数 <span class=\"katex math inline\">A</span> ，表示长方形的面积。约定 <span class=\"katex math inline\"> 2 ≤ A ≤ 1000 </span>。</p>\n</div>            </div>",
+      "text": "输入一行，包含一个整数 A ，表示长方形的面积。约定  2 ≤ A ≤ 1000 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含一个整数 <span class=\"katex math inline\">C</span>，表示有 <span class=\"katex math inline\">C</span> 种可能的长方形。</p>\n</div>            </div>",
+      "text": "输出一行，包含一个整数 C，表示有 C 种可能的长方形。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>6</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                6\n                            \n                            \n                                输出\n                                2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释 1】</p>\n<p><span class=\"katex math inline\">2</span> 种长方形面积为 <span class=\"katex math inline\">4</span>，它们的长宽分别为 <span class=\"katex math inline\"> 2 \\times 2 </span>，<span class=\"katex math inline\"> 4 \\times 1 </span>。</p>\n<p>【样例解释 2】</p>\n<p><span class=\"katex math inline\">2</span> 种长方形面积为 <span class=\"katex math inline\">6</span>，它们的长宽分别为 <span class=\"katex math inline\">3 \\times 2</span>，<span class=\"katex math inline\">6 \\times 1</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释 1】\n2 种长方形面积为 4，它们的长宽分别为  2 \\times 2 ， 4 \\times 1 。\n【样例解释 2】\n2 种长方形面积为 6，它们的长宽分别为 3 \\times 2，6 \\times 1。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年3月一级</p>\n</div>                </div>",
+      "text": "GESP23年3月一级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">循环</span><span class=\"label label-warning\">GESP一级</span><span class=\"label label-info\">23年3月</span></span></p>\n</div>                </div>",
+      "text": "循环GESP一级23年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4",
+      "output": "2"
+    },
+    {
+      "input": "6",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5871",
+    "通过人数": "3895",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:40"
+}

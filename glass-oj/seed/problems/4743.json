@@ -1,0 +1,52 @@
+{
+  "id": "4743",
+  "title": "矩阵左右翻转",
+  "tags": [
+    "蓝桥等考",
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4743",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个 <span class=\"katex math inline\">m \\times n</span> 的整数矩阵，将其左右翻转后输出。\n例如：当 <span class=\"katex math inline\">m</span> = <span class=\"katex math inline\">4</span>，<span class=\"katex math inline\">n</span> = <span class=\"katex math inline\">3</span>，<span class=\"katex math inline\">4 \\times 3</span> 的矩阵为：</p>\n<pre><code>9 7 5\n2 3 10\n4 8 7\n2 4 8\n</code></pre>\n<p>左右翻转后的结果为：</p>\n<pre><code>5 7 9\n10 3 2\n7 8 4\n8 4 2\n</code></pre>\n</div>            </div>",
+      "text": "给定一个 m \\times n 的整数矩阵，将其左右翻转后输出。\n例如：当 m = 4，n = 3，4 \\times 3 的矩阵为：\n9 7 5\n2 3 10\n4 8 7\n2 4 8\n\n左右翻转后的结果为：\n5 7 9\n10 3 2\n7 8 4\n8 4 2"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含两个正整数 <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">n</span>，分别表示矩阵的行数和列数。(<span class=\"katex math inline\">1 \\le m,n \\le 20</span>)</p>\n<p>接下来有 <span class=\"katex math inline\">m</span> 行，每行包含 <span class=\"katex math inline\">n</span> 个整数，用空格隔开，表示矩阵中的元素。</p>\n</div>            </div>",
+      "text": "输入的第一行包含两个正整数 m 和 n，分别表示矩阵的行数和列数。(1 \\le m,n \\le 20)\n接下来有 m 行，每行包含 n 个整数，用空格隔开，表示矩阵中的元素。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出左右翻转后的矩阵，共 <span class=\"katex math inline\">m</span> 行，每行 <span class=\"katex math inline\">n</span> 个整数，用空格隔开。</p>\n<p>即原矩阵中每一行的元素顺序完全颠倒。</p>\n<p>例如，如果原矩阵某一行是 <span class=\"katex math inline\">a_1</span> <span class=\"katex math inline\">a_2</span> <span class=\"katex math inline\">\\dots</span> <span class=\"katex math inline\">a_n</span>，则输出时该行应为 <span class=\"katex math inline\">a_n</span> <span class=\"katex math inline\">\\dots</span> <span class=\"katex math inline\">a_2</span> <span class=\"katex math inline\">a_1</span>。确保每个元素之间恰好有一个空格，且每行最后一个元素后没有多余的空格。</p>\n</div>            </div>",
+      "text": "输出左右翻转后的矩阵，共 m 行，每行 n 个整数，用空格隔开。\n即原矩阵中每一行的元素顺序完全颠倒。\n例如，如果原矩阵某一行是 a_1 a_2 \\dots a_n，则输出时该行应为 a_n \\dots a_2 a_1。确保每个元素之间恰好有一个空格，且每行最后一个元素后没有多余的空格。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 3\r\n9 7 5\r\n2 3 10\r\n4 8 7\r\n2 4 8\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5 7 9\r\n10 3 2\r\n7 8 4\r\n8 4 2\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 3\r\n9 7 5\r\n2 3 10\r\n4 8 7\r\n2 4 8\r\n\n                        \n                        \n                            输出\n                            5 7 9\r\n10 3 2\r\n7 8 4\r\n8 4 2"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 3\r\n9 7 5\r\n2 3 10\r\n4 8 7\r\n2 4 8\r\n",
+      "output": "5 7 9\r\n10 3 2\r\n7 8 4\r\n8 4 2\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "300",
+    "通过人数": "217",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:38"
+}

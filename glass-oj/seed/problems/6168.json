@@ -1,0 +1,65 @@
+{
+  "id": "6168",
+  "title": "火柴棒",
+  "tags": [
+    "蓝桥杯",
+    "递推"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6168",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明用火柴棒拼接组合图形，如下图所示:</p>\n<p><img src=\"https://assets.boyi.local/971f94f65ddb46353ef8103a.png\"></p>\n<p>第 <span class=\"katex math inline\">1</span> 组图形使用 <span class=\"katex math inline\">4</span> 根火柴棒，第 <span class=\"katex math inline\">2</span> 组图形使用 <span class=\"katex math inline\">6</span> 根火柴棒，第 <span class=\"katex math inline\">3</span> 组图形使用 <span class=\"katex math inline\">9</span> 根火柴棒，第 <span class=\"katex math inline\">4</span> 组图形使用 <span class=\"katex math inline\">11</span> 根火柴棒，第 <span class=\"katex math inline\">5</span> 组图形使用 <span class=\"katex math inline\">14</span> 根火柴棒，以此类推。 给定一个整数 <span class=\"katex math inline\">n</span>，请问第 <span class=\"katex math inline\">n</span> 组图形使用多少根火柴棒。</p>\n</div>            </div>",
+      "text": "小明用火柴棒拼接组合图形，如下图所示:\n\n第 1 组图形使用 4 根火柴棒，第 2 组图形使用 6 根火柴棒，第 3 组图形使用 9 根火柴棒，第 4 组图形使用 11 根火柴棒，第 5 组图形使用 14 根火柴棒，以此类推。 给定一个整数 n，请问第 n 组图形使用多少根火柴棒。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数 <span class=\"katex math inline\">n (1 \\le n \\le 20)</span>。 </p>\n</div>            </div>",
+      "text": "输入一个整数 n (1 \\le n \\le 20)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示拼接第 <span class=\"katex math inline\">n</span> 组图形使用的火柴棒数量。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示拼接第 n 组图形使用的火柴棒数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>11</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>8</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>21</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>20</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>51</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            4 \n                        \n                        \n                            输出\n                            11\n                        \n\n                                                    \n                                输入\n                                8\n                            \n                            \n                                输出\n                                21\n                            \n                        \n                                                    \n                                输入\n                                20\n                            \n                            \n                                输出\n                                51"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>蓝桥杯,26年4月STEMA省考</p>\n</div>                </div>",
+      "text": "蓝桥杯,26年4月STEMA省考"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥杯</span><span class=\"label label-warning\">递推</span></span></p>\n</div>                </div>",
+      "text": "蓝桥杯递推"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 ",
+      "output": "11"
+    },
+    {
+      "input": "8",
+      "output": "21"
+    },
+    {
+      "input": "20",
+      "output": "51"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "222",
+    "通过人数": "159",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:29"
+}

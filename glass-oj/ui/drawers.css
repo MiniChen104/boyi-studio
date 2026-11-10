@@ -1,0 +1,53 @@
+/* Keep the workspace stable; secondary surfaces appear only when requested. */
+.drawer-layout .app-shell{grid-template-columns:176px minmax(0,1fr);gap:20px;padding:20px}
+.drawer-layout .workspace{min-width:0}.drawer-layout .online-root{grid-column:2/-1}
+.drawer-layout .sidebar{padding:24px 12px 14px}.drawer-layout .brand{margin-bottom:24px}
+.drawer-layout .nav-list{gap:6px;flex:1;overflow:auto}.drawer-layout .sidebar-bottom{flex-shrink:0;padding-top:20px}
+.drawer-layout .sidebar #reviewIndex{text-align:left;padding:11px 12px;font-size:13px}
+.drawer-layout .workspace-header{gap:16px}.drawer-layout .crumb{gap:14px;min-width:0}
+.drawer-layout .crumb>span{font-size:11px}.drawer-trigger{white-space:nowrap;padding:9px 13px;min-height:34px}
+.drawer-layout .problem-heading{padding:18px 4px 22px}.drawer-layout .statement{width:39%}
+.drawer-layout .editor-toolbar{height:52px;flex-shrink:0;gap:10px}.drawer-layout .editor-tabs{min-width:0}
+.drawer-layout .editor-toolbar .language{display:none}.drawer-layout .editor-actions{padding:12px 16px;gap:9px}
+.drawer-layout .editor-actions #run kbd{display:none}.drawer-layout #learningTools{margin-left:auto;font-size:12px;padding:7px 10px;white-space:nowrap}
+.drawer-layout .editor-learning-tools{display:none}
+.library-drawer,.drawer-layout .learning-dialog{position:fixed;inset:12px auto 12px 12px;margin:0;width:360px;max-width:calc(100vw - 24px);height:calc(100dvh - 24px);max-height:none;padding:0;border:1px solid #ffffffc2;border-radius:24px;background:#f3f8fbeF;color:var(--ink);box-shadow:0 20px 70px #17324b30;overflow:hidden}
+.library-drawer[open]{display:flex;flex-direction:column;animation:library-enter 180ms cubic-bezier(.2,.8,.2,1)}
+.library-drawer::backdrop,.drawer-layout .learning-dialog::backdrop{background:#152b442b;backdrop-filter:none}
+.library-drawer>header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 20px 12px;flex-shrink:0}
+.library-drawer>header h2{font-size:17px;margin:0;font-weight:600}
+.library-drawer .library{display:flex!important;flex:1;min-height:0;border:0;border-radius:0;box-shadow:none;background:transparent!important;backdrop-filter:none;padding:12px 16px 0}
+.library-drawer .library>.liquid-host,.library-drawer .library::after{display:none}
+.library-drawer .library-heading{margin:0;padding:0 4px 14px}.library-drawer .library-heading h2{font-size:20px;margin:4px 0}
+.library-drawer .library-heading .eyebrow{display:none}.library-drawer .filter-strip{margin-top:0}
+.drawer-categories{margin-bottom:12px;border:1px solid #91a8be30;border-radius:12px;padding:10px 12px;font-size:12px;color:var(--muted)}
+.drawer-categories summary{cursor:pointer}.drawer-categories .categories{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:8px;max-height:175px;min-height:0}
+.drawer-categories .category{padding:7px 4px;font-size:11px}
+.drawer-layout .learning-dialog{inset:12px 12px 12px auto;width:min(500px,calc(100vw - 24px))}
+.drawer-layout .learning-dialog[open]{animation:learning-enter 180ms cubic-bezier(.2,.8,.2,1)}
+.drawer-layout .learning-dialog.is-comparing{width:min(1000px,calc(100vw - 24px))}
+.drawer-layout .learning-dialog header{padding:22px 24px 16px}.drawer-layout .learning-dialog h2{font-size:21px}
+.learning-switcher{display:flex;gap:5px;margin:0 20px 12px;padding:4px;background:#7895ad12;border-radius:12px;flex-shrink:0}
+.learning-switcher button{flex:1;padding:9px 8px;border-radius:9px;font-size:12px;color:var(--muted)}
+.learning-switcher button[aria-pressed=true]{background:#fff9;color:var(--ink);box-shadow:0 2px 8px #24374d0a}
+.drawer-layout .learning-body{padding-top:4px}.drawer-layout .learning-tools{gap:8px;font-size:11px}
+.drawer-layout .version-row{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;padding:12px}.drawer-layout .version-row small{grid-column:1/-1;margin:0;font-size:11px}
+.drawer-layout .code-version pre{max-height:50vh;font-size:12px}.drawer-layout .review-row{flex-wrap:wrap}
+.drawer-layout .test-dock{flex:0 0 auto;margin-top:12px;max-height:38vh;border:1px solid #c4d4e394;border-radius:18px;background:#f4f9fbeF;overflow:auto;box-shadow:0 5px 22px #15334d0b;animation:test-enter 160ms ease-out}
+.drawer-layout .test-dock[hidden]{display:none!important}.drawer-layout .test-header{padding:10px 16px;gap:12px;height:auto;min-height:42px;flex-wrap:nowrap}
+.drawer-layout .test-header #testStatus{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left}
+.drawer-layout .test-header #testChevron{display:none}.drawer-layout .test-header button{white-space:nowrap}
+.drawer-layout .test-content{height:clamp(110px,18vh,170px);padding:0 16px 14px;gap:14px}.drawer-layout .test-content textarea,.drawer-layout .test-content pre{font-size:12px;line-height:1.6}
+.drawer-layout .workspace-footer{margin-top:8px}.drawer-layout .has-test-result{background:#8bb9c925}
+.dark .library-drawer,.dark.drawer-layout .learning-dialog{background:#1b2d42f7;border-color:#9ab3cc40;color:#deebf8}
+.dark .learning-switcher button[aria-pressed=true]{background:#aecbe21c;color:#deebf8}.dark.drawer-layout .test-dock{background:#1b2e42f5;border-color:#9ab3cc32}
+@keyframes library-enter{from{transform:translateX(-24px);opacity:.5}to{transform:translateX(0);opacity:1}}
+@keyframes learning-enter{from{transform:translateX(24px);opacity:.5}to{transform:translateX(0);opacity:1}}
+@keyframes test-enter{from{transform:translateY(8px);opacity:.5}to{transform:translateY(0);opacity:1}}
+@media(max-width:1150px){.drawer-layout .app-shell{grid-template-columns:176px minmax(0,1fr);gap:14px;padding:14px}.drawer-layout .sidebar{padding:20px 8px 12px}.drawer-layout .crumb>span{display:none}.drawer-layout .statement{width:37%}.drawer-layout .editor-tabs button{padding-left:10px;padding-right:10px}.drawer-layout .editor-actions{padding:10px;gap:6px}.drawer-layout .editor-actions button{font-size:12px}.drawer-layout .test-header{gap:8px}.drawer-layout .test-header #testStatus{font-size:10px}}
+@media(max-height:750px){.drawer-layout .brand{margin-bottom:16px}.drawer-layout .sidebar-bottom{padding-top:10px}.drawer-layout .problem-heading{padding:10px 4px 14px}.drawer-layout .test-dock{max-height:33vh}.drawer-layout .test-content{height:110px}.drawer-layout .workspace-footer>span{max-width:52%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.drawer-layout.focus-mode .app-shell{grid-template-columns:minmax(0,1fr)}
+@media(prefers-reduced-motion:reduce){.library-drawer[open],.drawer-layout .learning-dialog[open],.drawer-layout .test-dock{animation:none}}
+
+.drawer-layout .nav-list{scrollbar-width:thin;scrollbar-color:#8fa9be55 transparent}.drawer-layout .nav-item{white-space:nowrap}.drawer-layout .test-dock{background:#f2f7fa}.dark.drawer-layout .test-dock{background:#1b2e42}
+@supports(corner-shape:squircle){.library-drawer,.drawer-layout .learning-dialog,.drawer-layout .test-dock{corner-shape:squircle}}

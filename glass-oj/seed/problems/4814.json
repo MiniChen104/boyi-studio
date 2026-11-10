@@ -1,0 +1,52 @@
+{
+  "id": "4814",
+  "title": "亲和数判断",
+  "tags": [
+    "蓝桥等考",
+    "函数"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4814",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>约数，又称因数。整数 <span class=\"katex math inline\">a</span> 除以整数 <span class=\"katex math inline\">b</span> ( <span class=\"katex math inline\">b≠0</span> ) 除得的商正好是整数而没有余数，就说 <span class=\"katex math inline\">b</span> 是 <span class=\"katex math inline\">a</span> 的约数。</p>\n<p>亲和数，指两个正整数 <span class=\"katex math inline\">a</span> 、<span class=\"katex math inline\">b</span>，<span class=\"katex math inline\">a</span> 的全部约数（本身除外）之和等于 <span class=\"katex math inline\">b</span> ；并且 <span class=\"katex math inline\">b</span> 的全部约数（本身除外）之和等于 <span class=\"katex math inline\">a</span> 。\n例如：<span class=\"katex math inline\">a = 220</span> ，<span class=\"katex math inline\">b = 284</span> ，是一对亲和数，因为：\n<span class=\"katex math inline\">220</span> 的约数（本身除外）之和 <span class=\"katex math inline\">= 1 + 2 + 4 + 5 + 10 + 11 + 20 + 22 + 44 + 55 + 110 = 284</span>\n<span class=\"katex math inline\">284</span> 的约数（本身除外）之和 <span class=\"katex math inline\">= 1 + 2 + 4 + 71 + 142 = 220</span> </p>\n<p>给定 <span class=\"katex math inline\">n</span> 对正整数，判断每对数是否为亲和数。</p>\n</div>            </div>",
+      "text": "约数，又称因数。整数 a 除以整数 b ( b≠0 ) 除得的商正好是整数而没有余数，就说 b 是 a 的约数。\n亲和数，指两个正整数 a 、b，a 的全部约数（本身除外）之和等于 b ；并且 b 的全部约数（本身除外）之和等于 a 。\n例如：a = 220 ，b = 284 ，是一对亲和数，因为：\n220 的约数（本身除外）之和 = 1 + 2 + 4 + 5 + 10 + 11 + 20 + 22 + 44 + 55 + 110 = 284\n284 的约数（本身除外）之和 = 1 + 2 + 4 + 71 + 142 = 220 \n给定 n 对正整数，判断每对数是否为亲和数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入第一行包含一个整数 <span class=\"katex math inline\">n</span>，表示待判断的正整数对的数量。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行，每行包含两个正整数 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>（以空格分隔），表示一对待判断的正整数。</p>\n</div>            </div>",
+      "text": "输入第一行包含一个整数 n，表示待判断的正整数对的数量。\n接下来的 n 行，每行包含两个正整数 a 和 b（以空格分隔），表示一对待判断的正整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每对输入的正整数，输出一行。如果这对数是亲和数，则输出 &quot; <code>1</code> &quot;；否则，输出 &quot; <code>0</code> &quot;（不包括引号）。确保每对数的判断结果独占一行。</p>\n</div>            </div>",
+      "text": "对于每对输入的正整数，输出一行。如果这对数是亲和数，则输出 \" 1 \"；否则，输出 \" 0 \"（不包括引号）。确保每对数的判断结果独占一行。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n220 284\r\n120 160\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n220 284\r\n120 160\r\n\n                        \n                        \n                            输出\n                            1\r\n0"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">函数</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考函数"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n220 284\r\n120 160\r\n",
+      "output": "1\r\n0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "76",
+    "通过人数": "49",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:35"
+}

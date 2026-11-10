@@ -1,0 +1,57 @@
+{
+  "id": "2364",
+  "title": "数的划分 [NOIP2001 提高组]",
+  "tags": [
+    "深搜优化",
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2364",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>将整数 <span class=\"katex math inline\">n</span> 分成 <span class=\"katex math inline\">k</span> 份，且每份不能为空，任意两个方案不相同（不考虑顺序）。</p>\n<p>例如：<span class=\"katex math inline\">n=7</span>，<span class=\"katex math inline\">k=3</span>，下面三种分法被认为是相同的，<span class=\"katex math inline\">1,1,5</span>，<span class=\"katex math inline\">1,5,1</span>，<span class=\"katex math inline\">5,1,1</span>。</p>\n<p>问有多少种不同的分法。</p>\n</div>            </div>",
+      "text": "将整数 n 分成 k 份，且每份不能为空，任意两个方案不相同（不考虑顺序）。\n例如：n=7，k=3，下面三种分法被认为是相同的，1,1,5，1,5,1，5,1,1。\n问有多少种不同的分法。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个整数<span class=\"katex math inline\">n,k</span> （<span class=\"katex math inline\">6 &lt; n \\le 200</span>，<span class=\"katex math inline\">2  \\le k  \\le  6</span>），中间用单个空格隔开。</p>\n</div>            </div>",
+      "text": "两个整数n,k （6 < n \\le 200，2  \\le k  \\le  6），中间用单个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">1</span> 个整数，即不同的分法。</p>\n</div>            </div>",
+      "text": "1 个整数，即不同的分法。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7 3\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<p>四种分法为：<span class=\"katex math inline\">1,1,5</span>，<span class=\"katex math inline\">1,2,4</span>，<span class=\"katex math inline\">1,3,3</span>，<span class=\"katex math inline\">2,2,3</span>。</p>\n<p><strong>【题目来源】</strong></p>\n<p>NOIP 2001 提高组第二题</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 解释\n四种分法为：1,1,5，1,2,4，1,3,3，2,2,3。\n【题目来源】\nNOIP 2001 提高组第二题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">深搜优化</span><span class=\"label label-warning\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "深搜优化动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7 3",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "989",
+    "通过人数": "718",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:31"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "3379",
+  "title": "排雷",
+  "tags": [
+    "月赛",
+    "26年3月",
+    "反悔贪心"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3379",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">A</span> 正在玩一个新款的排雷游戏。</p>\n<p>这款游戏在界面上共有 <span class=\"katex math inline\">N</span> 颗地雷。拆除第 <span class=\"katex math inline\">i</span> 颗地雷需要 <span class=\"katex math inline\">C_i</span> 秒的时间，如果<strong>从游戏开始计时到第 <span class=\"katex math inline\">T_i</span> 秒结束</strong>（即：秒表已经到了第 <span class=\"katex math inline\">T_i+1</span> 秒），第 <span class=\"katex math inline\">i</span> 颗地雷还未拆除，该地雷会立刻爆炸。</p>\n<p>紧张的游戏开始了，请你帮小 <span class=\"katex math inline\">A</span> 计算出，如果他合理安排拆除地雷的顺序，<strong>最多</strong>能拆除多少个地雷？</p>\n</div>            </div>",
+      "text": "小 A 正在玩一个新款的排雷游戏。\n这款游戏在界面上共有 N 颗地雷。拆除第 i 颗地雷需要 C_i 秒的时间，如果从游戏开始计时到第 T_i 秒结束（即：秒表已经到了第 T_i+1 秒），第 i 颗地雷还未拆除，该地雷会立刻爆炸。\n紧张的游戏开始了，请你帮小 A 计算出，如果他合理安排拆除地雷的顺序，最多能拆除多少个地雷？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行输入一个整数 <span class=\"katex math inline\">N</span>。</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行输入 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">C_i</span> 和 <span class=\"katex math inline\">T_i</span> ，含义如题所述。</p>\n<p>本题假设如果小 <span class=\"katex math inline\">A</span> 在第 <span class=\"katex math inline\">X</span> 秒完成某地雷的拆除，会立刻在第 <span class=\"katex math inline\">X+1</span> 秒拆除下一个地雷，不会浪费任何合适时间。</p>\n</div>            </div>",
+      "text": "第 1 行输入一个整数 N。\n接下来 N 行，每行输入 2 个整数 C_i 和 T_i ，含义如题所述。\n本题假设如果小 A 在第 X 秒完成某地雷的拆除，会立刻在第 X+1 秒拆除下一个地雷，不会浪费任何合适时间。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出小 <span class=\"katex math inline\">A</span> 最多能拆除地雷的数量。</p>\n</div>            </div>",
+      "text": "输出小 A 最多能拆除地雷的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n90 210\r\n2100 3500\r\n1000 1250\r\n180 1200\r\n800 3800</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10\r\n9 17\r\n24 32\r\n30 38\r\n10 18\r\n12 20\r\n15 23\r\n19 27\r\n37 45\r\n45 53\r\n50 60</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>12\r\n40 100\r\n30 120\r\n80 150\r\n25 200\r\n60 220\r\n120 300\r\n50 350\r\n90 400\r\n200 500\r\n70 550\r\n150 600\r\n110 800</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>9</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n90 210\r\n2100 3500\r\n1000 1250\r\n180 1200\r\n800 3800\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                10\r\n9 17\r\n24 32\r\n30 38\r\n10 18\r\n12 20\r\n15 23\r\n19 27\r\n37 45\r\n45 53\r\n50 60\n                            \n                            \n                                输出\n                                2\n                            \n                        \n                                                    \n                                输入\n                                12\r\n40 100\r\n30 120\r\n80 150\r\n25 200\r\n60 220\r\n120 300\r\n50 350\r\n90 400\r\n200 500\r\n70 550\r\n150 600\r\n110 800\n                            \n                            \n                                输出\n                                9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<p>共有 <span class=\"katex math inline\">5</span> 颗地雷，按照以下顺序，可以拆除 <span class=\"katex math inline\">4</span> 颗。按照输入的顺序为 <span class=\"katex math inline\">5</span> 颗地雷编号为 <span class=\"katex math inline\">1 \\sim 5</span>。</p>\n<ol><li><p>耗时 <span class=\"katex math inline\">90</span> 秒排除第 <span class=\"katex math inline\">1</span> 颗地雷。</p>\n</li>\n<li><p>接下来耗时 <span class=\"katex math inline\">180</span> 秒排除第 <span class=\"katex math inline\">4</span> 颗地雷，此时共耗费时间 <span class=\"katex math inline\">270</span> 秒。</p>\n</li>\n<li><p>接下来耗时 <span class=\"katex math inline\">2100</span> 秒排除第 <span class=\"katex math inline\">2</span> 颗地雷，此时共耗费时间 <span class=\"katex math inline\">2370</span> 秒。</p>\n</li>\n<li><p>接下来耗时 <span class=\"katex math inline\">800</span> 秒排除第 <span class=\"katex math inline\">5</span> 颗地雷，此时共耗费时间 <span class=\"katex math inline\">3170</span> 秒。</p>\n</li>\n</ol><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">1 \\le N \\le 800</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 \\le N \\le 1.5 \\times 10^5</span>，<span class=\"katex math inline\">1 \\le C_i \\lt T_i \\lt 2^{31}</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例 1 解释\n共有 5 颗地雷，按照以下顺序，可以拆除 4 颗。按照输入的顺序为 5 颗地雷编号为 1 \\sim 5。\n耗时 90 秒排除第 1 颗地雷。\n\n接下来耗时 180 秒排除第 4 颗地雷，此时共耗费时间 270 秒。\n\n接下来耗时 2100 秒排除第 2 颗地雷，此时共耗费时间 2370 秒。\n\n接下来耗时 800 秒排除第 5 颗地雷，此时共耗费时间 3170 秒。\n\n数据范围\n对于 30\\% 的数据，1 \\le N \\le 800。\n对于 100\\% 的数据，1 \\le N \\le 1.5 \\times 10^5，1 \\le C_i \\lt T_i \\lt 2^{31}。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">月赛</span><span class=\"label label-warning\">26年3月</span><span class=\"label label-info\">反悔贪心</span></span></p>\n</div>                </div>",
+      "text": "月赛26年3月反悔贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n90 210\r\n2100 3500\r\n1000 1250\r\n180 1200\r\n800 3800",
+      "output": "4"
+    },
+    {
+      "input": "10\r\n9 17\r\n24 32\r\n30 38\r\n10 18\r\n12 20\r\n15 23\r\n19 27\r\n37 45\r\n45 53\r\n50 60",
+      "output": "2"
+    },
+    {
+      "input": "12\r\n40 100\r\n30 120\r\n80 150\r\n25 200\r\n60 220\r\n120 300\r\n50 350\r\n90 400\r\n200 500\r\n70 550\r\n150 600\r\n110 800",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "614",
+    "通过人数": "245",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:58"
+}

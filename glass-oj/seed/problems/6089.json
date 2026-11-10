@@ -1,0 +1,58 @@
+{
+  "id": "6089",
+  "title": "礼盒排序",
+  "tags": [
+    "结构体",
+    "GESP四级",
+    "26年3月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6089",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>商店推出了许多礼盒，每个礼盒中包含 <span class=\"katex math inline\">k</span> 件商品，每件商品都有一个价格。</p>\n<p>现在需要对这些礼盒进行排序，排序规则如下：</p>\n<ol><li>先按<strong>礼盒总价格从小到大</strong>排序；</li>\n<li>如果总价格相同，按礼盒中<strong>最贵商品的价格从小到大</strong>排序；</li>\n<li>如果仍然相同，按礼盒中<strong>最便宜商品的价格从小到大</strong>排序；</li>\n<li>如果仍然相同，按<strong>礼盒编号从小到大</strong>排序。</li>\n</ol><p>请输出排序后的礼盒编号。</p>\n</div>            </div>",
+      "text": "商店推出了许多礼盒，每个礼盒中包含 k 件商品，每件商品都有一个价格。\n现在需要对这些礼盒进行排序，排序规则如下：\n先按礼盒总价格从小到大排序；\n如果总价格相同，按礼盒中最贵商品的价格从小到大排序；\n如果仍然相同，按礼盒中最便宜商品的价格从小到大排序；\n如果仍然相同，按礼盒编号从小到大排序。\n请输出排序后的礼盒编号。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">k</span>，分别表示礼盒数量和每个礼盒中商品的数量。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行包含 <span class=\"katex math inline\">k</span> 个整数，第 <span class=\"katex math inline\">i</span> 行表示第 <span class=\"katex math inline\">i</span> 个礼盒中各商品的价格。</p>\n</div>            </div>",
+      "text": "第一行包含两个整数 n 和 k，分别表示礼盒数量和每个礼盒中商品的数量。\n接下来 n 行，每行包含 k 个整数，第 i 行表示第 i 个礼盒中各商品的价格。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含排序后的礼盒编号（编号从 <span class=\"katex math inline\">1</span> 开始），用空格分隔。</p>\n</div>            </div>",
+      "text": "输出一行，包含排序后的礼盒编号（编号从 1 开始），用空格分隔。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 3\r\n3 5 2\r\n4 1 5\r\n2 2 4\r\n3 4 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3 4 2 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 3\r\n3 5 2\r\n4 1 5\r\n2 2 4\r\n3 4 3\n                        \n                        \n                            输出\n                            3 4 2 1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<table><thead><tr><th>编号</th><th>商品价格</th><th>总价</th><th>最大值</th><th>最小值</th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1</span></td><td><span class=\"katex math inline\">3\\ 5\\ 2</span></td><td><span class=\"katex math inline\">10 </span></td><td><span class=\"katex math inline\">5</span></td><td><span class=\"katex math inline\">2</span></td></tr><tr><td><span class=\"katex math inline\">2</span></td><td><span class=\"katex math inline\">4\\ 1\\ 5</span></td><td><span class=\"katex math inline\">10</span></td><td><span class=\"katex math inline\">5</span></td><td><span class=\"katex math inline\">1</span></td></tr><tr><td><span class=\"katex math inline\">3</span></td><td><span class=\"katex math inline\">2\\ 2\\ 4</span></td><td><span class=\"katex math inline\">8</span></td><td><span class=\"katex math inline\">4</span></td><td><span class=\"katex math inline\">2</span></td></tr><tr><td><span class=\"katex math inline\">4</span></td><td><span class=\"katex math inline\">3\\ 4\\ 3</span></td><td><span class=\"katex math inline\">10</span></td><td><span class=\"katex math inline\">4</span></td><td><span class=\"katex math inline\">3</span></td></tr></tbody></table><p>排序过程:</p>\n<ol><li>按总价排序，<span class=\"katex math inline\">3</span> 号礼盒总价最小；</li>\n<li>其余总价均为 <span class=\"katex math inline\">10</span>，再按最大值排序，<span class=\"katex math inline\">4</span> 号最大值更小；</li>\n<li><span class=\"katex math inline\">1</span> 号和 <span class=\"katex math inline\">2</span> 号最大值相同，再按最小值排序，<span class=\"katex math inline\">2</span> 号更小。</li>\n</ol><p>最终顺序为：<span class=\"katex math inline\">3 \\ 4 \\ 2 \\ 1</span></p>\n<h4>数据范围</h4>\n<p>保证 <span class=\"katex math inline\">1 \\leq n \\leq 10^3</span>，<span class=\"katex math inline\">1 \\leq k \\leq 10</span>，<span class=\"katex math inline\">1 \\leq</span> 商品价格 <span class=\"katex math inline\">\\leq 10^4</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例解释\n编号商品价格总价最大值最小值13\\ 5\\ 210 5224\\ 1\\ 5105132\\ 2\\ 484243\\ 4\\ 31043排序过程:\n按总价排序，3 号礼盒总价最小；\n其余总价均为 10，再按最大值排序，4 号最大值更小；\n1 号和 2 号最大值相同，再按最小值排序，2 号更小。\n最终顺序为：3 \\ 4 \\ 2 \\ 1\n数据范围\n保证 1 \\leq n \\leq 10^3，1 \\leq k \\leq 10，1 \\leq 商品价格 \\leq 10^4。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">结构体</span><span class=\"label label-warning\">GESP四级</span><span class=\"label label-info\">26年3月</span></span></p>\n</div>                </div>",
+      "text": "结构体GESP四级26年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 3\r\n3 5 2\r\n4 1 5\r\n2 2 4\r\n3 4 3",
+      "output": "3 4 2 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "656",
+    "通过人数": "404",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:59"
+}

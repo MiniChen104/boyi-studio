@@ -1,0 +1,61 @@
+{
+  "id": "1337",
+  "title": "求花坛的面积",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1337",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>龙湖校区有一个圆形花坛，量得花坛周围的篱笆长是 <span class=\"katex math inline\">x</span> 米，请问该花坛的面积是多少平方米？（假设 <span class=\"katex math inline\">π=3.14</span>）。（5.2.99）</p>\n</div>            </div>",
+      "text": "龙湖校区有一个圆形花坛，量得花坛周围的篱笆长是 x 米，请问该花坛的面积是多少平方米？（假设 π=3.14）。（5.2.99）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个小数 <span class=\"katex math inline\">x</span>。</p>\n</div>            </div>",
+      "text": "一个小数 x。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>花坛的面积（结果保留 <span class=\"katex math inline\">2</span> 位小数）</p>\n</div>            </div>",
+      "text": "花坛的面积（结果保留 2 位小数）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>18.84</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>28.26</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            18.84\n                        \n                        \n                            输出\n                            28.26"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>圆的面积和周长求解公式分别如下；</p>\n<p>圆的面积 <span class=\"katex math inline\">S = π \\times </span> 半径  <span class=\"katex math inline\">\\times</span> 半径；（ <span class=\"katex math inline\">π</span> 读作 <span class=\"katex math inline\">pài</span> ， <span class=\"katex math inline\">π = 3.1415926 \\dots </span>，在具体的题目中 <span class=\"katex math inline\">π</span> 的值精确到小数点后多少位，取决于具体的题目）。</p>\n<p>圆的周长 <span class=\"katex math inline\">C = π \\times 2 \\times </span> 半径。</p>\n</div>\n\n                    \n                </div>",
+      "text": "圆的面积和周长求解公式分别如下；\n圆的面积 S = π \\times  半径  \\times 半径；（ π 读作 pài ， π = 3.1415926 \\dots ，在具体的题目中 π 的值精确到小数点后多少位，取决于具体的题目）。\n圆的周长 C = π \\times 2 \\times  半径。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "18.84",
+      "output": "28.26"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "43810",
+    "通过人数": "24976",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:02"
+}

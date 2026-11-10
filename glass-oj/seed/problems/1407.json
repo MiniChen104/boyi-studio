@@ -1,0 +1,56 @@
+{
+  "id": "1407",
+  "title": "图像相似度",
+  "tags": [
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1407",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出两幅相同大小的黑白图像（用 <span class=\"katex math inline\">0-1</span> 矩阵表示，<span class=\"katex math inline\">0</span> 代表白色，<span class=\"katex math inline\">1</span> 代表黑色）表示，求它们的相似度。</p>\n<p>说明：若两幅图像在相同位置上的像素点颜色的值相同，则称它们在该位置具有相同的像素点。两幅图像的相似度定义为相同像素点数占总像素点数的百分比。</p>\n<p>比如：输入</p>\n<pre><code>2 2\n1 0\n0 1\n1 1\n1 1\n</code></pre>\n<p>数据解释：第一行的 <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">2</span> 表示图像的尺寸是 <span class=\"katex math inline\">2</span> 行，每行 <span class=\"katex math inline\">2</span> 个整数；接下来的两行数据 <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">0</span> 和 <span class=\"katex math inline\">0</span> <span class=\"katex math inline\">1</span> 表示第一幅图片的数值，再接下来两行数据 <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">1</span> 表示第二幅图片的数值；</p>\n<p>从数据上可以看出，两幅图片有 <span class=\"katex math inline\">2</span> 个数是相等的，因此两幅图片的相似度为 <span class=\"katex math inline\">50\\%</span>，实际输出不需要输出百分号，结果保留 <span class=\"katex math inline\">2</span> 位小数，因此实际输出 <span class=\"katex math inline\">50.00</span> 。</p>\n</div>            </div>",
+      "text": "给出两幅相同大小的黑白图像（用 0-1 矩阵表示，0 代表白色，1 代表黑色）表示，求它们的相似度。\n说明：若两幅图像在相同位置上的像素点颜色的值相同，则称它们在该位置具有相同的像素点。两幅图像的相似度定义为相同像素点数占总像素点数的百分比。\n比如：输入\n2 2\n1 0\n0 1\n1 1\n1 1\n\n数据解释：第一行的 2 2 表示图像的尺寸是 2 行，每行 2 个整数；接下来的两行数据 1 0 和 0 1 表示第一幅图片的数值，再接下来两行数据 1 1 和 1 1 表示第二幅图片的数值；\n从数据上可以看出，两幅图片有 2 个数是相等的，因此两幅图片的相似度为 50\\%，实际输出不需要输出百分号，结果保留 2 位小数，因此实际输出 50.00 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> ，表示图像的行数和列数，中间用单个空格隔开。（<span class=\"katex math inline\">1 \\le n,m \\le 100</span>）</p>\n<p>之后 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">m</span> 个整数 <span class=\"katex math inline\">0</span> 或 <span class=\"katex math inline\">1</span> ，表示第一幅黑白图像上各像素点的颜色。相邻两个数之间用单个空格隔开。</p>\n<p>之后 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">m</span> 个整数 <span class=\"katex math inline\">0</span> 或 <span class=\"katex math inline\">1</span> ，表示第二幅黑白图像上各像素点的颜色。相邻两个数之间用单个空格隔开。</p>\n</div>            </div>",
+      "text": "第一行包含两个整数 n 和 m ，表示图像的行数和列数，中间用单个空格隔开。（1 \\le n,m \\le 100）\n之后 n 行，每行 m 个整数 0 或 1 ，表示第一幅黑白图像上各像素点的颜色。相邻两个数之间用单个空格隔开。\n之后 n 行，每行 m 个整数 0 或 1 ，表示第二幅黑白图像上各像素点的颜色。相邻两个数之间用单个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个小数，表示相似度（以百分比的形式给出，但百分号不需要显示），精确到小数点后两位。</p>\n</div>            </div>",
+      "text": "一个小数，表示相似度（以百分比的形式给出，但百分号不需要显示），精确到小数点后两位。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3\r\n1 0 1\r\n0 0 1\r\n1 1 0\r\n1 1 0\r\n0 0 1\r\n0 0 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>44.44</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\r\n1 0 1\r\n0 0 1\r\n1 1 0\r\n1 1 0\r\n0 0 1\r\n0 0 1\n                        \n                        \n                            输出\n                            44.44"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二维数组</p>\n</div>                </div>",
+      "text": "二维数组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3\r\n1 0 1\r\n0 0 1\r\n1 1 0\r\n1 1 0\r\n0 0 1\r\n0 0 1",
+      "output": "44.44"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "15072",
+    "通过人数": "10716",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:19:03"
+}

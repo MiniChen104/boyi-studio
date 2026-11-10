@@ -1,0 +1,58 @@
+{
+  "id": "6501",
+  "title": "建设能量站",
+  "tags": [
+    "詹天佑杯高年级组",
+    "二分答案",
+    "贪心"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6501",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一条轨道上均匀分布着 <span class=\"katex math inline\">n</span> 个能量基地，按顺序依次编号为 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span>。每个能量基地由于地形因素，只可建设一个能量\n站，其能量值为 <span class=\"katex math inline\">a_i</span>。</p>\n<p>现在需要从这 <span class=\"katex math inline\">n</span> 个能量基地中选取 <span class=\"katex math inline\">m</span> 个来建立能量站，且需满足任意两个被选中的能量站之间的距离大于等于 <span class=\"katex math inline\">k</span>。这里，两个能量站之间的距离定义为它们编号的绝对差值。</p>\n<p>当 <span class=\"katex math inline\">m</span> 个能量站建设完成后，其使用价值定义为这 <span class=\"katex math inline\">m</span> 个能量站的能量值中的最小值。</p>\n<p>我们的目标是最大化这个使用价值。</p>\n</div>            </div>",
+      "text": "在一条轨道上均匀分布着 n 个能量基地，按顺序依次编号为 1 到 n。每个能量基地由于地形因素，只可建设一个能量\n站，其能量值为 a_i。\n现在需要从这 n 个能量基地中选取 m 个来建立能量站，且需满足任意两个被选中的能量站之间的距离大于等于 k。这里，两个能量站之间的距离定义为它们编号的绝对差值。\n当 m 个能量站建设完成后，其使用价值定义为这 m 个能量站的能量值中的最小值。\n我们的目标是最大化这个使用价值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入三个整数 <span class=\"katex math inline\">n,m,k</span>,分别表示能量基地的数量、需要建设的能量站数量以及能量站之间的最小距离要求。</p>\n<p>第二行输入 <span class=\"katex math inline\">n</span> 个整数<span class=\"katex math inline\">a_1,a_2,\\dots,a_n(1 \\le a \\le 10^9)</span>，表示每个能量基地可建设的能量站的能量值。</p>\n</div>            </div>",
+      "text": "第一行输入三个整数 n,m,k,分别表示能量基地的数量、需要建设的能量站数量以及能量站之间的最小距离要求。\n第二行输入 n 个整数a_1,a_2,\\dots,a_n(1 \\le a \\le 10^9)，表示每个能量基地可建设的能量站的能量值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示能够达到的最大使用价值。如果无法满足条件选取 <span class=\"katex math inline\">m</span> 个能量站，则输出 <span class=\"katex math inline\">0</span>。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示能够达到的最大使用价值。如果无法满足条件选取 m 个能量站，则输出 0。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 3 2\r\n9 6 4 7 2 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 3 2\r\n9 6 4 7 2 5\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 解释】</h4>\n<p>可以考虑选择第 <span class=\"katex math inline\">2、4、6</span>个能量基地来建设能量站，建设后得到的能量值分别为 <span class=\"katex math inline\">6、7、5</span>,此时使用价值为 <span class=\"katex math inline\">5</span>。</p>\n<h4>数据规模与提示</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据:<span class=\"katex math inline\">1 \\le n \\le 500,000,1 \\le m \\le n,k=1,1 \\le a \\le 1,000,000,000</span></p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据:<span class=\"katex math inline\">1 \\le n \\le 500,000,1 \\le m \\le n,1 \\le k \\le n,1 \\le a \\le 1,000,000,000</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 1 解释】\n可以考虑选择第 2、4、6个能量基地来建设能量站，建设后得到的能量值分别为 6、7、5,此时使用价值为 5。\n数据规模与提示\n对于 30\\% 的数据:1 \\le n \\le 500,000,1 \\le m \\le n,k=1,1 \\le a \\le 1,000,000,000\n对于 100\\% 的数据:1 \\le n \\le 500,000,1 \\le m \\le n,1 \\le k \\le n,1 \\le a \\le 1,000,000,000"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">詹天佑杯高年级组</span><span class=\"label label-warning\">二分答案</span><span class=\"label label-info\">贪心</span></span></p>\n</div>                </div>",
+      "text": "詹天佑杯高年级组二分答案贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 3 2\r\n9 6 4 7 2 5",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "2",
+    "通过人数": "2",
+    "金币数量": "2 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:31"
+}

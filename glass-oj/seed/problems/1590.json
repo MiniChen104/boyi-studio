@@ -1,0 +1,63 @@
+{
+  "id": "1590",
+  "title": "简单单词接龙",
+  "tags": [
+    "省赛",
+    "回溯",
+    "排列组合"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1590",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">n</span> 个单词（ <span class=\"katex math inline\">1≤n≤50</span> ），每个单词由 <span class=\"katex math inline\">2</span> 个小写字母组成，并约定第 <span class=\"katex math inline\">1</span> 个单词为龙头。</p>\n<p>例如：<span class=\"katex math inline\">n=8</span>。</p>\n<p><span class=\"katex math inline\">8</span> 个单词为：</p>\n<pre><code>aa\nac\nab\nde\nbh\nhk\ncd\naf\n</code></pre>\n<p>接龙的方法为前一个单词的第 <span class=\"katex math inline\">2</span> 个字母和后一个单词的第 <span class=\"katex math inline\">1</span> 个字符相同，此时，可接的方法有：</p>\n<p><code>aa-ac-cd-de</code> 长度为 <span class=\"katex math inline\">4</span> ，即龙上有 <span class=\"katex math inline\">4</span> 个单词。</p>\n<p>也可以接：</p>\n<p><code>aa-ab-bh-hk</code>，长度为 <span class=\"katex math inline\">4</span> 。</p>\n<p>还可以接：</p>\n<p><code>aa-af</code>，长度为 <span class=\"katex math inline\">2</span>。</p>\n<p>程序要求给出单词之后，求出最长龙的长度。</p>\n</div>            </div>",
+      "text": "有 n 个单词（ 1≤n≤50 ），每个单词由 2 个小写字母组成，并约定第 1 个单词为龙头。\n例如：n=8。\n8 个单词为：\naa\nac\nab\nde\nbh\nhk\ncd\naf\n\n接龙的方法为前一个单词的第 2 个字母和后一个单词的第 1 个字符相同，此时，可接的方法有：\naa-ac-cd-de 长度为 4 ，即龙上有 4 个单词。\n也可以接：\naa-ab-bh-hk，长度为 4 。\n还可以接：\naa-af，长度为 2。\n程序要求给出单词之后，求出最长龙的长度。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">n</span>。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">2</span> 个字母表示一个单词（单词字母间无空格）。</p>\n</div>            </div>",
+      "text": "第一行一个整数 n。\n接下来 n 行，每行 2 个字母表示一个单词（单词字母间无空格）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，即最长的接长度（即龙上单词的个数）。</p>\n</div>            </div>",
+      "text": "输出一个整数，即最长的接长度（即龙上单词的个数）。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7\r\naa\r\nac\r\nab\r\nde\r\nbh\r\nhk\r\ncd</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\r\naa\r\nac\r\nab\r\nde\r\nbh\r\nhk\r\ncd\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【来源】</strong></p>\n<p>2014江苏省青少年信息学奥林匹克竞赛复赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "【来源】\n2014江苏省青少年信息学奥林匹克竞赛复赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2014江苏省青少年信息学奥林匹克竞赛复赛</p>\n</div>                </div>",
+      "text": "2014江苏省青少年信息学奥林匹克竞赛复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">省赛</span><span class=\"label label-warning\">回溯</span><span class=\"label label-info\">排列组合</span></span></p>\n</div>                </div>",
+      "text": "省赛回溯排列组合"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7\r\naa\r\nac\r\nab\r\nde\r\nbh\r\nhk\r\ncd",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5288",
+    "通过人数": "2142",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:21:31"
+}

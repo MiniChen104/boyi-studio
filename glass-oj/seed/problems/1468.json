@@ -1,0 +1,56 @@
+{
+  "id": "1468",
+  "title": "小鱼的航程",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1468",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一只小鱼，它上午游泳 <span class=\"katex math inline\">150</span> 公里，下午游泳 <span class=\"katex math inline\">100</span> 公里，晚上和周末都休息（实行双休日)，假设从周 <span class=\"katex math inline\">x(1 \\le x \\le 7)</span> 开始算起，请问这样过了 <span class=\"katex math inline\">n</span> 天以后，小鱼一共累计游泳了多少公里呢？</p>\n</div>            </div>",
+      "text": "有一只小鱼，它上午游泳 150 公里，下午游泳 100 公里，晚上和周末都休息（实行双休日)，假设从周 x(1 \\le x \\le 7) 开始算起，请问这样过了 n 天以后，小鱼一共累计游泳了多少公里呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个整数 <span class=\"katex math inline\">x</span> , <span class=\"katex math inline\">n</span> (表示从周 <span class=\"katex math inline\">x</span> 算起，经过 <span class=\"katex math inline\">n</span> 天，<span class=\"katex math inline\">x</span> 是 <span class=\"katex math inline\">1 \\sim 7</span> 之间的整数，<span class=\"katex math inline\">n</span> 是 <span class=\"katex math inline\">0 \\sim 1000</span> 之间的整数）。</p>\n</div>            </div>",
+      "text": "输入两个整数 x , n (表示从周 x 算起，经过 n 天，x 是 1 \\sim 7 之间的整数，n 是 0 \\sim 1000 之间的整数）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示小鱼累计游泳了多少公里。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示小鱼累计游泳了多少公里。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2000</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 10\n                        \n                        \n                            输出\n                            2000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 10",
+      "output": "2000"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "10349",
+    "通过人数": "4953",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:19:53"
+}

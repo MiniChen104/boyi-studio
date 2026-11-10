@@ -1,0 +1,56 @@
+{
+  "id": "2359",
+  "title": "数字串前缀匹配",
+  "tags": [
+    "Trie字典树"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2359",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定 <span class=\"katex math inline\">n</span> 个长度不超过 <span class=\"katex math inline\">10</span> 的数字串，问其中是否存在两个数字串 <span class=\"katex math inline\">S,T</span>，使得 <span class=\"katex math inline\">S</span> 是 <span class=\"katex math inline\">T</span> 的前缀。</p>\n<p>本题读入多组数据，请对每组数据进行计算并输出结果。（数据组数<span class=\"katex math inline\">≤40</span>，<span class=\"katex math inline\">n≤10</span><sup><span class=\"katex math inline\">4</span></sup>）</p>\n</div>            </div>",
+      "text": "给定 n 个长度不超过 10 的数字串，问其中是否存在两个数字串 S,T，使得 S 是 T 的前缀。\n本题读入多组数据，请对每组数据进行计算并输出结果。（数据组数≤40，n≤104）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">T</span>，表示数据组数。</p>\n<p>对于每组数据，第一行一个数 <span class=\"katex math inline\">n</span>，接下来 <span class=\"katex math inline\">n</span> 行输入 <span class=\"katex math inline\">n</span> 个数字串。</p>\n</div>            </div>",
+      "text": "第一行一个整数 T，表示数据组数。\n对于每组数据，第一行一个数 n，接下来 n 行输入 n 个数字串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组数据，<strong>若存在两个数字串 <span class=\"katex math inline\">S</span>，<span class=\"katex math inline\">T</span>，使得 <span class=\"katex math inline\">S</span> 是 <span class=\"katex math inline\">T</span> 的前缀，则输出 <code>NO</code> ，否则输出 <code>YES</code> </strong>。</p>\n</div>            </div>",
+      "text": "对于每组数据，若存在两个数字串 S，T，使得 S 是 T 的前缀，则输出 NO ，否则输出 YES 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n3\r\n911\r\n97625999\r\n91125426\r\n5\r\n113\r\n12340\r\n123440\r\n12345\r\n98346</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>NO\r\nYES</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n3\r\n911\r\n97625999\r\n91125426\r\n5\r\n113\r\n12340\r\n123440\r\n12345\r\n98346\n                        \n                        \n                            输出\n                            NO\r\nYES"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>POJ</p>\n</div>                </div>",
+      "text": "POJ"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">Trie字典树</span></span></p>\n</div>                </div>",
+      "text": "Trie字典树"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n3\r\n911\r\n97625999\r\n91125426\r\n5\r\n113\r\n12340\r\n123440\r\n12345\r\n98346",
+      "output": "NO\r\nYES"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "2072",
+    "通过人数": "797",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:27"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1132",
+  "title": "保留整数",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1132",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个字符串 <span class=\"katex math inline\">str1</span>，把其中的连续非数字的字符子串换成一个<code>*</code>，存入字符数组 <span class=\"katex math inline\">str2</span> 中，所有数字字符也必须依次存入 <span class=\"katex math inline\">str2</span> 中。输出 <span class=\"katex math inline\">str2</span>。</p>\n</div>            </div>",
+      "text": "输入一个字符串 str1，把其中的连续非数字的字符子串换成一个*，存入字符数组 str2 中，所有数字字符也必须依次存入 str2 中。输出 str2。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入为一行字符串 <span class=\"katex math inline\">str1</span>，其中可能包含空格。字符串长度不超过 <span class=\"katex math inline\">80</span> 个字符。</p>\n</div>            </div>",
+      "text": "输入为一行字符串 str1，其中可能包含空格。字符串长度不超过 80 个字符。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出处理好的字符串 <span class=\"katex math inline\">str2</span>。</p>\n</div>            </div>",
+      "text": "输出处理好的字符串 str2。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>$Ts!47&amp;*s456  a23* +B9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>*47*456*23*9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            $Ts!47&*s456  a23* +B9\n                        \n                        \n                            输出\n                            *47*456*23*9"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "$Ts!47&*s456  a23* +B9",
+      "output": "*47*456*23*9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "8419",
+    "通过人数": "4759",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:15:11"
+}

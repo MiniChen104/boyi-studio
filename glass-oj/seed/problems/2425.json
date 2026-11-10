@@ -1,0 +1,64 @@
+{
+  "id": "2425",
+  "title": "回文字符串（palindrome）",
+  "tags": [
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2425",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>回文字符串指的是对称字符串，也就是该字符串从左到右读和从右到左读得到的结果是一样的。</p>\n<p>给定任意的一个字符串，如果该字符串不是回文字符串，通过插入若干字符，可以将该字符串改造为回文字符串。</p>\n<p>给定一个字符串，请问该字符串最少插入多少个字符，可以使得该字符串成为回文字符串？</p>\n<p>比如：字符串 <code>ab3bd</code>，在插入 <span class=\"katex math inline\">2</span> 个字符后可以变成一个回文词：<code>dab3bad</code> 或 <code>adb3bda</code>。然而插入 <span class=\"katex math inline\">2</span> 个以下的字符，无法使其变成一个回文字符串。</p>\n</div>            </div>",
+      "text": "回文字符串指的是对称字符串，也就是该字符串从左到右读和从右到左读得到的结果是一样的。\n给定任意的一个字符串，如果该字符串不是回文字符串，通过插入若干字符，可以将该字符串改造为回文字符串。\n给定一个字符串，请问该字符串最少插入多少个字符，可以使得该字符串成为回文字符串？\n比如：字符串 ab3bd，在插入 2 个字符后可以变成一个回文词：dab3bad 或 adb3bda。然而插入 2 个以下的字符，无法使其变成一个回文字符串。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">3≤n≤5000</span>），表示给定字符串的长度。</p>\n<p>第二行为长度为 <span class=\"katex math inline\">n</span> 的不含空格的字符串。</p>\n</div>            </div>",
+      "text": "第一行为一个整数 n（3≤n≤5000），表示给定字符串的长度。\n第二行为长度为 n 的不含空格的字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数，要插入的最少字符数。</p>\n</div>            </div>",
+      "text": "一个数，要插入的最少字符数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\nab3bd</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>8\r\na2bZcba3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>20\r\nasbdczdgehfxgedc2bas</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>9</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\nab3bd\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                8\r\na2bZcba3\n                            \n                            \n                                输出\n                                3\n                            \n                        \n                                                    \n                                输入\n                                20\r\nasbdczdgehfxgedc2bas\n                            \n                            \n                                输出\n                                9"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">10\\%</span> 的数据，满足 <span class=\"katex math inline\">n=3</span>。</p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，满足 <span class=\"katex math inline\">n \\le 100</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，满足 <span class=\"katex math inline\">3 \\le n \\le 5000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 10\\% 的数据，满足 n=3。\n对于 30\\% 的数据，满足 n \\le 100。\n对于 100\\% 的数据，满足 3 \\le n \\le 5000。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\nab3bd",
+      "output": "2"
+    },
+    {
+      "input": "8\r\na2bZcba3",
+      "output": "3"
+    },
+    {
+      "input": "20\r\nasbdczdgehfxgedc2bas",
+      "output": "9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "539",
+    "通过人数": "368",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:13"
+}

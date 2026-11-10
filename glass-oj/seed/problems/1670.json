@@ -1,0 +1,56 @@
+{
+  "id": "1670",
+  "title": "象棋大赛",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1670",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>市里要组织象棋大赛，年龄在 <span class=\"katex math inline\">8 \\sim 30</span> 周岁之间的选手可以报名参赛。为了公平起见，大赛组委会将选手们分了青年组、少年组和儿童组，大赛组委会规定：</p>\n<p><span class=\"katex math inline\">15 \\sim 30</span> 周岁之间的选手为青年组选手、<span class=\"katex math inline\">11 \\sim 14</span> 周岁之间的选手为少年组选手、<span class=\"katex math inline\">8 \\sim 10</span> 周岁的选手为儿童组选手。</p>\n<p>请从键盘读入一名选手的年龄，输出他应该分到哪一组。</p>\n<p>青年组请输出 <code>qingnianzu</code> 、少年组请输出 <code>shaonianzu</code> 、儿童组请输出 <code>ertongzu</code> 。</p>\n</div>            </div>",
+      "text": "市里要组织象棋大赛，年龄在 8 \\sim 30 周岁之间的选手可以报名参赛。为了公平起见，大赛组委会将选手们分了青年组、少年组和儿童组，大赛组委会规定：\n15 \\sim 30 周岁之间的选手为青年组选手、11 \\sim 14 周岁之间的选手为少年组选手、8 \\sim 10 周岁的选手为儿童组选手。\n请从键盘读入一名选手的年龄，输出他应该分到哪一组。\n青年组请输出 qingnianzu 、少年组请输出 shaonianzu 、儿童组请输出 ertongzu 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数 <span class=\"katex math inline\">n</span> 代表某位选手的年龄（<span class=\"katex math inline\">n</span> 是 <span class=\"katex math inline\">8 \\sim 30</span> 之间的整数）。</p>\n</div>            </div>",
+      "text": "输入一个整数 n 代表某位选手的年龄（n 是 8 \\sim 30 之间的整数）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出该选手的分组。</p>\n</div>            </div>",
+      "text": "输出该选手的分组。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>28</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>qingnianzu</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            28\n                        \n                        \n                            输出\n                            qingnianzu"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "28",
+      "output": "qingnianzu"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "23798",
+    "通过人数": "16006",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:40"
+}

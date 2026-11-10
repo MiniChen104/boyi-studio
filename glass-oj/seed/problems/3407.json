@@ -1,0 +1,67 @@
+{
+  "id": "3407",
+  "title": "进制转换",
+  "tags": [
+    "进制转换",
+    "GESP四级",
+    "23年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3407",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">N</span> 进制数指的是逢 <span class=\"katex math inline\">N</span> 进一的计数制。例如，人们日常生活中大多使用十进制计数，而计算机底层则一般使用二进制。除此之外，八进制和十六进制在一些场合也是常用的计数制（十六进制中，一般使用字母 <code>A</code> 至 <code>F</code> 表示十至十五；本题中，十一进制到十五进制也是类似的）。</p>\n<p>在本题中，我们将给出 <span class=\"katex math inline\">N</span> 个不同进制的数。你需要分别把它们转换成十进制数。</p>\n</div>            </div>",
+      "text": "N 进制数指的是逢 N 进一的计数制。例如，人们日常生活中大多使用十进制计数，而计算机底层则一般使用二进制。除此之外，八进制和十六进制在一些场合也是常用的计数制（十六进制中，一般使用字母 A 至 F 表示十至十五；本题中，十一进制到十五进制也是类似的）。\n在本题中，我们将给出 N 个不同进制的数。你需要分别把它们转换成十进制数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行为一个十进制表示的整数 <span class=\"katex math inline\">N</span> 。</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行一个整数 <span class=\"katex math inline\">K</span> ，随后是一个空格，紧接着是一个 <span class=\"katex math inline\">K</span> 进制数，表示需要转换的数。</p>\n<p>保证所有 <span class=\"katex math inline\">K</span> 进制数均由数字和大写字母组成，且不以 <span class=\"katex math inline\">0</span> 开头。保证 <span class=\"katex math inline\">K</span> 进制数合法。</p>\n</div>            </div>",
+      "text": "输入的第一行为一个十进制表示的整数 N 。\n接下来 N 行，每行一个整数 K ，随后是一个空格，紧接着是一个 K 进制数，表示需要转换的数。\n保证所有 K 进制数均由数字和大写字母组成，且不以 0 开头。保证 K 进制数合法。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">N</span> 行，每一个十进制数，表示对应 <span class=\"katex math inline\">K</span> 进制数的十进制数值。</p>\n</div>            </div>",
+      "text": "输出 N 行，每一个十进制数，表示对应 K 进制数的十进制数值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n8 1362\r\n16 3F0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>754\r\n1008</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2\r\n2 11011\r\n10 123456789</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>27\r\n123456789</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n8 1362\r\n16 3F0\n                        \n                        \n                            输出\n                            754\r\n1008\n                        \n\n                                                    \n                                输入\n                                2\r\n2 11011\r\n10 123456789\n                            \n                            \n                                输出\n                                27\r\n123456789"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【提示】</p>\n<p>对于任意一个 <span class=\"katex math inline\"> L </span> 位 <span class=\"katex math inline\">K</span> 进制数，假设其最右边的数位为第 <span class=\"katex math inline\"> 0 </span> 位，最左边的数位为第 <span class=\"katex math inline\"> L-1 </span> 位，我们只需要将其第 <span class=\"katex math inline\">i</span> 位的数码乘以权值 <span class=\"katex math inline\">K^i</span>，再将每位的结果相加，即可得到原 <span class=\"katex math inline\">K</span> 进制数对应的十进制数。下面是两个例子：</p>\n<ol><li><p>八进制数 <span class=\"katex math inline\">1362</span> 对应的十进制数为 <span class=\"katex math inline\"> 1 \\times 8^3 + 3 \\times 8^2 + 6 \\times 8^1 + 2 \\times 8^0 = 754 </span>；</p>\n</li>\n<li><p>十六进制数 3F0 对应的十进制数为 <span class=\"katex math inline\"> 3 \\times 16^2 + 15 \\times 16^1 + 0 \\times 16^0 = 1008 </span>。</p>\n</li>\n</ol><p>【数据范围】</p>\n<ul><li><p>保证 <span class=\"katex math inline\">N \\leq 1000</span>；</p>\n</li>\n<li><p>保证 <span class=\"katex math inline\"> 2\\leq K \\leq 16</span>；</p>\n</li>\n<li><p>保证所有 <span class=\"katex math inline\">K</span> 进制数的位数不超过 <span class=\"katex math inline\">9</span>。</p>\n</li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "【提示】\n对于任意一个  L  位 K 进制数，假设其最右边的数位为第  0  位，最左边的数位为第  L-1  位，我们只需要将其第 i 位的数码乘以权值 K^i，再将每位的结果相加，即可得到原 K 进制数对应的十进制数。下面是两个例子：\n八进制数 1362 对应的十进制数为  1 \\times 8^3 + 3 \\times 8^2 + 6 \\times 8^1 + 2 \\times 8^0 = 754 ；\n\n十六进制数 3F0 对应的十进制数为  3 \\times 16^2 + 15 \\times 16^1 + 0 \\times 16^0 = 1008 。\n\n【数据范围】\n保证 N \\leq 1000；\n\n保证  2\\leq K \\leq 16；\n\n保证所有 K 进制数的位数不超过 9。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年9月四级</p>\n</div>                </div>",
+      "text": "GESP23年9月四级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">进制转换</span><span class=\"label label-warning\">GESP四级</span><span class=\"label label-info\">23年9月</span></span></p>\n</div>                </div>",
+      "text": "进制转换GESP四级23年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n8 1362\r\n16 3F0",
+      "output": "754\r\n1008"
+    },
+    {
+      "input": "2\r\n2 11011\r\n10 123456789",
+      "output": "27\r\n123456789"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1823",
+    "通过人数": "927",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:06"
+}

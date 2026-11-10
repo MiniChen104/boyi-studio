@@ -1,0 +1,63 @@
+{
+  "id": "2319",
+  "title": "采药（drug）",
+  "tags": [
+    "区赛",
+    "队列",
+    "双指针"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2319",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>辰辰是个天资聪颖的孩子，他的梦想是成为世界上最伟大的医师。为此，他想拜附近最有威望的医师为师。医师为了判断他的资质，给他出了一个难题。医师把他带到一个到处都是草药的山洞里对他说：“孩子，这个山洞里有一些不同的草药，采每\n一株都需要一些时间，每一株也有它自身的价值。我会给你一段时间，在这段时间里，<strong>你可以采到一些挨在一起的连续草药</strong>。如果你是一个聪明的孩子，你应该可以让采到的草药的总价值最大。”  </p>\n<p>如果你是辰辰，你能完成这个任务吗？</p>\n</div>            </div>",
+      "text": "辰辰是个天资聪颖的孩子，他的梦想是成为世界上最伟大的医师。为此，他想拜附近最有威望的医师为师。医师为了判断他的资质，给他出了一个难题。医师把他带到一个到处都是草药的山洞里对他说：“孩子，这个山洞里有一些不同的草药，采每\n一株都需要一些时间，每一株也有它自身的价值。我会给你一段时间，在这段时间里，你可以采到一些挨在一起的连续草药。如果你是一个聪明的孩子，你应该可以让采到的草药的总价值最大。”  \n如果你是辰辰，你能完成这个任务吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个整数 <span class=\"katex math inline\">T</span>（<span class=\"katex math inline\">1 ≤ T ≤ 5000000</span>）和 <span class=\"katex math inline\">M</span>（<span class=\"katex math inline\">1 ≤ M ≤ 100000</span>），用一个空格隔开，<span class=\"katex math inline\">T</span> 代表总共能够用来采药的时间，<span class=\"katex math inline\">M</span> 代表山洞里的草药的数目。  </p>\n<p>接下来的 <span class=\"katex math inline\">M</span> 行每行包括两个在 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">3000</span> 之间（包括 <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">3000</span>）的整数 <span class=\"katex math inline\">t_i</span>，<span class=\"katex math inline\">v_i</span>，分别表示采摘某株草药的时间和这株草药的价值。</p>\n</div>            </div>",
+      "text": "第一行有两个整数 T（1 ≤ T ≤ 5000000）和 M（1 ≤ M ≤ 100000），用一个空格隔开，T 代表总共能够用来采药的时间，M 代表山洞里的草药的数目。  \n接下来的 M 行每行包括两个在 1 到 3000 之间（包括 1 和 3000）的整数 t_i，v_i，分别表示采摘某株草药的时间和这株草药的价值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，这一行只包含一个整数，表示在规定的时间内，可以采到的连续草药的最大总价值。</p>\n</div>            </div>",
+      "text": "一行，这一行只包含一个整数，表示在规定的时间内，可以采到的连续草药的最大总价值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>70 3\r\n70 100\r\n69 1\r\n1 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>100</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            70 3\r\n70 100\r\n69 1\r\n1 2\n                        \n                        \n                            输出\n                            100"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><span class=\"katex math inline\">24\\%</span> 的数据，<span class=\"katex math inline\">M≤100</span>。  </p>\n<p><span class=\"katex math inline\">48\\%</span> 的数据，<span class=\"katex math inline\">M≤1000</span>。  </p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1 ≤ T≤ 5000000</span>，<span class=\"katex math inline\">1 ≤ M ≤ 100000</span>，<span class=\"katex math inline\">1 ≤ t_i，v_i ≤ 3000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "24\\% 的数据，M≤100。  \n48\\% 的数据，M≤1000。  \n100\\% 的数据，1 ≤ T≤ 5000000，1 ≤ M ≤ 100000，1 ≤ t_i，v_i ≤ 3000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2019 年武进区第 12 届程序设计比赛试题-小学组 T6</p>\n</div>                </div>",
+      "text": "2019 年武进区第 12 届程序设计比赛试题-小学组 T6"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">区赛</span><span class=\"label label-warning\">队列</span><span class=\"label label-info\">双指针</span></span></p>\n</div>                </div>",
+      "text": "区赛队列双指针"
+    }
+  ],
+  "samples": [
+    {
+      "input": "70 3\r\n70 100\r\n69 1\r\n1 2",
+      "output": "100"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1402",
+    "通过人数": "526",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:09"
+}

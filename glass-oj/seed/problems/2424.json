@@ -1,0 +1,52 @@
+{
+  "id": "2424",
+  "title": "买粮食",
+  "tags": [
+    "动态规划",
+    "背包"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2424",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">A</span> 学校的食堂来市场上采购粮食，他们准备了 <span class=\"katex math inline\">n</span> 元，市场上有 <span class=\"katex math inline\">m</span> 种不同的粮食，每种粮食都是袋装的，只能整袋购买；不同种类的粮食价格、重量、袋数有差异（也可能相同，比如：大米和小米，可以是同一个重量的包装）。</p>\n<p>请问：食堂以有限的资金，最多能购买到多少公斤的粮食。</p>\n</div>            </div>",
+      "text": "A 学校的食堂来市场上采购粮食，他们准备了 n 元，市场上有 m 种不同的粮食，每种粮食都是袋装的，只能整袋购买；不同种类的粮食价格、重量、袋数有差异（也可能相同，比如：大米和小米，可以是同一个重量的包装）。\n请问：食堂以有限的资金，最多能购买到多少公斤的粮食。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>本题有多组测试数据，第1行读入一个整数t代表测试数据的组数。<span class=\"katex math inline\">（t \\le 10）</span> </p>\n<p>对于每组测试数据，先读入两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> 。(<span class=\"katex math inline\">1 \\le n \\le 100</span>, <span class=\"katex math inline\">1 \\le m \\le 100</span>)  </p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行有 <span class=\"katex math inline\">3</span> 个整数 <span class=\"katex math inline\">x</span> , <span class=\"katex math inline\">y</span> , <span class=\"katex math inline\">z</span> ，分别代表每种粮食的价格、重量、袋数。\n<span class=\"katex math inline\">(1 \\le x \\le 20,1 \\le y \\le 200,1 \\le z \\le 20)</span>  </p>\n</div>            </div>",
+      "text": "本题有多组测试数据，第1行读入一个整数t代表测试数据的组数。（t \\le 10） \n对于每组测试数据，先读入两个整数 n 和 m 。(1 \\le n \\le 100, 1 \\le m \\le 100)  \n接下来 m 行，每行有 3 个整数 x , y , z ，分别代表每种粮食的价格、重量、袋数。\n(1 \\le x \\le 20,1 \\le y \\le 200,1 \\le z \\le 20)"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组测试数据，请输出能够购买粮食的最多重量，食堂准备的经费可能买不光所有的大米，经费可以不用完。每组输出占一行。</p>\n</div>            </div>",
+      "text": "对于每组测试数据，请输出能够购买粮食的最多重量，食堂准备的经费可能买不光所有的大米，经费可以不用完。每组输出占一行。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1\r\n42 6\r\n10 1 15\r\n19 79 5\r\n6 65 3\r\n8 82 6\r\n16 92 2\r\n17 28 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>441</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1\r\n42 6\r\n10 1 15\r\n19 79 5\r\n6 65 3\r\n8 82 6\r\n16 92 2\r\n17 28 3\n                        \n                        \n                            输出\n                            441"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span><span class=\"label label-warning\">背包</span></span></p>\n</div>                </div>",
+      "text": "动态规划背包"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1\r\n42 6\r\n10 1 15\r\n19 79 5\r\n6 65 3\r\n8 82 6\r\n16 92 2\r\n17 28 3",
+      "output": "441"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "499",
+    "通过人数": "200",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:32:12"
+}

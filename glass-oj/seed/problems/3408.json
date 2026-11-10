@@ -1,0 +1,66 @@
+{
+  "id": "3408",
+  "title": "变长编码",
+  "tags": [
+    "GESP四级",
+    "位运算",
+    "23年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3408",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明刚刚学习了三种整数编码方式：原码、反码、补码，并了解到计算机存储整数通常使用补码。但他总是觉得，生活中很少用到 <span class=\"katex math inline\">2^{31} - 1</span> 这么大的数，生活中常用的 <span class=\"katex math inline\">0</span>~<span class=\"katex math inline\">100</span> 这种数也同样需要用 <span class=\"katex math inline\">4</span> 个字节的补码表示，太浪费了些。热爱学习的小明通过搜索，发现了一种正整数的变长编码方式。这种编码方式的规则如下：</p>\n<ol><li><p>对于给定的正整数，首先将其表达为二进制形式。例如，(0){10} = (0){2} ，(926){10} = (1110011110){2} 。</p>\n</li>\n<li><p>将二进制数从低位到高位切分成每组<span class=\"katex math inline\">7</span> bit，不足 <span class=\"katex math inline\">7</span> bit的在高位用 <span class=\"katex math inline\">0</span> 填补。例如，(0){2} 变为 0000000 的一组，(1110011110){2}变为 0011110 和 0000111 的两组。</p>\n</li>\n<li><p>由代表低位的组开始，为其加入最高位。如果这组是最后一组，则在最高位填上 <span class=\"katex math inline\">0</span> ，否则在最高位填上 <span class=\"katex math inline\">1</span> 。于是，<span class=\"katex math inline\">0</span> 的变长编码为 <span class=\"katex math inline\">00000000</span> 一个字节，<span class=\"katex math inline\">926</span> 的变长编码为 <span class=\"katex math inline\">10011110</span> 和 <span class=\"katex math inline\">00000111</span> 两个字节。</p>\n</li>\n</ol><p>这种编码方式可以用更少的字节表达比较小的数，也可以用很多的字节表达非常大的数。例如，<span class=\"katex math inline\">987654321012345678</span> 的二进制为 (0001101 1011010 0110110 1001011 1110100 0100110 1001000 0010110 1001110){2}，于是它的变长编码为（十六进制表示） CE 96 C8 A6 F4 CB B6 DA 0D ，共 <span class=\"katex math inline\">9</span> 个字节。</p>\n<p>你能通过编写程序，找到一个正整数的变长编码吗？</p>\n</div>            </div>",
+      "text": "小明刚刚学习了三种整数编码方式：原码、反码、补码，并了解到计算机存储整数通常使用补码。但他总是觉得，生活中很少用到 2^{31} - 1 这么大的数，生活中常用的 0~100 这种数也同样需要用 4 个字节的补码表示，太浪费了些。热爱学习的小明通过搜索，发现了一种正整数的变长编码方式。这种编码方式的规则如下：\n对于给定的正整数，首先将其表达为二进制形式。例如，(0){10} = (0){2} ，(926){10} = (1110011110){2} 。\n\n将二进制数从低位到高位切分成每组7 bit，不足 7 bit的在高位用 0 填补。例如，(0){2} 变为 0000000 的一组，(1110011110){2}变为 0011110 和 0000111 的两组。\n\n由代表低位的组开始，为其加入最高位。如果这组是最后一组，则在最高位填上 0 ，否则在最高位填上 1 。于是，0 的变长编码为 00000000 一个字节，926 的变长编码为 10011110 和 00000111 两个字节。\n\n这种编码方式可以用更少的字节表达比较小的数，也可以用很多的字节表达非常大的数。例如，987654321012345678 的二进制为 (0001101 1011010 0110110 1001011 1110100 0100110 1001000 0010110 1001110){2}，于是它的变长编码为（十六进制表示） CE 96 C8 A6 F4 CB B6 DA 0D ，共 9 个字节。\n你能通过编写程序，找到一个正整数的变长编码吗？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入第一行，包含一个正整数 <span class=\"katex math inline\">N</span>。约定 <span class=\"katex math inline\">0 \\leq N \\leq 10^{18}</span>。</p>\n</div>            </div>",
+      "text": "输入第一行，包含一个正整数 N。约定 0 \\leq N \\leq 10^{18}。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，输出 <span class=\"katex math inline\">N</span> 对应的变长编码的每个字节，每个字节均以 <span class=\"katex math inline\">2</span> 位十六进制表示（其中， <code>A</code> - <code>F</code> 使用大写字母表示），\n两个字节间以空格分隔。</p>\n</div>            </div>",
+      "text": "输出一行，输出 N 对应的变长编码的每个字节，每个字节均以 2 位十六进制表示（其中， A - F 使用大写字母表示），\n两个字节间以空格分隔。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>00</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>926</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>9E 07</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>987654321012345678</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>CE 96 C8 A6 F4 CB B6 DA 0D</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            0\n                        \n                        \n                            输出\n                            00\n                        \n\n                                                    \n                                输入\n                                926\n                            \n                            \n                                输出\n                                9E 07\n                            \n                        \n                                                    \n                                输入\n                                987654321012345678\n                            \n                            \n                                输出\n                                CE 96 C8 A6 F4 CB B6 DA 0D"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年9月四级</p>\n</div>                </div>",
+      "text": "GESP23年9月四级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">位运算</span><span class=\"label label-info\">23年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP四级位运算23年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "0",
+      "output": "00"
+    },
+    {
+      "input": "926",
+      "output": "9E 07"
+    },
+    {
+      "input": "987654321012345678",
+      "output": "CE 96 C8 A6 F4 CB B6 DA 0D"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "716",
+    "通过人数": "458",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:06"
+}

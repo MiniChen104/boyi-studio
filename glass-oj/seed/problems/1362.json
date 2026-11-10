@@ -1,0 +1,47 @@
+{
+  "id": "1362",
+  "title": "马的遍历",
+  "tags": [
+    "深搜",
+    "递归"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1362",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>中国象棋半张棋盘如图（a）所示。马自左下角往右上角跳。</p>\n<p>今规定<strong>只许往右跳，不许往左跳</strong>，且要求马跳的方式按照（b）图<strong>顺时针深度优先递归</strong>。比如图（a）中所示为一种跳行路线。如果马要从 <span class=\"katex math inline\">0,0</span> 点，跳到 <span class=\"katex math inline\">4,8</span> 点，前 <span class=\"katex math inline\">6</span> 种跳法的打印格式如下，请参考前 <span class=\"katex math inline\">6</span> 种跳的方式，输出马从 <span class=\"katex math inline\">0,0</span> 点到 <span class=\"katex math inline\">4,8</span> 点所有可能的跳的路线。  </p>\n<pre><code>1:0,0-&gt;2,1-&gt;4,2-&gt;3,4-&gt;4,6-&gt;2,7-&gt;4,8\n2:0,0-&gt;2,1-&gt;4,2-&gt;3,4-&gt;1,5-&gt;3,6-&gt;4,8\n3:0,0-&gt;2,1-&gt;4,2-&gt;3,4-&gt;1,5-&gt;2,7-&gt;4,8\n4:0,0-&gt;2,1-&gt;4,2-&gt;2,3-&gt;4,4-&gt;3,6-&gt;4,8\n5:0,0-&gt;2,1-&gt;4,2-&gt;2,3-&gt;4,4-&gt;2,5-&gt;4,6-&gt;2,7-&gt;4,8\n6:0,0-&gt;2,1-&gt;4,2-&gt;2,3-&gt;4,4-&gt;2,5-&gt;0,6-&gt;2,7-&gt;4,8\n</code></pre>\n<p><img src=\"https://assets.boyi.local/d6e1d920c63e7fe1f8aa8e13.png\"><br></p>\n</div>            </div>",
+      "text": "中国象棋半张棋盘如图（a）所示。马自左下角往右上角跳。\n今规定只许往右跳，不许往左跳，且要求马跳的方式按照（b）图顺时针深度优先递归。比如图（a）中所示为一种跳行路线。如果马要从 0,0 点，跳到 4,8 点，前 6 种跳法的打印格式如下，请参考前 6 种跳的方式，输出马从 0,0 点到 4,8 点所有可能的跳的路线。  \n1:0,0->2,1->4,2->3,4->4,6->2,7->4,8\n2:0,0->2,1->4,2->3,4->1,5->3,6->4,8\n3:0,0->2,1->4,2->3,4->1,5->2,7->4,8\n4:0,0->2,1->4,2->2,3->4,4->3,6->4,8\n5:0,0->2,1->4,2->2,3->4,4->2,5->4,6->2,7->4,8\n6:0,0->2,1->4,2->2,3->4,4->2,5->0,6->2,7->4,8"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无</p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按要求输出路径。</p>\n</div>            </div>",
+      "text": "按要求输出路径。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>深搜 递归</p>\n</div>                </div>",
+      "text": "深搜 递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">深搜</span><span class=\"label label-warning\">递归</span></span></p>\n</div>                </div>",
+      "text": "深搜递归"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "8300",
+    "通过人数": "4190",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:18:22"
+}

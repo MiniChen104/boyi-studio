@@ -1,0 +1,56 @@
+{
+  "id": "1299",
+  "title": "请问一个整数n能够被2、3、5、7中哪些数整除",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1299",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入一个整数 <span class=\"katex math inline\">n</span> ，请问 <span class=\"katex math inline\">n</span> 能够被 <span class=\"katex math inline\">2、3、5、7</span> 中哪些数整除，从小到大依次输出 <span class=\"katex math inline\">n</span> 能够整除的数，每行一个。</p>\n<p>如：\n输入： <span class=\"katex math inline\">20</span> </p>\n<p>输出：</p>\n<p><span class=\"katex math inline\">2</span></p>\n<p><span class=\"katex math inline\">5</span></p>\n</div>            </div>",
+      "text": "从键盘读入一个整数 n ，请问 n 能够被 2、3、5、7 中哪些数整除，从小到大依次输出 n 能够整除的数，每行一个。\n如：\n输入： 20 \n输出：\n2\n5"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span>（ <span class=\"katex math inline\">n \\le 10000</span> ）。</p>\n</div>            </div>",
+      "text": "一个整数 n（ n \\le 10000 ）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 能够整除的数。</p>\n</div>            </div>",
+      "text": "n 能够整除的数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2\r\n5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            20\n                        \n                        \n                            输出\n                            2\r\n5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "20",
+      "output": "2\r\n5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "12553",
+    "通过人数": "9414",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:32"
+}

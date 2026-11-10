@@ -1,0 +1,65 @@
+{
+  "id": "1936",
+  "title": "纪念品（souvenir）",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1936",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小伟突然获得一种超能力，他知道未来 <span class=\"katex math inline\">T</span> 天 <span class=\"katex math inline\">N</span> 种纪念品每天的价格。某个纪念品的价格是指购买一个该纪念品所需的金币数量，以及卖出一个该纪念品换回的金币数量。</p>\n<p>每天，小伟可以进行以下两种交易<strong>无限次</strong>：</p>\n<ol><li>任选一个纪念品，若手上有足够金币，以当日价格购买该纪念品；</li>\n<li>卖出持有的任意一个纪念品，以当日价格换回金币。</li>\n</ol><p>每天卖出纪念品换回的金币可以<strong>立即</strong>用于购买纪念品，当日购买的纪念品也可以<strong>当日卖出</strong>换回金币。当然，一直持有纪念品也是可以的。</p>\n<p><span class=\"katex math inline\">T</span> 天之后，小伟的超能力消失。因此他一定会在第 <span class=\"katex math inline\">T</span> 天卖出<strong>所有</strong>纪念品换回金币。</p>\n<p>小伟现在有 <span class=\"katex math inline\">M</span> 枚金币，他想要在超能力消失后拥有尽可能多的金币。</p>\n</div>            </div>",
+      "text": "小伟突然获得一种超能力，他知道未来 T 天 N 种纪念品每天的价格。某个纪念品的价格是指购买一个该纪念品所需的金币数量，以及卖出一个该纪念品换回的金币数量。\n每天，小伟可以进行以下两种交易无限次：\n任选一个纪念品，若手上有足够金币，以当日价格购买该纪念品；\n卖出持有的任意一个纪念品，以当日价格换回金币。\n每天卖出纪念品换回的金币可以立即用于购买纪念品，当日购买的纪念品也可以当日卖出换回金币。当然，一直持有纪念品也是可以的。\nT 天之后，小伟的超能力消失。因此他一定会在第 T 天卖出所有纪念品换回金币。\n小伟现在有 M 枚金币，他想要在超能力消失后拥有尽可能多的金币。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含三个正整数 <span class=\"katex math inline\">T, N, M</span>，相邻两数之间以一个空格分开，分别代表未来天数 <span class=\"katex math inline\">T</span>，纪念品数量 <span class=\"katex math inline\">N</span>，小伟现在拥有的金币数量 <span class=\"katex math inline\">M</span>。</p>\n<p>接下来 <span class=\"katex math inline\">T</span> 行，每行包含 <span class=\"katex math inline\">N</span> 个正整数，相邻两数之间以一个空格分隔。第 <span class=\"katex math inline\">i</span> 行的 <span class=\"katex math inline\">N</span> 个正整数分别为 <span class=\"katex math inline\">P</span><sub><span class=\"katex math inline\">i,1</span></sub>，<span class=\"katex math inline\">P</span><sub><span class=\"katex math inline\">i,2</span></sub>,……,<span class=\"katex math inline\">P</span><sub><span class=\"katex math inline\">i,3</span></sub>，其中 <span class=\"katex math inline\">P</span><sub><span class=\"katex math inline\">i,j</span></sub> 表示第 <span class=\"katex math inline\">i</span> 天第 <span class=\"katex math inline\">j</span> 种纪念品的价格。</p>\n</div>            </div>",
+      "text": "第一行包含三个正整数 T, N, M，相邻两数之间以一个空格分开，分别代表未来天数 T，纪念品数量 N，小伟现在拥有的金币数量 M。\n接下来 T 行，每行包含 N 个正整数，相邻两数之间以一个空格分隔。第 i 行的 N 个正整数分别为 Pi,1，Pi,2,……,Pi,3，其中 Pi,j 表示第 i 天第 j 种纪念品的价格。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出仅一行，包含一个正整数，表示小伟在超能力消失后最多能拥有的金币数量。</p>\n</div>            </div>",
+      "text": "输出仅一行，包含一个正整数，表示小伟在超能力消失后最多能拥有的金币数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 1 100\r\n50\r\n20\r\n25\r\n20\r\n25\r\n50</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>305</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 3 100\r\n10 20 15\r\n15 17 13\r\n15 25 16</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>217</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 1 100\r\n50\r\n20\r\n25\r\n20\r\n25\r\n50\n                        \n                        \n                            输出\n                            305\n                        \n\n                                                    \n                                输入\n                                3 3 100\r\n10 20 15\r\n15 17 13\r\n15 25 16\n                            \n                            \n                                输出\n                                217"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【输入输出样例 1 说明】</p>\n<p>最佳策略是：</p>\n<p>第二天花光所有 100 枚金币买入 5 个纪念品 1；</p>\n<p>第三天卖出 5 个纪念品 1，获得金币 125 枚；</p>\n<p>第四天买入 6 个纪念品 1，剩余 5 枚金币；</p>\n<p>第六天必须卖出所有纪念品换回 300 枚金币，第四天剩余 5 枚金币,共 305 枚金币。</p>\n<p>超能力消失后，小伟最多拥有 305 枚金币。</p>\n<p>【输入输出样例 2 说明】</p>\n<p>最佳策略是：</p>\n<p>第一天花光所有金币买入 10 个纪念品 1；</p>\n<p>第二天卖出全部纪念品 1 得到 150 枚金币并买入 8 个纪念品 2 和 1 个纪念品 3，剩余 1 枚金币；</p>\n<p>第三天必须卖出所有纪念品换回216 枚金币，第二天剩余1枚金币，共 217 枚金币。</p>\n<p>超能力消失后，小伟最多拥有 217 枚金币。</p>\n<p>【数据规模与约定】</p>\n<p>对于 <span class=\"katex math inline\">10\\%</span> 的数据，<span class=\"katex math inline\">T = 1</span>。</p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">T \\leq 4, N \\leq 4, M \\leq 100</span>，所有价格 <span class=\"katex math inline\">10 \\leq P_{i,j} \\leq 100</span>。</p>\n<p>另有 <span class=\"katex math inline\">15\\%</span> 的数据，<span class=\"katex math inline\">T \\leq 100, N = 1</span>。</p>\n<p>另有 <span class=\"katex math inline\">15\\%</span> 的数据，<span class=\"katex math inline\">T = 2, N \\leq 100</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">T \\leq 100, N \\leq 100, M \\leq 10^3</span>，所有价格 <span class=\"katex math inline\">1 \\leq P_{i,j} \\leq 10^4</span>，数据保证任意时刻，小明手上的金币数不可能超过 <span class=\"katex math inline\">10^4</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【输入输出样例 1 说明】\n最佳策略是：\n第二天花光所有 100 枚金币买入 5 个纪念品 1；\n第三天卖出 5 个纪念品 1，获得金币 125 枚；\n第四天买入 6 个纪念品 1，剩余 5 枚金币；\n第六天必须卖出所有纪念品换回 300 枚金币，第四天剩余 5 枚金币,共 305 枚金币。\n超能力消失后，小伟最多拥有 305 枚金币。\n【输入输出样例 2 说明】\n最佳策略是：\n第一天花光所有金币买入 10 个纪念品 1；\n第二天卖出全部纪念品 1 得到 150 枚金币并买入 8 个纪念品 2 和 1 个纪念品 3，剩余 1 枚金币；\n第三天必须卖出所有纪念品换回216 枚金币，第二天剩余1枚金币，共 217 枚金币。\n超能力消失后，小伟最多拥有 217 枚金币。\n【数据规模与约定】\n对于 10\\% 的数据，T = 1。\n对于 30\\% 的数据，T \\leq 4, N \\leq 4, M \\leq 100，所有价格 10 \\leq P_{i,j} \\leq 100。\n另有 15\\% 的数据，T \\leq 100, N = 1。\n另有 15\\% 的数据，T = 2, N \\leq 100。\n对于 100\\% 的数据，T \\leq 100, N \\leq 100, M \\leq 10^3，所有价格 1 \\leq P_{i,j} \\leq 10^4，数据保证任意时刻，小明手上的金币数不可能超过 10^4。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2019年noip(csp)普及组复赛第3题。</p>\n</div>                </div>",
+      "text": "2019年noip(csp)普及组复赛第3题。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 1 100\r\n50\r\n20\r\n25\r\n20\r\n25\r\n50",
+      "output": "305"
+    },
+    {
+      "input": "3 3 100\r\n10 20 15\r\n15 17 13\r\n15 25 16",
+      "output": "217"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1073",
+    "通过人数": "671",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:26:13"
+}

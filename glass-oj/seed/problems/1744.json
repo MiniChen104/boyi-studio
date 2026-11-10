@@ -1,0 +1,56 @@
+{
+  "id": "1744",
+  "title": "纯粹的四位奇数",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1744",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>纯粹奇数指的是一个数的各个位都是奇数的数，比如：<span class=\"katex math inline\">1357</span> ；请编程求出 <span class=\"katex math inline\">1000</span> ~ <span class=\"katex math inline\">n</span> 中，所有的四位的纯粹奇数的和是多少？</p>\n</div>            </div>",
+      "text": "纯粹奇数指的是一个数的各个位都是奇数的数，比如：1357 ；请编程求出 1000 ~ n 中，所有的四位的纯粹奇数的和是多少？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span>（ <span class=\"katex math inline\">n</span> 为 <span class=\"katex math inline\">1000</span>~<span class=\"katex math inline\">9999</span> 之间的整数）；</p>\n</div>            </div>",
+      "text": "一个整数 n（ n 为 1000~9999 之间的整数）；"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，代表 <span class=\"katex math inline\">1000</span>~<span class=\"katex math inline\">n</span> 中所有四位纯粹奇数的和。</p>\n</div>            </div>",
+      "text": "一个整数，代表 1000~n 中所有四位纯粹奇数的和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1600</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>101625</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1600\n                        \n                        \n                            输出\n                            101625"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1600",
+      "output": "101625"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "17561",
+    "通过人数": "12925",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:41"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1387",
+  "title": "简单加密",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1387",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Julius Caesar曾经使用过一种很简单的密码。对于明文中的每个字符，将它用它字母表中后 <span class=\"katex math inline\">5</span> 位对应的字符来代替，这样就得到了密文。比如字符 A 用 F 来代替。如下是密文和明文中字符的对应关系。</p>\n<p>密文：A B C D E F G H I J K L M N O P Q R S T U V W X Y Z；</p>\n<p>明文：V W X Y Z A B C D E F G H I J K L M N O P Q R S T U；</p>\n<p>你的任务是对给定的密文进行解密得到明文。</p>\n<p>你需要注意的是，密文中出现的字母都是大写字母。密文中也包括非字母的字符，对这些字符不用进行解码。</p>\n</div>            </div>",
+      "text": "Julius Caesar曾经使用过一种很简单的密码。对于明文中的每个字符，将它用它字母表中后 5 位对应的字符来代替，这样就得到了密文。比如字符 A 用 F 来代替。如下是密文和明文中字符的对应关系。\n密文：A B C D E F G H I J K L M N O P Q R S T U V W X Y Z；\n明文：V W X Y Z A B C D E F G H I J K L M N O P Q R S T U；\n你的任务是对给定的密文进行解密得到明文。\n你需要注意的是，密文中出现的字母都是大写字母。密文中也包括非字母的字符，对这些字符不用进行解码。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，给出密文，密文不为空，而且其中的字符数不超过 <span class=\"katex math inline\">200</span> 。</p>\n</div>            </div>",
+      "text": "一行，给出密文，密文不为空，而且其中的字符数不超过 200 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，即密文对应的明文。</p>\n</div>            </div>",
+      "text": "输出一行，即密文对应的明文。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>NS BFW, JAJSYX TK NRUTWYFSHJ FWJ YMJ WJXZQY TK YWNANFQ HFZXJX</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>IN WAR, EVENTS OF IMPORTANCE ARE THE RESULT OF TRIVIAL CAUSES</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            NS BFW, JAJSYX TK NRUTWYFSHJ FWJ YMJ WJXZQY TK YWNANFQ HFZXJX\n                        \n                        \n                            输出\n                            IN WAR, EVENTS OF IMPORTANCE ARE THE RESULT OF TRIVIAL CAUSES"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "NS BFW, JAJSYX TK NRUTWYFSHJ FWJ YMJ WJXZQY TK YWNANFQ HFZXJX",
+      "output": "IN WAR, EVENTS OF IMPORTANCE ARE THE RESULT OF TRIVIAL CAUSES"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "20910",
+    "通过人数": "13336",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:45"
+}

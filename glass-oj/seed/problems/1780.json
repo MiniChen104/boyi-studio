@@ -1,0 +1,57 @@
+{
+  "id": "1780",
+  "title": "采灵芝",
+  "tags": [
+    "动态规划",
+    "背包问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1780",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>仙岛上种了无数的不同种类的灵芝，小芳跟着爷爷来到仙岛采摘灵芝。由于他们带的食物和饮用水有限，必须在时间 <span class=\"katex math inline\">t</span> 内完成采摘。</p>\n<p>假设岛上有 <span class=\"katex math inline\">m</span> 种不同种类的灵芝，每种灵芝都有无限多个，已知每种灵芝采摘需要的时间，以及这种灵芝的价值；</p>\n<p>请你编程帮助小芳计算，在有限的时间 <span class=\"katex math inline\">t</span> 内，能够采摘到的灵芝的最大价值是多少？</p>\n</div>            </div>",
+      "text": "仙岛上种了无数的不同种类的灵芝，小芳跟着爷爷来到仙岛采摘灵芝。由于他们带的食物和饮用水有限，必须在时间 t 内完成采摘。\n假设岛上有 m 种不同种类的灵芝，每种灵芝都有无限多个，已知每种灵芝采摘需要的时间，以及这种灵芝的价值；\n请你编程帮助小芳计算，在有限的时间 t 内，能够采摘到的灵芝的最大价值是多少？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入第一行有两个整数 <span class=\"katex math inline\">T</span>（<span class=\"katex math inline\">1 \\le T \\le 100000</span>）和 <span class=\"katex math inline\">M</span>（<span class=\"katex math inline\">1 \\le M \\le 2000</span>），用一个空格隔开，<span class=\"katex math inline\">T</span>代表总共能够用来采灵芝的时间，<span class=\"katex math inline\">M</span> 代表岛上灵芝的种类数。</p>\n<p>接下来的 <span class=\"katex math inline\">M</span> 行每行包括两个在 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">10000</span> 之间（包括 <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">10000</span> ）的整数，分别表示采摘某种灵芝的时间和这种灵芝的价值。</p>\n</div>            </div>",
+      "text": "输入第一行有两个整数 T（1 \\le T \\le 100000）和 M（1 \\le M \\le 2000），用一个空格隔开，T代表总共能够用来采灵芝的时间，M 代表岛上灵芝的种类数。\n接下来的 M 行每行包括两个在 1 到 10000 之间（包括 1 和 10000 ）的整数，分别表示采摘某种灵芝的时间和这种灵芝的价值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，这一行只包含一个整数，表示在规定的时间内，可以采到的灵芝的最大总价值。</p>\n</div>            </div>",
+      "text": "输出一行，这一行只包含一个整数，表示在规定的时间内，可以采到的灵芝的最大总价值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>70 3\r\n71 100\r\n69 1\r\n1 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>140</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            70 3\r\n71 100\r\n69 1\r\n1 2\n                        \n                        \n                            输出\n                            140"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>动态规划 背包问题</p>\n</div>                </div>",
+      "text": "动态规划 背包问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span><span class=\"label label-warning\">背包问题</span></span></p>\n</div>                </div>",
+      "text": "动态规划背包问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "70 3\r\n71 100\r\n69 1\r\n1 2",
+      "output": "140"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "11156",
+    "通过人数": "4958",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:24:06"
+}

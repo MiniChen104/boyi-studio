@@ -1,0 +1,56 @@
+{
+  "id": "1078",
+  "title": "求恰好使s=1+1/2+1/3+…+1/n的值大于X时n的值。",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1078",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>求恰好使 <span class=\"katex math inline\">s=1+1/2+1/3+ \\dots +1/n </span> 的值大于 <span class=\"katex math inline\">X</span> 时 <span class=\"katex math inline\">n</span> 的值。( <span class=\"katex math inline\">2 \\le x \\le 10</span> )</p>\n</div>            </div>",
+      "text": "求恰好使 s=1+1/2+1/3+ \\dots +1/n  的值大于 X 时 n 的值。( 2 \\le x \\le 10 )"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入只有一行，包括 <span class=\"katex math inline\">1</span> 个整数 <span class=\"katex math inline\">X</span> 。</p>\n</div>            </div>",
+      "text": "输入只有一行，包括 1 个整数 X 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行（这意味着末尾有一个回车符号），包括 <span class=\"katex math inline\">1</span> 个整数。</p>\n</div>            </div>",
+      "text": "输出只有一行（这意味着末尾有一个回车符号），包括 1 个整数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "26256",
+    "通过人数": "18756",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:14:24"
+}

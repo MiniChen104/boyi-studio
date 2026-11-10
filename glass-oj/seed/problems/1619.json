@@ -1,0 +1,56 @@
+{
+  "id": "1619",
+  "title": "数字解密",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1619",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>探险家哥伦布和好友两人来到一个小岛探险，小岛上有一个藏有宝藏的山洞，山洞的门需要一个四位数的密码，这个密码被加密后存入一个玻璃瓶藏在岛上，两人经过苦苦寻找，终于找到了密码，也找到了解密方式；解密方式为：将这个四位数千位和百位颠倒、十位和个位颠倒，就可以解密。</p>\n<p>请你编程帮助他们计算出密码是多少？</p>\n<p>比如：假设他们找到加密后的四位数是 <span class=\"katex math inline\">1286</span> ，那么千位和百位颠倒、十位和个位颠倒得到的结果就是 <span class=\"katex math inline\">2168</span> 。</p>\n</div>            </div>",
+      "text": "探险家哥伦布和好友两人来到一个小岛探险，小岛上有一个藏有宝藏的山洞，山洞的门需要一个四位数的密码，这个密码被加密后存入一个玻璃瓶藏在岛上，两人经过苦苦寻找，终于找到了密码，也找到了解密方式；解密方式为：将这个四位数千位和百位颠倒、十位和个位颠倒，就可以解密。\n请你编程帮助他们计算出密码是多少？\n比如：假设他们找到加密后的四位数是 1286 ，那么千位和百位颠倒、十位和个位颠倒得到的结果就是 2168 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个加密后的四位整数。（这个四位数不含数字 <span class=\"katex math inline\">0</span> ）。</p>\n</div>            </div>",
+      "text": "一个加密后的四位整数。（这个四位数不含数字 0 ）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>解密后的四位整数。</p>\n</div>            </div>",
+      "text": "解密后的四位整数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1286</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2168</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1286\n                        \n                        \n                            输出\n                            2168"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1286",
+      "output": "2168"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "4239",
+    "通过人数": "3677",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:56"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "3869",
+  "title": "黑白翻转",
+  "tags": [
+    "GESP七级",
+    "树",
+    "24年6月"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3869",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有一棵包含 <span class=\"katex math inline\">n</span> 个节点的树，这棵树上的任意一个节点要么是白色，要么是黑色。小杨认为一棵树是美丽树当且仅当在删除所有白色节点之后，剩余节点仍然组成一棵树。</p>\n<p>小杨每次操作可以选择一个白色节点将它的颜色变为黑色，他想知道自己最少要执行多少次操作可以使得这棵树变为美丽树。</p>\n</div>            </div>",
+      "text": "小杨有一棵包含 n 个节点的树，这棵树上的任意一个节点要么是白色，要么是黑色。小杨认为一棵树是美丽树当且仅当在删除所有白色节点之后，剩余节点仍然组成一棵树。\n小杨每次操作可以选择一个白色节点将它的颜色变为黑色，他想知道自己最少要执行多少次操作可以使得这棵树变为美丽树。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">n</span> ，代表树的节点数。</p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个非负整数 <span class=\"katex math inline\">a_1,a_2,...a_n</span> ，其中如果 <span class=\"katex math inline\">a_i=0</span> ，则节点 <span class=\"katex math inline\">i</span> 的颜色为白色，否则为黑色。</p>\n<p>之后 <span class=\"katex math inline\">n-1</span> 行，每行包含两个正整数 <span class=\"katex math inline\">x_i,y_i</span> ，代表存在一条连接节点 <span class=\"katex math inline\">x_i</span> 和 <span class=\"katex math inline\">y_i</span> 的边。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 n ，代表树的节点数。\n第二行包含 n 个非负整数 a_1,a_2,...a_n ，其中如果 a_i=0 ，则节点 i 的颜色为白色，否则为黑色。\n之后 n-1 行，每行包含两个正整数 x_i,y_i ，代表存在一条连接节点 x_i 和 y_i 的边。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表最少执行的操作次数。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表最少执行的操作次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n0 1 0 1 0\r\n1 2\r\n1 3\r\n3 4\r\n3 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n0 1 0 1 0\r\n1 2\r\n1 3\r\n3 4\r\n3 5\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p>将节点 <span class=\"katex math inline\">1</span> 和 <span class=\"katex math inline\">3</span> 变为黑色即可使这棵树变为美丽树，此时删除白色节点 <span class=\"katex math inline\">5</span> ，剩余黑色节点仍然组成一棵树。</p>\n<p>【数据范围】</p>\n<p><img src=\"https://assets.boyi.local/25a2a46aef112abaed3329ef.png\"></p>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n \\le 10^5</span>,<span class=\"katex math inline\">0 \\le a_i \\le 1</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n将节点 1 和 3 变为黑色即可使这棵树变为美丽树，此时删除白色节点 5 ，剩余黑色节点仍然组成一棵树。\n【数据范围】\n\n对于全部数据，保证有 1 \\le n \\le 10^5,0 \\le a_i \\le 1 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 6月认证C++七级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 6月认证C++七级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP七级</span><span class=\"label label-warning\">树</span><span class=\"label label-info\">24年6月</span></span></p>\n</div>                </div>",
+      "text": "GESP七级树24年6月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n0 1 0 1 0\r\n1 2\r\n1 3\r\n3 4\r\n3 5",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "145",
+    "通过人数": "68",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:36:14"
+}

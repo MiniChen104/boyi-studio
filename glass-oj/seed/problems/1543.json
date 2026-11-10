@@ -1,0 +1,61 @@
+{
+  "id": "1543",
+  "title": "小X玩游戏",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1543",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 X 喜欢玩游戏。</p>\n<p>这天，小 X 觉得传统的游戏都玩腻了，自己随手在草稿纸上画了一行N个格子作为棋盘，制定了如下规则：格子从左到右依次编号为 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">N</span> ，玩家初始位于格子 <span class=\"katex math inline\">1</span> ，初始前进方向为向右，游戏共进行 <span class=\"katex math inline\">M</span> 轮，第 <span class=\"katex math inline\">i</span> 轮玩家前进 <span class=\"katex math inline\">A_i</span> 格，若玩家到达格子 <span class=\"katex math inline\">N</span> 则改变前进方向为向左，若玩家到达格子 <span class=\"katex math inline\">1</span> 则改变前进方向为向右。</p>\n<p>小 X 想知道玩家最后会停在哪个格子，但这个游戏太漫长了，他已经玩得快睡着了，希望你帮帮他。</p>\n</div>            </div>",
+      "text": "小 X 喜欢玩游戏。\n这天，小 X 觉得传统的游戏都玩腻了，自己随手在草稿纸上画了一行N个格子作为棋盘，制定了如下规则：格子从左到右依次编号为 1 到 N ，玩家初始位于格子 1 ，初始前进方向为向右，游戏共进行 M 轮，第 i 轮玩家前进 A_i 格，若玩家到达格子 N 则改变前进方向为向左，若玩家到达格子 1 则改变前进方向为向右。\n小 X 想知道玩家最后会停在哪个格子，但这个游戏太漫长了，他已经玩得快睡着了，希望你帮帮他。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含用一个空格隔开的两个整数 <span class=\"katex math inline\">N,M</span> 。</p>\n<p>接下来 <span class=\"katex math inline\">M</span> 行，第 <span class=\"katex math inline\">i</span> 行包含一个整数 <span class=\"katex math inline\">A_i</span> 。</p>\n</div>            </div>",
+      "text": "第一行包含用一个空格隔开的两个整数 N,M 。\n接下来 M 行，第 i 行包含一个整数 A_i 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个整数，表示玩家最后停留的格子编号。</p>\n</div>            </div>",
+      "text": "第一行包含一个整数，表示玩家最后停留的格子编号。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 2\r\n2\r\n3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 2\r\n2\r\n3\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例说明</h4>\n<p>玩家的路线为 <span class=\"katex math inline\">1</span>-&gt;<span class=\"katex math inline\">2</span>-&gt;<span class=\"katex math inline\">3</span>-&gt;<span class=\"katex math inline\">2</span>-&gt;<span class=\"katex math inline\">1</span>-&gt;<span class=\"katex math inline\">2</span> 。</p>\n<h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">N=2</span>，<span class=\"katex math inline\">M≤10</span>，<span class=\"katex math inline\">A_i=1</span> 。</p>\n<p>对于 <span class=\"katex math inline\">60\\%</span> 的数据，<span class=\"katex math inline\">N≤1000</span>，<span class=\"katex math inline\">M≤1000</span>，<span class=\"katex math inline\">A_i≤1000</span> 。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">2≤N≤100000</span>，<span class=\"katex math inline\">1≤M≤100000</span>，<span class=\"katex math inline\">1≤Ai≤1000000000</span> 。</p>\n<h4>来源</h4>\n<p>常州市2015“信息与未来”夏令营选拔赛。</p>\n</div>\n\n                    \n                </div>",
+      "text": "样例说明\n玩家的路线为 1->2->3->2->1->2 。\n数据范围\n对于 30\\% 的数据，N=2，M≤10，A_i=1 。\n对于 60\\% 的数据，N≤1000，M≤1000，A_i≤1000 。\n对于 100\\% 的数据，2≤N≤100000，1≤M≤100000，1≤Ai≤1000000000 。\n来源\n常州市2015“信息与未来”夏令营选拔赛。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 2\r\n2\r\n3",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "545",
+    "通过人数": "137",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:20:53"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "4857",
+  "title": "奇数序列排序",
+  "tags": [
+    "蓝桥等考",
+    "数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4857",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个长度为 <span class=\"katex math inline\">N</span> 的正整数序列，请将其中的所有奇数取出，并按增序（从小到大）输出。</p>\n</div>            </div>",
+      "text": "给定一个长度为 N 的正整数序列，请将其中的所有奇数取出，并按增序（从小到大）输出。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含一个整数 <span class=\"katex math inline\">N</span>，表示序列的长度(<span class=\"katex math inline\">1 \\le n \\le 100</span>)。</p>\n<p>第二行包含 <span class=\"katex math inline\">N</span> 个正整数 ，表示给定的序列。</p>\n</div>            </div>",
+      "text": "输入的第一行包含一个整数 N，表示序列的长度(1 \\le n \\le 100)。\n第二行包含 N 个正整数 ，表示给定的序列。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含所有从序列中取出的奇数，并按从小到大的顺序排列。</p>\n</div>            </div>",
+      "text": "输出一行，包含所有从序列中取出的奇数，并按从小到大的顺序排列。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10\r\n10 3 8 6 7 4 9 5 2 1\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1,3,5,7,9</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\r\n10 3 8 6 7 4 9 5 2 1\r\n\n                        \n                        \n                            输出\n                            1,3,5,7,9"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">数组</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10\r\n10 3 8 6 7 4 9 5 2 1\r\n",
+      "output": "1,3,5,7,9"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "444",
+    "通过人数": "217",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:57"
+}

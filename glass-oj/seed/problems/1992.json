@@ -1,0 +1,61 @@
+{
+  "id": "1992",
+  "title": "螺旋矩阵（matrix）",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1992",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>\n<span class=\"fontstyle0\">一个 </span><span class=\"fontstyle2\">n </span><span class=\"fontstyle0\">行 </span><span class=\"fontstyle2\">n </span><span class=\"fontstyle0\">列的螺旋矩阵可由如下方法生成：</span> \n</p>\n<p>\n<span class=\"fontstyle0\">从矩阵的左上角（第 </span><span class=\"fontstyle3\">1 </span><span class=\"fontstyle0\">行第 </span><span class=\"fontstyle3\">1 </span><span class=\"fontstyle0\">列）出发，初始时向右移动；如果前方是未曾经过的格子，则继续前进，否则右转；重复上述操作直至经过矩阵中所有格子。根据经过顺序，在格子中依次填入 </span><span class=\"fontstyle3\">1, 2, 3, ... , </span><span class=\"fontstyle2\">n</span><sup><span class=\"fontstyle3\">2</span></sup><span class=\"fontstyle0\">，便构成了一个螺旋矩阵。</span> \n</p>\n<p>\n<span class=\"fontstyle0\"></span><span class=\"fontstyle0\">下图是一个 </span><span class=\"fontstyle2\">n </span><span class=\"fontstyle3\">= 4 </span><span class=\"fontstyle0\">时的螺旋矩阵。</span> \n</p>\n<p><img src=\"https://assets.boyi.local/11fb34e0bfbff80858d6db60.png\"></p>\n</div>            </div>",
+      "text": "一个 n 行 n 列的螺旋矩阵可由如下方法生成： \n\n\n从矩阵的左上角（第 1 行第 1 列）出发，初始时向右移动；如果前方是未曾经过的格子，则继续前进，否则右转；重复上述操作直至经过矩阵中所有格子。根据经过顺序，在格子中依次填入 1, 2, 3, ... , n2，便构成了一个螺旋矩阵。 \n\n\n下图是一个 n = 4 时的螺旋矩阵。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"fontstyle0\">输入共一行，包含三个整数 </span><span class=\"fontstyle2\">n</span><span class=\"fontstyle0\">， </span><span class=\"fontstyle2\">i</span><span class=\"fontstyle0\">， </span><span class=\"fontstyle2\">j</span><span class=\"fontstyle0\">，每两个整数之间用一个空格隔开，分别表示矩阵大小、 待求的数所在的行号和列号。</span> <br></p>\n</div>            </div>",
+      "text": "输入共一行，包含三个整数 n， i， j，每两个整数之间用一个空格隔开，分别表示矩阵大小、 待求的数所在的行号和列号。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"fontstyle0\">输出共一行，包含一个整数，表示相应矩阵中第 </span><span class=\"fontstyle2\">i </span><span class=\"fontstyle0\">行第 </span><span class=\"fontstyle2\">j </span><span class=\"fontstyle0\">列的数</span>。<br></p>\n</div>            </div>",
+      "text": "输出共一行，包含一个整数，表示相应矩阵中第 i 行第 j 列的数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>14</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 2 3\n                        \n                        \n                            输出\n                            14"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>\n\t<span class=\"fontstyle0\">【数据说明】</span> \n</p>\n<p>\n\t<span class=\"fontstyle0\">对于 </span><span class=\"fontstyle2\">50%</span><span class=\"fontstyle0\">的数据， </span><span class=\"fontstyle2\">1 </span><span class=\"fontstyle0\">≤ </span><span class=\"fontstyle3\">n </span><span class=\"fontstyle0\">≤ </span><span class=\"fontstyle2\">100;</span> \n</p>\n<p>\n\t<span class=\"fontstyle2\"></span><span class=\"fontstyle0\">对于 </span><span class=\"fontstyle2\">100%</span><span class=\"fontstyle0\">的数据， </span><span class=\"fontstyle2\">1 </span><span class=\"fontstyle0\">≤ </span><span class=\"fontstyle3\">n </span><span class=\"fontstyle0\">≤ </span><span class=\"fontstyle2\">30,000</span><span class=\"fontstyle0\">， </span><span class=\"fontstyle2\">1 </span><span class=\"fontstyle0\">≤ </span><span class=\"fontstyle3\">i </span><span class=\"fontstyle0\">≤ </span><span class=\"fontstyle3\">n</span><span class=\"fontstyle0\">， </span><span class=\"fontstyle2\">1 </span><span class=\"fontstyle0\">≤ </span><span class=\"fontstyle3\">j </span><span class=\"fontstyle0\">≤ </span><span class=\"fontstyle3\">n</span><span class=\"fontstyle0\">。</span> \n</p>\n<p>【来源】noip2014普及组第3题。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据说明】 \n\n\n\t对于 50%的数据， 1 ≤ n ≤ 100; \n\n\n\t对于 100%的数据， 1 ≤ n ≤ 30,000， 1 ≤ i ≤ n， 1 ≤ j ≤ n。 \n\n【来源】noip2014普及组第3题。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>noip复赛</p>\n</div>                </div>",
+      "text": "noip复赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 2 3",
+      "output": "14"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1272",
+    "通过人数": "456",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:02"
+}

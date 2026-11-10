@@ -1,0 +1,59 @@
+{
+  "id": "4907",
+  "title": "单词的首尾",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4907",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>读入一句仅包含英文大小写字母和空格的字符串。</p>\n<p>请输出每个单词的第 <span class=\"katex math inline\">1</span> 个字母和最后一个字母，输出时每个单词的第 <span class=\"katex math inline\">1</span> 个字母请使用大写输出，每个单词的最后一个字母请使用小写输出。</p>\n</div>            </div>",
+      "text": "读入一句仅包含英文大小写字母和空格的字符串。\n请输出每个单词的第 1 个字母和最后一个字母，输出时每个单词的第 1 个字母请使用大写输出，每个单词的最后一个字母请使用小写输出。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一句英文句子，仅含大小写字母和空格。（句子总长度在 <span class=\"katex math inline\">[5, 100]</span> 的范围内）</p>\n</div>            </div>",
+      "text": "输入一句英文句子，仅含大小写字母和空格。（句子总长度在 [5, 100] 的范围内）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出若干行，每行输出一个英文单词的第 <span class=\"katex math inline\">1</span> 个字母和最后一个字母，其中第 <span class=\"katex math inline\">1</span> 个字母采用大写输出，最后一个字母采用小写输出，两个字母之间空一格。</p>\n<p>请注意，如果某单词只有一个字母，那么这个字母既是第 <span class=\"katex math inline\">1</span> 个字母，也是最后一个字母。两个单词之间可能有多个空格。</p>\n</div>            </div>",
+      "text": "输出若干行，每行输出一个英文单词的第 1 个字母和最后一个字母，其中第 1 个字母采用大写输出，最后一个字母采用小写输出，两个字母之间空一格。\n请注意，如果某单词只有一个字母，那么这个字母既是第 1 个字母，也是最后一个字母。两个单词之间可能有多个空格。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>This is my Friend</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>T s\r\nI s\r\nM y\r\nF d</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>That is a new Book</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>T t\r\nI s\r\nA a\r\nN w\r\nB k</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>  Hello     sTudenT</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>H o\r\nS t</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            This is my Friend\n                        \n                        \n                            输出\n                            T s\r\nI s\r\nM y\r\nF d\n                        \n\n                                                    \n                                输入\n                                That is a new Book\n                            \n                            \n                                输出\n                                T t\r\nI s\r\nA a\r\nN w\r\nB k\n                            \n                        \n                                                    \n                                输入\n                                  Hello     sTudenT\n                            \n                            \n                                输出\n                                H o\r\nS t"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "This is my Friend",
+      "output": "T s\r\nI s\r\nM y\r\nF d"
+    },
+    {
+      "input": "That is a new Book",
+      "output": "T t\r\nI s\r\nA a\r\nN w\r\nB k"
+    },
+    {
+      "input": "  Hello     sTudenT",
+      "output": "H o\r\nS t"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "377",
+    "通过人数": "201",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:16"
+}

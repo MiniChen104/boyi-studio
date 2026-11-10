@@ -1,0 +1,46 @@
+{
+  "id": "1258",
+  "title": "求一个三位数",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1258",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>求这样一个三位数，该三位数等于其每位数字的阶乘之和， 即 <span class=\"katex math inline\">abc = a! + b! + c!</span>。</p>\n<p>(<span class=\"katex math inline\">n!</span> 表示 <span class=\"katex math inline\">n</span> 的阶乘, <span class=\"katex math inline\">n!=1 \\times 2 \\times 3 \\times \\dots  \\times n</span>，如：<span class=\"katex math inline\">5!=1 \\times 2 \\times 3 \\times 4 \\times 5</span>)</p>\n</div>            </div>",
+      "text": "求这样一个三位数，该三位数等于其每位数字的阶乘之和， 即 abc = a! + b! + c!。\n(n! 表示 n 的阶乘, n!=1 \\times 2 \\times 3 \\times \\dots  \\times n，如：5!=1 \\times 2 \\times 3 \\times 4 \\times 5)"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>无</p>\n</div>            </div>",
+      "text": "无"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出这个数</p>\n</div>            </div>",
+      "text": "输出这个数"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "16800",
+    "通过人数": "11794",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:00"
+}

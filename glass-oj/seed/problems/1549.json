@@ -1,0 +1,62 @@
+{
+  "id": "1549",
+  "title": "密码锁",
+  "tags": [
+    "省赛",
+    "筛素数"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1549",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>乌龟给自己的贵重物品上了密码锁。密码锁上有 <span class=\"katex math inline\">5</span> 个数字拨盘。每个数字拨盘每次向上拨使数字增加 <span class=\"katex math inline\">1</span> (<span class=\"katex math inline\">9</span> 向上拨得到 <span class=\"katex math inline\">0</span>)，向下拨使数字减少 <span class=\"katex math inline\">1</span> (<span class=\"katex math inline\">0</span> 向下拨得到 <span class=\"katex math inline\">9</span>)。</p>\n<p>拨盘上的数字组成一个 <span class=\"katex math inline\">5</span> 位数。只要拨盘上的数字变为素数，密码锁就会被解开。素数 (又称质数) 是只能被 <span class=\"katex math inline\">1</span> 和它自身整除的大于 <span class=\"katex math inline\">1</span> 的自然数。因为乌龟动作实在太慢，他希望你帮他计算如何开锁，使得拨动的总次数最少。</p>\n</div>            </div>",
+      "text": "乌龟给自己的贵重物品上了密码锁。密码锁上有 5 个数字拨盘。每个数字拨盘每次向上拨使数字增加 1 (9 向上拨得到 0)，向下拨使数字减少 1 (0 向下拨得到 9)。\n拨盘上的数字组成一个 5 位数。只要拨盘上的数字变为素数，密码锁就会被解开。素数 (又称质数) 是只能被 1 和它自身整除的大于 1 的自然数。因为乌龟动作实在太慢，他希望你帮他计算如何开锁，使得拨动的总次数最少。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个 <span class=\"katex math inline\">5</span> 位数，表示拨盘的初始数字。</p>\n</div>            </div>",
+      "text": "一个 5 位数，表示拨盘的初始数字。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个 <span class=\"katex math inline\">5</span> 位素数，表示开启密码锁使用的素数(拨动次数最少)。</p>\n<p>如有多组解，输出满足条件的最大数。</p>\n</div>            </div>",
+      "text": "一个 5 位素数，表示开启密码锁使用的素数(拨动次数最少)。\n如有多组解，输出满足条件的最大数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>01212</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>01213</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            01212\n                        \n                        \n                            输出\n                            01213"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>来源</strong></p>\n<p>2017江苏省青少年信息学奥林匹克竞赛复赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "来源\n2017江苏省青少年信息学奥林匹克竞赛复赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>省赛</p>\n</div>                </div>",
+      "text": "省赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">省赛</span><span class=\"label label-warning\">筛素数</span></span></p>\n</div>                </div>",
+      "text": "省赛筛素数"
+    }
+  ],
+  "samples": [
+    {
+      "input": "01212",
+      "output": "01213"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1162",
+    "通过人数": "502",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:20:57"
+}

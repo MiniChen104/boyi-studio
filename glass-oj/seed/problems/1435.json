@@ -1,0 +1,58 @@
+{
+  "id": "1435",
+  "title": "数池塘（八方向）",
+  "tags": [
+    "深搜",
+    "递归",
+    "广搜"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1435",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>农夫约翰的农场可以表示成 <span class=\"katex math inline\">N \\times M</span>（<span class=\"katex math inline\">1≤N,M≤100</span>）个方格组成的矩形。由于近日的降雨，在约翰农场上的不同地方形成了池塘。</p>\n<p>每一个方格或者有积水（&#x27;W&#x27;）或者没有积水（&#x27;.&#x27;）。农夫约翰打算数出他的农场上共形成了多少池塘。一个池塘是一系列相连的有积水的方格，<strong>每一个方格周围的八个方格</strong>都被认为是与这个方格相连的。</p>\n<p>现给出约翰农场的图样，要求输出农场上的池塘数。</p>\n</div>            </div>",
+      "text": "农夫约翰的农场可以表示成 N \\times M（1≤N,M≤100）个方格组成的矩形。由于近日的降雨，在约翰农场上的不同地方形成了池塘。\n每一个方格或者有积水（'W'）或者没有积水（'.'）。农夫约翰打算数出他的农场上共形成了多少池塘。一个池塘是一系列相连的有积水的方格，每一个方格周围的八个方格都被认为是与这个方格相连的。\n现给出约翰农场的图样，要求输出农场上的池塘数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行：由空格隔开的两个整数：<span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">M</span>；</p>\n<p>第 <span class=\"katex math inline\">2..N+1</span> 行：每行 <span class=\"katex math inline\">M</span> 个字符代表约翰农场的一排方格的状态。每个字符或者是&#x27;W&#x27;或者是&#x27;.&#x27;，字符之间没有空格。</p>\n</div>            </div>",
+      "text": "第 1 行：由空格隔开的两个整数：N 和 M；\n第 2..N+1 行：每行 M 个字符代表约翰农场的一排方格的状态。每个字符或者是'W'或者是'.'，字符之间没有空格。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有1行，输出约翰农场上的池塘数。</p>\n</div>            </div>",
+      "text": "输出只有1行，输出约翰农场上的池塘数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 12\r\nW........WW.\r\n.WWW.....WWW\r\n....WW...WW.\r\n.........WW.\r\n.........W..\r\n..W......W..\r\n.W.W.....WW.\r\nW.W.W.....W.\r\n.W.W......W.\r\n..W.......W.</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 12\r\nW........WW.\r\n.WWW.....WWW\r\n....WW...WW.\r\n.........WW.\r\n.........W..\r\n..W......W..\r\n.W.W.....WW.\r\nW.W.W.....W.\r\n.W.W......W.\r\n..W.......W.\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>深搜 递归 广搜</p>\n</div>                </div>",
+      "text": "深搜 递归 广搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">深搜</span><span class=\"label label-warning\">递归</span><span class=\"label label-info\">广搜</span></span></p>\n</div>                </div>",
+      "text": "深搜递归广搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 12\r\nW........WW.\r\n.WWW.....WWW\r\n....WW...WW.\r\n.........WW.\r\n.........W..\r\n..W......W..\r\n.W.W.....WW.\r\nW.W.W.....W.\r\n.W.W......W.\r\n..W.......W.",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "9606",
+    "通过人数": "7490",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:19:26"
+}

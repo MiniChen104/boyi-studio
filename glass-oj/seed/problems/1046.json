@@ -1,0 +1,56 @@
+{
+  "id": "1046",
+  "title": "是否是连续奇数",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1046",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>《贫民窟的百万富翁》获得 <span class=\"katex math inline\">2009</span> 年美国奥斯卡最佳影片，影片的主人公是一个叫贾马尔的小男孩，他在贫民窟长大，后来他参加了一档印度版的《谁想成为百万富翁》电视直播节目，他的特殊成长经历居然使他能够回答这个节目中的每一个问题，最后成功获得百万奖金。</p>\n<p>其中有一个题目是这样的：读入四个整数（ <span class=\"katex math inline\">0 \\lt</span> 每个整数 <span class=\"katex math inline\">\\lt 50000</span> ），判断这四个整数能否构成连续的四个奇数，如果可以就输出三行，每行一个等式，每个等式都满足“前一个数 <span class=\"katex math inline\">+2=</span> 后一个数”，否则请将这四个整数从大到小输出（数据之间以一个空格隔开）。</p>\n</div>            </div>",
+      "text": "《贫民窟的百万富翁》获得 2009 年美国奥斯卡最佳影片，影片的主人公是一个叫贾马尔的小男孩，他在贫民窟长大，后来他参加了一档印度版的《谁想成为百万富翁》电视直播节目，他的特殊成长经历居然使他能够回答这个节目中的每一个问题，最后成功获得百万奖金。\n其中有一个题目是这样的：读入四个整数（ 0 \\lt 每个整数 \\lt 50000 ），判断这四个整数能否构成连续的四个奇数，如果可以就输出三行，每行一个等式，每个等式都满足“前一个数 +2= 后一个数”，否则请将这四个整数从大到小输出（数据之间以一个空格隔开）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，四个空格隔开的整数。（<span class=\"katex math inline\"> 0 \\lt </span> 每个整数<span class=\"katex math inline\"> \\lt 50000 </span> )。</p>\n</div>            </div>",
+      "text": "一行，四个空格隔开的整数。（ 0 \\lt  每个整数 \\lt 50000  )。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>三行，每行一个等式 或 一行，从大到小排列的 <span class=\"katex math inline\">4</span> 个数。</p>\n</div>            </div>",
+      "text": "三行，每行一个等式 或 一行，从大到小排列的 4 个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>17 13 11 15</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>11+2=13\r\n13+2=15\r\n15+2=17</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            17 13 11 15\n                        \n                        \n                            输出\n                            11+2=13\r\n13+2=15\r\n15+2=17"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "17 13 11 15",
+      "output": "11+2=13\r\n13+2=15\r\n15+2=17"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "8375",
+    "通过人数": "4164",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:13:57"
+}

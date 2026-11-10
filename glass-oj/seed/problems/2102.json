@@ -1,0 +1,56 @@
+{
+  "id": "2102",
+  "title": "统计数字",
+  "tags": [
+    "数组"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2102",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n某次科研调查时得到了n个自然数，每个数均不超过1500000000（1.5*10<sup>9</sup>）。已知不相同的数不超过10000个，现在需要统计这些自然数各自出现的次数，并按照自然数从小到大的顺序输出统计结果。\n</p>\n<p class=\"MsoNormal\">\n<br></p><p></p>\n<p>\n【限制】\n</p>\n<p>\n   40%的数据满足：1&lt;=n&lt;=1000\n</p>\n<p>\n   80%的数据满足：1&lt;=n&lt;=50000\n</p>\n<p>\n   100%的数据满足：1&lt;=n&lt;=200000，每个数均不超过1 500 000 \n000（1.5*10<sup>9</sup>）\n</p>\n<p>\n<br></p>\n</div>            </div>",
+      "text": "某次科研调查时得到了n个自然数，每个数均不超过1500000000（1.5*109）。已知不相同的数不超过10000个，现在需要统计这些自然数各自出现的次数，并按照自然数从小到大的顺序输出统计结果。\n\n\n\n\n【限制】\n\n\n   40%的数据满足：1<=n<=1000\n\n\n   80%的数据满足：1<=n<=50000\n\n\n   100%的数据满足：1<=n<=200000，每个数均不超过1 500 000 \n000（1.5*109）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n输入包含n+1行；\n</p>\n<p class=\"MsoNormal\">\n第一行是整数n，表示自然数的个数；\n</p>\n<p class=\"MsoNormal\">\n第2~n+1每行一个自然数。\n</p>\n</div>            </div>",
+      "text": "输入包含n+1行；\n\n\n第一行是整数n，表示自然数的个数；\n\n\n第2~n+1每行一个自然数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p class=\"MsoNormal\">\n输出包含m行（m为n个自然数中不相同数的个数），按照自然数从小到大的顺序输出。每行输出两个整数，分别是自然数和该数出现的次数，其间用一个空格隔开。\n</p>\n</div>            </div>",
+      "text": "输出包含m行（m为n个自然数中不相同数的个数），按照自然数从小到大的顺序输出。每行输出两个整数，分别是自然数和该数出现的次数，其间用一个空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\n2\r\n4\r\n2\r\n4\r\n5\r\n100\r\n2\r\n100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 3\r\n4 2\r\n5 1\r\n100 2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\n2\r\n4\r\n2\r\n4\r\n5\r\n100\r\n2\r\n100\n                        \n                        \n                            输出\n                            2 3\r\n4 2\r\n5 1\r\n100 2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组</p>\n</div>                </div>",
+      "text": "数组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组</span></span></p>\n</div>                </div>",
+      "text": "数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\n2\r\n4\r\n2\r\n4\r\n5\r\n100\r\n2\r\n100",
+      "output": "2 3\r\n4 2\r\n5 1\r\n100 2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "403",
+    "通过人数": "210",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:28:28"
+}

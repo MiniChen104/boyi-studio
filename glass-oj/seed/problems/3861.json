@@ -1,0 +1,63 @@
+{
+  "id": "3861",
+  "title": "移位",
+  "tags": [
+    "GESP三级",
+    "字符",
+    "24年6月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3861",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨学习了加密技术移位，所有大写字母都向后按照一个固定数目进行偏移。偏移过程会将字母表视作首尾相接的环，例如，当偏移量是 <span class=\"katex math inline\">3</span> 的时候，大写字母 <span class=\"katex math inline\">A</span> 会替换成 <span class=\"katex math inline\">D</span>，大写字母 <span class=\"katex math inline\">Z</span> 会替换成 <span class=\"katex math inline\">C</span>，总体来看，大写字母表<code>ABCDEFGHIJKLMNOPQRSTUVWXYZ</code> 会被替换成 <code>DEFGHIJKLMNOPQRSTUVWXYZABC</code>。</p>\n<p>注：当偏移量是 <span class=\"katex math inline\">26</span> 的倍数时，每个大写字母经过偏移后会恰好回到原来的位置，即大写字母表 <code>ABCDEFGHIJKLMNOPQRSTUVWXYZ</code> 经过偏移后会保持不变。</p>\n</div>            </div>",
+      "text": "小杨学习了加密技术移位，所有大写字母都向后按照一个固定数目进行偏移。偏移过程会将字母表视作首尾相接的环，例如，当偏移量是 3 的时候，大写字母 A 会替换成 D，大写字母 Z 会替换成 C，总体来看，大写字母表ABCDEFGHIJKLMNOPQRSTUVWXYZ 会被替换成 DEFGHIJKLMNOPQRSTUVWXYZABC。\n注：当偏移量是 26 的倍数时，每个大写字母经过偏移后会恰好回到原来的位置，即大写字母表 ABCDEFGHIJKLMNOPQRSTUVWXYZ 经过偏移后会保持不变。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">n</span>。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 n。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出在偏移量为 <span class=\"katex math inline\">n</span> 的情况下，大写字母表 <code>ABCDEFGHIJKLMNOPQRSTUVWXYZ</code> 移位替换后的结果。</p>\n</div>            </div>",
+      "text": "输出在偏移量为 n 的情况下，大写字母表 ABCDEFGHIJKLMNOPQRSTUVWXYZ 移位替换后的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>DEFGHIJKLMNOPQRSTUVWXYZABC</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            DEFGHIJKLMNOPQRSTUVWXYZABC"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<p>当偏移量是 <span class=\"katex math inline\">3</span> 的时候，大写字母 <span class=\"katex math inline\">A</span> 会替换成 <span class=\"katex math inline\">D</span>，大写字母 <span class=\"katex math inline\">Z</span> 会替换成 <span class=\"katex math inline\">C</span>，总体来看，大写字母表 \n<code>ABCDEFGHIJKLMNOPQRSTUVWXYZ</code> 会被替换成 <code>DEFGHIJKLMNOPQRSTUVWXYZABC</code>。</p>\n<h4>【数据范围】</h4>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n \\le 100</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n当偏移量是 3 的时候，大写字母 A 会替换成 D，大写字母 Z 会替换成 C，总体来看，大写字母表 \nABCDEFGHIJKLMNOPQRSTUVWXYZ 会被替换成 DEFGHIJKLMNOPQRSTUVWXYZABC。\n【数据范围】\n对于全部数据，保证有 1 \\le n \\le 100 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年GESP 6月认证C++三级真题</p>\n</div>                </div>",
+      "text": "2024年GESP 6月认证C++三级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP三级</span><span class=\"label label-warning\">字符</span><span class=\"label label-info\">24年6月</span></span></p>\n</div>                </div>",
+      "text": "GESP三级字符24年6月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "DEFGHIJKLMNOPQRSTUVWXYZABC"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "2317",
+    "通过人数": "1419",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:08"
+}

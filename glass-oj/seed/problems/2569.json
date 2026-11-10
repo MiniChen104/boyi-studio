@@ -1,0 +1,56 @@
+{
+  "id": "2569",
+  "title": "没有上司的舞会",
+  "tags": [
+    "树形DP"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2569",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某大学有 <span class=\"katex math inline\">n</span> 个职员，编号为 <span class=\"katex math inline\">1\\ldots n</span>。  </p>\n<p>他们之间有从属关系，也就是说他们的关系就像一棵以校长为根的树，父结点就是子结点的直接上司。  </p>\n<p>现在有个周年庆宴会，宴会每邀请来一个职员都会增加一定的快乐指数 <span class=\"katex math inline\">r</span><sub><span class=\"katex math inline\">i</span></sub>，但是呢，如果某个职员的直接上司来参加舞会了，那么这个职员就无论如何也不肯来参加舞会了。  </p>\n<p>所以，请你编程计算，邀请哪些职员可以使快乐指数最大，求最大的快乐指数。  </p>\n</div>            </div>",
+      "text": "某大学有 n 个职员，编号为 1\\ldots n。  \n他们之间有从属关系，也就是说他们的关系就像一棵以校长为根的树，父结点就是子结点的直接上司。  \n现在有个周年庆宴会，宴会每邀请来一个职员都会增加一定的快乐指数 ri，但是呢，如果某个职员的直接上司来参加舞会了，那么这个职员就无论如何也不肯来参加舞会了。  \n所以，请你编程计算，邀请哪些职员可以使快乐指数最大，求最大的快乐指数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行是一个整数 <span class=\"katex math inline\">n</span>。  </p>\n<p>第 <span class=\"katex math inline\">2</span> 到第 <span class=\"katex math inline\">(n + 1)</span> 行，每行一个整数，第 <span class=\"katex math inline\">(i+1)</span> 行的整数表示 <span class=\"katex math inline\">i</span> 号职员的快乐指数 <span class=\"katex math inline\">r_i</span>。  </p>\n<p>第 <span class=\"katex math inline\">(n + 2)</span> 到第 <span class=\"katex math inline\">2n</span> 行，每行输入一对整数 <span class=\"katex math inline\">l, k</span>，代表 <span class=\"katex math inline\">k</span> 是 <span class=\"katex math inline\">l</span> 的直接上司。  </p>\n</div>            </div>",
+      "text": "输入的第一行是一个整数 n。  \n第 2 到第 (n + 1) 行，每行一个整数，第 (i+1) 行的整数表示 i 号职员的快乐指数 r_i。  \n第 (n + 2) 到第 2n 行，每行输入一对整数 l, k，代表 k 是 l 的直接上司。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数代表最大的快乐指数。</p>\n</div>            </div>",
+      "text": "输出一行一个整数代表最大的快乐指数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1 3\r\n2 3\r\n6 4\r\n7 4\r\n4 5\r\n3 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1 3\r\n2 3\r\n6 4\r\n7 4\r\n4 5\r\n3 5\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据范围】  </p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，保证 <span class=\"katex math inline\">1\\leq n \\leq 6 \\times 10^3</span>，<span class=\"katex math inline\">-128 \\leq r_i\\leq 127</span>，<span class=\"katex math inline\">1 \\leq l, k \\leq n</span>，且给出的关系一定是一棵树。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】  \n对于 100\\% 的数据，保证 1\\leq n \\leq 6 \\times 10^3，-128 \\leq r_i\\leq 127，1 \\leq l, k \\leq n，且给出的关系一定是一棵树。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树形DP</span></span></p>\n</div>                </div>",
+      "text": "树形DP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1\r\n1 3\r\n2 3\r\n6 4\r\n7 4\r\n4 5\r\n3 5",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "713",
+    "通过人数": "574",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:17"
+}

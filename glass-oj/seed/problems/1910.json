@@ -1,0 +1,57 @@
+{
+  "id": "1910",
+  "title": "愤怒的奶牛",
+  "tags": [
+    "USACO",
+    "二分"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1910",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Farmer John 建造了一个有 <span class=\"katex math inline\">N</span>(<span class=\"katex math inline\">2</span> <span class=\"katex math inline\">\\le</span> <span class=\"katex math inline\">N</span> <span class=\"katex math inline\">\\le</span> <span class=\"katex math inline\">100000</span>) 个隔间的牛棚，这些隔间分布在一条直线上，坐标是 <span class=\"katex math inline\">x_1</span> ,...,<span class=\"katex math inline\">x_N</span> \n (0 <span class=\"katex math inline\">\\le</span> <span class=\"katex math inline\">x_i</span> <span class=\"katex math inline\">\\le</span> <span class=\"katex math inline\">1000000000</span>)。</p>\n<p>他的 <span class=\"katex math inline\">C</span>(<span class=\"katex math inline\">2</span> <span class=\"katex math inline\">\\le</span> <span class=\"katex math inline\">C</span> <span class=\"katex math inline\">\\le</span> <span class=\"katex math inline\">N</span>) 头牛不满于隔间的位置分布，它们为牛棚里其他的牛的存在而愤怒。为了防止牛之间的互相打斗，Farmer John 想把这些牛安置在指定的隔间，所有牛中相邻两头的最近距离越大越好。那么，这个最大的最近距离是多少呢？</p>\n</div>            </div>",
+      "text": "Farmer John 建造了一个有 N(2 \\le N \\le 100000) 个隔间的牛棚，这些隔间分布在一条直线上，坐标是 x_1 ,...,x_N \n (0 \\le x_i \\le 1000000000)。\n他的 C(2 \\le C \\le N) 头牛不满于隔间的位置分布，它们为牛棚里其他的牛的存在而愤怒。为了防止牛之间的互相打斗，Farmer John 想把这些牛安置在指定的隔间，所有牛中相邻两头的最近距离越大越好。那么，这个最大的最近距离是多少呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行：两个用空格隔开的数字 <span class=\"katex math inline\">N</span> 和 <span class=\"katex math inline\">C</span>。</p>\n<p>第 <span class=\"katex math inline\">2</span> ~ <span class=\"katex math inline\">N+1</span> 行：每行一个整数，表示每个隔间的坐标。</p>\n</div>            </div>",
+      "text": "第 1 行：两个用空格隔开的数字 N 和 C。\n第 2 ~ N+1 行：每行一个整数，表示每个隔间的坐标。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，即相邻两头牛最大的最近距离。</p>\n</div>            </div>",
+      "text": "输出只有一行，即相邻两头牛最大的最近距离。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 3\r\n1 \r\n2 \r\n8 \r\n4 \r\n9 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 3\r\n1 \r\n2 \r\n8 \r\n4 \r\n9 \n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO 二分</p>\n</div>                </div>",
+      "text": "USACO 二分"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">USACO</span><span class=\"label label-warning\">二分</span></span></p>\n</div>                </div>",
+      "text": "USACO二分"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 3\r\n1 \r\n2 \r\n8 \r\n4 \r\n9 ",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4474",
+    "通过人数": "2539",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:25:49"
+}

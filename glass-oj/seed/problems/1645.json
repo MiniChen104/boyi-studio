@@ -1,0 +1,56 @@
+{
+  "id": "1645",
+  "title": "正负数",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1645",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入一个非 <span class=\"katex math inline\">0</span> 整数，判断它的正负。是正数，则输出“ <code>+</code> ”，是负数，则输出 “ <code>-</code> ” 。</p>\n</div>            </div>",
+      "text": "从键盘读入一个非 0 整数，判断它的正负。是正数，则输出“ + ”，是负数，则输出 “ - ” 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个非 <span class=\"katex math inline\">0</span> 整数 <span class=\"katex math inline\">n</span> ( <span class=\"katex math inline\">n</span> 在 <span class=\"katex math inline\">-32768 \\sim 32767</span> 之间)。</p>\n</div>            </div>",
+      "text": "一个非 0 整数 n ( n 在 -32768 \\sim 32767 之间)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>是正数，则输出 “ <code>+</code> ”，是负数，则输出 “<code>-</code>” 。</p>\n</div>            </div>",
+      "text": "是正数，则输出 “ + ”，是负数，则输出 “-” 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>+</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\n                        \n                        \n                            输出\n                            +"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10",
+      "output": "+"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "3341",
+    "通过人数": "2943",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:18"
+}

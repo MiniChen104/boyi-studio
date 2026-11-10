@@ -1,0 +1,56 @@
+{
+  "id": "1224",
+  "title": "过河卒",
+  "tags": [
+    "递推"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1224",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">A</span> 点有一个过河卒，需要走到目标 <span class=\"katex math inline\">B</span> 点。</p>\n<p>卒行走规则：可以向下、或者向右。同时在棋盘上的任一点有一个对方的马（如下图的 <span class=\"katex math inline\">C</span> 点），该马所在的点和所有跳跃一步可达的点称为对方马的控制点。</p>\n<p>例如：下图 <span class=\"katex math inline\">C</span> 点可以控制 <span class=\"katex math inline\">9</span> 个点（图中的 <span class=\"katex math inline\">P1,P2 \\dots  P8</span> 和 <span class=\"katex math inline\">C</span> ），卒不能通过对方马的控制点。 棋盘用坐标表示，现给定 <span class=\"katex math inline\">A</span> 点位置为 <span class=\"katex math inline\">(0,0)</span>， <span class=\"katex math inline\">B</span> 点位置为 <span class=\"katex math inline\">(n,m)</span> (<span class=\"katex math inline\">n,m</span> 为不超过 <span class=\"katex math inline\">20</span> 的整数)，马的位置 <span class=\"katex math inline\">C</span> 为 <span class=\"katex math inline\">(X,Y)</span>（约定: <span class=\"katex math inline\">C</span> 点与 <span class=\"katex math inline\">A</span> 点不重叠，与 <span class=\"katex math inline\">B</span> 点也不重叠）。</p>\n<p>要求你计算出卒从 <span class=\"katex math inline\">A</span> 点能够到达 <span class=\"katex math inline\">B</span> 点的路径的条数。</p>\n<p><img src=\"https://assets.boyi.local/56e95a4d10a1f56340053248.jpg\"></p>\n</div>            </div>",
+      "text": "A 点有一个过河卒，需要走到目标 B 点。\n卒行走规则：可以向下、或者向右。同时在棋盘上的任一点有一个对方的马（如下图的 C 点），该马所在的点和所有跳跃一步可达的点称为对方马的控制点。\n例如：下图 C 点可以控制 9 个点（图中的 P1,P2 \\dots  P8 和 C ），卒不能通过对方马的控制点。 棋盘用坐标表示，现给定 A 点位置为 (0,0)， B 点位置为 (n,m) (n,m 为不超过 20 的整数)，马的位置 C 为 (X,Y)（约定: C 点与 A 点不重叠，与 B 点也不重叠）。\n要求你计算出卒从 A 点能够到达 B 点的路径的条数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">B</span> 点的坐标 <span class=\"katex math inline\">(n,m)</span> 以及对方马的坐标 <span class=\"katex math inline\">(X,Y)</span>；（马的坐标一定在棋盘范围内，但要注意，可能落在边界的轴上）</p>\n</div>            </div>",
+      "text": "B 点的坐标 (n,m) 以及对方马的坐标 (X,Y)；（马的坐标一定在棋盘范围内，但要注意，可能落在边界的轴上）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出卒从 <span class=\"katex math inline\">A</span> 点能够到达 <span class=\"katex math inline\">B</span> 点的路径条数。（本题的路径条数<strong>可能会超过 <span class=\"katex math inline\">10^9</span></strong>，但不会超过 <span class=\"katex math inline\">10^{18}</span>，C/C++选手请注意使用long long）</p>\n</div>            </div>",
+      "text": "输出卒从 A 点能够到达 B 点的路径条数。（本题的路径条数可能会超过 10^9，但不会超过 10^{18}，C/C++选手请注意使用long long）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 6 3 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>17</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 6 3 2\n                        \n                        \n                            输出\n                            17"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递推</p>\n</div>                </div>",
+      "text": "递推"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递推</span></span></p>\n</div>                </div>",
+      "text": "递推"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 6 3 2",
+      "output": "17"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "12454",
+    "通过人数": "6733",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:16:31"
+}

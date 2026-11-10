@@ -1,0 +1,60 @@
+{
+  "id": "2482",
+  "title": "分礼品",
+  "tags": [
+    "贪心"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2482",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某班开联欢晚会，晓楠同学随机将若干礼品分成了 <span class=\"katex math inline\">n</span> 堆，第 <span class=\"katex math inline\">i</span> 堆有 <span class=\"katex math inline\">Ai</span> 个礼品。  </p>\n<p>班主任王老师看了晓楠同学分礼品的情况后，提出了一个要求：要求任意两堆相邻礼品的数量和不能超过 <span class=\"katex math inline\">t</span> ，如果超过了，就要从分好的礼品中拿出一部分。  </p>\n<p>请问：晓楠同学最少要从分好的礼品中，拿出多少个礼品，才能使得相邻的礼品的数量和满足老师说的要求？</p>\n</div>            </div>",
+      "text": "某班开联欢晚会，晓楠同学随机将若干礼品分成了 n 堆，第 i 堆有 Ai 个礼品。  \n班主任王老师看了晓楠同学分礼品的情况后，提出了一个要求：要求任意两堆相邻礼品的数量和不能超过 t ，如果超过了，就要从分好的礼品中拿出一部分。  \n请问：晓楠同学最少要从分好的礼品中，拿出多少个礼品，才能使得相邻的礼品的数量和满足老师说的要求？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第1行，输入整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">t</span>。</p>\n<p>第2行，输入 <span class=\"katex math inline\">n</span> 个整数。</p>\n<p><span class=\"katex math inline\">1≤n≤10</span><sup><span class=\"katex math inline\">5</span></sup>，<span class=\"katex math inline\">1≤t,Ai≤10</span><sup><span class=\"katex math inline\">9</span></sup>。</p>\n</div>            </div>",
+      "text": "第1行，输入整数 n 和 t。\n第2行，输入 n 个整数。\n1≤n≤105，1≤t,Ai≤109。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出最少要拿出的礼品的数量。</p>\n</div>            </div>",
+      "text": "输出最少要拿出的礼品的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 5\r\n4 3 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 3\r\n5 1 4</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>4</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 5\r\n4 3 3\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                3 3\r\n5 1 4\n                            \n                            \n                                输出\n                                4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 说明】</h4>\n<p>第2堆礼品拿出2个，就可以使得每一堆礼品符合题意要求。  </p>\n<h4>【样例 2 说明】</h4>\n<p>第1堆礼品拿出2个，第2堆礼品拿出1个，第3堆礼品拿出1个，就可以使得每一堆礼品符合题意要求。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例 1 说明】\n第2堆礼品拿出2个，就可以使得每一堆礼品符合题意要求。  \n【样例 2 说明】\n第1堆礼品拿出2个，第2堆礼品拿出1个，第3堆礼品拿出1个，就可以使得每一堆礼品符合题意要求。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">贪心</span></span></p>\n</div>                </div>",
+      "text": "贪心"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 5\r\n4 3 3",
+      "output": "2"
+    },
+    {
+      "input": "3 3\r\n5 1 4",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1178",
+    "通过人数": "467",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:53"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1661",
+  "title": "宇航员选拔",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1661",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>宇航局来到某部队，想从该部队挑选身体好的战士进行航空航天的培训和考核，挑选未来的宇航员。宇航局在身体素质方面定了 <span class=\"katex math inline\">3</span> 个基本的标准：身高在 <span class=\"katex math inline\">165</span> 厘米<span class=\"katex math inline\"> \\sim 185</span>  厘米之间，体重在 <span class=\"katex math inline\">50</span> 公斤<span class=\"katex math inline\"> \\sim 80</span>公斤之间，年龄在<span class=\"katex math inline\">16 \\sim 19</span>周岁（所有数据都包含边界值，也就是身高包含<span class=\"katex math inline\">165</span> 厘米和 <span class=\"katex math inline\">185</span> 厘米，体重和年龄以此类推）。</p>\n<p>现从键盘读入一位战士的年龄、身高、体重数据（都是整数），请问该战士是否符合宇航局定的基本标准，如果符合，请输出 <code>Y</code> ，如果不符合，请输出 <code>N</code> 。</p>\n</div>            </div>",
+      "text": "宇航局来到某部队，想从该部队挑选身体好的战士进行航空航天的培训和考核，挑选未来的宇航员。宇航局在身体素质方面定了 3 个基本的标准：身高在 165 厘米 \\sim 185  厘米之间，体重在 50 公斤 \\sim 80公斤之间，年龄在16 \\sim 19周岁（所有数据都包含边界值，也就是身高包含165 厘米和 185 厘米，体重和年龄以此类推）。\n现从键盘读入一位战士的年龄、身高、体重数据（都是整数），请问该战士是否符合宇航局定的基本标准，如果符合，请输出 Y ，如果不符合，请输出 N 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>读入三个整数，分别代表一位战士的年龄、体重、身高数据。</p>\n</div>            </div>",
+      "text": "读入三个整数，分别代表一位战士的年龄、体重、身高数据。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>根据判断结果输出 <code>Y</code> 或者 <code>N</code> 。</p>\n</div>            </div>",
+      "text": "根据判断结果输出 Y 或者 N 。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>16 60 185</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Y</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            16 60 185\n                        \n                        \n                            输出\n                            Y"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "16 60 185",
+      "output": "Y"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "24353",
+    "通过人数": "12684",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:22:33"
+}

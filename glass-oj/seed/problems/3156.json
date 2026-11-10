@@ -1,0 +1,69 @@
+{
+  "id": "3156",
+  "title": "小数化分数",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3156",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个小数，求它的最简分数表示。具体办法如下：</p>\n<p>1、有限小数化分数</p>\n<p>首先看小数点后面有几位数，如果是2位就除以100，是1位除以10，三位数除以1000，以此类推。然后分子和分母约分到不能再约分为止。\n例如0.125 ，化成125/1000 再约分成 1/8</p>\n<p>2、纯循环小数化分数</p>\n<p>第一步：循环节有几位，就在分母上放几个9</p>\n<p>第二步：把循环节部分完整地放在分子上</p>\n<p>第三步：约分</p>\n<p>例如：0.(3)，循环节部分为3  化成3/9 再约分成 1/3</p>\n<p>3、混循环小数化分数</p>\n<p>分母：由9和0组成，9的个数等于循环节长度，0的个数等于不循环的位数</p>\n<p>分子：小数点后全部的数，减去不循环的部分</p>\n<p>例如：0.1(2) ，循环节部分为2  非循环节部分为1  化成(12-1)/90 </p>\n</div>            </div>",
+      "text": "给定一个小数，求它的最简分数表示。具体办法如下：\n1、有限小数化分数\n首先看小数点后面有几位数，如果是2位就除以100，是1位除以10，三位数除以1000，以此类推。然后分子和分母约分到不能再约分为止。\n例如0.125 ，化成125/1000 再约分成 1/8\n2、纯循环小数化分数\n第一步：循环节有几位，就在分母上放几个9\n第二步：把循环节部分完整地放在分子上\n第三步：约分\n例如：0.(3)，循环节部分为3  化成3/9 再约分成 1/3\n3、混循环小数化分数\n分母：由9和0组成，9的个数等于循环节长度，0的个数等于不循环的位数\n分子：小数点后全部的数，减去不循环的部分\n例如：0.1(2) ，循环节部分为2  非循环节部分为1  化成(12-1)/90"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入a.b(c)，表示整数部分为 a，小数不循环部分为 b，循环部分为 c。</p>\n</div>            </div>",
+      "text": "输入a.b(c)，表示整数部分为 a，小数不循环部分为 b，循环部分为 c。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>该小数的最简分数。</p>\n</div>            </div>",
+      "text": "该小数的最简分数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>0.125</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1/8</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>0.(3)</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1/3</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>0.1(2) </pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>11/90</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            0.125\n                        \n                        \n                            输出\n                            1/8\n                        \n\n                                                    \n                                输入\n                                0.(3)\n                            \n                            \n                                输出\n                                1/3\n                            \n                        \n                                                    \n                                输入\n                                0.1(2) \n                            \n                            \n                                输出\n                                11/90"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据说明】</p>\n<p><span class=\"katex math inline\">100</span>% 的小数不超过 <span class=\"katex math inline\">15</span> 位</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据说明】\n100% 的小数不超过 15 位"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2022南京市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2022南京市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "0.125",
+      "output": "1/8"
+    },
+    {
+      "input": "0.(3)",
+      "output": "1/3"
+    },
+    {
+      "input": "0.1(2) ",
+      "output": "11/90"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "54",
+    "通过人数": "21",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:26"
+}

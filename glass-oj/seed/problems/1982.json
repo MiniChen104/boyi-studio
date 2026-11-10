@@ -1,0 +1,56 @@
+{
+  "id": "1982",
+  "title": "小明的幸运数",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1982",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明喜欢 <span class=\"katex math inline\">6</span> 和 <span class=\"katex math inline\">8</span> ，但他和别的小朋友不一样，别的小朋友都喜欢以 <span class=\"katex math inline\">6</span> 或 <span class=\"katex math inline\">8</span> 结尾的数字，但小明却喜欢 <span class=\"katex math inline\">6</span> 或 <span class=\"katex math inline\">8</span> 的倍数，他把这样的数字称为 “幸运数”。</p>\n<p>给出两个边界 <span class=\"katex math inline\">m,n</span> ，请你帮助小明计算 <span class=\"katex math inline\">m</span> 到 <span class=\"katex math inline\">n</span> 中（包括 <span class=\"katex math inline\">m,n</span> ），有多少个幸运数。</p>\n</div>            </div>",
+      "text": "小明喜欢 6 和 8 ，但他和别的小朋友不一样，别的小朋友都喜欢以 6 或 8 结尾的数字，但小明却喜欢 6 或 8 的倍数，他把这样的数字称为 “幸运数”。\n给出两个边界 m,n ，请你帮助小明计算 m 到 n 中（包括 m,n ），有多少个幸运数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>读入两个整数 <span class=\"katex math inline\">m,n</span>（<span class=\"katex math inline\">3 \\le m \\le n \\le 1000</span>）。</p>\n</div>            </div>",
+      "text": "读入两个整数 m,n（3 \\le m \\le n \\le 1000）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一个数，表示幸运数的个数。</p>\n</div>            </div>",
+      "text": "输出只有一个数，表示幸运数的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 20\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 20",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "2382",
+    "通过人数": "1774",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:26:54"
+}

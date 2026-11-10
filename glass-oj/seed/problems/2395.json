@@ -1,0 +1,52 @@
+{
+  "id": "2395",
+  "title": "部分背包问题",
+  "tags": [
+    "贪心",
+    "部分背包"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2395",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>阿里巴巴走进了装满宝藏的藏宝洞。藏宝洞里面有 <span class=\"katex math inline\">N</span> (<span class=\"katex math inline\">N≤100</span>) 堆金币，第 <span class=\"katex math inline\">i</span> 堆金币的总重量和总价值分别是 <span class=\"katex math inline\">m_i</span>,<span class=\"katex math inline\">v_i</span> (<span class=\"katex math inline\">1 ≤ m_i , v_i ≤ 100</span>)。</p>\n<p>阿里巴巴有一个承重量为 <span class=\"katex math inline\">T</span> (<span class=\"katex math inline\">T≤1000</span>) 的背包，但并不一定有办法将全部的金币都装进去。他想装走尽可能多价值的金币。</p>\n<p>所有金币都可以随意分割，分割完的金币重量价值比（也就是单位价格）不变。</p>\n<p>请问阿里巴巴最多可以拿走多少价值的金币？</p>\n</div>            </div>",
+      "text": "阿里巴巴走进了装满宝藏的藏宝洞。藏宝洞里面有 N (N≤100) 堆金币，第 i 堆金币的总重量和总价值分别是 m_i,v_i (1 ≤ m_i , v_i ≤ 100)。\n阿里巴巴有一个承重量为 T (T≤1000) 的背包，但并不一定有办法将全部的金币都装进去。他想装走尽可能多价值的金币。\n所有金币都可以随意分割，分割完的金币重量价值比（也就是单位价格）不变。\n请问阿里巴巴最多可以拿走多少价值的金币？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个整数 <span class=\"katex math inline\">N</span> , <span class=\"katex math inline\">T</span>。\n接下来 <span class=\"katex math inline\">N</span> 行，每行两个整数 <span class=\"katex math inline\">m_i</span> , <span class=\"katex math inline\">v_i</span>。</p>\n</div>            </div>",
+      "text": "第一行两个整数 N , T。\n接下来 N 行，每行两个整数 m_i , v_i。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个实数表示答案，输出两位小数。</p>\n</div>            </div>",
+      "text": "一个实数表示答案，输出两位小数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 50\r\n10 60\r\n20 100\r\n30 120\r\n15 45</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>240.00</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4 50\r\n10 60\r\n20 100\r\n30 120\r\n15 45\n                        \n                        \n                            输出\n                            240.00"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">贪心</span><span class=\"label label-warning\">部分背包</span></span></p>\n</div>                </div>",
+      "text": "贪心部分背包"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 50\r\n10 60\r\n20 100\r\n30 120\r\n15 45",
+      "output": "240.00"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1199",
+    "通过人数": "835",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:51"
+}

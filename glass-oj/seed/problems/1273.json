@@ -1,0 +1,56 @@
+{
+  "id": "1273",
+  "title": "哥德巴赫猜想的所有解",
+  "tags": [
+    "二维数组"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1273",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>求出哥德巴赫猜想的所有解（将一个大于 <span class=\"katex math inline\">9</span> 的奇数拆分成三个素数之和），并按从小到大的顺序写出。</p>\n</div>            </div>",
+      "text": "求出哥德巴赫猜想的所有解（将一个大于 9 的奇数拆分成三个素数之和），并按从小到大的顺序写出。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，一个大于 <span class=\"katex math inline\">9</span> 的奇数。</p>\n</div>            </div>",
+      "text": "一行，一个大于 9 的奇数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个整数 <span class=\"katex math inline\">N</span>（ <span class=\"katex math inline\">N \\le 1200</span> ），表示解的总数。<br>\n第 <span class=\"katex math inline\">2-N+1</span> 行，每行一个解。</p>\n</div>            </div>",
+      "text": "第一行，一个整数 N（ N \\le 1200 ），表示解的总数。\n第 2-N+1 行，每行一个解。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>15</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3\r\n15=2+2+11\r\n15=3+5+7\r\n15=5+5+5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            15\n                        \n                        \n                            输出\n                            3\r\n15=2+2+11\r\n15=3+5+7\r\n15=5+5+5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二维数组</p>\n</div>                </div>",
+      "text": "二维数组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "15",
+      "output": "3\r\n15=2+2+11\r\n15=3+5+7\r\n15=5+5+5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "3783",
+    "通过人数": "2112",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:17:11"
+}

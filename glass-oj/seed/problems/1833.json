@@ -1,0 +1,56 @@
+{
+  "id": "1833",
+  "title": "八皇后",
+  "tags": [
+    "回溯"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1833",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>会下国际象棋的人都很清楚：皇后可以在横、竖、斜线上不限步数地吃掉其他棋子。如何将 <span class=\"katex math inline\">8</span> 个皇后放在棋盘上（有 <span class=\"katex math inline\">8 \\times 8</span> 个方格），使它们谁也不能被吃掉！这就是著名的八皇后问题。 </p>\n<p>对于某个满足要求的 <span class=\"katex math inline\">8</span> 皇后的摆放方法，定义一个皇后串 <span class=\"katex math inline\">a</span> 与之对应，即 <span class=\"katex math inline\">a=b_1b_2 \\dots b_8</span>，其中 <span class=\"katex math inline\">b_i</span> 为相应摆法中第 <span class=\"katex math inline\">i</span> 行皇后所处的列数。已经知道 <span class=\"katex math inline\">8</span> 皇后问题一共有 <span class=\"katex math inline\">92</span> 组解（即 <span class=\"katex math inline\">92</span> 个不同的皇后串）。</p>\n<p>给出一个数 <span class=\"katex math inline\">b</span> ，要求输出第 <span class=\"katex math inline\">b</span> 个串。串的比较是这样的：皇后串 <span class=\"katex math inline\">x</span> 置于皇后串 <span class=\"katex math inline\">y</span> 之前，当且仅当将 <span class=\"katex math inline\">x</span> 视为整数时比 <span class=\"katex math inline\">y</span> 小。</p>\n</div>            </div>",
+      "text": "会下国际象棋的人都很清楚：皇后可以在横、竖、斜线上不限步数地吃掉其他棋子。如何将 8 个皇后放在棋盘上（有 8 \\times 8 个方格），使它们谁也不能被吃掉！这就是著名的八皇后问题。 \n对于某个满足要求的 8 皇后的摆放方法，定义一个皇后串 a 与之对应，即 a=b_1b_2 \\dots b_8，其中 b_i 为相应摆法中第 i 行皇后所处的列数。已经知道 8 皇后问题一共有 92 组解（即 92 个不同的皇后串）。\n给出一个数 b ，要求输出第 b 个串。串的比较是这样的：皇后串 x 置于皇后串 y 之前，当且仅当将 x 视为整数时比 y 小。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行是测试数据的组数 <span class=\"katex math inline\">n</span> ，后面跟着 <span class=\"katex math inline\">n</span> 行输入。</p>\n<p>每组测试数据占 <span class=\"katex math inline\">1</span> 行，包括一个正整数 <span class=\"katex math inline\">b</span> (<span class=\"katex math inline\">1 \\le b \\le 92</span>)。</p>\n</div>            </div>",
+      "text": "第 1 行是测试数据的组数 n ，后面跟着 n 行输入。\n每组测试数据占 1 行，包括一个正整数 b (1 \\le b \\le 92)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出有 <span class=\"katex math inline\">n</span> 行，每行输出对应一个输入。输出应是一个正整数，是对应于 <span class=\"katex math inline\">b</span> 的皇后串。</p>\n</div>            </div>",
+      "text": "输出有 n 行，每行输出对应一个输入。输出应是一个正整数，是对应于 b 的皇后串。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2\r\n1\r\n92</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>15863724\r\n84136275</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\r\n1\r\n92\n                        \n                        \n                            输出\n                            15863724\r\n84136275"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>回溯</p>\n</div>                </div>",
+      "text": "回溯"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">回溯</span></span></p>\n</div>                </div>",
+      "text": "回溯"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2\r\n1\r\n92",
+      "output": "15863724\r\n84136275"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "2259",
+    "通过人数": "1425",
+    "金币数量": "1 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:24:48"
+}

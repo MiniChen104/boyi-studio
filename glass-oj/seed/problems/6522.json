@@ -1,0 +1,67 @@
+{
+  "id": "6522",
+  "title": "阅读座位安排",
+  "tags": [
+    "横琴赛",
+    "二维数组",
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6522",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>会场的平面图由 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列网格组成，<code>.</code> 表示可用位置，<code>#</code> 表示音响设备。</p>\n<p>一个位置可以布置阅读座位，当且仅当它是可用位置，且<strong>上、下、左、右四个方向中，所有位于图内的相邻位置都不是音响设备</strong>。</p>\n<p>图外不算音响，对角线方向不影响判断。请统计可以布置阅读座位的位置总数。</p>\n</div>            </div>",
+      "text": "会场的平面图由 n 行 m 列网格组成，. 表示可用位置，# 表示音响设备。\n一个位置可以布置阅读座位，当且仅当它是可用位置，且上、下、左、右四个方向中，所有位于图内的相邻位置都不是音响设备。\n图外不算音响，对角线方向不影响判断。请统计可以布置阅读座位的位置总数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行输入整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行是长度为 <span class=\"katex math inline\">m</span>、仅由 <code>.</code> 和 <code>#</code> 组成的字符串。</p>\n</div>            </div>",
+      "text": "第一行输入整数 n 和 m。\n接下来 n 行，每行是长度为 m、仅由 . 和 # 组成的字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示可以布置阅读座位的位置总数。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示可以布置阅读座位的位置总数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 4\r\n....\r\n.#..\r\n....</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1 1\r\n.</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 4\r\n....\r\n.#..\r\n....\n                        \n                        \n                            输出\n                            7\n                        \n\n                                                    \n                                输入\n                                1 1\r\n.\n                            \n                            \n                                输出\n                                1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 解释】</h4>\n<p>1 格为音响，4 格与音响上下左右相邻，其余 7 格可以布置座位。</p>\n<h4>【样例 2 解释】</h4>\n<p>没有网格内相邻位置，该位置满足条件。</p>\n<h4>数据范围</h4>\n<p><span class=\"katex math inline\">1 \\le n,m \\le 500</span>。</p>\n<table><thead><tr><th>测试点</th><th>附加限制</th></tr></thead><tbody><tr><td>01—03</td><td><span class=\"katex math inline\">n=1</span> 或 <span class=\"katex math inline\">m=1</span></td></tr><tr><td>04—06</td><td><span class=\"katex math inline\">1 \\le n,m \\le 30</span></td></tr><tr><td>07—10</td><td>完整范围</td></tr></tbody></table></div>\n\n                    \n                </div>",
+      "text": "【样例 1 解释】\n1 格为音响，4 格与音响上下左右相邻，其余 7 格可以布置座位。\n【样例 2 解释】\n没有网格内相邻位置，该位置满足条件。\n数据范围\n1 \\le n,m \\le 500。\n测试点附加限制01—03n=1 或 m=104—061 \\le n,m \\le 3007—10完整范围"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2026 年横琴粤澳深度合作区人工智能大赛暨第八届粤港澳青少年机器人大赛，GoC 专项赛先锋组。</p>\n</div>                </div>",
+      "text": "2026 年横琴粤澳深度合作区人工智能大赛暨第八届粤港澳青少年机器人大赛，GoC 专项赛先锋组。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">横琴赛</span><span class=\"label label-warning\">二维数组</span><span class=\"label label-info\">字符串</span></span></p>\n</div>                </div>",
+      "text": "横琴赛二维数组字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 4\r\n....\r\n.#..\r\n....",
+      "output": "7"
+    },
+    {
+      "input": "1 1\r\n.",
+      "output": "1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "17",
+    "通过人数": "12",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:14"
+}

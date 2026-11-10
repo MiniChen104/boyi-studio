@@ -1,0 +1,56 @@
+{
+  "id": "1620",
+  "title": "对称的六位数",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1620",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一个六位数，是左右对称图形，对称图形的意思是，这个数正过来和倒过来是一样的，比如 <span class=\"katex math inline\">123321</span>、<span class=\"katex math inline\">506605</span> 等数都是六位的对称数。</p>\n<p>请从键盘读入一个三位数，作为这个六位数的后三位，求出该六位数是多少？</p>\n<p>比如：输入 <span class=\"katex math inline\">321</span> 作为这个六位数的后三位，那么前三位一定是 <span class=\"katex math inline\">123</span> ，这个六位数就是 <span class=\"katex math inline\">123321</span> 。</p>\n</div>            </div>",
+      "text": "有一个六位数，是左右对称图形，对称图形的意思是，这个数正过来和倒过来是一样的，比如 123321、506605 等数都是六位的对称数。\n请从键盘读入一个三位数，作为这个六位数的后三位，求出该六位数是多少？\n比如：输入 321 作为这个六位数的后三位，那么前三位一定是 123 ，这个六位数就是 123321 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个三位数（这个三位数的个位一定不为 <span class=\"katex math inline\">0</span>），作为六位数的百位、十位和个位。</p>\n</div>            </div>",
+      "text": "一个三位数（这个三位数的个位一定不为 0），作为六位数的百位、十位和个位。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出计算出的满足条件的六位数。</p>\n</div>            </div>",
+      "text": "输出计算出的满足条件的六位数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>321</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>123321</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            321\n                        \n                        \n                            输出\n                            123321"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "321",
+      "output": "123321"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "4936",
+    "通过人数": "3908",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:21:57"
+}

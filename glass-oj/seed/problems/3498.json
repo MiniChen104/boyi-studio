@@ -1,0 +1,61 @@
+{
+  "id": "3498",
+  "title": "程序分析",
+  "tags": [
+    "江苏省赛2023"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3498",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>程序分析技术是一种用于理解和改进计算机程序的方法。它可以帮助我们找出程序中的错误、提高程序的性能、优化代码结构等。其中，静态分析技术在不运行程序的情况下对程序代码进行分析。它可以检查代码的语法、风格、潜在错误等。例如，静态分析可以帮助我们找出程序中未使用的变量、可能的数组越界等问题。</p>\n<p>小小设计了一个自己的编程语言，并命名为 <span class=\"katex math inline\">X</span> 语言。你能为它设计一个静态分析器吗？</p>\n<p><span class=\"katex math inline\">X</span> 语言程序中只有两个整型变量 <span class=\"katex math inline\">x</span> 和 <span class=\"katex math inline\">y</span>，且无需定义，可以直接使用。变量 <span class=\"katex math inline\">x</span> 的值从程序外输入 (输入值可以是任何 C++ int 范围内的值)，<span class=\"katex math inline\">y</span> 的初始值是 <span class=\"katex math inline\">0</span>。一个 <span class=\"katex math inline\">X</span> 语言程序由若干行组成，每行<strong>恰好包含一条命令</strong>，是以下三种命令之一：</p>\n<p><span class=\"katex math inline\">1.</span> 条件分支：<span class=\"katex math inline\">if</span> (条件) {</p>\n<p><span class=\"katex math inline\">2.</span> 对 <span class=\"katex math inline\">y</span> 赋值：<span class=\"katex math inline\">y =</span> 数字;</p>\n<p><span class=\"katex math inline\">3.</span> 条件结束：}</p>\n<p>其中，“条件” 要么是 “<span class=\"katex math inline\">x \\gt </span>数字”，要么是 “<span class=\"katex math inline\">x \\lt </span>数字”。赋值语句和条件中的 “数字” 都是 <span class=\"katex math inline\">1</span> 到\n<span class=\"katex math inline\">1,000,000,000</span> 之间的常数。<span class=\"katex math inline\">if</span> 和赋值的含义同 C++ 语言中的条件和赋值语句。\n请你编写一个静态分析器，分析一个 <span class=\"katex math inline\">X</span> 语言程序执行结束时，所有可能的 <span class=\"katex math inline\">y</span> 的值。</p>\n</div>            </div>",
+      "text": "程序分析技术是一种用于理解和改进计算机程序的方法。它可以帮助我们找出程序中的错误、提高程序的性能、优化代码结构等。其中，静态分析技术在不运行程序的情况下对程序代码进行分析。它可以检查代码的语法、风格、潜在错误等。例如，静态分析可以帮助我们找出程序中未使用的变量、可能的数组越界等问题。\n小小设计了一个自己的编程语言，并命名为 X 语言。你能为它设计一个静态分析器吗？\nX 语言程序中只有两个整型变量 x 和 y，且无需定义，可以直接使用。变量 x 的值从程序外输入 (输入值可以是任何 C++ int 范围内的值)，y 的初始值是 0。一个 X 语言程序由若干行组成，每行恰好包含一条命令，是以下三种命令之一：\n1. 条件分支：if (条件) {\n2. 对 y 赋值：y = 数字;\n3. 条件结束：}\n其中，“条件” 要么是 “x \\gt 数字”，要么是 “x \\lt 数字”。赋值语句和条件中的 “数字” 都是 1 到\n1,000,000,000 之间的常数。if 和赋值的含义同 C++ 语言中的条件和赋值语句。\n请你编写一个静态分析器，分析一个 X 语言程序执行结束时，所有可能的 y 的值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据第一行为整数 <span class=\"katex math inline\">n</span>，代表程序的行数。</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行一个命令，描述了一个合法的 <span class=\"katex math inline\">X</span> 语言程序：输入的程序保证括号配对，且符合问题描述中的约定。为了便于大家解析 (例如用 cin 或 scanf 读入)，输入程序中的 <span class=\"katex math inline\">if</span> 后、{ 前、<span class=\"katex math inline\">=、\\lt、\\gt </span> 左右都恰好有一个空格，行首可能有若干空格缩进。除此之外，输入不含多余的空格或空白字符。</p>\n</div>            </div>",
+      "text": "输入数据第一行为整数 n，代表程序的行数。\n接下来 n 行，每行一个命令，描述了一个合法的 X 语言程序：输入的程序保证括号配对，且符合问题描述中的约定。为了便于大家解析 (例如用 cin 或 scanf 读入)，输入程序中的 if 后、{ 前、=、\\lt、\\gt  左右都恰好有一个空格，行首可能有若干空格缩进。除此之外，输入不含多余的空格或空白字符。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，从小到大不重复地输出程序结束时，变量 <span class=\"katex math inline\">y</span> 所有可能的值。数字之间由一个空格隔开。</p>\n</div>            </div>",
+      "text": "输出一行，从小到大不重复地输出程序结束时，变量 y 所有可能的值。数字之间由一个空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10\r\nif (x &gt; 1) {\r\n  y = 2;\r\n  if (x &gt; 10) {\r\n    y = 1;\r\n    y = 4;\r\n      if (x &lt; 5) {\r\n        y = 3;\r\n      }\r\n    }\r\n}</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0 2 4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\r\nif (x > 1) {\r\n  y = 2;\r\n  if (x > 10) {\r\n    y = 1;\r\n    y = 4;\r\n      if (x < 5) {\r\n        y = 3;\r\n      }\r\n    }\r\n}\n                        \n                        \n                            输出\n                            0 2 4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>【数据规模】</strong></p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，满足 <span class=\"katex math inline\">n \\le 1, 000</span>。输入数据的每行都不超过 <span class=\"katex math inline\">1, 000</span> 个字符。</p>\n</div>\n\n                                            <p>\n                            <h4><b>附件下载</b></h4>\n                        </p>\n                        <p>\n                            \n                                p4.zip                            \n                            (1.79 KB)\n                        </p>\n                    \n                </div>",
+      "text": "【数据规模】\n对于 100\\% 的数据，满足 n \\le 1, 000。输入数据的每行都不超过 1, 000 个字符。\n\n\n                                            \n                            附件下载\n                        \n                        \n                            \n                                p4.zip                            \n                            (1.79 KB)"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2023年江苏省＂信息与未来＂小学生编程</p>\n</div>                </div>",
+      "text": "2023年江苏省＂信息与未来＂小学生编程"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">江苏省赛2023</span></span></p>\n</div>                </div>",
+      "text": "江苏省赛2023"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10\r\nif (x > 1) {\r\n  y = 2;\r\n  if (x > 10) {\r\n    y = 1;\r\n    y = 4;\r\n      if (x < 5) {\r\n        y = 3;\r\n      }\r\n    }\r\n}",
+      "output": "0 2 4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "157",
+    "通过人数": "15",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:31"
+}

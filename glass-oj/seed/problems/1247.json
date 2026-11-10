@@ -1,0 +1,56 @@
+{
+  "id": "1247",
+  "title": "打印n行的完整的蝴蝶结",
+  "tags": [
+    "嵌套循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1247",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请从键盘读入一个整数 <span class=\"katex math inline\">n</span>（<span class=\"katex math inline\">n</span> 是 <span class=\"katex math inline\">1 \\sim 10</span> 的范围内的奇数），打印出如下图所示的 <span class=\"katex math inline\">n</span> 行的完整的蝴蝶结！  </p>\n<p>比如，<span class=\"katex math inline\">n=5</span>，则打印图形如下：<br><img src=\"https://assets.boyi.local/35f94e890d35114f9b31415d.jpg\"></p>\n<p><span class=\"katex math inline\">n=7</span>:</p>\n<p><img src=\"https://assets.boyi.local/c596516426d04b88ecbcae23.png\"></p>\n</div>            </div>",
+      "text": "请从键盘读入一个整数 n（n 是 1 \\sim 10 的范围内的奇数），打印出如下图所示的 n 行的完整的蝴蝶结！  \n比如，n=5，则打印图形如下：\nn=7:"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">n</span> ，代表图形的行数！</p>\n</div>            </div>",
+      "text": "一个整数 n ，代表图形的行数！"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 行的图形！</p>\n</div>            </div>",
+      "text": "n 行的图形！"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>*    *\r\n**  **\r\n******\r\n**  **\r\n*    *</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            *    *\r\n**  **\r\n******\r\n**  **\r\n*    *"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>嵌套循环</p>\n</div>                </div>",
+      "text": "嵌套循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">嵌套循环</span></span></p>\n</div>                </div>",
+      "text": "嵌套循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "*    *\r\n**  **\r\n******\r\n**  **\r\n*    *"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "8162",
+    "通过人数": "5782",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:16:51"
+}

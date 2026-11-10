@@ -1,0 +1,57 @@
+{
+  "id": "1245",
+  "title": "求s=a+aa+aaa+aaaa+aa...a的值",
+  "tags": [
+    "函数问题",
+    "递归"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1245",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>求 <span class=\"katex math inline\">s=a+aa+aaa+aaaa+aa \\dots a</span> 的值，其中 <span class=\"katex math inline\">a</span> 从键盘读入。比如：读入 <span class=\"katex math inline\">2</span> ，则 <span class=\"katex math inline\">s=2+22=24</span> 。再比如：读入 <span class=\"katex math inline\">5</span> ， <span class=\"katex math inline\">s=5+55+555+5555+55555=61725</span> </p>\n</div>            </div>",
+      "text": "求 s=a+aa+aaa+aaaa+aa \\dots a 的值，其中 a 从键盘读入。比如：读入 2 ，则 s=2+22=24 。再比如：读入 5 ， s=5+55+555+5555+55555=61725"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">a</span> （ <span class=\"katex math inline\">a</span> 在 <span class=\"katex math inline\">1 \\sim 9</span> 的范围内）</p>\n</div>            </div>",
+      "text": "一个整数 a （ a 在 1 \\sim 9 的范围内）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>整数 <span class=\"katex math inline\">n</span> 代表这个算式的结果</p>\n</div>            </div>",
+      "text": "整数 n 代表这个算式的结果"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>24</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\n                        \n                        \n                            输出\n                            24"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>函数问题 递归</p>\n</div>                </div>",
+      "text": "函数问题 递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">函数问题</span><span class=\"label label-warning\">递归</span></span></p>\n</div>                </div>",
+      "text": "函数问题递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2",
+      "output": "24"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "4765",
+    "通过人数": "3259",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:16:49"
+}

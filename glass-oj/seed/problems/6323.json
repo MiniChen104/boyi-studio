@@ -1,0 +1,58 @@
+{
+  "id": "6323",
+  "title": "字符变换",
+  "tags": [
+    "GESP二级",
+    "26年9月",
+    "循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6323",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明有一个 <span class=\"katex math inline\">8 \\times 16</span> 的画布（8 行 16 列），画布中的格子从上到下从左到右编号，左上的编号为 <span class=\"katex math inline\">1</span>，第一排最后一个的编号为 <span class=\"katex math inline\">16</span>，最后一排第一个编号为 <span class=\"katex math inline\">113</span>，右下为 <span class=\"katex math inline\">128</span>。</p>\n<p>初始画布中的每个格子都是 <code>*</code>，随后小明会给定三个正整数，小明会将对应编号的格子变为该正整数对应的 ASCII 编码字符。</p>\n<p>最后请帮小明输出整个画布。</p>\n</div>            </div>",
+      "text": "小明有一个 8 \\times 16 的画布（8 行 16 列），画布中的格子从上到下从左到右编号，左上的编号为 1，第一排最后一个的编号为 16，最后一排第一个编号为 113，右下为 128。\n初始画布中的每个格子都是 *，随后小明会给定三个正整数，小明会将对应编号的格子变为该正整数对应的 ASCII 编码字符。\n最后请帮小明输出整个画布。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入包含三行，每行一个正整数，表示需要替换的画布格子编号。</p>\n</div>            </div>",
+      "text": "输入包含三行，每行一个正整数，表示需要替换的画布格子编号。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">8 \\times 16</span> 的画布。</p>\n</div>            </div>",
+      "text": "输出 8 \\times 16 的画布。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>48\r\n65\r\n97\r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>****************\r\n****************\r\n***************0\r\n****************\r\nA***************\r\n****************\r\na***************\r\n****************</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            48\r\n65\r\n97\r\n\n                        \n                        \n                            输出\n                            ****************\r\n****************\r\n***************0\r\n****************\r\nA***************\r\n****************\r\na***************\r\n****************"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>输入范围是 <span class=\"katex math inline\">48</span> 到 <span class=\"katex math inline\">57</span>，<span class=\"katex math inline\">65</span> 到 <span class=\"katex math inline\">90</span>，以及 <span class=\"katex math inline\">97</span> 到 <span class=\"katex math inline\">122</span>（即 ASCII 编码的 <code>0</code> 到 <code>9</code>，<code>A</code> 到 <code>Z</code>，以及 <code>a</code> 到 <code>z</code>）。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n输入范围是 48 到 57，65 到 90，以及 97 到 122（即 ASCII 编码的 0 到 9，A 到 Z，以及 a 到 z）。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP二级</span><span class=\"label label-warning\">26年9月</span><span class=\"label label-info\">循环</span></span></p>\n</div>                </div>",
+      "text": "GESP二级26年9月循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "48\r\n65\r\n97\r\n",
+      "output": "****************\r\n****************\r\n***************0\r\n****************\r\nA***************\r\n****************\r\na***************\r\n****************"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "376",
+    "通过人数": "281",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:02"
+}

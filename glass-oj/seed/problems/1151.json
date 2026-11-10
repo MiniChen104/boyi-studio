@@ -1,0 +1,56 @@
+{
+  "id": "1151",
+  "title": "桐桐数",
+  "tags": [
+    "函数问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1151",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>桐桐很喜欢研究数字，特别喜欢研究质数。</p>\n<p>一天，桐桐发现有一些数字可以表示成两个质数相乘的形式，比如，<span class=\"katex math inline\">10=2 \\times 5</span>，<span class=\"katex math inline\">2</span>、<span class=\"katex math inline\">5</span> 都是质数，所以 <span class=\"katex math inline\">10</span> 是一个“桐桐数”。</p>\n<p>所以桐桐决定考考你，她告诉你一个数 <span class=\"katex math inline\">n</span> ，请你判断 <span class=\"katex math inline\">n</span> 是不是“桐桐数”。</p>\n</div>            </div>",
+      "text": "桐桐很喜欢研究数字，特别喜欢研究质数。\n一天，桐桐发现有一些数字可以表示成两个质数相乘的形式，比如，10=2 \\times 5，2、5 都是质数，所以 10 是一个“桐桐数”。\n所以桐桐决定考考你，她告诉你一个数 n ，请你判断 n 是不是“桐桐数”。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数 <span class=\"katex math inline\">n</span> (<span class=\"katex math inline\">1 \\le n \\le 2^{31} -1</span>)。</p>\n</div>            </div>",
+      "text": "一个数 n (1 \\le n \\le 2^{31} -1)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，如果 <span class=\"katex math inline\">n</span> 是一个“桐桐数”，则输出 <code>It&#x27;s a Tongtong number.</code>，否则输出<code>It&#x27;s not a Tongtong number.</code>。</p>\n</div>            </div>",
+      "text": "输出一行，如果 n 是一个“桐桐数”，则输出 It's a Tongtong number.，否则输出It's not a Tongtong number.。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>It&#x27;s a Tongtong number.</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10\n                        \n                        \n                            输出\n                            It's a Tongtong number."
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>函数问题</p>\n</div>                </div>",
+      "text": "函数问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">函数问题</span></span></p>\n</div>                </div>",
+      "text": "函数问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10",
+      "output": "It's a Tongtong number."
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "16737",
+    "通过人数": "6794",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:15:28"
+}

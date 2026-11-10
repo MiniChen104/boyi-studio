@@ -1,0 +1,69 @@
+{
+  "id": "3157",
+  "title": "整数拆分",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3157",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>将整数 <span class=\"katex math inline\">n</span> 分成很多段，求它们的不超过 <span class=\"katex math inline\">k</span> 的和的最大值。</p>\n</div>            </div>",
+      "text": "将整数 n 分成很多段，求它们的不超过 k 的和的最大值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个数，分别表示 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">k</span>。</p>\n</div>            </div>",
+      "text": "输入两个数，分别表示 n 和 k。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果最大值只有一种拆法，输出分段数相加及它们的和。</p>\n<p>如果没有拆法，输出 <code>none</code>。如果有多种，输出 <code>many</code>。</p>\n</div>            </div>",
+      "text": "如果最大值只有一种拆法，输出分段数相加及它们的和。\n如果没有拆法，输出 none。如果有多种，输出 many。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1236 40</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1+2+36=39</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>111 2</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>none</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>111 12</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>many</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            1236 40\n                        \n                        \n                            输出\n                            1+2+36=39\n                        \n\n                                                    \n                                输入\n                                111 2\n                            \n                            \n                                输出\n                                none\n                            \n                        \n                                                    \n                                输入\n                                111 12\n                            \n                            \n                                输出\n                                many"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【数据说明】</p>\n<p><span class=\"katex math inline\"> 1 \\leq n,k \\leq 10^9 </span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据说明】\n 1 \\leq n,k \\leq 10^9"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2022南京市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2022南京市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1236 40",
+      "output": "1+2+36=39"
+    },
+    {
+      "input": "111 2",
+      "output": "none"
+    },
+    {
+      "input": "111 12",
+      "output": "many"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "41",
+    "通过人数": "14",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:34:27"
+}

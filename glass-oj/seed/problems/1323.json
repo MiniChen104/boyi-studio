@@ -1,0 +1,56 @@
+{
+  "id": "1323",
+  "title": "扩建花圃问题",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1323",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>梅山小学有一块长方形花圃（花圃的长宽都是整数），长 <span class=\"katex math inline\">m</span> 米，宽未知。</p>\n<p>在修建校园时，花圃的长增加了 <span class=\"katex math inline\">n</span> 米，此时发现增加出来的面积有 <span class=\"katex math inline\">s</span> 平方米。</p>\n<p>请编程计算出原来花圃的面积是多少平方米？（4.2.19）</p>\n<p><img src=\"https://assets.boyi.local/ff39ba0826c3c4faf50949ff.jpg\"></p>\n</div>            </div>",
+      "text": "梅山小学有一块长方形花圃（花圃的长宽都是整数），长 m 米，宽未知。\n在修建校园时，花圃的长增加了 n 米，此时发现增加出来的面积有 s 平方米。\n请编程计算出原来花圃的面积是多少平方米？（4.2.19）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">3</span>个整数，分别是 <span class=\"katex math inline\">m、n、s</span>。</p>\n</div>            </div>",
+      "text": "3个整数，分别是 m、n、s。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，原来花圃的面积数</p>\n</div>            </div>",
+      "text": "一个整数，原来花圃的面积数"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8 3 18</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>48</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8 3 18\n                        \n                        \n                            输出\n                            48"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8 3 18",
+      "output": "48"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "54978",
+    "通过人数": "38507",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:52"
+}

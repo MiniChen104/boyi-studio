@@ -1,0 +1,67 @@
+{
+  "id": "3015",
+  "title": "强连通分量统计",
+  "tags": [
+    "usaco",
+    "Tarjan",
+    "强连通分量"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3015",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有一个 <span class=\"katex math inline\">n</span> 个点，<span class=\"katex math inline\">m</span> 条边的有向图，请求出这个图点数大于 <span class=\"katex math inline\">1</span> 的强连通分量个数。</p>\n</div>            </div>",
+      "text": "有一个 n 个点，m 条边的有向图，请求出这个图点数大于 1 的强连通分量个数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行为两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>。</p>\n<p>第二行至 <span class=\"katex math inline\">m+1</span> 行，每一行有两个整数 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>，表示有一条从 <span class=\"katex math inline\">a</span> 到 <span class=\"katex math inline\">b</span> 的有向边。</p>\n</div>            </div>",
+      "text": "第一行为两个整数 n 和 m。\n第二行至 m+1 行，每一行有两个整数 a 和 b，表示有一条从 a 到 b 的有向边。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>仅一行，表示点数大于 <span class=\"katex math inline\">1</span> 的强联通分量个数。</p>\n</div>            </div>",
+      "text": "仅一行，表示点数大于 1 的强联通分量个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 6\r\n1 2\r\n2 3\r\n5 2\r\n5 4\r\n3 5\r\n3 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>9 20\r\n1 6\r\n9 6\r\n3 4\r\n4 3\r\n5 6\r\n6 7\r\n7 8\r\n5 1\r\n9 5\r\n8 7\r\n5 9\r\n9 8\r\n9 1\r\n8 1\r\n1 5\r\n6 1\r\n8 5\r\n1 9\r\n7 5\r\n7 6</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 6\r\n1 2\r\n2 3\r\n5 2\r\n5 4\r\n3 5\r\n3 4\n                        \n                        \n                            输出\n                            1\n                        \n\n                                                    \n                                输入\n                                9 20\r\n1 6\r\n9 6\r\n3 4\r\n4 3\r\n5 6\r\n6 7\r\n7 8\r\n5 1\r\n9 5\r\n8 7\r\n5 9\r\n9 8\r\n9 1\r\n8 1\r\n1 5\r\n6 1\r\n8 5\r\n1 9\r\n7 5\r\n7 6\n                            \n                            \n                                输出\n                                2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于全部的测试点，保证 <span class=\"katex math inline\">2\\le n \\le 10^4</span>，<span class=\"katex math inline\">2\\le m\\le 5\\times 10^4</span>，<span class=\"katex math inline\">1 \\leq a, b \\leq n</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于全部的测试点，保证 2\\le n \\le 10^4，2\\le m\\le 5\\times 10^4，1 \\leq a, b \\leq n。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>usaco</p>\n</div>                </div>",
+      "text": "usaco"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">usaco</span><span class=\"label label-warning\">Tarjan</span><span class=\"label label-info\">强连通分量</span></span></p>\n</div>                </div>",
+      "text": "usacoTarjan强连通分量"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 6\r\n1 2\r\n2 3\r\n5 2\r\n5 4\r\n3 5\r\n3 4",
+      "output": "1"
+    },
+    {
+      "input": "9 20\r\n1 6\r\n9 6\r\n3 4\r\n4 3\r\n5 6\r\n6 7\r\n7 8\r\n5 1\r\n9 5\r\n8 7\r\n5 9\r\n9 8\r\n9 1\r\n8 1\r\n1 5\r\n6 1\r\n8 5\r\n1 9\r\n7 5\r\n7 6",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "2 秒",
+    "内存限制": "512 MB",
+    "提交次数": "811",
+    "通过人数": "589",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:48"
+}

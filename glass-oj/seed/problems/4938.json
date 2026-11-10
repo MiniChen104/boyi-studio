@@ -1,0 +1,61 @@
+{
+  "id": "4938",
+  "title": "商品降价",
+  "tags": [
+    "BCSP-X"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4938",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>为了实现在家里躺着挣钱的梦想，小 A 在某网站开了几家店铺。为了举行开业酬宾活\n动，小 A 决定把所有原价为偶数位的商品降价为奇数位，例如，原价 <span class=\"katex math inline\">1050</span> 现在只卖 <span class=\"katex math inline\">998</span>。可是，店里卖的东西实在太多了，他需要统计一下现在店里有最多多少种商品价格是偶数位的。他把这个问题交给了你。 </p>\n<p>已知小 A 有 <span class=\"katex math inline\">T</span> 家店铺，每家店铺商品价格在某个区间内。具体而言，这个问题可以转\n化为：给定整数 <span class=\"katex math inline\">T</span> 代表有 <span class=\"katex math inline\">T</span> 组样例，每个样例由两个端点 <span class=\"katex math inline\">A</span> 和 <span class=\"katex math inline\">B</span> 组成，表示需要在区间[<span class=\"katex math inline\">A</span>,<span class=\"katex math inline\">B</span>]内计算符合以下条件的整数个数：<strong>数字的位数为偶数</strong>。 </p>\n<p>例如，在区间[<span class=\"katex math inline\">1</span>,<span class=\"katex math inline\">100</span>]内，符合条件的整数为 <span class=\"katex math inline\">10、11、12......99</span>，共 <span class=\"katex math inline\">90</span> 个。它们的数位都是 <span class=\"katex math inline\">2</span> 位（<span class=\"katex math inline\">2</span> 是个偶数）。 </p>\n</div>            </div>",
+      "text": "为了实现在家里躺着挣钱的梦想，小 A 在某网站开了几家店铺。为了举行开业酬宾活\n动，小 A 决定把所有原价为偶数位的商品降价为奇数位，例如，原价 1050 现在只卖 998。可是，店里卖的东西实在太多了，他需要统计一下现在店里有最多多少种商品价格是偶数位的。他把这个问题交给了你。 \n已知小 A 有 T 家店铺，每家店铺商品价格在某个区间内。具体而言，这个问题可以转\n化为：给定整数 T 代表有 T 组样例，每个样例由两个端点 A 和 B 组成，表示需要在区间[A,B]内计算符合以下条件的整数个数：数字的位数为偶数。 \n例如，在区间[1,100]内，符合条件的整数为 10、11、12......99，共 90 个。它们的数位都是 2 位（2 是个偶数）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>首先是第一行一个整数 <span class=\"katex math inline\">T</span> ，代表有 <span class=\"katex math inline\">T</span> 组样例。 </p>\n<p>接着每个样例的一行包含两个正整数 <span class=\"katex math inline\">A</span>,<span class=\"katex math inline\">B</span> 描述了区间的左右端点。 </p>\n</div>            </div>",
+      "text": "首先是第一行一个整数 T ，代表有 T 组样例。 \n接着每个样例的一行包含两个正整数 A,B 描述了区间的左右端点。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">T</span> 行,每行一个整数代表答案。 </p>\n</div>            </div>",
+      "text": "输出 T 行,每行一个整数代表答案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 \r\n1 10 \r\n100 123 \r\n1 100 \r\n</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 \r\n0 \r\n90 \r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 \r\n1 10 \r\n100 123 \r\n1 100 \r\n\n                        \n                        \n                            输出\n                            1 \r\n0 \r\n90"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">20\\%</span> 的数据保证：<span class=\"katex math inline\">T \\le 10，1 \\le A = B \\le 1000000000 </span></p>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据保证：<span class=\"katex math inline\">T  \\le 10，1 \\le A \\le B \\le 1000000</span> </p>\n<p>对于 <span class=\"katex math inline\">80\\%</span> 的数据保证：<span class=\"katex math inline\">T \\le 10</span>，<span class=\"katex math inline\">1 \\le A \\le B \\le 1000000000</span>，<span class=\"katex math inline\">B-A \\le 1000000</span> </p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据保证：<span class=\"katex math inline\">T \\le 10</span>，<span class=\"katex math inline\">1 \\le A \\le B \\le 1000000000</span> </p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 20\\% 的数据保证：T \\le 10，1 \\le A = B \\le 1000000000 \n对于 30\\% 的数据保证：T  \\le 10，1 \\le A \\le B \\le 1000000 \n对于 80\\% 的数据保证：T \\le 10，1 \\le A \\le B \\le 1000000000，B-A \\le 1000000 \n对于 100\\% 的数据保证：T \\le 10，1 \\le A \\le B \\le 1000000000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>BCSP-X初中组编程能力样卷-T1</p>\n</div>                </div>",
+      "text": "BCSP-X初中组编程能力样卷-T1"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">BCSP-X</span></span></p>\n</div>                </div>",
+      "text": "BCSP-X"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 \r\n1 10 \r\n100 123 \r\n1 100 \r\n",
+      "output": "1 \r\n0 \r\n90 \r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "76",
+    "通过人数": "34",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:00"
+}

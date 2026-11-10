@@ -1,0 +1,57 @@
+{
+  "id": "2251",
+  "title": "最大上升子序列和",
+  "tags": [
+    "动态规划",
+    "电子学会等级考试"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2251",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个数的序列 <span class=\"katex math inline\">b_i</span>，当 <span class=\"katex math inline\">b_1 \\lt b_2 \\lt \\dots \\lt b_s</span> 的时候，我们称这个序列是上升的。</p>\n<p>对于给定的一个序列 (<span class=\"katex math inline\">a_1, a_2,  \\dots ,a_n</span>)，我们可以得到一些上升的子序列 (<span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">i1</span></sub>, <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">i2</span></sub>, <span class=\"katex math inline\">\\dots</span>, <span class=\"katex math inline\">a</span><sub><span class=\"katex math inline\">ik</span></sub>)，这里 <span class=\"katex math inline\">1 \\le i1 \\lt i2 \\lt \\dots \\lt ik \\le N</span>。</p>\n<p>比如，对于序列 <span class=\"katex math inline\">(1, 7, 3, 5, 9, 4, 8)</span>，有它的一些上升子序列，如 <span class=\"katex math inline\">(1, 7)</span>， <span class=\"katex math inline\">(3, 4, 8)</span> 等等。这些子序列中序列和最大为 <span class=\"katex math inline\">18</span>，为子序列<span class=\"katex math inline\">(1, 3, 5, 9)</span>的和。</p>\n<p>你的任务，就是对于给定的序列，求出最大上升子序列和。注意，最长的上升子序列的和不一定是最大的，比如序列 <span class=\"katex math inline\">(100, 1, 2, 3)</span> 的最大上升子序列和为 <span class=\"katex math inline\">100</span>，而最长上升子序列为 <span class=\"katex math inline\">(1, 2, 3)</span>。</p>\n</div>            </div>",
+      "text": "一个数的序列 b_i，当 b_1 \\lt b_2 \\lt \\dots \\lt b_s 的时候，我们称这个序列是上升的。\n对于给定的一个序列 (a_1, a_2,  \\dots ,a_n)，我们可以得到一些上升的子序列 (ai1, ai2, \\dots, aik)，这里 1 \\le i1 \\lt i2 \\lt \\dots \\lt ik \\le N。\n比如，对于序列 (1, 7, 3, 5, 9, 4, 8)，有它的一些上升子序列，如 (1, 7)， (3, 4, 8) 等等。这些子序列中序列和最大为 18，为子序列(1, 3, 5, 9)的和。\n你的任务，就是对于给定的序列，求出最大上升子序列和。注意，最长的上升子序列的和不一定是最大的，比如序列 (100, 1, 2, 3) 的最大上升子序列和为 100，而最长上升子序列为 (1, 2, 3)。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行是序列的长度 <span class=\"katex math inline\">N</span> <span class=\"katex math inline\">(1 \\le N \\le 1000)</span>。</p>\n<p>第二行给出序列中的 <span class=\"katex math inline\">N</span> 个整数，这些整数的取值范围都在 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">10000</span>（可能重复）。</p>\n</div>            </div>",
+      "text": "输入的第一行是序列的长度 N (1 \\le N \\le 1000)。\n第二行给出序列中的 N 个整数，这些整数的取值范围都在 0 到 10000（可能重复）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>最大上升子序列和。</p>\n</div>            </div>",
+      "text": "最大上升子序列和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>7\r\n1 7 3 5 9 4 8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>18</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            7\r\n1 7 3 5 9 4 8\n                        \n                        \n                            输出\n                            18"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会等级考试四级样题</p>\n</div>                </div>",
+      "text": "电子学会等级考试四级样题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span><span class=\"label label-warning\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "动态规划电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "7\r\n1 7 3 5 9 4 8",
+      "output": "18"
+    }
+  ],
+  "parameters": {
+    "时间限制": "2 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1094",
+    "通过人数": "709",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:19"
+}

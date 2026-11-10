@@ -1,0 +1,56 @@
+{
+  "id": "2017",
+  "title": "子串统计",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2017",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出一个字符串 <span class=\"katex math inline\">s</span> ，求出 <span class=\"katex math inline\">s</span> 中重复出现过的子串中最长的子串，并求出最长子串的首字母的位置，如果出现多组重复出现的最长子串，只输出按字母序从小到大，第一个最长的相同子串的位置（字典码最小的）。</p>\n<p>例如：字符串 <span class=\"katex math inline\">s</span> 为：aabcdttabcdettaabcftt ，它的最长重复出现的子串有两个 abcd 和 aabc 长度都为 <span class=\"katex math inline\">4</span> ，这两字符串均为 <span class=\"katex math inline\">s</span> 的最长重复出现的子串，但输出时只需输出 aabc 第一次出现的位置，因为 aabc 的字典码小于 abcd。</p>\n</div>            </div>",
+      "text": "给出一个字符串 s ，求出 s 中重复出现过的子串中最长的子串，并求出最长子串的首字母的位置，如果出现多组重复出现的最长子串，只输出按字母序从小到大，第一个最长的相同子串的位置（字典码最小的）。\n例如：字符串 s 为：aabcdttabcdettaabcftt ，它的最长重复出现的子串有两个 abcd 和 aabc 长度都为 4 ，这两字符串均为 s 的最长重复出现的子串，但输出时只需输出 aabc 第一次出现的位置，因为 aabc 的字典码小于 abcd。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入为一行，为一个字符串 <span class=\"katex math inline\">s</span> ，保证 <span class=\"katex math inline\">s</span> 中有重复出现的子串且字符串长度小于 <span class=\"katex math inline\">100</span> 。</p>\n</div>            </div>",
+      "text": "输入为一行，为一个字符串 s ，保证 s 中有重复出现的子串且字符串长度小于 100 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>为两行，第一行为最长重复出现的子串，第二行为此子串第一次出现的位置。</p>\n</div>            </div>",
+      "text": "为两行，第一行为最长重复出现的子串，第二行为此子串第一次出现的位置。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>aabcdttabcdettaabcftt</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>aabc\r\n1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            aabcdttabcdettaabcftt\n                        \n                        \n                            输出\n                            aabc\r\n1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "aabcdttabcdettaabcftt",
+      "output": "aabc\r\n1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "293",
+    "通过人数": "164",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:27:21"
+}

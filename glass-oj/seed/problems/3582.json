@@ -1,0 +1,67 @@
+{
+  "id": "3582",
+  "title": "飞行路线 [JLOI2011]",
+  "tags": [
+    "省选",
+    "图论",
+    "分层图"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/3582",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Alice 和 Bob 现在要乘飞机旅行，他们选择了一家相对便宜的航空公司。该航空公司一共在 <span class=\"katex math inline\">n</span> 个城市设有业务，设这些城市分别标记为 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">n-1</span>，一共有 <span class=\"katex math inline\">m</span> 种航线，每种航线连接两个城市，并且航线有一定的价格。</p>\n<p>Alice 和 Bob 现在要从一个城市沿着航线到达另一个城市，途中可以进行转机。航空公司对他们这次旅行也推出优惠，他们可以免费在最多 <span class=\"katex math inline\">k</span> 种航线上搭乘飞机。那么 Alice 和 Bob 这次出行最少花费多少？</p>\n</div>            </div>",
+      "text": "Alice 和 Bob 现在要乘飞机旅行，他们选择了一家相对便宜的航空公司。该航空公司一共在 n 个城市设有业务，设这些城市分别标记为 0 到 n-1，一共有 m 种航线，每种航线连接两个城市，并且航线有一定的价格。\nAlice 和 Bob 现在要从一个城市沿着航线到达另一个城市，途中可以进行转机。航空公司对他们这次旅行也推出优惠，他们可以免费在最多 k 种航线上搭乘飞机。那么 Alice 和 Bob 这次出行最少花费多少？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行三个整数 <span class=\"katex math inline\">n,m,k</span>，分别表示城市数，航线数和免费乘坐次数。</p>\n<p>接下来一行两个整数 <span class=\"katex math inline\">s,t</span>，分别表示他们出行的起点城市编号和终点城市编号。</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行三个整数 <span class=\"katex math inline\">a,b,c</span>，表示存在一种航线，能从城市 <span class=\"katex math inline\">a</span> 到达城市 <span class=\"katex math inline\">b</span>，或从城市 <span class=\"katex math inline\">b</span> 到达城市 <span class=\"katex math inline\">a</span>，价格为 <span class=\"katex math inline\">c</span>。</p>\n</div>            </div>",
+      "text": "第一行三个整数 n,m,k，分别表示城市数，航线数和免费乘坐次数。\n接下来一行两个整数 s,t，分别表示他们出行的起点城市编号和终点城市编号。\n接下来 m 行，每行三个整数 a,b,c，表示存在一种航线，能从城市 a 到达城市 b，或从城市 b 到达城市 a，价格为 c。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数，为最少花费。</p>\n</div>            </div>",
+      "text": "输出一行一个整数，为最少花费。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 6 1\r\n0 4\r\n0 1 5\r\n1 2 5\r\n2 3 5\r\n3 4 5\r\n2 3 3\r\n0 2 100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2 1 10\r\n0 1\r\n0 1 100</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 6 1\r\n0 4\r\n0 1 5\r\n1 2 5\r\n2 3 5\r\n3 4 5\r\n2 3 3\r\n0 2 100\n                        \n                        \n                            输出\n                            8\n                        \n\n                                                    \n                                输入\n                                2 1 10\r\n0 1\r\n0 1 100\n                            \n                            \n                                输出\n                                0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据规模与约定</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">2 \\le n \\le 50</span>，<span class=\"katex math inline\">1 \\le m \\le 300</span>，<span class=\"katex math inline\">k=0</span>。</p>\n<p>对于 <span class=\"katex math inline\">50\\%</span> 的数据，<span class=\"katex math inline\">2 \\le n \\le 600</span>，<span class=\"katex math inline\">1 \\le m \\le 6\\times10^3</span>，<span class=\"katex math inline\">0 \\le k \\le 1</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">2 \\le n \\le 10^4</span>，<span class=\"katex math inline\">1 \\le m \\le 5\\times 10^4</span>，<span class=\"katex math inline\">0 \\le k \\le 10</span>，<span class=\"katex math inline\">0\\le s,t,a,b &lt; n</span>，<span class=\"katex math inline\">a\\ne b</span>，<span class=\"katex math inline\">0\\le c\\le 10^3</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据规模与约定\n对于 30\\% 的数据，2 \\le n \\le 50，1 \\le m \\le 300，k=0。\n对于 50\\% 的数据，2 \\le n \\le 600，1 \\le m \\le 6\\times10^3，0 \\le k \\le 1。\n对于 100\\% 的数据，2 \\le n \\le 10^4，1 \\le m \\le 5\\times 10^4，0 \\le k \\le 10，0\\le s,t,a,b < n，a\\ne b，0\\le c\\le 10^3。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>省选</p>\n</div>                </div>",
+      "text": "省选"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">省选</span><span class=\"label label-warning\">图论</span><span class=\"label label-info\">分层图</span></span></p>\n</div>                </div>",
+      "text": "省选图论分层图"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 6 1\r\n0 4\r\n0 1 5\r\n1 2 5\r\n2 3 5\r\n3 4 5\r\n2 3 3\r\n0 2 100",
+      "output": "8"
+    },
+    {
+      "input": "2 1 10\r\n0 1\r\n0 1 100",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1039",
+    "通过人数": "568",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:35:36"
+}

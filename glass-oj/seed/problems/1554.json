@@ -1,0 +1,66 @@
+{
+  "id": "1554",
+  "title": "幸运数字",
+  "tags": [
+    "省赛",
+    "字符串"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1554",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明认为，如果以下条件之一成立，正整数 <span class=\"katex math inline\">x</span> 就是一个幸运数字:</p>\n<p><span class=\"katex math inline\">1.</span> <span class=\"katex math inline\">x</span> 是 <span class=\"katex math inline\">4</span> 的倍数;</p>\n<p><span class=\"katex math inline\">2.</span> <span class=\"katex math inline\">x</span> 是 <span class=\"katex math inline\">7</span> 的倍数;</p>\n<p><span class=\"katex math inline\">3.</span>  <span class=\"katex math inline\">x</span> 转换为字符串后包含子串“ <span class=\"katex math inline\">44</span> ”或“ <span class=\"katex math inline\">77</span>”。</p>\n<p>例如，<span class=\"katex math inline\">105</span> ( <span class=\"katex math inline\">7</span> 的倍数), <span class=\"katex math inline\">442</span> (包含“ <span class=\"katex math inline\">44</span> ”), <span class=\"katex math inline\">1284</span> ( <span class=\"katex math inline\">4</span> 的倍数)都是幸运数字，<span class=\"katex math inline\">474</span> 则不是。 编程统计 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span> 中幸运数字的数量。</p>\n</div>            </div>",
+      "text": "小明认为，如果以下条件之一成立，正整数 x 就是一个幸运数字:\n1. x 是 4 的倍数;\n2. x 是 7 的倍数;\n3.  x 转换为字符串后包含子串“ 44 ”或“ 77”。\n例如，105 ( 7 的倍数), 442 (包含“ 44 ”), 1284 ( 4 的倍数)都是幸运数字，474 则不是。 编程统计 1 到 n 中幸运数字的数量。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>整数 <span class=\"katex math inline\">n</span>。 (<span class=\"katex math inline\">1 \\le n \\le 1,000,000</span> )</p>\n</div>            </div>",
+      "text": "整数 n。 (1 \\le n \\le 1,000,000 )"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数: <span class=\"katex math inline\">1, 2, \\dots, n</span> 中幸运数字的数量。</p>\n</div>            </div>",
+      "text": "一个整数: 1, 2, \\dots, n 中幸运数字的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>32</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>11</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>987654</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>406754</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            32\n                        \n                        \n                            输出\n                            11\n                        \n\n                                                    \n                                输入\n                                987654\n                            \n                            \n                                输出\n                                406754"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>来源:</strong></p>\n<p><span class=\"katex math inline\">2016</span>江苏省青少年信息学奥林匹克竞赛复赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "来源:\n2016江苏省青少年信息学奥林匹克竞赛复赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>省赛 字符串</p>\n</div>                </div>",
+      "text": "省赛 字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">省赛</span><span class=\"label label-warning\">字符串</span></span></p>\n</div>                </div>",
+      "text": "省赛字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "32",
+      "output": "11"
+    },
+    {
+      "input": "987654",
+      "output": "406754"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1629",
+    "通过人数": "996",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:21:01"
+}

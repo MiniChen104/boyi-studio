@@ -1,0 +1,57 @@
+{
+  "id": "1926",
+  "title": "立方体积木Cube Stacking",
+  "tags": [
+    "USACO",
+    "带权并查集"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1926",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>约翰和贝茜在玩一个方块游戏。编号为 <span class=\"katex math inline\"> 1 </span>…<span class=\"katex math inline\"> n </span>的<span class=\"katex math inline\">n</span>(<span class=\"katex math inline\"> 1 ≤ n ≤ 30000 </span>)个方块正放在地上，每个构成一个立方柱。<br>\n游戏开始后，约翰会给贝茜发出 <span class=\"katex math inline\">P</span>(<span class=\"katex math inline\">1 ≤ P ≤ 100000 </span>)个指令。指令有两种：<br>\n移动（M）：将包含 <span class=\"katex math inline\">X</span> 的立方柱移动到包含 <span class=\"katex math inline\">Y</span> 的立方柱上。<br>\n统计（C）：统计含 <span class=\"katex math inline\">X</span> 的立方柱中，在 <span class=\"katex math inline\">X</span> 下方的方块数目。<br>\n写个程序帮贝茜完成游戏。</p>\n</div>            </div>",
+      "text": "约翰和贝茜在玩一个方块游戏。编号为  1 … n 的n( 1 ≤ n ≤ 30000 )个方块正放在地上，每个构成一个立方柱。\n游戏开始后，约翰会给贝茜发出 P(1 ≤ P ≤ 100000 )个指令。指令有两种：\n移动（M）：将包含 X 的立方柱移动到包含 Y 的立方柱上。\n统计（C）：统计含 X 的立方柱中，在 X 下方的方块数目。\n写个程序帮贝茜完成游戏。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\"> 1 </span> 行输入 <span class=\"katex math inline\"> P </span>，之后 <span class=\"katex math inline\"> P </span> 行每行输入一条指令，形式为 M X Y 或者 C X。<br>\n输入保证不会有将立方柱放在自己头上的指令。</p>\n</div>            </div>",
+      "text": "第  1  行输入  P ，之后  P  行每行输入一条指令，形式为 M X Y 或者 C X。\n输入保证不会有将立方柱放在自己头上的指令。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共 <span class=\"katex math inline\"> P </span> 行，对于每个统计指令，输出其结果。</p>\n</div>            </div>",
+      "text": "输出共  P  行，对于每个统计指令，输出其结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\nM 1 6\r\nC 1\r\nM 2 4\r\nM 2 6\r\nC 3\r\nC 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n0\r\n2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\nM 1 6\r\nC 1\r\nM 2 4\r\nM 2 6\r\nC 3\r\nC 4\n                        \n                        \n                            输出\n                            1\r\n0\r\n2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO 带权并查集</p>\n</div>                </div>",
+      "text": "USACO 带权并查集"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">USACO</span><span class=\"label label-warning\">带权并查集</span></span></p>\n</div>                </div>",
+      "text": "USACO带权并查集"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\nM 1 6\r\nC 1\r\nM 2 4\r\nM 2 6\r\nC 3\r\nC 4",
+      "output": "1\r\n0\r\n2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2145",
+    "通过人数": "1248",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:26:04"
+}

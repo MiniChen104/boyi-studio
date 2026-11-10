@@ -1,0 +1,56 @@
+{
+  "id": "2132",
+  "title": "找公约数",
+  "tags": [
+    "需要找规律的循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2132",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果有一个数既是 <span class=\"katex math inline\">a</span> 的约数，又是 <span class=\"katex math inline\">b</span> 的约数，我们就称该数为 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span> 的公约数。</p>\n<p>编程序找出 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span> 的所有公约数。</p>\n</div>            </div>",
+      "text": "如果有一个数既是 a 的约数，又是 b 的约数，我们就称该数为 a 和 b 的公约数。\n编程序找出 a 和 b 的所有公约数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个整数 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>，用空格隔开。（<span class=\"katex math inline\">1≤a,b≤10^5</span>）</p>\n</div>            </div>",
+      "text": "两个整数 a 和 b，用空格隔开。（1≤a,b≤10^5）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>所有的公约数，每个公约数占一行。</p>\n</div>            </div>",
+      "text": "所有的公约数，每个公约数占一行。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>10 35</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            10 35\n                        \n                        \n                            输出\n                            1\r\n5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>需要找规律的循环</p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">需要找规律的循环</span></span></p>\n</div>                </div>",
+      "text": "需要找规律的循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "10 35",
+      "output": "1\r\n5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "2257",
+    "通过人数": "1657",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:51"
+}

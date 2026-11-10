@@ -1,0 +1,65 @@
+{
+  "id": "3688",
+  "title": "加密通信",
+  "tags": [
+    "BCSP-X"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3688",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一次军事演习中，小凯担任通信兵，负责解密传来的信息。他会收到一份 <span class=\"katex math inline\">n \\times n</span> 的数字表（仅包含 <span class=\"katex math inline\">0-9</span> 共 <span class=\"katex math inline\">10</span> 种数码），和一份 <span class=\"katex math inline\">m \\times m</span> 的字母表（仅包含 <span class=\"katex math inline\">A-Z、a-z</span> 共 <span class=\"katex math inline\">52</span> 种字符）。</p>\n<p>数字表被称为解密卡，字母表被称为加密卡。规定如下名词：</p>\n<p>1.覆盖区域：将数字表和字母表对齐，使得数字表在上，字母表在下，数字与字母一一对应，如果数字表的 <span class=\"katex math inline\">1</span> 行 <span class=\"katex math inline\">1</span> 列对应字母表的 <span class=\"katex math inline\">x</span> 行 <span class=\"katex math inline\">y</span> 列，那么数字表的 <span class=\"katex math inline\">1+k</span> 行 <span class=\"katex math inline\">1+k</span> 列对应字母表的 <span class=\"katex math inline\">x+k</span> 行 <span class=\"katex math inline\">y+k</span> 列，此时覆盖区域为字母表以 <span class=\"katex math inline\">x</span> 行 <span class=\"katex math inline\">y</span> 列为左上角、<span class=\"katex math inline\">x+n-1</span> 行 <span class=\"katex math inline\">y+n-1</span> 列为右下角的正方形范围。简单来说，根据图片显示，若数字表的左上角盖在了 <span class=\"katex math inline\">2</span> 行 <span class=\"katex math inline\">2</span> 列的位置，则数字表会覆盖<span class=\"katex math inline\">（2，2）到（3，3）</span>这片区域。</p>\n<p>2.有效区域：称某字母和其在字母表的顺序数字为互相对应，字母 <span class=\"katex math inline\">A</span> 和 <span class=\"katex math inline\">a</span> 是第 <span class=\"katex math inline\">1</span> 个字母、字母 <span class=\"katex math inline\">I</span> 和 <span class=\"katex math inline\">i</span> 是第 <span class=\"katex math inline\">9</span> 个字母，那么 <span class=\"katex math inline\">A</span>、<span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">1</span> 对应，<span class=\"katex math inline\">I</span>、<span class=\"katex math inline\">i</span> 和 <span class=\"katex math inline\">9</span> 对应，以此类推。如果覆盖区域的四个顶点字母恰好和原始数字表的四个顶点数字互相对应，那么这个覆盖区域称之为有效区域。</p>\n<p><img src=\"https://assets.boyi.local/d059d6ac3bb5ba55c014924e.png\"></p>\n<p>3.数字关联：<span class=\"katex math inline\">0</span> 和任何字母关联，<span class=\"katex math inline\">1</span> 不能和任何字母关联，<span class=\"katex math inline\">2-9</span> 中的质数和大写字母关联，<span class=\"katex math inline\">2-9</span> 中的合数和小写字母关联。若关联成功，则提取出来作为密码的一部分，如上图中 <span class=\"katex math inline\">2</span> 是质数，需关联大写字母，<span class=\"katex math inline\">2</span> 对应的是 <span class=\"katex math inline\">B</span>，关联成功；<span class=\"katex math inline\">3</span> 是质数，需关联大写字母，<span class=\"katex math inline\">3</span> 对应的 <span class=\"katex math inline\">c</span>\n关联失败；<span class=\"katex math inline\">4</span> 是合数，需关联小写字母，而 <span class=\"katex math inline\">4</span> 对应的是 <span class=\"katex math inline\">D</span>，关联失败。因此上述图中，本次覆盖只关联成功一次，提取出一个密码 <span class=\"katex math inline\">B</span>。</p>\n<p>4.解密数字表：大小为 <span class=\"katex math inline\">n \\times n</span>，可以由原始数字表顺时针旋转若干次 <span class=\"katex math inline\">90</span>°得到。</p>\n<p><img src=\"https://assets.boyi.local/ea8f55fde032993c297d0a25.png\"></p>\n<p>5.区域解密：有效区域和解密数字表对齐，从左到右从上到下，将和解密数字表中对应位置数字恰好关联的字母提取出来，构成字符串。</p>\n<p>一次解密操作包含以下步骤：首先从左到右从上到下找出所有有效区域，依次进行解密。对于每个有效区域首先用原始数字表进行 <span class=\"katex math inline\">1</span> 次区域解密，然后根据当前有效区域的顶点大写\n字母数量 <span class=\"katex math inline\">x</span>，额外进行 <span class=\"katex math inline\">x</span> 次区域解密（如图示中四个顶点有两个大写字母，因此需旋转两次），第 <span class=\"katex math inline\">i</span> 次解密时将原始数字表顺时针旋转 <span class=\"katex math inline\">i \\times 90</span>° 后作为解密数字表再进行区域解密。最后将所有区域解密的字符串按序连接，构成最终的解密字符串。</p>\n<p>你需要帮助小凯完成解密工作。</p>\n</div>            </div>",
+      "text": "在一次军事演习中，小凯担任通信兵，负责解密传来的信息。他会收到一份 n \\times n 的数字表（仅包含 0-9 共 10 种数码），和一份 m \\times m 的字母表（仅包含 A-Z、a-z 共 52 种字符）。\n数字表被称为解密卡，字母表被称为加密卡。规定如下名词：\n1.覆盖区域：将数字表和字母表对齐，使得数字表在上，字母表在下，数字与字母一一对应，如果数字表的 1 行 1 列对应字母表的 x 行 y 列，那么数字表的 1+k 行 1+k 列对应字母表的 x+k 行 y+k 列，此时覆盖区域为字母表以 x 行 y 列为左上角、x+n-1 行 y+n-1 列为右下角的正方形范围。简单来说，根据图片显示，若数字表的左上角盖在了 2 行 2 列的位置，则数字表会覆盖（2，2）到（3，3）这片区域。\n2.有效区域：称某字母和其在字母表的顺序数字为互相对应，字母 A 和 a 是第 1 个字母、字母 I 和 i 是第 9 个字母，那么 A、a 和 1 对应，I、i 和 9 对应，以此类推。如果覆盖区域的四个顶点字母恰好和原始数字表的四个顶点数字互相对应，那么这个覆盖区域称之为有效区域。\n\n3.数字关联：0 和任何字母关联，1 不能和任何字母关联，2-9 中的质数和大写字母关联，2-9 中的合数和小写字母关联。若关联成功，则提取出来作为密码的一部分，如上图中 2 是质数，需关联大写字母，2 对应的是 B，关联成功；3 是质数，需关联大写字母，3 对应的 c\n关联失败；4 是合数，需关联小写字母，而 4 对应的是 D，关联失败。因此上述图中，本次覆盖只关联成功一次，提取出一个密码 B。\n4.解密数字表：大小为 n \\times n，可以由原始数字表顺时针旋转若干次 90°得到。\n\n5.区域解密：有效区域和解密数字表对齐，从左到右从上到下，将和解密数字表中对应位置数字恰好关联的字母提取出来，构成字符串。\n一次解密操作包含以下步骤：首先从左到右从上到下找出所有有效区域，依次进行解密。对于每个有效区域首先用原始数字表进行 1 次区域解密，然后根据当前有效区域的顶点大写\n字母数量 x，额外进行 x 次区域解密（如图示中四个顶点有两个大写字母，因此需旋转两次），第 i 次解密时将原始数字表顺时针旋转 i \\times 90° 后作为解密数字表再进行区域解密。最后将所有区域解密的字符串按序连接，构成最终的解密字符串。\n你需要帮助小凯完成解密工作。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共 <span class=\"katex math inline\">n+m+1</span> 行，</p>\n<p>第 <span class=\"katex math inline\">1</span> 行两个正整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>，分别代表数字表和字母表的大小；</p>\n<p>第 <span class=\"katex math inline\">2</span> 至 <span class=\"katex math inline\">n+1</span> 行分别有连续的 <span class=\"katex math inline\">n</span> 个数码字符，代表数字表的内容；</p>\n<p>第 <span class=\"katex math inline\">n+2</span> 至 <span class=\"katex math inline\">n+m+1</span> 行分别有连续的 <span class=\"katex math inline\">m</span> 个字母字符，代表字母表的内容。</p>\n</div>            </div>",
+      "text": "共 n+m+1 行，\n第 1 行两个正整数 n 和 m，分别代表数字表和字母表的大小；\n第 2 至 n+1 行分别有连续的 n 个数码字符，代表数字表的内容；\n第 n+2 至 n+m+1 行分别有连续的 m 个字母字符，代表字母表的内容。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>仅一行一个字符串，代表解密后的答案。如果答案为空串，你需要输出 <code>No solution</code>。</p>\n</div>            </div>",
+      "text": "仅一行一个字符串，代表解密后的答案。如果答案为空串，你需要输出 No solution。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 3\r\n11\r\n13\r\nAAB\r\nACB\r\nBzB</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>CAAAC</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 4\r\n101\r\n245\r\n313\r\nDABa\r\nAFab\r\nFcdc\r\ncdcD</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>BFaABabFFcAFcd</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 3\r\n11\r\n13\r\nAAB\r\nACB\r\nBzB\n                        \n                        \n                            输出\n                            CAAAC\n                        \n\n                                                    \n                                输入\n                                3 4\r\n101\r\n245\r\n313\r\nDABa\r\nAFab\r\nFcdc\r\ncdcD\n                            \n                            \n                                输出\n                                BFaABabFFcAFcd"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">30\\%</span>的数据，保证输入的 <span class=\"katex math inline\">m \\leq 10</span>。</p>\n<p>在前 <span class=\"katex math inline\">30\\%</span>中有 <span class=\"katex math inline\">10\\%</span>的数据，保证数字表中仅含有 <span class=\"katex math inline\">0</span> 和 <span class=\"katex math inline\">1</span>。</p>\n<p>对于 <span class=\"katex math inline\">70 \\% </span>的数据，保证输入的 <span class=\"katex math inline\">m \\leq 50</span>。</p>\n<p>在前 <span class=\"katex math inline\">70 \\%</span>中有 <span class=\"katex math inline\">30 \\% </span>的数据，保证字母表中仅含有小写字母。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，保证输入的 <span class=\"katex math inline\"> n \\leq m \\leq 80</span>。</p>\n<h4>样例解释 1</h4>\n<p>仅有 <span class=\"katex math inline\">（1,1）（2,2）</span>这一个有效区域，此区域的四个顶点共有 <span class=\"katex math inline\">4</span> 个大写字母需要额外进行 <span class=\"katex math inline\">4</span> 次区域解密，此区域第 <span class=\"katex math inline\">1</span> 次解密为 <span class=\"katex math inline\">C</span>（仅在<span class=\"katex math inline\">（2,2）</span>位置有质数<span class=\"katex math inline\"> 3 </span>与大写字母<span class=\"katex math inline\"> C </span>关联），第 <span class=\"katex math inline\"> 2-4 </span> 次为 <span class=\"katex math inline\">A</span>，第 <span class=\"katex math inline\">5</span> 次为 <span class=\"katex math inline\">C</span>，最终答案为 <span class=\"katex math inline\">CAAAC</span>。</p>\n<h4>样例解释 2</h4>\n<p>有<span class=\"katex math inline\">（1,2）（3,4）</span>以及<span class=\"katex math inline\">（2,1）（4,3）</span>这两个有效区域，第一个<span class=\"katex math inline\">（1,2）（3,4）</span>区域为</p>\n<p><span class=\"katex math inline\">ABa</span></p>\n<p><span class=\"katex math inline\">Fab</span></p>\n<p><span class=\"katex math inline\">Cdc</span></p>\n<p>此区域的四个顶点共有 <span class=\"katex math inline\">1</span> 个大写字母需要额外进行<span class=\"katex math inline\"> 1 </span>次区域解密。此区域的第一次解密得到的密码为<span class=\"katex math inline\"> BFa</span>，旋转一次密码卡，进行第二次解密，得到的密码为 <span class=\"katex math inline\">ABab</span>；第二个区域为</p>\n<p><span class=\"katex math inline\">AFa</span></p>\n<p><span class=\"katex math inline\">Fcd</span></p>\n<p><span class=\"katex math inline\">cdc</span></p>\n<p>此区域的四个顶点共有 <span class=\"katex math inline\">1</span> 个大写字母需要额外进行 <span class=\"katex math inline\">1</span> 次区域解密。此区域的第一次解密得到的密码为 <span class=\"katex math inline\">FFc</span>，旋转一次密码卡，进行第二次解密，得到的密码为 <span class=\"katex math inline\">AFcd</span>；因此总密码为四块密码从前往后拼在一起：<span class=\"katex math inline\">BFaABabFFcAFcd</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 30\\%的数据，保证输入的 m \\leq 10。\n在前 30\\%中有 10\\%的数据，保证数字表中仅含有 0 和 1。\n对于 70 \\% 的数据，保证输入的 m \\leq 50。\n在前 70 \\%中有 30 \\% 的数据，保证字母表中仅含有小写字母。\n对于 100\\% 的数据，保证输入的  n \\leq m \\leq 80。\n样例解释 1\n仅有 （1,1）（2,2）这一个有效区域，此区域的四个顶点共有 4 个大写字母需要额外进行 4 次区域解密，此区域第 1 次解密为 C（仅在（2,2）位置有质数 3 与大写字母 C 关联），第  2-4  次为 A，第 5 次为 C，最终答案为 CAAAC。\n样例解释 2\n有（1,2）（3,4）以及（2,1）（4,3）这两个有效区域，第一个（1,2）（3,4）区域为\nABa\nFab\nCdc\n此区域的四个顶点共有 1 个大写字母需要额外进行 1 次区域解密。此区域的第一次解密得到的密码为 BFa，旋转一次密码卡，进行第二次解密，得到的密码为 ABab；第二个区域为\nAFa\nFcd\ncdc\n此区域的四个顶点共有 1 个大写字母需要额外进行 1 次区域解密。此区域的第一次解密得到的密码为 FFc，旋转一次密码卡，进行第二次解密，得到的密码为 AFcd；因此总密码为四块密码从前往后拼在一起：BFaABabFFcAFcd。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>BCSP-X小高组编程能力样卷-T3</p>\n</div>                </div>",
+      "text": "BCSP-X小高组编程能力样卷-T3"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">BCSP-X</span></span></p>\n</div>                </div>",
+      "text": "BCSP-X"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 3\r\n11\r\n13\r\nAAB\r\nACB\r\nBzB",
+      "output": "CAAAC"
+    },
+    {
+      "input": "3 4\r\n101\r\n245\r\n313\r\nDABa\r\nAFab\r\nFcdc\r\ncdcD",
+      "output": "BFaABabFFcAFcd"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "34",
+    "通过人数": "18",
+    "金币数量": "2 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:52"
+}

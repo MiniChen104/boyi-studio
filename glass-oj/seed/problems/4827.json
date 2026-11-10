@@ -1,0 +1,60 @@
+{
+  "id": "4827",
+  "title": "判断偶数",
+  "tags": [
+    "蓝桥等考",
+    "分支"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4827",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给出两个整数，判断两个数是否为偶数，包含以下 <span class=\"katex math inline\">3</span> 种情况：</p>\n<ul><li><p>两个整数都是偶数；</p>\n</li>\n<li><p>只有一个是偶数；</p>\n</li>\n<li><p>两个整数都不是偶数。</p>\n</li>\n</ul></div>            </div>",
+      "text": "给出两个整数，判断两个数是否为偶数，包含以下 3 种情况：\n两个整数都是偶数；\n\n只有一个是偶数；\n\n两个整数都不是偶数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行，包含两个整数 <span class=\"katex math inline\">n</span>，<span class=\"katex math inline\">m</span>。（<span class=\"katex math inline\">-1,000,000 \\le n,m \\le 1,000,000</span>)，两个整数之间一个空格隔开。</p>\n</div>            </div>",
+      "text": "输入一行，包含两个整数 n，m。（-1,000,000 \\le n,m \\le 1,000,000)，两个整数之间一个空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，如果整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> 都为偶数，则输出 <span class=\"katex math inline\">2</span>；</p>\n<p>如果整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> 中有一个是偶数，则输出 <span class=\"katex math inline\">1</span>；</p>\n<p>如果整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> 都不是偶数，则输出 <span class=\"katex math inline\">0</span>。</p>\n<p>注意：输入输出格式要和样例严格保持一致，不要输出任何与答案无关的内容，如“请输入：”之类的提示信息，或者在数据前面输出多余的空格或空行。</p>\n</div>            </div>",
+      "text": "输出一行，如果整数 n 和 m 都为偶数，则输出 2；\n如果整数 n 和 m 中有一个是偶数，则输出 1；\n如果整数 n 和 m 都不是偶数，则输出 0。\n注意：输入输出格式要和样例严格保持一致，不要输出任何与答案无关的内容，如“请输入：”之类的提示信息，或者在数据前面输出多余的空格或空行。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4 6</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 8</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 9</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            4 6\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                3 8\n                            \n                            \n                                输出\n                                1\n                            \n                        \n                                                    \n                                输入\n                                5 9\n                            \n                            \n                                输出\n                                0"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">分支</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考分支"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4 6",
+      "output": "2"
+    },
+    {
+      "input": "3 8",
+      "output": "1"
+    },
+    {
+      "input": "5 9",
+      "output": "0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "377",
+    "通过人数": "225",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:23"
+}

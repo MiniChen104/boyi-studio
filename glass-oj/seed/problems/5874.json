@@ -1,0 +1,65 @@
+{
+  "id": "5874",
+  "title": "员工招聘（employ）",
+  "tags": [
+    "CSP-S 2025"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5874",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 Z 和小 H 想要合伙开一家公司，共有 <span class=\"katex math inline\">n</span> 人前来应聘，编号为 <span class=\"katex math inline\">1 \\sim n</span>。小 Z 和小 H 希望录用至少 <span class=\"katex math inline\">m</span> 人。</p>\n<p>小 H 是面试官，将在接下来 <span class=\"katex math inline\">n</span> 天每天面试一个人。小 Z 负责决定应聘人前来面试的顺序。具体地，小 Z 可以选择一个 <span class=\"katex math inline\">1 \\sim n</span> 的排列 <span class=\"katex math inline\">p</span>，然后在第 <span class=\"katex math inline\">i</span> (<span class=\"katex math inline\">1 \\leq i \\leq n</span>) 天通知编号为 <span class=\"katex math inline\">p_i</span> 的人前来面试。</p>\n<p>小 H 准备了 <span class=\"katex math inline\">n</span> 套难度不一的面试题。由于 <span class=\"katex math inline\">n</span> 个前来应聘的人水平大致相同，因此对于同一套题，所有人的作答结果是一致的。具体地，第 <span class=\"katex math inline\">i</span> (<span class=\"katex math inline\">1 \\leq i \\leq n</span>) 天的面试题的难度为 <span class=\"katex math inline\">s_i \\in {0,1}</span>，其中 <span class=\"katex math inline\">s_i = 0</span> 表示这套题的难度较高，没有人能够做出；<span class=\"katex math inline\">s_i = 1</span> 表示这套题的难度较低，所有人都能做出。小 H 会根据面试者的作答结果决定是否录用，即如果面试者没有做出面试题，则会拒绝，否则会录用。</p>\n<p>然而，每个人的耐心都有一定的上限，如果在他面试之前未录用的人数过多，则他会直接放弃参加面试。具体地，编号为 <span class=\"katex math inline\">i</span> (<span class=\"katex math inline\">1 \\leq i \\leq n</span>) 的人的耐心上限可以用非负整数 <span class=\"katex math inline\">c_i</span> 描述，若在他之前已经有<strong>不少于</strong> <span class=\"katex math inline\">c_i</span> 人被拒绝或放弃参加面试，则他也将放弃参加面试。</p>\n<p>小 Z 想知道一共有多少种面试的顺序 <span class=\"katex math inline\">p</span> 能够让他们录用至少 <span class=\"katex math inline\">m</span> 人。你需要帮助小 Z 求出，能够录用至少 <span class=\"katex math inline\">m</span> 人的排列 <span class=\"katex math inline\">p</span> 的数量。由于答案可能较大，你只需要求出答案对 <span class=\"katex math inline\">998\\,244\\,353</span> 取模后的结果。</p>\n</div>            </div>",
+      "text": "小 Z 和小 H 想要合伙开一家公司，共有 n 人前来应聘，编号为 1 \\sim n。小 Z 和小 H 希望录用至少 m 人。\n小 H 是面试官，将在接下来 n 天每天面试一个人。小 Z 负责决定应聘人前来面试的顺序。具体地，小 Z 可以选择一个 1 \\sim n 的排列 p，然后在第 i (1 \\leq i \\leq n) 天通知编号为 p_i 的人前来面试。\n小 H 准备了 n 套难度不一的面试题。由于 n 个前来应聘的人水平大致相同，因此对于同一套题，所有人的作答结果是一致的。具体地，第 i (1 \\leq i \\leq n) 天的面试题的难度为 s_i \\in {0,1}，其中 s_i = 0 表示这套题的难度较高，没有人能够做出；s_i = 1 表示这套题的难度较低，所有人都能做出。小 H 会根据面试者的作答结果决定是否录用，即如果面试者没有做出面试题，则会拒绝，否则会录用。\n然而，每个人的耐心都有一定的上限，如果在他面试之前未录用的人数过多，则他会直接放弃参加面试。具体地，编号为 i (1 \\leq i \\leq n) 的人的耐心上限可以用非负整数 c_i 描述，若在他之前已经有不少于 c_i 人被拒绝或放弃参加面试，则他也将放弃参加面试。\n小 Z 想知道一共有多少种面试的顺序 p 能够让他们录用至少 m 人。你需要帮助小 Z 求出，能够录用至少 m 人的排列 p 的数量。由于答案可能较大，你只需要求出答案对 998\\,244\\,353 取模后的结果。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入的第一行包含两个正整数 <span class=\"katex math inline\">n, m</span>，分别表示前来应聘的人数和希望录用的人数。</p>\n<p>输入的第二行包含一个长度为 <span class=\"katex math inline\">n</span> 的字符串 <span class=\"katex math inline\">s_1 \\dots s_n</span>，表示每一天的面试题的难度。</p>\n<p>输入的第三行包含 <span class=\"katex math inline\">n</span> 个非负整数 <span class=\"katex math inline\">c_1, c_2, \\dots, c_n</span>，表示每个人的耐心上限。</p>\n</div>            </div>",
+      "text": "输入的第一行包含两个正整数 n, m，分别表示前来应聘的人数和希望录用的人数。\n输入的第二行包含一个长度为 n 的字符串 s_1 \\dots s_n，表示每一天的面试题的难度。\n输入的第三行包含 n 个非负整数 c_1, c_2, \\dots, c_n，表示每个人的耐心上限。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个非负整数，表示能够录用至少 <span class=\"katex math inline\">m</span> 人的排列 <span class=\"katex math inline\">p</span> 的数量对 <span class=\"katex math inline\">998\\,244\\,353</span> 取模后的结果。</p>\n</div>            </div>",
+      "text": "输出一行一个非负整数，表示能够录用至少 m 人的排列 p 的数量对 998\\,244\\,353 取模后的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 2\r\n101\r\n1 1 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10 5\r\n1101111011\r\n6 0 4 2 1 2 5 4 3 3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>2204128</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 2\r\n101\r\n1 1 2\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                10 5\r\n1101111011\r\n6 0 4 2 1 2 5 4 3 3\n                            \n                            \n                                输出\n                                2204128"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 解释】</h4>\n<p>共有以下 <span class=\"katex math inline\">2</span> 种面试的顺序 <span class=\"katex math inline\">p</span> 能够让小 Z 和小 H 录用至少 <span class=\"katex math inline\">2</span> 人:</p>\n<ul><li><span class=\"katex math inline\">1</span>. <span class=\"katex math inline\">p = [1,2,3]</span>, 依次录用编号为 <span class=\"katex math inline\">1</span> 的人和编号为 <span class=\"katex math inline\">3</span> 的人;</li>\n<li><span class=\"katex math inline\">2</span>. <span class=\"katex math inline\">p = [2,1,3]</span>, 依次录用编号为 <span class=\"katex math inline\">2</span> 的人和编号为 <span class=\"katex math inline\">3</span> 的人。</li>\n</ul><h4>【样例 3】</h4>\n<p>见选手目录下的 employ/employ3.in 与 employ/employ3.ans。</p>\n<p>该样例满足测试点 <span class=\"katex math inline\">6 \\sim 8</span> 的约束条件。</p>\n<h4>【样例 4】</h4>\n<p>见选手目录下的 employ/employ4.in 与 employ/employ4.ans。</p>\n<p>该样例满足测试点 <span class=\"katex math inline\">12 \\sim 14</span> 的约束条件。</p>\n<h4>【样例 5】</h4>\n<p>见选手目录下的 employ/employ5.in 与 employ/employ5.ans。</p>\n<p>该样例满足测试点 <span class=\"katex math inline\">18 \\sim 21</span> 的约束条件。</p>\n【数据范围】\n<p>对于所有测试数据，保证:</p>\n<ul><li><span class=\"katex math inline\">1 \\leq m \\leq n \\leq 500</span>;</li>\n<li>对于所有 <span class=\"katex math inline\">1 \\leq i \\leq n</span>，均有 <span class=\"katex math inline\">s_i \\in {0,1}</span>;</li>\n<li>对于所有 <span class=\"katex math inline\">1 \\leq i \\leq n</span>，均有 <span class=\"katex math inline\">0 \\leq c_i \\leq n</span>。</li>\n</ul><table><tr><th> 测试点编号 </th>\n\t\t<th> <span class=\"katex math inline\">n \\leq</span> </th>\n\t\t<th> <span class=\"katex math inline\">m</span> </th>\n\t\t<th> 特殊性质 </th>\n\t</tr><tr><td> <span class=\"katex math inline\">1,2</span> </td>\n\t\t<td> <span class=\"katex math inline\">10</span> </td>\n\t\t<td> <span class=\"katex math inline\">\\leq n</span> </td>\n\t\t<td> 无 </td>\n\t</tr><tr><td> <span class=\"katex math inline\">3 \\sim 5</span> </td>\n\t\t<td> <span class=\"katex math inline\">18</span> </td>\n\t</tr><tr><td> <span class=\"katex math inline\">6 \\sim 8</span> </td>\n\t\t<td> <span class=\"katex math inline\">10^2</span> </td>\n\t\t<td> A </td>\n\t</tr><tr><td> <span class=\"katex math inline\">9 \\sim 11</span> </td>\n\t\t<td> 无 </td>\n\t</tr><tr><td> <span class=\"katex math inline\">12 \\sim 14</span> </td>\n\t\t<td> <span class=\"katex math inline\">500</span> </td>\n\t\t<td> <span class=\"katex math inline\">=1</span> </td>\n\t</tr><tr><td> <span class=\"katex math inline\">15</span> </td>\n\t\t<td> <span class=\"katex math inline\">=n</span> </td>\n\t</tr><tr><td> <span class=\"katex math inline\">16,17</span> </td>\n\t\t<td> <span class=\"katex math inline\">\\leq n</span> </td>\n\t\t<td> A </td>\n\t</tr><tr><td> <span class=\"katex math inline\">18 \\sim 21</span> </td>\n\t\t<td> B </td>\n\t</tr><tr><td> <span class=\"katex math inline\">22 \\sim 25</span> </td>\n\t\t<td> 无 </td>\n\t</tr></table><p>特殊性质 <span class=\"katex math inline\">A</span>: 对于所有 <span class=\"katex math inline\">1 \\leq i \\leq n</span>，均有 <span class=\"katex math inline\">s_i = 1</span>。</p>\n<p>特殊性质 <span class=\"katex math inline\">B</span>: 在 <span class=\"katex math inline\">s_1, s_2, \\dots, s_n</span> 中最多只有 <span class=\"katex math inline\">18</span> 个取值为 <span class=\"katex math inline\">1</span>，即 <span class=\"katex math inline\">\\sum_{i=1}^{n} s_i \\leq 18</span>。</p>\n</div>\n\n                                            <p>\n                            <h4><b>附件下载</b></h4>\n                        </p>\n                        <p>\n                            \n                                employ.zip                            \n                            (2.85 KB)\n                        </p>\n                    \n                </div>",
+      "text": "【样例 1 解释】\n共有以下 2 种面试的顺序 p 能够让小 Z 和小 H 录用至少 2 人:\n1. p = [1,2,3], 依次录用编号为 1 的人和编号为 3 的人;\n2. p = [2,1,3], 依次录用编号为 2 的人和编号为 3 的人。\n【样例 3】\n见选手目录下的 employ/employ3.in 与 employ/employ3.ans。\n该样例满足测试点 6 \\sim 8 的约束条件。\n【样例 4】\n见选手目录下的 employ/employ4.in 与 employ/employ4.ans。\n该样例满足测试点 12 \\sim 14 的约束条件。\n【样例 5】\n见选手目录下的 employ/employ5.in 与 employ/employ5.ans。\n该样例满足测试点 18 \\sim 21 的约束条件。\n【数据范围】\n对于所有测试数据，保证:\n1 \\leq m \\leq n \\leq 500;\n对于所有 1 \\leq i \\leq n，均有 s_i \\in {0,1};\n对于所有 1 \\leq i \\leq n，均有 0 \\leq c_i \\leq n。\n 测试点编号 \n\t\t n \\leq \n\t\t m \n\t\t 特殊性质 \n\t 1,2 \n\t\t 10 \n\t\t \\leq n \n\t\t 无 \n\t 3 \\sim 5 \n\t\t 18 \n\t 6 \\sim 8 \n\t\t 10^2 \n\t\t A \n\t 9 \\sim 11 \n\t\t 无 \n\t 12 \\sim 14 \n\t\t 500 \n\t\t =1 \n\t 15 \n\t\t =n \n\t 16,17 \n\t\t \\leq n \n\t\t A \n\t 18 \\sim 21 \n\t\t B \n\t 22 \\sim 25 \n\t\t 无 \n\t特殊性质 A: 对于所有 1 \\leq i \\leq n，均有 s_i = 1。\n特殊性质 B: 在 s_1, s_2, \\dots, s_n 中最多只有 18 个取值为 1，即 \\sum_{i=1}^{n} s_i \\leq 18。\n\n\n                                            \n                            附件下载\n                        \n                        \n                            \n                                employ.zip                            \n                            (2.85 KB)"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>CSP-J/S 2025 第二轮认证 </p>\n</div>                </div>",
+      "text": "CSP-J/S 2025 第二轮认证"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">CSP-S 2025</span></span></p>\n</div>                </div>",
+      "text": "CSP-S 2025"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 2\r\n101\r\n1 1 2",
+      "output": "2"
+    },
+    {
+      "input": "10 5\r\n1101111011\r\n6 0 4 2 1 2 5 4 3 3",
+      "output": "2204128"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "173",
+    "通过人数": "32",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:49"
+}

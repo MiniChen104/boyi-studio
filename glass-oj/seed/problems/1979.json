@@ -1,0 +1,56 @@
+{
+  "id": "1979",
+  "title": "最大的偶数字符？",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1979",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入一个字符串，字符串由大写或者小写英文字母组成（长度不超过 <span class=\"katex math inline\">100</span> ），请问这个字符串中 <span class=\"katex math inline\">ascii</span> 码为偶数且最大的字符是哪个字符，请输出这个字符？（如果不存在这样的字符，请输出 <code>No</code> 。）</p>\n<p>比如：输入字符串 &quot; <span class=\"katex math inline\">Goodboy</span> &quot; ，那么 <span class=\"katex math inline\">ascii</span> 码为偶数的字符有 &#x27; <span class=\"katex math inline\">d</span> &#x27; （ <span class=\"katex math inline\">ascii</span> 码为 <span class=\"katex math inline\">100</span> ）、&#x27; <span class=\"katex math inline\">b</span> &#x27; （ <span class=\"katex math inline\">ascii</span> 码为 <span class=\"katex math inline\">98</span> ），那么符合条件的字符应当是 &#x27; <span class=\"katex math inline\">d</span> &#x27; 。</p>\n<p>再比如：输入字符串&quot; <span class=\"katex math inline\">ace</span> &quot;，那么就不存在 <span class=\"katex math inline\">ascii</span> 码为偶数的字符，应当输出 <code>No</code>。</p>\n</div>            </div>",
+      "text": "从键盘读入一个字符串，字符串由大写或者小写英文字母组成（长度不超过 100 ），请问这个字符串中 ascii 码为偶数且最大的字符是哪个字符，请输出这个字符？（如果不存在这样的字符，请输出 No 。）\n比如：输入字符串 \" Goodboy \" ，那么 ascii 码为偶数的字符有 ' d ' （ ascii 码为 100 ）、' b ' （ ascii 码为 98 ），那么符合条件的字符应当是 ' d ' 。\n再比如：输入字符串\" ace \"，那么就不存在 ascii 码为偶数的字符，应当输出 No。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个由大写或者小写英文字母组成的长度不超过 <span class=\"katex math inline\">100</span> 的字符串。</p>\n</div>            </div>",
+      "text": "一个由大写或者小写英文字母组成的长度不超过 100 的字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">ascii</span> 码为偶数且 <span class=\"katex math inline\">ascii</span> 码最大的字符，如果不存在，输出 <code>No</code>。</p>\n</div>            </div>",
+      "text": "输出 ascii 码为偶数且 ascii 码最大的字符，如果不存在，输出 No。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>Goodboy</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>d</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            Goodboy\n                        \n                        \n                            输出\n                            d"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "Goodboy",
+      "output": "d"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "915",
+    "通过人数": "574",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:26:52"
+}

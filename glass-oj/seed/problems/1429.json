@@ -1,0 +1,56 @@
+{
+  "id": "1429",
+  "title": "奖学金评级",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1429",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>某大学在学年结束时，要根据同学们各个学科的考试成绩评定奖学金，根据同学们这学期所有科目的考试成绩来进行统计。</p>\n<p>奖学金评级方法如下：</p>\n<p>只要有不及格的科目（成绩 <span class=\"katex math inline\"> \\lt 60</span> 分为不及格），就不能参评奖学金。\n如果有 <span class=\"katex math inline\">5</span> 个及以上的科目优秀（成绩 <span class=\"katex math inline\"> \\ge 90</span> 分为优秀）那么能够获取一等奖学金。</p>\n<p>如果有 <span class=\"katex math inline\">3</span> 个或者 <span class=\"katex math inline\">4</span> 个科目优秀，那么能够获取二等奖学金。</p>\n<p>如果有 <span class=\"katex math inline\">2</span> 个科目优秀，那么能够获取三等奖学金。</p>\n<p>请编写一个程序从键盘读入某同学 <span class=\"katex math inline\">n</span> 门科目的考试成绩，输出该同学获得奖学金的情况（一等奖学金输出 <code><span class=\"katex math inline\">1</span></code> ，二等奖学金输出 <code><span class=\"katex math inline\">2</span></code> ，三等奖学金输出 <code><span class=\"katex math inline\">3</span></code> ，不能获得奖学金输出<code><span class=\"katex math inline\">no</span></code>）。</p>\n</div>            </div>",
+      "text": "某大学在学年结束时，要根据同学们各个学科的考试成绩评定奖学金，根据同学们这学期所有科目的考试成绩来进行统计。\n奖学金评级方法如下：\n只要有不及格的科目（成绩  \\lt 60 分为不及格），就不能参评奖学金。\n如果有 5 个及以上的科目优秀（成绩  \\ge 90 分为优秀）那么能够获取一等奖学金。\n如果有 3 个或者 4 个科目优秀，那么能够获取二等奖学金。\n如果有 2 个科目优秀，那么能够获取三等奖学金。\n请编写一个程序从键盘读入某同学 n 门科目的考试成绩，输出该同学获得奖学金的情况（一等奖学金输出 1 ，二等奖学金输出 2 ，三等奖学金输出 3 ，不能获得奖学金输出no）。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行是一个整数 <span class=\"katex math inline\">n</span> ，代表有 <span class=\"katex math inline\">n</span> 个考试科目（ <span class=\"katex math inline\">5 \\le n \\le 15</span> ）；</p>\n<p>第 <span class=\"katex math inline\">2</span> 行是 <span class=\"katex math inline\">n</span> 个整数，代表该同学 <span class=\"katex math inline\">n</span> 门考试的成绩。</p>\n</div>            </div>",
+      "text": "第 1 行是一个整数 n ，代表有 n 个考试科目（ 5 \\le n \\le 15 ）；\n第 2 行是 n 个整数，代表该同学 n 门考试的成绩。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出该同学获得奖学金的情况。</p>\n</div>            </div>",
+      "text": "输出该同学获得奖学金的情况。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n90 98 80 92 70</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n90 98 80 92 70\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n90 98 80 92 70",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "16865",
+    "通过人数": "7090",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:19:20"
+}

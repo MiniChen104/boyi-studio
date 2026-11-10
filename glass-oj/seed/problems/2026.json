@@ -1,0 +1,61 @@
+{
+  "id": "2026",
+  "title": "上线人数",
+  "tags": [
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2026",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>余姚中学高三全省联考刚刚结束，经过各科老师的努力，各个学科的改卷工作终于结束了，每位同学的各科分数也已经结算完毕。</p>\n<p>此时，校长拿到了清华大学的理科预估分数线 <span class=\"katex math inline\">k</span>，可是每位同学的总分还没有计算出来。每位同学共有 <span class=\"katex math inline\">m</span> 门成绩，包括语文、数学、外语、综合、 <span class=\"katex math inline\">IB</span> 模块等。</p>\n<p>校长请你帮忙，统计一下，总分可以达到清华大学分数线的同学人数。（总分大于或等于分数线即可）</p>\n</div>            </div>",
+      "text": "余姚中学高三全省联考刚刚结束，经过各科老师的努力，各个学科的改卷工作终于结束了，每位同学的各科分数也已经结算完毕。\n此时，校长拿到了清华大学的理科预估分数线 k，可是每位同学的总分还没有计算出来。每位同学共有 m 门成绩，包括语文、数学、外语、综合、 IB 模块等。\n校长请你帮忙，统计一下，总分可以达到清华大学分数线的同学人数。（总分大于或等于分数线即可）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行三个整数 <span class=\"katex math inline\">n</span> ， <span class=\"katex math inline\">m</span> 和 <span class=\"katex math inline\">k</span> ，分别表示参加考试的人数，考试门数和预估分数线。 </p>\n<p><span class=\"katex math inline\">1 \\le n  \\le 1000</span> ,  <span class=\"katex math inline\">3 \\le m \\le 7</span> ，  <span class=\"katex math inline\">600 \\le k \\le 810</span>。 </p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行 <span class=\"katex math inline\">m</span> 个整数，表示每位同学的 <span class=\"katex math inline\">m</span> 门学科的成绩。成绩 <span class=\"katex math inline\">0 \\le x \\le 300</span>。</p>\n</div>            </div>",
+      "text": "第一行三个整数 n ， m 和 k ，分别表示参加考试的人数，考试门数和预估分数线。 \n1 \\le n  \\le 1000 ,  3 \\le m \\le 7 ，  600 \\le k \\le 810。 \n接下来 n 行，每行 m 个整数，表示每位同学的 m 门学科的成绩。成绩 0 \\le x \\le 300。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示达到分数线的人数。</p>\n</div>            </div>",
+      "text": "一个整数，表示达到分数线的人数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 5 721\r\n123 141 136 288 56\r\n103 120 111 250 50\r\n133 130 141 270 58</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 5 721\r\n123 141 136 288 56\r\n103 120 111 250 50\r\n133 130 141 270 58\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p>共 <span class=\"katex math inline\">3</span> 人，每人有 <span class=\"katex math inline\">5</span> 门成绩，总分分别为 <span class=\"katex math inline\">744,634,732</span>，达到 <span class=\"katex math inline\">721</span> 分数线的人共有 <span class=\"katex math inline\">2</span> 人。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n共 3 人，每人有 5 门成绩，总分分别为 744,634,732，达到 721 分数线的人共有 2 人。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二维数组</p>\n</div>                </div>",
+      "text": "二维数组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 5 721\r\n123 141 136 288 56\r\n103 120 111 250 50\r\n133 130 141 270 58",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1314",
+    "通过人数": "1033",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:27:28"
+}

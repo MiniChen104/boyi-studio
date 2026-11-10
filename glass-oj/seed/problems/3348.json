@@ -1,0 +1,66 @@
+{
+  "id": "3348",
+  "title": "累计相加",
+  "tags": [
+    "循环",
+    "GESP一级",
+    "23年6月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3348",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 <span class=\"katex math inline\">n</span>，求形如：<span class=\"katex math inline\">1 + (1 + 2) + (1 + 2 + 3) + (1 + 2 + 3 + 4) + … +(1 + 2 + 3 + 4 + 5 + …⋯n) </span>的累计相加。</p>\n</div>            </div>",
+      "text": "输入一个正整数 n，求形如：1 + (1 + 2) + (1 + 2 + 3) + (1 + 2 + 3 + 4) + … +(1 + 2 + 3 + 4 + 5 + …⋯n) 的累计相加。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数。约定 <span class=\"katex math inline\"> 1 ≤ n ≤ 100 </span> 。</p>\n</div>            </div>",
+      "text": "输入一个正整数。约定  1 ≤ n ≤ 100  。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出累计相加的结果。</p>\n</div>            </div>",
+      "text": "输出累计相加的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>10</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>20</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>10</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>220</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            10\n                        \n\n                                                    \n                                输入\n                                4\n                            \n                            \n                                输出\n                                20\n                            \n                        \n                                                    \n                                输入\n                                10\n                            \n                            \n                                输出\n                                220"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年6月一级</p>\n</div>                </div>",
+      "text": "GESP23年6月一级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">循环</span><span class=\"label label-warning\">GESP一级</span><span class=\"label label-info\">23年6月</span></span></p>\n</div>                </div>",
+      "text": "循环GESP一级23年6月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "10"
+    },
+    {
+      "input": "4",
+      "output": "20"
+    },
+    {
+      "input": "10",
+      "output": "220"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5725",
+    "通过人数": "4468",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:43"
+}

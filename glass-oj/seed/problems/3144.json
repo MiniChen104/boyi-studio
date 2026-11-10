@@ -1,0 +1,62 @@
+{
+  "id": "3144",
+  "title": "巧抓纪念币",
+  "tags": [
+    "市赛",
+    "广搜"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3144",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>为了让同学们留下美好的回忆，博物院准备了很多纪念币，但需要通过特制的游戏手柄抓取。纪念币在数轴的任意位置 <span class=\"katex math inline\">Y</span>。游戏手柄通过轨道移动，轨道与数轴同长且首尾对齐。</p>\n<p>当游戏手柄的坐标与纪念币的坐标相同则抓取成功。若游戏手柄当下坐标为 <span class=\"katex math inline\">X</span>，下一次可以移动到 <span class=\"katex math inline\">X-1</span>、<span class=\"katex math inline\">X+1</span>、<span class=\"katex math inline\">2X</span> 的位置，当然，这些位置不能超出轨道。</p>\n<p>最终所有同学都抓到了纪念币。若已知 <span class=\"katex math inline\">X</span> 和 <span class=\"katex math inline\">Y</span>，如何移动最快呢？</p>\n</div>            </div>",
+      "text": "为了让同学们留下美好的回忆，博物院准备了很多纪念币，但需要通过特制的游戏手柄抓取。纪念币在数轴的任意位置 Y。游戏手柄通过轨道移动，轨道与数轴同长且首尾对齐。\n当游戏手柄的坐标与纪念币的坐标相同则抓取成功。若游戏手柄当下坐标为 X，下一次可以移动到 X-1、X+1、2X 的位置，当然，这些位置不能超出轨道。\n最终所有同学都抓到了纪念币。若已知 X 和 Y，如何移动最快呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，包含两个整数 <span class=\"katex math inline\">X</span>，<span class=\"katex math inline\">Y</span>，表示游戏手柄和纪念币的初始位置。</p>\n</div>            </div>",
+      "text": "一行，包含两个整数 X，Y，表示游戏手柄和纪念币的初始位置。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行，包含一个数，表示游戏手柄最少需要移动的次数。</p>\n</div>            </div>",
+      "text": "一行，包含一个数，表示游戏手柄最少需要移动的次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 17 </pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 17 \n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<p>可行方案：<span class=\"katex math inline\">5 \\rightarrow 4 \\rightarrow 8 \\rightarrow 16 \\rightarrow 17</span>，共移动 <span class=\"katex math inline\">4</span> 次。</p>\n<h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">100</span>%的数据，满足 <span class=\"katex math inline\">X</span> 和 <span class=\"katex math inline\">Y</span> 在数轴范围内。数轴长度为 <span class=\"katex math inline\">100000</span> 。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n可行方案：5 \\rightarrow 4 \\rightarrow 8 \\rightarrow 16 \\rightarrow 17，共移动 4 次。\n【数据范围】\n对于 100%的数据，满足 X 和 Y 在数轴范围内。数轴长度为 100000 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2021南京市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2021南京市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">广搜</span></span></p>\n</div>                </div>",
+      "text": "市赛广搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 17 ",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "143",
+    "通过人数": "52",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:34:21"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "2384",
+  "title": "星星的等级",
+  "tags": [
+    "树状数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2384",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>天空中有一些星星，这些星星都在不同的位置，每个星星有个坐标。如果一个星星的左下方（包含正左和正下）有 <span class=\"katex math inline\">k</span> 颗星星，就说这颗星星是 <span class=\"katex math inline\">k</span> 级的。</p>\n<p><img src=\"https://assets.boyi.local/2ede9f2b78a93721a490e15b.png\"></p>\n<p>例如，上图中星星 <span class=\"katex math inline\">5</span> 是 <span class=\"katex math inline\">3</span> 级的（<span class=\"katex math inline\">1,2,4</span> 在它左下），星星 <span class=\"katex math inline\">2,4</span> 是 <span class=\"katex math inline\">1</span> 级的。例图中有 <span class=\"katex math inline\">1</span> 个 <span class=\"katex math inline\">0</span> 级，<span class=\"katex math inline\">2</span> 个 <span class=\"katex math inline\">1</span> 级，<span class=\"katex math inline\">1</span> 个 <span class=\"katex math inline\">2</span> 级，<span class=\"katex math inline\">1</span> 个 <span class=\"katex math inline\">3</span> 级的星星。</p>\n<p>给定星星的位置，输出各级星星的数目。</p>\n</div>            </div>",
+      "text": "天空中有一些星星，这些星星都在不同的位置，每个星星有个坐标。如果一个星星的左下方（包含正左和正下）有 k 颗星星，就说这颗星星是 k 级的。\n\n例如，上图中星星 5 是 3 级的（1,2,4 在它左下），星星 2,4 是 1 级的。例图中有 1 个 0 级，2 个 1 级，1 个 2 级，1 个 3 级的星星。\n给定星星的位置，输出各级星星的数目。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">N</span>，表示星星的数目；</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行给出每颗星星的坐标，坐标用两个整数 <span class=\"katex math inline\">x,y</span> 表示；</p>\n<p>不会有星星重叠。星星按 <span class=\"katex math inline\">y</span> 坐标增序给出，<span class=\"katex math inline\">y</span> 坐标相同的按 <span class=\"katex math inline\">x</span> 坐标增序给出。</p>\n<p>对于全部数据，<span class=\"katex math inline\">1 ≤ N ≤ 1.5×10^4</span>，<span class=\"katex math inline\">0 ≤ x,y ≤ 3.2×10^4</span> 。</p>\n</div>            </div>",
+      "text": "第一行一个整数 N，表示星星的数目；\n接下来 N 行给出每颗星星的坐标，坐标用两个整数 x,y 表示；\n不会有星星重叠。星星按 y 坐标增序给出，y 坐标相同的按 x 坐标增序给出。\n对于全部数据，1 ≤ N ≤ 1.5×10^4，0 ≤ x,y ≤ 3.2×10^4 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">N</span> 行，每行一个整数，分别是 <span class=\"katex math inline\">0</span> 级，<span class=\"katex math inline\">1</span> 级，<span class=\"katex math inline\">2</span> 级，<span class=\"katex math inline\">\\dots</span> ，<span class=\"katex math inline\">N−1</span> 级的星星的数目。</p>\n</div>            </div>",
+      "text": "N 行，每行一个整数，分别是 0 级，1 级，2 级，\\dots ，N−1 级的星星的数目。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n1 1\r\n5 1\r\n7 1\r\n3 3\r\n5 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n2\r\n1\r\n1\r\n0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n1 1\r\n5 1\r\n7 1\r\n3 3\r\n5 5\n                        \n                        \n                            输出\n                            1\r\n2\r\n1\r\n1\r\n0"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>ural1028</p>\n</div>                </div>",
+      "text": "ural1028"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">树状数组</span></span></p>\n</div>                </div>",
+      "text": "树状数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n1 1\r\n5 1\r\n7 1\r\n3 3\r\n5 5",
+      "output": "1\r\n2\r\n1\r\n1\r\n0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "1546",
+    "通过人数": "867",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:42"
+}

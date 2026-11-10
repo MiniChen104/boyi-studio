@@ -1,0 +1,63 @@
+{
+  "id": "1529",
+  "title": "基因锁",
+  "tags": [
+    "市赛",
+    "字符串",
+    "KMP"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1529",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小Ｘ终于意识到需要花大力气减重了，他询问了若干个减重专家后决定采用最适合年轻人的运动减重方案，考虑再三，小Ｘ最终选择了打羽毛球的方式，一个原因是小Ｘ的小伙伴大都喜欢打羽毛球，其次是打羽毛球要抬头，对活动颈椎有好处，刚好可以缓冲编程久了对颈椎的压迫。</p>\n<p>经过一个月的努力，小Ｘ的国际象棋 <span class=\"katex math inline\">AI</span> 在机器学习的环境中进步神速，已经能够轻松战胜深蓝了，但小Ｘ的体重却没有太大变化，离第一目标 Q 老师尚有一段距离，这天小Ｘ跟往常一样白天打羽毛球，晚上训练 <span class=\"katex math inline\">AI</span> 后就睡觉了，睡梦中小Ｘ梦见自己先是被一束强光罩住了，随后被吸进了 <span class=\"katex math inline\">UFO</span>，落到了 <span class=\"katex math inline\">UFO</span> 的甲板上，只见一只会说人话的机器狗迎上前来，对小Ｘ说：“小Ｘ先生好，我家主人在会客舱等你多时了！”</p>\n<p>随后小Ｘ被带到了一位长了三只眼的外星首领面前。</p>\n<p>外星首领很友善地和小Ｘ握了手，然后对小Ｘ说：“你做的 <span class=\"katex math inline\">AI</span> 非常棒，我已经很多年未遇对手了，今天跟你的 <span class=\"katex math inline\">AI</span> 打得旗鼓相当，十分过瘾，这次请你来作客是想和你交个朋友，你有什么要求尽管提，我们会尽量满足！”小Ｘ听罢受宠若惊，心想外星科技这么发达，也许有办法让我立刻变得像中天学长一样帅！</p>\n<p>于是小Ｘ提出了这个超高难度的要求，外星首领听后微微一笑：“你这个要求可以满足，但我们要对你的基因进行一次分析，把你基因中的肥胖基因找出来，然后给它们加上锁！象我们熟知的那样，人类的基因序列(英文缩写为 DNA)是一个由字母&#x27;A&#x27;,&#x27;C&#x27;,&#x27;G&#x27;,&#x27;T&#x27;组成的字符串，肥胖基因是其中的一个子串(子串为原串中一段连续的字符)，外星人对小Ｘ的基因手术过程是这样的：先找出所有的肥胖基因，并将它们用基因墨水染成红色，然后将某些字符加上基因锁，一把基因锁只能锁住一个字符，一个肥胖基因只要有一个字符加上了基因锁，则这个肥胖基因就不再起作用。</p>\n<p>现在要你计算有多少个字符被基因墨水染成了红色？最少需要多少把基因锁才能将所有的肥胖基因锁住？</p>\n</div>            </div>",
+      "text": "小Ｘ终于意识到需要花大力气减重了，他询问了若干个减重专家后决定采用最适合年轻人的运动减重方案，考虑再三，小Ｘ最终选择了打羽毛球的方式，一个原因是小Ｘ的小伙伴大都喜欢打羽毛球，其次是打羽毛球要抬头，对活动颈椎有好处，刚好可以缓冲编程久了对颈椎的压迫。\n经过一个月的努力，小Ｘ的国际象棋 AI 在机器学习的环境中进步神速，已经能够轻松战胜深蓝了，但小Ｘ的体重却没有太大变化，离第一目标 Q 老师尚有一段距离，这天小Ｘ跟往常一样白天打羽毛球，晚上训练 AI 后就睡觉了，睡梦中小Ｘ梦见自己先是被一束强光罩住了，随后被吸进了 UFO，落到了 UFO 的甲板上，只见一只会说人话的机器狗迎上前来，对小Ｘ说：“小Ｘ先生好，我家主人在会客舱等你多时了！”\n随后小Ｘ被带到了一位长了三只眼的外星首领面前。\n外星首领很友善地和小Ｘ握了手，然后对小Ｘ说：“你做的 AI 非常棒，我已经很多年未遇对手了，今天跟你的 AI 打得旗鼓相当，十分过瘾，这次请你来作客是想和你交个朋友，你有什么要求尽管提，我们会尽量满足！”小Ｘ听罢受宠若惊，心想外星科技这么发达，也许有办法让我立刻变得像中天学长一样帅！\n于是小Ｘ提出了这个超高难度的要求，外星首领听后微微一笑：“你这个要求可以满足，但我们要对你的基因进行一次分析，把你基因中的肥胖基因找出来，然后给它们加上锁！象我们熟知的那样，人类的基因序列(英文缩写为 DNA)是一个由字母'A','C','G','T'组成的字符串，肥胖基因是其中的一个子串(子串为原串中一段连续的字符)，外星人对小Ｘ的基因手术过程是这样的：先找出所有的肥胖基因，并将它们用基因墨水染成红色，然后将某些字符加上基因锁，一把基因锁只能锁住一个字符，一个肥胖基因只要有一个字符加上了基因锁，则这个肥胖基因就不再起作用。\n现在要你计算有多少个字符被基因墨水染成了红色？最少需要多少把基因锁才能将所有的肥胖基因锁住？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含两个用空格隔开的正整数 <span class=\"katex math inline\">L_1</span>，<span class=\"katex math inline\">L_2</span>，表示小Ｘ基因的长度和肥胖基因的长度。</p>\n<p>第二行为一个长度为 <span class=\"katex math inline\">L_1</span> 的字符串，表示小Ｘ的基因。</p>\n<p>第三行为一个长度为 <span class=\"katex math inline\">L_2</span> 的字符串，表示肥胖基因。数据保证 <span class=\"katex math inline\">L_1 &gt; L_2</span>。</p>\n</div>            </div>",
+      "text": "第一行包含两个用空格隔开的正整数 L_1，L_2，表示小Ｘ基因的长度和肥胖基因的长度。\n第二行为一个长度为 L_1 的字符串，表示小Ｘ的基因。\n第三行为一个长度为 L_2 的字符串，表示肥胖基因。数据保证 L_1 > L_2。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行包含两个整数，表示被基因墨水染成了红色的字符个数和所需的基因锁数量，两数之间严格用一个空格隔开。</p>\n</div>            </div>",
+      "text": "输出一行包含两个整数，表示被基因墨水染成了红色的字符个数和所需的基因锁数量，两数之间严格用一个空格隔开。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>16 3\r\nCGCGCATCGCATTAGG\r\nCGC</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8 2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            16 3\r\nCGCGCATCGCATTAGG\r\nCGC\n                        \n                        \n                            输出\n                            8 2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释】</p>\n<p>16 3</p>\n<p><span>CGC</span><span>GC</span>AT<span>CGC</span>ATTAGG<br>\nCGC<br></p>\n<p>红色字符为被基因墨水染成红色的全部 <span class=\"katex math inline\">3</span> 个肥胖基因，总共有 <span class=\"katex math inline\">8</span> 个字符；只需 <span class=\"katex math inline\">2</span> 把基因锁就可以把所有的肥胖基因(CGC)锁住。分别锁住第 <span class=\"katex math inline\">3</span> 个字符‘C’和第 9 个字符‘G’即可。注意第一个和第二个肥胖基因有重叠，给第三个字符‘C’加上锁就同时将两个肥胖基因锁住了。</p>\n<p>【数据范围】</p>\n<p><span class=\"katex math inline\">10\\%</span> 的数据，肥胖基因为单个字符；</p>\n<p><span class=\"katex math inline\">40\\%</span> 的数据，所有的肥胖基因互相不重叠；</p>\n<p><span class=\"katex math inline\">100\\%</span> 的数据，基因长度不超过 <span class=\"katex math inline\">10^6</span>，肥胖基因长度不超过 <span class=\"katex math inline\">10</span>，保证字符只会出现&#x27;A&#x27;,&#x27;C&#x27;,&#x27;G&#x27;,&#x27;T&#x27;。</p>\n<p>来源</p>\n<p>常州市2018“信息与未来”夏令营选拔赛</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n16 3\nCGCGCATCGCATTAGG\nCGC\n红色字符为被基因墨水染成红色的全部 3 个肥胖基因，总共有 8 个字符；只需 2 把基因锁就可以把所有的肥胖基因(CGC)锁住。分别锁住第 3 个字符‘C’和第 9 个字符‘G’即可。注意第一个和第二个肥胖基因有重叠，给第三个字符‘C’加上锁就同时将两个肥胖基因锁住了。\n【数据范围】\n10\\% 的数据，肥胖基因为单个字符；\n40\\% 的数据，所有的肥胖基因互相不重叠；\n100\\% 的数据，基因长度不超过 10^6，肥胖基因长度不超过 10，保证字符只会出现'A','C','G','T'。\n来源\n常州市2018“信息与未来”夏令营选拔赛"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>市赛</p>\n</div>                </div>",
+      "text": "市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">字符串</span><span class=\"label label-info\">KMP</span></span></p>\n</div>                </div>",
+      "text": "市赛字符串KMP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "16 3\r\nCGCGCATCGCATTAGG\r\nCGC",
+      "output": "8 2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1467",
+    "通过人数": "710",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:20:41"
+}

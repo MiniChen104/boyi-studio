@@ -1,0 +1,68 @@
+{
+  "id": "5939",
+  "title": "路径覆盖",
+  "tags": [
+    "GESP六级",
+    "25年12月",
+    "树",
+    "树形DP"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5939",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一棵有 <span class=\"katex math inline\"> n </span> 个结点的有根树 <span class=\"katex math inline\"> T </span>，结点依次以 <span class=\"katex math inline\"> 1, 2, \\ldots, n </span> 编号，根结点编号为 <span class=\"katex math inline\">1</span>。方便起见，编号为 <span class=\"katex math inline\"> i </span> 的结点称为结点 <span class=\"katex math inline\"> i </span>。</p>\n<p>初始时 <span class=\"katex math inline\"> T </span> 中的结点均为白色。你需要将 <span class=\"katex math inline\"> T </span> 中的若干个结点染为黑色，使得所有叶子到根的路径上至少有一个黑色结点。将结点 <span class=\"katex math inline\"> i </span> 染为黑色需要代价 <span class=\"katex math inline\"> c_i </span>，你需要在满足以上条件的情况下，最小化染色代价之和。</p>\n<p>叶子是指 <span class=\"katex math inline\"> T </span> 中没有子结点的结点。</p>\n</div>            </div>",
+      "text": "给定一棵有  n  个结点的有根树  T ，结点依次以  1, 2, \\ldots, n  编号，根结点编号为 1。方便起见，编号为  i  的结点称为结点  i 。\n初始时  T  中的结点均为白色。你需要将  T  中的若干个结点染为黑色，使得所有叶子到根的路径上至少有一个黑色结点。将结点  i  染为黑色需要代价  c_i ，你需要在满足以上条件的情况下，最小化染色代价之和。\n叶子是指  T  中没有子结点的结点。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行：一个正整数 <span class=\"katex math inline\"> n </span>，表示结点数量。</p>\n<p>第二行：<span class=\"katex math inline\"> n - 1 </span> 个正整数 <span class=\"katex math inline\"> f_2, f_3, \\ldots, f_n </span>，其中 <span class=\"katex math inline\"> f_i </span> 表示结点 <span class=\"katex math inline\"> i </span> 的父结点的编号，保证 <span class=\"katex math inline\"> f_i &lt; i </span>。</p>\n<p>第三行：<span class=\"katex math inline\"> n </span> 个正整数 <span class=\"katex math inline\"> c_1, c_2, \\ldots, c_n </span>，其中 <span class=\"katex math inline\"> c_i </span> 表示将结点 <span class=\"katex math inline\"> i </span> 染为黑色所需的代价。</p>\n</div>            </div>",
+      "text": "第一行：一个正整数  n ，表示结点数量。\n第二行： n - 1  个正整数  f_2, f_3, \\ldots, f_n ，其中  f_i  表示结点  i  的父结点的编号，保证  f_i < i 。\n第三行： n  个正整数  c_1, c_2, \\ldots, c_n ，其中  c_i  表示将结点  i  染为黑色所需的代价。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，一个整数，表示在满足所有叶子到根的路径上至少有一个黑色结点的前提下，染色代价之和的最小值。</p>\n</div>            </div>",
+      "text": "输出一行，一个整数，表示在满足所有叶子到根的路径上至少有一个黑色结点的前提下，染色代价之和的最小值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n1 2 3\r\n5 6 2 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>7\r\n1 1 2 2 3 3\r\n64 16 15 4 3 2 1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>10</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n1 2 3\r\n5 6 2 3\n                        \n                        \n                            输出\n                            2\n                        \n\n                                                    \n                                输入\n                                7\r\n1 1 2 2 3 3\r\n64 16 15 4 3 2 1\n                            \n                            \n                                输出\n                                10"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<ul><li>对于 <span class=\"katex math inline\">40\\%</span> 的测试点，保证 <span class=\"katex math inline\"> 2 \\leq n \\leq 16 </span>。</li>\n<li>对于另外 <span class=\"katex math inline\">20\\%</span> 的测试点，保证 <span class=\"katex math inline\"> f_i = i - 1 </span>。</li>\n<li>对于所有测试点，保证 <span class=\"katex math inline\"> 2 \\leq n \\leq 10^5 </span>，<span class=\"katex math inline\"> 1 \\leq c_i \\leq 10^9 </span>。</li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 40\\% 的测试点，保证  2 \\leq n \\leq 16 。\n对于另外 20\\% 的测试点，保证  f_i = i - 1 。\n对于所有测试点，保证  2 \\leq n \\leq 10^5 ， 1 \\leq c_i \\leq 10^9 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP25年12月六级</p>\n</div>                </div>",
+      "text": "GESP25年12月六级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP六级</span><span class=\"label label-warning\">25年12月</span><span class=\"label label-info\">树</span><span class=\"label label-danger\">树形DP</span></span></p>\n</div>                </div>",
+      "text": "GESP六级25年12月树树形DP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n1 2 3\r\n5 6 2 3",
+      "output": "2"
+    },
+    {
+      "input": "7\r\n1 1 2 2 3 3\r\n64 16 15 4 3 2 1",
+      "output": "10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "104",
+    "通过人数": "81",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:31"
+}

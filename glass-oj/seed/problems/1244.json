@@ -1,0 +1,56 @@
+{
+  "id": "1244",
+  "title": "请问一个正整数能够整除几次2",
+  "tags": [
+    "简单循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1244",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>请问一个正整数 <span class=\"katex math inline\">n</span> 能够整除几次 <span class=\"katex math inline\">2</span>？</p>\n<p>比如： <span class=\"katex math inline\">4</span> 可以整除 <span class=\"katex math inline\">2</span> 次 <span class=\"katex math inline\">2</span> ，<span class=\"katex math inline\">100</span> 可以整除 <span class=\"katex math inline\">2</span> 次 <span class=\"katex math inline\">2</span> ， <span class=\"katex math inline\">9</span> 可以整除 <span class=\"katex math inline\">0</span> 次 <span class=\"katex math inline\">2</span> 。</p>\n</div>            </div>",
+      "text": "请问一个正整数 n 能够整除几次 2？\n比如： 4 可以整除 2 次 2 ，100 可以整除 2 次 2 ， 9 可以整除 0 次 2 。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>从键盘读入一个正整数 <span class=\"katex math inline\">n</span> 。</p>\n</div>            </div>",
+      "text": "从键盘读入一个正整数 n 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表 <span class=\"katex math inline\">n</span> 能够整除 <span class=\"katex math inline\">2</span> 的次数。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表 n 能够整除 2 的次数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\n                        \n                        \n                            输出\n                            3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>简单循环</p>\n</div>                </div>",
+      "text": "简单循环"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">简单循环</span></span></p>\n</div>                </div>",
+      "text": "简单循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "42184",
+    "通过人数": "29057",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:16:48"
+}

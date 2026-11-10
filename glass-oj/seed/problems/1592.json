@@ -1,0 +1,65 @@
+{
+  "id": "1592",
+  "title": "求和（sum）",
+  "tags": [
+    "noip复赛"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1592",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一条狭长的纸带被均匀划分出了 <span class=\"katex math inline\">n</span> 个格子，格子编号从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">n</span> 。每个格子上都染了一种颜色 <span class=\"katex math inline\">color_i</span>用 [<span class=\"katex math inline\">1</span>，<span class=\"katex math inline\">m</span>] 当中的一个整数表示），并且写了一个数字<span class=\"katex math inline\">number_i</span>。</p>\n<p><img src=\"https://assets.boyi.local/ecdf91fa7fe9cde3d04c93ce.jpg\"></p>\n<p>定义一种特殊的三元组：(<span class=\"katex math inline\">x,y,z</span>)，其中 <span class=\"katex math inline\">x</span>，<span class=\"katex math inline\">y</span>，<span class=\"katex math inline\">z</span> 都代表纸带上格子的编号，这里的三元组要求满足以下两个条件：</p>\n<ul><li><span class=\"katex math inline\">xyz</span> 是整数, <span class=\"katex math inline\">x \\lt y \\lt z</span>，<span class=\"katex math inline\">y-x=z-y</span></li>\n<li><span class=\"katex math inline\">color_x=color_z</span></li>\n</ul><p>满足上述条件的<strong>三元组的分数</strong>规定为 <span class=\"katex math inline\">(x+z) *(number_x+number_z)</span>。整个<strong>纸带的分数</strong>规定为所有满足条件的三元组的分数的和。</p>\n<p>这个分数可能会很大，你只要输出整个纸带的分数除以 <span class=\"katex math inline\">10,007</span> 所得的余数即可。</p>\n</div>            </div>",
+      "text": "一条狭长的纸带被均匀划分出了 n 个格子，格子编号从 1 到 n 。每个格子上都染了一种颜色 color_i用 [1，m] 当中的一个整数表示），并且写了一个数字number_i。\n\n定义一种特殊的三元组：(x,y,z)，其中 x，y，z 都代表纸带上格子的编号，这里的三元组要求满足以下两个条件：\nxyz 是整数, x \\lt y \\lt z，y-x=z-y\ncolor_x=color_z\n满足上述条件的三元组的分数规定为 (x+z) *(number_x+number_z)。整个纸带的分数规定为所有满足条件的三元组的分数的和。\n这个分数可能会很大，你只要输出整个纸带的分数除以 10,007 所得的余数即可。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行是用一个空格隔开的两个正整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>，<span class=\"katex math inline\">n</span> 表纸带上格子的个数，<span class=\"katex math inline\">m</span> 表纸带上颜色的种类数。</p>\n<p>第二行有 <span class=\"katex math inline\">n</span> 用空格隔开的正整数，第 <span class=\"katex math inline\">i</span> 数字 <span class=\"katex math inline\">number_i</span> 表纸带上编号为 <span class=\"katex math inline\">i</span> 格子上面写的数字。</p>\n<p>第三行有 <span class=\"katex math inline\">n</span> 用空格隔开的正整数，第 <span class=\"katex math inline\">i</span> 数字 <span class=\"katex math inline\">color_i</span> 表纸带上编号为 <span class=\"katex math inline\">i</span> 格子染的颜色。</p>\n</div>            </div>",
+      "text": "第一行是用一个空格隔开的两个正整数 n 和 m，n 表纸带上格子的个数，m 表纸带上颜色的种类数。\n第二行有 n 用空格隔开的正整数，第 i 数字 number_i 表纸带上编号为 i 格子上面写的数字。\n第三行有 n 用空格隔开的正整数，第 i 数字 color_i 表纸带上编号为 i 格子染的颜色。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共一行，一个整数，表示所求的纸带分数除以 <span class=\"katex math inline\">10,007</span> 所得的余数。</p>\n</div>            </div>",
+      "text": "共一行，一个整数，表示所求的纸带分数除以 10,007 所得的余数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 2\r\n5 5 3 2 2 2\r\n2 2 1 1 2 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>82</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>15 4\r\n5 10 8 2 2 2 9 9 7 7 5 6 4 2 4\r\n2 2 3 3 4 3 3 2 4 4 4 4 1 1 1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1388</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 2\r\n5 5 3 2 2 2\r\n2 2 1 1 2 1\n                        \n                        \n                            输出\n                            82\n                        \n\n                                                    \n                                输入\n                                15 4\r\n5 10 8 2 2 2 9 9 7 7 5 6 4 2 4\r\n2 2 3 3 4 3 3 2 4 4 4 4 1 1 1\n                            \n                            \n                                输出\n                                1388"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【输入输出样例 1 说明】</h4>\n<p>纸带如题目描述中的图所示。</p>\n<p>所有满足条件的三元组为： (<span class=\"katex math inline\">1</span>, <span class=\"katex math inline\">3</span>, <span class=\"katex math inline\">5</span>), (<span class=\"katex math inline\">4</span>, <span class=\"katex math inline\">5</span>, <span class=\"katex math inline\">6</span>)。</p>\n<p>所以纸带的分数为 <code>(1 + 5) ∗ (5 + 2) + (4 + 6) ∗ (2 + 2) = 42 + 40 = 82</code>。</p>\n<h4>【数据说明】</h4>\n<p>对于第 <span class=\"katex math inline\">1</span> 组至第 <span class=\"katex math inline\">2</span> 组数据， <span class=\"katex math inline\">1 \\le n \\le 100</span>, <span class=\"katex math inline\">1  \\le  m  \\le  5</span>；</p>\n<p>对于第 <span class=\"katex math inline\">3</span> 组至第 <span class=\"katex math inline\">4</span> 组数据， <span class=\"katex math inline\">1 \\le n \\le 3000</span>, <span class=\"katex math inline\">1 \\le m \\le 100</span>；</p>\n<p>对于第 <span class=\"katex math inline\">5</span> 组至第 <span class=\"katex math inline\">6</span> 组数据， <span class=\"katex math inline\">1 \\le n \\le 100000</span>, <span class=\"katex math inline\">1 \\le m \\le 100000</span>，且不存在出现次数超过 <span class=\"katex math inline\">20</span> 的颜色；</p>\n<p>对 于 全 部 <span class=\"katex math inline\">10</span> 组 数 据 ， <span class=\"katex math inline\">1 \\le n \\le 100000</span>, <span class=\"katex math inline\">1 \\le m \\le 100000</span>, <span class=\"katex math inline\">1 \\le color_i \\le m</span>，<span class=\"katex math inline\">1\\le number_i \\le 100000</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【输入输出样例 1 说明】\n纸带如题目描述中的图所示。\n所有满足条件的三元组为： (1, 3, 5), (4, 5, 6)。\n所以纸带的分数为 (1 + 5) ∗ (5 + 2) + (4 + 6) ∗ (2 + 2) = 42 + 40 = 82。\n【数据说明】\n对于第 1 组至第 2 组数据， 1 \\le n \\le 100, 1  \\le  m  \\le  5；\n对于第 3 组至第 4 组数据， 1 \\le n \\le 3000, 1 \\le m \\le 100；\n对于第 5 组至第 6 组数据， 1 \\le n \\le 100000, 1 \\le m \\le 100000，且不存在出现次数超过 20 的颜色；\n对 于 全 部 10 组 数 据 ， 1 \\le n \\le 100000, 1 \\le m \\le 100000, 1 \\le color_i \\le m，1\\le number_i \\le 100000"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>NOIP2015普及组复赛第3题</p>\n</div>                </div>",
+      "text": "NOIP2015普及组复赛第3题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">noip复赛</span></span></p>\n</div>                </div>",
+      "text": "noip复赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 2\r\n5 5 3 2 2 2\r\n2 2 1 1 2 1",
+      "output": "82"
+    },
+    {
+      "input": "15 4\r\n5 10 8 2 2 2 9 9 7 7 5 6 4 2 4\r\n2 2 3 3 4 3 3 2 4 4 4 4 1 1 1",
+      "output": "1388"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1119",
+    "通过人数": "497",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:21:33"
+}

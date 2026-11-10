@@ -1,0 +1,65 @@
+{
+  "id": "4649",
+  "title": "幸运数字",
+  "tags": [
+    "江苏省赛2024"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4649",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果一个正整数的二进制表示中，每个比特（<span class=\"katex math inline\">0</span> 或 <span class=\"katex math inline\">1</span>）的左边或右边都至少有一个相同的比特，Dr. X 就认为它是一个“幸运数字”。例如:</p>\n<ul><li><p><span class=\"katex math inline\">(1)_2=(1)_{10}</span> 有落单的 <span class=\"katex math inline\">1</span>，它不是幸运数字。</p>\n</li>\n<li><p><span class=\"katex math inline\">(110111)_2=(55)_{10}</span> 有落单的 <span class=\"katex math inline\">0</span>，它不是幸运数字。</p>\n</li>\n<li><p><span class=\"katex math inline\">(111110011)_2=(499)_{10}</span> 是幸运数字。</p>\n</li>\n<li><p><span class=\"katex math inline\">(110011001100)_2=(3276)_{10}</span> 是幸运数字。</p>\n</li>\n</ul><p>对于给定的 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>，Dr. X 希望你求出 <span class=\"katex math inline\">a, a + 1, a + 2, \\dots, b</span> 中幸运数字的数量。</p>\n</div>            </div>",
+      "text": "如果一个正整数的二进制表示中，每个比特（0 或 1）的左边或右边都至少有一个相同的比特，Dr. X 就认为它是一个“幸运数字”。例如:\n(1)_2=(1)_{10} 有落单的 1，它不是幸运数字。\n\n(110111)_2=(55)_{10} 有落单的 0，它不是幸运数字。\n\n(111110011)_2=(499)_{10} 是幸运数字。\n\n(110011001100)_2=(3276)_{10} 是幸运数字。\n\n对于给定的 a 和 b，Dr. X 希望你求出 a, a + 1, a + 2, \\dots, b 中幸运数字的数量。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入空格分隔的整数 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span>。</p>\n</div>            </div>",
+      "text": "输入空格分隔的整数 a 和 b。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数，代表 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">b</span> 之间幸运数字的数量。</p>\n</div>            </div>",
+      "text": "输出一行一个整数，代表 a 和 b 之间幸运数字的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>14</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4096 65535</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>1364</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 100\n                        \n                        \n                            输出\n                            14\n                        \n\n                                                    \n                                输入\n                                4096 65535\n                            \n                            \n                                输出\n                                1364"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围与提示</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据,满足 <span class=\"katex math inline\">1 \\leq a \\leq b \\leq 10^6</span>。</p>\n<p>&gt;本题原始满分为 <span class=\"katex math inline\">15\\text{pts}</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围与提示\n对于 100\\% 的数据,满足 1 \\leq a \\leq b \\leq 10^6。\n>本题原始满分为 15\\text{pts}。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024年江苏省＂信息与未来＂小学生编程</p>\n</div>                </div>",
+      "text": "2024年江苏省＂信息与未来＂小学生编程"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">江苏省赛2024</span></span></p>\n</div>                </div>",
+      "text": "江苏省赛2024"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 100",
+      "output": "14"
+    },
+    {
+      "input": "4096 65535",
+      "output": "1364"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "38",
+    "通过人数": "28",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:10"
+}

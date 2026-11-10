@@ -1,0 +1,56 @@
+{
+  "id": "4761",
+  "title": "画等腰梯形",
+  "tags": [
+    "蓝桥等考",
+    "循环"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4761",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>提示信息</p>\n<p>梯形是只有一组对边平行的四边形，如下图所示。平行的两边叫做梯形的底边：较长的一条底边叫下底（<code>BC</code>），较短的一条底边叫上底（<code>AD</code>）；另外两边叫腰（<code>AB</code>、<code>CD</code>）；夹在两底之间的垂线段叫梯形的高（<code>AE</code>）。两腰相等的梯形叫等腰梯形。</p>\n<p><img src=\"https://assets.boyi.local/f547186192fb77c27777a27c.png\"></p>\n<p>输入一个正整数 <span class=\"katex math inline\">n</span>，用 <code>*</code> 画出一个高和上底均为 <span class=\"katex math inline\">n</span> 的等腰梯形图案。</p>\n</div>            </div>",
+      "text": "提示信息\n梯形是只有一组对边平行的四边形，如下图所示。平行的两边叫做梯形的底边：较长的一条底边叫下底（BC），较短的一条底边叫上底（AD）；另外两边叫腰（AB、CD）；夹在两底之间的垂线段叫梯形的高（AE）。两腰相等的梯形叫等腰梯形。\n\n输入一个正整数 n，用 * 画出一个高和上底均为 n 的等腰梯形图案。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个正整数 <span class=\"katex math inline\">n</span>，（<span class=\"katex math inline\">n \\le 10 </span>）表示等腰梯形图案的高和上底的长度。</p>\n</div>            </div>",
+      "text": "输入一个正整数 n，（n \\le 10 ）表示等腰梯形图案的高和上底的长度。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>根据输入的正整数 <span class=\"katex math inline\">n</span>，在屏幕上打印出一个高和上底均为 <span class=\"katex math inline\">n</span> 的等腰梯形图案。图案应使用 <code>*</code> 字符绘制，并且满足等腰梯形的定义：较长的底边（下底）由屏幕上的空格与 <code>*</code> 字符共同构成，以形成等腰梯形的形状；较短的底边（上底）及两腰均由 <code>*</code> 字符构成。</p>\n</div>            </div>",
+      "text": "根据输入的正整数 n，在屏幕上打印出一个高和上底均为 n 的等腰梯形图案。图案应使用 * 字符绘制，并且满足等腰梯形的定义：较长的底边（下底）由屏幕上的空格与 * 字符共同构成，以形成等腰梯形的形状；较短的底边（上底）及两腰均由 * 字符构成。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>  ***\r\n *****\r\n*******</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>7</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>      *******\r\n     *********\r\n    ***********\r\n   *************\r\n  ***************\r\n *****************\r\n*******************</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                              ***\r\n *****\r\n*******\n                        \n\n                                                    \n                                输入\n                                7\n                            \n                            \n                                输出\n                                      *******\r\n     *********\r\n    ***********\r\n   *************\r\n  ***************\r\n *****************\r\n*******************"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">蓝桥等考</span><span class=\"label label-warning\">循环</span></span></p>\n</div>                </div>",
+      "text": "蓝桥等考循环"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "  ***\r\n *****\r\n*******"
+    },
+    {
+      "input": "7",
+      "output": "      *******\r\n     *********\r\n    ***********\r\n   *************\r\n  ***************\r\n *****************\r\n*******************"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "158",
+    "通过人数": "97",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:22"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "2853",
+  "title": "寻找道路",
+  "tags": [
+    "图论",
+    "搜索"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2853",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在有向图 <span class=\"katex math inline\">G</span> 中，每条边的长度均为 <span class=\"katex math inline\">1</span>，现给定起点和终点，请你在图中找一条从起点到终点的路径，该路径满足以下条件：</p>\n<ol><li>路径上的所有点的出边所指向的点都直接或间接与终点连通。</li>\n<li>在满足条件 <span class=\"katex math inline\">1</span> 的情况下使路径最短。</li>\n</ol><p>注意：图 <span class=\"katex math inline\">G</span> 中可能存在重边和自环，题目保证终点没有出边。</p>\n<p>请你输出符合条件的路径的长度。</p>\n</div>            </div>",
+      "text": "在有向图 G 中，每条边的长度均为 1，现给定起点和终点，请你在图中找一条从起点到终点的路径，该路径满足以下条件：\n路径上的所有点的出边所指向的点都直接或间接与终点连通。\n在满足条件 1 的情况下使路径最短。\n注意：图 G 中可能存在重边和自环，题目保证终点没有出边。\n请你输出符合条件的路径的长度。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行有两个用一个空格隔开的整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span>，表示图有 <span class=\"katex math inline\">n</span> 个点和 <span class=\"katex math inline\">m</span> 条边。</p>\n<p>接下来的 <span class=\"katex math inline\">m</span> 行每行 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">x,y</span>，之间用一个空格隔开，表示有一条边从点 <span class=\"katex math inline\">x</span> 指向点 <span class=\"katex math inline\">y</span>。</p>\n<p>最后一行有两个用一个空格隔开的整数 <span class=\"katex math inline\">s,t</span>，表示起点为 <span class=\"katex math inline\">s</span>，终点为 <span class=\"katex math inline\">t</span>。</p>\n</div>            </div>",
+      "text": "第一行有两个用一个空格隔开的整数 n 和 m，表示图有 n 个点和 m 条边。\n接下来的 m 行每行 2 个整数 x,y，之间用一个空格隔开，表示有一条边从点 x 指向点 y。\n最后一行有两个用一个空格隔开的整数 s,t，表示起点为 s，终点为 t。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出只有一行，包含一个整数，表示满足题目描述的最短路径的长度。如果这样的路径不存在，输出 <span class=\"katex math inline\">-1</span>。</p>\n</div>            </div>",
+      "text": "输出只有一行，包含一个整数，表示满足题目描述的最短路径的长度。如果这样的路径不存在，输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 2\r\n1 2\r\n2 1\r\n1 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>-1</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>6 6\r\n1 2\r\n1 3\r\n2 6\r\n2 5  \r\n4 5\r\n3 4\r\n1 5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>3</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 2\r\n1 2\r\n2 1\r\n1 3\n                        \n                        \n                            输出\n                            -1\n                        \n\n                                                    \n                                输入\n                                6 6\r\n1 2\r\n1 3\r\n2 6\r\n2 5  \r\n4 5\r\n3 4\r\n1 5\n                            \n                            \n                                输出\n                                3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例解释</h4>\n<p><strong>解释1：</strong></p>\n<p><img src=\"https://assets.boyi.local/65ba3b245d376e64a5706a8e.jpg\"></p>\n<p>如上图所示，箭头表示有向道路，圆点表示城市。起点 <span class=\"katex math inline\">1</span> 与终点 <span class=\"katex math inline\">3</span> 不连通，所以满足题目描述的路径不存在，故输出 <span class=\"katex math inline\">-1</span>。</p>\n<p><strong>解释2：</strong></p>\n<p><img src=\"https://assets.boyi.local/0c34ecd5f7c2ef6c1b284916.jpg\"></p>\n<p>如上图所示，满足条件的路径为 <span class=\"katex math inline\">1\\to 3\\to 4\\to 5</span>。注意点 <span class=\"katex math inline\">2</span> 不能在答案路径中，因为点 <span class=\"katex math inline\">2</span> 连了一条边到点 <span class=\"katex math inline\">6</span>，而点 <span class=\"katex math inline\">6</span> 不与终点 <span class=\"katex math inline\">5</span> 连通。</p>\n<h4>数据范围</h4>\n<ul><li>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">0 &lt; n\\le10</span>，<span class=\"katex math inline\">0 &lt; m\\le 20</span>。</li>\n<li>对于 <span class=\"katex math inline\">60\\%</span> 的数据，<span class=\"katex math inline\">0 &lt; n\\le100</span>，<span class=\"katex math inline\">0 &lt; m\\le 2000</span>。</li>\n<li>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">0 &lt; n\\le 10^4</span>，<span class=\"katex math inline\">0 &lt; m\\le 2\\times 10^5</span>，<span class=\"katex math inline\">0 &lt; x,y,s,t\\le n,x,s\\ne t</span>。</li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "样例解释\n解释1：\n\n如上图所示，箭头表示有向道路，圆点表示城市。起点 1 与终点 3 不连通，所以满足题目描述的路径不存在，故输出 -1。\n解释2：\n\n如上图所示，满足条件的路径为 1\\to 3\\to 4\\to 5。注意点 2 不能在答案路径中，因为点 2 连了一条边到点 6，而点 6 不与终点 5 连通。\n数据范围\n对于 30\\% 的数据，0 < n\\le10，0 < m\\le 20。\n对于 60\\% 的数据，0 < n\\le100，0 < m\\le 2000。\n对于 100\\% 的数据，0 < n\\le 10^4，0 < m\\le 2\\times 10^5，0 < x,y,s,t\\le n,x,s\\ne t。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>NOIP2014 提高组</p>\n</div>                </div>",
+      "text": "NOIP2014 提高组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span><span class=\"label label-warning\">搜索</span></span></p>\n</div>                </div>",
+      "text": "图论搜索"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 2\r\n1 2\r\n2 1\r\n1 3",
+      "output": "-1"
+    },
+    {
+      "input": "6 6\r\n1 2\r\n1 3\r\n2 6\r\n2 5  \r\n4 5\r\n3 4\r\n1 5",
+      "output": "3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "314",
+    "通过人数": "195",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:37"
+}

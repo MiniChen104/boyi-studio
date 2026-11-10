@@ -1,0 +1,56 @@
+{
+  "id": "2558",
+  "title": "数字游戏",
+  "tags": [
+    "数位DP"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2558",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>科协里最近很流行数字游戏。某人命名了一种不降数，这种数字必须满足从左到右各位数字成小于等于的关系，如 <span class=\"katex math inline\">123</span>，<span class=\"katex math inline\">446</span>。  </p>\n<p>现在大家决定玩一个游戏，指定一个整数闭区间 [<span class=\"katex math inline\">a</span>,<span class=\"katex math inline\">b</span>]，问这个区间内有多少个不降数。有多组测试数据。每组只含两个数字 <span class=\"katex math inline\">a</span>,<span class=\"katex math inline\">b</span>，意义如题目描述。</p>\n</div>            </div>",
+      "text": "科协里最近很流行数字游戏。某人命名了一种不降数，这种数字必须满足从左到右各位数字成小于等于的关系，如 123，446。  \n现在大家决定玩一个游戏，指定一个整数闭区间 [a,b]，问这个区间内有多少个不降数。有多组测试数据。每组只含两个数字 a,b，意义如题目描述。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有多组测试数据。每组只含两个数字 <span class=\"katex math inline\">a</span>,<span class=\"katex math inline\">b</span>，意义如题目描述。</p>\n</div>            </div>",
+      "text": "有多组测试数据。每组只含两个数字 a,b，意义如题目描述。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>每行给出一个测试数据的答案，即 [<span class=\"katex math inline\">a</span>,<span class=\"katex math inline\">b</span>] 之间有多少不降数。</p>\n</div>            </div>",
+      "text": "每行给出一个测试数据的答案，即 [a,b] 之间有多少不降数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>1 9\r\n1 19</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>9\r\n18</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            1 9\r\n1 19\n                        \n                        \n                            输出\n                            9\r\n18"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>对于全部数据，<span class=\"katex math inline\">1</span>≤<span class=\"katex math inline\">a</span>≤<span class=\"katex math inline\">b</span>≤<span class=\"katex math inline\">2</span><sup><span class=\"katex math inline\">31</span></sup>−<span class=\"katex math inline\">1</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "对于全部数据，1≤a≤b≤231−1。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数位DP</span></span></p>\n</div>                </div>",
+      "text": "数位DP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "1 9\r\n1 19",
+      "output": "9\r\n18"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "492",
+    "通过人数": "326",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:33:15"
+}

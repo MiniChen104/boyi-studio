@@ -1,0 +1,56 @@
+{
+  "id": "1402",
+  "title": "字符串加密？",
+  "tags": [
+    "字符串"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1402",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在情报传递过程中，为了防止情报被截获，往往需要对情报用一定的方式加密，简单的加密算法虽然不足以完全避免情报被破译，但仍然能防止情报被轻易的识别。</p>\n<p>我们给出一种最简的的加密方法，对给定的一个字符串，把其中从 <span class=\"katex math inline\">a-y</span> ，<span class=\"katex math inline\">A-Y</span> 的字母用其后继字母替代，把 <span class=\"katex math inline\">z</span> 和 <span class=\"katex math inline\">Z</span> 用 <span class=\"katex math inline\">a</span> 和 <span class=\"katex math inline\">A</span> 替代，其他非字母字符不变，则可得到一个简单的加密字符串。</p>\n</div>            </div>",
+      "text": "在情报传递过程中，为了防止情报被截获，往往需要对情报用一定的方式加密，简单的加密算法虽然不足以完全避免情报被破译，但仍然能防止情报被轻易的识别。\n我们给出一种最简的的加密方法，对给定的一个字符串，把其中从 a-y ，A-Y 的字母用其后继字母替代，把 z 和 Z 用 a 和 A 替代，其他非字母字符不变，则可得到一个简单的加密字符串。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行，包含一个字符串，长度不超过 <span class=\"katex math inline\">80</span> 个字符。</p>\n</div>            </div>",
+      "text": "输入一行，包含一个字符串，长度不超过 80 个字符。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出每行字符串的加密字符串。</p>\n</div>            </div>",
+      "text": "输出每行字符串的加密字符串。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>Hello! How are you!</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>Ifmmp! Ipx bsf zpv!</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            Hello! How are you!\n                        \n                        \n                            输出\n                            Ifmmp! Ipx bsf zpv!"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>字符串</p>\n</div>                </div>",
+      "text": "字符串"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">字符串</span></span></p>\n</div>                </div>",
+      "text": "字符串"
+    }
+  ],
+  "samples": [
+    {
+      "input": "Hello! How are you!",
+      "output": "Ifmmp! Ipx bsf zpv!"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "11900",
+    "通过人数": "6776",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:18:57"
+}

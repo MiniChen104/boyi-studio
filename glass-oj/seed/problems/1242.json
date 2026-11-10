@@ -1,0 +1,60 @@
+{
+  "id": "1242",
+  "title": "第K大与第K小数",
+  "tags": [
+    "数组问题"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1242",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个长度为 <span class=\"katex math inline\">N</span> ( <span class=\"katex math inline\">0 \\lt n \\le 10000</span> )的序列，保证每一个序列中的数字 <span class=\"katex math inline\">a[i]</span> 是正整数且唯一  ，编程要求求出整个序列中第 <span class=\"katex math inline\">k</span> 大的数字减去第 <span class=\"katex math inline\">k</span> 小的数字的值 <span class=\"katex math inline\">m</span> ，并判断 <span class=\"katex math inline\">m</span> 是否为质数。(<span class=\"katex math inline\">0 \\lt k \\le n</span>)</p>\n</div>            </div>",
+      "text": "给定一个长度为 N ( 0 \\lt n \\le 10000 )的序列，保证每一个序列中的数字 a[i] 是正整数且唯一  ，编程要求求出整个序列中第 k 大的数字减去第 k 小的数字的值 m ，并判断 m 是否为质数。(0 \\lt k \\le n)"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入格式：</p>\n<p>第一行为 <span class=\"katex math inline\">2</span> 个数 <span class=\"katex math inline\">n，k</span>（含义如上题）；</p>\n<p>第二行为 <span class=\"katex math inline\">n</span> 个数，表示这个序列。</p>\n</div>            </div>",
+      "text": "输入格式：\n第一行为 2 个数 n，k（含义如上题）；\n第二行为 n 个数，表示这个序列。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出格式：</p>\n<p>如果 <span class=\"katex math inline\">m</span> 为质数,则第一行为<code>YES</code>,第二行为这个数 <span class=\"katex math inline\">m</span>;</p>\n<p>否则 ，第一行为<code>NO</code> ，第二行为这个数 <span class=\"katex math inline\">m</span>。</p>\n</div>            </div>",
+      "text": "输出格式：\n如果 m 为质数,则第一行为YES,第二行为这个数 m;\n否则 ，第一行为NO ，第二行为这个数 m。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 2\r\n1 2 3 4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>YES\r\n2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>8 5\r\n10 18 13 9 11 20 35 7\r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>NO\r\n-2</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 2\r\n1 2 3 4 5\n                        \n                        \n                            输出\n                            YES\r\n2\n                        \n\n                                                    \n                                输入\n                                8 5\r\n10 18 13 9 11 20 35 7\r\n\n                            \n                            \n                                输出\n                                NO\r\n-2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>数组问题</p>\n</div>                </div>",
+      "text": "数组问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">数组问题</span></span></p>\n</div>                </div>",
+      "text": "数组问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 2\r\n1 2 3 4 5",
+      "output": "YES\r\n2"
+    },
+    {
+      "input": "8 5\r\n10 18 13 9 11 20 35 7\r\n",
+      "output": "NO\r\n-2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "32 MB",
+    "提交次数": "21025",
+    "通过人数": "8580",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:16:46"
+}

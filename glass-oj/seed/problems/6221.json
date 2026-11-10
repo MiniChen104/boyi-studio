@@ -1,0 +1,63 @@
+{
+  "id": "6221",
+  "title": "消消乐",
+  "tags": [
+    "GESP七级",
+    "26年6月",
+    "动态规划",
+    "区间DP"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/6221",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个由 <span class=\"katex math inline\">n</span> 个整数构成的数组 <span class=\"katex math inline\">a=[a_1,\\ldots,a_n]</span>。每次你可以对数组 <span class=\"katex math inline\">a</span> 进行以下操作，直到数组 <span class=\"katex math inline\">a</span> 变为空：</p>\n<p>指定 <span class=\"katex math inline\">a</span> 中的一个元素，获得该元素两侧相邻元素之和的分数，并将该元素从 <span class=\"katex math inline\">a</span> 中删去。特别地，如果相邻元素不存在则该元素的值视为 0。</p>\n<p>请问你能获得的分数总和最大是多少？</p>\n</div>            </div>",
+      "text": "给定一个由 n 个整数构成的数组 a=[a_1,\\ldots,a_n]。每次你可以对数组 a 进行以下操作，直到数组 a 变为空：\n指定 a 中的一个元素，获得该元素两侧相邻元素之和的分数，并将该元素从 a 中删去。特别地，如果相邻元素不存在则该元素的值视为 0。\n请问你能获得的分数总和最大是多少？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，一个正整数 <span class=\"katex math inline\">n</span>，表示数组长度。</p>\n<p>第二行，<span class=\"katex math inline\">n</span> 个非负整数 <span class=\"katex math inline\">a_1,\\ldots,a_n</span>，表示数组 <span class=\"katex math inline\">a</span> 中的整数。</p>\n</div>            </div>",
+      "text": "第一行，一个正整数 n，表示数组长度。\n第二行，n 个非负整数 a_1,\\ldots,a_n，表示数组 a 中的整数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，一个整数，表示能获得的最大分数总和。</p>\n</div>            </div>",
+      "text": "输出一行，一个整数，表示能获得的最大分数总和。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6\r\n1 6 3 2 9 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>55</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n3 1415 926 53 58</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>5771</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6\r\n1 6 3 2 9 1\n                        \n                        \n                            输出\n                            55\n                        \n\n                                                    \n                                输入\n                                5\r\n3 1415 926 53 58\n                            \n                            \n                                输出\n                                5771"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>数据范围</strong></p>\n<p>对于 40% 的测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 50</span>，<span class=\"katex math inline\">0 \\le a_i \\le 10^3</span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 100</span>，<span class=\"katex math inline\">0 \\le a_i \\le 10^9</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 40% 的测试点，保证 1 \\le n \\le 50，0 \\le a_i \\le 10^3。\n对于所有测试点，保证 1 \\le n \\le 100，0 \\le a_i \\le 10^9。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP七级</span><span class=\"label label-warning\">26年6月</span><span class=\"label label-info\">动态规划</span><span class=\"label label-danger\">区间DP</span></span></p>\n</div>                </div>",
+      "text": "GESP七级26年6月动态规划区间DP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6\r\n1 6 3 2 9 1",
+      "output": "55"
+    },
+    {
+      "input": "5\r\n3 1415 926 53 58",
+      "output": "5771"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "42",
+    "通过人数": "29",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:07"
+}

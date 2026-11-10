@@ -1,0 +1,68 @@
+{
+  "id": "3485",
+  "title": "小杨的幸运数",
+  "tags": [
+    "GESP五级",
+    "筛素数",
+    "数学",
+    "23年12月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3485",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨认为，所有大于等于 <span class=\"katex math inline\">a</span> 的完全平方数都是他的超级幸运数。</p>\n<p>小杨还认为，所有超级幸运数的倍数都是他的幸运数。自然地，小杨的所有超级幸运数也都是幸运数。</p>\n<p>对于一个非幸运数，小杨规定，可以将它一直 <span class=\"katex math inline\">+1</span>，直到它变成一个幸运数。我们把这个过程叫做幸运化。例如，如果 <span class=\"katex math inline\">a = 4</span> ，那么 <span class=\"katex math inline\">4</span> 是最小的幸运数，而 <span class=\"katex math inline\"> 1</span> 不是，但我们可以连续对 <span class=\"katex math inline\">1</span> 做 <span class=\"katex math inline\">3</span> 次 <span class=\"katex math inline\">+1</span> 操作，使其变为 <span class=\"katex math inline\">4</span>，所以我们可以说，<span class=\"katex math inline\">1</span> 幸运化后的结果是 <span class=\"katex math inline\">4</span>。</p>\n<p>现在，小样给出 <span class=\"katex math inline\">N</span> 个数，请你首先判断它们是不是幸运数；接着，对于非幸运数，请你将它们幸运化。</p>\n</div>            </div>",
+      "text": "小杨认为，所有大于等于 a 的完全平方数都是他的超级幸运数。\n小杨还认为，所有超级幸运数的倍数都是他的幸运数。自然地，小杨的所有超级幸运数也都是幸运数。\n对于一个非幸运数，小杨规定，可以将它一直 +1，直到它变成一个幸运数。我们把这个过程叫做幸运化。例如，如果 a = 4 ，那么 4 是最小的幸运数，而  1 不是，但我们可以连续对 1 做 3 次 +1 操作，使其变为 4，所以我们可以说，1 幸运化后的结果是 4。\n现在，小样给出 N 个数，请你首先判断它们是不是幸运数；接着，对于非幸运数，请你将它们幸运化。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行 <span class=\"katex math inline\">2</span> 个正整数 <span class=\"katex math inline\">a,N</span>。</p>\n<p>接下来 <span class=\"katex math inline\">N</span> 行，每行一个正整数 <span class=\"katex math inline\">x</span>，表示需要判断（幸运化）的数。</p>\n</div>            </div>",
+      "text": "第一行 2 个正整数 a,N。\n接下来 N 行，每行一个正整数 x，表示需要判断（幸运化）的数。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\"> N </span> 行，对于每个给定的 <span class=\"katex math inline\">x</span>，如果它是幸运数，请输出 <code>lucky</code> ，否则请输出将其幸运化后的结果。</p>\n</div>            </div>",
+      "text": "输出  N  行，对于每个给定的 x，如果它是幸运数，请输出 lucky ，否则请输出将其幸运化后的结果。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 4\r\n1\r\n4\r\n5\r\n9</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4\r\nlucky\r\n8\r\nlucky</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>16 11\r\n1\r\n2\r\n4\r\n8\r\n16\r\n32\r\n64\r\n128\r\n256\r\n512\r\n1024</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>16\r\n16\r\n16\r\n16\r\nlucky\r\nlucky\r\nlucky\r\nlucky\r\nlucky\r\nlucky\r\nlucky</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 4\r\n1\r\n4\r\n5\r\n9\n                        \n                        \n                            输出\n                            4\r\nlucky\r\n8\r\nlucky\n                        \n\n                                                    \n                                输入\n                                16 11\r\n1\r\n2\r\n4\r\n8\r\n16\r\n32\r\n64\r\n128\r\n256\r\n512\r\n1024\n                            \n                            \n                                输出\n                                16\r\n16\r\n16\r\n16\r\nlucky\r\nlucky\r\nlucky\r\nlucky\r\nlucky\r\nlucky\r\nlucky"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例1解释】</p>\n<p><span class=\"katex math inline\">1</span> 虽然是完全平方数，但它小于 <span class=\"katex math inline\">a</span>，因此它并不是超级幸运数，也不是幸运数。将其进行 <span class=\"katex math inline\"> 3 </span> 次 <span class=\"katex math inline\"> +1 </span> 操作后，最终得到幸运数 <span class=\"katex math inline\">4</span>。</p>\n<p><span class=\"katex math inline\">4</span> 是幸运数，因此直接输出 <code>lucky</code>。</p>\n<p><span class=\"katex math inline\">5</span> 不是幸运数，将其进行 <span class=\"katex math inline\">3</span> 次 <span class=\"katex math inline\">+1</span> 操作后，最终得到幸运数 <span class=\"katex math inline\">8</span>。</p>\n<p><span class=\"katex math inline\">9</span> 是幸运数，因此直接输出 <code>lucky</code> 。</p>\n<p>【数据规模】</p>\n<p>对于 <span class=\"katex math inline\"> 30 \\% </span>的测试点，保证 <span class=\"katex math inline\">a，x \\leq 100, N \\leq 100 </span>。</p>\n<p>对于 <span class=\"katex math inline\"> 60 \\% </span>的测试点，保证 <span class=\"katex math inline\"> a,x \\leq 10^6 </span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\"> a \\leq 1,000,001 </span>；保证 <span class=\"katex math inline\"> N \\leq 2 \\times 10^5 </span>；保证 <span class=\"katex math inline\"> 1 \\leq x \\leq 1,000,001 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1解释】\n1 虽然是完全平方数，但它小于 a，因此它并不是超级幸运数，也不是幸运数。将其进行  3  次  +1  操作后，最终得到幸运数 4。\n4 是幸运数，因此直接输出 lucky。\n5 不是幸运数，将其进行 3 次 +1 操作后，最终得到幸运数 8。\n9 是幸运数，因此直接输出 lucky 。\n【数据规模】\n对于  30 \\% 的测试点，保证 a，x \\leq 100, N \\leq 100 。\n对于  60 \\% 的测试点，保证  a,x \\leq 10^6 。\n对于所有测试点，保证  a \\leq 1,000,001 ；保证  N \\leq 2 \\times 10^5 ；保证  1 \\leq x \\leq 1,000,001 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年12月五级</p>\n</div>                </div>",
+      "text": "GESP23年12月五级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">筛素数</span><span class=\"label label-info\">数学</span><span class=\"label label-danger\">23年12月</span></span></p>\n</div>                </div>",
+      "text": "GESP五级筛素数数学23年12月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 4\r\n1\r\n4\r\n5\r\n9",
+      "output": "4\r\nlucky\r\n8\r\nlucky"
+    },
+    {
+      "input": "16 11\r\n1\r\n2\r\n4\r\n8\r\n16\r\n32\r\n64\r\n128\r\n256\r\n512\r\n1024",
+      "output": "16\r\n16\r\n16\r\n16\r\nlucky\r\nlucky\r\nlucky\r\nlucky\r\nlucky\r\nlucky\r\nlucky"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1532",
+    "通过人数": "301",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:35:21"
+}

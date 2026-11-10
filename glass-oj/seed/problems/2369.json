@@ -1,0 +1,56 @@
+{
+  "id": "2369",
+  "title": "骑士移动",
+  "tags": [
+    "双向宽搜"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2369",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>在一个棋盘上有一个骑士，骑士可以按下图所示的 <span class=\"katex math inline\">8</span> 方向跳到相邻的格子，请问骑士从给定的起点到终点，至少需要跳多少次？</p>\n<p><img src=\"https://assets.boyi.local/a395aeb6cbd46a3fc6702445.png\"></p>\n</div>            </div>",
+      "text": "在一个棋盘上有一个骑士，骑士可以按下图所示的 8 方向跳到相邻的格子，请问骑士从给定的起点到终点，至少需要跳多少次？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>本题包含多组测试数据。</p>\n<p>第一行给出骑士的数量 <span class=\"katex math inline\">n</span>。</p>\n<p>在接下来的 <span class=\"katex math inline\">3 \\times n</span> 行中，每 <span class=\"katex math inline\">3</span> 行描述了一个骑士。</p>\n<p>每组数据第一行一个整数 <span class=\"katex math inline\">L</span> 表示棋盘的大小，整个棋盘大小为 <span class=\"katex math inline\">L \\times L</span>；</p>\n<p>第二行和第三行分别包含一对整数 <span class=\"katex math inline\">(x,y)</span>，表示骑士的起始点和终点。假设对于每一个骑士，起始点和终点均合理。</p>\n</div>            </div>",
+      "text": "本题包含多组测试数据。\n第一行给出骑士的数量 n。\n在接下来的 3 \\times n 行中，每 3 行描述了一个骑士。\n每组数据第一行一个整数 L 表示棋盘的大小，整个棋盘大小为 L \\times L；\n第二行和第三行分别包含一对整数 (x,y)，表示骑士的起始点和终点。假设对于每一个骑士，起始点和终点均合理。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对每一个骑士，输出一行一个整数表示需要移动的最小步数。如果起始点和终点相同，则输出 <span class=\"katex math inline\">0</span>。</p>\n</div>            </div>",
+      "text": "对每一个骑士，输出一行一个整数表示需要移动的最小步数。如果起始点和终点相同，则输出 0。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n8\r\n0 0\r\n7 0\r\n100\r\n0 0\r\n30 50\r\n10\r\n1 1\r\n1 1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5\r\n28\r\n0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n8\r\n0 0\r\n7 0\r\n100\r\n0 0\r\n30 50\r\n10\r\n1 1\r\n1 1\n                        \n                        \n                            输出\n                            5\r\n28\r\n0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，有 <span class=\"katex math inline\">4≤L≤300</span>，保证 <span class=\"katex math inline\">0≤x,y≤L−1</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 100\\% 的数据，有 4≤L≤300，保证 0≤x,y≤L−1。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">双向宽搜</span></span></p>\n</div>                </div>",
+      "text": "双向宽搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n8\r\n0 0\r\n7 0\r\n100\r\n0 0\r\n30 50\r\n10\r\n1 1\r\n1 1",
+      "output": "5\r\n28\r\n0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "944",
+    "通过人数": "537",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:31:33"
+}

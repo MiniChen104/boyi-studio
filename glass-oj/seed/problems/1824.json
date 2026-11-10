@@ -1,0 +1,62 @@
+{
+  "id": "1824",
+  "title": "01string",
+  "tags": [
+    "递归",
+    "排列组合",
+    "动态规划"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1824",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一个整数 <span class=\"katex math inline\">n</span> ，输出仅由 <span class=\"katex math inline\">0</span> 和 <span class=\"katex math inline\">1</span> 组成的长度为 <span class=\"katex math inline\">n</span> 的字符串，并且其中不含有三个连续的相同子串。</p>\n<p>仅需输出方案总数。</p>\n</div>            </div>",
+      "text": "输入一个整数 n ，输出仅由 0 和 1 组成的长度为 n 的字符串，并且其中不含有三个连续的相同子串。\n仅需输出方案总数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示字符串长度 <span class=\"katex math inline\">n</span> (<span class=\"katex math inline\">n \\le 30</span>)。</p>\n</div>            </div>",
+      "text": "一个整数，表示字符串长度 n (n \\le 30)。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，表示所有满足条件的字符串的个数。</p>\n</div>            </div>",
+      "text": "一个整数，表示所有满足条件的字符串的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>8</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>68</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                8\n                            \n                            \n                                输出\n                                68"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递归</p>\n</div>                </div>",
+      "text": "递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递归</span><span class=\"label label-warning\">排列组合</span><span class=\"label label-info\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "递归排列组合动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2",
+      "output": "4"
+    },
+    {
+      "input": "8",
+      "output": "68"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "363",
+    "通过人数": "119",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:24:42"
+}

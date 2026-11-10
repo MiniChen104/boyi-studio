@@ -1,0 +1,57 @@
+{
+  "id": "1360",
+  "title": "卒的遍历",
+  "tags": [
+    "深搜",
+    "递归"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1360",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个 <span class=\"katex math inline\">n \\times m</span> 的棋盘（<span class=\"katex math inline\">3 \\le n,m \\le 8</span>），行列编号均从 <span class=\"katex math inline\">1</span> 开始。</p>\n<p>一个卒初始位于左上角 <span class=\"katex math inline\">(1,1)</span>，目标是到达右下角 <span class=\"katex math inline\">(n,m)</span>。</p>\n<p>卒每次只能执行以下两种移动之一：</p>\n<ul><li>向下走：<span class=\"katex math inline\">(x,y)\\rightarrow(x+1,y)</span></li>\n<li>向右走：<span class=\"katex math inline\">(x,y)\\rightarrow(x,y+1)</span></li>\n</ul><p>请输出从 <span class=\"katex math inline\">(1,1)</span> 到 <span class=\"katex math inline\">(n,m)</span> 的所有可行路径。</p>\n<p>路径输出顺序采用深度优先搜索（DFS）顺序，且在搜索时<strong>先尝试向下，再尝试向右</strong>。</p>\n<p><img src=\"https://assets.boyi.local/1ca06c996e6a4d56bff5d08b.png\"></p>\n</div>            </div>",
+      "text": "给定一个 n \\times m 的棋盘（3 \\le n,m \\le 8），行列编号均从 1 开始。\n一个卒初始位于左上角 (1,1)，目标是到达右下角 (n,m)。\n卒每次只能执行以下两种移动之一：\n向下走：(x,y)\\rightarrow(x+1,y)\n向右走：(x,y)\\rightarrow(x,y+1)\n请输出从 (1,1) 到 (n,m) 的所有可行路径。\n路径输出顺序采用深度优先搜索（DFS）顺序，且在搜索时先尝试向下，再尝试向右。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行，包含两个整数 <span class=\"katex math inline\">n,m</span>，表示棋盘大小。（<span class=\"katex math inline\">3 \\le n,m \\le 8</span>）</p>\n</div>            </div>",
+      "text": "输入一行，包含两个整数 n,m，表示棋盘大小。（3 \\le n,m \\le 8）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按上述搜索顺序输出所有路径。</p>\n<p>每条路径占一行，格式为：</p>\n<p><span class=\"katex math inline\">\\text{编号}:\\text{坐标}_1\\rightarrow\\text{坐标}_2\\rightarrow\\cdots\\rightarrow\\text{坐标}_k</span></p>\n<p>其中每个坐标写作 <code>x,y</code>，编号从 <span class=\"katex math inline\">1</span> 开始递增。</p>\n</div>            </div>",
+      "text": "按上述搜索顺序输出所有路径。\n每条路径占一行，格式为：\n\\text{编号}:\\text{坐标}_1\\rightarrow\\text{坐标}_2\\rightarrow\\cdots\\rightarrow\\text{坐标}_k\n其中每个坐标写作 x,y，编号从 1 开始递增。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1:1,1-&gt;2,1-&gt;3,1-&gt;3,2-&gt;3,3\r\n2:1,1-&gt;2,1-&gt;2,2-&gt;3,2-&gt;3,3\r\n3:1,1-&gt;2,1-&gt;2,2-&gt;2,3-&gt;3,3\r\n4:1,1-&gt;1,2-&gt;2,2-&gt;3,2-&gt;3,3\r\n5:1,1-&gt;1,2-&gt;2,2-&gt;2,3-&gt;3,3\r\n6:1,1-&gt;1,2-&gt;1,3-&gt;2,3-&gt;3,3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\n                        \n                        \n                            输出\n                            1:1,1->2,1->3,1->3,2->3,3\r\n2:1,1->2,1->2,2->3,2->3,3\r\n3:1,1->2,1->2,2->2,3->3,3\r\n4:1,1->1,2->2,2->3,2->3,3\r\n5:1,1->1,2->2,2->2,3->3,3\r\n6:1,1->1,2->1,3->2,3->3,3"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>深搜 递归</p>\n</div>                </div>",
+      "text": "深搜 递归"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">深搜</span><span class=\"label label-warning\">递归</span></span></p>\n</div>                </div>",
+      "text": "深搜递归"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3",
+      "output": "1:1,1->2,1->3,1->3,2->3,3\r\n2:1,1->2,1->2,2->3,2->3,3\r\n3:1,1->2,1->2,2->2,3->3,3\r\n4:1,1->1,2->2,2->3,2->3,3\r\n5:1,1->1,2->2,2->2,3->3,3\r\n6:1,1->1,2->1,3->2,3->3,3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "11583",
+    "通过人数": "6921",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:18:20"
+}

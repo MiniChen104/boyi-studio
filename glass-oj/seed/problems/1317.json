@@ -1,0 +1,56 @@
+{
+  "id": "1317",
+  "title": "正多边形每个内角的度数？",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1317",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>根据多边形内角和定理，正多边形内角和等于：（ <span class=\"katex math inline\">n － 2</span> ） <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">180^\\circ</span> ( <span class=\"katex math inline\">n</span> 大于等于 <span class=\"katex math inline\">3</span> 且 <span class=\"katex math inline\">n</span> 为整数）（如下图所示是三角形、四边形、五边形、六边形的形状）。</p>\n<p>请根据正多边形的边数，计算该正多边形每个内角的度数。（结果保留<span class=\"katex math inline\">1</span>位小数）。（4.1.83）\n<img src=\"https://assets.boyi.local/48497cc47f09518eea15b933.jpg\"></p>\n</div>            </div>",
+      "text": "根据多边形内角和定理，正多边形内角和等于：（ n － 2 ） \\times 180^\\circ ( n 大于等于 3 且 n 为整数）（如下图所示是三角形、四边形、五边形、六边形的形状）。\n请根据正多边形的边数，计算该正多边形每个内角的度数。（结果保留1位小数）。（4.1.83）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>正多边形的边数 <span class=\"katex math inline\">n</span> （ <span class=\"katex math inline\">n \\ge 3</span>  且 <span class=\"katex math inline\">n  \\le 10</span> ）。</p>\n</div>            </div>",
+      "text": "正多边形的边数 n （ n \\ge 3  且 n  \\le 10 ）。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>该正 <span class=\"katex math inline\">n</span> 边形每个内角的度数。</p>\n</div>            </div>",
+      "text": "该正 n 边形每个内角的度数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>60.0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            60.0"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "60.0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "54700",
+    "通过人数": "27339",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:47"
+}

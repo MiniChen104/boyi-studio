@@ -1,0 +1,67 @@
+{
+  "id": "3118",
+  "title": "射击气球",
+  "tags": [
+    "市赛",
+    "区间DP",
+    "泰州市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3118",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>你在游乐场发现⼀个玩具枪射击气球的游戏，游戏规则如下：有 <span class=\"katex math inline\">n</span> 个气球，编号为 <span class=\"katex math inline\">0</span> 到 <span class=\"katex math inline\">n - 1</span> ，每个气球上都标有⼀个数字，这些数字存在数组 <span class=\"katex math inline\">nums</span> 中。每打破第 <span class=\"katex math inline\">i</span> 个气球，你可以\n获得 <span class=\"katex math inline\">nums[i - 1]</span> <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">nums[i]</span> <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">nums[i + 1]</span> 枚硬币，求所能获得硬币的最大数量。</p>\n<p>这里的 <span class=\"katex math inline\">i - 1</span> 和 <span class=\"katex math inline\">i + 1</span> 代表和 <span class=\"katex math inline\">i</span> 相邻的两个气球的序号。如果 <span class=\"katex math inline\">i - 1</span> 或 <span class=\"katex math inline\">i + 1</span> 超出了数组\n的边界，那么就当它是⼀个数字为 <span class=\"katex math inline\">1</span> 的气球。</p>\n</div>            </div>",
+      "text": "你在游乐场发现⼀个玩具枪射击气球的游戏，游戏规则如下：有 n 个气球，编号为 0 到 n - 1 ，每个气球上都标有⼀个数字，这些数字存在数组 nums 中。每打破第 i 个气球，你可以\n获得 nums[i - 1] \\times nums[i] \\times nums[i + 1] 枚硬币，求所能获得硬币的最大数量。\n这里的 i - 1 和 i + 1 代表和 i 相邻的两个气球的序号。如果 i - 1 或 i + 1 超出了数组\n的边界，那么就当它是⼀个数字为 1 的气球。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第⼀行包含⼀个整数 <span class=\"katex math inline\">n</span>，代表 <span class=\"katex math inline\">nums</span> 数组的长度；</p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个整数，代表 <span class=\"katex math inline\">nums</span> 数组的元素，以空格隔开。</p>\n</div>            </div>",
+      "text": "第⼀行包含⼀个整数 n，代表 nums 数组的长度；\n第二行包含 n 个整数，代表 nums 数组的元素，以空格隔开。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>⼀行，包含⼀个整数，代表获取的最大的硬币数量。</p>\n</div>            </div>",
+      "text": "⼀行，包含⼀个整数，代表获取的最大的硬币数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>4\r\n3 1 5 8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>167</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2\r\n1 5</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>10</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            4\r\n3 1 5 8\n                        \n                        \n                            输出\n                            167\n                        \n\n                                                    \n                                输入\n                                2\r\n1 5\n                            \n                            \n                                输出\n                                10"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例1说明】</p>\n<p><span class=\"katex math inline\">nums = [3,1,5,8] --&gt; [3,5,8] --&gt; [3,8] --&gt; [8] --&gt; []</span></p>\n<p><span class=\"katex math inline\">coins = 3</span> <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">5 + 3</span> <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">5</span> <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">8 + 1</span> <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">8 + 1</span> <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">8</span> <span class=\"katex math inline\">\\times</span> <span class=\"katex math inline\">1 = 167</span></p>\n<p>【数据范围】</p>\n<p><span class=\"katex math inline\">1 \\leq n \\leq 300</span></p>\n<p><span class=\"katex math inline\">0 \\leq </span> 每个气球上标的数字 <span class=\"katex math inline\"> \\leq 100</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例1说明】\nnums = [3,1,5,8] --> [3,5,8] --> [3,8] --> [8] --> []\ncoins = 3 \\times 1 \\times 5 + 3 \\times 5 \\times 8 + 1 \\times 3 \\times 8 + 1 \\times 8 \\times 1 = 167\n【数据范围】\n1 \\leq n \\leq 300\n0 \\leq  每个气球上标的数字  \\leq 100"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>23年泰州市赛</p>\n</div>                </div>",
+      "text": "23年泰州市赛"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">区间DP</span><span class=\"label label-info\">泰州市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛区间DP泰州市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "4\r\n3 1 5 8",
+      "output": "167"
+    },
+    {
+      "input": "2\r\n1 5",
+      "output": "10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "22",
+    "通过人数": "16",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:10"
+}

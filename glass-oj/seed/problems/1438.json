@@ -1,0 +1,58 @@
+{
+  "id": "1438",
+  "title": "骑士巡游",
+  "tags": [
+    "递归",
+    "深搜",
+    "广搜"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1438",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>马在中国象棋以日字形规则移动，给定 <span class=\"katex math inline\">n \\times m</span> 大小的棋盘，以及马的初始位置 <span class=\"katex math inline\">(x,y)</span> 和目标位置 <span class=\"katex math inline\">(s,t)</span>，要求不能重复经过棋盘上的同一个点，计算马至少走多少步可以到达目标位置，所有棋盘保证从初始位置到结束位置一定有路径可达。</p>\n</div>            </div>",
+      "text": "马在中国象棋以日字形规则移动，给定 n \\times m 大小的棋盘，以及马的初始位置 (x,y) 和目标位置 (s,t)，要求不能重复经过棋盘上的同一个点，计算马至少走多少步可以到达目标位置，所有棋盘保证从初始位置到结束位置一定有路径可达。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>测试数据包含一行，为六个整数，分别为棋盘的大小以及初始位置坐标 <span class=\"katex math inline\">n,m,x,y,s,t</span> 。（ <span class=\"katex math inline\">1 \\le x,s \\le n \\le 5</span>，<span class=\"katex math inline\">1 \\le y,t \\le m \\le 5</span>）</p>\n</div>            </div>",
+      "text": "测试数据包含一行，为六个整数，分别为棋盘的大小以及初始位置坐标 n,m,x,y,s,t 。（ 1 \\le x,s \\le n \\le 5，1 \\le y,t \\le m \\le 5）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>包含一行，为一个整数，表示马能到达目标位置的最小步数。</p>\n</div>            </div>",
+      "text": "包含一行，为一个整数，表示马能到达目标位置的最小步数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3 1 1 1 3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3 1 1 1 3\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>递归 深搜 广搜</p>\n</div>                </div>",
+      "text": "递归 深搜 广搜"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">递归</span><span class=\"label label-warning\">深搜</span><span class=\"label label-info\">广搜</span></span></p>\n</div>                </div>",
+      "text": "递归深搜广搜"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3 1 1 1 3",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "5492",
+    "通过人数": "3115",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:19:28"
+}

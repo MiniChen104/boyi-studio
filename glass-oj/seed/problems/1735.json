@@ -1,0 +1,56 @@
+{
+  "id": "1735",
+  "title": "小高考1",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1735",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>懒羊羊在前一阵准备羊村的小高考复习时表现出了罕见的勤奋，现在他得知了小高考四门必修课的成绩，他想知道根据羊村的高考政策，他的高考评分等级到底是什么？</p>\n<p>羊村高考政策如下：</p>\n<p>如果懒羊羊 <span class=\"katex math inline\">4</span> 门成绩全部 <span class=\"katex math inline\"> \\ge 90</span>，则等级为 <span class=\"katex math inline\">A</span></p>\n<p>如果 <span class=\"katex math inline\">2</span> 门或者 <span class=\"katex math inline\">3</span> 门成绩 <span class=\"katex math inline\"> \\ge 90</span> ，则等级为 <span class=\"katex math inline\">B</span></p>\n<p>如果只有 <span class=\"katex math inline\">1</span> 门成绩 <span class=\"katex math inline\"> \\ge 90</span> ，则等级为 <span class=\"katex math inline\">C</span></p>\n<p>如果没有一门成绩 <span class=\"katex math inline\"> \\ge 90</span> ，则等级为 <span class=\"katex math inline\">D</span> </p>\n</div>            </div>",
+      "text": "懒羊羊在前一阵准备羊村的小高考复习时表现出了罕见的勤奋，现在他得知了小高考四门必修课的成绩，他想知道根据羊村的高考政策，他的高考评分等级到底是什么？\n羊村高考政策如下：\n如果懒羊羊 4 门成绩全部  \\ge 90，则等级为 A\n如果 2 门或者 3 门成绩  \\ge 90 ，则等级为 B\n如果只有 1 门成绩  \\ge 90 ，则等级为 C\n如果没有一门成绩  \\ge 90 ，则等级为 D"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">4</span> 个整数（小于 <span class=\"katex math inline\">100</span> ），分别表示懒羊羊四门成绩。</p>\n</div>            </div>",
+      "text": "4 个整数（小于 100 ），分别表示懒羊羊四门成绩。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个字母，表示懒羊羊的评分等级。</p>\n</div>            </div>",
+      "text": "一个字母，表示懒羊羊的评分等级。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>99 99 98 95</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>A</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            99 99 98 95\n                        \n                        \n                            输出\n                            A"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "99 99 98 95",
+      "output": "A"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "2499",
+    "通过人数": "1499",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:23:34"
+}

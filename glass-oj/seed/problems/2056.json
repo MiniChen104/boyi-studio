@@ -1,0 +1,57 @@
+{
+  "id": "2056",
+  "title": "铲雪车snow",
+  "tags": [
+    "图论",
+    "欧拉路"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2056",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>随着白天越来越短夜晚越来越长，我们不得不考虑铲雪问题了。</p>\n<p>整个城市所有的道路都是双车道，因为城市预算的削减，整个城市只有 <span class=\"katex math inline\">1</span> 辆铲雪车。铲雪车只能把它开过的地方（车道）的雪铲干净，无论哪儿有雪，铲雪车都得从停放的地方出发，游历整个城市的街道。</p>\n<p>现在的问题是：最少要花多少时间去铲掉所有道路上的雪呢？</p>\n</div>            </div>",
+      "text": "随着白天越来越短夜晚越来越长，我们不得不考虑铲雪问题了。\n整个城市所有的道路都是双车道，因为城市预算的削减，整个城市只有 1 辆铲雪车。铲雪车只能把它开过的地方（车道）的雪铲干净，无论哪儿有雪，铲雪车都得从停放的地方出发，游历整个城市的街道。\n现在的问题是：最少要花多少时间去铲掉所有道路上的雪呢？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入数据的第 <span class=\"katex math inline\">1</span> 行表示铲雪车的停放坐标（<span class=\"katex math inline\">x,y</span>），<span class=\"katex math inline\">x</span>，<span class=\"katex math inline\">y</span> 为整数，单位为米。</p>\n<p>下面最多有 <span class=\"katex math inline\">100</span> 行，每行给出了一条街道的起点坐标和终点坐标，所有街道都是笔直的，且都是双向一个车道。铲雪车可以在任意交叉口、或任何街道的末尾任意转向，包括转U型弯。铲雪车铲雪时前进速度为 <span class=\"katex math inline\">20</span> km/h，不铲雪时前进速度为 <span class=\"katex math inline\">50</span> km/h。</p>\n<p>保证：铲雪车从起点一定可以到达任何街道。</p>\n</div>            </div>",
+      "text": "输入数据的第 1 行表示铲雪车的停放坐标（x,y），x，y 为整数，单位为米。\n下面最多有 100 行，每行给出了一条街道的起点坐标和终点坐标，所有街道都是笔直的，且都是双向一个车道。铲雪车可以在任意交叉口、或任何街道的末尾任意转向，包括转U型弯。铲雪车铲雪时前进速度为 20 km/h，不铲雪时前进速度为 50 km/h。\n保证：铲雪车从起点一定可以到达任何街道。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>铲掉所有街道上的雪并且返回出发点的最短时间，精确到分钟。（请输出 <span class=\"katex math inline\">2</span> 位的分钟数，如：<span class=\"katex math inline\">3</span> 小时 <span class=\"katex math inline\">1</span> 分钟，请输出 <code>3:01</code>）</p>\n</div>            </div>",
+      "text": "铲掉所有街道上的雪并且返回出发点的最短时间，精确到分钟。（请输出 2 位的分钟数，如：3 小时 1 分钟，请输出 3:01）"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>0 0\r\n0 0 10000 10000\r\n5000 -10000 5000 10000\r\n5000 10000 10000 10000</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3:55</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            0 0\r\n0 0 10000 10000\r\n5000 -10000 5000 10000\r\n5000 10000 10000 10000\n                        \n                        \n                            输出\n                            3:55"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>3小时55分钟</p>\n</div>\n\n                    \n                </div>",
+      "text": "3小时55分钟"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">图论</span><span class=\"label label-warning\">欧拉路</span></span></p>\n</div>                </div>",
+      "text": "图论欧拉路"
+    }
+  ],
+  "samples": [
+    {
+      "input": "0 0\r\n0 0 10000 10000\r\n5000 -10000 5000 10000\r\n5000 10000 10000 10000",
+      "output": "3:55"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1390",
+    "通过人数": "596",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:27:51"
+}

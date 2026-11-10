@@ -1,0 +1,57 @@
+{
+  "id": "2380",
+  "title": "棋盘的最小花费",
+  "tags": [
+    "广搜",
+    "双端队列bfs"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2380",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个大小为 <span class=\"katex math inline\">n \\times m</span> 的棋盘，棋盘上只有两种类型的格子，<code>#</code> 和 <code>@</code>。</p>\n<p>一个格子移动到相邻上下左右四方向的格子的花费计算方式为：如果移动到的格子和当前格子的类型相同，则花费为 <span class=\"katex math inline\">0</span>，不同花费为 <span class=\"katex math inline\">1</span> 。</p>\n<p>给定棋盘的出发点和终点坐标，请计算出从出发点到终点的最少花费。</p>\n</div>            </div>",
+      "text": "给定一个大小为 n \\times m 的棋盘，棋盘上只有两种类型的格子，# 和 @。\n一个格子移动到相邻上下左右四方向的格子的花费计算方式为：如果移动到的格子和当前格子的类型相同，则花费为 0，不同花费为 1 。\n给定棋盘的出发点和终点坐标，请计算出从出发点到终点的最少花费。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入文件有多组数据（不超过 <span class=\"katex math inline\">5</span> 组）。</p>\n<p>输入第一行包含两个整数 <span class=\"katex math inline\">n</span>，<span class=\"katex math inline\">m</span>，分别表示棋盘的行数和列数。</p>\n<p>输入接下来的 <span class=\"katex math inline\">n</span> 行，每一行有 <span class=\"katex math inline\">m</span> 个格子（使用 <code>#</code> 或者 <code>@</code> 表示）。</p>\n<p>输入接下来一行有四个整数 <span class=\"katex math inline\">x_1,y_1,x_2,y_2</span>，分别为起始位置和目标位置。</p>\n<p>当输入 <span class=\"katex math inline\">n</span>，<span class=\"katex math inline\">m</span> 均为 <span class=\"katex math inline\">0</span> 时，表示输入结束。</p>\n</div>            </div>",
+      "text": "输入文件有多组数据（不超过 5 组）。\n输入第一行包含两个整数 n，m，分别表示棋盘的行数和列数。\n输入接下来的 n 行，每一行有 m 个格子（使用 # 或者 @ 表示）。\n输入接下来一行有四个整数 x_1,y_1,x_2,y_2，分别为起始位置和目标位置。\n当输入 n，m 均为 0 时，表示输入结束。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对于每组数据，输出从起始位置到目标位置的最小花费。</p>\n<p>每一组数据独占一行。</p>\n</div>            </div>",
+      "text": "对于每组数据，输出从起始位置到目标位置的最小花费。\n每一组数据独占一行。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>2 2\r\n@#\r\n#@\r\n1 1 2 2\r\n2 2\r\n@@\r\n@#\r\n1 2 2 1\r\n0 0</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2\r\n0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            2 2\r\n@#\r\n#@\r\n1 1 2 2\r\n2 2\r\n@@\r\n@#\r\n1 2 2 1\r\n0 0\n                        \n                        \n                            输出\n                            2\r\n0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于 <span class=\"katex math inline\">20\\%</span> 的数据满足：<span class=\"katex math inline\">1≤n,m≤10</span>。</p>\n<p>对于 <span class=\"katex math inline\">40\\%</span> 的数据满足：<span class=\"katex math inline\">1≤n,m≤300</span>。</p>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据满足：<span class=\"katex math inline\">1≤n,m≤500</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于 20\\% 的数据满足：1≤n,m≤10。\n对于 40\\% 的数据满足：1≤n,m≤300。\n对于 100\\% 的数据满足：1≤n,m≤500。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">广搜</span><span class=\"label label-warning\">双端队列bfs</span></span></p>\n</div>                </div>",
+      "text": "广搜双端队列bfs"
+    }
+  ],
+  "samples": [
+    {
+      "input": "2 2\r\n@#\r\n#@\r\n1 1 2 2\r\n2 2\r\n@@\r\n@#\r\n1 2 2 1\r\n0 0",
+      "output": "2\r\n0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "256 MB",
+    "提交次数": "840",
+    "通过人数": "464",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:39"
+}

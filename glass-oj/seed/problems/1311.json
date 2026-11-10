@@ -1,0 +1,56 @@
+{
+  "id": "1311",
+  "title": "分跳绳",
+  "tags": [
+    "基础问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1311",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>学校新买来 <span class=\"katex math inline\">m</span> 根跳绳，每个班分 <span class=\"katex math inline\">n</span> 根，最多可以分给几个班的同学，还剩多少根？（<span class=\"katex math inline\">m \\ge n</span>）。（4.1.9） </p>\n<p><img src=\"https://assets.boyi.local/974b9c2d9a242d691314d26c.jpg\"></p>\n</div>            </div>",
+      "text": "学校新买来 m 根跳绳，每个班分 n 根，最多可以分给几个班的同学，还剩多少根？（m \\ge n）。（4.1.9）"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个整数，用空格隔开，分别代表总共采购的跳绳数量以及每个班级分到的跳绳数量。</p>\n</div>            </div>",
+      "text": "两个整数，用空格隔开，分别代表总共采购的跳绳数量以及每个班级分到的跳绳数量。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>两个整数，用空格隔开，第一个整数代表可以分到的班级的数量，第二个整数代表剩余的跳绳数量。</p>\n</div>            </div>",
+      "text": "两个整数，用空格隔开，第一个整数代表可以分到的班级的数量，第二个整数代表剩余的跳绳数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>100 30</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3 10</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            100 30\n                        \n                        \n                            输出\n                            3 10"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>基础问题</p>\n</div>                </div>",
+      "text": "基础问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">基础问题</span></span></p>\n</div>                </div>",
+      "text": "基础问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "100 30",
+      "output": "3 10"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "105194",
+    "通过人数": "60281",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:42"
+}

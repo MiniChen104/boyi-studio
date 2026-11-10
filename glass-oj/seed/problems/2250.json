@@ -1,0 +1,57 @@
+{
+  "id": "2250",
+  "title": "登山",
+  "tags": [
+    "动态规划",
+    "电子学会等级考试"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2250",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>五一到了，PKU-ICPC队组织大家去登山观光，队员们发现山上一个有N个景点，并且决定按照顺序来浏览这些景点，即每次所浏览景点的编号都要大于前一个浏览景点的编号。同时队员们还有另一个登山习惯，就是不连续浏览海拔相同的两个景点，并且一旦开始下山，就不再向上走了。队员们希望在满足上面条件的同时，尽可能多的浏览景点，你能帮他们找出最多可能浏览的景点数么？</p>\n</div>            </div>",
+      "text": "五一到了，PKU-ICPC队组织大家去登山观光，队员们发现山上一个有N个景点，并且决定按照顺序来浏览这些景点，即每次所浏览景点的编号都要大于前一个浏览景点的编号。同时队员们还有另一个登山习惯，就是不连续浏览海拔相同的两个景点，并且一旦开始下山，就不再向上走了。队员们希望在满足上面条件的同时，尽可能多的浏览景点，你能帮他们找出最多可能浏览的景点数么？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Line 1： N (2 &lt;= N &lt;= 1000) 景点数<br>\nLine 2： N个整数，每个景点的海拔</p>\n</div>            </div>",
+      "text": "Line 1： N (2 <= N <= 1000) 景点数\nLine 2： N个整数，每个景点的海拔"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>最多能浏览的景点数</p>\n</div>            </div>",
+      "text": "最多能浏览的景点数"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>8\r\n186 186 150 200 160 130 197 220</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            8\r\n186 186 150 200 160 130 197 220\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会等级考试-四级</p>\n</div>                </div>",
+      "text": "电子学会等级考试-四级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">动态规划</span><span class=\"label label-warning\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "动态规划电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "8\r\n186 186 150 200 160 130 197 220",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "1478",
+    "通过人数": "557",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:30:18"
+}

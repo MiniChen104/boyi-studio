@@ -1,0 +1,61 @@
+{
+  "id": "6493",
+  "title": "同学们的分数",
+  "tags": [
+    "詹天佑杯四年级组",
+    "数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6493",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小英雄他们班刚刚考完期中考，他们学号从 <span class=\"katex math inline\">1</span> 到 <span class=\"katex math inline\">N</span> 有 <span class=\"katex math inline\">N</span> 位学生，学生<span class=\"katex math inline\">i(1 \\le i \\le N)</span> 的总分为 <span class=\"katex math inline\">A_i</span>分。给定小英雄同学们的分数 <span class=\"katex math inline\">A_1,A_2 \\dots A_N</span>，对于每个学生 <span class=\"katex math inline\">i=1,2 \\dots N</span>，请编写一个程序，求出学生 <span class=\"katex math inline\">i</span>与其他学生分数差的最大值。</p>\n</div>            </div>",
+      "text": "小英雄他们班刚刚考完期中考，他们学号从 1 到 N 有 N 位学生，学生i(1 \\le i \\le N) 的总分为 A_i分。给定小英雄同学们的分数 A_1,A_2 \\dots A_N，对于每个学生 i=1,2 \\dots N，请编写一个程序，求出学生 i与其他学生分数差的最大值。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个数字 <span class=\"katex math inline\">N</span>，表示小英雄班一共有几个学生;</p>\n<p>第二行有 <span class=\"katex math inline\">N</span> 个学生的总分: <span class=\"katex math inline\">A_1,A_2 \\dots A_N</span>。</p>\n</div>            </div>",
+      "text": "第一行一个数字 N，表示小英雄班一共有几个学生;\n第二行有 N 个学生的总分: A_1,A_2 \\dots A_N。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">N</span>行。\n第 <span class=\"katex math inline\">i</span> 行(<span class=\"katex math inline\">1 \\le i \\le N</span>)应输出学生 <span class=\"katex math inline\">i</span> 与其他学生分数差的最大值。</p>\n</div>            </div>",
+      "text": "输出 N行。\n第 i 行(1 \\le i \\le N)应输出学生 i 与其他学生分数差的最大值。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n213 215 220</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>7\r\n5\r\n7</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>2\r\n200 200</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0\r\n0</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n213 215 220\n                        \n                        \n                            输出\n                            7\r\n5\r\n7\n                        \n\n                                                    \n                                输入\n                                2\r\n200 200\n                            \n                            \n                                输出\n                                0\r\n0"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例 1 解释】</h4>\n<p>学生 <span class=\"katex math inline\">1</span> 与学生 <span class=\"katex math inline\">2</span>、<span class=\"katex math inline\">3</span> 的分数差分别为 <span class=\"katex math inline\">2</span> 分和 <span class=\"katex math inline\">7</span> 分。这些差值的最大值为 <span class=\"katex math inline\">7</span> 分，因此第 <span class=\"katex math inline\">1</span> 行应输出 <span class=\"katex math inline\">7</span> ;</p>\n<p>学生 <span class=\"katex math inline\">2</span> 与学生 <span class=\"katex math inline\">1</span>、<span class=\"katex math inline\">3</span> 的分数差分别为 <span class=\"katex math inline\">2</span> 分和 <span class=\"katex math inline\">5</span> 分。这些差值的最大值为 <span class=\"katex math inline\">5</span> 分，因此第 <span class=\"katex math inline\">2</span> 行应输出 <span class=\"katex math inline\">5</span>;</p>\n<p>学生 <span class=\"katex math inline\">3</span> 与学生 <span class=\"katex math inline\">1</span>、<span class=\"katex math inline\">2</span> 的分数差分别为 <span class=\"katex math inline\">7</span> 分和 <span class=\"katex math inline\">5</span> 分。这些差值的最大值为<span class=\"katex math inline\">7</span> 分，因此第 <span class=\"katex math inline\">3</span> 行应输出 <span class=\"katex math inline\">7</span>。</p>\n<h4>【样例 2 解释】</h4>\n<p>学生 <span class=\"katex math inline\">1</span> 与学生 <span class=\"katex math inline\">2</span> 的分数差为 <span class=\"katex math inline\">0</span> 分，因此第 <span class=\"katex math inline\">1</span> 行应输出 <span class=\"katex math inline\">0</span>;</p>\n<p>学生 <span class=\"katex math inline\">2</span> 与学生 <span class=\"katex math inline\">1</span> 的分数差为 <span class=\"katex math inline\">0</span> 分，因此第 <span class=\"katex math inline\">2</span> 行应输出 <span class=\"katex math inline\">0</span>。</p>\n<h4>数据范围</h4>\n<ul><li><span class=\"katex math inline\">2 \\le N \\le 250000</span>;</li>\n<li><span class=\"katex math inline\">0 \\le A_i \\le 10^9 (1 \\le i \\le N)</span></li>\n<li>所有输入值均为整数。</li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "【样例 1 解释】\n学生 1 与学生 2、3 的分数差分别为 2 分和 7 分。这些差值的最大值为 7 分，因此第 1 行应输出 7 ;\n学生 2 与学生 1、3 的分数差分别为 2 分和 5 分。这些差值的最大值为 5 分，因此第 2 行应输出 5;\n学生 3 与学生 1、2 的分数差分别为 7 分和 5 分。这些差值的最大值为7 分，因此第 3 行应输出 7。\n【样例 2 解释】\n学生 1 与学生 2 的分数差为 0 分，因此第 1 行应输出 0;\n学生 2 与学生 1 的分数差为 0 分，因此第 2 行应输出 0。\n数据范围\n2 \\le N \\le 250000;\n0 \\le A_i \\le 10^9 (1 \\le i \\le N)\n所有输入值均为整数。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">詹天佑杯四年级组</span><span class=\"label label-warning\">数组</span></span></p>\n</div>                </div>",
+      "text": "詹天佑杯四年级组数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n213 215 220",
+      "output": "7\r\n5\r\n7"
+    },
+    {
+      "input": "2\r\n200 200",
+      "output": "0\r\n0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "8",
+    "通过人数": "4",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:29:38"
+}

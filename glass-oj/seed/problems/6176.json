@@ -1,0 +1,69 @@
+{
+  "id": "6176",
+  "title": "旅行计划",
+  "tags": [
+    "江苏省赛2026"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/6176",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>Dr. X 想从城市 <span class=\"katex math inline\">0</span> 出发前往城市 <span class=\"katex math inline\">n</span>。对于所有满足 <span class=\"katex math inline\">0 \\leq i \\leq n-1</span> 的整数 <span class=\"katex math inline\">i</span>，城市 <span class=\"katex math inline\">i</span> 与城市 <span class=\"katex math inline\">i+1</span> 之间都有高铁和飞机两种出行方式：</p>\n<ul><li>坐高铁从城市 <span class=\"katex math inline\">i</span> 到城市 <span class=\"katex math inline\">i+1</span> 花费的时间为 <span class=\"katex math inline\">g_i</span>；</li>\n<li>坐飞机从城市 <span class=\"katex math inline\">i</span> 到城市 <span class=\"katex math inline\">i+1</span> 花费的时间为 <span class=\"katex math inline\">f_i</span>。</li>\n</ul><p>然而，Dr. X 很害怕坐飞机，因此他希望整个行程中乘坐飞机的次数不得超过 <span class=\"katex math inline\">k</span> 次。</p>\n<p>为了减少坐飞机的次数，Dr. X 可以选择从城市 <span class=\"katex math inline\">i</span> 直接飞到城市 <span class=\"katex math inline\">i+j</span> (<span class=\"katex math inline\">j \\geq 1</span>)，总飞行时间等于途经各段航线的飞行时间之和</p>\n<p><span class=\"katex math multi-line\">f_i + f_{i+1} + \\cdots + f_{i+j-1},</span></p>\n<p>但这样一次连续飞行<strong>只算乘坐一次飞机</strong>。请计算 Dr. X 从城市 <span class=\"katex math inline\">0</span> 出发到达城市 <span class=\"katex math inline\">n</span> 所需的最少时间。</p>\n</div>            </div>",
+      "text": "Dr. X 想从城市 0 出发前往城市 n。对于所有满足 0 \\leq i \\leq n-1 的整数 i，城市 i 与城市 i+1 之间都有高铁和飞机两种出行方式：\n坐高铁从城市 i 到城市 i+1 花费的时间为 g_i；\n坐飞机从城市 i 到城市 i+1 花费的时间为 f_i。\n然而，Dr. X 很害怕坐飞机，因此他希望整个行程中乘坐飞机的次数不得超过 k 次。\n为了减少坐飞机的次数，Dr. X 可以选择从城市 i 直接飞到城市 i+j (j \\geq 1)，总飞行时间等于途经各段航线的飞行时间之和\nf_i + f_{i+1} + \\cdots + f_{i+j-1},\n但这样一次连续飞行只算乘坐一次飞机。请计算 Dr. X 从城市 0 出发到达城市 n 所需的最少时间。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入第一行包含两个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">k</span>，分别表示路线的数量和最多允许的坐飞机次数。</p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个空格分隔的整数 <span class=\"katex math inline\">g_0, g_1, \\cdots, g_{n-1}</span>，其中 <span class=\"katex math inline\">g_i</span> 表示从城市 <span class=\"katex math inline\">i</span> 坐高铁到城市 <span class=\"katex math inline\">i+1</span> 所花费的时间。</p>\n<p>第三行包含 <span class=\"katex math inline\">n</span> 个空格分隔的整数 <span class=\"katex math inline\">f_0, f_1, \\cdots, f_{n-1}</span>，其中 <span class=\"katex math inline\">f_i</span> 表示从城市 <span class=\"katex math inline\">i</span> 坐飞机到城市 <span class=\"katex math inline\">i+1</span> 所花费的时间。</p>\n</div>            </div>",
+      "text": "输入第一行包含两个整数 n 和 k，分别表示路线的数量和最多允许的坐飞机次数。\n第二行包含 n 个空格分隔的整数 g_0, g_1, \\cdots, g_{n-1}，其中 g_i 表示从城市 i 坐高铁到城市 i+1 所花费的时间。\n第三行包含 n 个空格分隔的整数 f_0, f_1, \\cdots, f_{n-1}，其中 f_i 表示从城市 i 坐飞机到城市 i+1 所花费的时间。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，表示 Dr. X 从城市 <span class=\"katex math inline\">0</span> 到达城市 <span class=\"katex math inline\">n</span> 所需的最少时间。</p>\n</div>            </div>",
+      "text": "输出一个整数，表示 Dr. X 从城市 0 到达城市 n 所需的最少时间。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 1\r\n4 6 8\r\n1 11 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>14</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 2\r\n4 6 8\r\n1 11 4</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>11</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>3 1\r\n4 6 8\r\n1 7 4</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>12</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            3 1\r\n4 6 8\r\n1 11 4\n                        \n                        \n                            输出\n                            14\n                        \n\n                                                    \n                                输入\n                                3 2\r\n4 6 8\r\n1 11 4\n                            \n                            \n                                输出\n                                11\n                            \n                        \n                                                    \n                                输入\n                                3 1\r\n4 6 8\r\n1 7 4\n                            \n                            \n                                输出\n                                12"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>样例1解释</h4>\n<ul><li>最快的方式是从城市 <span class=\"katex math inline\">0</span> 坐高铁到城市 <span class=\"katex math inline\">1</span>，再从城市 <span class=\"katex math inline\">1</span> 坐高铁到城市 <span class=\"katex math inline\">2</span>，最后从城市 <span class=\"katex math inline\">2</span> 坐飞机到城市 <span class=\"katex math inline\">3</span>，总耗时均为 <span class=\"katex math inline\">4 + 6 + 4 = 14</span>。总共坐飞机 <span class=\"katex math inline\">1</span> 次，满足限制。</li>\n</ul><h4>样例2解释</h4>\n<ul><li>最快的方式是从城市 <span class=\"katex math inline\">0</span> 坐飞机到城市 <span class=\"katex math inline\">1</span>，从城市 <span class=\"katex math inline\">1</span> 坐高铁到城市 <span class=\"katex math inline\">2</span>，从城市 <span class=\"katex math inline\">2</span> 坐飞机到城市 <span class=\"katex math inline\">3</span>，总耗时均为 <span class=\"katex math inline\">1 + 6 + 4 = 11</span>。总共坐飞机 <span class=\"katex math inline\">2</span> 次。</li>\n</ul><h4>样例3解释</h4>\n<ul><li>尽管 <span class=\"katex math inline\">g_1 &lt; f_1</span>，但在只能坐飞机 <span class=\"katex math inline\">1</span> 次的情况下，最优方案是从城市 <span class=\"katex math inline\">0</span> 直接飞到城市 <span class=\"katex math inline\">3</span>，总耗时均为 <span class=\"katex math inline\">1 + 7 + 4 = 12</span>。</li>\n</ul><h4>数据规模</h4>\n<ul><li>对于 <span class=\"katex math inline\">10\\%</span> 的数据，<span class=\"katex math inline\">k = 1</span>，<span class=\"katex math inline\">n \\leq 200</span>。</li>\n<li>对于 <span class=\"katex math inline\">30\\%</span> 的数据，<span class=\"katex math inline\">k = 1</span>，<span class=\"katex math inline\">n \\leq 100,000</span>。</li>\n<li>对于另外 <span class=\"katex math inline\">40\\%</span> 的数据，<span class=\"katex math inline\">k \\leq 100</span>，<span class=\"katex math inline\">n \\leq 1,000</span>。</li>\n<li>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">k \\leq 1,000</span>，<span class=\"katex math inline\">n \\leq 100,000</span>，<span class=\"katex math inline\">k \\leq n</span>，且 <span class=\"katex math inline\">1 \\leq g_i, f_i \\leq 100,000</span>。</li>\n</ul></div>\n\n                    \n                </div>",
+      "text": "样例1解释\n最快的方式是从城市 0 坐高铁到城市 1，再从城市 1 坐高铁到城市 2，最后从城市 2 坐飞机到城市 3，总耗时均为 4 + 6 + 4 = 14。总共坐飞机 1 次，满足限制。\n样例2解释\n最快的方式是从城市 0 坐飞机到城市 1，从城市 1 坐高铁到城市 2，从城市 2 坐飞机到城市 3，总耗时均为 1 + 6 + 4 = 11。总共坐飞机 2 次。\n样例3解释\n尽管 g_1 < f_1，但在只能坐飞机 1 次的情况下，最优方案是从城市 0 直接飞到城市 3，总耗时均为 1 + 7 + 4 = 12。\n数据规模\n对于 10\\% 的数据，k = 1，n \\leq 200。\n对于 30\\% 的数据，k = 1，n \\leq 100,000。\n对于另外 40\\% 的数据，k \\leq 100，n \\leq 1,000。\n对于 100\\% 的数据，k \\leq 1,000，n \\leq 100,000，k \\leq n，且 1 \\leq g_i, f_i \\leq 100,000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2026年江苏省＂信息与未来＂小学生编程</p>\n</div>                </div>",
+      "text": "2026年江苏省＂信息与未来＂小学生编程"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">江苏省赛2026</span></span></p>\n</div>                </div>",
+      "text": "江苏省赛2026"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 1\r\n4 6 8\r\n1 11 4",
+      "output": "14"
+    },
+    {
+      "input": "3 2\r\n4 6 8\r\n1 11 4",
+      "output": "11"
+    },
+    {
+      "input": "3 1\r\n4 6 8\r\n1 7 4",
+      "output": "12"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "20",
+    "通过人数": "9",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:22"
+}

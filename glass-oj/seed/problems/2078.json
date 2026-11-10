@@ -1,0 +1,61 @@
+{
+  "id": "2078",
+  "title": "起止位置",
+  "tags": [
+    "二分"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2078",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有 <span class=\"katex math inline\">n</span> 位同学按照年龄从小到大排好队。</p>\n<p>王老师想要查询，年龄为 <span class=\"katex math inline\">x</span> 的同学，在队伍中首次出现的位置和最后一次出现的位置；如果队伍中不存在年龄为 <span class=\"katex math inline\">x</span> 的同学，请输出 <span class=\"katex math inline\">-1</span>。</p>\n<p>由于人数太多，一个一个数，太慢啦，请你编程求解。</p>\n<p>请注意：本题中王老师查询年龄 <span class=\"katex math inline\">x</span> 出现的起止位置，并不是查询了 <span class=\"katex math inline\">1</span> 次，而是查询了 <span class=\"katex math inline\">q</span> 次。</p>\n<p>比如：</p>\n<p>假设有 <span class=\"katex math inline\">6</span> 位同学的年龄为：<span class=\"katex math inline\">1</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">3</span>，王老师查询了 <span class=\"katex math inline\">4</span> 个年龄，分别是 <span class=\"katex math inline\">2</span> <span class=\"katex math inline\">1</span> <span class=\"katex math inline\">3</span> <span class=\"katex math inline\">8</span> ，那么：</p>\n<p>年龄为 <span class=\"katex math inline\">2</span> 的同学首次和最后一次出现的位置分别是：<span class=\"katex math inline\">2</span> <span class=\"katex math inline\">4</span>；</p>\n<p>年龄为 <span class=\"katex math inline\">1</span> 的同学首次和最后一次出现的位置分别是：<span class=\"katex math inline\">1</span> <span class=\"katex math inline\">1</span>；</p>\n<p>年龄为 <span class=\"katex math inline\">3</span> 的同学首次和最后一次出现的位置分别是：<span class=\"katex math inline\">5</span> <span class=\"katex math inline\">6</span>；</p>\n<p>年龄为 <span class=\"katex math inline\">8</span> 的同学首次和最后一次出现的位置分别是：<span class=\"katex math inline\">-1</span> <span class=\"katex math inline\">-1</span>；</p>\n</div>            </div>",
+      "text": "有 n 位同学按照年龄从小到大排好队。\n王老师想要查询，年龄为 x 的同学，在队伍中首次出现的位置和最后一次出现的位置；如果队伍中不存在年龄为 x 的同学，请输出 -1。\n由于人数太多，一个一个数，太慢啦，请你编程求解。\n请注意：本题中王老师查询年龄 x 出现的起止位置，并不是查询了 1 次，而是查询了 q 次。\n比如：\n假设有 6 位同学的年龄为：1 2 2 2 3 3，王老师查询了 4 个年龄，分别是 2 1 3 8 ，那么：\n年龄为 2 的同学首次和最后一次出现的位置分别是：2 4；\n年龄为 1 的同学首次和最后一次出现的位置分别是：1 1；\n年龄为 3 的同学首次和最后一次出现的位置分别是：5 6；\n年龄为 8 的同学首次和最后一次出现的位置分别是：-1 -1；"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">q</span> ，表示队伍中的总人数和询问个数。</p>\n<p>第二行包含 <span class=\"katex math inline\">n</span> 个整数（整数的值均在 <span class=\"katex math inline\">1 \\sim 10000</span> 范围内），表示队伍中每个人的年龄。</p>\n<p>接下来 <span class=\"katex math inline\">q</span> 行，每行包含一个整数 <span class=\"katex math inline\">x</span> ，表示一次询问的值。</p>\n</div>            </div>",
+      "text": "第一行包含整数 n 和 q ，表示队伍中的总人数和询问个数。\n第二行包含 n 个整数（整数的值均在 1 \\sim 10000 范围内），表示队伍中每个人的年龄。\n接下来 q 行，每行包含一个整数 x ，表示一次询问的值。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>共 <span class=\"katex math inline\">q</span> 行，每行包含两个整数，表示所求年龄在队伍中的起始位置和终止位置。</p>\n<p>如果数组中不存在该元素，则返回 <code>-1 -1</code>。</p>\n</div>            </div>",
+      "text": "共 q 行，每行包含两个整数，表示所求年龄在队伍中的起始位置和终止位置。\n如果数组中不存在该元素，则返回 -1 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 3\r\n1 2 2 2 3 3\r\n2\r\n1\r\n8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 4\r\n1 1\r\n-1 -1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 3\r\n1 2 2 2 3 3\r\n2\r\n1\r\n8\n                        \n                        \n                            输出\n                            2 4\r\n1 1\r\n-1 -1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><strong>数据范围</strong></p>\n<p><span class=\"katex math inline\">1≤n≤100000,1≤q≤10000,1≤x≤10000</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n1≤n≤100000,1≤q≤10000,1≤x≤10000。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二分</p>\n</div>                </div>",
+      "text": "二分"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二分</span></span></p>\n</div>                </div>",
+      "text": "二分"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 3\r\n1 2 2 2 3 3\r\n2\r\n1\r\n8",
+      "output": "2 4\r\n1 1\r\n-1 -1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "7199",
+    "通过人数": "4016",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:28:08"
+}

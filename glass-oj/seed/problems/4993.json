@@ -1,0 +1,68 @@
+{
+  "id": "4993",
+  "title": "线图",
+  "tags": [
+    "GESP七级",
+    "25年6月",
+    "图论",
+    "组合数学"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/4993",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定由 <span class=\"katex math inline\">n</span> 个结点与 <span class=\"katex math inline\">m</span> 条边构成的简单无向图 <span class=\"katex math inline\">G</span>，结点依次以 <span class=\"katex math inline\">1，2，...，n</span> 编号。简单无向图意味着 <span class=\"katex math inline\">G</span> 中不包含重边与自环。<span class=\"katex math inline\">G</span> 的线图 <span class=\"katex math inline\">L(G)</span>  通过以下方式构建：</p>\n<p>初始时线图 <span class=\"katex math inline\">L(G)</span> 为空。</p>\n<p>对于无向图 <span class=\"katex math inline\">G</span> 中的一条边，在线图 <span class=\"katex math inline\">L(G)</span> 中加入与之对应的一个结点。</p>\n<p>对于无向图 <span class=\"katex math inline\">G</span> 中两条不同的边(<span class=\"katex math inline\">u_1，v_1</span> )，(<span class=\"katex math inline\">u_2，v_2</span> )，若存在 <span class=\"katex math inline\">G</span> 中的结点同时连接这两条边（即 <span class=\"katex math inline\">u_1，v_1</span> 之一与<span class=\"katex math inline\">u_2，v_2</span>之一相同），则在线图 <span class=\"katex math inline\">L(G)</span> 中加入一条无向边，连接 (<span class=\"katex math inline\">u_1，v_1</span> )，(<span class=\"katex math inline\">u_2，v_2</span> ) 在线图中对应的结点。</p>\n<p>请你求出线图 <span class=\"katex math inline\">L(G)</span> 中所包含的无向边的数量。</p>\n</div>            </div>",
+      "text": "给定由 n 个结点与 m 条边构成的简单无向图 G，结点依次以 1，2，...，n 编号。简单无向图意味着 G 中不包含重边与自环。G 的线图 L(G)  通过以下方式构建：\n初始时线图 L(G) 为空。\n对于无向图 G 中的一条边，在线图 L(G) 中加入与之对应的一个结点。\n对于无向图 G 中两条不同的边(u_1，v_1 )，(u_2，v_2 )，若存在 G 中的结点同时连接这两条边（即 u_1，v_1 之一与u_2，v_2之一相同），则在线图 L(G) 中加入一条无向边，连接 (u_1，v_1 )，(u_2，v_2 ) 在线图中对应的结点。\n请你求出线图 L(G) 中所包含的无向边的数量。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，两个正整数 <span class=\"katex math inline\">n，m</span>，分别表示无向图 <span class=\"katex math inline\">G</span> 中的结点数与边数。</p>\n<p>接下来 <span class=\"katex math inline\">m</span> 行，每行两个正整数 <span class=\"katex math inline\">u_i，v_i</span>，表示 <span class=\"katex math inline\">G</span> 中连接 <span class=\"katex math inline\">u_i，v_i</span> 的一条无向边。</p>\n</div>            </div>",
+      "text": "第一行，两个正整数 n，m，分别表示无向图 G 中的结点数与边数。\n接下来 m 行，每行两个正整数 u_i，v_i，表示 G 中连接 u_i，v_i 的一条无向边。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出共一行，一个整数，表示线图 <span class=\"katex math inline\">L(G)</span> 中所包含的无向边的数量。</p>\n</div>            </div>",
+      "text": "输出共一行，一个整数，表示线图 L(G) 中所包含的无向边的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 4\r\n1 2\r\n2 3\r\n3 1\r\n4 5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5 10\r\n1 2\r\n1 3\r\n1 4\r\n1 5\r\n2 3\r\n2 4\r\n2 5\r\n3 4\r\n3 5\r\n4 5\r\n</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>30</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 4\r\n1 2\r\n2 3\r\n3 1\r\n4 5\n                        \n                        \n                            输出\n                            3\n                        \n\n                                                    \n                                输入\n                                5 10\r\n1 2\r\n1 3\r\n1 4\r\n1 5\r\n2 3\r\n2 4\r\n2 5\r\n3 4\r\n3 5\r\n4 5\r\n\n                            \n                            \n                                输出\n                                30"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释 1】</h4>\n<p><img src=\"https://assets.boyi.local/a89f8539eb5365f62569dca9.png\"></p>\n<h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">60</span>% 的测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 500，1 \\le m \\le 500 </span>。</p>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le n \\le 10^5，1 \\le m \\le 10^5 </span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释 1】\n\n【数据范围】\n对于 60% 的测试点，保证 1 \\le n \\le 500，1 \\le m \\le 500 。\n对于所有测试点，保证 1 \\le n \\le 10^5，1 \\le m \\le 10^5 。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP25年6月七级</p>\n</div>                </div>",
+      "text": "GESP25年6月七级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP七级</span><span class=\"label label-warning\">25年6月</span><span class=\"label label-info\">图论</span><span class=\"label label-danger\">组合数学</span></span></p>\n</div>                </div>",
+      "text": "GESP七级25年6月图论组合数学"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 4\r\n1 2\r\n2 3\r\n3 1\r\n4 5",
+      "output": "3"
+    },
+    {
+      "input": "5 10\r\n1 2\r\n1 3\r\n1 4\r\n1 5\r\n2 3\r\n2 4\r\n2 5\r\n3 4\r\n3 5\r\n4 5\r\n",
+      "output": "30"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "32",
+    "通过人数": "27",
+    "金币数量": "1 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:32:30"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "3733",
+  "title": "棋盘",
+  "tags": [
+    "市赛",
+    "常州2024"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/3733",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">Y</span> 有一个 <span class=\"katex math inline\">n \\times n</span> 棋盘，开始时这个棋盘每个格子的颜色是白黑相间的，即第一行的第 <span class=\"katex math inline\">1,3,5</span>……个格子是白色，第 <span class=\"katex math inline\">2,4,6</span>……个格子是黑色，第二行第 <span class=\"katex math inline\">2,4,6</span>……个格子是白色，第 <span class=\"katex math inline\">1,3,5</span>……个格子是黑色，如下图所示。</p>\n<p><img src=\"https://assets.boyi.local/5f175d31795da88272c385e2.png\"></p>\n<p>小 <span class=\"katex math inline\">Y</span> 会进行 <span class=\"katex math inline\">q</span> 次操作，每次操作会将某一行或者某一列的所有格子的颜色反转，即白色格子变成黑色格子，黑色格子变成白色格子。小 <span class=\"katex math inline\">Y</span> 想知道，在每次操作之后，一共有多少个同颜色(全黑或全白)的联通区域。这里联通指的是四联通，即两个格子之间有边相邻才算联通。</p>\n</div>            </div>",
+      "text": "小 Y 有一个 n \\times n 棋盘，开始时这个棋盘每个格子的颜色是白黑相间的，即第一行的第 1,3,5……个格子是白色，第 2,4,6……个格子是黑色，第二行第 2,4,6……个格子是白色，第 1,3,5……个格子是黑色，如下图所示。\n\n小 Y 会进行 q 次操作，每次操作会将某一行或者某一列的所有格子的颜色反转，即白色格子变成黑色格子，黑色格子变成白色格子。小 Y 想知道，在每次操作之后，一共有多少个同颜色(全黑或全白)的联通区域。这里联通指的是四联通，即两个格子之间有边相邻才算联通。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行 <span class=\"katex math inline\">2</span> 个正整数 <span class=\"katex math inline\">n，q</span>，表示棋盘的大小和操作的次数。</p>\n<p>第 <span class=\"katex math inline\">2</span> 到 <span class=\"katex math inline\">q+1</span> 行每行 <span class=\"katex math inline\">2</span> 个正整数 <span class=\"katex math inline\">opt[i]，a[i]</span>，若 <span class=\"katex math inline\">opt[i]</span> 为 <span class=\"katex math inline\">1</span> 则表示反转的是行，为 <span class=\"katex math inline\">2</span> 则表示反转的是列，<span class=\"katex math inline\">a[i]</span> 表示反转的是第几行/列。</p>\n</div>            </div>",
+      "text": "第一行 2 个正整数 n，q，表示棋盘的大小和操作的次数。\n第 2 到 q+1 行每行 2 个正整数 opt[i]，a[i]，若 opt[i] 为 1 则表示反转的是行，为 2 则表示反转的是列，a[i] 表示反转的是第几行/列。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">q</span> 行每行一个整数，表示在经过该次操作后，一共有多少个同颜色的联通区域。</p>\n</div>            </div>",
+      "text": "输出 q 行每行一个整数，表示在经过该次操作后，一共有多少个同颜色的联通区域。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3\r\n1 2\r\n2 3\r\n1 2</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>3\r\n2\r\n6</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>100000 1\r\n1 1</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>9999900000</pre>\n                            </div>\n                        \n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>15000 5\r\n1 90\r\n1 1231\r\n1 91\r\n1 1233\r\n1 1232</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>224970000\r\n224940000\r\n224940000\r\n224910000\r\n224940000</pre>\n                            </div>\n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\r\n1 2\r\n2 3\r\n1 2\n                        \n                        \n                            输出\n                            3\r\n2\r\n6\n                        \n\n                                                    \n                                输入\n                                100000 1\r\n1 1\n                            \n                            \n                                输出\n                                9999900000\n                            \n                        \n                                                    \n                                输入\n                                15000 5\r\n1 90\r\n1 1231\r\n1 91\r\n1 1233\r\n1 1232\n                            \n                            \n                                输出\n                                224970000\r\n224940000\r\n224940000\r\n224910000\r\n224940000"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释1】</p>\n<p><img src=\"https://assets.boyi.local/72228f446f8d2bad1d94af7b.png\"></p>\n<p>初始棋盘白黑相间，第一次操作后有 <span class=\"katex math inline\">3</span> 个同颜色的联通区域，第二次操作后有 <span class=\"katex math inline\">2</span> 个同颜色的联通区域，第三次操作后有 <span class=\"katex math inline\">6</span> 个同颜色的联通区域。</p>\n<p>【数据范围】</p>\n<p>本题共有 <span class=\"katex math inline\">10</span> 个测试点，每个测试点 <span class=\"katex math inline\">12</span> 分</p>\n<p>对于全部测试点：<span class=\"katex math inline\">1 \\le q, n \\le 10^5, 1 \\le opt[i] \\le 2, 1 \\le a[i] \\le n</span></p>\n<p>对于测试点 <span class=\"katex math inline\">1-4：1 \\le n \\le 4, 1 \\le q \\le 10</span></p>\n<p>对于测试点 <span class=\"katex math inline\">5-6：1 \\le n \\le 10^5, q=1</span></p>\n<p>对于测试点 <span class=\"katex math inline\">7-9：1 \\le n \\le 10^5</span> , 保证同一个测试点所有的<span class=\"katex math inline\">opt[i]</span> 均相等</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释1】\n\n初始棋盘白黑相间，第一次操作后有 3 个同颜色的联通区域，第二次操作后有 2 个同颜色的联通区域，第三次操作后有 6 个同颜色的联通区域。\n【数据范围】\n本题共有 10 个测试点，每个测试点 12 分\n对于全部测试点：1 \\le q, n \\le 10^5, 1 \\le opt[i] \\le 2, 1 \\le a[i] \\le n\n对于测试点 1-4：1 \\le n \\le 4, 1 \\le q \\le 10\n对于测试点 5-6：1 \\le n \\le 10^5, q=1\n对于测试点 7-9：1 \\le n \\le 10^5 , 保证同一个测试点所有的opt[i] 均相等"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2024常州市赛T7</p>\n</div>                </div>",
+      "text": "2024常州市赛T7"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">常州2024</span></span></p>\n</div>                </div>",
+      "text": "市赛常州2024"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3\r\n1 2\r\n2 3\r\n1 2",
+      "output": "3\r\n2\r\n6"
+    },
+    {
+      "input": "100000 1\r\n1 1",
+      "output": "9999900000"
+    },
+    {
+      "input": "15000 5\r\n1 90\r\n1 1231\r\n1 91\r\n1 1233\r\n1 1232",
+      "output": "224970000\r\n224940000\r\n224940000\r\n224910000\r\n224940000"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "37",
+    "通过人数": "8",
+    "金币数量": "0 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:36:01"
+}

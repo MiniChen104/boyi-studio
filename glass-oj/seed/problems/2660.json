@@ -1,0 +1,61 @@
+{
+  "id": "2660",
+  "title": "最大公约数和最小公倍数问题",
+  "tags": [
+    "NOIP"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/2660",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入两个正整数 <span class=\"katex math inline\">x_0, y_0</span>，求出满足下列条件的 <span class=\"katex math inline\">P, Q</span> 的个数：  </p>\n<ol><li><p><span class=\"katex math inline\">P,Q</span> 是正整数。</p>\n</li>\n<li><p>要求 <span class=\"katex math inline\">P, Q</span> 以 <span class=\"katex math inline\">x_0</span> 为最大公约数，以 <span class=\"katex math inline\">y_0</span> 为最小公倍数。</p>\n</li>\n</ol><p>试求：满足条件的所有可能的 <span class=\"katex math inline\">P, Q</span> 的个数。</p>\n</div>            </div>",
+      "text": "输入两个正整数 x_0, y_0，求出满足下列条件的 P, Q 的个数：  \nP,Q 是正整数。\n\n要求 P, Q 以 x_0 为最大公约数，以 y_0 为最小公倍数。\n\n试求：满足条件的所有可能的 P, Q 的个数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行两个正整数 <span class=\"katex math inline\">x_0, y_0</span>。</p>\n</div>            </div>",
+      "text": "一行两个正整数 x_0, y_0。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个数，表示求出满足条件的 <span class=\"katex math inline\">P, Q</span> 的个数。</p>\n</div>            </div>",
+      "text": "一行一个数，表示求出满足条件的 P, Q 的个数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 60</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 60\n                        \n                        \n                            输出\n                            4"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p><span class=\"katex math inline\">P,Q</span> 有 <span class=\"katex math inline\">4</span> 种：  </p>\n<ol><li><span class=\"katex math inline\">3, 60</span>。</li>\n<li><span class=\"katex math inline\">15, 12</span>。</li>\n<li><span class=\"katex math inline\">12, 15</span>。</li>\n<li><span class=\"katex math inline\">60, 3</span>。</li>\n</ol><p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">2 \\le x_0, y_0 \\le {10}^5</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "P,Q 有 4 种：  \n3, 60。\n15, 12。\n12, 15。\n60, 3。\n对于 100\\% 的数据，2 \\le x_0, y_0 \\le {10}^5。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>NOIP 2001 普及组第二题</p>\n</div>                </div>",
+      "text": "NOIP 2001 普及组第二题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">NOIP</span></span></p>\n</div>                </div>",
+      "text": "NOIP"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 60",
+      "output": "4"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "1141",
+    "通过人数": "662",
+    "金币数量": "2 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:25"
+}

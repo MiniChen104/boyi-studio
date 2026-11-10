@@ -1,0 +1,56 @@
+{
+  "id": "1998",
+  "title": "找朋友",
+  "tags": [
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1998",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">T</span> 喜欢和自己同龄的人交朋友，现在他排在了一个 <span class=\"katex math inline\">n</span> 行 <span class=\"katex math inline\">m</span> 列的队伍中。</p>\n<p>请问在小 <span class=\"katex math inline\">T</span> 所在的行和小 <span class=\"katex math inline\">T</span> 所在的列中，他一共能交到几个朋友？</p>\n<p>比如：一个 <span class=\"katex math inline\">6</span> 行 <span class=\"katex math inline\">6</span> 列的矩阵如下，该矩阵中每个数字代表了一个同学的年龄。</p>\n<pre><code>8  9  7  9  5  3 \n2  9  15 9  9  12 \n21 3  4  6  7  9\n10 10 8  2  3  6\n5  4  2  9  5  10\n9  11 2  9  5  7 \n</code></pre>\n<p>假设小 <span class=\"katex math inline\">T</span> 在第 <span class=\"katex math inline\">2</span> 行第 <span class=\"katex math inline\">4</span> 列对应的位置，也就是他的年龄是 <span class=\"katex math inline\">9</span> 岁，他所在的第 <span class=\"katex math inline\">2</span> 行除了小 <span class=\"katex math inline\">T</span> 还有 <span class=\"katex math inline\">2</span> 个人是 <span class=\"katex math inline\">9</span> 岁，他所在的列除了小 <span class=\"katex math inline\">T</span> 有 <span class=\"katex math inline\">3</span> 个人是 <span class=\"katex math inline\">9</span> 岁，因此他可以交到 <span class=\"katex math inline\">5</span> 个朋友。</p>\n</div>            </div>",
+      "text": "小 T 喜欢和自己同龄的人交朋友，现在他排在了一个 n 行 m 列的队伍中。\n请问在小 T 所在的行和小 T 所在的列中，他一共能交到几个朋友？\n比如：一个 6 行 6 列的矩阵如下，该矩阵中每个数字代表了一个同学的年龄。\n8  9  7  9  5  3 \n2  9  15 9  9  12 \n21 3  4  6  7  9\n10 10 8  2  3  6\n5  4  2  9  5  10\n9  11 2  9  5  7 \n\n假设小 T 在第 2 行第 4 列对应的位置，也就是他的年龄是 9 岁，他所在的第 2 行除了小 T 还有 2 个人是 9 岁，他所在的列除了小 T 有 3 个人是 9 岁，因此他可以交到 5 个朋友。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第 <span class=\"katex math inline\">1</span> 行有 <span class=\"katex math inline\">2</span> 个整数 <span class=\"katex math inline\">n</span> 和 <span class=\"katex math inline\">m</span> ，分别代表队形的行和列的值（ <span class=\"katex math inline\">2 \\le n,m \\le 200</span> ）</p>\n<p>接下来 <span class=\"katex math inline\">n</span> 行，每行有 <span class=\"katex math inline\">m</span> 个整数，代表每个同学的年龄（每个同学的年龄的值在 <span class=\"katex math inline\">1 \\sim 100</span> 之间）</p>\n<p>接下来最后一行有 <span class=\"katex math inline\">2</span> 个整数，代表小 <span class=\"katex math inline\">T</span> 在第几行第几列</p>\n</div>            </div>",
+      "text": "第 1 行有 2 个整数 n 和 m ，分别代表队形的行和列的值（ 2 \\le n,m \\le 200 ）\n接下来 n 行，每行有 m 个整数，代表每个同学的年龄（每个同学的年龄的值在 1 \\sim 100 之间）\n接下来最后一行有 2 个整数，代表小 T 在第几行第几列"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表小  <span class=\"katex math inline\">T</span> 可以交到的朋友的数量。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表小  T 可以交到的朋友的数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>6 6\r\n8 9 7 9 5 3\r\n2 9 15 9 9 12\r\n21 3 4 6 7 9\r\n10 10 8 2 3 6\r\n5 4 2 9 5 10\r\n9 11 2 9 5 7\r\n2 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>5</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            6 6\r\n8 9 7 9 5 3\r\n2 9 15 9 9 12\r\n21 3 4 6 7 9\r\n10 10 8 2 3 6\r\n5 4 2 9 5 10\r\n9 11 2 9 5 7\r\n2 4\n                        \n                        \n                            输出\n                            5"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>二维数组</p>\n</div>                </div>",
+      "text": "二维数组"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "6 6\r\n8 9 7 9 5 3\r\n2 9 15 9 9 12\r\n21 3 4 6 7 9\r\n10 10 8 2 3 6\r\n5 4 2 9 5 10\r\n9 11 2 9 5 7\r\n2 4",
+      "output": "5"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "9236",
+    "通过人数": "5002",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:27:07"
+}

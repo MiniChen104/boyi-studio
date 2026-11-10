@@ -1,0 +1,56 @@
+{
+  "id": "1377",
+  "title": "循环赛日程表",
+  "tags": [
+    "分治"
+  ],
+  "difficulty": "提高",
+  "url": "https://oj.czos.cn/p/1377",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>设有 <span class=\"katex math inline\">n = 2^k</span> 个运动员要进行网球循环赛。现要设计一个满足以下要求的比赛日程表：</p>\n<ul><li><p>(<span class=\"katex math inline\">1</span>) 每个选手必须与其他 <span class=\"katex math inline\">n-1</span> 个选手各赛一次；</p>\n</li>\n<li><p>(<span class=\"katex math inline\">2</span>) 每个选手一天只能参赛一次；</p>\n</li>\n<li><p>(<span class=\"katex math inline\">3</span>) 循环赛在 <span class=\"katex math inline\">n-1</span> 天内结束。</p>\n</li>\n</ul><p>请按此要求将比赛日程表设计成有 <span class=\"katex math inline\">n</span> 行和 <span class=\"katex math inline\">n-1</span> 列的一个表。在表中的第 <span class=\"katex math inline\">i</span> 行，第 <span class=\"katex math inline\">j</span> 列处填入第 <span class=\"katex math inline\">i</span> 个选手在第 <span class=\"katex math inline\">j</span> 天所遇到的选手。其中 <span class=\"katex math inline\">1 \\le i \\le n</span>，<span class=\"katex math inline\">1 \\le j \\le n-1</span>。<span class=\"katex math inline\">8</span> 个选手的比赛日程表如下图：</p>\n<p><img src=\"https://assets.boyi.local/4ae28db39aac961f842efbe0.png\"></p>\n</div>            </div>",
+      "text": "设有 n = 2^k 个运动员要进行网球循环赛。现要设计一个满足以下要求的比赛日程表：\n(1) 每个选手必须与其他 n-1 个选手各赛一次；\n\n(2) 每个选手一天只能参赛一次；\n\n(3) 循环赛在 n-1 天内结束。\n\n请按此要求将比赛日程表设计成有 n 行和 n-1 列的一个表。在表中的第 i 行，第 j 列处填入第 i 个选手在第 j 天所遇到的选手。其中 1 \\le i \\le n，1 \\le j \\le n-1。8 个选手的比赛日程表如下图："
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数 <span class=\"katex math inline\">k</span>（<span class=\"katex math inline\">k \\le 5</span>）</p>\n</div>            </div>",
+      "text": "一个整数 k（k \\le 5）"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>比赛日程表。</p>\n</div>            </div>",
+      "text": "比赛日程表。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1 2 3 4 5 6 7 8\r\n2 1 4 3 6 5 8 7\r\n3 4 1 2 7 8 5 6\r\n4 3 2 1 8 7 6 5\r\n5 6 7 8 1 2 3 4\r\n6 5 8 7 2 1 4 3\r\n7 8 5 6 3 4 1 2\r\n8 7 6 5 4 3 2 1</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\n                        \n                        \n                            输出\n                            1 2 3 4 5 6 7 8\r\n2 1 4 3 6 5 8 7\r\n3 4 1 2 7 8 5 6\r\n4 3 2 1 8 7 6 5\r\n5 6 7 8 1 2 3 4\r\n6 5 8 7 2 1 4 3\r\n7 8 5 6 3 4 1 2\r\n8 7 6 5 4 3 2 1"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分治</p>\n</div>                </div>",
+      "text": "分治"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分治</span></span></p>\n</div>                </div>",
+      "text": "分治"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3",
+      "output": "1 2 3 4 5 6 7 8\r\n2 1 4 3 6 5 8 7\r\n3 4 1 2 7 8 5 6\r\n4 3 2 1 8 7 6 5\r\n5 6 7 8 1 2 3 4\r\n6 5 8 7 2 1 4 3\r\n7 8 5 6 3 4 1 2\r\n8 7 6 5 4 3 2 1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "64 MB",
+    "提交次数": "801",
+    "通过人数": "362",
+    "金币数量": "3 枚",
+    "难度": "提高"
+  },
+  "fetched": "2026-11-07 00:18:36"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "3136",
+  "title": "民俗游戏新玩法",
+  "tags": [
+    "市赛",
+    "二维数组"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3136",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>民俗游戏馆传承创新，研究了很多游戏新玩法。“矩阵石头剪刀布”很受欢迎。</p>\n<p>电子地毯上有 <span class=\"katex math inline\">r \\times c</span> 个格子，每个格子上安装有一盏智能变色灯，红色代表石头，绿色\n代表剪刀，蓝色代表布。参加游戏的同学每人指定一盏灯，并可通过装置将其预制成自己想\n要的颜色。游戏开始，所有灯亮起，接下来上下左右相邻的智能灯进行比拼。石头（红）永\n远胜剪刀（绿），剪刀（绿）永远胜布（蓝），布（蓝）永远胜石头（红）。所有比拼结束\n后，失败灯的颜色将被替换成胜者的颜色。智能灯颜色保持不变的同学将会得到奖励。</p>\n<p>已知每位同学开始设置的智能灯颜色，请编写程序预测游戏结束后所有的灯的颜色。</p>\n</div>            </div>",
+      "text": "民俗游戏馆传承创新，研究了很多游戏新玩法。“矩阵石头剪刀布”很受欢迎。\n电子地毯上有 r \\times c 个格子，每个格子上安装有一盏智能变色灯，红色代表石头，绿色\n代表剪刀，蓝色代表布。参加游戏的同学每人指定一盏灯，并可通过装置将其预制成自己想\n要的颜色。游戏开始，所有灯亮起，接下来上下左右相邻的智能灯进行比拼。石头（红）永\n远胜剪刀（绿），剪刀（绿）永远胜布（蓝），布（蓝）永远胜石头（红）。所有比拼结束\n后，失败灯的颜色将被替换成胜者的颜色。智能灯颜色保持不变的同学将会得到奖励。\n已知每位同学开始设置的智能灯颜色，请编写程序预测游戏结束后所有的灯的颜色。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行，包含两个正整数 <span class=\"katex math inline\">r</span> 和 <span class=\"katex math inline\">c</span>，分别表示地毯的行数及列数。</p>\n<p>接下来 <span class=\"katex math inline\">r</span> 行，每行 <span class=\"katex math inline\">c</span> 个字符，描述每个同学预设的颜色。每个位置上的字符只能是<code>R</code>、\n<code>G</code>、<code>B</code>三者之一。相邻字符之间无空格。</p>\n</div>            </div>",
+      "text": "第一行，包含两个正整数 r 和 c，分别表示地毯的行数及列数。\n接下来 r 行，每行 c 个字符，描述每个同学预设的颜色。每个位置上的字符只能是R、\nG、B三者之一。相邻字符之间无空格。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出游戏结束后电子地毯上所有灯的颜色。每个位置上的字符只能是<code>R</code>、<code>G</code>、\n<code>B</code>三者之一。相邻字符之间无空格。</p>\n</div>            </div>",
+      "text": "输出游戏结束后电子地毯上所有灯的颜色。每个位置上的字符只能是R、G、\nB三者之一。相邻字符之间无空格。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 3\r\nRRR\r\nBGR\r\nRBR</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>BRR\r\nGRR\r\nBGB</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 3\r\nRRR\r\nBGR\r\nRBR\n                        \n                        \n                            输出\n                            BRR\r\nGRR\r\nBGB"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例说明】</p>\n<p><img src=\"https://assets.boyi.local/c43231a153ec85c1cbf80e72.png\"></p>\n<p>【数据范围】</p>\n<p>对于 <span class=\"katex math inline\">100</span>% 的测试数据，有 <span class=\"katex math inline\">0 &lt; r，c \\leq 100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例说明】\n\n【数据范围】\n对于 100% 的测试数据，有 0 < r，c \\leq 100。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2021南京市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2021南京市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">二维数组</span></span></p>\n</div>                </div>",
+      "text": "市赛二维数组"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 3\r\nRRR\r\nBGR\r\nRBR",
+      "output": "BRR\r\nGRR\r\nBGB"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "27",
+    "通过人数": "25",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:15"
+}

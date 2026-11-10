@@ -1,0 +1,62 @@
+{
+  "id": "1939",
+  "title": "双重回文数 Dual Palindromes",
+  "tags": [
+    "USACO",
+    "进制转换"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/1939",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>如果一个数从左往右读和从右往左读都是一样，那么这个数就叫做“回文数”。例如，<span class=\"katex math inline\">12321</span> 就是一个回文数，而 <span class=\"katex math inline\">77778</span> 就不是。当然，回文数的首和尾都应是非零的，因此 <span class=\"katex math inline\">0220</span> 就不是回文数。</p>\n<p>事实上，有一些数（如 <span class=\"katex math inline\">21</span> ），在十进制时不是回文数，但在其它进制（如二进制时为 <span class=\"katex math inline\">10101</span> ）时就是回文数。</p>\n<p>给定两个十进制数 <span class=\"katex math inline\">n,s</span>，然后找出前 <span class=\"katex math inline\">n</span> 个满足大于 <span class=\"katex math inline\">s</span> 且在不少于两种进制（二进制至十进制）上是回文数的十进制数。</p>\n<p>本问题的解决方案不需要使用大于 <span class=\"katex math inline\">32</span> 位的整型数。</p>\n</div>            </div>",
+      "text": "如果一个数从左往右读和从右往左读都是一样，那么这个数就叫做“回文数”。例如，12321 就是一个回文数，而 77778 就不是。当然，回文数的首和尾都应是非零的，因此 0220 就不是回文数。\n事实上，有一些数（如 21 ），在十进制时不是回文数，但在其它进制（如二进制时为 10101 ）时就是回文数。\n给定两个十进制数 n,s，然后找出前 n 个满足大于 s 且在不少于两种进制（二进制至十进制）上是回文数的十进制数。\n本问题的解决方案不需要使用大于 32 位的整型数。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>只有一行，用空格隔开的两个正整数 <span class=\"katex math inline\">n,s</span>。</p>\n</div>            </div>",
+      "text": "只有一行，用空格隔开的两个正整数 n,s。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><span class=\"katex math inline\">n</span> 行, 每行一个满足上述要求的数，并按从小到大的顺序输出。</p>\n</div>            </div>",
+      "text": "n 行, 每行一个满足上述要求的数，并按从小到大的顺序输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3 25</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>26\r\n27\r\n28</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3 25\n                        \n                        \n                            输出\n                            26\r\n27\r\n28"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于 <span class=\"katex math inline\">100\\%</span> 的数据，<span class=\"katex math inline\">1≤n≤15</span>，<span class=\"katex math inline\">1≤s≤9999</span>。</p>\n<p><span class=\"katex math inline\">USACO Training Section 1.2 </span> </p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于 100\\% 的数据，1≤n≤15，1≤s≤9999。\nUSACO Training Section 1.2"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>USACO 进制转换</p>\n</div>                </div>",
+      "text": "USACO 进制转换"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">USACO</span><span class=\"label label-warning\">进制转换</span></span></p>\n</div>                </div>",
+      "text": "USACO进制转换"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3 25",
+      "output": "26\r\n27\r\n28"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "728",
+    "通过人数": "423",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:26:16"
+}

@@ -1,0 +1,18 @@
+博宜练习室 1.1 — third-party components
+
+Liquid Glass React 1.1.1
+Project: https://github.com/rdev/liquid-glass-react
+License: MIT, retained at ui/vendor/licenses/liquid-glass-react.txt
+Integrated as actual React optical surfaces in the sidebar, library and studio.
+The app adds layout and legibility styles; the upstream component remains unchanged.
+
+React / React DOM 19.2.0 — MIT
+Licenses: ui/vendor/licenses/react.txt, react-dom.txt, scheduler.txt
+
+CodeMirror 5, KaTeX — MIT; original licenses retained in ui/vendor.
+Microsoft WebView2 — Microsoft license; see NuGet package metadata.
+HtmlAgilityPack — MIT; see NuGet package metadata.
+
+Website, problem statements, illustrations and grading service:
+https://oj.czos.cn — 东方博宜 and the original problem authors.
+This desktop client is independently developed, not an official 东方博宜 product.

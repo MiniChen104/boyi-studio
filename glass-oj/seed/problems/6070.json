@@ -1,0 +1,68 @@
+{
+  "id": "6070",
+  "title": "后缀排序",
+  "tags": [
+    "市赛",
+    "南京2025",
+    "字符串",
+    "结构体"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/6070",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>字符串的后缀是指从该字符串某一位置开始到末尾的所有字符组成的子串。例如，字符串 <code>BANANA</code> 的所有后缀有：</p>\n<p> <code>BANANA</code>     起始位置为 <span class=\"katex math inline\">1</span> 的后缀</p>\n<p>   <code>ANANA</code>     起始位置为 <span class=\"katex math inline\">2</span> 的后缀</p>\n<p>   <code>NANA</code>     起始位置为 <span class=\"katex math inline\">3</span> 的后缀</p>\n<p>   <code>ANA</code>      起始位置为 <span class=\"katex math inline\">4</span> 的后缀</p>\n<p>   <code>NA</code>       起始位置为 <span class=\"katex math inline\">5</span> 的后缀</p>\n<p>   <code>A</code>        起始位置为 <span class=\"katex math inline\">6</span> 的后缀</p>\n<p>字符串的 “后缀排序” 是指字符串所有后缀按照字典顺序升序排序后的结果。对于 <code>BANANA</code>， 后缀排序的结果是：</p>\n<p> <code>A</code>      <span class=\"katex math inline\">(6)</span></p>\n<p> <code>ANA</code>    <span class=\"katex math inline\">(4)</span></p>\n<p> <code>ANANA</code>  <span class=\"katex math inline\">(2)</span></p>\n<p> <code>BANANA</code> <span class=\"katex math inline\">(1)</span></p>\n<p> <code>NA</code>     <span class=\"katex math inline\">(5)</span></p>\n<p> <code>NANA</code>   <span class=\"katex math inline\">(3)</span></p>\n</div>            </div>",
+      "text": "字符串的后缀是指从该字符串某一位置开始到末尾的所有字符组成的子串。例如，字符串 BANANA 的所有后缀有：\n BANANA     起始位置为 1 的后缀\n   ANANA     起始位置为 2 的后缀\n   NANA     起始位置为 3 的后缀\n   ANA      起始位置为 4 的后缀\n   NA       起始位置为 5 的后缀\n   A        起始位置为 6 的后缀\n字符串的 “后缀排序” 是指字符串所有后缀按照字典顺序升序排序后的结果。对于 BANANA， 后缀排序的结果是：\n A      (6)\n ANA    (4)\n ANANA  (2)\n BANANA (1)\n NA     (5)\n NANA   (3)"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一行一个仅由大写字母组成的字符串。</p>\n</div>            </div>",
+      "text": "一行一个仅由大写字母组成的字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>假设输入字符串的长度为 <span class=\"katex math inline\">n</span>，输出一行，包含 <span class=\"katex math inline\">n</span> 个用空格分隔的整数，依次表示按字典序排序 后的各后缀在原字符串中的起始位置。</p>\n</div>            </div>",
+      "text": "假设输入字符串的长度为 n，输出一行，包含 n 个用空格分隔的整数，依次表示按字典序排序 后的各后缀在原字符串中的起始位置。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>BANANA</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>6 4 2 1 5 3</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>XINXIYUWEILAI</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>12 9 13 10 2 5 11 3 7 8 1 4 6</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            BANANA\n                        \n                        \n                            输出\n                            6 4 2 1 5 3\n                        \n\n                                                    \n                                输入\n                                XINXIYUWEILAI\n                            \n                            \n                                输出\n                                12 9 13 10 2 5 11 3 7 8 1 4 6"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据规模与说明</h4>\n<p>对于 <span class=\"katex math inline\">100 \\%</span> 的数据，字符串长度<span class=\"katex math inline\">1≤n≤1,000</span>。</p>\n<p>其实，后缀排序有非常高效的算法！当然，我们不要求大家 “想出” 或掌握这个方法。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据规模与说明\n对于 100 \\% 的数据，字符串长度1≤n≤1,000。\n其实，后缀排序有非常高效的算法！当然，我们不要求大家 “想出” 或掌握这个方法。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025南京市“信息与未来”程序设计小能手</p>\n</div>                </div>",
+      "text": "2025南京市“信息与未来”程序设计小能手"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span><span class=\"label label-warning\">南京2025</span><span class=\"label label-info\">字符串</span><span class=\"label label-danger\">结构体</span></span></p>\n</div>                </div>",
+      "text": "市赛南京2025字符串结构体"
+    }
+  ],
+  "samples": [
+    {
+      "input": "BANANA",
+      "output": "6 4 2 1 5 3"
+    },
+    {
+      "input": "XINXIYUWEILAI",
+      "output": "12 9 13 10 2 5 11 3 7 8 1 4 6"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "52",
+    "通过人数": "44",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:06"
+}

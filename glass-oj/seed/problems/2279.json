@@ -1,0 +1,61 @@
+{
+  "id": "2279",
+  "title": "数字变换",
+  "tags": [
+    "电子学会等级考试"
+  ],
+  "difficulty": "基础",
+  "url": "https://oj.czos.cn/p/2279",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>给定一个包含 <span class=\"katex math inline\">5</span> 个数字（<span class=\"katex math inline\">0 \\sim 9</span>）的字符串，例如 <span class=\"katex math inline\">02943</span> ，请将 <span class=\"katex math inline\">12345</span> 变换到它。 你可以采取 <span class=\"katex math inline\">3</span> 种操作进行变换 </p>\n<ol><li><p>交换相邻的两个数字。</p>\n</li>\n<li><p>将一个数字加 <span class=\"katex math inline\">1</span> 。如果加 <span class=\"katex math inline\">1</span> 后大于 <span class=\"katex math inline\">9</span> ，则变为 <span class=\"katex math inline\">0</span> 。 </p>\n</li>\n<li><p>将一个数字加倍。如果加倍后大于 <span class=\"katex math inline\">9</span> ,则将其变为加倍后的结果除以 <span class=\"katex math inline\">10</span> 的余数。 </p>\n</li>\n</ol><p>最多只能用第 <span class=\"katex math inline\">2</span> 种操作 <span class=\"katex math inline\">3</span> 次，第 <span class=\"katex math inline\">3</span> 种操作 <span class=\"katex math inline\">2</span> 次 求最少经过多少次操作可以完成变换。</p>\n</div>            </div>",
+      "text": "给定一个包含 5 个数字（0 \\sim 9）的字符串，例如 02943 ，请将 12345 变换到它。 你可以采取 3 种操作进行变换 \n交换相邻的两个数字。\n\n将一个数字加 1 。如果加 1 后大于 9 ，则变为 0 。 \n\n将一个数字加倍。如果加倍后大于 9 ,则将其变为加倍后的结果除以 10 的余数。 \n\n最多只能用第 2 种操作 3 次，第 3 种操作 2 次 求最少经过多少次操作可以完成变换。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>有最多 <span class=\"katex math inline\">100000</span> 组数据，每组数据就是包含 <span class=\"katex math inline\">5</span> 个数字的字符串。</p>\n</div>            </div>",
+      "text": "有最多 100000 组数据，每组数据就是包含 5 个数字的字符串。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>对每组数据，输出将 <span class=\"katex math inline\">12345</span> 变换到给定字符串所需要的最少操作步数。如果无法变换成功，输出 <span class=\"katex math inline\">-1</span>。</p>\n</div>            </div>",
+      "text": "对每组数据，输出将 12345 变换到给定字符串所需要的最少操作步数。如果无法变换成功，输出 -1。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>12435\r\n99999\r\n12374</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>1\r\n-1\r\n3</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            12435\r\n99999\r\n12374\n                        \n                        \n                            输出\n                            1\r\n-1\r\n3"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>提示</h4>\n<p>由于测试数据太多，如果对每组数据都从头进行搜索，就会超时。 </p>\n<p>建议先做预处理，即以 <span class=\"katex math inline\">12345</span> 作为初始状态做一遍彻底的广搜，找出 <span class=\"katex math inline\">12345</span> 经合法变换能够到达的所有字符串，并记录到达这些字符串各需要多少步操作。 </p>\n<p>然后对读入的每组数据，在上述预处理记录的结果中进行查询即可。</p>\n</div>\n\n                    \n                </div>",
+      "text": "提示\n由于测试数据太多，如果对每组数据都从头进行搜索，就会超时。 \n建议先做预处理，即以 12345 作为初始状态做一遍彻底的广搜，找出 12345 经合法变换能够到达的所有字符串，并记录到达这些字符串各需要多少步操作。 \n然后对读入的每组数据，在上述预处理记录的结果中进行查询即可。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>电子学会五级</p>\n</div>                </div>",
+      "text": "电子学会五级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">电子学会等级考试</span></span></p>\n</div>                </div>",
+      "text": "电子学会等级考试"
+    }
+  ],
+  "samples": [
+    {
+      "input": "12435\r\n99999\r\n12374",
+      "output": "1\r\n-1\r\n3"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "587",
+    "通过人数": "98",
+    "金币数量": "2 枚",
+    "难度": "基础"
+  },
+  "fetched": "2026-11-07 00:30:40"
+}

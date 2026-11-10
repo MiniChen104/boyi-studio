@@ -1,0 +1,66 @@
+{
+  "id": "3367",
+  "title": "小杨的队列",
+  "tags": [
+    "GESP五级",
+    "GESP样题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3367",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨的班级里共有 N 名同学，学号从 0 至 N - 1。</p>\n<p>某节课上，老师要求同学们进行列队。具体来说，老师会依次点名 <span class=\"katex math inline\">M</span> 名同学，让他们加入队伍。每名新入队的同学需要先站到队伍末尾（刚开始队伍里一个人都没有，所以第一个入队的同学只需要站好即可），随后，整个队伍中的所有同学需要按身高从低到高重新排序（身高相同的同学之间的顺序任意）。</p>\n<p>排队很容易，但重新排序难倒了同学们。稍加讨论后，他们发现可以通过交换位置的方法来实现排序。具体来说，他们可以让队伍中的两名同学交换位置，这样整个队伍的顺序就会发生变化，多经过这样的几次交换后，队伍的顺序就可以排好。</p>\n<p>例如：队伍中有 <span class=\"katex math inline\">4</span> 名同学，学号依次为 <span class=\"katex math inline\">10, 17, 3, 25</span>，我们可以令 <span class=\"katex math inline\">3</span> 号同学和 <span class=\"katex math inline\">10</span> 号同学交换位置，则交换后的队伍顺序变为 <span class=\"katex math inline\">3, 17, 10, 25</span>，这就是一次交换位置。</p>\n<p>聪明的小杨想要知道：在老师每次点名一位新同学加入队伍后，在原有队伍的基础上，同学们最少要进行几次交换位置，才能完成老师按身高排序的要求。</p>\n</div>            </div>",
+      "text": "小杨的班级里共有 N 名同学，学号从 0 至 N - 1。\n某节课上，老师要求同学们进行列队。具体来说，老师会依次点名 M 名同学，让他们加入队伍。每名新入队的同学需要先站到队伍末尾（刚开始队伍里一个人都没有，所以第一个入队的同学只需要站好即可），随后，整个队伍中的所有同学需要按身高从低到高重新排序（身高相同的同学之间的顺序任意）。\n排队很容易，但重新排序难倒了同学们。稍加讨论后，他们发现可以通过交换位置的方法来实现排序。具体来说，他们可以让队伍中的两名同学交换位置，这样整个队伍的顺序就会发生变化，多经过这样的几次交换后，队伍的顺序就可以排好。\n例如：队伍中有 4 名同学，学号依次为 10, 17, 3, 25，我们可以令 3 号同学和 10 号同学交换位置，则交换后的队伍顺序变为 3, 17, 10, 25，这就是一次交换位置。\n聪明的小杨想要知道：在老师每次点名一位新同学加入队伍后，在原有队伍的基础上，同学们最少要进行几次交换位置，才能完成老师按身高排序的要求。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行一个整数 <span class=\"katex math inline\">N</span>，表示同学的数量。</p>\n<p>第二行 <span class=\"katex math inline\">N</span> 个用空格隔开的正整数，依次表示学号为 <span class=\"katex math inline\"> 0, 1, …, N-1 </span> 的同学的身高（不超过 <span class=\"katex math inline\">2,147,483,647</span>）。</p>\n<p>第三行一个整数 <span class=\"katex math inline\">M</span>，表示老师点名的数量。</p>\n<p>接下来 <span class=\"katex math inline\">M</span> 行，依次描述 <span class=\"katex math inline\">M</span> 次点名：每行一个整数 <span class=\"katex math inline\">x</span>（<span class=\"katex math inline\">0 ≤ x ＜ N</span>），表示要求学号为 <span class=\"katex math inline\">x</span> 的同学加入队伍。保证该名同学此前不在队伍中。</p>\n</div>            </div>",
+      "text": "第一行一个整数 N，表示同学的数量。\n第二行 N 个用空格隔开的正整数，依次表示学号为  0, 1, …, N-1  的同学的身高（不超过 2,147,483,647）。\n第三行一个整数 M，表示老师点名的数量。\n接下来 M 行，依次描述 M 次点名：每行一个整数 x（0 ≤ x ＜ N），表示要求学号为 x 的同学加入队伍。保证该名同学此前不在队伍中。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出 <span class=\"katex math inline\">M</span> 行，依次表示对于每次点名，同学们最少要进行几次交换位置，才能完成按身高排序的要求。</p>\n</div>            </div>",
+      "text": "输出 M 行，依次表示对于每次点名，同学们最少要进行几次交换位置，才能完成按身高排序的要求。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5\r\n170 165 168 160 175\r\n4\r\n0\r\n3\r\n2\r\n1</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>0\r\n1\r\n1\r\n2</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>4\r\n20 20 20 10\r\n4\r\n0\r\n1\r\n2\r\n3</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>0\r\n0\r\n0\r\n1</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\r\n170 165 168 160 175\r\n4\r\n0\r\n3\r\n2\r\n1\n                        \n                        \n                            输出\n                            0\r\n1\r\n1\r\n2\n                        \n\n                                                    \n                                输入\n                                4\r\n20 20 20 10\r\n4\r\n0\r\n1\r\n2\r\n3\n                            \n                            \n                                输出\n                                0\r\n0\r\n0\r\n1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释 1】</p>\n<p>初始时队伍为空，身高为 <span class=\"katex math inline\">170</span> 的 <span class=\"katex math inline\">0</span> 号同学加入队伍，不需要任何交换位置。</p>\n<p>接着，身高为 <span class=\"katex math inline\">160</span> 的 <span class=\"katex math inline\">3</span> 号同学加入队伍的末尾，此时两位同学需要进行依次交换位置，才能保证身高更矮的 <span class=\"katex math inline\">3</span> 号同学排在身高更高的 <span class=\"katex math inline\">0</span> 号同学前面。</p>\n<p>接着，身高为 <span class=\"katex math inline\">168</span> 的 <span class=\"katex math inline\">2</span> 号同学加入队伍的末尾，此时队伍中的同学学号（身高）依次为 <span class=\"katex math inline\">3(160), 0(170), 2(168)</span>，此时 <span class=\"katex math inline\">2</span> 号同学可以和 <span class=\"katex math inline\">0</span> 号同学进行一次交换位置，即可完成排序要求。</p>\n<p>接着，身高为 <span class=\"katex math inline\">165</span> 的 <span class=\"katex math inline\">1</span> 号同学加入队伍的末尾，此时队伍中的同学学号（身高）依次为 <span class=\"katex math inline\">3(160), 2(168), 0(170), 1(165)</span>，此时可以令 <span class=\"katex math inline\">1</span> 号同学和 <span class=\"katex math inline\">2</span> 号同学进行一次交换位置，使队伍变为 <span class=\"katex math inline\">3(160), 1(165), 0(170), 2(168)</span>；随\n后再令 <span class=\"katex math inline\">0</span> 号同学和 <span class=\"katex math inline\">2</span> 号同学进行一次交换位置，使队伍变为 <span class=\"katex math inline\">3(160), 1(165), 2(168), 0(170)</span>，即可完成排序要求。</p>\n<p>【样例解释 2】</p>\n<p>前三位加入队伍的同学（<span class=\"katex math inline\">0, 1, 2</span> 号同学）身高都相同，不需要进行任何交换位置。最后加入队伍的 <span class=\"katex math inline\">3</span> 号同学身高最矮，需要和队头的 <span class=\"katex math inline\">0</span> 号同学交换位置，方可完成排序要求。</p>\n<p>【数据范围】</p>\n<p>对于所有的测试点，保证 <span class=\"katex math inline\"> 1 ≤ M ≤ N ≤ 2000 </span>。</p>\n<p>对于 <span class=\"katex math inline\">50</span> % 的测试点，保证所有同学的身高互不相同。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释 1】\n初始时队伍为空，身高为 170 的 0 号同学加入队伍，不需要任何交换位置。\n接着，身高为 160 的 3 号同学加入队伍的末尾，此时两位同学需要进行依次交换位置，才能保证身高更矮的 3 号同学排在身高更高的 0 号同学前面。\n接着，身高为 168 的 2 号同学加入队伍的末尾，此时队伍中的同学学号（身高）依次为 3(160), 0(170), 2(168)，此时 2 号同学可以和 0 号同学进行一次交换位置，即可完成排序要求。\n接着，身高为 165 的 1 号同学加入队伍的末尾，此时队伍中的同学学号（身高）依次为 3(160), 2(168), 0(170), 1(165)，此时可以令 1 号同学和 2 号同学进行一次交换位置，使队伍变为 3(160), 1(165), 0(170), 2(168)；随\n后再令 0 号同学和 2 号同学进行一次交换位置，使队伍变为 3(160), 1(165), 2(168), 0(170)，即可完成排序要求。\n【样例解释 2】\n前三位加入队伍的同学（0, 1, 2 号同学）身高都相同，不需要进行任何交换位置。最后加入队伍的 3 号同学身高最矮，需要和队头的 0 号同学交换位置，方可完成排序要求。\n【数据范围】\n对于所有的测试点，保证  1 ≤ M ≤ N ≤ 2000 。\n对于 50 % 的测试点，保证所有同学的身高互不相同。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP样题五级</p>\n</div>                </div>",
+      "text": "GESP样题五级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP五级</span><span class=\"label label-warning\">GESP样题</span></span></p>\n</div>                </div>",
+      "text": "GESP五级GESP样题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5\r\n170 165 168 160 175\r\n4\r\n0\r\n3\r\n2\r\n1",
+      "output": "0\r\n1\r\n1\r\n2"
+    },
+    {
+      "input": "4\r\n20 20 20 10\r\n4\r\n0\r\n1\r\n2\r\n3",
+      "output": "0\r\n0\r\n0\r\n1"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "507",
+    "通过人数": "241",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:55"
+}

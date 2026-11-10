@@ -1,0 +1,61 @@
+{
+  "id": "4933",
+  "title": "健身",
+  "tags": [
+    "bitset",
+    "动态规划"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/4933",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 <span class=\"katex math inline\">A</span> 最近开始制定健身计划。他计划连续锻炼 <span class=\"katex math inline\">n</span> 天，每天选择一项训练项目。</p>\n<p>为了保证运动强度的多样性，他为第 <span class=\"katex math inline\">i</span> 天设置了一个训练强度 <span class=\"katex math inline\">x_i</span>，这个训练强度 <span class=\"katex math inline\">x_i</span> 在 <span class=\"katex math inline\">[a_i, b_i]</span> 的范围内，当天的体力消耗为 <span class=\"katex math inline\">x_i^2</span>。</p>\n<p>请你编程帮助小 <span class=\"katex math inline\">A</span> 计算出，他 <span class=\"katex math inline\">n</span> 天的锻炼一共的体力消耗，有多少种不同的可能取值？</p>\n<p>形式化的说，如果用 <span class=\"katex math inline\">S</span> 表示他 <span class=\"katex math inline\">n</span> 天的体力消耗，那么有 <span class=\"katex math inline\">S = x_1^2 + x_2^2 + \\cdots + x_n^2</span>，你需要编程计算出 <span class=\"katex math inline\">S</span> 的值有多少种不同的可能？</p>\n</div>            </div>",
+      "text": "小 A 最近开始制定健身计划。他计划连续锻炼 n 天，每天选择一项训练项目。\n为了保证运动强度的多样性，他为第 i 天设置了一个训练强度 x_i，这个训练强度 x_i 在 [a_i, b_i] 的范围内，当天的体力消耗为 x_i^2。\n请你编程帮助小 A 计算出，他 n 天的锻炼一共的体力消耗，有多少种不同的可能取值？\n形式化的说，如果用 S 表示他 n 天的体力消耗，那么有 S = x_1^2 + x_2^2 + \\cdots + x_n^2，你需要编程计算出 S 的值有多少种不同的可能？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个整数 <span class=\"katex math inline\">n</span>，表示训练天数。</p>\n<p>接下来的 <span class=\"katex math inline\">n</span> 行，每行两个整数 <span class=\"katex math inline\">a_i</span> 和 <span class=\"katex math inline\">b_i</span>，表示第 <span class=\"katex math inline\">i</span> 天训练强度的选择范围是 <span class=\"katex math inline\">[a_i, b_i]</span>。</p>\n</div>            </div>",
+      "text": "第一行包含一个整数 n，表示训练天数。\n接下来的 n 行，每行两个整数 a_i 和 b_i，表示第 i 天训练强度的选择范围是 [a_i, b_i]。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行一个整数，表示 <span class=\"katex math inline\">S</span> 可能的种类数。</p>\n</div>            </div>",
+      "text": "输出一行一个整数，表示 S 可能的种类数。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>3\r\n1 2\r\n2 3\r\n3 4</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>8</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>5\r\n1 2\r\n2 3\r\n3 4\r\n4 5\r\n5 6</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>26</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            3\r\n1 2\r\n2 3\r\n3 4\n                        \n                        \n                            输出\n                            8\n                        \n\n                                                    \n                                输入\n                                5\r\n1 2\r\n2 3\r\n3 4\r\n4 5\r\n5 6\n                            \n                            \n                                输出\n                                26"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于所有的测评数据，满足 <span class=\"katex math inline\">1 \\leq n \\leq 100</span>，<span class=\"katex math inline\">1 \\leq a_i \\leq b_i \\leq 100</span>。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于所有的测评数据，满足 1 \\leq n \\leq 100，1 \\leq a_i \\leq b_i \\leq 100。"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">bitset</span><span class=\"label label-warning\">动态规划</span></span></p>\n</div>                </div>",
+      "text": "bitset动态规划"
+    }
+  ],
+  "samples": [
+    {
+      "input": "3\r\n1 2\r\n2 3\r\n3 4",
+      "output": "8"
+    },
+    {
+      "input": "5\r\n1 2\r\n2 3\r\n3 4\r\n4 5\r\n5 6",
+      "output": "26"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "85",
+    "通过人数": "52",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:33:03"
+}

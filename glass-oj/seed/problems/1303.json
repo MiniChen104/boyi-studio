@@ -1,0 +1,56 @@
+{
+  "id": "1303",
+  "title": "冷饮的价格（1）",
+  "tags": [
+    "分支问题"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/1303",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明去冷饮店买冰激凌，如果买 <span class=\"katex math inline\">10</span> 个以上或者 <span class=\"katex math inline\">10</span> 个，<span class=\"katex math inline\">2</span> 元 <span class=\"katex math inline\">/</span> 个， <span class=\"katex math inline\">10</span> 个以下， <span class=\"katex math inline\">2.2</span> 元 <span class=\"katex math inline\">/</span> 个。</p>\n<p>请从键盘读入小明的购买数量，计算小明应付的价格！</p>\n</div>            </div>",
+      "text": "小明去冷饮店买冰激凌，如果买 10 个以上或者 10 个，2 元 / 个， 10 个以下， 2.2 元 / 个。\n请从键盘读入小明的购买数量，计算小明应付的价格！"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>一个整数，代表小明购买的冰激凌的数量（<span class=\"katex math inline\">n \\le 100</span>） 。</p>\n</div>            </div>",
+      "text": "一个整数，代表小明购买的冰激凌的数量（n \\le 100） 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小明应付的金额，金额保留 <span class=\"katex math inline\">1</span> 位小数！</p>\n</div>            </div>",
+      "text": "小明应付的金额，金额保留 1 位小数！"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>20</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>40.0</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            20\n                        \n                        \n                            输出\n                            40.0"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>分支问题</p>\n</div>                </div>",
+      "text": "分支问题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">分支问题</span></span></p>\n</div>                </div>",
+      "text": "分支问题"
+    }
+  ],
+  "samples": [
+    {
+      "input": "20",
+      "output": "40.0"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "16 MB",
+    "提交次数": "80285",
+    "通过人数": "42621",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:17:36"
+}

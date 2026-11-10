@@ -1,0 +1,67 @@
+{
+  "id": "3346",
+  "title": "百鸡问题",
+  "tags": [
+    "嵌套循环",
+    "GESP二级",
+    "23年3月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3346",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>“百鸡问题”是出自我国古代《张丘建算经》的著名数学问题。大意为：“每只公鸡 <span class=\"katex math inline\">5</span> 元，每只母鸡 <span class=\"katex math inline\">3</span> 元，每 <span class=\"katex math inline\">3</span> 只小鸡 <span class=\"katex math inline\">1</span> 元；现在有 <span class=\"katex math inline\">100</span> 元，买了 <span class=\"katex math inline\">100</span> 只鸡，共有多少种方案？”</p>\n<p>小明很喜欢这个故事，他决定对这个问题进行扩展，并使用编程解决：如果每只公鸡 <span class=\"katex math inline\">x</span> 元，每只母鸡 <span class=\"katex math inline\">y</span> 元，每 <span class=\"katex math inline\">z</span> 只小鸡 <span class=\"katex math inline\">1</span> 元；现在有 <span class=\"katex math inline\">n</span> 元，买了 <span class=\"katex math inline\">m</span> 只鸡，共有多少种方案？</p>\n</div>            </div>",
+      "text": "“百鸡问题”是出自我国古代《张丘建算经》的著名数学问题。大意为：“每只公鸡 5 元，每只母鸡 3 元，每 3 只小鸡 1 元；现在有 100 元，买了 100 只鸡，共有多少种方案？”\n小明很喜欢这个故事，他决定对这个问题进行扩展，并使用编程解决：如果每只公鸡 x 元，每只母鸡 y 元，每 z 只小鸡 1 元；现在有 n 元，买了 m 只鸡，共有多少种方案？"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行，包含五个整数，分别为问题描述中的 <span class=\"katex math inline\">x、y、z、n、m</span>。约定 <span class=\"katex math inline\">1 ≤ x, y, z ≤ 10 </span>，<span class=\"katex math inline\">1 ≤ n, m ≤ 1000 </span>。</p>\n</div>            </div>",
+      "text": "输入一行，包含五个整数，分别为问题描述中的 x、y、z、n、m。约定 1 ≤ x, y, z ≤ 10 ，1 ≤ n, m ≤ 1000 。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一行，包含一个整数 <span class=\"katex math inline\">C</span>，表示有 <span class=\"katex math inline\">C</span> 种方案。</p>\n</div>            </div>",
+      "text": "输出一行，包含一个整数 C，表示有 C 种方案。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5 3 3 100 100</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>4</pre>\n                        </div>\n\n                                                    <div class=\"input\">\n                                <h4>输入</h4>\n                                <pre>1 1 1 100 100</pre>\n                            </div>\n                            <div class=\"output\">\n                                <h4>输出</h4>\n                                <pre>5151</pre>\n                            </div>\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5 3 3 100 100\n                        \n                        \n                            输出\n                            4\n                        \n\n                                                    \n                                输入\n                                1 1 1 100 100\n                            \n                            \n                                输出\n                                5151"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>【样例解释 1】</p>\n<p>这就是问题描述中的“百鸡问题”。<span class=\"katex math inline\">4</span> 种方案分别为：公鸡 <span class=\"katex math inline\">0</span> 只、母鸡 <span class=\"katex math inline\">25</span> 只、小鸡 <span class=\"katex math inline\">75</span> 只；公鸡 <span class=\"katex math inline\">4</span> 只、母鸡 <span class=\"katex math inline\">18</span> 只、小鸡 <span class=\"katex math inline\">78</span> 只；公鸡 <span class=\"katex math inline\">8</span> 只、母鸡 <span class=\"katex math inline\">11</span> 只、小鸡<span class=\"katex math inline\">81</span> 只；公鸡 <span class=\"katex math inline\">12</span> 只、母鸡 <span class=\"katex math inline\">4</span> 只、小鸡 <span class=\"katex math inline\">84</span> 只。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释 1】\n这就是问题描述中的“百鸡问题”。4 种方案分别为：公鸡 0 只、母鸡 25 只、小鸡 75 只；公鸡 4 只、母鸡 18 只、小鸡 78 只；公鸡 8 只、母鸡 11 只、小鸡81 只；公鸡 12 只、母鸡 4 只、小鸡 84 只。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP23年3月二级</p>\n</div>                </div>",
+      "text": "GESP23年3月二级"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">嵌套循环</span><span class=\"label label-warning\">GESP二级</span><span class=\"label label-info\">23年3月</span></span></p>\n</div>                </div>",
+      "text": "嵌套循环GESP二级23年3月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5 3 3 100 100",
+      "output": "4"
+    },
+    {
+      "input": "1 1 1 100 100",
+      "output": "5151"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "128 MB",
+    "提交次数": "4680",
+    "通过人数": "2766",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:34:42"
+}

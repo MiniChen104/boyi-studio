@@ -1,0 +1,63 @@
+{
+  "id": "3901",
+  "title": "小杨和整数拆分",
+  "tags": [
+    "GESP六级",
+    "动态规划",
+    "24年9月"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/3901",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小杨有一个正整数 <span class=\"katex math inline\">n</span> ，小杨想将它拆分成若干完全平方数的和，同时小杨希望拆分的数量越少越好。</p>\n<p>小杨请你编写程序计算出总和为 <span class=\"katex math inline\">n</span> 的完全平方数的最少数量。</p>\n</div>            </div>",
+      "text": "小杨有一个正整数 n ，小杨想将它拆分成若干完全平方数的和，同时小杨希望拆分的数量越少越好。\n小杨请你编写程序计算出总和为 n 的完全平方数的最少数量。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行包含一个正整数 <span class=\"katex math inline\">n</span>，含义如题面所示。</p>\n</div>            </div>",
+      "text": "第一行包含一个正整数 n，含义如题面所示。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输出一个整数，代表总和为 <span class=\"katex math inline\">n</span> 的完全平方数的最少数量。</p>\n</div>            </div>",
+      "text": "输出一个整数，代表总和为 n 的完全平方数的最少数量。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>18</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            18\n                        \n                        \n                            输出\n                            2"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【数据范围】</h4>\n<p>对于全部数据，保证有 <span class=\"katex math inline\">1 \\le n  \\le 10^5 </span>。</p>\n<table><thead><tr><th>子任务编号</th><th>数据点占比</th><th><span class=\"katex math inline\">n</span></th></tr></thead><tbody><tr><td><span class=\"katex math inline\">1</span></td><td><span class=\"katex math inline\">20\\%</span></td><td><span class=\"katex math inline\">\\le 20</span></td></tr><tr><td><span class=\"katex math inline\">2</span></td><td><span class=\"katex math inline\">40\\%</span></td><td><span class=\"katex math inline\">\\le 1000</span></td></tr><tr><td><span class=\"katex math inline\">3</span></td><td><span class=\"katex math inline\">40\\%</span></td><td><span class=\"katex math inline\">\\le 10^5</span></td></tr></tbody></table><h4>样例 <span class=\"katex math inline\">1</span> 解释</h4>\n<p><span class=\"katex math inline\">18=9+9=16+1+1</span> 其中最少需要 <span class=\"katex math inline\">2</span> 个完全平方数。</p>\n</div>\n\n                    \n                </div>",
+      "text": "【数据范围】\n对于全部数据，保证有 1 \\le n  \\le 10^5 。\n子任务编号数据点占比n120\\%\\le 20240\\%\\le 1000340\\%\\le 10^5样例 1 解释\n18=9+9=16+1+1 其中最少需要 2 个完全平方数。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 9月认证 C++ 六级真题</p>\n</div>                </div>",
+      "text": "GESP 9月认证 C++ 六级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP六级</span><span class=\"label label-warning\">动态规划</span><span class=\"label label-info\">24年9月</span></span></p>\n</div>                </div>",
+      "text": "GESP六级动态规划24年9月"
+    }
+  ],
+  "samples": [
+    {
+      "input": "18",
+      "output": "2"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "270",
+    "通过人数": "182",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:36:25"
+}

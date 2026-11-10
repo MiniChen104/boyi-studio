@@ -1,0 +1,61 @@
+{
+  "id": "5893",
+  "title": "阶乘分解",
+  "tags": [
+    "市赛"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5893",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p><strong>算术基本定理</strong>： 任何一个大于 <span class=\"katex math inline\">1</span> 的自然数可以分解成一些素数的乘积；并且在不计次序的情况下，这种分解方式是唯一的。算术基本定理起源很早，但将其提炼、明确表述成一条定理，使其在初等数论中获得基础性的地位，却经历了一段较长的时间。（来自百度百科）。</p>\n<p>即：<span class=\"katex math inline\"> N = p_1^{a_1} \\times p_2^{a_2} \\cdots p_k^{a_k} </span>，其中 <span class=\"katex math inline\"> p_1 \\lt p_2 \\lt \\cdots \\lt p_k </span>。</p>\n<p>小Z在很小的时候，就学会了阶乘，即 <span class=\"katex math inline\"> N! = 1 \\times 2 \\times \\cdots \\times N </span></p>\n<p>现在小Z提出，将 <span class=\"katex math inline\"> N! </span> 根据算术基本定理进行分解。</p>\n</div>            </div>",
+      "text": "算术基本定理： 任何一个大于 1 的自然数可以分解成一些素数的乘积；并且在不计次序的情况下，这种分解方式是唯一的。算术基本定理起源很早，但将其提炼、明确表述成一条定理，使其在初等数论中获得基础性的地位，却经历了一段较长的时间。（来自百度百科）。\n即： N = p_1^{a_1} \\times p_2^{a_2} \\cdots p_k^{a_k} ，其中  p_1 \\lt p_2 \\lt \\cdots \\lt p_k 。\n小Z在很小的时候，就学会了阶乘，即  N! = 1 \\times 2 \\times \\cdots \\times N \n现在小Z提出，将  N!  根据算术基本定理进行分解。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>输入一行，一个整数 <span class=\"katex math inline\">N</span>。</p>\n</div>            </div>",
+      "text": "输入一行，一个整数 N。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>分解后的结果，共若干行，每行一对 <span class=\"katex math inline\">p_i,a_i</span>，表示含有 <span class=\"katex math inline\">p_i^{a_i}</span>项。按照 <span class=\"katex math inline\">p_1</span> 从小到大的顺序输出。</p>\n</div>            </div>",
+      "text": "分解后的结果，共若干行，每行一对 p_i,a_i，表示含有 p_i^{a_i}项。按照 p_1 从小到大的顺序输出。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>5</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>2 3\r\n3 1\r\n5 1\r\n</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            5\n                        \n                        \n                            输出\n                            2 3\r\n3 1\r\n5 1"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>【样例解释】</h4>\n<p> <span class=\"katex math inline\">5! = 120</span></p>\n<p> <span class=\"katex math inline\">120 = 2^3 \\times 3^1 \\times 5^1</span></p>\n<h4>【数据范围】</h4>\n<p><span class=\"katex math inline\">3 \\le N \\le 10^6</span></p>\n</div>\n\n                    \n                </div>",
+      "text": "【样例解释】\n 5! = 120\n 120 = 2^3 \\times 3^1 \\times 5^1\n【数据范围】\n3 \\le N \\le 10^6"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>2025年11月婺城区第三届青少年信息素养大赛初中组试题</p>\n</div>                </div>",
+      "text": "2025年11月婺城区第三届青少年信息素养大赛初中组试题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">市赛</span></span></p>\n</div>                </div>",
+      "text": "市赛"
+    }
+  ],
+  "samples": [
+    {
+      "input": "5",
+      "output": "2 3\r\n3 1\r\n5 1\r\n"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "51",
+    "通过人数": "22",
+    "金币数量": "0 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:41"
+}

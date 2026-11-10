@@ -1,0 +1,63 @@
+{
+  "id": "5946",
+  "title": "优先购买",
+  "tags": [
+    "GESP四级",
+    "25年12月",
+    "结构体"
+  ],
+  "difficulty": "入门",
+  "url": "https://oj.czos.cn/p/5946",
+  "sections": [
+    {
+      "heading": "题目描述",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>小 A 有 <span class=\"katex math inline\">M</span> 元预算。商店有 <span class=\"katex math inline\">N</span> 个商品，每个商品有商品名 <span class=\"katex math inline\">S</span>、价格 <span class=\"katex math inline\">P</span> 和优先级 <span class=\"katex math inline\">V</span> 三种属性，其中 <span class=\"katex math inline\">V</span> 为正整数，且 <span class=\"katex math inline\">V</span> 越小代表商品的优先级越高。</p>\n<p>小 A 的购物策略为：</p>\n<ul><li>总是优先买优先级最高的东西；</li>\n<li>如果有多个最高优先级商品，购买价格最低的；</li>\n<li>如果有多个优先级最高且价格最低的商品，购买商品名字典序最小的。</li>\n</ul><p>小 A 想知道能购买哪些商品。</p>\n</div>            </div>",
+      "text": "小 A 有 M 元预算。商店有 N 个商品，每个商品有商品名 S、价格 P 和优先级 V 三种属性，其中 V 为正整数，且 V 越小代表商品的优先级越高。\n小 A 的购物策略为：\n总是优先买优先级最高的东西；\n如果有多个最高优先级商品，购买价格最低的；\n如果有多个优先级最高且价格最低的商品，购买商品名字典序最小的。\n小 A 想知道能购买哪些商品。"
+    },
+    {
+      "heading": "输入",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>第一行两个正整数 <span class=\"katex math inline\">M,N</span>，代表预算和商品数。</p>\n<p>之后 <span class=\"katex math inline\">N</span> 行，每行一个商品，依次为 <span class=\"katex math inline\">S_iP_iV_i</span>，代表第 <span class=\"katex math inline\">i</span> 个商品的商品名、价格、优先级。</p>\n<p>数据保证不存在两个名字相同的商品。</p>\n</div>            </div>",
+      "text": "第一行两个正整数 M,N，代表预算和商品数。\n之后 N 行，每行一个商品，依次为 S_iP_iV_i，代表第 i 个商品的商品名、价格、优先级。\n数据保证不存在两个名字相同的商品。"
+    },
+    {
+      "heading": "输出",
+      "html": "<div class=\"content-wrapper\">\n                <div class=\"markdown\"><p>按照字典序从小到大的顺序，输出所有购买商品的商品名。</p>\n</div>            </div>",
+      "text": "按照字典序从小到大的顺序，输出所有购买商品的商品名。"
+    },
+    {
+      "heading": "样例",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"sample-test\">\n                        <div class=\"input\">\n                            <h4>输入</h4>\n                            <pre>20 4\r\napple 6 8\r\nbus 15 1\r\ncab 1 10\r\nwater 4 8</pre>\n                        </div>\n                        <div class=\"output\">\n                            <h4>输出</h4>\n                            <pre>bus\r\ncab\r\nwater</pre>\n                        </div>\n\n                        \n                                            </div>\n                </div>",
+      "text": "输入\n                            20 4\r\napple 6 8\r\nbus 15 1\r\ncab 1 10\r\nwater 4 8\n                        \n                        \n                            输出\n                            bus\r\ncab\r\nwater"
+    },
+    {
+      "heading": "说明",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><h4>数据范围</h4>\n<p>对于所有测试点，保证 <span class=\"katex math inline\">1 \\le |S_i| \\le 10，1 \\le M,P_i \\le 10^5 , 1 \\le N \\le 10^3,1 \\le V_i \\le 10</span>。商品名仅由小写字母组成且不存在两个相同的商品名。</p>\n</div>\n\n                    \n                </div>",
+      "text": "数据范围\n对于所有测试点，保证 1 \\le |S_i| \\le 10，1 \\le M,P_i \\le 10^5 , 1 \\le N \\le 10^3,1 \\le V_i \\le 10。商品名仅由小写字母组成且不存在两个相同的商品名。"
+    },
+    {
+      "heading": "来源",
+      "html": "<div class=\"content-wrapper\">\n                    <div class=\"markdown\"><p>GESP 2025年12月认证 C++4级真题</p>\n</div>                </div>",
+      "text": "GESP 2025年12月认证 C++4级真题"
+    },
+    {
+      "heading": "标签",
+      "html": "<div class=\"content-wrapper\">\n                                        <div class=\"markdown\"><p><span class=\"problem-list-tags\"><span class=\"label label-success\">GESP四级</span><span class=\"label label-warning\">25年12月</span><span class=\"label label-info\">结构体</span></span></p>\n</div>                </div>",
+      "text": "GESP四级25年12月结构体"
+    }
+  ],
+  "samples": [
+    {
+      "input": "20 4\r\napple 6 8\r\nbus 15 1\r\ncab 1 10\r\nwater 4 8",
+      "output": "bus\r\ncab\r\nwater"
+    }
+  ],
+  "parameters": {
+    "时间限制": "1 秒",
+    "内存限制": "512 MB",
+    "提交次数": "863",
+    "通过人数": "484",
+    "金币数量": "1 枚",
+    "难度": "入门"
+  },
+  "fetched": "2026-11-07 00:31:25"
+}
