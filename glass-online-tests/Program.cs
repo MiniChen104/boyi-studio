@@ -69,3 +69,4 @@ official.ForeignNext=true;
 await Reject("onlineGroups","","public directory pagination rejected");
 Console.WriteLine($"{checks} online regression checks passed");
 
+await SubmissionChecks.Run();

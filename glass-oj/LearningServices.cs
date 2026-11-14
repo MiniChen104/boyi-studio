@@ -25,7 +25,7 @@ public sealed class ReviewNote
 }
 public partial class Backend
 {
-    readonly Dictionary<string,string> ownedSubmissions=new();
+    readonly Dictionary<string,(string Account,string ProblemId)> ownedSubmissions=new();
     readonly Dictionary<string,CodeSnapshot?> draftCheckpoints=new();
     string LearningFolder(string kind,string id)
     {
@@ -42,7 +42,10 @@ public partial class Backend
             if(row!=null)yield return row;
         }
     }
-    void SaveSnapshot(string kind,CodeSnapshot row)=>WriteJson(Path.Combine(LearningFolder(kind,row.ProblemId),SnapshotKey(row.Key)+".json"),row);
+    void SaveSnapshot(string kind,CodeSnapshot row)
+    {
+        lock(gate)WriteJson(Path.Combine(LearningFolder(kind,row.ProblemId),SnapshotKey(row.Key)+".json"),row);
+    }
     void SaveDraftVersion(string id,string code,string source="自动保存")
     {
         id=Id(id);if(code.Length>500000)throw new Exception("代码超过500KB。");
@@ -105,27 +108,63 @@ public partial class Backend
         id=Id(id);
         var query=System.Web.HttpUtility.ParseQueryString(Url(OnlinePath(path,"/status/index")).Query);
         query["SolutionSearch[problem_id]"]=id;
-        return await OnlineHistory("/status/index?"+query);
+        if(!string.IsNullOrEmpty(path))return await OnlineHistory("/status/index?"+query);
+        var doc=await AccountPage("/p/"+id);
+        var panel=Nodes(doc.DocumentNode,"//*[contains(concat(' ',normalize-space(@class),' '),' panel ')]")
+            .FirstOrDefault(n=>Text(n.SelectSingleNode("./*[contains(concat(' ',normalize-space(@class),' '),' panel-heading ')]"))=="提交记录");
+        if(panel==null)return await OnlineHistory("/status/index?"+query);
+        var rows=Nodes(panel,".//tr[td]").Select(row=>
+        {
+            var sid=Nodes(row,".//a[@href]").Select(SubmissionId).FirstOrDefault(value=>value.Length>0)??"";
+            var cells=Nodes(row,"./td").ToArray();
+            var time=cells.FirstOrDefault();
+            var submittedAt=time==null?"":Attr(time,"title");
+            if(submittedAt.Length==0)submittedAt=Text(time);
+            return new{sid,problemId=id,cells=new[]{sid,submittedAt,Text(cells.ElementAtOrDefault(1))}};
+        }).Where(row=>row.sid.Length>0).DistinctBy(row=>row.sid).ToArray();
+        foreach(var row in rows)ownedSubmissions[row.sid]=(state.Account,id);
+        return new{headers=new[]{"提交编号","提交时间","评测结果"},rows,next=(string?)null,scope="problem",note="来自官网本题页面的本人提交记录，点击记录查看当时提交的源码。"};
+    }
+    static string SubmissionId(HtmlNode link)
+    {
+        if(!Uri.TryCreate(new Uri(Site),Attr(link,"href"),out var uri) || uri.Host!="oj.czos.cn" ||
+            !new[]{"/solution/source","/solution/detail","/solution/result"}.Contains(uri.AbsolutePath))return "";
+        var sid=System.Web.HttpUtility.ParseQueryString(uri.Query)["id"]??"";
+        return Regex.IsMatch(sid,@"^\d{1,10}$")?sid:"";
     }
     async Task<object> SubmissionCode(string sid,string problemId)
     {
         sid=Id(sid);var account=state.Account;var connection=client;
-        if((!ownedSubmissions.TryGetValue(sid,out var owner) || owner!=account) && !state.Records.Values.Any(r=>r.Submission==sid))throw new Exception("尚未确认此提交属于当前账号，请刷新记录或在官网查看。");
-        var doc=await AccountPage("/solution/detail?id="+sid);
-        if(state.Account!=account || connection!=client)throw new Exception("账号已切换。");
-        var content=doc.DocumentNode.SelectSingleNode("//*[contains(concat(' ',normalize-space(@class),' '),' solution-detail ')]|//*[contains(concat(' ',normalize-space(@class),' '),' solution-view ')]")??doc.DocumentNode;
-        var authorLinks=Nodes(content,".//a[contains(@href,'/user/view?')]").Where(n=>!n.Ancestors("nav").Any()).ToArray();
-        if(authorLinks.Any() && !authorLinks.Any(n=>System.Web.HttpUtility.ParseQueryString(Url(Attr(n,"href")).Query)["id"]==account))throw new Exception("此提交不属于当前账号。");
-        var codeNode=content.SelectSingleNode(".//textarea[@name='Solution[source]' or contains(@id,'source') or contains(@id,'code')]|.//pre[code]|.//pre[contains(@class,'prettyprint') or contains(@class,'source') or contains(@id,'source') or contains(@id,'code')]");
-        if(codeNode==null)throw new Exception("官网未提供可读取的源码。可在“官网完整功能”查看原始提交详情。");
-        var code=HtmlEntity.DeEntitize(codeNode.InnerText);if(code.Length>500000 || string.IsNullOrWhiteSpace(code))throw new Exception("官网源码为空或超过500KB。");
-        var problemLink=Nodes(content,".//a[@href]").FirstOrDefault(n=>Regex.IsMatch(Attr(n,"href"),@"^/p/\d+$"));
-        var id=problemLink==null?Id(problemId):Id(Attr(problemLink,"href").Split('/').Last());
+        if(!loggedIn)throw new Exception("请先连接官网账号；已保存的代码可在本题的本地提交记录中查看。");
+        var known=ownedSubmissions.TryGetValue(sid,out var owner) && owner.Account==account;
+        var localProblem=state.Records.FirstOrDefault(pair=>pair.Value.Submission==sid).Key;
+        if(!known && string.IsNullOrEmpty(localProblem))throw new Exception("尚未确认此提交属于当前账号，请先读取本人的提交记录。");
+        var id=known?owner.ProblemId:localProblem;
+        if(!string.IsNullOrEmpty(id) && !string.IsNullOrEmpty(problemId) && id!=problemId)throw new Exception("提交记录的题号不匹配，请刷新记录后重试。");
+        // The source endpoint returns an authenticated HTML fragment without the site's navigation.
+        // Ownership comes from the current account's history, before this request is made.
+        var doc=Html(await Request(connection,HttpMethod.Get,"/solution/source?id="+sid));
+        if(state.Account!=account || connection!=client || !loggedIn)throw new Exception("账号已切换，请重新打开提交记录。");
+        if(doc.DocumentNode.SelectSingleNode("//input[@name='LoginForm[password]']")!=null)throw new Exception("官网登录已过期，请重新连接账号。");
+        var content=doc.DocumentNode.SelectSingleNode("//*[contains(concat(' ',normalize-space(@class),' '),' solution-view ')]|//*[contains(concat(' ',normalize-space(@class),' '),' solution-detail ')]")
+            ??throw new Exception("官网未返回此提交的源码，请确认当前账号有权查看。");
+        var returnedIds=Nodes(content,".//a[@href]").Select(SubmissionId).Where(value=>value.Length>0).Distinct().ToArray();
+        if(!returnedIds.Contains(sid) || returnedIds.Any(value=>value!=sid))throw new Exception("官网返回的提交编号不一致，请刷新重试。");
+        var authors=Nodes(content,".//a[contains(@href,'/user/view?')]").Select(n=>System.Web.HttpUtility.ParseQueryString(Url(Attr(n,"href")).Query)["id"]).ToArray();
+        if(authors.Any(author=>author!=account))throw new Exception("此提交不属于当前账号。");
+        var codeNode=content.SelectSingleNode(".//div[contains(concat(' ',normalize-space(@class),' '),' pre ')]/p|.//textarea[@name='Solution[source]' or contains(@id,'source') or contains(@id,'code')]|.//pre[code]|.//pre[contains(@class,'prettyprint') or contains(@class,'source') or contains(@id,'source') or contains(@id,'code')]");
+        if(codeNode==null)throw new Exception("未识别到此提交的源码，请通过官网查看此提交。");
+        // Do not trim the source. Its whitespace and escaped C++ operators are part of the submission.
+        var code=HtmlEntity.DeEntitize(codeNode.InnerText);
+        if(code.Length>500000 || string.IsNullOrWhiteSpace(code))throw new Exception("官网源码为空或超过500KB。");
         var languageRow=Nodes(content,".//tr").FirstOrDefault(n=>Text(n.SelectSingleNode("./th|./td[1]")).Contains("语言"));
         var language=Text(languageRow?.SelectSingleNode("./td[last()]"));
-        var row=new CodeSnapshot{Key="official-"+sid,ProblemId=id,SubmissionId=sid,Code=code,Language=language.Length>0?language:"以官网记录为准",Source="官网历史提交",Result="已从官网读取 · 评测结果见提交记录"};
+        var row=new CodeSnapshot{Key="official-"+sid,ProblemId=id??"",SubmissionId=sid,Code=code,Language=language.Length>0?language:"以官网记录为准",Source="官网历史提交",Result="已从官网读取 · 评测结果见提交记录"};
+        if(string.IsNullOrEmpty(id))return row;
+        Id(id);
         var old=ReadSnapshots("submissions",id).FirstOrDefault(x=>x.SubmissionId==sid);
-        if(old!=null)return old;
+        if(old!=null && old.Code==code)return old;
+        // Keep an existing local submission snapshot intact when its text differs from the official copy.
         SaveSnapshot("submissions",row);return row;
     }
     async Task<object> OnlineGroups(string path)

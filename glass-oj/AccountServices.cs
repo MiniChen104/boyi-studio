@@ -188,10 +188,10 @@ public partial class Backend
     {
         var root=ProfileRoot(doc,account)??throw new Exception("官网返回的个人主页与当前账号不一致。");
         var links=Nodes(root,".//a[contains(concat(' ',normalize-space(@class),' '),' list-group-item ')]")
-            .Where(a=>Regex.IsMatch(Attr(a,"href"),@"^/solution/detail\?id=\d+$")).ToList();
+            .Where(a=>SubmissionId(a).Length>0).ToList();
         var rows=links.Select(a=>
         {
-            var id=Regex.Match(Attr(a,"href"),@"id=(\d+)").Groups[1].Value;
+            var id=SubmissionId(a);
             var spans=Nodes(a,"./span").ToArray();
             string Clean(string value)=>Regex.Replace(value,@"\s+"," ").Trim();
             return new{sid=id,problemId=Regex.Match(Clean(Text(spans.ElementAtOrDefault(0))),@"^(\d+)[.．、\s]").Groups[1].Value,cells=new[]{id,Clean(Text(spans.ElementAtOrDefault(0))),Clean(Text(spans.ElementAtOrDefault(1)))}};
@@ -318,7 +318,7 @@ public partial class Backend
         {
             var profile=await AccountPage("/user/view?id="+Uri.EscapeDataString(state.Account));
             var recent=ProfileHistory(profile,state.Account);
-            foreach(var row in JsonSerializer.SerializeToElement(recent,Json).GetProperty("rows").EnumerateArray())ownedSubmissions[row.GetProperty("sid").GetString()!]=state.Account;
+            foreach(var row in JsonSerializer.SerializeToElement(recent,Json).GetProperty("rows").EnumerateArray())ownedSubmissions[row.GetProperty("sid").GetString()!]=(state.Account,row.GetProperty("problemId").GetString()??"");
             var recentJson=JsonSerializer.SerializeToElement(recent,Json);
             var requestedProblem=query["SolutionSearch[problem_id]"];
             if(!string.IsNullOrEmpty(requestedProblem))return new{headers=recentJson.GetProperty("headers"),rows=recentJson.GetProperty("rows").EnumerateArray().Where(r=>r.GetProperty("problemId").GetString()==requestedProblem).ToArray(),next=(string?)null,scope="recent",note="官网完整记录暂不可读；这里只筛选个人主页最近提交中属于本题的记录，不代表本题全部历史。"};
@@ -327,11 +327,11 @@ public partial class Backend
         var headers=Nodes(table,".//thead//th").Select(Text).ToArray();
         var rows=Nodes(table,".//tbody/tr[td]").Where(r=>r.SelectSingleNode(".//*[contains(@class,'empty')]")==null).Select(r=>
         {
-            var sid=Nodes(r,".//a[@href]").Select(a=>Regex.Match(Attr(a,"href"),@"^/solution/(?:result|detail)\?id=(\d+)")).FirstOrDefault(m=>m.Success)?.Groups[1].Value??"";
+            var sid=Nodes(r,".//a[@href]").Select(SubmissionId).FirstOrDefault(value=>value.Length>0)??"";
             var pid=Nodes(r,".//a[@href]").Select(a=>Regex.Match(Attr(a,"href"),@"^/p/(\d+)$")).FirstOrDefault(m=>m.Success)?.Groups[1].Value??"";
             var owners=Nodes(r,".//a[contains(@href,'/user/view?')]").Select(a=>System.Web.HttpUtility.ParseQueryString(Url(Attr(a,"href")).Query)["id"]).ToArray();
             if(owners.Length>0 && !owners.All(x=>x==state.Account))return null;
-            if(sid.Length>0 && owners.Length>0)ownedSubmissions[sid]=state.Account;
+            if(sid.Length>0 && owners.Length>0)ownedSubmissions[sid]=(state.Account,pid);
             return new{sid,problemId=pid,cells=Nodes(r,"./td").Select(Text).ToArray()};
         }).Where(r=>r!=null).ToArray();
         return new{headers,rows,next=NextPage(doc,"/status/index")};
