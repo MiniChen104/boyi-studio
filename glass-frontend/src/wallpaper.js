@@ -8,8 +8,8 @@ export function installWallpaperBackground(){
   const poster=document.createElement('img');poster.alt='';
   layer.append(video,poster);atmosphere.prepend(layer);
   const reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)')||{matches:false,addEventListener(){}};
-  const fits=[['scale-down','清晰适配（完整显示，限制放大）'],['contain','完整显示（允许放大）'],['cover','铺满窗口（裁剪边缘）']];
-  let enabled=true,fit='scale-down';
+  const fits=[['cover','桌面铺满（等比裁剪）'],['contain','完整显示（允许放大）'],['scale-down','清晰适配（完整显示，限制放大）']];
+  let enabled=true,fit='cover';
   try{enabled=localStorage.getItem('boyi-wallpaper')!=='off';const saved=localStorage.getItem('boyi-wallpaper-fit');if(fits.some(([value])=>value===saved))fit=saved;}catch{}
   layer.style.setProperty('--wallpaper-fit',fit);
   let busy=false,source='',kind='',note='正在连接 Wallpaper Engine…',nativeVisible=true,loaded=false;

@@ -14,11 +14,12 @@ namespace GlassOJ;
 // Only the current media file is exposed, under a dedicated opaque media URL.
 internal sealed class WallpaperBridge
 {
-    internal sealed record Media(string Path, string Kind, string Title, string Note)
+    internal sealed record Media(string Path, string Kind, string Title, string Note, SceneWallpaper.Background? Background = null)
     {
-        public string Token => Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(Path + File.GetLastWriteTimeUtc(Path).Ticks)))[..20];
+        public string Token => Background?.Token ?? Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(Path + File.GetLastWriteTimeUtc(Path).Ticks)))[..20];
     }
     readonly object gate = new();
+    readonly SceneWallpaper scenes = new();
     Media? current;
     string? token;
     public object GetState()
@@ -44,7 +45,7 @@ internal sealed class WallpaperBridge
             var running = config != null;
             config ??= FindInstalledConfig();
             if (config == null) return Unavailable("未找到 Wallpaper Engine，显示默认背景。");
-            var media = ReadSelection(config);
+            var media = ReadSelection(config, scenes);
             if (media == null) return Unavailable("当前壁纸没有可读取的视频或预览，显示默认背景。");
             var key = media.Token;
             lock (gate) { current = media; token = key; }
@@ -71,7 +72,7 @@ internal sealed class WallpaperBridge
         lock (gate) { current = null; token = null; }
         return new { available = false, note };
     }
-    internal static Media? ReadSelection(string config)
+    internal static Media? ReadSelection(string config, SceneWallpaper? scenes = null)
     {
         using var stream = new FileStream(config, FileMode.Open, FileAccess.Read, FileShare.ReadWrite | FileShare.Delete);
         using var doc = JsonDocument.Parse(stream);
@@ -105,6 +106,11 @@ internal sealed class WallpaperBridge
                 var ext = System.IO.Path.GetExtension(file).ToLowerInvariant();
                 if (ext is ".mp4" or ".webm" or ".m4v") return new(file, "video", title, "跟随当前视频壁纸 · 静音独立播放");
                 if (ext is ".jpg" or ".jpeg" or ".png" or ".webp") return new(file, "image", title, "跟随当前图片壁纸");
+                if (ext == ".pkg")
+                {
+                    var background = (scenes ?? new SceneWallpaper()).Read(file);
+                    if (background != null) return new(file, "image", title, "场景高清原图 · 静态背景，动画效果由 Wallpaper Engine 渲染", background);
+                }
                 if (preview != null && System.IO.Path.GetExtension(preview).ToLowerInvariant() is ".jpg" or ".jpeg" or ".png" or ".webp" or ".gif")
                     return new(preview, "image", title, "当前为场景或网页壁纸，显示静态预览；清晰度受预览图分辨率限制");
             }
@@ -126,20 +132,23 @@ internal sealed class WallpaperBridge
             }
             try
             {
-                var length = new FileInfo(media.Path).Length;
+                var length = media.Background?.Bytes.Length ?? new FileInfo(media.Path).Length;
                 string? range = e.Request.Headers.Contains("Range") ? e.Request.Headers.GetHeader("Range") : null;
                 if (!TryRange(range, length, out var start, out var end))
                 {
                     e.Response = web.Environment.CreateWebResourceResponse(null, 416, "Range Not Satisfiable", $"Content-Range: bytes */{length}"); return;
                 }
-                var type = System.IO.Path.GetExtension(media.Path).ToLowerInvariant() switch
+                var type = media.Background?.MimeType ?? (System.IO.Path.GetExtension(media.Path).ToLowerInvariant() switch
                 {
                     ".webm" => "video/webm", ".mp4" or ".m4v" => "video/mp4", ".png" => "image/png", ".webp" => "image/webp", ".gif" => "image/gif", _ => "image/jpeg"
-                };
+                });
                 var partial = range != null;
                 var headers = $"Content-Type: {type}\r\nContent-Length: {end - start + 1}\r\nAccept-Ranges: bytes\r\nCache-Control: no-store\r\nX-Content-Type-Options: nosniff";
                 if (partial) headers += $"\r\nContent-Range: bytes {start}-{end}/{length}";
-                var content = e.Request.Method == "HEAD" ? null : new FileSlice(media.Path, start, end - start + 1);
+                Stream? content = null;
+                if (e.Request.Method != "HEAD")
+                    content = media.Background == null ? new FileSlice(media.Path, start, end - start + 1) :
+                        new MemoryStream(media.Background.Bytes, (int)start, (int)(end - start + 1), false);
                 e.Response = web.Environment.CreateWebResourceResponse(content, partial ? 206 : 200, partial ? "Partial Content" : "OK", headers);
             }
             catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)

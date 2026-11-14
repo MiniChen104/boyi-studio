@@ -6,7 +6,7 @@
 
 ## 下载与运行
 
-从本仓库 **Releases** 下载 `BoyiStudio-1.4.5-win-x64-no-references.zip`，完整解压后运行 `博宜练习室.exe`。
+从本仓库 **Releases** 下载 `BoyiStudio-1.4.6-win-x64-no-references.zip`，完整解压后运行 `博宜练习室.exe`。
 
 - Windows 10/11，x64。
 - 需要 [Microsoft Edge WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/)。
@@ -22,7 +22,7 @@
 - 小组浏览和题单入口；完整管理操作通过应用内官网窗口完成。
 - 本地样例运行、输出差异、复习笔记和错题记录。
 - 连续圆角、按压回弹、明暗主题和可选玻璃效果。
-- 可选 Wallpaper Engine 联动：读取本机选定的视频/图片；场景及网页壁纸使用静态预览，视频为独立静音播放。
+- 可选 Wallpaper Engine 联动：读取本机选定的视频/图片；兼容的单图场景读取高清静态原图，其余场景及网页壁纸使用预览，视频为独立静音播放。
 
 ## 数据与边界
 

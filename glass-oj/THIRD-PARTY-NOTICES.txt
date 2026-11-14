@@ -16,3 +16,7 @@ HtmlAgilityPack — MIT; see NuGet package metadata.
 Website, problem statements, illustrations and grading service:
 https://oj.czos.cn — 东方博宜 and the original problem authors.
 This desktop client is independently developed, not an official 东方博宜 product.
+
+RePKG PKG/TEX format reader reference — MIT, copyright 2019 notscuffed.
+Project https://github.com/notscuffed/repkg, commit 8005eb271f4cb5b9e375bafa912029a0d67b5eb8.
+Adapted bounded readers in SceneWallpaper.cs. License retained at ui/vendor/licenses/repkg.txt.
