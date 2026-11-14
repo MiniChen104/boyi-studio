@@ -106,7 +106,7 @@ internal sealed class WallpaperBridge
                 if (ext is ".mp4" or ".webm" or ".m4v") return new(file, "video", title, "跟随当前视频壁纸 · 静音独立播放");
                 if (ext is ".jpg" or ".jpeg" or ".png" or ".webp") return new(file, "image", title, "跟随当前图片壁纸");
                 if (preview != null && System.IO.Path.GetExtension(preview).ToLowerInvariant() is ".jpg" or ".jpeg" or ".png" or ".webp" or ".gif")
-                    return new(preview, "image", title, "当前为场景或网页壁纸，显示静态预览");
+                    return new(preview, "image", title, "当前为场景或网页壁纸，显示静态预览；清晰度受预览图分辨率限制");
             }
         }
         return null;

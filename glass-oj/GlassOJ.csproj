@@ -8,7 +8,7 @@
     <AssemblyName>博宜练习室</AssemblyName>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>assets\app.ico</ApplicationIcon>
-    <Version>1.4.4</Version>
+    <Version>1.4.5</Version>
     <Description>博宜练习室 · 题库、代码编辑与有序提交</Description>
   </PropertyGroup>
   <ItemGroup>

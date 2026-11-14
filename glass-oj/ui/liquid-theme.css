@@ -165,7 +165,7 @@ body.dark .focus-statement-toggle[aria-expanded=true]{background:#c5dfff18;borde
 body.dark .liquid-panel::after{background:linear-gradient(135deg,#e7f8ff85,#ffffff08 32%,#ffffff03 60%,#dbf4ff45)}
 body.dark .smooth-glass-surface{background:linear-gradient(135deg,rgba(65,91,119,calc(var(--glass)*.65)),rgba(23,42,61,.12));border-color:#d9f1ff25;box-shadow:inset 0 1px 0 #e0f2ff40,inset 1px 0 0 #d8efff18,inset -1px -1px 0 #c7e9ff14}
 .wallpaper-layer{position:absolute;inset:0;display:none;pointer-events:none}
-.wallpaper-layer video,.wallpaper-layer img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0}
+.wallpaper-layer video,.wallpaper-layer img{position:absolute;width:min(100%,var(--wallpaper-max-width,100%));height:min(100%,var(--wallpaper-max-height,100%));object-fit:var(--wallpaper-fit,scale-down);object-position:center;inset:0;margin:auto}
 .wallpaper-layer [hidden]{display:none}
 .wallpaper-active .wallpaper-layer{display:block}
 .wallpaper-active .atmosphere::after{content:'';position:absolute;inset:0;background:linear-gradient(115deg,#f1f7fa4d,#f5f9fa38 60%,#ebf5f538);pointer-events:none}

@@ -1,4 +1,4 @@
-param([string]$Version = '1.4.4')
+param([string]$Version = '1.4.5')
 $ErrorActionPreference = 'Stop'
 $repo = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $output = Join-Path $repo 'dist\windows-x64'

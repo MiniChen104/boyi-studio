@@ -169,8 +169,12 @@ async function runCode(){
   if(!current||$('#run').disabled)return;await saveCurrent();const button=$('#run');button.disabled=true;$('#testStatus').textContent='编译并运行中…';$('#testPanel').classList.remove('collapsed');
   const id=current.problem.id;
   try{const result=await rpc('run',{id,code:editor.getValue(),input:$('#testInput').value});if(current?.problem.id!==id)return;
-    $('#testOutput').textContent=result.output+(result.error?'\n'+result.error:'');$('#testStatus').textContent=result.kind;
+    const output=result.output||'';
+    const emptyMessage=result.ok&&!output?'程序已结束，没有标准输出。请检查输出语句、判断条件和变量赋值。':'';
+    const warningHint=/uninitialized/i.test(result.warnings||'')?'存在可能尚未赋值就被使用的变量，请检查下面提示的代码行。\n':'';
+    $('#testOutput').textContent=(output||emptyMessage)+(result.error?'\n'+result.error:'')+(result.warnings?'\n\n编译警告\n'+warningHint+result.warnings:'');$('#testStatus').textContent=result.ok&&!output?'运行完成 · 无输出':result.kind;
     if(result.ok && current.problem.samples?.length){const sample=current.problem.samples.find(s=>s.input.trim()===$('#testInput').value.trim());if(sample){const norm=x=>x.replace(/\r/g,'').trimEnd();$('#testStatus').textContent=norm(sample.output)===norm(result.output)?'✓ 与该样例输出一致':'与样例输出不同，请检查';}}
+    if(result.warnings)$('#testStatus').textContent+=' · 有编译警告';
   }catch(e){$('#testOutput').textContent=e.message;$('#testStatus').textContent='运行未完成';}finally{button.disabled=false;}
 }
 function showModal(kind,eyebrow,title,html){modalKind=kind;$('#modalEyebrow').textContent=eyebrow;$('#modalTitle').textContent=title;$('#modalBody').innerHTML=html;if(!$('#modal').open)$('#modal').showModal();}

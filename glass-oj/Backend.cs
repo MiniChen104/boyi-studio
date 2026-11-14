@@ -412,11 +412,12 @@ public partial class Backend
         {
             var cpp=Path.Combine(folder,"main.cpp");var exe=Path.Combine(folder,"main.exe");await File.WriteAllTextAsync(cpp,code);
             var build=new ProcessStartInfo(state.Settings.Compiler){UseShellExecute=false,RedirectStandardError=true,RedirectStandardOutput=true,CreateNoWindow=true,WorkingDirectory=folder};
-            foreach(var arg in new[]{cpp,"-std=c++11","-O2","-o",exe})build.ArgumentList.Add(arg);
+            foreach(var arg in new[]{Path.GetFileName(cpp),"-std=c++11","-O2","-Wall","-Wextra","-o",Path.GetFileName(exe)})build.ArgumentList.Add(arg);
             using var compiler=Process.Start(build)!;var err=compiler.StandardError.ReadToEndAsync();var cout=compiler.StandardOutput.ReadToEndAsync();
             using var timeout=new CancellationTokenSource(TimeSpan.FromSeconds(30));
             try{await compiler.WaitForExitAsync(timeout.Token);}catch{compiler.Kill(true);throw new Exception("编译超时。");}
-            if(compiler.ExitCode!=0)return new{ok=false,output=await err,kind="编译失败"};
+            var diagnostics=(await err)+(await cout);
+            if(compiler.ExitCode!=0)return new{ok=false,output=diagnostics,kind="编译失败"};
             var start=new ProcessStartInfo(exe){UseShellExecute=false,RedirectStandardInput=true,RedirectStandardOutput=true,RedirectStandardError=true,CreateNoWindow=true,WorkingDirectory=folder};
             using var process=Process.Start(start)!;var output=new StringBuilder();var error=new StringBuilder();
             async Task Drain(StreamReader reader,StringBuilder buffer){var chars=new char[4096];int n;while((n=await reader.ReadAsync(chars))>0){if(buffer.Length+n>1000000){try{process.Kill(true);}catch{}throw new Exception("输出超过1MB，已停止运行。");}buffer.Append(chars,0,n);}}
@@ -424,7 +425,7 @@ public partial class Backend
             using var limit=new CancellationTokenSource(TimeSpan.FromSeconds(5));
             try{await process.StandardInput.WriteAsync(input.AsMemory(),limit.Token);process.StandardInput.Close();await process.WaitForExitAsync(limit.Token);await Task.WhenAll(outTask,errorTask);}
             catch(OperationCanceledException){process.Kill(true);throw new Exception("运行超过5秒，已停止。请检查循环或输入。");}
-            return new{ok=process.ExitCode==0,output=output.ToString(),error=error.ToString(),exitCode=process.ExitCode,kind="运行完成"};
+            return new{ok=process.ExitCode==0,output=output.ToString(),error=error.ToString(),warnings=diagnostics,exitCode=process.ExitCode,kind=process.ExitCode==0?"运行完成":"运行异常（退出码 "+process.ExitCode+"）"};
         }
         finally{compiling=false;}
     }
