@@ -6,7 +6,7 @@
 
 ## 下载与运行
 
-从本仓库 **Releases** 下载 `BoyiStudio-1.4.2-win-x64-no-references.zip`，完整解压后运行 `博宜练习室.exe`。
+从本仓库 **Releases** 下载 `BoyiStudio-1.4.3-win-x64-no-references.zip`，完整解压后运行 `博宜练习室.exe`。
 
 - Windows 10/11，x64。
 - 需要 [Microsoft Edge WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/)。

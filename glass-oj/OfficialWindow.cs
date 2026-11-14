@@ -24,7 +24,7 @@ public sealed class OfficialWindow:Window
         var root=new DockPanel();var bar=new StackPanel{Orientation=Orientation.Horizontal,Margin=new Thickness(12)};DockPanel.SetDock(bar,Dock.Top);root.Children.Add(bar);
         void Button(string label,Action action){var button=new Button{Content=label,Padding=new Thickness(12,7,12,7),Margin=new Thickness(0,0,8,0)};button.Click+=(_,_)=>action();bar.Children.Add(button);}
         Button("← 后退",()=>{if(browser.CoreWebView2?.CanGoBack==true)browser.GoBack();});
-        Button("刷新",()=>browser.CoreWebView2?.Reload());Button("小组",()=>browser.CoreWebView2?.Navigate("https://oj.czos.cn/group/index"));Button("题单",()=>browser.CoreWebView2?.Navigate("https://oj.czos.cn/lists/index"));
+        Button("刷新",()=>browser.CoreWebView2?.Reload());Button("小组",()=>browser.CoreWebView2?.Navigate("https://oj.czos.cn/group/my-group"));Button("题单",()=>browser.CoreWebView2?.Navigate("https://oj.czos.cn/lists/index"));
         Button("在练习室打开当前题",async ()=>
         {
             try{var match=System.Text.RegularExpressions.Regex.Match(browser.Source?.AbsolutePath??"",@"^/p/(\d+)$");if(!match.Success){status.Text="先在官网打开一道题，再点击此按钮。";return;}if(backend.CurrentAccount!=account)throw new Exception("账号已切换，请重新打开官网窗口。");await openProblem(match.Groups[1].Value);Close();}catch(Exception ex){status.Text=ex.Message;}

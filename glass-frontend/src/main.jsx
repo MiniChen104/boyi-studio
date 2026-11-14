@@ -66,7 +66,7 @@ function OnlinePanel(){
   const [view,setView]=useState(null),[app,setApp]=useState(null),[data,setData]=useState(null),[busy,setBusy]=useState(false),[error,setError]=useState('');
   const request=useRef(0),activeView=useRef(null),listPath=useRef(''),indexPath=useRef(''),lastAccount=useRef(null),groupPath=useRef(''),groupIndex=useRef('');
   useEffect(()=>{
-    const open=e=>{request.current++;const kind=typeof e.detail==='object'?e.detail?.kind:e.detail;activeView.current=kind;setView(kind);setData(null);setError('');if(e.detail?.path){const saved=window.boyiLearning?.resume();if(kind==='list'&&saved?.path===e.detail.path){listPath.current=e.detail.path;setData(saved);setBusy(false);}else load(kind,e.detail.path);}};
+    const open=e=>{request.current++;const kind=typeof e.detail==='object'?e.detail?.kind:e.detail;activeView.current=kind;setView(kind);setData(null);setError('');if(e.detail?.path){const saved=window.boyiLearning?.resume();if(kind==='list'&&saved?.items?.length&&saved?.path===e.detail.path){listPath.current=e.detail.path;setData(saved);setBusy(false);}else load(kind,e.detail.path);}};
     const update=e=>{
       if(!e.detail.loggedIn || (lastAccount.current && lastAccount.current!==e.detail.account)){
         request.current++;setData(null);setBusy(false);setError('');
@@ -88,6 +88,8 @@ function OnlinePanel(){
     try{
       const next=await bridge(kind==='lists'?'onlineLists':kind==='history'?'onlineHistory':kind==='groups'?'onlineGroups':kind==='group'?'onlineGroup':'onlineList',{path});
       if(token!==request.current)return;
+      if(kind==='lists'&&next.path&&!append)indexPath.current=next.path;
+      if(kind==='groups'&&next.path&&!append)groupIndex.current=next.path;
       setData(prev=>append&&prev?{...next,items:[...new Map([...(prev.items||[]),...(next.items||[])].map(x=>[x.id||x.path,x])).values()],rows:[...(prev.rows||[]),...(next.rows||[])]}:next);
       if(['list','group','lists','groups'].includes(kind)){activeView.current=kind;setView(kind);}
     }catch(e){if(token===request.current)setError(e.message);}
@@ -103,14 +105,14 @@ function OnlinePanel(){
     <div className="sync-details"><span>通过进度：{app?.progressSyncedAt?new Date(app.progressSyncedAt).toLocaleString('zh-CN'):'尚未同步'}</span><span>提交列表：{isHistory?(busy?'正在读取':data?(data.scope==='recent'?'仅最近记录':'当前已加载页面'):'尚未读取'):'进入提交记录时读取'}</span><span>历史源码：打开时按需读取；本地快照可离线查看</span></div>
     <div className="online-subhead"><span>{app?.progressMessage||'登录后同步你原有的做题进度'}</span>{app?.progressSyncedAt&&<span>上次同步 {new Date(app.progressSyncedAt).toLocaleString('zh-CN')}</span>}</div>
     {!app?.loggedIn?<div className="online-empty"><div className="empty-orbit">↗</div><h2>你的进度，跟着账号走。</h2><p>连接东方博宜账号，即可查看题单和提交记录。<br/>已有通过记录会同步到题库，不必从头开始。</p><button className="primary" onClick={()=>window.boyiUI.account()}>连接我的账号</button></div>:<>
-      <div className="online-tools"><button className="secondary" onClick={()=>bridge('officialWorkspace',{path:isHistory?'/status/index?SolutionSearch[user_id]='+encodeURIComponent(app.account):isGroup?(data?.path||'/group/index'):isGroups?'/group/index':view==='list'?listPath.current:'/lists/index'}).catch(emitError)}>官网完整功能 ↗</button><span>{isGroups?'当前账号可访问的小组':isGroup?'小组功能':isHistory?(data?.scope==='recent'?'我的最近提交':'我的提交记录'):view==='list'?'题单中的题目':'账号可访问的题单'}</span>{view==='list'?<button className="secondary" onClick={()=>{activeView.current='lists';setView('lists');setData(null);}}>← 返回题单</button>:<button className="secondary" disabled={busy} onClick={()=>load(view)}>刷新</button>}</div>
+      <div className="online-tools"><button className="secondary" onClick={()=>bridge('officialWorkspace',{path:isHistory?'/status/index?SolutionSearch[user_id]='+encodeURIComponent(app.account):isGroup?(data?.path||'/group/my-group'):isGroups?'/group/my-group':view==='list'?listPath.current:'/lists/index'}).catch(emitError)}>官网完整功能 ↗</button><span>{isGroups?'我加入或管理的小组':isGroup?'小组功能':isHistory?(data?.scope==='recent'?'我的最近提交':'我的提交记录'):view==='list'?'题单中的题目':'账号可访问的题单'}</span>{view==='list'&&<button className="secondary" disabled={busy} onClick={()=>load('list')}>刷新题单</button>}{view==='list'?<button className="secondary" onClick={()=>{activeView.current='lists';setView('lists');setData(null);}}>← 返回题单</button>:<button className="secondary" disabled={busy} onClick={()=>load(view)}>刷新</button>}</div>
       {isHistory&&data?.note&&<p className="modal-note">{data.note}</p>}
       {error&&<div className="online-error" role="alert">{error}<button disabled={busy} onClick={()=>load(view)}>重试</button></div>}
       {busy&&!data&&<div className="online-empty" role="status">正在读取官网数据…</div>}
       {(view==='lists'||isGroups)&&!!data?.filters?.length&&<div className="online-filter-tabs">{data.filters.map(f=><button className="secondary" key={f.path} disabled={busy} onClick={()=>load(isGroups?'groups':'lists',f.path)}>{f.title}</button>)}</div>}
       {!isGroup&&!busy&&!error&&data&&!((data.items?.length||0)+(data.rows?.length||0))&&<div className="online-empty">当前页面没有可显示的记录。</div>}
+      {(view==='lists'||isGroups)&&<DirectoryTools kind={view} account={app.account} path={isGroups?groupIndex.current:indexPath.current} load={load} busy={busy}/>}
       {(view==='lists'||isGroups)&&<div className="online-cards">{data?.items?.map((item,i)=><button className="list-card" key={item.path} disabled={busy} onClick={()=>load(isGroups?'group':'list',item.path)}><span className="card-index">{String(i+1).padStart(2,'0')}</span><h3>{item.title}</h3><p>{item.description||(isGroups?'查看小组内容与完整功能。':'进入题单，查看你的完成进度。')}</p><span className="card-arrow">↗</span></button>)}</div>}
-      {(view==='lists'||isGroups)&&<DirectoryTools kind={view} account={app.account} load={load} busy={busy}/>}
       {view==='list'&&<ListPractice data={data} path={listPath.current} busy={busy} loadMore={()=>load(view,data.next,true)}><div className="online-problems">{data?.items?.map(item=><button key={item.id} disabled={!item.available} onClick={()=>window.boyiLearning.practiceList({...data,path:listPath.current,scrollTop:document.querySelector('.online-content')?.scrollTop||0},item.id).catch(emitError)}><span className="problem-id">{item.id}</span><strong>{item.title}</strong><span className={item.accepted?'done':''}>{item.accepted?'✓ 已通过':item.available?'开始练习 ↗':'在线加载题目'}</span></button>)}</div></ListPractice>}
       {isHistory&&!!data?.rows?.length&&<div className="history-scroll"><table className="history-table"><thead><tr>{data.headers.map((h,i)=><th key={i}>{h}</th>)}<th>我的代码</th></tr></thead><tbody>{data.rows.map((r,i)=><tr key={i}>{r.cells.map((c,j)=><td key={j} className={/通过|Accepted/.test(c)?'done':''}>{c}</td>)}<td><button className="secondary" disabled={!r.sid} onClick={()=>window.boyiLearning.submission(r)}>查看代码</button></td></tr>)}</tbody></table></div>}
       {isGroup&&<><p>{data?.note}</p><button className="secondary" disabled={busy} onClick={()=>load('groups')}>返回小组</button><div className="online-cards">{data?.links?.map(link=><button className="list-card" key={link.path} onClick={()=>link.path.startsWith('/lists/view?')?load('list',link.path):bridge('officialWorkspace',{path:link.path.startsWith('/contest/')?data.path:link.path}).catch(emitError)}>{link.title} ↗</button>)}</div></>}
@@ -120,11 +122,17 @@ function OnlinePanel(){
   </div>;
 }
 
-function DirectoryTools({kind,account,load,busy}){
+function DirectoryTools({kind,account,path,load,busy}){
   const [query,setQuery]=useState('');
   useEffect(()=>{setQuery('');},[kind,account]);
-  useEffect(()=>{document.querySelectorAll('.online-cards .list-card').forEach(card=>{card.hidden=!!query&&!card.textContent.toLowerCase().includes(query.toLowerCase());});},[query,kind,busy]);
-  return <div className="learning-tools"><input aria-label="搜索已加载目录" placeholder="筛选已加载的名称" value={query} onChange={e=>setQuery(e.target.value)}/>{kind==='groups'&&<button className="secondary" disabled={busy} onClick={()=>load('groups','/group/index?name='+encodeURIComponent(query))}>搜索官网小组</button>}<span>创建、编辑、加入与成员管理见“官网完整功能”。</span></div>;
+  function search(event){
+    event.preventDefault();
+    const url=new URL(path||(kind==='groups'?'/group/my-group':'/lists/index'), 'https://oj.czos.cn');
+    url.searchParams.delete('page');url.searchParams.delete('offset');
+    url.searchParams.set(kind==='groups'?'name':'q',query.trim());
+    load(kind,url.pathname+url.search);
+  }
+  return <form className="learning-tools" onSubmit={search}><input aria-label={kind==='groups'?'搜索我的小组':'搜索当前分类题单'} placeholder={kind==='groups'?'输入我的小组名称':'输入题单名称'} value={query} onChange={e=>setQuery(e.target.value)}/><button type="submit" className="secondary" disabled={busy}>搜索</button><span>创建、编辑与管理见“官网完整功能”。</span></form>;
 }
 
 function ListPractice({data,path,busy,loadMore,children}){

@@ -135,7 +135,7 @@ public partial class Backend
             using var req=new HttpRequestMessage(currentMethod,target);
             req.Headers.TryAddWithoutValidation("User-Agent","Mozilla/5.0");
             req.Headers.Referrer=referer;
-            if(target.AbsolutePath=="/solution/verdict")req.Headers.TryAddWithoutValidation("X-Requested-With","XMLHttpRequest");
+            if(target.AbsolutePath=="/solution/verdict" || target.AbsolutePath=="/lists/index" && currentMethod==HttpMethod.Post)req.Headers.TryAddWithoutValidation("X-Requested-With","XMLHttpRequest");
             if(data!=null)req.Content=new FormUrlEncodedContent(data);
             using var response=await http.SendAsync(req,ct);
             if((int)response.StatusCode is >=300 and <400)

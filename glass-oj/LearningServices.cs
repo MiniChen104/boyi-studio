@@ -130,11 +130,17 @@ public partial class Backend
     }
     async Task<object> OnlineGroups(string path)
     {
-        var doc=await AccountPage(OnlinePath(path,"/group/index"));
+        // Old clients may retain the public directory route. Keep their search and page within My Groups.
+        var uri=Url(string.IsNullOrWhiteSpace(path)?"/group/my-group":path);
+        if(uri.AbsolutePath!="/group/my-group" && uri.AbsolutePath!="/group/index")throw new Exception("小组目录地址无效。");
+        path="/group/my-group"+uri.Query;
+        var doc=await AccountPage(path);
         var items=Nodes(doc.DocumentNode,"//a[@href]").Where(n=>Regex.IsMatch(Attr(n,"href"),@"^/group/view\?id=\d+"))
             .DistinctBy(n=>Attr(n,"href")).Select(n=>new{path=Attr(n,"href"),title=Text(n),description=Text(n.Ancestors().FirstOrDefault(a=>Attr(a,"class").Split(' ').Contains("card"))?.SelectSingleNode(".//*[contains(@class,'card-text')]"))}).ToArray();
-        var filters=Nodes(doc.DocumentNode,"//ul[contains(@class,'nav')]//a[@href]").Where(n=>Attr(n,"href").StartsWith("/group/index",StringComparison.Ordinal)).Select(n=>new{path=Attr(n,"href"),title=Text(n)}).ToArray();
-        return new{items,filters,next=NextPage(doc,"/group/index")};
+        var filters=Nodes(doc.DocumentNode,"//ul[contains(@class,'nav')]//a[@href]")
+            .Where(n=>Uri.TryCreate(new Uri(Site),Attr(n,"href"),out var link) && link.Host=="oj.czos.cn" && link.AbsolutePath=="/group/my-group")
+            .Select(n=>new{path=Url(Attr(n,"href")).PathAndQuery,title=Text(n)}).DistinctBy(x=>x.path).ToArray();
+        return new{items,filters,next=NextPage(doc,"/group/my-group"),path,source="我加入或管理的小组"};
     }
     async Task<object> OnlineGroup(string path)
     {
