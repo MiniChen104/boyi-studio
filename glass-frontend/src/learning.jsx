@@ -83,7 +83,7 @@ export function installLearning(){
         const normalize=v=>String(v||'').replace(/\r/g,'').trimEnd(),actual=normalize(run.output),expected=normalize(samples[i].output),ok=run.ok&&actual===expected;if(ok)passed++;
         let diff='';if(!ok){const a=actual.split('\n'),b=expected.split('\n');let n=0;while(n<Math.max(a.length,b.length)&&a[n]===b[n])n++;diff=`\n首处差异：第 ${n+1} 行\n期望：${b[n]??'（无此行）'}\n实际：${a[n]??'（无此行）'}`;}
         result.push(`样例 ${i+1} · ${ok?'通过':run.ok?'输出不同':run.kind}${diff}${run.error?'\n'+run.error:''}${i===0&&run.warnings?'\n编译警告\n'+run.warnings:''}`);out.textContent=result.join('\n\n');
-        if(!run.ok&&run.kind!=='运行完成')break;
+        if(!run.ok&&run.kind==='编译失败')break;
       }
       if(token===sampleRun&&api().current()===item)status.textContent=`通过 ${passed}/${samples.length} 组公开样例 · 不代表官网评测通过`;
     }catch(e){if(token===sampleRun&&api().current()===item){status.textContent='测试已停止 · '+e.message;out.textContent=result.join('\n\n')+'\n'+e.message;}throw e;}finally{sample.disabled=false;}
