@@ -37,6 +37,9 @@ public class Settings
     public int Glass{get;set;}=78;
     public string GlassQuality{get;set;}="smooth";
     public int FontSize{get;set;}=15;
+    public int IndentSize{get;set;}=4;
+    public bool AutoBrackets{get;set;}=true;
+    public bool CodeHints{get;set;}=true;
     public bool Wrap{get;set;}=false;
     public int Interval{get;set;}=60;
     public string Compiler{get;set;}="";
@@ -226,7 +229,8 @@ public partial class Backend
             case "start":Start();return true;
             case "stop":Stop();return true;
             case "sync":if(!syncing)_=Sync();return true;
-            case "settings":state.Settings=JsonSerializer.Deserialize<Settings>(data.GetRawText(),Json)??new();state.Settings.Interval=Math.Max(60,state.Settings.Interval);state.Settings.Glass=Math.Clamp(state.Settings.Glass,15,90);state.Settings.FontSize=Math.Clamp(state.Settings.FontSize,12,24);Save();return state.Settings;
+            case "settings":state.Settings=JsonSerializer.Deserialize<Settings>(data.GetRawText(),Json)??new();state.Settings.Interval=Math.Max(60,state.Settings.Interval);state.Settings.Glass=Math.Clamp(state.Settings.Glass,15,90);state.Settings.FontSize=Math.Clamp(state.Settings.FontSize,12,24);state.Settings.IndentSize=NormalizeIndent(state.Settings.IndentSize);Save();return state.Settings;
+            case "formatCode":return await FormatCode(S("code"),data.TryGetProperty("cursor",out var cursor)?cursor.GetInt32():0);
             case "run":return await RunCode(Id(S("id")),S("code"),S("input"));
             case "openSource":var p=AllProblems.FirstOrDefault(x=>x.Id==S("id"))??throw new Exception("题目不存在。");Process.Start(new ProcessStartInfo(Url(p.Url).ToString()){UseShellExecute=true});return true;
             case "openData":Process.Start(new ProcessStartInfo(Root){UseShellExecute=true});return true;

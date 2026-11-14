@@ -20,3 +20,10 @@ This desktop client is independently developed, not an official 东方博宜 pro
 RePKG PKG/TEX format reader reference — MIT, copyright 2019 notscuffed.
 Project https://github.com/notscuffed/repkg, commit 8005eb271f4cb5b9e375bafa912029a0d67b5eb8.
 Adapted bounded readers in SceneWallpaper.cs. License retained at ui/vendor/licenses/repkg.txt.
+
+clang-format 23.1.5 — LLVM Project, Apache-2.0 WITH LLVM-exception.
+Project https://github.com/llvm/llvm-project/tree/main/clang/tools/clang-format
+Binary distributed through https://pypi.org/project/clang-format/23.1.5/ (Windows x64).
+Wheel SHA256 18a4a1a698dd52ed4e288c97d99e93910f8f9d0128b266f65021ecf39c85d034
+Licenses retained at tools/clang-format-LICENSE.md and tools/clang-format-COPYING.md.
+CodeMirror editor addons 5.65.16 use the existing CodeMirror MIT license.

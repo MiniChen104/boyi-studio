@@ -20,10 +20,13 @@ function loadFavorites(){
   favorites.clear();try{JSON.parse(localStorage.getItem(key)||'[]').forEach(id=>favorites.add(id));}catch{}
 }
 const categories=[['基础问题','#9ab7d6'],['分支问题','#c3a9c4'],['简单循环','#97bcb4'],['嵌套循环','#e0bc91'],['数组问题','#a6afd4'],['字符串','#a9c3d1'],['动态规划','#b5b2cf'],['数学','#b9c9a6']];
-const editor=CodeMirror.fromTextArea($('#editor'),{mode:'text/x-c++src',lineNumbers:true,indentUnit:4,tabSize:4,matchBrackets:true,styleActiveLine:true,viewportMargin:20,lineWrapping:false,extraKeys:{Tab:cm=>cm.replaceSelection('    '),'Ctrl-S':()=>saveCurrent(true),'Ctrl-Enter':()=>runCode()}});
+const editor=CodeMirror.fromTextArea($('#editor'),{mode:'text/x-c++src',lineNumbers:true,indentUnit:4,tabSize:4,matchBrackets:true,styleActiveLine:true,viewportMargin:20,lineWrapping:false,extraKeys:{'Ctrl-S':()=>saveCurrent(true),'Ctrl-Enter':()=>runCode()}});
+const editorTools=createEditorTools(editor,{rpc,toast,save:(...args)=>saveCurrent(...args),current:()=>current});
+let tabToken=0,codeRunning=false;
+editor.setOption('readOnly',true);
 editor.on('change',()=>{
   if(ignoreChange || !current || tab!=='draft')return;
-  current.draft=editor.getValue();dirty=true;$('#saveStatus').textContent='正在保存…';$('#saveDot').style.background='#c9b08e';
+  current.draft=editor.getValue();dirty=true;$('#run').disabled=codeRunning||!current.draft;$('#stage').disabled=!current.draft;$('#saveStatus').textContent='正在保存…';$('#saveDot').style.background='#c9b08e';
   clearTimeout(saveTimer);saveTimer=setTimeout(()=>saveCurrent(),650);
 });
 editor.on('cursorActivity',()=>{const c=editor.getCursor();$('#cursorStatus').textContent=`行 ${c.line+1}，列 ${c.ch+1}`;});
@@ -33,6 +36,7 @@ let editorFrame=0,appliedFont,appliedWrap;
 function scheduleEditorRefresh(){if(!editorFrame)editorFrame=requestAnimationFrame(()=>{editorFrame=0;editor.refresh();});}
 function applySettings(){
   const s=state.settings;
+  editorTools.apply(s);
   document.body.classList.toggle('dark',s.theme==='dark');
   document.documentElement.dataset.glassEngine=s.glassQuality==='optical'?'liquid-glass-react':'composited';
   document.documentElement.style.setProperty('--glass',String(1-s.glass/125));
@@ -51,7 +55,7 @@ function updateChrome(){
   $('#syncText').textContent=state.syncing?'正在同步题库…':'本地题库 · 随时开始';
   $('#librarySummary').textContent=`${state.catalog.filter(p=>p.reference).length} 份参考答案 · ${state.catalog.filter(p=>p.cached).length} 份题面`;
 }
-async function refresh(){const previousAccount=state.account;state=await rpc('init');loadFavorites();if(previousAccount && state.account!==previousAccount){current=null;dirty=false;loadToken++;}applySettings();updateChrome();renderList();if(current){const p=state.catalog.find(p=>p.id===current.problem.id);if(p)current.record=p.record;updateHeading();}if(modalKind==='queue')renderQueue();}
+async function refresh(){const previousAccount=state.account;state=await rpc('init');loadFavorites();if(previousAccount && state.account!==previousAccount){current=null;dirty=false;loadToken++;tabToken++;editorTools.clear();}applySettings();updateChrome();renderList();if(current){const p=state.catalog.find(p=>p.id===current.problem.id);if(p)current.record=p.record;updateHeading();}if(modalKind==='queue')renderQueue();}
 function filtered(){return state.catalog.filter(p=>(view!=='drafts'||p.draft)&&(view!=='favorites'||favorites.has(p.id))&&(!category||p.tags.includes(category))&&(filter!=='todo'||!(p.record?.status==='accepted'||p.record?.everAccepted))&&(filter!=='reference'||p.reference)&&(!query||[p.id,p.title,...p.tags].join(' ').toLowerCase().includes(query.toLowerCase())));}
 const listElement=$('#problemList'),ROW_HEIGHT=124,OVERSCAN=5;
 let listRows=[],listStart=-1,listEnd=-1,listFrame=0;
@@ -105,11 +109,11 @@ listElement.addEventListener('keydown',e=>{
   paintList();listElement.querySelector(`[data-id="${listRows[next].id}"]`)?.focus({preventScroll:true});
 });
 new ResizeObserver(scheduleListPaint).observe(listElement);
-async function saveCurrent(manual=false){
+async function saveCurrent(manual=false,reason){
   clearTimeout(saveTimer);
   if(!current || !dirty){if(manual)toast('草稿已是最新版本');return;}
   const item=current,id=item.problem.id,code=item.draft;
-  try{await rpc('saveDraft',{id,code});if(current===item && current.draft===code){dirty=false;$('#saveStatus').textContent='已保存到本地';$('#saveDot').style.background='';}const row=state.catalog.find(p=>p.id===id);if(row)row.draft=true;if(manual)toast('已保存','success');}
+  try{await rpc('saveDraft',{id,code,reason});if(current===item && current.draft===code){dirty=false;$('#saveStatus').textContent='已保存到本地';$('#saveDot').style.background='';}const row=state.catalog.find(p=>p.id===id);if(row)row.draft=true;if(manual)toast('已保存','success');}
   catch(e){$('#saveStatus').textContent='保存失败 · 请重试';toast(e.message,'error');throw e;}
 }
 async function openProblem(id){
@@ -122,7 +126,7 @@ async function openProblem(id){
   const selected=references.find(r=>r.key===saved)||['format-default','readable-control','iostream-format'].map(key=>references.find(r=>r.key===key && r.status!=='unverified')).find(Boolean)||references.find(r=>!r.key.startsWith('research-'));
   if(selected){current.referenceKey=selected.key;current.reference=selected.code;current.referenceStatus=selected.status;}
   else{current.referenceKey='';current.reference='';current.referenceStatus='unverified';}
-  dirty=false;tab='draft';localStorage.setItem('selectedProblem',id);updateHeading();renderStatement();setTab('draft');updateListSelection();$('#saveStatus').textContent=state.catalog.find(p=>p.id===id)?.draft?'已保存到本地':'自动保存已开启';
+  dirty=false;tab='draft';localStorage.setItem('selectedProblem',id);updateHeading();renderStatement();await setTab('draft');updateListSelection();$('#saveStatus').textContent=state.catalog.find(p=>p.id===id)?.draft?'已保存到本地':'自动保存已开启';
   const row=state.catalog.find(p=>p.id===id);if(row)row.cached=true;
   if(current.problem.samples?.length)$('#testInput').value=current.problem.samples[0].input;
   else $('#testInput').value='';
@@ -135,10 +139,10 @@ function renderStatement(){
   if(window.katex)$$('#statementBody .math').forEach(el=>{try{katex.render(el.textContent,el,{throwOnError:false,trust:false,displayMode:el.classList.contains('display')||el.classList.contains('block')});}catch{}});
 }
 async function setTab(next){
-  if(!current)return;await saveCurrent();tab=next;
+  if(!current)return;const item=current,token=++tabToken;await saveCurrent();if(current!==item||token!==tabToken)return;tab=next;
   $$('.editor-tabs button').forEach(b=>{b.classList.toggle('active',b.dataset.tab===next);b.setAttribute('aria-selected',String(b.dataset.tab===next));});
-  const value=current[next]||'';ignoreChange=true;editor.setValue(value);editor.setOption('readOnly',next==='draft'?false:'nocursor');ignoreChange=false;
-  $('#emptyVersion').classList.toggle('hidden',!!value||next==='draft');$('#copyReference').classList.toggle('hidden',next!=='reference'||!value);$('#run').disabled=!value;$('#stage').disabled=!value||next==='staged';
+  const value=current[next]||'';ignoreChange=true;try{editorTools.open(JSON.stringify([state.account,current.problem.id,next,next==='reference'?current.referenceKey:'']),value,next!=='draft');}finally{ignoreChange=false;}
+  $('#emptyVersion').classList.toggle('hidden',!!value||next==='draft');$('#copyReference').classList.toggle('hidden',next!=='reference'||!value);$('#run').disabled=codeRunning||!value;$('#stage').disabled=!value||next==='staged';
   $('#stage').innerHTML=(next==='reference'?'使用参考答案':'设为待提交')+icon('arrow');$('#importCode').classList.toggle('hidden',next!=='draft');
   $('#versionNotice').classList.toggle('hidden',next==='draft'||!value);
   const references=current.references||[];
@@ -166,16 +170,15 @@ async function stage(){
 }
 async function runCode(){
   window.boyiDrawers?.openTest();
-  if(!current||$('#run').disabled)return;await saveCurrent();const button=$('#run');button.disabled=true;$('#testStatus').textContent='编译并运行中…';$('#testPanel').classList.remove('collapsed');
-  const id=current.problem.id;
-  try{const result=await rpc('run',{id,code:editor.getValue(),input:$('#testInput').value});if(current?.problem.id!==id)return;
+  if(!current||codeRunning||$('#run').disabled)return;const item=current,id=item.problem.id,code=editor.getValue(),input=$('#testInput').value;const button=$('#run');codeRunning=true;button.disabled=true;$('#testStatus').textContent='编译并运行中…';$('#testPanel').classList.remove('collapsed');
+  try{await saveCurrent();if(current!==item)return;const result=await rpc('run',{id,code,input});if(current!==item)return;
     const output=result.output||'';
     const emptyMessage=result.ok&&!output?'程序已结束，没有标准输出。请检查输出语句、判断条件和变量赋值。':'';
     const warningHint=/uninitialized/i.test(result.warnings||'')?'存在可能尚未赋值就被使用的变量，请检查下面提示的代码行。\n':'';
     $('#testOutput').textContent=(output||emptyMessage)+(result.error?'\n'+result.error:'')+(result.warnings?'\n\n编译警告\n'+warningHint+result.warnings:'');$('#testStatus').textContent=result.ok&&!output?'运行完成 · 无输出':result.kind;
-    if(result.ok && current.problem.samples?.length){const sample=current.problem.samples.find(s=>s.input.trim()===$('#testInput').value.trim());if(sample){const norm=x=>x.replace(/\r/g,'').trimEnd();$('#testStatus').textContent=norm(sample.output)===norm(result.output)?'✓ 与该样例输出一致':'与样例输出不同，请检查';}}
+    if(result.ok && current.problem.samples?.length){const sample=current.problem.samples.find(s=>s.input.trim()===input.trim());if(sample){const norm=x=>x.replace(/\r/g,'').trimEnd();$('#testStatus').textContent=norm(sample.output)===norm(result.output)?'✓ 与该样例输出一致':'与样例输出不同，请检查';}}
     if(result.warnings)$('#testStatus').textContent+=' · 有编译警告';
-  }catch(e){$('#testOutput').textContent=e.message;$('#testStatus').textContent='运行未完成';}finally{button.disabled=false;}
+  }catch(e){if(current===item){$('#testOutput').textContent=e.message;$('#testStatus').textContent='运行未完成';}}finally{codeRunning=false;button.disabled=!current||!editor.getValue();}
 }
 function showModal(kind,eyebrow,title,html){modalKind=kind;$('#modalEyebrow').textContent=eyebrow;$('#modalTitle').textContent=title;$('#modalBody').innerHTML=html;if(!$('#modal').open)$('#modal').showModal();}
 function closeModal(){$('#modal').close();modalKind='';}
@@ -187,6 +190,24 @@ function accountModal(){
   $('#loginForm').onsubmit=async e=>{e.preventDefault();$('#loginButton').disabled=true;$('#loginError').textContent='正在连接…';try{await saveCurrent();const result=await rpc('login',{username:$('#username').value.trim(),password:$('#password').value});$('#password').value='';state.account=result.account;state.loggedIn=true;await refresh();closeModal();toast('登录成功，正在同步原有进度','success');if(!current && state.catalog.length)await openProblem(state.catalog[0].id);}catch(err){$('#loginError').textContent=err.message;$('#loginButton').disabled=false;}};
   setTimeout(()=>$('#password')?.focus(),50);
 }
+function editorToolsModal(){
+  const s=state.settings;
+  const actions=[['format','整理代码','Ctrl+Alt+L'],['findPersistent','查找','Ctrl+F'],['replace','查找替换','Ctrl+H'],['jumpToLine','跳转到行','Alt+G'],['toggleComment','注释 / 取消注释','Ctrl+/'],['hints','代码提示','Ctrl+Space']];
+  showModal('editor-tools','', '编辑工具',`<div class="editor-tool-grid">${actions.map(([action,label,key])=>`<button class="secondary" data-editor-action="${action}" ${['format','replace','toggleComment','hints'].includes(action)&&editor.getOption('readOnly')?'disabled':''}><span>${label}</span><kbd>${key}</kbd></button>`).join('')}</div><div class="setting-row"><label for="indentSize">每级缩进</label><select id="indentSize"><option value="2">2 个空格</option><option value="4">4 个空格</option><option value="8">8 个空格</option></select></div><div class="setting-row"><label for="autoBrackets">自动补齐括号与引号</label><input id="autoBrackets" type="checkbox" ${s.autoBrackets!==false?'checked':''}></div><div class="setting-row"><label for="codeHints">输入时显示代码提示</label><input id="codeHints" type="checkbox" ${s.codeHints!==false?'checked':''}></div><p class="modal-small">Tab 缩进，Shift+Tab 减少缩进。选中多行后可批量调整。Ctrl+Shift+D 复制当前行或选区，点击行号旁的箭头折叠代码。</p><p class="modal-small">整理代码采用 Allman 大括号换行风格，保留头文件顺序。提示来自 C++ 关键字、常用名称和当前文档。最近 24 个代码视图分别保留本次会话的撤销记录。</p><div class="form-actions"><button class="primary" id="saveEditorSettings">保存编辑设置</button></div>`);
+  $('#indentSize').value=String([2,4,8].includes(s.indentSize)?s.indentSize:4);
+  $$('[data-editor-action]').forEach(button=>button.onclick=guard(async()=>{
+    const action=button.dataset.editorAction;closeModal();editor.focus();
+    if(action==='format')await editorTools.format();
+    else if(action==='hints')editorTools.hints();
+    else if(action==='toggleComment')editor.getOption('extraKeys')['Ctrl-/'](editor);
+    else editor.execCommand(action);
+  }));
+  $('#saveEditorSettings').onclick=guard(async()=>{
+    const settings={...state.settings,indentSize:+$('#indentSize').value,autoBrackets:$('#autoBrackets').checked,codeHints:$('#codeHints').checked};
+    state.settings=await rpc('settings',settings);applySettings();closeModal();editor.focus();toast('编辑设置已保存','success');
+  });
+}
+$('#editorTools').onclick=editorToolsModal;
 function settingsModal(){
   const s=state.settings;
   showModal('settings','MAKE IT YOURS','舒适，按你的习惯',`<p class="modal-note">更通透的玻璃，更安静的编辑空间。</p><div class="setting-row"><label>界面主题</label><select id="theme"><option value="light">晨光 · 浅色</option><option value="dark">夜色 · 深色</option></select></div><div class="setting-row"><label>玻璃透明度</label><input id="glass" type="range" min="15" max="90" value="${s.glass}"><output id="glassValue">${s.glass}%</output></div><div class="setting-row"><label>代码字号</label><input id="fontSize" type="range" min="12" max="24" value="${s.fontSize}"><output id="fontValue">${s.fontSize}px</output></div><div class="setting-row"><label for="wrap">代码自动换行</label><input id="wrap" type="checkbox" ${s.wrap?'checked':''}></div><label class="form-field">提交间隔（不少于60秒）<input id="interval" type="number" min="60" max="86400" value="${s.interval}"></label><label class="form-field">C++编译器路径<input id="compiler" value="${esc(s.compiler||'')}"></label><p class="modal-small">当前有 ${state.catalog.filter(p=>p.reference).length} 份参考答案，其余题目会明确显示“暂无参考答案”。不会自动生成空模板作为答案。</p><div class="form-actions"><button class="secondary" id="importReferences">导入参考答案包</button><button class="secondary" id="openData">数据目录</button><button class="primary" id="saveSettings">保存设置</button></div>`);
@@ -214,7 +235,7 @@ window.chrome?.webview?.addEventListener('message',async e=>{
   if(m.topic==='countdown'){lastCountdown=`${m.data.seconds} 秒后提交 ${m.data.id}`;$('#queueSummary').textContent=lastCountdown;if($('#countdownLabel'))$('#countdownLabel').textContent=lastCountdown;}
   if(m.topic==='refresh'){lastCountdown='';await guard(refresh)();}
   if(m.topic==='record'){const row=state.catalog.find(p=>p.id===m.data.id);if(row)row.record=m.data.record;if(current?.problem.id===m.data.id){current.record=m.data.record;updateHeading();}renderList();}
-  if(m.topic==='accountChanged'){current=null;dirty=false;loadToken++;await refresh();if(state.catalog.length)await openProblem(state.catalog[0].id);}
+  if(m.topic==='accountChanged'){current=null;dirty=false;loadToken++;tabToken++;editorTools.clear();await refresh();if(state.catalog.length)await openProblem(state.catalog[0].id);}
   if(m.topic==='progressSync'){state.progressMessage=m.data.message;state.progressSyncing=true;updateChrome();}
   if(m.topic==='sync'){state.syncing=true;$('#syncText').textContent=m.data.phase==='目录'?`目录：${m.data.done} 题`:`题面：${m.data.done}/${m.data.total}`;}
 });

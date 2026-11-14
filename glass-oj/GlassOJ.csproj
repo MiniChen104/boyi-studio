@@ -8,13 +8,14 @@
     <AssemblyName>博宜练习室</AssemblyName>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>assets\app.ico</ApplicationIcon>
-    <Version>1.4.6</Version>
+    <Version>1.4.7</Version>
     <Description>博宜练习室 · 题库、代码编辑与有序提交</Description>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3537.50" />
     <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
     <Content Include="ui\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="tools\**\*" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
     <Content Include="seed\**\*" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="使用说明.txt" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="THIRD-PARTY-NOTICES.txt" CopyToOutputDirectory="PreserveNewest" />

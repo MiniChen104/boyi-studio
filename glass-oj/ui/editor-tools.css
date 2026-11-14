@@ -1,0 +1,20 @@
+.editor-tool-button { flex: 0 0 auto; border: 0; background: transparent; color: inherit; padding: 6px 8px; border-radius: 8px; font-size: 12px; cursor: pointer; }
+.editor-tool-button:hover { background: rgba(127, 150, 175, .16); }
+.editor-toolbar { flex-wrap: wrap; gap: 4px; }
+.editor-tool-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 16px 0; }
+.editor-tool-grid button { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px; }
+.editor-tool-grid kbd { font-size: 11px; white-space: nowrap; opacity: .7; }
+.CodeMirror-dialog { background: rgba(245, 249, 254, .98); color: #24344a; padding: 10px 12px; border-color: rgba(100, 125, 160, .25); line-height: 1.7; white-space: normal; box-shadow: 0 6px 18px #10204014; }
+.CodeMirror-dialog input { max-width: 90%; border-bottom: 1px solid currentColor; }
+.CodeMirror-dialog button { border: 1px solid #899aad66; border-radius: 6px; padding: 2px 8px; background: transparent; color: inherit; }
+.CodeMirror-search-hint { font-family: sans-serif; font-size: 11px; }
+.CodeMirror-hints { z-index: 10000; max-height: 220px; border-radius: 10px; padding: 5px; background: #f5f9fe; border: 1px solid #a4b6ce66; box-shadow: 0 8px 28px #10204022; }
+.CodeMirror-hint { color: #24344a; padding: 4px 12px; border-radius: 5px; font-family: Consolas, monospace; }
+li.CodeMirror-hint-active { background: #4a739f; color: white; }
+.cm-matchhighlight { background: #789dbe30; border-bottom: 1px solid #789dbe; }
+.CodeMirror-searching { background: #d4aa4560; }
+.CodeMirror-foldgutter { width: 14px; }
+.CodeMirror-foldgutter-open, .CodeMirror-foldgutter-folded { color: #7791af; }
+.dark .CodeMirror-dialog, .dark .CodeMirror-hints { background: #253044; color: #e4edf8; }
+.dark .CodeMirror-hint { color: #e4edf8; }
+@media (max-width: 650px) { .editor-tool-grid { grid-template-columns: 1fr; } }

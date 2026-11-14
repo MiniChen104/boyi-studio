@@ -1,7 +1,7 @@
 param([Parameter(Mandatory=$true)][string]$PackagePath)
 $ErrorActionPreference = 'Stop'
 $root = (Resolve-Path -LiteralPath $PackagePath).Path
-foreach ($required in @('博宜练习室.exe','ui\index.html','ui\app.js','ui\liquid-ui.js','ui\drawers.css','seed\catalog.json')) {
+foreach ($required in @('博宜练习室.exe','ui\index.html','ui\app.js','ui\liquid-ui.js','ui\drawers.css','ui\editor-tools.js','ui\editor-tools.css','ui\vendor\editor\closebrackets.js','tools\clang-format.exe','tools\clang-format-LICENSE.md','tools\clang-format-COPYING.md','seed\catalog.json')) {
     if (!(Test-Path -LiteralPath (Join-Path $root $required))) { throw "Missing package file: $required" }
 }
 $forbidden = @(Get-ChildItem -LiteralPath $root -Recurse -File | Where-Object {

@@ -6,6 +6,10 @@
 <title>博宜练习室</title><link rel="stylesheet" href="vendor/codemirror.css"><link rel="stylesheet" href="vendor/katex.min.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="liquid-theme.css"><link rel="stylesheet" href="reference-ui.css">
 <link rel="stylesheet" href="learning.css">
 <link rel="stylesheet" href="drawers.css">
+<link rel="stylesheet" href="vendor/editor/foldgutter.css">
+<link rel="stylesheet" href="vendor/editor/dialog.css">
+<link rel="stylesheet" href="vendor/editor/show-hint.css">
+<link rel="stylesheet" href="editor-tools.css">
 </head>
 <body>
 <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg"><defs>
@@ -63,7 +67,7 @@
     <article class="statement"><div class="pane-label"><span>题目</span><span id="limits"></span></div><div id="statementBody" class="statement-body"><div class="welcome"><span>⌘</span><h3>从一道题开始</h3><p>选择题目，读一读，写一写。<br>你的每一次修改都会自动保存。</p></div></div></article>
     <div id="splitter" class="splitter" title="拖动调整宽度"></div>
     <section class="editor-pane">
-      <div class="editor-toolbar"><div class="editor-tabs" role="tablist"><button class="active" data-tab="draft" role="tab">我的代码</button><button data-tab="reference" role="tab">参考答案<span id="referenceDot"></span></button><button data-tab="staged" role="tab">待提交</button></div><span class="language">C++ 11</span></div>
+      <div class="editor-toolbar"><div class="editor-tabs" role="tablist"><button class="active" data-tab="draft" role="tab">我的代码</button><button data-tab="reference" role="tab">参考答案<span id="referenceDot"></span></button><button data-tab="staged" role="tab">待提交</button></div><button id="editorTools" class="editor-tool-button" title="格式化、查找替换与编辑设置">编辑工具</button><span class="language">C++ 11</span></div>
       <div id="referenceTools" class="reference-tools hidden"><label for="referenceChoice">解法</label><select id="referenceChoice" aria-label="选择参考解法"></select><details id="referenceDetails"><summary>思路与复杂度</summary><p id="referenceIdea"></p><p id="referenceComplexity"></p></details></div>
       <div id="versionNotice" class="version-notice hidden"></div>
       <div class="editor-wrap"><textarea id="editor" spellcheck="false" aria-label="C++代码编辑器"></textarea><div id="emptyVersion" class="empty-version hidden"><svg><use href="#i-code"/></svg><h3 id="emptyTitle">这道题还没有参考答案</h3><p id="emptyDescription">你可以先独立思考，写下自己的解法。</p></div></div>
@@ -78,5 +82,5 @@
 </div>
 <div id="toasts" class="toast-stack" aria-live="polite"></div>
 <dialog id="modal" class="modal glass"><div class="modal-header"><div><span id="modalEyebrow" class="eyebrow"></span><h2 id="modalTitle"></h2></div><button id="closeModal" class="icon-btn" aria-label="关闭"><svg><use href="#i-close"/></svg></button></div><div id="modalBody"></div></dialog>
-<script src="vendor/codemirror.js"></script><script src="vendor/clike.js"></script><script src="vendor/matchbrackets.js"></script><script src="vendor/active-line.js"></script><script src="vendor/katex.min.js"></script><script src="app.js"></script><script src="liquid-ui.js"></script>
+<script src="vendor/codemirror.js"></script><script src="vendor/clike.js"></script><script src="vendor/matchbrackets.js"></script><script src="vendor/active-line.js"></script><script src="vendor/katex.min.js"></script><script src="vendor/editor/closebrackets.js"></script><script src="vendor/editor/comment.js"></script><script src="vendor/editor/foldcode.js"></script><script src="vendor/editor/foldgutter.js"></script><script src="vendor/editor/brace-fold.js"></script><script src="vendor/editor/comment-fold.js"></script><script src="vendor/editor/searchcursor.js"></script><script src="vendor/editor/dialog.js"></script><script src="vendor/editor/search.js"></script><script src="vendor/editor/jump-to-line.js"></script><script src="vendor/editor/match-highlighter.js"></script><script src="vendor/editor/show-hint.js"></script><script src="editor-tools.js"></script><script src="app.js"></script><script src="liquid-ui.js"></script>
 </body></html>

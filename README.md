@@ -6,7 +6,7 @@
 
 ## 下载与运行
 
-从本仓库 **Releases** 下载 `BoyiStudio-1.4.6-win-x64-no-references.zip`，完整解压后运行 `博宜练习室.exe`。
+从本仓库 **Releases** 下载 `BoyiStudio-1.4.7-win-x64-no-references.zip`，完整解压后运行 `博宜练习室.exe`。
 
 - Windows 10/11，x64。
 - 需要 [Microsoft Edge WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/)。
@@ -16,7 +16,10 @@
 ## 功能
 
 - 缓存题库与题面，使用抽屉式题库查找、筛选和打开题目。
-- 代码编辑、自动保存、草稿恢复、独立保存待提交版本。
+- 括号与引号补全、智能缩进、代码折叠、中文查找替换、独立撤销历史。
+- 内置 clang-format 离线整理 C++，Ctrl+Alt+L 一键整理，默认 Allman 风格和 4 空格缩进。
+- 关键字与当前文档标识符提示，Ctrl+Space 手动唤出，可关闭自动提示。
+- 自动保存、草稿恢复、独立保存待提交版本。
 - 查看自己的官网提交；本地提交快照按账号保存，历史源码按官网权限读取。
 - 题单连续练习、上一题/下一题、返回题单和继续上次进度。
 - 小组浏览和题单入口；完整管理操作通过应用内官网窗口完成。
